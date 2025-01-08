@@ -343,14 +343,14 @@ if __name__ == "__main__":
         ],
     ).ask()
 
-    cognitive_search = AISearch(AzureEnv(env, brand))
+    ai_search = AISearch(AzureEnv(env, brand))
 
     if task == "Create Search Index":
         index_name = questionary.text("Index Name?").ask()
-        cognitive_search.create_search_index(index_name)
+        ai_search.create_search_index(index_name)
 
     elif task == "Delete Search Index":
-        cognitive_search.drop_search_index()
+        ai_search.drop_search_index()
 
     elif task in ["Delete Documents", "Get Documents", "Find Documents"]:
         search_fields = questionary.checkbox("Search Fields?", choices=["ArticleId", "Title", "Source", "Content"]).ask()
@@ -358,29 +358,25 @@ if __name__ == "__main__":
         select = questionary.checkbox("Select?", choices=["ArticleId", "Title", "Source", "Content"]).ask()
 
         if task == "Delete Documents":
-            cognitive_search.delete_documents(search_fields=search_fields, search_text=search_text, select=select)
+            ai_search.delete_documents(search_fields=search_fields, search_text=search_text, select=select)
         elif task == "Get Documents":
-            cognitive_search.get_documents(search_fields=search_fields, search_text=search_text, select=select)
+            ai_search.get_documents(search_fields=search_fields, search_text=search_text, select=select)
         elif task == "Find Documents":
-            cognitive_search.find_documents(search_fields=search_fields, search_text=search_text, select=select, log_results=True)
+            ai_search.find_documents(search_fields=search_fields, search_text=search_text, select=select, log_results=True)
 
     elif task == "Search Documents":
         search_type = questionary.select("Search Type?", choices=["Hybrid", "Text", "Vector"]).ask()
         search_text = questionary.text("Search Text?", default="*").ask()
 
         if search_type == "Hybrid":
-            cognitive_search.hybrid_search(search_text)
+            ai_search.hybrid_search(search_text)
         elif search_type == "Text":
-            cognitive_search.text_search(search_text)
+            ai_search.text_search(search_text)
         elif search_type == "Vector":
-            cognitive_search.vector_search(search_text)
-
-    elif task == "Delete Posts By Age":
-        age = questionary.text("Age(in years)?", default="3").ask()
-        cognitive_search.delete_posts(os.path.join(backend_dir, "indexes", env, "clo3d-index-english.json"), age=age)
+            ai_search.vector_search(search_text)
 
     elif task == "Get Document Source Breakdown":
-        cognitive_search.document_source_breakdown()
+        ai_search.document_source_breakdown()
 
     elif task == "Find Missing Documents Per Source":
-        cognitive_search.find_missing_documents_per_source()
+        ai_search.find_missing_documents_per_source()

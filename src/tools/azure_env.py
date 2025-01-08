@@ -9,7 +9,7 @@ from openai import AzureOpenAI
 
 from tools.openai_helper import OpenAIHelper
 
-backend_dir = Path(__file__).parent.parent
+parent_dir_path = Path(__file__).parent.parent.parent
 zendesk_article_api_endpoint = "https://{0}.zendesk.com/api/v2/help_center/{1}/articles.json?page={2}&per_page=30&sort_by=updated_at&sort_order=desc"
 zendesk_article_section_api_endpoint = "https://{0}.zendesk.com/api/v2/help_center/{1}/sections/{2}.json"
 zendesk_article_category_api_endpoint = "https://{0}.zendesk.com/api/v2/help_center/{1}/categories/{2}.json"
@@ -23,9 +23,9 @@ class AzureEnv:
         self.language = language
 
         if stage == "prod":
-            load_dotenv(os.path.join(backend_dir, ".env.prod"))
+            load_dotenv(os.path.join(parent_dir_path, ".env.prod"))
         else:
-            load_dotenv(os.path.join(backend_dir, ".env.dev"))
+            load_dotenv(os.path.join(parent_dir_path, ".env.dev"))
 
         self.AZURE_SEARCH_SERVICE = os.environ.get("AZURE_SEARCH_SERVICE")
 

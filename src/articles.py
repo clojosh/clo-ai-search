@@ -24,7 +24,7 @@ class Article:
         self.azure_env = azure_env
         self.search_client = azure_env.search_client
 
-    def get_zendesk_document(self, article_id):
+    def get_zendesk_document(self, article_id: int):
         page_url = requests.request(
             "GET",
             self.azure_env.get_zendesk_article_api_endpoint(article_id),
@@ -36,7 +36,7 @@ class Article:
         return json.loads(page_url.text)
 
     @staticmethod
-    def get_zendesk_documents(stage, brand, language, article_path, page):
+    def get_zendesk_documents(stage: str, brand: str, language: str, article_path: str, page: int):
         print("Getting Zendesk Articles for page: " + str(page))
 
         azure_env = AzureEnv(stage, brand, language)
@@ -136,10 +136,10 @@ class Article:
             p.join()
 
     @staticmethod
-    def upload_documents(env, brand, language, article_path, file):
+    def upload_documents(stage: str, brand: str, language: str, article_path: str, file: str):
         print(f"Uploading {file}")
 
-        azure_env = AzureEnv(env, brand, language)
+        azure_env = AzureEnv(stage, brand, language)
 
         with open(os.path.join(article_path, file), "r", encoding="utf-8") as f:
             documents = json.load(f)
@@ -159,7 +159,7 @@ class Article:
 
             if brand == "clovf":
                 # Upload clovf articles to both clo3d and clo-set
-                AzureEnv(env, "clo3d").search_client.upload_documents(documents)
+                AzureEnv(stage, "clo3d").search_client.upload_documents(documents)
                 # AzureEnv(env, "closet").search_client.upload_documents(documents)
             else:
                 azure_env.search_client.upload_documents(documents)
@@ -187,17 +187,17 @@ class Article:
         else:
             result = self.search_client.upload_documents({"@search.action": "delete", "ArticleId": article_id})
 
-    def delete_excluded_documents(self, brand):
+    def delete_excluded_documents(self, brand: str):
         headers = {
             "Content-Type": "application/json",
         }
 
-        response = requests.request("GET", self.zendesk_article_api_endpoint, headers=headers)
+        response = requests.request("GET", self.azure_env.get_zendesk_article_api_endpoint(1), headers=headers)
         json_objects = json.loads(response.text)
         page_count = json_objects["page_count"]
 
         for page in range(1, 1 + page_count):
-            response = requests.request("GET", self.azure_env.get_zendesk_articles_api_endpoint(page), headers=headers)
+            response = requests.request("GET", self.azure_env.get_zendesk_article_api_endpoint(page), headers=headers)
             json_objects = json.loads(response.text)
             articles = json_objects["articles"]
 

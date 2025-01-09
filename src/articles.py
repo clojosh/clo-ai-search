@@ -101,12 +101,12 @@ class Article:
                         "Source": article["html_url"],
                         "Title": article["title"],
                         "Content": article["body"],
-                        "Tokens": num_tokens_from_string(article["body"], "gpt-3.5-turbo"),
-                        "SectionId": article["section_id"],
-                        "Section": article["section"],
+                        "YoutubeLinks": article["youtube_links"],
                         "CategoryId": article["category_id"],
                         "Category": article["category"],
-                        "YoutubeLinks": article["youtube_links"],
+                        "SectionId": article["section_id"],
+                        "Section": article["section"],
+                        "Tokens": num_tokens_from_string(article["body"], "gpt-3.5-turbo"),
                     }
                 )
 

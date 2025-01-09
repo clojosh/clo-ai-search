@@ -77,7 +77,7 @@ class OpenAIHelper:
             openai.error.OpenAIError: If the request to the OpenAI API fails.
         """
         # Check if the text length exceeds the maximum allowed input length
-        tokens = num_tokens_from_string(text, "gpt-4o-mini")
+        tokens = num_tokens_from_string(text, "gpt-4")
 
         if tokens >= GPT_4_MINI_MAX_INPUT_TOKENS:
             # Trim the text to the maximum allowed length
@@ -85,8 +85,7 @@ class OpenAIHelper:
 
         # Create a list of messages to send to the OpenAI API
         messages = [
-            # The first message is the text to generate questions from
-            {"role": "user", "content": f"Generate 10 brief and concise questions a customer would ask about this in {self.language}: {text}"},
+            {"role": "user", "content": f"Create a question that the following text addresses: {text}"},
         ]
 
         # Use the OpenAI API to generate the questions
@@ -94,7 +93,7 @@ class OpenAIHelper:
             model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT,
             messages=messages,
             temperature=0.7,
-            max_tokens=200,
+            max_tokens=50,
             n=1,
         )
 
@@ -110,51 +109,6 @@ class OpenAIHelper:
         return questions
 
     @retry(wait=wait_random_exponential(min=1, max=20), stop=stop_after_attempt(6))
-    def generate_labels(self, text: str) -> list[str]:
-        """
-        Generate keywords from a given text.
-
-        Args:
-            text (str): The text to generate keywords from.
-
-        Returns:
-            list[str]: A list of keywords.
-        """
-        # 50 tokens or less, generate 5 keywords
-        # otherwise, generate 10 keywords
-        tokens = num_tokens_from_string(text, "gpt-4o-mini")
-        keywords_num = 10
-
-        if tokens <= 50:
-            keywords_num = 5
-
-        if tokens >= GPT_4_MINI_MAX_INPUT_TOKENS:
-            # truncate the text if it exceeds the maximum token limit
-            text = text[:GPT_4_MINI_MAX_INPUT_TOKENS]
-
-        messages = [
-            {
-                "role": "user",
-                "content": f"Generate {keywords_num} keywords from the this in {self.language}: {text}",
-            }
-        ]
-
-        chat_completion = self.openai_client.chat.completions.create(
-            model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT,
-            messages=messages,
-            temperature=0,
-            max_tokens=200,
-            n=1,
-        )
-
-        # split the response into individual lines, strip whitespace, and remove numbers
-        labels = chat_completion.choices[0].message.content.splitlines()
-        for i, l in enumerate(labels):
-            labels[i] = re.sub("[0-9]+\.*\)*\s*", "", l, flags=re.MULTILINE).strip()
-
-        return labels
-
-    @retry(wait=wait_random_exponential(min=1, max=20), stop=stop_after_attempt(6))
     def generate_transcript_summary(self, transcript: str) -> str:
         """
         Summarize a transcript
@@ -167,7 +121,7 @@ class OpenAIHelper:
         """
 
         # If the transcript is too long, trim it to a length that OpenAI can handle
-        tokens = num_tokens_from_string(transcript, "gpt-4o-mini")
+        tokens = num_tokens_from_string(transcript, "gpt-4")
 
         if tokens >= GPT_4_MINI_MAX_INPUT_TOKENS:
             transcript = transcript[:GPT_4_MINI_MAX_INPUT_TOKENS]
@@ -204,7 +158,7 @@ class OpenAIHelper:
             str: A summary of the PDF
         """
         # If the PDF is too long, trim it to a length that OpenAI can handle
-        tokens = num_tokens_from_string(pdf, "gpt-4o-mini")
+        tokens = num_tokens_from_string(pdf, "gpt-4")
 
         if tokens >= GPT_4_MINI_MAX_INPUT_TOKENS:
             pdf = pdf[:GPT_4_MINI_MAX_INPUT_TOKENS]
@@ -244,7 +198,7 @@ class OpenAIHelper:
         try:
             # The maximum amount of tokens that can be processed by the AI is 32,000 - 1,500
             # If the content is longer than this, trim it to this length
-            tokens = num_tokens_from_string(content, "gpt-4o-mini")
+            tokens = num_tokens_from_string(content, "gpt-4")
 
             if tokens >= 32000 - 1500:
                 raise ValueError(f"Content too long, tokens found {tokens}")
@@ -284,7 +238,7 @@ class OpenAIHelper:
         """Scrape a Webpage"""
 
         try:
-            tokens = num_tokens_from_string(content, "gpt-4o-mini")
+            tokens = num_tokens_from_string(content, "gpt-4")
 
             if tokens >= 32000 - 1500:
                 raise ValueError(f"Content too long for {website_url}, tokens found {tokens}")
@@ -318,7 +272,7 @@ class OpenAIHelper:
     def create_webpage_title(self, content):
         """Scrape a Webpage"""
 
-        tokens = num_tokens_from_string(content, "gpt-4o-mini")
+        tokens = num_tokens_from_string(content, "gpt-4")
 
         if tokens >= 32000 - 1500:
             raise ValueError(f"Content too long, tokens found {tokens}")

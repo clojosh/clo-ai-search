@@ -72,13 +72,13 @@ class AzureEnv:
 
     def get_article_path(self) -> str:
         document_path = {
-            "English": os.path.join(self.brand, "articles", "en-us"),
-            "Espanol": os.path.join(self.brand, "articles", "es"),
-            "Japanese": os.path.join(self.brand, "articles", "ja"),
-            "Korean": os.path.join(self.brand, "articles", "ko"),
-            "Portuguese": os.path.join(self.brand, "articles", "pt-br"),
-            "Chinese": os.path.join(self.brand, "articles", "zh-cn"),
-            "Taiwanese": os.path.join(self.brand, "articles", "tw"),
+            "English": os.path.join("sources", self.brand, "articles", "en-us"),
+            "Espanol": os.path.join("sources", self.brand, "articles", "es"),
+            "Japanese": os.path.join("sources", self.brand, "articles", "ja"),
+            "Korean": os.path.join("sources", self.brand, "articles", "ko"),
+            "Portuguese": os.path.join("sources", self.brand, "articles", "pt-br"),
+            "Chinese": os.path.join("sources", self.brand, "articles", "zh-cn"),
+            "Taiwanese": os.path.join("sources", self.brand, "articles", "tw"),
         }
 
         os.makedirs(document_path[self.language], exist_ok=True)

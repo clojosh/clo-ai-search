@@ -30,7 +30,7 @@ def logger(title: str = "", text: str = "") -> None:
         logging.info(str(text))
 
 
-def num_tokens_from_string(string: str, model: str = "gpt-4o-mini") -> int:
+def num_tokens_from_string(string: str, model: str = "gpt-4") -> int:
     """Returns the number of tokens in a text string. https://github.com/openai/openai-cookbook/blob/main/examples/How_to_count_tokens_with_tiktoken.ipynb"""
     encoding = tiktoken.encoding_for_model(model)
     num_tokens = len(encoding.encode(string))

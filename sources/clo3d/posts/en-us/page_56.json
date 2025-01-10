@@ -1,0 +1,375 @@
+[
+    {
+        "post_id": 360038169794,
+        "post_title": "PATTERN IMPORTING - All factories I have worked with have had major issues when importing my patterns. HELP PLEASE. ",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360038169794",
+        "post_details": "Hi All, I have been using Clo for about 5 months now and I have worked with 6 different factories during this time. None of them have been able to use my digital patterns. I have reached out in the past on this forum and the answer always seems to be \"them\". The factory is not importing correctly or they are using too old of a system. I just can't accept that answer anymore. I have used Gerber for the past 10 years and never experienced this issue. Below are a couple of screenshots from the latest disaster. The first screenshot is what I see. The 2nd is what the factory sees when the import the dxf files. If I am doing something incorrectly when exporting I would love to fix it! Any idea? And if the answer is that the factory is importing incorrectly again then why is it so hard for an established factory to import the Clo patterns? Does there need to be some kind of handout we send with Clo patterns to help a factory import them? Honestly, though, this does not look like an import issue to me. Best, Lori",
+        "updated_at": "2023-06-22T14:28:15Z",
+        "comments": [
+            {
+                "author_id": 364104337428,
+                "comment_id": 360010097853,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038169794",
+                "comment_body": "Hey Lori. Hard to give you any advise without knowing what software, what options and other settings are these factories using. I suggest you try to import the files using a different CAD software just to test. You could get a free trial of PAD System at share.padsystem.com and import it as DXF-AAMA and see if something is not coming right. P"
+            },
+            {
+                "author_id": 393334866874,
+                "comment_id": 360010107293,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038169794",
+                "comment_body": "Hi Pablo, I reached out to the factory yesterday and am waiting to hear back regarding the software they are using. I followed your suggestion too and imported the pattern into PAD Systems. Everything looks perfect! I have already lost a factory because of these import issues. I went back and forth with them for weeks and I had many phone conversations with their operator. They were using Gerber, an older version, and the files never imported correctly. We finally cut ties with them and re-sourced with a new factory. It's hard because factories are going to be using older systems 90% of the time. I need a resource to provide factories with if it is this hard to use the digital patterns I am sending them. Is there any resource available? I do not know how to help them or what to tell them. From my end, I'm not sure what options they would have to choose to get the results they are getting. It does not make sense to me unless the Clo system is simply not compatible. Any help would be greatly appreciated! Best, Lori"
+            },
+            {
+                "author_id": 360253261888,
+                "comment_id": 360010107353,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038169794",
+                "comment_body": "It's an import issue with Gerbers setup. CLO3D files work fine. People at the other end (suppliers) need to know how to set up gerbers many features for importing. Most are not properly trained in the DXF-AAMA import process or in how the DXF-AAMA exchange standard works. And consequently they get it wrong, opting to just push a buttons and not read through the options to get a file in. I suggest you post the CAD file so it can be checked by someone whom knows how to import DXF-AAMA because they have been professionally trained in that process. Usually a CAD operator is only trained in one software, by the vendor and has little experience outside of what they do as a training course. File exchange is a more technical area, usually the domain of the CNC operators whom deal with the data-file structure, layering and polyshape integrity. A good CAD CNC operator trained in data file exchange can usually write a driver if needed. Your average CAD draftperson (vendor trained) wouldn't have a clue how to do that. Look to the DXF-AAMA standard(s) old and new and exchange options (old and new). Then in future have a test file you send with every contract that you get checked for import before you start work with a supplier. Many never get datafile exchange right, or they drop detail (eg: Chinese characters notes/by not resetting the keyboard) or silly things that they leave out as part of the file exchange control process with the CAD files, and it is often 99% of the time operator error (on both sides) and not a glitch in the software. CLO3D files appear to import fine to optitex, gerber, brozwear, when I use them so I can only conclude it's operator error."
+            },
+            {
+                "author_id": 393334866874,
+                "comment_id": 360009937214,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038169794",
+                "comment_body": "I received confirmation today that this particular vendor is using the CREA Cad system. I had exported my files as DXF AAMA. The only files that can be posted on this forum are jpegs, gifs, or pngs so I cannot post the actual pattern file. Thank you for sending the links! I am 100% willing to educate myself if it would be helpful to work with these factories overseas more successfully. I've been in the industry for over 10 years and never needed this information previously. It had been a non-issue with Gerber. I appreciate the help. Best Regards, Lori"
+            },
+            {
+                "author_id": 393334866874,
+                "comment_id": 360009923934,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038169794",
+                "comment_body": "Right, but then what can I tell them to help them access my files? Gerber is supposed to be compatible with Clo so there has to be a way to fix the issue. What is the fix?"
+            },
+            {
+                "author_id": 393334866874,
+                "comment_id": 360010107913,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038169794",
+                "comment_body": "Hi Ottoline, I can see via email that you had replied to my message above but I do not see the comment here. Perhaps an administrator deleted it. You did have one potentially helpful comment in what you sent me: \"The clothing data exchange standard is about $70 - get it and read it. And then learn how any DXF file can be structured so it imports.\" However, when I do a search for what I am assuming is a book, I cannot find it. Do you have a link you could send or know the author?"
+            },
+            {
+                "author_id": 360253261888,
+                "comment_id": 360010112153,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038169794",
+                "comment_body": "No I deleted the comment(s) as the forum post process also (usually) sends a copy via your email immediately after it is posted.(As I can see you have now reposted) So rather than leave long targeted messages up on why you should have an inhouse process (eg: ISO 9001 for technical file cad document control) for this &gt I suggested it's better to just post the datafile you have the problem with so it may be checked by some in this forum &gt as you only show pictures.Which is impossible to help you with when it's a datafile issue that needs to be explored. The dxf file needs to be opened up , looked at in detail with a text editor, along with the original CLO3D file. No administrator took down the post. I did. Link 0 Link 1 Link 2 Link 3 Link 4 American Apparel &amp Footwear Association Good DXF file exchange is not a technical barrier. It's an opportunity to rethink how you cope with many suppliers whom are varied so that you have a robust tolerant system in place that reduces your costs and risks in supply management through documentation, edits, revisions, and technical file control. It should not be manual in today's market space, it should be automated - which it can be. The challenge is you should be able to get your CAD data to any supplier, no matter whom they are, and that you processes does not omit good quality garment makers. It's not their CAD process that should govern your quality, jump over that simple barrier - as it could limit your supplier choice and that is bad business thinking. Post the problem file(s) &gt so they can be looked at in detail. Might be a good 1st step. 6 months is a crazy amount of time to have had this issue, when it is likely solved in a few minutes."
+            },
+            {
+                "author_id": 360253261888,
+                "comment_id": 360010123733,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038169794",
+                "comment_body": "My pleasure. 10 years only, that makes you a green-horn. A lot of what I do touches on ensuring businesses take the right approach, and often that means - prodding some departments, to wake them up to the realities of where performance + up-skilling can make a difference. Having a great understanding of how to translate files into any CAD system is a 1st class skill to have. First of all it lets you know when your supplier is feeding you BS, and looking to escape out the side door of responsibility, generally because they have cut corners, hired people whom don't know how to do this translation properly, or have CAD systems that maybe are not so integrated ... and just hope it all works. Which in manufacturing is usually never the case, it is all about resolving small issues , before they become big clangers, and ensuring the flow of data quality is consistent without getting stressed. Knowing you are in control of this aspect means you are empowered to approach more suppliers, which takes away risk from being locked in to only those makers whom can use gerber. So widening out your choice of suppliers is a big commercial win for you - so well done. Good digital strategy. CLO3D is well placed to bolt in alongside other 2D CAD drafting systems. In this manner it offers up what must be the best 3D garment assembly simulation in this solar system at this point in history. So you are definitely working with the gold standard application in this area of CG cloth simulation. So that is ground worth fighting to retain. And because CLO3D is focused solely on this sample making task, it brings simple toolsets that make it a joy to use. It's flexibility is that you can bolt in other 2D fashion CAD - using the DXF-AAMA or DXF-ASTM file transport as your bridge to other wider manufacturing/development eco-systems scaling your production up or down as you need. So in that context knowing about DXF is important to you and your company as a point of reducing friction as you change the way you integrate for different needs. That is growth. So I cannot stress that enough - it's not something fashion designers can brush off as, icky or place in the too hard basket. It's important and it secures how you can cross over with suppliers with confidence. And that is the goal of any business to make sure they have a friction free ride as they roll out production. And knowing you have it right is peace of mind for the management of any production run you make outside of your normal channels of making. So well done, sometimes it's good to get outside of Gerber software eco-system ... as it makes a business less reliant on technology lock-in. That's a win right there. Good luck."
+            }
+        ]
+    },
+    {
+        "post_id": 360038160254,
+        "post_title": "Female avatar size issue",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360038160254",
+        "post_details": "Dear Community, I'm having trouble with the female avatar and I need your help. For my work I need an avatar with \"Model\" similar sizes ( 84 bust / 59 waist / 89 hip, height 180 cm ). Of course, I've used the Avatar Editor before, but it always looks unshapely in the end. I've often started to build a block library and had to start all over again because my own custom edited avatar just doesn't work out. It would be ideal to have a measure set that is also consistent for the CLO3D Avatar Editor, like the Alvanon measures. The smallest Alvanon size would absolutely be ok, but it refers to a height of 166 cm and I need about 180 cm to 182 cm. Does anyone here have an idea or know other resources? Many greetings",
+        "updated_at": "2023-07-21T08:23:31Z",
+        "comments": [
+            {
+                "author_id": 382654060393,
+                "comment_id": 360010101593,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038160254",
+                "comment_body": "Hello Ottoline, thanks for your great answer. It helped me to understand the mechanics behind the Avatar Editor and in general it's an interesting topic, without doubt the Avatar Editor by CLO3D is very good. What also bothers me about the female Alvanon measurements is that they all have a hip dip. But yes please keep us informed when you create a video on the topic. I'll attach a picture of the Avatar I made. It worked much better now. The legs seem a bit too slim and it would be good to have a bit more bust, but when I work on it again, everything gets deformed. If I create a straight skirt for this avatar, following a simple pattern, which always works in \"reality\", the fit is not good at first in CLO3D. I have to make the darts longer and bigger time and again and take out a lot more of the width, as it has been actually calculated. So it sometimes ends up in eternal work on the pattern, which is my real problem - I don't know anymore if it's because of an incorrect avatar or because of the pattern itself. With a own and fast edited avatar I just \"do not feel secure\". Sorry if I'm mixing up themes here, but in principle I find it difficult to create a straight/fitted skirt pattern in CLO3D, even with the standard avatar, because of the hip dip or because of the big measurement difference between waist and hip of the standard avatar."
+            },
+            {
+                "author_id": 382654060393,
+                "comment_id": 360010113833,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038160254",
+                "comment_body": "Thanks a lot for your help! I will doublecheck all your tips. Have a nice holiday :)"
+            },
+            {
+                "author_id": 380357506333,
+                "comment_id": 360010351494,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038160254",
+                "comment_body": "Hello,ottoline, I have a similar question about avatar size. Avatar shoulder width is very important when fitting outerwear. Therefore, I want to specify the shoulder width of the avatar. What is the order of setting shoulder width dimensions In the above avatar size adjustment process?"
+            },
+            {
+                "author_id": 410324670633,
+                "comment_id": 360012665373,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038160254",
+                "comment_body": "360253261888 Do you find CLO is just as good in creating avatars as DAZ?"
+            },
+            {
+                "author_id": 360253261888,
+                "comment_id": 360010092973,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038160254",
+                "comment_body": "It's quite easy to adjust the avatars into a custom size, but you need to perhaps start with the right process as there is a definite approach to take when creating custom avatar sizes. One of the main issues with adjusting avatars, is that you don't leap into manually adjusting each value manually one at a time. You need to take a progressive approach to shaping. So that is usually the 1st error that people make. Any database that drives human shape is driven by ergonomic rules. And body shape is governed by the 'frame' size and the relational proportions (ratios) for each limb or body part that sit in any relational database. So when you change height you should immediately start with choosing those body points (HPS) and scaling (in general) for the avatar as a 1st step. That will automatically push the algorithm to search for a nearby body frame ratio from the database that statistically fits within 'norms'. At that point (basic measures) you should start to refine the shaping, bust, waist, hips and then move onto the limb,torso sizes. One very important measure to set is the torso length, which effects posture, which is governed by the HPS and the crotch. Many people that sit outside the basic norms of 50 percentile 'average' will push the relational data to shift away from the basic fit curves, which is what also happen in Alvanon's digital software product. So unfortunately there needs to be some instruction on what approach to take when making a custom avatar otherwise it can quickly become a mess as the algorithm starts to chase all manner of manual adjustments. I maybe need to do a few videos to show you how easy this is to do, but know with the right approach you can get almost any shape and size in a few minutes. Try starting with getting the basic body size with the fewest measures to scale. Then work on the HPS and crotch heights, then basic girths of bust waist hip. And only when you have those in place move to adjusting the leg girth, then finally the arm girth and then arm length. Hopefully that will get you closer until I have time to run of some videos. It's always good to see size alongside each other, as that gives the important context that it missing in most of the avatar tools where you only see one person at a time. CLO3D is absolutely amazing for bashing out this visual work. And make the alvanon service offering look pretty pedestrian by comparison for a digital design workflow, so for me the new CLO3D avatar editor toolset with vray render is swish. I love it's visual flexibility, a great app, and not really pushed enough. Vray in CLO3D allows you to quickly jazz up those boring avatar visuals"
+            },
+            {
+                "author_id": 360253261888,
+                "comment_id": 360009918614,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038160254",
+                "comment_body": "Hello ifashion, You can always take an avatar out into a modelling software and alter it slightly to get the shape you want and then create a morph. This can be done using a free application like blender or Hexagon. You can also reverse engineer an realworld manikin into a CLO3D avatar using photogrammetry (simple phone camera will do this) and use their new tool for fitting an avatar to a scan surface that has been re-calibrated. I should also do a tutorial on that as well, as it's a process that takes about an hour to get some of your old tailoring formers into digital 3D assets with accuracy."
+            },
+            {
+                "author_id": 360253261888,
+                "comment_id": 360012667433,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038160254",
+                "comment_body": "They are very different things in many respects. Yes you can make an avatar in DAZ and there is the measure-metrics toolset for tapes but what it lacks is the database of garment sized avatars, with a relatively simple editing tool to adjust those avatars to the clothing (ISO manikin standards). So although DAZ has a wide selection of characters, and they have a measurement addon it is incumbent on YOU doing the rest of the work to get avatars that meet clothing standards. And that can be a lot of additional work if you were tasked with making DAZ avatars to fit clothing standards. It would easily be tens of thousands of dollars work to bring the avatar sizing into a similar level of dimensional accuracy as already found in CLO3D. So yes you can use DAZ but why for clothing manikins ? That would maybe be a waste of time, and effort. CLO3D's avatar editor and library database of calibrated avatars/mannequins act as a leaping off point that would otherwise cost a lot of effort to simply repeat with other tools. You could use Alvanon - but again why use that costly resource if you have adjustable digital mannequins inside CLO3D that are just as good (or better). That would be my 1st question thrown back at you.And in CLO3D you can scan a manikin and place that surface in CLO3D to make a digital equivalent - which gives you tailoring parity with what you might have as hardware assets on the shop floor. If you simply want to render a garment onto a digital avatar that looks better, well you don't need complex sizing measures to figure that out. That is where knowing when to drop the digital mannequin (for garment development) and pick up a character visual house model comes in. They are not the same thing - in fact they are radically different as they serve entirely different digital needs. And many people are getting confused on why and when to drop the digital mannequin and pick up a render model (avatar) character. When doing your production use the manikin to get the garments fit correct &gt when doing final renders for marketing use a visually styled house model avatar at roughly the size you would when using a real world model. What this means is, re-drape the clothing and pose the model for fashion shoot shots and don't use a clothing development mannequin. Once you get your mind over that simple hurdle - that they should never be one-in-the-same it becomes a two step process. And then yes you could use any styled render ready character avatar to wear your digital clothes - the only requirement is that they have roughly the bust waist hips and height measurements needed to fit the garment - they don't need to be completely measured like the development mannequin."
+            }
+        ]
+    },
+    {
+        "post_id": 360038250513,
+        "post_title": "Creating Seam Allowance Following the Dart Cap Shape",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360038250513",
+        "post_details": "Is there a way to create/fill in the seam allowance following the shape of the dart cap? Seam allowances following the dart legs is not production friendly.",
+        "updated_at": "2022-10-13T02:51:16Z",
+        "comments": [
+            {
+                "author_id": 378696518073,
+                "comment_id": 360010096933,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038250513",
+                "comment_body": "Hi Hanachiang, When 5.1 Release, it was an option but it is not coming in the latest ver. may be it will come in new update.. Minnat"
+            },
+            {
+                "author_id": 372974880373,
+                "comment_id": 360010101373,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038250513",
+                "comment_body": "Thank you. I tried to work around and found a not so efficient way. I use trace tool to trace the dart shape and create another pattern. Sew them back together, and then merge. It works! It is good to know there was an option. Hopefully CLO 3D will come up with the solution in the new update soon. Hana"
+            },
+            {
+                "author_id": 403620441794,
+                "comment_id": 4407804665241,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038250513",
+                "comment_body": "Hi, I found the same issue. Now The latest version Can be adjusted?"
+            },
+            {
+                "author_id": 1900881723348,
+                "comment_id": 4490420941209,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038250513",
+                "comment_body": "Greetings - Are there any update on the creation of seam allowance for dart cap please ?"
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 4519332515481,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038250513",
+                "comment_body": "Hi 1900881723348. When you make darts do you use the dart tool? If you use the dart tool to create the darts and then add seam allowance you will see that there are specific dart seam allowance option in the property editor."
+            },
+            {
+                "author_id": 1900881723348,
+                "comment_id": 4550788916633,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038250513",
+                "comment_body": "Thank you for the answer 408464537934 - Yes I created the dart with the dart tool. However that specific option does not appear. I tried several designs, desinstall CLO and still not there. Are below the options that appear. Would you be able to help out ? Thank you!"
+            },
+            {
+                "author_id": 1900881723348,
+                "comment_id": 4566980709145,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038250513",
+                "comment_body": "Hi - I do apologise as I am getting back and forth on this topic on creating seam allowance on a dart cap. I managed to do it by clicking on the point at the bottom of the dart but the option does not systematically appear, more often no than yes indeed. I am sharing a challenge, I created a dart on a piece with seam allowance and the seam allowance on dart followed well, when I move the bottom point, then the seam got cut, the option does not appear + if I do ctrl Z it does not come back. There is probably something wrong in how I manipulate this because it seems pretty instable. Would you be able to help out please ? Thank you!"
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 4566997095833,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038250513",
+                "comment_body": "1900881723348. So glad that you figured it out! and thank you for letting us know :)"
+            },
+            {
+                "author_id": 1900881723348,
+                "comment_id": 4554050735129,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038250513",
+                "comment_body": "Hi 408464537934 - sent an ask just above but got it now. It is the bottom point of dart that needs to be selected to get the right options ( not the top ones what I was doing before). Thank you! SOLVED - Creating Seam Allowance Following the Dart Cap Shape"
+            }
+        ]
+    },
+    {
+        "post_id": 360038213653,
+        "post_title": "how to create the kind type of gathering as on the pic?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360038213653",
+        "post_details": "",
+        "updated_at": "2023-07-07T21:23:33Z",
+        "comments": [
+            {
+                "author_id": 364104337428,
+                "comment_id": 360010054973,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038213653",
+                "comment_body": "Hi Annas. Check the video around 1 hr 8 min. https://www.youtube.com/watch?v=OtIDOuqX0wo&ampfeature=youtu.be"
+            },
+            {
+                "author_id": 398131942393,
+                "comment_id": 360009877854,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038213653",
+                "comment_body": "Hi Pablo Thank you it was very helpful."
+            },
+            {
+                "author_id": 425383683413,
+                "comment_id": 360013664454,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360038213653",
+                "comment_body": "hi- I followed the tutorial you linked to, but the property editor won't let me set my shirring any lower than 0.1 and therefore I'm not getting a gathered effect. what am I doing incorrectly?"
+            }
+        ]
+    },
+    {
+        "post_id": 360037943273,
+        "post_title": "Separated screens should be dealt as a \"windows\" on OS.",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360037943273",
+        "post_details": "Clo3d has the feature to separate freely each window as you want. But these windows are not dealt as \"windows\" on Mac OS. These windows are dealt as just \"one of the applications\" on Mac OS. I'd like to make these screens full screen, and switch screens by using 3 fingers gesture on MacBook. Due to this specification, I can't do that. My request is to add the feature to separate screens as OS's window. Probably, users who has multi-displays doesn't this feature, but other users need it.",
+        "updated_at": "2023-07-07T21:22:15Z",
+        "comments": []
+    },
+    {
+        "post_id": 360037753694,
+        "post_title": "how can i do this type of chest embroidery logo in clo3d?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360037753694",
+        "post_details": "",
+        "updated_at": "2023-09-12T01:40:53Z",
+        "comments": [
+            {
+                "author_id": 364104337428,
+                "comment_id": 360009700054,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360037753694",
+                "comment_body": "Allyrabby, in the past ottoline mentioned a free software called Embroidery Effect. Check the link below, I personally use Wilcom's DecoStudio E3 to do that. https://www.drawstitch.com/index.php/Products/Embroidery_Effect/"
+            },
+            {
+                "author_id": 385757488093,
+                "comment_id": 360009891173,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360037753694",
+                "comment_body": "thank you ottoline and pablo"
+            },
+            {
+                "author_id": 383388080234,
+                "comment_id": 360009978073,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360037753694",
+                "comment_body": "Sorry, keep asking dump question. Ai was simple thing. Not special at all. I have over low version of Ai, CS6, Does it matter? -- Please help, so I can have my 3D in better looking with embroidery graphic! . ."
+            },
+            {
+                "author_id": 383388080234,
+                "comment_id": 360009989673,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360037753694",
+                "comment_body": "I am getting frustrated... hmm. simple Ai does not work, it says failed to import. Simple rose in JPG or PNG works but it shows cross grid line. not fill in. file is 3x3 inch. tried 300 DPI to 1000. JPG to emb png. What is wrong?"
+            },
+            {
+                "author_id": 383388080234,
+                "comment_id": 360009861934,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360037753694",
+                "comment_body": "INKSCAPE works!!! Great tools, Thank you so much for your patience and support! Ottoline."
+            },
+            {
+                "author_id": 362048822488,
+                "comment_id": 360010049033,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360037753694",
+                "comment_body": "looks great ottoline!! which software do you use for this type of 3D weaving?"
+            },
+            {
+                "author_id": 383388080234,
+                "comment_id": 360009767034,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360037753694",
+                "comment_body": "HI can I add my question to this? I downloaded below and applied Ai file, but it does not work as below saying Artwork import is failed. Ai does not work?"
+            },
+            {
+                "author_id": 386879653334,
+                "comment_id": 360011819273,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360037753694",
+                "comment_body": "Ottoline, is this label made in Blender? Is there a tutorial you can recommend on how to do this? Thank you!"
+            },
+            {
+                "author_id": 386879653334,
+                "comment_id": 360011602834,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360037753694",
+                "comment_body": "I have also tried importing the images into the Drawings and failed miserably. It simply will not import any vector files, unless they were created in Inkscape. And if you import file into Inkscape and save it, it will reject it too. Possibly one of the most frustrating pieces of software I have ever come across."
+            },
+            {
+                "author_id": 386879653334,
+                "comment_id": 360011845454,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360037753694",
+                "comment_body": "Thank you ottoline!"
+            }
+        ]
+    },
+    {
+        "post_id": 360037798713,
+        "post_title": "how to convert to a hole",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360037798713",
+        "post_details": "Hi, I have a problem with \" convert to a hole\" I thought it is quiet easy and several times it works. Now after I have downloaded the new version something must happens. I can creat a hole / ellipse but I cant get the pop up menu \" convert to hole\" have someone an idea what is wrong. I would be nice if someone have a ideas. Thanks Cornelie",
+        "updated_at": "2022-08-08T22:10:13Z",
+        "comments": [
+            {
+                "author_id": 28409906768,
+                "comment_id": 360009852653,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360037798713",
+                "comment_body": "Hi Cornelie, I checked, but for me it works with any kind of shape, ellipse or free shape. With the internal shape selected I right-click on the yellow line and the pup-up menu appear with the option \"convert to hole\" selectable. Can you upload somewhere your project file so I can try it on my computer? Daniele"
+            },
+            {
+                "author_id": 380256498793,
+                "comment_id": 360010111773,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360037798713",
+                "comment_body": "Make sure the shape is created as an internal object, there needs to be a material for the whole to be created within."
+            },
+            {
+                "author_id": 8461528860441,
+                "comment_id": 9210748799769,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360037798713",
+                "comment_body": "hello I am having a similar problem no matter what i do a window pops up saying the shape must be placed within a pattern but the shape is already placed over a pattern, please help thank you"
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 9299910938905,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360037798713",
+                "comment_body": "Hi. Can you say exactly what you are trying to achieve above? It is hard to see. Also you may want to switch your Mode from Modular back to Simulation if you are making edits"
+            }
+        ]
+    },
+    {
+        "post_id": 360037772133,
+        "post_title": "Baby avatar",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360037772133",
+        "post_details": "Dear CLO users Do you guys know where to find a baby avatar? The kid avatar in the library doesn't work when transformed into different measurements, from kid to baby :-/ I've been looking on Daz3D but seems more like a gaming avatar in different gaming poses Thank you! Best regards Nisrine/ Bestseller A/S",
+        "updated_at": "2023-07-21T08:19:52Z",
+        "comments": []
+    },
+    {
+        "post_id": 360037508154,
+        "post_title": "Converting Avatar with FLAT FEET on the floor",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360037508154",
+        "post_details": "Looks like there is only the option to convert to an avatar with the AVATAR selection only in heels. MOST body scans are done with flat feet on the floor. Is there any workaround for this or will this be part of the further updates?",
+        "updated_at": "2023-07-07T21:22:15Z",
+        "comments": [
+            {
+                "author_id": 360253261888,
+                "comment_id": 360009607934,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360037508154",
+                "comment_body": "You can untick ankle."
+            }
+        ]
+    }
+]

@@ -1,0 +1,650 @@
+[
+    {
+        "ArticleId": "cRvCvR9SzXQ23sKoiDZSMd",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportZPac API",
+        "Content": "@fn ExportZPac() -> str @brief Export ZPac file in the CLO temporary folder @return Output file path. If an error occurs, return empty string. If filePath parameter is not given, output files will be created in CLO temporary folder.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "5rG96HHPKcTXraficKX4vu",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportZPacW API",
+        "Content": "@fn ExportZPacW(_filePath : str) -> str @brief Export ZPac file @param wstring _filePath : target file path in UNICODE @return Output file path. If an error occurs, return empty string. If filePath parameter is not given, output files will be created in CLO temporary folder.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "EHNhazf4ReUoD9u3JEpnjX",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportZPrj API",
+        "Content": "@fn ExportZPrj() -> str @brief Export ZPrj file @return Output file path output files will be created in CLO temporary folder.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "URfigeKbbJQezqs3bgFr2R",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportZPrjW API",
+        "Content": "@fn ExportZPrjW(_filePath : str, _bCreateThumbnail : bool) -> str @brief Export ZPrj file @param _filePath: output file path @param _bCreateThumbnail: if _bCreateThumbnail is true, 'png' file will be created along 'zprj' file. @return Output file path. If an error occurs, return empty wstring.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "jX7WTaGABwQEbCYLSDiLPf",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportOBJ API",
+        "Content": "@fn ExportOBJ() -> list[str] @brief Export OBJ file @param options If \"options\" is given, it exports OBJ according to options, not allowing user for selecting options in Export Dialog. @return Output file paths. It outputs the file paths of an OBJ file and multiple MTL files for colorways. If the value \"bSaveInZip\" in ImportExportOption is true, it outputs a file path of a zipped file. If an error occurs, return empty string. If filePath parameter is not given, output files will be created in CLO temporary folder.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "jcRXCkcnwxfp2eTj4wU3Pg",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportOBJW API",
+        "Content": "@fn ExportOBJW(_filePath : str, _options : ImportExportOption) -> list[str] @brief Export OBJ file @param _filePath: output file path @param options: If \"options\" is given, it exports OBJ according to options, not allowing user for selecting options in Export Dialog. @return Output file paths. It outputs the file paths of an OBJ file and multiple MTL files for colorways. If the value \"bSaveInZip\" in ImportExportOption is true, it outputs a file path of a zipped file. If an error occurs, return empty wstring. If filePath parameter is not given, output files will be created in CLO temporary folder.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "ZJA3YAMnshK6jLjykjq67A",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportGLTF API",
+        "Content": "@fn ExportGLTF(_filePath : str, _options : ImportExportOption, _bGLBinary : bool) -> list[str] @brief Export GLTF @param options: If \"options\" is given, it exports GLTF according to options, not allowing user for selecting options in Export Dialog. @return Output file paths.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "QzgAkqhxNRmpqvBfLwNm9f",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportGLTFW API",
+        "Content": "@fn ExportGLTFW(_filePath : str, _options : ImportExportOption, _bGLBinary : bool) -> list[str] @brief Export GLTFW @param options: If \"options\" is given, it exports GLTF according to options, not allowing user for selecting options in Export Dialog. @return Output file paths.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "hvtE8jcYQ6U2vi5QPiVdBV",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportAlembic API",
+        "Content": "@fn ExportAlembic(_filePath : str, _options : ImportExportOption) -> list[str] @brief Export Alembic @param options: If \"options\" is given, it exports Alembic according to options, not allowing user for selecting options in Export Dialog. @return Output file paths.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "aF3uBwAiJW3H9TCtyzjUbH",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportAlembicW API",
+        "Content": "@fn ExportAlembicW(_filePath : str, _options : ImportExportOption) -> list[str] @brief Export Alembic W @param options: If \"options\" is given, it exports Alembic according to options, not allowing user for selecting options in Export Dialog. @return Output file paths.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "6Ws4EaWkG79zoicTpD85wV",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportDXF API",
+        "Content": "@fn ExportDXF() -> str @brief Export DXF file. This api call will display the dialog to set options @return Output file path. If an error occurs, return empty string. Output files will be created in CLO temporary folder.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "dubcf9jWHG4ZQQvGwKaHVE",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportDXFW API",
+        "Content": "@fn ExportDXF(const string& _filePath, const Marvelous::ExportDxfOption& _exportOption) @brief Export DXF file without the option dialog. Param ExportDxfOption is applicable for the options. @param _filePath: output file path @param _exportOption: options to export dxf file @return Output file path. If an error occurs, return empty wstring.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "XQPmrEDwiGPsSg94ikkNy6",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportTechPack API",
+        "Content": "@fn ExportTechPack(_filePath : str, _exportOption : ExportTechpackOption) -> None @brief Export Tech Pack data in json file and associated image files. @param _filePath: output filepath the filePath Should be given in \"*.json\" format @param _exportOption: options to export techpack(.json) file",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "SzxRXXUofhYrCJims7NswJ",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportTechPackW API",
+        "Content": "@fn ExportTechPackW(_filepath : str, _exportOption : ExportTechpackOption) -> None @brief Export Tech Pack data in json file and associated image files. @param _filePath: output filepath the filePath Should be given in \"*.json\" format @param _exportOption: options to export techpack(.json) file",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "45aFXXoVMDcdmGbVNqyxY2",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportTechPackToStream API",
+        "Content": "@fn ExportTechPackToStream(_outputImageFolderPath : str) -> str @brief Export Tech Pack data in string and associated image files. @param _outputImageFolderPath: get output folder path where the image files are located by ExportTechpack @return Output stream for JSON data with the output folder path at the first line. If an error occurs, return empty string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "en6KRHHvPi4hsHApVJyEyD",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportTechPackToStreamW API",
+        "Content": "@fn ExportTechPackToStreamW(_outputImageFolderPath : str) -> str @brief Export Tech Pack data in string and associated image files. @param _outputImageFolderPath: get output folder path where the image files are located by ExportTechpack @return Output stream for JSON data with the output folder path at the first line. If an error occurs, return empty wstring.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "ANPvByaJVhEx2SKPdGTG5q",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportThumbnail3D API",
+        "Content": "@fn ExportThumbnail3D() -> str @brief Export thumbnail of the current scene @return Output file path: output files will be created in CLO temporary folder.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "5kaHuAzM9g5xUet2UQTMd8",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportThumbnail3DW API",
+        "Content": "@fn ExportThumbnail3D(const string& _filePath) @brief Export thumbnail of the current scene in the 3D Windows @param _filePath: output file path to save the screenshot @return Output file path. If an error occurs, return empty wstring.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "2yK7kUdRj35DYxS4KqJ5FV",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportSnapshot3D API",
+        "Content": "@fn ExportSnapshot3D(_filePath : str) -> list[ list [ str ] ] @brief Export snapshot images. This function displays the same dialog as CLO so that users can configure the snapshots. If user turns on the option \"Save Separate Images\", then series of images will be saved with the name followed by the postfix \"_01\", \"_02\", ... @param _filePath: output file path to save the screenshot @return Return the list of the path of output files per colorway. The first item of each array is the file path of the unified image. If filePath parameter is not given, output files will be created in CLO temporary folder.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "dXQYBTAYZznWerWFDKK5e5",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportSnapshot3DW API",
+        "Content": "@fn ExportSnapshot3DW(_filePath : str) -> list[ list [ str ] ] @brief Export snapshot images. This function displays the same dialog as CLO so that users can configure the snapshots. If user turns on the option \"Save Separate Images\", then series of images will be saved with the name followed by the postfix \"_01\", \"_02\", ... @param _filePath: output file path to save the screenshot @return Return the list of the path of output files per colorway. The first item of each array is the file path of the unified image. If filePath parameter is not given, output files will be created in CLO temporary folder.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "YSco8t5cPiHok4Sugim5iG",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportCustomViewSnapshot API",
+        "Content": "@fn ExportCustomViewSnapshot(_targetFolderPath : str, _width : int, _height : int, _outputPrefix : str) -> list [ str ] @brief Export snapshot images of Custom View. @param _targetFolderPath: output folder path @param _width: image width for the snapshots @param _height: image height for the snapshots @param _outputPrefix: If you set the 'outputPrefix' as empty value - \"\", then the saved file names will start with the index in the custom view or if you set the 'outputPrefix' as some letters, the saved file names will have it as the first letters. @return Return the list of the path of output files",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "aipwh6t6J6mU8NEhUK8ZMJ",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportCustomViewSnapshotW API",
+        "Content": "@fn ExportCustomViewSnapshotW(_targetFolderPath : str, _width : int, _height : int, _outputPrefix : str) -> list [ str ] @brief Export snapshot images of Custom View. @param _targetFolderPath: output folder path @param _width: image width for the snapshots @param _height: image height for the snapshots @param _outputPrefix: If you set the 'outputPrefix' as empty value - \"\", then the saved file names will start with the index in the custom view or if you set the 'outputPrefix' as some letters, the saved file names will have it as the first letters. @return Return the list of the path of output files",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "aiLurcQ9CtpCS5wPTd2zks",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportRenderingImage API",
+        "Content": "@fn ExportRenderingImage(_filePath : str) -> list[ list [ str ] ] @brief Export Rendering Image. @param _filePath: output file path @return Return the list of the path of output files per colorway.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "Jp3u7GjoqpW22mmocCFLRo",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportRenderingImageW API",
+        "Content": "@fn ExportRenderingImageW(_filePath : str, _bRenderAllColorways : bool) -> list[ list [ str ] ] @brief Export Rendering Image. @param _filePath: output file path @param _bRenderAllColorways: If true, output the images for all colorways. Otherwise, it returns the images for the current colorway specified by CLO user. @return Return the list of the path of output files per colorway.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "GQFEwhKXSo6EPLLi7oEfTV",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportSingleColorwayRenderingImage API",
+        "Content": "@fn ExportSingleColorwayRenderingImage(_filePath : str, _colorwayIndex : int) -> list [ str ] @brief Export Rendering Image for the colorway @param _filePath: output file path @param _colorwayIndex: colorway index to render the image @return Return the list of the path of output files",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "f4fsUQDFvtnsp9adnwPQVV",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportSingleColorwayRenderingImageW API",
+        "Content": "@fn ExportSingleColorwayRenderingImageW(_filePath : str, _colorwayIndex : int) -> list [ str ] @brief Export Rendering Image for the colorway @param _filePath: output file path @param _colorwayIndex: colorway index to render the image @return Return the list of the path of output files",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "UFppzNLzaUpNpsWBkB3s3V",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "GetTotalRenderImagePaths API",
+        "Content": "@fn GetTotalRenderImagePaths() -> list [ str ] @brief Get File name list for all the exported rendering images @return all the rendered image file paths",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "LMnzTsLRyNcaxgcqrRKETQ",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "GetTotalRenderImagePathsW API",
+        "Content": "@fn GetTotalRenderImagePathsW() -> list [ str ] @brief Get File name list for all the exported rendering images @return all the rendered image file paths",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "nL4yP6NtnJqJCj45wYVfRv",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "GetCurrentRenderImagePaths API",
+        "Content": "@fn GetCurrentRenderImagePaths() -> list [ str ] @brief Current Render Image paths @return all current renderded image files paths per colorways",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "5njAZjruwksf5JZvdG874n",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "GetCurrentRenderImagePathsW API",
+        "Content": "@fn GetCurrentRenderImagePathsW() -> list [ str ] @brief Current Render Image paths @return all current renderded image files paths per colorways",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "3Njk8yU6EvpvVAos7CiV98",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "GetFileNameOnRenderingProperty API",
+        "Content": "@fn GetFileNameOnRenderingProperty() -> str @return the output file names set on the Rendering Property in CLO",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "jFxGyMunmLFnD8Mrv8qgyC",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "GetFileNameOnRenderingPropertyW API",
+        "Content": "@fn GetFileNameOnRenderingPropertyW() -> str @return the output file names set on the Rendering Property in CLO",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "XYDJ7EjnuKL5zEChbwmiF7",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportGarmentInformation API",
+        "Content": "@fn ExportGarmentInformation() -> str @brief Export garment information in json file. The information is the same as given in Garment Information Dialog in CLO (you can see this dialog by clicking File > Information > Garment menu in CLO) /@return Output file path. If an error occurs, return empty string output files will be created in CLO temporary folder.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "X4tkXQaDb69pMgHRxPWaD6",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportGarmentInformationW API",
+        "Content": "@fn ExportGarmentInformationW(_filePath : str) -> str @brief Export garment information in json file. The information is the same as given in Garment Information Dialog in CLO (you can see this dialog by clicking File > Information > Garment menu in CLO) @param _filePath output file path to export the garment information /@return Output file path. If an error occurs, return empty string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "CJjEcp8MTM3yN4znoDY6x8",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportGarmentInformationToStream API",
+        "Content": "@fn ExportGarmentInformationToStream() -> str @brief Export garment information in string @return Garment Information stream in sstring",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "dP3rTbJbsT4sCPUVDz74SM",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportGarmentInformationToStreamW API",
+        "Content": "@fn ExportGarmentInformationToStreamW() -> str @brief Export garment information in string as well as json file @return Garment Information stream in wstring",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "kobvCYuicwDrJguh3e7Bne",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportGarmentInformationConfigData API",
+        "Content": "@fn ExportGarmentInformationConfigData() -> str @brief Export garment information config data in json file. The information is the same as given in \"Conf_Garment_Information.json\" file via Preference @return Output file path the output files will be created in CLO temporary folder. If an error occurs, return empty string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "gNSzPLVsCnreriV6Z9Tou8",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportGarmentInformationConfigDataW API",
+        "Content": "@fn ExportGarmentInformationConfigDataW(_filePath : str) -> str @brief Export garment information config data in json file. The information is the same as given in \"Conf_Garment_Information.json\" file via Preference @param _filePath output file path to export the garment information configuration data @return Output file path. If an error occurs, return empty string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "YUhMDbF4qqjvPQkg8u3WuU",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportGarmentInformationConfigDataToStream API",
+        "Content": "@fn ExportGarmentInformationConfigDataToStream() -> str Export garment information configuration data in string @return Output stream for JSON data. If an error occurs, return empty string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "cPVGBMDMAKnbLji8wGk8AW",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportGarmentInformationConfigDataToStreamW API",
+        "Content": "@fn ExportGarmentInformationConfigDataToStreamW() -> str Export garment information configuration data in string @return Output stream for JSON data. If an error occurs, return empty string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "N6fTf8rxLubbLke5rLwLBE",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportTurntableVideo API",
+        "Content": "@fn ExportTurntableVideo() -> str @brief Export turntable video. This function requires XVid Mpeg-4 codec installed on user's computer. @return Output file path output files will be created in CLO temporary folder. If an error occurs, return empty string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "3rzdnPr7p9K2W4QF6y2rrZ",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportTurntableVideoW API",
+        "Content": "@fn ExportTurntableVideoW(_filePath : str) -> str @brief Export turntable video. This function requires XVid Mpeg-4 codec installed on user's computer. @return Output file path output files will be created in CLO temporary folder. If an error occurs, return empty string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "bNCRQo3SZvd4Em2BLxNahU",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportAnimationVideo API",
+        "Content": "@fn ExportAnimationVideo() -> str @brief Export animation video. This function requires XVid Mpeg-4 codec installed on user's computer. @return Output file path. If an error occurs, return empty string. If filePath parameter is not given, output files will be created in CLO temporary folder.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "6HM5KzD2f7mrWbg6gyYrpu",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportAnimationVideoW API",
+        "Content": "@fn ExportAnimationVideo() @brief Export animation video. This function requires XVid Mpeg-4 codec installed on user's computer. @return Output file path. If an error occurs, return empty string. If filePath parameter is not given, output files will be created in CLO temporary folder.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "gc6cppP9Wh5ijBDkfzYnzm",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "GetColorwayCount API",
+        "Content": "/////////////////////////////////////////////////////////////////// /////////////////////////////////////////////////////////////////// @fn GetColorwayCount() -> int @brief Get the number of colorways in the current garment loaded in CLO @return total count of colorways",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "AuqKkKrg7Axm4EmgfSuBPt",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "GetCurrentColorwayIndex API",
+        "Content": "@fn GetCurrentColorwayIndex() -> int @brief Get the index of the current colorway in CLO @return the current colorway index",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "cXVMRkMLLeukBB7SB5dE4D",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "GetColorwayNameList API",
+        "Content": "@fn GetColorwayNameList() -> list[str] @brief Get all the colorway names for the current garment @return the list of name of all colorways",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "8nPYWAMJXhsFr2jKFSpN2B",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "GetColorwayNameListW API",
+        "Content": "@fn GetColorwayNameListW() -> list[str] @brief Get all the colorway names for the current garment @return the list of name of all colorways",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "7nZfLyDjUj5hnTqmVTe4g8",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "GetAvatarCount API",
+        "Content": "@fn GetAvatarCount() -> int @brief Get the number of avatars loaded in CLO @return total count of avatars",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "fPdZA3F8jPyahEeF99V4WN",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "GetAvatarNameList API",
+        "Content": "@fn GetAvatarNameList() -> list[str] @brief Get all the names of avatars loaded in CLO @return the list of name of all avatars",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "i3uu2n3kCjP2W5eF8K7dq4",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "GetAvatarNameListW API",
+        "Content": "@fn GetAvatarNameListW() -> list[str] @brief Get all the names of avatars loaded in CLO @return the list of name of all avatars",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "7SvvpoKAbpAWqCuFxiZ9rb",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "GetAvatarGenderList API",
+        "Content": "@fn GetAvatarGenderList() -> list[int] @brief Get all the genders of avatars loaded in CLO repectively @return the list of gender of all avatars. 0 : male, 1 : female, -1: unknown",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "b55zefXyScCaghJMVWmmEB",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportTurntableImages API",
+        "Content": "@fn ExportTurntableImages(_numberOfImages : int) -> list[str] @brief Export turntable images for current colorway. @param _numberOfImages: the number of images in 360 turn table. The turn table will turn by (360 / _numberOfImages) per an image each by each. @return Output file path list output files will be created in CLO temporary folder. If an error occurs, return empty string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "JtkqXU5P26Ssh44kveh4CQ",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportTurntableImagesW API",
+        "Content": "@fn ExportTurntableImagesW(_filePath : str, _numberOfImages : int, _width : int, _height : int) -> list[str] @brief Export turntable images for current colorway. @param _filePath: the output file path to export the turntable snapshots @param _numberOfImages: the number of images in 360 turn table. The turn table will turn by (360 / _numberOfImages) per an image each by each. @param _width: image width for the snapshots @param _height: image height for the snapshots @return Output file path list. If an error occurs, return empty string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "HcSvkaDkPjagVxhz6qpxgr",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportGLB API",
+        "Content": "@fn ExportGLB(_filePath : str, _options : ImportExportOption) -> list[str] @brief Export GLB @param options: If \"options\" is given, it exports GLB according to options, not allowing user for selecting options in Export Dialog. @return Output file paths.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "2kNgoE2X8B6RXYziqp8Lkj",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportGLBW API",
+        "Content": "@fn ExportGLBW(_filePath : str, _options : ImportExportOption) -> list[str] @brief Export GLBW @param options: If \"options\" is given, it exports GLB according to options, not allowing user for selecting options in Export Dialog. @return Output file paths.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "MZNaJVWcTHgrtWzvBHUU4b",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportGLTFAsFabric API",
+        "Content": "@fn ExportGLTFAsFabric() -> list[str] @brief Export gltf/glb which cotains the fabric data selected in the object browser @return Output file pathoutput files will be created in CLO temporary folder. If an error occurs, return empty string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "TrF2cUaQrTdeb6etPWfQqG",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportGLTFAsFabricW API",
+        "Content": "@fn ExportGLTFAsFabricW(_filePath : str, index : int) -> list[str] @brief Export gltf/glb file which cotains the fabric data in the index of the object browser @param _filePath: output file path @param index: target fabric index on the object browser to export @return Output file path. If an error occurs, return empty string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "QAeP2MshyPytkNFEvBXrDf",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportPOM API",
+        "Content": "@fn ExportPOM() -> str @brief Export POM @return Output file pathoutput file will be created in CLO temporary folder. If an error occurs, return empty string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "aja3w7ShVRYy9DWpYqYHsw",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportPOMW API",
+        "Content": "@fn ExportPOM(const wstring& _filePath) @brief Export POM @param _filePath: output file path @return Output file path. If an error occurs, return empty string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "nCH5XasGpbrc8H6zc8Uk2K",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportGLTFWithDialog API",
+        "Content": "@fn ExportGLTFWithDialog(_filePath : str, _bGLBinary : bool) -> list[str] @brief Export GLTF with Dialog @param _filePath: output file path @return Output file paths.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "2yTVQsiQn4VcgAavLeoesw",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportGLBWithDialog API",
+        "Content": "@fn ExportGLBWithDialog(_filePath : str) -> list[str] @brief Export GLB with Dialog @param _filePath: output file path @return Output file paths.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "FK7WsLig6KsjABTiNHXDHg",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportThumbnail3DByColorwayIndex API",
+        "Content": "@fn ExportThumbnail3DByColorwayIndex(_colorwayIndex : int) -> str @brief Export thumbnail of the current scene @param _colorwayIndex: colorway index to render the image @return Output file path: output files will be created in CLO temporary folder.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "9tcSzUrfAnAKTyYhipTPcc",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportThumbnail3DWByColorwayIndexW API",
+        "Content": "@fn ExportThumbnail3DByColorwayIndexW(const wstring& _filePath, unsigned int _colorwayIndex) @brief Export thumbnail of the current scene in the 3D Windows @param _filePath: output file path to save the screenshot @param _colorwayIndex: colorway index to render the image @return Output file path. If an error occurs, return empty wstring.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "5W5FDc24bbvWPrUpCG2wgf",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportTurntableImagesByColorwayIndex API",
+        "Content": "@fn ExportTurntableImagesByColorwayIndex(_numberOfImages : int, _colorwayIndex : int) -> list[str] @brief Export turntable images for colorway. @param _numberOfImages: the number of images in 360 turn table. The turn table will turn by (360 / _numberOfImages) per an image each by each. @param _colorwayIndex: colorway index to render the image @return Output file path list output files will be created in CLO temporary folder. If an error occurs, return empty string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "iaA5iZyBq8AGxVpQ9xgaTo",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportTurntableImagesByColorwayIndexW API",
+        "Content": "@fn ExportTurntableImagesByColorwayIndexW(_filePath : str, _numberOfImages : int, _colorwayIndex : int, _width : int, _height : int) -> list[str] @brief Export turntable images for colorway. @param _filePath: the output file path to export the turntable snapshots @param _numberOfImages: the number of images in 360 turn table. The turn table will turn by (360 / _numberOfImages) per an image each by each. @param _colorwayIndex: colorway index to render the image @param _width: image width for the snapshots @param _height: image height for the snapshots @return Output file path list. If an error occurs, return empty string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "KdTBsVhhvJ2rKRCT3wUoRJ",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportPose API",
+        "Content": "@fn ExportPose() -> str @brief Export ZPac file in the CLO temporary folder @return Output file path. If an error occurs, return empty string. If filePath parameter is not given, output files will be created in CLO temporary folder.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "3baB8RhNR5kuToePvkaNTn",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportPoseW API",
+        "Content": "@fn ExportPoseW(_filePath : str) -> str @brief Export ZPac file @param wstring _filePath : target file path in UNICODE @return Output file path. If an error occurs, return empty string. If filePath parameter is not given, output files will be created in CLO temporary folder.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "oDJuvb6XQ3wEQFxDgogEmG",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportFBX API",
+        "Content": "@fn ExportFBX(_options : ImportExportOption) -> list[str] @brief Export FBX file @param options: It exports FBX according to options, not allowing user for selecting options in Export Dialog. @return Output file paths. If filePath parameter is not given, output files will be created in CLO temporary folder.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "iFYphCxGbjCcnozPihaugA",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportFBXW API",
+        "Content": "@fn ExportFBX(const Marvelous::ImportExportOption& _options) @brief Export FBX file @param options: It exports FBX according to options, not allowing user for selecting options in Export Dialog. @param string _filePath : target file path in UNICODE @return Output file paths.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "Kj2wVpKhvWChX8isFkZ4LG",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportAVT API",
+        "Content": "@fn ExportAVT(_filePath : str) -> str @brief Export AVT @param _filePath: output file path @return Output file path. If an error occurs, return empty string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "Qc248CQrxA8FoS7ckCGkDm",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportAVTW API",
+        "Content": "@fn ExportAVTW(_filePath : str) -> str @brief Export AVT @param _filePath: output file path @return Output file path. If an error occurs, return empty string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "MpLvTPDQwRMdMfCFjx8Xx5",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportTrim API",
+        "Content": "@fn ExportTrim(_filePath : str, _trimStyleIndex : int) -> str @brief Export trim file @param _filePath: the output file path to export trim @param _trimStyleIndex: trimstyle index to export trim style @return Output file path list. If an error occurs, return empty string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "XRuopJx5UsgvTFpKBqVFA8",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportStdViewImage API",
+        "Content": "@fn ExportStdViewImage(_viewIndex : int, _outputFolderPath : str, _colorwayIndex : int, _width : int, _height : int) -> str @brief ExportStdViewImage : Exports The Image based on the given Standard image view index for selected colorway. @param : @return Output file path along with the selected colorway name. If an error occurs, return error message string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "Q7JoDy2hAUEKgfcpcTZfag",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportStdViewImageForAllColorways API",
+        "Content": "@fn ExportStdViewImageForAllColorways(_viewIndex : int, _outputFolderPath : str, _width : int, _height : int) -> str @brief ExportStdViewImageForAllColorways : Exports The Image based on the given Standard image view index for all Colorways. @param : @return Output file paths along with the colorway names. If an error occurs, return error message string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "G6frF4gR2TDSZ7XxxNrTz3",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportCustomViewImage API",
+        "Content": "@fn ExportCustomViewImage(_zcmrFileUrl : str, _outputFolderPath : str, _colorwayIndex : int, _width : int, _height : int) -> str @brief ExportCustomViewImage : Exports The Custom image based on the given custom angles in ZCMR file for selected Colorway. @param : @return Output file path along with the selected colorway name. If an error occurs, return error message string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "cTsFDj3T3JdGfXjSAKAN2g",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportCustomViewImageForAllColorways API",
+        "Content": "@fn ExportCustomViewImageForAllColorways(_zcmrFileUrl : str, _outputFolderPath : str, _width : int, _height : int) -> str @brief ExportCustomViewImageForAllColorways : Exports The Custom image based on the given custom angles in ZCMR file for all Colorways. @param : @return Output file path along with the colorway names. If an error occurs, return error message string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "ToDbzJHREhFhnd7jaa9GDr",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportMultiViewImages API",
+        "Content": "@fn ExportMultiViewImages(_mvsFilePath : str, _outputFilePath : str, _colorwayIndex : int, _width : int, _height : int) -> str @brief ExportMultiViewImages : Exports The Multi View Images based on the given MVS File for selected Colorway. @param : @return Output file path along with the selected colorway name. If an error occurs, return error message string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "23wAEswMyyhswJKtbgZ4uB",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportMultiViewImagesForAllColorways API",
+        "Content": "@fn ExportMultiViewImagesForAllColorways(_mvsFilePath : str, _outputFilePath : str, _width : int, _height : int) -> str @brief ExportMultiViewImagesForAllColorways : Exports The Multi View Images based on the given MVS File for all Colorways. @param : @return Output file path along with the colorway names. If an error occurs, return error message string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "LiGF5uLrtCxLDKBJZQJzeg",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ConvertZblcToZmod API",
+        "Content": "@fn ConvertZblcToZmod(_zblcFilePathList : list[str], _saveDirPath : str, _categoryName : str, _styleName : str) -> list[str] @brief Convert .zblc file to .zmod file @param _zblcFilePathList: The path of the ZBLC files you want to convert @param _saveDirPath: Where to save the converted file @param _categoryName : Category name @param _styleName : Style name @return Returns the path list of failed files. Returns an empty list if all files are successful.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "XuNgiRgnZWfqfQ9LDhbgDg",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ExportMVSData API",
+        "Content": "@fn ExportMVSData(_mvsFilePath : str) -> str @brief ExportMVSData : Exports The MVS File data without creating any Images. @param : @return MVS file data and with custom angles. If an error occurs, return error message string.",
+        "Labels": [],
+        "YoutubeLinks": []
+    }
+]

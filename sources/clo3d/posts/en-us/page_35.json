@@ -1,0 +1,385 @@
+[
+    {
+        "post_id": 900003140883,
+        "post_title": "Export as OBJ issues",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/900003140883",
+        "post_details": "Hi, I appear to be having issues when trying to export obj files with Clo 6.0 Are issues with using the multiple object export function, as it would appear that multiple objects cannot be exported and only a single obj file will be created? There appear to be issues with exporting UV's. Unless the unified UV export box is selected during the export, the UV is exported un-arranged, even if the UV has been properly arranged in the UV editor? It would appear that the UV is exported on the basis of the layout of the print layout window, so whilst it can be arranged it does not come export in a fit to 0-1 arrangement. Any known issues on exporting and workarounds would be greatly appreciated. Thanks Ryan",
+        "updated_at": "2022-09-14T05:36:44Z",
+        "comments": [
+            {
+                "author_id": 404117453473,
+                "comment_id": 10479632711449,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003140883",
+                "comment_body": "Hi, Did anyone get a workaround for this? - here I am 18 months later experiencing the same issues."
+            }
+        ]
+    },
+    {
+        "post_id": 900002146986,
+        "post_title": "의복압 관련 하여 문의 드립니다.",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/900002146986",
+        "post_details": "의복압 관련 하여 문의 드립니다. 일반적인 의복압의 단위로 ef/em2를 설정한다고 하는데요, 프로그램에서는% 로 파랑 부터 붉은 색의 스펙트럼으로 표시하고 있는데요. 관련하여 표기의 의미와 원리 알수 있을까요? 문의 드립니다. 감사합니다.",
+        "updated_at": "2023-07-07T21:21:42Z",
+        "comments": [
+            {
+                "author_id": 16675986987,
+                "comment_id": 900001587826,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002146986",
+                "comment_body": "901737658306 안녕하세요. 의복압은 Stress Map에서 확인할 수 있으며, %로 표기되는 것은 Strain Map입니다. 두 Map의 차이는 링크해둔 매뉴얼에서 확인 부탁드립니다. 컬러는 값의 범위별로 차이를 시각적으로 표현하기 위함이며, 핏에 대한 결과를 의미하지 않습니다. 위 캡쳐본에서 컬러가 지정되는 범위도 커스텀할 수 있으니, 매뉴얼을 참고해주세요. 감사합니다."
+            }
+        ]
+    },
+    {
+        "post_id": 900003134103,
+        "post_title": "Replace/Update 2D Pattern",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/900003134103",
+        "post_details": "Hello, I am working on 3D versions of garments based on dxf files that are created and revised independently. Therefore I need to update 2D patterns of projects that I am working on. For now I redo all the work (sewing, adjustments..) at each pattern update. Is there a way to replace a pattern without losing seams and other adjustments done before ? Thanks in advance for your support, Marie",
+        "updated_at": "2022-07-14T16:25:39Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 900002523963,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003134103",
+                "comment_body": "Hi Marie, Thank you for your question. At this moment, the patterns revised from other 2D CAD cannot interact with the patterns in CLO as they are unlinked. We recommend users editing the patterns in CLO directly, then you can have the most updated patterns and can review the garment result in 3D window immediately. After editing the patterns in CLO, you can export the revised patterns from CLO to other 2D CAD as DXF for further development and production."
+            },
+            {
+                "author_id": 903253559763,
+                "comment_id": 8295654281369,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003134103",
+                "comment_body": "To be clear here, if I import an updated pattern and want to swap out a piece because it's slightly updated, is that possible within CLO? Otherwise, I have to delete the piece and then redo all the sewing, topstitching, any other pieces attached to it, buttons/snaps, etc, etc. Would be lovely to just swap out and keep the details."
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 8295753803289,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003134103",
+                "comment_body": "HI 903253559763 Yes, Replace Pattern is an option in CLO. We have a video HERE from our 6.2 webinar that shows how to do this. It starts the the 14:35 mark. The key for doing this is making sure that both the old and updated pattern piece have the same number of Segment Points."
+            },
+            {
+                "author_id": 903253559763,
+                "comment_id": 8487764256537,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003134103",
+                "comment_body": "I have a pattern in CLO that is graded and I'm importing a dxf of an updated version of the same file (some pieces are changed for shape) but if I replace only one piece and it has a slightly different grade then the sizes won't walk off correctly with the remaining unreplaced pieces that sew to it, right? So instead of replacing all the pieces , in the Grade Tab (under Object Browser) there are two sets of size ranges now, so do I simply assign the size range of the newer file to ALL the pieces of the older file so that the new grade applies to all the pieces without having to replace them all?"
+            }
+        ]
+    },
+    {
+        "post_id": 900003116503,
+        "post_title": "Mirror mode for plotting?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/900003116503",
+        "post_details": "A mirror mode would be excellent for the plotting system. I'd like to pen-plot outlines, references marks, etc. in a vinyl cutter/plotter on the wrong side of the fabric.",
+        "updated_at": "2023-07-07T21:21:43Z",
+        "comments": []
+    },
+    {
+        "post_id": 900003113903,
+        "post_title": "Jacket Bi-Swing with added spandex",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/900003113903",
+        "post_details": "So, I am brand new to this since some friends and I, out of a whim, decided to design a suit jacket that allows more mobility and very durable. We figured out a basic design, got the materials and had some prototypes made at a local costume shop. Unfortunately, things didn't go all too well and we had to find a separate tailoring show to get the bi-swings sewn in. I realized that to prevent future issues like that, I should probably be comfortable with a software application (CLO) to better visually show what I would like to get done. While the instructional videos for CLO are good, I haven't been able to find a specific description on how to insert the spandex part mentioned. Inserting a vent and fold is being explained in the support videos, but not the added piece of spandex. Anyone have any good advice?",
+        "updated_at": "2023-07-07T21:23:19Z",
+        "comments": [
+            {
+                "author_id": 28823235187,
+                "comment_id": 900001512426,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003113903",
+                "comment_body": "What type of type and trix in your message?"
+            }
+        ]
+    },
+    {
+        "post_id": 900002118046,
+        "post_title": "The placement point could not be matched to the avatar.",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/900002118046",
+        "post_details": "If you create it with 3ds Max and import it with FBX Export&gt Marvelous Designer, the following alert will appear. The file could not be aligned with the avatar. Only A or T pose works fine. The pose is saved as T pose. I don't know how to set other settings. Please tell me the details of the correct import method.",
+        "updated_at": "2023-07-07T21:23:20Z",
+        "comments": [
+            {
+                "author_id": 28823235187,
+                "comment_id": 900002501803,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002118046",
+                "comment_body": "What type of type and trix in your message?"
+            }
+        ]
+    },
+    {
+        "post_id": 900002113266,
+        "post_title": "does not render at night with the screen off",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/900002113266",
+        "post_details": "hi there, everytime I try to render and go to sleep, the clo3d is not rendering. I'm trying to render an animation and in 8hours only rendered 3frames from 74. my pc is configured to turn off the screen in 5hours (but I'm doing it when I leave the room) and to never shutdown the computer, but today when I woke up I had a terrible surprise... hmmm 9hours of fake rendering. Until this moment I was rendering images at this resolution, and it worked almost 95% of the times. my question is, am I doing somehing wrong? is there anyconfig that I'm missing? edit: just asking, the fach that I'm using a wireless mouse can be the problem? I mean when the mouse is switching off may affect the grafic card performances? because it seams to work when I'm usig the mouse. I don't know maybe is crazy... I have a RTX3060 Ti",
+        "updated_at": "2023-07-07T21:19:55Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 900001509006,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002113266",
+                "comment_body": "Hi 901672840366, we are aware of that issue and working on it. For now you can try this: Change the sleeping/screen time from 5 hours to \"never\". This might fix the problem already. If the problem still occurs, try out less heavy rendersettings. With your graphic card a noise threshold of 0,020 or 0,030 and max rendertime of 5 minutes should be enough. It can also help to save the project file and the render output on your local harddrive. In best case your system drive (desktop) or any other SSD. I hope this helps you :)"
+            },
+            {
+                "author_id": 901672840366,
+                "comment_id": 900002497303,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002113266",
+                "comment_body": "thank you so much for your answer, I will try out to change the noise threshold at 0,20 (changing render time to 5minutes it means that it will spend no more than 5 minutes per frame, right? not per animation.) and one last question can I turn off the screen manualy, or better not? even so I think that this is not the problem, yesterday I was rendering fine and when I went to the kitchen, the computer was'nt rendering all that thime (less than half an hour), when I came back and I touched the mouse the grapchic card fans started to work again, for that reason I think that it might be a wrong config with the graphic card... it may be put into power saving when the mouse is not used?"
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 900001521626,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002113266",
+                "comment_body": "Hey 901672840366, yes exactly, by changing the Render Time it always calculates it per frame. And yes, you can turn off the screen manually, that should not cause any problems ) About your graphic card, it sounds very unlikely that it is only active while you are moving your mouse. In that case it might just have been a coincedence."
+            }
+        ]
+    },
+    {
+        "post_id": 900002107026,
+        "post_title": "German speaking CLO 3D specialist wanted!",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/900002107026",
+        "post_details": "we are searching for an CLO 3D specialist who can support termporary for implementation with CLO 3D tools, for an austrian tracht fashion team (they use grafis CAD 2D until now), we prefer GERMAN LANGUAGE pls. regards, josef",
+        "updated_at": "2022-06-01T14:40:08Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 900002490463,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002107026",
+                "comment_body": "Hi 901668020283. You may also want to look into these links below if you are looking to work with a CLO designer CLOLLAB - a place for freelancers to show their work and be hired from CLO Recruit - Where jobs can be posted directly for a company We hope this helps!"
+            },
+            {
+                "author_id": 419308609153,
+                "comment_id": 4863503852441,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002107026",
+                "comment_body": "Hi, I'm an italian freelance Designer with experience in Clo 3d. I can offer my external collaboration from remote. I speak Italian, English, German, Spanish. Daniela"
+            },
+            {
+                "author_id": 901668020283,
+                "comment_id": 4863979526041,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002107026",
+                "comment_body": "Hi Daniela can we have a call next days? br Josef"
+            },
+            {
+                "author_id": 419308609153,
+                "comment_id": 4864484940825,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002107026",
+                "comment_body": "Hi Josef, can you please send me more information at my email address, before the call, please? My address is: designcreationart@hotmail.it Thank you Daniela Biosa"
+            },
+            {
+                "author_id": 419308609153,
+                "comment_id": 4896383167385,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002107026",
+                "comment_body": "Hi Josef, we can have a call next days."
+            },
+            {
+                "author_id": 419308609153,
+                "comment_id": 7095764955417,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002107026",
+                "comment_body": "Hi Josef, are you still interested? Grazie Daniela"
+            }
+        ]
+    },
+    {
+        "post_id": 900002106626,
+        "post_title": "Grading notches and exporting patterns - advice for industry standard patterns",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/900002106626",
+        "post_details": "I am a freelance pattern maker and I want to be able to export and print industry standard graded patterns. Currently, I do manual grading in CLO and walk every grade to ensure it is correct. I have not found a workaround that correctly grades the notches. These remain correct for the drafted size only. To get each graded size I export 1 size at a time with seam allowances. I export as a DFX and bring it into illustrator to mark up the final pattern and prepare for a large format print. This is a tedious process but I prefer it over manual grading. My issue is that the final result still doesn't have correctly graded notches, and I need to do this manually - which increases my margin for error. Do any other professional pattern makers have a solution to this?",
+        "updated_at": "2024-03-05T13:30:06Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 900001501166,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002106626",
+                "comment_body": "Hi 422303123594, to grade a notch you can add the notch to a graded segment point. The notch will move along with the graded segment point then."
+            },
+            {
+                "author_id": 422303123594,
+                "comment_id": 900002522943,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002106626",
+                "comment_body": "Thank you - I've done this a few times since your post and 80% of the time it works, which is still 100% better than my previous method. Thanks."
+            },
+            {
+                "author_id": 902174925163,
+                "comment_id": 900001749226,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002106626",
+                "comment_body": "When the base size is graded to a large size and exported to the dxf type, the notch mark is displayed in the base size position. It is not shown in the large size pattern. Before the export, notch mark was displayed in the 2d pattern window, but when exported to dxf, notch mark is not displayed in the large size. Did I do something wrong?"
+            },
+            {
+                "author_id": 902290577963,
+                "comment_id": 900001806866,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002106626",
+                "comment_body": "This is a very good question, hope someone from CLO technical should reply"
+            },
+            {
+                "author_id": 8683831757209,
+                "comment_id": 29526473418777,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002106626",
+                "comment_body": "facing the same difficulty here. there you have two good oportunities to enhance clo3d: showing sizes on grading is another great obstacle for using clo3d in the industry. grading notch is another one. look forward to hearing good news from clo3d team soon."
+            }
+        ]
+    },
+    {
+        "post_id": 900003097703,
+        "post_title": "CLO 3D for creating outline artwork and GLB files for augmented reality on a Shopify website?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/900003097703",
+        "post_details": "Hi all I'm bag designer/maker and brand new to CLO 3D (my bags are at www.mattt.com.au). I would like to use CLO 3D to create 3D models to export sketch/outline images for my new online store (as a way to show features and what fits etc) as well as to create 3D files for Shopify in GLB to enable augmented reality. Before I started I wanted to confirm if CLO3D would be appropriate for this (I won't be using it for production as I hand make everything myself) or if another program like SketchUp might be better? Thanks for any advice and suggestions Matt Thomson",
+        "updated_at": "2022-02-14T11:21:35Z",
+        "comments": [
+            {
+                "author_id": 364104337428,
+                "comment_id": 900002490503,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003097703",
+                "comment_body": "Hey Matt. Welcome to the community. Definitely CLO is the way to go to get your bags in 3D. I work with bags for a couple of customers at different stages in the design and manufacturing process, even to replace photography on their websites. For the GLB part you can definitely export it directly from CLO as that is a format available in the menu although I haven't used it myself. I have used GLB from other 3D for Shopify so I imagine it works well. I do not have a lot of experience with SketchUp, but I can't imagine SketchUp simulating cloth like CLO. This is the standard for fashion (my personal POV). I wish you the best!"
+            }
+        ]
+    },
+    {
+        "post_id": 900002097546,
+        "post_title": "Transformation Problem with Edit Texture and Texture Editor",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/900002097546",
+        "post_details": "Hi, to emulate sublimation I create a texture as big as the piece of the pattern I want to apply it and upload it (so that the normal maps are applied seamless between base and graphic). The problem I recently have is that if I use the Edit Texture tool or transformation to size it correctly, when I open the texture editor a second time or click apply all the transformation is gone. You can see it on this gif. Is this a bug or I'm missing something?",
+        "updated_at": "2022-11-30T19:30:24Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 900002482043,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002097546",
+                "comment_body": "Hi 424354212593. Without seeing the whole process from start to finish it is hard to comment directly on the video that you have added. Have you tried to Add as Graphic instead of using Texture Editor. This will probably be an easier way of add for a sublimation print. This way you can add your graphic as well as normal maps can be added all together. You just have to make sure to add both the graphic and map at the same time before adjusting scale. Hope this helps"
+            },
+            {
+                "author_id": 424354212593,
+                "comment_id": 900001495266,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002097546",
+                "comment_body": "Hi, thanks for the answer. It happens in any situation so it's not needed what happens before, this is something that happens even when I create a new garment. I know about graphics, but the problem is that even if it is a good workaround it makes difficult to place other logos on top because sometimes even when I do right click&gtorder and I choose the order I want it doesn't get applied, and also when I move other graphics that are on top of it, they disappear on the 3d window until I release the button, so it is much more difficult to align correctly everything."
+            },
+            {
+                "author_id": 424354212593,
+                "comment_id": 900001513966,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002097546",
+                "comment_body": "Did you find a solution?"
+            },
+            {
+                "author_id": 6381805617049,
+                "comment_id": 13027715853593,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002097546",
+                "comment_body": "Hello Clo Team, I am having trouble using the texture editor. As soon as I click on \"open texture editor\" the program shut down. I tried any sort of texture it does the same. Although it was working perfectly fine suddenly it stopped responding. Please help..."
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 13028730727193,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002097546",
+                "comment_body": "Hi 6381805617049 Are you currently using the most up to date version of CLO? Have you also made sure that your graphics card is up to date? Have you also tried to shut down your computer and then restart?"
+            }
+        ]
+    },
+    {
+        "post_id": 900002096886,
+        "post_title": "Get rid of partially flipped normals",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/900002096886",
+        "post_details": "Hi, I am having the problem that sometimes normals flip partially, please see below: It is really hard to get rid of these especially in case of the pocket bags. Can somebody help me out? Thank you and all the best, Hela",
+        "updated_at": "2022-05-11T05:57:04Z",
+        "comments": [
+            {
+                "author_id": 363990992048,
+                "comment_id": 900002483703,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002096886",
+                "comment_body": "Hi, thanks! worked perfectly well for the waistband and the sewn together parts of the pockets, but the folded part of the pockets still gives me a hard time: here my settings: Also, each time simulating i run again into these partially flipped normals (below is after simulating again):"
+            },
+            {
+                "author_id": 424140880473,
+                "comment_id": 900002485223,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002096886",
+                "comment_body": "Hmm. On the pocket bag, the bit of fold at the top edge hasn't been sewn. Sew those two bits of bag together turned and layer to back. After your previous problem, did you re-drape the bag and start fresh on the folding? or did you change the stitch line setting and simulate? If you deactivate the bottom edge stitching of the bag temporarily and let things shake out, it might work, but if not, set the pocket back to 2D position, and start fresh. On the waist band, yours is two pieces, did you set the sublayer on those pieces as patterns (okay if you didn't, just trying to find out if that is causing the switch, or if adding that could be a quick fix)? If you do set pattern layering, it needs to be in the negative sense on the waistband, because they are wrong sides together. For patterns, positive layering is like a patch pocket, wrong side of one layer placed against the right side of another layer. Same for the fly facing. The sewn edges are need to be turned and layered to back. If you set a pattern layer, the facing is layered with the front leg in the negative sense. I use seam line layering all the time, but tend to apply pattern layers only when there's a problem, and sometimes remove them later. The \"Press\" tool can be used to switch multiple edges to turned."
+            },
+            {
+                "author_id": 424140880473,
+                "comment_id": 900001502266,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002096886",
+                "comment_body": "I agree with Pablo Quintana the normals aren't \"partially flipped\" it is that the layers are intersecting, and this does only become an issue when layers are thick, but I find it's good practice with any folded piece to set the sewing layer. (With facings and separate pieces, the simpler thing is to sew under (or clone under) with normals stacked, and then as a last step flip the normal to look like the actual garment configuration. Then the software will take care of the settings at the seam lines.) But this isn't possible on folded pieces, and sometimes a fold is needed. If there's a folded edge and sewing sublayer hasn't been specified, everything may go fine as long as the mesh has settled properly. But then if a thicker fabric is introduced, suddenly there's an issue. If sewing layer is then specified to \"back\" this corrects itself (exactly like layer under), and then further settings can be adjusted as needed. Here, the sleeve hem was sitting nicely, but a switch to thick fleece caused an intersection, and then it was clear sewing sublayer hadn't been set: Switch the sewing setting, things resettle nicely. But better still would be if this setting had been in place before the change of fabric--at least that's my aproach."
+            },
+            {
+                "author_id": 364104337428,
+                "comment_id": 900002490443,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002096886",
+                "comment_body": "Hey hela. This is not a flipped normals problem but a mesh intersection issue. The part that you see darker is the wrong side (back) of the pocket piece that is sandwiched that is intersecting with the avatar's side of the pocket piece. This can be caused by to much pressure between the avatar and the outer piece (the jeans front leg piece). Some fabrics tend to do it more when using strengthening and also when using GPU simulation (different collision algorithm). I solve these issues by using the \"Layer Clone Under\" option in case of mirrored pieces, or \"Superimpose Under\" after being sewn correctly. If you select both pocket pieces and reduce the Add'l Thickness - Collision to maybe 1 or 0.5 mm you can get away with \"Superimpose Under\" and not even needing to simulate as the pieces will be sewn in place perfectly with no intersections. Adding the Layering option to the pieces to force CLO to maintain the pieces stable will help too. As jne4sl was saying for waistbands that are layered using the \"Set Sublayer\" when stitching is a must for stability."
+            },
+            {
+                "author_id": 363990992048,
+                "comment_id": 900001504006,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002096886",
+                "comment_body": "Hi guys, thank you so much for you explanations and your advice! That solved my problems here. have a nice day and all the best, Hela"
+            },
+            {
+                "author_id": 424140880473,
+                "comment_id": 900002481843,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002096886",
+                "comment_body": "I've been down this road! Your pocket has a fold, and you're sewing the other edges with wrong sides together, and those are \"turned\" seams. So as you create those sewing lines, switch each to turned, choose set sublayer, click \"back\". The first seam line is sewn to the back of the second seam line (although order doesn't matter here). The fold line is 0 degrees, which looks like you already did. The simplest thing is to re-drape this with those settings. Looks like you also have a pocket facing sewn inside the bag. Those sewing lines are the same, they are turned and the wrong side of the facing is sewn to the wrong side of the pocket bag. This is a waistband, but same concept, it's sewn wrong sides together, that needs to be specified:"
+            }
+        ]
+    },
+    {
+        "post_id": 900003090323,
+        "post_title": "Add Puckering Texture to Colorway Mode",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/900003090323",
+        "post_details": "Currently if you have a color applied to your puckering texture image you can't edit it in colorway mode as far as I can tell. Which means it has to be the same color for all colorways, which is obviously a problem.",
+        "updated_at": "2023-07-07T21:21:43Z",
+        "comments": []
+    },
+    {
+        "post_id": 900003089263,
+        "post_title": "FBX Colorways",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/900003089263",
+        "post_details": "Hello, Is there any way to save multiple colorways in FBX format at once, this option is only available in GLB format when you save it. Thanks",
+        "updated_at": "2023-05-15T15:21:35Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 900002488943,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003089263",
+                "comment_body": "Hi 420282106054, thank you for submitting your question. Yes, as you recognized it is not possible to save multiple colorways in FBX at once."
+            },
+            {
+                "author_id": 903760111066,
+                "comment_id": 18543543734937,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003089263",
+                "comment_body": "Hi Clo team, for me, after simulation, animation is missing the Colorways function. Why at all?"
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 18549688569625,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003089263",
+                "comment_body": "Hi 903760111066 If you change the Mode from Simulation to Animation you should still have access to Colorway. You just need to go to the top of your screen &gt Editor &gt Colorway"
+            }
+        ]
+    }
+]

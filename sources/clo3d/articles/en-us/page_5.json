@@ -1,0 +1,417 @@
+[
+    {
+        "ArticleId": "115012381428",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012381428",
+        "Title": "Steam",
+        "Content": "List of Contents Steam Apply Steam Steam Brush Delete Steam Steam - Partially shrink or stretch fabric as if it was steamed in real life. - Select the Steam tool from the 2D toolbar. - Or, navigate to the Main Menu and select Materials Steam Steam. Apply Steam - Select the Steam tool from the 2D toolbar. - Click and drag to apply Steam to the Pattern in the 2D window. - Click and drag multiple times on the same spot to strengthen the steam effect. - Activate the Simulation in the 3D window to observe changes in the 3D Garment. Steam Brush Shrinkage - Adjust the shrinkage of the fabric. - When the Shrinkage value is negative, the applied part of the Pattern will appear in light-blue as it shrinks. - When the Shrinkage value is positive, the applied part of the Pattern will appear in orange as it stretches. Size - Adjust the size of the Steam brush. - Larger the size is, bigger the Steam brush is. Hardness - Adjust the density of the Steam effect. - When the Hardness value is adjusted, the center circle will expand or shrink. - Larger the value is, larger area of the Pattern will be applied with strong Steam effect. - The strength of the Steam effect will subside as it approaches near the outer circle of the Steam brush. Delete Steam - While the Steam tool is selected, right click on the Pattern to access the pop-up menu. - Click Remove Steam on Selected Pattern. - All Steam will be removed from the selected Pattern.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=NckdOjcKVew",
+            "https://www.youtube.com/watch?v=fU7zVQAw4ZU",
+            "https://www.youtube.com/watch?v=N3VOc7b_N3w",
+            "https://www.youtube.com/watch?v=W5dcsqd0Zv4",
+            "https://www.youtube.com/watch?v=uEpsYQ7aA64",
+            "https://www.youtube.com/watch?v=TiGKiuP3Lho"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 318
+    },
+    {
+        "ArticleId": "115012378408",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012378408",
+        "Title": "Layer Clone (Over)",
+        "Content": "Layer Clone (Over) - Duplicate a Pattern in its draped state and place it directly over the original Pattern. Sewing Lines will be automatically applied to the Pattern outlines and Internal Lines to connect the cloned Pattern to the original Pattern. - The Layer Clone (Under) function is efficient when creating a double-layered Garment such as padding, collar, cuffs, and more. - Select the Transform pattern tool or Edit Pattern tool from the 2D toolbar. - Navigate to the 2D window and right click on the Pattern to be cloned and select Layer Clone (Over) from the pop-up menu. - The cloned Pattern will follow along the mouse. Click on the 2D window to place the cloned Pattern. - In the 3D window, the cloned Pattern will be directly placed over the original Pattern and its Pattern outlines and Internal Lines will be sewn to the original Pattern. - The cloned Patterns will be highlighted in light green in the 2D window and the linked editing will be applied.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=aX8rz_DrydA"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 204
+    },
+    {
+        "ArticleId": "115002033748",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115002033748",
+        "Title": "Merge",
+        "Content": "List of Contents Pattern Outline Sewing Line Objective Merge two Patterns in to a single Pattern. Location Pattern Outline Main Menu 2D Pattern Edit Edit Pattern 2D Toolbar Edit Pattern Sewing Line Main Menu Sewing Edit Sewing 2D Toolbar Edit Sewing Operation Pattern Outline Follow the indicated guideline below: Main Menu 2D Pattern Edit Edit Pattern 2D Toolbar Edit Pattern Select two Pattern outlines which two Patterns are to be merged accordingly. Note: When the Patterns are symmetrically linked, select the Pattern outline of the either Pattern. Right click on the selected Pattern outlines to access the pop-up menu. Then, select Merge. The selected two Patterns are merged based on the selected Pattern outlines. The original Pattern outlines are changed to Baselines. Sewing Line Follow the indicated guideline below: Main Menu Sewing Edit Sewing 2D Toolbar Edit Sewing Right click on the Sewing Line which the Patterns are merged accordingly. Then, select Merge. The two Patterns sewn with the selected Sewing Line are merged based on the selected Sewing Line. The original Pattern outlines are changed to Baselines.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000617868,
+        "Section": "2D Pattern Edit",
+        "Tokens": 224
+    },
+    {
+        "ArticleId": "900006386543",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/900006386543",
+        "Title": "Strengthen/Unstrengthen",
+        "Content": "Objective The Pattern Strengthen is a feature that temporarily applies hard properties to the garment. When a pattern is folded, it can be folded more reliably by receiving a strong force from the line segment applied with the folding angle and if a garment is simulated by overlapping each other, it can be solved by simulating flat with the rigid force of the physical properties. Location 3D Toolbar Select/Move 2D Toolbar Transform Pattern Operation Select the tool/menu indicated in Location. Right-click on the 3D or 2D pattern and click the Strengthen/Unstrengthen. The pattern will be strengthened/unstrengthened. Note: Right-click on the background of the 3D window and hover Show/Hide Color Click the Show Strengthen Menu to show or hide the color applied during strengthening. (ver 6.1)",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628287,
+        "Section": "Simulation",
+        "Tokens": 168
+    },
+    {
+        "ArticleId": "115000306748",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000306748",
+        "Title": "Synchronize Pattern",
+        "Content": "Objective ver2.3.0 All adjustments made in the 2D window automatically synchronizes with the 3D window. Simulation automatically ends when making a modification on 2D Pattern while simulating. ver2.2.0 Once the sync button is activating, any adjustments, not only design adjustments, but also sewing lines, print textures, particle distances get reflected in the 3D window. Even if the synchronization is off, activating the Simulation tool auto-activates the Sync tool and reflects on the 3D window. Location Main Menu Sync (Ctrl + D) 2D Toolbar Sync (Ctrl + D) Operation 1. Make adjustments in the 2D window. 2. Follow the indicated guideline below: Main Menu Sync (Ctrl + D) 2D Toolbar Sync (Ctrl + D) Note: Changes in a Pattern Color According to Synchronization A Pattern that has never been synchronized appears in transparent. A Pattern that has been synchronized at least once appears in red color, and a Pattern that its synchronization is currently activating appears in blue color.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628287,
+        "Section": "Simulation",
+        "Tokens": 218
+    },
+    {
+        "ArticleId": "115013661507",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115013661507",
+        "Title": "Can I use Patterns constructed in CLO in the manufacturing process?",
+        "Content": "With slight modification, Patterns created in CLO can be used in the manufacturing process.",
+        "YoutubeLinks": [],
+        "CategoryId": 24022165341209,
+        "Category": "FAQ",
+        "SectionId": 24022295837977,
+        "Section": "Garments & Patterns",
+        "Tokens": 17
+    },
+    {
+        "ArticleId": "115000526328",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000526328",
+        "Title": "Cut and Cut & Sew ",
+        "Content": "Objective Divide a Pattern into desired pieces using Internal Lines. Location 3D Toolbar Edit 3D Pen (Garment) Operation Follow the indicated guideline below: 3D Toolbar Edit 3D Pen (Garment) Click on created Baselines or Internal Lines on 3D Garment. The selected Baselines or Internal Lines are now being highlighted in yellow color. Right-click on the selected Baselines or Internal Lines. A Pop-up menu appears. Select Cut or Cut &amp Sew in the pop-up menu. The selected Baselines or Internal Lines are now being cut or cut &amp sewn.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000642168,
+        "Section": "3D Design",
+        "Tokens": 123
+    },
+    {
+        "ArticleId": "115002752688",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115002752688",
+        "Title": "Create AI Bezier Curve",
+        "Content": "List of Contents Create AI Curves Cancel Actions Objective Create curves in CLO similarly how they are drawn in Adobe Illustrator (ver3.0.0). Location Main Menu 2D Pattern Create Polygon or Internal Polygon/Line 2D Toolbar Polygon or Internal Polygon/Line Operation Create AI Curves Follow the indicated guideline below: Main Menu 2D Pattern Create Polygon or Internal Polygon/Line 2D Toolbar Polygon or Internal Polygon/Line Click and drag on the 2D window. The curve is created as the blue handle appears. Continue to drag to adjust curvature. When the desired curvature is achieved, let go the mouse cursor. To draw a straight line or change the direction of the curve, click on the point created at last. Then, continue to draw polygon or Internal Polygon/Line. Cancel Actions To cancel all actions, hit Esc key or Ctrl + Z keys on the keyboard. All the actions taken to create polygon or Internal Polygon/Line are undone. To cancel the last step, hit Delete key or Backspace key on the keyboard. The point created at last is undone.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000617868,
+        "Section": "2D Pattern Edit",
+        "Tokens": 221
+    },
+    {
+        "ArticleId": "115012227187",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012227187",
+        "Title": "Show Reference Line",
+        "Content": "Show Reference Line - Show or hide Reference Lines to be used when editing Patterns. - The Show Reference Line option is activated by default. - Select the Edit Pattern tool from the 2D toolbar. Then, select and move a point on the Pattern. The original shape of the Pattern will appear as a Reference Line. If a Pattern does not carry a Reference Line, it will not appear even after selecting Show Reference Line. - To hide the Reference Line, right click on the 2D window and select Show Reference Line from the pop-up menu.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=wX_oPun6ncs"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 111
+    },
+    {
+        "ArticleId": "115000306628",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000306628",
+        "Title": "Align",
+        "Content": "Objective Align Patterns and Internal Shapes based on various standards (ver2.5.0). Location Right Click Pop-Up Menu (on Pattern/ Internal Shape) Align Left/ Center/ Right/ Top/ Middle/ Bottom Operation Navigate to the 2D toolbar and select the Transform Pattern tool. Select two or more Patterns or/and Internal Shapes. Follow the indicated guideline below: Right Click Pop-Up Menu (on Pattern/ Internal Shape) Align Left/ Center/ Right/ Top/ Middle/ Bottom The Patterns or/and Internal Shapes align to the Pattern or Internal Shape that is right clicked on. Note: You can also align Pattern outlines or Internal Lines using the Edit Pattern tool. However, be mindful that the aligning segments may transform their Patterns or Internal Shapes.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000638488,
+        "Section": "2D Arrangement",
+        "Tokens": 153
+    },
+    {
+        "ArticleId": "115012380988",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012380988",
+        "Title": "Press",
+        "Content": "List of Contents Press Simulate Sewing Line Type Press - Press 3D Garments to flatten bulged Seamlines when more than two layers are sewn together. - Select the Press tool from the 3D toolbar. - Or, navigate to the Main Menu and select 3D Garment Press -With the Press tool selected, navigate to the 3D window and click on the Pattern to be flattened. - The selected Pattern will disappear. - Click the other Pattern sewn to the first Pattern. - The Pattern that was clicked for the first time will appear again. Simulate - Activate the Simulation tool. - The bulged Seamline will be flattened. Sewing Line Type - When the Press tool is used to a Pattern, its all Sewing Lines Sewing Line Type changed to Turned(ver4.1.0).",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=vhk5txLTy-I",
+            "https://www.youtube.com/watch?v=celMronJyc0",
+            "https://www.youtube.com/watch?v=1wlwej6nY_c"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 171
+    },
+    {
+        "ArticleId": "115000293607",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000293607",
+        "Title": "Show Mesh",
+        "Content": "Objective Show or hide mesh structure that 3D Garments are composed of. Mesh forms are various depending on Patterns, Internal Lines and Sewing state. Location 2D Pattern Window Main Menu Display 2D Pattern Rendering Style Mesh 3D Garment Window Main Menu Display 3D Garment Rendering Style Mesh 3D Icon Garment Rendering Style Mesh",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000885367,
+        "Section": "3D Mesh / PIN",
+        "Tokens": 73
+    },
+    {
+        "ArticleId": "115015824487",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115015824487",
+        "Title": "Edit Blocks",
+        "Content": "List of Contents Edit Patterns Replace Patterns Objective Open and edit Patterns in provided Blocks from the Modular Configurator or replace them with your own. Location Modular Mode Block Editor Operation Edit Patterns Load Blocks from the Modular Configurator. Follow the indicated guideline below: Modular Mode Block Editor Select a Block to edit in the list of the Block Editor. Remaining Blocks are frozen. Modify it with the Edit Pattern tool. Once the modification is done, Simulate the according Block when the rest of the Blocks are still frozen. Once the modification is completed, reselect the selected Block. All of the Blocks are activated again. Replace Patterns Load Blocks from the Modular Configurator. Follow the indicated guideline below: Modular Mode Block Editor Locate Patterns out of Block Boxes or delete them. The Block Boxes remain in light grey. Add desired Garment files to substitute with. Click and drag the Patterns that are just loaded to matching Block Boxes. The Patterns are linked with the Block Boxes. Sew the Patterns to Block Boxes. Select the according Block in the Block Editor, freeze the rest, then Simulate. Note: Selected Blocks in the Block Editor are also selected in the 2D window. Editing Pattern in the Modular Mode is the same as the Simulation Mode. Deleting a segment or a point in a Pattern also deletes Sewing Lines between the Pattern and the Block Box.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000729128,
+        "Section": "[MODE] Modular",
+        "Tokens": 268
+    },
+    {
+        "ArticleId": "360000742948",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/360000742948",
+        "Title": "Apply Grading",
+        "Content": "List of Contents Apply Grading Apply Existing Size Group Create and Apply Size Group Apply Grading - Create multiple sizes for Patterns by adding Size Group. - Apply Existing Size Group Object Browser Grading Tab Assign to Selected Pattern button next to the Size Group Create and Apply Size Group Object Browser Grading Tab Assign To New Rule Apply Existing Size Group - With the Transform Pattern tool, select Pattern to apply existing Size Group. - Then, click Assign to Selected Pattern button next to the desired Size Group from the Object Browser. - Assigned grading appears in pink highlight when the Size Group is selected. Create and Apply Size Group - With the Transform Pattern tool, select Pattern to apply a new Size Group. - Click Assign To New Rule button on the right top of the Object Browser to create and apply a new Size Group to the selected Pattern. Note : Grading information will be maintained even after the Patterns are Cut(ver.4.2.0).",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=VMLzEdvNVWY",
+            "https://www.youtube.com/watch?v=r6t7cLM3sGg",
+            "https://www.youtube.com/watch?v=o2SW-gMWAtI"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 187
+    },
+    {
+        "ArticleId": "115002224507",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115002224507",
+        "Title": "[Tool] Segment Topstitch",
+        "Content": "Objective Create a Segment Topstitch (Patterns or Internal Shapes that are split by points). Location Main Menu Materials Topstitch Segment Topstitch 2D Toolbar Segment Topstitch Operation Follow the indicated guideline below: Main Menu Materials Topstitch Segment Topstitch 2D Toolbar Segment Topstitch Click on a segment to create a Topstitch. The Segment Topstitch is created on the selected segment with being highlighted. Note: Click-and-drag in the 2D window to encompass all segments where Topstitches to be applied. Topstitches appear on all selected segments (ver3.2.0). Use lasso selection to select Pattern Outlines and Internal Lines where Topstitches should be created on (ver3.2.0). OBJ Topstitches temporarily disappear when the Simulation is activated, but they appear again when the Simulation is deactivated (ver3.2.0).",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000728288,
+        "Section": "Topstitch",
+        "Tokens": 185
+    },
+    {
+        "ArticleId": "115000414447",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000414447",
+        "Title": "Particle Distance Setting ",
+        "Content": "Objective Particle Distance refers to the average distance between the points that make up a Garment Pattern, in other words, size of the mesh. The Garment quality and Simulation speed depend on the Particle Distance. Therefore set the value at 20mm when making a Garment and dressing it on an Avatar for faster working process, and set it under 5mm to enhance the Garment quality once it is completed. Location Property Editor Simulation Properties Particle Distance Operation Select Pattern(s). Follow the indicated guideline below: Property Editor Simulation Properties Particle Distance Input desired value for the Particle Distance. (Minimum '0.8' to maximum '700.0') Press Enter on keyboard to apply.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628707,
+        "Section": "3D Details",
+        "Tokens": 136
+    },
+    {
+        "ArticleId": "115001025968",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115001025968",
+        "Title": "3D Window Display Icons ",
+        "Content": "List of Contents Quality Render 3D Garment Display/Hide 3D Trims Display Avatar Display/Hide 3D Garment Rendering Style Garment Fit Maps Texture Environment Display Quality Render (3D Window) Quality Render High-quality render is supported in the standard 3D Window. 3D Garment Display/Hide Show Garment (Shift+C) Show or hide garments. Show 3D Seamlines(Shift+S) Show or hide seam-lines. Show Internal Lines Show or hide internal lines. Show Chalk Lines Show or hide chalk lines. Show 3D Threads Show or hide sewing lines connecting pattern-to-pattern. Show Pins Show or hide pins. Show Garment Measurements Show or hide Garment Measurements. Show Style Lines (Alt+0) Show or hide Style Lines. 3D Trims Display Show Button Show or hide buttons and buttonholes Show Piping Show or hide piping. Show Bond/Skive Show or hide bonding and skiving. Show Puckering Show or hide puckering. Avatar Display/Hide Show Avatar (Shift + A) Show or hide avatars. Show Arrangement Points (Shift + F) Show or hide arrangement points. Show Bounding Volumes Show or hide bounding volumes. Show X-Ray Joints ( Shift + X) Show or hide X-Ray joints. Show Avatar Measurements Show or hide avatar measurements. Show Avatar Tape Show or hide avatar tape. 3D Garment Rendering Style Textured Surface (Alt + 2) Expresses fabrics without thickness. Thick Textured Surface (Alt + 1) Expresses fabrics with their thickness. Monochrome Surface (Alt + 3) Expresses fabrics without their texture images. Transparent Surface (Alt + 4) Applies transparency to all fabric. Mesh (Alt + 5) Expresses fabrics as mesh. Thick Textured Surface (Back) (ver 6.1) The texture, graphic, and topstitch applied to the back of the garment is displayed. Random Color Surface Distinguish Patterns easily with randomly colored surface Garment Fit Maps Stress Map (Alt + 6) Displays the friction strength applied to a garment through color codes and numerical values (kPa) per fabric's unit area. Strain Map (Alt + 7) Displays how a garment is affected by external forces in percentages. Fit Map (Alt + 8) Displays the tightness of a garment through color codes. Show Pressure Map Displays the pressure that the avatar is under from the garment in color palettes and numbers. (ver 7.3 ) Avatar Rendering Style Textured Surface Displays avatar with its respective texture images. Monochrome Surface Displays avatar surface in monochrome. Mesh Displays the mesh structure of an avatar. Environment Display Show Light Controller Displays Light Controller in the 3D window. Show Light (Render) / Light objects appear in the 3D window. Show Wind Controller Displays Wind Controller in the 3D window. Show 3D Shadow Displays 3D shadow in the 3D window. Show Ground Grid Displays 3D grid on the ground in 3D window. Show Grid (ver 6.1) Displays 3D grid in the 3D Window.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000089187,
+        "Section": "Configurations",
+        "Tokens": 648
+    },
+    {
+        "ArticleId": "115012381528",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012381528",
+        "Title": "Trace",
+        "Content": "List of Contents Trace Trace as Internal Lines/ Shapes Trace as an Internal Shape Trace as an Internal Shape vs. Trace as Internal Lines/ Shapes Trace as a Pattern Trace with Guidelines Trace - Trace Baselines, Internal Lines and Pattern outlines as Internal Lines and Patterns. - Select the Trace tool from the 2D toolbar. - Or, navigate to the Main Menu and select 2D Pattern Trace. Trace as Internal Lines/ Shapes Select Baselines, Internal Lines, or Pattern Outlines - Click on the Baselines, Internal Lines, or Pattern outlines to be traced. - Or, click and drag to encompass the desired items into the marquee box. - The selected items will be highlighted in yellow. Trace - Right-click on the selected item and choose Trace as Internal Lines/ Shapes or Trace as an Internal Shape. Trace as an Internal Shape Select Baselines, Internal Lines, or Pattern Outlines - To trace Baselines, Internal Lines, or Pattern outlines as a shape, all selected lines need to be joined. - Click on the Baselines, Internal Lines, or Pattern outlines to be traced. Hold down the Shift key on the keyboard to select multiple items. - Or, click and drag to encompass the desired items into the marquee box. - The selected items will be highlighted in yellow. Trace - Right-click on the selected item and choose Trace as Internal Lines/ Shapes or Trace as an Internal Shape. Trace as an Internal Shape vs. Trace as Internal Lines/ Shapes Trace as an Internal Shape - Use this option extract a closed shape as the shape created by the intersecting lines. - Click all items such as Baselines, Internal Lines, and Pattern outlines that form the desired shape. Then, right-click and select Trace as an Internal Shape. - Select the Transform Pattern tool from the 2D toolbar and select the shape just traced. - The closed shape will be highlighted in yellow. Trace as Internal Lines/ Shapes - Use this option to trace intersecting lines as individual and separated lines. - Click all items such as Baselines, Internal Lines, and Pattern outlines to be traced. Then, right-click and select Trace as an Internal Lines/ Shapes. - Select the Transform Pattern tool from the 2D toolbar and select the lines just traced. - Each traced lines will be selected individually. Trace as a Pattern - Click all items such as Baselines, Internal Lines, and Pattern outlines that form a shape. - Right-click on the selected items and choose Trace as Pattern. - To trace a shape as a Pattern, all lines ends need to be adjoining each other. - When more than three intersecting lines are selected, a shape formed by them will be traced as a Pattern. Trace with Guidelines_ver.5.0.0 and Above - Select guidelines with Internal Lines or Pattern Outlines, and then right click to select the desired Trace option. - Make sure to right click on the Internal Line or the Pattern Outline when tracing with guidelines.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=x9H8bsVBdVw",
+            "https://www.youtube.com/watch?v=-V27Rbjo5Yw",
+            "https://www.youtube.com/watch?v=rlYl0l0fn2k",
+            "https://www.youtube.com/watch?v=58R-Uhtuka4",
+            "https://www.youtube.com/watch?v=3BoMdZaXDXQ",
+            "https://www.youtube.com/watch?v=giYuoBwZzgk",
+            "https://www.youtube.com/watch?v=TANzamZaeXY",
+            "https://www.youtube.com/watch?v=Y8252WGNMRQ",
+            "https://www.youtube.com/watch?v=jNLxAuFTYUM"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 596
+    },
+    {
+        "ArticleId": "115000510888",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000510888",
+        "Title": "Internal Rectangle Tool",
+        "Content": "Objective Create a rectangle inside a Pattern. Location Main Menu 2D Pattern Create Internal Rectangle 2D Toolbar Internal Rectangle Operation Create Internal Rectangle Follow the indicated guideline below: Main Menu 2D Pattern Create Internal Rectangle 2D Toolbar Internal Rectangle Click and drag within a Pattern to freehand an Internal Rectangle. Note: While creating the Internal Shape, press down the Shift key on the keyboard to create a square (ver.5.1.0). While creating the Internal Shape, press down the Ctrl key on the keyboard to create it by the center point (ver.5.1.0). While creating the Internal Shape, press down the Shift + Ctrl keys to create a square Internal Shape by its center point (ver.5.1.0). Release the mouse to complete the Internal Rectangle. Create Internal Rectangle with Measurement Input Follow the indicated guideline below: Main Menu 2D Pattern Create Internal Rectangle 2D Toolbar Internal Rectangle Click once within a Pattern. The Create Rectangle window appears. Enter appropriate values in the options indicated below. Width Set width of an Internal Rectangle. Height Set height of an Internal Rectangle. Link width and height to adjust them in a fixed ratio. Position Outline Set left, right, top and bottom position of an internal rectangle on the basis of the outline of the Internal Rectangle (ver2.5.0). Center Set left, right, top and bottom position of an internal rectangle on the basis of the center of the Internal Rectangle (ver2.5.0).",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000642008,
+        "Section": "2D Pattern",
+        "Tokens": 303
+    },
+    {
+        "ArticleId": "115000295167",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000295167",
+        "Title": "Distribute",
+        "Content": "Objective Distribute Patterns or/and Internal Shapes/Lines by designated intervals (ver2.5.0). Location Right Click Pop-Up Menu (on Pattern/Internal Line/Shape) Distribute Horizontally/Vertically Operation Navigate to the 2D toolbar and select the Transform Pattern tool or the Edit Pattern tool. Select two or more Patterns or/and Internal Lines/Shapes. Follow the indicated guideline below: Right Click Pop-Up Menu (on Pattern/Internal Line/Shape) Distribute Horizontally/Vertically The Distribute Window appears. Enter the desired Spacing value and select OK. The selected Patterns and/or Internal Lines/Shapes are distributed horizontally or vertically by the designated intervals.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000638488,
+        "Section": "2D Arrangement",
+        "Tokens": 137
+    },
+    {
+        "ArticleId": "360001061347",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/360001061347",
+        "Title": "2D Snapshot",
+        "Content": "List of Contents 2D Snapshot Apply 2D Snapshot Save 2D Snapshot 2D Snapshot - Save Patterns in 1:1 ratio as images. - Main Menu File Snapshot 2D Patterns(1:1). Apply 2D Snapshot - The 2D window expands and the 2D Snapshot window appears. Size Preset Select one among provided Presets. Orientation Decide orientation of the image. Width, Height Type in desired Width and Height for the image. Resolution Assign Resolution for the image. Option Select which lines will be included in the exported image. Select which images will be included in the exported image. Select additional information included in the exported image. Save the image with transparent background. Save 2D Snapshot Save as .Png Configure all options, click Save, and select the Save as Type as .png. Save as .Pdf Configure all options, click Save, and select the Save as Type as .pdf.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=WxAcbVh0-tk",
+            "https://www.youtube.com/watch?v=Y-26CJkEgbA",
+            "https://www.youtube.com/watch?v=YOpEVFuKVk0",
+            "https://www.youtube.com/watch?v=E-XzQW9s4zY",
+            "https://www.youtube.com/watch?v=pbdZO__htwA"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 192
+    },
+    {
+        "ArticleId": "115012380488",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012380488",
+        "Title": "Freeze",
+        "Content": "List of Contents Freeze Result of Freeze Features of Freeze Freeze - Freeze selected Patterns to fix them like a hardware. - Select desired Patterns to be frozen and right click to access the pop-up menu. Then, select Freeze. Result of Freeze - When the selected Patterns are frozen, the Patterns will turn light-blue. When the Simulation is activated, Patterns be fixed in the 3D environment. - To unfreeze the selected Patterns, right click again and select Unfreeze. Features of Freeze - Frozen Patterns will be calculated for collision because they are considered as hard objects like Avatars. - Therefore, activated Patterns cannot freely pass through the frozen Patterns.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=4b6PvvL1Aiw",
+            "https://www.youtube.com/watch?v=U_A2cde9zL8",
+            "https://www.youtube.com/watch?v=dsQeCexbeLY"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 129
+    },
+    {
+        "ArticleId": "115012379948",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012379948",
+        "Title": "Deactivate (Pattern & Sewing)",
+        "Content": "List of Contents Deactivate (Pattern &amp Sewing) Result of Deactivate (Pattern &amp Sewing) Features of Deactivate (Pattern &amp Sewing) Deactivate (Pattern &amp Sewing) - Deactivate selected Patterns and their Sewing lines to easily perform meticulous editing on the 3D Garment. - Select desired Patterns to be deactivated and right click to access the pop-up menu. Then, select Deactivate (Pattern &amp Sewing). Result of Deactivate (Pattern &amp Sewing) - When the selected Patterns and Sewing Lines are properly deactivated, Patterns should turn translucent navy while the Sewing Lines turn white. Even when the Simulation is activated, deactivated Patterns and Sewing Lines will not move and activated Patterns will not be sewn to the deactivated Patterns. - To activate the selected Patterns and Sewing Lines, right click again and select Activate. Features of Deactivate (Pattern &amp Sewing) - Deactivated Patterns will not be calculated for collision. - Simulate overlapped Patterns, one being activated and the other being deactivated. The activated Pattern will easily pass through the deactivated Pattern.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=A9uHEzBSUxo",
+            "https://www.youtube.com/watch?v=vpthmvkl9J8",
+            "https://www.youtube.com/watch?v=lOZxI_e6bDw"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 228
+    },
+    {
+        "ArticleId": "115002683928",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115002683928",
+        "Title": "2D Pattern (PACX) Open/Add/Save",
+        "Content": "Objective Save 2D Patterns as *.pacx file format. This format can only be saved or reopened and edited in CLO. Location Open Pattern Main Menu File Open Pattern Add Pattern Main Menu File Add Pattern Save Pattern Main Menu File Save As Pattern Operation Open Pattern Follow the indicated guideline below: Main Menu File Open Pattern The Open File window is opened. Select the desired file and click the Open button. Add Pattern Follow the indicated guideline below: Main Menu File Add Pattern The Add Pattern window is opened Select the file to add and click the Open button to add the Pattern file. Save Pattern Follow the indicated guideline below: Main Menu File Save As Pattern The Save File window is opened. Select a location to save the Pattern file to, type in a name and press the Save button. A *.pacx file is created.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628367,
+        "Section": "File Open/Save",
+        "Tokens": 165
+    },
+    {
+        "ArticleId": "115004274167",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115004274167",
+        "Title": "Replace as Pattern Outline",
+        "Content": "Objective Substitute Pattern outlines with Internal Lines, establishing the Internal Line as the new Pattern outline. Location 2D Toolbar Edit Pattern Operation Create an internal line to be substituted with the Pattern outline. Follow the indicated guideline below: 2D Toolbar Edit Pattern Click on the Internal Line and the Pattern outline that should be replaced. The Internal Line and Pattern outline are highlighted in yellow. Right-click on the selected Internal Line or Pattern outline. A pop-up menu appears. Select the Replace as Pattern Outline option. The selected Pattern outline is replaced with the shape of the Internal Line. The original Pattern outline appears as a Reference Line.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000617868,
+        "Section": "2D Pattern Edit",
+        "Tokens": 124
+    },
+    {
+        "ArticleId": "360000751107",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/360000751107",
+        "Title": "Edit Annotation",
+        "Content": "List of Contents Edit Annotation Move Delete Edit Annotation - Move or delete annotations on 2D Patterns. - 2D Toolbar Edit Annotation Move - Click and drag the annotation to be moved. Delete - Click on the annotation to be deleted. - Right-click to access the right-click pop-up menu. - Select Delete option. - Or, hit the Delete key on the keyboard.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=_Qvnyx4D7gM",
+            "https://www.youtube.com/watch?v=hqOlx4S1EsY",
+            "https://www.youtube.com/watch?v=QeczvVeJz0c"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 76
+    },
+    {
+        "ArticleId": "115012380628",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012380628",
+        "Title": "Import - DXF ",
+        "Content": "List of Contents Import DXF Import (Add) DXF Import DXF - CLO is compatible with most of Pattern CAD such as YUKA, Gerber, Lectra, StyleCAD, Optitex, and PAD System in DXF-AAMA and DXF-ASTM file formats. - Import 2D Patterns to use in CLO. - Navigate to the Main Menu and select File Import DXF (AAMA/ASTM). - Locate the DXF file and select Open. - The Import DXF window will appear. - Load Type: Select either to open or add the DXF file. - Scale: select the unit used to create the Patterns. When the Auto Scale option is selected, CLO will detect the unit of the Patterns automatically. - Rotation: select the direction that the Patterns will be rotated to. - Option: Check following options as needed: Import Pattern Annotation, Auto-Trace as Internal Lines, Swap Cutting Line and Sewing Line, Auto Distribute, and Optimize All Curve Points. - Select OK to open the Patterns based on the settings. Import (Add) DXF - Navigate to the Main Menu and select File Import (Add) DXF (AAMA/ASTM). - Locate the DXF file and select Open. - The selected DXF file will be added to the workspace.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=O8BE80_y7Z0",
+            "https://www.youtube.com/watch?v=mDZ7wFc5Af4"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 273
+    },
+    {
+        "ArticleId": "115002224527",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115002224527",
+        "Title": "[Tool] Free Topstitch",
+        "Content": "Objective Create a Topstitch to freely sew regardless of the points of Pattern or Internal Shape. Location Main Menu Materials Topstitch Free Topstitch 2D Toolbar Free Topstitch Operation Follow the indicated guideline below: Main Menu Materials Topstitch Free Topstitch 2D Toolbar Free Topstitch Click on a point where a Topstitch begins. Move mouse to the direction where the Topstitch is going to be created. The selected area appears in red color. Click on another point where the Topstitch ends. The tTopstitch is now created with being highlighted. Note: Click-and-drag in the 2D window to encompass all segments where Topstitches to be applied. Topstitches appear on all selected segments (ver3.2.0). Use lasso selection to select Pattern Outlines and Internal Lines where Topstitches should be created on (ver3.2.0). OBJ Topstitches temporarily disappear when the Simulation is activated, but they appear again when the Simulation is deactivated (ver3.2.0). Right click when creating the Topstitch to enter specific length (ver4.2.0).",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000728288,
+        "Section": "Topstitch",
+        "Tokens": 238
+    },
+    {
+        "ArticleId": "115012380068",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012380068",
+        "Title": "Edit Line (3D Pattern)",
+        "Content": "List of Contents Edit Line (3D Pattern) Edit 3D Line Delete 3D Line Right Click Pop-Up Menu on 3D Line Edit Line (3D Pattern) - Select, delete and Edit 3D lines created on draped Garments in the 3D Window. - Select the Edit line (3D Line) tool from the 3D toolbar. Edit 3D Line - Select the Edit Line (3D Line) tool from the 3D toolbar. - Click and drag the point on the 3D Line to make adjustments. Delete 3D Line - Select the Edit Line (3D Line) tool from the 3D toolbar. - Click on the 3D Line, then hit the Delete key or the Backspace key on the keyboard to delete. Right Click Pop-up Menu on 3D Line - Right-click on the 3D Line to access the pop-up menu and select options as below for desired actions. Delete - The selected 3D Line will be deleted. Cut - Cut the Pattern based on the selected 3D Line. - When a 3D Line is drawn only on one of the symmetric Patterns, only the Pattern with the 3D Line will be cut and the linked editing function will be removed. Cut &amp Sew - Cut and Sew the Pattern based on the selected 3D Line. - When a 3D Line is drawn only on one of the symmetric Patterns, only the Pattern with the 3D Line will be cut and sewn and the linked editing function will be removed. (Symmetry) Cut - Cut the Pattern based on the selected 3D Line. - Even if the selected 3D Line is drawn on only one of the Symmetric Patterns, both Symmetric Patterns will be cut and linked editing function will be maintained. (Symmetry) Cut &amp Sew - Cut and Sew the Pattern based on the selected 3D Line. - Even if the selected 3D Line is drawn on only one of the Symmetric Patterns, both Symmetric Patterns will be cut and sewn and linked editing function will be maintained. Trace as Internal Shape - Trace the selected 3D Line as an Internal Shape. Convert to Internal Shape - Convert the selected 3D Lines to an Internal Shape.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=ZpjX25UuBao",
+            "https://www.youtube.com/watch?v=JaqfRrmvwxI",
+            "https://www.youtube.com/watch?v=K5DyjtZDnxA",
+            "https://www.youtube.com/watch?v=iVlsF--JXgY"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 470
+    },
+    {
+        "ArticleId": "360011094354",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/360011094354",
+        "Title": "Edit 3D Pen (Garment) Right-Click Pop-Up Menu",
+        "Content": "Objective Edit desired 3D Pen lines using the right-click pop-up menu. Location 3D Toolbar Edit 3D Pen (Garment) Operation Follow the indicated guideline below: 3D Toolbar Edit 3D Pen (Garment) Right click on the desired 3D Pen line. The right-click pop-up menu appears. Refer to below table and select an appropriate option. Option Description Delete Delete the selected 3D Pen line. Add Point Add a Segment Point to the selected 3D Pen line. Add Curve Point Add a Curve Point to the selected 3D Pen line. Cut Cut the Pattern based on the selected 3D Pen line. Cut &amp Sew Cut and sew the Pattern based on the selected 3D Pen line. Duplicate to Symmetric Pattern (ver5.0.0) Duplicate the selected 3D Pen line to its Symmetric Pattern. Symmetric Cut Cut the Pattern and its Symmetric Pattern based on the selected 3D Pen line. Cut &amp Sew Cut and sew the Pattern and its Symmetric Pattern based on the selected 3D Pen line. Trace as Internal Shape Trace the selected 3D Pen line as Internal Shapes on the Pattern and its Symmetric Pattern. Convert to Internal Shape Convert the selected 3D Pen line as Internal Shapes on the Pattern and its Symmetric Pattern.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000642168,
+        "Section": "3D Design",
+        "Tokens": 275
+    }
+]

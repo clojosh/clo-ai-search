@@ -1,0 +1,408 @@
+[
+    {
+        "ArticleId": "115000471708",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000471708",
+        "Title": "Create 2D Measurements",
+        "Content": "List of Contents Internal Shape Internal Line Internal Point Internal Shape Objective View the position of Internal Shapes from the Pattern outline with 2D measurements (ver2.5.0). Location Property Editor 2D Measurements To Outline/To Center Operation 2D Toolbar Transform Pattern Tool Select the Internal Shape/Dart. Follow the indicated guideline below: Property Editor 2D Measurements To Outline/To Center Select the desired 2D Measurements to display. To Outline View the 2D Measurements from the left, right, top, and bottom of the Internal Shape to the Pattern outline. To Center View the 2D Measurements from the center of the Internal Shape to the left, right, top, and bottom of the Pattern outline. 2D Measurements appear based on the selected items. Internal Line Objective View the position of Internal Lines or segments of Internal Shapes from the Pattern outline with 2D Measurements (ver2.5.0). Location Property Editor 2D Measurements To Center Operation 2D Toolbar Transform Pattern Tool Select the Internal Shape/Dart. Follow the indicated guideline below: Property Editor 2D Measurements To Outline/To Center Select the desired 2D Measurements to display. 2D Measurements appear based on the selected items. Internal Point Objective View the position of internal points or internal curve points from the Pattern outline with 2D Measurements (ver2.5.0). Location Property Editor 2D Measurements To Center Operation 2D Toolbar Transform Pattern Tool Select the Internal Shape/Dart. Follow the indicated guideline below: Property Editor 2D Measurements To Outline/To Center Select the desired 2D Measurements to display. 2D Measurements appear based on the selected items.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 360004712034,
+        "Section": "POM",
+        "Tokens": 342
+    },
+    {
+        "ArticleId": "115000346488",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000346488",
+        "Title": "Offset as Internal Line",
+        "Content": "List of Contents Offset as Internal Line Distribute Internal Line between Segments Objective Create a new Internal line at regular intervals along the pattern outline or Internal line of the pattern. Location Main Menu 2D Pattern Edit Transform Pattern or Edit Pattern 2D Toolbar Transform pattern or Edit Pattern. Operation Offset as Internal Line Select the tool/menu indicated. Right-click on the pattern outline or internal line and click Offset as Internal Line. Offset as Internal Line option window appears. Set detailed options. Number of Offsets Enter the number to be created. Distance Enter the distance from the selected segment. All Set the distance of all segments to be the same . Individual (ver 6.2) Set the spacing for each line segment individually. Offset From When inputting individual distances, the individual line can be set as the previous or selected line. Reverse Direction Change in the reverse direction of the selected segment. Both Sides Create internal lines in both directions based on the selected segment. Extend to Pattern Outline Extend to Pattern Outline of the pattern. to Internal Line Extend to Pattern Outline or Internal Line of the pattern. Click OK. Depending on the settings, the internal line/shape is created. If it is a curve, the curve point is automatically optimized. Distribute Internal Line between Segment Select the tool/menu indicated in Location. Select the two internal lines or pattern outlines that will be the basis for the internal lines creating. Note: If the outline or Internal line of the pattern is divided into multiple points, press the Shift key on the keyboard to select them all. Right-click on the selected outline Select Distribute Internal Line between Segment. The internal line option window appears along the slope. Set the following options arbitrarily and clock OK. Number of Offsets Set the number of internal lines to be created. Offset Set the spacing between the internal lines to be created. Distnace to Segement Edge Set the spacing of the internal lines to be created away from the outline. Reverse Direction Changes the set internal left and right. Opposite Segment Changes the set internal up and down. Straight Line Create an internal line as a straight line. Perpendicular Direction Create an internal line in the vertical direction of the selected outline. Graduate Segment Lengths The internal line does not extend to the pattern outline but fits into an imaginary line that connects the two selected line points in a straight line. An internal line is created based on the setting of each option.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000642008,
+        "Section": "2D Pattern",
+        "Tokens": 484
+    },
+    {
+        "ArticleId": "115002727388",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115002727388",
+        "Title": "Cache Animation Export",
+        "Content": "Objective Export Animation cache data. Note: You can export only the cache data of garments. Location Main Menu File Export Animation Maya Cache (.mc) Maya Cache (.mcx) Point Cache 2 MDD Cache (Standard) MDD Cache (Maya/3ds Max) Operation Click the tool/menu indicated. The Save File window appears. Select the desired file and click OK. The Export window opens. Set the full details and click OK. Object Unweld/Weld Object Export the selected objects as unweld or weld objects. Note: This option is removed from 6.2 and above. Unweld Exports the Vertex (points of the mesh) of the parts of the pattern that are sewn together into one line into multiple objects. Thickness exports for quad meshes available beginning version. Weld Combines the Vertex (points of the mesh) of the parts of the pattern that are sewn together into one line into one point. Selected Pattern: Weld based on the sewing line that connects the selected patterns. Thin Ensures that the thickness will not be exported even if the rendering thickness value is increased beforehand. Thick Exports a pattern with its rendering thickness values in its increased state. Combined UV Coordinates: Exports all Garment Pattern texture data fit UV Coordinates ranging from 0 to 1. Note: Unified Texture export multiple layers of texture information as a single UV texture information. Scale Adjusts the scale of the file being exported when a value is entered or the desired unit from Unit in file to import is selected. Axis Conversion Changes the directions of each axis of the object. Animation Entire Area (saves all of the recorded garment animation.) Play Area Only (saves only the play area garment animation.) File Save With Texture Files (.zip): Exports the .obj file, .mtl file, and texture images used in the garment as one compressed file when exporting animation. Save with Meta Data (.xml) : Export the garment's pattern (Mesh), physical property, and sewing information as Meta Data (ver2.3.0). Diffuse Color Combined on Texture: Combine and save the garment's texture image and color as a single image (ver2.2.0). Exclude Ambient Color (for Modo): Exclude the Ambient color value when saving materials (ver2.2.0).",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628387,
+        "Section": "File Import/Export",
+        "Tokens": 468
+    },
+    {
+        "ArticleId": "115002573887",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115002573887",
+        "Title": "3D Garment (ZPAC) Open/Add/Save",
+        "Content": "Objective Save the 3D Garment, 2D Pattern, Avatar Size (ver 5.2), Colorway, Print Layout, and Comment contents together in a *.zpac file format. Save the Garment to the users computer, or open and edit a saved Garment file. Location Open Garment Main Menu File Open Garment Add Garment Main Menu File Add Garment Save Garment Main Menu File Save As Garment Operation Open/Save Garment Select the menu indicated in Location. The File Explorer appears. Select the desired file to open or set the saving path. Note: Garment files (*.zpac) and Project files (*.zprj) can be opened by double-clicking them or dragging and dropping them onto the 3D window. Open AutoSave File If the program is closed abnormally while a Garment is being worked on, a pop-up window saying Autosave file exists, do you want to recover the autosave file? appears when the program runs again. Click Yes to load the autosave file or click No to refrain from loading the autosave file. (Project File (*.zprj) is auto-saved from ver3.1.0.) Add Garment Follow the indicated guideline below: Main Menu File Add Garment Select a Garment file and click Open. The Add Garment window appears (ver2.4.0) Select the appropriate settings and click OK to place the Garment Note: A Garment can be added by right clicking on the Library's Garment file and using the Add to Workplace menu. Add Garment Settings Placement X Placement long the X axis, relative to the center of the 3D Window. Y Placement long the Y axis, relative to the center of the 3D Window. Z Placement long the Z axis, relative to the center of the 3D Window. Unit Unit for placement.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628367,
+        "Section": "File Open/Save",
+        "Tokens": 383
+    },
+    {
+        "ArticleId": "115002686307",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115002686307",
+        "Title": "Print Layout Display",
+        "Content": "Objective Show or hide information such as texture repeat grid, pattern names or baselines in the Print Layout Mode. Location Main Menu Change the mode at the top-right corner PRINT LAYOUT Operation Click the tool/menu indicated in Location. Right-click and set the following options in the 2D window. Texture Repeat Grid Repeat grid of the texture displays. Snap to Texture Grid Outline The pattern piece is snapped to the outline of the texture. Center (ver 6.1) The pattern piece is snapped to the center of the texture. Snap to Pattern The pattern piece is snapped to another piece. Zoom Extents All 2D Pattern Window zooms out to display all patterns. Note: You can hide or show the line or information of 2D patterns at the top-left corner.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000157067,
+        "Section": "Print Layout Mode",
+        "Tokens": 157
+    },
+    {
+        "ArticleId": "115002752908",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115002752908",
+        "Title": "Edit Topstitch",
+        "Content": "List of Contents Move Properties Objective Relocate or adjust length of Topstitches. Location Main Menu Materials Topstitch Edit Topstitch 2D Toolbar Edit Topstitch Operation Move Select the tool/menu indicated. Click and drag a point or a whole segment of the Topstitch to be edited. The Topstitch is moved to the position. Properties Topstitch Style Select the Topstitch Style to change the properties. Option Description Information Enter the information of trim. Type Set the Topstitch type to Texture or OBJ. Offset Adjust the interval between Topstitches on Internal Lines or Pattern outlines. Stitch Count Create various different types of Topstitches up to five at a time. Use Same Specification/ Material This option to configure multiple topstitches' Specification and Materials. Specification Shape Set the shape of Topstitch. Note:Click the Add OBJ Topstitch button on the right to add and use your OBJ as a Topstitch.(ver 7.1) Set the Lenth(SPI), Space, Thread Thickness of the Topstitch. Note: SPI stands for Stitch Per Inch, meaning the number of stitches within an inch. For example, 'SPI-4' means there are four individual stitches within an inch. For standard garments, SPI-11 is often being used. Material Partially set the material of the trim. Configuration Face Select the face of Topstitch. Number of Lines Set how many lines of Topstitches there are for a single style. Distance It is possible to adjust the distance between the lines. The unit of the length can be set in inch, millimeter(mm) or centimeter(cm). 3D The Topstitch is more realistic in the 3D window. Topstitch Click on the Topstitch created in the pattern to change its properties individually. Option Description Topstitch Property Change the style of the selected Topstitch. Extend When the start or end point of a Topstitch does not reach or sticks out of the Pattern outline, extend it to fit to the Pattern. Corner Curved Set Topstitch corner type to extend the stitch more smoothly at corners. Right Angled Set the Topstitch to be a right angle in the corner of the pattern. Smooth (ver 7.1) Set it to continue naturally if the edge of the Topstitch is broken. Offset Set the Z Offset of the Topstitch. Placement Use the Flip function to set a Topstitch on an Internal Shape/Line in a different direction (inside and outside).",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000728288,
+        "Section": "Topstitch",
+        "Tokens": 516
+    },
+    {
+        "ArticleId": "115000426228",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000426228",
+        "Title": "Attach to Avatar Tape",
+        "Content": "Objective Attach avatar tapes to internal or external seam/pattern lines. Location Main Menu Avatar Avatar Tape Attach to Avatar Tape 3D Toolbar Attach to Avatar Tape Operation Follow the indicated guideline below: Main Menu Avatar Avatar Tape Attach to Avatar Tape 3D Toolbar Attach to Avatar Tape In the 3D window, select seam or pattern line to attach to avatar tape. Pattern with the selected line becomes transparent and the selected line gets highlighted in red. Select avatar tape to be attached. Once it is selected, the pattern becomes normal, the attached seam or pattern line and the avatar tape becomes in red. To detach avatar tape from seam or pattern line, click on Attach to Avatar Tape tool again, and press 'Delete' on keyboard.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000716747,
+        "Section": "Avatar",
+        "Tokens": 147
+    },
+    {
+        "ArticleId": "115015824287",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115015824287",
+        "Title": "Create Custom Blocks",
+        "Content": "List of Contents Open Modular Template Load and Place Patterns Sew Patterns and Block Boxes Objective Create a Block of a desired Garment and apply it to your design. Location Main Menu Click the Mode button on the right top corner MODULAR Operation Open Modular Template Click the Modular Template Presets on the right top corner of Block Editor. Modular Template Presets window appears. Select a desired Garment category and Modular Template type, click OK. The selected Modular Template appears in the 2D window. Load and Place Patterns Add desired Garment files to place into the Block Boxes. Place the Patterns of added Garment to the Blcok Boxes. The Patterns are linked into the Block Boxes. The Patterns are automatically arranged to the avatar in 3D Window. (ver 7.0) Sew Patterns to Blcok Boxes, then Simulate. Sew Patterns and Block Boxes Click on Segment Sewing or Free Sewing tool. Sew Patterns and Block Boxes. Note: Patterns that are sewn alone ( i.e. hems, sleeves or armholes of a sleeveless style) do not need to be sewn to Block Boxes. When sewing Block Boxes and Blocks, M:N Sewing cannot be used. Only 1:N Sewing can be used for Block Boxes to be 1. Difference in length between the actual Patterns and the Block Boxes has no effect on the Simulation. To show Sewing Lines between Block Boxes and Patterns, activate the Show Modular Sewing/Show Pattern Sewing tool. This tool is activated by default in the Modular Mode. Click it again to either hide or show all Sewing Lines.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000729128,
+        "Section": "[MODE] Modular",
+        "Tokens": 325
+    },
+    {
+        "ArticleId": "115012378448",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012378448",
+        "Title": "Paste",
+        "Content": "List of Contents Paste Paste with Specific Values Paste - Paste copied Patterns and Internal Shapes. Paste a Pattern - Navigate to the 2D toolbar and select the Transform Pattern tool or the Edit Pattern tool. - Right-click on the Pattern to be duplicated and select Copy. - The selected Pattern will be duplicated. - Right-click on the 2D window and select Paste from the pop-up menu. - The duplicated Pattern will follow along with the mouse cursor. - Click on the 2D window to Paste the Pattern. - The identical Pattern will be created in the 2D window. - Note: Trims are copied and pasted along with Patterns (ver5.0.0.) Paste an Internal Shape - Navigate to the 2D toolbar and select the Transform Pattern tool or the Edit Pattern tool. - Right click on the Internal Shape to be duplicated and select Copy. - The selected Internal Shape will be duplicated. - Right click on the 2D window and select Paste from the pop-up menu. - The duplicated Internal Shape will follow along the mouse cursor. - Click within the Pattern to Paste the Internal Shape. - The identical Internal Shape will be created in the 2D window. Paste with Specific Values Paste a Pattern - Navigate to the 2D toolbar and select the Transform Pattern tool or the Edit Pattern tool. - Right click on the Pattern to be duplicated and select Copy. - The selected Pattern will be duplicated. - Right click on the 2D window and select Paste from the pop-up menu. - The duplicated Pattern will follow along the mouse cursor. - Right click on the 2D window to access the Paste pop-up window. - Enter the desired values to Interval and Number Of Shapes. Then, click OK. - The Pattern will be pasted based on the settings. Paste an Internal Shapes - Navigate to the 2D toolbar and select the Transform Pattern tool or the Edit Pattern tool. - Right click on the Internal Shape to be duplicated and select Copy. - The selected Internal Shape will be duplicated. - Right click on the 2D window and select Paste from the pop-up menu. - The duplicated Internal Shape will follow along the mouse cursor. - Right click on the 2D window to access the Paste pop-up window. - Enter the desired values to Internval, Number OF Shapes, and Position. Then, click OK. - The Internal Shape will be pasted based on the settings.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=9AYlKFvBdfc",
+            "https://www.youtube.com/watch?v=TplJM7z79bY",
+            "https://www.youtube.com/watch?v=sLohWrXuAZE",
+            "https://www.youtube.com/watch?v=ZmpPxOhezg0"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 493
+    },
+    {
+        "ArticleId": "115015798567",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115015798567",
+        "Title": "Edit Grading",
+        "Content": "List of Contents Move Right Click pop-up menu Objective Edit the grading size applied to the Pattern. Watch the tutorial video Location Main Menu 2D Pattern Edit Grading / Edit Curve Grading / Edit Grading (Each) / Edit Curve Grading (Each) 2D Toolbar Edit Grading / Edit Curve Grading / Edit Grading (Each) / Edit Curve Grading (Each) Operation Move To edit the grading value, click the check box to the right of the Size to be based. The size checked is set to Base. Select the tool/menu indicated. The size other than the Base is displayed as a segment of the set color. Click and Drag the pattern outline or Point to be moved. Or, Use the arrow key on the keyboard. Click or Right-click to enter the distance value directly in the Property Editor. Option Description Distance Distance For each size, set the distance from the segment or point of the base size By default, the grading pattern displays the X and Y axis distances for each size, and you can hide them by clicking the Show icon as needed Offset Set the offset between each size. When the All value is changed, the offset between all sizes is applied equally to the corresponding value. Size (ver 2024.1) Set the size for each graphic grading size. You can also change the unit to a ratio (%). Arrow Key Movement Set the movement distance of the arrow keys. The grading value is applied and the size other than the Base is displayed as a segment of the set color. Right Click pop-up menu Select the tool/menu indicated. Right-click on the pattern outline and point. A right-click pop-up menu appears. Click the menu as needed. Option Description Remove Graded size The grading applied to the selected pattern is removed. Copy Copy the grading value of the selected point. Paste/ Mirror Paste Paste the copied grading values as they are, or paste only the values of the X or Y axis. Flip Horizontally /Vertically The grading applied to the selected segment is flipped horizontally/vertically. Align Rearrange grading by Pattern/Segment/Point. Note: You can also align by internal lines and graphics. (ver 2024.1) Note: When select patterns in 2D window, check the grading information or change the Base Size in the Property Editor.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003621087,
+        "Section": "Grading",
+        "Tokens": 470
+    },
+    {
+        "ArticleId": "360007764034",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/360007764034",
+        "Title": "Edit 3D Sewing",
+        "Content": "List of Contents Edit Sewing Edit Sewing Edit Sewing - Edit Sewing Lines in the 3D window as the same as in the 2D window. - 3D Toolbar Edit Sewing Edit Sewing Move Sewing - Select theEdit Sewing tool from the 3D toolbar. - Click and drag the Sewing Line to be moved. - When the selected Sewing Line is symmetrical, both Sewing Lines move symmetrically. Adjust Sewing Length - Select theEdit Sewing tool from the 3D toolbar. - Select and drag one end point of the Sewing Line towards the desired direction. Delete Sewing - Select theEdit Sewing tool from the 3D toolbar. - Right click on the Sewing Line to be deleted. - Click Delete or Delete Sewing from the pop-up menu. - Or, hit the Delete key on the keyboard when the Sewing Line is selected. Merge Sewing - Select theEdit Sewing tool from the 3D toolbar. - Right click on the Sewing Line to be merged. - Click Merge from the pop-up menu. - Patterns are merged based on the selected Sewing Line. Reverse Sewing - Select theEdit Sewing tool from the 3D toolbar. - Right click on the Sewing Line which its Directional Notch needs to be reversed. - Select Reverse Sewing from the pop-up menu. - The selected Sewing Lines Directional Notch is reversed. Activate/Deactivate Sewing - Select theEdit Sewing tool from the 3D toolbar. - Right click on the Sewing Line to be deactivated. - Select Deactivate Sewing from the pop-up menu. - Selected Sewing Line is deactivated. -To activate the Sewing Line, select Activate Sewing(Selected) from the pop-up menu. Hide/Show Sewing - Select theEdit Sewing tool from the 3D toolbar. - Right click on the Sewing Line to be hidden. - Select Hide Sewing(Selected) from the pop-up menu. - Select Sewing is hidden. - To show the Sewing Line again, right click other Sewing Line. - Select Show Sewing(All) from the pop-up menu.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=1pFGLTqwAlI",
+            "https://www.youtube.com/watch?v=RQUwaCKyGwM"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 453
+    },
+    {
+        "ArticleId": "115013369268",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115013369268",
+        "Title": "Edit Notch Properties",
+        "Content": "Objective Edit notch properties to use it as needed. Location Main Menu 2D Pattern Create Notch 2D Toolbar Notch Operation Select the tool/menu indicated in Location. Select the notch to edit its properties. The selected notch's properties appear in the Property Editor. Refer to the table below and edit the selected notch as desired. Option Description Name Change the name for the notch. Type Select the notch shape. T V I L U Box Angle Perpendicular Notch is placed perpendicular to the line. Custom Arbitrary decide in what angle the notch is created based on the line. Length Edit notch length as needed. This option appears or disappears according to the Notch setting in User Setting 2D. The notches export with the configured size. Direction Decided in which direction the notch is created. This option is activated only when the notch is created at a corner. Point (Center) Notch is created at the center of two lines making the corner. Segment 1 Notch is shifted towards a line. Segment 2 Notch is shifted towards the other line. Flip Flip the notch to the other side of the line. Lock Fix the notch position when moving the point of the pattern outline to where the notch was created. Lock Position When setting the notch fixed position, select the position of the reference point. Start/End Point Set the position to fix the notch. Grading Size (ver 7.2 ) Fixed Instead of moving the notches proportionally with the grading size, it fixes them in a specific position. You can do the same when importing DXF files.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003578728,
+        "Section": "Notch / Seam Allowance",
+        "Tokens": 320
+    },
+    {
+        "ArticleId": "115000497027",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000497027",
+        "Title": "[Property] Extend Topstitch",
+        "Content": "Objective When the start or end point of a Topstitch does not reach or sticks out of the Pattern outline, extend it to fit to the Pattern. When using the Free Topstitch tool, the starting point is going to be the first click point. Location Topstitch Property Editor Extend Start / Extend End Operation Select a Topstitch with Edit Topstitch tool in the 2D window for changing its properties. Topstitch properties appear on the Property Editor. Follow the indicated guideline below: Topstitch Property Editor Extend Start / Extend End",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000728288,
+        "Section": "Topstitch",
+        "Tokens": 112
+    },
+    {
+        "ArticleId": "115012380188",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012380188",
+        "Title": "Edit Texture (3D)",
+        "Content": "List of Contents Edit Texture (3D) Translate Scale Rotate Grainline Rotate Edit Texture (3D) - Edit textures grainline and position per Pattern or scale and rotate texture per fabric. - Select the Edit Texture (3D) tool from the 3D toolbar or navigate to Main Menu Materials Texture Edit Texture (3D) Translate - Select the Edit Texture (3D) tool from the 3D toolbar. - Click and drag the texture applied to the Pattern. - Only the texture within the selected Pattern will be moved. Scale Scale per Pattern - Select the Edit Texture (3D) tool from the 3D toolbar. - Select the Pattern that its texture to be scaled as the Gizmo is activated on the right top corner of the 3D window. - Click and drag the diagonal arrow. - The texture will be scaled, maintaining its height and width ratio. - Click and drag the vertical or horizontal arrow to vertically or horizontally scale the texture respectively. Scale per Fabric - Select the fabric item to be edited in the Object Browser. - Navigate and type in desired values to Property Editor Texture Transformation Width or Height Note: Width and Height can also be adjusted with Percentage (%) (ver5.0.0.) Rotate Grainline On Pattern - Select the Edit Texture (3D) tool from the 3D toolbar. - Click on the Pattern that its grainline to be rotated. - The selected Patterns grainline will be activated as it appears in black. - Click and drag to rotate the grainline. - The selected Patterns grainline and its texture will be rotated towards the direction the mouse was moved. In Property Editor - Select the Pattern that its grainline to be rotated. - Navigate and type in desired values to Property Editor Fabric Grainline Direction - Once Simulation is activated, the drape will change accordingly. Rotate - Select the Edit Texture (3D) tool from the 3D toolbar. - Click on the Pattern that its texture to be edited. - When the Gizmo tool is activated on the right top corner of the 3D window, click and drag the curved line of the Gizmo tool. - Hold down the Shift key on the keyboard to rotate the texture by 45 or 90.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=WuIje7F0EsY",
+            "https://www.youtube.com/watch?v=upc4EUzt7Y8",
+            "https://www.youtube.com/watch?v=9cSa8iSQFZ8",
+            "https://www.youtube.com/watch?v=mzeXa35c8UI",
+            "https://www.youtube.com/watch?v=0AYI2DD2a94"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 452
+    },
+    {
+        "ArticleId": "115000472748",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000472748",
+        "Title": "Dart / Base Dart",
+        "Content": "Objective Create darts inside patterns. Location Main Menu 2D Pattern Create Dart / Base Dart 2D Toolbar Dart / Base Dart (ver 5.2) Operation Select the tool/menu indicated above. Click and drag within a pattern to create a dart. Or click once within the pattern. The Create Dart window appears. Enter the desired values for the following options. Dimension Determine width (left), width (right), height (up), height (down). All values are measured from the center of the dart. Position Outline Designate the dart's position within the pattern by entering the margin between the dart outline and the pattern outline (ver2.5.0). Center Designate the dart's position within the pattern by entering the distance between the center of the dart and the pattern outline (ver2.5.0).",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 360007285034,
+        "Section": "Dart / Pleats / Fullness",
+        "Tokens": 167
+    },
+    {
+        "ArticleId": "115012380828",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012380828",
+        "Title": "Low-Res Garment",
+        "Content": "List of Conetents Low-Res Garment Low-Res Garment Settings Low-Res Garment - Decrease general quality of the 3D Garment. - Select the Low-Res Garment tool from the 3D toolbar or navigate and select Main Menu 3D Garment Low-Res Garment. Low-Res Garment Settings - Select the Low-Res Garment tool from the 3D toolbar and the Low-Res Properties window will appear. Particle Distance - Change all Patterns Particle Distance to 20mm. - Modify Tolerance to decide the range of Particle Distance so that only Patterns with corresponding Particle Distance value will be affected. Patterns with Particle Distance value outside of the Tolerance will not be affected. The default Tolerance range is 5mm to 20mm. Addl Thickness - Collision - Change all Patterns Addl Thickness- Collision to the default value, 2.5mm. - Modify Tolerance to decide the range of Addl Thickness- Collision so that only Patterns with corresponding Addl Thickness - Collision value will be affected. Patterns with Addl Thickness - Collision value outside of the Tolerance will not be affected. Skin Offset - Change all Avatars Skin Offset to the default value, 3mm. - Modify Tolerance to decide the range of Skin Offset so that only Patterns with corresponding Skin Offset value will be affected. Patterns with Skin Offset value outside of the Tolerance will not be affected. Simulation Quality - Change the Simulation preset to the default setting, NORMAL. - To decrease the general quality of the 3D Garment only with the desired options, toggle off options as needed. - Select OK. The Simulation icon will change. - Activate the Simulation to apply the settings.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=JQHYRWeRYls",
+            "https://www.youtube.com/watch?v=ONAksiYyWLE",
+            "https://www.youtube.com/watch?v=7hjdc8LLbSs",
+            "https://www.youtube.com/watch?v=G6Gs7oZjx5k",
+            "https://www.youtube.com/watch?v=IvPi7Rh80YU",
+            "https://www.youtube.com/watch?v=nBEg_qOqKgU"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 351
+    },
+    {
+        "ArticleId": "360011148874",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/360011148874",
+        "Title": "2D Window Display Icons ",
+        "Content": "List of Contents 2D Sewing 2D Pattern 2D Information 2D Pattern Rendering Style 2D Sewing Show 2D Sewing Show or hide Sewing Lines from the 2D window. Show 2D Topstitch Show or hide Topstitches from the 2D window. Show 2D Puckering Show or hide Puckerings from the 2D window. 2D Pattern Show Baseline Show or hide Baselines from the 2D window. Show Seam Allowance Show or hide Seam Allowances from the 2D window. Show Grading Show or hide Gradings from the 2D window. Show 3D Pen Show or hide 3D Pen lines from the 2D window. Show Reference Line Show or hide Reference Lines from the 2D window. Show Symmetric/Instance Lines Show or hide Symmetric or Instances lines from the 2D window. 2D Information Show Pattern Names Show or hide pattern names from the 2D window. Show Annotation Show or hide Annotations from the 2D window. Show Line Length Show or hide line length from the 2D window. Show Grainline Show or hide grain lines from the 2D window. Show 2D Measurements Show or hide 2D measurements from the 2D window. Show 2D Ruler Show or hide 2D ruler from the 2D window. Show Guideline Show or hide guidelines from the 2D window. Show UV Guide Show or hide UV guide from the 2D window. 2D Pattern Rendering Style Texture Surface Patterns' textures are displayed. Monochrome Surface Patterns are expressed in black or white. Opaque Surface Patterns' textures are translucent. Transparent Surface Patterns are completely transparent. Mesh Patterns are expressed in a mesh form. Back Texture Surface Textures applied to the back of the Patterns are displayed. Random Color Surface (ver5.2) Easily differentiate Patterns as they are randomly colored differently.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000089187,
+        "Section": "Configurations",
+        "Tokens": 407
+    },
+    {
+        "ArticleId": "115000483967",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000483967",
+        "Title": "Apply Graphic Image",
+        "Content": "Objective Place graphic images on Patterns. Use this function to express Garment details such as placed prints, embroideries, or logos. Location Main Menu Materials Graphics Graphic (2D Pattern) / Graphic (3D Pattern) 3D or 2D Toolbar Graphic (2D Pattern) / Graphic (3D Pattern) Operation Select the tool/ menu indicate in Location: The file browser appears Click a graphic image and a pattern where the graphic image should be placed. The Add Graphic window appears. Enter the desired values for the graphic dimensions and position and click OK Width Set the width of the graphic image. Height Set the height of the graphic image. Link or unlink the aspect ratio of the graphic image. Position Outline Set the distance from the left, right, top, or bottom of the graphic outline to the pattern outline. This menu only appears when placing the graphic in the 2D window (ver2.5.0). Center Set the distance from the center of the graphic to the left, right, top, or bottom of the pattern outline. This menu only appears when placing the graphic in the 2D window (ver2.5.0). Graphic is applied to the pattern. Graphic is applied to the seam across the pattern pieces as well. (ver 6.0) Note: Recommend you to apply and edit the graphic in the 3d window, when you apply the graphic over the seam. Add as Graphic by right-clicking on the image file in the library. If the AI/PDF file has more than one artboard and layer, select the desired artboard and layer in the preview window. (ver 6.1)",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000716147,
+        "Section": "Graphic",
+        "Tokens": 337
+    },
+    {
+        "ArticleId": "115000305508",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000305508",
+        "Title": "Snap to Grid",
+        "Content": "List of Contents Snap to Grid Set Grid Size Objective Draft or modify Patterns and Internal Shapes using grids. Location Snap to Grid Main Menu Preferences Snap to Grid (ver3.2 or earlier) Right Click Pop-Up Menu (on 2D Window) Snap to Grid (ver3.2 or ealier) Main Menu Preferences Grid Properties (F12) 2D Grid Snap to Grid (ver4.0 or later) Right Click Pop-Up Menu (on 3D/2D Window) Grid Properties (F12) 2D Grid Snap to Grid (ver4.0 or later) Set Grid Size Main Menu Preferences 2D Pattern Window Properties/ Grid Properties (ver3.2 or earlier) Right Click Pop-Up Menu (on 2D Window) 2D Pattern Window Properties/ Grid Properties (ver3.2 or earlier) Main Menu Preferences Grid Properties (F12) 2D Grid Distance (ver4.0 or later) Right Click Pop-Up Menu (on 3D/2D Window) Grid Properties (F12) 2D Grid Distance (ver4.0 or later) Operation Snap to Grid Follow the indicated guideline below: Main Menu Preferences Snap to Grid Right Click Pop-Up Menu (on 2D Window) Snap to Grid Patterns and Internal Shapes snap to the grids when moved. Set Grid Size Follow the indicated guideline below: Main Menu Preferences 2D Pattern Window Properties/ Grid Properties (ver4.0.0) Right Click Pop-Up Menu (on 2D Window) 2D Pattern Window Properties/ Grid Properties (ver4.0.0) Find the Distance option in the Property Editor. Enter the desired value. The grid reflects the change.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115002522408,
+        "Section": "Preferences/Settings",
+        "Tokens": 351
+    },
+    {
+        "ArticleId": "115012226987",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012226987",
+        "Title": "Select All With Same Property",
+        "Content": "List of Contents Select All with Same Property Select All with Same Property from Pop-Up Menu Select All with Same Property from Property Editor Select All with Same Property - Select all Patterns will the same property. - Right-click on the Pattern and select Select All with Same Property from the pop-up menu, or select the same option in the property editor. Selected All with Same Property from Pop-Up Menu Particle Distance - Select the Transform Pattern tool from the 2D toolbar and right click on the desired Pattern. Hover the mouse over Select All with Same Property and select Particle Distance from the pop-up menu. - All Patterns with the same particle distance will be selected. Layer - Select the Transform Pattern tool from the 2D toolbar and right click on the desired Pattern. Hover the mouse over Select All with Same Property and select Layer from the pop-up menu. - All Patterns with the same layer will be selected. Fabric - Select the Transform Pattern tool from the 2D toolbar and right click on the desired Pattern. Hover the mouse over Select All with Same Property and select Fabric from the pop-up menu. - All Patterns with the same fabric will be selected. Select All with Same Property from Property Editor - Select the Pattern from the 2D window. - Navigate to the Property Editor and find Simulation Properties. Right-click on the options below the Simulation Properties. Click Select All with Same Property to select all patterns with the same respective setting.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=_1v-5LeK8_Y",
+            "https://www.youtube.com/watch?v=dnGMbouVzXg",
+            "https://www.youtube.com/watch?v=i_-NtbHaC8s"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 286
+    },
+    {
+        "ArticleId": "360000451587",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/360000451587",
+        "Title": "Create Smooth Curve",
+        "Content": "List of Contents Smooth Curve Smooth Curve Smooth Curve with Specific Value Smooth Curve with Reference Line Smooth Curve - Round corners of Patterns or Internal Shapes. - Select the Smooth Curve tool from the 2D toolbar. - Main Menu &gt 2D Pattern &gt Edit &gt Smooth Curve Smooth Curve - Hover the mouse over the corner which you wish to curve. - Click and drag the corner to convert it to a rounded corner. Smooth Curve with Specific Value - To assign a specific length to the rounded corner, right click on the 2D window while click and dragging the desired corner. - The Round Corner by Length window appears. - Type in the line length or adjust the curvature. - Click OK to complete the rounded corner. Smooth Curve with Reference Line - Click Pattern Outlines that make a corner which needs to be rounded. - A reference line is created between the selected Pattern Outlines. - Select the side that needs to be rounded. - Click and drag the reference line to create the desired curve line. Once you release the mouse, the selected side of the Pattern Outline is replaced with the reference line.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=6pSCiC-95h0",
+            "https://www.youtube.com/watch?v=oxLNHvTO_08",
+            "https://www.youtube.com/watch?v=aEXwPAEMTlk",
+            "https://www.youtube.com/watch?v=YwyPQN-Q47g"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 224
+    },
+    {
+        "ArticleId": "115002000227",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115002000227",
+        "Title": "Compatible File Format",
+        "Content": "Compatible File Format File Format Import Export Detail 3D FBX *.fbx O O File contains Mesh, Material, Joint, Animation, and Camera information. COLLADA *.dae O X This file can be exported from other 3D softwares such as 3ds Max, Maya, Pose, and DAZ Studio and used. These files contain geometry and material, also in a addition to rigging, skinning, and animation data When exporting COLLADA files from 3DS Max or Maya, install the OpenCOLLADA plugin (http://www.opencollada.org/download.html) and export to use the avatar OBJ *.obj O O File contains Geometry and Material Information. Primarily used for importing Avatar and related sources into the program. LXO *.lxo X O File contains Geometry and Material Information. Used to export Apparel/Avatar information to Modo in the LXO file format. Animation Cache *.mc *.pc2 *.mdd O O Is the vertex animation data. It is possible to take animations made in CLO 3D to 3DSMax or Maya in point cache format. Alembic *.abc O O Is an interchange file format for computer graphics that saves both vertex and animation information. 2D DXF-AAMA *.dxf *.aam O O Is the standard format of industry CAD patterns and contains 2D Pattern information. CLO 3D is currently compatible with DXF files such as YUKA, Gerber, Lextra, StyleCAD, Optitex, and Pad System DXF-ASTM *.dxf O O Texture *.jpg, *.png, etc. O O Textures inserted into garments, use image textures in formats such as JPG, PNG, TIF, and PSD. Supported file types: jpg, jpeg, png, bmp, wbmp, psd, ico, tga, tif, tiff, gif, mng, jng, dds, hdr, koa, lbm, iff, pbm, pcd, pcx, pgm, ppm, ras, cut, xmb, xpm, sgi, g3, exr, j2k, jp2, pfm, pict, pct) Note: Texture files compatible with V-ray Render are: hdr, exr, png, bmp, tga, sgi, jpg, pic, and psd. (V-ray does not support 32bit format of jpeg.) 2D Snapshot *.png - O Ability to export patterns (of the 2D window) in a 1:1 scale PNG file. 3D Snapshot 3D Multiview *.png - O Ability to save single and/or multiple views of the 3D window in the PNG file format. Video *.avi - O Ability to capture and export videos of the 3D window in the AVI file format.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628387,
+        "Section": "File Import/Export",
+        "Tokens": 591
+    },
+    {
+        "ArticleId": "360001558747",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/360001558747",
+        "Title": "2D",
+        "Content": "Objective Change the default settings of the software in User Settings. Designated settings will become the default after the program is restarted. Shortcut keys, menus, graphics options, view controls, default files, font settings, and other miscellaneous properties can be set in User Settings. In the 2D section, configure settings related to 2D features. Location Main Menu Settings User Settings 2D Operation Adjust the settings below as needed: Main Menu Settings User Settings 2D Pattern Default Particle Distance Set the default particle distance when creating patterns. Automatically Offset 2D Patterns when Cut Toggle the option to offset 2D patterns when the Cut function is used, making it easier to work with UV export (ver3.2.0). Notch (ver5.0.0) Display Type Configure how notches appear in the 2D window. Length Fixed to Screen Notch length is fixed to the screen. The notch length does not change according to changes in the screen size (zoom-in or zoom-out.) When this option is toggled ON, the Notch Length option disappears from the Property Editor. Actual Length Notch length is fixed to its setting. The notch length changes when screen size is changed (zoom-in or zoom-out.) When this option is toggled OFF, the Notch Length option appears in the Property Editor.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115002522408,
+        "Section": "Preferences/Settings",
+        "Tokens": 269
+    },
+    {
+        "ArticleId": "115012380168",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012380168",
+        "Title": "Edit Texture (2D)",
+        "Content": "List of Contents Edit Texture (2D) Translate Scale Rotate Rotate Grainline Edit Texture (2D) - Edit textures grainline and position per Pattern or scale and rotate texture per fabric. - Select the Edit Texture (2D) tool from the 2D Toolbar - Or, navigate to Main Menu Materials Texture Edit Texture (2D). Translate - Select the Edit Texture (2D) tool from the 2D toolbar. - Click and drag the texture applied to the Pattern. - Only the texture within the selected Pattern will be moved. Scale Scale per Pattern - Select the Edit Texture (2D) tool from the 2D toolbar. - Select the Pattern that its texture to be scaled as the Gizmo is activated on the right top corner of the 2D window. - Click and drag the diagonal arrow. - The texture will be scaled, maintaining its height and width ratio. - Click and drag the vertical or horizontal arrow to vertically or horizontally scale the texture respectively. Scale per Fabric - Select the fabric item to be edited in the Object Browser. - Navigate and type in desired values to Property Editor Texture Transformation Width or Height - Toggle on Lock Aspect Ratio to maintain the height and width ratio while scaling the texture. Rotate - Select the Edit Texture (2D) tool from the 2D toolbar. - Click on the Pattern that its texture to be edited. - When the Gizmo tool is activated on the right top corner of the 2D window, Click and drag the curved line of the Gizmo tool. Rotate Grainline On Pattern - Select the Edit Texture (2D) tool from the 2D toolbar. - Click on the Pattern that its Grainline to be rotated. - The selected Patterns Grainline will be activated as it appears in black. - Click and drag to rotate the Grainline. - The selected Patterns Grainline and its texture will be rotated towards the direction the mouse was moved. In Property Editor - Select the Pattern that its Grainline to be rotated. - Navigate and type in desired values to Property Editor Fabric Grainline Direction - Once Simulation is activated, the drape will change accordingly.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=qZokNP2CqeU",
+            "https://www.youtube.com/watch?v=MeluRdWEa1o",
+            "https://www.youtube.com/watch?v=xRMVdXKXT60",
+            "https://www.youtube.com/watch?v=pXJfVUtUcTM",
+            "https://www.youtube.com/watch?v=2AwFyrAXddM",
+            "https://www.youtube.com/watch?v=rxD_YKmIgcg",
+            "https://www.youtube.com/watch?v=Tghfphn9RWo"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 432
+    },
+    {
+        "ArticleId": "115002326248",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115002326248",
+        "Title": "[Tool] Seamline Topstitch",
+        "Content": "Objective Create a Seamline Topstitch. Location Main Menu Materials Topstitch Seamline Topstitch 2D Toolbar Seamline Topstitch Operation Follow the indicated guideline below: Main Menu Materials Topstitch Seamline Topstitch 2D Toolbar Seamline Topstitch All sewing lines on the Pattern are displayed. Click on a point where a Topstitch begins. Move mouse to the direction where the Topstitch is going to be created. Click on another point where the Topstitch ends. The Topstitch is now being created with being highlighted. Note: Click and drag in the 2D window to encompass all segments where Topstitches to be applied. Topstitches appear on all selected segments (ver3.2.0). Use lasso selection to select Pattern Outlines and Internal Lines where Topstitches should be created on (ver3.2.0). OBJ Topstitches temporarily disappear when the Simulation is activated, but they appear again when the Simulation is deactivated (ver3.2.0). Right click when creating the Topstitch to enter specific length (ver4.2.0).",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000728288,
+        "Section": "Topstitch",
+        "Tokens": 232
+    },
+    {
+        "ArticleId": "115000484187",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000484187",
+        "Title": "Lock All Graphics",
+        "Content": "Objective Lock all graphic images in the 2D window. Use this function to easily select patterns when graphics completely overlap patterns (ver2.5.0). Operation Right-click in the 2D window: pop-up menu Lock All Graphics All graphic images in the 2D window are now locked (cannot be selected).",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000716147,
+        "Section": "Graphic",
+        "Tokens": 65
+    },
+    {
+        "ArticleId": "115000524267",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000524267",
+        "Title": "[Style Property] Topstitch Offset (Inch)",
+        "Content": "Objective Adjust the interval between Topstitches on Internal Lines or Pattern outlines. Location Object Browser Topstitch Topstitch Property Editor Offset Operation Follow the indicated guideline below: Object Browser Topstitch Topstitch Property Editor Offset Adjust the interval. The value is now being adjusted and applied. Note : Offset value appears in inch(in) and this unit of length can be set in millimeter(mm) or centimeter(cm) in the User Setting. When alteration is made in inch(in), it automatically appears in millimeter(mm) or centimeter(cm) and vice versa.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000728288,
+        "Section": "Topstitch",
+        "Tokens": 115
+    },
+    {
+        "ArticleId": "360053353574",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/360053353574",
+        "Title": "Auto Sewing (ver 6.0)",
+        "Content": "Objective Patterns are automatically sewn based on their placement on avatars. Note: The available range of automatic sewing is as follows, Garment: Top (T-shirts, jackets, Jumper, etc.) and One-piece are possible. Bottom (Skirt, Pants, etc) and Pants are impossible. Parts: Bodies, Sleeves, Collars, Darts, Pleats, Cuffs, Sleeves with Vend &amp Placket. Layers: One-ply patterns such as Pockets and Lining except for two-layer Patterns. Location Main Menu Sewing Auto Sewing 3D Toolbar Auto Sewing Operation Click the Arrangement Points of the Avatar to arrange the Pattern. Since Auto Sewing is calculated by the information of the Arrangement Points (where each Pattern Piece is arranged), correct Arrangement Points should be used based on the rules below, Otherwise, Auto Sewing may not work properly. (It is only applicable to the Bounding Volumes provided by CLO) Collar/ Band Use Arrangement Points at the Avatar's neck. Bodies Use Arrangement Points at the Avatar's body. Sleeves Use Arrangement Points at the Avatar's arm, the cuffs can be used either arm/wrist Arrangement Points. Bottom (ver 6.1) Use Arrangement Points at the legs. Note: Be mindful to arrange the pieces to auto sew correctly. - If the belt length includes a placket which is placed over the zipper, arrange the placket piece. - Trace the internal line of the side pocket along side seams. - If the pants width is large, arrange front and back pattern pieces separately by using each of the arrangement points. Select the tool/menu indicated in Location. The arranged patterns are automatically sewn. Note: If sewing has been applied prior to automatic sewing, it is maintained while the rest of the sewing lines are being additionally auto-sewn. Darts and Pleats can be sewn automatically without arranging patterns. For Pleats, automatic sewing is possible only when Internal Lines are defined by the fold direction of the Pleats.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=ojB6NZU7q14"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000641848,
+        "Section": "Sewing",
+        "Tokens": 417
+    },
+    {
+        "ArticleId": "115012377528",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012377528",
+        "Title": "Line (Avatar)",
+        "Content": "List of Contents Line (Avatar) Use Line (Avatar) Line (Avatar) - Draw shapes or lines along Avatars or objects which will be the basis when extracting the Patterns. - Select the Line(Avatar) tool from the 3D toolbar. - Or, navigate to Main Menu and select 3D Garment Line (Avatar) Use Line (Avatar) Draw Patterns - After selecting the Line (Avatar) tool, click on the Avatar or the object in the 3D window to create the start point. - Click along the Avatar or the object to create the desired shape. - Hold down the Ctrl key while drawing the shape to create a curved line. - To complete the drawing as a closed shape, click the start point. - To complete the drawing as a line, double click the end point. - In order to extract the Pattern properly when using the Flatten tool, the shape must be closed. Divide Patterns - Draw a closed shape with the Line (Avatar) tool. - To divide the shape and extract more than one Patterns from the shape, draw lines adjacent to the shape outline.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=LxvvWWrHLIE",
+            "https://www.youtube.com/watch?v=UuxeT-rCTZQ",
+            "https://www.youtube.com/watch?v=3rl-uNtAwCs"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 224
+    },
+    {
+        "ArticleId": "115012378428",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012378428",
+        "Title": "Layer Clone (Under)",
+        "Content": "Layer Clone (Under) - Duplicate a Pattern in its draped state and place it directly under the original Pattern. Sewing Lines will be automatically applied to the Pattern outlines and Internal Lines to connect the cloned Pattern to the original Pattern. - The Layer Clone (Under) function is efficient when creating a double-layered Garment such as padding, collar, cuffs, and more. - Select the Transform Pattern tool or the Edit Pattern tool from the 2D toolbar. - Navigate to the 2D window and right click on the Pattern to be cloned and select Layer Clone (Under) from the pop-up menu. - The cloned Pattern will follow along the mouse. Click on the 2D window to place the cloned Pattern. - In the 3D window, the cloned Pattern will be directly placed under the original Pattern and its Pattern outlines and Internal Lines will be sewn to the original Pattern. - The cloned Patterns will be highlighted in light green in the 2D window and the linked editing will be applied.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=D9WO-YvA0FM"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 205
+    }
+]

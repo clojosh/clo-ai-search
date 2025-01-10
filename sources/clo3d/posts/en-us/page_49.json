@@ -1,0 +1,543 @@
+[
+    {
+        "post_id": 360046902054,
+        "post_title": "Exporting DXF-AAMA CLO created Pattners - Issues importing in Accumark",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360046902054",
+        "post_details": "Hi Everyone, I created patterns in CLO3D and exported as DXF-AAMA to send to my factory. I have a lot of respect for the Technician importing the files at the factory. She is an expert in the industry and she had a really hard time getting the files to open and when she finally did they were very wonky. She is using Accumark 13.0, February 2020. See the below images for reference. I am great with patterns but am far and away from being knowledgable in importing and exporting but trying to learn! Does anyone know why this would be happening? I would appreciate any and all advice. My pattern pieces as I see them in CLO3D: This is a view of the patterns after being uploaded using Accumark 13.0, February 2020. Thank you for taking the time to read this. Best, Lori",
+        "updated_at": "2023-11-05T17:20:52Z",
+        "comments": [
+            {
+                "author_id": 364104337428,
+                "comment_id": 360011596574,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046902054",
+                "comment_body": "Laparadis, is there any way you can try importing it in other software to diagnose if there is probably a setting in the import process in Accumark. You could use share.padsystem.com to try it as they have a 30 days trial."
+            },
+            {
+                "author_id": 393334866874,
+                "comment_id": 360011599374,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046902054",
+                "comment_body": "Hi Pablo, I opened the file with Pad Systems and I am seeing the same issues. See the below screenshots. Is this something I can correct from my end? I'm not sure what could be causing this."
+            },
+            {
+                "author_id": 364104337428,
+                "comment_id": 360011599474,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046902054",
+                "comment_body": "Laparadis, well I'd do the following: 1. I will check my CLO patterns and see if there are unnecessary points which could be causing this, especially points that are too close. I'd start where the distortion is happening. 2. I'd try exporting as DXF-ASTM and see how that goes."
+            },
+            {
+                "author_id": 410324670633,
+                "comment_id": 10929457357849,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046902054",
+                "comment_body": "393334866874 What was the solution to this problem? I am interested in how you worked around it, or fixed it? THanks!"
+            },
+            {
+                "author_id": 902531683343,
+                "comment_id": 24856206979609,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046902054",
+                "comment_body": "me too"
+            }
+        ]
+    },
+    {
+        "post_id": 360046884514,
+        "post_title": "Two methods for debossing-engraving",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360046884514",
+        "post_details": "I tried two methods to create a debossing/engraving effect. The first has a more traditional workflow. Create a piece and draw the internal shape you want to debosse/ engrave, duplicate the pieces and convert to hole the internal shape in the piece the upper piece. Sew toghete the two pieces along the perimeter and also the margin of the hole to the internal shape. Select all the section of the hole and in the property panel check the curved side geometry value, keep it around 40%. This control how much sharp the borders of the deboss appear. Tip: duplicate the fabric and light it up give this to the below piece. In the fabric assigned to the Holed pieces you can darken the side fabric color to make the shadows of the debosse more visible. Method #2 use a displacement maps create a graphic and a displacement of the graphic. Place it in the position you want. Now all the job is the correct setup that coulb different for each graphics. I my exaple I recreate the same graphics of the first method to show the different result. Below the value I use for the displacement in this case",
+        "updated_at": "2023-07-07T21:23:26Z",
+        "comments": [
+            {
+                "author_id": 407164191693,
+                "comment_id": 360011585494,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046884514",
+                "comment_body": "thank you so much...That was really helpful"
+            },
+            {
+                "author_id": 429935662153,
+                "comment_id": 900001576506,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046884514",
+                "comment_body": "So I did draw internal line of the shape that I want to engrave, then I duplicated and convert that internal line to holes and sew two edges of the pieces together (the piece with holes on top) but I am not sure how to do this part : Select all the section of the hole and in the property panel check the curved side geometry value, keep it around 40%. This control how much sharp the borders of the deboss appear. Tip: duplicate the fabric and light it up give this to the below piece. In the fabric assigned to the Holed pieces you can darken the side fabric color to make the shadows of the debosse more visible. Could you explain how to create the shadow with more details please?"
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 900002574043,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046884514",
+                "comment_body": "Hi 429935662153. Curved Side geometry determines if the edge of the fabric will be angular or curved once additional fabric thickness is added. The higher the percentage the more curved the edge will be. Please see below example Fabric piece #1 has Curved side geometry at 100% while Fabric piece #2 has Curved side geometry at 0%"
+            },
+            {
+                "author_id": 429935662153,
+                "comment_id": 900002574103,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046884514",
+                "comment_body": "thank you!! Another question, could anyone know how to create engraved button like this ?"
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 900001580206,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046884514",
+                "comment_body": "Hi 429935662153, There are 2 ways to create the engraved button/ snap button like your images. 1. Apply CLO button and change its shape. Then add UV map to texture. The UV map materials can be found in CLO Library &gt Hardware and Trims &gt Button and Buttonholes &gt Button UV Texture Maps. You can customise the button texture on UV map by Photoshop, like adding an engraved appearance or brand name. Please see the guide from here: https://support.clo3d.com/hc/en-us/articles/115005850587--Property-Create-Button-Texture 2. Create your own button obj in 3D modelling program. Or download the button obj from CLO CONNECT Store or other online platforms. After that, you can register the button obj in CLO and use it. Please see the guide from here: https://support.clo3d.com/hc/en-us/articles/115015820408-Register-Custom-OBJ-as-Buttons"
+            }
+        ]
+    },
+    {
+        "post_id": 360046881074,
+        "post_title": "Debossing/Engraving",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360046881074",
+        "post_details": "How do i deboss/engrave a shape or logo on CLO?",
+        "updated_at": "2023-02-27T22:03:51Z",
+        "comments": [
+            {
+                "author_id": 28409906768,
+                "comment_id": 360011578434,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046881074",
+                "comment_body": "Hi 407164191693, I just create a post in which explain two method to create debossing. https://support.clo3d.com/hc/en-us/community/posts/360046884514-Two-mwthods-for-debossing-engraving Daniele."
+            },
+            {
+                "author_id": 416953146234,
+                "comment_id": 360012359773,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046881074",
+                "comment_body": "Thanks for sharing a valuable information FE"
+            },
+            {
+                "author_id": 28409906768,
+                "comment_id": 4408071994649,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046881074",
+                "comment_body": "I'm happy you found it interesting 903186502326 and 903240617723 Thank you for the feedback. Daniele"
+            }
+        ]
+    },
+    {
+        "post_id": 360046864234,
+        "post_title": "problem when exporting a cache using modular set up",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360046864234",
+        "post_details": "there is a problem with channels when exporting the cache to a different program like maya for expamle when using the modular setup.",
+        "updated_at": "2023-07-07T21:22:03Z",
+        "comments": []
+    },
+    {
+        "post_id": 360047032813,
+        "post_title": "Rigid Fabrics",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360047032813",
+        "post_details": "All of the available fabrics in CLO seem to have some stretch in them. This makes it very difficult to model garments that have rigid components such as corsets etc. Would it be possible to create some fabric materials that can be stitched to make garments but which are completely rigid? Also fabrics that are flexible but do not stretch at all? Additionally could the ability be added please to allow attachment of imported OBJ objects to fabrics? This would allow users to create garments with rigid structures/objects attached",
+        "updated_at": "2023-07-07T21:22:03Z",
+        "comments": [
+            {
+                "author_id": 408239112513,
+                "comment_id": 360011801113,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360047032813",
+                "comment_body": "Hello mdinoulis, To get a rigid fabric in Clo you can use few different options. You can use the strengthen/solidify tool, bonding or try and adjust the physical properties of the fabric. You can also use the freeze option in some cases to create an \"under structure\" that holds the shape. Let me know if you would like me to demonstrate some of those with visuals and it will be helpful to know what kind of shape you are trying to achieve. Amal Jomaa"
+            },
+            {
+                "author_id": 423095622034,
+                "comment_id": 360013212934,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360047032813",
+                "comment_body": "Hi 28409906768, I tried your settings and it's better, but my fabric isn't totally rigid yet. Were you using a specific type of fabric? Or other specific settings? Thank you for your help in advance!"
+            },
+            {
+                "author_id": 28409906768,
+                "comment_id": 360014464553,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360047032813",
+                "comment_body": "hi 423095622034 I use the setting showed in the picture mostly for creating boxes or things like that. When I have to make really rigid objects I tend to use Blender. Daniele."
+            },
+            {
+                "author_id": 364104337428,
+                "comment_id": 360013216874,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360047032813",
+                "comment_body": "Mdinoulis, you can try using positive or negative pressure to maintain your backpack inflated."
+            },
+            {
+                "author_id": 423103461094,
+                "comment_id": 360013214714,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360047032813",
+                "comment_body": "28409906768 This really works great! Thanks so much! I have been trying to get a rigid box for my backpacks for the past days and nothing really seemed to work. 423095622034 It does becomes really rigid when you make the fabric thickness 2 mm and change all seams into turned seams."
+            },
+            {
+                "author_id": 28409906768,
+                "comment_id": 360011802073,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360047032813",
+                "comment_body": "Hi 411679981753 Create a fabric with the below setup. I use it to create boxes as you can see in the other image. It seams to work better with a low mesh resolution. It is also important to set correctly the seamline fold angle, being a very rigid material few degrees can improve the quality result. Daniele."
+            }
+        ]
+    },
+    {
+        "post_id": 360047019193,
+        "post_title": "Graphics not rendering.",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360047019193",
+        "post_details": "Hi Everybody, Need help, As you can see from the image below, my graphics are not rendering along with the garment. Is there something which i've missed out? Would appreciate your assistance !!!",
+        "updated_at": "2023-11-09T11:29:20Z",
+        "comments": [
+            {
+                "author_id": 28409906768,
+                "comment_id": 360011565194,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360047019193",
+                "comment_body": "Hi 392389532933 I wasn't able to recreate your issue, but I noticed that in 3d window your are in textured surface mode ( fabric visualisation) and not thick textured surface. when rendering this make a difference, be aware of that. Sometimes closing the render window and reopening it helps. In the beta version I noticed that the refresh render buttons doesn't works always. Daniele"
+            },
+            {
+                "author_id": 28409906768,
+                "comment_id": 360011565394,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360047019193",
+                "comment_body": "Good to know. Thanks."
+            },
+            {
+                "author_id": 392389532933,
+                "comment_id": 360011565374,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360047019193",
+                "comment_body": "Hi Daniele, I managed, had to remove the displacement map from the fabric texture. It seems to be working now."
+            }
+        ]
+    },
+    {
+        "post_id": 360046846474,
+        "post_title": "clo3D export options",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360046846474",
+        "post_details": "Hi clo users, Is there a way to export the SeamLinePairGroup objects that I see in the scenetree along with the pattern ? Thank you",
+        "updated_at": "2023-01-20T12:07:26Z",
+        "comments": [
+            {
+                "author_id": 360253261888,
+                "comment_id": 360011584914,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046846474",
+                "comment_body": "Yes when you export you have the option under options to export the stitching and internal line. However the actual welding of the sewn patterns together is done using the weld 'toggle' mesh which ensures the UV map vertex is paired between pattern pieces."
+            },
+            {
+                "author_id": 413184439034,
+                "comment_id": 360011614254,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046846474",
+                "comment_body": "I am unable to locate the option to export stitching and internal lines, I am looking in export -&gt obj -&gt options. Is this the correct place to check? Thank you"
+            },
+            {
+                "author_id": 901855906423,
+                "comment_id": 900002587183,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046846474",
+                "comment_body": "estube llevando un curso de clo 3d y tube un gran problema , NO ME EXPORTA LOS UVS DEL AVATAR AL EXPORTAR EL ALEMBIC , esto exportandolo sin soldar ,pero igual mi avatar pasa enteror sin las particiones de sus UVS."
+            },
+            {
+                "author_id": 360334716088,
+                "comment_id": 4519329540889,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046846474",
+                "comment_body": "hi 360253261888 and 413184439034 I also tried to export SeamLinePairGroup, but I didnt find the \"option under options to export the stitching and internal line\" you mentioned. I tried: DXF PLT PDF Reapply appreciate iff you can share a screenshot with your export workflow! : )"
+            },
+            {
+                "author_id": 360253261888,
+                "comment_id": 4520545101209,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046846474",
+                "comment_body": "You are fundamentally missing a concept to do with an export of a mesh garment model. You cannot export the physical pinning of sewing 'thread' lines A between vertex pattern pieces, they are simply an element that appear for physical use within the CLO3D simulation environment and are not available as an export option. These vertex points between pattern edges however can be technically 'welded' together (assuming matching mesh density on pattern pieces) for an exported mesh model garment, and this is only for a thin mesh export where a 'manifold' (continuous) closed surface can be formed eg: girth .... where two or more pattern pieces get their vertex edge points 'welded' to form a single mesh. See the weld thin mesh option on exporting an object model. And these mesh pattern islands (or 2D pattern shapes) then also relate to the texture map atlas UV islands layout you also create in the UV editor mode and can export, so that is another process you also need to include. In that way (thin mesh export of welded garment model) you can export a thin mesh garment model that has all joining pattern edges (mating sewing lines) welded into one mesh object that has a matching set of UV's and a fabric material (MTL) shader associated to those 2D fabric patterns. Then in your next workflow (external modelling application) you can assign to these fabric materials (eg: mesh ID by material separation) any additional vertex pinning/welding/break apart/ or further modelling relationships. However the sewing 'thread' attributes you see in CLO3D are specific only to that 3D physical simulation environment (to aid visualization assembly) and are not part of any export. You can change the intensity and thickness of the 3D seam line in the property editor after selecting the sewing line with the Edit sewing tool (keyboard shortcut = B) B= Show 3D seam lines on pattern edges (see normal export for seam lines in the UV editor ) you may export these texture UV atlas maps with your object mesh model export and can then apply these back to your welded 3D export model and the 3D seamlines will then appear on the 3D garment model as pattern edge normals . Note you cannot export 'threads' as these are irrelevant to any export model, these are simply mesh vertex ID points that are aligned and welded / or left independent as separate mesh elements on export. See export options for thin mesh garment object/FBX models. The reason you would 'weld' a thin mesh export model together is to prevent the garment from falling apart in pieces in your next workflow if you were to further simulate collision physics in any next software (external from CLO3D) workflow."
+            },
+            {
+                "author_id": 360253261888,
+                "comment_id": 4520585151641,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046846474",
+                "comment_body": "If you want to export a 'topstitch' or the internal line that it relates too, you can export both the 3D stitch (model) or the reference internal line nurb object which it might be offset from. These are export toggle options when you decide to export your garment model. To export the internal lines as object nurbs you can pickup in your next workflow you need to toggle on that export option. Hope that helps point you in the right direction."
+            },
+            {
+                "author_id": 360334716088,
+                "comment_id": 4520709098009,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046846474",
+                "comment_body": "Hi 360253261888, thanks for such an extensive answer. You are fundamentally missing a concept to do with an export of a mesh garment model The SeamLinePairGroup belongs actually to the 2D pattern, not 3D mesh. That is why I tried DXF, PLT and PDF. SeamLinePairGroup are groups of 2D points, that define 3D vertex groups that should be welded. What I need is to export those 2d Panels to a 3D program like Houdini or Maya for ex, and then assign a welding operation to those groups. Having accces to the SeamLinePairGroup would automate this process, eliminating the need to manually group 2D,points. if you have any insights on how I can export the SeamLinePairGroup I really appreciate! : )"
+            },
+            {
+                "author_id": 360253261888,
+                "comment_id": 4520758177049,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046846474",
+                "comment_body": "That's really the domain space of Marvelous Designer version 11.In MD v 11 you can use the inbuilt retopography on the garment for quads and bind the matching edge vertex together so they are precisely positioned.This feature &amp function is not available in CLO3D and is also an extra work step (retopography) but the merits of doing this will generate a better VFX 3D garment model .... so that needs to be factored in to your end user quality mesh model case study. see &gt&gt Marvelous designer v 11 new retopography feature (pinning quad mesh vertex) between pattern pieces. If you are going to Houdini, you cannot export the edge pairs as ID from CLO3D. so you are faced with manually doing that work, the downside is you also have to deal with mesh that may be less than suitable for a VFX pipeline workflow as the qaud or tri mesh model from CLO3D is not using good surface topography. Dependent on what you are trying to do in final VFX there are other alternatives, for example you can assign the assembled 3D model and the 2D pattern piece layout and bind flat pattern mesh vertex ID to those assembled 3D shapes as their vertex ID do not change, then you don't need to find the edge pairs (as they are located by pinned vertex proximity).That is then a simple binding exercise followed by a shape morph to a flat 2D pattern (UV) editor map layout. So binding matched edge pairs is done via pattern edge pair vertex tolerance proximity. Far faster no manually doing that work as it can be automated. The other advantage is you can bind higher quality 3D models (2D) onto the 3D MD simulated fabric. Giving you a full range of quality at almost weave density. This is pretty much how I do all my work. It can be as simple as drag and drop. \"Puffy' shirt to illustrate the high poly normal and displacement mapped to the low poly. All the 'high frequency' crease pucker is done on the 2D flat form. This also means you can use your crease texture library to add in multiple layers of texture map atlas high frequency in a totally non-destructive workflow. So I use crease frequency separation, based on low/mid/high creasing detail across every digital garment I create, this is then baked into the textures UV atlas for the 2D patterns or left as a 'low frequency' CLO3D /MD physical drape. I have used this technique for 8 years and have an extensive crease library from real garments and fabric types. Below a 'crude' puffy shirt example to illustrate how the fine creasing (generated in CLO3D/MD or using the displacement texture brush workspace on flat formed 2D patterns can greatly add to a garment simulation in realtime within CLO3D or MD.) This technique was first used by microsoft in their white paper 8 years ago and is still perhaps the best technique for garment detailing. I simply perfected the process so it was fully automated into assembly. (see how I use it to great effect in Blender 2.93+) better than modo when you include the cloth sculpt brush where you can customize crease brushes in realtime collision - another new technique to get high quality frequency fast. (below a flat quilt textured model (high - weave detail) is bound to a low frequency MD simulated cloth) Below I have a micro frequency ripple in this CG fabric, which can be dialed up or down via progressive mip map atlases. In this way I can go for camera close up to a garment or full frame camera view and the optimum texture and crease frequency is selected. Unlike CLO3D this level of VFX texture workflow would not be non-destructive as they only allow one map size. Above close up (slight undulating low frequency fabric displacement ripple) below a higher frequency crease for full frame standing distance camera views. The texture holds up regardless of camera distance as the texture atlas is done on the fly to the VFX model. You can go as detailed as you want then externally. I use blender for this as it's actually worked out better than houdini at this specific task as an automated workflow does require some modelling/retopography tweaking. I used to use Modo for it but frankly blender ended up much more capable, and scalable server side as all the tools are in the single software, so it means you can stay in one CG environment after CLO3D/MD. Just add in the modifier stack and drag and drop and done with full morph to flat form and all matching seams done in a single click."
+            },
+            {
+                "author_id": 426211771994,
+                "comment_id": 14735315492505,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046846474",
+                "comment_body": "Hi 360253261888 I've tried to understand this whole explanation of 3d seamlines but I just can't seem to get my head wrapped around it. We are trying to set up a pipeline in which the 3d seamlines are automatically fixed in 3ds max or Blender. Is it possible to come in contact with you and setup a meeting?"
+            }
+        ]
+    },
+    {
+        "post_id": 360046981853,
+        "post_title": "Dress with fabric straps falls off body when simulated",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360046981853",
+        "post_details": "I've created a loose fitting dress with fabric straps. I've sewn the garment together, including the strap ends to the bodice, but when i simulate the garment falls to the floor and the simulation freaks out, but i don't understand why. It feels like either - i need to get the strap to wrap around the avatar's shoulder when placing the piece on the avatar before simulation? or - the straps need to simulate before the rest of the dress does so that the straps are strong enough to support the rest of the dress?",
+        "updated_at": "2023-05-02T05:20:21Z",
+        "comments": [
+            {
+                "author_id": 28409906768,
+                "comment_id": 360011779513,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046981853",
+                "comment_body": "hi 411163717194 , a screenshot woul'd help to understand your problem and help you. A few tips for the straps, mesh 5, the give to the side of the straps pattern the elastic property with a ratio of 100. This help the straps to mantain the original measure. I usually give the the bond proterty too. This is what I can suggest, but, is always good to attach a picture for this type of question. I hope this can help you to resolve the problem. Daniele."
+            }
+        ]
+    },
+    {
+        "post_id": 360046933373,
+        "post_title": "Every time on a day first time when i start my clo3d my mouse right click work well but if i restart the programme its disable..",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360046933373",
+        "post_details": "",
+        "updated_at": "2023-07-07T21:22:04Z",
+        "comments": []
+    },
+    {
+        "post_id": 360046926413,
+        "post_title": "some of the patterns are not appearing in the 3D window ",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360046926413",
+        "post_details": "Hi! I'm working on my final year collection and i'm unable to solve this problem. There 17 patterns on the 2D window which are not apparelling in in the 3D window. Please tell me how can I view all the patterns in 3D window. This has never happened before. I've also tried restarting the software and its still not working. The problem is only occurring with this particular file and not the others. I'm currently using CLO 5.2.284 &amp MacOS High Sierra 10.13.6 Please help me find a solution",
+        "updated_at": "2023-09-06T14:24:59Z",
+        "comments": [
+            {
+                "author_id": 407093630953,
+                "comment_id": 360011753953,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046926413",
+                "comment_body": "it worked! Thanks!"
+            },
+            {
+                "author_id": 365514437707,
+                "comment_id": 360011753813,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046926413",
+                "comment_body": "Just to be sure - have you tried unhiding the patterns (press shift Q on the pattern piece in the 2D window)? Adam"
+            },
+            {
+                "author_id": 903253559763,
+                "comment_id": 8112447591577,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046926413",
+                "comment_body": "I was working on a pattern file just fine, and now some of the pieces I hid won't unhide with Shift Q. Any ideas why I can no longer get the pattern pieces to reshow?"
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 8185442847257,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046926413",
+                "comment_body": "Hi 903253559763. This could be two things. First, instead of using the shortcut go to the 3D toggle and turn off/on the Show garment option. If this does not work there is a chance that you possibly might have achieved the pattern pieces. This option the the button right next to Show Garment in the 3D toggle. If you turn this on you will know if pieces are hiding there. Hope this helps!"
+            },
+            {
+                "author_id": 903253559763,
+                "comment_id": 8187542123801,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046926413",
+                "comment_body": "I think I tried those options, but I may have been madly clicking on everything. I'll take note of that if it happens again and more deliberately track my movements. If I can recreate the issue, I'll come back to this thread with more info. Thank you so much!"
+            },
+            {
+                "author_id": 903253559763,
+                "comment_id": 14307570395673,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046926413",
+                "comment_body": "This actually happened to me again, and I used the toggle in the 3D window instead and that totally worked! Not sure why Shift Q stops working sometimes, but the alternative solves the problem in the meantime so thank you!"
+            },
+            {
+                "author_id": 22425232980633,
+                "comment_id": 22653287113369,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046926413",
+                "comment_body": "Hi! When I put my patterns into the 2D space only like a few show up. I followed all of these steps and it didn't work. They also won't show up where I put them on the 2D avatar on the 3D one. For example, I put a skirt on the skirt area of the 2D avatar but it showed up really far away from the avatar. I have no clue what to do please help!!!"
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 22681903199513,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046926413",
+                "comment_body": "Hi 22425232980633 We need a little more information to assist. For your 2D vs 3D windows could you please add visuals so we can see what may be happening? What file format are the patterns that you are importing into CLO? Also, after you import the patterns they do not automatically move is 3D when you move them in 2D. What you want to do is first move them to their desired placement in 2D &gt select the pattern pieces you need to adjust placement of &gt Then go to your 3D window &gt Right Click on one of the selected yellow pattern pieces &gt Select Reset 2D arrangement. This will reset your 3D window to mirror the 2D window If you are new to CLO we would recommend taking a look at our Beginner Series on you tube HERE or our new Udemy series HERE"
+            }
+        ]
+    },
+    {
+        "post_id": 360046925153,
+        "post_title": "Right click is suddenly disable after update it..",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360046925153",
+        "post_details": "",
+        "updated_at": "2023-07-07T21:22:04Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 360011548334,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046925153",
+                "comment_body": "Hello 412787710794 thanks for reaching out! I would suggest going to your user settings and confirming your mouse settings. These can be found in Settings --&gt User Settings --&gt View Controls. Your right click function may be set to a different key/mouse button combination."
+            }
+        ]
+    },
+    {
+        "post_id": 360046923353,
+        "post_title": "How can I change binding thread color?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360046923353",
+        "post_details": "Hello, I'm making a rib knit top with binding detail, but I can't get rid of or change the thread color under the binding. The fabric is white, so that black thread is easily noticeable. How can I change the color? or make it not shown?",
+        "updated_at": "2023-07-07T21:23:27Z",
+        "comments": [
+            {
+                "author_id": 28409906768,
+                "comment_id": 360011752253,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046923353",
+                "comment_body": "You have to disable the show threads in 3d windows Look at the picture below, in the first, you can see the same problem, In the second the problem solved Daniele."
+            },
+            {
+                "author_id": 408891644593,
+                "comment_id": 360011754073,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046923353",
+                "comment_body": "Thank you so much!:)"
+            }
+        ]
+    },
+    {
+        "post_id": 360046641734,
+        "post_title": "Seamless Knit Garments & Sweaters",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360046641734",
+        "post_details": "Hello! Are there any plans to incorporate seamless knit technology into CLO3D? Not cut &amp sew garments, but fully-fashioned, circular knit garments. There is anothe rsoftware that is out there that does this but it has a close API and cannot integrate to any major PLM system. Many Thanks! Mary Cassidy",
+        "updated_at": "2023-07-07T21:22:05Z",
+        "comments": [
+            {
+                "author_id": 1500016201721,
+                "comment_id": 1500000000542,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046641734",
+                "comment_body": "Is there any progress or news on this topic? Thanks!"
+            }
+        ]
+    },
+    {
+        "post_id": 360046582314,
+        "post_title": "Fabric library and new fabric design (Substance, Quixel...)",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360046582314",
+        "post_details": "Hello to all CLO users, I'd like to know where to get more fabric... 1) Realistic looking fabrics for fashion to CLO projects (paid or free). 2) Make fabrics myself and/or modify predefined ones. I've seen work from Substance Designer users who make wonderful fabrics, but let's be honest, you have to master a lot to get those results, and for me personally, it's a big deal. The node system is powerful but complicated in my opinion. Even simple fabrics have a lot of nodes. I have also seen that there is a free application called Quixel (Substance has something similar called Alchemist but I haven't used it yet as it's fee-based). I think it's easier and more intuitive to use than Substance Designer but Quixel barely has a fabric library (although they say they are at it and they will have more in the future). I haven't found how to make them either as there are almost no videotutorials on fabrics in Quixel, I have seen about some about leather video and very little else. I think Blender could be an option, and somehow convert that texture/fabric to maps for loading into CLO, Blender is free, but it also works with the node system. I have also seen some applications that other users have put in different posts in this forum but they have not convinced me much. Like Pixplant, for example, but I may not be the one who can make the most of it... How do you usually do to get new fabrics?, and for those of you who make your own fabrics, what programs/methods do you use? Thanks in advance! Victor",
+        "updated_at": "2023-03-08T12:59:31Z",
+        "comments": [
+            {
+                "author_id": 364104337428,
+                "comment_id": 360011475234,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046582314",
+                "comment_body": "Here is an interesting post about that same question: https://support.clo3d.com/hc/en-us/community/posts/360043952074-Favorite-PBR-Fabric-Texture-sites"
+            },
+            {
+                "author_id": 408374725013,
+                "comment_id": 360011707073,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046582314",
+                "comment_body": "364104337428 Thanks Pablo, I didn't know that post and it was helpful. Anyway, it would be interesting for those users to comment their opinions about it... In case they know more about bookstore websites or how they make their fabrics from scratch. I'm attracted to Quixel, but as I said there are not many tutorials about making/modifying fabrics. In Substance Alchemist, I have seen some but it is paid... I don't know if Quixel and Alchemist can do the same? What is true is that Substance's library of fabrics is very extensive. Library Alchemist: (402 now) https://source.substance3d.com/allassets?assetType=substanceMaterial&ampcategory=Fabric Library Quixel: https://quixel.com/megascans/home?category=surface&ampcategory=fabric"
+            },
+            {
+                "author_id": 364104337428,
+                "comment_id": 360011707153,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046582314",
+                "comment_body": "I don't think there is a shortcut here for high-quality custom fabrics. Either you learn how to do your own procedural textures in Substance Designer or similar CG software, which as you've noticed, it's not simple if you want high-quality, or you can go via the scanning route which also requires knowledge about how to capture the details of the fabrics including the opacity and then work to make the patterns seamless. Which one do you prefer? This way we can focus on what the best options are, and others might chime in."
+            },
+            {
+                "author_id": 408374725013,
+                "comment_id": 360011711973,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046582314",
+                "comment_body": "The truth is that I'd like to make my own fabric with Substance, but I'm a pragmatist and I think the node system is a bit too big for me. I'm a pattern maker and I also have studies in tailoring and to start learning a node system will take me quite a while, in fact, in my country, Spain, there is a paid videotutorial about the use of Substance, it's good the truth, but of course, more focused on the creation of textures for videogames, say terrains, floors, ceramics, etc. The ideal would be to know how to make brocades, printed silk fabrics, printed gauze, embroidered tulle, floral prints, jacquards, etc, and I'm not saying knitwear anymore... I have a blog about knitting machines and knitwear in Spanish called: https://knitstudium.com/ I have seen several knitting generators, some even for Blender, but they don't give a real visual effect of knitting. Anyway, as I said to 360253261888 in other thread, I have the feeling that I will have to download from web with predefined fabrics... We would also like to call again on those who use Quixel or Alchemist type applications for fabric creation and comment on their opinions... If there were! Thanks again! Victor"
+            },
+            {
+                "author_id": 408374725013,
+                "comment_id": 360011829673,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046582314",
+                "comment_body": "360253261888 I'm sorry I took so long to get back to you and thank you for your answer. Thanks again for the links. They're amazing and I didn't know them. It is a pity that all this way of making fabrics is not centralized in one application, since it will be indispensable for digital fashion, as well as, cinema and video games. I imagine that both Substance and other companies are already working on it, so that their programs have more functionalities for the creation and modification of fabrics. Now I'm getting ready to learn Clo and Blender! Greetings. Victor."
+            },
+            {
+                "author_id": 408374725013,
+                "comment_id": 360011607254,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046582314",
+                "comment_body": "Yes, it is true, I have also seen Alchemist, the results are very good but not for fabrics, but for other types of materials yes. Yesterday I received the newsletter from Substance, indicating that they had released a new version, I went to see it running but then I realized that it is still too loose to use for fabrics. They say that for future versions they will have more improvements for more types of materials, but I think you are right, we will see if in 2025 we can see it. By the way, what do you think about the fabrics that both Substance and Quixel have already predefined in their online libraries... Have enough quality and realism to use them in fashion? I ask because I'd like to buy some to try out!"
+            }
+        ]
+    },
+    {
+        "post_id": 360046103474,
+        "post_title": "CLO API scope",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360046103474",
+        "post_details": "I am looking at clo's API guide and it seems that not a lot of functions related to accessing the geoemtry(points) and seams are exposed. If I wanted to extract the only the points corresponding to seams, would it be possible with clo's API? Thank you very much!",
+        "updated_at": "2023-03-06T00:43:28Z",
+        "comments": [
+            {
+                "author_id": 360253261888,
+                "comment_id": 360011699513,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046103474",
+                "comment_body": "You don't need that. You can get a seam out easily (it's already named in the scene tree) and stroke it using external tools. Unfortunately many people are doing this wrong and poorly with their render engine. You can bake a seam and top-stitch out on export. But what you can also do is export object nurbs. And these can be used in your next process to stroke in automatically new or more detailed pattern seams radi, edge normal's, top stitching, pucker and creasing all at higher detail than you will get in CLO3D. Which means you have a non-destructive workflow, it's as quick as one click to edit, and you can change either edge of a pattern piece in realtime externally for all this extra pattern panel detailing. When you export a pattern garment you can save the fabric textures to bake down the seam stitching to the resultant UV image map. You can also export with that the object nurb if there is one or pick that up in your next workflow as a manifold edge selection, or nurb. So geometry points are more about defining in CLO3D the sets and areas of what you want to export. When you export a stop-stitch as a texture rather than as a 3D object you will get a strip (decal) for the top-stitch, which you can redefine with any image map. ( I prefer to do that using stroking these selection sets as it is generally faster and higher quality for the stitching). This is called a 'trim' sheet, Link and can be changed on the fly in realtime. It would be good to see this type of flexibility inside CLO3D as a polygon mesh selection tool - but for now it is maybe best done externally, as it is much faster to control and lets you bake down the pattern piece texture maps to use in CLO3D for texture map you reload into CLO3D for vray rendering. See my reply here in this thread. &gt&gt Link"
+            },
+            {
+                "author_id": 411998818713,
+                "comment_id": 360011700613,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046103474",
+                "comment_body": "Thank you so much for the detailed reply. I had some trouble understanding the answer as I am new to using clo. My purpose was to be able to identify which two curves from pattern pieces are aligned to form a seam, If possible, I wanted to do this using the python or c++ api. My aim is to write a plugin which can export the 2D pattern with the stitching information. The existing dxf export only exports the 2D pattern without the stitching information, If I cannot use the api to write the seams to a file, I guess my question is how do I export the stitching information(seams) from clo3D? In the above answer, I am curious about what the scene tree is? Is this something in clo that I can access via the api? Thanks again so much."
+            },
+            {
+                "author_id": 360253261888,
+                "comment_id": 360011492514,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046103474",
+                "comment_body": "You can already do that at a technical level. Stitching information is in the 3D file (in the simulated drape) as a top-stitch element. It's not part of the DXF as that is simply kept to the international fashion CAD standard, that every fashion manufacturer uses. It's not needed as an illustration as it's a defined layer in the dxf/aama or dxf/astm format you export - like the cut-line or notches and notation symbols you use. You can export those items when you export the DXF or print file (pdf) there is a toggle to switch what you want on or off. I think you need to maybe express what is your end goal or ideal process, otherwise you may simply be trying to code something that already exists. There is no need to export any more detail than what is in the existing DXF. All CAD systems will take this in and a garment sample can be manufactured. That is rock solid in that respect. If you are introducing a new element, or proposing to do something 'new' you should describe that in detail so experienced users can point you in a clear technical direction. If you want to visualize top-stitching (or export it seperately) that can already be done, but would be in the draped format. If you want the top-stitching to appear as a 2D image on the fabric texture fill as a image map, that can already be done, if you want to export the 3D top stitch as a separate model draped, that can be done. etc."
+            },
+            {
+                "author_id": 411998818713,
+                "comment_id": 360011721673,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046103474",
+                "comment_body": "I apologise for the confusion. My ideal use case is to be able to create pattern pieces, stitch them together and simulate them using an external simulator, rather than the one in CLO. To do this, I would need to supply the pattern pieces and information of how they are stitched together to the external simulator. I was trying to access this information via the api, but maybe I should look at other ways of doing this(like only exporting the top-stitches)? What would be the best way to achieve this?"
+            },
+            {
+                "author_id": 411998818713,
+                "comment_id": 360011751153,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046103474",
+                "comment_body": "That was helpful, thank you! Although, this is not my only reason for choosing clo. I am also trying to explore if can script the stitching process, use the api to make edits to the pattern etc. I am looking if the API can be used to do these things, is this possible in clo?"
+            },
+            {
+                "author_id": 418785328414,
+                "comment_id": 360012735033,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046103474",
+                "comment_body": "hi we want to write a python script that will allow us to automate the following. -open 3D cad object -script will load/change various pattern pieces to different textures and/or solid colors from a designated folder and then export an image of the garment with each different texture. I have read your API documentation but it seems to only cover import/export items. it does not include info on the texture endpoints. Can you provide more info on where I can find the following in the API: -Basic Parameters-&gtTexture (this would be to change the print with various files that are applied) -Displacement Map-&gtColor (this will allow me to change the color of various pattern pieces) -Transformation-&gtTexture Angle, Width, Height (I will change scale and direction of the print texture)"
+            }
+        ]
+    },
+    {
+        "post_id": 360046024734,
+        "post_title": "Alembic export does not contain material IDs/face IDs",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360046024734",
+        "post_details": "Hello, I would like to use the alembic export for simulations. It looks like no material IDs are exported. So when dealing with multiple materials, alembic export is pretty useless. Maybe someone could look into this. Thanks",
+        "updated_at": "2023-08-24T10:26:55Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 360011521494,
+                "official": true,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360046024734",
+                "comment_body": "Hello 408998034673 thanks for your inquiry! CLO does not support material in the alembic library version we use. What program did you use for exporting material IDs/face IDs? Thanks!"
+            }
+        ]
+    }
+]

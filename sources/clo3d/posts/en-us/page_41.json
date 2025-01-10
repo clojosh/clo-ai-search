@@ -1,0 +1,263 @@
+[
+    {
+        "post_id": 360051311354,
+        "post_title": "Very High End System for quick render times",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360051311354",
+        "post_details": "I wanted to configure a really high end system for a friend who wants very quick render times. I was thinking the following system: -AMD Threadripper 3990X (64 core / 128 threads) -64GB (4x16) CL16 (16-19-19-39) DDR4 memory -TUF RTX3090 (24GB) -Samsung 980 PRO 1TB M.2 SSD This will be about an 8000 euro system but before spending this money I would like to know some things: -Can Clo3D use all 128 threads (for rendering, simulation, etc) or is it limited to a maximum (like 32 or 64 threads)? -Can Clo3D use the GPU efficiently and would it be faster on the GPU to render then on the CPU? Are there advantages to rendering on the CPU instead of the GPU -Is the Viewport experience (which is not always the best on high core count CPU's compared to lower core count high clock CPU's) able to use the CPU or GPU fully to have a good viewport experience or would this machine be better off as a render only machine, and use another high clock CPU computer for that -How does memory speed and bandwith affect the perormance? I gathered the quantity is not that important -Is there a benchmark of sorts available to gauge how fast a machine would be with certain Clo3D tasks? I'm looking forward to your experiences and feedback",
+        "updated_at": "2023-03-29T15:54:59Z",
+        "comments": [
+            {
+                "author_id": 364104337428,
+                "comment_id": 360014899113,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051311354",
+                "comment_body": "This is a delicate topic, especially if you are planning on spending that much. My first question is: how much money is your friend going to make out of using CLO? This is because, of course you will get higher simulating and rendering with specs like these, but are these worth the investment. If your friend is a professional making good money with this, and the time spent on CLO has to be drastically reduced to increase income, then, yes, go for it. So many things to consider here."
+            },
+            {
+                "author_id": 426503774654,
+                "comment_id": 360013648654,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051311354",
+                "comment_body": "She works professionally as a freelance and has been using a MSI Core i9-9880H laptop with 32GB of RAM and an RTX2070. Render times are way too long on this laptop, and time is money so yes for her the price for this system is justified as long as Clo3D is able to make good use of this hardware. So the only things to consider here are the performance related questions: -Can Clo3D use all 128 threads (for rendering, simulation, etc) or is it limited to a maximum (like 32 or 64 threads)? -Can Clo3D use the GPU efficiently and would it be faster on the GPU to render then on the CPU? Are there advantages to rendering on the CPU instead of the GPU -Is the Viewport experience (which is not always the best on high core count CPU's compared to lower core count high clock CPU's) able to use the CPU or GPU fully to have a good viewport experience or would this machine be better off as a render only machine, and use another high clock CPU computer for that -How does memory speed and bandwidth affect the performance? I gathered the quantity is not that important -Is there a benchmark of sorts available to gauge how fast a machine would be with certain Clo3D tasks? Or is there somewhere we can find this information, because the recommended system specs are very low and give no idea how efficiently it can run on high end hardware. If it can use it we will buy it, if not we have to know what the limits of this program are. Many thanks for the feedback :)"
+            },
+            {
+                "author_id": 364104337428,
+                "comment_id": 360014902093,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051311354",
+                "comment_body": "You'll have to define \"way too long\". With those specs, she should be having a very good performance. In the simulation department, I don't think she can get too much out of 128 cores, not because the CPU isn't faster, but how much can she move ahead even if simulation occurs in a blink of an eye? I trust that as a professional she can knows how to work with CLO in terms of using low particle distance for assembly and only high poly count when doing final simulation. As for rendering, maybe she can chop off some minutes of the rendering, but maybe she needs a rendering farm solution to really have an impact if you compare to her current setup. I hope some other experienced users here (I hear Vad uses Threadripper too) can chime in. I would hold on to that purchase for the moment, P"
+            },
+            {
+                "author_id": 426503774654,
+                "comment_id": 360014902173,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051311354",
+                "comment_body": "She told me like an hour or so for the renders. Just to be clear I never used Clo3D, I'm just the computer guy ) She just asked me for a blazing fast system that could get through renders way faster then that i9-9880H laptop can. So I don't know what she's rendering or what complexity or settings she uses. She has been using it for some time so I suppose she knows the program. I will check with her and get more info about what specifically is being rendered and if adjusting the settings are an option. Thanks for the feedback"
+            },
+            {
+                "author_id": 426503774654,
+                "comment_id": 360013674674,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051311354",
+                "comment_body": "So I got some more info: She renders still frames (2500x3500 pixels) for different views and those take about 20 minutes per still. Particle distance is 3. This is necessary because there is very fine detail which is not visible at higher particle distances. But I have some additional questions related to rendering: -Can you render in a render queue and leave that running during the night to render a whole bunch of stills whith different settings? -Rendering should be possible on the CPU as well as the GPU. There should be a setting to select the render engine (CPU or GPU) but it was missing. Is this dependent on the license (in this case 1 person business license)? -If you let your machine render, can you work in the viewport at the same time on a fast machine like this or is it impossible to do anything else during rendering? Many thanks for the answers"
+            },
+            {
+                "author_id": 426503774654,
+                "comment_id": 360013680514,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051311354",
+                "comment_body": "There is other info I found out by searching this forum: -Apparently the used render engine is V-Ray since version 4.0.0 of Clo3D. Which is good news because V-Ray is not thread limited and should be able to use all 128 threads -The reason her still renders take 20 minutes is that I found out that this is the default max render time Clo3D uses the stop the program from rendering forever. So it probably means that if there was no 20 min limit the renders would probably take even longer. And it also means that if the 3990x is theoretically about 10x faster than the 9880H it will take more then 2 minutes but rather like say 10 minutes if this 3990 can complete the render within the 20 min time limit -I also saw on this forum that people claim GPU renders do finish a bit quicker then CPU renders, they do not fully use the GPU (those post were for version 4.2 or so). I hope version 6.0 does GPU rendering even better. The 8000 euro system has been ordered btw, so we will be doing some tests once it's ready. But I would appreciate if I could get some more info on the render questions mentioned here and above. Many thanks"
+            },
+            {
+                "author_id": 426503774654,
+                "comment_id": 360013680734,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051311354",
+                "comment_body": "I also found in a PDF on Nvidia's site that Clo3D only supports 'Single GPU / Single Node', while many other applications support Multi-GPU. that is very disappointing as some users here have said it does support multiple GPU's."
+            },
+            {
+                "author_id": 408369188073,
+                "comment_id": 11201845840793,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051311354",
+                "comment_body": "I find this topic exciting aswell. At home I have an Intel i7 12700k + RTX 3070Ti which rendered an animation with 130 images at 1920x1080 / 72dpi in about 50 minutes each. Yesterday I was in university with an i9, Titan RTX and wanted to render 360 degree turntable in 1080x720 / 72dpi and even on this very good machine and even more reduced settings plus CPU supporting the GPU(Cuda) it took +-60 minutes to render. I know this has a lot to do with the render/light settings, particle distance, vertex count etc....but I thought to myself: Could it be that the Clo-Software is limiting the rendertimes somehow? I mean simulation times are okay and fluent depending on the Outfit lets say but rendertimes I expected it to be faster... What would the most ideal machine look like when we are talking about high single Corespeed and Single GPU? CPU: Xeon? i9? Epyc/Threadripper? GPU: 3090? Quadro? RAM: 32? 64? 128?"
+            },
+            {
+                "author_id": 426503774654,
+                "comment_id": 11205086347417,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051311354",
+                "comment_body": "V-Ray can use the CPU to run CUDA code together with the GPU. But the GPU is a lot faster. So my recommendation is: -Get the fastest single card GPU you can get like a RTX3090 or RTX4090 (Don't get the Ti versions or Quadro cards, they're overpriced compared to the performance offered). With 24GB video card memory you have ample room for hi-res textures. -Get a decent CPU. Like a 16 core Ryzen 5950X or 7950X to get a good viewport experience. I helps with rendering as well but like I said, the GPU is much more important. Getting a Xeon or Epyc is just a waste of money. If you want a system that also serves for programs that DO support multi GPU (like Cinema 4D) I would recommend a 32 core Threadripper 5975WX. That gives you 128 PCIe lanes so all cards have full 16x bandwidth. On 'consumer' Ryzen or Intel systems you're only able to run one card at full bandwidth. But the WRX80 platform is a professional platform so quite expensive. I wouldn't recommend getting the 64 core 5995WX unless you're going for CPU render only. -Clo is not that memory intensive but getting less then 32GB might not be recommended if you want to use Hi-res textures. DDR4-3600 is the sweet spot. CL14 if you can afford it. Spending more on faster memory probably won't give you much return on investment. I hope that was helpful )"
+            },
+            {
+                "author_id": 408369188073,
+                "comment_id": 17020906501017,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051311354",
+                "comment_body": "thanks that was very good advice!"
+            }
+        ]
+    },
+    {
+        "post_id": 360051305714,
+        "post_title": "MODULAR CONFIGURATOR PANTS",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360051305714",
+        "post_details": "Good evening, I was wondering is there is a place to download more modular configurator bases. I need to make pants and would really need a premade base. The problem is there are only jackets and shirts. I am doing womenswear. Thank you in advance!",
+        "updated_at": "2023-07-10T15:16:57Z",
+        "comments": [
+            {
+                "author_id": 1900971002788,
+                "comment_id": 20482614072601,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051305714",
+                "comment_body": "Hi Aimonevittorio, You can actually create them now in Clo 7.2! Here's a demo. Thanks, Kevin"
+            }
+        ]
+    },
+    {
+        "post_id": 360052438013,
+        "post_title": "Render freezing when left un-attended",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360052438013",
+        "post_details": "I sent my computer to render a runway animation and it froze at the first render for more than 1 hour. I had to click the screen for it to start rendering again. This is the 3rd time I had to do it on different projects.",
+        "updated_at": "2023-07-07T21:21:50Z",
+        "comments": [
+            {
+                "author_id": 364104337428,
+                "comment_id": 360013645614,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360052438013",
+                "comment_body": "What are your specs? What are your rendering settings?"
+            },
+            {
+                "author_id": 360104174108,
+                "comment_id": 360013646854,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360052438013",
+                "comment_body": "Pablo it's Dorelle :) You can see my render setting is the default. I have a i7 core and 64 mb RAM and more than enough memory with a 1080ti It is not the problem with my setting. It is fine if I render in 5.2"
+            },
+            {
+                "author_id": 364104337428,
+                "comment_id": 360014900673,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360052438013",
+                "comment_body": "Hey dorelle. Can you try rendering CPU to check if that is the issue. Maybe a low res just to rule out a GPU incompatibility with CLO 6."
+            },
+            {
+                "author_id": 360104174108,
+                "comment_id": 1500000118742,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360052438013",
+                "comment_body": "Hi Pablo, I since found the issue was with my active RAM running out fast and freezing operations. Not that I have Materials, Avatar skin texture, Stage customized, the file pixel 300ppi... it was very heavy file."
+            }
+        ]
+    },
+    {
+        "post_id": 360052437153,
+        "post_title": "Reduce size of pattern annotations when exporting in PDF",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360052437153",
+        "post_details": "Hello, I want to print my pattern in A0 size so I've tried two ways: the 2D snapshot and to export in PDF from the Menu File. Both ways end with the pattern annotations too big and outside of the pattern. Could you help me to solve that problem please? Axelle",
+        "updated_at": "2023-07-27T14:13:56Z",
+        "comments": [
+            {
+                "author_id": 364104337428,
+                "comment_id": 360014898993,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360052437153",
+                "comment_body": "Apparently that is not an option in CLO. You might change the text size using Adobe Acrobat Pro DC and edit the PDF. Or if you export to DXF-AAMA and use other CAD you have full control."
+            },
+            {
+                "author_id": 418299494353,
+                "comment_id": 360013663894,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360052437153",
+                "comment_body": "Okay thank you, yes it works pretty well even with the free version of Adobe Acrobat."
+            },
+            {
+                "author_id": 6374851435417,
+                "comment_id": 11622830779673,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360052437153",
+                "comment_body": "Hi, This still seems to be a problem... and Acrobat now charge for editing PDF's. Anyone got any better solutions?"
+            }
+        ]
+    },
+    {
+        "post_id": 360051300854,
+        "post_title": "Importing FBX file, avatar becomes all black",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360051300854",
+        "post_details": "Hi all, I was following the Clo3D video \"Animation and video creation tutorial\" (https://youtu.be/18dvBwxkAU8), I followed every step until I had to import the FBX file from Mixamo, my avatar's skin becomes all black. Texture is normal Any help would be appreciated, thanks !",
+        "updated_at": "2022-08-11T09:27:46Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 900002594303,
+                "official": true,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051300854",
+                "comment_body": "This is an issue that we are aware of and it will be corrected in the next update."
+            }
+        ]
+    },
+    {
+        "post_id": 360051280194,
+        "post_title": "Problem rendering animation in CLO 6.0 (image freezes on 100%)",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360051280194",
+        "post_details": "Hi I just went over to 6.0 from 5.2, and am having some problems when I try to render an animation. The first one is that it renders fine as long as I'm \"active\" on my computer. such as.. touching the mouse, clicking around. But as soon as I leave it to render in peace it just stops producing images. However, the computer is still spinning. For example: It stops on \"rendering image 2/196, 100%\", till I move the mouse around a bit and click on a few windows. First image where I stayed active, It started on 2/197 after this screenshot Second image where I left the computer for a couple of minutes to come back and find it still on the second image. As soon as I took the printscreen it started rendering 3/197 It also seems like I need to have CLO focused (not tapped down or behind chrome/any other window), since it behaved the same during the time I wrote this post. I don't have any power saving modes on my computer, and the screen isn't even on screensaver. Everything is on full blast. And these are my settings when rendering Does anyone know why this keeps happening? And what I can do to prevent it? Super grateful for any tips that can help me sole this mystery :) Rita",
+        "updated_at": "2022-01-10T17:42:00Z",
+        "comments": [
+            {
+                "author_id": 419961668473,
+                "comment_id": 1500000143081,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051280194",
+                "comment_body": "Same here....could you find a solution&gt?"
+            },
+            {
+                "author_id": 386832201294,
+                "comment_id": 4407227938969,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051280194",
+                "comment_body": "Did you find a solution on this problem? Im having the same issue. Best regards Fredrik"
+            },
+            {
+                "author_id": 410202329274,
+                "comment_id": 4414395921433,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051280194",
+                "comment_body": "Same. I think the problem is that the graphic card runs out of graphic RAM. Problem solved when I use CPU for rendering only."
+            },
+            {
+                "author_id": 419961668473,
+                "comment_id": 4414383345049,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051280194",
+                "comment_body": "I will try thank you"
+            }
+        ]
+    },
+    {
+        "post_id": 360052389233,
+        "post_title": "Bring back Style Lines CLO 6.0",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360052389233",
+        "post_details": "You probably removed it due to the implementation of schematic render, but that's unusable during draping. Please bring back the Style Lines window.",
+        "updated_at": "2023-07-07T21:21:51Z",
+        "comments": []
+    },
+    {
+        "post_id": 360051200274,
+        "post_title": "general",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360051200274",
+        "post_details": "I would like to know if you are planning to add italian sizes. About puffed jacket, instead of using pressure, wouldn't it be easier to add padding? May be with a cooperation with Thermore which has a lot of choices. The teck pack feature on Clo6 is nice but it doesn't come out as in the thumbnail... at least the feature is about how to highlight the details, and that's good, but to drive those who are used to work on flat sketches to 3d rendering is quite hard, so it would be very useful to flatten the garment on the floor an mark details... is that possible? thanks and working on Clo makes me happy about the job",
+        "updated_at": "2023-07-07T21:21:51Z",
+        "comments": []
+    },
+    {
+        "post_id": 360052273013,
+        "post_title": "Mixamo Animations - No Avatar Motion Found",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360052273013",
+        "post_details": "Hi CLO, I have done this before, and running into an issue I can't figure out. I have exported the Nate Avatar as an .FBX file, rigged him in Mixamo and downloaded the resulting .FBX. There is only an animation file (no Avatar downloaded from Mixamo, and I wonder if this is the issue?) I open the animation files, save as Pose and Motion File. I open the original FBX exported from CLO (as Mixamo is not generating one). When I select the pose or join motion I receive the error \"No Avatar Motion Found\" When I view skeleton, there is none. This is why I suspect it may be a Mixamo issue - having watched a number of CLO tutorials and completed animations with Mixamo rigs before - there should be an Avatar dowloaded with the animated file from Miximo I thought...? I have tried this in 5.2 and the beta 6.0 versions.",
+        "updated_at": "2023-01-20T15:23:34Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 360013517834,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360052273013",
+                "comment_body": "Hello! Sorry to hear that you are encountering this issue. We think that you will find this post helpful here. Basically, you need to download the FBX Mixamo avatar (original pose) + FBX animation. In Mixamo, it replaces the rig (skeleton) of the avatar in order to select an animation. It says no matching avatar because Mixamo animations aren't compatible with default CLO avatars. We hope this helps you!"
+            },
+            {
+                "author_id": 23329095947,
+                "comment_id": 14736726420377,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360052273013",
+                "comment_body": "Ich habe das gleiche Problem: Clo findet zum importieren Avatar nicht die motion. Wenn die fbx Mixamo motion importiert ist kann man sie im Animationsmodus von Clo weder simulieren noch aufnehmen. Können Sie helfen?"
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 14740165701017,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360052273013",
+                "comment_body": "Hallo pfraune, wurden sowohl der Mixamo Avatar als auch die Mixamo Animation geladen? Man kann die Animation von Mixamo nicht direkt auf der FBX aus CLO anwenden, da das Skelett anders ist."
+            }
+        ]
+    }
+]

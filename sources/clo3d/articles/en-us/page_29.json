@@ -1,0 +1,378 @@
+[
+    {
+        "ArticleId": "115002577467",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115002577467",
+        "Title": "Motion (MTN) Open/Save",
+        "Content": "Objective Motion is a native file format (*mtn) of CLO that saves Avatar movement information, and is used when recording Animation of Garments and Avatars. CLO provides Motion files for its default male and female Avatars, but Animation Data or Motion capture Data from third-party 3D solutions can be imported as COLLADA files, then extracted as a Motion file (*mtn) through this menu. Location Open Motion Main Menu File Open Joint Motion Save Motion Main Menu File Save As Joint Motion Operation Open Motion Follow the indicated guideline below: Main Menu File Open Joint Motion The Open File window appears. Navigate to the desired *mtn file, then click Open. The Load Motion Type window appears. Select from the available settings: Garment Position Move Avatar &amp Garment to Start Position Moves the Avatar and Garment to the location of the first frame (ver 2.5.0). Transition Animation A transition Animation is an Animation that changes from a T-Pose to a motion's first Pose in stages, and is created when the Avatar's current Pose and Motion differs from that of the first frame Pose. The motion (*mtn) file loads according to the settings. Save Motion Follow the indicated guideline below: Main Menu File Save As Joint Motion The Save File window appears. Type in file name and designate the path the file will be saved to. The Motion (*mtn) file will be saved to the designated path. Note: Motion files can only be saved when imported as Avatars in COLLADA format with Motion Data, and the COLLADA files must be in Open COLLADA format. To learn more about COLLADA format, please reference 3D File (COLLADA) Import.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628367,
+        "Section": "File Open/Save",
+        "Tokens": 345
+    },
+    {
+        "ArticleId": "1500000876042",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/1500000876042",
+        "Title": "USB Plotter (ver 6.0)",
+        "Content": "List of Contents Plotter Share Settings Add Plotter Network Objective Install a Plotter of USB type to print the pattern. Install the driver for the connected plotter. Install the correct driver for the connected plotter model from each manufacturer's website. Operation Plotter Share Settings Select the Settings by clicking the Start on the taskbar. Select Devices and click the Printers &amp Scanners on the left A list of connected printers and scanners appears. After selecting the installed plotter, manage Printer Properties Sharing Tab Share this printer After completing the settings, print the pattern to the plotter. Add Plotter Network Add a share plotter from another computer connected to the same internet network. Open File Explorer, enter Network in the address bar. Click the computer where the plotter is connected to. The plotter appears in the list of File Explorer. Click the Plotter The driver installation window appears. Click install the driver. The driver is installed and the plotter is added to the list of printers and scanners. After completing the setting, print the pattern to the plotter.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628367,
+        "Section": "File Open/Save",
+        "Tokens": 215
+    },
+    {
+        "ArticleId": "360000718547",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/360000718547",
+        "Title": "Comment Mode",
+        "Content": "Comment Mode - Write in comments in the Comment Mode. - Comment Mode Main Menu Comment. - Click on the 3D Garment where a comment should be added. - An active comment window appears and you may type in contents. - Click OK to complete the comment. Note: Comment mode will not be supported in the next version of CLO to develop more various functions. Please use the 'Annotation' function of the newly developed CLO-SET.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=mdRKuFpZdpw"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 92
+    },
+    {
+        "ArticleId": "115002576567",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115002576567",
+        "Title": "Open Auto Save File (.Zpac or .Zprj)",
+        "Content": "Objective If the program is closed due to an error, the automatically saved file (ZPRJ) can be loaded when rerun. To keep S/W running smoothly, auto-save is extended from the default 3 minutes to 10 minutes, and the minimum is also changed from 3 minutes to 5 minutes. (ver 6.0) Operation After the program is finished, run the program again. The Auto Save File Open window appears. Click the OK button. The auto-saved garment file opens Note: C: Users User Name Documents CLO Assets_ver_x.x.x Autosave check the auto save files directly from the Autosave location. Available to set auto save time, file type and save path in user settings.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628367,
+        "Section": "File Open/Save",
+        "Tokens": 148
+    },
+    {
+        "ArticleId": "115015714428",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115015714428",
+        "Title": "2D Seam Allowance",
+        "Content": "List of Contents 2D Seam Allowance Create Seam Allowance Select Seam Allowance Delete Seam Allowance 2D Seam Allowance - Create, select, and delete seam allowances on Patterns in CLO. - Navigate to the Main Menu and select 2D Pattern Create Seam Allowance - Select the Seam Allowance tool from the 2D toolbar. Create Seam Allowance - Click the Pattern outline or Internal Line where seam allowance should be added. - The seam allowance is created and appears in light-grey. Select Seam Allowance - Click the Pattern outline or Internal Line where the seam allowance is created. - The seam allowance is selected and its segment is highlighted in yellow. Delete Seam Allowance - Click the Pattern outline or Internal line where the seam allowance is created. - The seam allowance is selected and its segment is highlighted in yellow. - Hit the Delete key on the keyboard to delete the selected seam allowance. - Or, right click on the Pattern outline or Internal Line where the seam allowance is created. - Then, select the Delete option from the pop-up menu.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=kKpMYSii5eU",
+            "https://www.youtube.com/watch?v=oht5N_e_J_4",
+            "https://www.youtube.com/watch?v=0to2cWSfojA",
+            "https://www.youtube.com/watch?v=19mIXt5frvI"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 216
+    },
+    {
+        "ArticleId": "115012380408",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012380408",
+        "Title": "Snapshot - 3D Window",
+        "Content": "List of Contents 3D Window Snapshot Single View Multiview 3D Window Snapshot - Take a Snapshot of the 3D window in a single or multiple views. - Navigate to the Main Menu and select File Snapshot 3D Window. - Assign the saving path and the file name. Then, select Save. Single View - Navigate to the Main Menu and select File Snapshot 3D Window. - Assign the saving path and the file name. Then, select Save. - When the Snapshot window appears, select the Single tab. - Adjust the Image Size and the Options as needed. - The Preset, Orientation, Width, Height, and the Unit can be adjusted under the Image Size section while options such as Transparent Background and Save All Colors can be toggled on/off under the Options section. - Select the Reset button to change all settings back to default values. - Show Garment Measurements in the 3D snapshots. Take the 3D snapshot while the Show Garment Measurement icon is activated (ver4.1.0). - Select the Save button to save the snapshot. Multiview - Navigate to the Main Menu and select File Snapshot 3D Window. - Assign the saving path and the file name. Then, select Save. - When the Snapshot window appears, select the Multiview Tab. - Adjust the Image Size, Layout, and the Options as needed. - The Preset, Orientation, Width, Height, and the Unit can be adjusted under the Image Size section. - The View Count and the Layout options can be modified under the Layout section. - The Transparent Background, Save Separate Images, and the Save All Colorways options can be toggled on/off under the Options section. - Select the Reset button to change all settings back to default values. - Apply current zoom state of the 3D window to multi-snapshot preview (ver4.1.0). - Show Garment Measurements in the 3D snapshots. Take the 3D snapshot while the Show Garment Measurement icon is activated (ver4.1.0). - Select the Save button to save the snapshot.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=8aMA5Ui_2Jk",
+            "https://www.youtube.com/watch?v=amClLCDMw-E"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 432
+    },
+    {
+        "ArticleId": "115012377708",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012377708",
+        "Title": "Clone as Reference Line",
+        "Content": "Clone as Reference Line Clone as Reference Line - Create a Reference Line to refer to when editing a Pattern - Select the Transform Pattern tool or the Edit Pattern tool from the 2D toolbar. - Right-click on the Pattern and select Clone as Reference Line from the pop-up menu. - A Reference Line will be created. - Navigate to the 2D toolbar and select Edit Pattern tool. Then, click and drag to move the desired point or line on the Pattern. - The original shape of the Pattern will appear as a Reference Line.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=6eb2kFjTbBY"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 108
+    },
+    {
+        "ArticleId": "115004522167",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115004522167",
+        "Title": "Print Layout 2D Snapshot",
+        "Content": "Objective Save pattern layout as an image file in Print Layout mode. Location Main Menu Change the mode at the top-right corner PRINT LAYOUT Operation Select the tool/ menu indicated in Location. Simulation mode is changed to Print Layout Mode. Click on the Save Image icon at the top-left of the 2D window. The 2D Snapshot window appears. Arrange patterns onto fabric in the 2D window. Be mindful of outline markers while arranging the patterns. Set the size along with other options for the snapshot. Option Preset Select from a variety of presets. Orientation Select the paper orientation. Width Set the width of the image. Height Set the height of the image. Unit Set the unit of the print paper. Resolution Set the resolution of the snapshot image. Line/Image/Info Select the line, the image, and the information that will appear in the Print Layout 2D snapshot. Fabric Texture Opacity (ver 6.1) Adjust the opacity of the fabric and texture. Set the image file format(PNG / JPEG / PDF (ver 6.1))for 2D Snapshot, name the file, locate the saving path, and click Save. Print Layout 2D Snapshot is saved.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000157067,
+        "Section": "Print Layout Mode",
+        "Tokens": 245
+    },
+    {
+        "ArticleId": "900006756526",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/900006756526",
+        "Title": "3D Pattern Archive (ver .6.1)",
+        "Content": "Objective Patterns that are not used for making garments can be hidden in the 3D window. Location Right-click on 3D/2D Pattern to display menu Archive/ Unarchive Operation Select the tool/menu indicated. The selected 3D Pattern is archived. The selected 2D Pattern is displayed as a transparent dotted outline. Note: In Print Layout mode, archived patterns are also displayed.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000641628,
+        "Section": "Pattern: 3D Arrangement ",
+        "Tokens": 80
+    },
+    {
+        "ArticleId": "900006057446",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/900006057446",
+        "Title": "Avatar Face Style Configurator (ver 6.1)",
+        "Content": "Objective Replace the individual style parts of an Avatar. Note: This feature is only supported for the CLO V2 Avatars. Location Avatar Properties Body Styling Skin Style Style Configuration Operation Select the tool/menu indicated. Style Configurator window appears. Set the following options. Color Change the hair, skin, eyebrow, and lip colors of an avatar. Blend Mode Set the color blending mode. Shape Change the eyebrow, lips and underwear shape of an avatar. Reset Reset the avatar's face style. The avatar changes as you set.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000716747,
+        "Section": "Avatar",
+        "Tokens": 106
+    },
+    {
+        "ArticleId": "360056451954",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/360056451954",
+        "Title": "Save 3D State (Review Mode Only)",
+        "Content": "Objective Save 3D State for each size to review by grading size. Location Object Browser Grading Pair Avatar Operation After adding and editing the grading, click the Pair Avatar tab and click Update. The list in the size tab appears the same. The Avatar in the 3D window is applied to all sizes by default. If there are two or more size groups, they are combined and displayed based on the Base Size. Change the Avatar for each graded size as needed. Click the check box to the right of the Size. The checked size is changed to Base. Click the Simulation. The garments of the size are worn on the Avatar. Click the Save 3D State to the right of the Size. The simulated state of the size is saved. Simulate the above steps for each size. Switch to Grading Review The 3D screen is displayed according to the number of grading sizes. The Saved 3D state for each size is applied to the Grading Review mode. Note: The Saved 3D state for each size can only be checked in Grading Review mode.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 360005044033,
+        "Section": "Review",
+        "Tokens": 220
+    },
+    {
+        "ArticleId": "115013370408",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115013370408",
+        "Title": "Edit Seam Allowance Properties",
+        "Content": "Objective Edit seam allowance properties as needed. Location Main Menu 2D Pattern Create Seam Allowance 2D Toolbar Seam Allowance Operation Select the tool/menu as indicated. Click on the Pattern outline where the seam allowance is on. Seam allowance options in the property editor. Edit below options as needed. Option Description Width Enter the width of seam allowance in line or point (ver 6.2) Smooth Intersection (ver 6.2) Click the intersection between the seam allowances of different widths to smoothly connect the seam allowances of the two line segments. Seam Type Select desired seam type for each seam allowance's start, end, and intersection. Below options may activate or deactivate depending on the selected point. Start It activates when a seam allowance is created only to the start point. Select desired seam type among three options. End It activates when a seam allowance is created only to the endpoint. Select desired seam type among three options. Intersection It activates when seam allowances are created to both ends of a line. Select desired seam type among six options.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003578728,
+        "Section": "Notch / Seam Allowance",
+        "Tokens": 209
+    },
+    {
+        "ArticleId": "115012227287",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012227287",
+        "Title": "Strain Map",
+        "Content": "Strain Map Strain Map - Check the stretch of the 3D Garment due to the external pressure. - Hover over the third icon in the Vertical View Toggle Menu in the 3D window. Then, select the Strain map icon. - The Strain Map shows the stretch caused by the external pressure applied to the 3D Garment. - The part with no stretch will appear in green, but with greater stretch, the part of the Garment will turn closer to red.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=OkN7wbTlcpk"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 101
+    },
+    {
+        "ArticleId": "13249323691929",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/13249323691929",
+        "Title": "Auto Convert to Motion (ver 7.1)",
+        "Content": "Objective Convert various motion files from external platform into motions for CLO Avatars. Converted motions are compatible with all CLO Avatars. Location Main Menu Avatar Auto Convert to Motion Operation Select the tool/menu indicated Auto Convert to Motion window appears. Mode is Switched to Animation Mode immediately to check the converted motion. Select the Gender of the avatar to be converted, open the Motion File (FBX) and click Convert button. Convert it to motion for CLO avatars Click Play in the Animation Editor to check the converted motion. Click the Save button to save as motion file (MTN). Note: To Move the Avatar and Garment to the location of the first frame of converted motion, load the saved motion file.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000716747,
+        "Section": "Avatar",
+        "Tokens": 145
+    },
+    {
+        "ArticleId": "13200837772185",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/13200837772185",
+        "Title": "Auto 3D Arrangement (ver 7.1)",
+        "Content": "Objective Automatically arrange patterns around the Avatar in the 3D window. Based on the results learned from a number of pattern data, Auto 3D Arrangement analyzes where the pattern will be arranged only with the shape of the pattern. It is recommended to apply symmetry and sewing before Auto 3D Arrangement, as symmetry and sewing information of patterns as well as shapes are referenced for more accurate arrangement. Location Main Menu 3D Garment Auto 3D Arrangement 3D Toolbar Auto 3D Arrangement Operation Select the tool/menu indicated. Auto 3D Arrangement Window appears. Click the Proceed button. Patterns with high accuracy are arranged in order, and the patterns arranged in each step are classified by color and transparency. If you want to check the arrangement result of each step, Click the Back and Next buttons. Return to the Back and Next Steps. Click the OK button to complete the Auto 3D Arrangement. Note: Patterns that are too small in size or analyzed in the same location may not be automatically arranged with lower accuracy.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000641628,
+        "Section": "Pattern: 3D Arrangement ",
+        "Tokens": 214
+    },
+    {
+        "ArticleId": "5961322479769",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/5961322479769",
+        "Title": "Convert Pattern to Trims",
+        "Content": "Objective Convert Trims made with patterns into OBJ Trims. Location Main Menu 3D Garment Select/Move 3D Toolbar Select/Move Operation Select the tool/menu indicated. Right-click on the pattern pieces and then Click the Convert to Trim menu. Convert it to Trims.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000729268,
+        "Section": "OBJ Trim",
+        "Tokens": 58
+    },
+    {
+        "ArticleId": "360025716854",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/360025716854",
+        "Title": "POM LIST",
+        "Content": "List of Contents Edit (ver 6.0) Save Objective Save the POM List in the Object Browser as a *.csv file. Location Object Browser POM Operation Edit (ver 6.0) Follow the indicated path below : Object Browser POM Double-click the text in the POM and Description column. it switches to editing mode. Input the POM number and Description you want to change and press Enter on your keyboard. Editing is complete. Save Follow the indicated path below : Object Browser POM Save The Save File window appears. Locate the saving path and name, then click Save to save the POM file. *.csv file is created.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=rPy-oulWEFw"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 360004712034,
+        "Section": "POM",
+        "Tokens": 133
+    },
+    {
+        "ArticleId": "13389684191641",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/13389684191641",
+        "Title": "Internal Lines over Seamline (ver 7.1)",
+        "Content": "Objective Internal shape over two sewn patterns is divided based on seamline. Location Main Menu 2D pattern Edit Edit Pattern 2D Toolbar Edit Pattern Operation Select the tool/ menu indicated. Click Divide over Seamline menu. The internal shape is divided into sewn patterns based on the points intersecting the pattern outlines.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000617868,
+        "Section": "2D Pattern Edit",
+        "Tokens": 65
+    },
+    {
+        "ArticleId": "360055935233",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/360055935233",
+        "Title": "Pair Avatar for Grading Size",
+        "Content": "Objective Add Avatars for each graded size. Location Object Browser Grading tab Operation Click Update on Pair Avatar Tab. It appears the same as the items in the Size tab. The Avatar in the 3D window is applied to all sizes by default. If there are two or more size groups, they are combined and displayed based on the Base Size. Click the Pair 3D Form on the right side of the Base Size item to add an avatar or avatar size. (ver 7.1) The Avatar in the 3D window is replaced with the added Avatar or the added size file is applied. Click the Delete button to the right of the avatar item to delete the avatar. The Avatar will be deleted. Note: If an Avatar is added in the list other than Base Size, the Avatar in the 3D window is maintained and when changed to Base, the Avatar and Garment are loaded together.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003621087,
+        "Section": "Grading",
+        "Tokens": 186
+    },
+    {
+        "ArticleId": "115002687328",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115002687328",
+        "Title": "Pose (POS/HPOS) Open/Save",
+        "Content": "Objective Use this function to load an Avatar's Pose or location information. A variety of Avatar Poses are provided in the Library window. Location Main Menu File Open/ Save As Pose/ Hand Pose (ver 7.1) Operation Open Pose Click the menu of the Location to open a Pose/Hand Pose. Open Pose window appears. Set the options and click the OK button. Pose Only Applies the Pose Motion Data (Joint rotation) only, while maintaining the Avatar's Size. Pose &amp Joint Translation Applies the Avatar's Size, Pose, Motion Data (joint rotation) and Joint positions Partial Pose (ver 7.1) Apply all pose files, or apply Hand Pose only. If the pose is changed and the garments are put on, it is automatically simulated. Save Pose Select the menu indicated. The Save File window appears. When there are more than two Avatars, select the appropriate one from the Save Pose window. Designate the file name and the path and select the Save button. The Pose(POS/HPOS) file is saved.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628367,
+        "Section": "File Open/Save",
+        "Tokens": 213
+    },
+    {
+        "ArticleId": "13214195085849",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/13214195085849",
+        "Title": "Roll Up (ver 7.1)",
+        "Content": "Objective Easily Roll up to create a variety of styles. Location Main Menu 2D Pattern Edit Transform Point/Segment 2D Toolbar Transform Point/Segment Operation Select the tool/menu indicated. Click the Roll Up. Roll Up Window appears. Enter the number and distance of Roll Up and then click OK. Roll up according to the entered value. Note: Roll Up is possible up to 3 times, and if the distance is greater than the area of the pattern, it may not Roll Up.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628707,
+        "Section": "3D Details",
+        "Tokens": 100
+    },
+    {
+        "ArticleId": "360013304233",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/360013304233",
+        "Title": "[CLOSET] Techpack",
+        "Content": "Objective Upload a 3D Garment and extract a tech pack via CLOSET. Location Main Menu File Share via CLOSET Tech Pack via CLOSET Main Menu Share via CLOSET Tech Pack via CLOSET Operation Follow the path indicated below: Main Menu File Share via CLOSET Tech Pack via CLOSET Main Menu Share via CLOSET Tech Pack via CLOSET You are redirected to CLOSET. Refer to CLOSET maunal to upload and extract a tech pack.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628367,
+        "Section": "File Open/Save",
+        "Tokens": 103
+    },
+    {
+        "ArticleId": "16017738240921",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/16017738240921",
+        "Title": "Why am I unable to log in to Help Center on iOS devices (or in the Safari app)?",
+        "Content": "Q: Why am I unable to log in to Help Center on iOS devices? A: Sometimes users encounter login issues when accessing the Help Center on their iOS device or using Safari. These issues are caused by the \"Prevent cross-site tracking\" setting, which blocks certain login data from being saved during the redirection process. This setting needs to be disabled in order for users to log in using Safari because the login process relies on cross-site tracking. By default, this setting is turned on, but users can manually disable it to resolve the issue. Apple's Help Center provides instructions on how to disable this setting, which can be found in the articles \"Prevent cross-site tracking in Safari on Mac\" or \"Browse privately in Safari on iPhone\".",
+        "YoutubeLinks": [],
+        "CategoryId": 24022165341209,
+        "Category": "FAQ",
+        "SectionId": 24022250501529,
+        "Section": "Quick Help",
+        "Tokens": 149
+    },
+    {
+        "ArticleId": "12831441932313",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/12831441932313",
+        "Title": "Payment failure notification",
+        "Content": "QUESTION Why was my payment not processed? ANSWER CLO payments can fail for several reasons. Each type of failure is handled differently. Please check if your case falls under the below categories and proceed with the solution: Insufficient funds: Try a different payment method or retry the payment at a later date. Incorrect card number: Try again with the correct number. Card expiration: Check the expiration date of your payment method. If it has expired, try again with a different one. How can I update my billing information? Alipay &amp WeChat Issue: If you cannot use Alipay payment or cannot successfully renew subscriptions, please check the following article for more information: What will I do when met Alipay/WeChat issue? (CN) Online transactions with Indian banks: Please enable international transactions. Check the following article to review how to do this: How to successfully make payments: Applicable to users with Indian Bank accounts &amp Cards. Payment restrictions on Russia and Belarus Due to international sanctions imposed, payments related to Russian financial institutions may not be processed. Please check the following article for more information: [Important Notice] Payment restrictions on Russia and Belarus Other reasons: If all the card information seems correct, please contact your issuing bank for more information, or try a different payment method. If your issue is not linked to any of the above reasons, but you are still receiving this message, please contact us.",
+        "YoutubeLinks": [],
+        "CategoryId": 24022165341209,
+        "Category": "FAQ",
+        "SectionId": 24022293527961,
+        "Section": "Account & Billing",
+        "Tokens": 284
+    },
+    {
+        "ArticleId": "9607155864089",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/9607155864089",
+        "Title": "Emails from CLO are filtered as spam by Gmail.",
+        "Content": "If you did not receive emails from CLO including the invoice and reply for your inquiry, and later found the emails in your spam folder - please follow the steps below. [STEP 1] Mark incorrectly classified emails as Not spam Go to your spam folder and open the email from CLO. Click on the 'Report not spam' button at the top. Gmail uses machine learning to recognize spam. So you need to mark CLO emails as not spam manually to let Gmail learn your behavior. [STEP 2] Set up a filter on Gmail If CLO emails are still sent to the spam folder after trying STEP 1, create a new filter in your Gmail inbox not to report CLO emails as spam. 1. Open Gmail. 2. In the search box at the top, click Show search options. 3. Enter your search criteria ex) From: support@clo3d.zendesk.com or Has the words: CLO3d 4. At the bottom of the search window, click Create filter. 5. Check 'Never send it to Spam' 6. Click Create filter.",
+        "YoutubeLinks": [],
+        "CategoryId": 24022165341209,
+        "Category": "FAQ",
+        "SectionId": 24022250501529,
+        "Section": "Quick Help",
+        "Tokens": 228
+    },
+    {
+        "ArticleId": "115013359967",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115013359967",
+        "Title": "I want to build an e-commerce site featuring virtual fittings. Can I use CLO?",
+        "Content": "Yes, CLO can be used to generate 3D garments in a variety of formats, and how you use that content is entirely up to you. We also offer APIs to incorporate our simulation technology for e-commerce sites via CLO-SET Fitting service (Beta).",
+        "YoutubeLinks": [],
+        "CategoryId": 24022165341209,
+        "Category": "FAQ",
+        "SectionId": 24022317583257,
+        "Section": "Others",
+        "Tokens": 55
+    },
+    {
+        "ArticleId": "12404983545625",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/12404983545625",
+        "Title": "How to successfully make payments: Applicable for the users with Indian Bank accounts & Cards.",
+        "Content": "Note- According to the RBI Guidelines, Debit/Credit Cards issued to customers including new, reissued, renewed or upgraded cards, will be enabled for Domestic ATM and Point of Sale (POS)/physical transactions only. The cards will be disabled for Online, Contactless and International transactions to protect against fraud. In addition, if customers have not used their existing card for online, contactless or international transactions in the last 3 years (including card issues or new accounts opened during this period), usage for these purposes will be mandatorily disabled. However, the limits can be set up &amp the usage can be enabled for any disabled transaction by simply logging into respective Bank Online or Mobile App. Steps for enabling International transactions are as follows: HDFC Bank Mobile App* Step 1: Login to HDFC Mobile Banking App. Step 2: Select Pay &gt Select Cards from the main menu. Step 3: Select 'Debit Card &gt Select Customized. Step 4: Scroll &amp Select International &gt Enable the Disabled option &gt Select Confirm. Step 5: Check and Enter the OTP received on your registered mobile number. Net Banking* Step 1: Sign-in to HDFC NetBanking. Step 2: From your dashboard, Select Cards. Step 3: Select Debit Cards. Step 4: Select Request. Step 5: Click on Set international Usage. Step 6: Select Card to be enabled for International use. Step 7: Enter any additional card details if requested &amp select submit. ICICI Bank Mobile App* Step 1: Login to the iMobile App. Step 2: Select Credit/Debit Card &gt Select Manage Card from the main menu. Step 3: Select Credit/Debit Card for which international transactions are desired. Step 4: Under Manage Card &gt Select Transaction Settings. Step 5: Select International &gt Click to continue. Step 6: Select Confirm to allow international credit card transactions. Net Banking* Step 1: Open https://www.icicibank.com/ &gt Select Personal Banking option. Step 2: Login by adding your NetBanking User ID and Password. Step 3: Select Cards and Loans from the main menu &gt select Credit/Debit Card from the sub-menu. Step 4: Select Manage Card &gt Scroll &amp Select the International Section. Step 5: Tap to Enable and manage limits of the transaction for ATM, Online, Merchant Outlet, etc. Step 6: Submit by verifying with OTP to activate international transactions. KOTAK Mahindra Bank Mobile App* Step 1: Login to Kotak Mobile Banking App. Step 2: In Service Request Select Debit Card. Step 3: Select Card Control. Step 4: Scroll &amp Select your Debit Card Number. Step 5: Select International/Domestic Controls. Step 6: Select On/Off for International Usage. Net Banking* Step 1: Login to Kotak Net Banking. Step 2: Select the Debit Card section Option. Step 3: Select Card Control. Step 4: Enable International Usage on ATM withdrawal, Transactions at retail outlets/merchant stores and E-Com transactions. *You can also set your daily International ATM, POS and ECOM transaction limit according to your preference. Simply change your ATM, POS and ECOM limits in Limit Management/Controls on Kotak Mobile Banking App or Kotak NetBanking page. * SBI- State Bank of India Mobile App* (Yono) Step 1: Login to Yono Mobile App. Step 2: Select Services. Step 3: Select Manage Debit Card. Step 4: Select your Account from the dropdown Step 5: Select your Debit card number. Step 6: Scroll &amp Enable the International usage. Net Banking* Step 1: Login to SBI NetBanking. Step 2: Select Services from the main menu Step 3: Select Manage Card Usage. Step 4: Change the transaction type from Domestic to International CITI Bank Mobile App* Steps to Enable your card for international transactions. Enable your Citi Card for Online, Contactless and International Transactions (citibank.co.in)",
+        "YoutubeLinks": [],
+        "CategoryId": 24022165341209,
+        "Category": "FAQ",
+        "SectionId": 24022293527961,
+        "Section": "Account & Billing",
+        "Tokens": 870
+    },
+    {
+        "ArticleId": "115013661227",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115013661227",
+        "Title": "How can I express lace in CLO?",
+        "Content": "To express in CLO, apply the lace texture in PNG on the Pattern. For more detail, please refer to Create Texture Image and Apply Texture manuals.",
+        "YoutubeLinks": [],
+        "CategoryId": 24022165341209,
+        "Category": "FAQ",
+        "SectionId": 24022295837977,
+        "Section": "Garments & Patterns",
+        "Tokens": 31
+    },
+    {
+        "ArticleId": "115013661707",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115013661707",
+        "Title": "Can I enter the texture in real size?",
+        "Content": "Scanned textures will come into CLO at the size they were scanned at. Their scale can then be further edited using the Edit Texture Tool if desired.",
+        "YoutubeLinks": [],
+        "CategoryId": 24022165341209,
+        "Category": "FAQ",
+        "SectionId": 24022317583257,
+        "Section": "Others",
+        "Tokens": 31
+    },
+    {
+        "ArticleId": "115013661647",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115013661647",
+        "Title": "How can I create custom textures?",
+        "Content": "To create custom textures, please refer to the manual.",
+        "YoutubeLinks": [],
+        "CategoryId": 24022165341209,
+        "Category": "FAQ",
+        "SectionId": 24022317583257,
+        "Section": "Others",
+        "Tokens": 11
+    }
+]

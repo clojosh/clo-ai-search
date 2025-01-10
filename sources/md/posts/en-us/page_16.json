@@ -1,0 +1,132 @@
+[
+    {
+        "post_id": 900001472363,
+        "post_title": "Smooth Avatar Does Not Work",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001472363",
+        "post_details": "I'm using the default male avatar and have my fabric on particle distance of 3 which looks great but is now showing facets of the avatar. Adjusting avatar smoothing slider is not increasing the division on the mesh.",
+        "updated_at": "2024-05-06T18:59:42Z",
+        "comments": [
+            {
+                "author_id": 900200317303,
+                "comment_id": 900000909323,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001472363-Smooth-Avatar-Does-Not-Work/comments/900000909323",
+                "comment_body": "Turn on the Strain mapping and see how tight your pants are around the hips. If you see a lot of red, it's too tight and the pattern should be adjusted to loosen up that area."
+            },
+            {
+                "author_id": 900850862883,
+                "comment_id": 900000909683,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001472363-Smooth-Avatar-Does-Not-Work/comments/900000909683",
+                "comment_body": "Thanks but there is no strain there, the problem is the avatar is low resolution and the smoothing option is disabled. There should be a checkbox above the slider, that must be enabled first before the slider works."
+            },
+            {
+                "author_id": 900854669943,
+                "comment_id": 900000919306,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001472363-Smooth-Avatar-Does-Not-Work/comments/900000919306",
+                "comment_body": "I have the same problem! There was in former versions, Marvelous 7, the possibility just to smooth the avatar. In CLO 3D the function was dividing mesh. That worked perfect! I am wondering why this function is not available anymore in the current versions of Marvelous Designer and CLO 3D. Unfortunately its a big issue in the end of a project when decreasing the particle distance. And by the way it hast nothing to do with the tightness of the garment."
+            },
+            {
+                "author_id": 900850862883,
+                "comment_id": 900000910743,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001472363-Smooth-Avatar-Does-Not-Work/comments/900000910743",
+                "comment_body": "I explored further and see the following behaviour. The default avatars do not show the smoothing checkbox in the properties panel, so smoothing cannot be enabled, the slider has no effect. The v1 avatars show the checkbox but clicking it shows an error message saying the mesh cannot be divided. The Sansar avatars show the checkbox and also allow the checkbox to be selected, then the slider to be used and the avatar is smoothed. This seems like a big problem to me. I have only recently starting using MD so have no experience of previous versions. However I have managed a workaround. After my sim was done I went to the sculpt tab and dabbed the smoothing brush on the really bad parts and they cleared up easily. This is hardly ideal though, as invoking another simulation removes the sculpting and the facets return."
+            },
+            {
+                "author_id": 900201109763,
+                "comment_id": 900000919643,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001472363-Smooth-Avatar-Does-Not-Work/comments/900000919643",
+                "comment_body": "Strange that avatar sub division (smoothing) is giving you that issue. 3mm is perhaps to fine for the cloth mesh distance - you are potentially not getting any benefit from that resolution on the trouser legs . You would generally be fine with 5mm for a simple garment at high resolution or even slightly higher for the trouser legs as you can attack micro creasing with displacement maps and normal's in localized cloth areas of high cloth poly count if you need some high detail in some seam area. You don't need to always make the whole cloth pattern a high poly count. MD8 below cloth set to 3mm particle distance &gt Did you switch your simulation over to &gt CPU compute &gt Simulate Complete (non linear) 3mm particle mesh distance above on a pair of trousers shrunk to 85% for a skin tight simulation with the avatar smoothing set to 2. I could easily ramp that up to 5mm particle distance and still get a smooth sim on the backside. If you don't notice the difference above at 10mm cloth relative to the 3mm at the top - you are likely pushing around too many cloth polys for your garment without any real gain. Try checking you have the simulation set for that beauty pass simulation quality. :-)"
+            },
+            {
+                "author_id": 900850862883,
+                "comment_id": 900000930046,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001472363-Smooth-Avatar-Does-Not-Work/comments/900000930046",
+                "comment_body": "Thanks for the tip on the hidden simulation mode. It does give a bit more detail but does not fix the facets that I showed in my screen grab. If I take my particle distance back up to 10 you cannot see it but I want the higher resolution of at least 5, but 3 looked better. In your example though you smoothed the avatar to 2, I cannot do that on the current default avatars in v9.5 because the option is unavailable. Which is the issue I am having. If use avatar smoothing of 1 or none can you see facets like I am? PS I have only just starting using MD, but I think they introduced new avatars in 9.5? At any rate I am only able to smooth the Sansar ones."
+            },
+            {
+                "author_id": 900850862883,
+                "comment_id": 900000926803,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001472363-Smooth-Avatar-Does-Not-Work/comments/900000926803",
+                "comment_body": "Thanks so much for such detailed reply. I will go through all of this! I should clarify though I do not have an old version of MD, I only just bought 9.5 a couple of weeks ago. In 9.5 I have the new default avatars, a folder called v1 and another called Sansar. My comments on the Sansar avatar were only to indicate what avatars were allowing smoothing in MD and which were not. I'm not using Sansar application. I am exporting the garment to Modo for texturing and rendering. I'll look into exporting the default avatar and reimporting to see if smoothing is then enabled. But will I lose the poses and animations currently available on these in MD?"
+            },
+            {
+                "author_id": 900201109763,
+                "comment_id": 900000926683,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001472363-Smooth-Avatar-Does-Not-Work/comments/900000926683",
+                "comment_body": "You may need to change your approach. If you still have the old Marvelous Designer base library (usually saved in your documents under the MD version control folders when you install a new version) try opening up one of the older avatars, they should still be archived there, maybe that will help to use that older avatar. My suggestion would be - try exporting the avatar in it's current state of mesh and place it into modo or blender and subd it and export it back into MD as either a finer mesh or even try a copy of the current avatar exported as FBX and re-import as new avatar and see if you can then apply the avatar smoothing to that copied version."
+            },
+            {
+                "author_id": 900850862883,
+                "comment_id": 900000928043,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001472363-Smooth-Avatar-Does-Not-Work/comments/900000928043",
+                "comment_body": "Wow, that's some detailed materials. Fantastic. Indeed that kind of detail is not Modo's strength. Although the texture size you could probably get around by using tillable EXRs. I'm just using textures from Substance Source in this case and ignoring the SSS or opacity between the weave for this job. I've seen some nice looking fabric scans from Chaos Group with VRScans, as I think they are capturing bidirectional lighting information that cannot normally be done with Modo's native shading. Very. nice wood materials too. I found a quick workaround for the faceting, I just sculpted a bit of smoothing on the few contact points and all is good. But I will send a query off to support. Thanks again! Oh and here's some of my fabric rendered in Modo."
+            },
+            {
+                "author_id": 900201109763,
+                "comment_id": 900000938766,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001472363-Smooth-Avatar-Does-Not-Work/comments/900000938766",
+                "comment_body": "You can do a garment pressure (contact) point view in MD to give you a look at where all the problem areas are on the avatar come in direct contact with the cloth - so yes smoothing it out locally is a work-around for now, best to get them to sort that out, it should work."
+            },
+            {
+                "author_id": 900850862883,
+                "comment_id": 900000956163,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001472363-Smooth-Avatar-Does-Not-Work/comments/900000956163",
+                "comment_body": "I've had a reply from support now, the smoothing feature is unavailable on the new v9 default avatars with no plans to change that in the next version."
+            },
+            {
+                "author_id": 900201109763,
+                "comment_id": 900000962566,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001472363-Smooth-Avatar-Does-Not-Work/comments/900000962566",
+                "comment_body": "Down to using the MD8 avatars then. Alternatively it looks like they are taking the approach that you sub divide your avatar outside MD and bring it in as you need for your project. Which is how I tend to work anyway and I imagine with custom characters in CG that is the norm when creating clothing for a CG character."
+            },
+            {
+                "author_id": 900850862883,
+                "comment_id": 900000958903,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001472363-Smooth-Avatar-Does-Not-Work/comments/900000958903",
+                "comment_body": "Seems strange to me though. I tried exporting as FBX and reimporting and that mesh allows smoothing just fine. However the new avatars have a number of useful animation sequences which I then cannot use on the reimported mesh... as far as I can tell."
+            },
+            {
+                "author_id": 900201109763,
+                "comment_id": 900000962946,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001472363-Smooth-Avatar-Does-Not-Work/comments/900000962946",
+                "comment_body": "As long as your mesh incoming is a quad geared for subd it should be okay. Otherwise &gt When you import a new avatar character &gt select the avatar &gt go to the property editor &gt surface &gt divide mesh &gt 1~3"
+            },
+            {
+                "author_id": 900201109763,
+                "comment_id": 900000936606,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001472363-Smooth-Avatar-Does-Not-Work/comments/900000936606",
+                "comment_body": "Okay - most of that post content I made was irrelevant then, I would send a message to MD directly via your account and alert them to that fact and see if they can rectify it or if it's a known problem. I used to use modo for product rendering, but for fabrics garments it really wasn't up to it as the shader stack couldn't handle the high resolution level of texture maps, range of spectral light I needed to feed into it (rear illumination of weave ID maps for light transport). Sad thing about many shaders they don't do fabrics well. So I created my own digitization hardware and approach to organically creating CG fabric quality. Which paid off - as I get this realtime capability flowing through from a small sample via digitization, auto masking, yarn ID maps, normals, A.I. organic reconstruction to structured weaves in under 30 seconds."
+            }
+        ]
+    },
+    {
+        "post_id": 900001410083,
+        "post_title": "Create Custom Hair for Custom Avatar",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001410083",
+        "post_details": "Can someone explain how to create custom hair for a custom avatar in marvelous designer? There are no (!) tutorials or detailed descriptions and the process simple does not work. If i try to create a custom hair as zacs (Accessory File), i can choose the target avatar (which is loaded into the current scene), a category, avatar ID list (where i select \"ALL\"), the COLLADA-file (i asume that this should be the hair), and so on. But no matter which options i choose, it always says \"Completed\" on save but when i try to load that file, the message \"Invalid file. Mismatched Joint Names.\" or \"Failed to load. This avatar is not available for this accessory file.\" appears. What's the correct way to create custom Hair? EDIT: Just to clarify: The Character is fully rigged in Blender/Character Designer and it works in Marvelous Designer. Also the hair is already modelled/finished as a mesh, and now i want to import this mesh and save it as Accessory File. The reason for that is, that i want small variations of the same avatar mesh/rig and use it with different custom hairstyles in Marvelous Designer.",
+        "updated_at": "2022-10-21T03:19:31Z",
+        "comments": [
+            {
+                "author_id": 901141522563,
+                "comment_id": 11712745162009,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001410083-Create-Custom-Hair-for-Custom-Avatar/comments/11712745162009",
+                "comment_body": "I am also very interested in this."
+            }
+        ]
+    }
+]

@@ -1,0 +1,270 @@
+[
+    {
+        "post_id": 900003005943,
+        "post_title": "Save and Loading a pose Problem",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003005943",
+        "post_details": "Hello, I'm currently using MD 9.5 and I'm having an issue that I didn't have in previous versions. When I save a pose. Then use the skeleton to simulate the avatar in a slightly different pose, now when I load the original pose back, I see the skeleton move back to the original bind pose however the avatar itself nor any of the garments move with it. When I click the simulation on and off the avatar \"jumps\" to the skeletons position in 1 frame and the garment doesn't move with the avatar and there for falls down. I used to be able to use poses to to move the arms around a little to get the kind of folds i wanted, then revert the avatar back to the bind pose by loading in my bind pose. Now this doesn't work anymore :( I really rather not go back to objs and loading avatars as morph target workflow as it's slow and annoying. Anyone has any solutions?",
+        "updated_at": "2023-07-06T08:33:25Z",
+        "comments": [
+            {
+                "author_id": 900201109763,
+                "comment_id": 900002379443,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003005943-Save-and-Loading-a-pose-Problem/comments/900002379443",
+                "comment_body": "What version of 9.5 ?"
+            },
+            {
+                "author_id": 20374867879577,
+                "comment_id": 20375333950617,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003005943-Save-and-Loading-a-pose-Problem/comments/20375333950617",
+                "comment_body": "Hey, I have the same problem. Has this been solved?"
+            }
+        ]
+    },
+    {
+        "post_id": 900001887986,
+        "post_title": "Topstitch not exporting to C4D",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001887986",
+        "post_details": "Hi there When I export my garment from MD as OBJ or Alembic to import it with C4D, the topstitch doesn't seem to export at all. I would like to have the topstitch in C4D as 3D geometry preferably. This is what my garment looks like in MD vs C4D: These are my export settings, although I've tried every other combination, with no luck. I also tried importing it with blender, just to see if the fault lies with C4D. But I wasn't able to see the topstitch in blender either. Is there something I'm missing or doing wrong? Hoping someone can help. Thanks Arien",
+        "updated_at": "2022-11-04T13:40:41Z",
+        "comments": [
+            {
+                "author_id": 901084195766,
+                "comment_id": 900002515063,
+                "official": true,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001887986-Topstitch-not-exporting-to-C4D/comments/900002515063",
+                "comment_body": "901714950746 Hello Wilson, Thank you for contacting us. As you mentioned, the top stitch won't be exported if you tick the Unified UV Coordinates (PNG) option. In the current version, if you tick it on the export window, the mesh for obj stitch, print overlay (Graphic), and Button Hole are not saved and exported. As the next best option, ticking \"Diffuse Map\" under the Unified UV Coordinates (PNG), the stitch can be baked as a texture. I hope this information helps you. If you need further assistance, please let us know :)"
+            }
+        ]
+    },
+    {
+        "post_id": 900002819763,
+        "post_title": "Application won't start",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002819763",
+        "post_details": "After start nothing happens. but the application is listed in processes list.",
+        "updated_at": "2022-09-27T22:14:13Z",
+        "comments": [
+            {
+                "author_id": 901276198283,
+                "comment_id": 900001269886,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002819763-Application-won-t-start/comments/900001269886",
+                "comment_body": "Did you solve this problem? I am having the same problem too. Application appears in the Task Manager but application does not appear on screen."
+            },
+            {
+                "author_id": 901223981726,
+                "comment_id": 900001270266,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002819763-Application-won-t-start/comments/900001270266",
+                "comment_body": "Sorry Michael, nothing till now. Gonna manually cleanup registry and HDD."
+            },
+            {
+                "author_id": 901276198283,
+                "comment_id": 900001270826,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002819763-Application-won-t-start/comments/900001270826",
+                "comment_body": "I'm using Windows 10 and was using the latest update 20H2. I rolled it back to 2004 and it still doesn't work. Uninstalled MD 10 6.0.405 and installed MD10 6.0.351 and that wasn't any help. Before doing this I cleaned the registry by hand from any Marvelous Designer items I could find. Since then I installed on another machine and had the same problem, program just won't start. Finally, I uninstalled MD10 6.0.405 from a custom location on another drive and installed it to c:Program FilesMarvelous Designer 10 Personal where it suggests during install and still know help. Any suggestions beyond what I have already done? I have work to get done, dealing with a paid program that won't even start is totally frustrating"
+            },
+            {
+                "author_id": 901223981726,
+                "comment_id": 900001274486,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002819763-Application-won-t-start/comments/900001274486",
+                "comment_body": "Hi Michael. here is my story) - we got a network blackout for 2 days at our house and i asked a friend to bring me the new MD10 free non commertial version on stick. some people just hate signups and signins, so the dumbass brought me a precracked torrent version. I know it now - we phoned. MD10 worked offline and than stopped starting after the network was restored. i uninstalled the cracked shit and installed the free education version - wont start either. my suggestion is to rollback in time plug the pc offline, deactivate all windows security items(they blocking nearly everything after last updates) and try then to install the MD10. i didnt use any unique MD10 new features in my project so i managed to open my MD10 file with MD9. good luck! Sorry thats all i can suggest."
+            },
+            {
+                "author_id": 901276198283,
+                "comment_id": 900002268783,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002819763-Application-won-t-start/comments/900002268783",
+                "comment_body": "I have previously used the V7 and V8 trial with no problems. I have a project where I need to use MD so I took the leap and paid for the newest MD10 version. I have long since removed the trial versions since I used up the Trial period. I have not had a cracked version installed ever. Your exact problem still persists days after I purchased it. I have reset my PC and reinstalled MD10. Still the problem persists. If anyone has had this problem and solved the problem I would really appreciate it. Does Tech support follow this Forum at all? I have also opened a ticket with all pertinent info but haven't hear a word from them. This is so frustrating. I am at a standstill with my project until this problem is resolved."
+            },
+            {
+                "author_id": 9700945481497,
+                "comment_id": 9705118317721,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002819763-Application-won-t-start/comments/9705118317721",
+                "comment_body": "I think they dont want us to use the older nonsubscription versions. I'm having the same issue. we should sue"
+            },
+            {
+                "author_id": 10933593203097,
+                "comment_id": 10933670996889,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002819763-Application-won-t-start/comments/10933670996889",
+                "comment_body": "Did anyone found any way to solve this? I'm facing the same issue. I'm using MD 10 with licensed windows. It was working fine until suddenly it crashed and since then whenever I try to open it doesn't start. I've tried reinstalling it but that didn't work. Please help."
+            }
+        ]
+    },
+    {
+        "post_id": 900002815743,
+        "post_title": "MD 10 application resolution ",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002815743",
+        "post_details": "The resolution of the MD 10 is like in the screenshot shown below which is not like that in MD 9. Is there any way to fix it please?",
+        "updated_at": "2023-09-06T15:38:53Z",
+        "comments": [
+            {
+                "author_id": 900201109763,
+                "comment_id": 900002221823,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002815743-MD-10-application-resolution/comments/900002221823",
+                "comment_body": "You can go to the menu &gt settings &gt user settings &gt user interface &gt and change the applications screen size and font size.."
+            },
+            {
+                "author_id": 21503688025369,
+                "comment_id": 22683183286681,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002815743-MD-10-application-resolution/comments/22683183286681",
+                "comment_body": "Yes, but how can anyone follow your recommendation? There is NO SETTINGS in the MENU as you can see in the shot above. I have the same problem and all I have in the top menu is @File@"
+            },
+            {
+                "author_id": 21503688025369,
+                "comment_id": 22683525725465,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002815743-MD-10-application-resolution/comments/22683525725465",
+                "comment_body": "After digging through internet for 1 or 2 hours I was crying, sorry, and clicking everywhere and somehow when i click at the beginning of label @Hello, PattyPetty@ (nickname) the top menu appears. It doesn't appear regularly - like 1 time of 5-10 clicks. There I pressed Settings and User Settings, then User Interface, and checked out Automatic Scale. It became better and I have my toolbar back on the screen."
+            }
+        ]
+    },
+    {
+        "post_id": 900002784423,
+        "post_title": "MD 10 - Rotation in 3D window has stopped working.",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002784423",
+        "post_details": "Does anyone know why MD 10 suddenly doesn't do rotation with RC and Drag in the 3D window?",
+        "updated_at": "2023-05-05T20:36:42Z",
+        "comments": [
+            {
+                "author_id": 900147733143,
+                "comment_id": 900002198723,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002784423-MD-10-Rotation-in-3D-window-has-stopped-working/comments/900002198723",
+                "comment_body": "Check your top toolbar -- settings&gt user settings&gt \"View Control\" and you will see at the top the PRESET options&gt select the 3-button mouse or regular mouse prese, then close and re open the program. Give that a try."
+            },
+            {
+                "author_id": 900237888906,
+                "comment_id": 900002198963,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002784423-MD-10-Rotation-in-3D-window-has-stopped-working/comments/900002198963",
+                "comment_body": "LOL. That's so obvious when someone points it out. Another facepalm moment! Thank you."
+            },
+            {
+                "author_id": 900147733143,
+                "comment_id": 900001207526,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002784423-MD-10-Rotation-in-3D-window-has-stopped-working/comments/900001207526",
+                "comment_body": "Here is a link to our YouTube channel so you can more quickly get acquainted to the software and the basic concepts. These lessons were made with version 9.5 but the concepts are the same and applicable to the Marvelous Designer 10. https://www.youtube.com/playlist?list=PLYQUdblF9eDVhqPGgC0VB4j-5IQ1TeYBq check the other playlists as well."
+            },
+            {
+                "author_id": 18224034876185,
+                "comment_id": 18224138438809,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002784423-MD-10-Rotation-in-3D-window-has-stopped-working/comments/18224138438809",
+                "comment_body": "Tysss"
+            }
+        ]
+    },
+    {
+        "post_id": 900002783883,
+        "post_title": "Upgrading to 10",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002783883",
+        "post_details": "I have a perpetual license for MD 9 and my understanding is that I can purchase an upgrade to MD 10 which will also be a perpetual license but I've read some stuff that makes it seem a bit ambiguous and I'm worried that if I upgrade to 10, the perpetual license will be cancelled after a year and I'll have neither a perpetual license for 10 nor for 9 either! Am I being paranoid here? Or is that what will actually happen? The way I see it, a perpetual license should be perpetual.",
+        "updated_at": "2022-10-14T21:18:36Z",
+        "comments": [
+            {
+                "author_id": 900148289583,
+                "comment_id": 900002197123,
+                "official": true,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002783883-Upgrading-to-10/comments/900002197123",
+                "comment_body": "Hello Sneddon Bradley, This is Marvelous Designer Support Team. Thanks for your inquiry! If you're a version 9 perpetual license holder and \"upgrade\" your license to version 10, you will be able to keep your perpetual license as it is now. You will be able to use licenses continuously. Hopefully, this information attached is sufficient for you. Best regards, Marvelous Designer Support Team"
+            }
+        ]
+    },
+    {
+        "post_id": 900002781463,
+        "post_title": "Making leather boots",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002781463",
+        "post_details": "Hi Does anyone know of any good tutorials for making leather boots? Or if not, what the best thickness would be? Ive tried looking around on Google and the results are pretty disappointing. I tried making some last night, and even after increasing the thickness and picking a leather present, the material was still too ropey, soft and wouldnt conform to the foot very well. Thanks",
+        "updated_at": "2022-02-10T20:43:09Z",
+        "comments": [
+            {
+                "author_id": 900200317303,
+                "comment_id": 900001199746,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002781463-Making-leather-boots/comments/900001199746",
+                "comment_body": "You can create your own preset. Start with an existing preset, then under the Property Editor (when that fabric selection is highlighted) go to the Details area. Play with the Stiffness and Bending settings as a start. Experiment a bit... it is possible. I made the boots, and armor, for these characters, in MD almost 8 years ago: https://www.renderosity.com/rr/mod/gallery/noordman/2383456/ https://www.renderosity.com/rr/mod/gallery/the-home-guard/2336660/ https://www.renderosity.com/rr/mod/gallery/defend-the-gate/2285346/"
+            },
+            {
+                "author_id": 900200317303,
+                "comment_id": 900002191363,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002781463-Making-leather-boots/comments/900002191363",
+                "comment_body": "And there are tools available now, that I didn't have back then. Use one of the selection tool to apply a stiffening to an area, while leaving other areas to be softer. In this case, the boot 'cuffs' at the top would be stiffer, and the area around the ankle would be free to have the bending wrinkles that often occur. You can use the Line tack to Avatar to keep the tops of the boots in place on the legs."
+            },
+            {
+                "author_id": 901105546743,
+                "comment_id": 900001201926,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002781463-Making-leather-boots/comments/900001201926",
+                "comment_body": "Okay, I'm going to experiment with a custom material and see how it goes. Thanks for the advice. One thing though - I'm not quite show what you mean by adding stiffness to an area. How do you do that? Thanks."
+            },
+            {
+                "author_id": 901105546743,
+                "comment_id": 900002194283,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002781463-Making-leather-boots/comments/900002194283",
+                "comment_body": "I'm still struggling with this. At the moment I'm having problems with the soles they're always too soft and go into the foot, or they just go haywire and pull the rest of the material down. But they just won't sit on the sole of the foot."
+            },
+            {
+                "author_id": 900201109763,
+                "comment_id": 900001204586,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002781463-Making-leather-boots/comments/900001204586",
+                "comment_body": "Try moving the avatar in the 3D window about 1 meter on the axis that is away from the paper plane (Z axis). The preset camera plane is based on body size so you will find the clipping plane Limits what is seen moving the avatar forward or backwards in the Z- axis. find that default sweet point and you will have your clipping plane. Hope that helps."
+            },
+            {
+                "author_id": 901105546743,
+                "comment_id": 900001206186,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002781463-Making-leather-boots/comments/900001206186",
+                "comment_body": "I think you've replied to the wrong thread. ) But thanks for the suggestion I get what you mean now. I'm still unable to have it so only the soles of the feet are visible. It's looking like this in the 2D plane... Also, as an aside... is it possible to adjust something so when you snap on rotation, it does it by 90 degree angles? It only does it at 45 degree angles for me. :-"
+            },
+            {
+                "author_id": 900200317303,
+                "comment_id": 900001206926,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002781463-Making-leather-boots/comments/900001206926",
+                "comment_body": "1. You will need to disable the ground plane, if you are working at the soles of the feet. Right-click anywhere (other than ton the avatar) in the 3D window, and in the pop-up menu, choose Simulation Properties. Then, in the right-hand menus, find the listing for Ground, open that and uncheck the collision option. this will keep the cloth from creating collision conflicts between the ground and the bottom of your avatar's feet. 2. A possibly quicker way to get a pattern for the soles (besides the clipping plane idea above) would be to use the Line on Avatar feature, plus the Flatten option. You will have to adjust for the toes area, as that will complicate the line you create, but that would be simple pattern editing. This will also help with orienting the cloth mesh for the soles in the correct direction for cloth/avatar interactions. 3. Once you have a clean sole pattern, and it is in the correct orientation for work, then use the Freeze function to have it keep it's flatness and position, during simulation. You will be able to sew the uppers patterns onto it while it is frozen. 4. Things will get complicated if you are trying for animation, however, as the frozen sole patterns won't move. You will have to unfreeze the soles. This is where the need for a stiffer material really comes in. Try for a setting like Hardware/metal, and if that isn't stiff enough in movement, adjust the individual property settings for that fabric. Select the fabric you are using for the soles in the list (not the pattern pieces, but the fabric choice). Under the Property Editor, look for the line labeled Details. Play with the settings for Stiffness and Bending until you get a really firm fabric."
+            },
+            {
+                "author_id": 900201109763,
+                "comment_id": 900001207126,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002781463-Making-leather-boots/comments/900001207126",
+                "comment_body": "Whoops yes I did post in the wrong area, using a tablet and it was hard to see the thread I were in, corrected it thanks. (Hi Rosemaryr we saw the news today on how California is now going into lockdown statewide - I know the feeling after Melbourne's 9 month stint - watching grass slowly quickly becomes a real thing! Hang in there. ) (Louise cake - a kiwi favorite &gt&gt Link) Onto your solution with a few screen captures. &gt Try nose planting your avatar forward to the floor plane. Kiss the floor, is the correct direction. Then slide the avatar forward until only the foot shows. This is the forward clipping plane in the default camera. The rear clipping plane will always include the other side of the avatar geometry. STEPS Switch to xray mode and pick(select) the avatar (AVT) insertion point between the feet at floor level, and using the gizmo rotate the avatar forward parallel to the floor plane. When you do this keep you finger on the shift button, as you use the gizmo rotation feature and the avatar will snap to increments making this an easy task to keep horizontal. You should also adjust the foot bones to get the foot in the correct posed direction. See below the avatar selection point tp rotate the avatar (kiss the floor) forward. Once the avatar is rotated forward we will slide it forward using the axis on the gizmo. Pull forward (-z axis). Until the feet start to become clipped about the ankle position - this is therefore the front view of the x,y paper space plane in the 2D drafting window. And that is the simple result. Ready to trace around. :-)"
+            },
+            {
+                "author_id": 901105546743,
+                "comment_id": 4418060179737,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002781463-Making-leather-boots/comments/4418060179737",
+                "comment_body": "Resurrecting this thread again. I've made some leather cowboy boots, but I'm finding the fabric to be too springy and cloth like. I've tried the only two leather presets I can see - Leather Lambskin and Trim Full Grain Leather. However, the latter makes the physics go nuts due to the Bending Bias or Warp being at 90. I've spent hours fine tuning and fiddling with the different physical properties, but can't seem to hit anything I'm satisfied with. :- Does anyone have any recommended settings for leather cowboy boots? The reference I'm trying to match doesn't have that many folds and creases, which mine doesn't currently, but it just looks too cloth-like rather than leather. Any suggestions? Thanks."
+            }
+        ]
+    },
+    {
+        "post_id": 900001827746,
+        "post_title": "Graphic Card does not support OpenGL 1.3 ?",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001827746",
+        "post_details": "Hi,i have Nvidia RTX 2070 with the newest Driver installed but i become on Start this Message and cant open Marvelous Desigenr. Can someone help me please?",
+        "updated_at": "2022-02-08T17:15:28Z",
+        "comments": [
+            {
+                "author_id": 900487920583,
+                "comment_id": 4417156292761,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001827746-Graphic-Card-does-not-support-OpenGL-1-3/comments/4417156292761",
+                "comment_body": "Please can someone here help with this. Customer Support at MD hasn't helped with my emails back and forth, my system has support for OpenGL, from OpenGL 1.1 through to 4.5 (including 1.3) and MD 10 is the only software I have that won't work, I get the same message as Ivan. My system uses 2 x RTX 3090 connected via NVLink. MD 9.5 works fine. It's just MD 10 won't work and gives me this error message on start up of MD 10. Please help. Thank you."
+            }
+        ]
+    }
+]

@@ -1,0 +1,258 @@
+[
+    {
+        "post_id": 900001086303,
+        "post_title": "Import Garment As OBJ Fails When Tracing Pattern From UVs",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001086303",
+        "post_details": "Hi Im trying to import a clean model with nice UV's within the 0-1 UV space - please see attached. None of the UV islands overlap. When importing OBJ as garment in MD (both v8 and v9) the operation fails with a \"Could Not Recognise UV Borderline Correctly\". I get further with MD8 - UV are read in despite the warnings, and look decent, but programs crashes if I try to save the project. MD9 reads the same file, gives the warnings, but does not read correctly. Please can anyone offer any help? Thank you!",
+        "updated_at": "2022-06-05T07:25:54Z",
+        "comments": [
+            {
+                "author_id": 900306869966,
+                "comment_id": 900000428646,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001086303-Import-Garment-As-OBJ-Fails-When-Tracing-Pattern-From-UVs/comments/900000428646",
+                "comment_body": "Please find my import settings attached."
+            },
+            {
+                "author_id": 900201109763,
+                "comment_id": 900000433346,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001086303-Import-Garment-As-OBJ-Fails-When-Tracing-Pattern-From-UVs/comments/900000433346",
+                "comment_body": "What app did you export it from ? The edge for each mapped element on the UV needs to be well defined, that means you need to ensure you don't have any additional conditions - I generally clean my mesh before exporting to make sure 'manifoldness' is sorted. Usually an issue with Maya."
+            },
+            {
+                "author_id": 900306869966,
+                "comment_id": 900000432183,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001086303-Import-Garment-As-OBJ-Fails-When-Tracing-Pattern-From-UVs/comments/900000432183",
+                "comment_body": "I exported from Modo, and did a Mesh Clean Up before export. When importing from MD into Modo also, the UV's are HUGE. I always have to do a re-pack to get them into 0-1 UV space within Modo. Not sure what the issue ism but MD does not like it, and actually crashes - both MD8 and MD9.5"
+            },
+            {
+                "author_id": 900201109763,
+                "comment_id": 900000440183,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001086303-Import-Garment-As-OBJ-Fails-When-Tracing-Pattern-From-UVs/comments/900000440183",
+                "comment_body": "Did you define the 3D models mesh island seam lines before you exported as single welded item? Make sure your Modo scale is set right for importing to MD, and that when you do import you choose either automatic or the right unit scale."
+            },
+            {
+                "author_id": 900850862883,
+                "comment_id": 900001601566,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001086303-Import-Garment-As-OBJ-Fails-When-Tracing-Pattern-From-UVs/comments/900001601566",
+                "comment_body": "I just got this exact same problem on a very simple mesh. And likewise I had run mesh cleanup already. Turned out there was still a vertex needed joining that I picked up with manual vertex merge of 2mm."
+            },
+            {
+                "author_id": 900201109763,
+                "comment_id": 900001603846,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001086303-Import-Garment-As-OBJ-Fails-When-Tracing-Pattern-From-UVs/comments/900001603846",
+                "comment_body": "Yes the incoming file MUST be clean as a whistle and so that means users need to check (and double check) their mesh and UV islands."
+            }
+        ]
+    },
+    {
+        "post_id": 900001065986,
+        "post_title": "Marvelous designer animation to UNITY",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001065986",
+        "post_details": "Hi, Basically: I export the static mesh of a dress from marvelous I rig it into Blender then i export an FBX (mesh + armature) I import the FBX to Unity and i add the physic scripts (cloth constraints, collider creation etc..). Now I'd like to have an existing animation set that uses marvelous physics. So, I designed a dress in MD and managed to move (animate) the avatar and the dress according to a Mixamo FBX animation. In the Animated mode, i correctly recorded the animation. I'm looking for a method to transfer the animated mesh in a Unity project. I can't find a precise guide on the web and my tests (below) have not led to acceptable results: Fbx Export with mc chache: Unity doesn't recognize mc files OBJ sequence: 11gb for a dress (not exploitable) Mdd cache: Unity doesn't recognize mdd files Alembic: The best one, but the dress have no textures in Unity Can someone can help me to reach this goal? Even if it requires to use an external tool (ex. Maya) it would help me a lot! Thanks!",
+        "updated_at": "2022-04-26T14:20:33Z",
+        "comments": [
+            {
+                "author_id": 900285557446,
+                "comment_id": 900000412546,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001065986-Marvelous-designer-animation-to-UNITY/comments/900000412546",
+                "comment_body": "Hi marcuswilm, Thanks so much for sharing your video. It is very useful to know the correct pipeline to export animations and textures toward Blender (which I use :) ) Unfortunately, I miss and I'm unable to find the knowledge to do the same export toward a game engine. My concern is: MD is a \"game oriented\" software, so what 3d artists do once they finish the dress? They export the static mesh and animate it with engines physics (Unity, Unreal) or they have/know an \"easy\" way to take advantage of MD animations?"
+            },
+            {
+                "author_id": 900285557446,
+                "comment_id": 900000417903,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001065986-Marvelous-designer-animation-to-UNITY/comments/900000417903",
+                "comment_body": "Hi marcuswilm, Please don't apologize, I really appreciate your help and what you shared with me. And for what it's worth, I appreciate 10 times more your 2D game (I recognize the enormous effort, and at the time it must not have been easy at all) than any game created with Game Guru (surely this too requires a lot of work) :D I agree with you (huge files, I'm not a big software house) and I have come to the same conclusion: the animation export is more suitable to create amazing video clips. If the purpose is to use the model in a graphics engine it is preferable to use its physics (or external plug-ins) to simulate clothes. Ps. I'm curious now, how old are you? :) Giuseppe"
+            },
+            {
+                "author_id": 900285557446,
+                "comment_id": 900000422723,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001065986-Marvelous-designer-animation-to-UNITY/comments/900000422723",
+                "comment_body": "Hi Marcus, Thank you very much, it's very nice to see that you continue to cultivate the passion for video game. Also, it is rare today to find someone who makes a similar effort just to help someone online, so thank you once again. I will definitely try your project, I think it can help me find the right way for my project. I also found your post: https://marvelousdesigner.zendesk.com/hc/en-us/community/posts/900001050046-Exporting-MD-Garments-in-T-Pose (it is very interesting!) Giuseppe"
+            },
+            {
+                "author_id": 6099599146009,
+                "comment_id": 6100311090457,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001065986-Marvelous-designer-animation-to-UNITY/comments/6100311090457",
+                "comment_body": "This post is exactly what i need. but I don't see the answer to your first post Bianco. What is the workflow to reach the goal of realistic cloth animation with texturing in Unity. Did you finally use Alembic? Thanks"
+            }
+        ]
+    },
+    {
+        "post_id": 900001058986,
+        "post_title": "Create Custom Button shapes",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001058986",
+        "post_details": "Trying to create custom button shapes as per below tutorial in MD Ver 8, I am getting this error. can any one tell me where I did wrong. https://www.youtube.com/watch?v=HjFJcvs5TaE https://marvelousdesigner.zendesk.com/hc/en-us/articles/360037396831-ADD-CUSTOM-BUTTON-AND-BUTTONHOLE-Register-Custom-OBJ-as-Button",
+        "updated_at": "2023-02-21T23:09:06Z",
+        "comments": [
+            {
+                "author_id": 900203149783,
+                "comment_id": 900000384983,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001058986-Create-Custom-Button-shapes/comments/900000384983",
+                "comment_body": "Hi Angle Thanks for your help and explanation. - In the video link - \" How to create a custom button in CLO3D\" the button is made in CLO3D itself (exported as OBJ and created a Custom Button in CLO). In MD manual not much explanation about Custom button making. Thanks"
+            },
+            {
+                "author_id": 900200317303,
+                "comment_id": 900000388303,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001058986-Create-Custom-Button-shapes/comments/900000388303",
+                "comment_body": "I finally got the tutorial to work, for me, Gupta. Take it slow, double-check each setting and imitate exactly what was done, and it works. There are some things that aren't explicitly said in the tutorial, like making sure the button is parallel to the ground, and facing the correct direction, making sure the export to obj scale is in mm, etc. But here's my results:"
+            },
+            {
+                "author_id": 900200317303,
+                "comment_id": 900000387546,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001058986-Create-Custom-Button-shapes/comments/900000387546",
+                "comment_body": "It still needs a bit of tweaking, example the 'thread' length thing, but it does work."
+            },
+            {
+                "author_id": 900203149783,
+                "comment_id": 900000389263,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001058986-Create-Custom-Button-shapes/comments/900000389263",
+                "comment_body": "@Rosemary - Thanks for your help, Now It works for a simple square or circle, exported as mm scale. I don't know where I made wrong previously (Followed same steps as in video tutorial) Its time for me to experiment more on these. Once again Thanks."
+            },
+            {
+                "author_id": 900201109763,
+                "comment_id": 900000392766,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001058986-Create-Custom-Button-shapes/comments/900000392766",
+                "comment_body": "I think in that video the thing the leave out as an entire step relative to buttons made in modelling apps, is that the orientation of the swizzle between software's is crucial as is the world unit-less space. post link about swizzle orientation between software's I find the best remedy is to look at an existing MD button model by unpacking it (unzip a MD button file) and opening that file up in your modelling software to look at the mesh groups that are in a MD button. That will immediately indicate the correct MD offset (set start thread length) for the button relative to the 0,0,0 (x,y,z) swizzle plane in your modelling app. When you then export this from your modeling software, you need to ensure both your model and unit space between software's is matched so the axis's on the swizzle and model work at the same orientation, or that when you import the button shown in their video step retains the same positive x,y,z axis. That will remedy the problem with hard modeled buttons. Look at the color of your swizzle in your 3D modelling app (green, red, blue) which is the standard for axis orientation between all software's and you can match that 3D screen view and model to MD's gizmo colored axis relative to the floor plane. That is absolutely crucial. My advice would be if you are making many custom buttons that you look at the mesh groups in a .btn file type and explore it's insertion point, unit-less scale, and bounding collision volumes. If you adhere to those norms you can custom load any object as a new button, then save it as a new library component. That way you can load any new type of button and 100% automate the process in your app so the buttons save ready for use in MD. Note insertion point (0,0,0) of the button, the axis (positive) direction is based on matching the same export axis vector orientation to work with MD's button files. If you follow this you will be able to create many custom buttons that work in MD. You can even automate the packing into a zipped button file that you simply rename the extension, so you can take this to into bulk automation for library creation of new buttons avoiding most of the steps in MD. Automate the entire workflow into packing buttons for use in MD. Start with some clean geometry, then add in all that additional random surface textural material detail. Simply use procedural math's node graphs to dial up any design variant, shape, curvature, or boolean additive or subtractive symmetry. Such that one template file allows you to output (batch) a new design every few seconds into a .zip packed MD compatible library file. Apply the node graph procedural texture to the base mesh model and boom a new finished button design in under 60 seconds ready to use. Decorate using vector artwork generated by procedural nodes and project the geometry back to the base button form surfaces in real-time as you work. Create a 1001 new CG buttons in an afternoon. Blender is a great tool for button automation into MD. Button building (see digital samples above and in render - pink arrows) is relatively simple to do, what I do find for garments is that it is good to generate all the scales and variants for a single decorative surface or shape design in one batch so they match as a set of library trims. For most garments this is a factor when selecting button type, as you may want to include it in various functional forms. Taking the time to build your Digital CG button creation tool then allows you to choose the shank, or type of button function, without the penalty of limiting library choice. Plus it's a lot of textural fun to explore designs. Shell, metal, ceramic, enamel, leather, wood, plastic, bakelite, etc."
+            },
+            {
+                "author_id": 900203149783,
+                "comment_id": 900000393683,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001058986-Create-Custom-Button-shapes/comments/900000393683",
+                "comment_body": "900201109763 - Thank you very much for valuable information"
+            },
+            {
+                "author_id": 900201109763,
+                "comment_id": 900000396726,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001058986-Create-Custom-Button-shapes/comments/900000396726",
+                "comment_body": "My pleasure, And for all those whom wonder how to make paralyzingly detailed CG simulated fabrics to go with your detailed buttons &gt try using software that weaves every single strand of brocade type yarn into a digital 3D simulation you can bake down into an image and depth map. Video link to the amazing Silk Now software weaving application A historical learning tool, but also an artisans virtual development software into CG test proofing a woven design or a CG texture textile. https://silknow.eu/ https://silknow.eu/virtualLoom-v0.91b/ Video link #2 to the amazing Silk Now software As simple as loading your artwork and using drag and drop to define weaving. The future is wow and &gt&gt now ! &lt&lt :-)"
+            },
+            {
+                "author_id": 900200317303,
+                "comment_id": 900000399266,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001058986-Create-Custom-Button-shapes/comments/900000399266",
+                "comment_body": "Intriguing possibilities, Angel! Seems best with good contrast/low color count pics."
+            },
+            {
+                "author_id": 900201109763,
+                "comment_id": 900000401566,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001058986-Create-Custom-Button-shapes/comments/900000401566",
+                "comment_body": "Yes, good for making the final silk label tag found in the garment &gt as the text in woven tag labels needs to be reduced down into the weave pixels that this software does so well.Also useful for those woven logotype trims you see. If you combine the base weave 3D model with matching depth scale grey maps and additional yarn textures onto the 3D model with some random noise added in then you can take it a lot further. As you can stroke the center of the tube for the yarn, it gives you a nurb for a complex weave model - so you can dump the tube surface in the model they use for yarn and throw in your own custom twisted random hair strands with strays, then it really starts to pop before you bake textures down."
+            },
+            {
+                "author_id": 900200317303,
+                "comment_id": 900000402283,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001058986-Create-Custom-Button-shapes/comments/900000402283",
+                "comment_body": "It's taking me a while to figure out which settings give a result I like, but I'm getting there. Added in the normals map generated from the same texture. It helps pop the image nicely."
+            },
+            {
+                "author_id": 900200317303,
+                "comment_id": 900000402926,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001058986-Create-Custom-Button-shapes/comments/900000402926",
+                "comment_body": "My fabrics aren't nearly as good as your's. All that CG work experience, I guess. *grin*"
+            },
+            {
+                "author_id": 900203149783,
+                "comment_id": 900000405723,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001058986-Create-Custom-Button-shapes/comments/900000405723",
+                "comment_body": "Hi Angel Angel - Thanks for you valuable comments and explanations. One request - Please Please donot delete Posts - They carry valuable information to everyone and Thanks for sharing your works Thanks"
+            },
+            {
+                "author_id": 900201109763,
+                "comment_id": 900000408506,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001058986-Create-Custom-Button-shapes/comments/900000408506",
+                "comment_body": ":-) Procedural decorative everything &gt button making in the blink of an eye. I perhaps need to make some more custom avatars with shoes trimmed with buttons + bells on them ... and hair sets with ear rings and necklaces. Automated this is actually really easy to do, as it's only a few steps. ( Above ) to fit shoes, hair and accessories to your avatar or custom avatar &gt Select Avatar &gt CTRL+Alt+shift+T &gt Avatar Accessory Maker (Accessories (*.acc) Modal). And drop on your custom accessories. It's that easy. And to whack in a custom button .... an easy process. (Just get those x,y,z, swizzle axis right and off you go - see my tip on using a MD library base button to get that scale and orientation correct ) Below Registering custom button into library. Materials &gt Button &gt Register Button . Straight in - no drama. Ping, twang, yank, any custom button directly into your library in seconds. Py batch script out of blender and you can drop 1001 algorithm driven procedural decorative buttons in an afternoon. :-)"
+            },
+            {
+                "author_id": 15811442647833,
+                "comment_id": 15811503244697,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001058986-Create-Custom-Button-shapes/comments/15811503244697",
+                "comment_body": "Hi Angel Angel, i am new to this software. trying to create different buttons but not clear. is it possible to create a video and upload the link here. Thank You"
+            }
+        ]
+    },
+    {
+        "post_id": 900001042343,
+        "post_title": "Create topology tool problem",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001042343",
+        "post_details": "Hi, I am a newbie here. I have a very annoying problem with Create topology tool. It worked fine until I started to retopology sleeves (polygons in yellow circles in the screenshot) . Suddenly it's impossible to draw in the window on the right, I still can draw in the perspective window on the left. It's very difficult to be precise while drawing there. Do you know why is that happening? Maybe I turned on some option or pressed something on the keyboard by accident. I checked what I could but with no success.",
+        "updated_at": "2024-04-19T00:13:05Z",
+        "comments": [
+            {
+                "author_id": 901118055363,
+                "comment_id": 900001158186,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001042343-Create-topology-tool-problem/comments/900001158186",
+                "comment_body": "I am also having this exact problem."
+            },
+            {
+                "author_id": 30698136696217,
+                "comment_id": 31398068416793,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001042343-Create-topology-tool-problem/comments/31398068416793",
+                "comment_body": "After convert(Duplicate), put the converted mesh aside from the 2D pattern."
+            }
+        ]
+    },
+    {
+        "post_id": 900001039583,
+        "post_title": "How do I create baffles or pockets within a cushion?",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001039583",
+        "post_details": "I'm trying to create a cushion that will have baffles or chambers inside of it to give it thickness. This means I need to stitch 3 or 4 edges together in some areas. Is this possible to do, or is there a good tutorial or explanation on how to do it? Thanks",
+        "updated_at": "2023-07-06T06:32:59Z",
+        "comments": []
+    },
+    {
+        "post_id": 900001046606,
+        "post_title": "MD 9.5 seems very slow to respond",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001046606",
+        "post_details": "It seems like Marvelous Designer 9.5 is very slow to respond. The first time I click on a tool on the toolbar it seems to pause for 20-30 seconds. The second time I click on that tool it is much faster. Is this normal? My PC has an AMD Ryzen 7 2700X (8 core, 16 thread), 32 GB RAM, 512 GB 3500 MB/s NVMe drive, and nVidia GTX 1060 Ti graphics adapter.",
+        "updated_at": "2022-07-11T13:05:18Z",
+        "comments": [
+            {
+                "author_id": 900959697643,
+                "comment_id": 900001022466,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001046606-MD-9-5-seems-very-slow-to-respond/comments/900001022466",
+                "comment_body": "I have almost the same issue. I have quite lower CPU (i5-8600k) but stronger GPU (RTX2080) than you Brian, RAM and NVME just as your specs. I can't complain about direct simulation (it goes well) but the performance in the pattern editor is horrible for me. When clicking anywhere with a different tool than a second before it freezes the whole system for 10 seconds. Then goes smoothly for a while and after changing anything with another tool - same problem. It freezes even during creating a small simple square with 25 particle distance. As if creating a few new polygons was a totally CPU killing process. Haven't noticed it in previous versions of MD (I guess 8 was going smooth all the time). Can anyone relate to our issues?"
+            },
+            {
+                "author_id": 900986018466,
+                "comment_id": 900001042486,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001046606-MD-9-5-seems-very-slow-to-respond/comments/900001042486",
+                "comment_body": "Same for me. Wanted to try the free demo and at first it was very performant. Then out of nowhere MD started to freeze for at least 10 seconds at every step i do (synchronizing: start). Really weird behaviour and almost not useable. Actually wanted to buy a licence after the trial but in this state its not fun to use.. My System: i7 7700k, 1080Ti, 32GB RAM"
+            },
+            {
+                "author_id": 900483563463,
+                "comment_id": 900001187686,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001046606-MD-9-5-seems-very-slow-to-respond/comments/900001187686",
+                "comment_body": "Brand new MSI mobile workstation, with ALL UPDATES to everything, running an i7(10th gen) RTX Quadro 3000 with 6GB GPU RAM and 32GB system RAM. 8 cores(so, 16 cores) ...and this silly machine LITERALLY TAKES 12 MINUTES EVERY TIME I ALTER A PATTERN, and I mean: click a point and move a point...takes 12 minutes for the pattern to solve. This, BEFORE I even TRY to simulate! No amount of particle distance, scene altering, or digital voodoo is making one second of difference, either! My decade old laptop ran faster. It was a Dell 8600 with 32GB RAM and six cores, also running an Intel i7. Difference with all our machines is THAT machine ran an obsolete version of Open GL. My desktop workstation uses an AMD Ryzen \"Some number version\" - its BLAZING FAST, has NO HESITATION doing anything in MD. I can edit patterns, run GPU or normal simulations and the system won't even blink if I'm multitasking and have 50+ tabs open in an internet browser! I suspect the issue has to be with Intel chips. So far, changing simulation settings haven't helped even 1%. The issue isn't that I have a new machine and need to check my BIOS. You two have used/setup machines and you're having the same issues I'm having with a new system with all relevant updates. I just spent three hours editing a pattern that should have taken a minute and a half to complete editing. Instead...Im on HOUR THREE!!!! of making simple length adjustments to a pattern. HOUR...THREE. At this point, Im watching a Hollywood movie at 2FPS."
+            }
+        ]
+    }
+]

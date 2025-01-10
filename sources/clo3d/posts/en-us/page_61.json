@@ -1,0 +1,332 @@
+[
+    {
+        "post_id": 360033279654,
+        "post_title": "Print Layout Mode: optimized arrangement of large quantity?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360033279654",
+        "post_details": "Hi there, I want to start by expressing how much I like this software - it is intuitive, stable, aesthetic and highly performing. I was wondering if the developers were projecting to enhance the Print Layout mode, in particular to optimize the arrangement of multiple pieces and associated fabric consumption (yield yardage)? What I mean is, pattern pieces are optimized differently depending on whether we have 1 or 500 units of the same design.",
+        "updated_at": "2023-07-07T21:22:22Z",
+        "comments": []
+    },
+    {
+        "post_id": 360033216814,
+        "post_title": "Product upgrade suggestions :)",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360033216814",
+        "post_details": "Hello Team, I have been using CLO since CLO3 - There have been tremendous enhancements and things are constantly getting better. I also have some varied suggestions that can make users life a little easier when using the product: 1- Linking the file name and the Render file name - Why do I have to rename my render every time or why is there an old render name kept in my new project. 2- ZFAB names and properties - when I purchase fabric there is no longer a screen for seeing the fabric properties drape, The file name and the fabric description do not match 3- Fabric Preset - If I change the fabric property to a preset - Why does it not automatically change the fabric name - Why is there still FABRIC 1 - is there a naming option that might help to show up when a preset fabric is shown. 4- When I import an Avatar/Body Scan that is not to scale and the auto scale does not change the vertices or the scale - can users be alerted and offer a chance to fix it first - or can it tell me what scale the body scan is in? 5- Where is the Rigid Material - not in the presets, not in the store - can this be added to make it easier to create basic hard trims within a project 6- the Measurement tool - When used on body scans it takes longer and often crashes the program 7- If you start a new file in the same window - why can't you be asked if you want to keep your settings from the project you just saved. Instead when you start a new project all the render setting stay the same. Seems like double work if you want to start a new project to recreate lighting - can you save render preset?",
+        "updated_at": "2023-07-07T21:22:22Z",
+        "comments": [
+            {
+                "author_id": 28823235187,
+                "comment_id": 360008272033,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360033216814",
+                "comment_body": "Hi Dorelle. I have known Clo since the first release. What can this change? 1. You can choose the name for the file and the save path yourself. There is no need to change anything. 2. Zfab consists of two components: texture and physical properties. A fabric with the same texture can have different properties and vice versa. There are different buttons to save. This is convenient when you need to add cuffs with different properties on the product. You dont need to change anything. 3. I described above, zfab has 2 components. You dont need to change anything. 4. Use the same units in the 3D editor and in the clo. You will never have problems with scale. Usually, problems arise for users of 3dsmax where the default is mm, and they export to cm, then import to cm. I set cm in all 3d editors and I have no problems with scale. 5. At this point I support you, you need a more rigid fabric, so that it does not bend at all, only along the internal line. In the younger versions there was a leather belt setting, in my opinion it was more rigid than now. 6. Maybe you use a scan with a large number of vertices. Try first to convert to avatar. And I have a wish to the developers. After converting, losing all sizes and the ability to adjust. It would not be bad that the avatar had the ability to adjust the size after the avatar was made from a scan. 7.This problem is easily solved. I saved the default light preset, and 2 more basic my own presets. I repelled by them if I want to reconfigure the light. I advise you to do the same. Nothing to change. Just add a few more light sources, 3 little sources. Regards."
+            },
+            {
+                "author_id": 360104174108,
+                "comment_id": 360011071074,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360033216814",
+                "comment_body": "Adding to this post. - Why does the Binding only got on the over side or underside...? What if you have binding on both sides - This is not achievable"
+            },
+            {
+                "author_id": 28409906768,
+                "comment_id": 360011306813,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360033216814",
+                "comment_body": "Hi dorelle, I agree with your last statement and I wish they can develop a kind of reversed U profile that runs along the line. I will try an elliptical shape for the binding profile with the possibility to put topstitches on both sides."
+            }
+        ]
+    },
+    {
+        "post_id": 360033319933,
+        "post_title": "problems importing DXF",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360033319933",
+        "post_details": "I usually have no problems importing DXF from my pattern maker partners, but now I have a new supplier and maybe their software doesn't speak with CLO as smoothly... They say they export as DXF-AMAA, but CLO says it is not DXF-AMAA or DXF-ASTM and there are no pieces to see in the file when I open it. I have tried different settings and they have tried exporting in different ways. This is the message I get from CLO: Don't think I can attach the file here? I can send it if someone else wants to try. I am using CLO 5.0",
+        "updated_at": "2023-07-07T21:20:09Z",
+        "comments": [
+            {
+                "author_id": 364104337428,
+                "comment_id": 360008079994,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360033319933",
+                "comment_body": "Hi linusridestore. Can you please send it to pablo.quintana@forastyle.com so I can try it. I deal with imports constantly I have developed a good workflow to make them work. Also, I suggest you post this question in the Q&ampA section. You might receive more answers. Pablo"
+            },
+            {
+                "author_id": 28823235187,
+                "comment_id": 360008080454,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360033319933",
+                "comment_body": "try to open in another application, and resave. You did not specify which software the pattern maker partner used.."
+            },
+            {
+                "author_id": 380464252454,
+                "comment_id": 360010637774,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360033319933",
+                "comment_body": "Hi I am having the same problem. Were you able to figure it out? If so, I would love it if you could please help me out"
+            },
+            {
+                "author_id": 405130624954,
+                "comment_id": 360010967813,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360033319933",
+                "comment_body": "Bumping this similar DXF import problem here. I found that exporting it as R13 or R14 with Illustrator at least gets around that incompatibility alert. Nothing shows up in the viewport, though."
+            },
+            {
+                "author_id": 416846539773,
+                "comment_id": 360012375774,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360033319933",
+                "comment_body": "Thank you Ottoline for your reply. I will read and learn."
+            },
+            {
+                "author_id": 360253261888,
+                "comment_id": 360010969913,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360033319933",
+                "comment_body": "DXF is not the same as DXF-AAMA/DXF-ASTM that is the issue you have. Full stop no R13 or R14 DXF Engineering CAD is going to import the same as the clothing standards CAD exchange file format. So understanding that is key to appreciating that you need to either: A) Add in another process layer to your illustrator file to make it conform to the clothing CAD DXF-ASTM or DXF-AAMA layers and xref standards (this means MANUALLY assigning layers, grouping closed polygon shapes into patterns, etc, assigning xref for notches, and various removal of stray points that might effect closed polygons. DXF (autodesk) is simply an engineering exchange format that will allow you to import to other 'like' engineering applications. And withing Fashion CAD systems that do take in Autodesk DXF engineering CAD - you will find each has their own type of DXF translator package. So this means dependent on what dxf translator you pick up (and it's preset conditions) the file will be converted to best import the engineering data to fashion CAD apps. 2) That you import your illustrator DXF into a translator app that will convert the DXF into the appropriate polyline groups, blocks, and layers common to DXF-AAMA/DXF-ASTM. My suggestion is that you decide if illustrator is the best app to work in for pattern drafting. (No it's not as it lacks basic workflow productivity tools) Or that if you decide this is to be your specific blend of drafting approach you read the layering standards that come with DXF-ASTM/DXF-AAMA and make your illustrator file conform to those specific layers, and that all drafting CAD clothing detail work is suitably constructed so it conforms to the standard as you work in illustrator. (You could set up a simple illustrator layer template when you draft, and follow some basic principles that conform to the standard so when you save out the DXF is clean ready to conform better.) This is possible but you need to be religious in keeping to these norms. In the end it's up to you. It's not a 'problem' if you choose the right approach. And the incompatibility alert is more to do with the gap in the knowledge level when coming from applications that simply don't conform to clothing drafting standards out the box (a graphics app verse a clothing pattern CAD. This means the effort then falls to you to fill in the gaps - and they are many. Here is a 15 page document that outlines the layering and how to structure your DXF so it conforms: &gt Document link And if 15 pages of reading falls into the too hard basket you need to find a reliable alternative that translates the file into the default DXF-ASTM or DXF-AAMA format better. There are a few out there - some are 100% free. You need a reliable process you understand and document , not some fickle process that shields you from the reality of what DXF-ASTM/DXF-AAMA structuring requires. This is often the Achilles heel of most design studios as they exchange clothing drafting data - they simply don't grasp how to translate data for design. Don't be one of those - know how it works and then master the skill to get what you want when you want. That will then empower you to take control of this data exchange with any manufacturer /software or any studio, so you are in control, rather than the process control your work flow. Learn once - and learn it well."
+            }
+        ]
+    },
+    {
+        "post_id": 360033247113,
+        "post_title": "How do I export the graded patterns in Clo3d to PDF format?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360033247113",
+        "post_details": "How do I export the graded patterns in Clo3d to PDF format?",
+        "updated_at": "2023-05-24T20:13:47Z",
+        "comments": [
+            {
+                "author_id": 364104337428,
+                "comment_id": 360008208913,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360033247113",
+                "comment_body": "Hello Mwang. The grading will go as nested in the DXF-AAMA or DXF-ASTM file when exporting. You can open it in Adobe Illustrator and then save as PDF. In AI you can manipulate the grading, text, notches, etc. as everything is in a separate layer per size. Post again with your results if successful or not, so we can help more people that might have the same question. P"
+            },
+            {
+                "author_id": 379276506874,
+                "comment_id": 360008412453,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360033247113",
+                "comment_body": "Is it possible to use inkscape for this, I keep getting an error message."
+            },
+            {
+                "author_id": 364104337428,
+                "comment_id": 360008229794,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360033247113",
+                "comment_body": "Hello admarcheleta. Not sure about Inkscape and its compatibility with PDF or AI format. Can you share more details about your issue? P"
+            },
+            {
+                "author_id": 381427735793,
+                "comment_id": 360008349794,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360033247113",
+                "comment_body": "Hi Pablo, Thank you for your suggestion. Unfortunately, it didn't work. I tested it out for a simple pattern, exported to DXF. Then opened in the AI. It shows attached. I tried couple times, it just can't read right in AI. Is that any other method I can try? Any advice helps!"
+            },
+            {
+                "author_id": 379276506874,
+                "comment_id": 360008528173,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360033247113",
+                "comment_body": "Hey mwang, I was struggling with this the other day too, there are two lines, the seam line and the cut line, every size is layered on top of eachother including the annotations, the line weight is way too big and then the artboard is way too big. It all makes it look like a jumbled mess. Start by making your line weight as tiny as possible and you'll start to see the pattern the way you intended!"
+            },
+            {
+                "author_id": 381427735793,
+                "comment_id": 360008378354,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360033247113",
+                "comment_body": "Thank you so much! It works now. :D"
+            },
+            {
+                "author_id": 410015624554,
+                "comment_id": 360011256514,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360033247113",
+                "comment_body": "I was trying out the suggested method and it worked, except it didn't export the notches with the pattern. I was actually getting an error message when opening it in AI saying the font wasn't found and was being replaced. Not sure if this has anything to do with it. I have Myriad Pro, the Clo3D font, installed on my computer already."
+            },
+            {
+                "author_id": 420520215854,
+                "comment_id": 1500000077941,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360033247113",
+                "comment_body": "When i exported as DXF i only get one layer not all my graded options, i choose to include all layers If i do as PDF i get the layers I want to edit the graded options and make it difference colors and write on pieces. What is the best software to use to do this rather than using PDF Editor? Thanks"
+            },
+            {
+                "author_id": 902687075603,
+                "comment_id": 4404836389017,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360033247113",
+                "comment_body": "I would like to request the \"Export to PDF\" is an option from the Print Layout screen. I would prefer not to have to place my pattern in Illustrator manually, when the program is already generating an efficient marker layout. Most print shops want a PDF. Is this feature planned?"
+            }
+        ]
+    },
+    {
+        "post_id": 360033206153,
+        "post_title": "Running motion simulation?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360033206153",
+        "post_details": "Hey everyone, new to Clo3D so apologies if I'm missing something really obvious. So I'm designing a piece of sports apparel (vest) and I need to show the male model running. I've installed Clo3D 5.0 and found there is no motion files for the avatars and found a thread here that said they're only available for 4.2. So I installed 4.2 and tried to create the garment in 4.2 but it kept crashing. So I copied the motion files over to 5.0 and now I'm able to get the Avatar to move however, all he will do is a really sassy catwalk. The product is meant for Rugby players and there's no way I can show this to my boss as it's wayyyy too sassy. Am I missing something? The motion file I brought in was: M_A_Type1_03_trun.mtn (I've taken a quantum leap in assuming trun is running but I'm just now realising it could well be runway?) Does anyone have any running motion files they can share or can someone point me to where I can find one? Any help would be greatly appreciated!",
+        "updated_at": "2023-05-13T04:08:52Z",
+        "comments": []
+    },
+    {
+        "post_id": 360033165893,
+        "post_title": "Job opportunity: 3D Garment Techinican",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360033165893",
+        "post_details": "The team that creates DOPE and MONTEC Outdoor apparel are looking for a CLO 3D Garment Technician that is willing to take the next step in the future of Outdoor apparel. At Ridestore, we're pushing the envelope of how apparel is created. Our plan is to do most of the design of our products in 3D, together with our customers. Ridestore is a tech-fashion leader, and were growing fast. Were looking for creatives to join our team who want to do something about their craft. Read more and apply here: https://ridestoreab.recruitee.com/o/3d-garment-technician",
+        "updated_at": "2023-07-07T21:20:10Z",
+        "comments": [
+            {
+                "author_id": 28823235187,
+                "comment_id": 360008064173,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360033165893",
+                "comment_body": "Could your team need a freelancer with a rich sewing experience and a profound knowledge of clo. And with a warm heart in downhill skiing."
+            }
+        ]
+    },
+    {
+        "post_id": 360032926254,
+        "post_title": "Pinpoint Merchandising / Training",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360032926254",
+        "post_details": "Hi everyone! Scott Graham here, COO of Pinpoint Merchandising in Irving, TX (www.pinpointmerch.com). We're new to the CLO world and just wrapped up our initial training. Our design team is comprised of 5 people, all of whom will be using CLO regularly going forward. That said, we're still extreme virgins when it comes to 3D apparel design. If there's anyone out there who considers themselves a CLO expert and would like to take on some freelance training, I'd be very interested in connecting! My email is scott@pinpointmerch.com. Thanks!",
+        "updated_at": "2023-07-07T21:23:37Z",
+        "comments": [
+            {
+                "author_id": 398563543734,
+                "comment_id": 360009862073,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360032926254",
+                "comment_body": "I want"
+            }
+        ]
+    },
+    {
+        "post_id": 360031871394,
+        "post_title": "Creating A Garment from Scratch Video",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360031871394",
+        "post_details": "A video was posted by CLO Virtual Fashion Official to YouTube about a month ago comparing Adobe Illustrator to CLO. This video broke down how to create a garment from scratch from beginning to end, however the process was accelerated into just a two minute window. I think it would be incredibly beneficial to a new user if that video could be posted (in real time, if possible) to the Community, as it takes the viewer through the entire process and showcases all of CLO's many wonderful capabilities. I've pasted the link to the bottom of this message so the reader knows what video I'm referring to. Thank you! https://www.youtube.com/watch?v=ocaHeAIxQIU",
+        "updated_at": "2023-07-07T21:22:22Z",
+        "comments": []
+    },
+    {
+        "post_id": 360031845114,
+        "post_title": "CLO Crashes during Flatten",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360031845114",
+        "post_details": "HELLO~ SO I'VE BEEN USING FLATTEN AS A TOOL TO MAKE MULTIPLE DESIGNS ON AN AVATAR'S BODY SUIT. UNFORTUNATELY, AFTER HAVING MORE THAN A COUPLE \"3D PEN\" MARKINGS AND I CLICKING ON FLATTEN, THE SYSTEM CRASHES (ONLY WHEN I USE FLATTEN). *IF I GET A NEW AVATAR (BLANK) WITH A FEW \"3D PEN\" LINES DRAWN ON HER, THEN FLATTEN WORKS. ITS NOT A COMPUTER PROBLEM BECAUSE I SWITCHED TO ANOTHER MUCH MORE POWER LAPTOP WITH DEDICATED A HIGHER GRAPHICS CARD THAN MY NVIDIA GTX160- AND THE SAME THING HAPPENED. HOPE TO HEAR BACK SOON! THESE ARE THE PATTERNS:",
+        "updated_at": "2022-01-10T14:57:30Z",
+        "comments": [
+            {
+                "author_id": 364104337428,
+                "comment_id": 360005498673,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360031845114",
+                "comment_body": "Hi rdief001. I tried something crazy and after stuttering for a moment I got a message saying that some patterns couldn't be flattened and it gave me back the result below. Can you try flattening smaller pieces and then merging them as 2D?"
+            },
+            {
+                "author_id": 903647373386,
+                "comment_id": 4414381373209,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360031845114",
+                "comment_body": "Has anyone found a solution? I'm having the same issue when I try to flatten patterns I drew onto my avatar."
+            }
+        ]
+    },
+    {
+        "post_id": 360031824574,
+        "post_title": "Disappeared Gizmo",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360031824574",
+        "post_details": "My Gizmo does not show up on the screen. I cannot seem to get it back. HELP! It makes making buttons really hard!",
+        "updated_at": "2023-04-16T21:55:16Z",
+        "comments": [
+            {
+                "author_id": 360253261888,
+                "comment_id": 360008031694,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360031824574",
+                "comment_body": "If you use the keyboard short cut &gt Number pad 2 &gt when the 3D window is active the view will return to the front scale view with the garment and you can re-frame your viewpoint."
+            },
+            {
+                "author_id": 411868937454,
+                "comment_id": 360011670753,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360031824574",
+                "comment_body": "I don't know how this mode turned on, but I have the same problem. I found that in this mode, the viewport works like in classic 3D programs. The cursor selects a reference point. It is displayed in the 2D window. W - move mode. E - rotation mode. I'm happy )"
+            },
+            {
+                "author_id": 407228609294,
+                "comment_id": 900002521083,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360031824574",
+                "comment_body": "I just ran into this issue and what fixed it was making sure the simulation mode button was NOT blue, resetting 2d arrangement, pressing the pattern piece in the 3D window and clicking E. The gizmo finally showed up!"
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 900002524003,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360031824574",
+                "comment_body": "Hi here, if you cannot find the Gizmo in 3D window, please double-check the points below: 1. Turn off Simulation. 2. You are not zooming in too much see the 3D pattern. If the issue still persists, please go to Settings from the menu bar &gt Users Settings &gt 3D &gt Gizmo and select Unified Gizmo. Then the Gizmo tool can be seen in 3D window again. If you are selecting Divided Gizmo, you may need to use the short key (Q) to Select / (W) to Move / (E) to Rotate."
+            },
+            {
+                "author_id": 364104337428,
+                "comment_id": 360005465833,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360031824574",
+                "comment_body": "Latifa, does zooming out helps? I imagined you are working zoomed all in because you said buttons. I think there is no way around it, but zoom out a bit and then move your items from a bit afar."
+            }
+        ]
+    },
+    {
+        "post_id": 360031762973,
+        "post_title": "5.0.222 | 3D Viewport Zoomed In on Avatar Load and when Switching View Angles",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360031762973",
+        "post_details": "The latest version of CLO on the Mac the Avatar loads all the way zoomed in where the camera is inside the avatar. When selecting the different views for the viewport angle using the shortcuts 1,2,3 etc. the Avatar gets zoomed back in until the camera is back inside the Avatar rendering the quick view angle navigation useless. I noticed this changed in the previous dot release (.214) also but the dot 222 release came out so quick I thought it would was fixed but it wasn't. I can post a video when I get home if you need an example of the bug in action.",
+        "updated_at": "2023-07-07T21:22:23Z",
+        "comments": []
+    },
+    {
+        "post_id": 360031660053,
+        "post_title": "Change fur angle",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360031660053",
+        "post_details": "Hi! I am trying to render a pony leather belt with the fur material, trying to obtain something like this: Unluckily the fur always bends downwards even if I rotate the grainline parallel to the length of the belt and set the fur options to make it quite stiff: Do you have any suggestions on how to fix this? Thank you!!",
+        "updated_at": "2023-07-07T21:22:23Z",
+        "comments": [
+            {
+                "author_id": 364153076948,
+                "comment_id": 360005463593,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360031660053",
+                "comment_body": "Hi Robin, thank you :) would be nice for the fur to follow the grain direction and then if it's long and soft enough to fall also downwards because of gravity as it happens in reality :) Thanks a lot, I can't wait for the new release! cheers Martina"
+            },
+            {
+                "author_id": 28823235187,
+                "comment_id": 360008073553,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360031660053",
+                "comment_body": "Try to turn the belt vertically, then the hair will tend to the ground. Render. I don't know if the hair is rendered with the direction of gravity. You can try to change it and make a render again."
+            },
+            {
+                "author_id": 16412360007,
+                "comment_id": 360005463553,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360031660053",
+                "comment_body": "Hi, Ponz3D I'm Robin who is in charge of the rendering and emulator. I saw your bag design in the CLOLAB! You're good at handling the texture of the bag. Unfortunately, there is no function that you want in 5.0 version. We only thought the fur bend in the direction of gravity, so didn't create a UI that control it's direction. Oh.. This is very stupid. I'll add this function to the 5.1 version. See you~ Best, Robin"
+            }
+        ]
+    },
+    {
+        "post_id": 360031492693,
+        "post_title": "Creating an Absolute Beginners and Intermediate Online Course - Your feedback requested",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360031492693",
+        "post_details": "Hello Community. I have been learning a lot about 3D modeling using online training, either paid on Udemy or free tutorials on YouTube. So, I decided we need an Absolute Beginners CLO3D course and later on an Intermediate one to help our newcomers get up to speed with this great software. My plan is to have free portions of the course but have the complete series as a paid course in Udemy or other platforms later. I think we can all benefit. How can you contribute you ask yourself? I'd like to gather feedback from you as to: What are the topics a beginner would like to see. What are the topics suitable for an Intermediate course. What kind of garments or accessories one should use as examples. What are the pre-requisites for the Beginners and Intermediate courses. Any suggestions to make this a great resource. What's in it for you, you ask again? Besides helping make this community bigger and supporting our developers to make a better software, I plan to give out some coupons to people that join the community in order to promote the training and benefit all of us here. Unfortunately this is a \"slow\" community in terms of debates, feedback discussions, etc. I believe it could be because of the sheer number of users, the industry we're in or I'm not sure. I hope I can get dozens of posts with hundreds of ideas from you. I'm excited about this new project and your support! If you'd like to be notified of the progress you can follow me on https://instagram.com/fora_style P",
+        "updated_at": "2023-05-30T04:52:08Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 360011258134,
+                "official": true,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360031492693",
+                "comment_body": "There is now a full Beginner's Training at our YouTube Channel. CLICK HERE."
+            }
+        ]
+    }
+]

@@ -1,0 +1,74 @@
+[
+    {
+        "ArticleId": "115000531948",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000531948",
+        "Title": "3D File (COLLADA) Import",
+        "Content": "Objective COLLADA is a commonly used 3D application format that can be exported from 3D tools such as 3DS Max, Maya, Poser, and DAZ Studio and used as CLO Avatar or Scene/Prop. For 3DS Max or Maya, install the OpenCOLLADA plugin (http://www.opencollada.org/download.html) and use it to export in COLLADA format, instead of using the default COLLADA exporter. COLLADA files contain Geometry and Material, in addition to Rigging, Skinning, and Animation data. Avatar Motion Data can be imported into CLO in COLLADA file format, then saved as a *.mtn file, which is CLO's proprietary format. Location Main Menu File Import OpenCOLLADA Operation Follow the indicated guideline below: Main Menu File Import OpenCOLLADA The Open File window appears. Select the desired file and click OK. The Import COLLADA window opens. Select the settings as needed and click OK. Object Type Import as Avatar Morphs the original object into the object designated as the Morph Target. Enter the Transition Frame count into the Morphing Frame Count. The higher the frame count, the slower the morphing process. Import as Prop/Scene Import the object as Scene and Props type Scale Adjusts the scale of the file being imported when a value is entered Garment Position Move Garment to Start Position Moves the Avatar and Garment to the location of the first frame (ver2.5.0). Note: If the COLLADA file path includes # (symbols), the file may not load properly. In case of using Network Drive, copy a COLLADA file to local PC to open &amp use.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628387,
+        "Section": "File Import/Export",
+        "Tokens": 344
+    },
+    {
+        "ArticleId": "8670318569113",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/8670318569113",
+        "Title": "How can I delete my account?",
+        "Content": "Currently, CLO does not offer the option to delete accounts directly. To request the deletion of your account, please log in and submit a request via the Contact Us page, providing the necessary account information. IMPORTANT. To delete your account, your current license needs to be expired. Can I cancel my subscription? By proceeding, all product(CLO, Marvelous Designer, CONNECT, and CLO-SET) data is removed when you delete your account.",
+        "YoutubeLinks": [],
+        "CategoryId": 24022165341209,
+        "Category": "FAQ",
+        "SectionId": 24022293527961,
+        "Section": "Account & Billing",
+        "Tokens": 91
+    },
+    {
+        "ArticleId": "360056634294",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/360056634294",
+        "Title": "Washing File (JEAN) of Jeanologia Import/ Export",
+        "Content": "List of Contents Import JEAN File Export JEAN File Objective Import a washing file(JEAN) of eDesigner, which is an application of Jeanologia offering laser washing solution, and apply it on a garment as a graphic. When exporting a tech pack(JSON), the applied and edited washing can be exported as JEAN file again. Note: To import or export JEAN file, eDesigner Plugin must be installed on PC. Location Import JEAN File 3D/2D Toolbar Graphic (3D/2D Pattern) tool Export JEAN File File Export Jean (JEAN) Operation Import JEAN File Click the tool/menu indicated in Location. Open File window appears. Click JEAN file. eDesigner Login window appears. Enter the ID and PW of eDesigner then click Login button. The washing image is previewed in the Import JEAN File window. Refer to the table below and import JEAN file by clicking the desired option. Option Description Apply All Automatically identifies the face of the pattern and all washing images of JEAN file are applied. This functions normally by the type of pants, edit the JEAN file exported from CLO in eDesigner, then import it back to apply to the same garment. When a garment and JEAN file are not corresponding, you can miss the washing file or position and scale may not be matching. Import the missing image individually. OK (Apply a single image) Adds a single washing image that appeared in the Import JEAN file window. To apply a washing to the double layers like a back pocket of pants, refer to the contents below. 1) Copy the back pattern piece that applied a washing image. 2) Cut the Internal Shape/ Baseline of the pocket in the back pattern piece. 3) Sew the cut pocket pattern piece onto the back pattern again. 4) Delete the original pocket and the remaining pattern pieces. Note: Drag and drop a JEAN file from Library or OS Dialogue to 3D/2D window. Export JEAN File Click the tool/ menu indicated in Location. Export File window appears. Designate the file saving path and name the file, then click OK. Note: Due to eDesigner supports only PNG format, you must export a graphic in PNG. You can only export a graphic by following the steps: Graphic Properties Classification Wash (Jeanologia) Ensure that you do not classify the file as Wash (Jeanologia) to prevent exporting the duplicated file when the same washing is applied to the double layer like the back pocket sewn into the back pattern. You can set the washing file(JEAN) type to Wash or Breakage. (ver 6.1)",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628387,
+        "Section": "File Import/Export",
+        "Tokens": 541
+    },
+    {
+        "ArticleId": "900005482586",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/900005482586",
+        "Title": "Can I use CLO's default avatars for posting on my website?  ",
+        "Content": "Yes. Please carefully read the guideline described in CLO Terms of Service (4.1 CLOs Default Avatars). By following the guideline, you can consistently use CLO's default avatars for posting on your website, social media, and blogs without charging a royalty fee. Please include the attribution below: Attribution: \"CLO Virtual Fashion, Inc. owns all rights to the avatar displayed\" Font type: Avenir Next Font Font size: 10 Font Color: 323236 If you have any concerns or questions, please contact us.",
+        "YoutubeLinks": [],
+        "CategoryId": 24022165341209,
+        "Category": "FAQ",
+        "SectionId": 24022297098393,
+        "Section": "Avatars & Fitting",
+        "Tokens": 111
+    },
+    {
+        "ArticleId": "115012815067",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012815067",
+        "Title": "How can I purchase CLO?",
+        "Content": "CLO offers different license types to meet everyone's needs. CLO for Individuals Sign in to the CLO web and go to the Plan page Click \"Get Started\" under the monthly or yearly subscription of your preference. *If your subscription renewal is canceled and you need to subscribe again, just go through steps 1 and 2 again. CLO for Business CLO offers CLO for Business. For more information, please reach out to CLO via Contact Us. CLO for Academic Institution CLO offers CLO for Academic. For more information, please reach out to CLO via Contact Us.",
+        "YoutubeLinks": [],
+        "CategoryId": 24022165341209,
+        "Category": "FAQ",
+        "SectionId": 24022228206745,
+        "Section": "Licenses & Trials",
+        "Tokens": 122
+    },
+    {
+        "ArticleId": "115000470688",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000470688",
+        "Title": "CLO File Format",
+        "Content": "CLO File Format Type Format Description Garment *.zpac Contains information on Garments, Patterns, Sewing, and Fabrics. Project *.zprj Compresses the various files used for Garment creation into one file, and saves it. The Project file contains the AVT file that has Avatar-related data [Avatar, Accessories, Arrangement Bounding Volumes, Arrangement Points, Avatar size, Poses] and the ZPac file that contains Garment-related data [3D Garments, 2D Patterns, Fabrics, subsidiary Material], as well as an animation file if there is animation. Pattern *.pacx A CLO Pattern file format that contains information on Patterns. Avatar *.avt Contains all the information related to Avatars (Model, Sizing data, Poses, Motions, Accessories, Bounding Volumes, Arrangement Points). Avatar Size *.avs Contains Avatar Size information. The Avatar file (*.avt) must be loaded before opening the Avatar Size file. Pose *.pos Avatar Pose information that, automatically saved whenever the Garment is saved. The Avatars Pose can easily be changed with this file. Avatar Poses from other software can only be saved when the Avatar is a COLLADA file with joints. Joint Motion *.mtn Contains Avatar Motion information. As with the Pose file, can only be saved on COLLADA file Avatars with joint and Animation information. Fabric *.zfab Contains the property values (texture + physical properties) of the set Fabric. Physical Property *.psp Contains the detailed values of Fabric Physical Properties. Topstitch *.sst Contains the type, number of lines, thread thickness, SPI, length, etc. Button *.btn Contains the type, size, and color of Buttons. Buttonhole *.bth Contains the tyle, size, and color of the Buttonholes. Arrangement Point *.arr Arrangement Points are the blue points that are distributed around the Avatar, and are used to arrange Patterns easily around the Avatar. Arrangement Points are created on top of the Arrangement Bounding Volume covering the surroundings of the Avatar. Arrangement Bounding Volume *.pan Arrangement Bounding Volumes are the green cylinders covering each part of the Avatar, and each end of a cylinder is connected to an Avatars joint. As such, even if the Avatars Pose is changed, the cylinder simply adjusts to the changed Pose and can be used as it is. Camera Projection *.cmp Contains the camera's Field of View information (near, far, etc.). Camera Transformation *.cmt Contains camera view information of the 3D Garment window. Camera Properties *.cpt Contains camera properties. Render Camera Properties *.rcp Contains Render's camera properties. Simulation Property *.smp Contains settings for Simulation.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628367,
+        "Section": "File Open/Save",
+        "Tokens": 558
+    }
+]

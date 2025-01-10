@@ -1,0 +1,406 @@
+[
+    {
+        "post_id": 900003087483,
+        "post_title": "Folded cuffs keeps turning inside out in simulation",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/900003087483",
+        "post_details": "Hopefully someone can give me the reason why this happens (a lot) and what to do to prevent this. For cuffs, but also collars, I've used the Fold Arrangement tool to fold the cuff inside, with Fold Rendering on. Next step is to sew the top and bottom of the cuff to each other, so the cuff is closed. The front of the cuff is blue, the back is white (to make it easy to see the difference). What's so frustrating, is that when I put simulation on and pull on it to straighten things out (or, it also happens when I superimpose something under), the cuffs flips inside out very slow. What am I missing here or doing wrong?",
+        "updated_at": "2023-07-07T21:23:20Z",
+        "comments": [
+            {
+                "author_id": 422301299813,
+                "comment_id": 900002473523,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003087483",
+                "comment_body": "Forgot to mention... The sewline of the top to the bottom of the cuff has been set to a Turned Seam. It just looks like if you pull too hard on the fabric, the whole thing turns inside out."
+            },
+            {
+                "author_id": 422301299813,
+                "comment_id": 900001486666,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003087483",
+                "comment_body": "Thanks again jne4sl! Didn't know that option either. I'll try it and if it still doesn't work like I want to, I'll try a trick I saw on youtube (https://www.youtube.com/watch?v=dIzd_-QpTvY&ampfeature=youtu.be) make halve of the cuff and double it up with layer clone under. Have a great weekend!"
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 900001486746,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003087483",
+                "comment_body": "Hi 422301299813. I would suggest Strengthening the cuffs before folding/rendering them. Once they have settled in the render then remove strengthening. This should help to keep the right side of the fabric on the outside"
+            },
+            {
+                "author_id": 424140880473,
+                "comment_id": 900002473723,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003087483",
+                "comment_body": "Yes, layer clone is good, but I'm usually working with an existing pattern, and I'd like to use it as-is whenever possible. Sewing lines default to \"Front\", which is why many people only layer things front on top of front. If you then flip the normal of the under layer, the sewing line is flipped appropriately, too, so it works even if you're unaware of that detail."
+            },
+            {
+                "author_id": 422301299813,
+                "comment_id": 900001489626,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003087483",
+                "comment_body": "Thanks 408464537934 for the tip about strenghtening. That's what I usually do when I fold the first time and it works like a charm. It's just that sometimes when I have to place something in the same area it starts to act up. 424140880473 I understand that you would want to use the pattern as best as possible. My goal is a bit different since I'm more focused on the presentation and the garment looking as perfect as possible. If I have to tweak the pattern a bit to make it so, than that's what I'll do -)"
+            },
+            {
+                "author_id": 422301299813,
+                "comment_id": 900002480023,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003087483",
+                "comment_body": "424140880473 Using a single layer and simulating the thickness and edge is exactly what I've done now, and it looks good in my opinion. And with a lot less frustration. Thanks for your advice!"
+            },
+            {
+                "author_id": 424140880473,
+                "comment_id": 900002477083,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003087483",
+                "comment_body": "Yeah, but then you might be better off using a single layer and simulating the thickness and edge, as opposed to hiding the seam you've introduced along the fold by layering. There's always a tradeoff or at least a choice to deliberate. If you're getting mesh rot along a seam, not the fold, force the sublayer of the sewing line to fix it. Along a fold you might need to strengthen/re-drape."
+            },
+            {
+                "author_id": 424140880473,
+                "comment_id": 900002473563,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003087483",
+                "comment_body": "In addition to turned seam, click \"Set Sublayer\" to on, and chose Sublayer \"Back\". You want this edge sewn to the *back* of the other edge. Ignore \"Reverse Direction\" because in your case the seam is sewn back to back and direction doesn't matter. (If ever you are sewing right side to wrong side, you might need to watch the direction, too. It's also depicted by an arrowhead on the line connecting the sewn segments.) This helps a lot, but it's still possible for layers of mesh to get entangled, especially near the fold."
+            }
+        ]
+    },
+    {
+        "post_id": 900003087303,
+        "post_title": "Flip Topstitch, show the back of the topstitch on the front",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/900003087303",
+        "post_details": "For a project I have a t-shirt to re-create in Clo. The actual t-shirt I have in front of me, so I can check how everything has been made. This t-shirt has a necktape that also runs under the shoulder seams. It looks like the Library-topstitch ISO_401_Chainstitch.sst has been used to sew this necktape to the collar and back-yoke. Is there a way that I can 'flip' this topstitch, so that what now is the back of the stitch, will be the front of the stitch?",
+        "updated_at": "2023-07-07T21:23:20Z",
+        "comments": [
+            {
+                "author_id": 424140880473,
+                "comment_id": 900001486386,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003087303",
+                "comment_body": "Yes, when you open this topstitch in the property editor, there are tabs 1 and 2 for the two stitches. By default 1 is on Face is front only, and 2 Face is on back only (scroll to the very bottom under Configuration). Swap these settings. You may need to copy the topstitch, so you can use the original configuration, too."
+            },
+            {
+                "author_id": 422301299813,
+                "comment_id": 900002473223,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003087303",
+                "comment_body": "Thank you jne4sl! I've tried that option, but didn't go that extra step to change it in both tabs so they're opposite of each other :-)"
+            }
+        ]
+    },
+    {
+        "post_id": 900003085223,
+        "post_title": "Export  iridescente effect map into Blender or Unity",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/900003085223",
+        "post_details": "Hey there, I was using iridescente proprety effect and I was thinking to export my tshirt in .fbx with such effect also into Blender/Unity. Do you think that it is possible export/have the same effect also outside CLO? Thanks Luna",
+        "updated_at": "2023-05-09T22:51:40Z",
+        "comments": [
+            {
+                "author_id": 902247118403,
+                "comment_id": 900002771603,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003085223",
+                "comment_body": "hello dear, how did you get this effect?"
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 900001777926,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003085223",
+                "comment_body": "Hi 902247118403. To create an iridescent fabric go to your Fabrics Property Editor &gt Type &gt Change to iridescence. Just note that the iridescence will only be viewable in your Render Engine and not the 3D window"
+            },
+            {
+                "author_id": 360253261888,
+                "comment_id": 900002471363,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003085223",
+                "comment_body": "That dependent on the next render engine you choose. Blender has Evee and cycles, however you will be unlikely to get a CLO3D vray material shader to work directly in anything other than the vray render engine. So it is then up to you to make a material shader for the effect you want in that next software. In blender you can render a type of iridescent effect but you will likely need to use the OSL shaders. chaosgroup.com/display/OSLShaders/Thin+Film+Shader blenderartists.org/t/a-complex-approach-iridescence-in-cycles blendernation.com/2018/01/08/free-download-thin-film-interference-cycles-gpu-compatible/ blenderartists.org/t/update-v1-6-cycles-pbr-thin-film-interference-and-metals/672094"
+            }
+        ]
+    },
+    {
+        "post_id": 900002085626,
+        "post_title": "Rendering Animation with HDRI background",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/900002085626",
+        "post_details": "HI, I'm trying to render a simple animation with an HDRI as a background, but I keep getting this white haze over the bottom half of my background, would you know how I can get rid of it ? Many Thanks! BR, Katrianecyt",
+        "updated_at": "2022-10-07T22:22:32Z",
+        "comments": [
+            {
+                "author_id": 1502186910281,
+                "comment_id": 900001480886,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002085626",
+                "comment_body": "Turning ground shadow Off I am then able to rid the white haze but I lose the avatar's shadow on the ground, is there a way of shadow catching for my animation without disturbance to my HDRI background ? Much appreciate the help, thanks!"
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 900002473803,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900002085626",
+                "comment_body": "Hi 1502186910281. Unfortunately what you are trying to do is not possible. When ground shadow is turned On CLO needs to add in the \"floor\" to have something to add a shadow to. The HDRI is just an image and does not have a \"floor\" to do that."
+            }
+        ]
+    },
+    {
+        "post_id": 900003074003,
+        "post_title": "Can't open software",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/900003074003",
+        "post_details": "Hi, I downloaded your program from your website of Trial Download. It installed correctly but when I try to open the App, a message appears, saying: \" This App cannot run on your PC. To find a version for your PC, check with the software publisher.\" What should I do, can you help me with that? Thank you. Jennifer",
+        "updated_at": "2022-08-31T21:36:47Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 900001475026,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003074003",
+                "comment_body": "Hi 1500508184101. Have you checked your computer specs compared to out CLO system requirements HERE. If everything on your computer is meeting CLO spec requirements please Contact us HERE directly. Thank you"
+            },
+            {
+                "author_id": 10055973971993,
+                "comment_id": 10056019463577,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003074003",
+                "comment_body": "Hi, I have my Clo account however, I can't download the program."
+            }
+        ]
+    },
+    {
+        "post_id": 900003073563,
+        "post_title": "Avatar Kid 2-6 years Not Working",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/900003073563",
+        "post_details": "I cannot find the Avatar for the sizes 2-6 years and kid 6-18 months. Only have Girl and Boy 7-20 years.... Where can I find them?",
+        "updated_at": "2023-07-21T08:25:48Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 900002461743,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/900003073563",
+                "comment_body": "Hi 407166381834. These should be in your avatar folders. But if they are not here are a few ways you might be able to find them 1)Make sure the CLO Library is updated. If you have a Bright Blue Button in the Library Tab it means there are updates available. If the Blue Dot is there press the button below that is circled 2)You may have lots the link to the avatar files. You can copy the file path for any default assets in the software, and use this to find the Avatar folder! If you right click on any default assets in the CLO library, you can Copy the Path. Once you have the path you can Relink the Path in CLO. Select the Plus sign icon in the Library section depending on where you want to add. Paste the file path into the file explorer, then go back one level to Assets. You can then relink the avatars to where they should be"
+            }
+        ]
+    },
+    {
+        "post_id": 360051954794,
+        "post_title": "Nude Avatar",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360051954794",
+        "post_details": "Hi, is there a nude avatar that I can download? I design swimwear for men and the underwear that the avatar is wearing is really in the way. Thank you in advance!",
+        "updated_at": "2023-07-21T08:19:00Z",
+        "comments": [
+            {
+                "author_id": 360253261888,
+                "comment_id": 900001463506,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051954794",
+                "comment_body": "If you check in the avatar folders there should be a 'nude' skin texture for each avatar characters torso, you simply assign that torso texture to your standard CLO3D avatar. You can do that by selecting that area of your avatar , then in the property editor view the assigned texture map, then swap that out for the nude torso texture."
+            },
+            {
+                "author_id": 13030762386457,
+                "comment_id": 13088564390041,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051954794",
+                "comment_body": "But there isn't a nude texture for each avatar. In fact, only one of the texture folders has anything in it (Kelly), and there is no avatar to match. Tried reinstalling. Same story."
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 13098190658841,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051954794",
+                "comment_body": "Hi 13030762386457. Are you currently updated to the most recent version of CLO? All of our adult avatars have a nude skin. If you select the avatar in 3D then go to the property Editor and select Style Configurator. This will open a pop up where you can choose covered or nude for your avatar. We hope this helps!"
+            },
+            {
+                "author_id": 13030762386457,
+                "comment_id": 13100878829081,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051954794",
+                "comment_body": "Hi! I was able to apply the nude textures using the instructions provided. Thank you for the quick response."
+            }
+        ]
+    },
+    {
+        "post_id": 1500000374061,
+        "post_title": "Bond fusing is visible ",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/1500000374061",
+        "post_details": "",
+        "updated_at": "2023-07-07T21:23:21Z",
+        "comments": [
+            {
+                "author_id": 1500715796062,
+                "comment_id": 1500000329082,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/1500000374061",
+                "comment_body": "Hi everyone , Whenever I'm using bond fusing , the color of my piece changes into orange ... How can i bring back the initial color of the fabric and maintain the fusing in the meantime ."
+            },
+            {
+                "author_id": 1500715796062,
+                "comment_id": 360015339873,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/1500000374061",
+                "comment_body": "Please ignore the above , I find my answer thanks"
+            }
+        ]
+    },
+    {
+        "post_id": 360051922154,
+        "post_title": "How to add  binding finishing to Cuff slit ",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360051922154",
+        "post_details": "Hi Everyone , Could someone help me replicate a binding finishing at cuff vent/slit ... please see below pic for reference",
+        "updated_at": "2023-07-07T21:23:21Z",
+        "comments": [
+            {
+                "author_id": 424140880473,
+                "comment_id": 360014109334,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051922154",
+                "comment_body": "This is sewn by apply a bias binding to a slash. At the ends near the cuff, the seam allowance is binding width, but tapers to a minimum near the end of the slash. The inside fold of the binding is sewn shut with a small diagonal line, this is hidden inside the sleeve. So, mark a slash and essentially cut away a dart of binding width around that. Create a strip twice the length of the dart. This can be simulated with a strip of single width, or constructed with a strip of double width with a fold. I did the double layer. The key to getting things to fall into position is setting fold angles, and setting sublayers for some of the sewing. I replaced the tower placket in the supplied dress shirt with the simplified placket."
+            }
+        ]
+    },
+    {
+        "post_id": 1500000428482,
+        "post_title": "how could i Upload a ref. picture in the 2 d window ",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/1500000428482",
+        "post_details": "Hi Everyone , quick question , how can i upload a ref. picture in the 2d window .Similar to the below screenshot . thanks",
+        "updated_at": "2023-07-07T21:23:22Z",
+        "comments": [
+            {
+                "author_id": 28409906768,
+                "comment_id": 360014096734,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/1500000428482",
+                "comment_body": "Hi 1500715796062 just right click on anempty space in the 2d window and choose from the drop down menu 'format background image' This box will appear Note before conferming you can click on the image and drag it in the position you want. To make modification right click again in the 2d window choose 'format background image' again so you can reset to cancel or change the image if you want. Daniele."
+            },
+            {
+                "author_id": 1500715796062,
+                "comment_id": 360014097414,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/1500000428482",
+                "comment_body": "Hi Daniele , It works , thanks a bunch :) Regards, Carol"
+            }
+        ]
+    },
+    {
+        "post_id": 1500000416882,
+        "post_title": "Add Boning to Fabric Library",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/1500000416882",
+        "post_details": "Please add boning to the library.",
+        "updated_at": "2023-07-07T21:21:44Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 360014109094,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/1500000416882",
+                "comment_body": "HI 360196038528. Thank you for your suggestion. In the meantime you could create Boning by making your own custom OBJs to use in your garments."
+            }
+        ]
+    },
+    {
+        "post_id": 360051908154,
+        "post_title": "Edit motion files, use half the animation or add transition in the middle ",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360051908154",
+        "post_details": "Is there a way to edit the animations in clo? I only want to use the second half of a catwalk animation so that the model is walking away but I need it to transition from a pose into that walk so I can't just render the second half. I tried saving the joint motion of the play region but it didn't work. Surely there is a simple way to cut the first half of the animation off.",
+        "updated_at": "2022-10-08T18:43:22Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 360014109074,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051908154",
+                "comment_body": "Hi 419070450053. If you only want to render out a single part of the animation you can do that. When in the Render Engine go into Image/Video Properties change Region from \"Entire Region\" to \"Play Region\". You can then set the Start/End frames to the section of the animation that you want to render."
+            },
+            {
+                "author_id": 395563632574,
+                "comment_id": 11304895558937,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051908154",
+                "comment_body": "Hi 419070450053 , I guess I'm late but maybe my response would be helpful for other CLO3D users! There is a way you can ''cut your animation'' using the following steps: -Record the animation as is normally done. -Choose the step (frame) you want your final animation to start -Change start to the desired frame -Record again the animation (this new one will start directly from the selected frame) -This way you will create an animation track with the desired length as you can see in the picture. -Finally delete de transition and the first recording track. If someone needs more explanation on this I will share more screenshots or whatever :)"
+            }
+        ]
+    },
+    {
+        "post_id": 360051867814,
+        "post_title": "Clo won't open after 6.0.520 update is installed",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360051867814",
+        "post_details": "When opening clo I am being asked to install the 6.0.520 update and I did that. For the second time after downloading the update, Clo won't open and I get an error message \" CLO-Standalone_OnlineAuth\" can't be opened. I have to remove it all and reinstall Clo 6.0 from this site and then it works. I am still on MAC Mojave and hasn't changed anything. Anyone knows about the error message and why it doesn't let me open CLO after the update is installed? Thank you",
+        "updated_at": "2023-03-08T17:15:20Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 360015318673,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051867814",
+                "comment_body": "Hi 367588093633. Please follow this LINK for instructions to correct the installation issue"
+            },
+            {
+                "author_id": 367588093633,
+                "comment_id": 1500000319602,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051867814",
+                "comment_body": "Hi there, thank you for getting back to me but that was not the issue. I am aware of the privacy setting issues with Clo. I basically had to de-install three times and reinstall before it started to run. It runs now. Thank you."
+            },
+            {
+                "author_id": 1502552835121,
+                "comment_id": 1500000336582,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051867814",
+                "comment_body": "I am also having the same issue after updating it today.It was working before the update, but now it's telling me the program can't be opened"
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 360014109354,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051867814",
+                "comment_body": "Hi 367588093633 and 1502552835121 please contact us directly here"
+            },
+            {
+                "author_id": 901626802563,
+                "comment_id": 900002743643,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051867814",
+                "comment_body": "i am having the same problem!!! I unistaled the software and now i cant install again.... my is windows.... i am trying contact with the support and i need urgent a solution... i am in a middle of a project to delivery today!! someone can help me pleaseeeee?"
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 900001754466,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051867814",
+                "comment_body": "Hi 901626802563. Please make sur the program has properly uninstalled. Directions for PC HERE before reinstalling. If that has already been done please contact us here"
+            },
+            {
+                "author_id": 367588093633,
+                "comment_id": 900002747563,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051867814",
+                "comment_body": "Unfortunately this is a constant issue when an update becomes available. Just installed the updates based on your recommendation and application won't open again. It has nothing to do with permissions on MAC. I have to go back to your website and download a whole new installation in order for it to work again. and now with the new update even that doesn't work properly. It is very time consuming."
+            },
+            {
+                "author_id": 367588093633,
+                "comment_id": 900001754586,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051867814",
+                "comment_body": "Hi there, have you changed anything in the new 6.1 setup? Even when authorized by my Apple it still won't open. Since over an hour I am trying to install and open, have tried it multiple times. Now it won't even open the older version."
+            },
+            {
+                "author_id": 6374851435417,
+                "comment_id": 11726260680729,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051867814",
+                "comment_body": "Hi, This is STILL i problem. It's just happened to me and thats 2 years after the first comment. Very frustrating."
+            },
+            {
+                "author_id": 16241205276825,
+                "comment_id": 16293050445721,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051867814",
+                "comment_body": "Same here. I can't install Clo for some reason."
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 16336298040729,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360051867814",
+                "comment_body": "Hi 16241205276825 Are you on a PC or a mac? If it is a Mac you may need to give permission. You can find info HERE about this. If that is not the issue have you check your computer specs against recommend specs HERE or are you receiving a specific error?"
+            }
+        ]
+    }
+]

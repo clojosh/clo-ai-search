@@ -1,0 +1,1199 @@
+[
+    {
+        "post_id": 20335738075929,
+        "post_title": "piping",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/20335738075929",
+        "post_details": "CLO Team, I have a problem with the end of the piping. how to close(stitch) end of the piping.",
+        "updated_at": "2023-07-07T21:08:18Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 20343720805913,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/20335738075929",
+                "comment_body": "Hi 19483261409561, It's not possible to close the ends, unfortunately. A workaround would be to create piping out of pattern pieces instead."
+            }
+        ]
+    },
+    {
+        "post_id": 20289603228313,
+        "post_title": "how to leather fabric edge wax",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/20289603228313",
+        "post_details": "",
+        "updated_at": "2024-02-28T15:04:46Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 20305831289113,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/20289603228313",
+                "comment_body": "Hi 19483261409561, My first try would be adding an image at an edge as either a topstitch or a graphic and set the Material Type to reflect in a way that it looks waxy by editing Reflection Intensity and Roughness."
+            },
+            {
+                "author_id": 19483261409561,
+                "comment_id": 20333477950361,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/20289603228313",
+                "comment_body": "how to crate graphic for wax look?"
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 20344108484633,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/20289603228313",
+                "comment_body": "Hi 19483261409561, With a topstitch set to Texture instead of OBJ, it will be easiest, as it will follow the shape of the line it is placed on as a repeat. You only need a small square image, for example (in this case maybe blurred a bit on the edge facing inside the pattern piece). Please see these videos for advanced topstitch application: https://www.youtube.com/watch?v=ZncCv3ijsZM&ampt=813s and here https://www.youtube.com/watch?v=ypI_SPLxLFY"
+            },
+            {
+                "author_id": 360253261888,
+                "comment_id": 20356590218777,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/20289603228313",
+                "comment_body": "You really need to use texture masks on the pattern UV in a texture paint application to get get that worn wax grunge bleed at the stitch and seam edges. It's not something you can simply tile in a linear edge as the dirt is a blend of how the shine (reflectivity texture channel) is changed on the suede. And then the height map might also be slightly smoother (worn) in these areas. I suggest you create your garment model and then export the UV and pattern layouts to a texture paint application &gt bake a basic suede fabric to the albedo, normal, height, reflectivity, etc texture maps &gt then open up in a texture paint application and add in the wax/wear and tear by baking some extra texture maps to paint in the wax and wear just where you need it. Then reimport those UV atlas maps back into CLO3D and render in vray. Only way to do it comprehensively."
+            }
+        ]
+    },
+    {
+        "post_id": 20269752568217,
+        "post_title": "Distorted print.",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/20269752568217",
+        "post_details": "Hello. I am working with the trial version. Question: I want to make a video with a Mixamo animation. A man dancing in a patterned T-shirt. And when I render the video, the image that I placed as a texture (shirt print) is deformed as if it were a paint stain... would you know why that happens?",
+        "updated_at": "2023-07-07T21:08:19Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 20337953139225,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/20269752568217",
+                "comment_body": "Hi 19856578096409, Are you using Mac? There is a known bug that is currently being fixed related to the render engine. Is your image a PNG? If yes, could you resave it as a JPG and see if this fixes the problem for now?"
+            }
+        ]
+    },
+    {
+        "post_id": 20260513341721,
+        "post_title": "How to export garment with multiple UV tiles?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/20260513341721",
+        "post_details": "I am struggling to figure out how to export more than one UV Tile for a garment, and applying the textures inside C4D or Blender. Can anyone help me out please?",
+        "updated_at": "2023-07-07T21:08:19Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 20270263057433,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/20260513341721",
+                "comment_body": "Hi 18457133643545, If it's not working inside the UV Editor, could you describe the steps?"
+            }
+        ]
+    },
+    {
+        "post_id": 20189976220313,
+        "post_title": "Need advice to model French Seam",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/20189976220313",
+        "post_details": "Hi I'm looking method of model this kind of seam in lounge chair. I guess it is French Seam. Need advice to model this kind of seam. Attached file. Thank Link attached file: https://1drv.ms/u/s!AuAcyL2kNiCPlplgEo_wa25flFy1aA?e=5VElG2 Best regards Travis",
+        "updated_at": "2023-07-07T21:22:56Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 20387960159769,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/20189976220313",
+                "comment_body": "Hi 903004757723 To achieve this look is is all about just adding the appropriate type of Top stitching. Since ideally you do not want to add seam allowance to your patterns in 3D. In the below image I added a Topstitch the is 1/8\" offset from the edge of the pattern. I also made sure to check On 3D topstitch so that CLO adds in a Normal Map so my stitching looks appropriately sunken into the fabric. This is an option at the very bottom of each Topstitches Property Editor. There is also a very helpful Topstitch video on our youtube which covers all of the basics HERE"
+            }
+        ]
+    },
+    {
+        "post_id": 20145738258201,
+        "post_title": "Why can't I see the legs of my curved paths?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/20145738258201",
+        "post_details": "When I've watched workflow videos of people using the \"edit curve point\" tool legs appear. (Much like working with curved paths with the pen tool in illustrator.) I'd like to edit my curved paths with precision but for the life of me I can't figure out how to make the legs appear. Photo of legs for reference:",
+        "updated_at": "2023-07-07T21:08:20Z",
+        "comments": [
+            {
+                "author_id": 4709210659993,
+                "comment_id": 20146168107289,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/20145738258201",
+                "comment_body": "Hi 19898682650265 This is because the Edit Curve Point Tool (which gives you Red Points) noes not use Bezier handles. The tool for Bezier Handles is Edit Curvature Tool. This video HERE on our youtube goes over both separately."
+            },
+            {
+                "author_id": 19898682650265,
+                "comment_id": 20146225517721,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/20145738258201",
+                "comment_body": "Is there a way to convert from curve points to AI Bezier Curve without loosing the shape? Or at least the general shape?"
+            },
+            {
+                "author_id": 4709210659993,
+                "comment_id": 20146554753049,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/20145738258201",
+                "comment_body": "Unfortunately these two tools cannot work together. What you can instead do is Use the Transform Pattern Tool &gt R-Click on the pattern piece and select Clone as Reference Line. This will not leave an outline below your pattern piece so you can delete the Red Curve Point and then use the Edit Curvature tool to recreate the line"
+            }
+        ]
+    },
+    {
+        "post_id": 20144253637913,
+        "post_title": "Is there a way to show a reference line for the side seams on my avatar?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/20144253637913",
+        "post_details": "Reference lines are very important for fitting. The \"show measurements tool\" offers many helpful reference points (natural waist, low hip, etc.) but not the side seams. Are we left to guess where the true side seam should be when checking fit or is there a way to show reference lines?",
+        "updated_at": "2023-07-07T21:08:20Z",
+        "comments": [
+            {
+                "author_id": 4709210659993,
+                "comment_id": 20144412935705,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/20144253637913",
+                "comment_body": "Hi 19898682650265 You can use the 3D Pen (Avatar) Tool to draw on these references to the avatar directly. Or you can use the Avatar measuring Tape Tools like the Surface Tape Measure or the Basic Tape Measure. You can also find more information about this with our Avatar Editor Guide"
+            }
+        ]
+    },
+    {
+        "post_id": 20144085444633,
+        "post_title": "Can't export any kind of file - DXF, PDF, nothing is exporting or saving as. ",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/20144085444633",
+        "post_details": "Hello! I've been trying to export a DXF file, but Clo is not allowing me to export any kind of file, whether DXF or PDF, etc... I use a mac computer, would that hinder the file from being exported? I can't get past the \"save file\" portion because it won't allow me to select a folder.",
+        "updated_at": "2023-07-07T21:08:21Z",
+        "comments": [
+            {
+                "author_id": 4709210659993,
+                "comment_id": 20144863661465,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/20144085444633",
+                "comment_body": "Hi. Before being able to click Save you need to type in what you will be naming the file where it Says \"Save As\""
+            },
+            {
+                "author_id": 20144004109849,
+                "comment_id": 20175174424601,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/20144085444633",
+                "comment_body": "4709210659993 oh my goodness I can't believe I missed that. Thank you so much!! I'm gunna crawl in a hole now from embarrassment haha"
+            },
+            {
+                "author_id": 4709210659993,
+                "comment_id": 20177426230041,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/20144085444633",
+                "comment_body": "HI 20144004109849 No worries at all. It happens :)"
+            }
+        ]
+    },
+    {
+        "post_id": 20142235185561,
+        "post_title": "How to change line weight/thickness for exported patterns?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/20142235185561",
+        "post_details": "Hi, I was wondering how to change the line thickness settings on patterns for exporting them. I increased the line weight in my user interface settings and the lines are thicker in the 2D pattern window, but when I export them to PDF or images the line weight is the same as before and is lighter than I would like. Thanks!",
+        "updated_at": "2023-07-07T21:08:21Z",
+        "comments": [
+            {
+                "author_id": 4709210659993,
+                "comment_id": 20144105087897,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/20142235185561",
+                "comment_body": "Hi 427702632333 If you are exporting from the Print Layout the lines will stay at the default width. You would need to edit in a vector program like Ai after. But if you export from the 2D window using Snapshot (File &gt Snapshot &gt 2D Patterns) they will be exported at the increased Line width. We hope that this helps"
+            },
+            {
+                "author_id": 427702632333,
+                "comment_id": 20148583154073,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/20142235185561",
+                "comment_body": "Thank you so much!"
+            }
+        ]
+    },
+    {
+        "post_id": 20099356343193,
+        "post_title": "Clo3D is editing Normal's data",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/20099356343193",
+        "post_details": "An avatar after being imported (registered) to clo3d has changes on the outer topology of the avatar. The exported avatar thereafter from clo3d has consistent UV Map, base color etc. but the Normal Data which affects the topology of the mesh is changing, which causes lines to appear on it. Check image for reference below. The one on the left is clo3d exported avatar, a change in shade is visible.",
+        "updated_at": "2023-07-07T21:08:21Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 20270326217113,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/20099356343193",
+                "comment_body": "Hi 9178154900249, Just to make sure, am I understanding correctly that the mesh gets mingled up by using the Auto Convert to Avatar function?"
+            }
+        ]
+    },
+    {
+        "post_id": 20084131983641,
+        "post_title": "Why are textures duplicate on my library?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/20084131983641",
+        "post_details": "Hello, i have been having this problem I wanted to see my downloaded textures in my library as organized as possible, but sometimes when i download one, they showed duplicate. Please help how do i fix this?",
+        "updated_at": "2023-07-07T21:08:22Z",
+        "comments": [
+            {
+                "author_id": 18970781764121,
+                "comment_id": 20232074095385,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/20084131983641",
+                "comment_body": "I might have downloaded multiple time should i just delete it thru clo connect?"
+            },
+            {
+                "author_id": 4709210659993,
+                "comment_id": 20143979594521,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/20084131983641",
+                "comment_body": "HI 18970781764121 Looks like this is the CONNECT Linked Library. Have you possibly downloaded or added these items to your cart more than once? Have you clicked the refresh button at the top of the library to the Right of the search box?"
+            },
+            {
+                "author_id": 4709210659993,
+                "comment_id": 20242702642713,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/20084131983641",
+                "comment_body": "Currently you cannot delete items in your purchase section. We would recommend reaching out to the CONNECT team directly HERE or Posting the question to the official CLO-SET discord channel HERE"
+            }
+        ]
+    },
+    {
+        "post_id": 20051584320921,
+        "post_title": "Selling and getting paid",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/20051584320921",
+        "post_details": "Hi Clo, I will be subscribing as from the 1st of July . I have gone through the month trial recently. Just an inquiry, how does one upload rendered development/designs including the base pattern on the clo platform for selling purposes. I believe there is a handling fee required by clo. Please advise/assist. Warm regards Stevie",
+        "updated_at": "2023-07-07T21:20:46Z",
+        "comments": [
+            {
+                "author_id": 4709210659993,
+                "comment_id": 20066597819033,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/20051584320921",
+                "comment_body": "Hi 18110546506905 IS your question about Selling on CONNECT? If so you can find all of the information HERE on the FAQ and the getting Started Page HERE."
+            }
+        ]
+    },
+    {
+        "post_id": 19938014906521,
+        "post_title": "Chainstitch at seamline bottom",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19938014906521",
+        "post_details": "Hi everyone, Please help me on this case, I'm trying to figure out how to make the bottom seam display as the chain stitch like this, which properties do I have to change? Many thanks!",
+        "updated_at": "2023-07-07T21:08:22Z",
+        "comments": [
+            {
+                "author_id": 9271195370009,
+                "comment_id": 19965944012697,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19938014906521",
+                "comment_body": "So the right hand image is your workspace, correct? It looks like the waistband is a double layer and the layers are back to back, as they would be IRL. The chainstich provided with CLO is set up for a single layer waistband where the chain is only stitch 2 and is placed on the back. That's fine for your outer band, but you want to swap those for the inner band. You probably will use both configurations, so first make a copy. E.g. here's one way, this is a folded waistband, with regular chainstitch applied to the front half, and reversed chainstitch applied to the back half. This may not be the way you want to do it, but it should help explain how topstitching works with fronts and backs. (This is overkill because it is placing topstitching on the backs of each layer, too.)"
+            }
+        ]
+    },
+    {
+        "post_id": 19883407492633,
+        "post_title": "help with jacket zipper fly-chin protector flap",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19883407492633",
+        "post_details": "can somebody help me with a video or explanation or a youtube video about how to make a chin protection flap for a zip to a jacket. It is ok till the point that I sew on one of the front part, under the zip, but on the top, I have to turn over about 3 cm, like that that the zipper stays between. I can not succeed to do it. I tried in every way and is not ok. I will try to attach some picture that you understand better. Please help, because I am going crazy. Thank you, Carmen",
+        "updated_at": "2023-07-07T21:08:23Z",
+        "comments": [
+            {
+                "author_id": 9271195370009,
+                "comment_id": 19930429971225,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19883407492633",
+                "comment_body": "ca13349453 It should be possible just adding an internal line and folding to the front. But another option would be to add a seam there, creating the small front overlap as a separate piece. At which point you can lift just that small pattern piece to be on top, or use the various layering options. You could keep it that way and just hide the seam line by adjusting the normal to zero. Or you could merge the pieces after the simulation is settled. Depending on how you join things, you may need a turned sewing line in places."
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 19931552278553,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19883407492633",
+                "comment_body": "Hi 13368411218585, As 9271195370009 says, plus you can keep the zipper from colliding out by using the Tack tool to create a space of air for it: https://support.clo3d.com/hc/en-us/articles/360000430887-Tack"
+            },
+            {
+                "author_id": 13368411218585,
+                "comment_id": 19931590931993,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19883407492633",
+                "comment_body": "ok, thank you, I will try it I did already with layers, but at the end, by simulation and/or animation, everything was flying away and not keeping the form. thanks again"
+            }
+        ]
+    },
+    {
+        "post_id": 19851623061017,
+        "post_title": "Restart free Trial",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19851623061017",
+        "post_details": "Hi, I have signed up for CLO account and I found the software was not working. It had starting issues and I did not realise that my free trial has started. Please kindly do help me with restart of my free trail.",
+        "updated_at": "2023-07-07T21:08:23Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 19893686418073,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19851623061017",
+                "comment_body": "Hi 17541567176217, a colleague responsible will reach out to you."
+            }
+        ]
+    },
+    {
+        "post_id": 19846313241881,
+        "post_title": "Linear Measure Garment",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19846313241881",
+        "post_details": "In order to correct hem line at skirt, I want to measure distance from garment to ground. I have used Linear Measure Garment but it is very sensitive to stop at the ground level (you can easily get it though) and I can not fasten the measurement. Is there any other possibility?",
+        "updated_at": "2023-07-07T21:08:24Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 19893934129177,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19846313241881",
+                "comment_body": "Hi 427744626854, Try Linear Measure (Avatar) instead, it stays fixated regardless of changes to the garment and is automatically attached to the ground."
+            }
+        ]
+    },
+    {
+        "post_id": 19803414950297,
+        "post_title": "How to show the gradings of a garment with its seams?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19803414950297",
+        "post_details": "Hello! I have the feeling that CLO3D doesn't have this option in its menu but I think it would be very necessary to add it in its future version, in case I'm wrong, I would like someone to tell me how to achieve this. When you activate the icon to see the grading lines, they are without their seams. If you activate view seams, it only displays the seams of the base size. I want to have the option to see the grading with the seams already added to all the sizes so that I can export it to Illustrator. Also, I just realised that if you have the grading lines activated, when you want to export it to PDF they don't displayed. One idea I've seen is that they've said to add the seam allowance directly to the base size but I don't really like that option. Any help? Regards. Victor.",
+        "updated_at": "2023-07-07T21:08:24Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 19893957457049,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19803414950297",
+                "comment_body": "Hi 426926808093, Thank you for this suggestion, we will add it as a feature request for improvement of the grading function :)"
+            }
+        ]
+    },
+    {
+        "post_id": 19779202824217,
+        "post_title": "down loading a PDF copy of my pattern ",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19779202824217",
+        "post_details": "When I go to download a pattern for printing in the PDF format CLO shuts down.",
+        "updated_at": "2023-07-07T21:08:25Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 19811622230809,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19779202824217",
+                "comment_body": "Hi 902164190006, please contact tech support here with a dxdiag.txt of your work station."
+            }
+        ]
+    },
+    {
+        "post_id": 19743404282393,
+        "post_title": "Download the practice files for Create a Puffer Jacket w/ the Pressure Function",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19743404282393",
+        "post_details": "Hey there, the Create a puffer jacket tutorial looks amazing! I've managed to open the file in my browser using this link: https://style.clo-set.com/style/3a97d54ed85145208cf86c47eb867380 however I can't seem to download it to open it locally in Clo. Eeep please help? First time using Clo! Thanks, Rachel",
+        "updated_at": "2023-07-07T21:22:57Z",
+        "comments": [
+            {
+                "author_id": 4709210659993,
+                "comment_id": 20183406359833,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19743404282393",
+                "comment_body": "Hi 19736449160473 For the puffer tutorial the CLO-SET link was replaced with a Google drive link. This link can be found in the video description"
+            }
+        ]
+    },
+    {
+        "post_id": 19736431020441,
+        "post_title": "texture colour wont change",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19736431020441",
+        "post_details": "texture colour won't change but when I add points to the pattern outline the colour of the fabric applies please advise on how to fix this thank you",
+        "updated_at": "2023-07-07T21:08:25Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 19761106568857,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19736431020441",
+                "comment_body": "Hi 8461528860441, Apologies, but it is not clear to me when the issue occurs. Could you please describe the steps or record a video (and then link it from WeTransfer) of the problem?"
+            }
+        ]
+    },
+    {
+        "post_id": 19710231625881,
+        "post_title": "\"Total Rise\" Measurement is Inaccurately Represented on the Avatar; is there a Way to Change this?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19710231625881",
+        "post_details": "I've started the free trial, and so far I'm really liking what I've seen. Recently I've been adjusting my avatar measurements (which has mostly been a treat mind you), however the \"total rise\" measurement is always a bit messed up. I assume the measurement is from the centre front of the waist through the bottom of the torso to the centre back of the waist. Since my backside is naturally pretty large, the number tends to be quite large, but when I enter it into Clo, it tends to distribute it evenly on the front, as well as adding significant curvature to the spine in a way that is inaccurate to how I actually look. My posture is generally reasonably straight, and while my stomach is still pretty big, most of the size in the total rise measurement is on my backside, but I'm not sure how exactly to specify that. Perhaps I'm doing it measurement wrong, or maybe there's other measurements that I'm overlooking that could effect how the total rise is represented. So sorry if this is confusing, but that you in advance for your support!",
+        "updated_at": "2023-07-07T21:08:26Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 19760998466073,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19710231625881",
+                "comment_body": "Hi 19578550611225, Unfortunately, nuanced distribution cannot be controlled as of now, however, improvements are on their way concerning the general shape. It is not clear to me whether you have used it from the text, so just in general, it is good to follow the tips in the Avatar Editor Guide to get the best possible results, as results might also get skewed when not following best practices: https://support.clo3d.com/hc/en-us/articles/360052611653-CLO-Avatar-Editor-Guide"
+            }
+        ]
+    },
+    {
+        "post_id": 19616061217689,
+        "post_title": "Can Clo3D be used in an ipad?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19616061217689",
+        "post_details": "",
+        "updated_at": "2023-07-07T21:08:26Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 19617741432217,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19616061217689",
+                "comment_body": "Hi 19051717184409, iPads do not possess the hardware requirements that would make usage of CLO possible. Please see them here: https://support.clo3d.com/hc/en-us/articles/115000307168-CLO-system-requirements-June-2023- Think of CLO and other 3D software as requiring similar specs as would be needed for 3D gaming."
+            }
+        ]
+    },
+    {
+        "post_id": 19614230550809,
+        "post_title": "4 way grain line?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19614230550809",
+        "post_details": "I see no instructions for setting a pattern piece's grainline to 4 ways (or no grainline). I see a 4 way grain setting in the print layout function (property editor), however, setting that to 4 way does not actually rotate any pieces to more efficiently nest. Do I set 2 grainlines for each piece (one horizontal, one vertical)? Do I need to select a fabric with no grain, a non-woven? Do I simply delete the grain lines? The \"delete texture\" option is not deleting my current grainlines. I created a new fabric for the pieces but the incorrect grain line has remained and cannot be deleted. I am editing a pattern from CLO CONNECT. Thank you!",
+        "updated_at": "2023-09-02T14:54:32Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 19620780929305,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19614230550809",
+                "comment_body": "Hi 13748879622041, Grainlines are connected to the pattern pieces and will remain the way they are set regardless of fabric changes. Any texture rotation you do regarding the maps on a fabric are separate from the grainlines. It is not possible to completely delete out a grainline from a pattern piece or have multiple grainlines on the same piece. There will always be an angle and the default is 0. You can edit the grainline manually with the Edit Texture tool by clicking on and rotating only on the pattern piece in question (instead of using the flat black gizmo for entire map rotation), or selecting a pattern piece and editing the grainline with precise input in the Property Editor."
+            },
+            {
+                "author_id": 903253559763,
+                "comment_id": 22527270894489,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19614230550809",
+                "comment_body": "Building on this question - I'm not sure I understand how the 4-way grainline in print layout works. I've tried to use it to nest pieces for greater efficiency, but it doesn't seem to rotate the pieces to achieve that. Is the 4 way grainline direction in print layout supposed to auto rotate for best use or is there another purpose in this mode?"
+            }
+        ]
+    },
+    {
+        "post_id": 19593026544281,
+        "post_title": "Creating an internal polygon to cut fabric = error -  FAILED TO CUT SOME PATTERNS",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19593026544281",
+        "post_details": "Failed to Cut some Patterns. Internal Line must intersect the Pattern outline.",
+        "updated_at": "2023-07-07T21:08:27Z",
+        "comments": [
+            {
+                "author_id": 4709210659993,
+                "comment_id": 19593690664857,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19593026544281",
+                "comment_body": "Hi 19371507028377 Are you looking to cut the head shape out? Make sure you first have the entire Internal Line Closed Shape selected. Then R-Click and select Cut. The shape should then be cut out. Another option would be to use the Trace tool &gt Select the entire Closed shape &gt R-Click &gt Select Trace as Pattern. You will then have a new pattern piece that shape Hope this helps!"
+            },
+            {
+                "author_id": 19371507028377,
+                "comment_id": 19596929935769,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19593026544281",
+                "comment_body": "amazing thanks so much the trace tool worked perfectly"
+            },
+            {
+                "author_id": 4709210659993,
+                "comment_id": 19597519773721,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19593026544281",
+                "comment_body": "Wonderful! We always appreciate people letting us know."
+            }
+        ]
+    },
+    {
+        "post_id": 19564463966489,
+        "post_title": "リニューアルのキャンセル",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19564463966489",
+        "post_details": "契約の自動更新をキャンセルする方法を教えて下さい",
+        "updated_at": "2023-07-07T21:08:28Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 19585582034457,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19564463966489",
+                "comment_body": "Hi 414958476833, Please see here how to cancel your subscription: https://support.clo3d.com/hc/en-us/articles/115012642347-Can-I-cancel-my-subscription-"
+            }
+        ]
+    },
+    {
+        "post_id": 19544694204697,
+        "post_title": "How to render trasparent pattern without showing the backface of the 2dGraphics applyed ?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19544694204697",
+        "post_details": "Hi there i need to render 4 ortographic view of my jacket in two different way first way (easy one): i will render the turntable image of my jacket without graphics applyed to get the jacket without graphics, secon way (problematic one): i need to render the graphics applied on the jacket with the pattern trasparent, so if i set the pattern with opacity 0% clo3d will render showing also the backface of the graphics",
+        "updated_at": "2023-07-07T21:08:28Z",
+        "comments": [
+            {
+                "author_id": 4709210659993,
+                "comment_id": 19586460517529,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19544694204697",
+                "comment_body": "Hi 18786539445913 You need to change your graphic to be double sided. Use the Transform pattern to select your graphic and go to Property Editor. Then you can change from Front to Both"
+            }
+        ]
+    },
+    {
+        "post_id": 19538407613337,
+        "post_title": "애니메이션 제작 시 문제점",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19538407613337",
+        "post_details": "아바타에 모션(노핸즈, 드레스, 한복 등 모드)을 적용 후 스테이지에서 아바타가 런웨이 시 손이나 다리 등에 원단이 통과가 되고, 흔들림이 너무 심해 의상이 제대로 영상 안에 담기지 않습니다. 이를 해결하기 위해 원단의 사전물성을 머슬린으로 바꿔보기도 하고, 원단 패턴의 길이감을 줄여 끌리지 않게도 해봤으며, 아바타의 시침 혹은 원단과 원단 사이에 시침 등의 툴을 이용해 고정을 시키기도 했습니다. 많은 방법들을 시도해봤지만 해결하지 못했습니다. clo에 자문을 구하고 싶어 문의글을 올립니다. 감사합니다.",
+        "updated_at": "2023-11-28T02:42:58Z",
+        "comments": [
+            {
+                "author_id": 16675986987,
+                "comment_id": 20909507130265,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19538407613337",
+                "comment_body": "안녕하세요. 해당 파일을 직접 확인하여 보지 못해 정확한 답변을 드릴 순 없겠지만, 애니메이션 시 참고하시면 좋을 간단한 몇가지 팁을 아래와 같이 드립니다. 해당 팁은 절대적인 것은 아니며 참고 정도로 활용 하시면 좋을 것 같습니다. 1. 패턴에 레이어 설정이 되어 있다면 0으로 해주세요. 2. 패턴의 충돌 두께 값을 2.5로 설정 해주세요. 3. 적용된 원단의 물성 중 internal damping 값을 0.00001 혹은 이하로 해주세요. 4. 입자간격은 8 또는 10으로 해주세요. 5. 아바타 클릭 후 속성창에서 Kinetic friction 값을 0.3, 0.5 또는 1.0으로 해주세요."
+            },
+            {
+                "author_id": 5404369008153,
+                "comment_id": 25512943720345,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19538407613337",
+                "comment_body": "5가지 전부 적용했는데도 계속 손에 의상이 부딪혀 옷이 이상하게 뒤틀립니다ㅠ 모션도 그냥 기본 캣워크 모션인데..어떻게 하면 되나요?"
+            },
+            {
+                "author_id": 16675986987,
+                "comment_id": 25727405493273,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19538407613337",
+                "comment_body": "안녕하세요. 지난번 답변 드린 사항에 더불어 아래의 항목도 시도 해보시면 좋을 것 같습니다. 1. 아바타 클릭 후 속성창에서 skin offset(mm)을 3mm~5mm로 해주세요. 2. 애니메이션 모드에 진입 후 애니메이션 프레임 창에 있는 Scene time warp 값을 2로 늘려주신 후 의상 녹화를 진행 해주세요. 녹화가 완료 된 후에 다시 1로 줄여주시면 됩니다. *scene time warp : 모션의 프레임 수를 scene time warp 값 만큼 곱하여 늘리거나 줄여줍니다. 따라서 문의 주신 상황과 같은 경우 전체 프레임 수를 늘려줘서 프레임 당 시뮬레이션 계산 횟수를 늘려줌으로써 좀 더 안정적인 의상 녹화가 가능 하도록 해줍니다. 다만, 프레임 수가 늘어난 만큼 녹화 시간도 늘어나고, 전체 파일의 개수도 늘어나기 때문에 녹화 후 값을 1로 줄여주시면 됩니다."
+            }
+        ]
+    },
+    {
+        "post_id": 19510332155929,
+        "post_title": "24GB upgrade neccessary? CLO on Macbook Air M2 ",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19510332155929",
+        "post_details": "Hi all! I am in the process of buying a Macbook Air with the M2 Chip, can anyone tell me if the 24 GB memory upgrade is necessary for CLO to run smoothly? I'd be happy about feedback. Thank you!!",
+        "updated_at": "2023-07-07T21:08:29Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 19537881075353,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19510332155929",
+                "comment_body": "Hi 1901303106948, https://support.clo3d.com/hc/en-us/articles/115000307168-CLO-system-requirements-June-2023- 24GB and higher is recommended from our side, however, 8GB are the minimum requirement. The smoothest outcome is always the recommendation, the minimum the necessity. So, it is not necessary to upgrade, however, it will be more pleasant to work with 24GB."
+            },
+            {
+                "author_id": 410324670633,
+                "comment_id": 19548041365273,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19510332155929",
+                "comment_body": "If you can afford it, get as much memory as possible. It will be easier to run multiple applications (Illustrator, PS, etc) at the same time."
+            },
+            {
+                "author_id": 1901303106948,
+                "comment_id": 19548189353881,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19510332155929",
+                "comment_body": "Hi all! I figured it's more fun to use it WITH the upgrade :) Thank you guys so much for the quick response. Huge help!! Cheers!"
+            }
+        ]
+    },
+    {
+        "post_id": 19510271625881,
+        "post_title": "System Errors Installing - DLL",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19510271625881",
+        "post_details": "Hi. I'm installing Clo on a new PC and I am getting the attached DLL system errors. How can i fix this?",
+        "updated_at": "2023-07-07T21:08:30Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 19510276566553,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19510271625881",
+                "comment_body": "Hi 28194951648 There are several posts about this on the forums. Here is one you may find helpful https://support.clo3d.com/hc/en-us/community/posts/7666765023129-Error-VCOMP140-DLL-not-Found-"
+            }
+        ]
+    },
+    {
+        "post_id": 19505730970265,
+        "post_title": "How to make a career out of this.",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19505730970265",
+        "post_details": "Hello, I recently discovered clo3D, and I love it. Finally there is something I can use for my designs that's digital! Now I am taking different courses right now, the lessons offered here, udemy and I'm looking at courses offered through university's online for this summer. I really would like a career doing this. This checks all of my boxes. I already have my B.S. in art history and one one in fashion. I have been a seamstress and freelance dress designer for 15+ years. I am in the north east in the U.S., working from home would be ideal. However I don't even know where to start. Any pointers would be great. Thank you for taking the time to read this.",
+        "updated_at": "2023-07-07T21:08:30Z",
+        "comments": [
+            {
+                "author_id": 410324670633,
+                "comment_id": 19508522907673,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19505730970265",
+                "comment_body": "Hi! Would love to chat with you off-line. Google my user name &amp send me an email :)"
+            },
+            {
+                "author_id": 15915243231129,
+                "comment_id": 19509253389593,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19505730970265",
+                "comment_body": "Your a consulting firm, I'm not in a position to spend money. Thank you though."
+            },
+            {
+                "author_id": 410324670633,
+                "comment_id": 19509321051417,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19505730970265",
+                "comment_body": "I am not looking to sell you my services, I am looking to build a team of experts. Your background in pattern making &amp dresses is exactly what I am looking for."
+            },
+            {
+                "author_id": 15915243231129,
+                "comment_id": 19509894206361,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19505730970265",
+                "comment_body": "ok lets chat, sodonnell1111@gmail.com"
+            }
+        ]
+    },
+    {
+        "post_id": 19494736809369,
+        "post_title": "Grading techniques with 2 bases / Generate sizes between 2 constructed sizes",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19494736809369",
+        "post_details": "Until now I constructed my patterns in the smallest and largest sizes of my size group. Then I had the sizes in between defined in even grading steps. The advantage is that you can make sure the design works in all sizes during construction and also make size adjustments. I know that this is possible in GEMINI Cad. Can it be done in CLO?",
+        "updated_at": "2023-07-07T21:08:31Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 19503625860121,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19494736809369",
+                "comment_body": "Hi 18631136098585, It's currently not possible in CLO, however, we will relay this feature as a request to our development team."
+            }
+        ]
+    },
+    {
+        "post_id": 19466566188057,
+        "post_title": "안쓰는 원단 일괄 삭제 기능 추가해주실 수 있을까요?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19466566188057",
+        "post_details": "안녕하세요! 다음 클로 버전에 추가되었으면 하는 기능이 있어서 건의드려봅니다. 가먼트 파일을 Add할 때마다 원단/스티치 등 모두 불러와지는데요, 항상 그대로 쓰는 것은 아니며, 필요한 패턴만 남기고 나머지는 지우는 경우가 많습니다. 그때마다 안쓰는 원단/스티치/버튼/퍼커링 등이 Object Browser에 남게되는데요, 하나하나씩 지우는게 번거로울 때가 많습니다. 혹 다음 업데이트 때, 카테고리별 사용하지 않는 에셋들 한번에 지우는 기능 하나 만들어 주시면 안될까요? 감사합니다!",
+        "updated_at": "2023-07-07T21:20:46Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 19468079376153,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19466566188057",
+                "comment_body": "안녕하세요, 좋은 의견을 제안해 주셔서 감사합니다. 현재 Shift 또는 Ctrl 키를 누른 상태에서 사용하지 않는 여러 자산을 선택한 다음 Delete 키를 눌러 여러 자산을 한 번에 제거할 수 있습니다."
+            }
+        ]
+    },
+    {
+        "post_id": 19377902717593,
+        "post_title": "3D Rendering looks see through ",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19377902717593",
+        "post_details": "The 3d Rendering of the pockets looks weird. How can I fix this? I'm sure it has to with the fabrics property editor",
+        "updated_at": "2023-07-07T21:08:31Z",
+        "comments": [
+            {
+                "author_id": 4709210659993,
+                "comment_id": 19379440581785,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19377902717593",
+                "comment_body": "Hi 19237091880217 The orange is meant to show where bonding is applied. In the 3D window there is a vertical toggle. In the 3D Trims you can turn off the show bonding option. Just to also note that this is the 3D window. When you turn on the render engine bonding will not be shown visually. :)"
+            }
+        ]
+    },
+    {
+        "post_id": 19374078987929,
+        "post_title": "Mixamo FBX avatar can't show up when importing in Clo",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19374078987929",
+        "post_details": "Hello Clo3D crew, I got the problem when I imported the Mixamo FBX file, the notice pops out saying that because of the file name includes other language so it can't be opened, but the name is in English. How can I fix this problem. Appreciate for the help, thank you!",
+        "updated_at": "2023-07-07T21:08:32Z",
+        "comments": [
+            {
+                "author_id": 385096228313,
+                "comment_id": 19526226845465,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19374078987929",
+                "comment_body": "Hello @howsootd It seems to be a problem caused by file title and file internal properties. Could you send us a file in question via Contact Us so we can investigate further? If the file size exceeds 50MB, please send it via cloud sharing such as Google Drive or WeTransfer. -- Best, CLO Techsupport"
+            },
+            {
+                "author_id": 12006484698521,
+                "comment_id": 19532491159193,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19374078987929",
+                "comment_body": "Hello Clo3D crew, I have sent the email includes FBX files. Hope it would help. Appreciate for the supports"
+            },
+            {
+                "author_id": 385096228313,
+                "comment_id": 19533310723609,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19374078987929",
+                "comment_body": "@howsootd Sorry to bother you. You have to submit a ticket via CLO website's Contact Us, so that we can receive your inquiry and the file as well. Here: https://www.clo3d.com/en/support/contactus"
+            }
+        ]
+    },
+    {
+        "post_id": 19338886430617,
+        "post_title": "trial license can only be used once per device ",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19338886430617",
+        "post_details": "I can't log in, so I deleted and reinstalled Clo program, and it pops up like this. Please tell me how to solve it. My free trial is not over. &lt&lterror code:99 - The trial license can only be used once per device. The trial license has already expired on the device you are currently using. Please move to our pricing page in order to purchase the license&gt&gt",
+        "updated_at": "2023-11-03T02:55:50Z",
+        "comments": [
+            {
+                "author_id": 8626095426457,
+                "comment_id": 20160323021849,
+                "official": true,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19338886430617",
+                "comment_body": "Hi, you can also refer to the Help Center article related to the issue. Why am I getting an Error Code:99 notification pop-up on my CLO trial?"
+            }
+        ]
+    },
+    {
+        "post_id": 19301101683993,
+        "post_title": "Issues with Auto Grading",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19301101683993",
+        "post_details": "Since the latest upgrade I am having issues with auto-grading, this file I have previously managed to auto grade without issue, but since the latest upgrade I am getting multiple error messages: Intersecting lines, pattern outlines/ holes intersecting, it only works with simulated garment. There have been other users with the same problem in the forum but seems no resolution. Please fix in the next update! Image 1: Original File Image 2: Original Auto Graded File Successful (before update) Image 3: Auto Upgrade after update.",
+        "updated_at": "2023-07-07T21:08:33Z",
+        "comments": [
+            {
+                "author_id": 4709210659993,
+                "comment_id": 19301503652121,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19301101683993",
+                "comment_body": "Hi 14306664113689 This is a known bug. We are working to fix this ASAP. If you currently need this function you will have to download a previous version of CLO which can be done HERE"
+            }
+        ]
+    },
+    {
+        "post_id": 19294238561049,
+        "post_title": "reflective tape",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19294238561049",
+        "post_details": "Hi! can somebody help me please? how can I make the coloured segments to be on a transparent background so if I sew the tape on a fabric, the segments to stay grey and the rest to be the colour of the fabric? thank you",
+        "updated_at": "2023-07-07T21:22:57Z",
+        "comments": [
+            {
+                "author_id": 4709210659993,
+                "comment_id": 19301215853081,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19294238561049",
+                "comment_body": "Hi 13368411218585 It would be best to apply the Grey at a PNG graphic. Then the White space will be whatever color or transparency the the fabric is that it is applied to"
+            },
+            {
+                "author_id": 13368411218585,
+                "comment_id": 19302851642649,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19294238561049",
+                "comment_body": "i have tried and is not working. Maybe I did something wrong"
+            },
+            {
+                "author_id": 4709210659993,
+                "comment_id": 19302900453273,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19294238561049",
+                "comment_body": "Do you have a photo of what you are trying to achieve as well as some images you can add of your current work in progress?"
+            },
+            {
+                "author_id": 13368411218585,
+                "comment_id": 19336496561433,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19294238561049",
+                "comment_body": "yes, I want to put it on a tshirt, different colours but the same reflectiv stripe.The stripes are 0,4cm wide, the transparent between has to be 0,2cm wide. Any help or suggestion would be more than welcome! Thanks!"
+            },
+            {
+                "author_id": 4709210659993,
+                "comment_id": 19339139566105,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19294238561049",
+                "comment_body": "When applying the image as a graphic is it a PNG with a transparent background? Again without seeing your actual work or file we cannot assist much more. So if you can add images of your graphic once it is applied in the 3D window and an image of the Graphics Property Editor that would be helpful. We then might be able to see what is happening"
+            }
+        ]
+    },
+    {
+        "post_id": 19293840753433,
+        "post_title": "Automatically generate 100 000 images",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19293840753433",
+        "post_details": "Hello, For a current project i want to automatically generate 100 000 images of a hoody as training data for a neural network. The images have the following constraints: - The distance to the \"camera\" needs to be the same for every picture - the position of the hoody for each image can change as follows: - arms change position randomly between images - y-axis rotation of the hoody changes randomly between images - the position needs to be realistic (no arms going through the center of the hoody for example) Is this possible to implement in CLO3D?",
+        "updated_at": "2023-07-07T21:08:33Z",
+        "comments": [
+            {
+                "author_id": 4709210659993,
+                "comment_id": 19301136371481,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19293840753433",
+                "comment_body": "Hi 360528923247 While we believe you have already gotten some excellent feedback from out Discord channel. But keep in mind that CLO currently only renders 1 image at a time. And if you were to render 100,000 images at 1 minutes an image this would take your computer 69 days to complete. And the 1 minute would be for an image at a medium quality and the garment would not be overly complex or using any Render only materials. If you had a complex garment, detailed textures, and a high resolution the average image would take much longer. So while CLO may be ideal for building the garment it may not be ideal for rendering this large of a number of images"
+            }
+        ]
+    },
+    {
+        "post_id": 19293410326937,
+        "post_title": "Bought garment from clo connect but when I use it to work on everything slows down",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19293410326937",
+        "post_details": "Bought garment from clo connect but when I use it to work on everything slows down an d freezes for a while. does anyone have this issue? or know what the problem could be? thanks in advance.",
+        "updated_at": "2023-07-07T21:08:34Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 19298693686169,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19293410326937",
+                "comment_body": "Hi 18755273328409, Is it a complex garment, how does your computer fare with comparable files? Could you outline your basic computer specs for a quick overview?"
+            }
+        ]
+    },
+    {
+        "post_id": 19206577578265,
+        "post_title": "Not usable pattern lines",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19206577578265",
+        "post_details": "Hi Guys, I can't figure out how to remove that part I made a red circle around. At first I thought its the seam allowance. But it isnt. Maybe somebody can help me.",
+        "updated_at": "2023-07-07T21:08:34Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 19260892400409,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19206577578265",
+                "comment_body": "Hi 12562068644505, It's a reference line, you can turn off their visibility here in the 2D toggle menu: Ore delete them completely by right-clicking on the pattern piece via the Transform Pattern tool and choosing Delete Reference Line:"
+            }
+        ]
+    },
+    {
+        "post_id": 19202336600473,
+        "post_title": "Collisions problem with one shoes",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19202336600473",
+        "post_details": "Hello! When importing an alembic file from Blender that includes an animated avatar and shoes together, one of the shoes appears black and collisions with this shoe doesn't work. I can't figure it out.... Any ideas, solutions ? Thanks you",
+        "updated_at": "2023-07-07T21:22:58Z",
+        "comments": [
+            {
+                "author_id": 393538235574,
+                "comment_id": 19204541196825,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19202336600473",
+                "comment_body": "Seem to me that normals on black shoe are flipped. You should to check and adjust it in software where you imported it from."
+            },
+            {
+                "author_id": 11471643155609,
+                "comment_id": 19204634804377,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19202336600473",
+                "comment_body": "Hey ! Thank you, I found the solution. Indeed in blender I've duplicate and mirror manually the shoe and it's the error. To fix this I used a mirror modifier on the first shoe, use the model as the axe then apply the modifier. Hope I can help some people :)"
+            }
+        ]
+    },
+    {
+        "post_id": 19160175420569,
+        "post_title": "Denim distressing",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19160175420569",
+        "post_details": "how do i add like a denim stone wash and distressing like rips to my piece, it's looking bland and not what i want right now",
+        "updated_at": "2023-07-07T21:08:35Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 19171376270489,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19160175420569",
+                "comment_body": "Hi 18670884723865, Please have a look at these tutorials on our YouTube channel: https://www.youtube.com/watch?v=43Fao4PPzrk https://www.youtube.com/watch?v=u5fRb53raEU"
+            }
+        ]
+    },
+    {
+        "post_id": 19159623609881,
+        "post_title": "Denim jean sewing overlap",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19159623609881",
+        "post_details": "How do i make my denim jean side stitches look like real jeans? currently it looks like flat and bland like sweatpants but i want my seams to look like this: how do i make this happen?",
+        "updated_at": "2023-07-07T21:08:35Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 19171365702809,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19159623609881",
+                "comment_body": "Hi 18670884723865, Please have a look at these tutorials on our YouTube channel: https://www.youtube.com/watch?v=43Fao4PPzrk https://www.youtube.com/watch?v=u5fRb53raEU"
+            }
+        ]
+    },
+    {
+        "post_id": 19148370917273,
+        "post_title": "Window keeps changing its size",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19148370917273",
+        "post_details": "I use a loptop with an additional touch screen for a mouse. The CLO 3D window keeps resizing itself into the 2nd window and most of the time won't allow to be resized. What can be done?",
+        "updated_at": "2023-07-07T21:08:36Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 19171814654361,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19148370917273",
+                "comment_body": "Hi 18631136098585, Do you have a regular mouse to test whether this still occurs without using the touch pad, in order for us to try narrowing down what is cause of the issue?"
+            },
+            {
+                "author_id": 18631136098585,
+                "comment_id": 19210200306073,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19148370917273",
+                "comment_body": "Yes I use a regular moise. I switched off the Screenpad no it works better but the window is still alittle longer than the screen and I cannot adjust it."
+            },
+            {
+                "author_id": 4709210659993,
+                "comment_id": 19271493838873,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19148370917273",
+                "comment_body": "Once CLO is in your main screen/monitor double click on Grey bar at the top of your screen. This should have CLO snap to the size of your screen. But you may also need to look at your monitors resolution or the resolution you have CLO set to. You can check CLO resoultion by going to Settings &gt User Settings &gt User Interface &gt (scroll down to the bottom) Display. Here you can see the different options and select the best for your screen"
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 19289170075033,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19148370917273",
+                "comment_body": "Hi 18631136098585, tech support is aware of both your queries and will answer on the ticket you opened."
+            },
+            {
+                "author_id": 18631136098585,
+                "comment_id": 19471572539801,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19148370917273",
+                "comment_body": "Switching off the automatic adjustment did the job! Thank you :)"
+            }
+        ]
+    },
+    {
+        "post_id": 19148328928409,
+        "post_title": "Grouped tools will not show",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19148328928409",
+        "post_details": "I have grouped the tools in the user settings but they won't show when I try to open the drop down view. Deactivating the grouping also will not show the tools. A reset has not worked. What can be done?",
+        "updated_at": "2023-07-07T21:08:36Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 19171643751193,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19148328928409",
+                "comment_body": "Hi 18631136098585, Please reach out to us via the Contact Us page with the following attached: - if using Windows, a dxdiag.txt of your work station if on Mac, a screenshot of the About This Mac window - a screen recording of the issues occurring (going through the steps in the User Settings, trying to toggle the menu)"
+            }
+        ]
+    },
+    {
+        "post_id": 19140637051673,
+        "post_title": "Export 3D seamline/sewing line ",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19140637051673",
+        "post_details": "I am currently looking for ways to export the seamline, so far I've found few solutions, but none of it really work for Keyshot, and most info is quite old. https://support.clo3d.com/hc/en-us/community/posts/360037210993-How-to-export-sewing-seams-from-Clo-to-Keyshot- https://www.youtube.com/watch?v=KV2YkZx9ya8 https://support.clo3d.com/hc/en-us/community/posts/360033622373-Sealine-Topstitch-obj-exported-as-texture- As far as I know, the seamline is only a normal map applied in CLO and there is no way to export it, unless using the \"UV editor\" bake texture function, but Keyshot didn't have any shading option, so I wonder is there any way I could apply the seamline into the mesh? I've also saw a few render from keyshot using clo, and I am pretty sure there's a way to work around it, here's some example from others also using keyshot with Clo Any comment is appreciated!",
+        "updated_at": "2023-07-07T21:08:36Z",
+        "comments": []
+    },
+    {
+        "post_id": 19110497244313,
+        "post_title": "hollow parts - seam value.",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19110497244313",
+        "post_details": "How can i put seam value in hollow parts? For example, in a rectangle, i create a hole, how i can place a seam value in the hole ?",
+        "updated_at": "2023-07-07T21:08:37Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 19132629829785,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19110497244313",
+                "comment_body": "Hi 18989769152665, The ability to add seam allowance to a hole has already been added as a feature request, please excuse the inconvenience! For now, as a workaround you can offset an internal line from the hole to get a marking on your print layout."
+            }
+        ]
+    },
+    {
+        "post_id": 19091571799065,
+        "post_title": "Annimat",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19091571799065",
+        "post_details": "When I animate a jacket in 3D window, it is very bouncy ? I have changed the default fabric to denim.",
+        "updated_at": "2023-07-07T21:08:37Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 19099849746457,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19091571799065",
+                "comment_body": "Hello 364450342288, Can you test the same file on a different computer and see if the bounciness varies? (To determine whether it is related to the file or your hardware settings.)"
+            }
+        ]
+    },
+    {
+        "post_id": 19076025811737,
+        "post_title": "CLO怎么导入参考图呢",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19076025811737",
+        "post_details": "",
+        "updated_at": "2023-07-11T09:26:35Z",
+        "comments": [
+            {
+                "author_id": 390556458393,
+                "comment_id": 20545730195993,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19076025811737",
+                "comment_body": "Hi 您好可以将参考图添加到3D窗口 1.在3D窗口空白处右键设置3D背景 2.将图片添加进来就可以了 谢谢"
+            }
+        ]
+    },
+    {
+        "post_id": 19064608179481,
+        "post_title": "Using clo for having a visual representation of your design vs testing your patterns for manufacturability",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19064608179481",
+        "post_details": "I have been thinking about this answer to a post here, what tool would someon recommend to test patterns for manufacturability?",
+        "updated_at": "2023-07-07T21:22:59Z",
+        "comments": [
+            {
+                "author_id": 410324670633,
+                "comment_id": 19104257564697,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19064608179481",
+                "comment_body": "There is data loss when transferring the 2D pattern in &amp out of .dxf. One way is to measure the pattern in CLO, send to a plotter, print out &amp measure. Compare the specs."
+            }
+        ]
+    },
+    {
+        "post_id": 19063154910745,
+        "post_title": "sketchup",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19063154910745",
+        "post_details": "Bom dia! tem como modelar uma roupa e exportar para abrir no sketchup em 3D?",
+        "updated_at": "2023-07-07T21:08:38Z",
+        "comments": [
+            {
+                "author_id": 4709210659993,
+                "comment_id": 19064923549977,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19063154910745",
+                "comment_body": "Hola para CLO tenemos una serie completa para principiantes en nuestro canal de youtube AQUÍ que muestra el proceso de creación de prendas. Para Sketch Up, deberá ver qué tipos de archivos son compatibles con CLO y SketchUp. CLO puede exportar en formatos como glb, obj, fbx, por nombrar algunos"
+            }
+        ]
+    },
+    {
+        "post_id": 19051721763225,
+        "post_title": "Font size of measurements",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19051721763225",
+        "post_details": "How can I increase the font size of measurements? When I enlarge the image in 2D I cannot read the measurements as they are too small. Thanks",
+        "updated_at": "2023-10-31T12:39:09Z",
+        "comments": [
+            {
+                "author_id": 4709210659993,
+                "comment_id": 19065048590873,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19051721763225",
+                "comment_body": "Font size can be adjusted in &gt Settings &gt User Settings &gt User Interface &gt Scroll down to Appearance &gt Increase Line Length Size"
+            },
+            {
+                "author_id": 16758810215449,
+                "comment_id": 24636386184729,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19051721763225",
+                "comment_body": "wow, that felt like when you get a new pair of glasses"
+            }
+        ]
+    },
+    {
+        "post_id": 19037279106969,
+        "post_title": "Piping: Does CLO3D track an inventory of the amount of Piping used? Like a Materials Used List for each project",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19037279106969",
+        "post_details": "Piping: Does CLO3D track an inventory of the amount of Piping used? Like a Materials Used List for each project and where can I find it. My trial just ran out so will be a short delay before I get a new licence, so I am unable to look for myself. I would imagine items like buttons, zippers, objects would also be great on a Materials Used list.",
+        "updated_at": "2023-07-07T21:08:39Z",
+        "comments": [
+            {
+                "author_id": 4709210659993,
+                "comment_id": 19065229141785,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19037279106969",
+                "comment_body": "Hi 18042501245081 Currently you will not find Piping in the CLO BOM. The BOM is found under Editor &gt BOM at the top of the screen. You would instead need to make Piping with pattern pieces in 2D and sew into place. The Piping tool currently will not add to the BOM or CLO-SET tech pack"
+            },
+            {
+                "author_id": 18042501245081,
+                "comment_id": 19113339652633,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19037279106969",
+                "comment_body": "Thank you. Fingers crossed this is a future BOM feature."
+            }
+        ]
+    },
+    {
+        "post_id": 19036371669145,
+        "post_title": "功能开发，使用对称版片形态",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19036371669145",
+        "post_details": "可以开发使用对称版片形态的功能像style那样虽然CTRL+D可以复制版片形态但是想要在经过一系列模拟后直接使用对称版片的形态不需要再克隆一个版片",
+        "updated_at": "2023-07-11T09:30:57Z",
+        "comments": [
+            {
+                "author_id": 390556458393,
+                "comment_id": 20545876632857,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19036371669145",
+                "comment_body": "您好 谢谢你的反馈我们会不断改进的 谢谢"
+            }
+        ]
+    },
+    {
+        "post_id": 19025175763609,
+        "post_title": "Garment Fit Properties",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19025175763609",
+        "post_details": "So the Tutorial Creator in this Youtube Video explained that we need to change the maximum value of stress and strain of the fabric in the Garment Properties Dialog Box. For the software to analyze the fit. By default the Maximum values are fixed for Stress at 100kPa and for strain to be 120%. This is for all the fabrics that are given for free in clo. So, if a fabric is more or less stretchy we would need to know the maximum value of the particular material to get the perfect fit analysis. My question is how to know the max stress and strain value of my fabric? Would I need an experimental setup? I interacted with Clo in the comments of the video and they seem to suggest that if we use Clo fabric kit, it would automatically calculate the max value of the stress and strain. But if this was the case why are these values constant for all the free fabrics in clo? They must have digitized the fabrics using a fabric kit right?",
+        "updated_at": "2023-07-07T21:08:40Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 19173362532249,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19025175763609",
+                "comment_body": "Hi 390325627753, The values that CLO knows through fabric digitizing via the kit and emulator refer to stretch values within the fabric file. The garment fit maps serve only the purpose of visualization since fabric cannot rip in CLO. Changing values in the Garment Fit Properties is an option if you wish to express more visual detail in the maps for either quite stretchy or quite stiff materials. It is not a must to edit them."
+            }
+        ]
+    },
+    {
+        "post_id": 19002874688793,
+        "post_title": "located section of favourited items ",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/19002874688793",
+        "post_details": "hello, I am hoping to purchase 1 of the many items placed in my checkout cart I do not want to remove them and lose the items so I would like favourite each item and keep track of it but i can't find where the \"favourite items\" list is please help thanks again.",
+        "updated_at": "2023-07-07T21:08:40Z",
+        "comments": [
+            {
+                "author_id": 4709210659993,
+                "comment_id": 19027142853657,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/19002874688793",
+                "comment_body": "Hi 8461528860441 If you do to each individuals styles page you will see a Heart that you can select to favorite and view later"
+            }
+        ]
+    },
+    {
+        "post_id": 18996684214553,
+        "post_title": "Avatar Stimulating",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/18996684214553",
+        "post_details": "The pants don't fit the avatar when i press stimulate. the avatar has something like a block that blocks the pants worn on the avatar. I also changed other avatars but the results are still the same, same block. Only with bottom, top is okay. Can someone help me please?, I also researched on Clo Q&ampA and youtube but couldn't find the answer to fix the problem. Thank you guys a lot &lt3",
+        "updated_at": "2023-07-21T08:19:18Z",
+        "comments": [
+            {
+                "author_id": 4709210659993,
+                "comment_id": 19027216923289,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/18996684214553",
+                "comment_body": "Hi 18119946656281 do you have an invisible avatar or OBJ hidden in the scene possibly? Or have you added Pins or Frozen the pattern pieces?"
+            }
+        ]
+    },
+    {
+        "post_id": 18963247860889,
+        "post_title": "need 3d free dizital fabric",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/18963247860889",
+        "post_details": "",
+        "updated_at": "2023-07-07T21:20:47Z",
+        "comments": [
+            {
+                "author_id": 4709210659993,
+                "comment_id": 19027115371673,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/18963247860889",
+                "comment_body": "Hi 18750192393497 CLO comes with over 70 free fabrics in the default library. You can also find others for purchase on the CLO CONNECT store"
+            }
+        ]
+    },
+    {
+        "post_id": 18936303300889,
+        "post_title": "ready made block patterns in modulator configurator. can you get any more?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/18936303300889",
+        "post_details": "",
+        "updated_at": "2023-07-07T21:08:41Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 18940771268377,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/18936303300889",
+                "comment_body": "Dear 18755273328409, Check out the free blocks on the official CLO-SET CONNECT store: https://connect.clo-set.com/portfolio/208988/collection"
+            }
+        ]
+    },
+    {
+        "post_id": 18936161240217,
+        "post_title": "Autograding issues even with old files",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/18936161240217",
+        "post_details": "Dear Sirs, i have problem when autograding with the new version 7.1. All my files stopped to autograde. A message appears like that in the attachment. First I thought that my new files are wrong, afterwards i opened old files whitch are had already autograded, but they also do not autograde correctly. I deinstalled the program following the article oubut that, cleared the registry files and all the folders mentioned in the article. The new instalation gives the same result. Please help!",
+        "updated_at": "2023-07-07T21:08:42Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 18940703844121,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/18936161240217",
+                "comment_body": "Dear 901731417726, Please excuse the inconvenience. This is a bug that is currently being fixed."
+            }
+        ]
+    }
+]

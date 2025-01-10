@@ -1,0 +1,1857 @@
+[
+    {
+        "post_id": 360000694528,
+        "post_title": "How to make an All-Over Foil Print using Graphic Feature ",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000694528",
+        "post_details": "You can make all over foil prints in CLO by placing your print as a Graphic and changing the Type to Metal. 1. Prepare image in Illustrator Create an artboard that is slightly larger then your largest pattern piece that will be printed Repeat print enough to fill the Artboard To Save Go to File&gtExport&gtExport as Change File type to to PNG - click Export Export Settings: Change Background Color to Transparent 2. Place Graphic into CLO Add a graphic through the Graphic(2D) or Graphic(3D) Tool or right click on a Graphic that is linked to the Library Click on the Pattern you want the Graphic/Print on Select the Graphic with the Edit Graphic tool Change the Color of the Graphic if desired and Change Type to Metal. Adjust Roughness and Reflection Intensity Click Below for Video Tutorial! https://youtu.be/SKB4CNf34C0",
+        "updated_at": "2023-07-07T21:24:26Z",
+        "comments": [
+            {
+                "author_id": 26333911388,
+                "comment_id": 360000198828,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000694528",
+                "comment_body": "Thank you for sharing this Awesome tip"
+            },
+            {
+                "author_id": 22608804148,
+                "comment_id": 360000199928,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000694528",
+                "comment_body": "In 4.0, the Graphic can now be tiled saving an extra step in Ai. :) https://support.clo3d.com/hc/en-us/articles/115013193767"
+            },
+            {
+                "author_id": 20050488267,
+                "comment_id": 360000199767,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000694528",
+                "comment_body": "Oh yes! I forgot about the option to tile the graphic, this is much easier. 1. Add a single repeat image of your print as a Graphic. 2. Right click on the Graphic and go to Tile. You can then choose pattern, tile X, Axis or Tile Y Axis. Video tutorial link below https://youtu.be/lN-6b1e4fqI"
+            }
+        ]
+    },
+    {
+        "post_id": 360000693468,
+        "post_title": "Animation: Clothing does not animate with the Avatar",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000693468",
+        "post_details": "I been using CLO since the launch and I am totally new to the program. I have had great success with drafting and sewing but now I cannot get the clothing to animate with the avatar during the animation. The Model walks out of the clothing during the process. The Clothing is just suspended. I think once I get this part I can soar with this program. The clothing stays in T-Pose",
+        "updated_at": "2023-07-07T21:10:50Z",
+        "comments": [
+            {
+                "author_id": 360104174108,
+                "comment_id": 360000193068,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000693468",
+                "comment_body": "I hope someone is out there!! It's probably a simple fix just at loss."
+            },
+            {
+                "author_id": 360104174108,
+                "comment_id": 360000197548,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000693468",
+                "comment_body": "Nevermind I got it."
+            },
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000193927,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000693468",
+                "comment_body": "Great that you got it! You can just simply click on the record button to animate garments and avatars together! Please comment if you have other questions related to animation! Thanks :)"
+            },
+            {
+                "author_id": 364093031887,
+                "comment_id": 360009391434,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000693468",
+                "comment_body": "How did you figure it out? I am having the same problem."
+            },
+            {
+                "author_id": 372974880373,
+                "comment_id": 360012758874,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000693468",
+                "comment_body": "I want to know the answer, too. Can someone explain?"
+            },
+            {
+                "author_id": 360104174108,
+                "comment_id": 360012759074,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000693468",
+                "comment_body": "Hello Everyone!! It seems that when you first use the program like me in the beginning I thought the clothing is just supposed to move!! Why won't it move!!!??? Well, I found throughout my journey the clothing is separate from the Avatar when you first load your selected animation. Meaning when you load the motion file it belongs to the avatar NOT the clothing so in your lower window time thing before you press play you have to press record. THEN the software will ADD frame by frame the movement of the avatar and bind the clothing so in the end both the avatar and the clothing will MOVE together. Then your clothing will animate even without the Avatar. during your animation, the Animation Editor will look like this. If you don't see GARMENT then you need to re-record the animation."
+            },
+            {
+                "author_id": 372974880373,
+                "comment_id": 360012770274,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000693468",
+                "comment_body": "It works. Thank you, Dorelle22."
+            },
+            {
+                "author_id": 404675549633,
+                "comment_id": 360014215133,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000693468",
+                "comment_body": "Hello Clo Comunity, i have a question regarding looping of motion file or \" how to have the same exakt wrinkles in the end and start of a motion\" ? Motion looping is at least what I think would be a solution for my problem: Im having a mixamo motion file running and the garment in the end of the movement is having slightly different wrinkles then in the start of the movement. This will show when looping the scene in a video editor as a uggly jump of wrinkles... This i would like to get rid of? but how? Thank you for suggestions or your experience with this... Joakim"
+            }
+        ]
+    },
+    {
+        "post_id": 360000690108,
+        "post_title": "[Featured] Welcome to our very first Monthly Theme Challenge!",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000690108",
+        "post_details": "Hola Everyone, Welcome to our very first Monthly Theme Challenge! Each month, we will decide on a topic to spark insightful discussion in our Community. To participate, please freely share your ideas, tips, your wonderful 3D works, or ask questions related to the theme of the month as comments. Theme of February is Activewear and examples of possible contents are: Tips on how to create fitted patterns for leggings. Questions on how to make pockets Feature requests on frequently used tool when creating activewear Random ideas on activewear design \"sketched\" in CLO Final products of your 3D activewear design I am so excited to see your works, tips, and questions!",
+        "updated_at": "2023-07-07T21:20:41Z",
+        "comments": [
+            {
+                "author_id": 360017370487,
+                "comment_id": 360000197528,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000690108",
+                "comment_body": "awesome possum! I actually do have a question. I want to express looped hood string details like below. Can anyone help me? or"
+            },
+            {
+                "author_id": 360121756748,
+                "comment_id": 360000205228,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000690108",
+                "comment_body": "@innovativehjhj I will share how to do the drawstring in the picture at the bottom &amp will update you once I finish the video! :)"
+            },
+            {
+                "author_id": 360875588088,
+                "comment_id": 360000799868,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000690108",
+                "comment_body": "Count me in! A realistic zipper"
+            },
+            {
+                "author_id": 360121756748,
+                "comment_id": 360000206707,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000690108",
+                "comment_body": "@innovativehjhj Hi! I have uploaded a post regarding the drawstring here! Hope the tip helps! :)"
+            },
+            {
+                "author_id": 360104174108,
+                "comment_id": 360004324534,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000690108",
+                "comment_body": "Here is an invisible zipper for you guys :) https://youtu.be/4WCIYsWFCNM"
+            },
+            {
+                "author_id": 28409906768,
+                "comment_id": 360004326354,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000690108",
+                "comment_body": "Thanks to all for sharing your works. You inspired me a lot."
+            }
+        ]
+    },
+    {
+        "post_id": 360000680987,
+        "post_title": "Packaging Design - CLO CAN help U",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000680987",
+        "post_details": "Just tried out CLO and found it really useful in not just apparel design but packaging design as well! The community is freezing, hope there will soon be more ppl. If u guys like it, I might consider posting more stuff here~ Enjoy!",
+        "updated_at": "2023-07-07T21:20:41Z",
+        "comments": [
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000174807,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000680987",
+                "comment_body": "This is awesome! I want to see more~"
+            },
+            {
+                "author_id": 28958720868,
+                "comment_id": 360000182107,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000680987",
+                "comment_body": "wow, what can't you do in CLO? This is such an interesting approach! Hope to see more from you!"
+            },
+            {
+                "author_id": 20050916147,
+                "comment_id": 360000198728,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000680987",
+                "comment_body": "omgㅇ0ㅇ!! The fabric is so cool."
+            },
+            {
+                "author_id": 360875588088,
+                "comment_id": 360000727048,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000680987",
+                "comment_body": "Ths all! :) @obama yep :)), just make a box and use pin to wrap it. It's just like how we wrap Christmas present in real life! U can try it and send free gifts to ur fds~"
+            },
+            {
+                "author_id": 360566497487,
+                "comment_id": 360000642368,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000680987",
+                "comment_body": "Woah! I'm late to this, but was just browsing and this looks cool af. Do you make a box and then drape the fabric around it with pins?"
+            }
+        ]
+    },
+    {
+        "post_id": 360000648747,
+        "post_title": "Exporting with seam allowances and pattern notes",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000648747",
+        "post_details": "Hello! Is anybody else having trouble with seam allowances and pattern notes or comments not showing up? Would be a huge help if anybody has a solution! Thank you!",
+        "updated_at": "2023-07-07T21:10:50Z",
+        "comments": [
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000174427,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000648747",
+                "comment_body": "Hi! Would you mind letting us know from which 2D CAD the patterns were imported? or was it just reopening the CLO project file?"
+            },
+            {
+                "author_id": 363330066247,
+                "comment_id": 360001710828,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000648747",
+                "comment_body": "hey guys does anybody have an idea how to export patterns with nothes and informations about sewing stuff together as a dfx and also as an pdf. that would be amazing i would love to try out how clo is working also in real i am a design student and young desinger who is super curious about these options and in general about clo so far i am working with modo - zbrush - fusion 360 and also keyshot best regards c"
+            }
+        ]
+    },
+    {
+        "post_id": 360000635148,
+        "post_title": "Can CLO 4.0 be installed on Windows Server 2012 R2",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000635148",
+        "post_details": "We tried to installed same on Window server 2012 R2 Std edition in order to virtualise and optimise resources. But we kept on getting error msg as follows: The program cant start because API-MS--win-crt-runtime-l1-1-0.dll is missing from your computer. Try reinstalling the program to fix this. We already reinstalled same but still same error msg. Thank you.",
+        "updated_at": "2023-07-07T21:10:51Z",
+        "comments": [
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000177728,
+                "official": true,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000635148",
+                "comment_body": "Hi! First of all, please check out our Suggested Specification for CLO and be noted that using Window Server 2012 R2 is not recommended as it may decrease the software's performance. Also, CLO is not supported on virtualised OS. If you still want to try out our program with Window Server 2012 R2, I suggest you to update your OS and try reinstalling the program. For your reference, please do check out below link as well :) https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows"
+            }
+        ]
+    },
+    {
+        "post_id": 360000624247,
+        "post_title": "how to sew internal line?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000624247",
+        "post_details": "Hi and Hello, it seems that I can only sew intenal lines as \"turned\" and i want to sew at a diferent angle... but i cant modify the sewing line type. Help?",
+        "updated_at": "2023-07-07T21:10:51Z",
+        "comments": [
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000177708,
+                "official": true,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000624247",
+                "comment_body": "Hi borodan, Unfortunately, the Sewing Line type cannot be changed when two Internal Lines are sewn to each other. It is programmed such way to prevent bulkiness when sewing overlapping patterns. However, please keep in mind that you can change the Sewing Line type and sewing angle when Pattern outlines are sewn together. To help with you further, would you mind sharing a screenshot of your design where you want to sew two Internal Lines with custom angle? Other CLO users and I may suggest you a work around."
+            }
+        ]
+    },
+    {
+        "post_id": 360000622627,
+        "post_title": "How to download trail version",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000622627",
+        "post_details": "please suggest how to download &amp how it works please reply",
+        "updated_at": "2023-07-07T21:10:51Z",
+        "comments": [
+            {
+                "author_id": 26654279448,
+                "comment_id": 360000169267,
+                "official": true,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000622627",
+                "comment_body": "Hi, To try the free trial, head on over to our Pricing page. Scroll down until you see the 30 Day Trial banner and click on Trial Download. You'll have to sign in to access the file. Let me know if that works for you and if you have any other questions! Anh"
+            }
+        ]
+    },
+    {
+        "post_id": 360000622607,
+        "post_title": "How to make a metal buckle in CLO",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000622607",
+        "post_details": "Hey,guys. I made a buckle in CLO and I'd like to share the steps with you. Step 1. Create patterns Create the patterns in the shape of the buckle. Step 2. Reduce the particle distance Reduce the particle distance for more precise simulation. Step 3. Set the Curvature of the Curved Side Geometry Set the curvature to get the more smoothe sides after setting the Add'l thickness - Rendering. Step 4. Set the Add'l thickness - Rendering Set the Add'l thickness - Rendering to get the thickness of the buckle. Step 5. Make the tubes Set the Add'l thickness of the circle pattern to make the tubes of the buckle. Step 6. Arrange the patterns Arrange the patterns in 3D window. Step 7. Apply the metal material Apply the metal effects to the patterns. You can find the detailed operation procedure from the following video. https://v.qq.com/x/page/n05471mjbz9.html And you can download the buckle files from following address. https://drive.google.com/drive/folders/1DfKsRbr3LTM8MRUf8UgZD-wh6VIvhP5g?usp=sharing",
+        "updated_at": "2023-07-07T21:24:27Z",
+        "comments": [
+            {
+                "author_id": 360828628988,
+                "comment_id": 360000173687,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000622607",
+                "comment_body": "Actually I just made the buckle and I'd never added that to straps. But I think you can export this file to an OBJ file and then add that OBJ file as an AVATAR . After that there will be collision between the buckle and the starps. So the strap and the buckle will be hooked together."
+            },
+            {
+                "author_id": 360261991348,
+                "comment_id": 360000176667,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000622607",
+                "comment_body": "I don't understand step 4 :( How can I set Set the Add'l thickness ?? I tried put 90 to Add'l Thickness-Render and It's not working :("
+            },
+            {
+                "author_id": 360828628988,
+                "comment_id": 360000180708,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000622607",
+                "comment_body": "Well.you should toggle on the thick texture surface. https://support.clo3d.com/hc/en-us/articles/115012380508-Garment-Rendering-Style#Click4 You can check this article to know what're the differences between these rendering styles."
+            },
+            {
+                "author_id": 28958720868,
+                "comment_id": 360000166427,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000622607",
+                "comment_body": "This is so great and helpful! Thanks a lot for sharing the tutorial as well as the asset! What's the best way to add such a buckle to straps? Are there any best practices that you can share?"
+            }
+        ]
+    },
+    {
+        "post_id": 360000536187,
+        "post_title": "Making \"4\" variations in 20min!",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000536187",
+        "post_details": "Hey guys~ I was playing around with CLO and wanted to show off something! I made four variations in 20min, starting from a t-shirt, a polo t-shirt, a turtleneck sweater to a zip-up training jacket! Check it out! https://youtu.be/2vJPqgVTfJU",
+        "updated_at": "2023-07-07T21:20:42Z",
+        "comments": []
+    },
+    {
+        "post_id": 360000509647,
+        "post_title": "How to Make Custom Pleats",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000509647",
+        "post_details": "Hi everyone, Hope you had another great weekend! Today I would like to share a simple principle that I use when creating Custom Pleats. I have found this to be very convenient way, but if you have any suggestions feel free to share! :) VIDEO",
+        "updated_at": "2023-07-07T21:24:27Z",
+        "comments": [
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000151247,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000509647",
+                "comment_body": ""
+            },
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000156888,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000509647",
+                "comment_body": "@Dita Varna, Cool! As always professionally, and exciting! Of the minuses, ... too large, unjustified consumption of tissue, you can reduce the consumption, without losing effect. And so the information for reflection, the main thing is shown the principle, and other solutions, for sure will. Many thanks!"
+            },
+            {
+                "author_id": 28887101488,
+                "comment_id": 360000157028,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000509647",
+                "comment_body": "Thank you for this! Can't wait to experiment with pleats myself"
+            },
+            {
+                "author_id": 26564019168,
+                "comment_id": 360000151547,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000509647",
+                "comment_body": "Thanks for the feedback! :) Looking forward to see your creations."
+            }
+        ]
+    },
+    {
+        "post_id": 360000485248,
+        "post_title": "render ",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000485248",
+        "post_details": "v-ray render is very nice...first time got satisfaction...with this render.. some example of clo4 v-ray render",
+        "updated_at": "2023-07-07T21:22:53Z",
+        "comments": [
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000146287,
+                "official": true,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000485248",
+                "comment_body": "@shawn01721, I'm glad you liked our updated render! Please be excited as we will continuously update the render! Also, if you have any other feedback, feel free to post here :)"
+            }
+        ]
+    },
+    {
+        "post_id": 360000481988,
+        "post_title": "Expressing buttons in different materials",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000481988",
+        "post_details": "Hi all, This time I am going to share how to express buttons in different materials. 1.Fabric Covered Shank Buttons 2. Leather Shank Buttons 3. Metal Shank Buttons 4. Plastic Shank Buttons You can go to here for the tutorial video. ----- 1. Select the buttons and go to Object Browser -&gt and click the buttons that you are using 2. Go to Property Editor and add texture / artwork under Material / Texture 3. After adding the artwork, different types of materials at Type 4. RoughnessIntensity and Reflection Intens could be altered under Type's drop down menu 5. You can also add in Specular Map and do alterations as shown in the image.",
+        "updated_at": "2023-07-07T21:24:28Z",
+        "comments": []
+    },
+    {
+        "post_id": 360000481728,
+        "post_title": "Make a leather bag",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000481728",
+        "post_details": "Hi, i'm newbie. I'm trying to make a bag with CLO.... What are the best parameters to create a leather bag (stiffness? Density?) Thank you",
+        "updated_at": "2023-07-07T21:10:52Z",
+        "comments": [
+            {
+                "author_id": 360334153767,
+                "comment_id": 360000144267,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000481728",
+                "comment_body": "Hi Anh, Thank's!"
+            },
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000174267,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000481728",
+                "comment_body": "@crispo I would love to see your outcome if you would like to share !!"
+            },
+            {
+                "author_id": 26654279448,
+                "comment_id": 360000137687,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000481728",
+                "comment_body": "Hi Crispo, Welcome to CLO! I'm excited to get you started with making bags. First, do you have a small bag Avatar that you can use? If not, I can walk you through the process of making a custom one for you design. For fabrics, you can start out by using the CLO default leather or twill fabrics and adjusting their Physical Properties. Setting the Stretch, Shear, and Bending values to max 90 and the Buckling Ratios to 0 will make your fabric completely stiff. Then you can apply any kind of texture you want to match your design. This process may take some trial and error to figure what properties work best for you. Otherwise, you can try to look on our CLO Marketplace to see if there are any fabrics that you may want to purchase. Hope this helps! Anh"
+            },
+            {
+                "author_id": 400101586173,
+                "comment_id": 360010051553,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000481728",
+                "comment_body": "@Anh can you walk me through the process of making my bag avatar?"
+            }
+        ]
+    },
+    {
+        "post_id": 360000478528,
+        "post_title": "Sequin skirt",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000478528",
+        "post_details": "Recently made a sequin skirt, the rendering effect is pretty good! I can not wait to share with you.",
+        "updated_at": "2024-02-21T22:26:12Z",
+        "comments": [
+            {
+                "author_id": 28958720868,
+                "comment_id": 360000130827,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000478528",
+                "comment_body": "Uuulalaaa, that's super awesome! Geat work!"
+            },
+            {
+                "author_id": 28887101488,
+                "comment_id": 360000136088,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000478528",
+                "comment_body": "Wow that turned out great! Can you please share your process?"
+            },
+            {
+                "author_id": 360639303427,
+                "comment_id": 360000160348,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000478528",
+                "comment_body": "@ closure, if you are interested in this, i can send you a video to teach you how to create this dress."
+            },
+            {
+                "author_id": 28887101488,
+                "comment_id": 360000199047,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000478528",
+                "comment_body": "Hi Ying228! Really enjoyed your video - thank you for sharing!"
+            },
+            {
+                "author_id": 360639303427,
+                "comment_id": 360000178648,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000478528",
+                "comment_body": "Please use this link to watch the video. https://v.qq.com/x/page/r05483ln0li.html"
+            },
+            {
+                "author_id": 424097440214,
+                "comment_id": 4414703341465,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000478528",
+                "comment_body": "looks amazing i cant access the video. do u have another link?"
+            },
+            {
+                "author_id": 373350670514,
+                "comment_id": 6908799491609,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000478528",
+                "comment_body": "it looks amazing. could you please share the video? I try to the link u provide but it doesn't work ...pleasssssssssssssssssssssssssssssssseeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+            }
+        ]
+    },
+    {
+        "post_id": 360000475688,
+        "post_title": "How to Create a Bowtie with Sewing! ",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000475688",
+        "post_details": "Hey everyone, I hope you have fun trying this trick!",
+        "updated_at": "2023-07-07T21:24:28Z",
+        "comments": [
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000124167,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000475688",
+                "comment_body": "this is cool! I just wanted to share some helpful manuals below Fabric Physical Properties Tack Fold Arrangement Tool"
+            }
+        ]
+    },
+    {
+        "post_id": 360000474168,
+        "post_title": "Spanish translation",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000474168",
+        "post_details": "Hi. First of all, english is not my first language, so sorry for any mistakes. I'm considering buying this software, so I downloaded the trial version and changed the language to spanish but I have found some issues in the Spanish translation. I would like to encourage my colleagues to use it, but since some of them don't know english they might have difficulties. Some of the options in the program still appear in English. I wonder if this happens only in my computer. And the last, is there a way to help to translate this software? I would really like to collaborate to help with translation if needed. As I said, I would really like to use this software after my 30-day trial, so I wonder if there's a site where I could help. Thank you.",
+        "updated_at": "2023-07-07T21:22:54Z",
+        "comments": [
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000121588,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000474168",
+                "comment_body": "Dear ealwolf, Thank you so much for your interest and willingness to help us! I will check internally regarding Spanish translation and get back to you as soon as possible :) If you have any other questions while using our program, feel free to engage with other CLO users in the Q&ampA section! Best, Erica"
+            },
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000184628,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000474168",
+                "comment_body": "@ealwolf! Sorry for the belated reply. I talked internally and we would love you to help us on the Spanish translation. I will send another message to you directly to discuss further! Thanks you sooooo much!"
+            }
+        ]
+    },
+    {
+        "post_id": 360000459387,
+        "post_title": "Production-Ready",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000459387",
+        "post_details": "yiiiiiis, this is so great!! has anyone already tried to grade more complex styles directly in CLO?",
+        "updated_at": "2023-07-07T21:20:43Z",
+        "comments": [
+            {
+                "author_id": 28958720868,
+                "comment_id": 360000118668,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000459387",
+                "comment_body": ""
+            },
+            {
+                "author_id": 360017370487,
+                "comment_id": 360000115287,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000459387",
+                "comment_body": "OMG!! I love your short video soooo cool! I gotta try out the grading tool soon!"
+            },
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000143927,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000459387",
+                "comment_body": "Hi! I also tried the grading tool, and recorded a video. https://www.youtube.com/watch?v=xSPOHKjOeBE&ampfeature=youtu.be"
+            },
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000146267,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000459387",
+                "comment_body": "@zhanart, very cool video! as an end-user, did you have any feedback regarding the Grading tool? just curious"
+            },
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000149187,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000459387",
+                "comment_body": "@Erica,I liked the Gradation tool very much, it's very convenient to work, and intuitively understandable. There were problems when grading more complicated clothes, where there are many details. But I quickly figured it out."
+            },
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000160008,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000459387",
+                "comment_body": "@zhanart! Great! If you need help or have further suggestions, please feel free to post them on Q&ampA or Product Feedback! I appreciate your engagement!"
+            },
+            {
+                "author_id": 361218982507,
+                "comment_id": 360000313987,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000459387",
+                "comment_body": "@geniusbutton, Hey :) I don't see the video could you please send the link?"
+            }
+        ]
+    },
+    {
+        "post_id": 360000449647,
+        "post_title": "Express Grommets",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000449647",
+        "post_details": "Hi. I'm here again. Today I'm going to show you how to express a grommets. You can see the video to click the link below. https://youtu.be/Nzf6KKorSaM --- 1. Create Internal Circles where the grommets will be added. 2. Select the Internal Circle and choose the Cut &amp Sew option. 3. Apply a new Fabric to the cut out Patterns. 4. To prevent stretch, apply desired properties to the Fabric and adjust Opacity. 5. Select eyelet for the Button Shape. 6. Create the eyelet at the center of the cut out Pattern. 7. Configure size and color of the eyelet as needed. --- I hope this video helps. :-)",
+        "updated_at": "2023-07-07T21:24:29Z",
+        "comments": [
+            {
+                "author_id": 400703037454,
+                "comment_id": 360010970854,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000449647",
+                "comment_body": "Hi! Thank you for the video. I have tried to position the eyelets but they are like floating try only one too but it is the same result.....any advice?"
+            },
+            {
+                "author_id": 364104337428,
+                "comment_id": 360010970934,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000449647",
+                "comment_body": "Change to Thick Textured Surface."
+            }
+        ]
+    },
+    {
+        "post_id": 360000423308,
+        "post_title": "How to Roll up a Sleeve",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000423308",
+        "post_details": "Hey everyone, Hope you had a great and creative weekend! I would like to share a quick tutorial on how to roll up a sleeve without cutting the pattern. VIDEO - https://youtu.be/zW_01k42QsE 1. Create fold lines with Internal Polygon 2. Fold up the hem of the sleeve and part of the placket with Fold Arrangement Tool, make sure that the surfaces of the placket and the sleeve don't cross 3. Hide the sleeve and activate Arrangement Points - arrange the cuff 4. Reposition the cuff piece and make sure that it does not go into sleeve piece - surfaces don't cross 5. Strengthen the sleeve, simulate, make sure that the simulation is stable before Unstrengthening 6. Unfreeze the little placket piece, position it under the sleeve and sew it to the Internal Line, make sure it is completely under the sleeve 7. While holding down W add a Pin to the top of the little placket, and while simulation is running, position it as close as possible to the button 8. Use Flip Normal function, if after closing the button, it doesn't show up on top of the placket.",
+        "updated_at": "2023-07-07T21:24:29Z",
+        "comments": [
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000103588,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000423308",
+                "comment_body": "Thank you, morning is good news, very professional! I'm sure that many users will really like your video. Below at me, the sleeves were made too."
+            },
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000099407,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000423308",
+                "comment_body": "It's so cool!"
+            },
+            {
+                "author_id": 26564019168,
+                "comment_id": 360000104348,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000423308",
+                "comment_body": "@zhanart great work! The belt detail is very nice!"
+            }
+        ]
+    },
+    {
+        "post_id": 360000327468,
+        "post_title": "Suggestions",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000327468",
+        "post_details": "It would be really great if the drafting tools could be made to simplify a few task, particularly if creating patterns with complex curves. -) A smooth curve which takes the curves on each side of a point and smooths them so you don't get a \"kink\" in the line. This would be preserved even if the point were moved. Could the normals be made to be parallel? -) Extend the point context menu to allow more features such as those above But I do really like the software",
+        "updated_at": "2023-07-07T21:22:54Z",
+        "comments": [
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000099467,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000327468",
+                "comment_body": "Hi Matthew! Thank you for the feedback. We really appreciate your suggestions. To answer to your questions, You can hold down the Shift key while creating curves to maintain the \"smooth points\" to be in a straight line. Please refer to Create AI Bezier Curve manual. If I didn't respond to your question correctly, please explain further so I can help you better :)"
+            }
+        ]
+    },
+    {
+        "post_id": 360000182307,
+        "post_title": "New Marketplace",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000182307",
+        "post_details": "Hi everyone! The new Marketplace is awesome! Definitely going to try out some of the materials. And I saw there are some zipper slides and zipper pullers that are free. Does anyone know how to import the items into the software and already gave it a try? :)",
+        "updated_at": "2023-07-07T21:20:43Z",
+        "comments": [
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000080508,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000182307",
+                "comment_body": "Hi cmwk0309 ! I have not tried it, but I think it's obvious through the library, Each accesoire and material should have its own extension, and will be loaded accordingly: ...."
+            },
+            {
+                "author_id": 360017370487,
+                "comment_id": 360000100727,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000182307",
+                "comment_body": "Hi! I think u can import items following this manual Maybe try load as trim?"
+            }
+        ]
+    },
+    {
+        "post_id": 360000175028,
+        "post_title": "Creating an Avatar in Fuse or Make Human",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000175028",
+        "post_details": "OK, I am new to the Clo3D software but I am somewhat familiar with the different types of software integrations within the program. My Question: How do I upload a FUSE character with Mixamo actions for runway into Clo3d (I have done it successfully but not in full render - I am only able to get the grey version with no skin. When I enter the full skin it get's pixelated. Could this be due to my Mac graphics capability) 1- Imported OBJ/FBX T-Pose Successfully - not rendered 2- Imported FBX actions successfully",
+        "updated_at": "2023-07-07T21:10:52Z",
+        "comments": [
+            {
+                "author_id": 26654279448,
+                "comment_id": 360000075607,
+                "official": true,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000175028",
+                "comment_body": "Hi! Does your OBJ have texture files and an MTN file associated with it? Before uploading to Mixamo, you should ZIP all of them together (including the OBJ) into one folder and upload that ZIP folder as your custom Avatar to be animated. If you're using an FBX from FUSE, then make sure \"Embed Media\" is turned on when uploading to Mixamo. Then your final output from Mixamo will already have textures and you will not have to reapply them in CLO when you Import &gt FBX. Hopefully that solves your problem, but feel free to reach out again if it doesn't work like you want. Anh"
+            }
+        ]
+    },
+    {
+        "post_id": 360000171148,
+        "post_title": "SWIMWEAR FABRIC",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000171148",
+        "post_details": "Does anyone know what is the best fabric to use for swimwear is? there seems to be no \"good\" swim fabric. I tried all but the spandex content listed is too low. looking for 10-15% spandex/poly/nylon combo",
+        "updated_at": "2023-07-07T21:10:53Z",
+        "comments": [
+            {
+                "author_id": 26654279448,
+                "comment_id": 360000072327,
+                "official": true,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000171148",
+                "comment_body": "Hi dorelle11, You may be able to find a fabric that is suitable for your projects on the CLO Marketplace. I've definitely seen some spandex/nylon blends available for purchase on there, and these would be the most accurate samples for you to use because they were created by testing the real fabrics with our Fabric Kit. If you don't wish to purchase new fabrics, you may be able to change the Physical Properties of one of the default knit fabrics, but this may take some trial and error to get the properties you want reflected in the visualization. Check out this Manual section on fabric properties to learn more about how you can adjust the default fabrics. Hope this helps! Anh"
+            }
+        ]
+    },
+    {
+        "post_id": 360000167367,
+        "post_title": "3d scan of human.",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000167367",
+        "post_details": "Is it possible to use scaned 3d model of human for futher creating clothing patterns on mannequin integrated in your programm? In other words, we have scan of 3d model of human on the entrance. We need, at least, to get avatar with the measures matched to our 3D scan. Then we create our clothing patterns.",
+        "updated_at": "2024-03-05T23:46:20Z",
+        "comments": [
+            {
+                "author_id": 26654279448,
+                "comment_id": 360000072027,
+                "official": true,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000167367",
+                "comment_body": "Hi! You can definitely use your scanned 3D model as an Avatar in CLO. Any 3D model can be imported into CLO as long as they are in OBJ or FBX file format. However, the body mesh has to be \"cleaned\" (no holes or noises) so that garments can be fitted correctly. This means that some parts of the mesh may need to be \"smoothed down\" so that they do not catch on the fabric. Your 3D scan should preferably have some gaps between the body and the limbs (ie more space underneath the armpits, legs spread apart, etc) so that there is room for the fabric to simulate. If your scan matches your specs and looks good to you, then all you have to do to is File &gt Import &gt OBJ or FBX to bring the model in. Then, take a look at this tutorial on how to set up Arrangement Points for custom Avatars. Let me know if you have any further questions! Anh"
+            }
+        ]
+    },
+    {
+        "post_id": 360000169288,
+        "post_title": "Fabric virtualization ",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000169288",
+        "post_details": "In the past CLO advertised in-house fabric virtualization for a fee, now instead you buy the Fabric kit and test the fabric yourself. Then I suspect you input the results in to the fabrics physical property setting. However I wondered if you can still pay CLO to do the fabric virtualization for you so you don't have to purchase the Fabric kit? Or is there a way to convert KES or FAST test results (2 industry standard fabric tests) in CLO?",
+        "updated_at": "2023-07-07T21:10:54Z",
+        "comments": [
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000071708,
+                "official": true,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000169288",
+                "comment_body": "Hi amychodorowski, unfortunately, we do not provide custom fabric virtualization service, but we opened a marketplace where you can purchase virtualized fabrics and they will be updated regularly. I have sent you a direct email regarding KES or FAST test results. Thanks!"
+            }
+        ]
+    },
+    {
+        "post_id": 360000165927,
+        "post_title": "Using 3rd Party Avatars in CLO",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000165927",
+        "post_details": "Hey guys~ I want to share how to use 3rd party avatars in CLO. Sadly, although it is okay so far, it is hard to perform detailed modification to avatars in CLO. So, I use DAZ 3D, a free software which allow us to modify its default avatars. Below are brief procedures and the video. Please check out the video if you want! https://youtu.be/ft0DENLk8Og Open DAZ3D Use its default avatar (I used Genesis 8 Female) and modify its body shape Add and modify hair as you wish Export as obj Load a pose and export the avatar as obj again Open CLO and import the obj file as avatar. You can use measurement tapes to measure avatar sizes Dress the avatar Change pose by importing the obj file as morph target Hope u enjoy!",
+        "updated_at": "2023-07-07T21:24:30Z",
+        "comments": [
+            {
+                "author_id": 28887101488,
+                "comment_id": 360000080087,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000165927",
+                "comment_body": "Thanks for sharing this! I actually downloaded Daz3D about a week ago, but still haven't found the time to mess around. Exciting to give it a try and incorporate it into CLO!"
+            },
+            {
+                "author_id": 360017370487,
+                "comment_id": 360000107207,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000165927",
+                "comment_body": "Glad you liked it! As i am new to this software too.. i will update more videos when I try out new stuff!"
+            },
+            {
+                "author_id": 360104174108,
+                "comment_id": 360000105447,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000165927",
+                "comment_body": "I am so glad you can use it with Genesis 8. I had only seen it done with G3F. I am new to all these programs so it is great to see that you can style your Avatar to match your Customer and the Aesthetic of the collection you do in CLO3D. I think it is very important especially since the size morphing in CLO3D had not caught up to the technology of adding Bust or Posterior dimension. This will help for Swim, Lingerie, and Plus as well as Athletic designs and presentations!!! THANK YOU!!!!!"
+            },
+            {
+                "author_id": 364091987927,
+                "comment_id": 360001462847,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000165927",
+                "comment_body": "The way in which morph targets are arranged in Daz is superior to Clo3D but could be easily emulated in Clo to give more flexibility when adjusting the size of the stock Clo avatars. This would also negate the need to add the mounting points and bounding boxes to imported avatars. In addition the ability to use the keyboard to change a measurement is a must. At present you have to use the sliders and view the measurement in the 3D window, or tab into the measurements properties. Too many clicks means inefficient use of 3D software!"
+            },
+            {
+                "author_id": 363314309548,
+                "comment_id": 360001572448,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000165927",
+                "comment_body": "first of all thank you so much for having taken the effort to do this tutorial. I'm trying to figure Daz out and I wondered if you know if you can use measurements in Daz. I mean how do you know you've export the right measurements into CLO3d?"
+            },
+            {
+                "author_id": 364091987927,
+                "comment_id": 360001569587,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000165927",
+                "comment_body": "The morphs are percentage based and as such not easy to determine what size measurement you have achieved. Once imported into Clo you must then use the tape to measure your results. So it appears that you may have to have several iterations and go back and forth until you manage to get a useful avatar to mach your own measurements. Then you still have to add the attachment points and bounding boxes to the imported DAZ avatar. That's why I think it is imperative to make the editing of a stock Clo avatar easier and more accurate by having direct input of measurements and additional morph targets like bust cup size. Looking at old Clo vids on Youtube it appears that it was once possible to enter measurements with the keyboard into the avatar measurement editor."
+            }
+        ]
+    },
+    {
+        "post_id": 360000148887,
+        "post_title": "New to the forum? Introduce yourself!",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000148887",
+        "post_details": "Hi All, I thought it would be nice to have a thread to introduce ourselves and meet the other forum members! So.. I guess I'll start! I'm a fashion school grad living in New York and just recently started using CLO within the last several months. It's been a lot of fun to learn so far and am excited to start using it in my own collections. Wish I had discovered this back in school...It definitely beats drawing flats",
+        "updated_at": "2023-07-07T21:20:43Z",
+        "comments": [
+            {
+                "author_id": 360017370487,
+                "comment_id": 360000067287,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000148887",
+                "comment_body": "Hi closure! It is nice to e-meet you LOL I studied fashion design in NY and currently located in Korea. I learned CLO while I was in school, but after I didn't really get a chance to use it further. I'm now extremely excited that CLO is offering individual license! So excited to engage in this community!"
+            },
+            {
+                "author_id": 362737180027,
+                "comment_id": 360001215048,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000148887",
+                "comment_body": "Hello! It is very nice to meet everyone. I am a soft-sided case designer and seamstress. I recently was introduced to CLO by the IT guy at work and I love it. As a pattern-maker in both case and garment I would like to further my skills by starting a home business. I cannot wait to get started."
+            },
+            {
+                "author_id": 360981251068,
+                "comment_id": 360001559748,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000148887",
+                "comment_body": "Hi Everyone! I was working as a technical designer when I discovered CLO. I was using a different 3D software and tested CLO. CLO is the easiest and most fun to use, I love how you can drape and move all over the place all with simulation on. I have an all-around background, I love design and technical pattern making. CLO really lets you be creative in so many ways when designing. So excited to see how such a programs will transform apparel development."
+            },
+            {
+                "author_id": 364987553448,
+                "comment_id": 360001701488,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000148887",
+                "comment_body": "Hi everyone, I'm Pranav from India, I've studied Engineering and I've started my own Fashion Tech Company, where I take care of designing. I'm using CLO to design garments for my website."
+            },
+            {
+                "author_id": 360981251068,
+                "comment_id": 360001705908,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000148887",
+                "comment_body": "Hi Pranav! Are the garments you make in CLO on your website? Would if so would you share a link so we can see?"
+            },
+            {
+                "author_id": 364987553448,
+                "comment_id": 360001706188,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000148887",
+                "comment_body": "Hi theblodedon My website is currently under construction. Once it is up and running I'll share the link. Where can I learn how to edit patterns in CLO 3D?"
+            },
+            {
+                "author_id": 360981251068,
+                "comment_id": 360001706648,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000148887",
+                "comment_body": "Here is one basic tutorial about editing that might help you. https://www.youtube.com/watch?v=d_z8asKfXYI"
+            },
+            {
+                "author_id": 365360437607,
+                "comment_id": 360001783367,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000148887",
+                "comment_body": "Thuê xe Vân Hải khám phá vẻ đẹp tại Thung Nai Thung Nai được ví như Vịnh Hạ Lọng trên cạn đã đem lại nhiều trải nghiệm thú vị cho du khách, để rồi nhận lại những nỗi vấn vương không rời khi phải chia xa. Hãy cùng đơn vị Cho thue xe 7 cho co lai khám phá những vẻ đẹp được kết hợp từ sông và núi của địa danh này nhé. Thung Nai là một xã lòng hồ sông Đà, cách thành phố Hòa Bình 25 km, cách Hà Nội khoảng 110km. Đến Thung Nai, bạn sẽ ngỡ ngàng trước vẻ đẹp được hòa quyện giữa sông và núi. Khám phá nơi đây, du khách không chỉ được ngắm vẻ đẹp thiên nhiên mà còn hiểu hơn về những khu di tích lịch sử văn hóa nổi tiếng trong sử sách. Bạn nên đến Thung Nai vào khoảng tháng 5 đến tháng 8 để tận hưởng cảm giác mát mẻ, xa rời cái nóng oi bức, chói chang của mùa hè. Tuyệt vời hơn nữa, khi được ngắm trăng giữa không gian rộng lớn mênh mông của sông nước. Thung Nai được ví như Vịnh Hạ Lọng trên cạn Ẩm thực nơi đây không nhiều nhưng mamng sự tinh tế, đặc trưng của vùng đất này. Cùng thưởng thức những món ăn đượm vị sông núi và càng thêm ấm áp, thấm tình nồng hơn khi được nghe tiếng hát Tây Bắc chen lẫn dân ca xứ Mường vang lên, nó làm cho tình người thêm gắn kết, du khách thập phương xích lại gần nhau hơn. Tại Thung Nai, bạn sẽ thấy nơi đây nhịp thở thật nhẹ nhàng, cuộc sống dân dã biết bao. Điểm đến đầu tiên là động Thác Bờ, không gian linh thiêng của những thạch nhũ kỳ ảo. Buổi chiều, cảnh hoàng hôn buông xuống khung cảnh trở lên lãng mạn hơn. Ban đêm, khung cảnh lung linh huyền ảo thật tuyệt vời cho những ai muốn tìm được khoảng không tĩnh lặng, sự thư thái của tâm hồn. Thung Lai là điểm đến du lịch hấp dẫn. Vẻ đẹp nơi đây, là sự kết hợp giữa thiên nhiên và con người. Bạn sẽ có trải nghiệm tuyệt vời khi đến địa điểm du lịch này. Dưới đây chúng tôi giới thiệu đến bạn dịch vụ cho thuê xe giá rẻ từ 4 chỗ, Cho thuê xe 7 chổ đời mới đến 45 chỗ, cho thuê xe theo tháng, xe cưới hỏi và bảng giá của công ty Vân Hải để bạn tham khảo cho các chuyến đi của mình: Bảng giá cho thuê xe du lịch tại Vân Hải Lưu ý: - Bảng giá trên đã bao gồm chi phí: xăng dầu, cầu đường, lương lái xe, bảo hiểm dân sự và có thể thay đổi theo thời điểm đặt xe. - Chưa bao gồm 10 % VAT Nếu bạn muốn sử dụng dịch vụ cho thuê xe giá rẻ du lịch Sapa tại công ty Vân Hải mời bạn hãy liên hệ ngay với công ty chúng tôi qua số hotline: 024.3993.65.65 - 0969.183.183 -0903.441.336 để được tư vấn tốt hơn. Chúc các bạn sẽ có chuyến đi cùng nhiều kỷ niệm với dịch vụ Cho thue xe 7 cho gia re của Vân Hải."
+            },
+            {
+                "author_id": 379899741393,
+                "comment_id": 360007012734,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000148887",
+                "comment_body": "Hi everyone! Scott Graham here, COO of Pinpoint Merchandising in Irving, TX (www.pinpointmerch.com). We're new to the CLO world and just wrapped up our initial training. Our design team is comprised of 5 people, all of whom will be using CLO regularly going forward. That said, we're still extreme virgins when it comes to 3D apparel design. If there's anyone out there who considers themselves a CLO expert and would like to take on some freelance training, I'd be very interested in connecting! My email is scott@pinpointmerch.com. Thanks!"
+            },
+            {
+                "author_id": 407233579274,
+                "comment_id": 360010977394,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000148887",
+                "comment_body": "Hi, I would like to know if someone can help me out with the below: how to make an internal point isolated so that I can create a hole in the garment (if it makes sense, I do not know the tech term). How do I mark the right stitch on a pattern? How to leave indications in the pattern such as name, quantity, reference and size. &gtcheck e.g. on the image below for number 2 and 3. Im really strugling with this parametres, anyone can help?"
+            },
+            {
+                "author_id": 28958720868,
+                "comment_id": 360000077788,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000148887",
+                "comment_body": "Hi! What a great idea! :) I got to know CLO during my studies in Hochschule Niederrhein, Germany. Pretty much it was a lucky coincidence as I was not supposed to take the CLO course, but I did it out of curiosity - I googled it, looked cool. :D As I have pattern-making background I am very excited for the next generations to have the possibility to use such tool for learning and exploring pattern making. I remember what a headache that was back in the days, doing everything on paper and not having a clue about how all my pattern alterations would look on a body. Now as I have my own body scan which I was able to do in the uni (just talk to your professors, there are a lot of hidden gems in these unis), I can create custom clothing that properly fits my body type, I can print the patterns and I can create physical garments. No more wasted material on making mockups! :))"
+            },
+            {
+                "author_id": 903594912583,
+                "comment_id": 4412546852761,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000148887",
+                "comment_body": "Goodday people, I am Nadine from Rotterdam, The Netherlands. I am excited about this program and also about MD. started with 6.0 and now after the update 6.2 I am a sewer in real life and a clothing maker in the Second Life. Greetings Nadine"
+            },
+            {
+                "author_id": 28409906768,
+                "comment_id": 360001550007,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000148887",
+                "comment_body": "Hi All too, I'm Daniele from Italy, probably one of the oldest in this community. I started my career as pattern maker in 1982. So I saw all the new tecnologies since their begin. I'm very happy to be in time for this new one. I saw amazing people artwork in this community. I want to thanks everyone to take time to post their suggestions a tricks! Keep doing so."
+            },
+            {
+                "author_id": 5544770277913,
+                "comment_id": 7128215769497,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000148887",
+                "comment_body": "Hi HELP FILE SAVE/ EXPORT ISSUES - NEED TO SEND WORK/ GLTF FILE TO A COLLEAGUE USING MD BUT THEY (FILES)MESS UP I am Yannis , menswear designer currently retraining on CLO based near Chicago but from UK. It's amazing to build digitally, design that I used to love doing on paper and a mannequin as a student in London. I am working with a motion picture specialist but for some reason when trying to save/ export files and send to him (gltf) and other formats they land on my desktop corrupted (for example 10 images will land on my desktop with an empty file) or I will have an unopenable file. Anyone have any feedback ? CLO email support have so far been of little help. Y"
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 7132264254233,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000148887",
+                "comment_body": "Hi 5544770277913. This area is for introducing yourself. If you are looking for help I suggest posting to the Q&ampA area of the Forums HERE or posting to the CLO official Discord channel. HERE where many CLO power users post"
+            }
+        ]
+    },
+    {
+        "post_id": 360000117168,
+        "post_title": "Avatar and fabric interfer with each other",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000117168",
+        "post_details": "I have a lot of trouble with avatar interfering with the fabric. Like at the bottom of the pants on picture attached, the boots (which is avatar) go through the fabric. Bottom of pants is not too narrow, it should work... Anyone who has advice of how to solve this issue? (I have tried simulating, pulling fabric, solidifying, strengthen, pressure, resewing, layers... etc etc)",
+        "updated_at": "2023-07-07T21:20:44Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 900001661586,
+                "official": true,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000117168",
+                "comment_body": "901985611463 It appears that the sewing on the shirt is not correct. It looks like the sleeves are sewn to the opposite side of the body and causing the issue."
+            }
+        ]
+    },
+    {
+        "post_id": 360000103947,
+        "post_title": "Lyrical digressions",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000103947",
+        "post_details": "It's very sad when the forum ... quietly began to resemble the forum Marvelous Designer, not having time to open ... I wonder what is it connected with? Really the users have ceased to be interested in this remarkable program.?",
+        "updated_at": "2023-07-07T21:20:44Z",
+        "comments": [
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000052868,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000103947",
+                "comment_body": "Hi Erica Thank you for the reaction! We will believe and hope in it. I have it yet, it's morning! I am in Kazakhstan))) Have a great afternoon"
+            },
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000051027,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000103947",
+                "comment_body": "Hi zhanart. This is Erica again :) I appreciate your affection and concern for our community platform. Like I have mentioned in another post, our Community has just opened and it should take time for other users to join us! Meanwhile, as we do have other active users, I hope you enjoy connecting with them. Have a great afternoon :)"
+            }
+        ]
+    },
+    {
+        "post_id": 360000103527,
+        "post_title": "How to Express Falbala",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000103527",
+        "post_details": "Hello, everyone. Ill share how to express the falbala on clothes. Hope it helps! Determine the length of the internal line. Use Rectangle tool draw a rectangle that the width is longer than the length of internal line. Create sewing lines. Freeze other patterns before simulation. Adjust falbala and apply proper fabric. Active all pattern and then simulation. Please check the attached Tencent video below. https://v.qq.com/x/page/z0534q8y2lv.html",
+        "updated_at": "2023-07-07T21:24:30Z",
+        "comments": []
+    },
+    {
+        "post_id": 360000087368,
+        "post_title": "lacing on clothes",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000087368",
+        "post_details": "",
+        "updated_at": "2023-07-07T21:24:31Z",
+        "comments": [
+            {
+                "author_id": 360017370487,
+                "comment_id": 360000060668,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000087368",
+                "comment_body": "This is so cool! But, when I try to do that with button, Im not sure how to make the inner part transparent. I used button tool... I think thats how u did it, right?"
+            },
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000060987,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000087368",
+                "comment_body": ""
+            },
+            {
+                "author_id": 16675986987,
+                "comment_id": 360000061087,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000087368",
+                "comment_body": "Hi @zhanart. Firstly, we are sorry for the inconvenience. Since this is a technical issue that we have to perform thorough investigation, we would appreciate your understanding and patience. Our CX team will contact you directly after figuring out the culprit of the problem. Meanwhile, for other users' readibility, it would be much appreciated if you would sort out extra comments not directly related to this post. Again, we are truly sorry for the trouble and please hold tight as we will reach out to you asap. Thank you."
+            },
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000062468,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000087368",
+                "comment_body": "Hi, CLO, I understand everything, and it seems it was my fault, myself. I also apologize, I did not notice that I had a VPN on my browser, it seems the problem was because of this."
+            }
+        ]
+    },
+    {
+        "post_id": 360000052028,
+        "post_title": "Visiting the forum by users.",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000052028",
+        "post_details": "I would very much like that the site can be seen visiting users both registered and not registered. Like in many forums. Does the site management have a 5-day work schedule? It seems to me that so far there are very few visitors. What is the reason for this? I do not think that interest in studying the program is low. Given that visitors to the forum have different time zones, it would be convenient to see the time of their visit.",
+        "updated_at": "2023-07-07T21:10:54Z",
+        "comments": [
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000052848,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000052028",
+                "comment_body": "Hi zhanart! Firstly, yes, the website is monitored 5 days a week :) As I am not quite sure your last question, would you please clarify? Thank you! Also, we do have quite many users visiting our forum, but as we just opened the community, I think it will take some time for them to engage :) I hear you are so excited to interact with other CLO users as we are too, but hold tight! We are expecting more users to join us! We always appreciate your active participation!"
+            },
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000052948,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000052028",
+                "comment_body": "Thank you for sharing the picture. Although it is not comprehensible due to language difference, I'm assuming that you would like to see general statistics of the forum. However, we don't have any plans yet to show the statistics to end users for now :( Sorry!"
+            },
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000052928,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000052028",
+                "comment_body": "Yes, Erica, thank you, you understood me the way you should But ... the second question was related to visibility, with statistics of visitors to the forum."
+            }
+        ]
+    },
+    {
+        "post_id": 360000045948,
+        "post_title": "Drafting patterns with body measurements",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000045948",
+        "post_details": "Hi! I am trying to make patterns with actual body measurements, but there is no specific guide on how to do so.. I need your help!! Thank you!!!",
+        "updated_at": "2023-07-26T09:50:03Z",
+        "comments": [
+            {
+                "author_id": 26654279448,
+                "comment_id": 360000039928,
+                "official": true,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000045948",
+                "comment_body": "Hi! You can definitely draft from a spec in CLO! First, check out the Garments &amp Patterns section of the CLO FAQ page to see a basic demo of how you would go about drafting a shirt. If you already know how to construct 2D patterns, then you can use the Create Pattern tools in CLO to draw your pattern shapes and internal markings. Then, you can edit them however you want with the Transform and Edit Pattern tools. Refer to the linked manual guides for more information on how those tools work. If you are not confident in drawing the patterns yourself, you can use the Flatten tool to extract patterns from the Avatar. To get closer to your specific body measurements, you can change the default Avatar's measurements. Before exiting the Avatar Editor, make sure you switch to the Arrangement tab and hit \"Fit to Avatar\" to make your Arrangement Points snap to the new Avatar measurements. Then, draw directly on the Avatar with the Flatten tool and the program will generate pattern pieces for you. I hope this is helpful to get you started. Let me know if you'd like any more in-depth information! Anh"
+            }
+        ]
+    },
+    {
+        "post_id": 360000045928,
+        "post_title": "How to make a round shoulder straps",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000045928",
+        "post_details": "",
+        "updated_at": "2023-07-07T21:24:31Z",
+        "comments": [
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000034748,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000045928",
+                "comment_body": ""
+            },
+            {
+                "author_id": 360017370487,
+                "comment_id": 360000034848,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000045928",
+                "comment_body": "This is cool! Although it was quite hard to follow but I managed to do the same! But the question is, how did you make the patterns have thickness?? :o"
+            },
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000034948,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000045928",
+                "comment_body": "innovativehjhj , Thank you! Sorry, apparently forgot to show this point)"
+            }
+        ]
+    },
+    {
+        "post_id": 360000044667,
+        "post_title": "Making basic female bodice block ( no darts ) pattern",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000044667",
+        "post_details": "Hey there! Welcome to my first post in CLO Community! I know some people like myself like to start from 2D patterns when creating garments, so today I am going to share a tip for making basic bodice pattern in CLO. I hope this helps! You can watch the tutorial video here. 1) After importing an avatar , I started creating new pattern blocks with Polygon tool. 2) Then you can start drawing along the grey shadow ( avatar ) in 2D window. To draw straight line, press Shift, and you can create curved lines by pressing Control key while drawing the lines. 3) After creating the first half of the pattern you can copy it with linked editing so now you'll have a front bodice. You can Crtl + C Ctrl + V the pattern sets as the back. 4) Apply the patterns onto the avatar with arrangement points and add sewing lines to turn it into a top. 5) You can start altering the pattern's shape. I normally use Edit Pattern tool / Edit Curvature tool. Remember to simulate it to see the changes. 6) So after you have got what you needed, you can simply export the pattern blocks into DXF - ASTM format and you are ready to create awesome designs! :)",
+        "updated_at": "2023-07-07T21:24:32Z",
+        "comments": [
+            {
+                "author_id": 360017370487,
+                "comment_id": 360000034607,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000044667",
+                "comment_body": "Wow this is awesome! But for me, I have to create patterns with measurements.. Do you have some tips? I guess I will ask this question to Q&ampA too :("
+            },
+            {
+                "author_id": 360017370487,
+                "comment_id": 360000060688,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000044667",
+                "comment_body": "Cool! I will look into this! Thanks @closure"
+            },
+            {
+                "author_id": 28887101488,
+                "comment_id": 360000056808,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000044667",
+                "comment_body": "@innovativehjhj If you want to create patterns from spec/measurements, I would recommend starting off by creating a rectangle shape using the rectangle tool (s). Dimensions should be 1/4 chest circumference by total length of your garment. Then from there, you can add offset internal lines to mark measurements and use the split tool (select by right clicking while editing patterns) to add points to shape your sloper."
+            },
+            {
+                "author_id": 363314309548,
+                "comment_id": 360001323668,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000044667",
+                "comment_body": "This is exactly what I was looking for and could not find in any of the CLO tutorials. Thank you!"
+            }
+        ]
+    },
+    {
+        "post_id": 360000035948,
+        "post_title": "Flattening Test 🤩",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000035948",
+        "post_details": "Trying out the new flattening tool........had to fix up the pattern a bit for better fit, but looking pretty good I think. And extra is a lil render test at the end. Wishing it was summer so here's a bathing suit idea Let's see y'all share the cool flattened garments you're working on too? Texture from here.",
+        "updated_at": "2023-07-07T21:20:45Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 360013988174,
+                "official": true,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000035948",
+                "comment_body": "429404717013 You can adjust the by lowering the Skin Offset of the Avatar and the Add'l Thickness Collision of the Pattern Pieces."
+            }
+        ]
+    },
+    {
+        "post_id": 360000022988,
+        "post_title": "How to use Washing_Texture provided in CLO effectively.",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000022988",
+        "post_details": "Hi everyone! I would like to share a quick tip on how to use washing textures provided in CLO Library. For those who may not know where the washing textures are, you can find them Library &gt Washing_Texture. Once you double click Washing_Texture, you will see about 9 textures. To use them, please follow the step-by-step instructions below. Right click on the texture you would like to use and select Add as Graphic. Click on the 3D Garment where you want to add the washing effect and the Add Graphic window appears. Type in the desired Size of the graphic, or just hit OK. Then the Edit Graphic tool is automatically activated and you can scale, rotate, and move the graphic (and you can do this on both 2D and 3D windows)! After adjusting one side, I just copy and paste the graphic and flip it horizontally. Then, I lowered both graphics' Opacity which you can find in the Property Editor AFTER selecting the graphic. And I can get a result like below! Easy as eating pancakes, right?!",
+        "updated_at": "2023-07-07T21:24:32Z",
+        "comments": [
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000029328,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000022988",
+                "comment_body": "What else can you do with this function?) I certainly did not try hard, so for the test https://www.youtube.com/watch?v=ZxGZmAx4LHA&ampfeature=youtu.be"
+            },
+            {
+                "author_id": 360017370487,
+                "comment_id": 360000033708,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000022988",
+                "comment_body": "This is so cool!!! zhanart, I especially like your 4th picture! so creative! Did you use graphics to express knits instead of inserting texture to the fabric itself?"
+            },
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000034867,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000022988",
+                "comment_body": "I do not understand, did I answer the question? Where does my post disappear, a time later?"
+            },
+            {
+                "author_id": 360017370487,
+                "comment_id": 360000035087,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000022988",
+                "comment_body": "Oh that is strange :( I didnt see your comment! would you mind telling me again? thank u!"
+            },
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000035168,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000022988",
+                "comment_body": "Hi, innovativehjhj ! I used my own, seamless texture, in PNG format"
+            },
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000028908,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000022988",
+                "comment_body": "Hi, Erica, It's very cool! You beat me, I also paid attention to the PNG-texture, I thought I would show the options)))"
+            },
+            {
+                "author_id": 28409906768,
+                "comment_id": 360001614248,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000022988",
+                "comment_body": "Hi Erica, I'm running the Clo version 4.0104 ( r29681) The same I see in the zhanart screenshot but I haven't in the default library the washing _texture folder. Any suggestion why?"
+            },
+            {
+                "author_id": 28898445868,
+                "comment_id": 360001622488,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000022988",
+                "comment_body": "Hi, danielemanassero ! Pay attention, in the column where you have a library, there must be a download button, the first time you open the program. Download, everything appears and enjoy)))"
+            },
+            {
+                "author_id": 16462541348,
+                "comment_id": 360001619947,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000022988",
+                "comment_body": "@danielemanassero Just like @zhanart mentioned, you should be able to download the textures through Library window. If you still cannot see them, please let me know! Thanks :)"
+            },
+            {
+                "author_id": 410324670633,
+                "comment_id": 360012164533,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000022988",
+                "comment_body": "17697164847 Where is this located in 5.2?"
+            },
+            {
+                "author_id": 410324670633,
+                "comment_id": 360012164613,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000022988",
+                "comment_body": "Nevermind...FOUND IT!"
+            },
+            {
+                "author_id": 903208585846,
+                "comment_id": 4407797804441,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000022988",
+                "comment_body": "can anyone guide me how to make a wash effect file?"
+            }
+        ]
+    },
+    {
+        "post_id": 360000018028,
+        "post_title": "Beginners guide",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000018028",
+        "post_details": "Hi there, I am an absolute beginner when it comes to CLO 3D, I am currently trialing the new version of CLO. After going through your lesson videos, I find it is very hard to learn from them. Did you previously have some videos where you had people talking through the video, where it was much slower and provided a lot of guidance? I don't see this on your site now, only the lesson which are roughly 20 seconds long. I find myself going to youtube to watch videos, but these are out of date. Would you have further, tutorial videos coming out? Thanks for your help, Jess",
+        "updated_at": "2023-12-21T18:57:48Z",
+        "comments": [
+            {
+                "author_id": 26654279448,
+                "comment_id": 360000024748,
+                "official": true,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000018028",
+                "comment_body": "Hi Jess! Unfortunately, videos with sound will not be available for a little while. I'm sorry that the current set-up was confusing! I hope that the description text after each video can clarify some things for you. The text explains exactly what is going on in the video, so you can read and then watch it at your own pace. Did you download the Lesson files to follow along? If you haven't, they may be a more helpful guide to learning the software. It will be a bit clunky at the beginning because it's new, but hopefully that helps a little bit. If you find that the Lessons are definitely not for you, then I recommend watching this webinar we held. It is on an older version of the CLO, but the newest version has the same basic functions (navigating, selecting, sewing, etc) and then maybe once that's under your belt you can try the Lessons again. The files the presenters talk about on the webinar are not available for download, but they do cover and talk about all the essentials to get you started. Please let me know if you have any other questions! Thanks! Anh"
+            }
+        ]
+    },
+    {
+        "post_id": 360000012728,
+        "post_title": "How to make a bag   LOUIS VUITTON",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000012728",
+        "post_details": "Video will be added later",
+        "updated_at": "2023-07-07T21:24:32Z",
+        "comments": [
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000018847,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000012728",
+                "comment_body": "There will also be new developments."
+            },
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000020587,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000012728",
+                "comment_body": "This is awesome! I particularly love your fabric texture work. What do you use to create texture images?"
+            },
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000021308,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000012728",
+                "comment_body": "Here only photoshop, and so, depending on the situation,Substance Painter,Zbrush"
+            },
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000026947,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000012728",
+                "comment_body": "Cool! I look forward to see your video soon! :)))"
+            }
+        ]
+    },
+    {
+        "post_id": 360000012048,
+        "post_title": "Making bindings to show the effect of folding sleeve/hem/collars",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000012048",
+        "post_details": "I will introduce a more simple method to replace the effect of folding sleeve/hem/collars. Hope you will like it. Offset as an internal line. Use trace tool to trace the same shape of the pattern. Use the function Superimpose(under) to quickly arrange the location. Active the simulation. Add the texture you want. You can find the detailed operation procedure from the following video. https://v.qq.com/x/page/g0534nnsdnz.html Besides sleeves, this method can also be applied to the hem, neckline and other places.",
+        "updated_at": "2023-07-07T21:24:33Z",
+        "comments": [
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000018688,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000012048",
+                "comment_body": "Oк! And here is my version) https://www.youtube.com/watch?v=NLN3f2nRy9s&ampfeature=youtu.be"
+            },
+            {
+                "author_id": 23107085387,
+                "comment_id": 360000018487,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000012048",
+                "comment_body": "Thank you for sharing such a detailed video, very helpful to me. Thank you!"
+            },
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000018967,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000012048",
+                "comment_body": "cindy,Thanks for the kind words! I was glad if it helped."
+            },
+            {
+                "author_id": 389855710893,
+                "comment_id": 360009040653,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000012048",
+                "comment_body": "@zhanrt the youtube link you posted is private cant see it :("
+            }
+        ]
+    },
+    {
+        "post_id": 360000011108,
+        "post_title": "CLO3D Suggestions",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000011108",
+        "post_details": "A colleague of mind recommended that I try out CLO for patternmaking. I used the free trial to test it's pattern making capabilities. While I do appreciate the ability to create patterns in CLO rather than using another program to make the pattern (I'm familiar with Tukatech) and import it to CLO, the patternmaking in CLO is pretty cumbersome. Here are my suggestions in no particular order. If any of these suggestion already exist in the program and I missed them, let me know. 1. Rulers/guidelines would be nice. Being able to pull a guideline from the side (like in Adobe Illustrator), or selecting a line segments and creating a guideline parallel or perpendicular to said line segment is incredibly useful for accurately making 90 degree angles to make smooth transitions between seams (like the armhole and neckline). 2. The ability to make internal lines go outside of the pattern piece. 3. Ability to input measurements as fractions, like 1/8. More for convenience. I live in the US, so I typically work in fractions. 4. Fold option. Again, really a matter of convenience, but it is a bit of a pain to unfold a piece, find out you still need to make changes, delete half of it, and then unfold again. Simply mirroring the side would work, just like how you can copy mirrored pieces with and keep the sew line. 5. Ability to pivot around any point on the pattern piece. I need to check if seams walk and how the look flush together. Rotating the pattern piece was a pain. 6. Ability to edit curves without changing the anchors. Adding a point drastically changed the curve as well, be it a curve or a non-curve point. 7. Be able to see reference blocks. Lots of tiny changes are made to change the fit. It would be nice to see a snap shot or bookmark line to see where the line where previously before while I change the current lines. Also helpful if another patternmaker sends you the file and they made changes to it to see where and how those changes where made. 8. Ability to select multiple lines for setting seam allowance. 9. Ability to fold back the seam allowance when necessary. Like the hem of pants. 10. The dart system needs work. Currently only able to make fish eye/internal darts. However, more often than not, darts are on the edge of a pattern. And when using darts the dart edge isn't straight like the rest of the edge. There is a little \"mountain\" that is create and the shape depends on which way the dart is folded. This allow for the dart to be clean finished. 11. Couldn't sew the dart internally. Basically couldn't hide the dart. CLO would pinch the fabric and sew it so the dart was on the outside of the garment. I feel like there is a key I'm missing in the program. 12. Internal cut line tool is needed. While tracing is fine, cutting a pattern piece apart is quicker to me. 13. Exporting the pattern at least to AAMA DXF or ASTM DXF. I was told over and email that I could 1:1 print the pieces, but the industry uses 60\"+ paper to print markers to lay on top of fabric flat. The widest commercial printers I found access to are around 36\". Not nearly wide enough. Be able to export to one of those DXF files means I could send the file to be printed by a plotter. Normal DXF is highly inaccrurate when importing into different CAD programs, I have found.",
+        "updated_at": "2024-03-16T14:08:02Z",
+        "comments": [
+            {
+                "author_id": 26654279448,
+                "comment_id": 360000017447,
+                "official": true,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000011108",
+                "comment_body": "Hi! Thank you so much for taking the time to reach out and send your suggestions! It's exciting that you've tried the program out extensively for pattern-making and have listed things that we can definitely improve upon. There are a couple of things you listed that can already be done in CLO, so I'll try to list a basic tutorial for each of them below and collect the rest for our development team. If anything is confusing, let me know! 1. Rulers/guidelines would be nice. Right now, there is no way to pull out guidelines (like the kind from Illustrator/other 2D CAD software), but Smart Guides should appear if you are curving out a segment to show how far out it is squared. For example: Otherwise, you will have to draw an Internal Line as a reference. Your request is definitely noted as something to develop further, as these are super useful tools! 4. Fold option. Generally, we recommend that pattern makers make a Symmetric Clone of the half they are working on and then merge center fronts and center backs at the very end of the process. That way, any edits you make on one half will be reflected on the other half until you decide to merge your patterns. To make a Symmetric Clone, right click on a pattern piece and select Symmetric Pattern (with Sewing) under Clone Pattern with Linked Editing. Your halves will be connected until you decide to merge them or unlink them. 5. Ability to pivot around any point on the pattern piece. Use the Transform Pattern tool and select your pattern piece. Double click on the center little dot and it will turn orange. You can now move this point any where on the pattern piece and it will be your new pivot point. 6. Ability to edit curves without changing the anchors. I believe this may be happening because Bezier Curves (the curves with the handles like in Illustrator) can't be converted smoothly into curves made with curve points. So if you started out with a Bezier Curve and try to add curve points to it, it might lose its shape. You can edit your Bezier Curves with the Edit Pattern tool instead of adding curve points to it. While you're drawing your pattern, if you would like to place a curve point instead of using Bezier Curves or placing a segment point, hold down CTRL and the next point you click will be an orange curve point. 7. Be able to see reference blocks. Before making edits to your pattern pieces, select all of them and right click + Clone as Reference Line. Now when you edit your patterns, you'll see the original shape of them as black lines in the 2D Window. 8. Ability to select multiple lines for setting seam allowance. While you're on the Seam Allowance tool, if you click and drag a selection box around your pattern pieces all those segments will have seam allowance added to them. 9. Ability to fold back the seam allowance when necessary. Like the hem of pants. Please reference this guide on how to fold a collar to see how our Fold Arrangement tool works. You can use the Fold Arrangement tool on any internal line, so it can be useful for hems and styling. If you do not want to physically fold your hems back, you can also use top-stitching to express the visual of a hem. 10. The dart system needs work./11. Couldn't sew the dart internally. To add a dart to the edge of a pattern, first add a point to your pattern. Then use the Edit Pattern tool to right click and Add Dart at that point. Please reference this guide for more information. Before sewing darts, I suggest cutting them out of the pattern or converting them to holes so that that the extra fabric isn't there. 12. Internal cut line tool is needed. You can use the Transform Pattern or Edit Pattern tool to Cut or Cut &amp Sew any line, though at least one point of the line must touch a pattern edge for the cut to work. 13. Exporting the pattern at least to AAMA DXF or ASTM DXF. You can File &gt Export any CLO pattern to be a AAMA/ASTM DXF. Please let me know if anything is confusing and I can explain in a different way. Thanks again for your insights!"
+            }
+        ]
+    },
+    {
+        "post_id": 360000008888,
+        "post_title": "Knitted clothes",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000008888",
+        "post_details": "Hi again! Not ready yet, but soon I will show a demo of how to make knitted things from APG-stitches, in CLO, as seen below, And even more complicated patterns",
+        "updated_at": "2023-07-07T21:24:33Z",
+        "comments": [
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000013668,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000008888",
+                "comment_body": "Open and view images in a new tab"
+            },
+            {
+                "author_id": 28838635807,
+                "comment_id": 360000016428,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000008888",
+                "comment_body": "Exciting! Looking forward to seeing the final demo :)"
+            },
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000018128,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000008888",
+                "comment_body": "Very cool! I'm excited to see your demo!!"
+            },
+            {
+                "author_id": 23107085387,
+                "comment_id": 360000018827,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000008888",
+                "comment_body": "I am so looking forward to see the final demo. Heavy knit-cables and knitwear has always been a problem for me, I can't deal with them well. Thank you very much!"
+            },
+            {
+                "author_id": 16112361068,
+                "comment_id": 360000208167,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000008888",
+                "comment_body": "Hi zhanart, what does APG-Stitch mean? Looks very nice :) I am very curios"
+            },
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000210947,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000008888",
+                "comment_body": "Hi, alena87 This is a translation error) I'm using a translate There is a (PNG-Stitch) Topstitch tool, where you can download your stitches, in PNG format)"
+            },
+            {
+                "author_id": 363565014808,
+                "comment_id": 360001892848,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000008888",
+                "comment_body": "Hello Where can I find this top Stitch?"
+            },
+            {
+                "author_id": 365514437707,
+                "comment_id": 360004358113,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000008888",
+                "comment_body": "Hello! The images aren't showing up in the forum for me. I'm just getting little blue boxes with question marks."
+            },
+            {
+                "author_id": 405020511013,
+                "comment_id": 360010976714,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000008888",
+                "comment_body": "where do you make APG sitches ? can i do that on illustrator?"
+            },
+            {
+                "author_id": 28898445868,
+                "comment_id": 360010980554,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000008888",
+                "comment_body": "Hi! I make a height map in 3ds Max, I dont know if you can make a height map in illustrator, it all depends on your skill) I havent been here for a long time) It's time to upload new works)))"
+            }
+        ]
+    },
+    {
+        "post_id": 360000005207,
+        "post_title": "We can make Avatars to look like mannequins!",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000005207",
+        "post_details": "I was browsing through the manual and found out something quite interesting! We can edit the Avatar's material type to look like mannequins! (link to the manual) Check out my mannequins below!",
+        "updated_at": "2023-07-07T21:10:55Z",
+        "comments": [
+            {
+                "author_id": 28887101488,
+                "comment_id": 360000064908,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000005207",
+                "comment_body": "Thanks for sharing this! I've also been messing around with the property editor. It's interesting that you are able to edit those properties on avatars or garments. Here's me testing the metal preset:"
+            },
+            {
+                "author_id": 364244475908,
+                "comment_id": 360001807993,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000005207",
+                "comment_body": "Hello, Does anyone know how to make the avatar look like a mannequin without the head? (see attached). Thanks, Natalia"
+            }
+        ]
+    },
+    {
+        "post_id": 360000003907,
+        "post_title": "Increasing Avatar's Bust/Cup  Size",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000003907",
+        "post_details": "I've edited a couple of avatars to better reflect my sample sizes. This was straightforward on the smaller of the two, who wears a B cup. My second size, however, wears a D cup if I increase the size of the chest, the entire circumference at the widest point increases, including the rib cage. Is there a way to target the chest itself?",
+        "updated_at": "2023-07-07T21:10:56Z",
+        "comments": [
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000010128,
+                "official": true,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000003907",
+                "comment_body": "Hi, Thank you for the question. Unfortunately, you cannot adjust the chest itself for now...:( However, we are planning to further improve our Size Editor this year! Meanwhile, if you need different Avatars, you may visit our Marketplace!"
+            }
+        ]
+    },
+    {
+        "post_id": 360000003948,
+        "post_title": "Add Arrangement Points to a Custom Avatar",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000003948",
+        "post_details": "Hi Everyone, Under the link below you can find a simple solution on how to add Arrangement Points to a Custom Avatar. VIDEO 1. Import your Custom Avatar. 2. Add a Default Avatar from the Library. Make sure that all the Translation values in the Add Avatar window are 0. 3. Got to Avatar Avatar Editor and in the Avatar Size tab adjust Width and Height of the Default Avatar according to your Custom Avatar. Reposition the Custom Avatar if needed. 4. With shortcut Shift+X access Human IK function, or go to Vertical Render Toggle Tools and click on Show X-Ray Joints. Adjust the Pose of the Default Avatar. 5. Remember to deactivate Constrain Joint Translation/Rotation for Ankle Joints. 6. Once the pose is adjusted with Shift+X exit the Human IK function and activate Arrangement Points - Shortcut Shift+F, or go to Vertical Render Toggle Tools and click on Show Arrangement Points. Then open Avatar Avatar Editor, and under Arrangement tab click on Fit to Avatar (All). 7. Delete the Default Avatar and if necessary adjust the Bounding Volumes. Go to Vertical Render Toggle Tools, and click on Show Bounding Volumes. If you have any questions, don't hesitate to leave comments below! :)",
+        "updated_at": "2023-07-07T21:24:34Z",
+        "comments": [
+            {
+                "author_id": 360017370487,
+                "comment_id": 360000009628,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000003948",
+                "comment_body": "This is so cool! Thank you for sharing! But, I have a questions! How I do import my own avatars?"
+            },
+            {
+                "author_id": 23107085387,
+                "comment_id": 360000018867,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000003948",
+                "comment_body": "First, you need an OBJ dummy. Then, Hope this can help you ^ ^"
+            },
+            {
+                "author_id": 364091987927,
+                "comment_id": 360001463927,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000003948",
+                "comment_body": "If you Save the new avatar and its measurements can you then adjust it again, i.e. change the waste or height for example in the editor, or is that link lost once you delete the underlying default avatar you used to place the arrangement points?"
+            },
+            {
+                "author_id": 26564019168,
+                "comment_id": 360001479908,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000003948",
+                "comment_body": "Sorry if I might misunderstood the question, but unfortunately it is not possible to change the size of a custom avatar within CLO. The Avatar Editor works with CLO default avatars. In this process, the Avatar Editor is only used to adjust the default avatar and reset the Arrangement Points, so that they fit the custom avatar."
+            },
+            {
+                "author_id": 364091987927,
+                "comment_id": 360001468867,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000003948",
+                "comment_body": "Hi Dita, yes thats exactly what I meant. Seems you can only edit a Clo default avatar. I know from other feedback Clo are working on updating the avatar editor. Ideally you should be able to import your own avatar in a suitable format, set up its arrangement points and bounding boxes AND still be able to adjust the morphs in the Clo avatar editor. This, if it does become possible however, will mean the source avatar which you import will have to conform to certain default Clo morph targets. Notwithstanding, many 3D software programs allow for fully functional interchange of meshes including IK elements and bones for example such that they can still be morphed, and incidentally animated."
+            }
+        ]
+    },
+    {
+        "post_id": 360000002268,
+        "post_title": "Express Trims not Provided by CLO via Patterns",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360000002268",
+        "post_details": "Hello, everyone. I came back with new content. This time, I will create a pattern and try to express the material. Please check the attached YouTube video below. https://youtu.be/6N3EQLP-h8s --- 1. Create Patterns in the shape of the Trim to be made. 2. To express the Trim's thickenss, adjust Add'l Thickness - Rendering value. 3. To smooth the edge, toggle on Curved Side Geometry. 4. Edit Patterns in the shape of the Trim to be made. Establish Sewing Lines where necessary. --- I hope this video helps. :-)",
+        "updated_at": "2023-07-07T21:24:34Z",
+        "comments": [
+            {
+                "author_id": 360017370487,
+                "comment_id": 360000009668,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000002268",
+                "comment_body": "Thank you for the awesome video! I have a question! How did you express the eyelets?"
+            },
+            {
+                "author_id": 28929230588,
+                "comment_id": 360000018947,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360000002268",
+                "comment_body": "Hi !! @innovatehjhj The eyelets are represented using a button tool. Next time I will upload a video to make eyelets. : )"
+            }
+        ]
+    },
+    {
+        "post_id": 115009255847,
+        "post_title": "Your Favourite 4.0 Feature",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/115009255847",
+        "post_details": "V-RAYYYY YAAAYYYY!!! Can't get enough of this new renderer. Brilliantly simple, hence simply brilliant! What's your favourite new 4.0 feature??",
+        "updated_at": "2023-07-07T21:10:57Z",
+        "comments": [
+            {
+                "author_id": 28958720868,
+                "comment_id": 115006275048,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009255847",
+                "comment_body": "Thank you all! Glad you like it. Yes, I used a stud from the default button presets, changed the thickness to get that more dramatic look, never have I ever been so thankful for \"duplicate to symmetric pattern\" function. :D Rendering only took a few minutes, which was a surprise. I thought it would take way longer as I have sooo many metal studs."
+            },
+            {
+                "author_id": 28887101488,
+                "comment_id": 115006272248,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009255847",
+                "comment_body": "Very cool!"
+            },
+            {
+                "author_id": 28838635807,
+                "comment_id": 115006086587,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009255847",
+                "comment_body": "Woah! How did you make this? Is it all just studs as buttons? How long did it take you to render? Probably would have been longer on the older versions"
+            },
+            {
+                "author_id": 360018480327,
+                "comment_id": 360000005107,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009255847",
+                "comment_body": "WOW!! The metal looks sooo realistic. I love the design too &lt3."
+            },
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000045768,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009255847",
+                "comment_body": "I also like it, Did a very good job. Only Vray is not quite the same, it's frustrating that there are no settings to improve the quality. While I will render in the Corona-render."
+            },
+            {
+                "author_id": 16462541348,
+                "comment_id": 115006082787,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009255847",
+                "comment_body": "I love your image!! So stunning! My favorite update to CLO 4.0 is indeed newly added trims, fabric wash images, and the Marketplace! So many new items to play with! So Excited!"
+            },
+            {
+                "author_id": 22715362888,
+                "comment_id": 360001286468,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009255847",
+                "comment_body": "This looks really good!! Is everything completely rendered in CLO3D? If so can you give screenshots of settings when you rendered?"
+            }
+        ]
+    },
+    {
+        "post_id": 115010589428,
+        "post_title": "Express Trims not Provided by CLO via Texture Image",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/115010589428",
+        "post_details": "You may express Trims in CLO with texture images to create Trims not in the CLO Library. You can see the video to click the link below. https://youtu.be/xB3jcr3gADM --- 1. Load the image of the Trim in the Photoshop Delete the background of the Trim image. 2. To maintain the transparency, save the image as PNG. 3. Apply the image to the Pattern just created. Edit the Pattern to match with the Trim image's dimension. 4. Sew the Trim Pattern to the bodice Pattern. --- I hope this video helps. :-)",
+        "updated_at": "2023-07-07T21:24:35Z",
+        "comments": [
+            {
+                "author_id": 28898445868,
+                "comment_id": 115006076607,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115010589428",
+                "comment_body": "Thank you for sharing, but there are other ways and new opportunities, with the new versions (I do not mean CLO 4) and new tools, and I hope that you are aware of all this, it is expected in your next posts"
+            },
+            {
+                "author_id": 28887101488,
+                "comment_id": 115006086727,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115010589428",
+                "comment_body": "Thanks for the tutorial Looking forward to using this feature in my own projects"
+            },
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000004048,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115010589428",
+                "comment_body": "Hi Erica! Thank you for your attention and interest! Yes, I have something to share with others. And I'm in a hurry to publish them here, on the forum, as soon as I have free time."
+            },
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000003548,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115010589428",
+                "comment_body": "Hi @zhanart! Thank you for the comment. If you have other ways to express trims in CLO, feel free to share your own tip as well :) So excited to see your version!"
+            },
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000004347,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115010589428",
+                "comment_body": "@zhanart, that's great! Looking forward to your posts!!"
+            },
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000020547,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115010589428",
+                "comment_body": "Trims with the same Topstitch tool)"
+            },
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000020607,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115010589428",
+                "comment_body": "@zhanart, it is cool! Did you create a pattern and applied your custom topstitch?"
+            },
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000021148,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115010589428",
+                "comment_body": "Erica,Yes, that's right, I used obj-file earlier, but I'm confused, this load function is obj, it turns out there is only in MD7))) Sorry, for not very understandable, English, while I am using translate But I will study and understand, in the future"
+            },
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000027448,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115010589428",
+                "comment_body": "Hi @zhanart, I am sorry I cannot clearly understand your questions. But! you can import OBJs to CLO, if it was what you were asking! Please refer to this manual here!"
+            },
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000027687,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115010589428",
+                "comment_body": "Hi Erica,About the functions of export - import obj , as an avatar, as a garment, as a morph target I know) I meant the import obj as a topstitch"
+            },
+            {
+                "author_id": 28898445868,
+                "comment_id": 360000028408,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115010589428",
+                "comment_body": "I meant it ..."
+            },
+            {
+                "author_id": 16462541348,
+                "comment_id": 360000028127,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115010589428",
+                "comment_body": "@zhanart Oh~ sorry for the misunderstanding! That function is not available in CLO yet, but it is expected to be developed in near future! Meanwhile, I guess we can refer to s2bonnies2 's tip! :)"
+            }
+        ]
+    },
+    {
+        "post_id": 115010585688,
+        "post_title": "Greetings to everyone on the new site!",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/115010585688",
+        "post_details": "Welcome all the Clo community, and I congratulate you on the release of the next, more updated product, also with the updated site.! Everything new is always good! It lifts the mood and moves on new developments and ideas. I really hope that on this site, there will be a lot of professionals ready to demonstrate their achievements. And I, in turn, will be very happy to share my achievements and experiences.",
+        "updated_at": "2023-07-07T21:24:35Z",
+        "comments": [
+            {
+                "author_id": 28887101488,
+                "comment_id": 115006080707,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115010585688",
+                "comment_body": "The new website looks great!"
+            },
+            {
+                "author_id": 16462541348,
+                "comment_id": 115006250728,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115010585688",
+                "comment_body": "Hi! Thanks for such energizing post! As CLO's CX Designer, I am more than thrilled to have you here! Please feel free to share your knowledge and support each other! Of course, I will always be here to share mine and engage in the community as well :) So excited!!"
+            },
+            {
+                "author_id": 28823235187,
+                "comment_id": 115006074847,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115010585688",
+                "comment_body": "The design of a site has very much liked. I wish the further prosperity."
+            },
+            {
+                "author_id": 16462541348,
+                "comment_id": 115006267548,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115010585688",
+                "comment_body": "Thank you everyone! I hope you enjoy our community platform too!!!"
+            }
+        ]
+    },
+    {
+        "post_id": 115009245807,
+        "post_title": "How to Write a Post in Community",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/115009245807",
+        "post_details": "Want to engage in the Community but not sure how to write a post? No worries! Please refer to the below step-by-step guide on how to write a post in our Community. Once you navigate to the Community page, you will see the New Post button next to the Community main title. When you click the New Post button, you will be directed to the page pictured below, where you can begin writing your post. Write title for your post. Please precisely describe what your post is about. Write your post in detail. Please use the text editor to stylize your texts, make lists, and insert images or links. As you cannot directly insert videos to the community post, please upload them to a third party streaming service first and insert their links. Before submitting the post, please select an appropriate forum for the post to be added to. Select the Submit button and you are ready to share your CLO skills or seek for help! *Please be mindful that our Community runs in English only.",
+        "updated_at": "2023-07-11T08:28:04Z",
+        "comments": [
+            {
+                "author_id": 28732616767,
+                "comment_id": 360000061508,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009245807",
+                "comment_body": "hi"
+            },
+            {
+                "author_id": 424717216793,
+                "comment_id": 4409174060697,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009245807",
+                "comment_body": "Bonjour 1/ Comment peut accrocher un accessoire ex un noeud qui est deja dans les accessoires de CLO 3 D afin de la voir même dans une animation Car mon probléme, je le vois sur l'avatar, mais il n'est plus la , quand je fais animation. 2/ est il possible d'avoir une personne qui s'occupe de la communication, car actuellement , je fais abonner des crèateurs a CLO 3 D, et je souhaite developper mes formations CLO 3D Cela est interréssant pour vous d'avoir quelqu'un qui fait toute la France, Car je me déplace Merci de me contacter 06 07 83 31 43, afin de pouvoir en discuter. Merci pour votre aide Bien cordialement Françoise Marie Noël"
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 4409264717337,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009245807",
+                "comment_body": "Bonjour Mme Noel, Nous tenons à vous remercier pour l'intérêt que vous portez à notre logiciel. Pour répondre à vos questions: 1/ Vous pouvez ajouter l'un de nos accessoires venant de notre bibliothèque en faisant un clique droit sur l'accessoire et en sélectionnant l'option, 'ajouter à l'espace de travail' du menu pop-up qui apparaîtra. Lorsque l'accessoire est placé dans l'espace de travail, une petite bouteille de colle apparaîtra en haut à droite de l'accessoire. Cliquez sur cette bouteille de colle pour connecter laccessoire au vêtement. Votre accesoire bougera alors avec le vêtement lorsque vous l'animerez 2/ En ce qui concerne votre deuxième question, nous proposons des formations en francais pour le publique francophone. Si vous souhaitez pariticiper à l'une de ces formations ouvertes au public, nous vous conseillons de consulter notre page Instagram ou notre site web. Une formation en francais est prévu du 30 Novembre aux 2 Décembre 2021. Nous offrons ces formations avec notre personnel en interne et ne faisons pas appel à des prestataires extérieurs. J'espère que cela vous aidera. En vous souhaitant une bonne continuation, L'équipe CLO"
+            }
+        ]
+    },
+    {
+        "post_id": 115009245787,
+        "post_title": "How to Write a Post in Community",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/115009245787",
+        "post_details": "Want to engage in the Community but not sure how to write a post? No worries! Please refer to the below step-by-step guide on how to write a post in our Community. Once you navigate to the Community page, you will see the New Post button next to the Community main title. When you click the New Post button, you will be directed to the page pictured below, where you can begin writing your post. Write title for your post. Please precisely describe what your post is about. Write your post in detail. Please use the text editor to stylize your texts, make lists, and insert images or links. As you cannot directly insert videos to the community post, please upload them to a third party streaming service first and insert their links. Before submitting the post, please select an appropriate forum for the post to be added to. Select the Submit button and you are ready to share your CLO skills or seek for help! *Please be mindful that our Community runs in English only.",
+        "updated_at": "2023-07-07T21:10:57Z",
+        "comments": [
+            {
+                "author_id": 28732616767,
+                "comment_id": 115006247968,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009245787",
+                "comment_body": "great article!"
+            },
+            {
+                "author_id": 16675986987,
+                "comment_id": 115006063527,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009245787",
+                "comment_body": "thanks"
+            },
+            {
+                "author_id": 22715362888,
+                "comment_id": 360001149027,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009245787",
+                "comment_body": "How can you delete a post you've made?"
+            },
+            {
+                "author_id": 16462541348,
+                "comment_id": 360001167508,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009245787",
+                "comment_body": "Hi @craesnyder2, unfortunately, you cannot delete the post you've made. If you give me the link to the post, I can delete it for you. Thanks!"
+            },
+            {
+                "author_id": 385707249554,
+                "comment_id": 360009394453,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009245787",
+                "comment_body": "Why can I not see my post that I just posted? Does it go through an approval process, and I would just have to wait a bit?"
+            },
+            {
+                "author_id": 405195455053,
+                "comment_id": 360011831053,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009245787",
+                "comment_body": "Hi, I have read statement in clo3d website, \"Your designers, tech designers, pattern makers, and vendors all have their unique processes\" Can anyone explain me the difference between designers and tech designers? Thanks"
+            },
+            {
+                "author_id": 425457042933,
+                "comment_id": 360013507774,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009245787",
+                "comment_body": "Hi all Is there anyway we could add some chest piece? thank you"
+            },
+            {
+                "author_id": 405195455053,
+                "comment_id": 360011582774,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009245787",
+                "comment_body": "What is the shortcut of multiple segment sewing shortcut for cuff and collar in Modular template.Please help"
+            },
+            {
+                "author_id": 419218282114,
+                "comment_id": 900002848983,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009245787",
+                "comment_body": "hi, while saving file, warning message shows \"Failed to save thumbnail image file.\" why is it so. Regards, Neeraj"
+            },
+            {
+                "author_id": 902750179263,
+                "comment_id": 4404322044697,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009245787",
+                "comment_body": "Hi there, I apologize if my question may look like silly. I am just at my first day with clo and I cant understand how I get off from a command. I tried to press esc but it doesnt work. If someone could be so kind to please five me a direction that will be much appreciated. Thanks in advance for all your help and consideration Andy"
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 4404331817369,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009245787",
+                "comment_body": "Hi Andy 902750179263, Wondering what command/ pop-up message did you received? It would be great if you can provide more hits / captures with us."
+            },
+            {
+                "author_id": 902750179263,
+                "comment_id": 4404371561881,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009245787",
+                "comment_body": "HI there thanks for your reply much appreciated. I understood that I can use transform pattern to switch commands. In case you may have a better way I will try it. I apprreciate any help from you guys that are so ahead of me. Thanks"
+            },
+            {
+                "author_id": 389846488974,
+                "comment_id": 4412635980953,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009245787",
+                "comment_body": "Hi! i have sewing patterns from my master and ready-made kimono om me,but i can't understand how to sew the same pleats in clo3d on the photo below? master and also have a"
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 4412670038553,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009245787",
+                "comment_body": "Hi 389846488974. You can see the video HERE from our youtube guide about creating pleats."
+            },
+            {
+                "author_id": 405195455053,
+                "comment_id": 8685096598169,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009245787",
+                "comment_body": "Hi clo3d community, Please share the lycra fabric link. Thanks and regards."
+            },
+            {
+                "author_id": 16334308760217,
+                "comment_id": 16334313855769,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009245787",
+                "comment_body": "It's really thoughtful of you to reply to my message. I have a unique license and am a registered user. My query fits well in the available area. Yet at the bottom, it requests the \"proof\" and until I upload the required wordle file to the drop box, the button to submit the inquiry is grayed out."
+            }
+        ]
+    },
+    {
+        "post_id": 115009245567,
+        "post_title": "Product Feedback Guidelines",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/115009245567",
+        "post_details": "We are always looking forward to your unique ideas and suggestions on how to improve our software. Therefore, our Product Feedback forum is here for you to express your thoughts. There are a few simple rules we would like you to follow when posting a feature request: In the Title field, clearly state which function or aspect of the software the feature request is related to. For example, 2D Pattern Editing: Add Dart Function Try to describe the request as much as possible. In addition include the information on how this feature would help you in your daily work. Feel free to add images or other media files that can help in explaining your concept. If you experience a Bug within the software, please contact us. *Please be mindful that our Community runs in English only.",
+        "updated_at": "2023-07-11T08:20:59Z",
+        "comments": [
+            {
+                "author_id": 28732616767,
+                "comment_id": 360000061007,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009245567",
+                "comment_body": "It's good!!!"
+            },
+            {
+                "author_id": 425457042933,
+                "comment_id": 360013507874,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115009245567",
+                "comment_body": "Hi all Is there anyway we could add some chest piece? thank you"
+            }
+        ]
+    },
+    {
+        "post_id": 115010583448,
+        "post_title": "CLO Community Guidelines",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/115010583448",
+        "post_details": "Dear User, welcome to the CLO Community, we are glad to see you joining in and we are looking forward to your awesome posts! In order to sustain a positive, encouraging and inspiring environment within our community, we wish for your help and collaboration. Below you can find a few concepts that we would like you to take into consideration while engaging in this communication platform. Respect: Everyone is welcomed in our community. Every members unique perspective on things should be respected and accepted. Constructive criticism is welcomed, but dont be mean and disrespectful when expressing your opinion. Content that is offensive and contains nudity, vulgar language, graphic violence, or promotes illegal activity or self-harm is strictly forbidden and will be removed. Support: Dont hesitate to seek help. There is no such thing as a stupid question. We also encourage you to join in with our support team and provide help to your fellow CLO Community members. This is a dynamic platform where we exchange knowledge and help each other. Safety: Please do not share your personal information (home address, phone number, email address, user ID, password, credit card information etc.). Search: Before posting something make sure to use our search function to see if the topic you are interested in has already been addressed. Often the answer to your question is only one search away. If the topic is already on the table, you can always join in the discussion. The search function is a great time saver for you and can help us to avoid overlapping posts. Accuracy: Choose the right Community Forum for your post. Describe the topic of your interest in a meaningful way. Avoid using statements like urgent, seeking help, having trouble with in the Title field of your post. Rather, give a descriptive explanation of your problem/idea, for example best practice for expressing realistic darts, Human IK: How to fix a joint. Authenticity: Be honest and transparent. Post as yourself and dont hide behind a fake identity. All the content you want to share within our community should be original and owned by you or you should have the permission from the initial owner. Be mindful and respect copyrights. Fun: Dont forget to have fun and get to know your fellow CLO Community members. :) In addition to these concepts, we have set some rules regarding self-promotion and third party services: We encourage you to promote yourself and your best work in CLO Community. It is our pleasure to connect you with new and exciting job opportunities within the industry. However, it is forbidden to promote yourself by using other peoples work. If third party services can be beneficial to your fellow CLO Community members, promotion of these services is allowed. However, such promotions should not be in a form of an advertisement, but rather a helpful resource for others. *Please be mindful that our Community runs in English only. We reserve the right to moderate posts and comments at our discretion.",
+        "updated_at": "2023-07-11T08:20:40Z",
+        "comments": [
+            {
+                "author_id": 383041226074,
+                "comment_id": 360005526854,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/115010583448",
+                "comment_body": "How can we reach out to community members? The profile does not give any social handle."
+            }
+        ]
+    }
+]

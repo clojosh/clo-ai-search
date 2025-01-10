@@ -1,0 +1,409 @@
+[
+    {
+        "ArticleId": "29738864727449",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/29738864727449",
+        "Title": "USD File Import/ Export (ver 2024.0)",
+        "Content": "List of Contents Import Export Objective As one of the graphics standard file formats, USD allows you to increase productivity in collaboration with various 3D software. Location Main Menu File Import/ Import (Add)/ Export USD Operation Import Click the tool /menu in Location. The Open File window opens. Select the desired file and click the Open button. Import USD window opens. Set the details and click the OK button. Option Description Load Type Open or add new files. Object Type Select the object type(Avatar, Trims, Scene and Props) of the USD file to be imported. Scale Type in the Scale or select the desired unit. Translation Click the \"Align Bottom to Ground\" option to set the location of the file as needed. Note: If you import additional USD files, you can set the location of the object in the X, Y, and Z axis. Export Click the tool /menu in Location. The Open File window opens. Select the desired location and click the Save button. Export USD window opens. Set the details and click the OK button. Option Description Prim Path Set whether to export Meshes and Materials, and specify the Prim Path to be dependent upon export. Materials are stored in the textures folder within the saved USD file folder. Object Select the objects you want to export (Patterns, Avatars, Graphics and Trims). Object Choose whether to export the selected objects as a single object or multiple objects. Thickness Choose to export the object with the thickness or not. Unified UV Coordinates Texture information for all garment is exported within UV coordinate values between 0 and 1. Include Garment Simulation Data You can achieve more dynamic clothing for your UE 5.4 scene through the updated USD export for garments, including geometry, materials, and the necessary data for simulation setup. Scale Type in the Scale or select the desired unit.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628387,
+        "Section": "File Import/Export",
+        "Tokens": 371
+    },
+    {
+        "ArticleId": "115000573407",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000573407",
+        "Title": "[Object Browser] Reset Button Style Property",
+        "Content": "Objective Reset button item properties to default value (ver2.5.0). Location Object Browser Button Tab Right-Click Button Item Pop-Up Menu Reset Operation Follow the indicated guideline below: Object Browser Button Tab Right-Click Button Item Pop-Up Menu Reset The button item properties are now being reset back to default value.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000728848,
+        "Section": "Button",
+        "Tokens": 63
+    },
+    {
+        "ArticleId": "360000490268",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/360000490268",
+        "Title": "[Style Property] Distance from Stitch (ver4.1.0 and Above)",
+        "Content": "Objective Adjust distance between Topstitches when a single Topstitch style has multiple stitch counts. The Distance from Stitch is adjusted in inch, but it can also be adjusted in cm or mm with its child options. Location Topstitch Select Topstitch Stype with Multiple Stitch Count Property Editor Number Tab Distance from Stitch 1,2... Operation Follow the indicated guideline below: Topstitch Select Topstitch Stype with Multiple Stitch Count Property Editor Number Tab Distance from Stitch 1,2... Use the drop-down menu next to the option to choose the desired number. Distance between each Topstitch lines are adjusted accordingly. Adjust Distance from Stitch for all Topstitches or configure to adjust their properties at once.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000728288,
+        "Section": "Topstitch",
+        "Tokens": 145
+    },
+    {
+        "ArticleId": "115012914327",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012914327",
+        "Title": "[Object Browser] Open/ Save Topstitch Style",
+        "Content": "List of Contents Open Save Objective Open or save preset or custom Topstitch to easily use it in other Project or Garment files. Location Open Object Browser Topstitch Tab Select Desired Topstitch Style Property Editor Open Save Object Browser Topstitch Tab Select Desired Topstitch Style Property Editor Save Operation Open Follow the indicated guideline below: Object Browser Topstitch Tab Select Desired Topstitch Style Property Editor Open The File Browser window appears. Select the desired Topstitch file and click Open. The selected Topstitch file opens and all properties are reflected in the Property Editor. Save Follow the indicated guideline below: Object Browser Topstitch Tab Select Desired Topstitch Style Property Editor Save The File Save window appears. Designate the file saving path and assign Topstitch name. Then, select Save. The Topstitch is saved as a *.sst file and all properties are saved.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000728288,
+        "Section": "Topstitch",
+        "Tokens": 180
+    },
+    {
+        "ArticleId": "115012816487",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012816487",
+        "Title": "[Object Browser] Reset Topstitch Style Property",
+        "Content": "Objective Reset Topstitch style properties to default values (ver2.5.0). Location Object Browser Topstitch Tab Right-Click Topstitch Style Pop-Up Menu Reset Operation Follow the indicated guideline below: Object Browser Topstitch Tab Right-Click Topstitch Style Pop-Up Menu Reset The Topstitch style properties are now being reset back to default value.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000728288,
+        "Section": "Topstitch",
+        "Tokens": 75
+    },
+    {
+        "ArticleId": "115002224287",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115002224287",
+        "Title": "[Object Browser] Create Additional Topstitch Style",
+        "Content": "Objective Create a new Topstitch style. Location Object Browser Topstitch Tab +Add Operation Follow the indicated guideline below: Object Browser Topstitch Tab +Add A new item named Topstitch_1 is now being added with the same property of Default_Topstitch. Note: Additional items are added with names of Topstitch_1,2,3. If there are multiple Topstitch styles in the Topstitch tab when creating a Topstitch on a Pattern, click on the desired Topstitch style and create. To create an additional Topstitch style with existing *.sst file, navigate to the Library Hardware and Trims Topstitch and drag and drop the desired Topstitch style to the Topstitch tab. Or, find the Topstitch file in the File Brower window and drag and drop.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000728288,
+        "Section": "Topstitch",
+        "Tokens": 171
+    },
+    {
+        "ArticleId": "115000560328",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000560328",
+        "Title": "[Style Property] Topstitch Thread Thickness",
+        "Content": "Objective Adjust the Thread Thickness in the desired measurement unit: inch, millimeter (mm), or centimeter (cm). Topstitch thickness can also be adjusted in industry standard units: Tex, Ticket (Tkt), Metric (Nm), or Denier (Den) (ver4.0.0). Location Object Browser Topstitch Topstitch Property Editor Thread Thickness Operation Follow the indicated guideline below: Object Browser Topstitch Topstitch Property Editor Thread Thickness Adjust the Thread Thickness with the desired unit of measurement.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000728288,
+        "Section": "Topstitch",
+        "Tokens": 105
+    },
+    {
+        "ArticleId": "360000350228",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/360000350228",
+        "Title": "[Style Property] Topstitch Multiple Layer Setting (ver4.1.0 and Above)",
+        "Content": "Objective Create various different types of Topstitches up to five at a time. Use this function to express topstitch effects such as multi-colored Overlock. Location Object Browser Topstitch Tab Topstitch (Click Topstitch Style) Property Editor Stitch Count Operation Follow the indicated guideline below: Object Browser Topstitch Tab Topstitch (Click Topstitch Style) Property Editor Stitch Count Choose the desired number using the drop down menu next to Stitch Count. Topstitches with the same properties are added based on the chosen number. To configure multiple lines of a single Topstitch style at the same time, toggle on below options as needed. Option Description Use Same Specification Toggle on this option to configure multiple topstitches' Specification related options such as Shape, Length, Space and more at the same time. Use Same Material Toggle on this option to configure multiple topstitches' Material related options such as Texture, Color, Type and more at the same time. Refer to Topstitch Style Properties manuals to adjust detailed settings.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000728288,
+        "Section": "Topstitch",
+        "Tokens": 209
+    },
+    {
+        "ArticleId": "115004681168",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115004681168",
+        "Title": "[Style Property] Save Created Image as Topstitch File",
+        "Content": "Objective Save customized Topstitch images in a *.sst format file. Location Object Browser Topstitch Tab Default Topstitch Operation Follow the indicated guideline below: Object Browser Topstitch Tab Default Topstitch Properties of the selected Topstitch appear in the Property Editor. Navigate to the Property Editor Type and select Texture from the drop-down menu. Under the Material section, select the same structured Topstitch to the one customized. Navigate to the Property Editor Material Texture and then click on the Topstitch image icon or the Search button. The Open file window appears. Find the path to the customized images and select the one only with the name of Topstitch (ex. \"zigzag.png\") and click Open. The program automatically saves all five images in *.sst file according to the defined naming rule. The image is loaded in actual size which is approximately 2cm and it may look bigger than other preset Topstitches. Navigate to the Property Editor Material Preset and enter desired value to the Stitch Width menu (ex. 5mm) to adjust its size. On the right top of the Property Editor, there is a Save button. Select to save. The Save file window appears. Enter the desired name and location and save. The Topstitch is now being saved in *.sst file format. Note: Topstitches are classified into two different types depending on the presence and absence of the Stitch Width property. For example, when adding a zigzag-style top stitches, select Overlock or Zigzag as its width needs to be adjustable. Without Width Property Default (Single Needle) Default Offset 0 Pick Stitch With Width Property Overlock Zigzag Buttonhole Bar Tack Make sure all of the Topstitch image files are located in the same path as it will not be saved in the SST file properly. The image is bigger than the actual size to prevent distortion in resolution when enlarging the image. Drag and drop the saved SST file directly onto the Topstitch Item List or open it by pressing the Open button in the Property Editor. Adjust the property details such as the Length, Offset, Thread Thickness or Color likewise any other Topstitch styles.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000728288,
+        "Section": "Topstitch",
+        "Tokens": 439
+    },
+    {
+        "ArticleId": "115004681008",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115004681008",
+        "Title": "[Style Property] Create Topstitch Image File",
+        "Content": "Objective Customize Topstitch images. Operation Click on the link below to download the sample Topstitch images in Photoshop file format. Topstitch Sample Image Download Create five images of Topstitches in each different thread thickness in Adobe Photoshop. Save the images followed by the rules below. Save the images in *PNG file format. Name the images as below: Required File Name Thread Thickness Range of Topstitch Property in Program When modifying the thread thickness value as the right section, images will be opened as the left section. Zigzag_vertythin.png 0.2 - 0.4 mm Zigzag_thin.png 0.5 - 0.6 mm Zigzag.png 0.7 - 1.0 mm Zigzag_thick.png 1.0 - 1.5 mm Zigzag_verythick.png &gt 1.5 mm Save all five images in the same location. Note: To create top-stitch images, it is needed to have editable software (ex. Adobe Photoshop, Adobe Illustrator). To create one top-stitch, five images of each different thread thickness are required. (Five images are included in the provided Download File.) If not creating all five images in each different thread thickness, the thread thickness is unable to be modified in spite of modifying the value in Thread Thickness in the Property Editor. To express transparent background, the *PNG file should contains an alpha channel. (Creating an alpha channel) Simply save the file after adjustments as the provided Download File already includes an alpha channel. When saving a newly loaded Topstitch style into a file, the program automatically loads all five images and save, all of the images should be in the same path or location in order to work properly.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000728288,
+        "Section": "Topstitch",
+        "Tokens": 353
+    },
+    {
+        "ArticleId": "115002227847",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115002227847",
+        "Title": "[Object Browser] Puckering List Window",
+        "Content": "It is possible to create, copy, apply and set a style in puckering list window. Without any extra setting, Default_Puckering is applied as default. Once Default_Puckering style is modified, it lasts until rerun of the program and it is unable to be deleted.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000717107,
+        "Section": "Puckering",
+        "Tokens": 58
+    },
+    {
+        "ArticleId": "115002328968",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115002328968",
+        "Title": "[Object Browser] Create Additional Puckering Style",
+        "Content": "Objective Create a new Puckering style. Location Object Browser Puckering Tab Add Operation Follow the indicated guideline below: Object Browser Puckering Tab Add A new Puckering style with the same properties as Default_Puckering is now being added. Note: To create an additional Puckering style with existing *.ptp file, navigate to the folder contains the desired *.ptp file. Then, drag and drop the desired Puckering style to the Puckering tab. Or, find the Puckering file in the File Browser window and drag and drop.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000717107,
+        "Section": "Puckering",
+        "Tokens": 116
+    },
+    {
+        "ArticleId": "115000525247",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000525247",
+        "Title": "[Style Property] Number of Topstitch Lines Distance Setting",
+        "Content": "Objective Adjust the distance between Topstitch lines. The unit of the length can be set in inch, millimeter(mm) or centimeter(cm) in the User Setting. Location Object Browser Topstitch Property Editor Number of Lines Distance Operation Follow the indicated guideline below: Object Browser Topstitch Property Editor Number of Lines Distance The distance between the stitch lines is now being adjusted and applied.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000728288,
+        "Section": "Topstitch",
+        "Tokens": 78
+    },
+    {
+        "ArticleId": "115000560528",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000560528",
+        "Title": "[Style Property] Number of Topstitch Line Setting",
+        "Content": "Objective Set how many lines of Topstitches there are for a single style. Location Object Browser Topstitch Tab Property Editor Number of Lines Operation Follow the indicated guideline below: Object Browser Topstitch Tab Property Editor Number of Lines Enter the number of lines as desired. The Number of Lines is now being adjusted and applied. Note : Distance of Number of Lines It is possible to adjust the distance between the lines. The unit of the length can be set in inch, millimeter(mm) or centimeter(cm). When alteration is made in inch(in), it automatically appears in millimeter(mm) or centimeter(cm) and vice versa.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000728288,
+        "Section": "Topstitch",
+        "Tokens": 128
+    },
+    {
+        "ArticleId": "115012377728",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012377728",
+        "Title": "Copy",
+        "Content": "List of Contents Copy Copy a Pattern Copy an Internal Shape Copy - Copy Patterns and Internal Shapes. Copy a Pattern - Navigate to the 2D toolbar and select the Transform Pattern tool or the Edit Pattern tool. - Right-click on the Pattern to be duplicated and select Copy. - The selected Pattern will be duplicated. Copy an Internal Shape - Navigate to the 2D toolbar and select the Transform Pattern tool or the Edit Pattern tool. - Right-click on the Internal Shape to be duplicated and select Copy. - The selected Internal Shape will be duplicated.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=EDcMcsPVZME",
+            "https://www.youtube.com/watch?v=95HbFM23Xic"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 110
+    },
+    {
+        "ArticleId": "115012379808",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012379808",
+        "Title": "Avatar Rendering Style",
+        "Content": "List of Contents Avatar Rendering Style Textured Surface Mesh Monochrome Surface Avatar Rendering Style - Display Avatars in various Rendering Styles. - Navigate to the 3D window and hover over the last icon in the Vertical View Toggle Menu. Textured Surface - When an Avatar is loaded, the Textured Surface is applied to the Avatar by default, showing the skin texture of the Avatar. Mesh - Click the Mesh option to see Avatars Mesh structure. Monochrome Surface - Click the Monochrome Surface option to see Avatars in black and white.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=tf1CZ881N4Y",
+            "https://www.youtube.com/watch?v=75arRzMYPYw",
+            "https://www.youtube.com/watch?v=0bs2bQPrFWI",
+            "https://www.youtube.com/watch?v=mDNk14u9EvE"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 108
+    },
+    {
+        "ArticleId": "115012226367",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012226367",
+        "Title": "Garment File Save/Open",
+        "Content": "List of Contents Garment File Open Garment File Save Garment File Garment File - The Garment file is composed with followings: 3D Garments, 2D Patterns, Colorways, Print Layout, and comments. Save above information along with 3D Garments as a .zpac file and re-open to edit. Open Garment File - Navigate to the Main Menu and select File Open Garment. - Locate the garment file and select Open. The selected garment file will load. Save Garment File - Navigate to the Main Menu and select File Save As Garment. - Assign the saving path and the file name, then click Save.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=jB27g_SM2I4",
+            "https://www.youtube.com/watch?v=XE8fUfTfDzk"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 135
+    },
+    {
+        "ArticleId": "115012226667",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012226667",
+        "Title": "Import - OBJ",
+        "Content": "List of Contents Import OBJ Import (Add) OBJ Import OBJ - OBJs can be used as Avatars or other background props compose the 3D environment. - The 3D Garments created in CLO can be exported as an OBJ to use in other 3D software. - When a 3D Garment is exported as an OBJ, the file will contain MTL file which saves the texture information. - Navigate to the Main Menu and select File Import OBJ. - Locate the OBJ file and select Open. - The Import OBJ window will appear. - Load Type: Select either to open or add the OBJ file. - Object Type: select the type of the OBJ file - Scale: select the unit of the OBJ When the Auto Scale option is selected, CLO will detect the unit of the OBJ automatically. - Axis Conversion: Change the axis of the OBJ. - Translation: designate the position of the OBJ. - Select OK to open the OBJ based on the settings. Import (Add) OBJ - Navigate to the Main Menu and select File Import (Add) OBJ. - Locate the OBJ file and select Open. - The selected OBJ file will be added to the workspace.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=fjrW762CniQ",
+            "https://www.youtube.com/watch?v=IyutFBV0R2Q"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 241
+    },
+    {
+        "ArticleId": "115012380368",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012380368",
+        "Title": "New",
+        "Content": "List of Contents New Create a New File New - Delete the Garment in the current workspace and create a new Garment. - Navigate to Main Menu File New. Create a New File - The New option is activated only when a file is already open. - Navigate to and select Main Menu File New. - The dialogue asking to save the current file will pop up. - Select the desired option and the current file will either be saved or deleted based on the selection and a new file will open.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=k41mizmVef4"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 100
+    },
+    {
+        "ArticleId": "115012381008",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012381008",
+        "Title": "Puckering – Property Editor",
+        "Content": "List of Contents Puckering Property Editor Rename Puckering Preset Intensity Density Width Texture Face Puckering - Property Editor - Individually edit Puckering properties. - Select the Puckering item applied to the segment in the Object Browser. Then, navigate to the Property Editor. - The selected Puckering items properties will appear in the Property Editor. Rename - Change the name of the Puckering. Puckering Preset - Choose among five presets provided by CLO. Intensity - Adjust the Intensity of the Puckering. Density - Adjust the Density of the Puckering. Width - Adjust the width of the Puckering. Texture - Change the Normal Map image applied to the Puckering. Face - Choose on which side the Puckering will appear on the 3D Garment. - Front: the Puckering will show on the front side of the fabric. - Back: the Puckering will show on the back side of the fabric. - Both: the Puckering will show on both sides of the fabric.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=hi7KV43RxvY",
+            "https://www.youtube.com/watch?v=tLawJB1tzNU",
+            "https://www.youtube.com/watch?v=uAF0VfrhT3Y",
+            "https://www.youtube.com/watch?v=xvdw3Rb2kqc",
+            "https://www.youtube.com/watch?v=1VxIHZVX7g0",
+            "https://www.youtube.com/watch?v=vIpx0JmmRYQ",
+            "https://www.youtube.com/watch?v=LV5Z92-b5Bc",
+            "https://www.youtube.com/watch?v=Y0L3qvhvA78"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 220
+    },
+    {
+        "ArticleId": "115013405508",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115013405508",
+        "Title": "Divide Internal Lines",
+        "Content": "List of Contents Divide Internal Point Divide Internal Line Objective Cut and separate Internal Lines or points from an Internal Shape or continuous Internal Line. Location Divide Internal Point Right-Click Pop-Up Menu (on Internal Point) Divide Internal Point Divide Internal Line Right-Click Pop-Up Menu (on Internal Line) Divide Internal Line Operation Divide Internal Point Select the Edit Pattern tool from the 2D toolbar. Follow the indicated guideline below: Right-Click Pop-Up Menu (on Internal Point) Internal Point The Internal Line is divided at the selected point. The divided point is now indicated as a point with no fill. Divide Internal Line Select the Edit Pattern tool from the 2D toolbar. Follow the indicated guideline below: Right-Click Pop-Up Menu (on Internal Line) Divide Internal Line The Internal Line is divided from its original Internal Shape. Both ends of the Internal Line are indicated with points with no fill.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000617868,
+        "Section": "2D Pattern Edit",
+        "Tokens": 179
+    },
+    {
+        "ArticleId": "115012227427",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012227427",
+        "Title": "Zoom Extents All",
+        "Content": "List of Contents Zoom Extents All Result of Zoom Extents All Zoom Extents All - See all Patterns in the 3D window without changing the view in the 3D window. - Right-click on the 3D window and select Zoom Extents All. Result of Zoom Extents All - Right-click on the 3D window and select Zoom Extents All. - The 3D window will scale automatically to show all Patterns.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=itMSQhNGJmU",
+            "https://www.youtube.com/watch?v=zKdrezg9PE4"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 90
+    },
+    {
+        "ArticleId": "115012224647",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012224647",
+        "Title": "Mirror Paste",
+        "Content": "List of Contents Mirror Paste Mirror Paste with Specific Values Mirror Paste - Mirror Paste copied Patterns and Internal Shapes. Mirror Paste a Pattern - Navigate to the 2D toolbar and select the Transform Pattern tool or the Edit Pattern tool. - Right-click on the Pattern to be duplicated and select Copy. - The selected Pattern will be duplicated. - Right-click on the 2D window and select Mirror Paste from the pop-up menu. - The duplicated Pattern will follow along the mouse cursor. - Click on the 2D window to Mirror Paste the Pattern. - The identical Pattern will be created in the 2D window. Mirror Paste an Internal Shape - Navigate to the 2D toolbar and select the Transform Pattern or the Edit Pattern tool. - Right-click on the Internal Shape to be duplicated and select Copy. - The selected Internal Shape will be duplicated. - Right-click on the 2D window and select Mirror Paste from the pop-up menu. - The duplicated Internal Shape will follow along the mouse cursor. - Click within the Pattern to Mirror Paste the Internal Shape. - The identical Internal Shape will be created in the 2D window. Mirror Paste with Specific Values Mirror Paste a Pattern - Navigate to the 2D toolbar and select the Transform Pattern tool or the Edit Pattern tool. - Right-click on the Pattern to be duplicated and select Copy. - The selected Pattern will be duplicated. - Right click on the 2D window and select Mirror Paste from the pop-up menu. - The duplicated Pattern will follow along the mouse cursor. - Right-click on the 2D window to access the Paste pop-up window. - Enter the desired values to Internal and Number of Shapes. Then, click OK. - The Pattern will be mirror pasted based on the settings. Mirror Paste an Internal Shape - Navigate to the 2D toolbar and select the Transform Pattern tool or the Edit Pattern tool. - Right-click on the Internal Shape to be duplicated and select Copy. - The selected Internal Shape will be duplicated. - Right-click on the 2D window and select Mirror Paste from the pop-up menu. - The duplicated Internal Shape will follow along the mouse cursor. - Right-click on the 2D window to access the Paste pop-up window. - Enter the desired values to Interval, Number of Shapes, and Position. Then, click OK. - The Internal Shape will be mirror pasted based on the settings.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=GSNKnrf-zyg",
+            "https://www.youtube.com/watch?v=9n_hHeRgyD0",
+            "https://www.youtube.com/watch?v=VLK--MQ92z0",
+            "https://www.youtube.com/watch?v=vW2MiCU21aE"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 486
+    },
+    {
+        "ArticleId": "115012227147",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012227147",
+        "Title": "Show All Piping",
+        "Content": "Show All Piping - Show all Pipings in the 3D window. - Right-click on the 3D window and select Show All Piping from the pop-up menu. - All Pipings in the 3D window will appear.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=kP1sFAbPm28"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 50
+    },
+    {
+        "ArticleId": "115012381208",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012381208",
+        "Title": "Reset 3D Arrangement (Selected)",
+        "Content": "Reset 3D Arrangement (Selected) - Re-arrange 3D Patterns prior to the Simulation. - Use Reset 3D Arrangement (Selected) when Garments are not properly draped after arranging them in the 3D window. - Right-click on the Pattern to be re-arranged and select Reset 3D Arrangement (Selected). - The selected Pattern will be re-arranged in the 3D window prior to the Simulation.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=Hxe0BwEXzQo"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 95
+    },
+    {
+        "ArticleId": "115012381148",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012381148",
+        "Title": "Reset 2D Arrangement (Selected)",
+        "Content": "Reset 2D Arrangement (Selected) - Re-arrange 3D Patterns according to the Pattern arrangement in the 2D window. - Right-click on the Pattern to be re-arranged and select Reset 2D Arrangement (Selected) from the pop-up menu. - Selected Patterns will be re-arranged in the 3D window reflecting the Pattern arrangement in the 2D window.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=T4PCSgMtL98"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 85
+    },
+    {
+        "ArticleId": "115012379688",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012379688",
+        "Title": "Reverse Arrange - Vertically",
+        "Content": "Reverse Arrange - Vertically - Reverse the Patterns vertically maintaining the curvature of the Patterns created when arranging them using the Arrangement Points. - Choose the Select/Move tool from the 3D toolbar and navigate to the 3D window. - Right-click on the 3D Garment and select Reverse Arrange Vertically. - The selected Pattern will flip vertically maintaining the curvature created when arranged via Arrangement Points.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=F743wtOp1Ac"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 83
+    },
+    {
+        "ArticleId": "115012225847",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012225847",
+        "Title": "Flip Normal",
+        "Content": "Flip Normal - Easily flip the Pattern inside-out. - Choose the Select/Move tool from 3D toolbar and navigate to the 3D window. - Right-click on the 3D Garment and select Flip Normal. - The selected Pattern will flip inside-out, face side will flip to the backside and vice-versa. - When Fold Angles are assigned to the flipped Pattern, Fold Angles will be reversed.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=AXAxw-7CpbM"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 87
+    },
+    {
+        "ArticleId": "115012379648",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012379648",
+        "Title": "Flip Horizontally (3D)",
+        "Content": "Flip Horizontally - Flip the selected Pattern horizontally. - Choose the Select/Move tool from the 3D toolbar and navigate to the 3D window. - Right-click on the 3D Garment and select Flip Horizontally. - The selected Pattern will flip horizontally, maintaining its drape",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=Cx7f8Ri-hQs"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 60
+    },
+    {
+        "ArticleId": "115012225827",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012225827",
+        "Title": "Pin – Delete All Pins",
+        "Content": "Pin - Delete All Pins - Delete all pins on the 3D Garment. - Choose the Select/Move tool from the 3D toolbar and navigate to the 3D window. - Right-click on the 3D Garment and Select pin Delete All Pins. - All pins created on the 3D Garment will be deleted.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=WwHlVqLVnBY"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 71
+    }
+]

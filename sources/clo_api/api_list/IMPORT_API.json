@@ -1,0 +1,250 @@
+[
+    {
+        "ArticleId": "GWpHNGcgzHcYerkoZouzN6",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportFile API",
+        "Content": "@fn ImportFile(filePath : str) -> bool @brief Load File (zprj, zpac, avt, obj, fbx, zcmr). This function will show up the dialog per the file type. @param filePath: the input file path to load @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "JX4pyvBF2aM7RTWUtBVnWb",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportFileW API",
+        "Content": "@fn ImportFileW(filePath : str) -> bool @brief Load File (zprj, zpac, avt, obj, fbx, zcmr). This function will show up the dialog per the file type. @param filePath: the input file path to load @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "R8jKR5tmNhDdCjw4NjqN75",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportZprj API",
+        "Content": "@fn ImportZprj(filePath : str, loadOption : ImportZPRJOption) -> bool @brief Load zprj File without the dialog but the loadOption @param filePath: the input file path to load @param loadOption: the options to load the file @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "752JVJYwdy5QPMAdZDtE6v",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportZprjW API",
+        "Content": "@fn ImportZprjW(filePath : str, loadOption : ImportZPRJOption) -> bool @brief Load zprj File without the dialog but the loadOption @param filePath: the input file path to load @param loadOption: the options to load the file @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "RQYdertwyszLkD2Ag7hDNN",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportGarmentInformation API",
+        "Content": "@fn ImportGarmentInformation(filePath : str) -> bool @brief Load Garment Information (json) @param filePath: the input file to load the garment information (.json) @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "PwnGCtWAG5GHr8zMUGY556",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportGarmentInformationW API",
+        "Content": "@fn ImportGarmentInformationW(filePath : str) -> bool @brief Load Garment Information (json) @param filePath: the input file to load the garment information (.json) @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "4hH5xzLXJjf7CsWWQnPmy3",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportGarmentInformationConfigData API",
+        "Content": "@fn ImportGarmentInformationConfigData(filePath : str) -> bool @brief Load Garment Information Configuration (json) @param filePath: the input file to load the garment information configuration data(.json) @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "c5THgrsSjwTWUaPVePy2AT",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportGarmentInformationConfigDataW API",
+        "Content": "@fn ImportGarmentInformationConfigDataW(filePath : str) -> bool @brief Load Garment Information Configuration (json) @param filePath: the input file to load the garment information configuration data(.json) @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "TzTqza6evLnJwALCBt8wPs",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportOBJ API",
+        "Content": "@fn ImportOBJ(_filePath : str, _options : ImportExportOption) -> bool @brief Import OBJ file @param _filePath: input file path @param options: If \"options\" is given, it imports OBJ according to options, not allowing user for selecting options in Import Dialog. @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "LL9fmGwdpiUhyu92RcSNB8",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportOBJW API",
+        "Content": "@fn ImportOBJW(_filePath : str, _options : ImportExportOption) -> bool @brief Import OBJ file @param _filePath: input file path @param options: If \"options\" is given, it imports OBJ according to options, not allowing user for selecting options in Import Dialog. @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "dKSJe2jnfGBhzDZXU2YSpC",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportVMP API",
+        "Content": "@fn ImportVMP(_filePath : str) -> bool @brief Import VMP file @param _filePath: input file path @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "ezEFuVhqMbKQZzNQdo6Qso",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportVMPW API",
+        "Content": "@fn ImportVMP(const wstring& _filePath) @brief Import VMP file @param _filePath: input file path @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "aL6aZM7CzwXaTCcjsvRWEX",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportCPT API",
+        "Content": "@fn ImportCPT(_filePath : str) -> bool @brief Import CPT file @param _filePath: input file path @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "eEqZnwJuMkPehFKU4kNnmB",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportCPTW API",
+        "Content": "@fn ImportCPT(const wstring& _filePath) @brief Import CPT file @param _filePath: input file path @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "MoP3t3ZJSiYZr3vSAeGFLV",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportVLP API",
+        "Content": "@fn ImportVLP(_filePath : str) -> bool @brief Import VLP file @param _filePath: input file path @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "ZiUtoCbE9RCxCypCxjnsCY",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportVLPW API",
+        "Content": "@fn ImportVLP(const wstring& _filePath) @brief Import VLP file @param _filePath: input file path @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "dZVQXZNjT7F2BqgF9vAnvU",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportVRP API",
+        "Content": "@fn ImportVRP(_filePath : str) -> bool @brief Import VRP file @param _filePath: input file path @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "RpZiyi7iVQjzyigUZiZCqs",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportVRPW API",
+        "Content": "@fn ImportVRP(const wstring& _filePath) @brief Import VRP file @param _filePath: input file path @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "i4gWPfPqMX6QZoV6Ewoeiq",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportDXF API",
+        "Content": "@fn ImportDXF(_filePath : str, loadOption : ImportDxfOption) -> bool @brief Import DXF file @param _filePath: input file path @param loadOption: the options to load the file @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "o3c3kdW9cQWN6TR9EXnG4K",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportDXFW API",
+        "Content": "@fn ImportDXF(const wstring& _filePath, const Marvelous::ImportDxfOption& loadOption) @brief Import DXF file @param _filePath: input file path @param loadOption: the options to load the file @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "7Mj2iFcnbnudgaMNFQwsUP",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportGraphicStyleFromImage API",
+        "Content": "@fn ImportImageAsGraphicStyle(const string& _filePath) @brief Import DXF file @param _filePath: input file path @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "5YF5crggBxZ5PkhCzEesAT",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportAVAC API",
+        "Content": "@fn ImportAvatar(const wstring& _filePath, const Marvelous::ImportExportOption& _importOption) @brief Import avac avatar file @param _filePath: input avatar file path @param _apfFilePath: input apf File path @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "j4RyrBYojVgf6JRrLEZrwa",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportFBX API",
+        "Content": "@fn ImportFBX(_filePath : str, _options : ImportExportOption) -> bool @brief Import FBX file @param _filePath: input file path @param options: If \"options\" is given, it imports FBX according to options, not allowing user for selecting options in Import Dialog. @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "B5YfYXUtR79VPe5qGgdMF6",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportFBXW API",
+        "Content": "@fn ImportFBXW(_filePath : str, _options : ImportExportOption) -> bool @brief Import FBX file @param _filePath: input file path @param options: If \"options\" is given, it imports FBX according to options, not allowing user for selecting options in Import Dialog. @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "Mw3HCMNKbyJihU2bDLzeZc",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportGLTF API",
+        "Content": "@fn ImportGLTF(_filePath : str, _options : ImportExportOption) -> bool @brief Import GLTF file @param _filePath: input file path @param options: If \"options\" is given, it imports GLTF according to options, not allowing user for selecting options in Import Dialog. @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "nuevCSwi8QNS2XkqypAC2A",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportGLTFW API",
+        "Content": "@fn ImportGLTFW(_filePath : str, _options : ImportExportOption) -> bool @brief Import GLTF file @param _filePath: input file path @param options: If \"options\" is given, it imports GLTF according to options, not allowing user for selecting options in Import Dialog. @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "ErPfJHzybEFkmBwXAiXc8j",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportSMP API",
+        "Content": "@fn ImportSMP(_filePath : str) -> bool @brief Import SMP file @param _filePath: input file path @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "FDcXKrPoompFQpiTXwPn8q",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportSMPW API",
+        "Content": "@fn ImportSMPW(_filePath : str) -> bool @brief Import SMP file @param _filePath: input file path @return if it succeeds, return true.",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "XjpRdeStddc6V6UsKJJC3B",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportAsGraphic API",
+        "Content": "@fn ImportAsGraphic(_filePath : str) -> None @brief Import an image file as Graphic. @param _filePath: input file path",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "ZT6pH68SkLw6QvLtWx5ERQ",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportAsGraphicW API",
+        "Content": "@fn ImportAsGraphicW(_filePath : str) -> None @brief Import an image file as Graphic. @param _filePath: input file path",
+        "Labels": [],
+        "YoutubeLinks": []
+    },
+    {
+        "ArticleId": "KGKGWHTbz3BjDGn5SbKVtV",
+        "Source": "https://developer.clo3d.com/list.html",
+        "Title": "ImportTrim API",
+        "Content": "@fn ImportTrim(_filePath : str, _bTranslateToOrigin : bool) -> None @brief Import a trim @param _filePath : input file path @param _bTranslateToOrigin : option to translate the position of the imported trim true: move trim to the pos(0,0) false: move trim to original pos",
+        "Labels": [],
+        "YoutubeLinks": []
+    }
+]

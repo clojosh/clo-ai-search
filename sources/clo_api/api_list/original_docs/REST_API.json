@@ -1,0 +1,38 @@
+{
+    "CallRESTGet": {
+        "Args": "url : str, headerNameAndValueList : list[std::pair[str, str]], progressBarText : str",
+        "ReturnType": "str",
+        "Doc": "\t@fn CallRESTGet(const string& url, const vector<pair<string, string>>& headerNameAndValueList, const string& progressBarText)\n\t@brief HTTP GET Method\n\t@param url : e.g. https://api.clo3d.com/customers?version=2.5.9999.299999&userid=clo\n\t@param headerNameAndValueList : pair list of input HTTP request header parameters\n\t@param progressBarText : text for the progress bar\n\t@return string = HTTP Response header + \"\\r\\n\\r\\n\" + HTTP Response body\t\t\n"
+    },
+    "CallRESTPost": {
+        "Args": "url : str, postField : str, headerNameAndValueList : list[std::pair[str, str]], progressBarText : str",
+        "ReturnType": "str",
+        "Doc": "\t@fn CallRESTPost(const string& url, string *postField, const vector<pair<string, string>>& headerNameAndValueList, const string& progressBarText)\n\t@brief HTTP POST Method\n\t@param url : the full URL for REST API call\n\t@param postField HTTP Post Body parameter\te.g. \"{\"parameter1\":20,\"parameter2\":100,\"date\":\"2017-12-13T00:00:00\"}\"\n\t@param headerNameAndValueList : pair list of input HTTP request header parameters\n\t@param progressBarText : text for the progress bar\n\t@return string = HTTP Response header + \"\\r\\n\\r\\n\" + HTTP Response body\n"
+    },
+    "CallRESTPost2": {
+        "Args": "url : str, postField : char, sizeInByte : int, headerNameAndValueList : list[std::pair[str, str]], progressBarText : str",
+        "ReturnType": "str",
+        "Doc": "\t@fn CallRESTPost2(const string& url, unsigned char *postField, unsigned int& sizeInByte, const vector<pair<string, string>>& headerNameAndValueList, const string& progressBarText)\n\t@brief HTTP POST Method 2\n\t@param url : the full URL for REST API call\n\t@param postField HTTP Post Body parameter\n\t@param sizeInByte The size of postField in bytes\n\t@param headerNameAndValueList : pair list of input HTTP request header parameters\n\t@param progressBarText : text for the progress bar\n\t@return string = HTTP Response header + \"\\r\\n\\r\\n\" + HTTP Response body\n"
+    },
+    "CallRESTPostWithMultipartFormData": {
+        "Args": "url : str, filePath : str, headerNameAndValueList : list[std::pair[str, str]], progressBarText : str",
+        "ReturnType": "str",
+        "Doc": "\t@fn CallRESTPostWithMultipartFormData(const string& url, const string& filePath, const vector<pair<string, string>>& headerNameAndValueList, const string& progressBarText)\n\t@brief HTTP POST with multipart/form-data Method\n\t@param url : the full URL for REST API call\n\t@param filePath : path of file to send via REST API\n\t@param headerNameAndValueList : pair list of input HTTP request header parameters\n\t@param progressBarText : text for the progress bar\n\t@return string = HTTP Response header + \"\\r\\n\\r\\n\" + HTTP Response body\n",
+        "Overloading": "{ url : str, filePathList : list[str], headerNameAndValueList : list[std::pair[str, str]], progressBarText : str } "
+    },
+    "CallbackRestRequest": {
+        "Args": "restRequest : CloApiRestRequest, callbackFunc : std::function[None (CloApiRestResponse)]",
+        "ReturnType": "None",
+        "Doc": "\t@fn CallbackRestRequest(const Marvelous::CloApiRestRequest& restReq, const std::function<void (Marvelous::CloApiRestResponse)>& callbackFunc)\n\t@brief It makes an Http request with a CloApiRestRequest structure and then triggers a callbackFunc when the server responds\n\t@param restRequest : It is the request with header, body, url and attachements\n\t@param callbackFunc : When the server responds, a callback function is called with CloApiRestResponse.\n"
+    },
+    "CallbackRestMultiRequest": {
+        "Args": "restRequests : list[CloApiRestRequest], callbackFunc : std::function[None (CloApiRestResponse)], callbackFinished : std::function[None()]",
+        "ReturnType": "None",
+        "Doc": "\t@fn CallbackRestMultiRequest(const std::vector<Marvelous::CloApiRestRequest>& restRequests, const std::function<void (Marvelous::CloApiRestResponse)>& callbackFunc, const std::function<void()>& callbackFinished)\n\t@brief It uses the CloApiRestRequest structure to make multiple Http requests and then trigger each callbackFunc when each server responds. The callbackFinished is trrigered after all requests have been responded to.\n\t@param restRequests : Request list with header, body, url and attachements\n\t@param callbackFunc : When the server responds, a callback function is called with CloApiRestResponse.\n\t@param callbackFinished : The callbackFinished function is called last after all requests have been responded to.\n"
+    },
+    "CallRESTPut": {
+        "Args": "restReq : CloApiRestRequest, progressBarText : str",
+        "ReturnType": "str",
+        "Doc": "\t@fn CallRESTPut(const Marvelous::CloApiRestRequest& restReq, const std::string& progressBarText)\n\t@brief HTTP PUT Method \n\t@param restRequests : Request list with header, body, url and attachements\n\t@param progressBarText : text for the progress bar\n\t@return string = HTTP Response header + \"\\r\\n\\r\\n\" + HTTP Response body\n"
+    }
+}

@@ -1,0 +1,603 @@
+[
+    {
+        "post_id": 360045356833,
+        "post_title": "Tooltips",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360045356833",
+        "post_details": "So far I am enjoying CLO3D very much, still learning but seeing a clear path. In any case, my first request, being as I am a learner, is that the tooltip dialogs are made a little bigger, or with a choice of font size, or no help for those that don't need it. As it is now, I can't read them, so I have to take my choice of leaving the workspace (which defeats the purpose of an online help) and try to guess right on clicking for manual or video (can't read that either, which would suggest that an icon would serve me better at that size). In my opinion, this little change would make a huge difference in terms of usability, and in helping me get familiar with the tools and therefore speeding the learning process. Thanks!",
+        "updated_at": "2023-07-07T21:22:05Z",
+        "comments": []
+    },
+    {
+        "post_id": 360045074314,
+        "post_title": "Import Pattern AI Problem",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360045074314",
+        "post_details": "Hello, I tried importing a pattern I made in Adobe Illustrator. All the parts import except one of them, it says the points are too close but when I try to spread the patterns in Illustrator it keeps saying the same thing. Why does that one part not import?",
+        "updated_at": "2022-08-15T20:44:31Z",
+        "comments": [
+            {
+                "author_id": 8065393289241,
+                "comment_id": 9479122847257,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360045074314",
+                "comment_body": "The same thing is happening to me. Did anyone answer your question?"
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 9525947741081,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360045074314",
+                "comment_body": "Hi 8065393289241. Usually this means that you may have two or more Segments Points overlapping in Illustrator. You will need to fine these overlapping points and remove them. Or if there are too close together you can also remove those and use Bezier Handles to create the curve instead. The less Segment Points you have in Illustrator the better CLO will be able to import the file."
+            }
+        ]
+    },
+    {
+        "post_id": 360045237013,
+        "post_title": "Where is the student discount page?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360045237013",
+        "post_details": "Hey, I read in the FAQ section that student discount is on the check out page, but I'm not able to reach that page, please help. Thanks.",
+        "updated_at": "2022-04-16T01:35:57Z",
+        "comments": [
+            {
+                "author_id": 902302122223,
+                "comment_id": 900002805503,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360045237013",
+                "comment_body": "i am not able to find the student discount I am not able to reach out to page please help me with the same"
+            },
+            {
+                "author_id": 5793961025561,
+                "comment_id": 5794444450713,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360045237013",
+                "comment_body": "I am facing the same problem. Did either of you find a resolution?"
+            }
+        ]
+    },
+    {
+        "post_id": 360044855834,
+        "post_title": "클로 동시선택 오작동",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360044855834",
+        "post_details": "클로 내에서 동시선택을 하기 위해 shift를 눌렀으나 작동이 먹히지 않습니다.",
+        "updated_at": "2023-07-07T21:22:05Z",
+        "comments": []
+    },
+    {
+        "post_id": 360044482553,
+        "post_title": "Export to Blender with Animation and Texture ?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+        "post_details": "Is anyone able to explain if there is a way to export an animated garment (plus avatar) from CLO into Blender 2.81 in such a way that both the animation and the textures are preserved? When I export to an FBX file, the textures import into Blender correctly but the animation is lost. If I export to Alembic Ogawa format the animation imports to Blender correctly, however all of the texture information is lost. I have tried importing both formats into Blender and then either copying the animation or the texture from one mesh to the other but that doesn't seem to work either. If I try to copy the Motion Sequence from the Alembic version onto the FBX version nothing happens and if I try to add the materials from the FBX version to the animated Alembic mesh the textures don't align properly.",
+        "updated_at": "2022-11-21T10:09:13Z",
+        "comments": [
+            {
+                "author_id": 411679981753,
+                "comment_id": 360011432694,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "Many thanks for the help. However it still doesn.t seem to work. I have exported the garment as a point cache 2 and I get a .pc2 file plus a zipfile that contains an obj an mtl and the textures. I can import the obj file fine and all the textures are import too, but when I try and add the Mesh Cache modifier I get a Vertex Count Mismatch error. I've tried various different settings for the export (eg single/multiple objects welded/unwelded) but it doesn't seem to make a difference. I also have Keep Vertex Order set. The avatar doesn't seem to save at all by the way, but that's not such as issue as there are other ways to get that into Blender but the garment is a real problem. Best Regards, Dino"
+            },
+            {
+                "author_id": 411679981753,
+                "comment_id": 360011433274,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "Thanks Adam, I have Keep Vert Order set though and I'm still getting the same thing. Best Regards, Dino"
+            },
+            {
+                "author_id": 411679981753,
+                "comment_id": 360011433294,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": ""
+            },
+            {
+                "author_id": 411679981753,
+                "comment_id": 360011663253,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": ""
+            },
+            {
+                "author_id": 365514437707,
+                "comment_id": 360011665213,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "OK, vid coming up. Prob tomorrow."
+            },
+            {
+                "author_id": 365514437707,
+                "comment_id": 360011435754,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "Just spotted you've got MDD format in the modifier panel. You need to pick PC2. I just tried it on mine and it's still all working as it should so I don't think updates have broken anything since I last did it. Adam"
+            },
+            {
+                "author_id": 365514437707,
+                "comment_id": 360011425414,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "Yes, point cache 2 for garments works very well. I'll make a tutorial because this come up a bit, but basically you need to import the obj into Blender (point cache saves an obj along with the point cache), making sure you keep vertex order when you import, then apply a mesh cache modifier to the obj. I haven't tried exporting avatars as well in this way, but I'll give it a go. Adam"
+            },
+            {
+                "author_id": 365514437707,
+                "comment_id": 360011433174,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "Hi Dino, give me a shout if that doesn't work. I'll do a little video later anyway. Adam"
+            },
+            {
+                "author_id": 365514437707,
+                "comment_id": 360011663013,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": ""
+            },
+            {
+                "author_id": 411679981753,
+                "comment_id": 360011675113,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "Hi Adam. When I select PC2 in the modifier panel it all works. That's perfect. Many Thanks for your help. P.S. I need to do a similar thing to get the rigged avatar and garment into Unreal Engine 4 for real time simulation, however I will raise that as a separate thread."
+            },
+            {
+                "author_id": 408374725013,
+                "comment_id": 360011444314,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "Hello again, everyone, Thank you very much for your time. I've done what you said. I've got it to care properly but when I give the PLAY doesn't work the animation. Seeing the screen of 411679981753 I have managed to add the PC2 in Add Modifier/Mesh Cache, but the animation still doesn't work. When exporting in CLO in Point Cache 2, a file called .mtl is also generated, something has to be done with it? What am I doing wrong? Could you help me, please?"
+            },
+            {
+                "author_id": 365514437707,
+                "comment_id": 360011446554,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "Hello Knitstudium :) (do you have a name?) I've just made a rough video that should help which is uploading now. I'll make a more comprehensive one with narration etc explaining the whole process. Adam"
+            },
+            {
+                "author_id": 408374725013,
+                "comment_id": 360011678353,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "365514437707 Hello Adam, I'm sorry I didn't sign the messages, my name is Victor, I live in the north of Spain, and the \"knitstudium\" is because I have a blog about knitting machines and fashion in Spanish at knitstudium.com I'm a pattern maker and a dressmaker... and I want to enter the world of digital fashion display. I'm learning CLO, but Blender will give me the possibility to make more creative renders and images. WOW What a great video! Thanks a lot! It's so cool! As soon as I can, I'm going to put it into practice! Fantastic!!! Victor"
+            },
+            {
+                "author_id": 408374725013,
+                "comment_id": 360011447554,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "Hello Adam, Of course, it'll be great if you make some more videos. By the way, when you have time, could you please tell me: Is it possible to bring the CLO avatar along with everything else? I also have a mac, a Macbook Pro 2015, the mac is super slow when I make animations and renders, lowering the simulation to 5 is almost impossible to work with. What model of mac do you use? I was thinking of switching to a Windows PC with an NVIDIA card... It's possible that my mac is a little out of speed! I've seen your instagram and the virtual clothes it makes are great. I hope I can get to that level soon. I live in the Basque Country in a city called Bilbao, we are almost opposite. Greetings! Victor"
+            },
+            {
+                "author_id": 365514437707,
+                "comment_id": 360011678753,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "Hello Victor! I like the north of Spain, I think it has a similar feel to Cornwall where I am based. I'm going to try and make some more Clo/Blender videos as they both go really well together and I find the rendering in Blender is more versatile and faster (although Clo is both easy to set up and the quality can be great). Nice website by the way :) Adam"
+            },
+            {
+                "author_id": 365514437707,
+                "comment_id": 360011444174,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "Ottoline had a great technical explanation here https://support.clo3d.com/hc/en-us/community/posts/360044259713/comments/360011672893 about the stitching which I don't think can be bettered but I will definitely do a basic animation export to Blender video. Dino, I'm pleased it worked for you :) I'm not really an expert in Unreal Engine but I guess I should look at it in more depth as the new tech demo for the UE5 demo looked fantastic. Although the scarf flapping in the wind looked a bit feeble compared to Clo and the like, it looks like it may have some basic fabric simulation too, which could add some life to a pre-creased etc garment. Should be interesting to get some more details. Adam"
+            },
+            {
+                "author_id": 411679981753,
+                "comment_id": 360011448494,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "Hi Adam, Yes, I agree UE5 looks great, but just having a scarf waving in the wind is a bit weak. That's really what I'm looking into in my research at the London College of Fashion actually. How to make digital clothing animation and rendering more realistic and more usable within a fashion context rather than just games. If you are able to help with the Blender side then if I can get the Blender model in the right format hopefully it will work when importing into UE4. In order to be able to import the clothed avatar into UE4 the avatar garment combination needs to be modelled as a single skeletal mesh with the clothing contained within the rigged mesh but in a separate material slot. That's the bit I'm struggling with in Blender. Using the PC2 method you've described creates two separate animations, the Avatar which is fully rigged and on its own imports correctly into UE4 and the garment which is a sequence of point clouds I presume. I've tried importing the garment as an OBJ and then attaching it to the Armature of the avatar using Automatic Weights and it seems to then animate in Blender but it's not actually part of the same mesh as the avatar, which I think is where the problem is. I tried parenting the garment mesh to the avatar mesh but this didn't seem to work either. If you are able to help in this area then that would really help. Best Regards, Dino"
+            },
+            {
+                "author_id": 408374725013,
+                "comment_id": 360011454114,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "365514437707 Hi, Adam, I have made a quick garment and exported it as you have shown in the video and it seems to work perfectly. I can't believe it, I'm so happy after putting so much effort into it. Thank you very much again for your help! Greetings! Victor"
+            },
+            {
+                "author_id": 365514437707,
+                "comment_id": 360011472914,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "Hi Victor, That's great! I'm going to look at avatar export this week (I usually have just the clothes moving around in Blender) so I'll see how it goes and post some results when I have them. I have the same Mac as you and it is definitely slow with simulations and rendering without a decent GPU. But it's my work computer and I didn't have to pay for it so I'm not complaining too much. I like the way a Mac does things. I used a PC for 10 years in my last couple of jobs doing archviz and coming home to my old Mac felt like putting my slippers on after a long day. However, I don't use Clo to make my money (I am a technician at a university so it is something I am using to teach to students) but if I was, I would 100% buy a PC with an Nvidia graphics card. Using a slower computer does make you think about trying to be efficient (don't jump straight in shrinking the particle distance etc) but I do wish Apple thought about working in 3D a bit more. Adam"
+            },
+            {
+                "author_id": 365514437707,
+                "comment_id": 360011473134,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "Hi Dino, Well, it's not really my area of expertise (Unreal that is) but I'm wondering if there's some way you could bake an animated displacement map onto the avatar? Or something like corrective shapes based on bone angles. I don't even know whether that's possible, so a bit of a guess that one. It might be worth doing some experiments. I will post any progress here if I get some good results. It will be cool to see if you get anything working as well or even post stuff that you've tried but doesn't work. I think if you needed the fabric to simulate based on forces from Unreal, you would need a separate mesh for the fabric to the avatar anyway so the fabric had something to be flattened against/restricted by. Not sure how to get those micro wrinkles and stuff moving but I did see a paper about AI fabric simulation which looked pretty good (I'll try and find it). Adam"
+            },
+            {
+                "author_id": 365514437707,
+                "comment_id": 360011473254,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "DeepWrinkles: Accurate and Realistic Clothing Modelingvision.in.tum.de bib laehner2018deepwrinkles I don't know if this will spark a few ideas."
+            },
+            {
+                "author_id": 408374725013,
+                "comment_id": 360011473834,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "365514437707 Hello again, Adam, I'm also happy to just export the garment to Blender, and your video is fantastic for it. In very specific cases I might also need to take the avatar to Blender and if you manage to find out, it would be great if you could share it around here. Thanks again for your interest. I've had a mac for 12 years now and I've been very happy with them, they've put up with a lot of hard work and have lasted me many years. Unfortunately, Apple should include NVIDIA on all their computers, I don't understand this oversight for 3D graphics on macs. What I do know for sure is that I will have to change my platform next time to Windows + NVIDIA RTX. Anyway, it's just a matter of adapting in a week... Greetings and see you soon here!"
+            },
+            {
+                "author_id": 411679981753,
+                "comment_id": 360011703353,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "Hi Adam, For the import into Unreal the garment and avatar have to be part of the same single rigged mesh with the garment on a separate material slot. I previously tried parenting the garment mesh to the avatar mesh but this didn't work. I'm going to try merging the two meshes CTRL J to see if that works, Although I don't know if I'll then need to re-rig the whole model. I'll let you know how it works out when I get a chance to try it out. Best Regards, Dino"
+            },
+            {
+                "author_id": 408374725013,
+                "comment_id": 360012064453,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "Hello everybody!!! I also created this thread about how to render a part of the animation in CLO but nobody answered me... Can anyone help me? Thank you! Victor https://support.clo3d.com/hc/en-us/community/posts/360047222034-Make-Render-only-in-one-part-of-the-animation"
+            },
+            {
+                "author_id": 408374725013,
+                "comment_id": 360012064433,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "365514437707 Hi, Adam, Sorry to bother you! I tried to export another new animation to Blender through Point Cache 2, and it worked very well but I have a doubt: I also want to do it \"without animating the avatar\", that is, only static image without movement, but when I do it with PC2, CLO tells me that there is no animation... So I deduce that PC2 only works when there is an animation to export, BUT if I only want static image to export... How should I export it to Blender with its corresponding seams and textures? If you can answer me, thanks in advance! Thank you. Victor. By the way, I switched to a Windows PC with an NVIDIA RTX graphics card and the change was huge... now CLO and Blender fly!"
+            },
+            {
+                "author_id": 408374725013,
+                "comment_id": 360011438314,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "365514437707 Hi, everybody, It would be great if you could do a tutorial on how to export correctly to Blender, especially for users with little knowledge! I have to try it out to see if I can get it. I'm interested in the animation, but also the seamlines, topstitches and buttonholes that they look right. Thank you very much!"
+            },
+            {
+                "author_id": 415702731094,
+                "comment_id": 360012288113,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "Hey everyone, Charlie here. I was hoping you could help with preserving puckering and stitch textures when exporting an animated garment through Point Cache 2? We are successfully exporting the animated garments (All be it out of sync with the avatar in blender - maybe a frame rate conversion error) but the stitch and puckering textures are nowhere to be found? Any help here would be great!! Thanks"
+            },
+            {
+                "author_id": 430108799513,
+                "comment_id": 1500000312022,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "Does anyone know how to bake that animation so that when i send it to get rendered the animation is still there? When i try upload it to sheepit the scene renders but not the animation that i imported"
+            },
+            {
+                "author_id": 415197733134,
+                "comment_id": 4406689729817,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "365514437707 Sorry for jumping after one year but I was trying to follow your tutorial and the instructions you gave here and for some reason when I am import the OBJ into Blender it's empty. Do you know why?"
+            },
+            {
+                "author_id": 365514437707,
+                "comment_id": 4406773751705,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "Hello! Sorry, it looks like I've missed a few replies. Roei, could you send me your problematic file (Wetransfer or something similar probably)and I can try and see where the problem is. Adam.allenfoord@falmouth.ac.uk Adam"
+            },
+            {
+                "author_id": 365514437707,
+                "comment_id": 4406781328537,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "Had a thought! Could be a scale thing making it invisible to camera in Blender, but I can check if you send the file :)"
+            },
+            {
+                "author_id": 415197733134,
+                "comment_id": 4406782157081,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "Thank you 365514437707 will send you an email right now:) thank you"
+            },
+            {
+                "author_id": 365514437707,
+                "comment_id": 360011678233,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "OK, here's the video. I've sped up/cutout all the tedious parts https://youtu.be/HYDKQCRUWwg Give me a shout if it doesn't make sense. Adam"
+            },
+            {
+                "author_id": 903704485646,
+                "comment_id": 4414501025689,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "415197733134 The same thing happened to me. 365514437707 and ideas for us? Thanks so much! You're video is super helpful, but for some reason my OBJ is blank when imported to Blender"
+            },
+            {
+                "author_id": 365514437707,
+                "comment_id": 4414917423129,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044482553",
+                "comment_body": "If I remember correctly in this particular case - this was a scale issue and it was sorted out by shrinking the obj. You could alternatively change the camera settings (clipping) you can see large objects but better off scaling the obj really, the scale can throw some materials out - things like sub-surface scattering etc. When I get this sort of problem its usually off by a factor of about 1000 so maybe a millimetre/metre import or export error. Send me an email if you want and I can take a look at the file."
+            }
+        ]
+    },
+    {
+        "post_id": 360044376873,
+        "post_title": "exporting  from clo to keyshot 9",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360044376873",
+        "post_details": "Hello Clo users I was trying to export clo files to Keyshot and getting error code 7, has anyone come across this and is there a solution ? I've chosen export alembic (ogava). is it a problem with format, settings or Keyshot ? thank you",
+        "updated_at": "2022-04-02T15:18:59Z",
+        "comments": [
+            {
+                "author_id": 366948060653,
+                "comment_id": 5389049193497,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044376873",
+                "comment_body": "The same to me. Does anyone can show me how to solve this issue?"
+            }
+        ]
+    },
+    {
+        "post_id": 360044287953,
+        "post_title": "how to export / print graded patterns ?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360044287953",
+        "post_details": "Hello, I imported an illustrator pattern in pdf / AI format ( I tried with less point I have ever same problem). Then I graded it, it worked, I would like to export the graded pattern, I can't ... I tested in dxf format, but I have lots of lines ... how do you do it? export, and that it can be used to print it !!! ??Thanks.",
+        "updated_at": "2022-08-12T01:19:07Z",
+        "comments": [
+            {
+                "author_id": 425383683413,
+                "comment_id": 360014763693,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044287953",
+                "comment_body": "hello- I was also looking for a response to this question- can anyone help? thanks"
+            },
+            {
+                "author_id": 400767726013,
+                "comment_id": 4409664810009,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044287953",
+                "comment_body": "Hello, everyone I did the same thing. However, after a bunch of tests, it seems that exporting each size one-by-one as a PDF file, then aligning them in Adobe Illustrator is the best option for now! If you know a better option, please do share, love it Patterns in Adobe Illustrator below:"
+            },
+            {
+                "author_id": 9013082133401,
+                "comment_id": 9412219050393,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044287953",
+                "comment_body": "Realizing this is a rather old thread. The only way I found to make the export of a graded (nested) pattern (with no seam allowances) actually work is to export as DXF-AAMA and open the file in Optitex. This is the only accurate method I have found that ensures your grading is accurate. Hope this helps!"
+            }
+        ]
+    },
+    {
+        "post_id": 360044287033,
+        "post_title": "Best settings for garments on hanger?",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360044287033",
+        "post_details": "Greetings, This jacket is draping fairly well in front but not naturally sagging at all on the back and flat as a pancake- I'd like to see more natural \"limpness\" overall. I'm using the Default Material and have tried Sim at both 10 and 5. The garment colored panels have been Cut and Sewn together and I removed the sewing tension hoping that would help but it didn't. I tried hanger at Skin Offset 1 and 3 with no change. Any advice on what would help is appreciated, thanks again",
+        "updated_at": "2023-05-02T04:35:22Z",
+        "comments": [
+            {
+                "author_id": 364104337428,
+                "comment_id": 360011632833,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044287033",
+                "comment_body": "It has everything to do with the particle distance and the fabric physical properties you are using. Find something suitable in the Fabric Presets by changing them and simulating. 5 mm should be best for a more realistic drape."
+            },
+            {
+                "author_id": 407007187934,
+                "comment_id": 360011634013,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044287033",
+                "comment_body": "Yes, I suspected the Material type would have some effect but was hoping for an answer that would be more helpful. I'll go thru the list and try a few."
+            },
+            {
+                "author_id": 407007187934,
+                "comment_id": 360011634553,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044287033",
+                "comment_body": "Silk Knit Jersey material did the trick- the back is still a little flat but I'm very impressed w/ Clo"
+            },
+            {
+                "author_id": 407007187934,
+                "comment_id": 360011411194,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044287033",
+                "comment_body": "Thanks so much for your detailed information which I will look over in more detail. I was having trouble getting the folded edging at the bottom hem due to the arced shape and wasn't able to merge the 2 edges together to create a soft fold. The panels on the front sagged OK w/ Silk Jersey Material, but the panels on the back remained flat w/ no sagging. I'm new to Clo and finding that obtaining information is limited and getting advice from experienced users like yourself helps immensely- thanks again!"
+            },
+            {
+                "author_id": 360253261888,
+                "comment_id": 360011642453,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044287033",
+                "comment_body": "You are doing well for a newby. The advice I would give is get a general level of comfort going with the drafting and assembly process, so it feels comfortable to knock out a basic single size pattern in under an hour. Then focus in on the many settings that improve the detailing of a pattern &gt their sewing angle, the edge thickness and radi, the stitching, elastication, pucker and gathering, then skiving and bonding, and finally strengthen and steam. These are all areas that you can tweak to give yourself more control. Basically all the elements of a pattern can be tweaked, when you understand what constraints to place onto the design element (pattern shape and edge or surface). As your comfort grows so does the level of customization you can add into a garment."
+            },
+            {
+                "author_id": 407007187934,
+                "comment_id": 360011647193,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044287033",
+                "comment_body": "Thanks again for your advice and pointers- I added the Interlock stitch that helped very much. Got a weird pinching when I added piping similar to yours. I'm experienced using Maya and have no apparel experience but I'm slowly figuring some things out. It's a combination of learning how a garment actually is sewn together and learning the various settings in Clo to achieve something realistic. I had a sewing error on the pouch and its looking better- I'll try your warp/weft settings.The Cotton Stretch seems to work OK but will try more-"
+            },
+            {
+                "author_id": 360253261888,
+                "comment_id": 360011652293,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044287033",
+                "comment_body": "Yes it's a different mind set to make patterns, but it opens up what you can do in the way of last minute edit changes, relative to real world fit for real products."
+            },
+            {
+                "author_id": 360253261888,
+                "comment_id": 360011639293,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044287033",
+                "comment_body": "You can probably place a little more stretch into the seam junctions, as cycle shirts tend to pucker a bit in the rear pocket. You can set the pocket warp / weft scale slightly high to create that effect. Below I set the pocket pattern piece to 103% warp/weft and that introduces more volume (surface area) into the garments assembly. Which can yield a lot more detail in that area. You might need to add in a little more of that edging and stitching quality that most cycle shirts have in them. For example a pocket has some elastic and upper edge banding sewn in, maybe even a reflective strip (piping) - so you should maybe show that in some manner. Don't miss out all that stitch and sewing, 'juicy' detailing, it's what makes the garment come alive for the eyes and mind. Note how you can feel the tension in this pocket when worn, that's because it's really in the simulation and the digital cloth is reacting as it should. The actual 'feeling' this evokes is substantially more nuanced than your build, and that means when I simulate it on a coat hanger or avatar it reacts in the correct manner in these areas. That is by design, and it is important stuff to add in,even if seemingly frivolous. I generally spend at least 30% of my garment build time of all the stitching and sewing of joints, pucker and radii into a joint. Many people don't place in any attention to this area - which often shows, as they don't factor that into a build. So make sure when you are learning CLO3D that you treat sewing and stitching and edge detailing with the importance it deserves. It's a BIG focus and it consumes the eyes attention at almost every level, as it is what makes a garment construction look believable. You don't need to get too fancy, but you do need to place the elements into the build. If you think missing them out is a short cut - that is true, but then you pay for that approach in the end visual, by it lacking important supporting elements that trick the eye and mind into making a CG item appear more realistic. Think of it like music. A high fidelity recording captures all the color of noise frequency across wider range and depth, whereas mpeg3 chops it all out and the sound quality (color range of sounds) suffers. Visual fidelity is exactly the same &gt if you chop out the build elements that the garment has in terms of 'basic' detail, you are reducing the visual fidelity the eyes and brain typically absorb with that product category. So make sure you put in sufficient detail and number of design elements such that when you render, it creates the illusion of having ticked all the construction boxes for feature elements that were actually in the real garment. Sometimes these are not just visual but also physical elements &gt like elastic (stress/strain). Get to know how these work within CLO3D as settings and you will master the skill of mimicking how garments simulate."
+            },
+            {
+                "author_id": 17392504693273,
+                "comment_id": 18098535758873,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044287033",
+                "comment_body": "360253261888 where did you acquire that sport mesh fabric? it looks wonderful"
+            }
+        ]
+    },
+    {
+        "post_id": 360044284013,
+        "post_title": "NORWEGIAN STRUCTURE",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360044284013",
+        "post_details": "HOW CAN I DESIGN KNIT STRUCTURE WITH PRINT? DO I NEED A SECOND PROGRAMM",
+        "updated_at": "2023-07-07T21:20:04Z",
+        "comments": []
+    },
+    {
+        "post_id": 360044278373,
+        "post_title": "Peacoat Material Thickness",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360044278373",
+        "post_details": "Hi, How do I achieve the look of a peacoat in terms of changing material thickness? I imported my own texture and I have tried to change material thickness/render collision thickness as well, but nothing change when I render? What is the typical thickness if creating a coat? Thanks!",
+        "updated_at": "2023-07-07T21:23:27Z",
+        "comments": [
+            {
+                "author_id": 408762500134,
+                "comment_id": 360011707833,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044278373",
+                "comment_body": "Thank you, Pablo!"
+            },
+            {
+                "author_id": 364104337428,
+                "comment_id": 360011394714,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044278373",
+                "comment_body": ""
+            }
+        ]
+    },
+    {
+        "post_id": 360044258333,
+        "post_title": "Garment fit maps",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360044258333",
+        "post_details": "Hello, I am currently new to clo3d and am looking to one day be able to print the patterns I create. I was just wondering if the garment fit map indications have an exception when it comes to the under arm and/or crotch area? Those are the areas I'm having the most trouble with and I am not sure anymore if it's due to fit problems or because the materials are much closer together. Thank you all in advance :)",
+        "updated_at": "2023-07-05T12:55:42Z",
+        "comments": [
+            {
+                "author_id": 408464537934,
+                "comment_id": 360011606893,
+                "official": true,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044258333",
+                "comment_body": "Hi 405183037753. Thank you for reaching out. Can you provide us with some screenshots of your issue and explain what problems you are having?"
+            }
+        ]
+    },
+    {
+        "post_id": 360044255493,
+        "post_title": "Hi, latest update version not updating, done 3- 4 times.",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360044255493",
+        "post_details": "",
+        "updated_at": "2023-07-07T21:22:06Z",
+        "comments": [
+            {
+                "author_id": 364104337428,
+                "comment_id": 360011376474,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360044255493",
+                "comment_body": "Surbhi, mine did update correctly. If it doesn't work, uninstall CLO and download the full latest version from the Downloads page."
+            }
+        ]
+    },
+    {
+        "post_id": 360043980654,
+        "post_title": "Missing Icons",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360043980654",
+        "post_details": "This Morning I just updated my CLO but unfortunately now the tools in the toolbar are missing. It looks that the tools are there but are not visible. Already tried reseting to the default layout but it isn't working.",
+        "updated_at": "2022-08-13T02:54:10Z",
+        "comments": [
+            {
+                "author_id": 385096228313,
+                "comment_id": 360011382214,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360043980654",
+                "comment_body": "Thank you for reporting, CLO team is under deep investigation around this problem. If possible, please let us know your mac model name (i.e., Macbook Pro 16-inch 2019) and macOS version (i.e., Catalina 10.15.4) as well."
+            },
+            {
+                "author_id": 411072512914,
+                "comment_id": 360011384214,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360043980654",
+                "comment_body": "Imac (21.5 inch, late 2015) macOS Mojave 10.14.6"
+            },
+            {
+                "author_id": 385096228313,
+                "comment_id": 360011618493,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360043980654",
+                "comment_body": "411072512914 Thanks for update. By the way, still facing that problem? Until CLO devs will find out the root cause and workaround, please try to uninstall CLO completely and then reinstall it."
+            },
+            {
+                "author_id": 411214822433,
+                "comment_id": 360011394294,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360043980654",
+                "comment_body": "I am coming across the same issue. I deleted it and re-installed it and now nothing is happening. I cannot even sign in, and I have to force quit it."
+            },
+            {
+                "author_id": 411072512914,
+                "comment_id": 360011395314,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360043980654",
+                "comment_body": "Today I opened CLO and it requested another update. After that, the icons appeared again :)"
+            },
+            {
+                "author_id": 385096228313,
+                "comment_id": 360011626733,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360043980654",
+                "comment_body": "411072512914 Technically speaking, files that display various icons in the CLO window and their link information are corrupted. The causes vary, but it is difficult to pinpoint the cause of the problem you are having. It may help to quit CLO completely, uninstall it, and then install it again with a new version, that is, rewriting the various files that make up CLO on your computer. Like almost any other software behave. 411214822433 If you're still facing those problems, please file a ticket with screenshots. https://www.clo3d.com/contact"
+            },
+            {
+                "author_id": 408464537934,
+                "comment_id": 9298392243865,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360043980654",
+                "comment_body": "Hi. We recommend updating to the most recent version of CLO 7.0. Or you will need to reach out to our tech support directly. HERE"
+            },
+            {
+                "author_id": 8988709329305,
+                "comment_id": 9065909202969,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360043980654",
+                "comment_body": "Hi, I have the same issue. I have been re-install but nothing happen. I use lenovo amd ryzen 5 4000 series /windows 11 pro. help please.."
+            }
+        ]
+    },
+    {
+        "post_id": 360043976394,
+        "post_title": "Rendered Animations",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360043976394",
+        "post_details": "HI everyone, The rendering of garments in CLO is very photorealistic. However, as soon as animation is run all those great renderings get lost. This unfortunately isn't great as many of the detailed features such as metallic surfaces of buttons or topstitching gets lost. What are the plans to include photorealistic rendered features in the animation section? Thank you",
+        "updated_at": "2023-07-07T21:22:06Z",
+        "comments": []
+    },
+    {
+        "post_id": 360044245933,
+        "post_title": "Twisted loop dress in Jersey ",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360044245933",
+        "post_details": "Hi Please help me!! I'm making a twisted loop dress in jersey however the twisted loop was separated when I simulated for finalized main before I put a lining. I follow all information about particle distance and collision thickness but it didn't work. I also made the main garment in cotton voile up to the picture attached because it didn't work in jersey at all even I couldn't even make a loop in jersey. Please let me know how to finish those style garments in jersey. Thanks",
+        "updated_at": "2023-11-07T02:29:12Z",
+        "comments": []
+    },
+    {
+        "post_id": 360043941614,
+        "post_title": "Mid-Heels Test on New V5.2 & Closet Rendering",
+        "post_url": "https://support.clo3d.com/hc/en-us/community/posts/360043941614",
+        "post_details": "Today I like to share my test on Mid-Heel shoes, I managed import this (see below) pair of mid heels and set the avatar a pose, I found the new V5.2 shoes accessories maker with a new option for select its heel or not, so it doesn't support mid-heel at the moment! So, after import the shoes I have to adjust avatar's feet to the correct position! Unfortunately in the catwalk animation V5.2 offer flat shoes or High Heels only. Hope future can support mid heel as well! I also found that the Closet rendering quite fast with nice quality, but it didn't support shoes colorways at the moment!",
+        "updated_at": "2023-07-07T21:23:28Z",
+        "comments": [
+            {
+                "author_id": 367588093633,
+                "comment_id": 360011372314,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360043941614",
+                "comment_body": "Thank you for sharing. They look great. You speak about \"the new V5.2 shoes accessories maker\". Where in the program can I find this?"
+            },
+            {
+                "author_id": 405612819253,
+                "comment_id": 360011372774,
+                "official": false,
+                "comment_url": "https://support.clo3d.com/hc/en-us/community/posts/360043941614",
+                "comment_body": "To create your own shoes \"ZACS\" file just Hit Ctrl + Alt + Shift + T on the keyboard within CLO, you will see the \"Accessories Maker\" pop up! You may also read this : https://support.clo3d.com/hc/en-us/community/posts/360020807233-How-to-Make-Shoes-Created-in-Other-3D-Modelling-Software-to-be-Compatible-with-CLO-Avatars Enjoy !"
+            }
+        ]
+    }
+]

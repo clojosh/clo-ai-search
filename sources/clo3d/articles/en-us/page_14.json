@@ -1,0 +1,398 @@
+[
+    {
+        "ArticleId": "115000306568",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000306568",
+        "Title": "Solidify ",
+        "Content": "Objective Maintain desired draping state per pattern unit. For instance, solidify creases on the back of the knee area of a pair of jeans to maintain its shape while simulating (ver2.5.0). Location 3D Garment Right-click Pop-up Menu Solidify Operation 3D Toolbar Select a 3D Pattern with Select/Move tool. Follow the indicated guideline below: 3D Garment Right-click Pop-up Menu Solidify The selected Pattern is now being solidified. Follow the indicated guideline and adjust the Strength: Click Pattern Property Editor Bond/Skive Solidify Strength The selected Pattern's 3D shape is now being solidified according to the Strength value. Note: The higher the Strength value, the better the sustenance.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628707,
+        "Section": "3D Details",
+        "Tokens": 154
+    },
+    {
+        "ArticleId": "29936192175129",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/29936192175129",
+        "Title": "How can I change or reset my password on CLO Web and the Software?",
+        "Content": "To change or reset your password, go to the Account page on CLO website. How to reset your password varies depending on the version of your software. Please select your option below: CLO version 2024.0 and above: Change CLO-SET password CLO version below 2024.0: Reset Software password Reset website password: Forgot my password CLO version 2024.0 and above Please click on the 'Change Password from CLO-SET' button on the Account page, and you will be redirected to the 'My Page' section of CLO-SET, where you can change your password. CLO version below 2024.0 Please click on the 'Reset password' button in the CLO License Password box on the Account page. * If you have CLO-SET account and are using a version of the software below 2024.0, your license password will not be synchronized with the password of your CLO-SET account. Forgot my password If you are already a member of CLO-SET, please follow the indicated guideline below: Please sign in with CLO-SET option. Then, click on the 'Forgot your password?' button. Enter an email address to receive a link to reset your password. Check your email and follow the directions indicated in the email. If you haven't integrated your account with CLO-SET yet, please follow the indicated guideline below: Navigate to the sign-in page on CLO website. Click on the \"Forgot your password?\" button. Enter an email address to receive a link to reset your password. Check your email and follow the directions indicated in the email. * If you are unable to access your email to reset your password, please reach out to CLO via Contact Us page.",
+        "YoutubeLinks": [],
+        "CategoryId": 24022165341209,
+        "Category": "FAQ",
+        "SectionId": 24022293527961,
+        "Section": "Account & Billing",
+        "Tokens": 361
+    },
+    {
+        "ArticleId": "25444923187097",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/25444923187097",
+        "Title": "What has changed in the Colorway Editor in CLO 7.3?",
+        "Content": "In CLO 7.3, creating colorways has become more diverse and easier compared to previous versions. You can now create colorways with increased variety, similar to actual colorways. The specific changes include: The number of each item can increase as much as the number of colorways, and by default, only the selected items are displayed in the Object Browser. ℹNote: Check out the entire colorway workflow in the manual or on YouTube. 1 Create more colorways by adding various items with different properties such as texture, buttons, topstitching, etc. In previous versions, adding items with different properties was not possible, limited to changing textures and colors only. However, starting from CLO 7.3, properties like texture, types, and sizes of buttons can be edited. 2 Manage identical items across different colorways When using certain items with the same properties across multiple colorways, you can now change all properties across those colorways by modifying just one item. 3 When applying each item (Fabric, Graphics, Buttons, Buttonholes, Topstitching, Puckering, Accessories) to a pattern, you can choose how they will be applied to the colorway. * Latest Updated on February 22, 2024, ver 7.3.240.46861 See the examples below and make your own selections as needed. You can learn how to apply each item here. A. Assign to the current colorway only This option is used when you want to apply different variations to selected colorway only. B. Assign to all colorways by linking color chips to change simultaneously Apply to all colorways, but if the fabric is the same for each colorway, selecting a color chip will automatically select the same fabric across colorways. C. Assign to all colorways by unlinking color chips so they change separately Apply to all colorways, but each colorway is a different fabric. FAQ Q1. When I add a different item to existing colorways, I cannot seem to edit them individually. How can I solve this problem? When adding a different item to existing colorways, they will be added with the same properties. If you wish to change properties in individual colorways, right-click on the color chip, then select 'Unlink All Colorways' to make individual edits. Q2. When I save a colorway file from the updated version and open it in a lower version, the colorway information disappears. How can I solve this issue? The new colorway format is not compatible with lower versions. As the colorway feature will be updated continuously, we recommend using the latest version. Q3. The Colorway Editor seems to be slower than in previous versions. Why is that? Each colorway consists of different items, which requires more time to update. However, we are continuously working on improving the speed issue, and incremental improvements will be made.",
+        "YoutubeLinks": [],
+        "CategoryId": 24022165341209,
+        "Category": "FAQ",
+        "SectionId": 24022307533721,
+        "Section": "Fabric & Emulator",
+        "Tokens": 592
+    },
+    {
+        "ArticleId": "4409936466585",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/4409936466585",
+        "Title": "Fold 3D Garment",
+        "Content": "List of Contents Arrangement and Settings Fold Objective Fold your 3D garment easily. Location Main Menu 3D Garment Fold 3D Garment 3D Toolbar Fold 3D Garment Operation Arrangement and Settings When a 3D garment is draped over an avatar, click the avatar with the Select/Move tool to Delete it. Click the tool/ menu indicated. The Fold 3D Garment window appears. To fold a 3D garment efficiently, arrange and set it by clicking each button below. Rotate X-Axis The tool rotates the 3D garment 90 degrees along the X-axis. When the 3D garment is in the air, it is moved to the center of the ground. Flip Horizontally Flip the 3D garment horizontally to fold part of the garment above or below the guideline. Note: If a garment is folded in the upward state, it may be unstable due to collision with the ground. It is recommended to fold it in the downward state and then turn it over again. Optimize-Res Garment In order to efficiently fold the 3D garment, the Particle Distance and the Add'l Thickness - Collision are applied in batches with optimized values. Optimized values are applied by default, and change as needed. Set Physical Property for Spreading Set the proper physical property for spreading the 3D garment flat on the ground. Set Physical Property for Folding Set the proper physical property for folding the 3D garment easily. Fold Click the Fold tool. Click the start point of the line to be folded on the ground or the 3D garment, double click to end it. The line is created, and the gizmo for rotation appears. Click the gizmo axis (red or yellow-green) in the direction you want to fold to rotate it along the blue circle gizmo. It rotates in that direction. Simulate the garment. The garment is simulated in a rotated state. Note: Click the Fold (Selected) tool to select and fold only a specific pattern piece. It is helpful when you want to fold a long sleeve one more time. You can create the horizontal, vertical, and 45-degree guidelines by pressing the Shift on the keyboard while drawing the lines. To delete the line while drawing, press the ESC on the keyboard. Click the Fold (Selected) tool to select and fold only a specific pattern piece.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628707,
+        "Section": "3D Details",
+        "Tokens": 486
+    },
+    {
+        "ArticleId": "900006335983",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/900006335983",
+        "Title": "3D Base Pen (ver 6.1)",
+        "Content": "Objective Draw the baseline freely based on the screen, not the surface of a garment. Location Main Menu 3D Garment 3D Base Pen 3D Tool Bar 3D Base Pen Operation Click the tool/menu indicated in Location. Left-click on a 3D garment or 2D pattern and draw the desired line. The baseline is created within the pattern. Note: You can also edit your baseline with the Edit Pattern tool.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000642168,
+        "Section": "3D Design",
+        "Tokens": 90
+    },
+    {
+        "ArticleId": "360010917874",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/360010917874",
+        "Title": "Edit V-Ray Camera Properties (Above ver5.0.0)",
+        "Content": "Objective Create a dynamic image for 3D Garments with enhanced camera settings replicated from real-world film/DSLR/video cameras: IOS, F-Number, Effects, and more. Location Render Toolbar Camera Properties Property Editor Physical Camera (Render Only) Operation Follow the path indicated below: Render Toolbar Camera Properties Property Editor Physical Camera (Render Only) The camera properties appear in the Property Editor. Refer to the below table and adjust the camera properties as needed. Option Description Type Standard Use the default camera provided in V-ray. It is a separate render camera different from the default camera used in the 3D window. Advanced Adjust IOS, Focus Distance, Effects, and more like photographing with a real camera. Exposure Configure the amount of the light penetrating into the camera and change images' brightness. To change the brightness of the images effectively, use the Exposure option instead of adjusting the brightness of Dome/Rectangle Lights. ISO Adjust the sensitivity of the film. Smaller the value is, darker the image is larger the value is, brighter the image is. F-Number Adjust the openness of the aperture. Larger the value is, darker the image is smaller the value is, brighter the image is. Shutter Speed (1/s) Adjust the shutter speed with the unit of 1/s. When the shutter speed is 1/30s, the shutter is open for one-thirtieth of a second. To replicate the same effect, you should type in 30. The amount of the penetrated light decreases with an increased number of shutter blinks. Therefore, the larger the value is, the darker the image is the smaller the value is, brighter the image is. Depth of Field By adjusting the camera's focus, configure the depth of the field. The depth of field is dependent on both the Focus Distance and the F-Number. Focus Distance Set the camera's focus point as needed. Use the F-Number option to adjust the focus length (clear area) starting from the focus point. Larger the F-Number is, larger the clear area is. On the other hand, smaller the F-Number is, narrower the clear area is. As adjusting the focus length with the Focus Distance is not intuitive, using the Focus by Left Click option is recommended. Focus by Left Click Click to set the focus point. When the focus point is selected, the Focus Distance is calculated automatically. Effects Stretch the image either vertically or horizontally. Vertical Tilt Stretch the image vertically. Horizontal Tilt Stretch the image horizontally.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003861567,
+        "Section": "V-Ray Render",
+        "Tokens": 507
+    },
+    {
+        "ArticleId": "360001749407",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/360001749407",
+        "Title": "Express Fur_Fur(Render Only)",
+        "Content": "List of Contents Express Fur_Fur(Render Only) Expression fur in render Express Fur_Fur(Render Only) - Express coat, fur coat, fleece and more realistically by visualizing different shaped and color fur. - Select the Fur Fabric Item in the Object Browser Property Editor Material Type Fur(Render Only) Expression Fur in Render - Select the Pattern which Fur Material needs to be applied to. - Apply a Fabric Item to the selected Pattern. - Select Fur(Render Only) under Type in the Property Editor. - Open the Render window by navigating to Main Menu Render Render. - Click the Interactive Render tool to preview Fur.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=b1khdUG1O8w",
+            "https://www.youtube.com/watch?v=A5Yv8zIdQOk"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 122
+    },
+    {
+        "ArticleId": "360000656248",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/360000656248",
+        "Title": "Free Topstitch",
+        "Content": "Free Topstitch - Freely establish the Topstitch along Pattern outlines and Internal Shapes/ Lines. - Select the Free Topstitch tool from the 2D toolbar. - Or, navigate to the Main Menu and select Material Free Topstitch. - Hover over Pattern outlines or Internal Shapes/ Lines. - A blue guide point should appear. - Click and drag along the line. - Click again to complete the Topstitch. - The Free Topstitch created on Pattern outlines or Internal Shapes/ Lines should be highlighted in pink.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=xO01dVTibmE"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 110
+    },
+    {
+        "ArticleId": "115015753228",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115015753228",
+        "Title": "Module Structure",
+        "Content": "Module is a system that allows you to adjust the designs easily and combine them part by part. Please see the terminology for the Module below in order to have a better understanding in the Modular Mode. A: Module Structure: A state when a Block Box that consists of a Garment is sewn to another. When sewing a Block Box that is in this Block Structure to a Pattern, it automatically creates Sewing Lines in between the Patterns as it is already interlocked. B: Pattern: Patterns to be included in a Block that will be adjusted partially. Patterns in the Modular Mode can be modified and sewn the same as the Simulation Mode. C: Block Box: A frame that consists of a Module Structure. D: Block: A state when Patterns are sewn to Block Boxes. Blocks that have the same Block Boxes can be replaced with each other.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000729128,
+        "Section": "[MODE] Modular",
+        "Tokens": 172
+    },
+    {
+        "ArticleId": "115015559027",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115015559027",
+        "Title": "V-Ray Render Properties",
+        "Content": "List of Contents Render Properties Engine Noise Threshold Max, Render Time (min) Render Properties - Edit render properties applied to final render output. - Select the Render Properties tool from the Render toolbar and navigate to the Property Editor. Engine - Decide the core engine used during render among CPU, GPU (CUDA,) and GPU (OpenCL). CPU - Use CPU when render. GPU(CUDA) - Use GPU (CUDA) when render. GPU(OpenCL) - Use GPU (OpenCL) when render. . - The option does not appear in Mac. Noise Threshold - Decide the amount of noise shows in the final render image. - Default value is 0.01 and it can be adjusted between 0.001 and 0.015. - Bigger the Noise Threshold is, more noise appears. Max, Render Time (min) - The rendering process only takes about two minutes on average when default settings are used for Light Properties, Image/Video Properties, and Render Properties. - However, the render time may differ when properties are modified. To prevent extensive delay, limit the time used for rendering each image by configuring the Max, Render Time (min).",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=gJ06vDjNg04",
+            "https://www.youtube.com/watch?v=1RTPJI94pHc",
+            "https://www.youtube.com/watch?v=U7rXCIdUsPs",
+            "https://www.youtube.com/watch?v=howIckfKQOQ"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 234
+    },
+    {
+        "ArticleId": "115015558727",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115015558727",
+        "Title": "V-Ray Render Light Properties",
+        "Content": "List of Contents Light Properties Environment Map Light Intensity Rectangle Light Open/Save Settings Light Properties - Set lighting properties applied to final render output. - Select the Light Properties tool from the render toolbar and navigate to the Property Editor. Environment Map - The environment map is a lighting setting processed into an image format. - By default, six different environment maps are provided. - Select the desired environment map as needed. Light Intensity - Adjust the brightness of the 3D Garment in the final rendered image by configuring the Light Intensity. - The default value is 1.00 and the setting can be adjusted between 0.00 and 4.00. - Higher the value is, brighter the 3D Garment is. Rectangle Light - Add and modify point lights up to three. - Adjust lights' location with the Gizmo tool. Intensity - Adjust the intensity of the light. Color - Set the color of the light. Width - Set the width of the light. Height - Set the height of the light. Show - Show or hide the light from the 3D window. Note : To create a three-dimensional render image, there must be a key light. Add key lights as needed to create more dynamic images. When the Rectangle Lights are used along with the Dome Light, use a HDRI image without a key light. Open/Save Settings Open - Click the Open button on the right top corner of the Property Editor to load previously saved Light Properties. Save - Click the Save button on the right top corner of the Property Editor to save the configuration.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=bFCvu1DpMDw",
+            "https://www.youtube.com/watch?v=k0o1HqcBmdg",
+            "https://www.youtube.com/watch?v=vFTv9Ozi1-U",
+            "https://www.youtube.com/watch?v=GFP4F8prd_k",
+            "https://www.youtube.com/watch?v=F2C5rWBwKoI"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 318
+    },
+    {
+        "ArticleId": "115012227107",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012227107",
+        "Title": "Show 2D Texture",
+        "Content": "Show 2D Texture - Show or hide texture on Patterns in the 2D window. - Select the Show 2D Textures tool from the 2D toolbar. - Or, navigate to the Main Menu and select Materials Show 2D Textures. - All textures on Patterns will disappear from the 2D window. - To show textures again, click the Show 2D Textures tool again. All textures will show again. - When the aforementioned tool is used, only textures in the 2D window will be affected.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=kUN_SIqUE4E"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 111
+    },
+    {
+        "ArticleId": "115012380948",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012380948",
+        "Title": "Split",
+        "Content": "Split - Split a single segment into multiple segments by entering specific values. - Select the Edit Pattern tool from the 2D toolbar. - Right-click on a segment to be split and select Split from the pop-up menu. The Split Window will appear. - Select and modify below options as needed. Split into Two Lines - Follow the instruction above to open the Split window. - Select Split into Two Lines. - Enter desired lengths or ratios for LINE 1 and LINE 2. - Select OK. - The selected segment will be split based on the setting. Split by Length - Follow the instruction above to open the Split window. - Select Split by Length. - Enter desired values to Segment Length, Number of Segments, and Direction. - Select OK. - The selected segment will be split based on the setting. Uniform Split - Follow the instruction above to open the Split window. - Select Uniform Split. - Enter desired values to Number of Segments. - Select OK. - The selected segment will be uniformly split based on the setting.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=CaF7Wm8ijNM",
+            "https://www.youtube.com/watch?v=Nkrs82AeBDU",
+            "https://www.youtube.com/watch?v=sLdS72lwXys",
+            "https://www.youtube.com/watch?v=l7gzn4pn2lE"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 210
+    },
+    {
+        "ArticleId": "115012226607",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012226607",
+        "Title": "Height Measurement",
+        "Content": "List of Contents Height Measurement Measure Height Height Measurement - Measure height of Avatars specific point such as head and shoulder from the ground. - Hold down the Basic Tape Measurement tool for more than two seconds, and then select the Height Measurement tool. - Or, navigate and select Main Menu Avatar Measurement Height Measurement. Measure Height - Select the Height Measurement tool from the 3D Toolbar. - Hover the mouse over a point on Avatar where you want to measure the height. - A green vertical line will follow the mouse. - Click on the point to create the measurement. - A yellow-green square will appear at the bottom of the Height Measurement, indicating the ground. - The value of the height between the ground and the selected point will appear as the vertical line is highlighted in yellow.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=XH3lNfb0xkU",
+            "https://www.youtube.com/watch?v=v9_QHw2SEy0"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 156
+    },
+    {
+        "ArticleId": "115012226027",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012226027",
+        "Title": "Check Sewing Length",
+        "Content": "List of Contents Check Sewing Length Result of Check Sewing Length Check Sewing Length Options Check Sewing Length - Use the Check Sewing Length tool to identify significant sewing length difference made during the Garment making process. - Select the Check Sewing Length tool from the 2D Toolbar. - Or, navigate to and select Main Menu Sewing Check Sewing Length Result of Check Sewing Length - Click to activate the Check Sewing Length tool from the 2D toolbar. - When the Check Sewing Length tool is activated, the Sewing Lines with the sewing length difference larger than 3mm will be highlighted in red. Check Sewing Length Options Length Difference - Toggle on and assign value to the Length Difference to highlight and bold Sewing Lines when their sewing length difference is larger than the assigned value. Ratio Difference - Toggle on and assign value to the Ratio Difference to highlight and bold Sewing Lines when their sewing length difference is larger than the assigned ratio.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=j9f4cbaieuc",
+            "https://www.youtube.com/watch?v=-c2bKFicduI",
+            "https://www.youtube.com/watch?v=g9AIO9CfQNw"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 195
+    },
+    {
+        "ArticleId": "115011091788",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115011091788",
+        "Title": "Troubleshooting AI Import Failures",
+        "Content": "List of Contents Case 1 (There are Pattern points that are too close together) Case 2 (Pattern outlines are intersecting) Case 3 (This is an unsupported file type.) Objective Learn how to fix AI import failures respective to the types of error messages. Case 1 Cause of Error: When the points on the patterns are too close to each other. Solution A - Delete &amp Join Points in Adobe Illustrator Open the file with issue in the Adobe Illustrator. Find points too closed to each other and delete one of them. As the point is deleted, the line is disconnected. Use the Average and Join function to reconnect the line. Save the file again and open in CLO. The pattern file opens properly in CLO. Solution B - Adjust Pattern Size in CLO Navigate to the Main Menu and select File &gt Import &gt Adobe (AI/PDF). The Import AI/PDF window appears. Deselect Auto Scale. Increase the Scale percentage or select larger pattern unit and select OK. The pattern file opens properly. Note: If the pattern file still does not open properly, further increase the Scale percentage or select even larger pattern unit. Then, open the file again. When the percentage and the unit is changed, the size of the pattern imported in CLO may differ from the original pattern size. Case 2 Cause of Error: When the lines on patterns are intersecting. Solution Open the file with issue in Adobe Illustrator. Find and edit the intersecting lines. Save the file and re-open in CLO. The file opens properly. Case 3 Cause of Error A: When the Create PDF Compatible File option is not checked when saving the file in Adobe Illustrator. Solution Open the file with issue in Adobe Illustrator. Navigate to the Main Menu &gt File &gt Save as... Assign the saving path and the file name. Then, click Save. Check Create PDF Compatible File and click OK. Reopen the file in CLO. The file opens properly. Cause of Error B: When a line of a pattern is disconnected. Solution Open the file with issue in Adobe Illustrator. Find the disconnected pattern outline. Use the Average and Join function to reconnect the line. Save the file again and open in CLO. The pattern file opens properly in CLO. Note: For Case 2 and Case 3, create a rectangle surrounding all patterns with issue, save in Adobe Illustrator, and then reopen in CLO as internal lines to open them without any pattern modification. To use the Internal Lines as Patterns, use the Trace tool or the Clone as Pattern option to convert Internal Lines to Patterns.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000166307,
+        "Section": "Appendix",
+        "Tokens": 527
+    },
+    {
+        "ArticleId": "115008753767",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115008753767",
+        "Title": "Segment Darts",
+        "Content": "List of Contents Create Edit Objective Create and edit darts on the outline of the pattern. Location Main Menu 2D Pattern Edit Edit Pattern 2D Toolbar Edit Pattern Operation Create Select the tool/menu indicated in Location. Right-click on the point where you want to create a dart and click Add Dart The Dart option window appears Set the following options and click OK. Option Description Total Width Set the total width of the Dart. Dart Arm Width Set the width of the dart halves. Length Set the length of the line segment of the dart to be created. Darts are created based on the setting of each option. Edit Select the tool/menu indicated in Location. Right-click on the dart to be modified and click Edit Dart. The dart option window appears. As when creating a dart, set each option and click OK. Changes are applied to darts. Note: Set the Shape Dart Cap option in the pop-up window. When it is checked, Shape Dart Cap is automatically executed after Dart creation and modification. (ver 6.1)",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 360007285034,
+        "Section": "Dart / Pleats / Fullness",
+        "Tokens": 209
+    },
+    {
+        "ArticleId": "115004472788",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115004472788",
+        "Title": "Convert to Curve Point (AI Bezier Curve)",
+        "Content": "List of Contents AI Bezier Curve AI Bezier Curve Handles Objective Convert AI Bezier Curve's Segment Points to Free Curve Points. Location Main Menu 2D Pattern Edit Edit Pattern / Edit Curve Point 2D Toolbar Edit Pattern / Edit Curve Point Operation AI Bezier Curve Follow the indicated guideline below: Main Menu 2D Pattern Edit Edit Pattern / Edit Curve Point 2D Toolbar Edit Pattern / Edit Curve Point Right click on the AI Bezier Curve or the Segment Ooint on the curve. The right click pop-up menu appears. Select Convert to Curve Point. The selected AI Bezier curve is converted to a Free Curve as its AI Bezier curve handles disappear and necessary Free Curve Points are added to maintain its original curvature. AI Bezier Curve Handles Follow the indicated guideline: Main Menu 2D Pattern Edit Edit Pattern / Edit Curve Point 2D Toolbar Edit Pattern / Edit Curve Point Click on the AI Bezier curve to be converted. Its AI Bezier curve handles appear. Right click on the end point of the handle and select Convert to Curve Point on the pop-up menu. Its original curvature is maintained as Free Curve Points are added.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000617868,
+        "Section": "2D Pattern Edit",
+        "Tokens": 233
+    },
+    {
+        "ArticleId": "115004324447",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115004324447",
+        "Title": "Polygon Lasso Selection",
+        "Content": "Objective Select Patterns, Sewing Lines, Topstitches, and Puckering with more freedom. Location Main Menu Edit tool for the respective item 3D/ 2D Toolbar Edit tool for the respective item Note: Edit Tools for Respective Items Pattern Transform Pattern (A) Line/Point Edit Pattern (Z) Sewing Edit Sewing (B) Topstitches Edit Topstitch (J) Puckering Edit Puckering Buttons/Buttonholes Select/Move Button ([) Seam Allowances Seam Allowance Grading Grading UV Edit UV Operation Follow the indicated guideline below: Main Menu Edit tool for the respective item 3D/ 2D Toolbar Edit tool for the respective item Double click in the 2D window, then drag the mouse. A selection point appears where the mouse is double clicked and a line follows as the mouse is dragged. Click around the items to create the lasso selection. Click on the start point to complete the lasso selection. All items related to the Edit tool are selected and highlighted in yellow. Note: Only items related to the activated Edit tool are selected. For example, if the Edit Pattern tool is used to create a polygon lasso selection, only segments and points within the lasso selection are selected.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000617868,
+        "Section": "2D Pattern Edit",
+        "Tokens": 255
+    },
+    {
+        "ArticleId": "115000931907",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000931907",
+        "Title": "[Style Property] Buttonhole Name",
+        "Content": "Objective Rename buttonholes as desired. Location Object Browser Buttonhole Tab Property Editor Change Name Operation Follow the indicated guideline below: Object Browser Buttonhole Tab Property Editor Change Name Type in the desired name. The name is now being edited and applied.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000728548,
+        "Section": "Buttonhole",
+        "Tokens": 48
+    },
+    {
+        "ArticleId": "115000970328",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000970328",
+        "Title": "Create Additional Buttonhole Style",
+        "Content": "Objective Create a new buttonhole style. Location Object Browser Buttonhole Tab Add Operation Follow the indicated guideline below: Object Browser Buttonhole Tab Add A new item named after 'Buttonhole 1, 2' is now being created and applied.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000728548,
+        "Section": "Buttonhole",
+        "Tokens": 49
+    },
+    {
+        "ArticleId": "115000573907",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000573907",
+        "Title": "Show/Hide Piping",
+        "Content": "Objective Show or hide all Piping. Location 3D Window Garment Show/Hide Icon (Mouse Over) Show Piping Operation Follow the indicated guideline below: 3D Window Garment Show/Hide Icon (Mouse Over) Show Piping All created Piping is now being hidden. Follow the indicated guideline again: 3D Window Garment Show/Hide Icon (Mouse Over) Show Piping All hidden Piping is now being displayed again.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000717147,
+        "Section": "Piping / Binding",
+        "Tokens": 92
+    },
+    {
+        "ArticleId": "115000446087",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000446087",
+        "Title": "3D Garment View Controls",
+        "Content": "List of Contents Change Camera View Zoom In/Out Shortcuts Zoom to Selected Zoom in and change view in the 3D window at once. Change Camera View Right click on the 3D window to access the pop-up menu. Select the desired view among Front, 3/4 Left, Back, Left, Right, 3/4 Right, Top, Button, or use respective shortcuts (2, 3, 8, 6, 4, 1, 5, 0) to change camera view instantly. Note: Camera Direction Change Standards Using the corresponding menu while the avatar is facing a different direction on the screen changes the camera's angle according to the avatar. Zoom In/Out Shortcuts Zoom In: Hold down the + key on the keyboard to zoom in the 3D window. Zoom Out: Hold down the - key on the keyboard to zoom out the 3D window. Zoom to Selected Zoom in/out and rotate the 3D window using the selected Pattern or item as the focal point. Select the desired Pattern or item in the 3D window and locate Main Menu Display Viewpoint Zoom Extends All, Or press the shortcut key F to enlarge the selected object at a fixed scale at the middle and control the view according to it.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000089187,
+        "Section": "Configurations",
+        "Tokens": 261
+    },
+    {
+        "ArticleId": "115000406447",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115000406447",
+        "Title": "Adjust Avatar Location",
+        "Content": "Objective Adjust avatar location by using its X-Ray joint points. Location Main Menu Display Avatar Show X-Ray Joints (Shift + X) 3D Window Avatar Display (Mouse-over) Show X-Ray Joints (Shift + X) Operation Follow the indicated guideline below: Main Menu Display Avatar Show X-Ray Joints (Shift + X) 3D Window Avatar Display (Mouse-over) Show X-Ray Joints (Shift + X) Select purple point (pelvis point) in the middle of the avatar. Click and drag or move it with the Gizmo to relocate the avatar.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000716747,
+        "Section": "Avatar",
+        "Tokens": 118
+    },
+    {
+        "ArticleId": "13051111595417",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/13051111595417",
+        "Title": "CLO Under System Maintenance",
+        "Content": "CLO system maintenance is carried out to provide a seamless service for all of our users. Usually the entire process takes on average an hour. What will be affected by system maintenance? During maintenance, the items listed below might be unavailable. Access to CLO software CLO installer downloads Sign-up (Email verification) Change password Sending Invoice Subscription related emails Will I be notified when system maintenance is completed? Once the system is back, the CLO website banner will be back to normal. If this turns into an extended outage, we will update the status on CLO social media channels. Should you have additional inquiries (or if you have trouble accessing CLO software or the installer download page after the website banner is restored) please contact us. We apologize for any inconvenience caused, the CLO team is working to deliver a better user experience. CLO Support Team",
+        "YoutubeLinks": [],
+        "CategoryId": 24022165341209,
+        "Category": "FAQ",
+        "SectionId": 24022317583257,
+        "Section": "Others",
+        "Tokens": 171
+    },
+    {
+        "ArticleId": "4409103548953",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/4409103548953",
+        "Title": "Fill (ver 6.2)",
+        "Content": "List of Contents Duplicate Property Objective Create a realistic puffy garment by setting the fill type and weight. Location Main Menu 2D Pattern Fill 2D Toolbar Fill Operation Duplicate Click the tool/menu indicated. Click the piece to be applied or, Click anywhere in the 2D window Drag your cursor to select the pieces within the marquee. The duplicated pieces appear on the mouse cursor. Click the position where you place the duplicated piece. The outlines of both pieces are sewn, and the internal lines crossed with them are sewn as well. Display in purple. Select any grey quilt lines to turn on the quilting effect. Property Click the puffy pattern piece. Filer Property appears in the Property Editor. Once the puffy properties are set, simulate the garment. Property Description Filer Type Choose the type of filler. Weight Enter the weight of the filler. Note: Select multiple pattern pieces to set the total weight. The weight of each piece is calculated and distributed proportionally. Quilting Distance Enter the quilting distance. Note: Fill Volume is calculated based on the Quilting Distance and the Weight. Quilting Distance indicates the distance between the internal lines used as quilting lines, and you must input the distance value. If the internal lines are neither parallel nor their distance is constant, please enter the widest value. You can have a reasonably realistic puffiness based on the pressure set by the weight and the quilting volume.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=VuJyDM7hYHs"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628707,
+        "Section": "3D Details",
+        "Tokens": 292
+    },
+    {
+        "ArticleId": "360001430908",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/360001430908",
+        "Title": "3D Quality Standard (ver4.0.0)",
+        "Content": "Download our 3D Quality Standard and create high quality 3D garments.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 29864642061593,
+        "Section": "Guides",
+        "Tokens": 16
+    },
+    {
+        "ArticleId": "360000012987",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/360000012987",
+        "Title": "Select/Move (3D)",
+        "Content": "Objective Select and move Patterns in the 3D window. Location Main Menu 3D Garment Select/Move 3D Toolbar Select/Move Operation Follow the indicated guideline below: Main Menu 3D Garment Select/Move 3D Toolbar Select/Move Click and drag a part of the 3D Garment while the Simulate tool is activated. The 3D Garment moves naturally and you may fine-tune your 3D Garment. Or, click and drag a part of the 3D Garment while the Simulate tool is deactivated. The 3D window is converted to pattern arrangement mode and you may move the Garment as Patterns.",
+        "YoutubeLinks": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628287,
+        "Section": "Simulation",
+        "Tokens": 138
+    },
+    {
+        "ArticleId": "115012380928",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012380928",
+        "Title": "Optimize All Curve Points",
+        "Content": "Optimize All Curve Points - Easily edit curves by optimizing the number of curve points on segments. Use this function when there are unnecessarily many curve points. - Select the Edit Curve Point tool from the 2D toolbar to see all curve points on Patterns. - Right-click on the 2D window and select Optimize All Curve Points from the pop-up menu. Surplus curve points will be deleted and only the necessary curve points needed to maintain the shape of the curves will be remained.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=gVIXoamGcT0"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 98
+    },
+    {
+        "ArticleId": "115012380568",
+        "Source": "https://support.clo3d.com/hc/en-us/articles/115012380568",
+        "Title": "Hide Avatar",
+        "Content": "Hide Avatar - Hide Avatars from the 3D window at your convenience. - Select the Select/Move tool from the 3D toolbar. Right-click on the Avatar in the 3D window and select Hide Avatar from the pop-up menu. The selected Avatar will be hidden from the 3D window.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=6Y4QiWD9CEs"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 64
+    }
+]

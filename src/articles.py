@@ -159,8 +159,8 @@ class Article:
 
             if brand == "clovf":
                 # Upload clovf articles to both clo3d and clo-set
-                AzureEnv(stage, "clo3d").search_client.upload_documents(documents)
-                # AzureEnv(env, "closet").search_client.upload_documents(documents)
+                # AzureEnv(stage, "clo3d").search_client.upload_documents(documents)
+                AzureEnv(stage, "closet").search_client.upload_documents(documents)
             else:
                 azure_env.search_client.upload_documents(documents)
 

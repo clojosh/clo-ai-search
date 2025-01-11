@@ -29,7 +29,7 @@ class AzureEnv:
 
         self.AZURE_SEARCH_SERVICE = os.environ.get("AZURE_SEARCH_SERVICE")
 
-        self.INDEX_NAME = os.environ.get(f"{brand.upper()}_AZURE_SEARCH_INDEX_{language.upper()}", "clo3d-index-english")
+        self.INDEX_NAME = os.environ.get(f"{brand.upper()}_AZURE_SEARCH_INDEX")
 
         self.SEARCH_CLIENT_ENDPOINT = f"https://{self.AZURE_SEARCH_SERVICE}.search.windows.net"
         self.AZURE_KEY_CREDENTIAL = AzureKeyCredential(os.environ.get("AZURE_SEARCH_KEY"))

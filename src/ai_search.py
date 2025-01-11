@@ -154,7 +154,7 @@ class AISearch:
                 retrievable=True,
             ),
             SearchableField(name="Source", type=SearchFieldDataType.String, retrievable=True),
-            SearchableField(name="Labels", type=SearchFieldDataType.String, retrievable=True, searchable=True),
+            # SearchableField(name="Labels", type=SearchFieldDataType.String, retrievable=True, searchable=True),
             SearchableField(
                 name="YoutubeLinks",
                 collection=True,
@@ -236,7 +236,9 @@ class AISearch:
         self.search_index_client.delete_index(self.azure_env.INDEX_NAME)
         print(f"{self.azure_env.INDEX_NAME} deleted")
 
-    def find_documents(self, search_fields: list = [], search_text: str = "*", select: list = [], log_results: bool = False):
+    def find_documents(
+        self, search_fields: list = ["ArticleId"], search_text: str = "*", select: list = ["ArticleId", "Title", "Source"], log_results: bool = False
+    ):
         results = self.azure_env.search_client.search(search_fields=search_fields, search_text=search_text, select=select, search_mode="all")
 
         documents = []
@@ -267,37 +269,23 @@ class AISearch:
             print(f"Deleting {result['ArticleId']}")
             self.search_client.upload_documents({"@search.action": "delete", "ArticleId": str(result["ArticleId"])})
 
-    def get_documents(self, search_fields: list = [], search_text: str = "*", select: list = [], file_type: str = "json"):
+    def get_documents(self, search_fields: list = [], search_text: str = "*", select: list = [], file_type: str = "json", log_results: bool = False):
         results = self.find_documents(search_fields=search_fields, search_text=search_text, select=select, log_results=log_results)
 
         if file_type == "csv":
-            fields = ["ArticleId", "Title", "Content", "Source", "YoutubeLinks"]
+            fields = ["ArticleId", "Title", "Content", "Source"]
             with open(os.path.join(backend_dir, "indexes", f"{brand}-index-english.csv"), "w", encoding="utf-8") as f:
                 write = csv.writer(f)
                 write.writerow(fields)
 
                 pbar = tqdm(results, position=1, leave=False, colour="red")
                 for i, result in enumerate(pbar):
-                    write.writerows([[result["ArticleId"], result["Title"], result["Content"], result["Source"], "YoutubeLinks"]])
+                    write.writerows([[result["ArticleId"], result["Title"], result["Content"], result["Source"]]])
         else:
-            for i, result in enumerate(results):
-                del result["@search.score"]
-                del result["@search.reranker_score"]
-                del result["@search.highlights"]
-                del result["@search.captions"]
+            if not os.path.exists(os.path.join("indexes", self.azure_env.stage)):
+                os.makedirs(os.path.join("indexes", self.azure_env.stage), exist_ok=True)
 
-                results[i] = {
-                    "ArticleId": result["ArticleId"],
-                    "Title": result["Title"],
-                    "Content": result["Content"],
-                    "Source": result["Source"],
-                    "YoutubeLinks": result["YoutubeLinks"],
-                }
-
-            if not os.path.exists(os.path.join(backend_dir, "indexes", self.azure_env.stage)):
-                os.makedirs(os.path.join(backend_dir, "indexes", self.azure_env.stage), exist_ok=True)
-
-            with open(os.path.join(backend_dir, "indexes", self.azure_env.stage, f"{brand}-index-english.json"), "w+", encoding="utf-8") as f:
+            with open(os.path.join("indexes", self.azure_env.stage, f"{brand}-index-english.json"), "w+", encoding="utf-8") as f:
                 json.dump(results, f, ensure_ascii=False, indent=4)
 
     def document_source_breakdown(self):
@@ -353,14 +341,19 @@ if __name__ == "__main__":
         ai_search.drop_search_index()
 
     elif task in ["Delete Documents", "Get Documents", "Find Documents"]:
-        search_fields = questionary.checkbox("Search Fields?", choices=["ArticleId", "Title", "Source", "Content"]).ask()
+        search_fields = questionary.checkbox("Search Fields?", choices=["ArticleId", "Title", "Source", "Content"], default="ArticleId").ask()
         search_text = questionary.text("Search Text?").ask()
         select = questionary.checkbox("Select?", choices=["ArticleId", "Title", "Source", "Content"]).ask()
 
         if task == "Delete Documents":
             ai_search.delete_documents(search_fields=search_fields, search_text=search_text, select=select)
         elif task == "Get Documents":
-            ai_search.get_documents(search_fields=search_fields, search_text=search_text, select=select)
+            ai_search.get_documents(
+                search_fields=search_fields,
+                search_text=search_text,
+                select=select if select != [] else ["ArticleId", "Title", "Source"],
+                log_results=True,
+            )
         elif task == "Find Documents":
             ai_search.find_documents(search_fields=search_fields, search_text=search_text, select=select, log_results=True)
 

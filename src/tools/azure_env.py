@@ -48,7 +48,7 @@ class AzureEnv:
         self.AZURE_OPENAI_CHATGPT_DEPLOYMENT = os.environ.get("AZURE_OPENAI_CHATGPT_DEPLOYMENT")
         self.AZURE_OPENAI_EMB_DEPLOYMENT = os.environ.get("AZURE_OPENAI_EMB_DEPLOYMENT")
         self.openai_client = AzureOpenAI(
-            api_version="2023-07-01-preview",
+            api_version="2024-07-18",
             azure_endpoint=f"https://{self.AZURE_OPENAI_SERVICE}.openai.azure.com",
             api_key=os.environ.get("AZURE_OPENAI_KEY"),
         )

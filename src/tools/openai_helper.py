@@ -130,7 +130,7 @@ class OpenAIHelper:
         messages = [
             {
                 "role": "user",
-                "content": f"Provide a comprehensive guide of the given transcript. Include all step-by-step instructions, definitions, and tips and tricks. {transcript}",
+                "content": f"Provide a comprehensive guide of the given Youtube transcript. Do not include a title.\n\n{transcript}",
             }
         ]
 

@@ -13,21 +13,24 @@ class FineTuning:
     def prepare_training_set(self, documents: list):
         training_set = []
         for document in documents:
+            if "?" not in document["Title"]:
+                continue
+
             messages = {
                 "messages": [
                     {
                         "role": "system",
-                        "content": """Act as a tech support representative for CLO/CLO3D software.""",
+                        "content": """Act as a tech support representative for CLO/CLO3D software to answer user questions. Answer user questions with detailed explanations, troubleshooting steps, and best practices for using the software effectively.""",
                     },
                 ]
             }
 
             question = document["Title"]
-            if "?" not in document["Title"]:
-                question = self.openai_helper.generate_questions(document["Title"])
+            # if "?" not in document["Title"]:
+            #     question = self.openai_helper.generate_questions(document["Title"])
 
             messages["messages"].append({"role": "user", "content": question})
-            messages["messages"].append({"role": "assistant", "content": document["Content"] + " [" + document["Source"] + "]"})
+            messages["messages"].append({"role": "assistant", "content": document["Content"]})
 
             training_set.append(messages)
 
@@ -92,4 +95,4 @@ class FineTuning:
 if __name__ == "__main__":
     azure_env = AzureEnv(stage="dev", brand="clo3d", language="English")
     fine_tuning = FineTuning(azure_env)
-    fine_tuning.fine_tune()
+    fine_tuning.retrieve_training_set()

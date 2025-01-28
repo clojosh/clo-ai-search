@@ -341,7 +341,7 @@ if __name__ == "__main__":
         ai_search.drop_search_index()
 
     elif task in ["Delete Documents", "Get Documents", "Find Documents"]:
-        search_fields = questionary.checkbox("Search Fields?", choices=["ArticleId", "Title", "Source", "Content"], default="ArticleId").ask()
+        search_fields = questionary.checkbox("Search Fields?", choices=["ArticleId", "Title", "Source", "Content"]).ask()
         search_text = questionary.text("Search Text?").ask()
         select = questionary.checkbox("Select?", choices=["ArticleId", "Title", "Source", "Content"]).ask()
 

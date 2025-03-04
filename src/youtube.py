@@ -2,8 +2,9 @@ import json
 import multiprocessing
 import os
 import ssl
-from datetime import datetime
+from datetime import datetime, timedelta
 from io import BytesIO
+from typing import List, TypedDict, Union
 
 import questionary
 import requests
@@ -15,7 +16,15 @@ from youtube_transcript_api import YouTubeTranscriptApi
 from tools.azure_env import AzureEnv
 from tools.misc import check_create_directory, logger, sanitize_directory_file_name
 
-ssl._create_default_https_context = ssl._create_stdlib_context
+YoutubeAPIType = TypedDict(
+    "YoutubeAPIType",
+    {
+        "kind": str,
+        "etag": str,
+        "nextPageToken": Union[str, None],
+        "items": List[dict],
+    },
+)
 
 
 class YouTube:
@@ -28,31 +37,13 @@ class YouTube:
 
         if not os.path.exists(os.path.join(azure_env.brand, "youtube", "channel")):
             os.makedirs(os.path.join(azure_env.brand, "youtube", "channel"))
-        self.youtube_channel_dir_path = os.path.join(azure_env.brand, "youtube", "channel")
+
+        self.youtube_channel_dir_path = os.path.join("sources", azure_env.brand, "youtube", "channel")
 
         if not os.path.exists(os.path.join(azure_env.brand, "youtube", "playlist")):
             os.makedirs(os.path.join(azure_env.brand, "youtube", "playlist"))
-        self.youtube_playlist_dir_path = os.path.join(azure_env.brand, "youtube", "playlist")
 
-    @staticmethod
-    def extract_video_transcript(youtube_dir_path: str, video_id: str) -> None:
-        """
-        Saves a transcript of a youtube video to a json file.
-
-        Args:
-            youtube_dir_path (str): The path to the directory where the transcript will be saved.
-            video_id (str): The id of the video to extract the transcript for.
-
-        Returns:
-            None
-        """
-        try:
-            transcript = YouTubeTranscriptApi.get_transcript(video_id=video_id, languages=["en"])
-            with open(f"{os.path.join(youtube_dir_path, f'{video_id}.json')}", "w+", encoding="utf-8") as f:
-                json.dump(transcript, f, ensure_ascii=False, indent=4)
-        except Exception as e:
-            print(e)
-            pass
+        self.youtube_playlist_dir_path = os.path.join("sources", azure_env.brand, "youtube", "playlist")
 
     @staticmethod
     def extract_video_transcript_text(video_id: str) -> str:
@@ -80,55 +71,49 @@ class YouTube:
             return ""
 
     @staticmethod
-    def extract_youtube_channel_transcripts(resp_objects: dict[str, str], youtube_channel_dir_path: str, page: int) -> None:
+    def extract_youtube_channel_transcripts(resp_objects: YoutubeAPIType, youtube_channel_dir_path: str, page: int) -> None:
         """
         Extracts transcripts from a youtube channel
 
         Args:
-            resp_objects (dict): The response from the youtube api
+            resp_objects (YoutubeAPIType): The response from the youtube api
             youtube_channel_path (str): The path to save the transcripts
             page (int): The page number to be processed
-
-        Returns:
-            None
         """
+
         videos = []
 
-        for item in resp_objects["items"]:
-            # Print the title of the video being processed
-            print("Retrieving transcript for:\n" + item["snippet"]["title"] + "\n")
+        for video in resp_objects["items"]:
+            print("Retrieving transcript for:\n" + video["snippet"]["title"] + "\n")
 
             # Check if the item is a video and has a video id
-            if "videoId" not in item["id"]:
+            if "videoId" not in video["id"]:
                 continue
 
             # Create a dictionary to store the video data
             video = {
-                "ArticleId": shortuuid.uuid(),  # Generate a unique id for the video
-                "VideoId": item["id"]["videoId"],  # Get the video id
-                "Source": f"https://www.youtube.com/watch?v={item['id']['videoId']}",  # Get the video url
-                "Title": item["snippet"]["title"]
-                .replace("&#39;", "'")
-                .replace("&quot;", '"')
-                .replace("&amp;", "&"),  # Get the video title and replace special characters
-                "publishedAt": item["snippet"]["publishedAt"],  # Get the video publish date
+                "VideoId": video["id"]["videoId"] if video["id"]["videoId"] else shortuuid.uuid(),  # Get the video id
+                "Url": f"https://www.youtube.com/watch?v={video['id']['videoId']}",  # Get the video url
+                "Title": video["snippet"]["title"].title().replace("&#39;", "'").replace("&quot;", '"').replace("&amp;", "&"),
+                "Transcript": YouTube.extract_video_transcript_text(video["id"]["videoId"]),
+                "publishedAt": video["snippet"]["publishedAt"],  # Get the video publish date
             }
 
-            # Add the transcript to the video data
-            video["Transcript"] = YouTube.extract_video_transcript_text(item["id"]["videoId"])
             videos.append(video)
 
         # Save the transcripts to a json file
         with open(f"{os.path.join(youtube_channel_dir_path, f'page_{page}')}.json", "w+", encoding="utf-8") as f:
             json.dump(videos, f, ensure_ascii=False, indent=4)
 
-    def mp_extract_youtube_channel_transcripts(self, video_age: int = 3) -> None:
+    def mp_extract_youtube_channel_transcripts(self, video_age_in_years: int = 3) -> None:
         """Use multiprocessing to extract transcripts from a youtube channel"""
 
-        published_after = "{}-01-01T00:00:00Z".format(datetime.today().year - video_age)
+        published_after = "{}-01-01T00:00:00Z".format(datetime.today().year - video_age_in_years)
 
         page = 0
-        resp_objects = {}
+
+        resp_objects: YoutubeAPIType = {"kind": "", "etag": "", "nextPageToken": None, "items": []}
+
         extract_youtube_channel_transcripts_params = []
         while True:
             response = requests.request(
@@ -149,17 +134,16 @@ class YouTube:
             )
 
             resp_objects = json.loads(response.text)
+
             extract_youtube_channel_transcripts_params.append((resp_objects, self.youtube_channel_dir_path, page))
             page += 1
 
             if "nextPageToken" not in resp_objects:
                 break
 
-        # print(len(extract_youtube_channel_transcripts_params))
-
         with multiprocessing.Pool(5) as p:
             p.starmap_async(
-                YouTube.extract_youtube_channel_transcripts, extract_youtube_channel_transcripts_params, error_callback=lambda e: print(e)
+                YouTube.extract_youtube_channel_transcripts, extract_youtube_channel_transcripts_params, error_callback=lambda e: print("Error", e)
             )
             p.close()
             p.join()
@@ -186,7 +170,7 @@ class YouTube:
             check_create_directory(playlist_dir_path)
 
             buffer.append(transcript)
-            with open(f"{os.path.join(playlist_dir_path,sanitize_directory_file_name(transcript['Title']))}.json", "w+", encoding="utf-8") as f:
+            with open(f"{os.path.join(playlist_dir_path, sanitize_directory_file_name(transcript['Title']))}.json", "w+", encoding="utf-8") as f:
                 json.dump(buffer, f, ensure_ascii=False, indent=4)
 
         return playlist_title
@@ -204,7 +188,7 @@ class YouTube:
         Returns:
             None
         """
-        print("Summarizing ", os.path.split(youtube_channel_dir_path)[1].strip() + "\n")
+        print("Summarizing:", os.path.split(youtube_channel_dir_path)[1].strip() + "\n")
 
         environment = AzureEnv(env, brand)
 
@@ -215,7 +199,10 @@ class YouTube:
         # Summarize each transcript
         for index, trans in enumerate(transcripts):
             if len(trans["Transcript"]) > 450:
-                summary = environment.openai_helper.generate_transcript_summary(trans["Transcript"])
+                try:
+                    summary = environment.openai_helper.generate_transcript_summary(trans["Transcript"])
+                except Exception as e:
+                    raise e
             else:
                 summary = ""
             transcripts[index]["Summary"] = summary
@@ -249,9 +236,7 @@ class YouTube:
             p.join()
 
     def upload_transcripts(self):
-        files = os.listdir(self.youtube_channel_dir_path)
-
-        for file in tqdm(files, desc="Uploading Transcripts", colour="green", position=0, leave=True):
+        for file in tqdm(os.listdir(self.youtube_channel_dir_path), desc="Uploading Transcripts", colour="green", position=0, leave=True):
             with open(os.path.join(self.youtube_channel_dir_path, file), "r", encoding="utf-8") as f:
                 transcripts = json.load(f)
 
@@ -260,14 +245,17 @@ class YouTube:
                 if transcript["Summary"] == "":
                     continue
 
+                if transcript["VideoId"].startswith("_"):
+                    transcript["VideoId"] = "YT" + transcript["VideoId"]
+
                 upload_transcripts.append(
                     {
                         "@search.action": "mergeOrUpload",
-                        "ArticleId": transcript["ArticleId"],
-                        "Source": transcript["Source"],
+                        "ArticleId": transcript["VideoId"],
+                        "Source": transcript["Url"],
                         "Title": transcript["Title"],
                         "Content": transcript["Summary"],
-                        "YoutubeLinks": [transcript["Source"]],
+                        "YoutubeLinks": [transcript["Url"]],
                         "titleVector": self.azure_env.openai_helper.generate_embeddings(text=transcript["Title"]),
                         "contentVector": self.azure_env.openai_helper.generate_embeddings(text=transcript["Summary"]),
                     }
@@ -288,9 +276,9 @@ if __name__ == "__main__":
     ).ask()
 
     if task == "Get Transcripts":
-        video_age = questionary.text("What video age(in years)?").ask()
+        video_age_in_years = questionary.text("What video age(in years)?").ask()
         yt = YouTube(AzureEnv("dev", "clo3d"))
-        yt.mp_extract_youtube_channel_transcripts(video_age=int(video_age))
+        yt.mp_extract_youtube_channel_transcripts(video_age_in_years=int(video_age_in_years))
 
     else:
         env = questionary.select("Which environment?", choices=["prod", "dev"]).ask()

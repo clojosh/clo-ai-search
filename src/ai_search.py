@@ -315,7 +315,7 @@ class AISearch:
 
 if __name__ == "__main__":
     env = questionary.select("Which environment?", choices=["prod", "dev"]).ask()
-    brand = questionary.select("Which brand?", choices=["clo3d", "closet", "md", "allinone"]).ask()
+    brand = questionary.select("Which brand?", choices=["clo3d", "closet", "closet_connect", "md", "allinone"]).ask()
     task = questionary.select(
         "What task?",
         choices=[

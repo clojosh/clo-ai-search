@@ -1,0 +1,77 @@
+[
+    {
+        "ArticleId": "8731247942927",
+        "Source": "https://support-connect.clo-set.com/hc/en-us/articles/8731247942927-Material-Tab",
+        "Title": "Material Tab",
+        "Content": "EveryWear Tutorial 1) UV Packing Objective Customize the resolution and spacing of UV and automatically reposition the UV shell accordingly. Details You can select the resolution of the UV image. Adjust the spacing of UV that are automatically placed when packing UVs. Go to the UV packing settings window. The EveryWear window will close for a moment. 1-1) UV Packing_Option Objective Set and apply UV Packing-related options. Details Option to set the UV accuracy from 1 to 5. Values closer to 5 will pack the UVs more accurately to their original form but may increase the amount of calculation and packing time. Fix Scale Ratio : When enabled, it adjusts the size of the entire UV shell while maintaining the spacing ratio between UV shells. Rotation : When enabled, it allows for the rotation of the UV shell. Advanced Placement : When enabled, it uses an advanced calculation method to achieve optimal placement with minimal empty space, but the process may take longer as the number of patterns increases. Fill the U:0, V:0 tiles with the selected UV Shell. Pack the selected UV Shell directly by specifying the target tile. Initialize all user-specified option values. Pack UVs according to the specified option values. Close the UV packing window and return to the EveryWear window. 2) Texture Baking Objective Create maps that express the details of the High Poly model in the optimized model. (Normal &amp A.O.) Details Create a Normal Map and Ambient Occlusion (A.O) Map. Adjust the intensity of the Baked Normal Map. The number of rays of light sampled per pixel. Increase this value for higher-quality, but please keep in mind that it will also increase calculation time. Activate this option to preview the baked map in the 3D viewport. This allows you to see the changes in real-time. Delete Baked Map 3) Material List Objective Copy an existing material or create a new material, and apply it to the selected pattern as desired. Details Add a new Material item. Copy a Material. Assign the selected Material to the selected Object. Delete the selected Material. You cannot delete the material that is already assigned to the Object.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=wKjp2Xo0VCQ",
+            "https://www.youtube.com/watch?v=w7kp2xOpEzg"
+        ],
+        "CategoryId": 8472464306191,
+        "Category": "EveryWear",
+        "SectionId": 8731122798351,
+        "Section": "EveryWear Usage Guide",
+        "Tokens": 442
+    },
+    {
+        "ArticleId": "8784799878671",
+        "Source": "https://support-connect.clo-set.com/hc/en-us/articles/8784799878671-Cautionary-Notes-for-Upload",
+        "Title": "Cautionary Notes for Upload",
+        "Content": "EveryWear Tutorial 1) Cautionary Notes for Upload Objective If the conditions for Upload are not valid, the following window will be displayed. Details An avatar with joints must be in the 3D window. All patterns must be rigged. All UVs must be packed. (An UV must be placed within a tile.) Normal Map must be baked.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=wKjp2Xo0VCQ",
+            "https://www.youtube.com/watch?v=w7kp2xOpEzg"
+        ],
+        "CategoryId": 8472464306191,
+        "Category": "EveryWear",
+        "SectionId": 8731221608719,
+        "Section": "Upload",
+        "Tokens": 73
+    },
+    {
+        "ArticleId": "8731223128335",
+        "Source": "https://support-connect.clo-set.com/hc/en-us/articles/8731223128335-Upload-to-CONNECT",
+        "Title": "Upload to CONNECT",
+        "Content": "EveryWear Tutorial 1) Upload to CONNECT Objective You can upload your created items to CONNECT. Details Upload your created items to CONNECT. Upon selection, the FBX Options window will appear. The EveryWear window will close. Select the object(s) to upload. At least one item must be selected. Choose the textures to export. Select the texture options. Embed Media : The textures will be sent as a zip file along with the project. Graphic Library : Choose the appropriate format for the platform, either OpenGL or DirectX. Initialize all user-specified option values. Upload to CONNECT according to the specified option values. Close the FBX options window and navigate to the EveryWear window. To save the project, close the EveryWear window and save it as a ZPRJ file. [Main menu] - [File] - [Save as] - [Project]",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=wKjp2Xo0VCQ",
+            "https://www.youtube.com/watch?v=w7kp2xOpEzg"
+        ],
+        "CategoryId": 8472464306191,
+        "Category": "EveryWear",
+        "SectionId": 8731221608719,
+        "Section": "Upload",
+        "Tokens": 178
+    },
+    {
+        "ArticleId": "8731156701583",
+        "Source": "https://support-connect.clo-set.com/hc/en-us/articles/8731156701583-Preparing-and-Starting-EveryWear",
+        "Title": "Preparing and Starting EveryWear",
+        "Content": "EveryWear Tutorial 1. What to prepare? To use EveryWear, you must utilize the Auto Fitting function to dress the outfit on the avatar of the platform you intend to export it to. Auto Fitting Conditions The Auto Fitting function can only be utilized when avatars are wearing a fitting suit. A fitting suit can be generated either automatically or manually (only in Marvelous Designer)when loading an avatar. If you attempt to use the fitting function with an avatar that doesn't have a fitting suit, the following warning message will appear, and the fitting function will not be applied. To utilize EveryWear, the avatar must have joints and be rigged. 2. Started with EveryWear Click on the CONNECT - EveryWear button in the top menu of the program. To use EveryWear, make sure you meet the following two conditions: Complete the sign-in process in the Library &gt&gt Connect tab Ensure you have completed the EveryWear Creator registration. / EveryWear Creator registration",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=wKjp2Xo0VCQ",
+            "https://www.youtube.com/watch?v=w7kp2xOpEzg"
+        ],
+        "CategoryId": 8472464306191,
+        "Category": "EveryWear",
+        "SectionId": 8731122798351,
+        "Section": "EveryWear Usage Guide",
+        "Tokens": 206
+    },
+    {
+        "ArticleId": "8579112368271",
+        "Source": "https://support-connect.clo-set.com/hc/en-us/articles/8579112368271-What-is-EveryWear",
+        "Title": "What is EveryWear?",
+        "Content": "EveryWear is a feature package that optimizes garments made in CLO and Marvelous Designer for digital spaces like gaming, metaverse, and entertainment. Subscribers of CLO and Marvelous Designer can access these features for free during the beta phase. For additional information, please visit our website. EveryWear will significantly reduce your time and costs by automating repetitive tasks. Here is a list of features that will streamline the process of converting your 3D garment to the digital space. #1. Fitting Auto Fitting automatically adjusts 2D patterns and 3D garment to fit the size/body of the avatar. It allows creators to easily modify clothing designed for different avatar sizes/body to fit the other avatars in different sizes. #2. Rigging Rigging involves attaching 3D garment to a character and defining how it moves and behaves in real-time application like video games. It allows creators to significantly reduce the time required for rigging. #3. Texture Baking Texture baking is to capture and transfer information from high-resolution 3D garment to 2D texture maps. It allows creators to improve the efficiency and and increase the realism of 3D garments. #4. Level of Detail Level of Detail (LoD) involves creating different versions of a 3D character and dynamically selecting which one to render based on the viewer's distance. Creators don't need to worry about LoD, as it automatically generates the other levels based on the creator's original design. EveryWear Tutorial",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=wKjp2Xo0VCQ",
+            "https://www.youtube.com/watch?v=w7kp2xOpEzg"
+        ],
+        "CategoryId": 8472464306191,
+        "Category": "EveryWear",
+        "SectionId": 8579109173775,
+        "Section": "Introduction to EveryWear",
+        "Tokens": 307
+    }
+]

@@ -151,6 +151,7 @@ class Article:
                 documents[i]["@search.action"] = "mergeOrUpload"
                 documents[i]["TitleVector"] = azure_env.openai_helper.generate_embeddings(text=document["Title"])
                 documents[i]["ContentVector"] = azure_env.openai_helper.generate_embeddings(text=document["Content"])
+
                 del documents[i]["Tokens"]
                 del documents[i]["SectionId"]
                 del documents[i]["Section"]
@@ -216,7 +217,7 @@ class Article:
 
 if __name__ == "__main__":
     stage = questionary.select("Which stage?", choices=["prod", "dev"]).ask()
-    brand = questionary.select("Which brand?", choices=["clo3d", "closet", "clovf", "md"]).ask()
+    brand = questionary.select("Which brand?", choices=["clo3d", "closet", "closet_connect", "clovf", "md"]).ask()
     language = questionary.select("Which language?", choices=["English", "Korean"]).ask()
     task = questionary.select("What task?", choices=["Get Zendesk Article", "Get All Zendesk Articles", "Delete Articles", "Upload Articles"]).ask()
     article = Article(AzureEnv(stage, brand, language))

@@ -28,7 +28,6 @@ class AzureEnv:
             load_dotenv(os.path.join(parent_dir_path, ".env.dev"))
 
         self.AZURE_SEARCH_SERVICE = os.environ.get("AZURE_SEARCH_SERVICE")
-
         self.INDEX_NAME = os.environ.get(f"{brand.upper()}_AZURE_SEARCH_INDEX")
 
         self.SEARCH_CLIENT_ENDPOINT = f"https://{self.AZURE_SEARCH_SERVICE}.search.windows.net"
@@ -88,6 +87,8 @@ class AzureEnv:
     def get_zendesk_article_api_endpoint(self, page: int):
         if self.brand == "closet":
             return zendesk_article_api_endpoint.format("clo-set", self.get_locale(), page)
+        elif self.brand == "closet_connect":
+            return zendesk_article_api_endpoint.format("support-connect", self.get_locale(), page)
         elif self.brand == "md":
             return zendesk_article_api_endpoint.format("marvelousdesigner", self.get_locale(), page)
 
@@ -96,6 +97,8 @@ class AzureEnv:
     def get_zendesk_article_attachment_api_endpoint(self, article_id):
         if self.brand == "closet":
             return zendesk_article_attachment_api_endpoint.format("clo-set", self.get_locale(), article_id)
+        elif self.brand == "closet_connect":
+            return zendesk_article_attachment_api_endpoint.format("support-connect", self.get_locale(), article_id)
         elif self.brand == "md":
             return zendesk_article_attachment_api_endpoint.format("marvelousdesigner", self.get_locale(), article_id)
 
@@ -104,6 +107,8 @@ class AzureEnv:
     def get_zendesk_article_section_api_endpoint(self, section_id):
         if self.brand == "closet":
             return zendesk_article_section_api_endpoint.format("clo-set", self.get_locale(), section_id)
+        elif self.brand == "closet_connect":
+            return zendesk_article_section_api_endpoint.format("support-connect", self.get_locale(), section_id)
         elif self.brand == "md":
             return zendesk_article_section_api_endpoint.format("marvelousdesigner", self.get_locale(), section_id)
 
@@ -112,6 +117,8 @@ class AzureEnv:
     def get_zendesk_article_category_api_endpoint(self, category_id):
         if self.brand == "closet":
             return zendesk_article_category_api_endpoint.format("clo-set", self.get_locale(), category_id)
+        elif self.brand == "closet_connect":
+            return zendesk_article_category_api_endpoint.format("support-connect", self.get_locale(), category_id)
         elif self.brand == "md":
             return zendesk_article_category_api_endpoint.format("marvelousdesigner", self.get_locale(), category_id)
 

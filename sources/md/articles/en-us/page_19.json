@@ -1,0 +1,373 @@
+[
+    {
+        "ArticleId": "12631165674009",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/12631165674009",
+        "Title": "How to Update to the Latest Version",
+        "Content": "*If you're using a subscription license (Enterprise / Personal / Student), you all have access to download the latest version of Marvelous Designer. *If you updated your version to 12, you can also download the version on my account. STEP 1 On your computer, sign in with your account ( your End User ID) on the website. STEP 2 On my account page, you will see the \"Download\" button. STEP 3 Click &gt Download &gt Select MD 12 at the top. Why keep Marvelous Designer updated? If you're using a subscription license, we will always provide access to the latest version of the software. Our development team is constantly at work to further develop new feature, and add improvements within each version release (including patches) in order to support our users' work. This will maintain stability and efficiency in the software. Updating Marvelous Designer to the latest version or patch version allows you to take advantage of the latest features and bug fix updates, to keep Marvelous Designer running at it's best efficiency. Check out the latest features and updates https://www.marvelousdesigner.com/learn/newfeature",
+        "YoutubeLinks": [],
+        "CategoryId": 360002380272,
+        "Category": "FAQ",
+        "SectionId": 360007401011,
+        "Section": "Installation",
+        "Tokens": 233
+    },
+    {
+        "ArticleId": "4410742511769",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/4410742511769",
+        "Title": "License Plan",
+        "Content": "01. Personal License (For individuals) Were providing a person license pricing for an individual, a freelancer, a hobbyist, and a sole proprietor. (Clause. 2.2.1) Types Price Automatically billed Personal Monthly Subscription $39 / monthly Yes (cancelable anytime) 1 Year Prepaid License $280 / one time payment No If youre a perpetual license holder, an update/trade-in purchase is available for eligible versions. Please find more from this article (Click Here) 02. Student License Were providing student license pricing for academic users who enrolled at a qualified academic institution. To verify your student purchase, use the email address issued by the school or submit student verification documents. Type Price Automatically billed Student License $99 / one time payment No Note: This student discount is only provided up to 2 times within 4 years (since the first purchase). Refunds are not available under any circumstances. Please make your purchase carefully. 03. Enterprise License Types Price per Copy One ID Multi-Use Recommend Environment (NEW) Enterprise Standalone Monthly/Automatically billed $199/seat No 1. Online connection 2. When users do not often transfer the license to another machine Enterprise Standalone Annual $1,900/seat No Enterprise Network Online Annual $2,000/seat Yes Online connection Note: Enterprise Network Offline version does not have the \"Store\" function included in the software, so users need to use CONNECT (Asset store) to access and download additional assets. (Above version 11) If your team has a perpetual license, an update/trade-in purchase is available for eligible versions. Please find more from this article (Click Here) 04. Academic License Were providing Academic license pricing for Qualified Academic Institutions which have been accredited by an authorized governmental agency with learning and teaching purposes. If you want to purchase academic license for your institution, please reach out to sales@marvelousdesigner.com Type Price Academic Network Online Annual Fewer than 10 copies $300 per Copy More than 10 copies $150 per Copy ______________________________________________________________________________________________________________________________________________________ If youre new to Marvelous Designer? A 14-Day Free Trial License is available! If you are an personal user, simply click on the Free Trial button located at the top right corner of the page, and then click on Free trial on the following page. If youre an enterprise user, please create an end user account on Team Console Page. Then, you can login with the end user ID to download a free trial for 14 days. Step 1. Sign up as Company ID Step 2. Create an End user ID on Team Console Page Step 3. Sign in with the End user ID (Email verification is required) Step 4. Simply click on the Free Trial button and the trial installer will be downloaded immediately. Go to the Trial Page!",
+        "YoutubeLinks": [],
+        "CategoryId": 360002380272,
+        "Category": "FAQ",
+        "SectionId": 32742420933657,
+        "Section": "Licenses & Trials",
+        "Tokens": 575
+    },
+    {
+        "ArticleId": "360037331531",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360037331531",
+        "Title": "Smooth Curve",
+        "Content": "Objective Round the corner of Patterns and Internal Shapes (ver2.3.0). Location Main Menu 2D Pattern Edit Smooth Curve 2D Toolbar Smooth Curve Operation Follow the indicated guideline below: Main Menu 2D Pattern Edit Smooth Curve 2D Toolbar Smooth Curve Click and drag a corner or a curved segment to be rounded. The selected corner/curved segment is rounded/edited. Right click on the mouse while dragging the point or the curved segment (ver2.4.0). The Round Corner by Length window appears. Enter the desired line length and curvature. Then, click OK. The selected corner/curved segment is rounded/edited.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=mUmkFpZVU-Y"
+        ],
+        "CategoryId": 360002380272,
+        "Category": "FAQ",
+        "SectionId": 360007401091,
+        "Section": "General",
+        "Tokens": 134
+    },
+    {
+        "ArticleId": "12193753080601",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/12193753080601",
+        "Title": "FILE: Export Joint Keyframe Animation with FBX",
+        "Content": "Objective Allows users to export both the garment and avatar together, without losing joint animation. The joint animation is currently exported with keys at every frame for the duration of the motion. Location File Export FBX Option Joint Animation Operation Import an FBX containing a rigged character with joint animation as an Avatar, with the box next to 'Joint Animation' checked (found under the \"Object\" section). Create a garment for the character, or add a garment option from the Library, at a desired pose from the Avatar's animation. Simulate in the 3D Window to drape the garment onto the Avatar. Once complete, navigate to the File menu location, select 'Export', then select 'FBX'. Choose 'Export All' in the Export FBX pop-up window. Click on 'OK'. Open the resulting FBX file in another 3D software package. Observe that the Avatar's joint animation has been exported (keyed at every frame).",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36105765396121,
+        "Section": "Import / Export",
+        "Tokens": 192
+    },
+    {
+        "ArticleId": "12095255103769",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/12095255103769",
+        "Title": "Merge Vertex by Proximity at Export",
+        "Content": "Objective Merge vertices across patterns by proximity, without relying on sewing relationships, producing a single unified mesh which is \"air-tight\" across seams. This is especially useful for geometry which has been created using the Retopology Tools within Marvelous Designer. Once the new topology has been finalized, any sewing relationships are removed - so the previous sewing-relationship-based method of merging vertices at export would not be effective. Location Main Menu File Export OBJ Merge Vertex By Proximity Operation Load a project file with either traditional dynamic Marvelous Designer (Delaunay Triangulation) pattern meshes or non-dynamic pattern meshes created with the Retopology Tools in Marvelous Designer. Export the mesh through expanding the File dropdown-menu, selecting Export, then selecting OBJ. Set the file path for the OBJ and click Save. Export OBJ pop-up window appears. Check the option box for Merge Vertex by Proximity, above the option box for \"Unified UV Coordinates\". If the option is checked, the Weld and Thickness options are not available. Set the Merge Distance in listed scene units (mm by default). Preview the merged vertices in the (3D mesh) window.. Vertices which will be Merged can be highlighted in Red. Vertices which will not be Merged can be highlighted in Blue. Click OK",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=Ey8C0c-Fb2g"
+        ],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36105765396121,
+        "Section": "Import / Export",
+        "Tokens": 260
+    },
+    {
+        "ArticleId": "12093097063705",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/12093097063705",
+        "Title": "Automatically Create Fitting Suit at Import",
+        "Content": "Objective Automatically generate a Fitting Suit for a custom bipedal avatar at import. Location Main Menu File Import OBJ/FBX Auto Create Fitting Suit. Operation Select the tool/menu indicated above under \"Location\". Select either OBJ or FBX file format for import. Navigate to the file location for a custom bipedal avatar (two arms, two legs, no tail) in either A-Pose or T-Pose, and double-click on the file name. The Import OBJ/FBX pop-up Window appears. Make sure the Load Type is set to Open and the Object Type is set to Avatar. Check the option box next to Auto Create Fitting Suit Click on OK. The Avatar is imported into the scene and a Fitting Suit is automatically created in the process.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=-vDc-xCZuH8"
+        ],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36105765396121,
+        "Section": "Import / Export",
+        "Tokens": 155
+    },
+    {
+        "ArticleId": "5856105682329",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/5856105682329",
+        "Title": "3D File (USD) Import/Export",
+        "Content": "USD Import/Export Objective Garments made with Marvelous Designer are able to be formatted/imported in USD file and they are compatible with other 3D software. Location USD Import Main Menu File Import USD USD Export Main Menu File Export USD Operation USD Import Follow the indicated guideline: Main Menu File Import USD Open File window appears. Select a file and click OK. Import USD window appears. Set details and click OK. Note: USD Import Detail Settings Scale Manually enters values or selects the desired unit. Move Garment to Start Position Jump to the position of the start frame of the motion where the garment was loaded and move it. Move Avatar &amp Garment to Start Position Moves the Avatar and Garment to the location of the first frame. Transition Animation A transition animation is an animation that changes from a T-pose to a motions first pose in stages, and is created when the avatars current pose and motion differs from that of the first frame pose. USD Export Follow the indicated guideline: Main Menu File Export USD Save File window appears. Select desired location to store, and click Save. Export USD window appears. Set details and click OK. Note: USD Export Detail Settings Object Select All Patterns: Select/Deselect all Patterns. Individual selection is available on the drop-down menu on the right. Select All Avatars: Select/Deselect all Avatars/Objects. Individual selection is available on the drop-down menu on the right. Select All Graphics/Top-stitches: Select/Deselect all Graphics/Top-stitches. Individual selection is available on the drop-down menu on the right. Unweld Exports Vertex(points of mesh) of sewn pattern parts as multiple objects. Weld Combines Vertex (points of mesh) of sewn pattern parts together as one point. Weld Selected Pattern: Weld sewing-lines of selected patterns. Thin Ensures thickness is not exported to Geometry even if the value is increased beforehand. Thick Exports thickness value to Geometry. Unified UV Coordinates: Exports all Garment Pattern texture data fit to UV Coordinates ranging from 0 to 1. Image Size Width and Height will be saved in a fixed ratio. Allowance: 100 ~ 10000 Pixel Fill Texture Seams Expands the scope of the texture having its boundary line as the standard. Allowance: 0 ~ 15 mm When you type in values, preview will show in the 2D Window. Scale Adjusts scale of file being exported when a value is entered or desired unit from 'Unit in file to import' is selected. Animation Entire Region: Save the recorded garment's animation entirely. Play Region Only: Only the garment animation in the play area is saved.",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36105765396121,
+        "Section": "Import / Export",
+        "Tokens": 538
+    },
+    {
+        "ArticleId": "360036955972",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360036955972",
+        "Title": "File Sharing via CLO-SET (Above ver. 10)",
+        "Content": "Objective Upload 3D files and share them easily with others. Location Main Menu File Share via CLO-SET Project/Garment/Avatar Main Menu file_share icon Project/Garment/Avatar Operation Construct a Garment. Follow the indicated guideline below: Main Menu File Share via CLO-SET Project/Garment/Avatar Main Menu file_share icon Project/Garment You will be directed to the Upload page in CLO-SET. If you are not a registered member of CLO-SET, you are directed to the Sign Up page. Note: For detailed instructions on how to use CLO-SET, please check out CLO-SET Help Center. (click here) Note: To render in CLO-SET, please refer to the attached manual. (click here)",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36105765396121,
+        "Section": "Import / Export",
+        "Tokens": 161
+    },
+    {
+        "ArticleId": "360036955992",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360036955992",
+        "Title": "Cache Animation Export",
+        "Content": "Objective Export Animation cache data. Note: Only the cache data related to the Garment can be exported. Location Main Menu File Export Animation Maya Cache (.mc) Maya Cache (.mcx) Point Cache 2 MDD Cache (Standard) MDD Cache (Maya/3ds Max) Operation Follow the indicated guideline below: Main Menu File Export Animation Maya Cache (.mc) Maya Cache (.mcx) Point Cache 2 MDD Cache(Standard) MDD Cache (Maya/3ds Max) The Save File window appears. Select the desired file and click OK. The Export window opens. Set the full details and click OK. Object Single Object Exports the selected object as a single object. Multiple Objects Exports the selected object as multiple objects. UnWeld Exports the Vertex (points of the mesh) of the parts of the pattern that are sewn together into one line into multiple objects. Thickness exports for quad meshes available beginning version 2.3.0. (ver2.3.0). Weld Combines the Vertex (points of the mesh) of the parts of the pattern that are sewn together into one line into one point. Selected Pattern: Weld based on the sewing line that connects the selected patterns (ver2.3.0). Thin Ensures that the thickness will not be exported even if the rendering thickness value is increased beforehand. Thick Exports a pattern with its rendering thickness values in its increased state. Combined UV Coordinates: Exports all Garment Pattern texture data fit to UV Coordinates ranging from 0 to 1. Note: Unified Texture (ver3.1.0). Export multiple layers of texture information as a single UV texture information. Image File Designate file saving path and file name. Add numbers behind the file name as below: File Name_0, File Name_1. Texture Size Width and Height will be saved in a fixed ratio. Allowance: 100 ~ 10000 Pixel Fill Texture Seams Expands the scope of the texture having its boundary line as the standard. Allowance: 0 ~ 15 mm When you type in values, preview will show in the 2D Window. Scale Adjusts the scale of the file being exported when a value is entered or the desired unit from Unit in file to import is selected. Axis Conversion Changes the directions of each axis of the object. Animation Entire Area (saves all of the recorded garment animation.) Play Area Only (saves only the play area garment animation.) File Save With Texture Files (.zip): Exports the .obj file, .mtl file, and texture images used in the garment as one compressed file when exporting animation. Save with Meta Data (.xml) : Export the garment's pattern (Mesh), physical property, and sewing information as Meta Data (ver2.3.0). Diffuse Color Combined on Texture: Combine and save the garment's texture image and color as a single image (ver2.2.0). Exclude Ambient Color (for Modo): Exclude the Ambient color value when saving materials (ver2.2.0).",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36105765396121,
+        "Section": "Import / Export",
+        "Tokens": 627
+    },
+    {
+        "ArticleId": "360036956032",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360036956032",
+        "Title": "OBJ Sequence Export",
+        "Content": "Objective Export an OBJ Sequence as an OBJ file on every frame of an animation. Exporting a 1 second animation with a 30 fps standard will result in 30 OBJ files being exported. Location Main Menu File Export Animation OBJ Sequence Operation Follow the indicated guideline below: Main Menu File Export Animation OBJ Sequence The Save File window opens. Select the desired file and click OK. The Export OBJ Animation window opens. Set below options as needed and click OK. Export OBJ Animation Option Object Select All Patterns: Select/Deselect all patterns. You can select specific patterns by utilizing the dropdown menu on the right (ver2.2.0). When utilizing the OBJ (Selected) menu, patterns selected in the 3D and 2D windows are automatically selected and checkbox-ed. Select All Avatars: Select/Deselect all Avatars/Objects. You can select specific objects by utilizing the dropdown menu on the right (ver2.2.0). Select All Graphics and Trims: Select/Deselect all Graphics and Trims. You can select specific Graphics or Trims by utilizing the dropdown menu on the right (ver2.2.0). Single Object :Exports the selected object as a single object. If you set the sub-object name, the name of the mesh will be the same with the sub-object name when it is saved. (ver. 5.1.4) You can set it to be saved 'Same as file name' or you can specify 'Object Name'. (ver. 5.1.4) Multiple Objects :Exports the selected object as multiple objects. UnWeld Exports the Vertex (points of the mesh) of the parts of the pattern that are sewn together into one line into multiple objects. Thickness exports for quad meshes available beginning version 2.3.0. (ver2.3.0). Weld Combines the Vertex (points of the mesh) of the parts of the pattern that are sewn together into one line into one point. Weld Selected Pattern: Weld based on the sewing line that connects the selected patterns (ver2.3.0). Thin Ensures that the thickness will not be exported even if the rendering thickness value is increased beforehand. Thick Exports a pattern with its rendering thickness values in its increased state. Combined UV Coordinates: Exports all Garment Pattern texture data fit to UV Coordinates ranging from 0 to 1. Note: Unified Texture (ver3.1.0). Export multiple layers of texture information as a single UV texture information. Image File Designate file saving path and file name. Add numbers behind the file name as below: File Name_0, File Name_1. Texture Size Width and Height will be saved in a fixed ratio. Allowance: 100 ~ 10000 Pixel Fill Texture Seams Expands the scope of the texture having its boundary line as the standard. Allowance: 0 ~ 15 mm When you type in values, preview will show in the 2D Window. Include Internal Shape: Include internal line and/or shape information in export (ver2.3.0). Scale Adjusts the scale of the file being exported when a value is entered or the desired unit from Unit in file to import is selected. Axis Conversion Changes the directions of each axis of the object. Animation Entire Area: saves all of the recorded garment animation. Play Area Only: saves only the play area garment animation. Input Frame: Designate and save the frame section. (ver. 5.1.4) You can save the Bone Information for the frame by setting Save with Bone Information (JSON).",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36105765396121,
+        "Section": "Import / Export",
+        "Tokens": 732
+    },
+    {
+        "ArticleId": "360036956072",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360036956072",
+        "Title": "Sansar Export",
+        "Content": "Objective Export in the samd file format for use in Sansar. Location Main Menu File Export Sansar (Samd) Operation Find and click the menu indicated in Location. The Save File window follows. Enter the garment name into the File name tab and press Save to save the file. The file saves in the Sansar format.",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36105765396121,
+        "Section": "Import / Export",
+        "Tokens": 67
+    },
+    {
+        "ArticleId": "360036956092",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360036956092",
+        "Title": "GoZ for Mac",
+        "Content": "* This feature is not currently supported. It will be fixed soon. GoZ allows direct import/ export of Object between ZBrush and Marvelous Designer. Need to install GoZ installer for GoZ Marvelous Designer Plug-in in ZBrush. GoZ Install for Mac Download GoZ installer and Unzip to GoZApps folder To Activate GoZ function, need to installer GoZ Marvelous Designer Plug-in installer from ZBrush. Download Installer Download installer above, move the installer to GoZApps and unzip. Default Path: /Users/Shared/Pixologic/GoZApps Folder Named MarvelousDesigner will be unzipped. To install GoZ Marvelous Designer, ZBrush need to be installed first. Install GoZ Marvelous Designer from ZBrush After unzip Marvelous Designer folder to GoZApps folder, run ZBrush. ZBrush Main menu &gt Preferences &gt GoZ &gt click Force reinstall. List will be displayed, Click Marvelous Designer from the list. Click 'Install' Button to start install. Once installation is completed, Marvelous Designer will be launched, can find GoZ menu on the Marvelous Designer main menu. Setting Marvelous Designer Path in ZBrush ZBrush Main menu &gt Preferences &gt GoZ &gt Click Update all paths Browse for desired path of Marvelous Designer and select. Run GoZ from Marvelous Designer After installing GoZ Marvelous Designer, can directly export Garment, Avatar and Trims from Marvelous Designer by Run GoZ menu. Location Marvelous Designer Main Menu GoZ Run GoZ Operation Create or load Garment either Avatar to export by GoZ Select the tool according to the Location above. Garment/ Avatar will be added to ZBrush's Subtool according to GoZ export setting. Once the object is exported by GoZ, can edit and update by Run GoZ button. Run GoZ from ZBrush After installing GoZ, can directly export object to Marvelous Designer from ZBrush. Location ZBrush GoZ Operation Create an Object from ZBrush. Select the tool according to the Location above. Garment/ Avatar will be exported to Marvelous Designer according to Marvelous Designer's GoZ import setting. Once the object is exported by GoZ, can edit and update by GoZ button. GoZ Export Settings GoZ Export setting from Marvelous Designer to ZBrush. Location Marvelous Designer Main Menu GoZ Export Settings Operation Object Single Object Exports the selected object as a single object. Multiple Objects Exports the selected object as multiple objects. UnWeld Exports the Vertex (points of the mesh) of the parts of the pattern that are sewn together into one line into multiple objects. Weld Combines the Vertex (points of the mesh) of the parts of the pattern that are sewn together into one line into one point. Weld Selected Pattern: Weld based on the sewing line that connects the selected patterns. Thin Ensures that the thickness will not be exported even if the rendering thickness value is increased beforehand. Thick Exports a pattern with its rendering thickness values in its increased state. Include Avatar Shape: Save the Avatar as part of the file. Scale Adjusts the scale of the file being exported when a value is entered. *Reset: Reset all GoZ settings to Default. GoZ Import Settings GoZ Import setting from ZBrush to Marvelous Designer. Location Marvelous Designer Main Menu GoZ Import Settings Operation Object Type Load as Avatar Imports the object as an avatar and replaces the original avatar with the imported one. Load as Trim OBJs that are loaded as Trim do not have collision detection with the 3D Garment and will pass through the 3D Garment when simulated. Load as Garment Import an Object as Simulation ready Garment, can adjust Physical property from property editor Scale Manually enter the value. * Reset: Reset all GoZ settings to Default.",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36105765396121,
+        "Section": "Import / Export",
+        "Tokens": 784
+    },
+    {
+        "ArticleId": "360037330811",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360037330811",
+        "Title": "Compatible File Format",
+        "Content": "Compatible File Format File Format Import Export Detail 3D FBX *.fbx O O File contains Mesh, Material, Joint, Animation, and Camera information. *Only Joint that was imported as FBX to Marvelous Designer can be exported as FBX. Open COLLADA *.dae O X This file can be exported from other 3D softwares such as 3ds Max, Maya and used. These files contain geometry and material, also in a addition to rigging, skinning, and animation data When exporting OpenCOLLADA files from 3DS Max or Maya, install the OpenCOLLADA plugin (http://www.opencollada.org) and export to use the avatar OBJ *.obj O O File contains Geometry and Material Information. Primarily used for importing Avatar and related sources into the program. LXO *.lxo X O File contains Geometry and Material Information. Used to export Apparel/Avatar information to Modo in the LXO file format. Animation Cache *.mc *.pc2 *.mdd O O Is the vertex animation data. It is possible to take animations made in Marvelous Designer to 3DSMax or Maya in point cache format. Alembic *.abc O O Is an interchange file format for computer graphics that saves both vertex and animation information. Mac export (ver. 5.1.431) 3D Snapshot *.png - O Ability to save single views of the 3D window in the PNG file format. 2D Texture *.jpg, *.png, etc. O O Textures inserted into garments, use image textures in formats such as JPG, PNG, TIF, and PSD. Supported file types: jpg, jpeg, png, bmp, wbmp, psd, ico, tga, tif, tiff, gif, mng, jng, dds, hdr, koa, lbm, iff, pbm, pcd, pcx, pgm, ppm, ras, cut, xmb, xpm, sgi, g3, exr, j2k, jp2, pfm, pict, pct) Substance .sbsar O - File contains procedural texture information with adjustable parameters. The separate channels of a Substance material can be baked and exported (color, normal, metalness, roughness, opacity)",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36105765396121,
+        "Section": "Import / Export",
+        "Tokens": 474
+    },
+    {
+        "ArticleId": "360036955872",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360036955872",
+        "Title": "3D File (Alembic) Import/Export",
+        "Content": "Objective Import/Export the object, cache, normal, and animation data contained within an Alembic file (ver2.4.0). Location Import Alembic Main Menu File Import Alembic Export Alembic Main Menu File Export Alembic (ver6.1) Main Menu File Export Alembic (HDF5) / Alembic (OGAWA) Operation Import Alembic Follow the indicated guideline below: Main Menu File Import Alembic The Open File window appears. Select the desired file and click OK. The Import Alembic window appears. Select the settings as needed and click OK. The Alembic file is imported based on the setting. Load Type You can choose Open or Add. Scale Enter a number directly or select the desired values. Axis Conversion Change the direction of each axis of the object. (ver. 2024.0) Option Move Garment to Start Position Navigates to the position of the start frame of the motion that imported the garment. Move Avatar &amp Garment to Start Position Navigates to the position of the start frame of the motion that imported the outfit and avatar. Export Alembic Follow the indicated guideline below: Main Menu File Export Alembic (HDF5) / Alembic (OGAWA) The Open File window appears. Designate the file saving path and the file name. Then, click OK. The Export Alembic window appears. Select the settings as needed and click OK. The file is exported as an Alembic file based on the setting. File File Type (ver6.1) Select a file type. Object Unweld Exports the Vertex (points of the mesh) of the parts of the pattern that are sewn together into one line into multiple objects. Thickness exports for quad meshes available beginning version 2.3.0. (ver2.3.0). Weld Combines the Vertex (points of the mesh) of the parts of the pattern that are sewn together into one line into one point. Weld Selected Pattern: Weld based on the sewing line that connects the selected patterns (ver2.3.0). Thin Ensures that the thickness will not be exported even if the rendering thickness value is increased beforehand. Thick Exports a pattern with its rendering thickness values in its increased state. Merge Vertex by Proximity: Merge vertices across patterns by proximity Unified UV Coordinates: Exports all Garment Pattern texture data fit to UV Coordinates ranging from 0 to 1. Include Avatar Shape: Save the Avatar as part of the file. FPS Sets the frame rate of the cache data. (below ver. 12.2) Basic Scale the exported file by selecting the desired units or entering the percentage number. Animation You can specify Entire Region or Play Region Only to export. Selecting the Current Frame menu allows you to export only the current frame. (ver. 2024.0) Color YYou can export Strain or Stress as vertex color.",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36105765396121,
+        "Section": "Import / Export",
+        "Tokens": 610
+    },
+    {
+        "ArticleId": "360037330771",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360037330771",
+        "Title": "Animation Import",
+        "Content": "Objective Import Animation cache data created in the third-party 3D solutions. Note: Refer to the links below for FBX/ Alembic file import:. 3D File (FBX) Import/Export 3D File (Alembic) Import/Export Location Main Menu File Import Animation Maya Cache(.mc) Maya Cache(.mcx) Point Cache 2 MDD Cache(Standard) MDD Cache(Maya/3ds Max) Cache(Maya/3ds Max) Operation Follow the indicated guideline below: Main Menu File Import Animation Maya Cache (.mc) Maya Cache (.mcx) Point Cache 2 MDD Cache(Standard) MDD Cache (Maya/3ds Max) The File Explorer or Find window appears. Select the desired file and click OK. An option window appears with settings that apply to the file format selected. Set the following individual settings. Object Select All Avatars Apply the cache data to all objects in the 3D environment. Cache data can be applied to individual objects from the submenu. FPS Set the frame rate of the cache data. Note: This menu only appears when importing Point Cache (PC2) files. Scale Set the scale of the cache data. Axis Conversion Set the axis direction for the cache data. The Y-axis runs vertically by default. Garment Position Move Avatar &amp Garment to Start Position Moves the Avatar and Garment to the location of the first frame (ver2.5.0). Transition Animation A transition animation is an animation that changes from a T-pose to a motions first pose in stages, and is created when the avatars current pose and motion differs from that of the first frame pose. Click OK. The cache data is imported according to the selected settings.",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36105765396121,
+        "Section": "Import / Export",
+        "Tokens": 355
+    },
+    {
+        "ArticleId": "360036955812",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360036955812",
+        "Title": "3D File (FBX) Import/Export",
+        "Content": "Objective Import a file's Geometry, Material, Joint, and Camera Animation information in the FBX file format (ver2.2.0). Location Import FBX Main Menu File Import FBX Export FBX Main Menu File Export FBX Operation Import FBX Follow the indicated guideline below: Main Menu File Import FBX The Open File window appears. Select the desired file and click OK. The Import FBX window appears. Select the settings and click OK. The FBX file is imported based on the setting. Load Type Open All existing objects will be removed, leaving the imported FBX file only. Add Add a FBX file, keeping the existing objects. Auto Create Fitting Suit For humanoid avatars only, a Fitting Suit is automatically created in the import process. Object Type Avatar Import a FBX file as an Avatar type. - Objects imported as an Avatar type can be muti-selected. Trim Import a FBX file as a Trim type. - The object will pass through the clothing while Simulation is on, as the Trim type cannot collide with clothing. - Set the collide option for a Trim type on the Property Editor by toggling on the Collision check-box. - Select an trim object and toggle on the Glue icon on the gizmo to attach the object to clothing. - Toggle on the Scale icon on the gizmo to scale the size of an object. Scene &amp Props Import FBX file in Scene &amp Props format. - You can use the Collision menu in the property window. Object Camera Toggles whether the Camera data or Camera Animation data is imported Joint Animation Toggles whether the Joint Animation date is imported. Cache Animation (mc) Toggles whether the Cache Animation data is imported. Automatically Add Arrangement Points For humanoid avatars only, arrangement points are automatically generated in the import process. Scale Input the Specific Value or Choose Measure. Axis Conversion Modifying Object's Axis direction.(ver. 12.2) Translation Align Bottom to Ground When an object is placed below the ground, toggle on Align Bottom to Ground check-box to place the object imported above ground. Option Move Garment to Start Position Move the garment to the starting frame of the imported motion. Export FBX Follow the indicated guideline below: Main Menu File Export FBX The Save File window appears. Designate the file saving path and file name, and then click OK. The Export OBJ window appears. Select the settings as needed and click OK. The file is exported as a FBX file based on the setting. Object Select an Avatar (ver 6.1) Select the avatar to be exported. Note: The selected avatar is saved with its rigging data. You can exclude it as desired. Select All Avatars (ver. 12.2) - All existing avatars will be exported. Single Object Exports the selected object as a single object. Multiple Objects Exports the selected object as multiple objects. Un-Weld Exports the Vertex (points of the mesh) of the parts of the pattern that are sewn together into one line into multiple objects. Thickness exports for quad meshes available beginning version 2.3.0 (ver2.3.0). Weld Combines the Vertex (points of the mesh) of the parts of the pattern that are sewn together into one line into one point. Weld Selected Pattern: Weld based on the sewing line that connects the selected patterns (ver2.3.0). Thin Ensures that the thickness will not be exported even if the rendering thickness value is increased beforehand. Note: * When an object is exported as a single object, its texture is exported as a whole even when its sides (front, back, and side) have different textures (ver5.0.0.) Thick Exports a pattern with its rendering thickness values in its increased state. Note: * The thickness can be exported when Pattern Mesh is Quadrangular (ver2.3.0.) * Each side's texture is exported individually when an object's front, back, side have different textures (ver5.0.0.) Combined UV Coordinates: Exports all Garment Pattern texture data fit to UV Coordinates ranging from 0 to 1. Note: Unified Texture (ver3.1.0). Export multiple layers of texture information as a single UV texture information. Image File Designate file saving path and file name. Add numbers behind the file name as below: File Name_0, File Name_1. Texture Size Width and Height will be saved in a fixed ratio. Allowance: 512 ~ 8192 Pixel Fill Texture Seams Expands the scope of the texture having its boundary line as the standard. Allowance: 0 ~ 15 mm When you type in values, preview will show in the 2D Window. Animation Joint Animation: Saves the animation data that was originally imported with the FBX file. Cache Animation (MC): Saves the cache data along with the recorded Garment Animation. Scale Adjusts the scale of the file being exported when a value is entered or the desired unit from Unit in file to import is selected. Axis Conversion Changes the directions of each axis of the object. Animation Entire Area (saves all of the recorded garment animation.) Play Area Only (saves only the play area garment animation.) File File Type: Select between Binary or Ascii file type. Binary: The file is saved in binary and cannot be opened by users. Ascii: The file is saved as text and can be opened by users. Relative Texture Image File Path: Saves the texture image name without a texture image file path. Texture images are saved in the same folder as the FBX file, for automatic import. Absolute Texture Image File Path: Saves the file path that contained the texture images as the texture file path. If the texture image file path is changed, texture images cannot be imported. Save With Texture Files (.zip): Exports the .obj file, .mtl file, and texture images used in the garment as one compressed file when exporting animation. Note: FBX SDK 2020 version is available. (ver MD10) Only Joint that was imported as FBX to Marvelous Designer can be exported as FBX. Import/Export FBX with multiple avatars",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=WxfIw1uzsh8"
+        ],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36105765396121,
+        "Section": "Import / Export",
+        "Tokens": 1265
+    },
+    {
+        "ArticleId": "360036955832",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360036955832",
+        "Title": "3D File (COLLADA) Import",
+        "Content": "Objective COLLADA is a commonly used 3D application format that can be exported from 3D tools such as 3DS Max, Maya, Poser, and DAZ Studio and used as Marvelous Designer Avatar or Scene/Prop. For 3DS Max or Maya, install the OpenCOLLADA plugin (https://github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools) and use it to export in COLLADA format, instead of using the default COLLADA exporter. COLLADA files contain Geometry and Material, in addition to Rigging, Skinning, and Animation data. Avatar Motion Data can be imported into Marvelous Designer in COLLADA file format, then saved as a *.mtn file, which is Marvelous Designer's proprietary format. Location Main Menu File Import OpenCOLLADA Operation Follow the indicated guideline below: Main Menu File Import OpenCOLLADA The Open File window appears. Select the desired file and click OK. The Import COLLADA window opens. Select the settings as needed and click OK. Object Type Import as Avatar Morphs the original object into the object designated as the Morph Target. Enter the Transition Frame count into the Morphing Frame Count. The higher the frame count, the slower the morphing process. Import as Prop/Scene The simulated object passes through the Garments due to a lack of collision. Scale Adjusts the scale of the file being imported when a value is entered Garment Position Move Garment to Start Position Moves the Avatar and Garment to the location of the first frame (ver2.5.0). Note: If the COLLADA file path includes # (symbols), the file may not load properly.",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36105765396121,
+        "Section": "Import / Export",
+        "Tokens": 343
+    },
+    {
+        "ArticleId": "360036955852",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360036955852",
+        "Title": "3D File (LXO) Export",
+        "Content": "Objective Export garments and avatars as LXO file format which is compatible with Modo. The LXO file format includes Geometry and Material information. Location Main Menu File Export LXO Operation Follow the indicated guideline below: Main Menu File Export LXO The Save File window appears. Designate the file saving path and the file name. Then, select Save. The file is exported as a LXO file format.",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36105765396121,
+        "Section": "Import / Export",
+        "Tokens": 82
+    },
+    {
+        "ArticleId": "4410271112601",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/4410271112601",
+        "Title": "Compatible File Format",
+        "Content": "Compatible File Format File Format Import Export Detail 3D FBX *.fbx O O File contains Mesh, Material, Joint, Animation, and Camera information. *Only Joint that was imported as FBX to Marvelous Designer can be exported as FBX. Open COLLADA *.dae O X This file can be exported from other 3D softwares such as 3ds Max, Maya and used. These files contain geometry and material, also in a addition to rigging, skinning, and animation data When exporting OpenCOLLADA files from 3DS Max or Maya, install the OpenCOLLADA plugin (http://www.opencollada.org) and export to use the avatar OBJ *.obj O O File contains Geometry and Material Information. Primarily used for importing Avatar and related sources into the program. LXO *.lxo X O File contains Geometry and Material Information. Used to export Apparel/Avatar information to Modo in the LXO file format. Animation Cache *.mc *.pc2 *.mdd O O Is the vertex animation data. It is possible to take animations made in Marvelous Designer to 3DSMax or Maya in point cache format. Alembic *.abc O O Is an interchange file format for computer graphics that saves both vertex and animation information. Mac export (ver. 5.1.431) 3D Snapshot *.png - O Ability to save single views of the 3D window in the PNG file format. 2D Texture *.jpg, *.png, etc. O O Textures inserted into garments, use image textures in formats such as JPG, PNG, TIF, and PSD. Supported file types: jpg, jpeg, png, bmp, wbmp, psd, ico, tga, tif, tiff, gif, mng, jng, dds, hdr, koa, lbm, iff, pbm, pcd, pcx, pgm, ppm, ras, cut, xmb, xpm, sgi, g3, exr, j2k, jp2, pfm, pict, pct) Substance .sbsar O - File contains procedural texture information with adjustable parameters. The separate channels of a Substance material can be baked and exported (color, normal, metalness, roughness, opacity)",
+        "YoutubeLinks": [],
+        "CategoryId": 360002380272,
+        "Category": "FAQ",
+        "SectionId": 360007305752,
+        "Section": "Compatibility",
+        "Tokens": 474
+    },
+    {
+        "ArticleId": "360037401731",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360037401731",
+        "Title": "MODULAR MODE: Select a Block in the Modular Configurator Window",
+        "Content": "Objective Select and combine Blocks as desired in the Modular Configurator window. Location Modular Mode Vertical Menu Tab on the Left Modular Configurator Operation 1. Follow the indicated guideline below: Modular Mode Vertical Menu Tab on the Left Modular Configurator Modular Configurator window appears. 2. Select a desired category from the horizontal tab. Folders appear in order. 3. Select a desired Garment category folder. Modular Structure file is displayed. 4. Select a desired Modular Structure file. All Blocks compatible with the selected Module Structure are now being displayed. 5. Select a desired Block. The Blocks are replaced accordingly. 6. Modify the design as desired and complete the 3D Garment.",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36753895515801,
+        "Section": "Modular",
+        "Tokens": 142
+    },
+    {
+        "ArticleId": "360037401751",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360037401751",
+        "Title": "MODULAR MODE: Edit Block Folders in the Modular Configurator Window",
+        "Content": "Objective Edit Block folders at your convenience to organize Blocks in the folders. Location Vertical Menu Tab on the Left Modular Configurator (Select) Block Folder Operation 1. Follow the indicated guideline below: Vertical Menu Tab on the Left Modular Configurator (Select) Block Folder All Blocks in the selected Block folder appears in the Modular Configurator. 2. Select the Edit button. Show icons appear on every Garment thumbnails. 3. Select a Modular Structure file that you want to organize first. All Blocks compatible with the selected Module Structure are now being displayed. 4. Click on the Display icon to either display or hide the Garments or Blocks Hidden Garments or Blocks appear in lighter shade and the displayed Garments or Blocks appear in brighter shade. 5. Click on the Save button to save in the configuration file in the same folder as the Block. 6. When editing is done, select the Exit button. The Blocks appear in the Modular Configurator accordingly. Note: It is able to tie the Modular configuration files as a group by adding a group in the Editor Mode when needing a category that is above all the Modular configuration files. Unlikely to the Blocks, one Modular configuration file can only be included in one group.",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36753895515801,
+        "Section": "Modular",
+        "Tokens": 249
+    },
+    {
+        "ArticleId": "360037401791",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360037401791",
+        "Title": "MODULAR MODE: Order of Use of the Modular Configurator Window",
+        "Content": "Follow the order of use of the Modualr Configurator window in order to construct and use an user data. To create a configuration file for the Modular Configurator, please follow the steps below: Open the Modular Configurator window Add an User folder by pressing (+) icon Press the Edit icon to switch to the Editor Mode If needed, add groups by pressing Add Group icon Designate the Modular file (.zmdr) to either be displayed or hidden for each group Designate the Modular file (.zblc) to either be displayed or hidden for each group Click Save button to save the structure file in the same folder as the Block Press Exit button when editing is done",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36753895515801,
+        "Section": "Modular",
+        "Tokens": 135
+    },
+    {
+        "ArticleId": "360037401691",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360037401691",
+        "Title": "MODULAR MODE: Open/Save Blocks",
+        "Content": "Objective Open and save Block component files (.ZBLC). Location Modular Mode Block Editor Operation Open 1. Follow the indicated guideline below: Modular Mode Block Editor 2.Mouse over on a desired Modular Template. Open button appears. 3. Click Open button to load Block files. Save 1.Follow the indicated guideline below: Modular Mode Block Editor 2. Mouse over on a desired Modular Template. Save button appears. 3. Click Save button. A pop-up window appears. 4. Select a desired location with a desired file name and click Save button. Save Block Component window appears. 5. Set additional settings as the following menu below if needed: Thumbnail Use Block Component Thumbnail A default thumbnail image. Create New Thumbnail Select an image for the thumbnail. The file is now being saved and appeared in the Modular Configurator.",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36753895515801,
+        "Section": "Modular",
+        "Tokens": 170
+    },
+    {
+        "ArticleId": "360037401671",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360037401671",
+        "Title": "MODULAR MODE: Sew Blocks",
+        "Content": "Objective Set seamlines between Patterns and Block Boxes. Location Modular Mode Block Editor Operation Sew Patterns and Block Boxes 1. Follow the indicated guideline below: Modular Mode Block Editor 2. Click on Segment sewing tool or Free sewing tool. 3. Set seamlines for Pattern and its relative Block Boxes (Step 2 and 3 do not necessarily need to be in order). 4.Set Pattern outlines (Patterns must be sewn one another i.e. shoulder seams, armholes, side seams) and seamlines between Block Boxes. 5. Repeat the steps above for the remains. Note: Block Boxes can only be sewn with Segment Sewing. In other words, sewing multiple Block Box segments at once by using M:N Free Sewing is not allowed. Therefore if the number of Block Box segments is higher than the number of segments need to be sewn, add segments on the patterns to make the number equal, then sew them 1:1. ex) In case of a basic t-shirt block, there is a point added on the neck segment. Therefore add a point on its pattern, then sew the segments 1:1. Patterns that are sewn alone (i.e. hems, sleeves or armholes of a sleeveless style) do not need to be sewn to Block Boxes. Difference in length between the actual Pattern and the Block Boxes has no effect on the simulation. Rest of the principle is the same as the Simulation Mode. Show Modular Sewing / Show Pattern Sewing 1. Follow the indicated guideline below: Modular Mode Block Editor 2. 2D Toolbar default presets Show Modular Sewing / Show Pattern Sewing tool. While the tool is toggled on, it enables to check the seamlines between Patterns and Block Boxes. 3. Deselect Show modular sewing / Show pattern sewing tool. Block Boxes to Pattern seamlines disappears but for Patterns to Patterns are appeared. Note: If seamlines do not appear after setting Pattern and Block Boxes, please confirm Show modular sewing / Show pattern sewing toggle status.",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36753895515801,
+        "Section": "Modular",
+        "Tokens": 416
+    },
+    {
+        "ArticleId": "360037029932",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360037029932",
+        "Title": "MODULAR MODE: Edit Blocks",
+        "Content": "Objective Open and edit Patterns in provided Blocks from the Modular Configurator or replace them with your own. Location Modular Mode Block Editor Operation Edit Patterns 1. Load Blocks from the Modular Configurator. 2. Follow the indicated guideline below: Modular Mode Block Editor 3. Select a Block to edit in the list of the Block Editor. Remaining Blocks are frozen. 4. Modify it with the Edit Pattern tool. 5. Once the modification is done, Simulate the according Block when the rest of the Blocks are still frozen. 6. Once the modification is completed, reselect the selected Block. All of the Blocks are activated again. Replace Patterns 1.Load Blocks from the Modular Configurator. 2. Follow the indicated guideline below: Modular Mode Block Editor 3. Locate Patterns out of Block Boxes or delete them. The Block Boxes remain in light grey. 4. Add desired Garment files to substitute with. 5.Click and drag the Patterns that are just loaded to matching Block Boxes. The Patterns are linked with the Block Boxes. 6. Sew the Patterns to Block Boxes. 7. Select the according Block in the Block Editor, freeze the rest, then Simulate. Note: Selected Blocks in the Block Editor are also selected in the 2D window. Editing Pattern in the Modular Mode is the same as the Simulation Mode. Deleting a segment or a point in a Pattern also deletes Sewing Lines between the Pattern and the Block Box.",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36753895515801,
+        "Section": "Modular",
+        "Tokens": 298
+    },
+    {
+        "ArticleId": "360037401611",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360037401611",
+        "Title": "[Mode] Modular (ver3.0.0)",
+        "Content": "Objective Customize your own design by simply combining and modifying Pattern Blocks. Location Main Menu Change the mode at the top-right corner Modular Operation 1. Follow the indicated guideline below: Main Menu Change the mode at the top-right corner Modular Block Editor window is now being appeared.",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36753895515801,
+        "Section": "Modular",
+        "Tokens": 54
+    },
+    {
+        "ArticleId": "360037401631",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360037401631",
+        "Title": "MODULAR MODE: General Process of Using Modular Mode",
+        "Content": "Follow the procedure of the Modular Mode to build and design with your own Pattern database. To build the Pattern database, take following procedures: Open Modular Template Add Patterns or Garments Drag the Patterns into Block Boxes Sew the Patterns and the Block Boxes Save it as a Block file (If there is no Modular file in a folder where the Blocks are being saved, save a Modular file too)",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36753895515801,
+        "Section": "Modular",
+        "Tokens": 77
+    },
+    {
+        "ArticleId": "12196570463129",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/12196570463129",
+        "Title": "Marvelous Designer 12/ 12.1/ 12.2 New Feature List",
+        "Content": "Marvelous Designer 12.2 New Features Key Features Automatic UV packing Import/Export FBX with multiple avatars Roll Up Select all sewn patterns USD: Support the Unified UV Coordinates Highlighted Features 2D Pattern Clone as Pattern (with Sewing) Optimize All Curve Points Option Dialog Avatar Joint Visualization improvement History Improving the 3D State preview window in History Auto Fitting Maintain Texture Size After Auto Fitting Auto Fitting Improvement Other Features Installation Silent Install Support File Axis Conversion (FBX) Animation Remove FPS change option when exporting Alembic Record the Display Start/End Frame of Animation Editor and reflect it on program restart Avatar Replace the defalt avatars Mia &amp Luka Top Stitch Improve the usability of Seamline Topstitch that should be aligned to the pattern outline Library Select all button for the downloadable items Download Files in List View Show file extension (zprj, zpac) Adobe Substance App Logo Change Expanding the Asset Item Name Widgets UI Improved the layout of \"Snapshot\" dialog Marvelous Designer 12.1 New Features Key Features USD file Compatibility [BETA] Omniverse Connector Import Background Image by Drag &amp Drop Switch Viewport Layout by Hotkey Show Statistics Other Features File New Project New Garment Library Show in Explorer Avatar Show All Avatars Animation Fit the Frame Range Animation Layers Retopology Face-Selection Show Topology Only (3D) UI Window main menu Marvelous Designer 12 New Features Key Features Retopology Improvements Animation Editor Improvements Styleline Editing Merge Vertex by Proximity at Export Automatically Create Fitting Suit at Import Spiral Tool Active Tool Hotkey Reference Window Other Features Export Joint Keyframe Animation with FBX Register Custom OBJ as Zipper Slider &amp Puller Assign Different Materials to Zipper Slider, Puller, Stopper &amp Teeth Apply Substance Materials to Trims, Buttons, and Avatars Lock Remesh Pattern Selection in 2D Pattern Window Change Normal Map Blending Method Additional Changes &amp Improvements Simulation Speed &amp Stability Improvements Improved Accuracy of Exported Joint Transformation &amp Rotation Values Users can now Import FBX files as Trim Users can now Load Trim Before Creating Patterns in Scene Bug Fixes",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=ABOMF3PDgBk",
+            "https://www.youtube.com/watch?v=r_9vKVEKbyM"
+        ],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36105751016729,
+        "Section": "New Features",
+        "Tokens": 438
+    },
+    {
+        "ArticleId": "4402355432217",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/4402355432217",
+        "Title": "Marvelous Designer 11 New Feature List",
+        "Content": "Patch Version Features New Features Create Binding Native Support for Apple's M1 Processors 3D Asset Store in the Software Integrated to CONNECT Service - Live link to CONNECT Live Welcome Window with Software Launch Trim &gt Zipper &gt Separate Teeth &amp Tape UV Editor Improvement &gt Move UV with Value Display Hotkey Inside of the Tools Window Bug Fixes Crash with edit topology when moving the topology area after modifying the pattern Issue with Export OBJ dialog malfunction and display error Fitting suit dialog layout improvement (MAC/Windows) MAC UI display improvement of tool buttons Fixed Roll Up Vertically/Horizontally feature Fixed Import Alembic dialog with load type -------------------------------------------------------------------------------------- Key Features - UI Changes - Patch Topology &amp Sewing Line Ghost - Partial Solidify - Store - Animation Changes - FBX Improvements: Export Avatar with Skeleton/Rigging Information Other Features Tool/ Menu - Settings/Preferences - Fold Arrangement - Folding Symmetrically - Displacement Map Avatar - Show Avatar/Garment Fitting Suit - Create symmetrical Avatar Tape UV Editor - View Displacement Map from UV Editor - UV map of the OBJ topstitch Trims - Additional Set for Modeling by the Size of a Button - Create Buttons along Pattern Outline - Texture Topstitch - Trim Collision - Select/ Move Multiple Trims and OBJ ETC - Merge Items - Search Color - Move 'Log Out' from Setting to Help - Alembic file type settings. - Shortcuts to the Topology Tools: Edit Topology tool ( Y ) ,Create Topology tool ( U )",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36105751016729,
+        "Section": "New Features",
+        "Tokens": 311
+    },
+    {
+        "ArticleId": "900004341763",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900004341763",
+        "Title": "Marvelous Designer 10 New Feature List",
+        "Content": "Key Features Dynamic Wrinkle Brush Auto Fitting Substance Integration Texture Repeat Type: Unified Map New Avatar Avatar Size - Avatar Size - Scale Avatars UV Editor Improvements - Texture Repeat Type - Edit UV location - View map Improved Tablet Compatibility - Tablet Pen Pressure Available - Tablet Pen Integration Other Features File Library Asset Download FBX Improvement : 2020 SDK Version Available User Settings Shortcut Key Search Avatars Avatar Tape &amp Avatar Measure Tools Grouping Avatar: Change Heels Cuboid Arrangement Bounding Volume Rendering High-time Quality Render Metalness &amp Alpha Maps (PBR material) Graphic Create Graphic Over Seamline Z-Offset of Graphic Pop-up for Overlapped Graphics Edit Back Texture with Texture Edit 2D Pattern Adjust Center Line on Half Pattern Symmetry Offset Pattern Outlines &gt Retract Use Ctrl Key to Edit Curve Points Optimize Curve Points Lock Curve Points When You Change Length Copy a Part of Internal Shape Extend/Trim, Extend/Trim &amp Add Point : to Pattern Outline or Internal Line Slash&ampSpread Improvements Topstitch Seamline Topstitch (OBJ) Trim Create Piping in the 2D Window Zipper Stopper Create Zipper in the 2D Window Snapshot Save Snapshot as HTML File Image Save Thumbnails in 4 Views Display 2D Random Color Display",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36105751016729,
+        "Section": "New Features",
+        "Tokens": 261
+    }
+]

@@ -1,0 +1,1177 @@
+[
+    {
+        "post_id": 11887732232985,
+        "post_title": "iclone --> MD --> iclone. Missing animation frames",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11887732232985",
+        "post_details": "Hello, After exporting a iclone animated FBX (278 frames) and then in turn importing into MD, creating a garment , simulating it. Finally exporting back out of MD as Alembic. When importing back into iclone 7 it only now has 139 frames. The garment animation therefore is out of sequence and completes its animation before the avatar does. Looking at the MD timeline it has decoded 139 frames from the 278 frame FBX that it imported. What could be the cause of the missing frames. If the iclone animation is exported as Alembic and then imported into MD as Alembic there is a choice of import 60 FPS but still the decoded frame count still is 139 frames.",
+        "created_at": "2022-10-26T14:30:10Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 12042450815001,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11887732232985-iclone-MD-iclone-Missing-animation-frames/comments/12042450815001",
+                "comment_body": "Hi IanHudson, It seems like the frame rate you are simulating as is double of the animation frame rate in iClone. If you are simulating at 60 frames per second in Marvelous Designer, could you please check your iClone setting if is also set as 60 FPS? The FPS of the Alembic Cache exported from MD is from your Animation Editor setting which you can set here: If your iClone import, export, and animation playback setting are all set at 60 FPS, could you please send me your Alembic file and your MD file in a support ticket so we can take a further look at it in our end. Best regards, Marvelous Designer Support Team"
+            }
+        ]
+    },
+    {
+        "post_id": 11865897992473,
+        "post_title": "how can I change garmet's pose to 'A-pose' ?  ",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11865897992473",
+        "post_details": "Hi, I am a newbie to Marvelous Designer. I bought a garmet and it has pose arleady. (like below) How can I change it to 'A-pose'? Please let me know.",
+        "created_at": "2022-10-26T03:06:07Z",
+        "comments": [
+            {
+                "author_id": 900147733143,
+                "comment_id": 12140072843033,
+                "official": true,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11865897992473-how-can-I-change-garmet-s-pose-to-A-pose/comments/12140072843033",
+                "comment_body": "[When using an avatar made by a user] Create Fitting Suit on the avatar and save it as an avt file Load saved avt file Load purchased outfits Use 'Re-target Draping Tool' from 3D Toolbar to put on garments [In case you didn't go through the Create Fitting Suit process] The costumes must be re-arranged and simulated. Hope this helps!"
+            }
+        ]
+    },
+    {
+        "post_id": 11592682886681,
+        "post_title": "I can't see the mode menu. ",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11592682886681",
+        "post_details": "Hello everyone, Usually the mode menu is at the right-top corner of the workspace but I can't see the mode menu anymore. Anyone knows how to reactive it? Thank you very much!",
+        "created_at": "2022-10-17T17:13:31Z",
+        "comments": [
+            {
+                "author_id": 900148289583,
+                "comment_id": 11667607021721,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11592682886681-I-can-t-see-the-mode-menu/comments/11667607021721",
+                "comment_body": "Hello 11592491255321 Thanks for sending us a question! We updated our UI with last version release to give a user more flexibility in the use. You can run multi-windows with different or the same mode on your screen. Hope this information helps! https://marvelousdesigner.zendesk.com/hc/en-us/articles/4402355588633 Best regards, Marvelous Designer Team"
+            }
+        ]
+    },
+    {
+        "post_id": 11542771561497,
+        "post_title": "3d models in standard body sizes",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11542771561497",
+        "post_details": "Hi ! Can anyone suggest where I might find 3d models of standard body sizes ( small, med, large, XL etc ). Any help is much appreciated. Thanks",
+        "created_at": "2022-10-16T05:45:21Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 11629926591769,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11542771561497-3d-models-in-standard-body-sizes/comments/11629926591769",
+                "comment_body": "Hi Kothari Sanjay, We do have avatars in the Library and different size file (in the size folder of the corresponding avatar). You can drop onto the avatar in the 3D window to apply them. And you can further edit the avatar body size in the Avatar Editor (Menu - Avatar - Avatar Editor). If you are trying to create garments for fashion designer and need to create accurate sizing, I would recommend that you use our sister software CLO: [Link]. Marvelous Designer is created to use for CG games and animations. There are proper grading tools in CLO to help you generate different sizes garment and have tools that help you create print layout if you need to print the pattern in real life. Please note that due to our license agreement, you can not use the avatars comes with Marvelous Designer or CLO for commercial use, but they are there to help you tailor your garment. Best regards, Marvelous Designer Support Team"
+            }
+        ]
+    },
+    {
+        "post_id": 11471168100377,
+        "post_title": "2D Garment Adjustments - I'm all out of solutions to try.. please help.",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11471168100377",
+        "post_details": "I love the concept of Marvelous Designer, but the program itself is an absolute nightmare, today I sat for 2 hours adjusting a basic 'T-Shirt' layout similar to the default model included in MD - I wanted to make one myself, AT 40 mm PARTICLE DISTANCE every tiny adjustment to the pattern was buffering / synchronizing for 15 - 30s, even moving a vertex by accident resulted in me waiting for a while until I can 'ctrl+Z' AND WAIT AGAIN. What is going on?? Specs - Zephyrus G15 Laptop - Ryzen 9 5000 Series, 8 Core CPU - RTX 3060 GPU - 40GB RAM - Also I found this post with a person with a much more powerful computer than I having the exact same problem, with 0 responses... does MD have a support team monitoring the help center?? https://marvelousdesigner.zendesk.com/hc/en-us/community/posts/6616818912921-Marvelous-Designer-2D-Pattern-editing-is-super-slow",
+        "created_at": "2022-10-13T18:17:53Z",
+        "comments": [
+            {
+                "author_id": 900147733143,
+                "comment_id": 11578884945049,
+                "official": true,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11471168100377-2D-Garment-Adjustments-I-m-all-out-of-solutions-to-try-please-help/comments/11578884945049",
+                "comment_body": "Hello Chernetsky Oleg, Your laptop is the latest in style and has advanced hardware. Therefore, Windows and drivers will also be relatively up-to-date. So I don't think it's a hardware specification issue. If you're working with particle distance 40 and if it's that slow, there might be a different pattern somewhere in the far corner of the 2D window, or there might be invisibly small trims/obj with too high mesh count. Or probably custom avatars are too heavy. If you don't mind, can you please send us the file you're facing the issue? Please send it via our support email support@marvelousdesigner.com"
+            }
+        ]
+    },
+    {
+        "post_id": 11399327076889,
+        "post_title": "Remotely deactivate license",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11399327076889",
+        "post_details": "I have a perpetual license which I would like to keep. That being said I logged into marvelous designer on my macbook pro and it immediately crashed. This happens every time. But whenever I try to open from a different computer, It tells me to deactivate my license on the mac in order to use it. Since MD crashes before I can start it, I'm unable to deactivate from there. Any way to do this from another computer?",
+        "created_at": "2022-10-11T22:12:35Z",
+        "comments": [
+            {
+                "author_id": 900147733143,
+                "comment_id": 11573382480921,
+                "official": true,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11399327076889-Remotely-deactivate-license/comments/11573382480921",
+                "comment_body": "Hello, please refer to the manual for deactivation: https://marvelousdesigner.zendesk.com/hc/en-us/articles/10676615959321-License-Deactivate If you have further problem, please contact to support@marvelousdesigner.com"
+            }
+        ]
+    },
+    {
+        "post_id": 11387007778329,
+        "post_title": "Cuffs too puffy",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11387007778329",
+        "post_details": "Hi, i am doing a Tshirt in MD. my neck and arm cuffs are a bit too puffy, like a little bit inflated. I need the front and back piece to fold flat to each other. How can i do this? Thanks, Bart",
+        "created_at": "2022-10-11T09:47:33Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 11396590258969,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11387007778329-Cuffs-too-puffy/comments/11396590258969",
+                "comment_body": "Hi van Doornik Bart, Here are some options: 1. using the press tool, click on the top layer than the bottom layer in the 3D window 2. Select the sewing line and go to the property editor, change the \"Sewing Line Type\" to \"Turned\". 3. using the \"Binding\" tool instead of sewing another piece of fabric. Please only do one of these options. Best regards, Marvelous Designer Support Team"
+            },
+            {
+                "author_id": 11202792463001,
+                "comment_id": 11397311935769,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11387007778329-Cuffs-too-puffy/comments/11397311935769",
+                "comment_body": "Great, Press is doing a nice job for me. Thanks for the help."
+            }
+        ]
+    },
+    {
+        "post_id": 11303988015769,
+        "post_title": "Exporting cloth simulation as multiple garments",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11303988015769",
+        "post_details": "Hi, I have created three garments in a MD project, animated them, and exported as alembic over to unreal engine. Everything works well except that the three garments have exported as one material. I am trying to upload a substance material asset just to the sweater, but it is applying the material to the whole outfit. How do I export the outfit as three separate materials?",
+        "created_at": "2022-10-08T16:49:01Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 11435279546777,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11303988015769-Exporting-cloth-simulation-as-multiple-garments/comments/11435279546777",
+                "comment_body": "Hi Lamb, Here are couple of options: 1.you can use UDIM workflow, assign different fabric to different pattern and bake them into texture maps on different UV tiles. 2. Layout all UVs in 0-1 square space, texture using substance function inside Marvelous Designer and at export bake out texture maps and use that in Unreal Engine 3. Group different garment by assigning different fabrics, Export as FBX and import the fbx file into Unreal Engine. Unreal Engine will create different shaders base on the fabric assigned 4. separate it into different file in a 3D software package Best regards, Marvelous Designer Support Team"
+            },
+            {
+                "author_id": 6798130712985,
+                "comment_id": 11478510820377,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11303988015769-Exporting-cloth-simulation-as-multiple-garments/comments/11478510820377",
+                "comment_body": "Hello, Thank you. I have tried several of those options and haven't quite found a solution, but perhaps I did something wrong. The most successful route was exporting the outfit as an fbx. However, when I imported it into UE, it imported each piece of fabric separately. Instead of three garments, I got dozens of individual pieces of the garments. I might be able to get this to work for now, but it really slows my workflow and I don't think it will work for future projects. I may have to figure out some small bugs first. In future projects, I want to work with the alembic cloth animations. Also, I want to work substance painter into my pipeline. I don't need it for this project, but in future projects I will want to make improvements in substance painter before exporting into UE. Option 2 was \"Layout all UVs in 0-1 square space, texture using substance function inside Marvelous Designer and at export bake out texture maps and use that in Unreal Engine.\" Any sort of textures coming from MD simply don't look good in UE. I have to reassign each garment the correct texture from Substance 3d in order to maintain a high quality image. I looked up tutorials on using a UDIM workflow for MD. All the ones I saw related to editing a MD garment inside Substance painter. If there is a UDIM workflow for editing a MD garment in UE, I would love to know, but I couldn't find anything like that. I'm really not familiar with UDIM and what it is. Anyway, I followed the MD to Substance tutorials. I simply laid out each part of the outfit I wanted to texture separately in its own UV box, then exported the outfit into Substance Painter. From there I was able to assign each garment its own textures. It looks pretty fantastic. I only have two problems. First, at random tiny points, the sweater shows through the outer coat. I didn't have this problem inside MD. Second, I've fiddled around with exporting the garment from Substance to UE and haven't been able to figure it out or find any good explanations. I only see info on exporting textures. Anyway, that's not your problem. But if you do have any documentation on working with MD garments in Substance painter, that would be helpful."
+            },
+            {
+                "author_id": 903135353343,
+                "comment_id": 11630173257369,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11303988015769-Exporting-cloth-simulation-as-multiple-garments/comments/11630173257369",
+                "comment_body": "Hi Lamb, You can simulate the garment with more collision thickness to add more gaps between the garments. However, if the mesh is not intersecting with each other, it is a shading issue. I would recommend that you look up how to use shader and create shading network in Unreal engine. Substance designer file will generate procedural textures. However, if you want to use substance painter or Textures exported from Marvelous Designer, it all uses UV of the model and bake the shading information into texture image for you to plug into the shader in your render engine (in your case the render engine is Unreal Engine). If you want to you import your model to Substance Painter, you can simply export your model as static mesh in .OBJ format. Import your mesh into substance painter and create texture. The texture exported from Substance Painter will also be texture images. You just need to make sure your UV layout for your animation cache (in your case, in the alembic cache format), and the static mesh imported to substances painter to texture on have the same UV layout. I would also like to point you to this tutorial video again for workflow of Marvelous Designer to Substance Painter to Unreal Engine. [Link] You can simply ignore the Maya part since you are not retopologizing the mesh before importing to Unreal Engine. And once again, learning shading techniques in Unreal Engine will solve your problem. Best regards, Marvelous Designer Support Team"
+            },
+            {
+                "author_id": 13051894554137,
+                "comment_id": 13054776532889,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11303988015769-Exporting-cloth-simulation-as-multiple-garments/comments/13054776532889",
+                "comment_body": "Hello I too am facing a similar issue, I want export my cloth simulation with its multiple materials. I am able to do this with FBX and obj but not alembic. I tried to do you can use UDIM workflow, by assign different fabric to different pattern and bake them into texture maps on different UV tiles but I cant get unreal import recognize the alembic uv tiles. (please break down the steps for this) Do you have any other solutions that may fit me ??"
+            },
+            {
+                "author_id": 6798130712985,
+                "comment_id": 13198874884889,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11303988015769-Exporting-cloth-simulation-as-multiple-garments/comments/13198874884889",
+                "comment_body": "Yes. i finally figured it out. I don't know if I ran into the problem of unreal not reading alembic uv tiles, but I definitely remember that unreal did handle the texture files from MD well. I ended up texturing my garments in Substance Painter. It costs money, but it's worth it for me because I can get an excellent level of detail. From substance painter, I export the texture files. I then import them into UE using virtual textures. The trick was that substance painter exported the texture files with different files names for each seperate garment. Example: T-shirtBasecolor.1001. PantsBasecolor.1002. Etc, etc. THIS DOES NOT IMPORT PROPERLY INTO UNREAL. The file names all have to be the same, except for the texture types and numbers (i.e. normal, roughness, etc and 1001, 1002, 1003...) When I had the names of the garments in the file type, it messed up the uvs. For example, if I had multiple uvs for the t-shirt, they would all work fine, but the t-shirt textures would also be applied to the pants. By removing the garment names from the file structure, unreal recognized that all the uvs belonged to the same outfit/alembic mesh."
+            }
+        ]
+    },
+    {
+        "post_id": 11242575993753,
+        "post_title": "Need help making pintuck blouse",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11242575993753",
+        "post_details": "Hello, I am seeking some guidance or advice for making a pintuck blouse. Something similar to this example: https://connect.clo-set.com/detail/189d4da8ef6f412aa6ab6f57e4047469 What I need help with is the little creases, I'm not familiar with the sewing pattern for pintuck nor do I know how to simulate it properly on MD. I was wondering if anyone can direct me to a visual tutorial or perhaps a garment similar to the one above that is freely available and/or cheap so I can study.",
+        "created_at": "2022-10-06T19:17:34Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 11280954750617,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11242575993753-Need-help-making-pintuck-blouse/comments/11280954750617",
+                "comment_body": "Hi Angel, It can be achieved by using pleats. You can make pleats by making internal lines at where the fold is and change the fold angle and strength of the internal line in the property editor. Or by using our pleat tool. Please check out this tutorial on more information: [Link] Best regards, Marvelous Designer Support Team"
+            }
+        ]
+    },
+    {
+        "post_id": 11156439682969,
+        "post_title": "Help trying to fit a belt using an imported 3d mesh buckle as Trim?",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11156439682969",
+        "post_details": "Hi, I have created a Belt Buckle as a 3D mesh in Blender and imported it as Trim with Collision switched on. I have successfully threaded a belt through it. I am now trying to fit it to my ancient warrior character so that the clothes fold correctly under it. I can't move the buckle with simulation on and if a move it insentiently the belt band doesn't follow. I can't believe there is no way to do this so believe I've missed something. Any help really really appreciated as I am running out of time for my project. Many thanks.",
+        "created_at": "2022-10-04T07:28:26Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 11281100980121,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11156439682969-Help-trying-to-fit-a-belt-using-an-imported-3d-mesh-buckle-as-Trim/comments/11281100980121",
+                "comment_body": "Hi Heveron Shaun, You can either use trim as a static mesh and move it in space when not simulating, or you can use the glue dropper on the top right corner of the gizmo when you select the trim mesh to attach to the cloth (much like buttons in marvelous designer) You can't move the trim itself during simulation. You can try use the glue tool to attach to the belt cloth. However, in your case, I would recommend that you do the bellow steps: 1. create a band that warps around your inter garment to make the tight wrinkles you desires 2. use the glue dropper to attach the buckle to the bend at the desired place 3. hide that band 4. thread your actual belt though the buckle I would also like to point to you our discord channel, you can get faster respond there in the future: [Link] Best regards, Marvelous Designer Support Team"
+            },
+            {
+                "author_id": 11136053397529,
+                "comment_id": 11358848422937,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11156439682969-Help-trying-to-fit-a-belt-using-an-imported-3d-mesh-buckle-as-Trim/comments/11358848422937",
+                "comment_body": "Just for reference, the actual belt can't be threaded through the glued buckle because collision can't be enabled when a Trim object is glued! This appears to be a bug. So all the happens is the actual belt just falls through the buckle mesh. I have encountered this issue with all the fittings and for example trying to make a harness for a horse. It is very frustrating and I am looking potentially at using Houdini Vellum just to solve this problem. Many thanks for your suggestion though."
+            }
+        ]
+    },
+    {
+        "post_id": 11035752717465,
+        "post_title": "no license activation after  payments",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11035752717465",
+        "post_details": "i boyght via paypal a monthly license as i do usally. i dont find my licence activation and my payment hystory.",
+        "created_at": "2022-09-30T07:58:44Z",
+        "comments": [
+            {
+                "author_id": 900148289583,
+                "comment_id": 11667609929753,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/11035752717465-no-license-activation-after-payments/comments/11667609929753",
+                "comment_body": "Hello 11034856372761 Sorry for our late notice for your question. Due to the processing time with PayPal, the license issuing takes a moment until you see your account irregularly. Let us know if you didn't solve this issue. We can help. Best regards, Marvelous Designer Team"
+            }
+        ]
+    },
+    {
+        "post_id": 10971353882521,
+        "post_title": "Paul Atreids shirt pattern",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10971353882521",
+        "post_details": "Hi! I have a big big trouble with making pattern for shirt like this. Help please!)",
+        "created_at": "2022-09-28T16:51:13Z",
+        "comments": [
+            {
+                "author_id": 900200317303,
+                "comment_id": 11076050503705,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10971353882521-Paul-Atreids-shirt-pattern/comments/11076050503705",
+                "comment_body": "Start with a T-shirt pattern. Drop an internal line from the dollar, where you want the opening to be. Create an extra placket pattern piece to extend one side of the opening, and sew it on, to create the overlapping flap. Add a simple standing collar."
+            }
+        ]
+    },
+    {
+        "post_id": 10825105813145,
+        "post_title": "I cannot figure out the UV editor and Export--exported garments look extremely lo-res",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10825105813145",
+        "post_details": "Hi, I am trying to export some garments as an obj for a character I have designed in character creator 4. My garments were exporting extremely low-res and with other problems. I fixed the other problems by playing around with the UV editor, but I have not fixed the low resolution. The garment looks great in MD Here is what it looks like if I put all the garments in one uv square. UV The garment over in CC4 Now I also tried spreading the garment pieces throughout several UV boxes And I end up with this. It's a mess obviously, but I also notice the resolution on the garments is far better. However, it is still greatly inferior to what I get inside MD! I just want to be able to export the garments with the same quality I get inside MD. I know I must be doing something wrong with the UV editor, but I have spent hours searching and searching for a good tutorial that could explain what I need to do, and I have found nothing. I've watched pretty much every video I could find on exporting to Character Creator and the UV editor, plus tried to find any written tutorials, but nothing seems to cover my issue.",
+        "created_at": "2022-09-24T15:49:11Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 10892346826137,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10825105813145-I-cannot-figure-out-the-UV-editor-and-Export-exported-garments-look-extremely-lo-res/comments/10892346826137",
+                "comment_body": "Hi Lamb Daeus, Please see this reply to your post for the answer to your question. https://marvelousdesigner.zendesk.com/hc/en-us/community/posts/10375928586265-Textures-don-t-transfer-properly-when-exporting-garment-as-obj Best regards, Marvelous Designer Support Team"
+            }
+        ]
+    },
+    {
+        "post_id": 10816225655065,
+        "post_title": "How can I give a garment auto fitting data?",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10816225655065",
+        "post_details": "I want to transfer a garment from an avatar to a dramatically different second avatar. How can I give a garment auto fitting data to make it easy?",
+        "created_at": "2022-09-24T08:47:39Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 10891505392921,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10816225655065-How-can-I-give-a-garment-auto-fitting-data/comments/10891505392921",
+                "comment_body": "Hi Sickpuppy, Here's our tutorial on Autofitting and Fitting-suit creation: [Link] Please make sure both your original and target avatar have fit suit data. And make sure to simulate your garment on your original avatar before you preform auto fitting action on your target avatar. Best regards, Marvelous Designer Support Team"
+            }
+        ]
+    },
+    {
+        "post_id": 10798792684697,
+        "post_title": "Problem with sewing",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10798792684697",
+        "post_details": "I am trying to sew a pocket to a sweatshirt (the big one in the center) but it seems it doesn't sew completely to the surface. Anyone knows what the problem is and how to solve it? Link of the video process: https://www.youtube.com/watch?v=2kD8c2Gyuzw Thank you.",
+        "created_at": "2022-09-23T15:46:49Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 10891476162457,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10798792684697-Problem-with-sewing/comments/10891476162457",
+                "comment_body": "Hi Villegas Guillem, It could be a problem with the collision thickness of the main part of the garment. What is the Collision Thickness and Render Thickness of the main part of the garment? And could you please also turn on thick texture view in 3D window and send me a screen shot? Best regards, Marvelous Designer Support Team"
+            },
+            {
+                "author_id": 903135353343,
+                "comment_id": 10892293230233,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10798792684697-Problem-with-sewing/comments/10892293230233",
+                "comment_body": "Hi Villegas Guillem, It may also be the scale of the avatar. It seems like the scale you imported is too small. For best result, please make sure the scale you imported are similar scale as the avatar we have in our library. Best regards, Marvelous Designer Support Team"
+            },
+            {
+                "author_id": 10798575267097,
+                "comment_id": 10917078491161,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10798792684697-Problem-with-sewing/comments/10917078491161",
+                "comment_body": "Hello, Collision Thickness is 2.0 and Render Collision is set to 0. I changed the the type of Fabric and it seems is working now but I will have in mind the scale of the avatar for the next time. I attach you the screenshot. Thanks for the help. Best Regards, Guillem Villegas."
+            }
+        ]
+    },
+    {
+        "post_id": 10733755886617,
+        "post_title": "obj를 의상으로 불러왔을 때 시뮬레이션",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10733755886617",
+        "post_details": "https://youtu.be/iq5PWIvF5x4 이해를 돕기위해 영상을 일부공개로 업로드하였습니다 타툴에서 모델링한 의상을 (obj를 의상으로)로 불러내기 한 다음 아바타 바디에 맞게 시뮬레이션을 돌리고 싶은데 위에 영상처럼 일그러집니다.해결 방법이 없을까요?",
+        "created_at": "2022-09-21T23:01:35Z",
+        "comments": [
+            {
+                "author_id": 10733601312153,
+                "comment_id": 10734856801305,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10733755886617-obj%EB%A5%BC-%EC%9D%98%EC%83%81%EC%9C%BC%EB%A1%9C-%EB%B6%88%EB%9F%AC%EC%99%94%EC%9D%84-%EB%95%8C-%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98/comments/10734856801305",
+                "comment_body": "해결했습니다!!"
+            }
+        ]
+    },
+    {
+        "post_id": 10540303002137,
+        "post_title": "Save new garments to Modular Configurator",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10540303002137",
+        "post_details": "Hi everyone, Is it possible to save custom garments to the modular configurator? I found a section in the manual claiming you can, but it's from 2019 and the 'modular' mode doesn't exist anymore with 11. I have access to the modular configurator, but I want to add my own garments simmed on my own avatar, with my own separate pieces. Is this possible? How do you save a blocking file?",
+        "created_at": "2022-09-16T00:08:22Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 10807604465433,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10540303002137-Save-new-garments-to-Modular-Configurator/comments/10807604465433",
+                "comment_body": "Hi Jaysonelt, Thank you for contacting us, The Modular Editor is located in the 2D Pattern Window Tool bar. For information on how to use Modular Editor to create custom Modular garment, please watch the second half of this CLO tutorial: [Link] Best regards, Marvelous Designer Support Team"
+            }
+        ]
+    },
+    {
+        "post_id": 10500693648793,
+        "post_title": "Sewing Collars (Right sides together and turn)",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10500693648793",
+        "post_details": "A normal technique I use when making a collar, is cutting two pieces for each half of the collar. For each half of the collar, place the pieces right sides together and sew all edges except where the two halves of the collar will be joined. Then I would 'turn' each of the halves right side out through the open gap and press. This makes a very nicely finished edge. Sometimes I insert a short lace, or decorative edge trim between the layers when sewing right sides together. This technique works great on collars, belts, sashes..... My question is, \"In Marvelous Designer, can we sew right sides together and turn?\" or, \"is there any need to do this\"? In other words, will sewing the edges of the two pieces create a 'ditch' at the edge of the collar when sewing two wrong sides together? Discussion is appreciated.",
+        "created_at": "2022-09-14T20:20:00Z",
+        "comments": [
+            {
+                "author_id": 900147733143,
+                "comment_id": 10695255796505,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10500693648793-Sewing-Collars-Right-sides-together-and-turn/comments/10695255796505",
+                "comment_body": "In short, Yes: sewing ANY cloth together CAN create a ditch (see image) and a \"please don't try it unless you are VERY skilled in Marvelous Designer specifically\" to the using of seam allowances in a 3D software, there isn't really a need to do that the hard way. Turn on curve side geometry and it looks like a turned seam. You can even fake it with ONE fabric layer and turn on \"double sided geometry\". you would have a VERY difficult time with actually folding over edges with how collision works in the 3D space compared to real life. There are basic tools meant to make faking the look of what you are asking for, so use those instead. You are not working with real life cloth, it will not act and work the same as it does in your hands and at an iron expect you will have to work differently. I recommend new users to the software watch our tutorials to get a basic grasp on the tools and features since your acct is new, so here is the link to the YouTube account https://www.youtube.com/c/Marvelousdesigner. Play around for a couple minutes with the software and you will see how it works, and what the \"cloth\" can and can't do compared to your IRL expectations."
+            },
+            {
+                "author_id": 10320745897881,
+                "comment_id": 10765688373401,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10500693648793-Sewing-Collars-Right-sides-together-and-turn/comments/10765688373401",
+                "comment_body": "Thank you for that response, very helpful. I am not a new user I have had the software several years, but, I am not a skilled user either. I am finally trying to make more complex garments. I will watch the tutorials again to learn the tools to \"fake\" getting this effect in 3D. (getting a ditch with two layers sewn together. Also, I tried Clone Layer Over and got a very nice effect. they key advice I took from your response is, \"You are not working with real life cloth, it will not act and work the same as it does in your hands and at an iron expect you will have to work differently.\" Understood. :) Thanks"
+            }
+        ]
+    },
+    {
+        "post_id": 10498135416089,
+        "post_title": "Patch Retopology doesn't snaping to curved patches",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10498135416089",
+        "post_details": "Hello. I noticed that Patch Retopology doesn't snap to curved patterns, however tutorials shows this tool working with curved patches.",
+        "created_at": "2022-09-14T15:48:00Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 10538850131993,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10498135416089-Patch-Retopology-doesn-t-snaping-to-curved-patches/comments/10538850131993",
+                "comment_body": "Hi Gryzka Krzysztof, Thank you for contacting us, Currently, the Patch Retopology tool is only working with concave curve and have not yet support convex curves. We are aware of this issue and are working on improvements to the retopology feature. Sorry for the inconvenience. Best regards, Marvelous Designer Support Team"
+            },
+            {
+                "author_id": 10498048358297,
+                "comment_id": 10678365460761,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10498135416089-Patch-Retopology-doesn-t-snaping-to-curved-patches/comments/10678365460761",
+                "comment_body": "Hello. Thank you so much!"
+            },
+            {
+                "author_id": 17717120123545,
+                "comment_id": 26607727286937,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10498135416089-Patch-Retopology-doesn-t-snaping-to-curved-patches/comments/26607727286937",
+                "comment_body": "Any updates on this? This was posted over a year ago and this issue still exists."
+            }
+        ]
+    },
+    {
+        "post_id": 10437355095961,
+        "post_title": "바인딩이 합쳐보이지 않습니다.",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10437355095961",
+        "post_details": "재봉하고 스페이스바 눌러도 그대로입니다. 합쳐보이게 하는 방법 없나요?",
+        "created_at": "2022-09-13T03:38:37Z",
+        "comments": [
+            {
+                "author_id": 900147733143,
+                "comment_id": 10508910545689,
+                "official": true,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10437355095961-%EB%B0%94%EC%9D%B8%EB%94%A9%EC%9D%B4-%ED%95%A9%EC%B3%90%EB%B3%B4%EC%9D%B4%EC%A7%80-%EC%95%8A%EC%8A%B5%EB%8B%88%EB%8B%A4/comments/10508910545689",
+                "comment_body": "안녕하세요, 문의 주신 두 건의 내용에 대하여 함께 답변 드리겠습니다. 현재 마블러스 디자이너 바인딩 기능은 옷의 스트립을 만들어 옷 밑에 꿰매는 것입니다. 따라서 바인딩 기능을 사용하여 round corner 를 만들 수 없습니다. 3D 윈도우에서 thick texture view 를 설정할 수 있으며, 다른 소프트웨어로 export 시에 thick texture로 내보낼 수 있으며 바인딩 부분이 합쳐진 것처럼 보이도록 만들 수 있습니다. 하지만 이 작업이 round corner 를 만들지는 않습니다 (아래 이미지 참조 부탁드립니다). 말씀 주신 이슈에 대한 기능 요청을 저희 round corner 를 만드는 다른 방법들은 아래와 같습니다. 1. Garment 가장자리를 마우스 오른쪽 버튼으로 클릭하고 \"Offset Pattern Outline\"을 선택할 수 있습니다. Create Internal line 체크 박스가 선택되어 있는지 확인합니다. 2. 만들어진 internal line 을 클릭하여 반대 방향으로 동일한 거리에서 천의 두께를 뺀 다른 internal linef 을 offset 합니다. 3. 가운데의 internal line 을 선택합니다. Property editor 에서 fold angle 을 0으로 변경하고 Fold Renderding 체크 박스를 해제합니다. (Fold Rendering 을 해제하면 매끄러워지고 둥근 모양이 만들어집니다). 4. 하단 모서리를 상단 internal 에 재봉합니다."
+            }
+        ]
+    },
+    {
+        "post_id": 10396534812697,
+        "post_title": "At some point animation Crashes",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10396534812697",
+        "post_details": "I have just bought the software and been trying this with different sample avatars, sample garments, sample animations nothing was imported or created from scratch. The simulation is fine but when I animate it always crashes without and error or nothing and right back to desktop. Sooo annoying and my first 5 minutes this is like a joke to me :/ CPU: Intel i7 11700k Memory Size: 32GB Mac Model Name (for mac users only): Graphics Card: Asus Tuf 3070ti Resolution: 4k LG Screen Language: English",
+        "created_at": "2022-09-11T21:19:49Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 10462369060633,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10396534812697-At-some-point-animation-Crashes/comments/10462369060633",
+                "comment_body": "Hi Egemen Turan, Thank you for contacting us and sorry to hear your trouble. Could you please send me a video recording so I can better assist you? You can also send your file to us in a support ticket and we can diagnose the problem for you. I would also like to point you to our Animation Mode Tutorial: [Link] I would also like to invite you to our Discord Channel to get faster respond form your peers: [Discord Invite Link] Best regards, Marvelous Designer Support Team"
+            },
+            {
+                "author_id": 10396530485657,
+                "comment_id": 10463132570905,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10396534812697-At-some-point-animation-Crashes/comments/10463132570905",
+                "comment_body": "I'm sorry but there is literally no error messages or anything it just freezes at a random part of the animation and shots down in 3-4 seconds that's all If there is a crash log somewhere inside the program files I can send you that but there is literally nothing to show :) Hope you get what I mean You can replicate this just from the garments tab add the orange sample skirt, white sample t-shirt, and add any avatar and any sample catwalk motion. Choose GPU simulation then just increase the Simulation Quality to 5. Hit animate and I am pretty sure it will crash on you Because I had to fully factory reset my PC and built all the drivers from scratch and the same thing happened and now I am certain this is something on your end guys, sorry to inform you! My simulation properties are attached you can check them only GPU simulation from the simulate button and made sim quality 5 rather then 1:"
+            },
+            {
+                "author_id": 903135353343,
+                "comment_id": 10464993833113,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10396534812697-At-some-point-animation-Crashes/comments/10464993833113",
+                "comment_body": "Hi Egemen Turan, I can't seem to recreate your issue on my end. What I have tested: 1. Import an avatar from our library Avatar folder (FemaleV2 - FV2_Camila) 2. import a dress from our library Garment folder (Female_ShirringDress) 3. Import a motion from our library Avatar folder (FemaleV2 - Motion - FV2_01_No_Hands_Pose) 4. In the property editor, have GPU simulation check box checked and change the Simulation Quality to 5. (Please note that you would get better simulation quality using CPU simulation, however, GPU simulation would be faster) 5. Click simulation button and click record, the animation starts and the cache for the garment appears in pink in the timeline. The version I'm using is Marvelous Designer 11, Version 7.0.339. Could you please send me your project file to me in a support ticket and I can diagnose your file and better help with your issue. Best regards, Marvelous Designer Support Team"
+            },
+            {
+                "author_id": 10396530485657,
+                "comment_id": 10491274699289,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10396534812697-At-some-point-animation-Crashes/comments/10491274699289",
+                "comment_body": "Ok so I mostly can get through the beginning of the animation but it freezes around the middle and end and yes all of the versions and settings are the same on my end. let me send the project file"
+            }
+        ]
+    },
+    {
+        "post_id": 10375928586265,
+        "post_title": "Textures don't transfer properly when exporting garment as obj",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10375928586265",
+        "post_details": "I am trying to export my garments from MD as a static mesh into Character Creator 4. I have managed to successfully transfer the garments, but while the mesh looks beautiful, the textures and colors are all messed up. Here are the garments in MD. And here they are in cc4. The cloth textures are almost nonexistent, the sweater is only blue in parts, and there's a sleeve pattern on the coat. What did I do wrong? Asking here since I'm not finding any good tutorials on what I'm trying to do. At least none that address this problem.",
+        "created_at": "2022-09-11T00:07:05Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 10462330867353,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10375928586265-Textures-don-t-transfer-properly-when-exporting-garment-as-obj/comments/10462330867353",
+                "comment_body": "Hi Lamb Daeus, Thank you for contacting us, It seems like a UV problem. Have you layout the UV for the garment in the UV Editor before you exported your garment? If so. could you please send me a screen shot of the UVs for the garment mesh? Best regards, Marvelous Designer Support Team"
+            },
+            {
+                "author_id": 6798130712985,
+                "comment_id": 10765281064729,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10375928586265-Textures-don-t-transfer-properly-when-exporting-garment-as-obj/comments/10765281064729",
+                "comment_body": "Yes, it seems to be a UV issue. I didn't know much about the UV editor and just followed how the instructor did it in the one video I found about exporting garments as obj for Character Creator. I did a little research today, and managed to improve some things. Now, the garments have the right textures, but I am disappointed with the resolution. Here is my UV map. Now here is what the garment looks like inside of MD. And here is what it looks like in CC4. The resolution is very inferior. Also, the button holes have duplicates to their rights that shouldn't be there, and there's a dotted black line between the piece of fabric with the buttons on it and the main fabric of the coat as if the two are not properly attached. I am assuming I just have to do something different with the UV editor."
+            },
+            {
+                "author_id": 903135353343,
+                "comment_id": 10892240764569,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10375928586265-Textures-don-t-transfer-properly-when-exporting-garment-as-obj/comments/10892240764569",
+                "comment_body": "Hi Lamb Daeus, Marvelous Designer does not have a render engine build inside, but we will export the texture maps need to use for the shaders in any render engine you chose to use. So most of your issues are from your shading and rendering in C4D. Please look up tutorials on this matters. The double button hole is because your UV is overlapped in this red circled part in the image bellow. UV is the 3D model unwrapped and lay out in 2D space. When the UV shell is overlapped, the texture will overlap. To avoid this, you should right click on an empty space in the UV editor in Marvelous Designer and click \"reset UV to 2D aragement\" to make sure all the UV are in the correct size and unfolded, than lay it out in the 0-1 square space. Or you can layout and unfold UV inside C4D. For texture file resolution, please set it during export in the Image size. By default Marvelous Designer will export the texture in 2K. You can increased it higher if desired. And please also chose the texture files you want to export. To get raid of the \"dotted black line between the piece of fabric\", you need to either export as Weld or merge the vertices inside C4D. When you export as Unweld, the pattern pieces' edge points are not weld together. When rendering in C4D, please attach all other texture maps into the corresponding channel as well, not only the diffuse map. From your render, it is at least missing the normal information. You also need to mess with other parameters inside your shader to get the desired look. For how to build shader inside C4D, please look up shading tutorials in C4D. There are also a lot of faceting in your mesh, please unlock and smooth normal of your mesh in C4D. And for rendering, you can also turn subdivision and smooth normal on. Here's our workflow tutorial. It is using Marvelous Designer with Maya but a lot of the knowledges apply in any 3D software: [Link] Best regards, Marvelous Designer Support Team"
+            },
+            {
+                "author_id": 6798130712985,
+                "comment_id": 10933428954265,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10375928586265-Textures-don-t-transfer-properly-when-exporting-garment-as-obj/comments/10933428954265",
+                "comment_body": "Thank you for your reply. I'm following your points about the button holes and exporting with \"welded\" selected. I just recently figured those out by tinkering around. I am actually not using cinema 4d. This is a program called character creator. https://www.reallusion.com/character-creator/ It sounds like you believe the low-resolution issue may be due to my settings in CC4 and not in how I laid out the UV in MD, correct? I don't know anything I'm doing wrong on that end, so I may have to reach out to CC4 support. Just to make sure, this is what I've been doing. I export the garments as OBJ. Increasing the pixel count in the image size section doesn't seem to affect anything, though I have tried that. I then upload the obj directly as an \"accessory\" inside cc4. The obj automatically loads with a diffuse, opacity, bump, metalic, and roughness map. I have tried baking textures inside MD and replacing the ones that loaded automatically when I uploaded the obj, and oddly enough this does seem to make a difference, but it doesn't improve things. It just exchanges the textures from one form of not so great to another. Anyway, I will see if anyone on the cc4 end can spot what I did wrong. I appreciate your help."
+            },
+            {
+                "author_id": 6798130712985,
+                "comment_id": 10934199138841,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10375928586265-Textures-don-t-transfer-properly-when-exporting-garment-as-obj/comments/10934199138841",
+                "comment_body": "Just in case it sheds any light on the issue, I imported the same obj into unreal engine and it looks completely different. For one, the coat looks great with the exception of the collar where the underside of the cloth is simply rendered as see through. The sweater however looks like a plastic block."
+            },
+            {
+                "author_id": 23404512188057,
+                "comment_id": 23936293596185,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10375928586265-Textures-don-t-transfer-properly-when-exporting-garment-as-obj/comments/23936293596185",
+                "comment_body": "Did you ever get this sorted out? I'd like to bring MD into CC4, but am getting glitches as well."
+            }
+        ]
+    },
+    {
+        "post_id": 10355094222105,
+        "post_title": "바인딩이 제대로 export 되지 않습니다.",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10355094222105",
+        "post_details": "새로 업데이트 된 바인딩 기능으로 목 둘레에 바인딩을 했습니다. 그런데 obj, fbx, alembic로 export 하여 블렌더로 가져왔는데 목둘레에 바인딩이 되어있지 않았습니다. 1. 현재 바인딩 기능이 마블러스 내에서만 렌더링 되는 것인가요? ㄴ 그렇지 않다면 방법을 알려주시면 감사하겠습니다. ㄴ 마블러스 내에서만 된다면 언제쯤 export로 타 프로그램에도 바인딩이 적용될 수 있을까요? 감사합니다.",
+        "created_at": "2022-09-10T01:45:14Z",
+        "comments": []
+    },
+    {
+        "post_id": 10322607623705,
+        "post_title": "Importing Alembic File Issue",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10322607623705",
+        "post_details": "I have emailed over five times with no response. So I will repost what I have sent in the email several times.. CPU: AMD Ryzen 9 3900X 12-Core Processor Memory Size: 32gb Graphics Card: NVIDIA GeForce RTX 2070 ISSUE 1: When I am importing my alembic file from Cinema4D to Marvelous the program always freezes. It takes about 2 hours of waiting for the file to finally be ready to use. ISSUE 2: When I save a project and try to open it up again at a later time, Marvelous does not recognize the file and I can't open it. So I have to basically finish a project in one sitting or else I can't use it again.",
+        "created_at": "2022-09-08T20:44:03Z",
+        "comments": [
+            {
+                "author_id": 903974176863,
+                "comment_id": 10501298340633,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10322607623705-Importing-Alembic-File-Issue/comments/10501298340633",
+                "comment_body": "sounds like perhaps the alembic is malformed or has a shape node but not a transform. do you have a way to open it in Blender, Maya, or Houdini? Blender is free and should be able to re-export your cache so it's not malformed. Also if it's bigger than about 5-8 gig I've noticed that MD borks. I have started only using FBX as my avatars."
+            }
+        ]
+    },
+    {
+        "post_id": 10246977443481,
+        "post_title": "I need a proper walk cycle ",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10246977443481",
+        "post_details": "Hello, I'm looking for a walk cycle that stays in the same spot. The animations included with MD all move from one place to the other. I found this one: https://www.reddit.com/r/MotionDesign/comments/f65dxl/free_10_marvelous_designer_pack/ But the steps the avatar takes are very large and does not look realistic. Also the pants I created is being torn apart. Does anybody know a good source for models with a walk cycle animation included? Thanks! -Joep",
+        "created_at": "2022-09-06T13:58:55Z",
+        "comments": []
+    },
+    {
+        "post_id": 10127675837721,
+        "post_title": "Update Available notification",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10127675837721",
+        "post_details": "Is there a way to turn off the Update Available notification that now shows when I launch? I don't want to install it right now. I'm tired of the notification showing every time I open a file. Can I disable it?",
+        "created_at": "2022-09-02T20:17:33Z",
+        "comments": []
+    },
+    {
+        "post_id": 10092869517721,
+        "post_title": "Problema al importar animación ",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10092869517721",
+        "post_details": "Hola, tengo un problema al importar un modelo .dae desde la pagina mixamo, lo que hago es : Archivo&gtimportar&gtAbrir Collada , cuando se esta importando se cierra marvelous designer sin tirar ningun error. simplemente se cierra, que podrá ser? puedo adjuntar un video si es necesario",
+        "created_at": "2022-09-01T22:10:26Z",
+        "comments": []
+    },
+    {
+        "post_id": 10060744510105,
+        "post_title": "Upgraded today and all default avatars as missing",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10060744510105",
+        "post_details": "I've been evaluating the program for a few days and when I got an update notification message today I updated Marvelous Designer. However, after updating all the default avatars are missing from the program. What is the process for getting those avatars back, do I have to uninstall and reinstall?",
+        "created_at": "2022-09-01T01:09:14Z",
+        "comments": [
+            {
+                "author_id": 900147733143,
+                "comment_id": 10080380539545,
+                "official": true,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10060744510105-Upgraded-today-and-all-default-avatars-as-missing/comments/10080380539545",
+                "comment_body": "Hello Irik, It seems that the existing data may have been deleted during the installation of the update. Sorry for the inconvenience. Please delete the program and try reinstalling it, and if you need additional help, please contact support@marvelousdesigner.com"
+            }
+        ]
+    },
+    {
+        "post_id": 10055727670041,
+        "post_title": "need help getting to create",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10055727670041",
+        "post_details": "how do i get to the create place",
+        "created_at": "2022-08-31T20:56:59Z",
+        "comments": [
+            {
+                "author_id": 900147733143,
+                "comment_id": 10080388196505,
+                "official": true,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/10055727670041-need-help-getting-to-create/comments/10080388196505",
+                "comment_body": "Hello Kelly, The meaning of 'create place' is not clear, so it is difficult to understand what kind of problem you are experiencing. Please contact support@marvelousdesigner with more details!"
+            }
+        ]
+    },
+    {
+        "post_id": 9904405598745,
+        "post_title": "File not saving propperly",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9904405598745",
+        "post_details": "This is the 2nd time that this happened with this project. After some time I'm welcomed with this error message. I think the file doesn't seem to save propperly and I loose all of the work I've done. I have the alembic file of the garment that was exported. So not sure if there is a way to recover it from it?",
+        "created_at": "2022-08-27T01:21:15Z",
+        "comments": []
+    },
+    {
+        "post_id": 9899324024857,
+        "post_title": "Perpetual License Offline",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9899324024857",
+        "post_details": "Can you not run MD offline? or must you be connected to the internet all the time?",
+        "created_at": "2022-08-26T18:19:11Z",
+        "comments": [
+            {
+                "author_id": 900147733143,
+                "comment_id": 10239328850969,
+                "official": true,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9899324024857-Perpetual-License-Offline/comments/10239328850969",
+                "comment_body": "Hello 902396426883, To your question, please kindly note that Marvelous Designer Offline Authentication that works by LCN-HW file exchange process is only available to be provided for the existing personal perpetual license holders. (from version 5 to 9) Having said that, if you have the latest version of Marvelous Designer, then it would not be eligible for this service. Hope this is understandable, and please contact us at at support@marvelousdesigner.com if have any other questions."
+            }
+        ]
+    },
+    {
+        "post_id": 9865074990105,
+        "post_title": "Crash when attempting to Symmetry Link a mirror pasted pattern. ",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9865074990105",
+        "post_details": "MD Version: 6.1.723.37401 CPU: 12900k Memory Size: 64gb Graphics Card: 3090 studio drivers 516.94 Resolution: 3840 x 1600 Language: ENG Graphic Options for MD - AA off VBO OFF (or on both crash) Steps to Repo 1. Open up a new MD project 2. Select any shape tool and create a shape. for this example Lets make a square shape. 3. Once the shape is made mirror paste it by right clicking on it and selecting mirror paste or with shortcut keys. 4. Once its mirror pasted press A, select both shapes. 5. Right click on the shapes and select (under applied linked editing any of the three options) 6. Notice you crash after the progress bar reaches 100% on the bottom left of the screen. Note: Interesting part is cloning patterns work fine and when selecting symmetric patterns and sewing works as intended. Its only when you try to do it after mirror pasting and selecting any option under Apply linked Editing does it crash at least for me.",
+        "created_at": "2022-08-25T19:21:50Z",
+        "comments": []
+    },
+    {
+        "post_id": 9799470269465,
+        "post_title": "Why is Everything Spandex?",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9799470269465",
+        "post_details": "Anytime I try to create a new clothing project, everything simulates as spandex? Drag and drop satin into the Fabric pane and then the patterns? Still spandex. Drag and drop leather into the Fabric pane and then the patterns? Still spandex. The UI is frustrating, but this, this is baffling. It's as if the Fabric panes is STRICTLY for cosmetics. I've loaded a pregenerated clothing item and used it's Fabric on my own patterns. Still simulates as spandex. Let's just say if I had to do something in spandex, I could do it in Blender infinitely faster than I could in MD so this piece of software is next to useless at the moment. I watch tutorials and people load things in and they don't get spandex. If I try a new project? Guess what? Spandex. Sick of spandex.",
+        "created_at": "2022-08-24T01:43:31Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 9828393005977,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9799470269465-Why-is-Everything-Spandex/comments/9828393005977",
+                "comment_body": "Hi Walker Patrick, Thank you for contacting us. One reason that the cloth act spandex is because it is very tight to the body. To check this, please turn on strain map. If you see the color displayed for your garment is red, it means it is very tight to the avatar body and there's won't be any space for the cloth to drape. Could you please try import an avatar and a shirt from the library and see if this problem also exist for you? If so, please try reinstall the software using this link: https://www.marvelousdesigner.com/mypage Best regards, Marvelous Designer Support Team"
+            },
+            {
+                "author_id": 900201109763,
+                "comment_id": 10021463861785,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9799470269465-Why-is-Everything-Spandex/comments/10021463861785",
+                "comment_body": "Hmm ... I use both Blender and Marvelous Designer (MD) and there is simply no comparison in terms of ease of use and physical simulation performance, Marvelous Designer wins hands down every-time. And remember it's the best in class for fabric simulation in this world. You have to perhaps tailor your 'frustration' with stepping into a collision based realtime software application that uses new construction 'concepts' . Unlike Blender where you sculpt a clay surface and have to spend an insane amount of time creating the mesh construction for a complex 'custom' garment, MD will chew through that in under 1 hour to perfection from start to finish, every time. Perhaps you need to look more deeply into the 'starter' videos, they are actually very good, short, and too the point on how the tools work and the order of the workflow. Allow yourself a few days to soak up all the short videos, then move into practice, it's not the same skill as blender hard surface modelling or sculpting, so you need to think about how your workflow will need to change. New skill = new speed when learnt. You can get almost every fabric type you want in Marvelouse Designer accurate to about 90-95 of a real world fabric 'drape' simulation. So your comments are maybe not correct that every thing has to be 'spandex' - that is far from the truth. If you look at the library of default fabrics you may choose from any of these - BUT and this is a very big 'but' .... you MUST have good well fitted garment patterns. Where so many people go wrong is that they make UNDERSIZED patterns and STRETCH them over the avatar. And then of course the fabric is under stress outside of it's normal real world physcial use.And this is simply down to poor pattern making or no pattern making suitable for your avatar or model you are making the garment for. That's not the software's fault, nor the user interface, nor the fabric choice as all these are capable of extroidinary works of design. What that boils down to is &gt user &lt awareness on how you should work and what is crucial in the project construction and drafting of 2D patterns and sewing assembly to get a great fitting item with any type of fabric. And the choice is really wide. you can have physical preset fabrics for wool, nylon, leather, cotton, silk, chiffon, and yes even 'spandex'. And they may all perform accurately like real world cloth. So be in no doubt, it's not the software as it is the best the industry has, it's how you are approaching this new skillset. My suggestion is look to some of the online tutorials about pattern shape, the stress and strain tools to view your patterns fit and then adjust the 2D pattern editing untill you get a better fitting garment. Then place (drag and drop) a new fabric choice on your avatar and see how that changes the drape. After a few days practice most users get pretty consistent results - BUT that is usually after having viewed the training videos first, and spending a few hours practice adjusting their pattern design and sewing assembly to test the way the garment fits or hangs off the avatar. Try making yourself a cup of coffee or tea, sit back and watch a few videos across an afternoon, then try some fitted patterns. Or maybe download a few free garments and check out how their 2D pattern construction and sizing is made up when you do the stress/strain view. You might find that is what you are missing in terms of 'how to better approach using MD'. And I promise you once learnt it is very fast to create digital clothing. If after all that you are still struggling, there is a another simpler user software for those whom find the editing of patterns with professional tools too demanding &gt called 'Jinny' also created by MD/CLO3D ... maybe that is more to your liking ... however the downside is the format choice and editable mesh topography. Good luck."
+            }
+        ]
+    },
+    {
+        "post_id": 9776366235801,
+        "post_title": "Multi layered costume / instability issues",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9776366235801",
+        "post_details": "Hi, I have got issues with shirt in the pants...it always goes out from the pants. It start to jitter/penetrate during sim and end up outside of the pants. Full garment beahaves stable when running viewport sim and everthing is \"Layer 0\" for collisions. I am simulating on \"Stable\" sim settings. My garments are different particle sizes...ranging from particle distance of 2mm (smallest part like waist-belt to 8mm for shirt) I have tried different methods how to fix it like \"solidify\" , tack the shirt ends to avatar but no luck. The only thing which helps is to put the shirt to particle distance like 4mm but its quite heavy and mesh super dense. Is there any way/tip how to improve sim behaviour for multilayered clothing? Thanks for any help/feedback! L.",
+        "created_at": "2022-08-23T07:53:51Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 9828362740505,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9776366235801-Multi-layered-costume-instability-issues/comments/9828362740505",
+                "comment_body": "Hi Libor Batek, Thank you for contacting us. I would advise you to increase the simulation quality to a larger number like 7 and increate scene time warp number while you are simulating. Scene time warp will Adjust speed of Animation frames and starch out each frame base on the iteration number you set.. I would not set the particle distance too low. Optimize 3D Garment for Animation The heavier the garment, the slower and harder it records. Follow the steps below to make it lighter. For a multi-layered garment, increase particle distance to 20mm for inner layers that are not as visible as outer layers. Delete invisible and any other unnecessary layers. Outer layers: Set the particle distance to 10mm for parts that does not require higher level of expression of wrinkles. Set the particle distance to 5mm for parts that require higher level of expression of wrinkles. If there is large quantity of layers set to 5mm, set all of them to 7mm. I would also like to point you to this tutorial as there could be some information that can also help with your project. [Link] In this tutorial, I have cut the bottom of the shirt and sewed it to the inside of the belt of the pants. It is always important to optimize your scene before going to animation mode to make the simulation more stable. Best regards, Marvelous Designer Support Team"
+            },
+            {
+                "author_id": 903306268183,
+                "comment_id": 9971307547545,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9776366235801-Multi-layered-costume-instability-issues/comments/9971307547545",
+                "comment_body": "Hi, thanks for your very deep and def helpful answer. I will try to incorporate it in my setup. One of the very best support I ve got! Cheers! L."
+            }
+        ]
+    },
+    {
+        "post_id": 9724414642713,
+        "post_title": "Avatar goes though clothing when animating",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9724414642713",
+        "post_details": "I have an alembic avatar with animation I brought into MD. I got an outfit on her and went though the steps to add the clothing animation (space bar + record.) The avatar's arm goes right through the clothing destroying it. It's as though there is no collision to prevent the avatars arms from going right through it but as I said, when she moves in the other direction she then tears through it. It's unclear to me what settings I need to tweak to fix it?! I didn't see any collision setting on the garment, although I did set solidity and strength to 95. Please advise.",
+        "created_at": "2022-08-22T01:17:40Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 9754796264473,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9724414642713-Avatar-goes-though-clothing-when-animating/comments/9754796264473",
+                "comment_body": "Hi Sarrett Wendy, Thank you for contacting us. Could you please send us some screen shots so we can better help your issue? Does the draping of the garment work? And does it breaks only when it's animating? My guess is that the issue is with your avatar's surface normal. The collision only functions at the positive normal direction. In addition, you can set the avatar collision by clicking on the avatar and in the property editor change the skin offset. For garment, you can select the pattern piece and change the Add Thickness - Collison in the property editor under simulation properties. However, I don't think they would help your case, since the avatar collision is not disabled. The solidify feature will help maintain the fabric shape when simulating, it will maintain the cloth's shape, creases and folds. Apply a high strength of solidify will make the fabric act more plastic but won't help with collision. I would also like to point you to our Animation Editor tutorial [Link], you may find some helpful information to help with your issue there. Best regards, Marvelous Designer Support Team"
+            },
+            {
+                "author_id": 9724148020889,
+                "comment_id": 9872914534681,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9724414642713-Avatar-goes-though-clothing-when-animating/comments/9872914534681",
+                "comment_body": "Here's a video of what is happening...this is better than originally. I tried taking and it seemed to initially help but then I still ran into issues"
+            },
+            {
+                "author_id": 903135353343,
+                "comment_id": 9873606622617,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9724414642713-Avatar-goes-though-clothing-when-animating/comments/9873606622617",
+                "comment_body": "Hi Sarrett Wedny, First of all, please use CPU simulation, it is much more stable. On the top, in the simulation drop down menu, chose \"Normal (Default)\" Option. Please watch our Animation Editor Video for more information. [Link] In this video, we go into detail , and talk about each steps in creating multilayered stable simulation, it will help with your issue. For example, in the video, we talked about using \"Scene Time Warp\" to adjust the speed of animation frames, increasing the Simulation Quality iteration number, which will all help with the stability of the simulation. Best regards, Marvelous Designer Support Team"
+            }
+        ]
+    },
+    {
+        "post_id": 9668734186009,
+        "post_title": "30-Day Free Trial",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9668734186009",
+        "post_details": "Hello. Every time I want to try a new demo, this message pops up. Help me please.",
+        "created_at": "2022-08-19T16:29:05Z",
+        "comments": [
+            {
+                "author_id": 900147733143,
+                "comment_id": 10080614875673,
+                "official": true,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9668734186009-30-Day-Free-Trial/comments/10080614875673",
+                "comment_body": "Hello Olga, You already downloaded trial version on July 8th, and trial has expired because it uses 30 days. Due to the policy, trial version can only be used once per user, and if you want to continue using the software, please purchase monthly subscription. Thank you!"
+            }
+        ]
+    },
+    {
+        "post_id": 9660198220825,
+        "post_title": "Persistent, Never-Ending Crashes!",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9660198220825",
+        "post_details": "Hi, I'm using MD 11, version 6.1.723 (r37401), and I am sick and tired of all the crashes! It's freezing every few minutes usually after the most trivial of pattern editing. I mean - COME ON GUYS - this is version 11 - it should be more stable than this!",
+        "created_at": "2022-08-19T09:59:32Z",
+        "comments": [
+            {
+                "author_id": 900147733143,
+                "comment_id": 9744031849881,
+                "official": true,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9660198220825-Persistent-Never-Ending-Crashes/comments/9744031849881",
+                "comment_body": "Hello 900203207146, For us to assist you with better understanding, could you send us your PC specifications followed by the form below at support@marvelousdesigner.com ? CPU: Memory Size: Mac Model Name (for mac users only): Graphics Card: Resolution: Language: Thank you for your cooperation in advance, and we will look out for your response there."
+            }
+        ]
+    },
+    {
+        "post_id": 9612890935449,
+        "post_title": "Disable tack mid animation?",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9612890935449",
+        "post_details": "I'm working on a project where I want to attach a piece of fabric to my character. I can do that pretty easily with the tack on avatar tool. The hiccup is that I need to release the pattern from the model mid animation. Is there a way to keyframe a tack? or some other way to achieve what I'm shooting for?",
+        "created_at": "2022-08-18T05:24:55Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 9754693906201,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9612890935449-Disable-tack-mid-animation/comments/9754693906201",
+                "comment_body": "Hi Menzies Mason, Thank you for contacting us. You would need to use the pin tools instead. hold W on the keyboard and click on the garment to create a pin, right click on the pin and chose \"attach pin to avatar\" to attach to avatar similar to the tack tool. You can also use pin (box) or pin(lasso) tool to pin an area instead of a point. In addition, using pin (box) or pin(lasso) and double click on an edge will create a row of pins along the edge. Select the pin or pins, right click in the animation editor and chose \"Add Pin Key\" to add a key. In your case, what you would need to do is to create the pins, right click and chose \"Attach Pin to Avatar\", in the animation editor, right click and chose \"Add Pin Key\". Than move the time slider to when you want it to release, select the pin, right click and chose \"Detach Pin from Avatar\", than in the animation editor, right click and chose \"Add Pin Key\". You would need a key for when the pin is attached to avatar and another key for when it is detached from avatar. Best regards, Marvelous Designer Support Team"
+            },
+            {
+                "author_id": 10051195927705,
+                "comment_id": 10051235327129,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9612890935449-Disable-tack-mid-animation/comments/10051235327129",
+                "comment_body": "Hi, is it possible to do the opposite? Start the simulation of an animation without a pin and add it in the middle. In my case, I need to be able to grab a cape at some point. Cheers"
+            },
+            {
+                "author_id": 903135353343,
+                "comment_id": 10053991757081,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9612890935449-Disable-tack-mid-animation/comments/10053991757081",
+                "comment_body": "Hi Fede, You must set up two keyframes, one detached and one attached. This is true for all constraints no matter which software you are using. You would need to set keyframe for on and off. So you would need to create the pins first. In your case, you would set up the pin and key it, and at the frame where the hand touch the cloth, you need to right click on the pin, select attach pin to avatar, and key again. You can also animate the position of the pin using keyframe. Best regards, Marvelous Designer Support Team"
+            }
+        ]
+    },
+    {
+        "post_id": 9595210178329,
+        "post_title": "How To Change the path of favorites",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9595210178329",
+        "post_details": "The default file path is my c drive which is almost full. I want to move everything to another drive. I checked under settings/preferences but I don't see anything that seems to cover this location. How do I change the file path?",
+        "created_at": "2022-08-17T15:33:38Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 9754549488793,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9595210178329-How-To-Change-the-path-of-favorites/comments/9754549488793",
+                "comment_body": "Hi Sheffield Janice, Thank you for contacting us. We currently do not have a way to change the default file path for the library asset folder. However, since they are files and folders located in your computer, you can move the entire asset folder to another location, delete the existing folders and add the folders back to the library. To find the file path, right click on the name in the library, for example garment, and click copy file path Paste the file path to your file explorer, and you can move the folders to another location. Using the add button you can add the new location to the library Please note that software patch updates won't update the library path, but library updates will. So you would need to do this again when you chose to update your library. Best regards, Marvelous Designer Support Team"
+            }
+        ]
+    },
+    {
+        "post_id": 9594786442393,
+        "post_title": "Property Editor Not Launching",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9594786442393",
+        "post_details": "I've been having a recurring issue with the property editor. When I try to launch the property for any item, nothing happens. For exemple, for fabrics when I click on a given fabric to view and edit its properties, the property editor window stays empty. I have to restart the window for it to display the properties and this is very inconvenient. Restarting the software doesn't work.",
+        "created_at": "2022-08-17T15:10:20Z",
+        "comments": []
+    },
+    {
+        "post_id": 9594679243801,
+        "post_title": "Property Editor ",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9594679243801",
+        "post_details": "When I click on fabric, the property editor doesn't launch the related properties. Nothing happens. I have to restart the property editor window every time I click on a new fabric and that's very inconvenient. Does anybody know how to fix this issue?",
+        "created_at": "2022-08-17T15:06:01Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 9754331056921,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9594679243801-Property-Editor/comments/9754331056921",
+                "comment_body": "Hi Cindy, Thank you for contacting us. Is this only happen when clicking on fabric? When you clicking or other elements in the 2D window, for example the pattern pieces or sewing line, does the property editor updates? Please try uninstall and reinstall the software through your profile, or with this link: https://www.marvelousdesigner.com/mypage If this still doesn't fix it for you, please send us a support ticket and we can look deeper into it. Best regards, Marvelous Designer Support Team"
+            }
+        ]
+    },
+    {
+        "post_id": 9564259367321,
+        "post_title": "Adding rigid obj's to project and having gravity apply to them.",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9564259367321",
+        "post_details": "I am trying to create a superhero suit with obj imported armor like knee pads and chest pieces. I was wondering how I can integrate obj's when I simulate. Currently, I can import obj's that just float there but don't move or apply physics to the garment. Ideally, I want an avatar wearing a suit with rigid components that sit on top of the suit and will be able to be animated is this possible?",
+        "created_at": "2022-08-16T23:35:57Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 9641272670489,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9564259367321-Adding-rigid-obj-s-to-project-and-having-gravity-apply-to-them/comments/9641272670489",
+                "comment_body": "Hi Smit Bradley, Thank you for contacting us. Unfortunately, we currently do not have full support for rigid body simulation. Here are some workarounds, however, please keep in mind that the workarounds all have its weaknesses that may work well in your case. 1. Import your OBJ as a button or trim and attach to the garment surface, and you can set the weight in the prosperity editor. However, this method will create only one point for constraint from your OBJ mesh to one point on the garment. 2. Creating your armor pieces (or import OBJ as garment and Trace 2D Patterns from UV Map). Use pressure to inflate it. Applying a fabric with high value of bending and starching stiffness and use the tack tools to constraint to your garment. Also apply strengthen to the armor pieces. This method would give you good constraint result but the armor pieces would not be fully rigid. Best regards, Marvelous Designer Support Team"
+            }
+        ]
+    },
+    {
+        "post_id": 9506327139609,
+        "post_title": "Exploding mesh",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9506327139609",
+        "post_details": "Hi. I seem to be having a nightmare with my Animation in MD. I have dressed my character, and the clothes fit snug like a bug. All settings are fine from particle distance to thickness/friction with simulation settings set to quality with correct settings. When I simulate my animation, it does it perfectly to the end, but when I hit the play back. It plays 1 quarter of the animation fine, and then the garment turns into a big pile of mish-mash polygons. Then from the frame it gets corrupted, I'll continue to simulate it, but then on play back the same mish-mash will happen further on into the animation. Then its just a case of rinse and repeat until hopefully I get to the end of the animation if that makes sense. I took a screenshot but I'm not sure how to upload it.",
+        "created_at": "2022-08-15T04:31:58Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 9640858806809,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9506327139609-Exploding-mesh/comments/9640858806809",
+                "comment_body": "Hi Jay, Thank you for contacting us, This is a bug and we have reported to our development team. Sorry for the inconvenience. In the main time, please use Marvelous Designer 10 to bake your animation if you have access to it as this bug is not present in MD10. Best regards, Marvelous Designer Support Team"
+            },
+            {
+                "author_id": 9504923208729,
+                "comment_id": 9641437371673,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9506327139609-Exploding-mesh/comments/9641437371673",
+                "comment_body": "Hi thanks for your reply. I'm actually on the last 200th frame of completing backing my animation. I managed a work around(previous comment)into achieving it. Hopefully exporting it as a pc2 or alembic will be ok. Out of curiosity I'll seen if a student has version 10 to see if it will work. Thanks again for your reply."
+            },
+            {
+                "author_id": 9504923208729,
+                "comment_id": 9905203042073,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9506327139609-Exploding-mesh/comments/9905203042073",
+                "comment_body": "Hi again. You mentioned the problem isn't on MD 10, could you tell me what version of 10. Thanks"
+            },
+            {
+                "author_id": 903135353343,
+                "comment_id": 9983125262617,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9506327139609-Exploding-mesh/comments/9983125262617",
+                "comment_body": "Hi Jay, Sorry I have miss informed you. After further testing, this issue also exist in MD10. This issue occurs only when the garment is complex with long animation. It also depends on how much amount of ram your computer have. If possible, you can optimize your scene to be able to record longer animation in one cache. For a multi-layered garment, increase particle distance to 20mm for inner layers that are not as visible as outer layers. Delete invisible and any other unnecessary layers. Outer layers: Set the particle distance to 10mm for parts that does not require higher level of expression of wrinkles. Set the particle distance to 5mm for parts that require higher level of expression of wrinkles. If there is large quantity of layers set to 5mm, set all of them to 7mm. Increasing Simulation Quality iteration number and Time Step will help you to get a stable simulation with higher particle distance. Best regards, Marvelous Designer Support Team"
+            }
+        ]
+    },
+    {
+        "post_id": 9446876941337,
+        "post_title": "Fabrics sticking to each other",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9446876941337",
+        "post_details": "Hi! I'm having issues with fabrics bleeding/clipping through/sticking to each other. I attached pictures to illustrate the problem. The fabrics not only stick to each other, but also to themselves, no matter the layer and particle distance. I dont think it's an issue of a small avatar: I measured the avatar, and it's around 1860mm, imo it should be enough, but i dont know, do i need to make the avatar bigger or smaller in this case? At first i was using an avatar that was about 200k triangles, but then i made the avatar around 24k triangles, but the fabrics were still clipping through each other. As for me it's quite low poly, but what you think, should i use even more low poly avatar or should i use a high poly avatar? I also tried changing the particle distance, and the fabrics keep clipping on any value from 5 to 30. When tried two fabrics layered (with different layers assigned in the properties), they bleed through each other. When tried one fabric at a time, it bleeds through itself. What can be the reasons for this to happen? I have no idea what it can be, i tried all i could think of, so i would really appreciate any help or suggestion on this matter.",
+        "created_at": "2022-08-12T19:56:30Z",
+        "comments": [
+            {
+                "author_id": 900201109763,
+                "comment_id": 9512406897049,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9446876941337-Fabrics-sticking-to-each-other/comments/9512406897049",
+                "comment_body": "Try simulating with the CPU instead at best setting, this will give a final quality simulation. Before you do that check your skirt layers are assign (top &gt 2 / Bottom &gt 1) Do an CPU general quality simulation with that layer assignment in the static position on the avatar, then when it has settled down change the two skirt layers both to layer '0'. This tells the cloth the simulation is now good to go in that state &gt and change the quality of the simulation in CPU to best. Then do the animation simulation."
+            },
+            {
+                "author_id": 903131648743,
+                "comment_id": 9515902614169,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9446876941337-Fabrics-sticking-to-each-other/comments/9515902614169",
+                "comment_body": "Hi Angel! Thanks for the reply! I tried simulating on all \"Fast (GPU)\", \"Normal (Default)\" and \"Fitting (Accurate fabric)\" settings, and the fabrics sticking to each other and bleeding through happen on each simulation setting. I dont see where in the settings you can change the quality of the simulation to best? As i mentioned in the post, the layers are assigned, and they are assigned correctly. Also, my avatar is static, i dont do animation, so i dont do the animation simulation. Do i need to still do the animation simulation if i dont do animation and just want to simulation in a static pose? Oh and by the way, when i simulate on \"Normal (Default)\" settings, this kind of z-fighting starts to happen:Is there any way to fix it? Changing the particle distance to lower amount doesnt fix it the layers are assigned correctly."
+            },
+            {
+                "author_id": 900201109763,
+                "comment_id": 9527832703769,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9446876941337-Fabrics-sticking-to-each-other/comments/9527832703769",
+                "comment_body": "You say layers are assigned correctly ? Did you read my post about resetting both layers for the garment to layer zero after a successful CPU simulation at best quality ? Make sure in your stress 3D view that you do not have the cloth too tight on the upper layer at the waist. Or that you have the sewing angle set to pull the cloth down - maybe check the waist band sewing angle and then also think about getting rid of two layers of cloth on a tight waist. Where you have two layers of cloth tightly elasticated in simulation areas you may also need to either increase the fabrics simulation distance collision offset (or reduce it) and if that does not help you may need to get rid of the layer under the waist band in the area of pleating/elastication so it simulates better. In MD you need to think through some of the construction simulation issues and say to yourself - if you don't see it &gt do I need to simulated it? Often the answer is no because you are simply quadrupling your simulation time steps, so it's often better to make a pattern edit and get rid of elements that don't get seen in your final animated garment. A simple fix is too create a waistband that extends down below the top layer gathering and sew the lower skirt to that edge at a lower point where the build up of 2 layers is no longer an issue. That then allows the lower portion of the skirts inner layer to be seen and keeps the upper waist area more controllable in terms of constraints. So maybe think about changing some of the unseen construction elements. If it's not seen (don't show it) as that adds a lot of simulated time frame steps to a project. And where you can make repeat elements to speed up the process, copy and sew. Also note in my start point (below) I make sure I freeze and inflate the dress to get a really good save state in the project history so I can return to that layout on the garment, so I am treating the build process very efficiently &gt testing a smaller portion to make sure all my technical simulation settings are correct before I get too heavily into the final build. So these 'ruffles' are elasticated onto a base skirt that is not ruffled - so that allows me to use elastic without getting two creased layers conflicting at the same particle distance. In MD if you want the top layer to crease over the underside layer you may need to attack the problem slightly differently, or you can dial the particle mesh distance down locally on the under layer by painting in sub divided mesh so it crease at a finer resolution locally, that might help with the upper layers creasing at a more coarse particle distance factor. However my suggestion is &gt do you need the lower skirt to be creased at the waist - probably not, as it is not seen. You can recreate the mass of the underside layer at the waist band by changing the sewing angle so it pulls the top skirt out more and then add in stronger sewing value so it comes out giving the impression there is a second layer of cloth bulk under the top layer. See seam &gt sewing angle and strength settings (below) adjusting this can create a variety of pattern to sewn edge transition effects."
+            },
+            {
+                "author_id": 903131648743,
+                "comment_id": 9531016891161,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9446876941337-Fabrics-sticking-to-each-other/comments/9531016891161",
+                "comment_body": "Hello again, Angel! Thank you for replying so swiftly! I'm sorry, but where i can find the best quality settings for CPU simulation? There are \"Fast (GPU)\", \"Normal (Default)\", \"Animation (Stable)\" and \"Fitting (Accurate fabric)\" in the presets of the simulation properties, which one of them you mean as the best quality? Or maybe i'm missing something and i need to look somewhere else? I dont really change the settings in the simulation properties and just use the presets, so i'm not sure where to look for the best quality in simulation. About the layers, I tried to reset the layers to the layer zero. It doesnt really change anything, like, nothing really happens. It doesnt have any effect on the simulation. I checked the angles. All fold angles were set to 180, it's a standard i think? I didnt change anything about the fold angles during these simulations which i showed in this post. I'm not going to animate the garment i'm creating right now, I plan to make the garment in a static pose and that's it. For this project, i'm recreating a medieval outfit, so i kinda want to have the underskirt because i'm going for a historical accuracy and i want to show the layers of clothing. The waistband is a temporary thing because i plan to create a shirt, undershirt, etc, so the skirt layers wont be attached to the waistband. I'm gonna make a fresh clean project and start from scratch to try out all your suggestions again."
+            },
+            {
+                "author_id": 900201109763,
+                "comment_id": 9540688880281,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9446876941337-Fabrics-sticking-to-each-other/comments/9540688880281",
+                "comment_body": "'Fitting accurate' CPU is the 'best' simulation to use on your avatar and garment when fitting the model and in a rest state. That will give you the best start point should you then shift to animation where you would use Animation &gt stable. You should be okay just using these simulation presets. For any assembly conflicts however you may need to tweak both the construction settings in local areas or 'cheat' the garment detail. Changing the dress layers back to zero should change how the algorithm behaves, so it should reduce any surface collision conflict. If you are still getting that issue it means you need to look at your garments construction and detailing next. If your fold angles are 180 degrees (that is flat) sewing and on the waist band to skirt &gt that is NOT CORRECT. The sewing line angle for the skirt to waistband should be more like 90 -120 degrees to the waistband for the top skirt and for the bottom skirt it should maybe be more acute at 165-180 degrees. That may be your assembly problem. You can also turn the sewing line strength up on the upper skirt layer to help pull out the top skirt so it simulates into a 'bell' like shape off the waistband,then waterfalls away nicely. If it's a static pose then also try using the sub divide mesh brush on the top skirt just 50-80 mm away from the waist band so you get a finer mesh in that seam location - that will give finer creasing. You can keep the waistband in place and simple 'hide' it in the construction, that way it can be used to hold items in place. I often turn off pattern pieces I use hold the shape of a garment, you just never see that in the rendering. You should be able to simulate the top and bottom layer of the skirt together - so it's historically accurate."
+            },
+            {
+                "author_id": 25199162322073,
+                "comment_id": 25199435254937,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9446876941337-Fabrics-sticking-to-each-other/comments/25199435254937",
+                "comment_body": "Hello, i wanted to replicate your examples and now i have a question. angel angel, what are those dots inside your rectangle? how do i make them, what are they?"
+            },
+            {
+                "author_id": 903131648743,
+                "comment_id": 25208727867417,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9446876941337-Fabrics-sticking-to-each-other/comments/25208727867417",
+                "comment_body": "25199162322073, i believe those are Pins, they are used to keep something in place. you can find all necessary info on them here: https://support.marvelousdesigner.com/hc/en-us/articles/360037395611-Create-Pin"
+            }
+        ]
+    },
+    {
+        "post_id": 9421711136537,
+        "post_title": "로그인관련...",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9421711136537",
+        "post_details": "안녕하세요. 회사랑 집 왔다갔다 하면서 작업을 해야 하다보니 컴퓨터가 두대입니다. 인디라이센스 구매해서 쓰고 있는데요. 집에서 로그인을 할때마다 회사에 있는 라이센스는 비활성화 해야 하나요? 그리고, 비활성화를 하는 정확한 위치를 프로그램에서 찾을수 없습니다. 메인메뉴 세팅에서 찾으라고만 되어 있는데, 아무리 찾아봐도 안보입니다. 이미지등으로 표시를 해주셨으면 합니다.",
+        "created_at": "2022-08-12T03:11:24Z",
+        "comments": [
+            {
+                "author_id": 900147733143,
+                "comment_id": 9434566212889,
+                "official": true,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9421711136537-%EB%A1%9C%EA%B7%B8%EC%9D%B8%EA%B4%80%EB%A0%A8/comments/9434566212889",
+                "comment_body": "안녕하세요 9421622212889님, 말씀 주신 것과 같이 개인라이선스는 동시사용가능 수가 1로 제한이 되어 있어 한 장소에서 사용하신 다음 다른 장소에서 사용을 원하시면 이전 PC에서 로그아웃을 완벽히 해주셔야 가능함을 알려 드립니다. 또한 로그아웃 위치는 마블러스 디자이너 11 기준, 아래 전달 드리는 캡처와 같이 찾으실 수 있는 점 또한 말씀 드리고자 합니다. 이에 추가적으로, 현재 사용하고 계신 인디라이선스와 관련해 정확히 어떠한 라이선스를 말씀 주시는 것인지 여쭤보고자 합니다. 이에 대한 답변을 support@marvelousdesigner.com 으로 전달 주시면 감사드리겠습니다."
+            }
+        ]
+    },
+    {
+        "post_id": 9106592512537,
+        "post_title": "UV Texel Density",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9106592512537",
+        "post_details": "It seems like not all patterns of the same garment show up in the UV Editor with the same texel density even though I haven't tweaked anything. For instance, one of the sleeves will appear, in the UV Editor, 20% smaller than the other one. It's pretty random and can be a real problem once you apply textures. Is there a way to control the Texel Density (or pixel/unit), so all the pattern pieces will be at the same scale? Thank you.",
+        "created_at": "2022-08-02T17:55:35Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 9178818978457,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9106592512537-UV-Texel-Density/comments/9178818978457",
+                "comment_body": "Hi natashad, Thank you for contacting us. To fix your problem, simply right click at an empty space in the UV editor and chose reset UV to 2D Arrangement, this will reset all UV shells back to the scale and layout base on your 2D window. It is a good practice to always do this before you layout your UVs Best regards, Marvelous Designer Support Team"
+            },
+            {
+                "author_id": 900534539243,
+                "comment_id": 9376937198489,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/9106592512537-UV-Texel-Density/comments/9376937198489",
+                "comment_body": "Thank you so much, I will try it."
+            }
+        ]
+    },
+    {
+        "post_id": 8983867077529,
+        "post_title": "Importing a large pc2 animation changes the frame count",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8983867077529",
+        "post_details": "When import a large *.pc2 animation, its length changes. For example a pc2 containing 107060 frames becomes 107102, a file with 44048 frames becomes 44034. The above changes happens when setting FPS to 12. If I set FPS 1, the frame count doesnt change. But in this case, the simulation is very slow, so this is not an option for work around. Exact workflow: File-&gtAdd-&gtAvatar-&gtchoose the avatar *.obj file File-&gtImport-&gtPoint cache 2-&gtchoose a *.pc2 file The imported animation frame count is different from the actual frame count in the *.pc2 file. Why does this size change happen? Is there a way to avoid such change?",
+        "created_at": "2022-07-29T19:00:57Z",
+        "comments": []
+    },
+    {
+        "post_id": 8877141537945,
+        "post_title": "Normals issue with garment ",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8877141537945",
+        "post_details": "When I use internal lines I get this normal issue where you can see the normal from the under cloth layer. Not sure how to fix this issue. When I import the mash in c4d or substance you can clearly see the issue",
+        "created_at": "2022-07-26T14:50:37Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 9178813388953,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8877141537945-Normals-issue-with-garment/comments/9178813388953",
+                "comment_body": "Hi Andrea Arice, Thank you for contacting us, To fix this issue, you need to re-compute normal in C4D. To do so in C4D, please select the mesh, right click and chose \"Align Normals\" Best regards, Marvelous Designer Support Team"
+            },
+            {
+                "author_id": 8875196258073,
+                "comment_id": 9759096863129,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8877141537945-Normals-issue-with-garment/comments/9759096863129",
+                "comment_body": "Hello, I tried your method but it's not working, actually, is worst, as you can see"
+            },
+            {
+                "author_id": 903135353343,
+                "comment_id": 9765851342489,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8877141537945-Normals-issue-with-garment/comments/9765851342489",
+                "comment_body": "Hi Andrea Arice, Is there a shader and texture maps applied? If so please assign a new basic shader and see if this problem goes away. If not, please send us a support ticket with your OBJ file and we can take a deeper look at it on our end. Best regards, Marvelous Designer Support Team"
+            }
+        ]
+    },
+    {
+        "post_id": 8855580657945,
+        "post_title": "Downgrade to the trial",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8855580657945",
+        "post_details": "Can't I use the old version of the Marvelus designer experience version? When I watch YouTube lecture videos, I want to use the old version because the current interface and the old version are different.",
+        "created_at": "2022-07-26T04:04:52Z",
+        "comments": []
+    },
+    {
+        "post_id": 8744994087321,
+        "post_title": "마블러스 체험판은 다운그레이드가 불가능한가요?",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8744994087321",
+        "post_details": "제목 그대로의 질문입니다. 1. 현재 최신 버전인 마블러스11로 설치된 것 같은데 10이나 8로 다운그레이드가 불가능한가요? 2. 아니면 ui를 옛날 버전으로 변경할 수 있나요?? 3. ui의 글씨 크기라도 키우고 싶어요ㅠㅠ 방법이 있을까요?",
+        "created_at": "2022-07-22T08:25:56Z",
+        "comments": [
+            {
+                "author_id": 900147733143,
+                "comment_id": 8924410317209,
+                "official": true,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8744994087321-%EB%A7%88%EB%B8%94%EB%9F%AC%EC%8A%A4-%EC%B2%B4%ED%97%98%ED%8C%90%EC%9D%80-%EB%8B%A4%EC%9A%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EB%93%9C%EA%B0%80-%EB%B6%88%EA%B0%80%EB%8A%A5%ED%95%9C%EA%B0%80%EC%9A%94/comments/8924410317209",
+                "comment_body": "안녕하세요 8744866438553님, 질문 주신 내용들에 대한 답변으로 하단을 참고하여 주시기 바랍니다. 1. 현재 최신 버전인 마블러스11로 설치된 것 같은데 10이나 8로 다운그레이드가 불가능한가요? &gt 마블러스 디자이너 체험판은 항상 최신 버전으로만 유지 및 제공이 되고 있어 하위 버전들로의 다운그레이드는 불가능한 점 양해 부탁 드립니다. 2. 아니면 ui를 옛날 버전으로 변경할 수 있나요?? &gt UI 변경 기능은 현재 있지 않은 점, 참고 부탁 드립니다. 3. ui의 글씨 크기라도 키우고 싶어요ㅠㅠ 방법이 있을까요? &gt UI내 글씨의 크기만을 직접 조절하는 기능은 없지만, 해상도의 조절에 따라 전반적인 UI의 사이즈들을 조정 하실 수 있으십니다. '설정/환경 설정 -&gt 환경 -&gt 사용자 인터페이스'를 통해 조정해 주시기 바랍니다. 이외에도 더 추가적으로 궁금한 사항이 있으시다면, 저희 support@marvelousdesigner.com 이메일 주소를 통해 언제든 문의 주시기 바랍니다. 감사합니다."
+            }
+        ]
+    },
+    {
+        "post_id": 8711475657881,
+        "post_title": "Custom obj for topstitch  in marvelous designer 11",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8711475657881",
+        "post_details": "Hello PLEASE HELP ME I need to sew pearl on my clothes and in previous versions of marvelous designer I could do this in topstitch properties using custom obj section but in v11 this section is not available. How can place custom 3d object on topstitch in this version? using trim is not good option because it can't adapt wrinkles and simulation.",
+        "created_at": "2022-07-21T09:26:26Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 8721893123993,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8711475657881-Custom-obj-for-topstitch-in-marvelous-designer-11/comments/8721893123993",
+                "comment_body": "Hi Darat Farzad, Thank you for contacting us, You can add a custom obj as a topstitch by adding a new top stitch in the Tipstich object browser, and in its property editor, click on the button next to Custom OBJ to add an obj file as your topstitch. Best regards, Marvelous Designer Support Team"
+            },
+            {
+                "author_id": 8711328903321,
+                "comment_id": 8722667100057,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8711475657881-Custom-obj-for-topstitch-in-marvelous-designer-11/comments/8722667100057",
+                "comment_body": "Hello and thanks for answering but this option is not available on marvelous designer 11"
+            },
+            {
+                "author_id": 903135353343,
+                "comment_id": 8724889834265,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8711475657881-Custom-obj-for-topstitch-in-marvelous-designer-11/comments/8724889834265",
+                "comment_body": "Hi Darat Farzad, This feature is available in Marvelous Designer 11. The above screenshot was taken from Marvelous Designer 11 version 6.1.723. Please try to reinstall Marvelous Designer downloaded from this link https://www.marvelousdesigner.com/mypage If you still have this issue after reinstalling, please send us a support ticket. Best regards, Marvelous Designer Support Team"
+            },
+            {
+                "author_id": 8711328903321,
+                "comment_id": 8757582866585,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8711475657881-Custom-obj-for-topstitch-in-marvelous-designer-11/comments/8757582866585",
+                "comment_body": "Thanks a lot, it fixed."
+            }
+        ]
+    },
+    {
+        "post_id": 8638274503705,
+        "post_title": "Alembic export glitches frame 57, 58",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8638274503705",
+        "post_details": "The animated cloth behaves as expected in MD viewport. But when I try to export Alembic to Maya (Maya only seems to import OGAWA) there is a glitch always. I have tried several times with various cloth. It occurs in 57, 58 frames, and results in cloth flickering back to earlier frame or something. Is there a way to fix this? As currently the workflow is broken.",
+        "created_at": "2022-07-19T12:08:35Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 8721820906393,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8638274503705-Alembic-export-glitches-frame-57-58/comments/8721820906393",
+                "comment_body": "Hi Jaakko Saari, Thank you for contacting us. Unfortunately, I can't repeat your issue on my end. Could you please send me your FBX in trouble as well as the Marvelous Designer Project file in a support ticket, so I can take a look at it on my end? Best regards, Marvelous Designer Support Team"
+            }
+        ]
+    },
+    {
+        "post_id": 8599240193049,
+        "post_title": "obj파일 깨짐현상",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8599240193049",
+        "post_details": "안녕하세요 마블러스디자이너에서 obj파일을 불러왔을때 이렇게 깨짐현상이 생기는데 이런현상 해결방법이 있나요?",
+        "created_at": "2022-07-18T10:36:01Z",
+        "comments": [
+            {
+                "author_id": 900147733143,
+                "comment_id": 8923762154521,
+                "official": true,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8599240193049-obj%ED%8C%8C%EC%9D%BC-%EA%B9%A8%EC%A7%90%ED%98%84%EC%83%81/comments/8923762154521",
+                "comment_body": "안녕하세요 8599179240345님, 해당 이슈와 관련해 더 나은 도움을 드릴 수 있도록, 현재 이슈를 겪고 계신 파일을 저희 support@marvelousdesigner.com 을 통해 전달 주시기 바랍니다. 감사합니다."
+            }
+        ]
+    },
+    {
+        "post_id": 8481028768665,
+        "post_title": "M2 macbook airでの動作",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8481028768665",
+        "post_details": "日本語で失礼します 明日発売のm2 macbook airでの動作は次のバージョンで対応する予定はありますか OSはmontereyだと思います",
+        "created_at": "2022-07-14T10:58:44Z",
+        "comments": [
+            {
+                "author_id": 900147733143,
+                "comment_id": 8923722975897,
+                "official": true,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8481028768665-M2-macbook-air%E3%81%A7%E3%81%AE%E5%8B%95%E4%BD%9C/comments/8923722975897",
+                "comment_body": "Hello 1900674104128, In response to your inquiry, please note that there is no specific date or plan for M2 compatibility at the moment. However we would of course, make an announcement either through our website or alarm popup from our software when there is a progress in regards. Hope this is understandable, and please feel free to contact us at support@marvelousdesigner.com for any other questions you may have in the future."
+            }
+        ]
+    },
+    {
+        "post_id": 8339517468185,
+        "post_title": "Help with the simulation settings or understand what's going on",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8339517468185",
+        "post_details": "Hello. I recently started studying marvelous, at times I have such difficulties in simulation. The tissue already fits snugly to the body, but is constantly stimulated. I have 2 layers there, I placed them properly one on top of the other. Using the clone over function. Maybe my car is not very powerful. Ryzen 7 2700 RAM 32gb R9 290 4gb Please tell me the best settings for the simulation?",
+        "created_at": "2022-07-10T12:45:07Z",
+        "comments": [
+            {
+                "author_id": 903135353343,
+                "comment_id": 8415452030745,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8339517468185-Help-with-the-simulation-settings-or-understand-what-s-going-on/comments/8415452030745",
+                "comment_body": "Hi Daniel, Thank you for contacting us, It shouldn't be your computer specs. Could you please attach some screenshots here so I can better help you? Best regards, Marvelous Designer Support Team"
+            }
+        ]
+    },
+    {
+        "post_id": 8322371808281,
+        "post_title": "Marvelous Design crashes on launch on Mac Pro",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8322371808281",
+        "post_details": "I've just installed Marvelous Designer 9 on my new Mac Pro (2019), and it crashes on launch every time after registering. This is version 5.1.477, and is registered with my existing Marvelous Designer 9 Personal Perpetual license. My Mac Pro is running macOS Monterey 12.4 (21F79). It has the AMD Radeon Pro W5700X 16 GB MPX module, with other GPUs connected as eGPUs. I couldn't immediately find a crash log to attach. Any help in getting up and running would be much appreciated. - Dave",
+        "created_at": "2022-07-09T20:32:15Z",
+        "comments": [
+            {
+                "author_id": 900147733143,
+                "comment_id": 8407000201625,
+                "official": true,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8322371808281-Marvelous-Design-crashes-on-launch-on-Mac-Pro/comments/8407000201625",
+                "comment_body": "Hello 8322385113753, To your concern, please kindly note that Marvelous Designer is not fully supported with Monterey OS at the moment and the compatibility with it would be available within our next patch version, which is anticipated to be released in late Summer or early Fall this year. However, due to the different programming structure from version 9 and 10 of Marvelous Designer, please be mindful that this compatibility will only be available from the new patch version and onward. Hope this is understandable, and please contact us at support@marvelousdesigner.com for any other questions you may have."
+            }
+        ]
+    },
+    {
+        "post_id": 8321573199769,
+        "post_title": "리토폴로지중에 계속 튕기는 이유",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8321573199769",
+        "post_details": "자동 리토폴로지 생성 후 리토폴로지를 수정하면 계속해서 프로그램이 강제종료됩니다. 프로그램을 다시 깔아봐도 계속 오류가 나고 컴퓨터를 재부팅해도 오류가 고쳐지지 않습니다. 어떻게 해결해야 할까요?",
+        "created_at": "2022-07-09T18:14:26Z",
+        "comments": [
+            {
+                "author_id": 900147733143,
+                "comment_id": 8406839692441,
+                "official": true,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8321573199769-%EB%A6%AC%ED%86%A0%ED%8F%B4%EB%A1%9C%EC%A7%80%EC%A4%91%EC%97%90-%EA%B3%84%EC%86%8D-%ED%8A%95%EA%B8%B0%EB%8A%94-%EC%9D%B4%EC%9C%A0/comments/8406839692441",
+                "comment_body": "안녕하세요 8320574944665님, 해당 문의 내용에 보다 나은 도움을 드릴 수 있도록, support@marvelousdesigner.com 주소로 현재 겪고 계신 이슈와 관련 된 스크린 캡처 혹은 녹화 영상을 보내주시면 감사하겠습니다. 또한 현재 이슈를 겪고 계신 라이선스의 정확한 버전 및 아래 하단의 양식을 참고하시어 사용 중이신 PC의 사양을 전달해 주시기 바랍니다. CPU: Memory Size: Mac Model Name (for mac users only): Graphics Card: Resolution: Language: 감사합니다."
+            }
+        ]
+    },
+    {
+        "post_id": 8223085249049,
+        "post_title": "How do I use Marvelous Designer",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8223085249049",
+        "post_details": "",
+        "created_at": "2022-07-06T19:06:37Z",
+        "comments": [
+            {
+                "author_id": 8223055401497,
+                "comment_id": 8223101174297,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8223085249049-How-do-I-use-Marvelous-Designer/comments/8223101174297",
+                "comment_body": "I dont know how to use it"
+            },
+            {
+                "author_id": 900201109763,
+                "comment_id": 8336577821977,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8223085249049-How-do-I-use-Marvelous-Designer/comments/8336577821977",
+                "comment_body": "See their many tutorials on you tube. https://www.youtube.com/c/Marvelousdesigner The older tutorials show valid tool use for most of the most recent version of MD 11. Allow yourself some time to view them online and then start using the application, many of the basic concepts are covered in the playlists section."
+            }
+        ]
+    },
+    {
+        "post_id": 8086182519193,
+        "post_title": "맥 몬터레이 12.4 - 버전9.lastest 충돌문제",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8086182519193",
+        "post_details": "버전 9의 lastest 빌드로부터 하위 5개까지 테스트 했는데 전부다 충돌합니다. 버그인가요? 고칠수있는 방법 없을까요?",
+        "created_at": "2022-07-02T13:32:34Z",
+        "comments": [
+            {
+                "author_id": 900147733143,
+                "comment_id": 8176343452441,
+                "official": true,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8086182519193-%EB%A7%A5-%EB%AA%AC%ED%84%B0%EB%A0%88%EC%9D%B4-12-4-%EB%B2%84%EC%A0%849-lastest-%EC%B6%A9%EB%8F%8C%EB%AC%B8%EC%A0%9C/comments/8176343452441",
+                "comment_body": "안녕하세요 900297595083님, 문의 주신 내용에 대한 답변으로, 해당 이슈는 Monterey OS 호환성과 관련 된 이슈인 것으로 파악 됩니다. 저희 라이선스 페이지 내 기재되어 있는 시스템 사양 부문에서 확인하실 수 있으신 것처럼, Mojave 10.14, Catalina 10.15, Big Sur 11.4 OS들이 공식적으로 지원되고 있으며, 현재 Monterey OS는 공식적으로 지원되고 있지 않고 있습니다. Monterey OS 호환성과 관련한 패치 작업이 현재 진행 중에 있으며, 해당 버전은 올해 8~9월 즈음에 확인하실 수 있을 것으로 예상 됩니다. 하지만 현재 보유 중이신 마블러스 디자이너 9 혹은 하위 버전들에 한해서는 해당 호환성의 패치가 어려운 점 양해 해 주시기 바라며, 추후 Monterey OS에서 라이선스 사용을 원하시는 경우 버전 업그레이드 혹은 구독 전환을 하시어 최신 버전으로 사용해 주시기 바랍니다. 해당 내용이 도움이 되셨길 바라며, 이후에도 추가적인 도움이 필요하시다면 언제든 support@marvelousdesigner.com 으로 문의 주시기 바랍니다. 감사합니다."
+            }
+        ]
+    },
+    {
+        "post_id": 8064769895833,
+        "post_title": "After loading MD the UI doesn't show",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8064769895833",
+        "post_details": "",
+        "created_at": "2022-07-01T20:52:29Z",
+        "comments": [
+            {
+                "author_id": 900147733143,
+                "comment_id": 8176397680025,
+                "official": true,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/8064769895833-After-loading-MD-the-UI-doesn-t-show/comments/8176397680025",
+                "comment_body": "Hello 903006723863, Could you send us either the screen capture or video record of this issue at support@marvelousdesigner.com by any chance? Thank you for your cooperation in advance, and we will look forward to hearing back from you. Best regards,"
+            }
+        ]
+    }
+]

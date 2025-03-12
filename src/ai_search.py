@@ -347,6 +347,7 @@ if __name__ == "__main__":
 
         if task == "Delete Documents":
             ai_search.delete_documents(search_fields=search_fields, search_text=search_text, select=select)
+
         elif task == "Get Documents":
             ai_search.get_documents(
                 search_fields=search_fields,

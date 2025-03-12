@@ -1,0 +1,410 @@
+[
+    {
+        "ArticleId": "4405386884249",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/4405386884249",
+        "Title": "Network Offline License Setup Guide",
+        "Content": "* If the purchase is for perpetual version update with USB Dongle type of license, please click here for its manual. ** If the purchase is for Network Offline Subscription type, please refer below. Marvelous Designer Network Offline Licenses will be provided with a software license key (SL Key). Here are a few reminders when it comes to the SL key setup process. [Checklists] Category Server Environment Content Will not work on the same server as a USB dongle license type. Due to technical reasons, software license keys cannot be set up on the same server where a physical USB dongle (HW key) is installed. In this case, we recommend using a separate server. However, if you happen to use the same server for both license types, please let the sales team know. Category Virtual Server Content Available to set up on a virtual server, but a fee for reissuing the SL key may arise due to a server down. SL key is able to be set up on a virtual server, but if the SL key is damaged due to a server down, for example, you may have to request a reissued key from our sales team (a Reissuing Fee will be charged). In this case, please contact the sales team. Category Transfer SL Key to a different server (For Windows server only) Content Link to Rehost SL Key Manual This functionality is available only if the original server, where the SL key is currently installed, is valid and the new server is set up and ready. Based on your current license status or server OS type, there will be a specific manual for each case. Please check the table below and follow steps that is applicable to you. [Process in a C2V file Generating] 1) First time installing network offline license Step Explain Manual Link 1 Create a new C2V file on the main server. 1. Link to Windows OS 2. Link to Linux OS 3. Link to Mac OS 2 Send C2V file at sales@marvelousdesigner.com or to a representative that is in contact with - 3 Apply the V2C file you receive Link to Manual 2) Existing SL key updates due to subscription renewal or additional copies Step Explain Manual Link 1 Create a C2V file for the key update. Link to Manual 2 Send C2V file at sales@marvelousdesigner.com or to a representative that is in contact with - 3 Apply the V2C file you receive Link to Manual 3) Separate license activation (Second or above installation) on the same server Step Explain Manual Link 1 Create a new C2V file followed by the manual, and send C2V file at sales@marvelousdesigner.com or to a representative that is in contact with Link to Manual 2 Apply the V2C file you receive Link to Manual If you have any questions regarding the contents above, please contact at sales@marvelousdesigner.com",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36105797528473,
+        "Section": "Installation & Requirements",
+        "Tokens": 603
+    },
+    {
+        "ArticleId": "360037023252",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360037023252",
+        "Title": "Seam Taping",
+        "Content": "Create Seam Tapping Objective Reinforce edges of Patterns to withstand from drooping down by gravity when Simulating. Location 2D Toolbar Seam Taping Select Segment Pattern Property Editor Selected Line Seam Taping Operation Follow the indicated guideline below: 2D Toolbar Seam Taping Select Pattern Segment Property Editor Selected Line Seam Taping Select a segment Pattern to reinforce. The selected segment is now being highlighted in orange color. Activate the Simulate. The seam tape is now being applied to the selected segment and being reinforced. Note: Click-and-drag also allows applying seam tapes. When the Seam Taping tool is active, the applied seam tape is color coded with arrows indicating the direction of applied seam tape (ver. 2024.2). Extend Seam Tapping Objective Edit the seam tape extension output with options for overlapped and non-overlapped structures when 2 or more seam taping are intersected can be created. (Example: To create non-overlapped seam taping, first seam taping stop on the outline second seam taping stop on the 1st seam taping) Location 2D Toolbar Seam Taping Select Seam Taping Property Editor Selected Line Extend Operation Follow the indicated guideline below: 2D Toolbar Seam Taping Select Seam Taping Property Editor Selected Line Extend Use the drop-down menu to select the stop position options: None, To Outline, and To Seam Taping. Extend (None) = Does not extend. Extend (To Outline) = Extend to the pattern outline Extend (To Seam Taping) = Extends to the seam taping area of the intersected line. Note: The arrow direction indicate the direction of seam tapping. The end without arrow tip is the start of seam tapping. And the end with arrow tip is the end of the seam taping.",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36907329082649,
+        "Section": "Garment Properties",
+        "Tokens": 364
+    },
+    {
+        "ArticleId": "360037023172",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360037023172",
+        "Title": "Piping Property Setting",
+        "Content": "Objective Modify the physical Piping properties at Property Editor. Location Property Editor Explanation Piping properties appear in the Property Editor when a Piping is selected with the Select/Move tool or the Edit Piping tool. Information Name Renames selected Piping. Line Length Displays the line length of selected Piping. Dimension Width (mm) Adjusts the width of selected Piping between the value of 1~15mm. Particle Distance (mm) Adjusts the Particle Distance of selected Piping between the value of 1~5mm. Finishing Start Close start of piping End Close end of piping Fabric Applies fabric settings to selected Piping from the drop-down item list of Fabric. Piping's fabric texture can be edited using the edit_texture.png Edit Texture tool (ver4.2.0). Hide Shows/hides selected Piping. (Select a Piping from the Scene tab in the Object Browser to reveal menu.)",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36753374399641,
+        "Section": "Piping/Binding",
+        "Tokens": 186
+    },
+    {
+        "ArticleId": "360036956012",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360036956012",
+        "Title": "GoZ for Marvelous Designer",
+        "Content": "Objective GoZ allows direct Import and Export of objects between Marvelous Designer and ZBrush. GoZ Install Download the installer using the links bellow. Latest GoZ installer for Windows Latest GoZ installer for MacOS Note: The above GoZ installer works with Marvelous Designer (ver. 2024.2 and above) and is compatible with ZBrush 2022 and later. To access archived version of GoZ for Marvelous Designer 2024.1 and below (for Windows), please download the installer from the link below: [Archived] GoZ installer (Windows) Install GoZ for Marvelous Designer from ZBrush Unzip the downloaded zip folder (md_goz_app_[OperatingSystem]_[VersionNumber]), then install GoZ to ZBrush by moving the contents in MarvelousDesigner folder to the following directory: Window default directory path: C:UsersPublicPixologicGoZAppsMarvelousDesigner MacOS default directory path: /Users/Shared/Pixologic/GoZApps/MarvelousDesigner/ Note: For MacOS, after moving the contents in MarvelousDesigner folder to the directory above, go into MarvelousDesigner folder. Please unzip GoZBrushToMarvelousDesigner and GoZInitMarvelousDesigner. After you unzip the \"MarvelousDesigner\" folder to GoZApps folder, run ZBrush. Go to ZBrush Main Menu Preferences GoZ path to MarvelousDesigner. In the list displayed, click the version of Marvelous Designer you will be using. If a Security Warning pop-up window appears click Run. Click 'Install' Button to start GoZ Marvelous Designer installation. Note: Please Click Replace if file already exist in the GoZAppsMarvelousDesigner folder. If you have multiple versions of Marvelous Designer installed, please note that the newly revamped GoZ for Marvelous Designer is only available for Marvelous Designer version 2024 and above. You can verify that the path to the Marvelous Designer executable file is correct by checking in the GoZ_Config.txt file located in the GoZAppsMarvelousDesigner folder. Reinstall GoZ for Marvelous Designer from ZBrush Preform Force Reinstall by going to ZBrush Main menu Preferences GoZ Force Reinstall In the list of GoZ enabled application, select Marvelous Designer. Click 'Install' Button to start GoZ Marvelous Designer installation If a Security Warning pop-up window appears, click Run. Note: To ensure GoZ plugin is working properly with Marvelous Designer, please keep the default name for Marvelous Designer application as it is, and do not modify its name. Run GoZ from Marvelous Designer After installing GoZ for Marvelous Designer, you can directly export Garments, Avatars, Trims and Scene and Props from Marvelous Designer with the Run GoZ menu. Location Main Menu GoZ Export to ZBrush Operation Make sure Path to Marvelous Designer is correctly setup with the version of Marvelous Designer in use in ZBrush. Select elements in the scene (Avatar/Garment/Trim/SceneAndProps) to be exported to ZBrush. Go to Main Menu GoZ and select Export to ZBrush. In the pop-up window, in Object tabs, you can add and remove scene elements to export. Set export setting and click OK button. Go to ZBrush, drag in the 3D window. In Subtool, you can find Patterns + Trim become a single tool, scene and prop become a single tool, and each avatar becomes a tool of its own. PolyGroups are automatically assigned: Pattern: split per pattern shapes. Avatar: split per component. Trim: split per Trim object. Scene and Prop: split per Scene and Prop. Export to ZBrush Settings Object Select All Patterns: Select/Deselect all Patterns. Individual selection is available on the drop-down menu on the right. Select All Avatars: Select/Deselect all Avatars/Objects. Individual selection is available on the drop-down menu on the right. Select All Trims: Select/Deselect all Trims. Individual selection is available on the drop-down menu on the right. Select All Scene and Props: Select/Deselect all Scene and Props. Individual selection is available on the drop-down menu on the right. Unweld Exports Vertex(points of mesh) of sewn pattern parts as multiple objects. Weld Combines Vertex (points of mesh) of sewn pattern parts together as one point. Thin Ensures thickness is not exported to Geometry even if the value is increased beforehand. Thick Exports thickness value to Geometry. Scale Adjusts scale of file being exported with a unit of measurements. Scale % Works on top of the unit of measurement above, scale by specific percentage value. * Reset: Reset all settings to Default. Note: For Avatar and Scene and Prop, selecting a part of an object will have the corresponding object in the object list to be selected. Selecting only the body of an avatar will result in the entire avatar being selected in the Export to ZBrush dialog. Run GoZ from ZBrush You can directly export object to Marvelous Designer from ZBrush through GoZ. Location Tool Operation Set Import Settings in Marvelous Designer from Main Menu GoZ Import Settings Under Tool window, make sure Marvelous Designer is set as the current GoZ enabled application by clicking the \"R\" button shown in the image above. Click GoZ button to export currentSubTool to 'GoZ' enabled application, or use the shortcut Ctrl+G Click All button to export all SubTools to 'GoZ' enabled application, or use the shortcut Ctrl+Shift+G Click Visible button to export visible SubTools to 'GoZ' enabled application. Once the object is exported by GoZ, you can see mesh are imported to Marvelous Designer based on Import Setting GoZ Import Settings Load Type Open All existing objects will be removed, leaving the imported file only. Add Add files and keep the existing objects. Object Type Avatar Import file as an Avatar type. - Objects imported as an Avatar type can be muti-selected. Trim Import file as Trim type. - For more information on Trim Type, check out Trim Properties Page Garment Import an Object as Simulation ready Garment, physical properties can be adjusted from the property editor. Scene and Props Import file as Scene &amp Props. - For more information on Scene &amp Props, check out Scene and Props Properties Page Scale Adjusts scale of file being exported with a unit of measurements. Scale % Works on top of the unit of measurement above, scale by specific percentage value. * Reset: Reset all GoZ settings to Default.",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36105765396121,
+        "Section": "Import / Export",
+        "Tokens": 1331
+    },
+    {
+        "ArticleId": "900000674286",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000674286",
+        "Title": "1. Windows and Modes (UI)",
+        "Content": "In this video, we will introduce our main Windows and Modes for your better understanding.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=XiTxuhaxIPo"
+        ],
+        "CategoryId": 36105732940057,
+        "Category": "Tutorials",
+        "SectionId": 36105755320345,
+        "Section": "Quick Start",
+        "Tokens": 17
+    },
+    {
+        "ArticleId": "39173458132377",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/39173458132377",
+        "Title": "Errores: Imposibilidad de abrir la versión 2024.2.71 (Español)",
+        "Content": "Hemos identificado un problema por el cual el software no se ejecuta cuando el idioma está configurado en \"Español\" después de la versión 2024.2.71. Si tiene problemas al ejecutar el software con el idioma configurado en \"Español\", desinstale completamente Marvelous Designer, luego descargue y reinstale la versión 2024.2.73 del Hotfix. Referencia: Manual completo de desinstalación de Marvelous Designer Lamentamos las molestias y agradecemos su comprensión.",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36925227767065,
+        "Section": "Troubleshooting",
+        "Tokens": 118
+    },
+    {
+        "ArticleId": "34171549822873",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/34171549822873",
+        "Title": "1. Quick Start",
+        "Content": "1. UI 2. View Controls 3. 2D Pattern Tools 4. Sewing Tools 5. Arrangement Tools 6. Finalizing - Fabrics &amp Trims &amp Particle Distance",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=fDhuDfh_m8o",
+            "https://www.youtube.com/watch?v=9IQA-kV6UbY",
+            "https://www.youtube.com/watch?v=HtgBuun3_u4",
+            "https://www.youtube.com/watch?v=RZGHqWyRZJI",
+            "https://www.youtube.com/watch?v=yvZ8TuTlxxI",
+            "https://www.youtube.com/watch?v=2SZhSV_Zu5o"
+        ],
+        "CategoryId": 36105732940057,
+        "Category": "Tutorials",
+        "SectionId": 36105769514393,
+        "Section": "UEFN Creators Tutorial ",
+        "Tokens": 44
+    },
+    {
+        "ArticleId": "360037297091",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360037297091",
+        "Title": "What are the recommended/minimum System requirements?",
+        "Content": "Please visit the manual for details.",
+        "YoutubeLinks": [],
+        "CategoryId": 360002380272,
+        "Category": "FAQ",
+        "SectionId": 360007401091,
+        "Section": "General",
+        "Tokens": 7
+    },
+    {
+        "ArticleId": "4410269996313",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/4410269996313",
+        "Title": "Latest Tutorial",
+        "Content": "Pleated Pants Puff Sleeve Shirt Leather Jacket Elastic Waist Pants Dropped Shoulder Long Sleeve Hoodie View More",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=06odmyenwDA",
+            "https://www.youtube.com/watch?v=8aoliu0-wtQ",
+            "https://www.youtube.com/watch?v=JE9JLcf6E50",
+            "https://www.youtube.com/watch?v=1ojG9Qs_6xo",
+            "https://www.youtube.com/watch?v=N0V41rsWVDM"
+        ],
+        "CategoryId": 36105732940057,
+        "Category": "Tutorials",
+        "SectionId": 36105766079641,
+        "Section": "Advanced Garments",
+        "Tokens": 22
+    },
+    {
+        "ArticleId": "900000888903",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000888903",
+        "Title": "Shirring Dress",
+        "Content": "I'll show you how to make a costume with shirring. Go create your well-detailed dress after watching the video.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=PJQ6yVVmZEg"
+        ],
+        "CategoryId": 36105732940057,
+        "Category": "Tutorials",
+        "SectionId": 36105766079641,
+        "Section": "Advanced Garments",
+        "Tokens": 26
+    },
+    {
+        "ArticleId": "900000888663",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000888663",
+        "Title": "Halter Neck Dress",
+        "Content": "It is the process of making a dress with a Halter Neck design using the modular. Modular Configurator Halter Neck Dress",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=5QPxLYqBWhk",
+            "https://www.youtube.com/watch?v=PHhbAbDIHLY"
+        ],
+        "CategoryId": 36105732940057,
+        "Category": "Tutorials",
+        "SectionId": 36105766079641,
+        "Section": "Advanced Garments",
+        "Tokens": 25
+    },
+    {
+        "ArticleId": "900000883263",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000883263",
+        "Title": "Padded Jacket and Hoody",
+        "Content": "Check out these videos to learn the process of making casual hoodie and padded jackets in Marvelous Designer. Hoody Padded Jacket",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=OEYAQGCl9os",
+            "https://www.youtube.com/watch?v=GxWfMNf44KY"
+        ],
+        "CategoryId": 36105732940057,
+        "Category": "Tutorials",
+        "SectionId": 36105766079641,
+        "Section": "Advanced Garments",
+        "Tokens": 25
+    },
+    {
+        "ArticleId": "900000880843",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000880843",
+        "Title": "Suit: Pants, Shirt, Jacket and Layering",
+        "Content": "Let's find out how to layer multiple garments onto the avatar, and using pattern blocks from the Modular Configurator as a base. Suit - Pants Suit - Shirt Suit - Jacket Suit - Layering",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=9TKUo9PHNIU",
+            "https://www.youtube.com/watch?v=LoDfsyg1bls",
+            "https://www.youtube.com/watch?v=GGlsBuQ2Biw",
+            "https://www.youtube.com/watch?v=bru4YNoHe4Q"
+        ],
+        "CategoryId": 36105732940057,
+        "Category": "Tutorials",
+        "SectionId": 36105766079641,
+        "Section": "Advanced Garments",
+        "Tokens": 39
+    },
+    {
+        "ArticleId": "34171600815513",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/34171600815513",
+        "Title": "4. Mesh Optimization and Retopology Toolset",
+        "Content": "",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=5nRPd-zDLDE"
+        ],
+        "CategoryId": 36105732940057,
+        "Category": "Tutorials",
+        "SectionId": 36105769514393,
+        "Section": "UEFN Creators Tutorial ",
+        "Tokens": 0
+    },
+    {
+        "ArticleId": "900000671143",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000671143",
+        "Title": "8. Arrangement",
+        "Content": "Basic Pattern Arrangement In this video, we will teach you how to use different ways to arrange the patterns in 3D window. It's the most necessary step before simulation. Adjust Arrangement In this video, we will teach you how to adjust the pattern arrangement after using Gizmo tool or arrangement points to arrange the patterns. 3D Statement In this video, we will show you the way to change the pattern's 3D statement to easily deal with the multi-layered garments.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=eAOYYgn5RK0",
+            "https://www.youtube.com/watch?v=P9iAW6rAIpg",
+            "https://www.youtube.com/watch?v=mQu7NjrsQKY"
+        ],
+        "CategoryId": 36105732940057,
+        "Category": "Tutorials",
+        "SectionId": 36105766307097,
+        "Section": "Tools and Menus",
+        "Tokens": 99
+    },
+    {
+        "ArticleId": "34171629173145",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/34171629173145",
+        "Title": "5. Animation Tools",
+        "Content": "",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=XQtFZNIK23w"
+        ],
+        "CategoryId": 36105732940057,
+        "Category": "Tutorials",
+        "SectionId": 36105769514393,
+        "Section": "UEFN Creators Tutorial ",
+        "Tokens": 0
+    },
+    {
+        "ArticleId": "34171642514201",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/34171642514201",
+        "Title": "6. Connect Store Pipeline",
+        "Content": "",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=dtwRo1bKzA8"
+        ],
+        "CategoryId": 36105732940057,
+        "Category": "Tutorials",
+        "SectionId": 36105769514393,
+        "Section": "UEFN Creators Tutorial ",
+        "Tokens": 0
+    },
+    {
+        "ArticleId": "34171634464409",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/34171634464409",
+        "Title": "7. LiveSync and Animation Export",
+        "Content": "",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=kT-NkO4FyH0"
+        ],
+        "CategoryId": 36105732940057,
+        "Category": "Tutorials",
+        "SectionId": 36105769514393,
+        "Section": "UEFN Creators Tutorial ",
+        "Tokens": 0
+    },
+    {
+        "ArticleId": "34171620355225",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/34171620355225",
+        "Title": "8. Physical Properties",
+        "Content": "",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=F7FtKIj3840"
+        ],
+        "CategoryId": 36105732940057,
+        "Category": "Tutorials",
+        "SectionId": 36105769514393,
+        "Section": "UEFN Creators Tutorial ",
+        "Tokens": 0
+    },
+    {
+        "ArticleId": "34171636143385",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/34171636143385",
+        "Title": "9. USD to Unreal Engine Chaos Cloth Workflow",
+        "Content": "",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=Nf6OUDoPCPs"
+        ],
+        "CategoryId": 36105732940057,
+        "Category": "Tutorials",
+        "SectionId": 36105769514393,
+        "Section": "UEFN Creators Tutorial ",
+        "Tokens": 0
+    },
+    {
+        "ArticleId": "11966977419545",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/11966977419545",
+        "Title": "Graphics Card Problems and Troubleshooting",
+        "Content": "1. By updating the graphics card driver, you can solve and prevent graphics card-related problems that may occur while using the Marvelous Designer software. 2. Guides you on how to properly connect your desktop graphics card and monitor. Applicable for: All users of Marvelous Designer software Common Problems 1. OpenGL version warning appears when running Marvelous Designer software as shown in the figure below. 2. Graphics/texture errors or rendering images appear strange while running Marvelous Designer software. 3. If the Marvelous Designer GPU-simulation or GPU-rendering speed is lower than the expected performance of your computer's specifications. How to Update Graphics Card Driver Step 1) Find out the product name of the graphics card (GPU) installed in your desktop computer or laptop. As shown in the figure below, you can find the model name of your graphics card (GPU) in the Performance tab of Windows Device Manager. Step 2) Search and download the latest driver matching the product name from each manufacturer's website. Note that even if the graphics card model name looks the same or similar, the drivers for laptops and desktops, and for workstations and servers are different. Search for and install the driver for the type of computer you are using. AMD Radeon Driver Download (Link) Nvidia Driver Download (Link) Intel Graphics Driver Download (Link) Step 3) Run the downloaded driver file. It is recommended to install with administrator privileges. A computer reboot may be required after driver installation. Follow the on-screen instructions. Connecting the monitor and graphics card correctly As shown in the figure below, if the monitor cable is connected to the CPU built-in GPU, the built-in GPU is mainly used instead of the external graphics card. OpenGL version warnings may occur when running Marvelous Designer in this situation. How to fix Step 1) Save the files you are working on and turn off the computer completely. Step 2) Connect the monitor cable to the external graphics card and turn on the computer. Connect all monitor cables to the external graphics card, even when using more than one monitor. Step 3) If there is no screen output on the monitor, try reconnecting the monitor power. See also Supported monitor cable types vary depending on the graphic card and monitor. If you are using the latest monitor and the latest graphic card, most support HDMI or DP (DisplayPort). Find the right cable for your monitor and graphics card. Saved search (Link) Read more Marvelous Designer software automatically detects the graphics card and driver installed in the computer when launching, and displays a warning if an unsupported graphics card or outdated driver is found. Please refer to the guide above to solve the problem. If you are using a laptop with an Nvidia graphics card, the laptop will have either an AMD processor or an Intel processor with integrated graphics GPU and Nvidia GPU, respectively, depending on the situation. If an openGL-related error appears while using the Marvelous Designer software, select 'High-performance Nvidia processor' in the Nvidia control panel as shown below and click Apply. If you set Windows Update to 'Auto', it will automatically install the latest graphics card driver. However, the driver provided by the graphics card manufacturer's website is more up-to-date than the Windows update version. It is recommended to update the graphics card driver at least once every 6 months. It helps with Marvelous Designer software as well as all other graphics programs and overall system performance and stability. To check GPU usage in Windows, select GPU in the Performance tab of Task Manager as shown below. For Windows 11 users, use a dedicated utility like GPU-z (freeware, download link) If you are using a Mac, the graphics card driver is included in macOS. If you update to the latest macOS, the latest graphics card driver is also installed. To check CPU-GPU usage on Mac, use the Activity Monitor app built-in to macOS. Also check the Marvelous Designer system requirements for graphics card-related information.",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36925227767065,
+        "Section": "Troubleshooting",
+        "Tokens": 799
+    },
+    {
+        "ArticleId": "360037401871",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360037401871",
+        "Title": "How to Fix the Error using Intel Graphics Card",
+        "Content": "Objective Learn how to resolve launching error using Intel HD Graphics. Operation Since this crashing is due to a Graphic driver which is automatically updated by Microsoft Windows, please re-install the Intel graphics driver after deactivating \"Windows Automatic Updates\". Case 1 1. Please input \"gpedit.msc\" on Search tool and execute it. 2. Local Group Policy Editor Computer Configuration Administrative Templates Windows Components Windows Updates activate \"Do not include drivers with Windows Update\" Note: The option may not appear in the Window versions below. In this case, External Graphics card should be used. (Please refer to Computer Specification) Windows 7 Home Edition / Windows 10 Home Edition 3. Device Manager Display Adapters Intel(R) HD Graphic Uninstall the device and driver software Reboot Windows 4. Enter Intel Support Page and download and install the program of Intel Driver &amp Support Assistant. 5. Start scanning the driver. 6. Download and Reinstall the driver of Intel(R) HD Graphics. 7. Verify the \"23.20.16.4901\" version is installed correctly. 8. Please reboot Windows. 9. If the Error is not resolved with Case 1, please proceed Case 2 below. Case 2 If the Error is not resolved with Case 1, please proceed Case 2. 1. Please enter Intel Graphics Driver for Windows* and Download &amp Install the driver. 2. Approve overwrite to the previous version during Installation.",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36925227767065,
+        "Section": "Troubleshooting",
+        "Tokens": 302
+    },
+    {
+        "ArticleId": "360037401891",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360037401891",
+        "Title": "Troubleshooting with HASP Driver Errors",
+        "Content": "The Latest HASP driver download (updated June 2022) Mac version Linux version Windows version Sentinel HASP Driver Errors on Windows Objective The Sentinel HASP Diver is automatically installed with the software, but it fails occasionally. Please download and install the Sentinel HASP Driver which is suitable for your operating system. Operation Installing Sentinel Driver on Windows 1. Download the driver from the link below. Windows HASP Driver Download 2. Enter \"CMD\" in 'Windows Start Button + Run (R)' to install the driver. 3. Drag the downloaded haspdinst.exe file and put it on the CMD window to automatically register the corresponding path as shown underlined below. Enter \"-i\" behind the automatically entered path and press 'Enter' on keyboard to install. 4. Access to http://localhost:1947 and check to see if the following screen appears to see if the HASP Driver has been successfully installed. If the following screen appears, then installation is successful. 5. If the following error occurs, the HASP Driver must be deleted and reinstalled. Deleting Sentinel Driver on Windows 1. Download the driver from the link below. HASP Driver Download 2. Enter \"CMD\" in 'Windows Start Button + Run (R)' to delete the driver. 3. Drag the downloaded haspdinst.exe file and put it on the CMD window to automatically register the corresponding path as shown underlined below. Enter \"-purge -r\" behind the corresponding path and press 'Enter' on keyboard to delete. 4. After the driver has been successfully deleted, refer to reinstall the driver. Sentinel HASP Driver Errors on MAC Objective The Sentinel HASP Diver is automatically installed with the software, but it fails occasionally. Please download and install the Mac OS Sentinel HASP Driver. Operation Installing Sentinel Driver on Mac * Sentinel Driver for Mac Download 1. Please remove all the dongle keys inserted into the Mac for installation to be done correctly. 2. Mount \"Sentinel_Runtime.dmg\" (ver 21.0 Build 77815) 3. Double-click the Install Sentinel Runtime Environment icon. 4. Please allow the 'hasplmd' application to accept incoming network connections (this message may not appear). 5. Access to http://localhost:1947 6.If you are unable to connect to the URL, try again after 10 seconds later. If it still does not work, reboot and connect again. If the solutions above do not work, please go back to the first step and check again. *If you click Diagnostics, License Manager Version appears with newly installed version ver 21.0 Build 77815 (Version information of 21.0 Build 77815 appears as this in Diagnostics). 7. Insert Dongle key into USB port. 8. If the Dongle key appears in 'Sentinel Keys', the installation is successfully done. Reinstalling Sentinel on Mac 1. Please remove all the dongle keys from USB port. 2. Mount \"Sentinel_Runtime.dmg\" with version of \"ver 21.0 Build 77815\". 3.Double-click Uninstall Sentinel Runtime Environment. 4. Click Uninstall. 5.If the un-installation is done normally, the dialog above appears. Please press OK button and then click Quit. 6.Reboot your Mac. 7.Install Sentinel Driver. Please refer to the following method *If you don't follow the guideline, you may not be able to find Dongle keys inserted into your PC or other PCs. Also the other PCs may not be able to find your Dongle key. Sentinel Driver Known Bugs * Sentinel LDK Protection System Error : invalid XML scope (36) Normally occurred when operating in Marvelous Designer modelist network dongle 1.4.14.7701 (Enveloped with Sentinel LDK 6.4 version or before 6.4). * Occurs with the following conditions: Network Dongle key (not a local Dongle key) Marvelous Designer Modelist Network with 2.1.44 or later version. (Enveloped with Sentinel LDK 7.1) The Dongle key is inserted into another PC. The version of Sentinel Driver is 13.20 in your Mac. Operates normally after reinstalling with Mac Sentinel Driver ver 16.0. * If multiple Sentinel Drivers are mounted, the software is unable to find virtual files. If a driver is already mounted, please demount(or eject) it and mount new driver. * Sentinel Driver starts to operate in a few seconds. On occasion, it does not start. In that case, please reboot your PC. * All the Dongle keys should be removed when uninstalling Sentinel Driver.",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36925227767065,
+        "Section": "Troubleshooting",
+        "Tokens": 972
+    },
+    {
+        "ArticleId": "360037401971",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360037401971",
+        "Title": "Troubleshooting \"MSVCP100.dll was not found\" Error Message.",
+        "Content": "Objective Learn how to resolve launch error with missing MSVCP100.dll This is caused by missing or outdated Visual C++ Redistributable which essential Windows component to running Marvelous Designer software. How to solve Visit Microsoft website, then download and install the latest Visual C++ Redistributable. The X64 architecture is recommended. Note In some cases, you may need to remove older versions of the Visual C++ Redistributables installed on your computer. The Visual C++ Redistributable is backward compatible with older versions, so we recommend installing only the most recent version.",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36925227767065,
+        "Section": "Troubleshooting",
+        "Tokens": 115
+    },
+    {
+        "ArticleId": "360037401991",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360037401991",
+        "Title": "HASP Error Message",
+        "Content": "Communication error between local and remote Sentinel HASP License Managers (H0040) Cause of Error The Server and Client PCs are unable to communicate with each other. Solution 1. Type 'services.msc' in the Run window. 2. In the Service window that follows, check whether or not the status of the Sentinel LDK License Manager is Running. If the status is not Running, right-click and select Start. If the status is Started, right-click and select Restart. Reboot. 3. If this does not solve the problem, check both versions of the Server and Client PCs HASP Drivers. Make sure both versions are the same. You are able to check the version under Diagnostics. 4. If this does not work, ask your Network Administrator to confirm the Port communication status between the Server and Client. Check whether the 1947 Port is being used by another program. Feature not found (H0031) Cause of Error Despite the dongle key has been recognized, the Feature ID of the program and the Feature ID of the dongle key are different. (This occurs when the wrong version of Marvelous Deisnger is installed - i.e. installed the Stand-Alone version for a Network dongle key, and vice versa) Solution Make sure the correct version of Marvelous Designer is installed. ex&gt Purchased the Network version, but used the Stand-Alone version's installer. -&gt Re-install Marvelous Designer using the Network version's installer. Sentinel HASP key not found (H0007) Cause of Error When the HASP Key is not plugged into the PC. Network Version only: the Client PC does not recognize the Server PC that the dongle key is connected to. When the HASP Key is recognized, but the Sentinel License Manager service fails to start properly. Solution Make sure the HASP is connected to the PC. Check the red light of the HASP Key. It should light up when plugged in to the PC. Check whether or not the HASP Key shows up in the ACC page (refer to the image below) If the red light or the ACC page does not look equal to the image above, refer to the following manual, reinstall the Sentinel HASP Driver. HASP Driver Installation Too many concurrent users (H0038) Cause of Error When the number of users connected to the program exceeds the maximum allowed number of users. ex&gt If the maximum number of users (the number of purchased licenses) is 2, and 3 users try to log-in, the last person to attempt a connection will receive an error message. Solution Check the number of current users via the link below. Connect when one of the current users exit the program. ACC Page Click Sentinel Keys, on the left. When the Key shows up as the image above, click Sessions, on the right. The following page should display the current user(s). Connect when one of the current users exits the program. If any unauthorized user is connected, click the Disconnect button on the right to log the person out of the program. Unable to access Sentinel HASP Run-time Environment(H0033) Cause of Error The HASP Driver has not been properly installed on the PC, or the Driver is damaged. To confirm whether it is properly installed, enter http://localhost:1947 or http://127.0.0.1:1947 into your web browser, or click on the following link ( ACC Page ). If the following page does not look equal to the image below, there is a problem with the Sentinel HASP Driver. Solution Refer to the following manual and reinstall the HASP Driver. HASP Driver Installation",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36925227767065,
+        "Section": "Troubleshooting",
+        "Tokens": 741
+    },
+    {
+        "ArticleId": "360036931072",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360036931072",
+        "Title": "Troubleshooting issues that may arise while running the program",
+        "Content": "The following issues may arise upon running the program Sentinel HASP Driver failed to install properly Though the Sentinel HASP Driver is installed alongside the program, there are cases where the Driver is not installed properly. This can be resolved by referring to the link below and manually installing the Sentinel HASP Driver. Installing Sentinel HASP Driver Manually Could not connect to the On-Line Authentication Server Due to the users network setting or firewall, connections to the On-Line Authentication Server may fail. This can be resolved by following the link below and using the Off-Line License Key issued. Troubleshooting On-Line Authentication Failure",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36925227767065,
+        "Section": "Troubleshooting",
+        "Tokens": 119
+    },
+    {
+        "ArticleId": "12192687102105",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/12192687102105",
+        "Title": "UV EDITOR MODE: Change Normal Map Blending Method",
+        "Content": "Objective This feature allows users to select the Normal Map Blending Method that provides the best results for their intended use. Location Settings/Preferences Preferences Graphic Options Normal Map Blending Operation Load garment with a blended normal map component, Example: Topstitching with the Type changed to \"Texture\" and the check box next to \"3D\" activated in the Property Editor. Change a window view mode to UV Editor, and change the display channel to Normal Map. Open Settings/Preferences in the Main Menu at the top of the interface, then select 'Preferences'. Move the Preferences window so that it does not cover the UV Editor. In the Preferences window, under Graphics Options, change the 'Normal Blending Method'. Observe the normal map for blended Normal Map components is changed. Bake out the normal map using the 'Bake Textures' option at the top of the UV Editor for application to the garment in an external 3D environment.",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36753160505369,
+        "Section": "UV Editor",
+        "Tokens": 190
+    },
+    {
+        "ArticleId": "360037401951",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360037401951",
+        "Title": "Edit UV",
+        "Content": "Objective Check patterns' UVs before exporting garments and edit UV by shifting pattern locations in the UV Editor (ver2.3.0). Location Main Menu Window UV Editor Object Browser UV Editor Operation Manual 1. Follow the indicated guideline below: Main Menu Window UV Editor Object Browser UV Editor A dotted rectangular guideline appears around all patterns in the UV Editor. 2. Click the icon image at the top-right corner of the guideline. The guideline icon changes and it becomes available to adjust the UV area manually. Guidelines display repetitively (ver2.4.0). 3. Click and drag the edge of scale guide to resize the UV area as wanted. 4. Select and shift patterns accordingly. Automatic 1. If manually edited by clicking the icon to switch over to automatic. The dotted rectangular guideline re-appears around all the patterns in the UV Editor.",
+        "YoutubeLinks": [],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36753160505369,
+        "Section": "UV Editor",
+        "Tokens": 177
+    },
+    {
+        "ArticleId": "360037029912",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360037029912",
+        "Title": "UV EDITOR MODE: Edit UV location",
+        "Content": "Editing location of UV. (ver. 7.5) Arraying individual UV Objective Arraying selected individual UV. Location UV editor mode UV right-click popup menu Operation Align Left, Center, Right, Top, Middle, Bottom Selected UVs will be aligned by a selected standard. Align menu will be displayed when selecting more than two UVs. Flip Horizontally Selected UV will be flipped left and right. Flip Vertically Selected UV will be flipped up and down. Fit UV to 0-1 Selected UV will be aligned to 0-1 coordinates. (ver. 10) * Length (Absolute): the actual distance * UV Coordinate (Relative): The ratio of 0-1 length to 1. The maximum distance is 0.4. Arraying all UV Objective Arraying all UV visible in UV editor mode. Location UV editor mode Right-click on background Operation Fit All UV to unified (0-1) All UV will be aligned to 0-1 coordinates. Tile padding option Set the distance between the pattern and the outline in the dialog. * Length (Absolute): the actual distance * UV Coordinate (Relative): The ratio of 0-1 length to 1. The maximum distance is 0.4. Set UV from pattern alignment Location of all UV will be re-arranged as 2D pattern window. Zoom Extents All Set the view in the UV window to reveal all patterns. (ver. 10) Show Wire Disable texture and show mesh view. (ver. 9.5 below) UV Packing Objective The selected UV shells can be automatically packed into the targeted UV tile. Location UV Editor Toolbar UV Packing Operation Select desired UV shells to be packed. - Ctrl+A can be used to select all existing UV shells. Follow the dedicated path found in Location above to open Dialog box: Padding Set the interval between UV shells. Unit: Permille () of UV tile size. Min: 0.001 ~ Max: 0.999 Packing Ratio (Archived since version 2024.1) The percentage of area occupied by UV shells, compared to the size of the selected UV tile. Min: 80 ~ Max: 99 * 95% is the recommended input value. Higher values take more time to pack the UV shells. Fidelity (ver.2024.1) The larger the value, the more sensitively the shape of the UV shell is calculated. Min: 1 ~ Max: 5 Fix Scale Ratio Fix the current ratio of UV shells. Rotation Allow UV shells to be rotated if needed. Advanced Placement (Ver. 2024.1) Numerous sequences are tested to find a better placement to create least empty space. UV Area Set the target UV tile to pack the selected UV shells. Reset Reset all inputs in dialog box to default. Apply All inputs will be applied to the UV shells and tiles. Close Close the dialog box Note: When Advanced Placement is turned off, UV shells are placed sequentially from largest to smallest. Advanced Placement option will decrease speed. Unless in extreme situations, it is recommended to turn Advanced Placement on.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=cGiwuGSe7pM"
+        ],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36753160505369,
+        "Section": "UV Editor",
+        "Tokens": 630
+    },
+    {
+        "ArticleId": "360037401571",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360037401571",
+        "Title": "[Mode] UV EDITOR",
+        "Content": "A mode where editing UV of Garment. (ver. 7.5) [Definition of UV screen, coordination, and tiles] Horizontal axis: U Vertical axis: V A square of one U/ V: Tile UV snapshot saves each Tile as a single image. The coordinates of the tile are determined by the coordinates of U and V and are the same as the UV coordinates inside each tile on the image above. [Definition of Wire] Wire is the mesh line (Polygon) of UV. Wire image will be saved when saving UV. Show UV Wire (ver. 7.5) Location: UV Editor Mode Popup menu (Right-click on background) Show Wire The existing textures are hidden and UV Wire (meshes) are displayed. Rendering View Settings (ver. 9) The toolbar contains rendering options. Diffuse, Metalness, Normal, Roughness Map. View UV Maps (ver. 10) Upper left of the UV Editor window Click the View UV Map icon Map icons that can be changed appear horizontally. Click the desired map icon. The UV of the 2D window changes to the type of map users click. Note: The UV map of the OBJ topstitch used in a garment is also provided. (ver. 11) View and Bake Displacement Map is now available (ver. 11) Texture Repeat Type (ver. 10)/ Texture Mapping (ver. 11) If the Texture Repeat Type of the fabric is set to Unified Map, changing the position of the UV in the UV Editor Window moves the textures in 2D and 3D patterns to the textures in the changed location. Fabric Properties Description Texture Repeat Type (ver. 10)/ Texture Mapping (ver. 11) Unified Map (ver. 10) / Unified (ver. 11) Display the texture based on the pattern layout of the UV map. [Repeat UV Settings] * Repeat U: Size the texture based on U direction. * Repeat V: Size the texture based on V direction. The number 1 means that the texture is repeated once between 0-1 of the UV map. Move UV with Value (ver. 11) UV Editor Toolbar Click the Move UV tool. Move UV window appears. Set the distance to be moved. Distance 1 indicates the length of the segment of the UV Tile in the UV Editor window. Move the UV by clicking the Arrow icon or pressing the directional keys on the keyboard. UV is moved according to the distance you set.",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=cGiwuGSe7pM"
+        ],
+        "CategoryId": 36105794738841,
+        "Category": "Manual",
+        "SectionId": 36753160505369,
+        "Section": "UV Editor",
+        "Tokens": 510
+    }
+]

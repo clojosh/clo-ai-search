@@ -1,0 +1,120 @@
+[
+    {
+        "post_id": 900001382003,
+        "post_title": "Stop automatically triangulating imported objects.",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001382003",
+        "post_details": "I don't know why there's no option to NOT triangulate imported meshes, but it needs to be added. You're already allowing us to work in quads, so if I import a mesh that's already in quads, triangulating it automatically voids ALL OF THE WORK I PUT INTO IT! It's fine if you want it that way, but not giving us the option to keep the mesh as is does not make sense--especially since we can work in quads! These days, I find myself doing more work in Blender just because I hate the fact that MD always messes up my topology.",
+        "created_at": "2020-07-29T15:34:23Z",
+        "comments": [
+            {
+                "author_id": 900217953746,
+                "comment_id": 9709673402009,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001382003-Stop-automatically-triangulating-imported-objects/comments/9709673402009",
+                "comment_body": "I think it's sadly wise waiting for that... Marvelous for years now has been modifying obj on import. Triangulating them. Not respecting vertex order. So one can simulate an obj and enjoy all the power of Marvelous simulation. But then the object becomes useless, cannot be used as a morph in a third 3D app, etc. Obj simulation is a nice option, but unusable. That's a real shame. Importing an obj WITHOUT modifying its geometry in any way should have been the default option. One wonders who among the coders thought it was a sound decision to let Marvelous fuck up our hours spent on modeling a mesh :/"
+            },
+            {
+                "author_id": 22200125514521,
+                "comment_id": 22200112106393,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001382003-Stop-automatically-triangulating-imported-objects/comments/22200112106393",
+                "comment_body": "I know this is an old post but I am annoyed that they do this... There has to be a solution to remap the new mesh to the old one on export if they 'have\" to re-mesh it on import. This completely ruins the use case for MD for me and I won't be renewing my membership when it expires. Seriously MD, why is this still a thing three years later? Figure it out!"
+            },
+            {
+                "author_id": 27405204544409,
+                "comment_id": 27405255783065,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001382003-Stop-automatically-triangulating-imported-objects/comments/27405255783065",
+                "comment_body": "Can't imagine there is still no solution for this.!"
+            },
+            {
+                "author_id": 900571497263,
+                "comment_id": 27408095304345,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001382003-Stop-automatically-triangulating-imported-objects/comments/27408095304345",
+                "comment_body": "That's why I don't really use it anymore. I end up having to do double the work in order to get quad meshes out of it. Now I use it just for the basic design and I take it into Maya and retopologize because otherwise you just can't get a useful quad mesh out of it."
+            }
+        ]
+    },
+    {
+        "post_id": 900001367383,
+        "post_title": "Personal  License on 2 computers?",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001367383",
+        "post_details": "Can 1 Personal License be used on 2 computers?",
+        "created_at": "2020-07-21T14:02:43Z",
+        "comments": [
+            {
+                "author_id": 900147733143,
+                "comment_id": 900000627346,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001367383-Personal-License-on-2-computers/comments/900000627346",
+                "comment_body": "Hi 900534459366, One personal License cannot be used at the same time on two different computers. The way you can use one license on two computers is if you deactivate it from the first one before logging in/ activating it on the second computer."
+            },
+            {
+                "author_id": 10005049596953,
+                "comment_id": 10233979164313,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001367383-Personal-License-on-2-computers/comments/10233979164313",
+                "comment_body": "1 license can be used on two different PCs is this correct? Inside an organization!"
+            },
+            {
+                "author_id": 10005049596953,
+                "comment_id": 10234016804889,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001367383-Personal-License-on-2-computers/comments/10234016804889",
+                "comment_body": "1 license can be used on two different PCs is this correct? Inside an organization! If I purchase a Floating license."
+            }
+        ]
+    },
+    {
+        "post_id": 900001165806,
+        "post_title": "Ground Collision?",
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001165806",
+        "post_details": "I can't seem to be able to turn off ground collision. I can't change its height either. Is there a way to remedy this?",
+        "created_at": "2020-06-17T13:55:43Z",
+        "comments": [
+            {
+                "author_id": 900200317303,
+                "comment_id": 900000511306,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001165806-Ground-Collision/comments/900000511306",
+                "comment_body": "MD is a real-world simulation. The real world has a ground, therefore MD does also. If you want your avatar and its clothing not to interact with the ground, then move the avatar upwards. If you are using one of the the default avatars, you will have to export it to another program and re-import. On import, (the same as for avatars created in another program) there should be a Translation option. Input something in the Y axis box. If you want cloth to float or hover in the air, you can adjust the gravity settings to zero."
+            },
+            {
+                "author_id": 900384259526,
+                "comment_id": 900000511326,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001165806-Ground-Collision/comments/900000511326",
+                "comment_body": "Marvelous Designer has a Ground Collision option that can be turned off. It worked on version 7 but in version 9 it does nothing. I asked for help for a specific MD issue that seems to be a software bug, not some workaround."
+            },
+            {
+                "author_id": 900550200143,
+                "comment_id": 900000639386,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001165806-Ground-Collision/comments/900000639386",
+                "comment_body": "@Rosemary Main Menu Preferences Simulation Properties Ground Collision On/Off Right-click Pop-up Menu (3D window) Simulation Properties Ground Collision On/Off"
+            },
+            {
+                "author_id": 13697524709145,
+                "comment_id": 14185528109977,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001165806-Ground-Collision/comments/14185528109977",
+                "comment_body": "Hi, Facing same issue when avatar is below ground level and Even after doing ground collision OFF, cloth gets stick with ground. Didn't found logical solusion in simulation property but it gets fixed when you put GPU simulation ON/Active. Dont know if its real solution for this issue. :)"
+            },
+            {
+                "author_id": 20106284250137,
+                "comment_id": 20106329623577,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001165806-Ground-Collision/comments/20106329623577",
+                "comment_body": "900200317303 What an idiotic response. It's a simple feature that is in fact available in the program. Don't be so snarky if you don't even know if the feature is present or not."
+            },
+            {
+                "author_id": 900550200143,
+                "comment_id": 20106449817369,
+                "official": false,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001165806-Ground-Collision/comments/20106449817369",
+                "comment_body": "Lol, I forgot about my very first interaction with a MD community member, 900200317303. The take away was, best to just read the manual and save yourself some uninformed shade. Hope you're doing well Rosemary :)"
+            }
+        ]
+    }
+]

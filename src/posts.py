@@ -18,9 +18,10 @@ class Posts:
     def __init__(self, azure_env: AzureEnv):
         self.azure_env = azure_env
 
-        if not os.path.exists(os.path.join(azure_env.brand, "posts", azure_env.stage)):
-            os.makedirs(os.path.join(azure_env.brand, "posts", azure_env.stage), exist_ok=True)
-        self.post_dir_path = os.path.join(azure_env.brand, "posts", azure_env.stage)
+        if not os.path.exists(os.path.join(azure_env.brand, "posts")):
+            os.makedirs(os.path.join("sources", azure_env.brand, "posts"), exist_ok=True)
+
+        self.post_dir_path = os.path.join("sources", azure_env.brand, "posts")
 
     @staticmethod
     def get_official_comments(brand: str, post_id: str) -> list:
@@ -166,7 +167,7 @@ class Posts:
         return filtered_posts
 
     def mp_get_posts(self):
-        brand = self.azure_env.stage if self.azure_env.stage != "md" else "marvelousdesigner"
+        brand = self.azure_env.brand if self.azure_env.brand != "md" else "marvelousdesigner"
 
         posts_response = requests.request(
             "GET",
@@ -179,7 +180,7 @@ class Posts:
         posts_objects = json.loads(posts_response.text)
         page_count = posts_objects["page_count"]
 
-        with multiprocessing.Pool(7) as p:
+        with multiprocessing.Pool(10) as p:
             p.starmap_async(
                 Posts.get_posts,
                 [
@@ -195,12 +196,11 @@ class Posts:
             p.close()
             p.join()
 
+    @staticmethod
     def upload(stage: str, posts_path: str, file: str, brand: str):
         print(f"Uploading {file}")
 
         azure_env = AzureEnv(stage, brand)
-        search_client = azure_env.search_client
-        openai_helper = azure_env.openai_helper
 
         with open(os.path.join(posts_path, file), "r", encoding="utf-8") as f:
             documents = json.load(f)
@@ -219,16 +219,15 @@ class Posts:
                             "Source": document["post_url"],
                             "Title": document["post_title"],
                             "Content": content,
-                            "Labels": [],
                             "YoutubeLinks": [],
-                            "titleVector": openai_helper.generate_embeddings(text=document["post_title"]),
-                            "contentVector": openai_helper.generate_embeddings(text=content if content != "" else document["post_title"]),
+                            "titleVector": azure_env.openai_helper.generate_embeddings(text=document["post_title"]),
+                            "contentVector": azure_env.openai_helper.generate_embeddings(text=content if content != "" else document["post_title"]),
                         }
                     )
                 except Exception:
                     print(f"Failed to upload: {document['post_id']}")
 
-            search_client.upload_documents(upload_documents)
+            azure_env.search_client.upload_documents(upload_documents)
             print(f"Uploaded {file}")
 
     def mp_upload(self):
@@ -239,7 +238,7 @@ class Posts:
 
         upload_posts_params = []
         for file in file_paths:
-            upload_posts_params.append((self.azure_env.stage, self.post_dir_path, file, self.azure_env.stage))
+            upload_posts_params.append((self.azure_env.stage, self.post_dir_path, file, self.azure_env.brand))
 
         with multiprocessing.Pool(5) as p:
             p.starmap_async(

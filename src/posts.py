@@ -7,7 +7,7 @@ from datetime import datetime
 import questionary
 import requests
 
-from tools.azure_env import AzureEnv
+from tools.azure import Azure
 from tools.misc import remove_html_tags, trim_tokens
 
 ZENDESK_POSTS_ENDPOINT = "https://support.{brand}.com/api/v2/help_center/community/posts.json?page={page}&per_page=60"
@@ -15,7 +15,7 @@ ZENDESK_COMMENTS_ENDPOINT = "https://support.{brand}.com/api/v2/community/posts/
 
 
 class Posts:
-    def __init__(self, azure_env: AzureEnv):
+    def __init__(self, azure_env: Azure):
         self.azure_env = azure_env
 
         if not os.path.exists(os.path.join(azure_env.brand, "posts")):
@@ -200,7 +200,7 @@ class Posts:
     def upload(stage: str, posts_path: str, file: str, brand: str):
         print(f"Uploading {file}")
 
-        azure_env = AzureEnv(stage, brand)
+        azure_env = Azure(stage, brand)
 
         with open(os.path.join(posts_path, file), "r", encoding="utf-8") as f:
             documents = json.load(f)
@@ -300,7 +300,7 @@ if __name__ == "__main__":
     brand = questionary.select("Which brand?", choices=["clo3d", "closet", "md"]).ask()
     task = questionary.select("What task?", choices=["Get Posts", "Upload"]).ask()
 
-    post = Posts(AzureEnv(env, brand))
+    post = Posts(Azure(env, brand))
 
     if task == "Get Posts":
         post.mp_get_posts()

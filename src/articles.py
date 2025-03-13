@@ -8,7 +8,7 @@ from pathlib import Path
 import questionary
 import requests
 
-from tools.azure_env import AzureEnv
+from tools.azure import Azure
 from tools.misc import (
     extract_youtube_links,
     get_section_and_category,
@@ -20,7 +20,7 @@ from tools.misc import (
 
 
 class Article:
-    def __init__(self, azure_env: AzureEnv):
+    def __init__(self, azure_env: Azure):
         self.azure_env = azure_env
         self.search_client = azure_env.search_client
 
@@ -39,7 +39,7 @@ class Article:
     def get_zendesk_documents(stage: str, brand: str, language: str, article_path: str, page: int):
         print("Getting Zendesk Articles for page: " + str(page))
 
-        azure_env = AzureEnv(stage, brand, language)
+        azure_env = Azure(stage, brand, language)
 
         page_url = requests.request(
             "GET",
@@ -139,7 +139,7 @@ class Article:
     def upload_documents(stage: str, brand: str, language: str, article_path: str, file: str):
         print(f"Uploading {file}")
 
-        azure_env = AzureEnv(stage, brand, language)
+        azure_env = Azure(stage, brand, language)
 
         with open(os.path.join(article_path, file), "r", encoding="utf-8") as f:
             documents = json.load(f)
@@ -160,8 +160,8 @@ class Article:
 
             if brand == "clovf":
                 # Upload clovf articles to both clo3d and clo-set
-                # AzureEnv(stage, "clo3d").search_client.upload_documents(documents)
-                AzureEnv(stage, "closet").search_client.upload_documents(documents)
+                # Azure(stage, "clo3d").search_client.upload_documents(documents)
+                Azure(stage, "closet").search_client.upload_documents(documents)
             else:
                 azure_env.search_client.upload_documents(documents)
 
@@ -220,7 +220,7 @@ if __name__ == "__main__":
     brand = questionary.select("Which brand?", choices=["clo3d", "closet", "closet_connect", "clovf", "md"]).ask()
     language = questionary.select("Which language?", choices=["English", "Korean"]).ask()
     task = questionary.select("What task?", choices=["Get Zendesk Article", "Get All Zendesk Articles", "Delete Articles", "Upload Articles"]).ask()
-    article = Article(AzureEnv(stage, brand, language))
+    article = Article(Azure(stage, brand, language))
 
     if task == "Get Zendesk Article":
         article_id = questionary.text("Article ID").ask()

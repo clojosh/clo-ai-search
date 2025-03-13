@@ -16,7 +16,7 @@ zendesk_article_category_api_endpoint = "https://{0}.zendesk.com/api/v2/help_cen
 zendesk_article_attachment_api_endpoint = "https://support.{0}.com/api/v2/help_center/{1}/articles/{2}/attachments"
 
 
-class AzureEnv:
+class Azure:
     def __init__(self, stage="dev", brand="", language="English"):
         self.stage = stage
         self.brand = brand

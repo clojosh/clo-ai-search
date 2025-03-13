@@ -6,7 +6,7 @@ from azure.identity import DefaultAzureCredential
 from azure.search.documents import SearchClient
 from azure.search.documents.indexes import SearchIndexClient
 
-from tools.azure_env import AzureEnv
+from tools.azure import Azure
 
 
 class BackupAISearch:
@@ -114,7 +114,7 @@ class BackupAISearch:
 
 
 if __name__ == "__main__":
-    environment = AzureEnv("dev", "md")
+    environment = Azure("dev", "md")
 
     # Variables not used here do not need to be updated in your .env file
     source_endpoint = environment.SEARCH_CLIENT_ENDPOINT

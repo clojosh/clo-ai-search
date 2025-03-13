@@ -29,13 +29,13 @@ from azure.search.documents.indexes.models import (
 )
 from tqdm import tqdm
 
-from tools.azure_env import AzureEnv
+from tools.azure import Azure
 
 backend_dir = Path(__file__).parent
 
 
 class AISearch:
-    def __init__(self, azure_env: AzureEnv):
+    def __init__(self, azure_env: Azure):
         self.azure_env = azure_env
         self.search_client = azure_env.search_client
         self.search_index_client = azure_env.search_index_client
@@ -331,7 +331,7 @@ if __name__ == "__main__":
         ],
     ).ask()
 
-    ai_search = AISearch(AzureEnv(env, brand))
+    ai_search = AISearch(Azure(env, brand))
 
     if task == "Create Search Index":
         index_name = questionary.text("Index Name?").ask()

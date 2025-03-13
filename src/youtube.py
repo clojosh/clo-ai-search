@@ -13,7 +13,7 @@ from pytube import Channel, Playlist, extract
 from tqdm import tqdm
 from youtube_transcript_api import YouTubeTranscriptApi
 
-from tools.azure_env import AzureEnv
+from tools.azure import Azure
 from tools.misc import check_create_directory, logger, sanitize_directory_file_name
 
 YoutubeAPIType = TypedDict(
@@ -28,7 +28,7 @@ YoutubeAPIType = TypedDict(
 
 
 class YouTube:
-    def __init__(self, azure_env: AzureEnv):
+    def __init__(self, azure_env: Azure):
         self.azure_env = azure_env
 
         if not os.path.exists(os.path.join(azure_env.brand, "youtube")):
@@ -190,7 +190,7 @@ class YouTube:
         """
         print("Summarizing:", os.path.split(youtube_channel_dir_path)[1].strip() + "\n")
 
-        environment = AzureEnv(env, brand)
+        environment = Azure(env, brand)
 
         # Read the transcripts from the file
         with open(youtube_channel_dir_path, "r", encoding="utf-8") as file:
@@ -277,13 +277,13 @@ if __name__ == "__main__":
 
     if task == "Get Transcripts":
         video_age_in_years = questionary.text("What video age(in years)?").ask()
-        yt = YouTube(AzureEnv("dev", "clo3d"))
+        yt = YouTube(Azure("dev", "clo3d"))
         yt.mp_extract_youtube_channel_transcripts(video_age_in_years=int(video_age_in_years))
 
     else:
         env = questionary.select("Which environment?", choices=["prod", "dev"]).ask()
         brand = questionary.select("Which brand?", choices=["allinone", "clo3d", "closet"]).ask()
-        yt = YouTube(AzureEnv(env, brand))
+        yt = YouTube(Azure(env, brand))
 
         if task == "Summarize Transcript":
             youtube_channel_pages = sorted(os.listdir(yt.youtube_channel_dir_path), key=lambda x: int(x.split("_")[1].split(".")[0]))

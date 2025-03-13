@@ -11,12 +11,12 @@ import requests
 import shortuuid
 from tqdm import tqdm
 
-from tools.azure_env import AzureEnv
+from tools.azure import Azure
 from tools.misc import trim_tokens
 
 
 class PDF:
-    def __init__(self, environment: AzureEnv):
+    def __init__(self, environment: Azure):
         self.env = env
         self.brand = environment.brand
         self.language = environment.language
@@ -86,7 +86,7 @@ class PDF:
     def add_labels(env, brand, language, pdf_path, file):
         print(f"Adding labels to: {file}")
 
-        environment = AzureEnv(env, brand, language)
+        environment = Azure(env, brand, language)
 
         with open(os.path.join(pdf_path, file), "r", encoding="utf-8") as f:
             documents = json.load(f)
@@ -114,7 +114,7 @@ class PDF:
         """Retrieves all articles with PDF attachments and stores them in a JSON"""
         print(f"Getting Zendesk Articles for page: {page}")
 
-        environment = AzureEnv(env, brand, language)
+        environment = Azure(env, brand, language)
 
         page_url = requests.request(
             "GET",
@@ -213,7 +213,7 @@ class PDF:
     def summarize_pdf(env, brand, language, pdf_path, file):
         print(f"Summarizing {file}")
 
-        environment = AzureEnv(env, brand, language)
+        environment = Azure(env, brand, language)
 
         with open(f"{os.path.join(pdf_path, file)}", "r", encoding="utf-8") as f:
             documents = json.load(f)
@@ -283,7 +283,7 @@ if __name__ == "__main__":
     ).ask()
     # language = questionary.select("What language?", choices=["English", "Korean"]).ask()
 
-    pdf = PDF(AzureEnv(env, brand))
+    pdf = PDF(Azure(env, brand))
 
     if task == "Get Zendesk Articles With PDFs":
         pdf.mp_get_zendesk_articles_with_pdf()

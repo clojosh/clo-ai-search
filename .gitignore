@@ -108,7 +108,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-*.env
+*.env.*
 .venv
 env/
 venv/
@@ -148,5 +148,5 @@ static/
 .DS_Store
 .vscode
 
-.env*
-indexes/
+/indexes
+/sources

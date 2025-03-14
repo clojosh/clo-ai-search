@@ -6,7 +6,6 @@ from datetime import datetime
 from pathlib import Path
 
 import questionary
-import requests
 from azure.search.documents.indexes.models import (
     ExhaustiveKnnAlgorithmConfiguration,
     ExhaustiveKnnParameters,
@@ -35,11 +34,11 @@ backend_dir = Path(__file__).parent
 
 
 class AISearch:
-    def __init__(self, azure_env: Azure):
-        self.azure_env = azure_env
-        self.search_client = azure_env.search_client
-        self.search_index_client = azure_env.search_index_client
-        self.openai_helper = azure_env.openai_helper
+    def __init__(self, azure: Azure):
+        self.azure = azure
+        self.search_client = azure.search_client
+        self.search_index_client = azure.search_index_client
+        self.openai_helper = azure.openai_helper
 
     def text_search(self, text):
         results = self.search_client.search(search_text=text)
@@ -233,13 +232,13 @@ class AISearch:
         print(f" {result.name} created")
 
     def drop_search_index(self):
-        self.search_index_client.delete_index(self.azure_env.INDEX_NAME)
-        print(f"{self.azure_env.INDEX_NAME} deleted")
+        self.search_index_client.delete_index(self.azure.INDEX_NAME)
+        print(f"{self.azure.INDEX_NAME} deleted")
 
     def find_documents(
         self, search_fields: list = ["ArticleId"], search_text: str = "*", select: list = ["ArticleId", "Title", "Source"], log_results: bool = False
     ):
-        results = self.azure_env.search_client.search(search_fields=search_fields, search_text=search_text, select=select, search_mode="all")
+        results = self.azure.search_client.search(search_fields=search_fields, search_text=search_text, select=select, search_mode="all")
 
         documents = []
         for result in results:
@@ -282,14 +281,14 @@ class AISearch:
                 for i, result in enumerate(pbar):
                     write.writerows([[result["ArticleId"], result["Title"], result["Content"], result["Source"]]])
         else:
-            if not os.path.exists(os.path.join("indexes", self.azure_env.stage)):
-                os.makedirs(os.path.join("indexes", self.azure_env.stage), exist_ok=True)
+            if not os.path.exists(os.path.join("indexes", self.azure.stage)):
+                os.makedirs(os.path.join("indexes", self.azure.stage), exist_ok=True)
 
-            with open(os.path.join("indexes", self.azure_env.stage, f"{brand}-index-english.json"), "w+", encoding="utf-8") as f:
+            with open(os.path.join("indexes", self.azure.stage, f"{brand}-index-english.json"), "w+", encoding="utf-8") as f:
                 json.dump(results, f, ensure_ascii=False, indent=4)
 
     def document_source_breakdown(self):
-        with open(os.path.join(backend_dir, "indexes", self.azure_env.stage, "clo3d-index-english.json"), "r", encoding="utf-8") as f:
+        with open(os.path.join(backend_dir, "indexes", self.azure.stage, "clo3d-index-english.json"), "r", encoding="utf-8") as f:
             documents = json.load(f)
 
             sources = [document["Source"][: document["Source"].rfind("/")] for document in documents]

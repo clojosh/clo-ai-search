@@ -7,7 +7,7 @@ from io import BytesIO
 from typing import List, TypedDict, Union
 
 import questionary
-import requests
+import requests  # type: ignore
 import shortuuid
 from pytube import Channel, Playlist, extract
 from tqdm import tqdm
@@ -28,22 +28,38 @@ YoutubeAPIType = TypedDict(
 
 
 class YouTube:
-    def __init__(self, azure_env: Azure):
-        self.azure_env = azure_env
+    def __init__(self, azure: Azure):
+        self.azure = azure
 
-        if not os.path.exists(os.path.join(azure_env.brand, "youtube")):
-            os.makedirs(os.path.join(azure_env.brand, "youtube"))
-        self.youtube_dir_path = os.path.join(azure_env.brand, "youtube")
+        if not os.path.exists(os.path.join("sources", azure.brand, "youtube")):
+            os.makedirs(os.path.join("sources", azure.brand, "youtube"))
 
-        if not os.path.exists(os.path.join(azure_env.brand, "youtube", "channel")):
-            os.makedirs(os.path.join(azure_env.brand, "youtube", "channel"))
+        self.youtube_dir_path = os.path.join("sources", azure.brand, "youtube")
 
-        self.youtube_channel_dir_path = os.path.join("sources", azure_env.brand, "youtube", "channel")
+        if not os.path.exists(os.path.join("sources", azure.brand, "youtube", "channel")):
+            os.makedirs(os.path.join("sources", azure.brand, "youtube", "channel"))
 
-        if not os.path.exists(os.path.join(azure_env.brand, "youtube", "playlist")):
-            os.makedirs(os.path.join(azure_env.brand, "youtube", "playlist"))
+        self.youtube_channel_dir_path = os.path.join("sources", azure.brand, "youtube", "channel")
 
-        self.youtube_playlist_dir_path = os.path.join("sources", azure_env.brand, "youtube", "playlist")
+        if not os.path.exists(os.path.join("sources", azure.brand, "youtube", "playlist")):
+            os.makedirs(os.path.join("sources", azure.brand, "youtube", "playlist"))
+
+        self.youtube_playlist_dir_path = os.path.join("sources", azure.brand, "youtube", "playlist")
+
+    def get_channel_id(self, brand: str) -> str:
+        if brand == "clo3d":
+            channel_id = "UCApF8J_2QeJ8QPXIAZ25uhw"
+
+        elif brand == "closet":
+            channel_id = ""
+
+        elif brand == "connect":
+            channel_id = ""
+
+        elif brand == "md":
+            channel_id = "UCcD-Fd_9s3kmK_fY6qp8u_Q"
+
+        return channel_id
 
     @staticmethod
     def extract_video_transcript_text(video_id: str) -> str:
@@ -121,7 +137,7 @@ class YouTube:
                 "https://www.googleapis.com/youtube/v3/search",
                 params={
                     "part": "id, snippet",
-                    "channelId": "UCApF8J_2QeJ8QPXIAZ25uhw",
+                    "channelId": self.get_channel_id(self.azure.brand),
                     "key": "AIzaSyC2LupTSVApfy90Bfzq8L5AAkAawOmT0gY",
                     "publishedAfter": published_after,
                     "order": "date",
@@ -227,7 +243,7 @@ class YouTube:
 
         # Iterate over the files and create the parameters
         for file in files:
-            summarize_transcripts_params.append((self.azure_env.stage, self.azure_env.brand, os.path.join(self.youtube_channel_dir_path, file)))
+            summarize_transcripts_params.append((self.azure.stage, self.azure.brand, os.path.join(self.youtube_channel_dir_path, file)))
 
         # Create a multiprocessing pool and process the files in parallel
         with multiprocessing.Pool(3) as p:
@@ -256,15 +272,17 @@ class YouTube:
                         "Title": transcript["Title"],
                         "Content": transcript["Summary"],
                         "YoutubeLinks": [transcript["Url"]],
-                        "titleVector": self.azure_env.openai_helper.generate_embeddings(text=transcript["Title"]),
-                        "contentVector": self.azure_env.openai_helper.generate_embeddings(text=transcript["Summary"]),
+                        "titleVector": self.azure.openai_helper.generate_embeddings(text=transcript["Title"]),
+                        "contentVector": self.azure.openai_helper.generate_embeddings(text=transcript["Summary"]),
                     }
                 )
 
-            self.azure_env.search_client.upload_documents(upload_transcripts)
+            self.azure.search_client.upload_documents(upload_transcripts)
 
 
 if __name__ == "__main__":
+    brand = questionary.select("Which brand?", choices=["clo3d", "md"]).ask()
+    stage = questionary.select("Which stage?", choices=["prod", "dev"]).ask()
     task = questionary.select(
         "What task?",
         choices=[
@@ -275,20 +293,17 @@ if __name__ == "__main__":
         ],
     ).ask()
 
+    yt = YouTube(Azure(stage, brand))
+
     if task == "Get Transcripts":
         video_age_in_years = questionary.text("What video age(in years)?").ask()
-        yt = YouTube(Azure("dev", "clo3d"))
         yt.mp_extract_youtube_channel_transcripts(video_age_in_years=int(video_age_in_years))
 
     else:
-        env = questionary.select("Which environment?", choices=["prod", "dev"]).ask()
-        brand = questionary.select("Which brand?", choices=["allinone", "clo3d", "closet"]).ask()
-        yt = YouTube(Azure(env, brand))
-
         if task == "Summarize Transcript":
             youtube_channel_pages = sorted(os.listdir(yt.youtube_channel_dir_path), key=lambda x: int(x.split("_")[1].split(".")[0]))
             page = questionary.select("Which page?", choices=youtube_channel_pages).ask()
-            YouTube.summarize_transcripts(env, brand, os.path.join(yt.youtube_channel_dir_path, page))
+            YouTube.summarize_transcripts(stage, brand, os.path.join(yt.youtube_channel_dir_path, page))
 
         elif task == "Summarize All Transcripts":
             yt.mp_summarize_transcripts()

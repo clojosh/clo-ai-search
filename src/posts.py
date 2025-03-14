@@ -15,13 +15,13 @@ ZENDESK_COMMENTS_ENDPOINT = "https://support.{brand}.com/api/v2/community/posts/
 
 
 class Posts:
-    def __init__(self, azure_env: Azure):
-        self.azure_env = azure_env
+    def __init__(self, azure: Azure):
+        self.azure = azure
 
-        if not os.path.exists(os.path.join(azure_env.brand, "posts")):
-            os.makedirs(os.path.join("sources", azure_env.brand, "posts"), exist_ok=True)
+        if not os.path.exists(os.path.join(azure.brand, "posts")):
+            os.makedirs(os.path.join("sources", azure.brand, "posts"), exist_ok=True)
 
-        self.post_dir_path = os.path.join("sources", azure_env.brand, "posts")
+        self.post_dir_path = os.path.join("sources", azure.brand, "posts")
 
     @staticmethod
     def get_official_comments(brand: str, post_id: str) -> list:
@@ -167,7 +167,7 @@ class Posts:
         return filtered_posts
 
     def mp_get_posts(self):
-        brand = self.azure_env.brand if self.azure_env.brand != "md" else "marvelousdesigner"
+        brand = self.azure.brand if self.azure.brand != "md" else "marvelousdesigner"
 
         posts_response = requests.request(
             "GET",
@@ -200,7 +200,7 @@ class Posts:
     def upload(stage: str, posts_path: str, file: str, brand: str):
         print(f"Uploading {file}")
 
-        azure_env = Azure(stage, brand)
+        azure = Azure(stage, brand)
 
         with open(os.path.join(posts_path, file), "r", encoding="utf-8") as f:
             documents = json.load(f)
@@ -220,14 +220,14 @@ class Posts:
                             "Title": document["post_title"],
                             "Content": content,
                             "YoutubeLinks": [],
-                            "titleVector": azure_env.openai_helper.generate_embeddings(text=document["post_title"]),
-                            "contentVector": azure_env.openai_helper.generate_embeddings(text=content if content != "" else document["post_title"]),
+                            "titleVector": azure.openai_helper.generate_embeddings(text=document["post_title"]),
+                            "contentVector": azure.openai_helper.generate_embeddings(text=content if content != "" else document["post_title"]),
                         }
                     )
                 except Exception:
                     print(f"Failed to upload: {document['post_id']}")
 
-            azure_env.search_client.upload_documents(upload_documents)
+            azure.search_client.upload_documents(upload_documents)
             print(f"Uploaded {file}")
 
     def mp_upload(self):
@@ -238,7 +238,7 @@ class Posts:
 
         upload_posts_params = []
         for file in file_paths:
-            upload_posts_params.append((self.azure_env.stage, self.post_dir_path, file, self.azure_env.brand))
+            upload_posts_params.append((self.azure.stage, self.post_dir_path, file, self.azure.brand))
 
         with multiprocessing.Pool(5) as p:
             p.starmap_async(
@@ -287,7 +287,7 @@ class Posts:
                 # If the created_at date is less than the cutoff date, delete the post
                 if created_at < cutoff_date:
                     print(f"Deleting {document['ArticleId']}")
-                    self.azure_env.search_client.upload_documents(
+                    self.azure.search_client.upload_documents(
                         {
                             "@search.action": "delete",
                             "ArticleId": str(document["ArticleId"]),

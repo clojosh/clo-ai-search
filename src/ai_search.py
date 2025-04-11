@@ -26,6 +26,7 @@ from azure.search.documents.indexes.models import (
     VectorSearchAlgorithmMetric,
     VectorSearchProfile,
 )
+from azure.search.documents.models import VectorizedQuery
 from tqdm import tqdm
 
 from tools.azure import Azure
@@ -140,6 +141,7 @@ class AISearch:
         # Create a search index
         fields = [
             SimpleField(name="ArticleId", type=SearchFieldDataType.String, key=True),
+            SearchableField(name="Source", type=SearchFieldDataType.String, retrievable=True),
             SearchableField(
                 name="Title",
                 type=SearchFieldDataType.String,
@@ -152,8 +154,18 @@ class AISearch:
                 searchable=True,
                 retrievable=True,
             ),
-            SearchableField(name="Source", type=SearchFieldDataType.String, retrievable=True),
-            # SearchableField(name="Labels", type=SearchFieldDataType.String, retrievable=True, searchable=True),
+            SearchableField(
+                name="ContentDescription",
+                type=SearchFieldDataType.String,
+                searchable=True,
+                retrievable=True,
+            ),
+            SearchableField(
+                name="CreatedAt",
+                type=SearchFieldDataType.DateTimeOffset,
+                searchable=True,
+                retrievable=True,
+            ),
             SearchableField(
                 name="YoutubeLinks",
                 collection=True,

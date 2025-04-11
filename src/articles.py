@@ -101,12 +101,14 @@ class Article:
                         "Source": article["html_url"],
                         "Title": article["title"],
                         "Content": article["body"],
+                        "ContentDescription": azure.openai_helper.create_webpage_description(article["body"]),
+                        "CreatedAt": article["created_at"],
                         "YoutubeLinks": article["youtube_links"],
                         "CategoryId": article["category_id"],
                         "Category": article["category"],
                         "SectionId": article["section_id"],
                         "Section": article["section"],
-                        "Tokens": num_tokens_from_string(article["body"], "gpt-3.5-turbo"),
+                        "Tokens": num_tokens_from_string(article["body"], "gpt-4"),
                     }
                 )
 
@@ -126,7 +128,7 @@ class Article:
         with multiprocessing.Pool(5) as p:
             p.starmap_async(
                 Article.get_zendesk_documents,
-                [(self.azure.stage, self.azure.brand, self.azure.language, self.azure.get_article_path(), page) for page in range(1, page_count + 1)],
+                [(self.azure.stage, self.azure.brand, self.azure.language, self.azure.get_article_path(), page) for page in range(1, 1 + page_count)],
                 error_callback=lambda e: print(e),
             )
             p.close()

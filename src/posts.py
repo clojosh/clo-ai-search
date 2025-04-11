@@ -5,7 +5,7 @@ import re
 from datetime import datetime
 
 import questionary
-import requests
+import requests  # type: ignore
 
 from tools.azure import Azure
 from tools.misc import remove_html_tags, trim_tokens
@@ -102,7 +102,7 @@ class Posts:
         return comments
 
     @staticmethod
-    def get_posts(brand: str, page: int, post_dir_path: str) -> list:
+    def get_posts(stage: str, brand: str, page: int, post_dir_path: str) -> list:
         """
         Retrieves posts from Zendesk Community for a given page
 
@@ -114,6 +114,7 @@ class Posts:
         Returns:
             list: A list of posts with their details and comments
         """
+        azure = Azure(stage, brand)
 
         print(f"Getting posts for page {page}")
 
@@ -127,7 +128,7 @@ class Posts:
 
         posts = json.loads(response.text)
 
-        cutoff_date = datetime.strptime("{}-01-01T00:00:00Z".format(datetime.today().year - 3), "%Y-%m-%dT%H:%M:%SZ")
+        cutoff_date = datetime.strptime("{}-01-01T00:00:00Z".format(datetime.today().year - 2), "%Y-%m-%dT%H:%M:%SZ")
 
         filtered_posts = []
         for post in posts["posts"]:
@@ -148,9 +149,12 @@ class Posts:
                 filtered_posts.append(
                     {
                         "post_id": post["id"],
-                        "post_title": post["title"],
                         "post_url": post_url,
+                        "post_title": post["title"],
                         "post_details": trim_tokens(remove_html_tags(post["details"])),
+                        "post_description": azure.openai_helper.create_webpage_description(
+                            post["title"] + "\n\n" + trim_tokens(remove_html_tags(post["details"]))
+                        ),
                         "created_at": post["created_at"],
                         "comments": Posts.get_official_comments(brand, post["id"]),
                     }
@@ -185,6 +189,7 @@ class Posts:
                 Posts.get_posts,
                 [
                     (
+                        self.azure.stage,
                         brand,
                         page,
                         self.post_dir_path,

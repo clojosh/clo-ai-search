@@ -106,13 +106,16 @@ class YouTube:
             if "videoId" not in video["id"]:
                 continue
 
+            transcript = YouTube.extract_video_transcript_text(video["id"]["videoId"])
+
             # Create a dictionary to store the video data
             video = {
                 "VideoId": video["id"]["videoId"] if video["id"]["videoId"] else shortuuid.uuid(),  # Get the video id
                 "Url": f"https://www.youtube.com/watch?v={video['id']['videoId']}",  # Get the video url
                 "Title": video["snippet"]["title"].title().replace("&#39;", "'").replace("&quot;", '"').replace("&amp;", "&"),
-                "Transcript": YouTube.extract_video_transcript_text(video["id"]["videoId"]),
-                "publishedAt": video["snippet"]["publishedAt"],  # Get the video publish date
+                "Transcript": transcript,
+                "Description": video["snippet"]["description"],
+                "PublishedAt": video["snippet"]["publishedAt"],  # Get the video publish date
             }
 
             videos.append(video)
@@ -121,7 +124,7 @@ class YouTube:
         with open(f"{os.path.join(youtube_channel_dir_path, f'page_{page}')}.json", "w+", encoding="utf-8") as f:
             json.dump(videos, f, ensure_ascii=False, indent=4)
 
-    def mp_extract_youtube_channel_transcripts(self, video_age_in_years: int = 3) -> None:
+    def mp_extract_youtube_channel_transcripts(self, video_age_in_years: int = 2) -> None:
         """Use multiprocessing to extract transcripts from a youtube channel"""
 
         published_after = "{}-01-01T00:00:00Z".format(datetime.today().year - video_age_in_years)
@@ -214,7 +217,7 @@ class YouTube:
 
         # Summarize each transcript
         for index, trans in enumerate(transcripts):
-            if len(trans["Transcript"]) > 450:
+            if len(trans["Transcript"]) > 400:
                 try:
                     summary = environment.openai_helper.generate_transcript_summary(trans["Transcript"])
                 except Exception as e:
@@ -296,7 +299,7 @@ if __name__ == "__main__":
     yt = YouTube(Azure(stage, brand))
 
     if task == "Get Transcripts":
-        video_age_in_years = questionary.text("What video age(in years)?").ask()
+        video_age_in_years = questionary.text("What video age(in years)?", default="2").ask()
         yt.mp_extract_youtube_channel_transcripts(video_age_in_years=int(video_age_in_years))
 
     else:

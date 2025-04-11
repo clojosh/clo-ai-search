@@ -130,7 +130,7 @@ class OpenAIHelper:
         messages = [
             {
                 "role": "user",
-                "content": f"Provide a comprehensive guide of the given Youtube transcript. Do not include a title.\n\n{transcript}",
+                "content": f"""You are an expert summarizer. Given the transcript of a YouTube video, generate a comprehensive summary that accurately reflects the key points, themes, and insights presented in the video. Your task is to: 1. Identify the main topic and purpose of the video\n2. Break down the content into clear sections or segments (e.g., introduction, key points, conclusion)\n3. Extract and summarize important facts, arguments, or insights shared by the speaker(s)\n4. Ignore filler content like greetings, off-topic tangents, or promotional content\n5. Use clear and concise language suitable for downstream use in a retrieval-augmented generation (RAG) system.\n\n###Transcript:\n{transcript}""",
             }
         ]
 
@@ -200,7 +200,7 @@ class OpenAIHelper:
             # If the content is longer than this, trim it to this length
             tokens = num_tokens_from_string(content, "gpt-4")
 
-            if tokens >= 32000 - 1500:
+            if tokens >= GPT_4_MINI_MAX_INPUT_TOKENS:
                 raise ValueError(f"Content too long, tokens found {tokens}")
 
             # Create a prompt for the AI
@@ -240,7 +240,7 @@ class OpenAIHelper:
         try:
             tokens = num_tokens_from_string(content, "gpt-4")
 
-            if tokens >= 32000 - 1500:
+            if tokens >= GPT_4_MINI_MAX_INPUT_TOKENS:
                 raise ValueError(f"Content too long for {website_url}, tokens found {tokens}")
 
             # messages = [{
@@ -270,14 +270,51 @@ class OpenAIHelper:
 
     @retry(wait=wait_random_exponential(min=1, max=20), stop=stop_after_attempt(6))
     def create_webpage_title(self, content):
-        """Scrape a Webpage"""
+        """
+        Creates a title for a webpage based on the content of the webpage.
+
+        Args:
+            content (str): The HTML content of the webpage
+
+        Returns:
+            str: A title for the webpage
+        """
 
         tokens = num_tokens_from_string(content, "gpt-4")
 
-        if tokens >= 32000 - 1500:
+        if tokens >= GPT_4_MINI_MAX_INPUT_TOKENS:
             raise ValueError(f"Content too long, tokens found {tokens}")
 
-        messages = [{"role": "user", "content": f"Generate a title for a website based on the following content: {content}"}]
+        messages = [{"role": "user", "content": f"Generate a concise and short title for a web page based on the following content: {content}"}]
+
+        chat_completion = self.openai_client.chat.completions.create(
+            model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0.7, max_tokens=50, n=1
+        )
+
+        outline = chat_completion.choices[0].message.content
+        # outline = re.sub(r"\n+", " ", outline)
+        # outline = re.sub(r"\s+", " ", outline)
+
+        return outline
+
+    @retry(wait=wait_random_exponential(min=1, max=20), stop=stop_after_attempt(6))
+    def create_webpage_description(self, content):
+        """
+        Creates a description for a webpage based on the content of the webpage.
+
+        Args:
+            content (str): The HTML content of the webpage
+
+        Returns:
+            str: A description for the webpage
+        """
+
+        tokens = num_tokens_from_string(content, "gpt-4")
+
+        if tokens >= GPT_4_MINI_MAX_INPUT_TOKENS:
+            raise ValueError(f"Content too long, tokens found {tokens}")
+
+        messages = [{"role": "user", "content": f"Generate a short, one sentence purpose for a web page based on the following content: {content}"}]
 
         chat_completion = self.openai_client.chat.completions.create(
             model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0.7, max_tokens=50, n=1

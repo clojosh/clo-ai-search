@@ -65,7 +65,7 @@ class Posts:
                 elif brand == "md":
                     comment["html_url"] = re.findall(
                         r"https:\/\/support\.marvelousdesigner\.com\/hc\/en-us\/community\/posts\/\d+",
-                        post["html_url"],
+                        comment["html_url"],
                     )[0]
 
                 comments.append(

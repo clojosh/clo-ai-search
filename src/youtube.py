@@ -274,6 +274,8 @@ class YouTube:
                         "Source": transcript["Url"],
                         "Title": transcript["Title"],
                         "Content": transcript["Summary"],
+                        "ContentDescription": transcript["Description"],
+                        "CreatedAt": transcript["PublishedAt"],
                         "YoutubeLinks": [transcript["Url"]],
                         "titleVector": self.azure.openai_helper.generate_embeddings(text=transcript["Title"]),
                         "contentVector": self.azure.openai_helper.generate_embeddings(text=transcript["Summary"]),
@@ -284,8 +286,8 @@ class YouTube:
 
 
 if __name__ == "__main__":
+    stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
     brand = questionary.select("Which brand?", choices=["clo3d", "md"]).ask()
-    stage = questionary.select("Which stage?", choices=["prod", "dev"]).ask()
     task = questionary.select(
         "What task?",
         choices=[

@@ -31,20 +31,20 @@ class YouTube:
     def __init__(self, azure: Azure):
         self.azure = azure
 
-        if not os.path.exists(os.path.join("sources", azure.brand, "youtube")):
-            os.makedirs(os.path.join("sources", azure.brand, "youtube"))
+        if not os.path.exists(os.path.join("data", azure.brand, "youtube")):
+            os.makedirs(os.path.join("data", azure.brand, "youtube"))
 
-        self.youtube_dir_path = os.path.join("sources", azure.brand, "youtube")
+        self.youtube_dir_path = os.path.join("data", azure.brand, "youtube")
 
-        if not os.path.exists(os.path.join("sources", azure.brand, "youtube", "channel")):
-            os.makedirs(os.path.join("sources", azure.brand, "youtube", "channel"))
+        if not os.path.exists(os.path.join("data", azure.brand, "youtube", "channel")):
+            os.makedirs(os.path.join("data", azure.brand, "youtube", "channel"))
 
-        self.youtube_channel_dir_path = os.path.join("sources", azure.brand, "youtube", "channel")
+        self.youtube_channel_dir_path = os.path.join("data", azure.brand, "youtube", "channel")
 
-        if not os.path.exists(os.path.join("sources", azure.brand, "youtube", "playlist")):
-            os.makedirs(os.path.join("sources", azure.brand, "youtube", "playlist"))
+        if not os.path.exists(os.path.join("data", azure.brand, "youtube", "playlist")):
+            os.makedirs(os.path.join("data", azure.brand, "youtube", "playlist"))
 
-        self.youtube_playlist_dir_path = os.path.join("sources", azure.brand, "youtube", "playlist")
+        self.youtube_playlist_dir_path = os.path.join("data", azure.brand, "youtube", "playlist")
 
     def get_channel_id(self, brand: str) -> str:
         if brand == "clo3d":

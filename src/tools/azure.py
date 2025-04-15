@@ -87,13 +87,13 @@ class Azure:
         """
         # The article path for different languages
         document_path = {
-            "English": os.path.join("sources", self.brand, "articles", "en-us"),
-            "Espanol": os.path.join("sources", self.brand, "articles", "es"),
-            "Japanese": os.path.join("sources", self.brand, "articles", "ja"),
-            "Korean": os.path.join("sources", self.brand, "articles", "ko"),
-            "Portuguese": os.path.join("sources", self.brand, "articles", "pt-br"),
-            "Chinese": os.path.join("sources", self.brand, "articles", "zh-cn"),
-            "Taiwanese": os.path.join("sources", self.brand, "articles", "tw"),
+            "English": os.path.join("data", self.brand, "articles", "en-us"),
+            "Espanol": os.path.join("data", self.brand, "articles", "es"),
+            "Japanese": os.path.join("data", self.brand, "articles", "ja"),
+            "Korean": os.path.join("data", self.brand, "articles", "ko"),
+            "Portuguese": os.path.join("data", self.brand, "articles", "pt-br"),
+            "Chinese": os.path.join("data", self.brand, "articles", "zh-cn"),
+            "Taiwanese": os.path.join("data", self.brand, "articles", "tw"),
         }
 
         # Create the document path if it doesn't exist

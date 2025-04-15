@@ -19,9 +19,9 @@ class Posts:
         self.azure = azure
 
         if not os.path.exists(os.path.join(azure.brand, "posts")):
-            os.makedirs(os.path.join("sources", azure.brand, "posts"), exist_ok=True)
+            os.makedirs(os.path.join("data", azure.brand, "posts"), exist_ok=True)
 
-        self.post_dir_path = os.path.join("sources", azure.brand, "posts")
+        self.post_dir_path = os.path.join("data", azure.brand, "posts")
 
     @staticmethod
     def get_official_comments(brand: str, post_id: str) -> list:

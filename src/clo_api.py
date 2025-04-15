@@ -5,7 +5,7 @@ import sys
 from pathlib import Path
 
 import questionary
-import requests
+import requests  # type: ignore
 import shortuuid
 
 from tools.azure import Azure
@@ -13,11 +13,9 @@ from tools.misc import trim_tokens
 
 
 class CLOAPI:
-    def __init__(self, environment: Azure):
-        self.environment = environment
-        self.search_client = environment.search_client
-        self.language = environment.language
-        self.clo_api_path = os.path.join("data", "sources", "clo_api")
+    def __init__(self, azure: Azure):
+        self.azure = azure
+        self.clo_api_path = os.path.join("data", azure.brand, "clo_api")
 
     def parse_api_docs(self):
         """
@@ -191,8 +189,8 @@ class CLOAPI:
 
 
 if __name__ == "__main__":
-    env = questionary.select("Which environment?", choices=["prod", "dev"]).ask()
-    # brand = questionary.select("Which brand?", choices=["clo3d", "closet", "clovf", "md"]).ask()
+    stage = questionary.select("Which stage?", choices=["prod", "dev"]).ask()
+    brand = questionary.select("Which brand?", choices=["clo3d", "closet", "clovf", "md"]).ask()
     task = questionary.select(
         "What task?",
         choices=[
@@ -205,7 +203,7 @@ if __name__ == "__main__":
         ],
     ).ask()
 
-    clo_api = CLOAPI(Azure(env, "clo3d"))
+    clo_api = CLOAPI(Azure(stage, brand))
 
     if task == "Parse API Docs":
         delete_previous_documents = questionary.select("Did you delete previous documents?", choices=["Yes", "No"]).ask()

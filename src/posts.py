@@ -203,7 +203,7 @@ class Posts:
 
     @staticmethod
     def upload(stage: str, posts_path: str, file: str, brand: str):
-        print(f"Uploading {file}")
+        print(f"\nUploading {file}")
 
         azure = Azure(stage, brand)
 
@@ -224,6 +224,8 @@ class Posts:
                             "Source": document["post_url"],
                             "Title": document["post_title"],
                             "Content": content,
+                            "ContentDescription": document["post_description"],
+                            "CreatedAt": document["created_at"],
                             "YoutubeLinks": [],
                             "titleVector": azure.openai_helper.generate_embeddings(text=document["post_title"]),
                             "contentVector": azure.openai_helper.generate_embeddings(text=content if content != "" else document["post_title"]),
@@ -301,11 +303,11 @@ class Posts:
 
 
 if __name__ == "__main__":
-    env = questionary.select("Which environment?", choices=["prod", "dev"]).ask()
+    stage = questionary.select("Which stage?", choices=["prod", "dev"]).ask()
     brand = questionary.select("Which brand?", choices=["clo3d", "closet", "md"]).ask()
     task = questionary.select("What task?", choices=["Get Posts", "Upload"]).ask()
 
-    post = Posts(Azure(env, brand))
+    post = Posts(Azure(stage, brand))
 
     if task == "Get Posts":
         post.mp_get_posts()

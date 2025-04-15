@@ -19,7 +19,12 @@ zendesk_article_attachment_api_endpoint = "https://support.{0}.com/api/v2/help_c
 class Azure:
     def __init__(self, stage="dev", brand="", language="English"):
         self.stage = stage
-        self.brand = brand
+
+        if brand == "marvelousdesigner":
+            self.brand = "md"
+        else:
+            self.brand = brand
+
         self.language = language
 
         if stage == "prod":
@@ -28,7 +33,8 @@ class Azure:
             load_dotenv(os.path.join(parent_dir_path, ".env.dev"))
 
         self.AZURE_SEARCH_SERVICE = os.environ.get("AZURE_SEARCH_SERVICE")
-        self.INDEX_NAME = os.environ.get(f"{brand.upper()}_AZURE_SEARCH_INDEX")
+
+        self.INDEX_NAME = os.environ.get(f"{self.brand.upper()}_AZURE_SEARCH_INDEX")
 
         self.SEARCH_CLIENT_ENDPOINT = f"https://{self.AZURE_SEARCH_SERVICE}.search.windows.net"
         self.AZURE_KEY_CREDENTIAL = AzureKeyCredential(os.environ.get("AZURE_SEARCH_KEY"))
@@ -70,6 +76,16 @@ class Azure:
         return locale[self.language]
 
     def get_article_path(self) -> str:
+        """
+        Returns the article path for the given language.
+
+        Args:
+            self (Azure): The Azure object.
+
+        Returns:
+            str: The article path.
+        """
+        # The article path for different languages
         document_path = {
             "English": os.path.join("sources", self.brand, "articles", "en-us"),
             "Espanol": os.path.join("sources", self.brand, "articles", "es"),
@@ -80,46 +96,99 @@ class Azure:
             "Taiwanese": os.path.join("sources", self.brand, "articles", "tw"),
         }
 
+        # Create the document path if it doesn't exist
         os.makedirs(document_path[self.language], exist_ok=True)
 
         return document_path[self.language]
 
-    def get_zendesk_article_api_endpoint(self, page: int):
+    def get_zendesk_article_api_endpoint(self, page: int) -> str:
+        """
+        Constructs the API endpoint URL for fetching Zendesk articles.
+
+        Args:
+            page (int): The page number for pagination.
+
+        Returns:
+            str: The formatted API endpoint URL.
+        """
+        # Determine the subdomain based on the brand
         if self.brand == "closet":
-            return zendesk_article_api_endpoint.format("clo-set", self.get_locale(), page)
+            subdomain = "clo-set"
         elif self.brand == "closet_connect":
-            return zendesk_article_api_endpoint.format("support-connect", self.get_locale(), page)
+            subdomain = "support-connect"
         elif self.brand == "md":
-            return zendesk_article_api_endpoint.format("marvelousdesigner", self.get_locale(), page)
+            subdomain = "marvelousdesigner"
+        else:
+            subdomain = self.brand
 
-        return zendesk_article_api_endpoint.format(self.brand, self.get_locale(), page)
+        # Format and return the endpoint URL
+        return zendesk_article_api_endpoint.format(subdomain, self.get_locale(), page)
 
-    def get_zendesk_article_attachment_api_endpoint(self, article_id):
+    def get_zendesk_article_attachment_api_endpoint(self, article_id: int) -> str:
+        """
+        Constructs the API endpoint URL for fetching Zendesk article attachments.
+
+        Args:
+            article_id (int): The ID of the article that has the attachments.
+
+        Returns:
+            str: The formatted API endpoint URL.
+        """
+        # Determine the subdomain based on the brand
         if self.brand == "closet":
-            return zendesk_article_attachment_api_endpoint.format("clo-set", self.get_locale(), article_id)
+            subdomain = "clo-set"
         elif self.brand == "closet_connect":
-            return zendesk_article_attachment_api_endpoint.format("support-connect", self.get_locale(), article_id)
+            subdomain = "support-connect"
         elif self.brand == "md":
-            return zendesk_article_attachment_api_endpoint.format("marvelousdesigner", self.get_locale(), article_id)
+            subdomain = "marvelousdesigner"
+        else:
+            subdomain = self.brand
 
-        return zendesk_article_attachment_api_endpoint.format(self.brand, self.get_locale(), article_id)
+        # Format and return the endpoint URL
+        return zendesk_article_attachment_api_endpoint.format(subdomain, self.get_locale(), article_id)
 
     def get_zendesk_article_section_api_endpoint(self, section_id):
-        if self.brand == "closet":
-            return zendesk_article_section_api_endpoint.format("clo-set", self.get_locale(), section_id)
-        elif self.brand == "closet_connect":
-            return zendesk_article_section_api_endpoint.format("support-connect", self.get_locale(), section_id)
-        elif self.brand == "md":
-            return zendesk_article_section_api_endpoint.format("marvelousdesigner", self.get_locale(), section_id)
+        """
+        Constructs the API endpoint URL for fetching Zendesk article sections.
 
-        return zendesk_article_section_api_endpoint.format(self.brand, self.get_locale(), section_id)
+        Args:
+            section_id (int): The ID of the section.
+
+        Returns:
+            str: The formatted API endpoint URL.
+        """
+        # Determine the subdomain based on the brand
+        if self.brand == "closet":
+            subdomain = "clo-set"
+        elif self.brand == "closet_connect":
+            subdomain = "support-connect"
+        elif self.brand == "md":
+            subdomain = "marvelousdesigner"
+        else:
+            subdomain = self.brand
+
+        # Format and return the endpoint URL
+        return zendesk_article_section_api_endpoint.format(subdomain, self.get_locale(), section_id)
 
     def get_zendesk_article_category_api_endpoint(self, category_id):
-        if self.brand == "closet":
-            return zendesk_article_category_api_endpoint.format("clo-set", self.get_locale(), category_id)
-        elif self.brand == "closet_connect":
-            return zendesk_article_category_api_endpoint.format("support-connect", self.get_locale(), category_id)
-        elif self.brand == "md":
-            return zendesk_article_category_api_endpoint.format("marvelousdesigner", self.get_locale(), category_id)
+        """
+        Constructs the API endpoint URL for fetching Zendesk article categories.
 
-        return zendesk_article_category_api_endpoint.format(self.brand, self.get_locale(), category_id)
+        Args:
+            category_id (int): The ID of the category.
+
+        Returns:
+            str: The formatted API endpoint URL.
+        """
+        # Determine the subdomain based on the brand
+        if self.brand == "closet":
+            subdomain = "clo-set"
+        elif self.brand == "closet_connect":
+            subdomain = "support-connect"
+        elif self.brand == "md":
+            subdomain = "marvelousdesigner"
+        else:
+            subdomain = self.brand
+
+        # Format and return the endpoint URL
+        return zendesk_article_category_api_endpoint.format(subdomain, self.get_locale(), category_id)

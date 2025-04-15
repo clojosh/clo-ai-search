@@ -24,6 +24,41 @@ class Article:
         self.azure = azure
         self.search_client = azure.search_client
 
+    def delete_document(self, article_id: str | list):
+        print(f"\nDeleting {article_id}")
+
+        if isinstance(article_id, list):
+            for id in article_id:
+                result = self.search_client.upload_documents({"@search.action": "delete", "ArticleId": id})
+        else:
+            result = self.search_client.upload_documents({"@search.action": "delete", "ArticleId": article_id})
+
+    def delete_excluded_documents(self, brand: str):
+        headers = {
+            "Content-Type": "application/json",
+        }
+
+        response = requests.request("GET", self.azure.get_zendesk_article_api_endpoint(1), headers=headers)
+        json_objects = json.loads(response.text)
+        page_count = json_objects["page_count"]
+
+        for page in range(1, 1 + page_count):
+            response = requests.request("GET", self.azure.get_zendesk_article_api_endpoint(page), headers=headers)
+            json_objects = json.loads(response.text)
+            articles = json_objects["articles"]
+
+            for article in articles:
+                if brand == "closet" and article["section_id"] in [
+                    5026352977423,
+                    6280973212175,
+                    360001149855,
+                    360001011655,
+                    360000854796,
+                    7975498603663,
+                ]:
+                    print(article["id"])
+                    self.search_client.upload_documents({"@search.action": "delete", "ArticleId": str(article["id"])})
+
     def get_zendesk_document(self, article_id: int):
         page_url = requests.request(
             "GET",
@@ -37,7 +72,7 @@ class Article:
 
     @staticmethod
     def get_zendesk_documents(stage: str, brand: str, language: str, article_path: str, page: int):
-        print("Getting Zendesk Articles for page: " + str(page))
+        print("\nGetting Zendesk Articles for page " + str(page))
 
         azure = Azure(stage, brand, language)
 
@@ -136,7 +171,7 @@ class Article:
 
     @staticmethod
     def upload_documents(stage: str, brand: str, language: str, article_path: str, file: str):
-        print(f"Uploading {file}")
+        print(f"\nUploading {file}")
 
         azure = Azure(stage, brand, language)
 
@@ -159,7 +194,7 @@ class Article:
 
             if brand == "clovf":
                 # Upload clovf articles to both clo3d and clo-set
-                # Azure(stage, "clo3d").search_client.upload_documents(documents)
+                Azure(stage, "clo3d").search_client.upload_documents(documents)
                 Azure(stage, "closet").search_client.upload_documents(documents)
             else:
                 azure.search_client.upload_documents(documents)
@@ -176,47 +211,14 @@ class Article:
             p.close()
             p.join()
 
-    def delete_document(self, article_id: str | list):
-        print(f"Deleting {article_id}")
-
-        if isinstance(article_id, list):
-            for id in article_id:
-                result = self.search_client.upload_documents({"@search.action": "delete", "ArticleId": id})
-        else:
-            result = self.search_client.upload_documents({"@search.action": "delete", "ArticleId": article_id})
-
-    def delete_excluded_documents(self, brand: str):
-        headers = {
-            "Content-Type": "application/json",
-        }
-
-        response = requests.request("GET", self.azure.get_zendesk_article_api_endpoint(1), headers=headers)
-        json_objects = json.loads(response.text)
-        page_count = json_objects["page_count"]
-
-        for page in range(1, 1 + page_count):
-            response = requests.request("GET", self.azure.get_zendesk_article_api_endpoint(page), headers=headers)
-            json_objects = json.loads(response.text)
-            articles = json_objects["articles"]
-
-            for article in articles:
-                if brand == "closet" and article["section_id"] in [
-                    5026352977423,
-                    6280973212175,
-                    360001149855,
-                    360001011655,
-                    360000854796,
-                    7975498603663,
-                ]:
-                    print(article["id"])
-                    self.search_client.upload_documents({"@search.action": "delete", "ArticleId": str(article["id"])})
-
 
 if __name__ == "__main__":
     stage = questionary.select("Which stage?", choices=["prod", "dev"]).ask()
     brand = questionary.select("Which brand?", choices=["clo3d", "closet", "closet_connect", "clovf", "md"]).ask()
     language = questionary.select("Which language?", choices=["English", "Korean"]).ask()
-    task = questionary.select("What task?", choices=["Get Zendesk Article", "Get All Zendesk Articles", "Delete Articles", "Upload Articles"]).ask()
+    task = questionary.select(
+        "What task?", choices=["Get Zendesk Article", "Get All Zendesk Articles", "Delete Articles", "Upload Article", "Upload All Articles"]
+    ).ask()
     article = Article(Azure(stage, brand, language))
 
     if task == "Get Zendesk Article":
@@ -226,7 +228,20 @@ if __name__ == "__main__":
     elif task == "Get All Zendesk Articles":
         article.mp_get_zendesk_documents()
 
-    elif task == "Upload Articles":
+    elif task == "Upload Article":
+        article_id = questionary.text("Article ID").ask()
+
+        for page in os.listdir(article.azure.get_article_path()):
+            with open(os.path.join(article.azure.get_article_path(), page), "r", encoding="utf-8") as f:
+                documents = json.load(f)
+                for i, document in enumerate(documents):
+                    if document["ArticleId"] == article_id:
+                        Article.upload_documents(
+                            article.azure.stage, article.azure.brand, article.azure.language, article.azure.get_article_path(), page
+                        )
+                        break
+
+    elif task == "Upload All Articles":
         article.mp_upload_documents()
 
     elif task == "Delete Articles":

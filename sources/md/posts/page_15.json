@@ -1,9 +1,27 @@
 [
     {
+        "post_id": 900003194643,
+        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003194643",
+        "post_title": "Error Importing Alembic Cache from Maya",
+        "post_details": "Hello everyone! I am trying out Marvelous Designer for the first time and I'm trying to import an alembic cache file into Marvelous Designer. Everytime I do this I get this same message: \"Access denied to the temporary folder path. Please select another folder to save the temporary files. A temporary folder is required for the program to run properly.\" I've tried to run the program in Administrator Mode, restarting my computer, uninstalling and reinstalling the program and nothing seems to change this message. I also ahve 245 GB free space in the location where the temporary folder is being placed. Any ideas what could be happening?",
+        "post_description": "This web page aims to provide troubleshooting tips and solutions for users experiencing \"Access denied to the temporary folder path\" errors when importing Alembic cache files into Marvelous Designer.",
+        "created_at": "2021-04-02T17:51:05Z",
+        "comments": [
+            {
+                "author_id": 901084195766,
+                "comment_id": 900001608506,
+                "official": true,
+                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003194643-Error-Importing-Alembic-Cache-from-Maya/comments/900001608506",
+                "comment_body": "Hello 901875107546, Thank you for contacting us. First, I wonder in which case you got the message starting the software for the first time, importing an Alembic cache file, or else. Second, please try to check those steps below to solve your problem. When running Marvelous Designer software, allow it to run with Windows Administrator mode. If you're running an anti-virus or IT asset management program, please whitelist the Marvelous Designer software. Please give read &amp write permission of the Temp directory path on your Windows user profile.* *For more detail, Location: C:UsersUser nameAppDataLocalCLO Right-click &gt Properties &gt Security &gt Allow Read &amp Write permission If you are not able to find this folder, it may be hidden. In that case, please follow these steps. 1. View &gt Details &gt Options 2. Click View tab &gt check 'Show hidden files, folders, and drives' Hope this help :) I look forward to your reply. Have a lovely day!"
+            }
+        ]
+    },
+    {
         "post_id": 900002201406,
-        "post_title": "Qt Support was removed from MD10 ?",
         "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002201406",
+        "post_title": "Qt Support was removed from MD10 ?",
         "post_details": "Just after subcribing to MD10 I read that Qt Support was removed from Marvelous Designer 10: https://www.marvelousdesigner.com/company/news/view/61 And that's very disappointing. I have made custom asset management tools using Python Qt that works well in MD8. I really hope there is a way to have this Qt support back, either by external linking or having it added to MD built-in Python.",
+        "post_description": "This web page aims to address the removal of Qt Support from Marvelous Designer 10 and to advocate for its reinstatement or alternative solutions for users relying on Python Qt for custom asset management tools.",
         "created_at": "2021-03-31T08:39:12Z",
         "comments": [
             {
@@ -16,139 +34,11 @@
         ]
     },
     {
-        "post_id": 900002187986,
-        "post_title": "Substance source SBSAR files",
-        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002187986",
-        "post_details": "Is there a way i can pick a separate storage to load my substance material from?, i know i can go to the file that i have my materials in, but the sdsar is in a different drive, the problem loading the sbsar file from that drive, it does not generate thumb nails, I know i can dump all of the sbsar files in the drive that marvelous is stored in, but that will take up to much memory. Basically is there a way that i can pick a designated storage other then what Marvelous has provided, that can generate thumb nails of the sbsar files? Thank you",
-        "created_at": "2021-03-28T00:50:50Z",
-        "comments": [
-            {
-                "author_id": 901084195766,
-                "comment_id": 900001586626,
-                "official": true,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002187986-Substance-source-SBSAR-files/comments/900001586626",
-                "comment_body": "Hello 900743228706, Thank you for contacting us! According to your inquiry, I suggest you add your SBSAR files to the Library. The files can be loaded from the designated folder (even from different drive) and those thumbnails will be shown in the list. I hope this information helps you :) Should have further question, feel free to ask me! Have a lovely day."
-            }
-        ]
-    },
-    {
-        "post_id": 900003160523,
-        "post_title": "Exporting Topstich as polygon strip or curve",
-        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003160523",
-        "post_details": "Hi! I would like to export a polygon strip or a curve instead of exporting the physical meshes for topstitches. The reason is that I would like to be able to assign a tiling texture with the stitch instead of having it be lots of tiny meshes. Is there a way to do this?",
-        "created_at": "2021-03-21T01:53:33Z",
-        "comments": [
-            {
-                "author_id": 900201109763,
-                "comment_id": 900001564786,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003160523-Exporting-Topstich-as-polygon-strip-or-curve/comments/900001564786",
-                "comment_body": "Yes you can do this using the toggle to export internal lines and then stroke that object nurb in your modelling app into a custom stitch. This is how I have been making realistic stitching for over 8 years with MD. And strangely you are the 1st person in 8 years to be so bold as to want to do this. Which make you in an exclusive club of two. But boy does this method leave the internal MD stitching in the dust, so many users could take their garments to the next level if they were also so bold - but then again maybe they are taking the easy way out? Instead of placing stitching on external pattern lines it may require you to offset some internal lines where you want your stitches, these can then be exported as a separate named layer and as object nurbs using the object export option in MD. Then in your modelling app you can globally pick up that set of object nurbs and apply a simple custom stitch to that object nurb. It will perfectly follow the cloth and you will get amazing stitching detail based on what you model and stroke. The benefit is you can apply an awesome array of custom stitches and also pucker at the same time, and even more detailed yarn in your stitching. Another hug advantage of this process (and I mean 10X better than the MD internal stitch library) is you can tile match all your terminators for edges corners and stitch ply colors using the same type of custom configurator you have in MD - but instead in your next modelling app, so that all this is automated (what I do) so - you can swap out all your colors, stitch yarn ply twisting, stray hairs, needle hole, pucker, edge role etc all on a thin mesh - no need to ever export a thick mesh again from MD. So there are huge advantages in going this way - but only for those whom are maybe brave. The results stunning, the trim edge possibilities 10X the advantage of using the MD stitching which is all a bit feeble. And then you can also use the same method to strike in other detail like beads, trim, tassels, sequins, macramé, embroidery. And then simply take that to the extreme and photoreal seam combination (below) using digitization and CG stitching and trim. So you cannot see how it is blended. How I make all my clothing edges, seams, and stitching - 10X better than the stilted look of the MD stitching. Weave spin (ply yarn) direction using 3D model and then turned into fabric textures, porting real weave files into blender for rendering. Your own CG weaving machine can also make stitches."
-            },
-            {
-                "author_id": 901780386443,
-                "comment_id": 900002564623,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003160523-Exporting-Topstich-as-polygon-strip-or-curve/comments/900002564623",
-                "comment_body": "900201109763 Wow, thank you so much for that exhaustive answer. I had almost given up on this functionality existing - it seems like such a powerful thing to be able to do that I would have thought people would have been shouting from the mountaintops how to do it if they could but I couldn't find anything about it anywhere. Thanks to your answer I was able to do exactly what I needed to do: create a tilable stitch polystip that follows the surface of the model. Although I'll admit that looks a bit basic compared to your examples now. :D But I can definitely a ton of potential with zippers, frayed edges, the works. The only trouble I had was getting the orientation of the stitch to follow a twisting surface when converting it to geo. I was just using Maya's \"Curve To Ribbon Mesh\" function though. The solution I ended up going with was exporting two internal lines instead of one and bridge between them, but that was a bit finnicky and maybe there's a better option? Going by your screenshots I'm guessing you use Blender, are the tools for this sort of thing better there?"
-            },
-            {
-                "author_id": 900201109763,
-                "comment_id": 900002564663,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003160523-Exporting-Topstich-as-polygon-strip-or-curve/comments/900002564663",
-                "comment_body": "Yes it's a bit bonkers that everyone uses ZBrush to painstakingly put in their stitching across a garment and I do it in one click with perfect precision and photoreal. But there you go , stuck in some Adobe Doctrine and mindset of being force fed how to think for oneself ! I broke free many years back out of frustration that the detail wasn't being provided and now I actually make all my seams and stitching with Blender as it's a maybe deeper for customizable (coding) than maya, so I actually have a workspace dedicated to this specific and important task for photoreal garments, also works with my WIF weave loom texture projection capability that uses the same simulation engine to create weaves automatically from the actual loom textile data. I tend to make all my garment elements as generic (scale-less) library elements, I literally have thousands of these details that include all stitching, pucker and creasing frequency split out. (see welt pocket below and 'jet' button holes, only I might toss in some extra creasing detailing in the texture maps.) So the basic MD model above for that detail and then below (jet button hole) with all the extra texture detail tossed in makes it really pop. And I can drop on any fabric texture or colorway and it just works as all the crease and stitch frequency is totally editable in realtime, in a few seconds. In blender there is Decal machine, so you can actually bake all your 3D model seams and stitching down to a library and it is then fully editable , color, pitch, width, stitch type, thread colorway etc. So it's like having the stitch property editor in your CG app, only way more detailed and controllable across the entire garment. If you use trim sheets (which is how I do it for a stitch library collection of matching trim elements, then you can reuse that on any new project garment. So in theory I have about 5.6million possible garment stitch types, with pucker and yarn ply and machine pitch, way more than I actually need. Above you can see that you can simply replace stitching with a trim sheet element, like a cord or zip or other linear repeat detail, all perfectly in the normal direction. Far better than what is in MD, as you have a lot more creative control across seams between patterns. So with a single internal line or even a pattern edge you can load up - a saddle seam that stretches across two patterns on a thin mesh, no need for thick mesh exports as you can determine the edge normal radius and depth of the mating edges in realtime. a much better and faster way to work. Drag drop and edit, I could also change the stitch pitch, need hole diameter and AO shadow in the seam, all editable in about 1 second. Above you can then combine the stitches with pucker and strat to get some real seam edge verstaility. CLO3D only just bought this in after me harping on about how they were all missing this for the last 5 years. Silly but there you go. And then I mix this in with A.I. and custom weaving eg: macramé and knots so it's possible to get unbelievable detail. It's how I simulate a real detail before manufacture, been doing it this way for years. So from a single circle you can create a multiply yarn that is woven into a stitch, all done para-metrically which means you can throw in particles for strands and stray fibres etc that also model using hair shaders as opposed to solids, which is how I do my weaving textures, keeps it all random and photoreal. So for me Blender is a powerhouse for fashion, better than modo and max for this type of work. And its cloth sculpt tools really accelerate custom detailing tools. So although I could use other apps, BL is simply stronger for this as it's all integrated with node graphs tools like geometry nodes. So frankly I have a detailing factory on my desktop that can spit out any organic detail in seconds, making it fully editable and usable as a library element. I have thousands of these type of details, by far the biggest part of my CG garment library. And in MD/CLO3D you get a few stingy trim details - wow, fashion is all about the edge detail and trim, not just the styling cut. A missed opportunity I think, that needs to be rectified. Maybe in MD12? You can actually set up a basic 3D model that bakes down to trim sheets that allow you to then slice and dice the model into many seemless integrations that work across garments, so this is a generic setup that allows for hundreds of custom editable maps in a single click. This collection then gets split out into a standard library collection, so I add in buttons, button holes, zips, seams, stitching, brooches, buckles, clasps etc all in one model, that is parametric and hooked up to A.I. to drive the design all from sketches (blender grease pencil). That way it's full creative control to get a matching set of trim for a category or style of clothing in less than 10 minutes, all photoreal and it loads into library for re-use on any other project. So MD have taken a very old fashioned approach to what is perhaps one of the most important elements in fashion - the 'notations' that accompany all garments."
-            },
-            {
-                "author_id": 902107798783,
-                "comment_id": 900001718526,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003160523-Exporting-Topstich-as-polygon-strip-or-curve/comments/900001718526",
-                "comment_body": "900201109763 would love to see more of your workflow. Do you have an Instagram by any chance?"
-            },
-            {
-                "author_id": 900201109763,
-                "comment_id": 900002715223,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003160523-Exporting-Topstich-as-polygon-strip-or-curve/comments/900002715223",
-                "comment_body": "No not on Instagram, twitter, artstation, thank goodness. I don't need to feed some PR monster underbelly. Staying schtum is an art-form."
-            },
-            {
-                "author_id": 902107798783,
-                "comment_id": 900002716543,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003160523-Exporting-Topstich-as-polygon-strip-or-curve/comments/900002716543",
-                "comment_body": "900201109763 how do you develop your tileable assets (puckering, wrinkles, etc.)? Been playing around with a couple different methods such as using dabarti capture to scan different parts of garments."
-            },
-            {
-                "author_id": 901105546743,
-                "comment_id": 4416845496857,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003160523-Exporting-Topstich-as-polygon-strip-or-curve/comments/4416845496857",
-                "comment_body": "Sorry to resurrect this thread, but I'm new with adding stitching. I'm at the stage now where I'm exporting out the clothing I've made into ZBrush/Maya. I've read not to bother exporting out the stitching and buttons and to add those separately in other packages...? From what I've gathered from this thread, am I right in saying I just need to convert where the stitching is on my clothing, when exporting, to NURBs/curved lines...? And then use those lines to make an array of stitching in another package...? Thanks"
-            },
-            {
-                "author_id": 900201109763,
-                "comment_id": 4416843116697,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003160523-Exporting-Topstich-as-polygon-strip-or-curve/comments/4416843116697",
-                "comment_body": "Tim smith - yes you can export the MD internal line (offset where you would place the stitching on the cloth pattern) as an object nurb along with your model. It's an option in MD on export. Then in blender you can select those separated object nurbs and stroke them with either a tiled image map (eg: using decal machine) or as a 3D repeat stitch model and bake down as a texture. That keeps your 3D model stitch editable (or in a non destructive workflow). Your choice &gt image tiles or 3D models in your next workflow. The other option is to use the MD exported stitch model (which might be limited in stitch type design choices to only there library choices) as a 3D model and separate that model layer in your modelling software and bake it separately as a stitch only image layer. The downside to that is it makes the MD export 3D model massive and it is not a non-destructive workflow. If you create your own seam stitch models you can do extra things like make a single seam line between patterns become a stitch and seam line with pucker and double stitches for example (ie: saddle seam) &gt so one object nurb could drive a more complex stitch repeat on a thin mesh model with nice rolled edge normals rather than sculpt in all that detail to a thick mesh. So creating your own stitch and pattern edge models starts to leverage what you can achieve in pattern edge trim. For example I actually can swap out a pattern edge seam for a embroidery trim edging ... with a less transparent seam so it looks like it has been double folded back on itself - all from simple library map selection as my texture tile maps are at a ratio are uniform across my library. eg: I can also assign a scalar to get a mix of results &gt leading to more complex options and drag and drop texture control. These are technical things that are maybe missing in MD and even inside CLO3D that you can build into your own custom seam and stitch and trim patern edge system, which opens up what you can do - quickly."
-            }
-        ]
-    },
-    {
-        "post_id": 900002154186,
-        "post_title": "MD on the new MAC operation system",
-        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002154186",
-        "post_details": "hi, is Marvelous designer running on the new Mac with M1 chip? I am able to see there should be fine with intel but I am planning to buy the new device and just wanted to check. In case M1 does not run the program can you please recommend a model? Thanks in advance",
-        "created_at": "2021-03-17T19:33:11Z",
-        "comments": [
-            {
-                "author_id": 901084195766,
-                "comment_id": 900001546986,
-                "official": true,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002154186-MD-on-the-new-MAC-operation-system/comments/900001546986",
-                "comment_body": "Hello 901757471106, Thank you for contacting us. In response to your question, apple M1 is not officially supported by Marvelous Designer at this moment, but you would be able to use with Apple M1 device for Marvelous Designer. However, since this system is not officially supported, there would be a minor issue appearing on your use. Our development team is underway to test it. We will announce it once we officially support the Apple M1 for Marvelous Designer. Please kindly note that we cannot recommend a specific model for you. But please refer to this when purchasing a product :) Should have further question, feel free to let us know. Have a lovely day !"
-            }
-        ]
-    },
-    {
-        "post_id": 900003113723,
-        "post_title": "Can't change Gizmo type to Local Coordinate",
-        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003113723",
-        "post_details": "I can't change the gizmo's type to local coordinate. While I select the local coordinate type, the gizmo shows world coordinate. How can I use local coordinate? My MD's version is 6.0.537 (r32823). Best Regards.",
-        "created_at": "2021-03-06T17:41:19Z",
-        "comments": [
-            {
-                "author_id": 901084195766,
-                "comment_id": 900001514966,
-                "official": true,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003113723-Can-t-change-Gizmo-type-to-Local-Coordinate/comments/900001514966",
-                "comment_body": "Hello 901059257203 Thank you for contacting us :) As 900201109763 mentioned, the Local Coordinate Gizmo axis is based on following the native direction of an object. The local gizmo works the same as the world gizmo if the selected object does not have a reference axis. The local gizmo is mainly usable when designing poses from the avatar's X-ray joint points, the wind, and the light. For more detail information, I've attached the Gizmo Axis Setting manual. (click here)"
-            }
-        ]
-    },
-    {
-        "post_id": 900002035086,
-        "post_title": "New trial won't let me login 'due to network issue'",
-        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002035086",
-        "post_details": "I am connected to the internet and have restarted my computer but I still receive the same auto response on every login attempt. I have tried to pursue the option of logging in offline, however, the \"Offline Authentication\" option does not show in the dropdown menu of my login window. Has anyone had this persistent issue and knows a solution? Thanks",
-        "created_at": "2021-02-09T11:06:37Z",
-        "comments": [
-            {
-                "author_id": 900148289583,
-                "comment_id": 12993444418841,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900002035086-New-trial-won-t-let-me-login-due-to-network-issue/comments/12993444418841",
-                "comment_body": "For future reference, please try this method below if you face a network issue even though you have a stable internet connection. Step 1. Open c:WindowsSystem32driversetchost file as a text file Step 2. Add # at the front for the lines that includes api.clo3d.com or sapi.clo3d.com"
-            }
-        ]
-    },
-    {
         "post_id": 900003044343,
-        "post_title": "Reset 3D Arrangement problem",
         "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003044343",
+        "post_title": "Reset 3D Arrangement problem",
         "post_details": "When I spend a lot of time arranging patterns for simulation in the 3D viewport, if I click Reset 3D Arrangement the patterns fly off into random locations and orientations. Why does it do this? This causes significant problems and is a huge waste of time to try and get them back into position. Why doesn't it return the patterns to the locations and orientations I set up?",
+        "post_description": "This webpage aims to explain the unexpected behavior of the Reset 3D Arrangement function in simulation software and provide insights into how to prevent patterns from scattering randomly.",
         "created_at": "2021-02-07T18:39:28Z",
         "comments": [
             {
@@ -157,85 +47,6 @@
                 "official": true,
                 "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003044343-Reset-3D-Arrangement-problem/comments/900001485186",
                 "comment_body": "Hello Tyler! Thank you for contacting us. As I mentioned in the article you posted on the Feedback section(click the link), we have an issue with Reset 3D Arrangement feature. We will come back to you as soon as we hear back from the team. :)"
-            }
-        ]
-    },
-    {
-        "post_id": 900003035463,
-        "post_title": "Orthographic View",
-        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003035463",
-        "post_details": "MD really needs a no-perspective, orthographic mode in the 3D viewport. Trying to position things with perspective is imprecise.",
-        "created_at": "2021-02-03T20:43:34Z",
-        "comments": [
-            {
-                "author_id": 900147733143,
-                "comment_id": 900001403126,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003035463-Orthographic-View/comments/900001403126",
-                "comment_body": "Thank you for your opinion. We will add this function to the function request list. We will consider whether we can actually develop it according to the development situation in the future."
-            },
-            {
-                "author_id": 900486765463,
-                "comment_id": 4411823150873,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003035463-Orthographic-View/comments/4411823150873",
-                "comment_body": "Yes, I have always been missing it. It's far easier to position garment correcty in orthographic views than in perspective. I vote for it."
-            },
-            {
-                "author_id": 4637080354585,
-                "comment_id": 4637075109145,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003035463-Orthographic-View/comments/4637075109145",
-                "comment_body": "Absolutely agree. The non-orthographic interface makes aligning patterns for simulation difficult and takes triple amount of time to get a proper simulation running. It really is the Achilles' heel of this software. Marvelous Designer Team - this is a must do for the software to really be production ready. I don't know why the CG community has been willing to live without the orthographic view feature."
-            },
-            {
-                "author_id": 900850862883,
-                "comment_id": 4748532016537,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003035463-Orthographic-View/comments/4748532016537",
-                "comment_body": "Agree. This is a real pain point."
-            },
-            {
-                "author_id": 900147733143,
-                "comment_id": 4817113799449,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003035463-Orthographic-View/comments/4817113799449",
-                "comment_body": "Thanks for your feedback, all :) This feature request has been included in our development plan. The estimated schedule has been fixed yet, but we will update you on the progress. Thank you."
-            },
-            {
-                "author_id": 4637080354585,
-                "comment_id": 14214331002265,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003035463-Orthographic-View/comments/14214331002265",
-                "comment_body": "Where are you in developing this feature? Thanks."
-            },
-            {
-                "author_id": 900147733143,
-                "comment_id": 14215977709209,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003035463-Orthographic-View/comments/14215977709209",
-                "comment_body": "For now we have no update to share 4637080354585 we would share any updates about features via email or web announcement. But from reading your previous comment it sounds like you are encountering some issues that are uncommon regarding the speed and difficulty to place patterns in 3D that you are experiencing in your workflow. I know this not an answer to orthographic question, but here is a link to our youtube channel with the \"beginner stream\" with the new UI for a reletively fast creation of multiple garments https://www.youtube.com/playlist?list=PLYQUdblF9eDUtrT11KLQOx_YEEomtCqA1 and these are older but this playlist shows you how to use arrangement points https://youtu.be/uizpDJdz7aA to work quickly and effectively. If you are struggling with updating a version if you're running an older one or other questions/ technical support like that please feel free to send us a message via the CONTACT US option"
-            },
-            {
-                "author_id": 901485407346,
-                "comment_id": 14216132306713,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003035463-Orthographic-View/comments/14216132306713",
-                "comment_body": "The lack of orthographic mode is a MASSIVE problem. The amount of frustration this generates is a big creative killer. No other 3D application that I use has this kind of limitation."
-            },
-            {
-                "author_id": 17627162003609,
-                "comment_id": 17627196259737,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003035463-Orthographic-View/comments/17627196259737",
-                "comment_body": "seconding what's been said in the comments above. It makes achieving certains simple tasks extremely frustrating and time consuming. Please, consider adding this feature!"
-            },
-            {
-                "author_id": 18033406030105,
-                "comment_id": 18033409926681,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900003035463-Orthographic-View/comments/18033409926681",
-                "comment_body": "Please add orthographic view, I've been trying to find a way to accordingly dimension sides and things and it really just takes too much time to do it otherwise. ALSO, please add a way to resize my whole entire marvelous designer, Don't know if it's me but on my laptop the whole program is wayyy too huge, i can't even resize it into itself, but it will continue going outwards even when i have to pull it across my sreen? it makes no sense. I can't even see the top right window, please find a fix, I checked settings, preferences, etc, can't find anything"
             }
         ]
     }

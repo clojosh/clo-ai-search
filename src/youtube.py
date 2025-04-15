@@ -114,7 +114,7 @@ class YouTube:
                 "Url": f"https://www.youtube.com/watch?v={video['id']['videoId']}",  # Get the video url
                 "Title": video["snippet"]["title"].title().replace("&#39;", "'").replace("&quot;", '"').replace("&amp;", "&"),
                 "Transcript": transcript,
-                "Description": video["snippet"]["description"],
+                "Description": video["snippet"]["description"],  # YouTube has its own description
                 "PublishedAt": video["snippet"]["publishedAt"],  # Get the video publish date
             }
 
@@ -207,7 +207,7 @@ class YouTube:
         Returns:
             None
         """
-        print("Summarizing:", os.path.split(youtube_channel_dir_path)[1].strip() + "\n")
+        print("\nSummarizing:", os.path.split(youtube_channel_dir_path)[1].strip() + "\n")
 
         environment = Azure(env, brand)
 

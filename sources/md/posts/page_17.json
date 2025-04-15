@@ -1,9 +1,10 @@
 [
     {
         "post_id": 900001472363,
-        "post_title": "Smooth Avatar Does Not Work",
         "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001472363",
+        "post_title": "Smooth Avatar Does Not Work",
         "post_details": "I'm using the default male avatar and have my fabric on particle distance of 3 which looks great but is now showing facets of the avatar. Adjusting avatar smoothing slider is not increasing the division on the mesh.",
+        "post_description": "This web page aims to address issues related to avatar smoothing and mesh division in order to enhance the visual quality of avatars in your application.",
         "created_at": "2020-09-26T06:27:56Z",
         "comments": [
             {
@@ -110,22 +111,6 @@
                 "official": false,
                 "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001472363-Smooth-Avatar-Does-Not-Work/comments/900000962946",
                 "comment_body": "As long as your mesh incoming is a quad geared for subd it should be okay. Otherwise &gt When you import a new avatar character &gt select the avatar &gt go to the property editor &gt surface &gt divide mesh &gt 1~3"
-            }
-        ]
-    },
-    {
-        "post_id": 900001410083,
-        "post_title": "Create Custom Hair for Custom Avatar",
-        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001410083",
-        "post_details": "Can someone explain how to create custom hair for a custom avatar in marvelous designer? There are no (!) tutorials or detailed descriptions and the process simple does not work. If i try to create a custom hair as zacs (Accessory File), i can choose the target avatar (which is loaded into the current scene), a category, avatar ID list (where i select \"ALL\"), the COLLADA-file (i asume that this should be the hair), and so on. But no matter which options i choose, it always says \"Completed\" on save but when i try to load that file, the message \"Invalid file. Mismatched Joint Names.\" or \"Failed to load. This avatar is not available for this accessory file.\" appears. What's the correct way to create custom Hair? EDIT: Just to clarify: The Character is fully rigged in Blender/Character Designer and it works in Marvelous Designer. Also the hair is already modelled/finished as a mesh, and now i want to import this mesh and save it as Accessory File. The reason for that is, that i want small variations of the same avatar mesh/rig and use it with different custom hairstyles in Marvelous Designer.",
-        "created_at": "2020-08-17T13:51:17Z",
-        "comments": [
-            {
-                "author_id": 901141522563,
-                "comment_id": 11712745162009,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001410083-Create-Custom-Hair-for-Custom-Avatar/comments/11712745162009",
-                "comment_body": "I am also very interested in this."
             }
         ]
     }

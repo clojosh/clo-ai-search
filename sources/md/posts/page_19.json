@@ -1,97 +1,10 @@
 [
     {
-        "post_id": 900001086303,
-        "post_title": "Import Garment As OBJ Fails When Tracing Pattern From UVs",
-        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001086303",
-        "post_details": "Hi Im trying to import a clean model with nice UV's within the 0-1 UV space - please see attached. None of the UV islands overlap. When importing OBJ as garment in MD (both v8 and v9) the operation fails with a \"Could Not Recognise UV Borderline Correctly\". I get further with MD8 - UV are read in despite the warnings, and look decent, but programs crashes if I try to save the project. MD9 reads the same file, gives the warnings, but does not read correctly. Please can anyone offer any help? Thank you!",
-        "created_at": "2020-05-28T16:35:02Z",
-        "comments": [
-            {
-                "author_id": 900306869966,
-                "comment_id": 900000428646,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001086303-Import-Garment-As-OBJ-Fails-When-Tracing-Pattern-From-UVs/comments/900000428646",
-                "comment_body": "Please find my import settings attached."
-            },
-            {
-                "author_id": 900201109763,
-                "comment_id": 900000433346,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001086303-Import-Garment-As-OBJ-Fails-When-Tracing-Pattern-From-UVs/comments/900000433346",
-                "comment_body": "What app did you export it from ? The edge for each mapped element on the UV needs to be well defined, that means you need to ensure you don't have any additional conditions - I generally clean my mesh before exporting to make sure 'manifoldness' is sorted. Usually an issue with Maya."
-            },
-            {
-                "author_id": 900306869966,
-                "comment_id": 900000432183,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001086303-Import-Garment-As-OBJ-Fails-When-Tracing-Pattern-From-UVs/comments/900000432183",
-                "comment_body": "I exported from Modo, and did a Mesh Clean Up before export. When importing from MD into Modo also, the UV's are HUGE. I always have to do a re-pack to get them into 0-1 UV space within Modo. Not sure what the issue ism but MD does not like it, and actually crashes - both MD8 and MD9.5"
-            },
-            {
-                "author_id": 900201109763,
-                "comment_id": 900000440183,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001086303-Import-Garment-As-OBJ-Fails-When-Tracing-Pattern-From-UVs/comments/900000440183",
-                "comment_body": "Did you define the 3D models mesh island seam lines before you exported as single welded item? Make sure your Modo scale is set right for importing to MD, and that when you do import you choose either automatic or the right unit scale."
-            },
-            {
-                "author_id": 900850862883,
-                "comment_id": 900001601566,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001086303-Import-Garment-As-OBJ-Fails-When-Tracing-Pattern-From-UVs/comments/900001601566",
-                "comment_body": "I just got this exact same problem on a very simple mesh. And likewise I had run mesh cleanup already. Turned out there was still a vertex needed joining that I picked up with manual vertex merge of 2mm."
-            },
-            {
-                "author_id": 900201109763,
-                "comment_id": 900001603846,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001086303-Import-Garment-As-OBJ-Fails-When-Tracing-Pattern-From-UVs/comments/900001603846",
-                "comment_body": "Yes the incoming file MUST be clean as a whistle and so that means users need to check (and double check) their mesh and UV islands."
-            }
-        ]
-    },
-    {
-        "post_id": 900001065986,
-        "post_title": "Marvelous designer animation to UNITY",
-        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001065986",
-        "post_details": "Hi, Basically: I export the static mesh of a dress from marvelous I rig it into Blender then i export an FBX (mesh + armature) I import the FBX to Unity and i add the physic scripts (cloth constraints, collider creation etc..). Now I'd like to have an existing animation set that uses marvelous physics. So, I designed a dress in MD and managed to move (animate) the avatar and the dress according to a Mixamo FBX animation. In the Animated mode, i correctly recorded the animation. I'm looking for a method to transfer the animated mesh in a Unity project. I can't find a precise guide on the web and my tests (below) have not led to acceptable results: Fbx Export with mc chache: Unity doesn't recognize mc files OBJ sequence: 11gb for a dress (not exploitable) Mdd cache: Unity doesn't recognize mdd files Alembic: The best one, but the dress have no textures in Unity Can someone can help me to reach this goal? Even if it requires to use an external tool (ex. Maya) it would help me a lot! Thanks!",
-        "created_at": "2020-05-22T12:35:16Z",
-        "comments": [
-            {
-                "author_id": 900285557446,
-                "comment_id": 900000412546,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001065986-Marvelous-designer-animation-to-UNITY/comments/900000412546",
-                "comment_body": "Hi marcuswilm, Thanks so much for sharing your video. It is very useful to know the correct pipeline to export animations and textures toward Blender (which I use :) ) Unfortunately, I miss and I'm unable to find the knowledge to do the same export toward a game engine. My concern is: MD is a \"game oriented\" software, so what 3d artists do once they finish the dress? They export the static mesh and animate it with engines physics (Unity, Unreal) or they have/know an \"easy\" way to take advantage of MD animations?"
-            },
-            {
-                "author_id": 900285557446,
-                "comment_id": 900000417903,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001065986-Marvelous-designer-animation-to-UNITY/comments/900000417903",
-                "comment_body": "Hi marcuswilm, Please don't apologize, I really appreciate your help and what you shared with me. And for what it's worth, I appreciate 10 times more your 2D game (I recognize the enormous effort, and at the time it must not have been easy at all) than any game created with Game Guru (surely this too requires a lot of work) :D I agree with you (huge files, I'm not a big software house) and I have come to the same conclusion: the animation export is more suitable to create amazing video clips. If the purpose is to use the model in a graphics engine it is preferable to use its physics (or external plug-ins) to simulate clothes. Ps. I'm curious now, how old are you? :) Giuseppe"
-            },
-            {
-                "author_id": 900285557446,
-                "comment_id": 900000422723,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001065986-Marvelous-designer-animation-to-UNITY/comments/900000422723",
-                "comment_body": "Hi Marcus, Thank you very much, it's very nice to see that you continue to cultivate the passion for video game. Also, it is rare today to find someone who makes a similar effort just to help someone online, so thank you once again. I will definitely try your project, I think it can help me find the right way for my project. I also found your post: https://marvelousdesigner.zendesk.com/hc/en-us/community/posts/900001050046-Exporting-MD-Garments-in-T-Pose (it is very interesting!) Giuseppe"
-            },
-            {
-                "author_id": 6099599146009,
-                "comment_id": 6100311090457,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001065986-Marvelous-designer-animation-to-UNITY/comments/6100311090457",
-                "comment_body": "This post is exactly what i need. but I don't see the answer to your first post Bianco. What is the workflow to reach the goal of realistic cloth animation with texturing in Unity. Did you finally use Alembic? Thanks"
-            }
-        ]
-    },
-    {
         "post_id": 900001058986,
-        "post_title": "Create Custom Button shapes",
         "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001058986",
+        "post_title": "Create Custom Button shapes",
         "post_details": "Trying to create custom button shapes as per below tutorial in MD Ver 8, I am getting this error. can any one tell me where I did wrong. https://www.youtube.com/watch?v=HjFJcvs5TaE https://marvelousdesigner.zendesk.com/hc/en-us/articles/360037396831-ADD-CUSTOM-BUTTON-AND-BUTTONHOLE-Register-Custom-OBJ-as-Button",
+        "post_description": "This web page aims to assist users in troubleshooting errors encountered while creating custom button shapes in Marvelous Designer Version 8, referencing helpful tutorials and resources.",
         "created_at": "2020-05-17T04:36:06Z",
         "comments": [
             {
@@ -196,9 +109,10 @@
     },
     {
         "post_id": 900001042343,
-        "post_title": "Create topology tool problem",
         "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001042343",
+        "post_title": "Create topology tool problem",
         "post_details": "Hi, I am a newbie here. I have a very annoying problem with Create topology tool. It worked fine until I started to retopology sleeves (polygons in yellow circles in the screenshot) . Suddenly it's impossible to draw in the window on the right, I still can draw in the perspective window on the left. It's very difficult to be precise while drawing there. Do you know why is that happening? Maybe I turned on some option or pressed something on the keyboard by accident. I checked what I could but with no success.",
+        "post_description": "This web page aims to provide assistance and solutions for users experiencing issues with the Create Topology tool, specifically related to drawing difficulties in the tool's interface.",
         "created_at": "2020-05-10T14:02:42Z",
         "comments": [
             {
@@ -219,40 +133,11 @@
     },
     {
         "post_id": 900001039583,
-        "post_title": "How do I create baffles or pockets within a cushion?",
         "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001039583",
+        "post_title": "How do I create baffles or pockets within a cushion?",
         "post_details": "I'm trying to create a cushion that will have baffles or chambers inside of it to give it thickness. This means I need to stitch 3 or 4 edges together in some areas. Is this possible to do, or is there a good tutorial or explanation on how to do it? Thanks",
+        "post_description": "This webpage provides a comprehensive guide on how to create baffles or pockets within a cushion to enhance its thickness and comfort through effective stitching techniques.",
         "created_at": "2020-05-08T13:02:52Z",
         "comments": []
-    },
-    {
-        "post_id": 900001046606,
-        "post_title": "MD 9.5 seems very slow to respond",
-        "post_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001046606",
-        "post_details": "It seems like Marvelous Designer 9.5 is very slow to respond. The first time I click on a tool on the toolbar it seems to pause for 20-30 seconds. The second time I click on that tool it is much faster. Is this normal? My PC has an AMD Ryzen 7 2700X (8 core, 16 thread), 32 GB RAM, 512 GB 3500 MB/s NVMe drive, and nVidia GTX 1060 Ti graphics adapter.",
-        "created_at": "2020-05-05T22:34:38Z",
-        "comments": [
-            {
-                "author_id": 900959697643,
-                "comment_id": 900001022466,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001046606-MD-9-5-seems-very-slow-to-respond/comments/900001022466",
-                "comment_body": "I have almost the same issue. I have quite lower CPU (i5-8600k) but stronger GPU (RTX2080) than you Brian, RAM and NVME just as your specs. I can't complain about direct simulation (it goes well) but the performance in the pattern editor is horrible for me. When clicking anywhere with a different tool than a second before it freezes the whole system for 10 seconds. Then goes smoothly for a while and after changing anything with another tool - same problem. It freezes even during creating a small simple square with 25 particle distance. As if creating a few new polygons was a totally CPU killing process. Haven't noticed it in previous versions of MD (I guess 8 was going smooth all the time). Can anyone relate to our issues?"
-            },
-            {
-                "author_id": 900986018466,
-                "comment_id": 900001042486,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001046606-MD-9-5-seems-very-slow-to-respond/comments/900001042486",
-                "comment_body": "Same for me. Wanted to try the free demo and at first it was very performant. Then out of nowhere MD started to freeze for at least 10 seconds at every step i do (synchronizing: start). Really weird behaviour and almost not useable. Actually wanted to buy a licence after the trial but in this state its not fun to use.. My System: i7 7700k, 1080Ti, 32GB RAM"
-            },
-            {
-                "author_id": 900483563463,
-                "comment_id": 900001187686,
-                "official": false,
-                "comment_url": "https://support.marvelousdesigner.com/hc/en-us/community/posts/900001046606-MD-9-5-seems-very-slow-to-respond/comments/900001187686",
-                "comment_body": "Brand new MSI mobile workstation, with ALL UPDATES to everything, running an i7(10th gen) RTX Quadro 3000 with 6GB GPU RAM and 32GB system RAM. 8 cores(so, 16 cores) ...and this silly machine LITERALLY TAKES 12 MINUTES EVERY TIME I ALTER A PATTERN, and I mean: click a point and move a point...takes 12 minutes for the pattern to solve. This, BEFORE I even TRY to simulate! No amount of particle distance, scene altering, or digital voodoo is making one second of difference, either! My decade old laptop ran faster. It was a Dell 8600 with 32GB RAM and six cores, also running an Intel i7. Difference with all our machines is THAT machine ran an obsolete version of Open GL. My desktop workstation uses an AMD Ryzen \"Some number version\" - its BLAZING FAST, has NO HESITATION doing anything in MD. I can edit patterns, run GPU or normal simulations and the system won't even blink if I'm multitasking and have 50+ tabs open in an internet browser! I suspect the issue has to be with Intel chips. So far, changing simulation settings haven't helped even 1%. The issue isn't that I have a new machine and need to check my BIOS. You two have used/setup machines and you're having the same issues I'm having with a new system with all relevant updates. I just spent three hours editing a pattern that should have taken a minute and a half to complete editing. Instead...Im on HOUR THREE!!!! of making simple length adjustments to a pattern. HOUR...THREE. At this point, Im watching a Hollywood movie at 2FPS."
-            }
-        ]
     }
 ]

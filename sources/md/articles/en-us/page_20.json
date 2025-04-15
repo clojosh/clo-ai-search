@@ -1,35 +1,11 @@
 [
     {
-        "ArticleId": "34171572605849",
-        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/34171572605849",
-        "Title": "2. Modular Configuration & Auto Fitting",
-        "Content": "",
-        "YoutubeLinks": [
-            "https://www.youtube.com/watch?v=UAu2HQ6MQeA"
-        ],
-        "CategoryId": 36105732940057,
-        "Category": "Tutorials",
-        "SectionId": 36105769514393,
-        "Section": "UEFN Creators Tutorial ",
-        "Tokens": 0
-    },
-    {
-        "ArticleId": "4408190560025",
-        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/4408190560025",
-        "Title": "Live Streams",
-        "Content": "WEDNESDAY 12PM LIVE STREAMS YouTube (Link) Twitch (Link) Watch the old ones YouTube (Link)",
-        "YoutubeLinks": [],
-        "CategoryId": 36105733022617,
-        "Category": "Getting Started",
-        "SectionId": 36105751128089,
-        "Section": "Getting Started",
-        "Tokens": 26
-    },
-    {
         "ArticleId": "35273113843353",
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/35273113843353",
         "Title": "Critical Issue with Patch Version(2024.1.93)",
         "Content": "Unfortunately, after the release of our latest software patch(2024.1.93), we have identified a critical issue that impacts the performance and functionality of our software. Our team is actively working to resolve this issue as quickly as possible. In the meantime, please revert to the previous stable version(2024.1.71) to ensure a seamless experience. To revert to the previous version, please follow these steps: 1. Uninstall the current version of the software. [How to uninstall Marvelous Designer completely] 2. Download the previous version from the following link: [Download Link] 3. Install the previous version and restart your device. We sincerely apologize for any inconvenience this may cause and appreciate your understanding and cooperation. Rest assured, we are dedicated to providing you with the best possible experience and are working diligently to fix the issue. If the banner on the website comes down, please consider the issue resolved. If you have any question, please contact us.",
+        "ContentDescription": "This web page provides essential instructions for reverting to a stable software version due to a critical issue in the latest release, along with an assurance of our team's commitment to resolving the problem promptly.",
+        "CreatedAt": "2024-07-19T07:06:52Z",
         "YoutubeLinks": [],
         "CategoryId": 360002380272,
         "Category": "FAQ",
@@ -42,6 +18,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360037297411",
         "Title": "I got H0007 “Sentinel HASP key not found” message. What should I do?",
         "Content": "Please refer the manual link \"link\"",
+        "ContentDescription": "\"Access the comprehensive manual through the provided link for detailed guidance and information.\"",
+        "CreatedAt": "2019-11-28T01:37:29Z",
         "YoutubeLinks": [],
         "CategoryId": 360002380272,
         "Category": "FAQ",
@@ -54,6 +32,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/360037297431",
         "Title": "I got H0040 “Communication error between local and remote Sentinel HASP License Managers” error.",
         "Content": "The error occurs when the Server PC and the Client PC could not communicate with each other. To solve the problem, Enter services.msc in the execution window. Check if Sentinel Local License Manager is getting started in the service window. If the status is not getting started, click your right mouse button and choose Start then restart your computer. If you still have the problem, check if the version of the HASP driver in the Server PC and the Client PC is the same. If they are different, make their version the same. You can get the version information from the image below. If any of the above methods do not work, ask a network expert for help on how to communicate the status between ports such as Server and Client Check if 1947 port is occupied by other services or not.",
+        "ContentDescription": "This webpage provides troubleshooting steps for resolving communication errors between Server and Client PCs, including checking service status, synchronizing HASP driver versions, and verifying port availability.",
+        "CreatedAt": "2019-11-28T01:37:29Z",
         "YoutubeLinks": [],
         "CategoryId": 360002380272,
         "Category": "FAQ",
@@ -66,6 +46,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/29750298532249",
         "Title": "I have a verification issue. What should I do?",
         "Content": "Objective This FAQ will cover the trouble shooting for a verification issue. Details Please use Chrome instead of other internet browsers. Marvelous Designer, and CLO-SET website is optimized as Chrome. [CASE 1]If you didn't receive the verification email, please check your spam mailbox. Sometimes the verification email can be found in your spam folder, or you will need to refresh your browser. [CASE 2]If Marvelous Designer web requires verification, even if you already verify it, please remove your old cookie and cache. In Chrome On your computer, open Chrome. At the top right, click More. Click \"Clear Browsing History\". Select a period on the top. To delete everything, select All time. Activate the checkboxes next to \"Cookies and other site data\" and \"Cached images and files\". Click Clear data. [CASE 3]Some school domains block external emails. If so, you can check your school domain is connected to the verification email on Verify Email Address Link. If you see the result as \"Connecting did not work\", please ask your school admin (especially the technical division) to check if you could receive the verification email from Marvelous Designer. If you still have not received your verification email, please reach out to Marvelous Designer via Contact Us.",
+        "ContentDescription": "This FAQ page provides troubleshooting tips for resolving verification email issues when using the Marvelous Designer and CLO-SET websites, specifically recommending the use of Chrome for optimal performance.",
+        "CreatedAt": "2024-03-11T06:33:08Z",
         "YoutubeLinks": [],
         "CategoryId": 360002380272,
         "Category": "FAQ",
@@ -78,6 +60,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000671263",
         "Title": "Shirring Dress",
         "Content": "In this lesson, follow along and create \"Shirring\" aka gathering on a dress created from a basic shirt block.",
+        "ContentDescription": "This web page provides a step-by-step guide to creating shirring on a dress using a basic shirt block pattern.",
+        "CreatedAt": "2020-04-22T07:09:13Z",
         "YoutubeLinks": [
             "https://www.youtube.com/watch?v=MXJXEEk3VNQ"
         ],
@@ -92,6 +76,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900001985403",
         "Title": "Set OBJ Objects",
         "Content": "In this tutorial, you will learn how to import Objects before we actually start creating interior Fabric. You can use the files at the attachment.",
+        "ContentDescription": "This tutorial teaches you how to import objects as a foundational step before creating interior fabric, with downloadable files provided for your use.",
+        "CreatedAt": "2020-07-31T08:43:14Z",
         "YoutubeLinks": [
             "https://www.youtube.com/watch?v=rnJ1vYhyQ7o"
         ],
@@ -106,6 +92,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900001986786",
         "Title": "Headboard",
         "Content": "Plain Headboard In this video, let's make a Headboard cover. There are many different types of headboard but I will make a plain one this time. Vertical Upholstered Headboard In this course, we will create a Vertical Upholstered Headboard. Diamond Upholstered Headboard In this course, we will create a Diamond Upholstered Headboard. Diamond Tufted Headboard In this course, we will create a Diamond Tufted Headboard.",
+        "ContentDescription": "Explore a variety of headboard design tutorials, including plain, vertical, diamond, and tufted styles, to elevate your bedroom decor.",
+        "CreatedAt": "2020-07-31T08:59:37Z",
         "YoutubeLinks": [
             "https://www.youtube.com/watch?v=WhNcS9RVloM",
             "https://www.youtube.com/watch?v=DZsbHA1bzpA",
@@ -123,6 +111,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/20778762463257",
         "Title": "0. Beginner Stream",
         "Content": "Explore our beginner-focused streaming content, carefully curated to provide you with the best learning materials! Beginner Stream 1: Making a Basic Block for your Avatar! Beginner stream 2: Making shirts and finishing stitches Beginner stream 3. Pants and final layering",
+        "ContentDescription": "\"Discover our expertly curated beginner streaming content designed to guide you through creating your own avatar with essential skills in clothing design and layering!\"",
+        "CreatedAt": "2023-07-18T01:19:16Z",
         "YoutubeLinks": [
             "https://www.youtube.com/watch?v=dEY-P9VIAG0",
             "https://www.youtube.com/watch?v=-SGngQKjb94",
@@ -139,6 +129,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000675326",
         "Title": "Knit Shirt",
         "Content": "In this lesson, follow along and create a stretch turtle neck knit shirt from a basic block shirt. This shirt is used in the Jeans &amp Utility Jacket tutorials as an asset.",
+        "ContentDescription": "Learn how to transform a basic block shirt into a stylish stretch turtle neck knit shirt that will complement your Jeans & Utility Jacket projects.",
+        "CreatedAt": "2020-04-22T07:10:48Z",
         "YoutubeLinks": [
             "https://www.youtube.com/watch?v=YFhZxa28nv4"
         ],
@@ -153,6 +145,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000671203",
         "Title": "Color Blocked Shirt",
         "Content": "Follow along with this lesson and create a color blocked button down shirt from a basic shirt pattern in Marvelous Designer!",
+        "ContentDescription": "Learn how to transform a basic shirt pattern into a stylish color-blocked button-down shirt using Marvelous Designer in this step-by-step lesson!",
+        "CreatedAt": "2020-04-22T07:08:39Z",
         "YoutubeLinks": [
             "https://www.youtube.com/watch?v=I4-eLbF4QK4"
         ],
@@ -167,6 +161,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000671323",
         "Title": "Pleats",
         "Content": "Learn how to create different types of pleats in Marvelous Designer and create a Knife pleat skirt.",
+        "ContentDescription": "Discover step-by-step techniques to create various pleats in Marvelous Designer and design a stylish Knife pleat skirt.",
+        "CreatedAt": "2020-04-22T07:09:40Z",
         "YoutubeLinks": [
             "https://www.youtube.com/watch?v=MczNdvzegRE"
         ],
@@ -181,6 +177,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000675266",
         "Title": "Pillow",
         "Content": "In this lesson we introduce how to use pressure, focus on wrinkles and create a pillow with a pillow case.",
+        "ContentDescription": "This web page aims to teach users how to effectively use pressure techniques to reduce wrinkles and guide them in creating a custom pillow and pillowcase.",
+        "CreatedAt": "2020-04-22T07:10:12Z",
         "YoutubeLinks": [
             "https://www.youtube.com/watch?v=iKr-q3w12eA"
         ],
@@ -195,6 +193,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900002014566",
         "Title": "Cover and Protectors",
         "Content": "Mattress Cover In this course, we will make a Mattress Cover. Box Stitched Mattress Protector In this course, we will make Box Stitched Mattress Protector. Double Stripe Stitched Mattress Protector In this course, we will make Double Stripe Stitched Mattress Protector.",
+        "ContentDescription": "Discover how to create custom mattress covers and protectors, including box stitched and double stripe stitched designs, in our comprehensive sewing course.",
+        "CreatedAt": "2020-08-03T06:31:27Z",
         "YoutubeLinks": [
             "https://www.youtube.com/watch?v=wd8MVNgUaRQ",
             "https://www.youtube.com/watch?v=2VA9_KecYXg",
@@ -211,6 +211,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900002013183",
         "Title": "Shirring and Crease Principle",
         "Content": "Shirring principle In this course, we will explore the different types of shirring shapes based on fabric. In addition to the wrinkles generated by the default fabric, there are various types of wrinkles, such as narrow wrinkles and wide wrinkles. You can achieve the desired wrinkles by adjusting the Detail items in the Fabric Property, but it may be challenging for beginners. However, if you understand the differences in how each fabric forms wrinkles, you can easily create various styles of wrinkles. Crease principle In this course, we will learn about the shape of creases based on fabric. When fabrics are stretched or overlapped with each other, various creases are formed based on the type of fabric. Following the Shirring principle, you can refer to the creases made for each fabric and apply them to the clothes you plan to create in the future.",
+        "ContentDescription": "This web page aims to provide a comprehensive overview of the shirring and crease principles in fabric design, empowering users to manipulate and create diverse styles of wrinkles and creases tailored to their garment projects.",
+        "CreatedAt": "2020-08-03T06:51:30Z",
         "YoutubeLinks": [
             "https://www.youtube.com/watch?v=Ioq8BTTkbCA",
             "https://www.youtube.com/watch?v=hT19Ly5qfU8"
@@ -226,6 +228,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900002124103",
         "Title": "Sheets and Toppers",
         "Content": "Sheet In this course, we will make a sheet. Box Stitched Topper In this course, we will create a box stitched topper. Onion Stitched Topper In this course, we will create an Onion Stitched Topper.",
+        "ContentDescription": "This web page provides engaging courses focused on crafting various textile projects, including a sheet and two unique toppers: a box stitched topper and an onion stitched topper.",
+        "CreatedAt": "2020-08-11T01:26:01Z",
         "YoutubeLinks": [
             "https://www.youtube.com/watch?v=ulIZkp6Xr7U",
             "https://www.youtube.com/watch?v=JWxp91lM8ng",
@@ -242,6 +246,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900002134483",
         "Title": "Comforters",
         "Content": "Plain Comforter In this course, we will make Plain Comforter. Twin Border Comforter In this course, we will create a Twin Border Comforter. Stripe Stitched Comforter In this course, we will make Stripe Stitched Comforter. Double Stripe Stitched Comforter In this course, we will make a Double Stripe Stitched Comforter. Box Stitched Comforter In this course, we will make Box Stitched Comforter.",
+        "ContentDescription": "This webpage offers a series of sewing courses dedicated to creating a variety of stylish comforters, including Plain, Twin Border, Stripe Stitched, Double Stripe Stitched, and Box Stitched designs.",
+        "CreatedAt": "2020-08-11T08:56:48Z",
         "YoutubeLinks": [
             "https://www.youtube.com/watch?v=rEVftAcjEx0",
             "https://www.youtube.com/watch?v=d0k1UE-fgNM",
@@ -260,6 +266,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000672143",
         "Title": "Pockets",
         "Content": "In this lesson, follow along as we cover the basics of creating cargo and patch pockets. The pant pocket is made in this tutorial and will be used in the Jean tutorial.",
+        "ContentDescription": "Learn how to create cargo and patch pockets in this lesson, which includes a tutorial on making a pant pocket for use in your jean-making project.",
+        "CreatedAt": "2020-04-22T07:25:34Z",
         "YoutubeLinks": [
             "https://www.youtube.com/watch?v=7_tp6d4QczY"
         ],
@@ -274,6 +282,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000671443",
         "Title": "Jeans",
         "Content": "In this lesson, follow along and create a pair of women's stretch Jeans from a men's pants pattern.",
+        "ContentDescription": "Learn how to transform a men's pants pattern into a stylish pair of women's stretch jeans with this step-by-step lesson.",
+        "CreatedAt": "2020-04-22T07:11:20Z",
         "YoutubeLinks": [
             "https://www.youtube.com/watch?v=fn7mZsly5IE"
         ],
@@ -288,6 +298,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000671463",
         "Title": "Utility Jacket",
         "Content": "In this lesson, follow along using Modular Configurator T-shirt to create a Jacket &amp introduce zippers Assets from the previous lessons to create a finished look: Pockets, Jeans &amp Knit Shirt are used.",
+        "ContentDescription": "\"Learn how to enhance your Modular Configurator T-shirt design by creating a stylish jacket with zippers and incorporating pockets, jeans, and a knit shirt for a complete look.\"",
+        "CreatedAt": "2020-04-22T07:11:48Z",
         "YoutubeLinks": [
             "https://www.youtube.com/watch?v=VLsl8lhOKCI"
         ],
@@ -302,6 +314,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000671483",
         "Title": "Pencil, Straight and A-Line Skirt",
         "Content": "Starting with the basic skirt, and make a various styles of skirts. Watch these videos to get more attractive designs for your female avatars. The videos are divided by styles and you can check the names to choose the desired one. Pencil Skirt Straight Skirt A-Line Skirt",
+        "ContentDescription": "Explore our collection of video tutorials to transform a basic skirt into a variety of stylish designs for your female avatars, including Pencil, Straight, and A-Line skirts.",
+        "CreatedAt": "2020-04-22T07:12:14Z",
         "YoutubeLinks": [
             "https://www.youtube.com/watch?v=u5zEqRo_I_k",
             "https://www.youtube.com/watch?v=nF_UII_MBOY",
@@ -318,6 +332,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000753306",
         "Title": "Flared and Circle Skirt",
         "Content": "Starting with the basic skirt, and make a various styles of skirts. Watch these videos to get more attractive designs for your female avatars. The videos are divided by styles and you can check the names to choose the desired one. Flared Skirt Circle Skirt",
+        "ContentDescription": "Explore our curated video tutorials to transform a basic skirt into a variety of stylish designs for your female avatars, including flared and circle skirts.",
+        "CreatedAt": "2020-04-28T05:32:52Z",
         "YoutubeLinks": [
             "https://www.youtube.com/watch?v=hblDOfk1owg",
             "https://www.youtube.com/watch?v=3OhPqYB7aSY"
@@ -333,6 +349,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000753326",
         "Title": "Gathered and Gathered Midi Skirt",
         "Content": "Starting with the basic skirt, and make a various styles of skirts. Watch these videos to get more attractive designs for your female avatars. The videos are divided by styles and you can check the names to choose the desired one. Gathered Skirt Gathered Midi Skirt",
+        "ContentDescription": "Explore our curated video tutorials to transform a basic skirt into a variety of stylish designs for your female avatars, including gathered and midi skirts.",
+        "CreatedAt": "2020-04-28T05:33:27Z",
         "YoutubeLinks": [
             "https://www.youtube.com/watch?v=RZRvugzgx1s",
             "https://www.youtube.com/watch?v=fJ-ZwSlQu7Q"
@@ -348,6 +366,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000877823",
         "Title": "Tight Pants",
         "Content": "From basic fit pants to wide fit, tight fit, and athletic pants. Check the videos to get different basic styles of pants. Then you can design your own pants based on them. Download and use the attached pattern image.",
+        "ContentDescription": "\"Explore a variety of pant styles from basic to athletic, watch instructional videos, and unleash your creativity by designing your own custom pants using our downloadable pattern!\"",
+        "CreatedAt": "2020-05-12T01:17:36Z",
         "YoutubeLinks": [
             "https://www.youtube.com/watch?v=4M0rhKkFSR0"
         ],
@@ -362,6 +382,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000872946",
         "Title": "Athletic Pants",
         "Content": "From basic fit pants to wide fit, tight fit, and athletic pants. Check the videos to get different basic styles of pants. Then you can design your own pants based on them. Download and use the attached pattern image.",
+        "ContentDescription": "Discover various styles of pants, from basic to athletic fits, and customize your own designs using our videos and downloadable patterns.",
+        "CreatedAt": "2020-05-12T01:18:10Z",
         "YoutubeLinks": [
             "https://www.youtube.com/watch?v=pA5xxRqRoMw"
         ],
@@ -376,6 +398,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000877803",
         "Title": "Wide Pants",
         "Content": "From basic fit pants to wide fit, tight fit, and athletic pants. Check the videos to get different basic styles of pants. Then you can design your own pants based on them. Download and use the attached pattern image.",
+        "ContentDescription": "Discover a variety of pant styles from basic to athletic, watch instructional videos, and design your own custom fit using our downloadable pattern image.",
+        "CreatedAt": "2020-05-12T01:16:57Z",
         "YoutubeLinks": [
             "https://www.youtube.com/watch?v=DrOjhwVbpmA"
         ],
@@ -390,6 +414,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000877743",
         "Title": "Base Pants",
         "Content": "From basic fit pants to wide fit, tight fit, and athletic pants. Check the videos to get different basic styles of pants. Then you can design your own pants based on them. Download and use the attached pattern image.",
+        "ContentDescription": "\"Explore a variety of pants styles and unleash your creativity by designing your own with our customizable patterns and instructional videos.\"",
+        "CreatedAt": "2020-05-12T01:08:56Z",
         "YoutubeLinks": [
             "https://www.youtube.com/watch?v=9sVQGUxOgnc"
         ],
@@ -404,6 +430,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000750306",
         "Title": "5. 2D Pattern Editing: Slash and Spread",
         "Content": "Slash and Spread In this video, we will teach you how to spread the pattern to edit the pattern or slash the pattern to be smaller. This function is commonly used to deal with skirts pattern or truffle patterns.",
+        "ContentDescription": "This web page provides a tutorial on how to effectively use the slash and spread technique to modify skirt and truffle patterns for optimal fit and design.",
+        "CreatedAt": "2020-04-28T03:44:15Z",
         "YoutubeLinks": [
             "https://www.youtube.com/watch?v=kfXrTspnOe4"
         ],
@@ -418,6 +446,8 @@
         "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000743963",
         "Title": "7. 2D Pattern Editing: Make Pleats",
         "Content": "Make Pleats In this video, we will teach you how to create pleats in Marvelous Designer.",
+        "ContentDescription": "Learn how to expertly create pleats in Marvelous Designer with our step-by-step video tutorial.",
+        "CreatedAt": "2020-04-28T03:44:11Z",
         "YoutubeLinks": [
             "https://www.youtube.com/watch?v=pnx-Oz4NDfY"
         ],
@@ -426,5 +456,38 @@
         "SectionId": 36105766307097,
         "Section": "Tools and Menus",
         "Tokens": 21
+    },
+    {
+        "ArticleId": "900000750286",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000750286",
+        "Title": "6. 2D Pattern Editing: Trace",
+        "Content": "Trace In this video, we will teach you how to extract internal lines and use them to create internal shapes or patterns in Marvelous Designer.",
+        "ContentDescription": "Learn how to extract internal lines and create intricate shapes and patterns in Marvelous Designer with this informative video tutorial.",
+        "CreatedAt": "2020-04-28T03:44:13Z",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=GK9SdaB4uaQ"
+        ],
+        "CategoryId": 36105732940057,
+        "Category": "Tutorials",
+        "SectionId": 36105766307097,
+        "Section": "Tools and Menus",
+        "Tokens": 28
+    },
+    {
+        "ArticleId": "900000750326",
+        "Source": "https://support.marvelousdesigner.com/hc/en-us/articles/900000750326",
+        "Title": "4. 2D Pattern Editing: Pattern Pop-up Menu",
+        "Content": "Pattern Pop-up Menu In this video, we will show you the features of the right-click pop-up menus with transform pattern tools. You can see lots of useful functions here. Linked Editing In this video, we will teach you how to use Linked Editing functions in Marvelous Designer. It will help you to save a lot of time when creating garments.",
+        "ContentDescription": "Discover essential features and time-saving techniques for using right-click pop-up menus and Linked Editing in Marvelous Designer to enhance your garment creation process.",
+        "CreatedAt": "2020-04-28T03:44:16Z",
+        "YoutubeLinks": [
+            "https://www.youtube.com/watch?v=gRwVMmpmNhw",
+            "https://www.youtube.com/watch?v=Mqu_CWSrOPU"
+        ],
+        "CategoryId": 36105732940057,
+        "Category": "Tutorials",
+        "SectionId": 36105766307097,
+        "Section": "Tools and Menus",
+        "Tokens": 70
     }
 ]

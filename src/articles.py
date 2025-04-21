@@ -137,7 +137,7 @@ class Article:
                         "Title": article["title"],
                         "Content": article["body"],
                         "ContentDescription": azure.openai_helper.create_webpage_description(article["body"]),
-                        "CreatedAt": article["created_at"],
+                        "CreatedAt": article["updated_at"],
                         "YoutubeLinks": article["youtube_links"],
                         "CategoryId": article["category_id"],
                         "Category": article["category"],

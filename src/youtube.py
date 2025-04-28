@@ -1,6 +1,7 @@
 import json
 import multiprocessing
 import os
+import shutil
 import ssl
 from datetime import datetime, timedelta
 from io import BytesIO
@@ -207,7 +208,7 @@ class YouTube:
         Returns:
             None
         """
-        print("\nSummarizing:", os.path.split(youtube_channel_dir_path)[1].strip() + "\n")
+        print("\n" + os.path.split(youtube_channel_dir_path)[1].strip().title())
 
         environment = Azure(env, brand)
 
@@ -287,7 +288,7 @@ class YouTube:
 
 if __name__ == "__main__":
     stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
-    brand = questionary.select("Which brand?", choices=["clo3d", "md"]).ask()
+    brand = questionary.select("Which brand?", choices=["clo3d", "md", "allinone"]).ask()
     task = questionary.select(
         "What task?",
         choices=[
@@ -314,4 +315,13 @@ if __name__ == "__main__":
             yt.mp_summarize_transcripts()
 
         elif task == "Upload All Transcripts":
+            if brand == "allinone":
+                for folder in os.listdir("data"):
+                    if folder == "clo3d" or folder == "md":
+                        for file in os.listdir(os.path.join("data", folder, "youtube", "channel")):
+                            shutil.copy(
+                                os.path.join("data", folder, "youtube", "channel", file),
+                                os.path.join(yt.youtube_channel_dir_path, f"{folder}_{file}"),
+                            )
+
             yt.upload_transcripts()

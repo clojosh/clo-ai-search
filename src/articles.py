@@ -2,6 +2,7 @@ import json
 import multiprocessing
 import os
 import re
+import shutil
 import sys
 from pathlib import Path
 
@@ -72,7 +73,7 @@ class Article:
 
     @staticmethod
     def get_zendesk_documents(stage: str, brand: str, language: str, article_path: str, page: int):
-        print("\nGetting Zendesk Articles for page " + str(page))
+        print("\nPage " + str(page))
 
         azure = Azure(stage, brand, language)
 
@@ -171,7 +172,7 @@ class Article:
 
     @staticmethod
     def upload_documents(stage: str, brand: str, language: str, article_path: str, file: str):
-        print(f"\nUploading {file}")
+        print(f"\n{file.title()}")
 
         azure = Azure(stage, brand, language)
 
@@ -200,7 +201,10 @@ class Article:
                 azure.search_client.upload_documents(documents)
 
     def mp_upload_documents(self):
-        file_paths = sorted(os.listdir(self.azure.get_article_path()), key=lambda x: int(x.partition("_")[2].partition(".")[0]))
+        if self.azure.brand == "allinone":
+            file_paths = os.listdir(self.azure.get_article_path())
+        else:
+            file_paths = sorted(os.listdir(self.azure.get_article_path()), key=lambda x: int(x.partition("_")[2].partition(".")[0]))
 
         upload_documents_params = []
         for file in file_paths:
@@ -213,8 +217,8 @@ class Article:
 
 
 if __name__ == "__main__":
-    stage = questionary.select("Which stage?", choices=["prod", "dev"]).ask()
-    brand = questionary.select("Which brand?", choices=["clo3d", "closet", "closet_connect", "clovf", "md"]).ask()
+    stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
+    brand = questionary.select("Which brand?", choices=["clo3d", "closet", "closet_connect", "clovf", "md", "allinone"]).ask()
     language = questionary.select("Which language?", choices=["English", "Korean"]).ask()
     task = questionary.select(
         "What task?", choices=["Get Zendesk Article", "Get All Zendesk Articles", "Delete Articles", "Upload Article", "Upload All Articles"]
@@ -242,6 +246,15 @@ if __name__ == "__main__":
                         break
 
     elif task == "Upload All Articles":
+        if brand == "allinone":
+            for folder in os.listdir("data"):
+                if folder != "allinone":
+                    for file in os.listdir(os.path.join("data", folder, "articles", "en-us")):
+                        shutil.copy(
+                            os.path.join("data", folder, "articles", "en-us", file),
+                            os.path.join(article.azure.get_article_path(), f"{folder}_{file}"),
+                        )
+
         article.mp_upload_documents()
 
     elif task == "Delete Articles":

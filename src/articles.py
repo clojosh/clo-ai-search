@@ -24,7 +24,7 @@ class Article:
         self.azure = azure
         self.search_client = azure.search_client
 
-    def delete_document(self, article_id: str | list):
+    def delete_document(self, article_id: str):
         print(f"\nDeleting {article_id}")
 
         if isinstance(article_id, list):

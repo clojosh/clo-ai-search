@@ -8,6 +8,7 @@ from pathlib import Path
 
 import questionary
 import requests  # type: ignore
+from rich import print
 
 from tools.azure import Azure
 from tools.misc import (
@@ -25,7 +26,7 @@ class Article:
         self.azure = azure
         self.search_client = azure.search_client
 
-    def delete_document(self, article_id: str | list):
+    def delete_document(self, article_id: str):
         print(f"\nDeleting {article_id}")
 
         if isinstance(article_id, list):
@@ -73,7 +74,7 @@ class Article:
 
     @staticmethod
     def get_zendesk_documents(stage: str, brand: str, language: str, article_path: str, page: int):
-        print("\nPage " + str(page))
+        print("\nRetrieving Page " + str(page))
 
         azure = Azure(stage, brand, language)
 
@@ -95,28 +96,40 @@ class Article:
                 # 115012589987 - Requested by John to exclude in CLO3D
                 # 360005512874 - References Article Section that has PDF attachments
                 # 360002306994 - Lessons Section
-                # CLOSET:
-                # 5026352977423, 6280973212175 - Update Article Section
-                # 360001149855, 360001011655, 360000854796 - Joining Connect
-                # 7975498603663 - Account Section, CVF Articles Cover this section
-                if (brand == "clo3d" and (article["section_id"] in [360005512874, 360002306994] or article["id"] in [115012589987])) or (
-                    brand == "closet"
-                    and article["section_id"] in [5026352977423, 6280973212175, 360001149855, 360001011655, 360000854796, 7975498603663]
-                ):
+                if brand == "clo3d" and (article["section_id"] in [360005512874, 360002306994] or article["id"] in [115012589987]):
                     continue
 
+                # CLOSET Excluded Sections:
+                # Joining Connect - Guideline(44750284613145), Uploading(44750300689049), Creating(44750284849433)
+                # CLO-SET News - New Feature Updates(44750266902169), CLO-SET News(44750267340697)
+                # Account(CVF Articles Cover this section) - 44750313539737
+                if brand == "closet" and article["section_id"] in [
+                    44750284613145,
+                    44750300689049,
+                    44750284849433,
+                    44750266902169,
+                    44750267340697,
+                    44750313539737,
+                ]:
+                    continue
+
+                # Removes title from the URLs
                 if brand == "clo3d":
                     article["html_url"] = re.findall(rf"https:\/\/support\.clo3d\.com\/hc\/{azure.get_locale()}\/articles\/\d+", article["html_url"])[
                         0
                     ]
                 elif brand == "closet":
                     article["html_url"] = re.findall(
-                        rf"https:\/\/support\.clo-set\.com\/hc\/{azure.get_locale()}\/articles\/\d+", article["html_url"]
+                        rf"https:\/\/clo-set-hc\.zendesk\.com\/hc\/{azure.get_locale()}\/articles\/\d+", article["html_url"]
+                    )[0]
+                elif brand == "connect":
+                    article["html_url"] = re.findall(
+                        rf"https:\/\/connect-hc\.zendesk\.com\/hc\/{azure.get_locale()}\/articles\/\d+", article["html_url"]
                     )[0]
                 elif brand == "clovf":
-                    article["html_url"] = re.findall(rf"https:\/\/clovf\.zendesk\.com\/hc\/{azure.get_locale()}\/articles\/\d+", article["html_url"])[
-                        0
-                    ]
+                    article["html_url"] = re.findall(
+                        rf"https:\/\/clovf-hc\.zendesk\.com\/hc\/{azure.get_locale()}\/articles\/\d+", article["html_url"]
+                    )[0]
                 elif brand == "md":
                     article["html_url"] = re.findall(
                         rf"https:\/\/support\.marvelousdesigner\.com\/hc\/{azure.get_locale()}\/articles\/\d+", article["html_url"]
@@ -218,11 +231,12 @@ class Article:
 
 if __name__ == "__main__":
     stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
-    brand = questionary.select("Which brand?", choices=["clo3d", "closet", "closet_connect", "clovf", "md", "allinone"]).ask()
+    brand = questionary.select("Which brand?", choices=["clo3d", "closet", "connect", "clovf", "md", "allinone"]).ask()
     language = questionary.select("Which language?", choices=["English", "Korean"]).ask()
     task = questionary.select(
         "What task?", choices=["Get Zendesk Article", "Get All Zendesk Articles", "Delete Articles", "Upload Article", "Upload All Articles"]
     ).ask()
+
     article = Article(Azure(stage, brand, language))
 
     if task == "Get Zendesk Article":
@@ -258,4 +272,5 @@ if __name__ == "__main__":
         article.mp_upload_documents()
 
     elif task == "Delete Articles":
-        article.delete_document(["9068601237007", "360002216776", "7975553659023", "7975557113615", "360002199276"])
+        article.delete_document("360002199276")
+        article.delete_document("360002199276")

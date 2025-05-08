@@ -84,7 +84,7 @@ class API:
             code_block_dump.append(
                 {
                     "ArticleId": shortuuid.uuid(),  # Generate a unique identifier
-                    "Source": "https://developer.clo3d.com/scenario.html",  # URL of the original source
+                    "Source": self.base_url + "scenario.html",  # URL of the original source
                     "Title": title,  # Title of the article
                     "Content": code.replace("API Scenario", "").replace("=======================", "").replace("****", ""),  # Content of the article
                     "ContentDescription": self.azure.openai_helper.create_webpage_description(code),  # Description of the content
@@ -126,7 +126,7 @@ class API:
             api_list.append(
                 {
                     "ArticleId": shortuuid.uuid(),
-                    "Source": url,
+                    "Source": self.base_url + "list.html",
                     "Title": doc[0].strip(),
                     "Content": doc[1],
                     "ContentDescription": self.azure.openai_helper.create_webpage_description(doc[1]),
@@ -163,7 +163,7 @@ class API:
             api_option_type.append(
                 {
                     "ArticleId": shortuuid.uuid(),  # Generate a unique identifier
-                    "Source": url,  # URL of the original source
+                    "Source": self.base_url + "optiontype.html",  # URL of the original source
                     "Title": doc[0].strip(),  # Title of the article
                     "Content": doc[1].strip(),  # Content of the article
                     "ContentDescription": self.azure.openai_helper.create_webpage_description(doc[1].strip()),  # Description of the content

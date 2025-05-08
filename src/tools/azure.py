@@ -71,9 +71,51 @@ class Azure:
             self.AZURE_OPENAI_EMB_DEPLOYMENT,
         )
 
-    def get_locale(self):
-        locale = {"English": "en-us", "Espanol": "es", "Japanese": "ja", "Korean": "ko", "Portuguese": "pt-br", "Chinese": "zh-cn", "Taiwanese": "tw"}
+    def get_locale(self) -> str:
+        """
+        Returns the locale for the given language.
+
+        Args:
+            self (Azure): The Azure object.
+
+        Returns:
+            str: The locale for the given language.
+        """
+
+        locale = {
+            "English": "en-us",
+            "Espanol": "es",
+            "Japanese": "ja",
+            "Korean": "ko",
+            "Portuguese": "pt-br",
+            "Chinese": "zh-cn",
+            "Taiwanese": "tw",
+        }
         return locale[self.language]
+
+    def get_subdomain(self):
+        """
+        Returns the subdomain based on the brand attribute.
+
+        This method determines the appropriate subdomain for the current brand.
+
+        Returns:
+            str: The subdomain corresponding to the brand.
+        """
+
+        if self.brand == "closet":
+            subdomain = "clo-set-hc"
+        elif self.brand == "connect":
+            subdomain = "connect-hc"
+        elif self.brand == "clovf":
+            subdomain = "clovf-hc"
+        elif self.brand == "md":
+            subdomain = "marvelousdesigner"
+        else:
+            # Default to the brand name if no specific subdomain is found
+            subdomain = self.brand
+
+        return subdomain
 
     def get_article_path(self) -> str:
         """
@@ -111,18 +153,8 @@ class Azure:
         Returns:
             str: The formatted API endpoint URL.
         """
-        # Determine the subdomain based on the brand
-        if self.brand == "closet":
-            subdomain = "clo-set"
-        elif self.brand == "closet_connect":
-            subdomain = "support-connect"
-        elif self.brand == "md":
-            subdomain = "marvelousdesigner"
-        else:
-            subdomain = self.brand
 
-        # Format and return the endpoint URL
-        return zendesk_article_api_endpoint.format(subdomain, self.get_locale(), page)
+        return zendesk_article_api_endpoint.format(self.get_subdomain(), self.get_locale(), page)
 
     def get_zendesk_article_attachment_api_endpoint(self, article_id: int) -> str:
         """
@@ -134,18 +166,8 @@ class Azure:
         Returns:
             str: The formatted API endpoint URL.
         """
-        # Determine the subdomain based on the brand
-        if self.brand == "closet":
-            subdomain = "clo-set"
-        elif self.brand == "closet_connect":
-            subdomain = "support-connect"
-        elif self.brand == "md":
-            subdomain = "marvelousdesigner"
-        else:
-            subdomain = self.brand
 
-        # Format and return the endpoint URL
-        return zendesk_article_attachment_api_endpoint.format(subdomain, self.get_locale(), article_id)
+        return zendesk_article_attachment_api_endpoint.format(self.get_subdomain(), self.get_locale(), article_id)
 
     def get_zendesk_article_section_api_endpoint(self, section_id):
         """
@@ -157,18 +179,8 @@ class Azure:
         Returns:
             str: The formatted API endpoint URL.
         """
-        # Determine the subdomain based on the brand
-        if self.brand == "closet":
-            subdomain = "clo-set"
-        elif self.brand == "closet_connect":
-            subdomain = "support-connect"
-        elif self.brand == "md":
-            subdomain = "marvelousdesigner"
-        else:
-            subdomain = self.brand
 
-        # Format and return the endpoint URL
-        return zendesk_article_section_api_endpoint.format(subdomain, self.get_locale(), section_id)
+        return zendesk_article_section_api_endpoint.format(self.get_subdomain(), self.get_locale(), section_id)
 
     def get_zendesk_article_category_api_endpoint(self, category_id):
         """
@@ -180,15 +192,5 @@ class Azure:
         Returns:
             str: The formatted API endpoint URL.
         """
-        # Determine the subdomain based on the brand
-        if self.brand == "closet":
-            subdomain = "clo-set"
-        elif self.brand == "closet_connect":
-            subdomain = "support-connect"
-        elif self.brand == "md":
-            subdomain = "marvelousdesigner"
-        else:
-            subdomain = self.brand
 
-        # Format and return the endpoint URL
-        return zendesk_article_category_api_endpoint.format(subdomain, self.get_locale(), category_id)
+        return zendesk_article_category_api_endpoint.format(self.get_subdomain(), self.get_locale(), category_id)

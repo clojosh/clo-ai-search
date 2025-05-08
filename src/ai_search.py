@@ -27,6 +27,7 @@ from azure.search.documents.indexes.models import (
     VectorSearchProfile,
 )
 from azure.search.documents.models import VectorizedQuery
+from rich import print
 from tqdm import tqdm
 
 from tools.azure import Azure
@@ -266,6 +267,9 @@ class AISearch:
 
             documents.append(document)
 
+        if log_results:
+            print(f"\nDocuments Found: {len(documents)}")
+
         return documents
 
     def delete_documents(self, search_fields: list = [], search_text: str = "*", select: list = []):
@@ -274,7 +278,7 @@ class AISearch:
 
         results = self.find_documents(search_fields=search_fields, search_text=search_text, select=select)
 
-        print("Documents Deleted: ", len(results))
+        print("Documents to be Deleted:", len(results))
 
         for i, result in enumerate(results):
             print(f"Deleting {result['ArticleId']}")
@@ -325,8 +329,8 @@ class AISearch:
 
 
 if __name__ == "__main__":
-    env = questionary.select("Which environment?", choices=["prod", "dev"]).ask()
-    brand = questionary.select("Which brand?", choices=["clo3d", "closet", "closet_connect", "md", "allinone"]).ask()
+    env = questionary.select("Which environment?", choices=["dev", "prod"]).ask()
+    brand = questionary.select("Which brand?", choices=["clo3d", "closet", "connect", "md", "allinone"]).ask()
     task = questionary.select(
         "What task?",
         choices=[
@@ -336,7 +340,6 @@ if __name__ == "__main__":
             "Search Documents (Hybrid, Text, or Vector)",
             "Find Documents",
             "Delete Documents",
-            "Delete Posts By Age",
             "Get Document Source Breakdown",
             "Find Missing Documents Per Source",
         ],
@@ -354,7 +357,11 @@ if __name__ == "__main__":
     elif task in ["Delete Documents", "Get Documents", "Find Documents"]:
         search_fields = questionary.checkbox("Search Fields?", choices=["ArticleId", "Title", "Source", "Content"]).ask()
         search_text = questionary.text("Search Text?").ask()
-        select = questionary.checkbox("Select?", choices=["ArticleId", "Title", "Source", "Content"]).ask()
+
+        if task == "Delete Documents":
+            select = ["ArticleId", "Title", "Source"]
+        else:
+            select = questionary.checkbox("Select?", choices=["ArticleId", "Title", "Source", "Content"]).ask()
 
         if task == "Delete Documents":
             ai_search.delete_documents(search_fields=search_fields, search_text=search_text, select=select)
@@ -384,4 +391,5 @@ if __name__ == "__main__":
         ai_search.document_source_breakdown()
 
     elif task == "Find Missing Documents Per Source":
+        ai_search.find_missing_documents_per_source()
         ai_search.find_missing_documents_per_source()

@@ -267,6 +267,9 @@ class AISearch:
 
             documents.append(document)
 
+        if log_results:
+            print(f"\nDocuments Found: {len(documents)}")
+
         return documents
 
     def delete_documents(self, search_fields: list = [], search_text: str = "*", select: list = []):

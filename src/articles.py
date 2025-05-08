@@ -227,11 +227,12 @@ class Article:
 
 if __name__ == "__main__":
     stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
-    brand = questionary.select("Which brand?", choices=["clo3d", "closet", "connect", "clovf", "md"]).ask()
+    brand = questionary.select("Which brand?", choices=["clo3d", "closet", "connect", "clovf", "md", "allinone"]).ask()
     language = questionary.select("Which language?", choices=["English", "Korean"]).ask()
     task = questionary.select(
         "What task?", choices=["Get Zendesk Article", "Get All Zendesk Articles", "Delete Articles", "Upload Article", "Upload All Articles"]
     ).ask()
+
     article = Article(Azure(stage, brand, language))
 
     if task == "Get Zendesk Article":

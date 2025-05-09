@@ -57,6 +57,11 @@ class Azure:
             azure_endpoint=f"https://{self.AZURE_OPENAI_SERVICE}.openai.azure.com",
             api_key=os.environ.get("AZURE_OPENAI_KEY"),
         )
+        self.openai_helper = OpenAIHelper(
+            self.openai_client,
+            self.AZURE_OPENAI_CHATGPT_DEPLOYMENT,
+            self.AZURE_OPENAI_EMB_DEPLOYMENT,
+        )
 
         self.URI = os.environ.get("MONGO_URI")
         self.DB_NAME = os.environ.get(f"{self.brand.upper()}_MONGO_DB_NAME", "clo3d-dev")
@@ -64,12 +69,6 @@ class Azure:
         self.COLLECTION_USERS = os.environ.get("MONGO_COLLECTION_USERS")
         self.COLLECTION_ARTICLE = os.environ.get("MONGO_COLLECTION_ARTICLES")
         self.COLLECTION_FEEDBACK = os.environ.get("MONGO_COLLECTION_FEEDBACK")
-
-        self.openai_helper = OpenAIHelper(
-            self.openai_client,
-            self.AZURE_OPENAI_CHATGPT_DEPLOYMENT,
-            self.AZURE_OPENAI_EMB_DEPLOYMENT,
-        )
 
     def get_locale(self) -> str:
         """

@@ -3,15 +3,19 @@ import multiprocessing
 import os
 import re
 from datetime import datetime
+from math import ceil
 
 import questionary
 import requests  # type: ignore
+from rich import print
+from tqdm import tqdm
 
 from tools.azure import Azure
 from tools.misc import remove_html_tags, trim_tokens
 
-ZENDESK_POSTS_ENDPOINT = "https://support.{brand}.com/api/v2/help_center/community/posts.json?page={page}&per_page=60"
-ZENDESK_COMMENTS_ENDPOINT = "https://support.{brand}.com/api/v2/community/posts/{post_id}/comments?sort_by=created_at&sort_order=asc"
+POSTS_ENDPOINT = "https://connect.clo-set.com/api/community/post/search?tags={tags}&category={category}&pageSize={page_size}"
+POST_DETAIL = "https://connect.clo-set.com/post/{post_id}"
+COMMENTS_ENDPOINT = "https://connect.clo-set.com/api/community/post/{post_id}/comment"
 
 
 class Posts:
@@ -24,178 +28,126 @@ class Posts:
         self.post_dir_path = os.path.join("data", azure.brand, "posts")
 
     @staticmethod
-    def get_official_comments(brand: str, post_id: str) -> list:
-        """
-        Prioritizes the official comments for the post. If no official comments exist, it will return the comments.
+    def generate_posts_endpoint(tags: str = "", category: str = "", search_after: list = [], page_size: str = "30") -> str:
+        endpoint = f"https://connect.clo-set.com/api/community/post/search?pageSize={page_size}"
 
-        Args:
-            brand (str): The brand to retrieve the comments for
-            post_id (str): The post ID to retrieve the comments for
+        if tags:
+            endpoint += f"&tags={tags}"
+        if category:
+            endpoint += f"&category={category}"
 
-        Returns:
-            list: A list of official comments
-        """
+        if search_after:
+            for item in search_after:
+                endpoint += f"&searchAfter={item}"
 
-        comments_response = requests.request(
-            "GET",
-            ZENDESK_COMMENTS_ENDPOINT.format(brand=brand, post_id=post_id),
-            auth=(
-                "share_admin@foxxing.com" if brand == "clo3d" else "joshua.lee@clo3d.com",
-                "CLOzendeskshare12#$",
-            ),
-            headers={
-                "Accept": "application/json",
-            },
-        )
-
-        comment_objects = json.loads(comments_response.text)
-        page_count = comment_objects["page_count"]
-
-        comments = []
-        for page in range(page_count):
-            # Extract the comments for the page
-            for comment in comment_objects["comments"]:
-                # If the comment is for clo3d, extract the post URL
-                if brand == "clo3d":
-                    comment["html_url"] = re.findall(
-                        r"https:\/\/support\.clo3d\.com\/hc\/en-us\/community\/posts\/\d+",
-                        comment["html_url"],
-                    )[0]
-                # If the comment is for marvelous designer, extract the post URL
-                elif brand == "md":
-                    comment["html_url"] = re.findall(
-                        r"https:\/\/support\.marvelousdesigner\.com\/hc\/en-us\/community\/posts\/\d+",
-                        comment["html_url"],
-                    )[0]
-
-                comments.append(
-                    {
-                        "author_id": comment["author_id"],
-                        "comment_id": comment["id"],
-                        "official": comment["official"],  # true or false
-                        "comment_url": comment["html_url"],
-                        "comment_body": trim_tokens(remove_html_tags(comment["body"])),
-                    }
-                )
-
-            # If there is a next page, get the next page of comments
-            if comment_objects["next_page"]:
-                next_page = requests.request(
-                    "GET",
-                    comment_objects["next_page"],
-                    auth=("share_admin@foxxing.com", "CLOzendeskshare12#$"),
-                    headers={
-                        "Content-Type": "application/json",
-                    },
-                )
-
-                comment_objects = json.loads(next_page.text)
-
-        # Filter out the official comments
-        official_comments = [comment for comment in comments if comment["official"]]
-
-        # If there are official comments, return them
-        if len(official_comments) > 0:
-            return official_comments
-
-        # If there are no official comments, return all the comments
-        return comments
+        return endpoint
 
     @staticmethod
-    def get_posts(stage: str, brand: str, page: int, post_dir_path: str) -> list:
-        """
-        Retrieves posts from Zendesk Community for a given page
+    def get_comments(post_id: str):
+        try:
+            response = requests.request(
+                "GET",
+                COMMENTS_ENDPOINT.format(post_id=post_id),
+                headers={
+                    "Content-Type": "application/json",
+                    "x-domain": "https://connect.api.clo-set.com",
+                },
+            )
 
-        Args:
-            brand (str): The brand to retrieve posts for
-            page (int): The page number to retrieve posts from
-            post_dir_path (str): The directory path to save the posts to
+            comments = json.loads(response.text)
 
-        Returns:
-            list: A list of posts with their details and comments
-        """
+            combined_comments = ""
+            for i, comment in enumerate(comments["comments"]):
+                if comment["commentMessage"] is None:
+                    continue
+
+                if i != 0:
+                    combined_comments += "\n\n"
+
+                combined_comments += f"Comment {i + 1}: " + remove_html_tags(comment["commentMessage"])
+
+                if comment["replies"] is None:
+                    continue
+
+                for i, reply in enumerate(comment["replies"]):
+                    combined_comments += f"\nReply {i + 1}: " + remove_html_tags(reply["commentMessage"])
+
+            return combined_comments
+
+        except Exception as e:
+            print(f"Error fetching comments for post {post_id}: {e}")
+            return ""
+
+    @staticmethod
+    def get_posts(stage: str, brand: str, posts: list, page: int, post_dir_path: str, tqdm_position: int) -> list:
         azure = Azure(stage, brand)
 
-        print(f"Getting posts for page {page}")
-
-        response = requests.request(
-            "GET",
-            ZENDESK_POSTS_ENDPOINT.format(brand=brand, page=page),
-            headers={
-                "Content-Type": "application/json",
-            },
-        )
-
-        posts = json.loads(response.text)
-
-        cutoff_date = datetime.strptime("{}-01-01T00:00:00Z".format(datetime.today().year - 2), "%Y-%m-%dT%H:%M:%SZ")
-
         filtered_posts = []
-        for post in posts["posts"]:
-            updated_at = datetime.strptime(post["updated_at"], "%Y-%m-%dT%H:%M:%SZ")
+        for post in tqdm(posts, position=tqdm_position, desc=f"Page {page}", colour="red", leave=False):
+            comment_content = ""
+            if post["commentsCount"] > 0:
+                comments = Posts.get_comments(post["postId"])
+                if comments:
+                    comment_content = "\n\n### Community Post Comments:\n" + comments
 
-            if brand == "clo3d":
-                post_url = re.findall(
-                    r"https:\/\/support\.clo3d\.com\/hc\/en-us\/community\/posts\/\d+",
-                    post["html_url"],
-                )[0]
-            elif brand == "marvelousdesigner":
-                post_url = re.findall(
-                    r"https:\/\/support\.marvelousdesigner\.com\/hc\/en-us\/community\/posts\/\d+",
-                    post["html_url"],
-                )[0]
+            content = trim_tokens(post["summary"]) + comment_content
 
-            if updated_at >= cutoff_date:
-                filtered_posts.append(
-                    {
-                        "post_id": post["id"],
-                        "post_url": post_url,
-                        "post_title": post["title"],
-                        "post_details": trim_tokens(remove_html_tags(post["details"])),
-                        "post_description": azure.openai_helper.create_webpage_description(
-                            post["title"] + "\n\n" + trim_tokens(remove_html_tags(post["details"]))
-                        ),
-                        "created_at": post["created_at"],
-                        "comments": Posts.get_official_comments(brand, post["id"]),
-                    }
-                )
+            filtered_posts.append(
+                {
+                    "id": post["postId"],
+                    "url": "https://connect.clo-set.com/community/post/" + post["postId"],
+                    "title": post["title"],
+                    "content": content,
+                    "content_description": azure.openai_helper.create_webpage_description(content) if content else "",
+                    "created_at": post["registeredDate"],
+                    "category": post["category"],
+                    "tags": post["tags"],
+                    "comment_count": post["commentsCount"],
+                }
+            )
 
-        if len(filtered_posts) > 0:
-            with open(
-                os.path.join(post_dir_path, f"page_{page}.json"),
-                "w+",
-                encoding="utf-8",
-            ) as f:
-                json.dump(filtered_posts, f, ensure_ascii=False, indent=4)
+        with open(
+            os.path.join(post_dir_path, f"page_{page}.json"),
+            "w+",
+            encoding="utf-8",
+        ) as f:
+            json.dump(filtered_posts, f, ensure_ascii=False, indent=4)
 
         return filtered_posts
 
     def mp_get_posts(self):
-        brand = self.azure.brand if self.azure.brand != "md" else "marvelousdesigner"
-
         posts_response = requests.request(
             "GET",
-            ZENDESK_POSTS_ENDPOINT.format(brand=brand, page=1),
+            self.generate_posts_endpoint(),
             headers={
                 "Content-Type": "application/json",
+                "x-domain": "https://connect.api.clo-set.com",
             },
         )
 
-        posts_objects = json.loads(posts_response.text)
-        page_count = posts_objects["page_count"]
+        posts = json.loads(posts_response.text)
 
-        with multiprocessing.Pool(10) as p:
+        page_count = ceil(posts["totalCount"] / 30)
+
+        tasks = []
+        for i in tqdm(range(page_count), desc="Aggregating Posts", colour="green"):
+            tasks.append((self.azure.stage, brand, posts["posts"], i, self.post_dir_path, (i % 5) + 1))
+
+            posts_response = requests.request(
+                "GET",
+                self.generate_posts_endpoint(search_after=posts["lastSort"]),
+                headers={
+                    "Content-Type": "application/json",
+                    "x-domain": "https://connect.api.clo-set.com",
+                },
+            )
+
+            posts = json.loads(posts_response.text)
+
+        with multiprocessing.Pool(5) as p:
             p.starmap_async(
                 Posts.get_posts,
-                [
-                    (
-                        self.azure.stage,
-                        brand,
-                        page,
-                        self.post_dir_path,
-                    )
-                    for page in range(1, page_count + 1)
-                ],
+                tasks,
                 error_callback=lambda e: print(e),
             )
             p.close()
@@ -303,7 +255,7 @@ class Posts:
 
 
 if __name__ == "__main__":
-    stage = questionary.select("Which stage?", choices=["prod", "dev"]).ask()
+    stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
     brand = questionary.select("Which brand?", choices=["clo3d", "closet", "md"]).ask()
     task = questionary.select("What task?", choices=["Get Posts", "Upload"]).ask()
 
@@ -313,4 +265,5 @@ if __name__ == "__main__":
         post.mp_get_posts()
 
     elif task == "Upload":
+        post.mp_upload()
         post.mp_upload()

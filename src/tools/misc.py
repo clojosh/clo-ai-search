@@ -2,11 +2,9 @@ import json
 import logging
 import os
 import re
-import sys
-import time
 from pathlib import Path
 
-import requests
+import requests  # type: ignore
 import tiktoken
 from tqdm import tqdm
 

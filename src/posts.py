@@ -22,10 +22,13 @@ class Posts:
     def __init__(self, azure: Azure):
         self.azure = azure
 
-        if not os.path.exists(os.path.join(azure.brand, "posts")):
-            os.makedirs(os.path.join("data", azure.brand, "posts"), exist_ok=True)
+        if not os.path.exists(os.path.join("data", "community", "posts")):
+            os.makedirs(os.path.join("data", "community", "posts"), exist_ok=True)
 
-        self.post_dir_path = os.path.join("data", azure.brand, "posts")
+        self.post_dir_path = os.path.join("data", "community", "posts")
+
+        if not os.path.exists(os.path.join("data", azure.brand, "posts")):
+            os.makedirs(os.path.join("data", azure.brand, "posts"), exist_ok=True)
 
     @staticmethod
     def generate_posts_endpoint(tags: str = "", category: str = "", search_after: list = [], page_size: str = "30") -> str:
@@ -83,7 +86,7 @@ class Posts:
         azure = Azure(stage, brand)
 
         filtered_posts = []
-        for post in tqdm(posts, position=tqdm_position, desc=f"Page {page}", colour="red", leave=False):
+        for post in tqdm(posts, position=tqdm_position, desc=f"Page {page}", colour="turquoise", leave=False):
             comment_content = ""
             if post["commentsCount"] > 0:
                 comments = Posts.get_comments(post["postId"])
@@ -154,44 +157,99 @@ class Posts:
             p.join()
 
     @staticmethod
-    def upload(stage: str, posts_path: str, file: str, brand: str):
-        print(f"\nUploading {file}")
+    def brand_to_community_tag(brand: str) -> str:
+        if brand == "clo3d":
+            return "CLO"
+        elif brand == "closet":
+            return "CLO-SET"
+        elif brand == "connect":
+            return "CONNECT"
+        elif brand == "md":
+            return "MarvelousDesigner"
 
+        return brand
+
+    @staticmethod
+    def brand_keywords(brand: str):
+        if brand == "clo3d":
+            return ["clo3d"]
+        elif brand == "closet":
+            return ["closet", "clo-set"]
+        elif brand == "connect":
+            return ["connect"]
+        elif brand == "md":
+            return ["marvelous designer", "(md)", " md"]
+
+    @staticmethod
+    def is_brand_post(brand: str, document: dict) -> bool:
+        community_tag = Posts.brand_to_community_tag(brand)
+
+        # 260 = Job Board
+        if document["category"] == 260:
+            return False
+
+        if community_tag not in document["tags"]:
+            if not (
+                any(keyword in document["title"] for keyword in Posts.brand_keywords(brand))
+                or any(keyword in document["content"] for keyword in Posts.brand_keywords(brand))
+            ):
+                return False
+
+        return True
+
+    def separate_brand_posts(self):
+        for file in os.listdir(self.post_dir_path):
+            with open(os.path.join(self.post_dir_path, file), "r", encoding="utf-8") as f:
+                documents = json.load(f)
+
+                upload_documents = []
+                for i, document in enumerate(documents):
+                    if not Posts.is_brand_post(self.azure.brand, document):
+                        continue
+
+                    # print(document)
+                    # print()
+
+                    upload_documents.append(document)
+
+        with open(os.path.join("data", self.azure.brand, "posts", f"{self.azure.brand}_posts.json"), "w+", encoding="utf-8") as f:
+            json.dump(upload_documents, f, ensure_ascii=False, indent=4)
+
+    @staticmethod
+    def upload(stage: str, posts_path: str, file: str, brand: str):
         azure = Azure(stage, brand)
 
         with open(os.path.join(posts_path, file), "r", encoding="utf-8") as f:
             documents = json.load(f)
 
-            upload_documents = []
-            for i, document in enumerate(documents):
-                content = document["post_details"]
-                for comments in document["comments"]:
-                    content += " " + comments["comment_body"]
-
-                try:
+            try:
+                upload_documents = []
+                for i, document in enumerate(documents):
                     upload_documents.append(
                         {
                             "@search.action": "mergeOrUpload",
-                            "ArticleId": str(document["post_id"]),
-                            "Source": document["post_url"],
-                            "Title": document["post_title"],
-                            "Content": content,
-                            "ContentDescription": document["post_description"],
+                            "ArticleId": document["id"],
+                            "Source": document["url"],
+                            "Title": document["title"],
+                            "Content": document["content"],
+                            "ContentDescription": document["content_description"],
                             "CreatedAt": document["created_at"],
                             "YoutubeLinks": [],
-                            "titleVector": azure.openai_helper.generate_embeddings(text=document["post_title"]),
-                            "contentVector": azure.openai_helper.generate_embeddings(text=content if content != "" else document["post_title"]),
+                            "titleVector": azure.openai_helper.generate_embeddings(text=document["title"]),
+                            "contentVector": azure.openai_helper.generate_embeddings(
+                                text=document["content"] if document["content"] != "" else document["post_title"]
+                            ),
                         }
                     )
-                except Exception:
-                    print(f"Failed to upload: {document['post_id']}")
 
-            azure.search_client.upload_documents(upload_documents)
-            print(f"Uploaded {file}")
+                azure.search_client.upload_documents(upload_documents)
+
+            except Exception:
+                print(f"Failed to upload: {document['post_id']}")
 
     def mp_upload(self):
         file_paths = sorted(
-            os.listdir(self.post_dir_path),
+            os.listdir("data", self.azure.brand, "posts"),
             key=lambda x: int(x.partition("_")[2].partition(".")[0]),
         )
 
@@ -202,7 +260,7 @@ class Posts:
         with multiprocessing.Pool(5) as p:
             p.starmap_async(
                 Posts.upload,
-                upload_posts_params[1:],
+                upload_posts_params,
                 error_callback=lambda e: print(e),
             )
             p.close()
@@ -256,13 +314,16 @@ class Posts:
 
 if __name__ == "__main__":
     stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
-    brand = questionary.select("Which brand?", choices=["clo3d", "closet", "md"]).ask()
-    task = questionary.select("What task?", choices=["Get Posts", "Upload"]).ask()
+    brand = questionary.select("Which brand?", choices=["clo3d", "closet", "connect", "md", "allinone"]).ask()
+    task = questionary.select("What task?", choices=["Get Posts", "Separate Posts", "Upload"]).ask()
 
     post = Posts(Azure(stage, brand))
 
     if task == "Get Posts":
         post.mp_get_posts()
+
+    elif task == "Separate Posts":
+        post.separate_brand_posts()
 
     elif task == "Upload":
         post.mp_upload()

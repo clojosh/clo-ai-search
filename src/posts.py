@@ -22,14 +22,6 @@ class Posts:
     def __init__(self, azure: Azure):
         self.azure = azure
 
-        if not os.path.exists(os.path.join("data", "community", "posts")):
-            os.makedirs(os.path.join("data", "community", "posts"), exist_ok=True)
-
-        self.post_dir_path = os.path.join("data", "community", "posts")
-
-        if not os.path.exists(os.path.join("data", azure.brand, "posts")):
-            os.makedirs(os.path.join("data", azure.brand, "posts"), exist_ok=True)
-
     @staticmethod
     def generate_posts_endpoint(tags: str = "", category: str = "", search_after: list = [], page_size: str = "30") -> str:
         endpoint = f"https://connect.clo-set.com/api/community/post/search?pageSize={page_size}"
@@ -82,11 +74,39 @@ class Posts:
             return ""
 
     @staticmethod
-    def get_posts(stage: str, brand: str, posts: list, page: int, post_dir_path: str, tqdm_position: int) -> list:
+    def get_brand_types_for_post(post: dict):
+        brands_found = []
+
+        if "CLO" in post["tags"] or post["title"].lower() in ["clo3d", "clo 3d"] or post["summary"].lower() in ["clo3d", "clo 3d"]:
+            brands_found.append("clo3d")
+
+        if "CLO-SET" in post["tags"] or post["title"].lower() in ["closet", "clo-set"] or post["summary"].lower() in ["closet", "clo-set"]:
+            brands_found.append("closet")
+
+        if "CONNECT" in post["tags"] or post["title"].lower() in ["connect"] or post["summary"].lower() in ["connect"]:
+            brands_found.append("connect")
+
+        if (
+            "MarvelousDesigner" in post["tags"]
+            or post["title"].lower() in ["marvelous designer", "(md)", " md"]
+            or post["summary"].lower() in ["marvelous designer", "(md)", " md"]
+        ):
+            brands_found.append("md")
+
+        return brands_found
+
+    @staticmethod
+    def get_posts(stage: str, brand: str, posts: list, page: int):
         azure = Azure(stage, brand)
 
-        filtered_posts = []
-        for post in tqdm(posts, position=tqdm_position, desc=f"Page {page}", colour="turquoise", leave=False):
+        brand_posts: dict = {"clo3d": [], "closet": [], "connect": [], "md": []}
+        for post in tqdm(posts, position=((page % 5) + 1), desc=f"Page {page}", colour="red", leave=False):
+            # 260 = Job Board
+            if post["category"] == 260:
+                continue
+
+            brand_types = Posts.get_brand_types_for_post(post)
+
             comment_content = ""
             if post["commentsCount"] > 0:
                 comments = Posts.get_comments(post["postId"])
@@ -95,28 +115,30 @@ class Posts:
 
             content = trim_tokens(post["summary"]) + comment_content
 
-            filtered_posts.append(
-                {
-                    "id": post["postId"],
-                    "url": "https://connect.clo-set.com/community/post/" + post["postId"],
-                    "title": post["title"],
-                    "content": content,
-                    "content_description": azure.openai_helper.create_webpage_description(content) if content else "",
-                    "created_at": post["registeredDate"],
-                    "category": post["category"],
-                    "tags": post["tags"],
-                    "comment_count": post["commentsCount"],
-                }
-            )
+            document = {
+                "id": post["postId"],
+                "url": "https://connect.clo-set.com/community/post/" + post["postId"],
+                "title": post["title"],
+                "content": content,
+                "content_description": azure.openai_helper.create_webpage_description(content) if content else "",
+                "created_at": post["registeredDate"],
+                "category": post["category"],
+                "tags": post["tags"],
+                "comment_count": post["commentsCount"],
+            }
 
-        with open(
-            os.path.join(post_dir_path, f"page_{page}.json"),
-            "w+",
-            encoding="utf-8",
-        ) as f:
-            json.dump(filtered_posts, f, ensure_ascii=False, indent=4)
+            for brand_type in brand_types:
+                brand_posts[brand_type].append(document)
 
-        return filtered_posts
+        for brand_type, documents in brand_posts.items():
+            if not os.path.exists(os.path.join("data", brand_type, "posts")):
+                os.makedirs(os.path.join("data", brand_type, "posts"), exist_ok=True)
+
+            if len(documents) == 0:
+                continue
+
+            with open(os.path.join("data", brand_type, "posts", f"page_{page}.json"), "w+", encoding="utf-8") as f:
+                json.dump(documents, f, ensure_ascii=False, indent=4)
 
     def mp_get_posts(self):
         posts_response = requests.request(
@@ -133,8 +155,8 @@ class Posts:
         page_count = ceil(posts["totalCount"] / 30)
 
         tasks = []
-        for i in tqdm(range(page_count), desc="Aggregating Posts", colour="green"):
-            tasks.append((self.azure.stage, brand, posts["posts"], i, self.post_dir_path, (i % 5) + 1))
+        for page in tqdm(range(page_count), desc="Aggregating Posts", colour="green"):
+            tasks.append((self.azure.stage, brand, posts["posts"], page))
 
             posts_response = requests.request(
                 "GET",
@@ -157,66 +179,7 @@ class Posts:
             p.join()
 
     @staticmethod
-    def brand_to_community_tag(brand: str) -> str:
-        if brand == "clo3d":
-            return "CLO"
-        elif brand == "closet":
-            return "CLO-SET"
-        elif brand == "connect":
-            return "CONNECT"
-        elif brand == "md":
-            return "MarvelousDesigner"
-
-        return brand
-
-    @staticmethod
-    def brand_keywords(brand: str):
-        if brand == "clo3d":
-            return ["clo3d"]
-        elif brand == "closet":
-            return ["closet", "clo-set"]
-        elif brand == "connect":
-            return ["connect"]
-        elif brand == "md":
-            return ["marvelous designer", "(md)", " md"]
-
-    @staticmethod
-    def is_brand_post(brand: str, document: dict) -> bool:
-        community_tag = Posts.brand_to_community_tag(brand)
-
-        # 260 = Job Board
-        if document["category"] == 260:
-            return False
-
-        if community_tag not in document["tags"]:
-            if not (
-                any(keyword in document["title"] for keyword in Posts.brand_keywords(brand))
-                or any(keyword in document["content"] for keyword in Posts.brand_keywords(brand))
-            ):
-                return False
-
-        return True
-
-    def separate_brand_posts(self):
-        for file in os.listdir(self.post_dir_path):
-            with open(os.path.join(self.post_dir_path, file), "r", encoding="utf-8") as f:
-                documents = json.load(f)
-
-                upload_documents = []
-                for i, document in enumerate(documents):
-                    if not Posts.is_brand_post(self.azure.brand, document):
-                        continue
-
-                    # print(document)
-                    # print()
-
-                    upload_documents.append(document)
-
-        with open(os.path.join("data", self.azure.brand, "posts", f"{self.azure.brand}_posts.json"), "w+", encoding="utf-8") as f:
-            json.dump(upload_documents, f, ensure_ascii=False, indent=4)
-
-    @staticmethod
-    def upload(stage: str, posts_path: str, file: str, brand: str):
+    def upload(stage: str, brand: str, posts_path: str, file: str, position: int):
         azure = Azure(stage, brand)
 
         with open(os.path.join(posts_path, file), "r", encoding="utf-8") as f:
@@ -224,7 +187,10 @@ class Posts:
 
             try:
                 upload_documents = []
-                for i, document in enumerate(documents):
+                for i, document in enumerate(tqdm(documents, desc=f"Uploading {file}", colour="green", position=position, leave=False)):
+                    if document["content"] == "":
+                        continue
+
                     upload_documents.append(
                         {
                             "@search.action": "mergeOrUpload",
@@ -245,17 +211,17 @@ class Posts:
                 azure.search_client.upload_documents(upload_documents)
 
             except Exception:
-                print(f"Failed to upload: {document['post_id']}")
+                print(f"Failed to upload: {document['id']}")
 
     def mp_upload(self):
         file_paths = sorted(
-            os.listdir("data", self.azure.brand, "posts"),
+            os.listdir(os.path.join("data", self.azure.brand, "posts")),
             key=lambda x: int(x.partition("_")[2].partition(".")[0]),
         )
 
         upload_posts_params = []
-        for file in file_paths:
-            upload_posts_params.append((self.azure.stage, self.post_dir_path, file, self.azure.brand))
+        for i, file in enumerate(file_paths):
+            upload_posts_params.append((self.azure.stage, self.azure.brand, os.path.join("data", self.azure.brand, "posts"), file, (i % 5) + 1))
 
         with multiprocessing.Pool(5) as p:
             p.starmap_async(
@@ -314,17 +280,13 @@ class Posts:
 
 if __name__ == "__main__":
     stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
-    brand = questionary.select("Which brand?", choices=["clo3d", "closet", "connect", "md", "allinone"]).ask()
-    task = questionary.select("What task?", choices=["Get Posts", "Separate Posts", "Upload"]).ask()
-
-    post = Posts(Azure(stage, brand))
+    task = questionary.select("What task?", choices=["Get Posts", "Upload"]).ask()
 
     if task == "Get Posts":
+        post = Posts(Azure(stage, "clo3d"))
         post.mp_get_posts()
 
-    elif task == "Separate Posts":
-        post.separate_brand_posts()
-
     elif task == "Upload":
-        post.mp_upload()
+        brand = questionary.select("Which brand?", choices=["clo3d", "closet", "connect", "md", "allinone"]).ask()
+        post = Posts(Azure(stage, brand))
         post.mp_upload()

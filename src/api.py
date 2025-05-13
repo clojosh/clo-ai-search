@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 import questionary
 import requests  # type: ignore
 import shortuuid
+from tqdm import tqdm
 
 from tools.azure import Azure
 from tools.misc import trim_tokens
@@ -47,13 +48,8 @@ class API:
             }
         ]
 
-        # Create the directory if it doesn't exist
-        env_setup_build_path = os.path.join(self.api_path, "env_setup_build")
-        if not os.path.exists(env_setup_build_path):
-            os.makedirs(env_setup_build_path, exist_ok=True)
-
         # Save the article information as a JSON file
-        with open(os.path.join(env_setup_build_path, "env_setup_build.json"), "w+", encoding="utf-8") as f:
+        with open(os.path.join(self.api_path, "env_setup_build.json"), "w+", encoding="utf-8") as f:
             json.dump(env_setup_build, f, indent=4)
 
     def parse_api_scenario(self):
@@ -93,19 +89,26 @@ class API:
                 }
             )
 
-        # Create the directory if it doesn't exist
-        env_setup_build_path = os.path.join(self.api_path, "api_scenario")
-        if not os.path.exists(env_setup_build_path):
-            os.makedirs(env_setup_build_path, exist_ok=True)
-
         # Save the article information as a JSON file
-        with open(os.path.join(env_setup_build_path, "api_scenario.json"), "w+", encoding="utf-8") as f:
+        with open(os.path.join(self.api_path, "api_scenario.json"), "w+", encoding="utf-8") as f:
             json.dump(code_block_dump, f, indent=4)
 
     def parse_api_list(self):
         """
         Parse the API documentation files and save them as JSON files.
         """
+
+        def extract_python_code_blocks(rst_text: str):
+            """Extract Python code blocks from a reStructuredText string."""
+            code_blocks = []
+            pattern = r"\.\. code-tab:: python\n\n((?:\t{2,}.*\n?)+)"
+            matches = re.findall(pattern, rst_text)
+            for match in matches:
+                # Remove leading indentation
+                lines = [line.lstrip() for line in match.strip().splitlines()]
+                code_blocks.append("\n".join(lines))
+            return "\n\n".join(code_blocks)
+
         url = self.base_url + "_sources/list.rst.txt"
         response = requests.get(url)
 
@@ -123,11 +126,29 @@ class API:
             else:
                 doc = api_text[matches[i][0] : matches[i + 1][0]].split("***********")
 
+            doc[1] = extract_python_code_blocks(doc[1])
+
+            title = doc[0].strip()
+            if title == "EXPORT_API":
+                source = self.base_url + "list.html#export-api"
+            elif title == "IMPORT_API":
+                source = self.base_url + "list.html#import-api"
+            elif title == "UTILITY_API":
+                source = self.base_url + "list.html#utility-api"
+            elif title == "FABRIC_API":
+                source = self.base_url + "list.html#fabric-api"
+            elif title == "PATTERN_API":
+                source = self.base_url + "list.html#pattern-api"
+            elif title == "REST_API":
+                source = self.base_url + "list.html#rest-api"
+            else:
+                source = self.base_url + "list.html"
+
             api_list.append(
                 {
                     "ArticleId": shortuuid.uuid(),
-                    "Source": self.base_url + "list.html",
-                    "Title": doc[0].strip(),
+                    "Source": source,
+                    "Title": title,
                     "Content": doc[1],
                     "ContentDescription": self.azure.openai_helper.create_webpage_description(doc[1]),
                     "CreatedAt": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -135,10 +156,7 @@ class API:
                 }
             )
 
-        if not os.path.exists(os.path.join(self.api_path, "api_list")):
-            os.makedirs(os.path.join(self.api_path, "api_list"), exist_ok=True)
-
-        with open(os.path.join(self.api_path, "api_list", "api_docs.json"), "w+", encoding="utf-8") as f:
+        with open(os.path.join(self.api_path, "api_list.json"), "w+", encoding="utf-8") as f:
             json.dump(api_list, f, indent=4)
 
     def parse_api_option_type(self):
@@ -172,41 +190,29 @@ class API:
                 }
             )
 
-        # Create the directory if it doesn't exist
-        env_setup_build_path = os.path.join(self.api_path, "api_option_type")
-        if not os.path.exists(env_setup_build_path):
-            os.makedirs(env_setup_build_path, exist_ok=True)
-
         # Save the article information as a JSON file
-        with open(os.path.join(env_setup_build_path, "api_option_type.json"), "w+", encoding="utf-8") as f:
+        with open(os.path.join(self.api_path, "api_option_type.json"), "w+", encoding="utf-8") as f:
             json.dump(api_option_type, f, indent=4)
 
-    def upload_documents(self):
-        for dir in os.listdir(os.path.join(self.api_path)):
-            for files in os.listdir(os.path.join(self.api_path, dir)):
-                if files.endswith(".json"):
-                    print("Uploading: " + os.path.join(self.api_path, dir, files))
-                    with open(os.path.join(self.api_path, dir, files), "r", encoding="utf-8") as f:
-                        documents = json.load(f)
+    def upload_document(self, api_dir_path: str):
+        with open(api_dir_path, "r", encoding="utf-8") as f:
+            documents = json.load(f)
 
-                        for i, document in enumerate(documents):
-                            documents[i]["@search.action"] = "mergeOrUpload"
-                            documents[i]["TitleVector"] = self.azure.openai_helper.generate_embeddings(text=document["Title"])
-                            documents[i]["ContentVector"] = self.azure.openai_helper.generate_embeddings(text=document["Content"])
+            for i, document in enumerate(tqdm(documents, desc="Uploading documents", colour="green")):
+                documents[i]["@search.action"] = "mergeOrUpload"
+                documents[i]["TitleVector"] = self.azure.openai_helper.generate_embeddings(text=document["Title"])
+                documents[i]["ContentVector"] = self.azure.openai_helper.generate_embeddings(text=document["Content"])
 
-                        self.azure.search_client.upload_documents(documents)
+            self.azure.search_client.upload_documents(documents)
 
-    def delete_documents(self):
-        for dir in os.listdir(os.path.join(self.api_path)):
-            for files in os.listdir(os.path.join(self.api_path, dir)):
-                if files.endswith(".json"):
-                    with open(os.path.join(self.api_path, dir, files), "r", encoding="utf-8") as f:
-                        documents = json.load(f)
+    def delete_document(self, api_dir_path: str):
+        with open(api_dir_path, "r", encoding="utf-8") as f:
+            documents = json.load(f)
 
-                        for i, document in enumerate(documents):
-                            documents[i]["@search.action"] = "delete"
+            for i, document in enumerate(documents):
+                documents[i]["@search.action"] = "delete"
 
-                        self.environment.search_client.upload_documents(documents)
+            self.azure.search_client.upload_documents(documents)
 
 
 if __name__ == "__main__":
@@ -216,12 +222,14 @@ if __name__ == "__main__":
         "What task?",
         choices=[
             "Parse All API Documentation",
+            "Upload All Documents",
+            "Delete All Documents",
             "Parse API List",
             "Parse Environment Setup & Build",
             "Parse API Scenario",
             "Parse API Option & Type",
-            "Upload Documents",
-            "Delete Documents",
+            "Upload Document",
+            "Delete Document",
         ],
     ).ask()
 
@@ -245,8 +253,20 @@ if __name__ == "__main__":
     elif task == "Parse API Option & Type":
         clo_api.parse_api_option_type()
 
-    elif task == "Upload Documents":
-        clo_api.upload_documents()
+    elif task == "Upload Document":
+        api_document = questionary.select("Which API document?", choices=os.listdir(os.path.join(clo_api.api_path))).ask()
+        clo_api.upload_document(os.path.join(clo_api.api_path, api_document))
 
-    elif task == "Delete Documents":
-        clo_api.delete_documents()
+    elif task == "Upload All Documents":
+        for dir in os.listdir(os.path.join(clo_api.api_path)):
+            for files in os.listdir(os.path.join(clo_api.api_path, dir)):
+                clo_api.upload_document(os.path.join(clo_api.api_path, dir, files))
+
+    elif task == "Delete Document":
+        api_document = questionary.select("Which API document?", choices=os.listdir(os.path.join(clo_api.api_path))).ask()
+        clo_api.delete_document(os.path.join(clo_api.api_path, api_document))
+
+    elif task == "Delete All Documents":
+        for dir in os.listdir(os.path.join(clo_api.api_path)):
+            for files in os.listdir(os.path.join(clo_api.api_path, dir)):
+                clo_api.delete_document(os.path.join(clo_api.api_path, dir, files))

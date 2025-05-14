@@ -156,7 +156,7 @@ class Posts:
 
         tasks = []
         for page in tqdm(range(page_count), desc="Aggregating Posts", colour="green"):
-            tasks.append((self.azure.stage, brand, posts["posts"], page))
+            tasks.append((self.azure.stage, self.azure.brand, posts["posts"], page))
 
             posts_response = requests.request(
                 "GET",

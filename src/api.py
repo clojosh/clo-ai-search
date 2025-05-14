@@ -16,10 +16,15 @@ class API:
     def __init__(self, azure: Azure):
         self.azure = azure
 
-        if not os.path.exists(os.path.join("data", azure.brand, "api")):
-            os.makedirs(os.path.join("data", azure.brand, "api"), exist_ok=True)
+        if azure.brand == "clo3dapi":
+            folder_name = "clo3d"
+        else:
+            folder_name = azure.brand
 
-        self.api_path = os.path.join("data", azure.brand, "api")
+        if not os.path.exists(os.path.join("data", folder_name, "api")):
+            os.makedirs(os.path.join("data", folder_name, "api"), exist_ok=True)
+
+        self.api_path = os.path.join("data", folder_name, "api")
 
         if azure.brand == "md":
             self.base_url = "https://developer.marvelousdesigner.com/"
@@ -77,10 +82,27 @@ class API:
                 + " Python Script"
             )
 
+            if "Auto Hanging" in title:
+                source = self.base_url + "scenario.html#auto-hanging"
+            elif "Simulation" in title:
+                source = self.base_url + "scenario.html#simulation"
+            elif "Rendering" in title:
+                source = self.base_url + "scenario.html#rendering"
+            elif "Pattern" in title:
+                source = self.base_url + "scenario.html#pattern"
+            elif "Colorway" in title:
+                source = self.base_url + "scenario.html#colorway"
+            elif "Substance" in title:
+                source = self.base_url + "scenario.html#substance"
+            elif "Schematic Render" in title:
+                source = self.base_url + "scenario.html#schematic-render"
+            else:
+                source = self.base_url + "scenario.html"
+
             code_block_dump.append(
                 {
                     "ArticleId": shortuuid.uuid(),  # Generate a unique identifier
-                    "Source": self.base_url + "scenario.html",  # URL of the original source
+                    "Source": source,
                     "Title": title,  # Title of the article
                     "Content": code.replace("API Scenario", "").replace("=======================", "").replace("****", ""),  # Content of the article
                     "ContentDescription": self.azure.openai_helper.create_webpage_description(code),  # Description of the content
@@ -198,7 +220,7 @@ class API:
         with open(api_dir_path, "r", encoding="utf-8") as f:
             documents = json.load(f)
 
-            for i, document in enumerate(tqdm(documents, desc="Uploading documents", colour="green")):
+            for i, document in enumerate(tqdm(documents, desc=f"Uploading {os.path.basename(api_dir_path)}", colour="green")):
                 documents[i]["@search.action"] = "mergeOrUpload"
                 documents[i]["TitleVector"] = self.azure.openai_helper.generate_embeddings(text=document["Title"])
                 documents[i]["ContentVector"] = self.azure.openai_helper.generate_embeddings(text=document["Content"])
@@ -217,7 +239,7 @@ class API:
 
 if __name__ == "__main__":
     stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
-    brand = questionary.select("Which brand?", choices=["clo3d", "md"]).ask()
+    brand = questionary.select("Which brand?", choices=["clo3d", "clo3dapi", "md"]).ask()
     task = questionary.select(
         "What task?",
         choices=[
@@ -258,15 +280,13 @@ if __name__ == "__main__":
         clo_api.upload_document(os.path.join(clo_api.api_path, api_document))
 
     elif task == "Upload All Documents":
-        for dir in os.listdir(os.path.join(clo_api.api_path)):
-            for files in os.listdir(os.path.join(clo_api.api_path, dir)):
-                clo_api.upload_document(os.path.join(clo_api.api_path, dir, files))
+        for files in os.listdir(os.path.join(clo_api.api_path)):
+            clo_api.upload_document(os.path.join(clo_api.api_path, files))
 
     elif task == "Delete Document":
         api_document = questionary.select("Which API document?", choices=os.listdir(os.path.join(clo_api.api_path))).ask()
         clo_api.delete_document(os.path.join(clo_api.api_path, api_document))
 
     elif task == "Delete All Documents":
-        for dir in os.listdir(os.path.join(clo_api.api_path)):
-            for files in os.listdir(os.path.join(clo_api.api_path, dir)):
-                clo_api.delete_document(os.path.join(clo_api.api_path, dir, files))
+        for files in os.listdir(os.path.join(clo_api.api_path)):
+            clo_api.delete_document(os.path.join(clo_api.api_path, files))

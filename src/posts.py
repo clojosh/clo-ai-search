@@ -14,7 +14,7 @@ from tools.azure import Azure
 from tools.misc import remove_html_tags, trim_tokens
 
 POSTS_ENDPOINT = "https://connect.clo-set.com/api/community/post/search?tags={tags}&category={category}&pageSize={page_size}"
-POST_DETAIL = "https://connect.clo-set.com/post/{post_id}"
+POST_DETAIL = "https://connect.clo-set.com/api/community/post/{post_id}"
 COMMENTS_ENDPOINT = "https://connect.clo-set.com/api/community/post/{post_id}/comment"
 
 
@@ -24,12 +24,18 @@ class Posts:
 
     @staticmethod
     def generate_posts_endpoint(tags: str = "", category: str = "", search_after: list = [], page_size: str = "30") -> str:
-        endpoint = f"https://connect.clo-set.com/api/community/post/search?pageSize={page_size}"
+        """Generates the endpoint for retrieving a list of posts from the community API.
 
-        if tags:
-            endpoint += f"&tags={tags}"
-        if category:
-            endpoint += f"&category={category}"
+        Args:
+        tags (str): The tags to search for. Defaults to None.
+        category (str): The category to search for. Defaults to None.
+        search_after (list): The search after parameters. Defaults to [].
+        page_size (str): The page size. Defaults to "30".
+
+        Returns:
+        str: The endpoint.
+        """
+        endpoint = f"{POSTS_ENDPOINT.format(tags=tags, category=category, page_size=page_size)}"
 
         if search_after:
             for item in search_after:
@@ -38,7 +44,45 @@ class Posts:
         return endpoint
 
     @staticmethod
-    def get_comments(post_id: str):
+    def is_comment_allowed(message: str) -> bool:
+        """Checks if a comment is allowed.
+
+        Args:
+        message (str): The comment to check.
+
+        Returns:
+        bool: True if the comment is allowed, False otherwise.
+        """
+        url_pattern = r"http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+"
+
+        matches = re.findall(url_pattern, message)
+
+        if not matches:
+            # If no matches are found, allow the comment
+            return True
+
+        for match in matches:
+            # Allow comments with links to the following domains
+            allowed_domains = ["clo-set", "closet", "marvelousdesigner", "clo3d", "clovf", "connect", "clovirtualfashion"]
+            for domain in allowed_domains:
+                if domain in match:
+                    # If the comment contains a link to one of the allowed domains, allow it
+                    return True
+
+        # If the comment doesn't contain any links to the allowed domains, disallow it
+        return False
+
+    @staticmethod
+    def get_comments(post_id: str) -> str:
+        """
+        Retrieves all the comments for a given post from the community API.
+
+        Args:
+        post_id (str): The id of the post to retrieve the comments for.
+
+        Returns:
+        str: The combined comments.
+        """
         try:
             response = requests.request(
                 "GET",
@@ -53,19 +97,18 @@ class Posts:
 
             combined_comments = ""
             for i, comment in enumerate(comments["comments"]):
-                if comment["commentMessage"] is None:
+                # Skip comments that are None or not allowed
+                if comment["commentMessage"] is None or not Posts.is_comment_allowed(comment["commentMessage"]):
                     continue
 
                 if i != 0:
                     combined_comments += "\n\n"
 
-                combined_comments += f"Comment {i + 1}: " + remove_html_tags(comment["commentMessage"])
+                combined_comments += f"Comment {i + 1}: " + trim_tokens(remove_html_tags(comment["commentMessage"]))
 
-                if comment["replies"] is None:
-                    continue
-
-                for i, reply in enumerate(comment["replies"]):
-                    combined_comments += f"\nReply {i + 1}: " + remove_html_tags(reply["commentMessage"])
+                if comment["replies"] is not None:
+                    for i, reply in enumerate(comment["replies"]):
+                        combined_comments += f"\nReply {i + 1}: " + trim_tokens(remove_html_tags(reply["commentMessage"]))
 
             return combined_comments
 
@@ -75,17 +118,30 @@ class Posts:
 
     @staticmethod
     def get_brand_types_for_post(post: dict):
+        """
+        Determines the brand types associated with a given post based on its tags, title, and summary.
+
+        Args:
+        post (dict): A dictionary containing the post's details with keys 'tags', 'title', and 'summary'.
+
+        Returns:
+        list: A list of brand types found in the post.
+        """
         brands_found = []
 
+        # Check for CLO3D brand
         if "CLO" in post["tags"] or post["title"].lower() in ["clo3d", "clo 3d"] or post["summary"].lower() in ["clo3d", "clo 3d"]:
             brands_found.append("clo3d")
 
+        # Check for CLO-SET brand
         if "CLO-SET" in post["tags"] or post["title"].lower() in ["closet", "clo-set"] or post["summary"].lower() in ["closet", "clo-set"]:
             brands_found.append("closet")
 
+        # Check for CONNECT brand
         if "CONNECT" in post["tags"] or post["title"].lower() in ["connect"] or post["summary"].lower() in ["connect"]:
             brands_found.append("connect")
 
+        # Check for Marvelous Designer brand
         if (
             "MarvelousDesigner" in post["tags"]
             or post["title"].lower() in ["marvelous designer", "(md)", " md"]
@@ -94,6 +150,38 @@ class Posts:
             brands_found.append("md")
 
         return brands_found
+
+    def get_post(self, post_id: str):
+        response = requests.request(
+            "GET",
+            POST_DETAIL.format(post_id=post_id),
+            headers={
+                "Content-Type": "application/json",
+                "x-domain": "https://connect.api.clo-set.com",
+            },
+        )
+
+        post = json.loads(response.text)
+
+        comment_content = ""
+        comments = Posts.get_comments(post["postId"])
+        if comments:
+            comment_content = "\n\n### Community Post Comments:\n" + comments
+
+        content = trim_tokens(remove_html_tags(post["content"])) + comment_content
+
+        document = {
+            "id": post["postId"],
+            "url": "https://connect.clo-set.com/community/post/" + post["postId"],
+            "title": post["title"],
+            "content": content,
+            "content_description": self.azure.openai_helper.create_webpage_description(content) if content else "",
+            "created_at": post["registeredDate"],
+            "category": post["category"],
+            "tags": post["tags"],
+        }
+
+        return document
 
     @staticmethod
     def get_posts(stage: str, brand: str, posts: list, page: int):
@@ -104,8 +192,6 @@ class Posts:
             # 260 = Job Board
             if post["category"] == 260:
                 continue
-
-            brand_types = Posts.get_brand_types_for_post(post)
 
             comment_content = ""
             if post["commentsCount"] > 0:
@@ -127,6 +213,7 @@ class Posts:
                 "comment_count": post["commentsCount"],
             }
 
+            brand_types = Posts.get_brand_types_for_post(post)
             for brand_type in brand_types:
                 brand_posts[brand_type].append(document)
 
@@ -280,13 +367,20 @@ class Posts:
 
 if __name__ == "__main__":
     stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
-    task = questionary.select("What task?", choices=["Get Posts", "Upload"]).ask()
+    task = questionary.select("What task?", choices=["Get All Posts", "Get Post", "Upload All Posts"]).ask()
 
-    if task == "Get Posts":
+    if task == "Get All Posts":
         post = Posts(Azure(stage, "clo3d"))
         post.mp_get_posts()
 
-    elif task == "Upload":
+    elif task == "Get Post":
+        post_id = questionary.text("Post ID:").ask()
+
+        post = Posts(Azure(stage, "clo3d"))
+
+        print(post.get_post(post_id=post_id))
+
+    elif task == "Upload All Posts":
         brand = questionary.select("Which brand?", choices=["clo3d", "closet", "connect", "md", "allinone"]).ask()
         post = Posts(Azure(stage, brand))
         post.mp_upload()

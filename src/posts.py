@@ -73,6 +73,16 @@ class Posts:
         return False
 
     @staticmethod
+    def replace_links_with_community_url(message: str, post_url: str) -> str:
+        url_pattern = r"http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+"
+
+        matches = re.findall(url_pattern, message)
+        for match in matches:
+            message = message.replace(match, post_url)
+
+        return message
+
+    @staticmethod
     def get_comments(post_id: str) -> str:
         """
         Retrieves all the comments for a given post from the community API.
@@ -104,11 +114,15 @@ class Posts:
                 if i != 0:
                     combined_comments += "\n\n"
 
-                combined_comments += f"Comment {i + 1}: " + trim_tokens(remove_html_tags(comment["commentMessage"]))
+                combined_comments += f"Comment {i + 1}: " + Posts.replace_links_with_community_url(
+                    trim_tokens(remove_html_tags(comment["commentMessage"])), "https://connect.clo-set.com/community/post/" + post_id
+                )
 
                 if comment["replies"] is not None:
                     for i, reply in enumerate(comment["replies"]):
-                        combined_comments += f"\nReply {i + 1}: " + trim_tokens(remove_html_tags(reply["commentMessage"]))
+                        combined_comments += f"\nReply {i + 1}: " + Posts.replace_links_with_community_url(
+                            trim_tokens(remove_html_tags(reply["commentMessage"])), "https://connect.clo-set.com/community/post/" + post_id
+                        )
 
             return combined_comments
 
@@ -190,7 +204,7 @@ class Posts:
         brand_posts: dict = {"clo3d": [], "closet": [], "connect": [], "md": []}
         for post in tqdm(posts, position=((page % 5) + 1), desc=f"Page {page}", colour="red", leave=False):
             # 260 = Job Board
-            if post["category"] == 260:
+            if post["category"] == 260 or post["category"] == 230:
                 continue
 
             comment_content = ""
@@ -200,6 +214,9 @@ class Posts:
                     comment_content = "\n\n### Community Post Comments:\n" + comments
 
             content = trim_tokens(post["summary"]) + comment_content
+
+            if not content:
+                continue
 
             document = {
                 "id": post["postId"],

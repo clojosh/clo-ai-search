@@ -205,6 +205,8 @@ class Article:
                 del documents[i]["Section"]
                 del documents[i]["CategoryId"]
                 del documents[i]["Category"]
+                del documents[i]["ContentDescription"]
+                del documents[i]["CreatedAt"]
 
             if brand == "clovf":
                 # Upload clovf articles to both clo3d and clo-set

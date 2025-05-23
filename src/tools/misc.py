@@ -61,7 +61,7 @@ def remove_miscellaneous_text(article):
 def trim_tokens(article):
     """Removes unnecessary tokens"""
     article = article.replace("\u00a0", " ").replace("&nbsp", " ")
-    article = re.sub(r"[^\w0-9-\s\n_*.`~!@#$%^&()+={}\:\"'?/><,/+\[\]]", "", article)
+    # article = re.sub(r"[^\w0-9-\s\n_*.`~!@#$%^&()+={}\:\"'?/><,/+\[\]]", "", article)
     article = re.sub(r"\n+", "\n", article)
     article = re.sub(r"\s{2,}", " ", article)
 
@@ -127,6 +127,6 @@ def get_section_and_category(env, section_id):
 
 
 if __name__ == "__main__":
-    text = """<p>Hi Revelesci,</p><p></p><p>Thank you for sharing the issue with us. Could you do the following and see if the issue is resolved? </p><p></p><p>1. Navigate to 'Preview Scene Setting' panel on the right (it's next to 'Details' panel).</p><p>2. Locate the 'Additional Meshes' section and expand the section by clicking the triangle in front of it.</p><p>3. Locate the 'Skeletal Meshes' section and expand it. See if there is a corersponding MetaHuman Skeletal Mesh assigned to it. For example, something like 'f_med_unw_body_preview' should be there. Otherwise, you can simply select a desired body type and assign it yourself, but please note that the name of the Skeletal Mesh may differ depending on the body type of your MetaHuman.</p><p>4. Make sure to have LiveSyncEditor launched, and send the animated MetaHuman body to CLO.</p><p></p><p>Please let me know if this works. :)</p><p></p><p>- Bryan</p>"""
+    text = """Hi Laura, can you check if the files are present on your computer? On Windows, the path for me is: C:\\Users\\Public\\Documents\\CLO\\Assets\\StylePresets Are you on Windows or Mac?"""
 
-    print(trim_tokens(remove_html_tags(text)))
+    print(trim_tokens(text))

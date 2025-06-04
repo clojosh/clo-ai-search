@@ -115,25 +115,20 @@ class Article:
 
                 # Removes title from the URLs
                 if brand == "clo3d":
-                    article["html_url"] = re.findall(rf"https:\/\/support\.clo3d\.com\/hc\/{azure.get_locale()}\/articles\/\d+", article["html_url"])[
-                        0
-                    ]
+                    url_matches = re.findall(rf"https:\/\/support\.clo3d\.com\/hc\/{azure.get_locale()}\/articles\/\d+", article["html_url"])
                 elif brand == "closet":
-                    article["html_url"] = re.findall(
-                        rf"https:\/\/clo-set-hc\.zendesk\.com\/hc\/{azure.get_locale()}\/articles\/\d+", article["html_url"]
-                    )[0]
+                    url_matches = re.findall(rf"https:\/\/support\.clo-set\.com\/hc\/{azure.get_locale()}\/articles\/\d+", article["html_url"])
                 elif brand == "connect":
-                    article["html_url"] = re.findall(
-                        rf"https:\/\/connect-hc\.zendesk\.com\/hc\/{azure.get_locale()}\/articles\/\d+", article["html_url"]
-                    )[0]
+                    url_matches = re.findall(rf"https:\/\/connect-hc\.zendesk\.com\/hc\/{azure.get_locale()}\/articles\/\d+", article["html_url"])
                 elif brand == "clovf":
-                    article["html_url"] = re.findall(
-                        rf"https:\/\/clovf-hc\.zendesk\.com\/hc\/{azure.get_locale()}\/articles\/\d+", article["html_url"]
-                    )[0]
+                    url_matches = re.findall(rf"https:\/\/clovf-hc\.zendesk\.com\/hc\/{azure.get_locale()}\/articles\/\d+", article["html_url"])
                 elif brand == "md":
-                    article["html_url"] = re.findall(
+                    url_matches = re.findall(
                         rf"https:\/\/support\.marvelousdesigner\.com\/hc\/{azure.get_locale()}\/articles\/\d+", article["html_url"]
-                    )[0]
+                    )
+
+                if len(url_matches) > 0:
+                    article["html_url"] = url_matches[0]
 
                 article["youtube_links"] = extract_youtube_links(str(article["body"]))
                 article["body"] = remove_html_tags(str(article["body"]))
@@ -205,8 +200,6 @@ class Article:
                 del documents[i]["Section"]
                 del documents[i]["CategoryId"]
                 del documents[i]["Category"]
-                del documents[i]["ContentDescription"]
-                del documents[i]["CreatedAt"]
 
             if brand == "clovf":
                 # Upload clovf articles to both clo3d and clo-set

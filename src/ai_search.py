@@ -263,7 +263,7 @@ class AISearch:
                     if i == 0:
                         print("\n")
 
-                    print(f"{field}:\n{result[field]}")
+                    print(f"[italic red]{field}:[/italic red]\n{result[field]}")
 
             documents.append(document)
 

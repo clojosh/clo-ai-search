@@ -32,7 +32,7 @@ from tqdm import tqdm
 
 from tools.azure import Azure
 
-backend_dir = Path(__file__).parent
+backend_dir = Path(__file__).parent.parent
 
 
 class AISearch:
@@ -248,9 +248,7 @@ class AISearch:
         self.search_index_client.delete_index(self.azure.INDEX_NAME)
         print(f"{self.azure.INDEX_NAME} deleted")
 
-    def find_documents(
-        self, search_fields: list = ["ArticleId"], search_text: str = "*", select: list = ["ArticleId", "Title", "Source"], log_results: bool = False
-    ):
+    def find_documents(self, search_fields: list = [], search_text: str = "*", select: list = [], log_results: bool = False):
         results = self.azure.search_client.search(search_fields=search_fields, search_text=search_text, select=select, search_mode="all")
 
         documents = []
@@ -287,9 +285,14 @@ class AISearch:
     def get_documents(self, search_fields: list = [], search_text: str = "*", select: list = [], file_type: str = "json", log_results: bool = False):
         results = self.find_documents(search_fields=search_fields, search_text=search_text, select=select, log_results=log_results)
 
+        index_path = os.path.join(backend_dir, "data", self.azure.brand, "indexes", self.azure.stage)
+
+        if not os.path.exists(index_path):
+            os.makedirs(index_path, exist_ok=True)
+
         if file_type == "csv":
             fields = ["ArticleId", "Title", "Content", "Source"]
-            with open(os.path.join(backend_dir, "indexes", f"{brand}-index-english.csv"), "w", encoding="utf-8") as f:
+            with open(os.path.join(index_path, f"{brand}.csv"), "w", encoding="utf-8") as f:
                 write = csv.writer(f)
                 write.writerow(fields)
 
@@ -297,10 +300,7 @@ class AISearch:
                 for i, result in enumerate(pbar):
                     write.writerows([[result["ArticleId"], result["Title"], result["Content"], result["Source"]]])
         else:
-            if not os.path.exists(os.path.join("indexes", self.azure.stage)):
-                os.makedirs(os.path.join("indexes", self.azure.stage), exist_ok=True)
-
-            with open(os.path.join("indexes", self.azure.stage, f"{brand}-index-english.json"), "w+", encoding="utf-8") as f:
+            with open(os.path.join(index_path, f"{brand}.json"), "w+", encoding="utf-8") as f:
                 json.dump(results, f, ensure_ascii=False, indent=4)
 
     def document_source_breakdown(self):
@@ -329,7 +329,7 @@ class AISearch:
 
 
 if __name__ == "__main__":
-    env = questionary.select("Which environment?", choices=["dev", "prod"]).ask()
+    stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
     brand = questionary.select("Which brand?", choices=["clo3d", "closet", "connect", "md", "allinone"]).ask()
     task = questionary.select(
         "What task?",
@@ -345,7 +345,7 @@ if __name__ == "__main__":
         ],
     ).ask()
 
-    ai_search = AISearch(Azure(env, brand))
+    ai_search = AISearch(Azure(stage, brand))
 
     if task == "Create Search Index":
         index_name = questionary.text("Index Name?").ask()

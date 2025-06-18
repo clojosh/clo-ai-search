@@ -32,6 +32,9 @@ class Azure:
         else:
             load_dotenv(os.path.join(parent_dir_path, ".env.dev"))
 
+        self.ZENDESK_USERNAME = os.environ.get("ZENDESK_USERNAME")
+        self.ZENDESK_PASSWORD = os.environ.get("ZENDESK_PASSWORD")
+
         self.AZURE_SEARCH_SERVICE = os.environ.get("AZURE_SEARCH_SERVICE")
 
         self.INDEX_NAME = os.environ.get(f"{self.brand.upper()}_AZURE_SEARCH_INDEX", "clo3d")

@@ -3,8 +3,6 @@ import multiprocessing
 import os
 import re
 import shutil
-import sys
-from pathlib import Path
 
 import questionary
 import requests  # type: ignore
@@ -24,42 +22,52 @@ from tools.misc import (
 class Article:
     def __init__(self, azure: Azure):
         self.azure = azure
-        self.search_client = azure.search_client
 
-    def delete_document(self, article_id: str):
+    def delete_documents(self, article_id: str | list):
         print(f"\nDeleting {article_id}")
 
         if isinstance(article_id, list):
             for id in article_id:
-                result = self.search_client.upload_documents({"@search.action": "delete", "ArticleId": id})
+                self.azure.search_client.upload_documents([{"@search.action": "delete", "ArticleId": id}])
         else:
-            result = self.search_client.upload_documents({"@search.action": "delete", "ArticleId": article_id})
+            self.azure.search_client.upload_documents([{"@search.action": "delete", "ArticleId": article_id}])
 
     def delete_excluded_documents(self, brand: str):
         headers = {
             "Content-Type": "application/json",
         }
 
-        response = requests.request("GET", self.azure.get_zendesk_article_api_endpoint(1), headers=headers)
+        auth = (self.azure.ZENDESK_USERNAME, self.azure.ZENDESK_PASSWORD)
+
+        response = requests.request("GET", self.azure.get_zendesk_article_api_endpoint(1), headers=headers, auth=auth)
         json_objects = json.loads(response.text)
         page_count = json_objects["page_count"]
 
         for page in range(1, 1 + page_count):
-            response = requests.request("GET", self.azure.get_zendesk_article_api_endpoint(page), headers=headers)
+            response = requests.request("GET", self.azure.get_zendesk_article_api_endpoint(page), headers=headers, auth=auth)
             json_objects = json.loads(response.text)
             articles = json_objects["articles"]
 
             for article in articles:
-                if brand == "closet" and article["section_id"] in [
-                    5026352977423,
-                    6280973212175,
-                    360001149855,
-                    360001011655,
-                    360000854796,
-                    7975498603663,
-                ]:
-                    print(article["id"])
-                    self.search_client.upload_documents({"@search.action": "delete", "ArticleId": str(article["id"])})
+                if (
+                    (
+                        brand == "closet"
+                        and article["section_id"]
+                        in [
+                            5026352977423,
+                            6280973212175,
+                            360001149855,
+                            360001011655,
+                            360000854796,
+                            7975498603663,
+                        ]
+                    )
+                    or article["user_segment_id"]
+                    or article["draft"]
+                ):
+                    # print(article["id"])
+
+                    self.delete_documents(str(article["id"]))
 
     def get_zendesk_document(self, article_id: int):
         page_url = requests.request(
@@ -229,7 +237,15 @@ if __name__ == "__main__":
     brand = questionary.select("Which brand?", choices=["clo3d", "closet", "connect", "clovf", "md", "allinone"]).ask()
     language = questionary.select("Which language?", choices=["English", "Korean"]).ask()
     task = questionary.select(
-        "What task?", choices=["Get Zendesk Article", "Get All Zendesk Articles", "Delete Articles", "Upload Article", "Upload All Articles"]
+        "What task?",
+        choices=[
+            "Get Zendesk Article",
+            "Get All Zendesk Articles",
+            "Upload Article",
+            "Upload All Articles",
+            "Delete Article",
+            "Delete Excluded Articles",
+        ],
     ).ask()
 
     article = Article(Azure(stage, brand, language))
@@ -266,6 +282,9 @@ if __name__ == "__main__":
 
         article.mp_upload_documents()
 
-    elif task == "Delete Articles":
-        article.delete_document("360002199276")
-        article.delete_document("360002199276")
+    elif task == "Delete Article":
+        article_id = questionary.text("Article ID").ask()
+        article.delete_documents(article_id)
+
+    elif task == "Delete Excluded Articles":
+        article.delete_excluded_documents(brand=brand)

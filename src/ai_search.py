@@ -330,7 +330,7 @@ class AISearch:
 
 if __name__ == "__main__":
     stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
-    brand = questionary.select("Which brand?", choices=["clo3d", "closet", "connect", "md", "allinone"]).ask()
+    brand = questionary.select("Which brand?", choices=["clo3d", "clo3dapi", "closet", "connect", "md", "allinone"]).ask()
     task = questionary.select(
         "What task?",
         choices=[
@@ -391,5 +391,4 @@ if __name__ == "__main__":
         ai_search.document_source_breakdown()
 
     elif task == "Find Missing Documents Per Source":
-        ai_search.find_missing_documents_per_source()
         ai_search.find_missing_documents_per_source()

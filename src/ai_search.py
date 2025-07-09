@@ -278,9 +278,12 @@ class AISearch:
 
         print("Documents to be Deleted:", len(results))
 
+        upload_documents = []
         for i, result in enumerate(results):
             print(f"Deleting {result['ArticleId']}")
-            self.search_client.upload_documents({"@search.action": "delete", "ArticleId": str(result["ArticleId"])})
+            upload_documents.append({"@search.action": "delete", "ArticleId": str(result["ArticleId"])})
+
+        self.search_client.upload_documents(upload_documents)
 
     def get_documents(self, search_fields: list = [], search_text: str = "*", select: list = [], file_type: str = "json", log_results: bool = False):
         results = self.find_documents(search_fields=search_fields, search_text=search_text, select=select, log_results=log_results)

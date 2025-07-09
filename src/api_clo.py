@@ -88,9 +88,9 @@ class APICLO:
                     {
                         "ArticleId": shortuuid.uuid(),
                         "Source": self.base_url + "scenario.html" + "#" + tag_id,
-                        "Title": title.strip(),
+                        "Title": title.replace("\uf0c1", "").strip(),
                         "Content": code_block.strip(),
-                        "ContentDescription": "Script for " + title.strip(),
+                        "ContentDescription": "Script for " + title.replace("\uf0c1", "").strip(),
                         "CreatedAt": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                         "YoutubeLinks": [],
                     }
@@ -143,9 +143,9 @@ class APICLO:
                     {
                         "ArticleId": shortuuid.uuid(),
                         "Source": self.base_url + "list.html" + "#" + tag_id,
-                        "Title": title.strip(),
+                        "Title": title.replace("\uf0c1", "").strip(),
                         "Content": code_block.strip(),
-                        "ContentDescription": content_description.strip(),
+                        "ContentDescription": content_description.replace("\uf0c1", "").strip(),
                         "CreatedAt": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                         "YoutubeLinks": [],
                     }
@@ -191,7 +191,7 @@ class APICLO:
                     {
                         "ArticleId": shortuuid.uuid(),
                         "Source": self.base_url + "optiontype.html" + "#" + tag_id,
-                        "Title": title.strip(),
+                        "Title": title.replace("\uf0c1", "").strip(),
                         "Content": code_block.strip(),
                         "ContentDescription": "List of API Option Types",
                         "CreatedAt": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -273,7 +273,5 @@ if __name__ == "__main__":
         clo_api.delete_document(os.path.join(clo_api.api_path, api_document))
 
     elif task == "Delete All Documents":
-        for files in os.listdir(os.path.join(clo_api.api_path)):
-            clo_api.delete_document(os.path.join(clo_api.api_path, files))
         for files in os.listdir(os.path.join(clo_api.api_path)):
             clo_api.delete_document(os.path.join(clo_api.api_path, files))

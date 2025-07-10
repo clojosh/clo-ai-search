@@ -98,7 +98,7 @@ class Article:
 
         documents = []
         for article in json_objects["articles"]:
-            if article["draft"] is False and article["user_segment_id"] is None:
+            if article["draft"] is False:
                 # CLO3D:
                 # 115001436607 - Update Article Section
                 # 115012589987 - Requested by John to exclude in CLO3D

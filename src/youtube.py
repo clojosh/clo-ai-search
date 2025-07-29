@@ -32,20 +32,20 @@ class YouTube:
     def __init__(self, azure: Azure):
         self.azure = azure
 
-        if not os.path.exists(os.path.join("data", azure.brand, "youtube")):
-            os.makedirs(os.path.join("data", azure.brand, "youtube"))
+        if not os.path.exists(os.path.join(os.getcwd(), "data", azure.brand, "youtube")):
+            os.makedirs(os.path.join(os.getcwd(), "data", azure.brand, "youtube"))
 
-        self.youtube_dir_path = os.path.join("data", azure.brand, "youtube")
+        self.youtube_dir_path = os.path.join(os.getcwd(), "data", azure.brand, "youtube")
 
-        if not os.path.exists(os.path.join("data", azure.brand, "youtube", "channel")):
-            os.makedirs(os.path.join("data", azure.brand, "youtube", "channel"))
+        if not os.path.exists(os.path.join(os.getcwd(), "data", azure.brand, "youtube", "channel")):
+            os.makedirs(os.path.join(os.getcwd(), "data", azure.brand, "youtube", "channel"))
 
-        self.youtube_channel_dir_path = os.path.join("data", azure.brand, "youtube", "channel")
+        self.youtube_channel_dir_path = os.path.join(os.getcwd(), "data", azure.brand, "youtube", "channel")
 
-        if not os.path.exists(os.path.join("data", azure.brand, "youtube", "playlist")):
-            os.makedirs(os.path.join("data", azure.brand, "youtube", "playlist"))
+        if not os.path.exists(os.path.join(os.getcwd(), "data", azure.brand, "youtube", "playlist")):
+            os.makedirs(os.path.join(os.getcwd(), "data", azure.brand, "youtube", "playlist"))
 
-        self.youtube_playlist_dir_path = os.path.join("data", azure.brand, "youtube", "playlist")
+        self.youtube_playlist_dir_path = os.path.join(os.getcwd(), "data", azure.brand, "youtube", "playlist")
 
     def get_channel_id(self, brand: str) -> str:
         if brand == "clo3d":
@@ -74,17 +74,20 @@ class YouTube:
             str: The text from the transcript.
         """
         try:
-            transcript = YouTubeTranscriptApi.get_transcript(video_id=video_id, languages=["en"])
+            ytt_api = YouTubeTranscriptApi()
+            transcript = ytt_api.fetch(video_id)
+
+            for snippet in transcript:
+                print(snippet.text)
 
             combined_transcript_text = ""
-            for t in transcript:
-                combined_transcript_text += t["text"].strip().replace("[Music]", " ").replace("foreign", " ") + " "
+            # for t in transcript:
+            #     combined_transcript_text += t["text"].strip().replace("[Music]", " ").replace("foreign", " ") + " "
 
             return combined_transcript_text
 
         except Exception:
-            logger("Error", "No Transcripts found for " + "https://www.youtube.com/watch?v=" + video_id)
-
+            print("Error: No Transcripts found for " + "https://www.youtube.com/watch?v=" + video_id)
             return ""
 
     @staticmethod
@@ -301,27 +304,29 @@ if __name__ == "__main__":
 
     yt = YouTube(Azure(stage, brand))
 
-    if task == "Get Transcripts":
-        video_age_in_years = questionary.text("What video age(in years)?", default="2").ask()
-        yt.mp_extract_youtube_channel_transcripts(video_age_in_years=int(video_age_in_years))
+    # if task == "Get Transcripts":
+    #     video_age_in_years = questionary.text("What video age(in years)?", default="2").ask()
+    #     yt.mp_extract_youtube_channel_transcripts(video_age_in_years=int(video_age_in_years))
 
-    else:
-        if task == "Summarize Transcript":
-            youtube_channel_pages = sorted(os.listdir(yt.youtube_channel_dir_path), key=lambda x: int(x.split("_")[1].split(".")[0]))
-            page = questionary.select("Which page?", choices=youtube_channel_pages).ask()
-            YouTube.summarize_transcripts(stage, brand, os.path.join(yt.youtube_channel_dir_path, page))
+    # else:
+    #     if task == "Summarize Transcript":
+    #         youtube_channel_pages = sorted(os.listdir(yt.youtube_channel_dir_path), key=lambda x: int(x.split("_")[1].split(".")[0]))
+    #         page = questionary.select("Which page?", choices=youtube_channel_pages).ask()
+    #         YouTube.summarize_transcripts(stage, brand, os.path.join(yt.youtube_channel_dir_path, page))
 
-        elif task == "Summarize All Transcripts":
-            yt.mp_summarize_transcripts()
+    #     elif task == "Summarize All Transcripts":
+    #         yt.mp_summarize_transcripts()
 
-        elif task == "Upload All Transcripts":
-            if brand == "allinone":
-                for folder in os.listdir("data"):
-                    if folder == "clo3d" or folder == "md":
-                        for file in os.listdir(os.path.join("data", folder, "youtube", "channel")):
-                            shutil.copy(
-                                os.path.join("data", folder, "youtube", "channel", file),
-                                os.path.join(yt.youtube_channel_dir_path, f"{folder}_{file}"),
-                            )
+    #     elif task == "Upload All Transcripts":
+    #         if brand == "allinone":
+    #             for folder in os.listdir(os.path.join(os.getcwd(), "data")):
+    #                 if folder == "clo3d" or folder == "md":
+    #                     for file in os.listdir(os.path.join(os.getcwd(), "data", folder, "youtube", "channel")):
+    #                         shutil.copy(
+    #                             os.path.join(os.getcwd(), "data", folder, "youtube", "channel", file),
+    #                             os.path.join(yt.youtube_channel_dir_path, f"{folder}_{file}"),
+    #                         )
 
-            yt.upload_transcripts()
+    #         yt.upload_transcripts()
+
+    yt.extract_video_transcript_text("PZU1_qY3gwk")

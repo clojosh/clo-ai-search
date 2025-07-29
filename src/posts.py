@@ -235,13 +235,13 @@ class Posts:
                 brand_posts[brand_type].append(document)
 
         for brand_type, documents in brand_posts.items():
-            if not os.path.exists(os.path.join("data", brand_type, "posts")):
-                os.makedirs(os.path.join("data", brand_type, "posts"), exist_ok=True)
+            if not os.path.exists(os.path.join(os.getcwd(), "data", brand_type, "posts")):
+                os.makedirs(os.path.join(os.getcwd(), "data", brand_type, "posts"), exist_ok=True)
 
             if len(documents) == 0:
                 continue
 
-            with open(os.path.join("data", brand_type, "posts", f"page_{page}.json"), "w+", encoding="utf-8") as f:
+            with open(os.path.join(os.getcwd(), "data", brand_type, "posts", f"page_{page}.json"), "w+", encoding="utf-8") as f:
                 json.dump(documents, f, ensure_ascii=False, indent=4)
 
     def mp_get_posts(self):
@@ -319,13 +319,15 @@ class Posts:
 
     def mp_upload(self):
         file_paths = sorted(
-            os.listdir(os.path.join("data", self.azure.brand, "posts")),
+            os.listdir(os.path.join(os.getcwd(), "data", self.azure.brand, "posts")),
             key=lambda x: int(x.partition("_")[2].partition(".")[0]),
         )
 
         upload_posts_params = []
         for i, file in enumerate(file_paths):
-            upload_posts_params.append((self.azure.stage, self.azure.brand, os.path.join("data", self.azure.brand, "posts"), file, (i % 5) + 1))
+            upload_posts_params.append(
+                (self.azure.stage, self.azure.brand, os.path.join(os.getcwd(), "data", self.azure.brand, "posts"), file, (i % 5) + 1)
+            )
 
         with multiprocessing.Pool(5) as p:
             p.starmap_async(

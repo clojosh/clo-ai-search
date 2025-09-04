@@ -12,7 +12,6 @@ from playwright.async_api import async_playwright
 from tqdm import tqdm
 
 from tools.azure import Azure
-from tools.misc import trim_tokens
 
 
 class APICLO:

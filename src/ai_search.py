@@ -270,14 +270,7 @@ class AISearch:
 
         return documents
 
-    def delete_documents(self, search_fields: list = [], search_text: str = "*", select: list = []):
-        if "ArticleId" not in select:
-            select.append("ArticleId")
-
-        results = self.find_documents(search_fields=search_fields, search_text=search_text, select=select)
-
-        print("Documents to be Deleted:", len(results))
-
+    def delete_documents(self, results: list):
         upload_documents = []
         for i, result in enumerate(results):
             print(f"Deleting {result['ArticleId']}")
@@ -306,30 +299,6 @@ class AISearch:
             with open(os.path.join(index_path, f"{brand}.json"), "w+", encoding="utf-8") as f:
                 json.dump(results, f, ensure_ascii=False, indent=4)
 
-    def document_source_breakdown(self):
-        with open(os.path.join(backend_dir, "indexes", self.azure.stage, "clo3d-index-english.json"), "r", encoding="utf-8") as f:
-            documents = json.load(f)
-
-            sources = [document["Source"][: document["Source"].rfind("/")] for document in documents]
-
-            sources_count = Counter(sources)
-
-            for url, count in sources_count.items():
-                print(f"{url}: {count}")
-
-    def find_missing_documents_per_source(self):
-        with open(os.path.join(backend_dir, "indexes", "prod", "clo3d-index-english.json"), "r", encoding="utf-8") as f:
-            prod_documents = json.load(f)
-
-        with open(os.path.join(backend_dir, "indexes", "dev", "clo3d-index-english.json"), "r", encoding="utf-8") as f:
-            dev_documents = json.load(f)
-
-            prod_sources = [prod_document["Source"] for prod_document in prod_documents]
-            dev_sources_not_in_prod = set([dev_document["Source"] for dev_document in dev_documents if dev_document["Source"] not in prod_sources])
-
-            for source in sorted(dev_sources_not_in_prod):
-                print(source)
-
 
 if __name__ == "__main__":
     stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
@@ -343,8 +312,6 @@ if __name__ == "__main__":
             "Search Documents (Hybrid, Text, or Vector)",
             "Find Documents",
             "Delete Documents",
-            "Get Document Source Breakdown",
-            "Find Missing Documents Per Source",
         ],
     ).ask()
 
@@ -367,7 +334,16 @@ if __name__ == "__main__":
             select = questionary.checkbox("Select?", choices=["ArticleId", "Title", "Source", "Content"]).ask()
 
         if task == "Delete Documents":
-            ai_search.delete_documents(search_fields=search_fields, search_text=search_text, select=select)
+            documents = ai_search.find_documents(search_fields=search_fields, search_text=search_text, select=select)
+
+            for document in documents:
+                print(document["ArticleId"] + "\n" + document["Source"], "\n")
+
+            print(f"\nTotal documents found: {len(documents)}\n")
+
+            if questionary.confirm("Do you want to delete these documents?").ask():
+                for document in documents:
+                    ai_search.delete_documents(documents)
 
         elif task == "Get Documents":
             ai_search.get_documents(
@@ -389,9 +365,3 @@ if __name__ == "__main__":
             ai_search.text_search(search_text)
         elif search_type == "Vector":
             ai_search.vector_search(search_text)
-
-    elif task == "Get Document Source Breakdown":
-        ai_search.document_source_breakdown()
-
-    elif task == "Find Missing Documents Per Source":
-        ai_search.find_missing_documents_per_source()

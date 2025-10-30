@@ -1,8 +1,8 @@
 import json
 import multiprocessing
 import os
+import re
 import shutil
-import ssl
 from datetime import datetime, timedelta
 from io import BytesIO
 from typing import List, TypedDict, Union
@@ -10,7 +10,8 @@ from typing import List, TypedDict, Union
 import questionary
 import requests  # type: ignore
 import shortuuid
-from pytube import Channel, Playlist, extract
+import yt_dlp
+from dateutil.relativedelta import relativedelta
 from tqdm import tqdm
 from youtube_transcript_api import YouTubeTranscriptApi
 
@@ -63,6 +64,53 @@ class YouTube:
         return channel_id
 
     @staticmethod
+    def extract_captions_text(video_url: str, language: str = "en", auto_captions: bool = False):
+        options = {
+            "skip_download": True,
+            "quiet": True,
+            "writesubtitles": not auto_captions,
+            "writeautomaticsub": auto_captions,
+        }
+
+        with yt_dlp.YoutubeDL(options) as ydl:
+            info = ydl.extract_info(video_url, download=False)
+            subtitles = info.get("subtitles", {}) if not auto_captions else info.get("automatic_captions", {})
+            subtitle_url = None
+
+            if language in subtitles:
+                formats = subtitles[language]
+                # Prefer .vtt or .json3 for structured captions
+                for fmt in formats:
+                    if fmt["ext"] in ["vtt", "json3"]:
+                        subtitle_url = fmt["url"]
+                        break
+                if not subtitle_url:
+                    subtitle_url = formats[0]["url"]  # Fallback to first format
+            else:
+                print(f"No subtitles found for language: {language}")
+                return None
+
+        # Now download and parse the subtitle content in memory
+        response = requests.get(subtitle_url)
+        if response.status_code != 200:
+            print("Failed to fetch subtitles")
+            return None
+
+        content = response.text
+        return YouTube.parse_vtt_to_text(content) if ".vtt" in subtitle_url else content  # Extend if needed
+
+    @staticmethod
+    def parse_vtt_to_text(vtt_content: str):
+        lines = vtt_content.splitlines()
+        text_lines = []
+        for line in lines:
+            line = line.strip()
+            if not line or "-->" in line or re.match(r"^\d\d:\d\d", line):
+                continue  # Skip metadata and timestamps
+            text_lines.append(line)
+        return "\n".join(text_lines)
+
+    @staticmethod
     def extract_video_transcript_text(video_id: str) -> str:
         """
         Returns only the text of a transcript from a youtube video
@@ -86,8 +134,9 @@ class YouTube:
 
             return combined_transcript_text
 
-        except Exception:
-            print("Error: No Transcripts found for " + "https://www.youtube.com/watch?v=" + video_id)
+        except Exception as e:
+            print("Error: " + str(e))
+            # print("Error: No Transcripts found for " + "https://www.youtube.com/watch?v=" + video_id)
             return ""
 
     @staticmethod
@@ -128,10 +177,25 @@ class YouTube:
         with open(f"{os.path.join(youtube_channel_dir_path, f'page_{page}')}.json", "w+", encoding="utf-8") as f:
             json.dump(videos, f, ensure_ascii=False, indent=4)
 
-    def mp_extract_youtube_channel_transcripts(self, video_age_in_years: int = 2) -> None:
+    def mp_extract_youtube_channel_transcripts(
+        self, video_age_in_years: int = 0, video_age_in_months: int = 0, video_age_in_weeks: int = 0, video_age_in_days: int = 0
+    ) -> None:
         """Use multiprocessing to extract transcripts from a youtube channel"""
 
-        published_after = "{}-01-01T00:00:00Z".format(datetime.today().year - video_age_in_years)
+        if int(video_age_in_years) > 0:
+            published_after = "{}-01-01T00:00:00Z".format(datetime.today().year - int(video_age_in_years))
+        elif int(video_age_in_months) > 0:
+            datetime_months = datetime.now() - relativedelta(months=int(video_age_in_months))
+            published_after = datetime_months.strftime("%Y-%m-%dT%H:%M:%SZ")
+        elif int(video_age_in_weeks) > 0:
+            datetime_weeks = datetime.now() - relativedelta(weeks=int(video_age_in_weeks))
+            published_after = datetime_weeks.strftime("%Y-%m-%dT%H:%M:%SZ")
+        elif int(video_age_in_days) > 0:
+            datetime_days = datetime.now() - relativedelta(days=int(video_age_in_days))
+            published_after = datetime_days.strftime("%Y-%m-%dT%H:%M:%SZ")
+        else:
+            datetime_days = datetime.now() - relativedelta(days=1)
+            published_after = datetime_days.strftime("%Y-%m-%dT%H:%M:%SZ")
 
         page = 0
 
@@ -295,7 +359,8 @@ if __name__ == "__main__":
     task = questionary.select(
         "What task?",
         choices=[
-            "Get Transcripts",
+            "Get Transcript",
+            "Get All Transcripts",
             "Summarize Transcript",
             "Summarize All Transcripts",
             "Upload All Transcripts",
@@ -304,29 +369,40 @@ if __name__ == "__main__":
 
     yt = YouTube(Azure(stage, brand))
 
-    # if task == "Get Transcripts":
-    #     video_age_in_years = questionary.text("What video age(in years)?", default="2").ask()
-    #     yt.mp_extract_youtube_channel_transcripts(video_age_in_years=int(video_age_in_years))
+    if task == "Get Transcript":
+        video_id = questionary.text("Video ID:").ask()
+        yt.extract_video_transcript_text(video_id=video_id)
 
-    # else:
-    #     if task == "Summarize Transcript":
-    #         youtube_channel_pages = sorted(os.listdir(yt.youtube_channel_dir_path), key=lambda x: int(x.split("_")[1].split(".")[0]))
-    #         page = questionary.select("Which page?", choices=youtube_channel_pages).ask()
-    #         YouTube.summarize_transcripts(stage, brand, os.path.join(yt.youtube_channel_dir_path, page))
+    elif task == "Get All Transcripts":
+        video_age = questionary.select("Video Age", choices=["Years", "Months", "Weeks", "Days"]).ask()
+        video_age_number = questionary.text(f"Number of {video_age}:").ask()
 
-    #     elif task == "Summarize All Transcripts":
-    #         yt.mp_summarize_transcripts()
+        if video_age == "Years":
+            yt.mp_extract_youtube_channel_transcripts(video_age_in_years=video_age_number)
+        elif video_age == "Months":
+            yt.mp_extract_youtube_channel_transcripts(video_age_in_months=video_age_number)
+        elif video_age == "Weeks":
+            yt.mp_extract_youtube_channel_transcripts(video_age_in_weeks=video_age_number)
+        elif video_age == "Days":
+            yt.mp_extract_youtube_channel_transcripts(video_age_in_days=video_age_number)
 
-    #     elif task == "Upload All Transcripts":
-    #         if brand == "allinone":
-    #             for folder in os.listdir(os.path.join(os.getcwd(), "data")):
-    #                 if folder == "clo3d" or folder == "md":
-    #                     for file in os.listdir(os.path.join(os.getcwd(), "data", folder, "youtube", "channel")):
-    #                         shutil.copy(
-    #                             os.path.join(os.getcwd(), "data", folder, "youtube", "channel", file),
-    #                             os.path.join(yt.youtube_channel_dir_path, f"{folder}_{file}"),
-    #                         )
+    else:
+        if task == "Summarize Transcript":
+            youtube_channel_pages = sorted(os.listdir(yt.youtube_channel_dir_path), key=lambda x: int(x.split("_")[1].split(".")[0]))
+            page = questionary.select("Which page?", choices=youtube_channel_pages).ask()
+            YouTube.summarize_transcripts(stage, brand, os.path.join(yt.youtube_channel_dir_path, page))
 
-    #         yt.upload_transcripts()
+        elif task == "Summarize All Transcripts":
+            yt.mp_summarize_transcripts()
 
-    yt.extract_video_transcript_text("PZU1_qY3gwk")
+        elif task == "Upload All Transcripts":
+            if brand == "allinone":
+                for folder in os.listdir(os.path.join(os.getcwd(), "data")):
+                    if folder == "clo3d" or folder == "md":
+                        for file in os.listdir(os.path.join(os.getcwd(), "data", folder, "youtube", "channel")):
+                            shutil.copy(
+                                os.path.join(os.getcwd(), "data", folder, "youtube", "channel", file),
+                                os.path.join(yt.youtube_channel_dir_path, f"{folder}_{file}"),
+                            )
+
+            yt.upload_transcripts()

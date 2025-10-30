@@ -188,7 +188,7 @@ class Article:
 
     @staticmethod
     def upload_documents(stage: str, brand: str, language: str, article_path: str, file: str):
-        print(f"\n{file.title()}")
+        print(f"\n{file}")
 
         azure = Azure(stage, brand, language)
 

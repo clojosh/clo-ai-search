@@ -3,6 +3,8 @@ import multiprocessing
 import os
 import re
 import shutil
+import subprocess
+import sys
 from datetime import datetime, timedelta
 from io import BytesIO
 from typing import List, TypedDict, Union
@@ -63,52 +65,105 @@ class YouTube:
 
         return channel_id
 
-    @staticmethod
-    def extract_captions_text(video_url: str, language: str = "en", auto_captions: bool = False):
-        options = {
-            "skip_download": True,
-            "quiet": True,
-            "writesubtitles": not auto_captions,
-            "writeautomaticsub": auto_captions,
-        }
+    def download_subtitles_subprocess(self, video_id: str):
+        """
+        Executes the yt-dlp command using subprocess.run() to download subtitles.
+        """
 
-        with yt_dlp.YoutubeDL(options) as ydl:
-            info = ydl.extract_info(video_url, download=False)
-            subtitles = info.get("subtitles", {}) if not auto_captions else info.get("automatic_captions", {})
-            subtitle_url = None
+        YT_DLP_COMMAND = [
+            "yt-dlp",
+            "--write-subs",  # Write a subtitle file
+            "--write-auto-subs",  # Write automatically generated subtitles (if available)
+            "--sub-langs",
+            "en",  # Specify the subtitle language to be English
+            "--skip-download",  # Skip downloading the video file
+            "--sub-format",
+            "srt",  # Convert the subtitle format to SRT
+            "-o",
+            f"{self.youtube_channel_dir_path}/subtitles/%(title)s.%(ext)s",
+            f"https://www.youtube.com/watch?v={video_id}",  # The target YouTube URL
+        ]
 
-            if language in subtitles:
-                formats = subtitles[language]
-                # Prefer .vtt or .json3 for structured captions
-                for fmt in formats:
-                    if fmt["ext"] in ["vtt", "json3"]:
-                        subtitle_url = fmt["url"]
-                        break
-                if not subtitle_url:
-                    subtitle_url = formats[0]["url"]  # Fallback to first format
-            else:
-                print(f"No subtitles found for language: {language}")
-                return None
+        print("\n--- Running yt-dlp Command ---")
+        # Print the command being run for transparency
+        print(" ".join(YT_DLP_COMMAND))
+        print("-" * 60)
 
-        # Now download and parse the subtitle content in memory
-        response = requests.get(subtitle_url)
-        if response.status_code != 200:
-            print("Failed to fetch subtitles")
+        try:
+            # subprocess.run is the recommended way to run external commands.
+            # check=True: raises CalledProcessError if the command returns a non-zero exit code.
+            # capture_output=True: captures stdout and stderr.
+            # text=True: decodes stdout/stderr as text.
+            result = subprocess.run(
+                YT_DLP_COMMAND,
+                check=True,
+                capture_output=True,
+                text=True,
+                encoding="utf-8",  # Ensure proper decoding of output
+            )
+
+            print("\n--- Command Executed Successfully ---")
+            print("\nSTDOUT (Output from yt-dlp):")
+            # Print the standard output (this usually shows download progress/completion)
+            print(result.stdout)
+
+        except subprocess.CalledProcessError as e:
+            # Handle errors reported by yt-dlp itself (e.g., video unavailable, invalid URL)
+            print("\n--- ERROR: Command Failed ---", file=sys.stderr)
+            print(f"Exit code: {e.returncode}", file=sys.stderr)
+            print("STDERR (Error output):", file=sys.stderr)
+            # Print the error message from the program
+            print(e.stderr, file=sys.stderr)
+
+        except FileNotFoundError:
+            # Handle the case where the 'yt-dlp' executable is not found in the system PATH
+            print("\n--- FATAL ERROR: Executable Not Found ---", file=sys.stderr)
+            print("Error: 'yt-dlp' command not found.", file=sys.stderr)
+            print("Please ensure yt-dlp is installed and accessible in your system's PATH.", file=sys.stderr)
+            # Suggest installing
+            print("You can usually install it using: pip install yt-dlp", file=sys.stderr)
+
+        except Exception as e:
+            # Catch any other unexpected exceptions
+            print(f"\n--- An unexpected error occurred: {e} ---", file=sys.stderr)
+
+    def extract_srt_text(self, srt_file_path: str):
+        """
+        Parses an SRT file, extracting only the raw text lines.
+        SRT format contains sequence numbers, timestamps, and text blocks.
+        """
+        raw_text = []
+        # Regex to identify timestamp lines (e.g., 00:00:01,000 --> 00:00:04,000)
+        timestamp_pattern = re.compile(r"\d{2}:\d{2}:\d{2},\d{3} --> \d{2}:\d{2}:\d{2},\d{3}")
+
+        try:
+            with open(srt_file_path, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+
+                    # Skip blank lines
+                    if not line:
+                        continue
+
+                    # Skip sequence numbers (lines containing only digits)
+                    if line.isdigit():
+                        continue
+
+                    # Skip timestamp lines
+                    if timestamp_pattern.match(line):
+                        continue
+
+                    # If the line contains actual text, append it.
+                    raw_text.append(line)
+
+            return " ".join(raw_text)
+
+        except FileNotFoundError:
+            print(f"Error: Subtitle file not found at {srt_file_path}", file=sys.stderr)
             return None
-
-        content = response.text
-        return YouTube.parse_vtt_to_text(content) if ".vtt" in subtitle_url else content  # Extend if needed
-
-    @staticmethod
-    def parse_vtt_to_text(vtt_content: str):
-        lines = vtt_content.splitlines()
-        text_lines = []
-        for line in lines:
-            line = line.strip()
-            if not line or "-->" in line or re.match(r"^\d\d:\d\d", line):
-                continue  # Skip metadata and timestamps
-            text_lines.append(line)
-        return "\n".join(text_lines)
+        except Exception as e:
+            print(f"Error reading or parsing file {srt_file_path}: {e}", file=sys.stderr)
+            return None
 
     @staticmethod
     def extract_video_transcript_text(video_id: str) -> str:
@@ -371,7 +426,13 @@ if __name__ == "__main__":
 
     if task == "Get Transcript":
         video_id = questionary.text("Video ID:").ask()
-        yt.extract_video_transcript_text(video_id=video_id)
+        yt.download_subtitles_subprocess(video_id)
+
+        file = questionary.select("Extract text from which file?", choices=os.listdir(os.path.join(yt.youtube_channel_dir_path, "subtitles"))).ask()
+        srt_text = yt.extract_srt_text(os.path.join(yt.youtube_channel_dir_path, "subtitles", file))
+
+        with open(os.path.join(yt.youtube_channel_dir_path, "subtitles", f"{file.split('.')[0]}.txt"), "w+", encoding="utf-8") as f:
+            f.write(srt_text)
 
     elif task == "Get All Transcripts":
         video_age = questionary.select("Video Age", choices=["Years", "Months", "Weeks", "Days"]).ask()

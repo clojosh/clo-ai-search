@@ -48,6 +48,9 @@ class YouTube:
 
         self.youtube_channel_dir_path = os.path.join(os.getcwd(), "data", azure.brand, "youtube", "channel")
 
+        if not os.path.exists(os.path.join(os.getcwd(), "data", azure.brand, "youtube", "channel", "transcripts")):
+            os.makedirs(os.path.join(os.getcwd(), "data", azure.brand, "youtube", "channel", "transcripts"))
+
         if not os.path.exists(os.path.join(os.getcwd(), "data", azure.brand, "youtube", "playlist")):
             os.makedirs(os.path.join(os.getcwd(), "data", azure.brand, "youtube", "playlist"))
 
@@ -308,7 +311,7 @@ class YouTube:
                 transcripts.append(video)
 
             # Save the transcripts to a json file
-            with open(f"{os.path.join(self.youtube_channel_dir_path, f'page_{i}')}.json", "w+", encoding="utf-8") as f:
+            with open(f"{os.path.join(self.youtube_channel_dir_path, 'transcripts', f'page_{i}')}.json", "w+", encoding="utf-8") as f:
                 json.dump(transcripts, f, ensure_ascii=False, indent=4)
                 transcripts = []
 
@@ -340,7 +343,7 @@ class YouTube:
         return playlist_title
 
     @staticmethod
-    def summarize_transcripts(env: str, brand: str, youtube_channel_dir_path: str):
+    def summarize_transcripts(env: str, brand: str, youtube_channel_transcript_dir_path: str):
         """
         Summarize all the transcripts in a file
 
@@ -352,26 +355,23 @@ class YouTube:
         Returns:
             None
         """
-        print("\n" + os.path.split(youtube_channel_dir_path)[1].strip().title())
+        print("\n" + os.path.split(youtube_channel_transcript_dir_path)[1].strip())
 
         environment = Azure(env, brand)
 
         # Read the transcripts from the file
-        with open(youtube_channel_dir_path, "r", encoding="utf-8") as file:
+        with open(youtube_channel_transcript_dir_path, "r", encoding="utf-8") as file:
             transcripts = json.load(file)
 
         # Summarize each transcript
         for index, trans in enumerate(transcripts):
-            if len(trans["Transcript"]) > 400:
-                try:
-                    summary = environment.openai_helper.generate_transcript_summary(trans["Transcript"])
-                except Exception as e:
-                    raise e
-            else:
-                summary = ""
-            transcripts[index]["Summary"] = summary
+            try:
+                summary = environment.openai_helper.generate_transcript_summary(trans["Transcript"])
+                trans["Summary"] = summary
+            except Exception as e:
+                raise e
 
-        with open(youtube_channel_dir_path, "w", encoding="utf-8") as file:
+        with open(youtube_channel_transcript_dir_path, "w", encoding="utf-8") as file:
             json.dump(transcripts, file, ensure_ascii=False, indent=4)
 
     def mp_summarize_transcripts(self):
@@ -384,14 +384,16 @@ class YouTube:
         See `summarize_transcripts` for more details on what is done.
         """
         # Get the list of files to process
-        files = os.listdir(self.youtube_channel_dir_path)
+        files = os.listdir(os.path.join(self.youtube_channel_dir_path, "transcripts"))
 
         # Create a list to store the parameters to pass to `summarize_transcripts`
         summarize_transcripts_params = []
 
         # Iterate over the files and create the parameters
         for file in files:
-            summarize_transcripts_params.append((self.azure.stage, self.azure.brand, os.path.join(self.youtube_channel_dir_path, file)))
+            summarize_transcripts_params.append(
+                (self.azure.stage, self.azure.brand, os.path.join(self.youtube_channel_dir_path, "transcripts", file))
+            )
 
         # Create a multiprocessing pool and process the files in parallel
         with multiprocessing.Pool(3) as p:
@@ -400,13 +402,15 @@ class YouTube:
             p.join()
 
     def upload_transcripts(self):
-        for file in tqdm(os.listdir(self.youtube_channel_dir_path), desc="Uploading Transcripts", colour="green", position=0, leave=True):
-            with open(os.path.join(self.youtube_channel_dir_path, file), "r", encoding="utf-8") as f:
+        for file in tqdm(
+            os.listdir(os.path.join(yt.youtube_channel_dir_path, "transcripts")), desc="Uploading Transcripts", colour="green", position=0, leave=True
+        ):
+            with open(os.path.join(self.youtube_channel_dir_path, "transcripts", file), "r", encoding="utf-8") as f:
                 transcripts = json.load(f)
 
             upload_transcripts = []
             for transcript in transcripts:
-                if transcript["Summary"] == "":
+                if transcript["Summary"] == "" or len(transcript["Summary"]) < 100:
                     continue
 
                 if transcript["VideoId"].startswith("_"):
@@ -488,9 +492,11 @@ if __name__ == "__main__":
 
     else:
         if task == "Summarize Transcript":
-            youtube_channel_pages = sorted(os.listdir(yt.youtube_channel_dir_path), key=lambda x: int(x.split("_")[1].split(".")[0]))
+            youtube_channel_pages = sorted(
+                os.listdir(os.path.join(yt.youtube_channel_dir_path, "transcripts")), key=lambda x: int(x.split("_")[1].split(".")[0])
+            )
             page = questionary.select("Which page?", choices=youtube_channel_pages).ask()
-            YouTube.summarize_transcripts(stage, brand, os.path.join(yt.youtube_channel_dir_path, page))
+            yt.summarize_transcripts(stage, brand, os.path.join(yt.youtube_channel_dir_path, "transcripts", page))
 
         elif task == "Summarize All Transcripts":
             yt.mp_summarize_transcripts()

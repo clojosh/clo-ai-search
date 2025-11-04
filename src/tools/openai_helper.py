@@ -20,6 +20,18 @@ GPT_4_MINI_MAX_INPUT_TOKENS = 128000
 GPT_4_MINI_MAX_OUTPUT_TOKENS = 16000
 EMBEDDING_ADA_002_MAX_INPUT_TOKENS = 8191
 
+TRANSCRIPT_SUMMARY_PROMPT = """You are an expert summarizer. Given a transcript of a YouTube video, generate a comprehensive summary that accurately reflects the key points, themes, and insights presented in the video. 
+Instructions:
+1. Identify the main topic and purpose of the video
+2. Break down the content into clear sections or segments (e.g., introduction, key points, conclusion)
+3. Extract and summarize important facts, arguments, or insights shared by the speaker(s)
+4. Ignore filler content like greetings, off-topic tangents, or promotional content
+5. Use clear and concise language suitable for downstream use in a retrieval-augmented generation (RAG) system.
+6. If the transcript is too short or lacks sufficient detail, return an empty string.
+
+###Transcript:
+{transcript}"""
+
 
 class OpenAIHelper:
     def __init__(
@@ -130,7 +142,7 @@ class OpenAIHelper:
         messages = [
             {
                 "role": "user",
-                "content": f"""You are an expert summarizer. Given the transcript of a YouTube video, generate a comprehensive summary that accurately reflects the key points, themes, and insights presented in the video. Your task is to: 1. Identify the main topic and purpose of the video\n2. Break down the content into clear sections or segments (e.g., introduction, key points, conclusion)\n3. Extract and summarize important facts, arguments, or insights shared by the speaker(s)\n4. Ignore filler content like greetings, off-topic tangents, or promotional content\n5. Use clear and concise language suitable for downstream use in a retrieval-augmented generation (RAG) system.\n\n###Transcript:\n{transcript}""",
+                "content": TRANSCRIPT_SUMMARY_PROMPT.format(transcript=transcript),
             }
         ]
 

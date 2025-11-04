@@ -53,7 +53,29 @@ class YouTube:
 
         self.youtube_playlist_dir_path = os.path.join(os.getcwd(), "data", azure.brand, "youtube", "playlist")
 
-    def retrive_youtube_channel_ids(
+    def video_details(self, video_id: str):
+        """
+        Retrieves the details of a YouTube video.
+
+        Parameters:
+        video_id (str): The ID of the YouTube video.
+
+        Returns:
+        dict: A dictionary containing the details of the YouTube video.
+        """
+        url = f"https://youtube.googleapis.com/youtube/v3/videos?id={video_id}&key=AIzaSyC2LupTSVApfy90Bfzq8L5AAkAawOmT0gY&part=contentDetails%2Cid%2C%20liveStreamingDetails%2C%20localizations%2C%20player%2C%20recordingDetails%2C%20snippet%2C%20statistics%2C%20status%2C%20topicDetails"
+
+        response = requests.get(url).json()
+
+        return {
+            "VideoId": video_id,
+            "Url": f"https://www.youtube.com/watch?v={video_id}",
+            "Title": response["items"][0]["snippet"]["title"],
+            "Description": response["items"][0]["snippet"]["description"],
+            "PublishedAt": response["items"][0]["snippet"]["publishedAt"],
+        }
+
+    def retrive_youtube_video_ids(
         self, video_age_in_years: int = 0, video_age_in_months: int = 0, video_age_in_weeks: int = 0, video_age_in_days: int = 0
     ):
         """
@@ -148,7 +170,7 @@ class YouTube:
             f"https://www.youtube.com/watch?v={video_id}",  # The target YouTube URL
         ]
 
-        print("--- Running yt-dlp Command ---")
+        print("\n--- Running yt-dlp Command ---")
         # Print the command being run for transparency
         print(" ".join(YT_DLP_COMMAND))
         print("-" * 60)
@@ -193,8 +215,15 @@ class YouTube:
 
     def extract_srt_text(self, srt_file_path: str):
         """
-        Parses an SRT file, extracting only the raw text lines.
-        SRT format contains sequence numbers, timestamps, and text blocks.
+        This function takes an SRT file path as input and returns the raw text lines
+        extracted from the file. It does this by reading the file line by line, skipping
+        blank lines, timestamp lines, and lines containing only sequence numbers.
+
+        Args:
+            srt_file_path (str): The path to the SRT file to parse.
+
+        Returns:
+            str: The raw text lines extracted from the SRT file, joined by spaces.
         """
         raw_text = []
         # Regex to identify timestamp lines (e.g., 00:00:01,000 --> 00:00:04,000)
@@ -207,14 +236,17 @@ class YouTube:
 
                     # Skip blank lines
                     if not line:
+                        # We don't want to include blank lines in our output
                         continue
 
                     # Skip sequence numbers (lines containing only digits)
                     if line.isdigit():
+                        # We don't want to include sequence numbers in our output
                         continue
 
                     # Skip timestamp lines
                     if timestamp_pattern.match(line):
+                        # We don't want to include timestamp lines in our output
                         continue
 
                     # If the line contains actual text, append it.
@@ -224,41 +256,14 @@ class YouTube:
 
         except FileNotFoundError:
             print(f"Error: Subtitle file not found at {srt_file_path}", file=sys.stderr)
+            # If the file doesn't exist, return None
             return None
         except Exception as e:
             print(f"Error reading or parsing file {srt_file_path}: {e}", file=sys.stderr)
+            # If there's an error reading or parsing the file, return None
             return None
 
-    @staticmethod
-    def extract_video_transcript_text(video_id: str) -> str:
-        """
-        Returns only the text of a transcript from a youtube video
-
-        Args:
-            video_id (str): The id of the video to extract the transcript for.
-
-        Returns:
-            str: The text from the transcript.
-        """
-        try:
-            ytt_api = YouTubeTranscriptApi()
-            transcript = ytt_api.fetch(video_id)
-
-            for snippet in transcript:
-                print(snippet.text)
-
-            combined_transcript_text = ""
-            for t in transcript:
-                combined_transcript_text += t["text"].strip().replace("[Music]", " ").replace("foreign", " ") + " "
-
-            return combined_transcript_text
-
-        except Exception as e:
-            print("Error: " + str(e))
-            # print("Error: No Transcripts found for " + "https://www.youtube.com/watch?v=" + video_id)
-            return ""
-
-    def extract_youtube_channel_transcripts(self, resp_objects: List[YoutubeAPIType]) -> None:
+    def extract_youtube_transcripts(self, resp_objects: List[YoutubeAPIType]) -> None:
         """
         Extracts transcripts from a youtube channel
 
@@ -268,7 +273,7 @@ class YouTube:
             page (int): The page number to be processed
         """
 
-        videos = []
+        transcripts = []
 
         for i, obj in enumerate(resp_objects):
             for v in obj["items"]:
@@ -278,10 +283,14 @@ class YouTube:
                 if "videoId" not in v["id"]:
                     continue
 
-                self.download_srt(v["id"]["videoId"])
+                # Check if subtitle exists, if not download it
+                if not os.path.exists(os.path.join(self.youtube_channel_dir_path, "subtitles", v["snippet"]["title"] + ".en.srt")):
+                    self.download_srt(v["id"]["videoId"])
+                else:
+                    print("Subtitle already exists")
 
                 if not os.path.exists(os.path.join(self.youtube_channel_dir_path, "subtitles", v["snippet"]["title"] + ".en.srt")):
-                    print("No subtitles found for:\n" + v["snippet"]["title"] + "\n")
+                    # print("No subtitles found for:\n" + v["snippet"]["title"] + "\n")
                     continue
 
                 transcript = self.extract_srt_text(os.path.join(self.youtube_channel_dir_path, "subtitles", v["snippet"]["title"] + ".en.srt"))
@@ -291,16 +300,17 @@ class YouTube:
                     "VideoId": v["id"]["videoId"] if v["id"]["videoId"] else shortuuid.uuid(),  # Get the video id
                     "Url": f"https://www.youtube.com/watch?v={v['id']['videoId']}",  # Get the video url
                     "Title": v["snippet"]["title"].title().replace("&#39;", "'").replace("&quot;", '"').replace("&amp;", "&"),
-                    "Transcript": transcript,
                     "Description": v["snippet"]["description"],  # YouTube has its own description
+                    "Transcript": transcript,
                     "PublishedAt": v["snippet"]["publishedAt"],  # Get the video publish date
                 }
 
-                videos.append(video)
+                transcripts.append(video)
 
             # Save the transcripts to a json file
             with open(f"{os.path.join(self.youtube_channel_dir_path, f'page_{i}')}.json", "w+", encoding="utf-8") as f:
-                json.dump(videos, f, ensure_ascii=False, indent=4)
+                json.dump(transcripts, f, ensure_ascii=False, indent=4)
+                transcripts = []
 
     def extract_youtube_playlist_transcripts(self, playlist_url):
         """Extract the transcripts of every video in a playlist and save them into a JSON file"""
@@ -438,28 +448,43 @@ if __name__ == "__main__":
 
     if task == "Get Transcript":
         video_id = questionary.text("Video ID:").ask()
+
+        video_details = yt.video_details(video_id)
+
         yt.download_srt(video_id)
 
-        file = questionary.select("Extract text from which file?", choices=os.listdir(os.path.join(yt.youtube_channel_dir_path, "subtitles"))).ask()
+        file = f"{video_details['Title']}.en.srt"
         srt_text = yt.extract_srt_text(os.path.join(yt.youtube_channel_dir_path, "subtitles", file))
 
-        with open(os.path.join(yt.youtube_channel_dir_path, "subtitles", f"{file.split('.')[0]}.txt"), "w+", encoding="utf-8") as f:
-            f.write(srt_text)
+        with open(os.path.join(yt.youtube_channel_dir_path, f"{file.split('.')[0]}.json"), "w+", encoding="utf-8") as f:
+            json.dump(
+                {
+                    "VideoId": video_details["VideoId"],
+                    "Url": video_details["Url"],
+                    "Title": video_details["Title"],
+                    "Description": video_details["Description"],
+                    "Transcript": srt_text,
+                    "PublishedAt": video_details["PublishedAt"],
+                },
+                f,
+                ensure_ascii=False,
+                indent=4,
+            )
 
     elif task == "Get All Transcripts":
         video_age = questionary.select("Video Age", choices=["Years", "Months", "Weeks", "Days"]).ask()
         video_age_number = questionary.text(f"Number of {video_age}:").ask()
 
         if video_age == "Years":
-            channel_ids = yt.retrive_youtube_channel_ids(video_age_in_years=video_age_number)
+            video_ids = yt.retrive_youtube_video_ids(video_age_in_years=video_age_number)
         elif video_age == "Months":
-            channel_ids = yt.retrive_youtube_channel_ids(video_age_in_months=video_age_number)
+            video_ids = yt.retrive_youtube_video_ids(video_age_in_months=video_age_number)
         elif video_age == "Weeks":
-            channel_ids = yt.retrive_youtube_channel_ids(video_age_in_weeks=video_age_number)
+            video_ids = yt.retrive_youtube_video_ids(video_age_in_weeks=video_age_number)
         elif video_age == "Days":
-            channel_ids = yt.retrive_youtube_channel_ids(video_age_in_days=video_age_number)
+            video_ids = yt.retrive_youtube_video_ids(video_age_in_days=video_age_number)
 
-        yt.extract_youtube_channel_transcripts(channel_ids)
+        yt.extract_youtube_transcripts(video_ids)
 
     else:
         if task == "Summarize Transcript":

@@ -216,6 +216,18 @@ class YouTube:
             # Catch any other unexpected exceptions
             print(f"\n--- An unexpected error occurred: {e} ---", file=sys.stderr)
 
+    # Works on MacOS
+    def download_auto_subs(self, video_id: str):
+        ydl_opts = {
+            "writeautomaticsub": True,
+            "subtitleslangs": ["en"],
+            "subtitlesformat": "srt",
+            "skip_download": True,
+            "outtmpl": f"{self.youtube_channel_dir_path}/subtitles/%(title)s.%(ext)s",
+        }
+        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+            ydl.download([f"https://www.youtube.com/watch?v={video_id}"])
+
     def extract_srt_text(self, srt_file_path: str):
         """
         This function takes an SRT file path as input and returns the raw text lines
@@ -280,7 +292,7 @@ class YouTube:
 
         for i, obj in enumerate(resp_objects):
             for v in obj["items"]:
-                print("Retrieving transcript for:\n" + v["snippet"]["title"] + "\n")
+                print("\nRetrieving transcript for:\n" + v["snippet"]["title"])
 
                 # Check if the item is a video and has a video id
                 if "videoId" not in v["id"]:

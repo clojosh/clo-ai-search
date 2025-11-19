@@ -13,6 +13,7 @@ from tools.misc import (
     extract_youtube_links,
     get_section_and_category,
     num_tokens_from_string,
+    preprocess_html_with_inline_images,
     remove_html_tags,
     remove_miscellaneous_text,
     trim_tokens,
@@ -39,12 +40,12 @@ class Article:
 
         auth = (self.azure.ZENDESK_USERNAME, self.azure.ZENDESK_PASSWORD)
 
-        response = requests.request("GET", self.azure.get_zendesk_article_api_endpoint(1), headers=headers, auth=auth)
+        response = requests.request("GET", self.azure.get_zendesk_article_api_endpoint("1"), headers=headers, auth=auth)
         json_objects = json.loads(response.text)
         page_count = json_objects["page_count"]
 
         for page in range(1, 1 + page_count):
-            response = requests.request("GET", self.azure.get_zendesk_article_api_endpoint(page), headers=headers, auth=auth)
+            response = requests.request("GET", self.azure.get_zendesk_article_api_endpoint(str(page)), headers=headers, auth=auth)
             json_objects = json.loads(response.text)
             articles = json_objects["articles"]
 
@@ -69,35 +70,10 @@ class Article:
 
                     self.delete_documents(str(article["id"]))
 
-    def get_zendesk_document(self, article_id: int):
-        page_url = requests.request(
-            "GET",
-            self.azure.get_zendesk_article_api_endpoint(article_id),
-            headers={
-                "Content-Type": "application/json",
-            },
-        )
-
-        return json.loads(page_url.text)
-
     @staticmethod
-    def get_zendesk_documents(stage: str, brand: str, language: str, article_path: str, page: int):
-        print("\nRetrieving Page " + str(page))
-
-        azure = Azure(stage, brand, language)
-
-        page_url = requests.request(
-            "GET",
-            azure.get_zendesk_article_api_endpoint(page),
-            headers={
-                "Content-Type": "application/json",
-            },
-        )
-
-        json_objects = json.loads(page_url.text)
-
+    def extract_content_from_zendesk_article(azure: Azure, brand: str, articles: list):
         documents = []
-        for article in json_objects["articles"]:
+        for article in articles:
             if article["draft"] is False:
                 # CLO3D:
                 # 115001436607 - Update Article Section
@@ -139,8 +115,8 @@ class Article:
                     article["html_url"] = url_matches[0]
 
                 article["youtube_links"] = extract_youtube_links(str(article["body"]))
-                article["body"] = remove_html_tags(str(article["body"]))
-                article["body"] = remove_miscellaneous_text(article["body"])
+                data = preprocess_html_with_inline_images(str(article["body"]))
+                article["body"] = remove_miscellaneous_text(data["text"])
                 article["body"] = trim_tokens(article["body"])
                 article["id"] = str(article["id"])
                 article["section_id"], article["section"], article["category_id"], article["category"] = get_section_and_category(
@@ -156,6 +132,7 @@ class Article:
                         "ContentDescription": azure.openai_helper.create_webpage_description(article["body"]),
                         "CreatedAt": article["updated_at"],
                         "YoutubeLinks": article["youtube_links"],
+                        "InlineImages": data["inline_images"],
                         "CategoryId": article["category_id"],
                         "Category": article["category"],
                         "SectionId": article["section_id"],
@@ -164,8 +141,33 @@ class Article:
                     }
                 )
 
+        return documents
+
+    @staticmethod
+    def get_zendesk_documents(stage: str, brand: str, language: str, article_path: str, article_id: str, page: str):
+        if article_id is not None:
+            print("\nRetrieving Article " + article_id)
+        else:
+            print("\nRetrieving Page " + str(page))
+
+        azure = Azure(stage, brand, language)
+
+        page_url = requests.request(
+            "GET",
+            azure.get_zendesk_article_api_endpoint(article_id) if article_id is not None else azure.get_zendesk_articles_api_endpoint(page),
+            headers={
+                "Content-Type": "application/json",
+            },
+        )
+
+        json_objects = json.loads(page_url.text)
+
+        documents = Article.extract_content_from_zendesk_article(
+            azure, brand, [json_objects["article"]] if article_id is not None else json_objects["articles"]
+        )
+
         if len(documents) > 0:
-            with open(os.path.join(article_path, f"page_{page}.json"), "w+", encoding="utf-8") as f:
+            with open(os.path.join(article_path, "page_0.json" if article_id is not None else f"page_{page}.json"), "w+", encoding="utf-8") as f:
                 json.dump(documents, f, ensure_ascii=False, indent=4)
 
     def mp_get_zendesk_documents(self):
@@ -173,14 +175,17 @@ class Article:
             "Content-Type": "application/json",
         }
 
-        response = requests.request("GET", self.azure.get_zendesk_article_api_endpoint(1), headers=headers)
+        response = requests.request("GET", self.azure.get_zendesk_articles_api_endpoint(1), headers=headers)
         json_objects = json.loads(response.text)
         page_count = json_objects["page_count"]
 
         with multiprocessing.Pool(5) as p:
             p.starmap_async(
                 Article.get_zendesk_documents,
-                [(self.azure.stage, self.azure.brand, self.azure.language, self.azure.get_article_path(), page) for page in range(1, 1 + page_count)],
+                [
+                    (self.azure.stage, self.azure.brand, self.azure.language, self.azure.get_article_path(), None, page)
+                    for page in range(1, 1 + page_count)
+                ],
                 error_callback=lambda e: print(e),
             )
             p.close()
@@ -252,7 +257,9 @@ if __name__ == "__main__":
 
     if task == "Get Zendesk Article":
         article_id = questionary.text("Article ID").ask()
-        article.get_zendesk_document(article_id=article_id)
+        article.get_zendesk_documents(
+            article.azure.stage, article.azure.brand, article.azure.language, article.azure.get_article_path(), article_id, ""
+        )
 
     elif task == "Get All Zendesk Articles":
         article.mp_get_zendesk_documents()

@@ -7,6 +7,7 @@ from pathlib import Path
 
 import questionary
 from azure.search.documents.indexes.models import (
+    ComplexField,
     ExhaustiveKnnAlgorithmConfiguration,
     ExhaustiveKnnParameters,
     HnswAlgorithmConfiguration,
@@ -173,6 +174,17 @@ class AISearch:
                 type=SearchFieldDataType.Collection(SearchFieldDataType.Single),
                 searchable=True,
                 retrievable=True,
+            ),
+            ComplexField(
+                name="InlineImages",
+                collection=True,
+                fields=[
+                    SimpleField(name="PlaceHolder", type=SearchFieldDataType.String),
+                    SimpleField(name="Source", type=SearchFieldDataType.String),
+                    SimpleField(name="Alt", type=SearchFieldDataType.String),
+                    SimpleField(name="Width", type=SearchFieldDataType.String),
+                    SimpleField(name="Height", type=SearchFieldDataType.String),
+                ],
             ),
             SearchField(
                 name="TitleVector",

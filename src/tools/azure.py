@@ -10,7 +10,8 @@ from openai import AzureOpenAI
 from tools.openai_helper import OpenAIHelper
 
 parent_dir_path = Path(__file__).parent.parent.parent
-zendesk_article_api_endpoint = "https://{0}.zendesk.com/api/v2/help_center/{1}/articles.json?page={2}&per_page=30&sort_by=updated_at&sort_order=desc"
+zendesk_article_api_endpoint = "https://{0}.zendesk.com/api/v2/help_center/{1}/articles/{2}"
+zendesk_articles_api_endpoint = "https://{0}.zendesk.com/api/v2/help_center/{1}/articles.json?page={2}&per_page=30&sort_by=updated_at&sort_order=desc"
 zendesk_article_section_api_endpoint = "https://{0}.zendesk.com/api/v2/help_center/{1}/sections/{2}.json"
 zendesk_article_category_api_endpoint = "https://{0}.zendesk.com/api/v2/help_center/{1}/categories/{2}.json"
 zendesk_article_attachment_api_endpoint = "https://support.{0}.com/api/v2/help_center/{1}/articles/{2}/attachments"
@@ -145,7 +146,20 @@ class Azure:
 
         return document_path[self.language]
 
-    def get_zendesk_article_api_endpoint(self, page: int) -> str:
+    def get_zendesk_article_api_endpoint(self, article_id: str) -> str:
+        """
+        Constructs the API endpoint URL for fetching a specific Zendesk article.
+
+        Args:
+            page (int): The page number for pagination.
+
+        Returns:
+            str: The formatted API endpoint URL.
+        """
+
+        return zendesk_article_api_endpoint.format(self.get_subdomain(), self.get_locale(), article_id)
+
+    def get_zendesk_articles_api_endpoint(self, page: str) -> str:
         """
         Constructs the API endpoint URL for fetching Zendesk articles.
 
@@ -156,9 +170,9 @@ class Azure:
             str: The formatted API endpoint URL.
         """
 
-        return zendesk_article_api_endpoint.format(self.get_subdomain(), self.get_locale(), page)
+        return zendesk_articles_api_endpoint.format(self.get_subdomain(), self.get_locale(), page)
 
-    def get_zendesk_article_attachment_api_endpoint(self, article_id: int) -> str:
+    def get_zendesk_article_attachment_api_endpoint(self, article_id: str) -> str:
         """
         Constructs the API endpoint URL for fetching Zendesk article attachments.
 

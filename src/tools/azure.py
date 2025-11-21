@@ -10,10 +10,10 @@ from openai import AzureOpenAI
 from tools.openai_helper import OpenAIHelper
 
 parent_dir_path = Path(__file__).parent.parent.parent
-zendesk_article_api_endpoint = "https://{0}.zendesk.com/api/v2/help_center/{1}/articles/{2}"
-zendesk_articles_api_endpoint = "https://{0}.zendesk.com/api/v2/help_center/{1}/articles.json?page={2}&per_page=30&sort_by=updated_at&sort_order=desc"
-zendesk_article_section_api_endpoint = "https://{0}.zendesk.com/api/v2/help_center/{1}/sections/{2}.json"
-zendesk_article_category_api_endpoint = "https://{0}.zendesk.com/api/v2/help_center/{1}/categories/{2}.json"
+zendesk_article_api_endpoint = "https://{0}.{1}.com/api/v2/help_center/{2}/articles/{3}"
+zendesk_articles_api_endpoint = "https://{0}.{1}.com/api/v2/help_center/{2}/articles.json?page={3}&per_page=30&sort_by=updated_at&sort_order=desc"
+zendesk_article_section_api_endpoint = "https://{0}.{1}.com/api/v2/help_center/{2}/sections/{3}.json"
+zendesk_article_category_api_endpoint = "https://{0}.{1}.com/api/v2/help_center/{2}/categories/{3}.json"
 zendesk_article_attachment_api_endpoint = "https://support.{0}.com/api/v2/help_center/{1}/articles/{2}/attachments"
 
 
@@ -113,12 +113,30 @@ class Azure:
         elif self.brand == "clovf":
             subdomain = "clovf-hc"
         elif self.brand == "md":
-            subdomain = "marvelousdesigner"
+            subdomain = "support"
         else:
             # Default to the brand name if no specific subdomain is found
             subdomain = self.brand
 
         return subdomain
+
+    def get_domain(self):
+        """
+        Returns the domain based on the brand attribute.
+
+        This method determines the appropriate domain for the current brand.
+
+        Returns:
+            str: The domain corresponding to the brand.
+        """
+
+        if self.brand == "md":
+            domain = "marvelousdesigner"
+        else:
+            # Default to the brand name if no specific domain is found
+            domain = "zendesk"
+
+        return domain
 
     def get_article_path(self) -> str:
         """
@@ -157,7 +175,7 @@ class Azure:
             str: The formatted API endpoint URL.
         """
 
-        return zendesk_article_api_endpoint.format(self.get_subdomain(), self.get_locale(), article_id)
+        return zendesk_article_api_endpoint.format(self.get_subdomain(), self.get_domain(), self.get_locale(), article_id)
 
     def get_zendesk_articles_api_endpoint(self, page: str) -> str:
         """
@@ -170,7 +188,7 @@ class Azure:
             str: The formatted API endpoint URL.
         """
 
-        return zendesk_articles_api_endpoint.format(self.get_subdomain(), self.get_locale(), page)
+        return zendesk_articles_api_endpoint.format(self.get_subdomain(), self.get_domain(), self.get_locale(), page)
 
     def get_zendesk_article_attachment_api_endpoint(self, article_id: str) -> str:
         """
@@ -196,7 +214,7 @@ class Azure:
             str: The formatted API endpoint URL.
         """
 
-        return zendesk_article_section_api_endpoint.format(self.get_subdomain(), self.get_locale(), section_id)
+        return zendesk_article_section_api_endpoint.format(self.get_subdomain(), self.get_domain(), self.get_locale(), section_id)
 
     def get_zendesk_article_category_api_endpoint(self, category_id):
         """
@@ -209,4 +227,4 @@ class Azure:
             str: The formatted API endpoint URL.
         """
 
-        return zendesk_article_category_api_endpoint.format(self.get_subdomain(), self.get_locale(), category_id)
+        return zendesk_article_category_api_endpoint.format(self.get_subdomain(), self.get_domain(), self.get_locale(), category_id)

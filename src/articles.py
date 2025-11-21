@@ -9,15 +9,7 @@ import requests  # type: ignore
 from rich import print
 
 from tools.azure import Azure
-from tools.misc import (
-    extract_youtube_links,
-    get_section_and_category,
-    num_tokens_from_string,
-    preprocess_html_with_inline_images,
-    remove_html_tags,
-    remove_miscellaneous_text,
-    trim_tokens,
-)
+from tools.misc import clean_html, extract_structured_markdown, extract_youtube_links, get_section_and_category, num_tokens_from_string, trim_tokens
 
 
 class Article:
@@ -115,9 +107,12 @@ class Article:
                     article["html_url"] = url_matches[0]
 
                 article["youtube_links"] = extract_youtube_links(str(article["body"]))
-                data = preprocess_html_with_inline_images(str(article["body"]))
-                article["body"] = remove_miscellaneous_text(data["text"])
+
+                cleaned_soup = clean_html(str(article["body"]))
+                article["body"], inline_images = extract_structured_markdown(cleaned_soup)
+
                 article["body"] = trim_tokens(article["body"])
+
                 article["id"] = str(article["id"])
                 article["section_id"], article["section"], article["category_id"], article["category"] = get_section_and_category(
                     azure, article["section_id"]
@@ -132,7 +127,7 @@ class Article:
                         "ContentDescription": azure.openai_helper.create_webpage_description(article["body"]),
                         "CreatedAt": article["updated_at"],
                         "YoutubeLinks": article["youtube_links"],
-                        "InlineImages": data["inline_images"],
+                        "InlineImages": inline_images,
                         "CategoryId": article["category_id"],
                         "Category": article["category"],
                         "SectionId": article["section_id"],
@@ -278,14 +273,14 @@ if __name__ == "__main__":
                         break
 
     elif task == "Upload All Articles":
-        if brand == "allinone":
-            for folder in os.listdir("data"):
-                if folder != "allinone":
-                    for file in os.listdir(os.path.join("data", folder, "articles", "en-us")):
-                        shutil.copy(
-                            os.path.join("data", folder, "articles", "en-us", file),
-                            os.path.join(article.azure.get_article_path(), f"{folder}_{file}"),
-                        )
+        # if brand == "allinone":
+        #     for folder in os.listdir("data"):
+        #         if folder != "allinone":
+        #             for file in os.listdir(os.path.join("data", folder, "articles", "en-us")):
+        #                 shutil.copy(
+        #                     os.path.join("data", folder, "articles", "en-us", file),
+        #                     os.path.join(article.azure.get_article_path(), f"{folder}_{file}"),
+        #                 )
 
         article.mp_upload_documents()
 

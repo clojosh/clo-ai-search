@@ -6,6 +6,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 from openai import AzureOpenAI
+from openai.types.chat import ChatCompletionMessageParam, ChatCompletionUserMessageParam
 from tenacity import retry, stop_after_attempt, wait_random_exponential
 
 from .misc import trim_tokens
@@ -96,7 +97,7 @@ class OpenAIHelper:
             text = text[:GPT_4_MINI_MAX_INPUT_TOKENS]
 
         # Create a list of messages to send to the OpenAI API
-        messages = [
+        messages: list[ChatCompletionMessageParam] = [
             {"role": "user", "content": f"Create a question that the following text addresses: {text}"},
         ]
 
@@ -111,6 +112,8 @@ class OpenAIHelper:
 
         # Extract the generated questions from the response
         questions = chat_completion.choices[0].message.content
+        if not questions:
+            return ""
 
         # Remove any numbers at the start of each line
         questions = re.sub("^[0-9]+\.\s", "", questions, flags=re.MULTILINE)
@@ -139,7 +142,7 @@ class OpenAIHelper:
             transcript = transcript[:GPT_4_MINI_MAX_INPUT_TOKENS]
 
         # Create the prompt for the AI
-        messages = [
+        messages: list[ChatCompletionMessageParam] = [
             {
                 "role": "user",
                 "content": TRANSCRIPT_SUMMARY_PROMPT.format(transcript=transcript),
@@ -153,6 +156,9 @@ class OpenAIHelper:
 
         # Extract the summary from the response
         summary = chat_completion.choices[0].message.content
+        if not summary:
+            return ""
+
         summary = re.sub(r"\n+", " ", summary)
         summary = re.sub(r"\s+", " ", summary)
 
@@ -176,7 +182,7 @@ class OpenAIHelper:
             pdf = pdf[:GPT_4_MINI_MAX_INPUT_TOKENS]
 
         # Create the prompt for the AI
-        messages = [
+        messages: list[ChatCompletionMessageParam] = [
             {
                 "role": "user",
                 "content": f"Provide a comprehensive guide of the given text. Include all step-by-step instructions, definitions, and warranties. {pdf}",

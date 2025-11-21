@@ -7,7 +7,7 @@ from pathlib import Path
 import requests  # type: ignore
 import shortuuid
 import tiktoken
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 from rich import print
 from tqdm import tqdm
 
@@ -98,27 +98,6 @@ def remove_html_tags(html_string: str) -> str:
     return cleaned_string
 
 
-def preprocess_html_with_inline_images(html):
-    inline_images = []
-
-    soup = BeautifulSoup(html, "html.parser")
-
-    for img in soup.find_all("img"):
-        alt = img.get("alt", f"image_{shortuuid.uuid()}.png")
-        if alt == "_Divider.png":
-            continue
-
-        # Exclude base64 images
-        # if img["src"].startswith("data:image/"):
-        #     continue
-
-        placeholder = f"[IMAGE:{alt}]"
-        inline_images.append({"PlaceHolder": placeholder, "Source": img["src"], "Alt": alt, "Width": img.get("width"), "Height": img.get("height")})
-        img.replace_with(placeholder)
-
-    return {"text": soup.get_text(), "inline_images": inline_images}
-
-
 def remove_miscellaneous_text(article):
     misc_list = ["Go back to the List of Contents"]
 
@@ -134,14 +113,245 @@ def remove_miscellaneous_text(article):
     return article.strip()
 
 
-def trim_tokens(article):
-    """Removes unnecessary tokens"""
-    article = article.replace("\u00a0", " ").replace("&nbsp", " ")
+def trim_tokens(article: str):
+    """
+    This function takes in a string article and trims it by removing unwanted characters.
+
+    The following steps are performed:
+    1. Replaces all occurrences of "\u00a0" with a single space.
+       This is done to remove non-breaking spaces, which can appear in HTML strings.
+    2. Replaces all occurrences of "&nbsp" with a single space.
+       This is done to remove HTML non-breaking spaces, which can appear in HTML strings.
+    3. Replaces all occurrences of non-word, non-digit, non-whitespace characters with an empty string.
+       This is done to remove all special characters, punctuation, and other unwanted characters from the string.
+    4. Replaces all occurrences of one or more whitespace characters with a single space.
+       This is done to remove all extra whitespace from the string.
+    5. Replaces all occurrences of one or more newline characters with a single newline character.
+       This is done to remove all extra newline characters from the string.
+    6. Strips any leading or trailing whitespace from the string.
+
+    The resulting string is returned.
+    """
+    # article = article.replace("\u00a0", " ").replace("&nbsp", " ")
     # article = re.sub(r"[^\w0-9-\s\n_*.`~!@#$%^&()+={}\:\"'?/><,/+\[\]]", "", article)
-    article = re.sub(r"\n+", "\n", article)
+    # article = re.sub(r"\n+", "\n", article)
     article = re.sub(r"\s{2,}", " ", article)
 
     return article.strip()
+
+
+def clean_html(html_content: str) -> BeautifulSoup:
+    """
+    This function takes in an HTML string and returns a BeautifulSoup object
+    with non-content elements removed. Non-content elements are often found
+    in web pages and include things like scripts, styles, navigation bars,
+    footers, headers, aside elements, and forms. These elements are removed
+    to leave only the content of the web page.
+
+    The function works by first parsing the HTML string into a BeautifulSoup
+    object. It then loops through all the non-content tags in the soup and
+    decomposes them, effectively removing them from the soup.
+
+    The resulting soup object contains only the content elements of the
+    web page, making it easier to extract the relevant information from the
+    page.
+
+    Parameters:
+    html_content (str): The HTML string to be cleaned
+
+    Returns:
+    BeautifulSoup: The cleaned HTML soup object
+    """
+
+    soup = BeautifulSoup(html_content, "html.parser")
+
+    # Remove non-content elements often found in web pages
+    for tag in soup.find_all(["script", "style", "nav", "footer", "header", "aside", "form"]):
+        # Decompose the tag, effectively removing it from the soup
+        tag.decompose()
+
+    return soup
+
+
+def convert_inline_tags_html_to_markdown(element: Tag) -> str:
+    """
+    Converts inline HTML tags (like <strong>, <b>, <em>, <i>) within a
+    block element's content to their Markdown syntax equivalents.
+    This uses a nested BeautifulSoup process for robustness on inline elements.
+    """
+    # Create a temporary soup object just for the current element's content
+    temp_soup = BeautifulSoup(str(element), "html.parser")
+
+    # 1. Handle <strong> and <b> tags (convert to **bold**)
+    for strong in temp_soup.find_all(["strong", "b"]):
+        # Replace the strong/b tag with its content surrounded by **
+        if strong.get_text().strip() == "":
+            continue
+
+        strong.replace_with(f"**{strong.get_text()}**")
+
+    # 2. Handle <em> and <i> tags (convert to *italics*)
+    for em in temp_soup.find_all(["em", "i"]):
+        if em.get_text().strip() == "":
+            continue
+
+        # Replace the em/i tag with its content surrounded by *
+        em.replace_with(f"*{em.get_text()}*")
+
+    # The block element itself (e.g., <p>, <h1>) is still wrapped around the text.
+    # We extract the text content of the *inner* part of the block element.
+    # By calling .get_text(strip=True) on the top-level element in the temp_soup,
+    # we get the combined text, including the new ** and * markers.
+    # We use .contents[0] to grab the body of the actual block element.
+    # Since we create a soup from str(element), the outermost tag is preserved.
+    # We grab the text of the first child of the temporary soup (which is the original element)
+    return temp_soup.find(element.name).get_text(strip=False)
+
+
+def convert_table_to_markdown(table: Tag) -> str:
+    """
+    Converts an HTML table element into a Markdown table string, preserving
+    row and column structure.
+    """
+    markdown_table = []
+
+    # 1. Extract Header and Data Rows
+    rows = table.find_all("tr", recursive=True)
+    if not rows:
+        return ""  # Skip empty tables
+
+    all_rows_content = []
+
+    # Function to get cell content and sanitize
+    def get_cell_content(cell: Tag) -> str:
+        # Use existing inline conversion logic
+        text = convert_inline_tags_html_to_markdown(cell)
+        # Remove newlines and ensure content is trimmed
+        return text.replace("\n", " ").strip()
+
+    for row in rows:
+        # Check for both header cells (<th>) and data cells (<td>)
+        cells = row.find_all(["th", "td"])
+        row_content = [get_cell_content(cell) for cell in cells]
+        all_rows_content.append(row_content)
+
+    if not all_rows_content:
+        return ""
+
+    # Determine the maximum number of columns across all rows
+    num_cols = max(len(row) for row in all_rows_content)
+
+    # Start constructing the Markdown table
+
+    # Header Row (The first row)
+    header = all_rows_content[0]
+    header.extend([""] * (num_cols - len(header)))  # Pad
+    markdown_table.append("| " + " | ".join(header) + " |")
+
+    # Separator Line (Mandatory in Markdown tables)
+    separator = ["---"] * num_cols
+    markdown_table.append("| " + " | ".join(separator) + " |")
+
+    # Data Rows (Skipping the first row, which is the header)
+    for i, row in enumerate(all_rows_content[1:]):
+        row.extend([""] * (num_cols - len(row)))  # Pad
+        markdown_table.append("| " + " | ".join(row) + " |")
+
+    # Add surrounding newlines to separate the table from other text blocks
+    return "\n" + "\n".join(markdown_table) + "\n"
+
+
+def extract_structured_markdown(soup: BeautifulSoup):
+    """
+    Iterates through the cleaned BeautifulSoup tree, extracting content and
+    converting structural tags into Markdown syntax.
+    """
+
+    markdown_output = []
+    inline_images = []
+
+    # Define tags we care about, in a list that respects their hierarchy and order
+    structural_tags = ["h1", "h2", "h3", "h4", "h5", "h6", "p", "ul", "ol", "li", "table", "img"]
+
+    # Iterate through each element in the order they appear in the HTML from the list of structural tags
+    for element in soup.find_all(structural_tags):
+        tag_name = element.name
+
+        if tag_name == "table":
+            # Handle tables separately using the dedicated converter
+            markdown_table = convert_table_to_markdown(element)
+            if markdown_table:
+                markdown_output.append(markdown_table)
+            continue  # Move to the next element after processing the whole table
+
+        text = convert_inline_tags_html_to_markdown(element)
+
+        # Skip elements that are empty after stripping
+        if not text and tag_name != "img":
+            continue
+
+        if tag_name.startswith("h"):
+            # Convert headings (h1, h2, etc.) to ATX-style Markdown headers
+            level = int(tag_name[1])
+            markdown_output.append(f"\n{'#' * level} {text}\n")
+
+        elif tag_name == "p":
+            # Paragraphs are separated by double newlines
+            markdown_output.append(f"\n{text}\n")
+
+        elif tag_name == "li":
+            # List items. Determine if ordered or unordered based on parent tag.
+            parent = element.parent
+
+            # Sanitize the text: replace internal newlines with a single space to ensure single-line output
+            cleaned_text = text.replace("\n", " ").strip()
+
+            if parent and parent.name == "ul":
+                # Unordered list item
+                markdown_output.append(f"* {cleaned_text}")
+            elif parent and parent.name == "ol":
+                # Ordered list item: Calculate sequential number within the parent <ol>
+                list_items = parent.find_all("li", recursive=False)
+
+                # Determine the sequential number (1-based index)
+                try:
+                    # Note: We must compare elements against the list of li elements found
+                    # in the parent.
+                    index = [i for i, item in enumerate(list_items) if item is element][0]
+                    sequence_number = index + 1
+                    # This line is where the sequential number and text are combined.
+                    # By ensuring cleaned_text is single-line, we avoid a newline here.
+                    markdown_output.append(f"{sequence_number}. {cleaned_text}")
+                except IndexError:
+                    # Fallback to a single-digit if index lookup fails
+                    markdown_output.append(f"1. {cleaned_text}")
+
+        elif tag_name == "img":
+            alt = element.get("alt", f"image_{shortuuid.uuid()}.png")
+            if alt == "":
+                alt = f"image_{shortuuid.uuid()}.png"
+
+            if alt == "_Divider.png":
+                continue
+
+            placeholder = f"[IMAGE:{alt}]"
+            inline_images.append(
+                {
+                    "PlaceHolder": placeholder,
+                    "Source": element["src"],
+                    "Alt": alt,
+                    "Width": element.get("width", "25"),
+                    "Height": element.get("height", "25"),
+                }
+            )
+            markdown_output.append(placeholder)
+
+    # Join all parts and perform final cleanup
+    # Replace multiple newlines with at most two newlines to avoid excessive spacing
+    final_markdown = "\n".join(markdown_output)
+    final_markdown = re.sub(r"\n{3,}", "\n\n", final_markdown).strip()
+
+    return final_markdown, inline_images
 
 
 def extract_youtube_links(article: str):
@@ -156,14 +366,6 @@ def extract_youtube_links(article: str):
         youtube_links.append("https://www.youtube.com/watch?v={}".format(id))
 
     return youtube_links
-
-
-def verify_path(document_path):
-    if not os.path.exists("./documents"):
-        os.mkdir("./documents")
-
-    if not os.path.exists(document_path):
-        os.mkdir(document_path)
 
 
 def check_create_directory(path):

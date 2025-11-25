@@ -11,7 +11,7 @@ from rich import print
 from tqdm import tqdm
 
 from tools.azure import Azure
-from tools.misc import remove_html_tags, trim_tokens
+from tools.misc import clean_html, extract_structured_markdown, remove_html_tags, trim_tokens
 
 POSTS_ENDPOINT = "https://connect.clo-set.com/api/community/post/search?tags={tags}&category={category}&pageSize={page_size}"
 POST_DETAIL = "https://connect.clo-set.com/api/community/post/{post_id}"
@@ -165,7 +165,9 @@ class Posts:
 
         return brands_found
 
-    def get_post(self, post_id: str):
+    @staticmethod
+    def get_post(stage: str, brand: str, post_id: str):
+        azure = Azure(stage, brand)
         response = requests.request(
             "GET",
             POST_DETAIL.format(post_id=post_id),
@@ -182,53 +184,37 @@ class Posts:
         if comments:
             comment_content = "\n\n### Community Post Comments:\n" + comments
 
-        content = trim_tokens(remove_html_tags(post["content"])) + comment_content
+        cleaned_soup = clean_html(post["content"])
+        content, inline_images = extract_structured_markdown(cleaned_soup)
+        content = trim_tokens(content) + comment_content
+
+        for i, img in enumerate(inline_images):
+            img[i]["width"] = ""
+            img[i]["height"] = ""
 
         document = {
             "id": post["postId"],
             "url": "https://connect.clo-set.com/community/post/" + post["postId"],
             "title": post["title"],
             "content": content,
-            "content_description": self.azure.openai_helper.create_webpage_description(content) if content else "",
+            "content_description": azure.openai_helper.create_webpage_description(content) if content else "",
             "created_at": post["registeredDate"],
             "category": post["category"],
             "tags": post["tags"],
+            "inline_images": inline_images,
         }
 
         return document
 
     @staticmethod
     def get_posts(stage: str, brand: str, posts: list, page: int):
-        azure = Azure(stage, brand)
-
         brand_posts: dict = {"clo3d": [], "closet": [], "connect": [], "md": []}
         for post in tqdm(posts, position=((page % 5) + 1), desc=f"Page {page}", colour="red", leave=False):
             # 260 = Job Board
             if post["category"] == 260 or post["category"] == 230:
                 continue
 
-            comment_content = ""
-            if post["commentsCount"] > 0:
-                comments = Posts.get_comments(post["postId"])
-                if comments:
-                    comment_content = "\n\n### Community Post Comments:\n" + comments
-
-            content = trim_tokens(post["summary"]) + comment_content
-
-            if not content:
-                continue
-
-            document = {
-                "id": post["postId"],
-                "url": "https://connect.clo-set.com/community/post/" + post["postId"],
-                "title": post["title"],
-                "content": content,
-                "content_description": azure.openai_helper.create_webpage_description(content) if content else "",
-                "created_at": post["registeredDate"],
-                "category": post["category"],
-                "tags": post["tags"],
-                "comment_count": post["commentsCount"],
-            }
+            document = Posts.get_post(stage, brand, post["postId"])
 
             brand_types = Posts.get_brand_types_for_post(post)
             for brand_type in brand_types:
@@ -305,6 +291,7 @@ class Posts:
                             "ContentDescription": document["content_description"],
                             "CreatedAt": document["created_at"],
                             "YoutubeLinks": [],
+                            "InlineImages": document["inline_images"],
                             "titleVector": azure.openai_helper.generate_embeddings(text=document["title"]),
                             "contentVector": azure.openai_helper.generate_embeddings(
                                 text=document["content"] if document["content"] != "" else document["post_title"]
@@ -386,20 +373,21 @@ class Posts:
 
 if __name__ == "__main__":
     stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
-    task = questionary.select("What task?", choices=["Get All Posts", "Get Post", "Upload All Posts"]).ask()
+    task = questionary.select("What task?", choices=["Get Post", "Get All Posts", "Upload All Posts"]).ask()
 
-    if task == "Get All Posts":
-        post = Posts(Azure(stage, "clo3d"))
-        post.mp_get_posts()
-
-    elif task == "Get Post":
+    azure = Azure(stage, "clo3d")
+    if task == "Get Post":
         post_id = questionary.text("Post ID:").ask()
 
-        post = Posts(Azure(stage, "clo3d"))
+        post = Posts(azure)
 
-        print(post.get_post(post_id=post_id))
+        print(post.get_post(stage, "clo3d", post_id=post_id))
+
+    elif task == "Get All Posts":
+        post = Posts(azure)
+        post.mp_get_posts()
 
     elif task == "Upload All Posts":
         brand = questionary.select("Which brand?", choices=["clo3d", "closet", "connect", "md", "allinone"]).ask()
-        post = Posts(Azure(stage, brand))
+        post = Posts(azure)
         post.mp_upload()

@@ -340,8 +340,8 @@ def extract_structured_markdown(soup: BeautifulSoup):
                     "PlaceHolder": placeholder,
                     "Source": element["src"],
                     "Alt": alt,
-                    "Width": element.get("width", "25"),
-                    "Height": element.get("height", "25"),
+                    "Width": element.get("width", ""),
+                    "Height": element.get("height", ""),
                 }
             )
             markdown_output.append(placeholder)

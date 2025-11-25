@@ -3,6 +3,7 @@ import multiprocessing
 import os
 import re
 import shutil
+import sys
 
 import questionary
 import requests  # type: ignore
@@ -270,7 +271,7 @@ if __name__ == "__main__":
                         Article.upload_documents(
                             article.azure.stage, article.azure.brand, article.azure.language, article.azure.get_article_path(), page
                         )
-                        break
+                        sys.exit()
 
     elif task == "Upload All Articles":
         # if brand == "allinone":

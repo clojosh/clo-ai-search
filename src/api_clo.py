@@ -209,6 +209,7 @@ class APICLO:
                 documents[i]["@search.action"] = "mergeOrUpload"
                 documents[i]["TitleVector"] = self.azure.openai_helper.generate_embeddings(text=document["Title"])
                 documents[i]["ContentVector"] = self.azure.openai_helper.generate_embeddings(text=document["Content"])
+                documents[i]["InlineImages"] = []
 
             self.azure.search_client.upload_documents(documents)
 
@@ -242,9 +243,13 @@ if __name__ == "__main__":
     clo_api = APICLO(Azure(stage, "clo3dapi"))
 
     if task == "Parse All API Documentation":
+        print("--- Parsing Environment Setup & Build ---")
         clo_api.parse_environment_setup_build()
+        print("--- Parsing API Scenario ---")
         asyncio.run(clo_api.parse_api_scenario())
+        print("--- Parsing API List ---")
         asyncio.run(clo_api.parse_api_list())
+        print("--- Parsing API Option & Type ---")
         asyncio.run(clo_api.parse_api_option_type())
 
     elif task == "Parse API List":

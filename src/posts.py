@@ -11,7 +11,7 @@ from rich import print
 from tqdm import tqdm
 
 from tools.azure import Azure
-from tools.misc import clean_html, extract_structured_markdown, remove_html_tags, trim_tokens
+from tools.misc import html_to_markdown_converter, remove_html_tags, remove_unwanted_markdown_images, trim_tokens
 
 POSTS_ENDPOINT = "https://connect.clo-set.com/api/community/post/search?tags={tags}&category={category}&pageSize={page_size}"
 POST_DETAIL = "https://connect.clo-set.com/api/community/post/{post_id}"
@@ -184,24 +184,19 @@ class Posts:
         if comments:
             comment_content = "\n\n### Community Post Comments:\n" + comments
 
-        cleaned_soup = clean_html(post["content"])
-        content, inline_images = extract_structured_markdown(cleaned_soup)
-        content = trim_tokens(content) + comment_content
-
-        for i, img in enumerate(inline_images):
-            img[i]["width"] = ""
-            img[i]["height"] = ""
+        markdown = html_to_markdown_converter(post["content"])
+        content = remove_unwanted_markdown_images(markdown)
 
         document = {
             "id": post["postId"],
             "url": "https://connect.clo-set.com/community/post/" + post["postId"],
             "title": post["title"],
-            "content": content,
+            "content": content + comment_content,
             "content_description": azure.openai_helper.create_webpage_description(content) if content else "",
             "created_at": post["registeredDate"],
             "category": post["category"],
             "tags": post["tags"],
-            "inline_images": inline_images,
+            "inline_images": [],
         }
 
         return document

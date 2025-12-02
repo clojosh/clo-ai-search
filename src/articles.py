@@ -119,7 +119,6 @@ class Article:
 
                 markdown = html_to_markdown_converter(str(article["body"]))
                 markdown = remove_unwanted_markdown_images(markdown)
-                article["body"], inline_images = replace_base64_images_with_placeholders(markdown)
 
                 article["body"] = trim_tokens(article["body"])
 
@@ -137,7 +136,7 @@ class Article:
                         "ContentDescription": azure.openai_helper.create_webpage_description(article["body"]),
                         "CreatedAt": article["updated_at"],
                         "YoutubeLinks": article["youtube_links"],
-                        "InlineImages": inline_images,
+                        "InlineImages": [],
                         "CategoryId": article["category_id"],
                         "Category": article["category"],
                         "SectionId": article["section_id"],

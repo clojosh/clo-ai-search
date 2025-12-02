@@ -10,7 +10,15 @@ import requests  # type: ignore
 from rich import print
 
 from tools.azure import Azure
-from tools.misc import clean_html, extract_structured_markdown, extract_youtube_links, get_section_and_category, num_tokens_from_string, trim_tokens
+from tools.misc import (
+    extract_youtube_links,
+    get_section_and_category,
+    html_to_markdown_converter,
+    num_tokens_from_string,
+    remove_unwanted_markdown_images,
+    replace_base64_images_with_placeholders,
+    trim_tokens,
+)
 
 
 class Article:
@@ -109,8 +117,9 @@ class Article:
 
                 article["youtube_links"] = extract_youtube_links(str(article["body"]))
 
-                cleaned_soup = clean_html(str(article["body"]))
-                article["body"], inline_images = extract_structured_markdown(cleaned_soup)
+                markdown = html_to_markdown_converter(str(article["body"]))
+                markdown = remove_unwanted_markdown_images(markdown)
+                article["body"], inline_images = replace_base64_images_with_placeholders(markdown)
 
                 article["body"] = trim_tokens(article["body"])
 

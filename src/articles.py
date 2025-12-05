@@ -4,6 +4,7 @@ import os
 import re
 import shutil
 import sys
+from collections import defaultdict
 
 import questionary
 import requests  # type: ignore
@@ -11,6 +12,7 @@ from rich import print
 
 from tools.azure import Azure
 from tools.misc import (
+    check_image_exists,
     extract_youtube_links,
     get_section_and_category,
     html_to_markdown_converter,
@@ -120,7 +122,7 @@ class Article:
                 markdown = html_to_markdown_converter(str(article["body"]))
                 markdown = remove_unwanted_markdown_images(markdown)
 
-                article["body"] = trim_tokens(article["body"])
+                article["body"] = trim_tokens(markdown)
 
                 article["id"] = str(article["id"])
                 article["section_id"], article["section"], article["category_id"], article["category"] = get_section_and_category(
@@ -146,6 +148,56 @@ class Article:
                 )
 
         return documents
+
+    @staticmethod
+    def find_bad_images_in_articles(article_path: str):
+        articles_with_bad_images = defaultdict(set)
+
+        with open(article_path, "r", encoding="utf-8") as f:
+            articles = json.load(f)
+
+        for article in articles:
+            IMAGE_PATTERN = re.compile(r"(\!\[.*?\]\((.*?)\))")
+
+            # Find all matches (full string, alt text, URL)
+            matches = IMAGE_PATTERN.findall(article["Content"])
+
+            for full_match, url_with_title in matches:
+                # Split URL from optional title (uses space, then an optional quote)
+                url_match = re.match(r'([^"\s]+)', url_with_title.strip())
+
+                if url_match:
+                    image_url = url_match.group(1).strip()
+
+                    if check_image_exists(image_url):
+                        print(f"✅ VALID: {image_url}")
+                    else:
+                        print(f"❌ INVALID: {image_url}")
+
+                        articles_with_bad_images[article["Source"]].add(image_url)
+
+        return articles_with_bad_images
+
+    def mp_find_bad_images_in_articles(self):
+        file_paths = sorted(os.listdir(self.azure.get_article_path()), key=lambda x: int(x.partition("_")[2].partition(".")[0]))
+        arguments = [os.path.join(self.azure.get_article_path(), file) for file in file_paths]
+
+        with multiprocessing.Pool(2) as p:
+            results = p.map_async(
+                Article.find_bad_images_in_articles,
+                arguments,
+                error_callback=lambda e: print(e),
+            ).get()
+            p.close()
+            p.join()
+
+        all_bad_images = []
+        for result in results:
+            for article_source, image_urls in result.items():
+                all_bad_images.append({"Article URL": article_source, "Bad Image URLs": list(image_urls)})
+
+        with open(os.path.join(self.azure.get_article_path(), "articles_with_bad_images.json"), "w+", encoding="utf-8") as f:
+            json.dump(all_bad_images, f, ensure_ascii=False, indent=4)
 
     @staticmethod
     def get_zendesk_documents(stage: str, brand: str, language: str, article_path: str, article_id: str, page: str):
@@ -183,7 +235,7 @@ class Article:
         json_objects = json.loads(response.text)
         page_count = json_objects["page_count"]
 
-        with multiprocessing.Pool(5) as p:
+        with multiprocessing.Pool(10) as p:
             p.starmap_async(
                 Article.get_zendesk_documents,
                 [
@@ -250,6 +302,7 @@ if __name__ == "__main__":
         choices=[
             "Get Zendesk Article",
             "Get All Zendesk Articles",
+            "Find All Bad Images in Articles",
             "Upload Article",
             "Upload All Articles",
             "Delete Article",
@@ -267,6 +320,9 @@ if __name__ == "__main__":
 
     elif task == "Get All Zendesk Articles":
         article.mp_get_zendesk_documents()
+
+    elif task == "Find All Bad Images in Articles":
+        article.mp_find_bad_images_in_articles()
 
     elif task == "Upload Article":
         article_id = questionary.text("Article ID").ask()

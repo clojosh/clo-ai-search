@@ -11,7 +11,7 @@ from tools.openai_helper import OpenAIHelper
 
 parent_dir_path = Path(__file__).parent.parent.parent
 zendesk_article_api_endpoint = "https://{0}.{1}.com/api/v2/help_center/{2}/articles/{3}"
-zendesk_articles_api_endpoint = "https://{0}.{1}.com/api/v2/help_center/{2}/articles.json?page={3}&per_page=30&sort_by=updated_at&sort_order=desc"
+zendesk_articles_api_endpoint = "https://{0}.{1}.com/api/v2/help_center/{2}/articles.json?page={3}&per_page={4}&sort_by=updated_at&sort_order=desc"
 zendesk_article_section_api_endpoint = "https://{0}.{1}.com/api/v2/help_center/{2}/sections/{3}.json"
 zendesk_article_category_api_endpoint = "https://{0}.{1}.com/api/v2/help_center/{2}/categories/{3}.json"
 zendesk_article_attachment_api_endpoint = "https://support.{0}.com/api/v2/help_center/{1}/articles/{2}/attachments"
@@ -177,7 +177,7 @@ class Azure:
 
         return zendesk_article_api_endpoint.format(self.get_subdomain(), self.get_domain(), self.get_locale(), article_id)
 
-    def get_zendesk_articles_api_endpoint(self, page: str) -> str:
+    def get_zendesk_articles_api_endpoint(self, page: str, per_page: str = "30") -> str:
         """
         Constructs the API endpoint URL for fetching Zendesk articles.
 
@@ -188,7 +188,7 @@ class Azure:
             str: The formatted API endpoint URL.
         """
 
-        return zendesk_articles_api_endpoint.format(self.get_subdomain(), self.get_domain(), self.get_locale(), page)
+        return zendesk_articles_api_endpoint.format(self.get_subdomain(), self.get_domain(), self.get_locale(), page, per_page)
 
     def get_zendesk_article_attachment_api_endpoint(self, article_id: str) -> str:
         """

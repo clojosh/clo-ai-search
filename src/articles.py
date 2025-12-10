@@ -18,7 +18,6 @@ from tools.misc import (
     html_to_markdown_converter,
     num_tokens_from_string,
     remove_unwanted_markdown_images,
-    replace_base64_images_with_placeholders,
     trim_tokens,
 )
 
@@ -150,49 +149,56 @@ class Article:
         return documents
 
     @staticmethod
-    def find_bad_images_in_articles(article_path: str):
-        articles_with_bad_images = defaultdict(set)
+    def find_articles_invalid_images(article: dict):
+        invalid_images = defaultdict(set)
 
-        with open(article_path, "r", encoding="utf-8") as f:
-            articles = json.load(f)
+        content = html_to_markdown_converter(str(article["body"]))
 
-        for article in articles:
-            IMAGE_PATTERN = re.compile(r"(\!\[.*?\]\((.*?)\))")
+        IMAGE_PATTERN = re.compile(r"(\!\[.*?\]\((.*?)\))")
+        # Find all matches (full string, alt text, URL)
+        matches = IMAGE_PATTERN.findall(content)
 
-            # Find all matches (full string, alt text, URL)
-            matches = IMAGE_PATTERN.findall(article["Content"])
+        for full_match, url_with_title in matches:
+            # Split URL from optional title (uses space, then an optional quote)
+            url_match = re.match(r'([^"\s]+)', url_with_title.strip())
 
-            for full_match, url_with_title in matches:
-                # Split URL from optional title (uses space, then an optional quote)
-                url_match = re.match(r'([^"\s]+)', url_with_title.strip())
+            if url_match:
+                image_url = url_match.group(1).strip()
 
-                if url_match:
-                    image_url = url_match.group(1).strip()
+                if check_image_exists(image_url):
+                    print(f"✅ VALID: {image_url}")
+                else:
+                    print(f"❌ INVALID: {image_url}")
+                    invalid_images[article["html_url"]].add(image_url)
 
-                    if check_image_exists(image_url):
-                        print(f"✅ VALID: {image_url}")
-                    else:
-                        print(f"❌ INVALID: {image_url}")
+        return invalid_images
 
-                        articles_with_bad_images[article["Source"]].add(image_url)
+    def mp_find_articles_invalid_images(self):
+        headers = {
+            "Content-Type": "application/json",
+        }
 
-        return articles_with_bad_images
+        response = requests.request("GET", self.azure.get_zendesk_articles_api_endpoint(1, 100), headers=headers)
+        json_objects = json.loads(response.text)
+        page_count = json_objects["page_count"]
 
-    def mp_find_bad_images_in_articles(self):
-        file_paths = sorted(os.listdir(self.azure.get_article_path()), key=lambda x: int(x.partition("_")[2].partition(".")[0]))
-        arguments = [os.path.join(self.azure.get_article_path(), file) for file in file_paths]
+        articles = []
+        for page in range(1, 1 + page_count):
+            response = requests.request("GET", self.azure.get_zendesk_articles_api_endpoint(page, 100), headers=headers)
+            json_objects = json.loads(response.text)
+            articles.extend(json_objects["articles"])
 
-        with multiprocessing.Pool(2) as p:
+        with multiprocessing.Pool(10) as p:
             results = p.map_async(
-                Article.find_bad_images_in_articles,
-                arguments,
+                Article.find_articles_invalid_images,
+                [article for article in articles],
                 error_callback=lambda e: print(e),
-            ).get()
+            )
             p.close()
             p.join()
 
         all_bad_images = []
-        for result in results:
+        for result in results.get():
             for article_source, image_urls in result.items():
                 all_bad_images.append({"Article URL": article_source, "Bad Image URLs": list(image_urls)})
 
@@ -302,7 +308,7 @@ if __name__ == "__main__":
         choices=[
             "Get Zendesk Article",
             "Get All Zendesk Articles",
-            "Find All Bad Images in Articles",
+            "Find All Articles with Bad Images",
             "Upload Article",
             "Upload All Articles",
             "Delete Article",
@@ -321,8 +327,8 @@ if __name__ == "__main__":
     elif task == "Get All Zendesk Articles":
         article.mp_get_zendesk_documents()
 
-    elif task == "Find All Bad Images in Articles":
-        article.mp_find_bad_images_in_articles()
+    elif task == "Find All Articles with Bad Images":
+        article.mp_find_articles_invalid_images()
 
     elif task == "Upload Article":
         article_id = questionary.text("Article ID").ask()

@@ -145,9 +145,9 @@ class PDF:
 
                         documents.append(
                             {
-                                "ArticleId": article["id"],
-                                "Title": article["title"],
-                                "Source": article["html_url"],
+                                "article_id": article["id"],
+                                "title": article["title"],
+                                "source": article["html_url"],
                                 "PDF_URL": pdf_url,
                                 "PDF_Text": article["pdf"],
                             }
@@ -198,9 +198,9 @@ class PDF:
 
             documents.append(
                 {
-                    "ArticleId": shortuuid.uuid(),
-                    "Title": file_name,
-                    "Source": "https://www.udemy.com/user/clo3d-virtual-fashion/",
+                    "article_id": shortuuid.uuid(),
+                    "title": file_name,
+                    "source": "https://www.udemy.com/user/clo3d-virtual-fashion/",
                     "PDF_Text": content,
                     # "PDF_Summary": self.openai_helper.generate_pdf_summary(content),
                     "Labels": self.openai_helper.generate_labels(content),
@@ -248,7 +248,7 @@ class PDF:
             for i, document in enumerate(documents):
                 document["@search.action"] = "mergeOrUpload"
                 document["Content"] = document["PDF_Summary"]
-                document["TitleVector"] = self.openai_helper.generate_embeddings(text=document["Title"])
+                document["TitleVector"] = self.openai_helper.generate_embeddings(text=document["title"])
                 document["ContentVector"] = self.openai_helper.generate_embeddings(text=document["PDF_Summary"])
                 document["YoutubeLinks"] = []
                 del document["PDF_URL"]
@@ -265,7 +265,7 @@ class PDF:
             document["@search.action"] = "mergeOrUpload"
             document["Content"] = document["PDF_Summary"]
             document["Labels"] = self.openai_helper.generate_labels(document["PDF_Summary"])
-            document["TitleVector"] = self.openai_helper.generate_embeddings(text=document["Title"])
+            document["TitleVector"] = self.openai_helper.generate_embeddings(text=document["title"])
             document["ContentVector"] = self.openai_helper.generate_embeddings(text=document["PDF_Summary"])
             document["YoutubeLinks"] = []
 

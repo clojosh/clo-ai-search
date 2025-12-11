@@ -57,7 +57,7 @@ class AISearch:
             search_text=None,
             vector=self.openai_helper.generate_embeddings(query),
             vector_fields="TitleVector,ContentVector",
-            select=["Title", "Content", "Source"],
+            select=["title", "content", "source"],
             top=k,
         )
 
@@ -100,7 +100,7 @@ class AISearch:
                 k=k,
                 fields="titleVector,contentVector",
             ),
-            select=["Title", "Content", "Source"],
+            select=["title", "content", "source"],
             query_type="semantic",
             query_language="en-us",
             semantic_configuration_name="vector-semantic-config",
@@ -142,59 +142,59 @@ class AISearch:
     def create_search_index(self, index_name=None):
         # Create a search index
         fields = [
-            SimpleField(name="ArticleId", type=SearchFieldDataType.String, key=True),
-            SearchableField(name="Source", type=SearchFieldDataType.String, retrievable=True),
+            SimpleField(name="article_id", type=SearchFieldDataType.String, key=True),
+            SearchableField(name="source", type=SearchFieldDataType.String, retrievable=True),
             SearchableField(
-                name="Title",
+                name="title",
                 type=SearchFieldDataType.String,
                 searchable=True,
                 retrievable=True,
             ),
             SearchableField(
-                name="Content",
+                name="content",
                 type=SearchFieldDataType.String,
                 searchable=True,
                 retrievable=True,
             ),
             SearchableField(
-                name="ContentDescription",
+                name="content_description",
                 type=SearchFieldDataType.String,
                 searchable=True,
                 retrievable=True,
             ),
             SearchableField(
-                name="CreatedAt",
+                name="created_at",
                 type=SearchFieldDataType.DateTimeOffset,
                 searchable=True,
                 retrievable=True,
             ),
             SearchableField(
-                name="YoutubeLinks",
+                name="youtube_links",
                 collection=True,
                 type=SearchFieldDataType.Collection(SearchFieldDataType.Single),
                 searchable=True,
                 retrievable=True,
             ),
-            ComplexField(
-                name="InlineImages",
-                collection=True,
-                fields=[
-                    SimpleField(name="PlaceHolder", type=SearchFieldDataType.String),
-                    SimpleField(name="Source", type=SearchFieldDataType.String),
-                    SimpleField(name="Alt", type=SearchFieldDataType.String),
-                    SimpleField(name="Width", type=SearchFieldDataType.String),
-                    SimpleField(name="Height", type=SearchFieldDataType.String),
-                ],
-            ),
+            # ComplexField(
+            #     name="InlineImages",
+            #     collection=True,
+            #     fields=[
+            #         SimpleField(name="PlaceHolder", type=SearchFieldDataType.String),
+            #         SimpleField(name="source", type=SearchFieldDataType.String),
+            #         SimpleField(name="Alt", type=SearchFieldDataType.String),
+            #         SimpleField(name="Width", type=SearchFieldDataType.String),
+            #         SimpleField(name="Height", type=SearchFieldDataType.String),
+            #     ],
+            # ),
             SearchField(
-                name="TitleVector",
+                name="title_vector",
                 type=SearchFieldDataType.Collection(SearchFieldDataType.Single),
                 searchable=True,
                 vector_search_dimensions=1536,
                 vector_search_profile_name="HnswProfile",
             ),
             SearchField(
-                name="ContentVector",
+                name="content_vector",
                 type=SearchFieldDataType.Collection(SearchFieldDataType.Single),
                 searchable=True,
                 vector_search_dimensions=1536,
@@ -235,15 +235,15 @@ class AISearch:
         semantic_config = SemanticConfiguration(
             name="semantic-config",
             prioritized_fields=SemanticPrioritizedFields(
-                title_field=SemanticField(field_name="Title"),
-                content_fields=[SemanticField(field_name="Content")],
+                title_field=SemanticField(field_name="title"),
+                content_fields=[SemanticField(field_name="content")],
             ),
         )
 
         # Create the semantic settings with the configuration
         semantic_search = SemanticSearch(configurations=[semantic_config])
 
-        suggester = SearchSuggester(name="TitleContentSG", source_fields=["Title", "Content"])
+        suggester = SearchSuggester(name="TitleContentSG", source_fields=["title", "content"])
 
         # Create the search index with the semantic settings
         index = SearchIndex(
@@ -285,8 +285,8 @@ class AISearch:
     def delete_documents(self, results: list):
         upload_documents = []
         for i, result in enumerate(results):
-            print(f"Deleting {result['ArticleId']}")
-            upload_documents.append({"@search.action": "delete", "ArticleId": str(result["ArticleId"])})
+            print(f"Deleting {result['article_id']}")
+            upload_documents.append({"@search.action": "delete", "article_id": str(result["article_id"])})
 
         self.search_client.upload_documents(upload_documents)
 
@@ -299,14 +299,14 @@ class AISearch:
             os.makedirs(index_path, exist_ok=True)
 
         if file_type == "csv":
-            fields = ["ArticleId", "Title", "Content", "Source"]
+            fields = ["article_id", "title", "content", "source"]
             with open(os.path.join(index_path, f"{brand}.csv"), "w", encoding="utf-8") as f:
                 write = csv.writer(f)
                 write.writerow(fields)
 
                 pbar = tqdm(results, position=1, leave=False, colour="red")
                 for i, result in enumerate(pbar):
-                    write.writerows([[result["ArticleId"], result["Title"], result["Content"], result["Source"]]])
+                    write.writerows([[result["article_id"], result["title"], result["content"], result["source"]]])
         else:
             with open(os.path.join(index_path, f"{brand}.json"), "w+", encoding="utf-8") as f:
                 json.dump(results, f, ensure_ascii=False, indent=4)
@@ -337,19 +337,19 @@ if __name__ == "__main__":
         ai_search.drop_search_index()
 
     elif task in ["Delete Documents", "Get Documents", "Find Documents"]:
-        search_fields = questionary.checkbox("Search Fields?", choices=["ArticleId", "Title", "Source", "Content"]).ask()
+        search_fields = questionary.checkbox("Search Fields?", choices=["article_id", "title", "source", "content"]).ask()
         search_text = questionary.text("Search Text?").ask()
 
         if task == "Delete Documents":
-            select = ["ArticleId", "Title", "Source"]
+            select = ["article_id", "title", "source"]
         else:
-            select = questionary.checkbox("Select?", choices=["ArticleId", "Title", "Source", "Content"]).ask()
+            select = questionary.checkbox("Select?", choices=["article_id", "title", "source", "content"]).ask()
 
         if task == "Delete Documents":
             documents = ai_search.find_documents(search_fields=search_fields, search_text=search_text, select=select)
 
             for document in documents:
-                print(document["ArticleId"] + "\n" + document["Source"], "\n")
+                print(document["article_id"] + "\n" + document["source"], "\n")
 
             print(f"\nTotal documents found: {len(documents)}\n")
 
@@ -361,7 +361,7 @@ if __name__ == "__main__":
             ai_search.get_documents(
                 search_fields=search_fields,
                 search_text=search_text,
-                select=select if select != [] else ["ArticleId", "Title", "Source"],
+                select=select if select != [] else ["article_id", "title", "source"],
                 log_results=True,
             )
         elif task == "Find Documents":

@@ -37,13 +37,13 @@ class APICLO:
         # Create a dictionary with the article information
         env_setup_build = [
             {
-                "ArticleId": shortuuid.uuid(),  # Generate a unique identifier
-                "Source": self.base_url + "environment.html",  # URL of the original source
-                "Title": "Environment Setup & Build",  # Title of the article
-                "Content": response.text,  # Content of the article
-                "ContentDescription": self.azure.openai_helper.create_webpage_description(response.text),  # Description of the content
-                "CreatedAt": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
-                "YoutubeLinks": [],  # List of YouTube links associated with the article
+                "article_id": shortuuid.uuid(),  # Generate a unique identifier
+                "source": self.base_url + "environment.html",  # URL of the original source
+                "title": "Environment Setup & Build",  # Title of the article
+                "content": response.text,  # Content of the article
+                "content_description": self.azure.openai_helper.create_webpage_description(response.text),  # Description of the content
+                "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
+                "youtube_links": [],  # List of YouTube links associated with the article
             }
         ]
 
@@ -85,13 +85,13 @@ class APICLO:
 
                 api_list.append(
                     {
-                        "ArticleId": shortuuid.uuid(),
-                        "Source": self.base_url + "scenario.html" + "#" + tag_id,
-                        "Title": title.replace("\uf0c1", "").strip(),
-                        "Content": code_block.strip(),
-                        "ContentDescription": "Script for " + title.replace("\uf0c1", "").strip(),
-                        "CreatedAt": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-                        "YoutubeLinks": [],
+                        "article_id": shortuuid.uuid(),
+                        "source": self.base_url + "scenario.html" + "#" + tag_id,
+                        "title": title.replace("\uf0c1", "").strip(),
+                        "content": code_block.strip(),
+                        "content_description": "Script for " + title.replace("\uf0c1", "").strip(),
+                        "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                        "youtube_links": [],
                     }
                 )
 
@@ -140,13 +140,13 @@ class APICLO:
 
                 api_list.append(
                     {
-                        "ArticleId": shortuuid.uuid(),
-                        "Source": self.base_url + "list.html" + "#" + tag_id,
-                        "Title": title.replace("\uf0c1", "").strip(),
-                        "Content": code_block.strip(),
-                        "ContentDescription": content_description.replace("\uf0c1", "").strip(),
-                        "CreatedAt": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-                        "YoutubeLinks": [],
+                        "article_id": shortuuid.uuid(),
+                        "source": self.base_url + "list.html" + "#" + tag_id,
+                        "title": title.replace("\uf0c1", "").strip(),
+                        "content": code_block.strip(),
+                        "content_description": content_description.replace("\uf0c1", "").strip(),
+                        "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                        "youtube_links": [],
                     }
                 )
 
@@ -188,13 +188,13 @@ class APICLO:
 
                 api_list.append(
                     {
-                        "ArticleId": shortuuid.uuid(),
-                        "Source": self.base_url + "optiontype.html" + "#" + tag_id,
-                        "Title": title.replace("\uf0c1", "").strip(),
-                        "Content": code_block.strip(),
-                        "ContentDescription": "List of API Option Types",
-                        "CreatedAt": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-                        "YoutubeLinks": [],
+                        "article_id": shortuuid.uuid(),
+                        "source": self.base_url + "optiontype.html" + "#" + tag_id,
+                        "title": title.replace("\uf0c1", "").strip(),
+                        "content": code_block.strip(),
+                        "content_description": "List of API Option Types",
+                        "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                        "youtube_links": [],
                     }
                 )
 
@@ -207,9 +207,8 @@ class APICLO:
 
             for i, document in enumerate(tqdm(documents, desc=f"Uploading {os.path.basename(api_dir_path)}", colour="green")):
                 documents[i]["@search.action"] = "mergeOrUpload"
-                documents[i]["TitleVector"] = self.azure.openai_helper.generate_embeddings(text=document["Title"])
-                documents[i]["ContentVector"] = self.azure.openai_helper.generate_embeddings(text=document["Content"])
-                documents[i]["InlineImages"] = []
+                documents[i]["title_vector"] = self.azure.openai_helper.generate_embeddings(text=document["title"])
+                documents[i]["content_vector"] = self.azure.openai_helper.generate_embeddings(text=document["content"])
 
             self.azure.search_client.upload_documents(documents)
 

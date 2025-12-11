@@ -223,7 +223,7 @@ def replace_base64_images_with_placeholders(markdown_content: str):
         data_image_src = data_image_match.group(0).replace("(", "").replace(")", "")
         alt = f"image_{shortuuid.uuid()}.png"
         placeholder = f"[IMAGE:{alt}]"
-        inline_images.append({"PlaceHolder": placeholder, "Source": data_image_src, "Alt": alt, "Width": "", "Height": ""})
+        inline_images.append({"PlaceHolder": placeholder, "source": data_image_src, "Alt": alt, "Width": "", "Height": ""})
 
         markdown_content = markdown_content.replace(data_image, placeholder)
 

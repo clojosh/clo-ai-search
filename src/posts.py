@@ -196,7 +196,6 @@ class Posts:
             "created_at": post["registeredDate"],
             "category": post["category"],
             "tags": post["tags"],
-            "inline_images": [],
         }
 
         return document
@@ -279,16 +278,15 @@ class Posts:
                     upload_documents.append(
                         {
                             "@search.action": "mergeOrUpload",
-                            "ArticleId": document["id"],
-                            "Source": document["url"],
-                            "Title": document["title"],
-                            "Content": document["content"],
-                            "ContentDescription": document["content_description"],
-                            "CreatedAt": document["created_at"],
-                            "YoutubeLinks": [],
-                            "InlineImages": document["inline_images"],
-                            "titleVector": azure.openai_helper.generate_embeddings(text=document["title"]),
-                            "contentVector": azure.openai_helper.generate_embeddings(
+                            "article_id": document["id"],
+                            "source": document["url"],
+                            "title": document["title"],
+                            "content": document["content"],
+                            "content_description": document["content_description"],
+                            "created_at": document["created_at"],
+                            "youtube_links": [],
+                            "title_vector": azure.openai_helper.generate_embeddings(text=document["title"]),
+                            "content_vector": azure.openai_helper.generate_embeddings(
                                 text=document["content"] if document["content"] != "" else document["post_title"]
                             ),
                         }
@@ -337,7 +335,7 @@ class Posts:
                 # Get the post from the Zendesk API
                 response = requests.request(
                     "GET",
-                    f"https://support.clo3d.com/api/v2/community/posts/{document['ArticleId']}",
+                    f"https://support.clo3d.com/api/v2/community/posts/{document['article_id']}",
                     headers={
                         "Content-Type": "application/json",
                     },
@@ -357,11 +355,11 @@ class Posts:
 
                 # If the created_at date is less than the cutoff date, delete the post
                 if created_at < cutoff_date:
-                    print(f"Deleting {document['ArticleId']}")
+                    print(f"Deleting {document['article_id']}")
                     self.azure.search_client.upload_documents(
                         {
                             "@search.action": "delete",
-                            "ArticleId": str(document["ArticleId"]),
+                            "article_id": str(document["article_id"]),
                         }
                     )
 

@@ -73,7 +73,7 @@ class YouTube:
         return {
             "VideoId": video_id,
             "Url": f"https://www.youtube.com/watch?v={video_id}",
-            "Title": response["items"][0]["snippet"]["title"],
+            "title": response["items"][0]["snippet"]["title"],
             "Description": response["items"][0]["snippet"]["description"],
             "PublishedAt": response["items"][0]["snippet"]["publishedAt"],
         }
@@ -308,13 +308,13 @@ class YouTube:
                     # print("No subtitles found for:\n" + v["snippet"]["title"] + "\n")
                     continue
 
-                transcript = self.extract_srt_text(os.path.join(self.youtube_channel_dir_path, "subtitles", v["snippet"]["title"] + ".en.srt"))
+                transcript = self.extract_srt_text(os.path.join(self.youtube_channel_dir_path, "subtitles", v["snippet"]["title"] + ".en.srt")).replace("  ", " ")
 
                 # Create a dictionary to store the video data
                 video = {
                     "VideoId": v["id"]["videoId"] if v["id"]["videoId"] else shortuuid.uuid(),  # Get the video id
                     "Url": f"https://www.youtube.com/watch?v={v['id']['videoId']}",  # Get the video url
-                    "Title": v["snippet"]["title"].title().replace("&#39;", "'").replace("&quot;", '"').replace("&amp;", "&"),
+                    "title": v["snippet"]["title"].title().replace("&#39;", "'").replace("&quot;", '"').replace("&amp;", "&"),
                     "Description": v["snippet"]["description"],  # YouTube has its own description
                     "Transcript": transcript,
                     "PublishedAt": v["snippet"]["publishedAt"],  # Get the video publish date
@@ -335,11 +335,10 @@ class YouTube:
         transcripts = []
         for video in tqdm(videos, desc="Extractng YouTube Transcripts", colour="blue", leave=False):
             transcript = {
-                "Title": video["title"],
-                "Source": video["url"],
+                "title": video["title"],
+                "source": video["url"],
                 "Transcript": YouTube.extract_video_transcript_text(video["url"]),
-                "Labels": [],
-                "YoutubeLinks": [video["url"]],
+                "youtube_links": [video["url"]],
             }
             transcripts.append(transcript)
 
@@ -422,8 +421,9 @@ class YouTube:
 
             upload_transcripts = []
             for transcript in transcripts:
-                if transcript["Summary"] == "" or len(transcript["Summary"]) < 100:
-                    continue
+                if "Summary" in transcript:
+                    if transcript["Summary"] == "" or len(transcript["Summary"]) < 100:
+                        continue
 
                 if transcript["VideoId"].startswith("_"):
                     transcript["VideoId"] = "YT" + transcript["VideoId"]
@@ -431,15 +431,15 @@ class YouTube:
                 upload_transcripts.append(
                     {
                         "@search.action": "mergeOrUpload",
-                        "ArticleId": transcript["VideoId"],
-                        "Source": transcript["Url"],
-                        "Title": transcript["Title"],
-                        "Content": transcript["Summary"],
-                        "ContentDescription": transcript["Description"],
-                        "CreatedAt": transcript["PublishedAt"],
-                        "YoutubeLinks": [transcript["Url"]],
-                        "titleVector": self.azure.openai_helper.generate_embeddings(text=transcript["Title"]),
-                        "contentVector": self.azure.openai_helper.generate_embeddings(text=transcript["Summary"]),
+                        "article_id": transcript["VideoId"],
+                        "source": transcript["Url"],
+                        "title": transcript["title"],
+                        "content": transcript["Summary"] if "Summary" in transcript else transcript["Transcript"],
+                        "content_description": transcript["Description"],
+                        "created_at": transcript["PublishedAt"],
+                        "youtube_links": [transcript["Url"]],
+                        "title_vector": self.azure.openai_helper.generate_embeddings(text=transcript["title"]),
+                        "content_vector": self.azure.openai_helper.generate_embeddings(text=transcript["Summary"]),
                     }
                 )
 
@@ -477,7 +477,7 @@ if __name__ == "__main__":
                 {
                     "VideoId": video_details["VideoId"],
                     "Url": video_details["Url"],
-                    "Title": video_details["Title"],
+                    "title": video_details["title"],
                     "Description": video_details["Description"],
                     "Transcript": srt_text,
                     "PublishedAt": video_details["PublishedAt"],

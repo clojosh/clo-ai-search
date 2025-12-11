@@ -31,9 +31,9 @@ class Article:
 
         if isinstance(article_id, list):
             for id in article_id:
-                self.azure.search_client.upload_documents([{"@search.action": "delete", "ArticleId": id}])
+                self.azure.search_client.upload_documents([{"@search.action": "delete", "article_id": id}])
         else:
-            self.azure.search_client.upload_documents([{"@search.action": "delete", "ArticleId": article_id}])
+            self.azure.search_client.upload_documents([{"@search.action": "delete", "article_id": article_id}])
 
     def delete_excluded_documents(self, brand: str):
         headers = {
@@ -130,14 +130,13 @@ class Article:
 
                 documents.append(
                     {
-                        "ArticleId": article["id"],
-                        "Source": article["html_url"],
-                        "Title": article["title"],
-                        "Content": article["body"],
-                        "ContentDescription": azure.openai_helper.create_webpage_description(article["body"]),
-                        "CreatedAt": article["updated_at"],
-                        "YoutubeLinks": article["youtube_links"],
-                        "InlineImages": [],
+                        "article_id": article["id"],
+                        "source": article["html_url"],
+                        "title": article["title"],
+                        "content": article["body"],
+                        "content_description": azure.openai_helper.create_webpage_description(article["body"]),
+                        "created_at": article["updated_at"],
+                        "youtube_links": article["youtube_links"],
                         "CategoryId": article["category_id"],
                         "Category": article["category"],
                         "SectionId": article["section_id"],
@@ -263,12 +262,12 @@ class Article:
             documents = json.load(f)
 
             for i, document in enumerate(documents):
-                if document["Content"] == "":
-                    document["Content"] = document["Title"]
+                if document["content"] == "":
+                    document["content"] = document["title"]
 
                 documents[i]["@search.action"] = "mergeOrUpload"
-                documents[i]["TitleVector"] = azure.openai_helper.generate_embeddings(text=document["Title"])
-                documents[i]["ContentVector"] = azure.openai_helper.generate_embeddings(text=document["Content"])
+                documents[i]["title_vector"] = azure.openai_helper.generate_embeddings(text=document["title"])
+                documents[i]["content_vector"] = azure.openai_helper.generate_embeddings(text=document["content"])
 
                 del documents[i]["Tokens"]
                 del documents[i]["SectionId"]
@@ -337,7 +336,7 @@ if __name__ == "__main__":
             with open(os.path.join(article.azure.get_article_path(), page), "r", encoding="utf-8") as f:
                 documents = json.load(f)
                 for i, document in enumerate(documents):
-                    if document["ArticleId"] == article_id:
+                    if document["article_id"] == article_id:
                         Article.upload_documents(
                             article.azure.stage, article.azure.brand, article.azure.language, article.azure.get_article_path(), page
                         )

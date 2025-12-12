@@ -247,10 +247,10 @@ class PDF:
 
             for i, document in enumerate(documents):
                 document["@search.action"] = "mergeOrUpload"
-                document["Content"] = document["PDF_Summary"]
-                document["TitleVector"] = self.openai_helper.generate_embeddings(text=document["title"])
-                document["ContentVector"] = self.openai_helper.generate_embeddings(text=document["PDF_Summary"])
-                document["YoutubeLinks"] = []
+                document["content"] = document["PDF_Summary"]
+                document["title_vector"] = self.openai_helper.generate_embeddings(text=document["title"])
+                document["content_vector"] = self.openai_helper.generate_embeddings(text=document["PDF_Summary"])
+                document["youtube_links"] = []
                 del document["PDF_URL"]
                 del document["PDF_Text"]
                 del document["PDF_Summary"]
@@ -263,11 +263,11 @@ class PDF:
 
         for i, document in enumerate(documents):
             document["@search.action"] = "mergeOrUpload"
-            document["Content"] = document["PDF_Summary"]
+            document["content"] = document["PDF_Summary"]
             document["Labels"] = self.openai_helper.generate_labels(document["PDF_Summary"])
-            document["TitleVector"] = self.openai_helper.generate_embeddings(text=document["title"])
-            document["ContentVector"] = self.openai_helper.generate_embeddings(text=document["PDF_Summary"])
-            document["YoutubeLinks"] = []
+            document["title_vector"] = self.openai_helper.generate_embeddings(text=document["title"])
+            document["content_vector"] = self.openai_helper.generate_embeddings(text=document["PDF_Summary"])
+            document["youtube_links"] = []
 
             del document["PDF_Text"]
             del document["PDF_Summary"]

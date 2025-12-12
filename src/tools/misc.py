@@ -192,6 +192,7 @@ def html_to_markdown_converter(html_content: str) -> str:
     h.ignore_images = False  # Keep images
     h.body_width = 0  # Don't wrap lines
     h.unicode_snob = True  # Use Unicode characters (e.g., proper dashes)
+    h.backquote_code_style = True  # Keep code blocks
 
     # Perform the conversion
     markdown_content = h.handle(html_content)

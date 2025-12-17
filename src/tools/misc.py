@@ -3,6 +3,7 @@ import logging
 import os
 import re
 from pathlib import Path
+from urllib.parse import urljoin
 
 import html2text
 import requests  # type: ignore
@@ -321,6 +322,38 @@ def check_image_exists(url):
         # Catch any other unforeseen exceptions
         print(f"An unknown error occurred for {url}: {e}")
         return False
+
+
+def ensure_absolute_markdown_urls(markdown_text: str, base_url: str) -> str:
+    """
+    Ensures all links in a Markdown string have an absolute base URL.
+
+    Args:
+        markdown_text: The input Markdown string.
+        base_url: The base URL to use for relative links (e.g., "https://example.com/").
+
+    Returns:
+        The Markdown string with absolute URLs.
+    """
+    # Regex to find all Markdown links: [link_text](url)
+    # The groups capture:
+    # 1: The link text
+    # 2: The URL
+    link_regex = re.compile(r"\[([^\[\]]+)\]\(([^)]+)\)")
+
+    def replacer(match):
+        link_text = match.group(1)
+        original_url = match.group(2)
+
+        # Use urljoin to resolve the link against the base_url.
+        # urljoin intelligently handles absolute URLs, protocol-relative links (//),
+        # and relative links, making them absolute using the base_url.
+        absolute_url = urljoin(base_url, original_url)
+
+        # Reconstruct the Markdown link with the absolute URL
+        return f"[{link_text}]({absolute_url})"
+
+    return link_regex.sub(replacer, markdown_text)
 
 
 if __name__ == "__main__":

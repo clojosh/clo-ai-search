@@ -5,11 +5,13 @@ import re
 from datetime import datetime
 from math import ceil
 
+import parmap
 import questionary
 import requests  # type: ignore
 from rich import print
 from tqdm import tqdm
 
+from ai_search import AISearch
 from tools.azure import Azure
 from tools.misc import html_to_markdown_converter, remove_html_tags, remove_unwanted_markdown_images, trim_tokens
 
@@ -271,7 +273,7 @@ class Posts:
 
             try:
                 upload_documents = []
-                for i, document in enumerate(tqdm(documents, desc=f"Uploading {file}", colour="green", position=position, leave=False)):
+                for i, document in enumerate(tqdm(documents, desc=f"Uploading {file}", colour="green", position=position, leave=True)):
                     if document["content"] == "":
                         continue
 
@@ -305,9 +307,7 @@ class Posts:
 
         upload_posts_params = []
         for i, file in enumerate(file_paths):
-            upload_posts_params.append(
-                (self.azure.stage, self.azure.brand, os.path.join(os.getcwd(), "data", self.azure.brand, "posts"), file, (i % 5) + 1)
-            )
+            upload_posts_params.append((self.azure.stage, self.azure.brand, os.path.join(os.getcwd(), "data", self.azure.brand, "posts"), file, i))
 
         with multiprocessing.Pool(5) as p:
             p.starmap_async(
@@ -366,9 +366,12 @@ class Posts:
 
 if __name__ == "__main__":
     stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
-    task = questionary.select("What task?", choices=["Get Post", "Get All Posts", "Upload All Posts"]).ask()
+    brand = questionary.select("Which brand?", choices=["clo3d", "closet", "connect", "md", "allinone"]).ask()
+    task = questionary.select("What task?", choices=["Get Post", "Get All Posts", "Upload All Posts", "Find & Delete AI Search Documents"]).ask()
 
-    azure = Azure(stage, "clo3d")
+    azure = Azure(stage, brand)
+    ai_search = AISearch(Azure(stage, brand))
+
     if task == "Get Post":
         post_id = questionary.text("Post ID:").ask()
 
@@ -381,6 +384,22 @@ if __name__ == "__main__":
         post.mp_get_posts()
 
     elif task == "Upload All Posts":
-        brand = questionary.select("Which brand?", choices=["clo3d", "closet", "connect", "md", "allinone"]).ask()
         post = Posts(azure)
         post.mp_upload()
+
+    elif task == "Find & Delete AI Search Documents":
+        search_fields_options = ["article_id", "source", "title", "content", "content_description"]
+
+        search_field = questionary.select("Search field?", choices=search_fields_options).ask()
+        search_text = questionary.text("Search value?").ask()
+
+        documents = ai_search.find_all_ai_search_documents(search_fields=[search_field], search_text=search_text)
+
+        for document in documents:
+            print(document["article_id"] + "\n" + document["source"], "\n")
+
+        print(f"\nTotal documents found: {len(documents)}\n")
+
+        if questionary.confirm("Do you want to delete these documents?").ask():
+            for document in documents:
+                ai_search.delete_ai_search_document(document["article_id"])

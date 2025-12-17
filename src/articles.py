@@ -9,7 +9,9 @@ from collections import defaultdict
 import questionary
 import requests  # type: ignore
 from rich import print
+from tqdm import tqdm
 
+from ai_search import AISearch
 from tools.azure import Azure
 from tools.misc import (
     check_image_exists,
@@ -253,15 +255,13 @@ class Article:
             p.join()
 
     @staticmethod
-    def upload_documents(stage: str, brand: str, language: str, article_path: str, file: str):
-        print(f"\n{file}")
-
+    def upload_documents(stage: str, brand: str, language: str, article_path: str, file: str, position: int = 0):
         azure = Azure(stage, brand, language)
 
         with open(os.path.join(article_path, file), "r", encoding="utf-8") as f:
             documents = json.load(f)
 
-            for i, document in enumerate(documents):
+            for i, document in enumerate(tqdm(documents, desc=f"Uploading {file}", colour="green", position=position, leave=True)):
                 if document["content"] == "":
                     document["content"] = document["title"]
 
@@ -289,8 +289,8 @@ class Article:
             file_paths = sorted(os.listdir(self.azure.get_article_path()), key=lambda x: int(x.partition("_")[2].partition(".")[0]))
 
         upload_documents_params = []
-        for file in file_paths:
-            upload_documents_params.append((self.azure.stage, self.azure.brand, self.azure.language, self.azure.get_article_path(), file))
+        for i, file in enumerate(file_paths):
+            upload_documents_params.append((self.azure.stage, self.azure.brand, self.azure.language, self.azure.get_article_path(), file, i))
 
         with multiprocessing.Pool(5) as p:
             p.starmap_async(Article.upload_documents, upload_documents_params, error_callback=lambda e: print(e))
@@ -312,10 +312,12 @@ if __name__ == "__main__":
             "Upload All Articles",
             "Delete Article",
             "Delete Excluded Articles",
+            "Find & Delete AI Search Documents",
         ],
     ).ask()
 
     article = Article(Azure(stage, brand, language))
+    ai_search = AISearch(Azure(stage, brand))
 
     if task == "Get Zendesk Article":
         article_id = questionary.text("Article ID").ask()
@@ -360,3 +362,20 @@ if __name__ == "__main__":
 
     elif task == "Delete Excluded Articles":
         article.delete_excluded_documents(brand=brand)
+
+    elif task == "Find & Delete AI Search Documents":
+        search_fields_options = ["article_id", "source", "title", "content", "content_description"]
+
+        search_field = questionary.select("Search field?", choices=search_fields_options).ask()
+        search_text = questionary.text("Search value?").ask()
+
+        documents = ai_search.find_all_ai_search_documents(search_fields=[search_field], search_text=search_text)
+
+        for document in documents:
+            print(document["article_id"] + "\n" + document["source"], "\n")
+
+        print(f"\nTotal documents found: {len(documents)}\n")
+
+        if questionary.confirm("Do you want to delete these documents?").ask():
+            for document in documents:
+                ai_search.delete_ai_search_document(document["article_id"])

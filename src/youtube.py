@@ -6,6 +6,7 @@ import shutil
 import subprocess
 import sys
 from datetime import datetime, timedelta
+from difflib import SequenceMatcher
 from io import BytesIO
 from typing import List, TypedDict, Union
 
@@ -14,12 +15,18 @@ import requests  # type: ignore
 import shortuuid
 import yt_dlp
 from dateutil.relativedelta import relativedelta
+from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
 from tqdm import tqdm
 from youtube_transcript_api import YouTubeTranscriptApi
+from youtube_transcript_api.formatters import TextFormatter
+from youtube_transcript_api.proxies import WebshareProxyConfig
 
+from ai_search import AISearch
 from tools.azure import Azure
 from tools.misc import check_create_directory, logger, sanitize_directory_file_name
 
+API_KEY = "AIzaSyBFB39J11lWnVU8hqzIn1X1kVeZnxvF8R4"
 CLO3D_CHANNEL_ID = "UCApF8J_2QeJ8QPXIAZ25uhw"
 MD_CHANNEL_ID = "UCcD-Fd_9s3kmK_fY6qp8u_Q"
 
@@ -78,13 +85,14 @@ class YouTube:
             "PublishedAt": response["items"][0]["snippet"]["publishedAt"],
         }
 
-    def retrive_youtube_video_ids(
-        self, video_age_in_years: int = 0, video_age_in_months: int = 0, video_age_in_weeks: int = 0, video_age_in_days: int = 0
+    def get_videos_by_age(
+        self, channel_id: str, video_age_in_years: int = 0, video_age_in_months: int = 0, video_age_in_weeks: int = 0, video_age_in_days: int = 0
     ):
         """
         Retrieves a list of youtube video ids based on the video age parameters.
 
         Parameters:
+        channel_id (str): The ID of the YouTube channel.
         video_age_in_years (int): The age of the videos to retrieve in years. Defaults to 0.
         video_age_in_months (int): The age of the videos to retrieve in months. Defaults to 0.
         video_age_in_weeks (int): The age of the videos to retrieve in weeks. Defaults to 0.
@@ -98,22 +106,27 @@ class YouTube:
         if int(video_age_in_years) > 0:
             # If the video age is in years, set the published after date to the first day of the year
             published_after = "{}-01-01T00:00:00Z".format(datetime.today().year - int(video_age_in_years))
+            file_name = f"video_ids_within_{video_age_in_years}_years.json"
         elif int(video_age_in_months) > 0:
             # If the video age is in months, set the published after date to the first day of the month
             datetime_months = datetime.now() - relativedelta(months=int(video_age_in_months))
             published_after = datetime_months.strftime("%Y-%m-%dT%H:%M:%SZ")
+            file_name = f"video_ids_within_{video_age_in_months}_months.json"
         elif int(video_age_in_weeks) > 0:
             # If the video age is in weeks, set the published after date to the first day of the week
             datetime_weeks = datetime.now() - relativedelta(weeks=int(video_age_in_weeks))
             published_after = datetime_weeks.strftime("%Y-%m-%dT%H:%M:%SZ")
+            file_name = f"video_ids_within_{video_age_in_weeks}_weeks.json"
         elif int(video_age_in_days) > 0:
             # If the video age is in days, set the published after date to the first day of the day
             datetime_days = datetime.now() - relativedelta(days=int(video_age_in_days))
             published_after = datetime_days.strftime("%Y-%m-%dT%H:%M:%SZ")
+            file_name = f"video_ids_within_{video_age_in_days}_days.json"
         else:
             # If no video age parameters are provided, set the published after date to yesterday
             datetime_days = datetime.now() - relativedelta(days=1)
             published_after = datetime_days.strftime("%Y-%m-%dT%H:%M:%SZ")
+            file_name = "video_ids_within_1_days.json"
 
         # Initialize the items list
         resp_objects: List[YoutubeAPIType] = []
@@ -129,7 +142,7 @@ class YouTube:
                 "https://www.googleapis.com/youtube/v3/search",
                 params={
                     "part": "id, snippet",
-                    "channelId": MD_CHANNEL_ID if self.azure.brand == "md" else CLO3D_CHANNEL_ID,
+                    "channelId": channel_id,
                     "key": "AIzaSyC2LupTSVApfy90Bfzq8L5AAkAawOmT0gY",
                     "publishedAfter": published_after,
                     "order": "date",
@@ -151,10 +164,82 @@ class YouTube:
             if "nextPageToken" not in object:
                 break
 
+        print(f"\nFound {sum(len(obj['items']) for obj in resp_objects)} videos.")
+
+        with open(os.path.join(yt.youtube_channel_dir_path, file_name), "w+", encoding="utf-8") as f:
+            json.dump(resp_objects, f, ensure_ascii=False, indent=4)
+
         # Return the items list
         return resp_objects
 
-    def download_srt(self, video_id: str):
+    def get_videos_by_date_range(self, channel_id: str, start_date: str, end_date: str):
+        """
+        Retrieves all video details for a given channel published within a date range.
+
+        :param channel_id: The ID of the channel.
+        :param start_date: RFC 3339 formatted date (publishedAfter).
+        :param end_date: RFC 3339 formatted date (publishedBefore).
+
+        :return: A list of dictionaries, each containing video snippet data.
+        """
+        try:
+            # Initialize the YouTube API client
+            youtube = build("youtube", "v3", developerKey=API_KEY)
+
+            videos = []
+            next_page_token = None
+
+            print(f"Searching videos for Channel ID: {channel_id}")
+            print(f"Published between {start_date} and {end_date}")
+
+            while True:
+                # The search().list method is used for filtering by date and channel.
+                search_response = (
+                    youtube.search()
+                    .list(
+                        part="snippet",
+                        channelId=channel_id,
+                        type="video",
+                        order="date",  # Sort by date for chronological order
+                        publishedAfter=start_date,
+                        publishedBefore=end_date,
+                        maxResults=50,  # Max allowed results per request is 50
+                        pageToken=next_page_token,
+                    )
+                    .execute()
+                )
+
+                for search_item in search_response.get("items", []):
+                    # 'search' results only return basic snippet info
+                    video_title = search_item["snippet"]["title"]
+                    video_id = search_item["id"]["videoId"]
+                    published_at = search_item["snippet"]["publishedAt"]
+
+                    videos.append({"title": video_title, "id": video_id, "published_at": published_at})
+
+                # Check for the next page of results
+                next_page_token = search_response.get("nextPageToken")
+
+                if not next_page_token:
+                    break
+
+                print(f"Retrieved {len(videos)} videos. Fetching next page...")
+
+            print(f"\n--- Found {len(videos)} total videos ---")
+
+            with open("videos.json", "w", encoding="utf-8") as f:
+                json.dump(videos, f, ensure_ascii=False, indent=4)
+
+            return videos
+
+        except HttpError as e:
+            print(f"An HTTP error {e.resp.status} occurred: {e.content}")
+            return []
+        except Exception as e:
+            print(f"An unexpected error occurred: {e}")
+            return []
+
+    def download_srt_yt_dlp_subprocess(self, video_id: str):
         """
         Executes the yt-dlp command using subprocess.run() to download subtitles.
         """
@@ -217,7 +302,7 @@ class YouTube:
             print(f"\n--- An unexpected error occurred: {e} ---", file=sys.stderr)
 
     # Works on MacOS
-    def download_auto_subs(self, video_id: str):
+    def download_srt_yt_dlp(self, video_id: str):
         ydl_opts = {
             "writeautomaticsub": True,
             "subtitleslangs": ["en"],
@@ -278,6 +363,90 @@ class YouTube:
             # If there's an error reading or parsing the file, return None
             return None
 
+    def download_transcripts_youtube_transcript_api(self, video_id: str):
+        try:
+            ytt_api = YouTubeTranscriptApi(
+                proxy_config=WebshareProxyConfig(
+                    proxy_username="fujzysxp-1",
+                    proxy_password="mnefpap1bq31",
+                )
+            )
+
+            # 1. Get the list of available transcripts
+            transcript_list = ytt_api.list(video_id)
+
+            try:
+                # 2. Get the manually created transcript if available
+                retrieved__transcript = transcript_list.find_manually_created_transcript(["en"])
+
+            except Exception:
+                print("\nUnable to retrieve manually created transcript. Attempting to retrieve generated transcript...")
+                retrieved__transcript = transcript_list.find_generated_transcript(["en"])
+                print("Generated Transcript successfully retrieved.")
+
+            # 3. Use a formatter to convert the raw data into a clean text string
+            formatter = TextFormatter()
+            formatted_transcript = formatter.format_transcript(retrieved__transcript.fetch())
+
+            return formatted_transcript
+
+        except Exception as e:
+            exception = str(e)
+            error_message = exception[: exception.index("If you are")].strip()
+            print(f"\nError occurred: {error_message}")
+
+        return ""
+
+    # Youtube blocks some requests from this
+    def download_videos_yt_dlp(self):
+        """Downloads videos from a YouTube channel using yt-dlp."""
+
+        # --- Configuration ---
+        CHANNEL_URL = "https://www.youtube.com/@CLO3D"  # <-- CHANGE THIS to the actual channel URL
+        OUTPUT_DIR = os.path.join(self.youtube_channel_dir_path, "videos")
+        NUM_RECENT_VIDEOS = 10
+
+        # Create the output directory if it doesn't exist
+        if not os.path.exists(OUTPUT_DIR):
+            os.makedirs(OUTPUT_DIR)
+
+        # --- yt-dlp Options ---
+        ydl_opts = {
+            "http_headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+            },
+            # Limit the download to the top N items in the channel's uploads list (most recent first)
+            "playlist_items": f"1-{NUM_RECENT_VIDEOS}",
+            # 1. Output File Template: Uses the date and title for the filename.
+            # It places the downloaded file inside the 'channel_downloads' folder.
+            "outtmpl": os.path.join(OUTPUT_DIR, "%(upload_date)s - %(title)s.%(ext)s"),
+            # 2. Download Archive: Skips files whose ID is already in archive.txt.
+            "download_archive": os.path.join(OUTPUT_DIR, "archive.txt"),
+            # 3. Metadata and Thumbnail Embedding
+            "writedescription": True,
+            "writeinfojson": True,
+            "embed_metadata": True,
+            "embed_thumbnail": True,
+            # 4. Error Handling: Continue on download error
+            "ignoreerrors": True,
+            # 5. Verbosity
+            "quiet": False,  # Set to True to suppress most output
+        }
+
+        print(f"Starting download of the {NUM_RECENT_VIDEOS} most recent videos from: {CHANNEL_URL}")
+        print(f"Files will be saved to: {OUTPUT_DIR}")
+
+        try:
+            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                # The extract_info function will process the channel URL as a playlist
+                # and download all available videos based on the options (ydl_opts).
+                info_dict = ydl.extract_info(CHANNEL_URL, download=True)
+
+            print("\n✅ Download process complete!")
+
+        except Exception as e:
+            print(f"\n❌ An error occurred during the download process: {e}")
+
     def extract_youtube_transcripts(self, resp_objects: List[YoutubeAPIType]) -> None:
         """
         Extracts transcripts from a youtube channel
@@ -290,25 +459,41 @@ class YouTube:
 
         transcripts = []
 
+        for page in os.listdir(os.path.join(self.youtube_channel_dir_path, "transcripts")):
+            with open(os.path.join(self.youtube_channel_dir_path, "transcripts", page), "r", encoding="utf-8") as f:
+                transcripts.extend(json.load(f))
+
         for i, obj in enumerate(resp_objects):
             for v in obj["items"]:
-                print("\nRetrieving transcript for:\n" + v["snippet"]["title"])
+                print("\n---" * 15)
+                print("Retrieving transcript for:\n" + v["snippet"]["title"])
 
                 # Check if the item is a video and has a video id
                 if "videoId" not in v["id"]:
                     continue
 
-                # Check if subtitle exists, if not download it
-                if not os.path.exists(os.path.join(self.youtube_channel_dir_path, "subtitles", v["snippet"]["title"] + ".en.srt")):
-                    self.download_srt(v["id"]["videoId"])
-                else:
-                    print("Subtitle already exists")
+                for t in transcripts:
+                    if t["VideoId"] == v["id"]["videoId"]:
+                        continue
 
-                if not os.path.exists(os.path.join(self.youtube_channel_dir_path, "subtitles", v["snippet"]["title"] + ".en.srt")):
-                    # print("No subtitles found for:\n" + v["snippet"]["title"] + "\n")
+                try:
+                    # Check if subtitle exists, if not download it
+                    # if not os.path.exists(os.path.join(self.youtube_channel_dir_path, "subtitles", v["snippet"]["title"] + ".en.srt")):
+                    #     self.download_srt(v["id"]["videoId"])
+                    # else:
+                    #     print("Subtitle already exists")
+
+                    # if not os.path.exists(os.path.join(self.youtube_channel_dir_path, "subtitles", v["snippet"]["title"] + ".en.srt")):
+                    #     # print("No subtitles found for:\n" + v["snippet"]["title"] + "\n")
+                    #     continue
+
+                    # transcript = self.extract_srt_text(
+                    #     os.path.join(self.youtube_channel_dir_path, "subtitles", v["snippet"]["title"] + ".en.srt")
+                    # ).replace("  ", " ")
+
+                    transcript = self.download_transcripts_youtube_transcript_api(v["id"]["videoId"])
+                except Exception:
                     continue
-
-                transcript = self.extract_srt_text(os.path.join(self.youtube_channel_dir_path, "subtitles", v["snippet"]["title"] + ".en.srt")).replace("  ", " ")
 
                 # Create a dictionary to store the video data
                 video = {
@@ -354,7 +539,7 @@ class YouTube:
         return playlist_title
 
     @staticmethod
-    def summarize_transcripts(env: str, brand: str, youtube_channel_transcript_dir_path: str):
+    def summarize_transcripts(env: str, brand: str, youtube_channel_transcript_dir_path: str, index: int):
         """
         Summarize all the transcripts in a file
 
@@ -375,10 +560,19 @@ class YouTube:
             transcripts = json.load(file)
 
         # Summarize each transcript
-        for index, trans in enumerate(transcripts):
+        for index, trans in tqdm(
+            enumerate(transcripts),
+            desc=f"Summarizing {os.path.basename(youtube_channel_transcript_dir_path)}",
+            colour="green",
+            position=index,
+            leave=True,
+        ):
             try:
-                summary = environment.openai_helper.generate_transcript_summary(trans["Transcript"])
-                trans["Summary"] = summary
+                if trans["Transcript"] == "" or len(trans["Transcript"]) < 150:
+                    trans["Summary"] = ""
+                else:
+                    summary = environment.openai_helper.generate_transcript_summary(trans["Transcript"])
+                    trans["Summary"] = summary
             except Exception as e:
                 raise e
 
@@ -401,9 +595,9 @@ class YouTube:
         summarize_transcripts_params = []
 
         # Iterate over the files and create the parameters
-        for file in files:
+        for i, file in enumerate(files):
             summarize_transcripts_params.append(
-                (self.azure.stage, self.azure.brand, os.path.join(self.youtube_channel_dir_path, "transcripts", file))
+                (self.azure.stage, self.azure.brand, os.path.join(self.youtube_channel_dir_path, "transcripts", file, i))
             )
 
         # Create a multiprocessing pool and process the files in parallel
@@ -421,8 +615,11 @@ class YouTube:
 
             upload_transcripts = []
             for transcript in transcripts:
+                if transcript["Transcript"] == "":
+                    continue
+
                 if "Summary" in transcript:
-                    if transcript["Summary"] == "" or len(transcript["Summary"]) < 100:
+                    if transcript["Summary"] == "" or len(transcript["Summary"]) < 150:
                         continue
 
                 if transcript["VideoId"].startswith("_"):
@@ -452,22 +649,53 @@ if __name__ == "__main__":
     task = questionary.select(
         "What task?",
         choices=[
+            "Get All Videos",
             "Get Transcript",
-            "Get All Transcripts",
+            "Get All Transcripts By Age",
+            "Get All Transcripts By Date",
+            "Download All Videos",
             "Summarize Transcript",
             "Summarize All Transcripts",
             "Upload All Transcripts",
+            "Find & Delete AI Search Documents",
         ],
     ).ask()
 
     yt = YouTube(Azure(stage, brand))
+    ai_search = AISearch(Azure(stage, brand))
 
-    if task == "Get Transcript":
+    channel_id = MD_CHANNEL_ID if brand == "md" else CLO3D_CHANNEL_ID
+
+    if task == "Get All Videos":
+        video_age = questionary.select("Video Age", choices=["Years", "Months", "Weeks", "Days"]).ask()
+        video_age_number = questionary.text(f"Number of {video_age}:").ask()
+
+        if video_age == "Years":
+            video_ids = yt.get_videos_by_age(channel_id=channel_id, video_age_in_years=video_age_number)
+        elif video_age == "Months":
+            video_ids = yt.get_videos_by_age(channel_id=channel_id, video_age_in_months=video_age_number)
+        elif video_age == "Weeks":
+            video_ids = yt.get_videos_by_age(channel_id=channel_id, video_age_in_weeks=video_age_number)
+        elif video_age == "Days":
+            video_ids = yt.get_videos_by_age(channel_id=channel_id, video_age_in_days=video_age_number)
+
+        youtube_links = []
+        for page in video_ids:
+            for item in page["items"]:
+                if "videoId" not in item["id"]:
+                    continue
+
+                youtube_links.append(f"https://www.youtube.com/watch?v={item['id']['videoId']}")
+
+        with open(os.path.join(yt.youtube_channel_dir_path, "youtube_links.txt"), "w+", encoding="utf-8") as f:
+            f.write("\n".join(youtube_links))
+
+    elif task == "Get Transcript":
         video_id = questionary.text("Video ID:").ask()
 
         video_details = yt.video_details(video_id)
 
-        yt.download_srt(video_id)
+        yt.download_srt_yt_dlp(video_id)
 
         file = f"{video_details['Title']}.en.srt"
         srt_text = yt.extract_srt_text(os.path.join(yt.youtube_channel_dir_path, "subtitles", file))
@@ -487,20 +715,58 @@ if __name__ == "__main__":
                 indent=4,
             )
 
-    elif task == "Get All Transcripts":
+    elif task == "Get All Transcripts By Age":
         video_age = questionary.select("Video Age", choices=["Years", "Months", "Weeks", "Days"]).ask()
         video_age_number = questionary.text(f"Number of {video_age}:").ask()
 
+        # video_ids_file_name = f"video_ids_within_{video_age_number}_{video_age.lower()}.json"
+        # if os.path.exists(os.path.join(yt.youtube_channel_dir_path, video_ids_file_name)):
+        #     with open(os.path.join(yt.youtube_channel_dir_path, video_ids_file_name), "r", encoding="utf-8") as f:
+        #         video_ids = json.load(f)
+        #         print(f"\nFound {sum(len(obj['items']) for obj in video_ids)} videos.")
+        # else:
+
         if video_age == "Years":
-            video_ids = yt.retrive_youtube_video_ids(video_age_in_years=video_age_number)
+            video_ids = yt.get_videos_by_age(channel_id=channel_id, video_age_in_years=video_age_number)
         elif video_age == "Months":
-            video_ids = yt.retrive_youtube_video_ids(video_age_in_months=video_age_number)
+            video_ids = yt.get_videos_by_age(channel_id=channel_id, video_age_in_months=video_age_number)
         elif video_age == "Weeks":
-            video_ids = yt.retrive_youtube_video_ids(video_age_in_weeks=video_age_number)
+            video_ids = yt.get_videos_by_age(channel_id=channel_id, video_age_in_weeks=video_age_number)
         elif video_age == "Days":
-            video_ids = yt.retrive_youtube_video_ids(video_age_in_days=video_age_number)
+            video_ids = yt.get_videos_by_age(channel_id=channel_id, video_age_in_days=video_age_number)
 
         yt.extract_youtube_transcripts(video_ids)
+
+    elif task == "Get All Transcripts By Date":
+        start_date = questionary.text("Start Date (YYYY-MM-DD):").ask()
+        end_date = questionary.text("End Date (YYYY-MM-DD):").ask()
+
+        start_date += "T00:00:00Z"
+        end_date += "T23:59:59Z"
+
+        video_ids = yt.get_videos_by_date_range(channel_id=channel_id, start_date=start_date, end_date=end_date)
+
+        yt.extract_youtube_transcripts(video_ids)
+
+    elif task == "Download All Videos":
+        yt.download_videos_yt_dlp()
+
+    elif task == "Find & Delete AI Search Documents":
+        search_fields_options = ["article_id", "source", "title", "content", "content_description"]
+
+        search_field = questionary.select("Search field?", choices=search_fields_options).ask()
+        search_text = questionary.text("Search value?").ask()
+
+        documents = ai_search.find_all_ai_search_documents(search_fields=[search_field], search_text=search_text)
+
+        for document in documents:
+            print(document["article_id"] + "\n" + document["source"], "\n")
+
+        print(f"\nTotal documents found: {len(documents)}\n")
+
+        if questionary.confirm("Do you want to delete these documents?").ask():
+            for document in documents:
+                ai_search.delete_ai_search_document(document["article_id"])
 
     else:
         if task == "Summarize Transcript":
@@ -508,7 +774,7 @@ if __name__ == "__main__":
                 os.listdir(os.path.join(yt.youtube_channel_dir_path, "transcripts")), key=lambda x: int(x.split("_")[1].split(".")[0])
             )
             page = questionary.select("Which page?", choices=youtube_channel_pages).ask()
-            yt.summarize_transcripts(stage, brand, os.path.join(yt.youtube_channel_dir_path, "transcripts", page))
+            yt.summarize_transcripts(stage, brand, os.path.join(yt.youtube_channel_dir_path, "transcripts", page), 0)
 
         elif task == "Summarize All Transcripts":
             yt.mp_summarize_transcripts()

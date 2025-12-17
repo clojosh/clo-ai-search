@@ -4,6 +4,7 @@ import os
 from collections import Counter
 from datetime import datetime
 from pathlib import Path
+from typing import List
 
 import questionary
 from azure.search.documents.indexes.models import (
@@ -282,6 +283,25 @@ class AISearch:
 
         return documents
 
+    def find_all_ai_search_documents(self, search_fields: List[str] = [], search_text: str = "") -> List[dict]:
+        """
+        Finds all AI search documents in the Azure Search index
+
+        Args:
+            search_fields (List[str], optional): The fields to search in. Defaults to [].
+            search_text (str, optional): The text to search for. Defaults to "".
+
+        Returns:
+            List[dict]: A list of dictionaries containing the ArticleId and Source of the AI search documents.
+        """
+        results = self.azure.search_client.search(search_fields=search_fields, search_text=search_text, search_mode="all")
+
+        documents = []
+        for r in results:
+            documents.append({"article_id": r["article_id"], "source": r["source"]})
+
+        return documents
+
     def delete_documents(self, results: list):
         upload_documents = []
         for i, result in enumerate(results):
@@ -289,6 +309,20 @@ class AISearch:
             upload_documents.append({"@search.action": "delete", "article_id": str(result["article_id"])})
 
         self.search_client.upload_documents(upload_documents)
+
+    def delete_ai_search_document(self, article_id: int):
+        """
+        Deletes an AI search document from the Azure Search index
+
+        Args:
+            article_id (int): The ID of the AI search document to delete
+        """
+        document = {"@search.action": "delete", "article_id": article_id}
+
+        print("Deleting " + str(article_id))
+
+        # Upload the document to Azure Search to delete it
+        self.azure.search_client.upload_documents([document])
 
     def get_documents(self, search_fields: list = [], search_text: str = "*", select: list = [], file_type: str = "json", log_results: bool = False):
         results = self.find_documents(search_fields=search_fields, search_text=search_text, select=select, log_results=log_results)

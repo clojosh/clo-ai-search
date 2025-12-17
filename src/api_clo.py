@@ -1,5 +1,6 @@
 import asyncio
 import json
+import multiprocessing
 import os
 import re
 from datetime import datetime, timezone
@@ -11,6 +12,7 @@ from bs4 import BeautifulSoup
 from playwright.async_api import async_playwright
 from tqdm import tqdm
 
+from ai_search import AISearch
 from tools.azure import Azure
 from tools.misc import html_to_markdown_converter
 
@@ -365,16 +367,33 @@ class APICLO:
         with open(os.path.join(self.api_path, "plugin_placement_startup.json"), "w+", encoding="utf-8") as f:
             json.dump(plugin_placement_startup, f, indent=4)
 
-    def upload_document(self, api_dir_path: str):
-        with open(api_dir_path, "r", encoding="utf-8") as f:
+    @staticmethod
+    def upload_document(stage: str, brand: str, api_dir_path: str, file: str, position: int = 0):
+        azure = Azure(stage, brand)
+
+        with open(os.path.join(api_dir_path, file), "r", encoding="utf-8") as f:
             documents = json.load(f)
 
-            for i, document in enumerate(tqdm(documents, desc=f"Uploading {os.path.basename(api_dir_path)}", colour="green")):
+            for i, document in enumerate(tqdm(documents, desc=f"Uploading {os.path.basename(file)}", colour="green", position=position, leave=True)):
                 documents[i]["@search.action"] = "mergeOrUpload"
-                documents[i]["title_vector"] = self.azure.openai_helper.generate_embeddings(text=document["title"])
-                documents[i]["content_vector"] = self.azure.openai_helper.generate_embeddings(text=document["content"])
+                documents[i]["title_vector"] = azure.openai_helper.generate_embeddings(text=document["title"])
+                documents[i]["content_vector"] = azure.openai_helper.generate_embeddings(text=document["content"])
 
-            self.azure.search_client.upload_documents(documents)
+            azure.search_client.upload_documents(documents)
+
+    def mp_upload_documents(self):
+        upload_params = []
+        for i, file in enumerate(os.listdir(self.api_path)):
+            upload_params.append((self.azure.stage, self.azure.brand, self.api_path, file, i))
+
+        with multiprocessing.Pool(10) as p:
+            p.starmap_async(
+                APICLO.upload_document,
+                upload_params,
+                error_callback=lambda e: print(e),
+            )
+            p.close()
+            p.join()
 
     def delete_document(self, api_dir_path: str):
         with open(api_dir_path, "r", encoding="utf-8") as f:
@@ -392,8 +411,6 @@ if __name__ == "__main__":
         "What task?",
         choices=[
             "Parse All API Documentation",
-            "Upload All Documents",
-            "Delete All Documents",
             "Parse Environment Setup & Build",
             "Parse Plugin Management",
             "Parse API Scenario",
@@ -403,12 +420,16 @@ if __name__ == "__main__":
             "Parse API SDK",
             "Parse CLO Event Plugin",
             "Parse Plugin Placement Startup",
+            "Upload All Documents",
             "Upload Document",
+            "Delete All Documents",
             "Delete Document",
+            "Find ",
         ],
     ).ask()
 
     clo_api = APICLO(Azure(stage, "clo3dapi"))
+    ai_search = AISearch(Azure(stage, "clo3d"))
 
     if task == "Parse All API Documentation":
         print("--- Parsing Environment Setup & Build ---")
@@ -464,11 +485,10 @@ if __name__ == "__main__":
 
     elif task == "Upload Document":
         api_document = questionary.select("Which API document?", choices=os.listdir(os.path.join(clo_api.api_path))).ask()
-        clo_api.upload_document(os.path.join(clo_api.api_path, api_document))
+        clo_api.upload_document(stage, "clo3dapi", clo_api.api_path, api_document)
 
     elif task == "Upload All Documents":
-        for files in os.listdir(os.path.join(clo_api.api_path)):
-            clo_api.upload_document(os.path.join(clo_api.api_path, files))
+        clo_api.mp_upload_documents()
 
     elif task == "Delete Document":
         api_document = questionary.select("Which API document?", choices=os.listdir(os.path.join(clo_api.api_path))).ask()
@@ -477,3 +497,20 @@ if __name__ == "__main__":
     elif task == "Delete All Documents":
         for files in os.listdir(os.path.join(clo_api.api_path)):
             clo_api.delete_document(os.path.join(clo_api.api_path, files))
+
+    elif task == "Find & Delete AI Search Documents":
+        search_fields_options = ["article_id", "source", "title", "content", "content_description"]
+
+        search_field = questionary.select("Search field?", choices=search_fields_options).ask()
+        search_text = questionary.text("Search value?").ask()
+
+        documents = ai_search.find_all_ai_search_documents(search_fields=[search_field], search_text=search_text)
+
+        for document in documents:
+            print(document["article_id"] + "\n" + document["source"], "\n")
+
+        print(f"\nTotal documents found: {len(documents)}\n")
+
+        if questionary.confirm("Do you want to delete these documents?").ask():
+            for document in documents:
+                ai_search.delete_ai_search_document(document["article_id"])

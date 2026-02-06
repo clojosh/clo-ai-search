@@ -392,8 +392,6 @@ class APICLO:
                 upload_params,
                 error_callback=lambda e: print(e),
             )
-            p.close()
-            p.join()
 
     def delete_document(self, api_dir_path: str):
         with open(api_dir_path, "r", encoding="utf-8") as f:

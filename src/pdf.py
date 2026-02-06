@@ -54,9 +54,7 @@ class PDF:
             "Content-Type": "application/json",
         }
 
-        response = requests.request(
-            "GET", zendesk_article_attachment_api_endpoint, auth=("share_admin@foxxing.com", "CLOzendeskshare12#$"), headers=headers
-        )
+        response = requests.request("GET", zendesk_article_attachment_api_endpoint, auth=("share_admin@foxxing.com", "CLOzendeskshare12#$"), headers=headers)
 
         json_objects = json.loads(response.text)
 
@@ -107,8 +105,6 @@ class PDF:
 
         with multiprocessing.Pool(5) as p:
             p.starmap_async(PDF.add_labels, add_labels_params, error_callback=lambda e: print(e))
-            p.close()
-            p.join()
 
     def get_zendesk_articles_with_pdf(env, brand, language, pdf_path, page):
         """Retrieves all articles with PDF attachments and stores them in a JSON"""
@@ -171,11 +167,7 @@ class PDF:
         page_count = json_objects["page_count"]
 
         with multiprocessing.Pool(5) as p:
-            p.starmap_async(
-                PDF.get_zendesk_articles_with_pdf, [(self.env, self.brand, self.language, self.pdf_path, page) for page in range(1, page_count + 1)]
-            )
-            p.close()
-            p.join()
+            p.starmap_async(PDF.get_zendesk_articles_with_pdf, [(self.env, self.brand, self.language, self.pdf_path, page) for page in range(1, page_count + 1)])
 
     def get_udemy_pdfs(self):
         """Retrieves all articles with PDF attachments and stores them in a JSON"""
@@ -235,8 +227,6 @@ class PDF:
                 [(self.env, self.brand, self.language, self.pdf_path, file) for file in file_paths],
                 error_callback=lambda e: print(e),
             )
-            p.close()
-            p.join()
 
     def upload_pdfs(self):
         pdf_path = sorted(os.listdir(self.pdf_path), key=lambda x: int(x.partition("_")[2].partition(".")[0]))
@@ -278,9 +268,7 @@ class PDF:
 if __name__ == "__main__":
     env = questionary.select("Which environment?", choices=["prod", "dev"]).ask()
     brand = questionary.select("Which environment?", choices=["clo3d", "closet"]).ask()
-    task = questionary.select(
-        "What task?", choices=["Get Zendesk Articles With PDFs", "Get Udemy PDFs", "Summarize PDF", "Add Labels", "Upload PDFs", "Upload Udemy PDFs"]
-    ).ask()
+    task = questionary.select("What task?", choices=["Get Zendesk Articles With PDFs", "Get Udemy PDFs", "Summarize PDF", "Add Labels", "Upload PDFs", "Upload Udemy PDFs"]).ask()
     # language = questionary.select("What language?", choices=["English", "Korean"]).ask()
 
     pdf = PDF(Azure(env, brand))

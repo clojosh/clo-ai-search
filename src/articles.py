@@ -182,8 +182,6 @@ class Article:
                 [article for article in articles],
                 error_callback=lambda e: print(e),
             )
-            p.close()
-            p.join()
 
         all_bad_images = []
         for result in results.get():
@@ -233,8 +231,6 @@ class Article:
                 [(self.azure.stage, self.azure.brand, self.azure.language, self.azure.get_article_path(), None, page) for page in range(1, 1 + page_count)],
                 error_callback=lambda e: print(e),
             )
-            p.close()
-            p.join()
 
     @staticmethod
     def upload_documents(stage: str, brand: str, language: str, article_path: str, file: str, position: int = 0):
@@ -276,8 +272,6 @@ class Article:
 
         with multiprocessing.Pool(5) as p:
             p.starmap_async(Article.upload_documents, upload_documents_params, error_callback=lambda e: print(e))
-            p.close()
-            p.join()
 
 
 if __name__ == "__main__":

@@ -85,9 +85,7 @@ class YouTube:
             "PublishedAt": response["items"][0]["snippet"]["publishedAt"],
         }
 
-    def get_videos_by_age(
-        self, channel_id: str, video_age_in_years: int = 0, video_age_in_months: int = 0, video_age_in_weeks: int = 0, video_age_in_days: int = 0
-    ):
+    def get_videos_by_age(self, channel_id: str, video_age_in_years: int = 0, video_age_in_months: int = 0, video_age_in_weeks: int = 0, video_age_in_days: int = 0):
         """
         Retrieves a list of youtube video ids based on the video age parameters.
 
@@ -412,9 +410,7 @@ class YouTube:
 
         # --- yt-dlp Options ---
         ydl_opts = {
-            "http_headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
-            },
+            "http_headers": {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"},
             # Limit the download to the top N items in the channel's uploads list (most recent first)
             "playlist_items": f"1-{NUM_RECENT_VIDEOS}",
             # 1. Output File Template: Uses the date and title for the filename.
@@ -596,20 +592,14 @@ class YouTube:
 
         # Iterate over the files and create the parameters
         for i, file in enumerate(files):
-            summarize_transcripts_params.append(
-                (self.azure.stage, self.azure.brand, os.path.join(self.youtube_channel_dir_path, "transcripts", file, i))
-            )
+            summarize_transcripts_params.append((self.azure.stage, self.azure.brand, os.path.join(self.youtube_channel_dir_path, "transcripts", file, i)))
 
         # Create a multiprocessing pool and process the files in parallel
         with multiprocessing.Pool(3) as p:
             p.starmap_async(YouTube.summarize_transcripts, summarize_transcripts_params, error_callback=lambda e: print(e))
-            p.close()
-            p.join()
 
     def upload_transcripts(self):
-        for file in tqdm(
-            os.listdir(os.path.join(yt.youtube_channel_dir_path, "transcripts")), desc="Uploading Transcripts", colour="green", position=0, leave=True
-        ):
+        for file in tqdm(os.listdir(os.path.join(yt.youtube_channel_dir_path, "transcripts")), desc="Uploading Transcripts", colour="green", position=0, leave=True):
             with open(os.path.join(self.youtube_channel_dir_path, "transcripts", file), "r", encoding="utf-8") as f:
                 transcripts = json.load(f)
 
@@ -770,9 +760,7 @@ if __name__ == "__main__":
 
     else:
         if task == "Summarize Transcript":
-            youtube_channel_pages = sorted(
-                os.listdir(os.path.join(yt.youtube_channel_dir_path, "transcripts")), key=lambda x: int(x.split("_")[1].split(".")[0])
-            )
+            youtube_channel_pages = sorted(os.listdir(os.path.join(yt.youtube_channel_dir_path, "transcripts")), key=lambda x: int(x.split("_")[1].split(".")[0]))
             page = questionary.select("Which page?", choices=youtube_channel_pages).ask()
             yt.summarize_transcripts(stage, brand, os.path.join(yt.youtube_channel_dir_path, "transcripts", page), 0)
 

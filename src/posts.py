@@ -158,11 +158,7 @@ class Posts:
             brands_found.append("connect")
 
         # Check for Marvelous Designer brand
-        if (
-            "MarvelousDesigner" in post["tags"]
-            or post["title"].lower() in ["marvelous designer", "(md)", " md"]
-            or post["summary"].lower() in ["marvelous designer", "(md)", " md"]
-        ):
+        if "MarvelousDesigner" in post["tags"] or post["title"].lower() in ["marvelous designer", "(md)", " md"] or post["summary"].lower() in ["marvelous designer", "(md)", " md"]:
             brands_found.append("md")
 
         return brands_found
@@ -261,8 +257,6 @@ class Posts:
                 tasks,
                 error_callback=lambda e: print(e),
             )
-            p.close()
-            p.join()
 
     @staticmethod
     def upload(stage: str, brand: str, posts_path: str, file: str, position: int):
@@ -288,9 +282,7 @@ class Posts:
                             "created_at": document["created_at"],
                             "youtube_links": [],
                             "title_vector": azure.openai_helper.generate_embeddings(text=document["title"]),
-                            "content_vector": azure.openai_helper.generate_embeddings(
-                                text=document["content"] if document["content"] != "" else document["post_title"]
-                            ),
+                            "content_vector": azure.openai_helper.generate_embeddings(text=document["content"] if document["content"] != "" else document["post_title"]),
                         }
                     )
 
@@ -315,8 +307,6 @@ class Posts:
                 upload_posts_params,
                 error_callback=lambda e: print(e),
             )
-            p.close()
-            p.join()
 
     def delete_posts(self, index_path: str, age: int = 3):
         """

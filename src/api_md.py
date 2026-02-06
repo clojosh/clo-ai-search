@@ -296,8 +296,6 @@ class APICLO:
                 upload_params,
                 error_callback=lambda e: print(e),
             )
-            p.close()
-            p.join()
 
     def delete_document(self, api_dir_path: str):
         with open(api_dir_path, "r", encoding="utf-8") as f:
@@ -328,51 +326,50 @@ if __name__ == "__main__":
         ],
     ).ask()
 
-    clo_api = APICLO(Azure(stage, "clo3dapi"))
-    ai_search = AISearch(Azure(stage, "clo3d"))
+    md_api = APICLO(Azure(stage, "mdapi"))
 
     if task == "Parse All API Documentation":
         print("--- Parsing API List ---")
-        asyncio.run(clo_api.parse_api_list())
+        asyncio.run(md_api.parse_api_list())
         print("--- Parsing API Types ---")
-        asyncio.run(clo_api.parse_api_types())
+        asyncio.run(md_api.parse_api_types())
         print("--- Parsing Python API ---")
-        asyncio.run(clo_api.parse_python_api())
+        asyncio.run(md_api.parse_python_api())
         print("--- Parsing Plugin Management ---")
-        asyncio.run(clo_api.parse_plugin_management())
+        asyncio.run(md_api.parse_plugin_management())
         print("--- Parsing API Scenario ---")
-        asyncio.run(clo_api.parse_api_scenario())
+        asyncio.run(md_api.parse_api_scenario())
 
     elif task == "Parse API List":
-        asyncio.run(clo_api.parse_api_list())
+        asyncio.run(md_api.parse_api_list())
 
     elif task == "Parse API Types":
-        asyncio.run(clo_api.parse_api_types())
+        asyncio.run(md_api.parse_api_types())
 
     elif task == "Parse Python API":
         print("--- Parsing Python API ---")
-        asyncio.run(clo_api.parse_python_api())
+        asyncio.run(md_api.parse_python_api())
 
     elif task == "Parse Plugin Management":
-        asyncio.run(clo_api.parse_plugin_management())
+        asyncio.run(md_api.parse_plugin_management())
 
     elif task == "Parse API Scenario":
-        asyncio.run(clo_api.parse_api_scenario())
+        asyncio.run(md_api.parse_api_scenario())
 
     elif task == "Upload Document":
-        api_document = questionary.select("Which API document?", choices=os.listdir(os.path.join(clo_api.api_path))).ask()
-        clo_api.upload_document(stage, "clo3dapi", clo_api.api_path, api_document)
+        api_document = questionary.select("Which API document?", choices=os.listdir(os.path.join(md_api.api_path))).ask()
+        md_api.upload_document(stage, "mdapi", md_api.api_path, api_document)
 
     elif task == "Upload All Documents":
-        clo_api.mp_upload_documents()
+        md_api.mp_upload_documents()
 
     elif task == "Delete Document":
-        api_document = questionary.select("Which API document?", choices=os.listdir(os.path.join(clo_api.api_path))).ask()
-        clo_api.delete_document(os.path.join(clo_api.api_path, api_document))
+        api_document = questionary.select("Which API document?", choices=os.listdir(os.path.join(md_api.api_path))).ask()
+        md_api.delete_document(os.path.join(md_api.api_path, api_document))
 
     elif task == "Delete All Documents":
-        for files in os.listdir(os.path.join(clo_api.api_path)):
-            clo_api.delete_document(os.path.join(clo_api.api_path, files))
+        for files in os.listdir(os.path.join(md_api.api_path)):
+            md_api.delete_document(os.path.join(md_api.api_path, files))
 
     elif task == "Find & Delete AI Search Documents":
         search_fields_options = ["article_id", "source", "title", "content", "content_description"]
@@ -380,7 +377,7 @@ if __name__ == "__main__":
         search_field = questionary.select("Search field?", choices=search_fields_options).ask()
         search_text = questionary.text("Search value?").ask()
 
-        documents = ai_search.find_all_ai_search_documents(search_fields=[search_field], search_text=search_text)
+        documents = AISearch(Azure(stage, "md")).ai_search.find_all_ai_search_documents(search_fields=[search_field], search_text=search_text)
 
         for document in documents:
             print(document["article_id"] + "\n" + document["source"], "\n")
@@ -389,4 +386,4 @@ if __name__ == "__main__":
 
         if questionary.confirm("Do you want to delete these documents?").ask():
             for document in documents:
-                ai_search.delete_ai_search_document(document["article_id"])
+                AISearch(Azure(stage, "md")).ai_search.delete_ai_search_document(document["article_id"])

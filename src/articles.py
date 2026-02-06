@@ -2,7 +2,6 @@ import json
 import multiprocessing
 import os
 import re
-import shutil
 import sys
 from collections import defaultdict
 
@@ -13,15 +12,7 @@ from tqdm import tqdm
 
 from ai_search import AISearch
 from tools.azure import Azure
-from tools.misc import (
-    check_image_exists,
-    extract_youtube_links,
-    get_section_and_category,
-    html_to_markdown_converter,
-    num_tokens_from_string,
-    remove_unwanted_markdown_images,
-    trim_tokens,
-)
+from tools.misc import check_image_exists, extract_youtube_links, get_section_and_category, html_to_markdown_converter, num_tokens_from_string, remove_unwanted_markdown_images, trim_tokens
 
 
 class Article:
@@ -111,9 +102,7 @@ class Article:
                 elif brand == "clovf":
                     url_matches = re.findall(rf"https:\/\/clovf-hc\.zendesk\.com\/hc\/{azure.get_locale()}\/articles\/\d+", article["html_url"])
                 elif brand == "md":
-                    url_matches = re.findall(
-                        rf"https:\/\/support\.marvelousdesigner\.com\/hc\/{azure.get_locale()}\/articles\/\d+", article["html_url"]
-                    )
+                    url_matches = re.findall(rf"https:\/\/support\.marvelousdesigner\.com\/hc\/{azure.get_locale()}\/articles\/\d+", article["html_url"])
 
                 if len(url_matches) > 0:
                     article["html_url"] = url_matches[0]
@@ -126,9 +115,7 @@ class Article:
                 article["body"] = trim_tokens(markdown)
 
                 article["id"] = str(article["id"])
-                article["section_id"], article["section"], article["category_id"], article["category"] = get_section_and_category(
-                    azure, article["section_id"]
-                )
+                article["section_id"], article["section"], article["category_id"], article["category"] = get_section_and_category(azure, article["section_id"])
 
                 documents.append(
                     {
@@ -225,9 +212,7 @@ class Article:
 
         json_objects = json.loads(page_url.text)
 
-        documents = Article.extract_content_from_zendesk_article(
-            azure, brand, [json_objects["article"]] if article_id is not None else json_objects["articles"]
-        )
+        documents = Article.extract_content_from_zendesk_article(azure, brand, [json_objects["article"]] if article_id is not None else json_objects["articles"])
 
         if len(documents) > 0:
             with open(os.path.join(article_path, "page_0.json" if article_id is not None else f"page_{page}.json"), "w+", encoding="utf-8") as f:
@@ -245,10 +230,7 @@ class Article:
         with multiprocessing.Pool(10) as p:
             p.starmap_async(
                 Article.get_zendesk_documents,
-                [
-                    (self.azure.stage, self.azure.brand, self.azure.language, self.azure.get_article_path(), None, page)
-                    for page in range(1, 1 + page_count)
-                ],
+                [(self.azure.stage, self.azure.brand, self.azure.language, self.azure.get_article_path(), None, page) for page in range(1, 1 + page_count)],
                 error_callback=lambda e: print(e),
             )
             p.close()
@@ -321,9 +303,7 @@ if __name__ == "__main__":
 
     if task == "Get Zendesk Article":
         article_id = questionary.text("Article ID").ask()
-        article.get_zendesk_documents(
-            article.azure.stage, article.azure.brand, article.azure.language, article.azure.get_article_path(), article_id, ""
-        )
+        article.get_zendesk_documents(article.azure.stage, article.azure.brand, article.azure.language, article.azure.get_article_path(), article_id, "")
 
     elif task == "Get All Zendesk Articles":
         article.mp_get_zendesk_documents()
@@ -339,9 +319,7 @@ if __name__ == "__main__":
                 documents = json.load(f)
                 for i, document in enumerate(documents):
                     if document["article_id"] == article_id:
-                        Article.upload_documents(
-                            article.azure.stage, article.azure.brand, article.azure.language, article.azure.get_article_path(), page
-                        )
+                        Article.upload_documents(article.azure.stage, article.azure.brand, article.azure.language, article.azure.get_article_path(), page)
                         sys.exit()
 
     elif task == "Upload All Articles":

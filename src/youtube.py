@@ -5,9 +5,7 @@ import re
 import shutil
 import subprocess
 import sys
-from datetime import datetime, timedelta
-from difflib import SequenceMatcher
-from io import BytesIO
+from datetime import datetime
 from typing import List, TypedDict, Union
 
 import questionary
@@ -126,49 +124,58 @@ class YouTube:
             published_after = datetime_days.strftime("%Y-%m-%dT%H:%M:%SZ")
             file_name = "video_ids_within_1_days.json"
 
-        # Initialize the items list
-        resp_objects: List[YoutubeAPIType] = []
+        try:
+            # Initialize the YouTube API client
+            youtube = build("youtube", "v3", developerKey=API_KEY)
 
-        # Initialize the response objects
-        object: YoutubeAPIType = {"kind": "", "etag": "", "nextPageToken": None, "items": []}
+            videos = []
+            next_page_token = None
 
-        # Loop until there are no more results
-        while True:
-            # Make a GET request to the youtube API
-            response = requests.request(
-                "GET",
-                "https://www.googleapis.com/youtube/v3/search",
-                params={
-                    "part": "id, snippet",
-                    "channelId": channel_id,
-                    "key": "AIzaSyC2LupTSVApfy90Bfzq8L5AAkAawOmT0gY",
-                    "publishedAfter": published_after,
-                    "order": "date",
-                    "maxResults": 30,
-                    "pageToken": object["nextPageToken"] if "nextPageToken" in object else "",
-                },
-                headers={
-                    "Content-Type": "application/json",
-                },
-            )
+            while True:
+                # The search().list method is used for filtering by date and channel.
+                search_response = (
+                    youtube.search()
+                    .list(
+                        part="snippet",
+                        channelId=channel_id,
+                        type="video",
+                        order="date",  # Sort by date for chronological order
+                        publishedAfter=published_after,
+                        maxResults=30,  # Max allowed results per request is 50
+                        pageToken=next_page_token,
+                    )
+                    .execute()
+                )
 
-            # Parse the response
-            object = json.loads(response.text)
+                for search_item in search_response.get("items", []):
+                    video_id = search_item["id"]["videoId"]
+                    video_title = search_item["snippet"]["title"]
+                    description = search_item["snippet"]["description"]
+                    published_at = search_item["snippet"]["publishedAt"]
 
-            # Add the items to the items list
-            resp_objects.append(object)
+                    videos.append({"id": video_id, "title": video_title, "description": description, "published_at": published_at})
 
-            # If there is no next page token, break the loop
-            if "nextPageToken" not in object:
-                break
+                # Check for the next page of results
+                next_page_token = search_response.get("nextPageToken")
 
-        print(f"\nFound {sum(len(obj['items']) for obj in resp_objects)} videos.")
+                if not next_page_token:
+                    break
 
-        with open(os.path.join(yt.youtube_channel_dir_path, file_name), "w+", encoding="utf-8") as f:
-            json.dump(resp_objects, f, ensure_ascii=False, indent=4)
+            print(f"\n--- Found {search_response.get('pageInfo', {}).get('totalResults', 0)} total videos ---")
 
-        # Return the items list
-        return resp_objects
+            print(f"Saved {len(videos)} videos to {os.path.join(self.youtube_channel_dir_path, f'{file_name}')}")
+
+            with open(os.path.join(self.youtube_channel_dir_path, f"{file_name}"), "w", encoding="utf-8") as f:
+                json.dump(videos, f, ensure_ascii=False, indent=4)
+
+            return videos
+
+        except HttpError as e:
+            print(f"An HTTP error {e.resp.status} occurred: {e.content}")
+            return []
+        except Exception as e:
+            print(f"An unexpected error occurred: {e}")
+            return []
 
     def get_videos_by_date_range(self, channel_id: str, start_date: str, end_date: str):
         """
@@ -187,9 +194,6 @@ class YouTube:
             videos = []
             next_page_token = None
 
-            print(f"Searching videos for Channel ID: {channel_id}")
-            print(f"Published between {start_date} and {end_date}")
-
             while True:
                 # The search().list method is used for filtering by date and channel.
                 search_response = (
@@ -201,19 +205,19 @@ class YouTube:
                         order="date",  # Sort by date for chronological order
                         publishedAfter=start_date,
                         publishedBefore=end_date,
-                        maxResults=50,  # Max allowed results per request is 50
+                        maxResults=30,  # Max allowed results per request is 50
                         pageToken=next_page_token,
                     )
                     .execute()
                 )
 
                 for search_item in search_response.get("items", []):
-                    # 'search' results only return basic snippet info
-                    video_title = search_item["snippet"]["title"]
                     video_id = search_item["id"]["videoId"]
+                    video_title = search_item["snippet"]["title"]
+                    description = search_item["snippet"]["description"]
                     published_at = search_item["snippet"]["publishedAt"]
 
-                    videos.append({"title": video_title, "id": video_id, "published_at": published_at})
+                    videos.append({"id": video_id, "title": video_title, "description": description, "published_at": published_at})
 
                 # Check for the next page of results
                 next_page_token = search_response.get("nextPageToken")
@@ -221,11 +225,13 @@ class YouTube:
                 if not next_page_token:
                     break
 
-                print(f"Retrieved {len(videos)} videos. Fetching next page...")
+            print(f"\n--- Found {search_response.get('pageInfo', {}).get('totalResults', 0)} total videos ---")
 
-            print(f"\n--- Found {len(videos)} total videos ---")
+            start_date_formatted = datetime.strptime(start_date, "%Y-%m-%dT%H:%M:%SZ").strftime("%Y-%m-%d")
+            end_date_formatted = datetime.strptime(end_date, "%Y-%m-%dT%H:%M:%SZ").strftime("%Y-%m-%d")
+            print(f"Saved {len(videos)} videos to {os.path.join(self.youtube_channel_dir_path, f'{start_date_formatted}_{end_date_formatted}_videos.json')}")
 
-            with open("videos.json", "w", encoding="utf-8") as f:
+            with open(os.path.join(self.youtube_channel_dir_path, f"{start_date_formatted}_{end_date_formatted}_videos.json"), "w", encoding="utf-8") as f:
                 json.dump(videos, f, ensure_ascii=False, indent=4)
 
             return videos
@@ -365,7 +371,7 @@ class YouTube:
         try:
             ytt_api = YouTubeTranscriptApi(
                 proxy_config=WebshareProxyConfig(
-                    proxy_username="fujzysxp-1",
+                    proxy_username="fujzysxp",
                     proxy_password="mnefpap1bq31",
                 )
             )
@@ -443,70 +449,55 @@ class YouTube:
         except Exception as e:
             print(f"\n❌ An error occurred during the download process: {e}")
 
-    def extract_youtube_transcripts(self, resp_objects: List[YoutubeAPIType]) -> None:
+    def extract_youtube_transcripts(self, videos: list) -> None:
         """
         Extracts transcripts from a youtube channel
 
         Args:
-            resp_objects (YoutubeAPIType): The response from the youtube api
-            youtube_channel_path (str): The path to save the transcripts
-            page (int): The page number to be processed
+            videos (list): The response from the youtube api
         """
 
         transcripts = []
 
-        for page in os.listdir(os.path.join(self.youtube_channel_dir_path, "transcripts")):
-            with open(os.path.join(self.youtube_channel_dir_path, "transcripts", page), "r", encoding="utf-8") as f:
-                transcripts.extend(json.load(f))
+        for i, video in enumerate(videos):
+            print("\nRetrieving transcript for:\n" + video["title"])
 
-        for i, obj in enumerate(resp_objects):
-            for v in obj["items"]:
-                print("\n---" * 15)
-                print("Retrieving transcript for:\n" + v["snippet"]["title"])
+            try:
+                # Check if subtitle exists, if not download it
+                # if not os.path.exists(os.path.join(self.youtube_channel_dir_path, "subtitles", video["title"] + ".en.srt")):
+                #     self.download_srt(video["videoId"])
+                # else:
+                #     print("Subtitle already exists")
 
-                # Check if the item is a video and has a video id
-                if "videoId" not in v["id"]:
-                    continue
+                # if not os.path.exists(os.path.join(self.youtube_channel_dir_path, "subtitles", video["title"] + ".en.srt")):
+                #     # print("No subtitles found for:\n" + video["title"] + "\n")
+                #     continue
 
-                for t in transcripts:
-                    if t["VideoId"] == v["id"]["videoId"]:
-                        continue
+                # transcript = self.extract_srt_text(
+                #     os.path.join(self.youtube_channel_dir_path, "subtitles", video["title"] + ".en.srt")
+                # ).replace("  ", " ")
 
-                try:
-                    # Check if subtitle exists, if not download it
-                    # if not os.path.exists(os.path.join(self.youtube_channel_dir_path, "subtitles", v["snippet"]["title"] + ".en.srt")):
-                    #     self.download_srt(v["id"]["videoId"])
-                    # else:
-                    #     print("Subtitle already exists")
+                transcript = self.download_transcripts_youtube_transcript_api(video["id"])
 
-                    # if not os.path.exists(os.path.join(self.youtube_channel_dir_path, "subtitles", v["snippet"]["title"] + ".en.srt")):
-                    #     # print("No subtitles found for:\n" + v["snippet"]["title"] + "\n")
-                    #     continue
+            except Exception:
+                continue
 
-                    # transcript = self.extract_srt_text(
-                    #     os.path.join(self.youtube_channel_dir_path, "subtitles", v["snippet"]["title"] + ".en.srt")
-                    # ).replace("  ", " ")
+            # Create a dictionary to store the video data
+            video = {
+                "VideoId": video["id"] if video["id"] else shortuuid.uuid(),  # Get the video id
+                "Url": f"https://www.youtube.com/watch?v={video['id']}",  # Get the video url
+                "title": video["title"].title().replace("&#39;", "'").replace("&quot;", '"').replace("&amp;", "&"),
+                "Description": video["description"],  # YouTube has its own description
+                "Transcript": transcript,
+                "PublishedAt": video["published_at"],  # Get the video publish date
+            }
 
-                    transcript = self.download_transcripts_youtube_transcript_api(v["id"]["videoId"])
-                except Exception:
-                    continue
+            transcripts.append(video)
 
-                # Create a dictionary to store the video data
-                video = {
-                    "VideoId": v["id"]["videoId"] if v["id"]["videoId"] else shortuuid.uuid(),  # Get the video id
-                    "Url": f"https://www.youtube.com/watch?v={v['id']['videoId']}",  # Get the video url
-                    "title": v["snippet"]["title"].title().replace("&#39;", "'").replace("&quot;", '"').replace("&amp;", "&"),
-                    "Description": v["snippet"]["description"],  # YouTube has its own description
-                    "Transcript": transcript,
-                    "PublishedAt": v["snippet"]["publishedAt"],  # Get the video publish date
-                }
-
-                transcripts.append(video)
-
-            # Save the transcripts to a json file
-            with open(f"{os.path.join(self.youtube_channel_dir_path, 'transcripts', f'page_{i}')}.json", "w+", encoding="utf-8") as f:
-                json.dump(transcripts, f, ensure_ascii=False, indent=4)
-                transcripts = []
+            # Save the transcripts to a json file every 30 videos to avoid losing data if the process is interrupted
+            if (i + 1) % 30 == 0 or (i + 1) == len(videos):
+                with open(f"{os.path.join(self.youtube_channel_dir_path, 'transcripts', f'page_{i}')}.json", "w+", encoding="utf-8") as f:
+                    json.dump(transcripts, f, ensure_ascii=False, indent=4)
 
     def extract_youtube_playlist_transcripts(self, playlist_url):
         """Extract the transcripts of every video in a playlist and save them into a JSON file"""
@@ -535,34 +526,28 @@ class YouTube:
         return playlist_title
 
     @staticmethod
-    def summarize_transcripts(env: str, brand: str, youtube_channel_transcript_dir_path: str, index: int):
+    def summarize_transcripts(params):
         """
         Summarize all the transcripts in a file
 
         Args:
-            env (str): The environment to use
-            brand (str): The brand to use
-            youtube_channel_dir_path (str): The path to the directory containing the transcripts of the youtube channel
+            params (tuple): A tuple containing the stage, brand, file path, and worker id.
 
         Returns:
             None
         """
-        print("\n" + os.path.split(youtube_channel_transcript_dir_path)[1].strip())
+        env, brand, file_path, worker_id = params
+
+        print("\n" + os.path.split(file_path)[1].strip())
 
         environment = Azure(env, brand)
 
         # Read the transcripts from the file
-        with open(youtube_channel_transcript_dir_path, "r", encoding="utf-8") as file:
+        with open(file_path, "r", encoding="utf-8") as file:
             transcripts = json.load(file)
 
         # Summarize each transcript
-        for index, trans in tqdm(
-            enumerate(transcripts),
-            desc=f"Summarizing {os.path.basename(youtube_channel_transcript_dir_path)}",
-            colour="green",
-            position=index,
-            leave=True,
-        ):
+        for trans in tqdm(transcripts, desc=f"File: {os.path.basename(file_path)[:15]}...", position=worker_id + 1, leave=False):
             try:
                 if trans["Transcript"] == "" or len(trans["Transcript"]) < 150:
                     trans["Summary"] = ""
@@ -572,31 +557,20 @@ class YouTube:
             except Exception as e:
                 raise e
 
-        with open(youtube_channel_transcript_dir_path, "w", encoding="utf-8") as file:
+        with open(file_path, "w", encoding="utf-8") as file:
             json.dump(transcripts, file, ensure_ascii=False, indent=4)
 
     def mp_summarize_transcripts(self):
-        """
-        Summarize transcripts of a youtube channel in parallel
-
-        This function will call `summarize_transcripts` on all files in `youtube_channel_dir_path`
-        in parallel using 5 processes.
-
-        See `summarize_transcripts` for more details on what is done.
-        """
-        # Get the list of files to process
         files = os.listdir(os.path.join(self.youtube_channel_dir_path, "transcripts"))
+        num_workers = 4  # Adjust based on your API limits
 
-        # Create a list to store the parameters to pass to `summarize_transcripts`
-        summarize_transcripts_params = []
+        # Pass the worker index (i % num_workers) so they don't fight for the same line
+        summarize_transcripts_params = [(self.stage, self.brand, os.path.join(self.youtube_channel_dir_path, "transcripts", f), i % num_workers) for i, f in enumerate(files)]
 
-        # Iterate over the files and create the parameters
-        for i, file in enumerate(files):
-            summarize_transcripts_params.append((self.azure.stage, self.azure.brand, os.path.join(self.youtube_channel_dir_path, "transcripts", file, i)))
-
-        # Create a multiprocessing pool and process the files in parallel
-        with multiprocessing.Pool(3) as p:
-            p.starmap_async(YouTube.summarize_transcripts, summarize_transcripts_params, error_callback=lambda e: print(e))
+        # Main progress bar (Position 0)
+        with multiprocessing.Pool(num_workers) as p:
+            for _ in tqdm(p.imap_unordered(YouTube.summarize_transcripts, summarize_transcripts_params), total=len(summarize_transcripts_params), desc="Overall Progress", position=0):
+                pass
 
     def upload_transcripts(self):
         for file in tqdm(os.listdir(os.path.join(yt.youtube_channel_dir_path, "transcripts")), desc="Uploading Transcripts", colour="green", position=0, leave=True):
@@ -651,8 +625,9 @@ if __name__ == "__main__":
         ],
     ).ask()
 
-    yt = YouTube(Azure(stage, brand))
-    ai_search = AISearch(Azure(stage, brand))
+    azure = Azure(stage, brand)
+    yt = YouTube(azure)
+    ai_search = AISearch(azure)
 
     channel_id = MD_CHANNEL_ID if brand == "md" else CLO3D_CHANNEL_ID
 
@@ -729,14 +704,15 @@ if __name__ == "__main__":
 
     elif task == "Get All Transcripts By Date":
         start_date = questionary.text("Start Date (YYYY-MM-DD):").ask()
-        end_date = questionary.text("End Date (YYYY-MM-DD):").ask()
+        end_date = questionary.text("End Date (YYYY-MM-DD):", default=datetime.now().strftime("%Y-%m-%d")).ask()
 
-        start_date += "T00:00:00Z"
-        end_date += "T23:59:59Z"
+        if os.path.exists(os.path.join(yt.youtube_channel_dir_path, f"{start_date}_{end_date}_videos.json")):
+            with open(os.path.join(yt.youtube_channel_dir_path, f"{start_date}_{end_date}_videos.json"), "r", encoding="utf-8") as f:
+                videos = json.load(f)
+        else:
+            videos = yt.get_videos_by_date_range(channel_id=channel_id, start_date=start_date + "T00:00:00Z", end_date=end_date + "T23:59:59Z")
 
-        video_ids = yt.get_videos_by_date_range(channel_id=channel_id, start_date=start_date, end_date=end_date)
-
-        yt.extract_youtube_transcripts(video_ids)
+        yt.extract_youtube_transcripts(videos)
 
     elif task == "Download All Videos":
         yt.download_videos_yt_dlp()

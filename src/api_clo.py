@@ -386,12 +386,8 @@ class APICLO:
         for i, file in enumerate(os.listdir(self.api_path)):
             upload_params.append((self.azure.stage, self.azure.brand, self.api_path, file, i))
 
-        with multiprocessing.Pool(10) as p:
-            p.starmap_async(
-                APICLO.upload_document,
-                upload_params,
-                error_callback=lambda e: print(e),
-            )
+        with multiprocessing.Pool(2) as p:
+            p.starmap(APICLO.upload_document, upload_params)
 
     def delete_document(self, api_dir_path: str):
         with open(api_dir_path, "r", encoding="utf-8") as f:

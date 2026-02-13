@@ -552,7 +552,7 @@ class YouTube:
                 if trans["Transcript"] == "" or len(trans["Transcript"]) < 150:
                     trans["Summary"] = ""
                 else:
-                    summary = environment.openai_helper.generate_transcript_summary(trans["Transcript"])
+                    summary = environment.openai_helper.generate_structured_transcript(trans["title"], trans["Transcript"])
                     trans["Summary"] = summary
             except Exception as e:
                 raise e

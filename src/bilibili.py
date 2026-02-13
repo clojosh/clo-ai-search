@@ -1,22 +1,27 @@
 import asyncio
 import json
+import multiprocessing
 import os
 import re
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
+import questionary
 import yt_dlp
 from rich.console import Console
+from tqdm import tqdm
+
+from ai_search import AISearch
+from tools.azure import Azure
 
 # Initialize Rich console for pretty logging
 console = Console()
 
 
-class BilibiliDownloader:
-    """Handles downloading and processing of Bilibili subtitles and transcripts."""
-
-    def __init__(self, cookie_path: str = "bilibili.com_cookies.txt"):
+class Bilibili:
+    def __init__(self, azure: Azure, cookie_path: str = "bilibili.com_cookies.txt"):
+        self.azure = azure
         self.cookie_path = cookie_path
         self.base_dir = Path("data/md/bilibili")
         self.subtitle_dir = self.base_dir / "subtitles"
@@ -106,7 +111,14 @@ class BilibiliDownloader:
             raw_date = entry.get("upload_date", "19700101")
             formatted_date = datetime.strptime(raw_date, "%Y%m%d").strftime("%Y-%m-%dT00:00:00Z")
 
-            doc = {"video_id": entry.get("id"), "title": entry.get("title"), "url": entry.get("webpage_url"), "published_at": formatted_date, "transcript": transcript}
+            doc = {
+                "video_id": entry.get("id"),
+                "title": entry.get("title"),
+                "url": entry.get("webpage_url"),
+                "published_at": formatted_date,
+                "description": entry.get("description"),
+                "transcript": transcript,
+            }
 
             filename = f"{self.sanitize_path(entry['title'])}.json"
             save_path = self.transcript_dir / filename
@@ -115,6 +127,84 @@ class BilibiliDownloader:
                 json.dump(doc, f, ensure_ascii=False, indent=4)
 
             console.print(f"[green]✓ Saved transcript:[/green] {entry.get('title')}")
+
+    @staticmethod
+    def prepare_transcripts(params):
+        """
+        Prepares transcripts by translating and summarizing them.
+
+        Args:
+            params (tuple): A tuple containing the stage, brand, file path, and worker id.
+
+        Returns:
+            None
+        """
+        azure, file_path = params
+
+        # Read the transcripts from the file
+        with open(file_path, "r", encoding="utf-8") as file:
+            transcript = json.load(file)
+
+        # Prepare each transcript
+
+        try:
+            if transcript["transcript"] == "" or len(transcript["transcript"]) < 150:
+                transcript["summary"] = ""
+            else:
+                title = azure.openai_helper.generate_translation(transcript["title"], target_language="English")
+                transcript["title"] = title.replace('"', "")
+
+                summary = azure.openai_helper.generate_structured_transcript(title, transcript["transcript"])
+                transcript["summary"] = summary
+
+                description = azure.openai_helper.generate_translation(transcript["description"], target_language="English")
+                transcript["description"] = description
+        except Exception as e:
+            raise e
+
+        with open(file_path, "w", encoding="utf-8") as file:
+            json.dump(transcript, file, ensure_ascii=False, indent=4)
+
+    def mp_prepare_transcripts(self):
+        files = os.listdir(self.transcript_dir)
+        num_workers = 4  # Adjust based on your API limits
+
+        # Pass the worker index (i % num_workers) so they don't fight for the same line
+        prepare_transcripts_params = [(self.azure, os.path.join(self.transcript_dir, f)) for f in files]
+        # Main progress bar (Position 0)
+        with multiprocessing.Pool(num_workers) as p:
+            for _ in tqdm(p.imap_unordered(Bilibili.prepare_transcripts, prepare_transcripts_params), total=len(prepare_transcripts_params), desc="Overall Progress", position=0):
+                pass
+
+    def upload_transcripts(self):
+        for file in tqdm(os.listdir(os.path.join(self.transcript_dir)), desc="Uploading Transcripts", colour="green", position=0, leave=True):
+            with open(os.path.join(self.transcript_dir, file), "r", encoding="utf-8") as f:
+                transcript = json.load(f)
+
+                if transcript["transcript"] == "":
+                    continue
+
+                if "summary" in transcript:
+                    if transcript["summary"] == "" or len(transcript["summary"]) < 150:
+                        continue
+
+                if transcript["video_id"].startswith("_"):
+                    transcript["video_id"] = "YT" + transcript["video_id"]
+
+                self.azure.search_client.upload_documents(
+                    {
+                        "@search.action": "mergeOrUpload",
+                        "article_id": transcript["video_id"],
+                        "source": transcript["url"],
+                        "title": transcript["title"],
+                        "content": transcript["summary"] if "summary" in transcript else transcript["transcript"],
+                        "content_description": transcript["description"],
+                        "created_at": transcript["published_at"],
+                        "youtube_links": [transcript["url"]],
+                        "title_vector": self.azure.openai_helper.generate_embeddings(text=transcript["title"]),
+                        "content_vector": self.azure.openai_helper.generate_embeddings(text=transcript["summary"]),
+                    }
+                )
 
     async def run_scaper(self, channel_url: str):
         """Main entry point for the scraper."""
@@ -131,5 +221,50 @@ if __name__ == "__main__":
     # Configuration
     TARGET_CHANNEL = "https://space.bilibili.com/431424487/video"
 
-    downloader = BilibiliDownloader()
-    asyncio.run(downloader.run_scaper(TARGET_CHANNEL))
+    stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
+    brand = questionary.select("Which brand?", choices=["clo3d", "md", "allinone"]).ask()
+    task = questionary.select(
+        "What task?",
+        choices=[
+            "Get All Transcripts",
+            "Prepare All Transcripts",
+            "Upload All Transcripts",
+            "Prepare Transcript",
+            "Upload Transcript",
+            "Find & Delete AI Search Documents",
+        ],
+    ).ask()
+
+    azure = Azure(stage, brand)
+    downloader = Bilibili(azure)
+    ai_search = AISearch(azure)
+
+    if task == "Get All Transcripts":
+        asyncio.run(downloader.run_scaper(TARGET_CHANNEL))
+
+    elif task == "Prepare All Transcripts":
+        downloader.mp_prepare_transcripts()
+
+    elif task == "Upload All Transcripts":
+        downloader.upload_transcripts()
+
+    elif task == "Prepare Transcript":
+        file = questionary.select("Which transcript file?", choices=os.listdir(downloader.transcript_dir)).ask()
+        downloader.prepare_transcripts((stage, brand, os.path.join(downloader.transcript_dir, file), 0))
+
+    elif task == "Find & Delete AI Search Documents":
+        search_fields_options = ["article_id", "source", "title", "content", "content_description"]
+
+        search_field = questionary.select("Search field?", choices=search_fields_options).ask()
+        search_text = questionary.text("Search value?").ask()
+
+        documents = ai_search.find_all_ai_search_documents(search_fields=[search_field], search_text=search_text)
+
+        for document in documents:
+            print(document["article_id"] + "\n" + document["source"], "\n")
+
+        print(f"\nTotal documents found: {len(documents)}\n")
+
+        if questionary.confirm("Do you want to delete these documents?").ask():
+            for document in documents:
+                ai_search.delete_ai_search_document(document["article_id"])

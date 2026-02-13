@@ -21,18 +21,6 @@ GPT_4_MINI_MAX_INPUT_TOKENS = 128000
 GPT_4_MINI_MAX_OUTPUT_TOKENS = 16000
 EMBEDDING_ADA_002_MAX_INPUT_TOKENS = 8191
 
-TRANSCRIPT_SUMMARY_PROMPT = """You are an expert summarizer. Given a transcript of a YouTube video, generate a comprehensive summary that accurately reflects the key points, themes, and insights presented in the video. 
-Instructions:
-1. Identify the main topic and purpose of the video
-2. Break down the content into clear sections or segments (e.g., introduction, key points, conclusion)
-3. Extract and summarize important facts, arguments, or insights shared by the speaker(s)
-4. Ignore filler content like greetings, off-topic tangents, or promotional content
-5. Use clear and concise language suitable for downstream use in a retrieval-augmented generation (RAG) system.
-6. If the transcript is too short or lacks sufficient detail, return an empty string.
-
-###Transcript:
-{transcript}"""
-
 
 class OpenAIHelper:
     def __init__(
@@ -46,6 +34,35 @@ class OpenAIHelper:
         self.AZURE_OPENAI_CHATGPT_DEPLOYMENT = AZURE_OPENAI_CHATGPT_DEPLOYMENT
         self.AZURE_OPENAI_EMB_DEPLOYMENT = AZURE_OPENAI_EMB_DEPLOYMENT
         self.language = language
+
+    def get_transcript_prompt(self, title: str, transcript: str) -> str:
+        return f"""
+### ROLE
+You are an expert Content Engineer specializing in NLP and RAG (Retrieval-Augmented Generation) data preparation.
+
+### TASK
+Transform the provided raw YouTube transcript into a high-quality, structured Markdown document optimized for semantic search and vector embeddings.
+
+### VIDEO CONTEXT
+Title: {title}
+
+### INSTRUCTIONS
+1. CLEAN & PUNCTUATE: Correct obvious transcription errors, add proper punctuation, and capitalize where necessary. Do not summarize; keep the original intent and voice.
+2. SEMANTIC CHUNKING: Break the text into logical sections using Markdown headers (##, ###). Each section should represent a single cohesive idea or topic. 
+3. Preserve Technical Terms: Ensure all industry-specific jargon, brand names, and technical specs are spelled correctly for accurate keyword matching.
+
+### Transcript:
+{transcript}"""
+
+    def get_translation_prompt(self, text: str, target_language: str) -> str:
+        return f"""### ROLE
+You are a professional translator specializing in technical content.
+
+### TASK
+Translate the provided text into {target_language} while preserving the original meaning, technical terms, and context. Only translate the text, do not add any additional commentary or information.
+
+### TEXT TO TRANSLATE
+{text}"""
 
     @retry(wait=wait_random_exponential(min=1, max=20), stop=stop_after_attempt(6))
     def generate_embeddings(self, text: str) -> list[float]:
@@ -124,11 +141,12 @@ class OpenAIHelper:
         return questions
 
     @retry(wait=wait_random_exponential(min=1, max=20), stop=stop_after_attempt(6))
-    def generate_transcript_summary(self, transcript: str) -> str:
+    def generate_structured_transcript(self, title: str, transcript: str) -> str:
         """
         Summarize a transcript
 
         Args:
+            title (str): The title of the video
             transcript (str): The text of the transcript to summarize
 
         Returns:
@@ -145,14 +163,12 @@ class OpenAIHelper:
         messages: list[ChatCompletionMessageParam] = [
             {
                 "role": "user",
-                "content": TRANSCRIPT_SUMMARY_PROMPT.format(transcript=transcript),
+                "content": self.get_transcript_prompt(title, transcript),
             }
         ]
 
         # Ask the AI to generate a summary
-        chat_completion = self.openai_client.chat.completions.create(
-            model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0.7, max_tokens=2000, n=1
-        )
+        chat_completion = self.openai_client.chat.completions.create(model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0.7, max_tokens=2000, n=1)
 
         # Extract the summary from the response
         summary = chat_completion.choices[0].message.content
@@ -163,6 +179,49 @@ class OpenAIHelper:
         summary = re.sub(r"\s+", " ", summary)
 
         return summary
+
+    @retry(wait=wait_random_exponential(min=1, max=20), stop=stop_after_attempt(6))
+    def generate_translation(self, text: str, target_language: str) -> str:
+        """
+        Translate a given text to a target language.
+
+        Args:
+            text (str): The text to translate.
+            target_language (str): The language to translate the text into.
+
+        Returns:
+            str: The translated text.
+
+        Raises:
+            openai.error.OpenAIError: If the request to the OpenAI API fails.
+        """
+        # Check if the text length exceeds the maximum allowed input length
+        tokens = num_tokens_from_string(text, "gpt-4")
+
+        if tokens >= GPT_4_MINI_MAX_INPUT_TOKENS:
+            # Trim the text to the maximum allowed length
+            text = text[:GPT_4_MINI_MAX_INPUT_TOKENS]
+
+        # Create a list of messages to send to the OpenAI API
+        messages: list[ChatCompletionMessageParam] = [
+            {"role": "user", "content": self.get_translation_prompt(text, target_language)},
+        ]
+
+        # Use the OpenAI API to generate the translation
+        chat_completion = self.openai_client.chat.completions.create(
+            model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT,
+            messages=messages,
+            temperature=0.7,
+            max_tokens=GPT_4_MINI_MAX_OUTPUT_TOKENS,
+            n=1,
+        )
+
+        # Extract the generated translation from the response
+        translation = chat_completion.choices[0].message.content
+        if not translation:
+            return ""
+
+        return translation
 
     @retry(wait=wait_random_exponential(min=1, max=20), stop=stop_after_attempt(6))
     def generate_pdf_summary(self, pdf):
@@ -190,9 +249,7 @@ class OpenAIHelper:
         ]
 
         # Ask the AI to generate a summary
-        chat_completion = self.openai_client.chat.completions.create(
-            model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0.7, max_tokens=1000, n=1
-        )
+        chat_completion = self.openai_client.chat.completions.create(model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0.7, max_tokens=1000, n=1)
 
         # Extract the summary from the response
         summary = chat_completion.choices[0].message.content
@@ -237,9 +294,7 @@ class OpenAIHelper:
             ]
 
             # Ask the AI to generate an outline
-            chat_completion = self.openai_client.chat.completions.create(
-                model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0, max_tokens=1500, n=1
-            )
+            chat_completion = self.openai_client.chat.completions.create(model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0, max_tokens=1500, n=1)
 
             # Extract the outline from the response
             outline = chat_completion.choices[0].message.content
@@ -273,9 +328,7 @@ class OpenAIHelper:
                 }
             ]
 
-            chat_completion = self.openai_client.chat.completions.create(
-                model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0, max_tokens=1500, n=1
-            )
+            chat_completion = self.openai_client.chat.completions.create(model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0, max_tokens=1500, n=1)
 
             scraped_content = chat_completion.choices[0].message.content
             scraped_content = re.sub(r"\[https.*\]", "", scraped_content)
@@ -305,9 +358,7 @@ class OpenAIHelper:
 
         messages = [{"role": "user", "content": f"Generate a concise and short title for a web page based on the following content: {content}"}]
 
-        chat_completion = self.openai_client.chat.completions.create(
-            model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0.7, max_tokens=50, n=1
-        )
+        chat_completion = self.openai_client.chat.completions.create(model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0.7, max_tokens=50, n=1)
 
         outline = chat_completion.choices[0].message.content
         # outline = re.sub(r"\n+", " ", outline)
@@ -334,9 +385,7 @@ class OpenAIHelper:
 
         messages = [{"role": "user", "content": f"Generate a short, one sentence purpose for a web page based on the following content: {content}"}]
 
-        chat_completion = self.openai_client.chat.completions.create(
-            model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0.7, max_tokens=50, n=1
-        )
+        chat_completion = self.openai_client.chat.completions.create(model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0.7, max_tokens=50, n=1)
 
         outline = chat_completion.choices[0].message.content
         # outline = re.sub(r"\n+", " ", outline)

@@ -4,6 +4,7 @@ import os
 import re
 import sys
 from collections import defaultdict
+from concurrent.futures import ThreadPoolExecutor
 
 import questionary
 import requests  # type: ignore
@@ -65,8 +66,7 @@ class Article:
 
                     self.delete_documents(str(article["id"]))
 
-    @staticmethod
-    def extract_content_from_zendesk_article(azure: Azure, brand: str, articles: list):
+    def extract_content_from_zendesk_article(self, brand: str, articles: list):
         documents = []
         for article in articles:
             if article["draft"] is False:
@@ -115,7 +115,7 @@ class Article:
                 article["body"] = trim_tokens(markdown)
 
                 article["id"] = str(article["id"])
-                article["section_id"], article["section"], article["category_id"], article["category"] = get_section_and_category(azure, article["section_id"])
+                article["section_id"], article["section"], article["category_id"], article["category"] = get_section_and_category(self.azure, article["section_id"])
 
                 documents.append(
                     {
@@ -123,7 +123,7 @@ class Article:
                         "source": article["html_url"],
                         "title": article["title"],
                         "content": article["body"],
-                        "content_description": azure.openai_helper.create_webpage_description(article["body"]),
+                        "content_description": self.azure.openai_helper.create_webpage_description(article["body"]),
                         "created_at": article["updated_at"],
                         "youtube_links": article["youtube_links"],
                         "CategoryId": article["category_id"],
@@ -161,117 +161,89 @@ class Article:
 
         return invalid_images
 
-    def mp_find_articles_invalid_images(self):
+    def mt_find_articles_invalid_images(self):
         headers = {
             "Content-Type": "application/json",
         }
 
+        # Initial call to get page count
         response = requests.request("GET", self.azure.get_zendesk_articles_api_endpoint(1, 100), headers=headers)
         json_objects = json.loads(response.text)
         page_count = json_objects["page_count"]
 
         articles = []
+        # Note: You could technically thread this loop too if page_count is very high!
         for page in range(1, 1 + page_count):
             response = requests.request("GET", self.azure.get_zendesk_articles_api_endpoint(page, 100), headers=headers)
             json_objects = json.loads(response.text)
             articles.extend(json_objects["articles"])
 
-        with multiprocessing.Pool(10) as p:
-            results = p.map_async(
-                Article.find_articles_invalid_images,
-                [article for article in articles],
-                error_callback=lambda e: print(e),
-            )
-
+        # Switching to ThreadPoolExecutor
         all_bad_images = []
-        for result in results.get():
-            for article_source, image_urls in result.items():
-                all_bad_images.append({"Article URL": article_source, "Bad Image URLs": list(image_urls)})
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            # executor.map maintains order, similar to p.map
+            results = list(executor.map(Article.find_articles_invalid_images, articles))
 
-        with open(os.path.join(self.azure.get_article_path(), "articles_with_bad_images.json"), "w+", encoding="utf-8") as f:
+        # Process results
+        for result in results:
+            if result:  # Ensure result isn't None if find_articles_invalid_images fails
+                for article_source, image_urls in result.items():
+                    all_bad_images.append({"Article URL": article_source, "Bad Image URLs": list(image_urls)})
+
+        # Save to file
+        output_path = os.path.join(self.azure.get_article_path(), "articles_with_bad_images.json")
+        with open(output_path, "w+", encoding="utf-8") as f:
             json.dump(all_bad_images, f, ensure_ascii=False, indent=4)
 
-    @staticmethod
-    def get_zendesk_documents(stage: str, brand: str, language: str, article_path: str, article_id: str, page: str):
+    def get_zendesk_articles(self, article_path: str, article_id: str, page: str):
         if article_id is not None:
-            print("\nRetrieving Article " + article_id)
+            print(f"\nRetrieving Article {article_id}")
         else:
-            print("\nRetrieving Page " + str(page))
+            print(f"\nRetrieving Page {page}")
 
-        azure = Azure(stage, brand, language)
+        # No need to instantiate Azure again; we use the one attached to this instance
+        endpoint = self.azure.get_zendesk_article_api_endpoint(article_id) if article_id is not None else self.azure.get_zendesk_articles_api_endpoint(page)
 
-        page_url = requests.request(
-            "GET",
-            azure.get_zendesk_article_api_endpoint(article_id) if article_id is not None else azure.get_zendesk_articles_api_endpoint(page),
-            headers={
-                "Content-Type": "application/json",
-            },
-        )
+        try:
+            response = requests.get(endpoint, headers={"Content-Type": "application/json"})
+            response.raise_for_status()
+            json_objects = response.json()
 
-        json_objects = json.loads(page_url.text)
+            articles = [json_objects["article"]] if article_id is not None else json_objects["articles"]
 
-        documents = Article.extract_content_from_zendesk_article(azure, brand, [json_objects["article"]] if article_id is not None else json_objects["articles"])
+            # Use self.azure and self.brand directly
+            documents = self.extract_content_from_zendesk_article(self.brand, articles)
 
-        if len(documents) > 0:
-            with open(os.path.join(article_path, "page_0.json" if article_id is not None else f"page_{page}.json"), "w+", encoding="utf-8") as f:
-                json.dump(documents, f, ensure_ascii=False, indent=4)
+            if documents:
+                filename = "page_0.json" if article_id is not None else f"page_{page}.json"
+                with open(os.path.join(article_path, filename), "w+", encoding="utf-8") as f:
+                    json.dump(documents, f, ensure_ascii=False, indent=4)
+        except Exception as e:
+            print(f"Error on page {page}: {e}")
 
-    def mp_get_zendesk_documents(self):
-        headers = {
-            "Content-Type": "application/json",
-        }
-
-        response = requests.request("GET", self.azure.get_zendesk_articles_api_endpoint(1), headers=headers)
-        json_objects = json.loads(response.text)
-        page_count = json_objects["page_count"]
-
-        with multiprocessing.Pool(10) as p:
-            p.starmap_async(
-                Article.get_zendesk_documents,
-                [(self.azure.stage, self.azure.brand, self.azure.language, self.azure.get_article_path(), None, page) for page in range(1, 1 + page_count)],
-                error_callback=lambda e: print(e),
-            )
-
-    @staticmethod
-    def upload_documents(stage: str, brand: str, language: str, article_path: str, file: str, position: int = 0):
-        azure = Azure(stage, brand, language)
-
-        with open(os.path.join(article_path, file), "r", encoding="utf-8") as f:
+    def upload_document(self, file: str):
+        with open(os.path.join(self.azure.get_article_path(), file), "r", encoding="utf-8") as f:
             documents = json.load(f)
 
-            for i, document in enumerate(tqdm(documents, desc=f"Uploading {file}", colour="green", position=position, leave=True)):
-                if document["content"] == "":
-                    document["content"] = document["title"]
+            if document["content"] == "":
+                document["content"] = document["title"]
 
-                documents[i]["@search.action"] = "mergeOrUpload"
-                documents[i]["title_vector"] = azure.openai_helper.generate_embeddings(text=document["title"])
-                documents[i]["content_vector"] = azure.openai_helper.generate_embeddings(text=document["content"])
+            documents[i]["@search.action"] = "mergeOrUpload"
+            documents[i]["title_vector"] = self.azure.openai_helper.generate_embeddings(text=document["title"])
+            documents[i]["content_vector"] = self.azure.openai_helper.generate_embeddings(text=document["content"])
 
-                del documents[i]["Tokens"]
-                del documents[i]["SectionId"]
-                del documents[i]["Section"]
-                del documents[i]["CategoryId"]
-                del documents[i]["Category"]
+            del documents[i]["Tokens"]
+            del documents[i]["SectionId"]
+            del documents[i]["Section"]
+            del documents[i]["CategoryId"]
+            del documents[i]["Category"]
 
-            if brand == "clovf":
-                # Upload clovf articles to both clo3d and clo-set
-                Azure(stage, "clo3d").search_client.upload_documents(documents)
-                Azure(stage, "closet").search_client.upload_documents(documents)
-            else:
-                azure.search_client.upload_documents(documents)
-
-    def mp_upload_documents(self):
-        if self.azure.brand == "allinone":
-            file_paths = os.listdir(self.azure.get_article_path())
+        if brand == "clovf":
+            # Upload clovf articles to both clo3d and clo-set
+            Azure(stage, "clo3d").search_client.upload_documents(documents)
+            Azure(stage, "closet").search_client.upload_documents(documents)
         else:
-            file_paths = sorted(os.listdir(self.azure.get_article_path()), key=lambda x: int(x.partition("_")[2].partition(".")[0]))
-
-        upload_documents_params = []
-        for i, file in enumerate(file_paths):
-            upload_documents_params.append((self.azure.stage, self.azure.brand, self.azure.language, self.azure.get_article_path(), file, i))
-
-        with multiprocessing.Pool(5) as p:
-            p.starmap_async(Article.upload_documents, upload_documents_params, error_callback=lambda e: print(e))
+            self.azure.search_client.upload_documents(documents)
 
 
 if __name__ == "__main__":
@@ -292,18 +264,25 @@ if __name__ == "__main__":
         ],
     ).ask()
 
-    article = Article(Azure(stage, brand, language))
-    ai_search = AISearch(Azure(stage, brand))
+    azure = Azure(stage, brand, language)
+    article = Article(azure)
+    ai_search = AISearch(azure)
 
     if task == "Get Zendesk Article":
         article_id = questionary.text("Article ID").ask()
-        article.get_zendesk_documents(article.azure.stage, article.azure.brand, article.azure.language, article.azure.get_article_path(), article_id, "")
+        article.get_zendesk_articles(article.azure.get_article_path(), article_id, "")
 
     elif task == "Get All Zendesk Articles":
-        article.mp_get_zendesk_documents()
+        first_page_resp = requests.get(azure.get_zendesk_articles_api_endpoint(1), headers={"Content-Type": "application/json"})
+        page_count = first_page_resp.json().get("page_count", 1)
+        article_path = azure.get_article_path()
+
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            for page in range(1, page_count + 1):
+                executor.submit(article.get_zendesk_articles, article_path, None, str(page))
 
     elif task == "Find All Articles with Bad Images":
-        article.mp_find_articles_invalid_images()
+        article.mt_find_articles_invalid_images()
 
     elif task == "Upload Article":
         article_id = questionary.text("Article ID").ask()
@@ -313,7 +292,7 @@ if __name__ == "__main__":
                 documents = json.load(f)
                 for i, document in enumerate(documents):
                     if document["article_id"] == article_id:
-                        Article.upload_documents(article.azure.stage, article.azure.brand, article.azure.language, article.azure.get_article_path(), page)
+                        article.upload_document(os.path.join(article.azure.get_article_path(), page))
                         sys.exit()
 
     elif task == "Upload All Articles":
@@ -326,7 +305,13 @@ if __name__ == "__main__":
         #                     os.path.join(article.azure.get_article_path(), f"{folder}_{file}"),
         #                 )
 
-        article.mp_upload_documents()
+        if azure.brand == "allinone":
+            files = os.listdir(azure.get_article_path())
+        else:
+            files = sorted(os.listdir(azure.get_article_path()), key=lambda x: int(x.partition("_")[2].partition(".")[0]))
+
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            list(tqdm(executor.map(article.upload_document, files), total=len(files), desc="Uploading"))
 
     elif task == "Delete Article":
         article_id = questionary.text("Article ID").ask()

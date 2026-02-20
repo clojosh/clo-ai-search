@@ -1,0 +1,864 @@
+1
+00:00:00,000 --> 00:00:13,000
+In this video, we will learn how to make a uniform skirt.
+
+2
+00:00:13,000 --> 00:00:19,000
+First, open the button skirt and delete the extra panels.
+
+3
+00:00:19,000 --> 00:00:26,000
+Then we copy a belt panel, ctrl c, ctrl v, and put it in the 2D window.
+
+4
+00:00:26,000 --> 00:00:31,000
+Then we can make it a little longer. This length is the group length we made later.
+
+5
+00:00:31,000 --> 00:00:37,000
+Then we can activate this panel and right-click to reset the 2D arrangement position because its grid is broken.
+
+6
+00:00:37,000 --> 00:00:41,000
+Then we want to open this panel.
+
+7
+00:00:41,000 --> 00:00:48,000
+Before we open it, I want to show you how to make a uniform skirt.
+
+8
+00:00:48,000 --> 00:00:52,000
+First, I add two internal lines in the middle.
+
+9
+00:00:52,000 --> 00:00:56,000
+Then I will select one internal line and use the folding line here.
+
+10
+00:00:56,000 --> 00:01:03,000
+When the folding angle is 0, this line will protrude outward.
+
+11
+00:01:03,000 --> 00:01:08,000
+This protrusion means that it protrudes outward from the front of the panel.
+
+12
+00:01:08,000 --> 00:01:16,000
+If you can't see the front and back here, remember to switch to the texture surface to see the front and back of the panel.
+
+13
+00:01:16,000 --> 00:01:22,000
+On the contrary, if we set the folding angle to 360 degrees,
+
+14
+00:01:22,000 --> 00:01:26,000
+then this line will bend in from the front of the panel.
+
+15
+00:01:26,000 --> 00:01:32,000
+In order to make the panel fold more clearly, I will choose to print this panel.
+
+16
+00:01:32,000 --> 00:01:37,000
+When a panel is printed, all the internal lines on this panel,
+
+17
+00:01:37,000 --> 00:01:42,000
+the folding angle they apply, will be kept to the maximum extent.
+
+18
+00:01:42,000 --> 00:01:45,000
+In other words, it will fold more clearly.
+
+19
+00:01:45,000 --> 00:01:51,000
+After folding here, we will see that it will actually only have one-third of the width after folding.
+
+20
+00:01:51,000 --> 00:01:54,000
+So in order to make the panel we fold come out,
+
+21
+00:01:54,000 --> 00:01:59,000
+we need to make a panel that is three times wider.
+
+22
+00:01:59,000 --> 00:02:02,000
+After I delete the extra internal lines here,
+
+23
+00:02:02,000 --> 00:02:05,000
+we will start making the flat panel.
+
+24
+00:02:05,000 --> 00:02:11,000
+After selecting this panel, copy and paste, and then copy and paste.
+
+25
+00:02:11,000 --> 00:02:13,000
+There are three panels in total.
+
+26
+00:02:13,000 --> 00:02:17,000
+Then select the middle line and merge them.
+
+27
+00:02:17,000 --> 00:02:21,000
+After merging, delete the excess points.
+
+28
+00:02:21,000 --> 00:02:23,000
+Be sure to delete these points.
+
+29
+00:02:24,000 --> 00:02:31,000
+Next, we are going to merge the internal lines that are used to fold in the middle.
+
+30
+00:02:31,000 --> 00:02:37,000
+First, select the two-sided lines, then right-click and select the internal line generated according to the curve.
+
+31
+00:02:37,000 --> 00:02:42,000
+In the expansion number here, we need to select 3 times minus 1.
+
+32
+00:02:42,000 --> 00:02:47,000
+You can see that if my expansion number is 2, it can be cut into three sides.
+
+33
+00:02:47,000 --> 00:02:51,000
+So this value must be 3 times minus 1.
+
+34
+00:02:51,000 --> 00:02:53,000
+Here I set it to 20.
+
+35
+00:02:54,000 --> 00:03:02,000
+Then select the internal line created, right-click and select align.
+
+36
+00:03:02,000 --> 00:03:04,000
+Add points to the panel line.
+
+37
+00:03:04,000 --> 00:03:08,000
+Let's take a look at what happens if we don't select this step.
+
+38
+00:03:08,000 --> 00:03:14,000
+Because later we will use the function of folding and folding.
+
+39
+00:03:14,000 --> 00:03:18,000
+In the process of our sewing, it is identified as a group of three lines.
+
+40
+00:03:18,000 --> 00:03:22,000
+So we have to interrupt this line.
+
+41
+00:03:22,000 --> 00:03:26,000
+Then we select these internal lines, then right-click and select align.
+
+42
+00:03:26,000 --> 00:03:29,000
+Add points to the panel line.
+
+43
+00:03:29,000 --> 00:03:32,000
+After selecting, this will automatically be interrupted.
+
+44
+00:03:32,000 --> 00:03:38,000
+After interrupting, because we may have some stretching in the process of merging just now,
+
+45
+00:03:38,000 --> 00:03:42,000
+So in the 3D space, we reset the 2D arrangement position.
+
+46
+00:03:42,000 --> 00:03:46,000
+Then use the fold and fold function to press the left button on the first internal line.
+
+47
+00:03:46,000 --> 00:03:50,000
+On the right side of the last internal line, double-click, you can start to apply the fold angle.
+
+48
+00:03:50,000 --> 00:03:55,000
+This tool is used to automatically apply the fold angle.
+
+49
+00:03:55,000 --> 00:03:58,000
+First of all, we first choose the type to follow the fold.
+
+50
+00:03:58,000 --> 00:04:01,000
+This is the direction of the fold of the clothing group.
+
+51
+00:04:01,000 --> 00:04:06,000
+Then the internal line number of each fold is selected as 3.
+
+52
+00:04:06,000 --> 00:04:08,000
+Other options do not need to be changed.
+
+53
+00:04:08,000 --> 00:04:13,000
+Then click to confirm, you can see that the color of the internal line becomes red and green.
+
+54
+00:04:13,000 --> 00:04:16,000
+These fold angles are applied.
+
+55
+00:04:16,000 --> 00:04:18,000
+Don't rush to deny.
+
+56
+00:04:18,000 --> 00:04:19,000
+You can take a look.
+
+57
+00:04:19,000 --> 00:04:21,000
+If I go to sew directly,
+
+58
+00:04:21,000 --> 00:04:25,000
+Because the panel line will cross the human body.
+
+59
+00:04:25,000 --> 00:04:30,000
+Then in the process of sewing, plus the fold is left and right.
+
+60
+00:04:30,000 --> 00:04:32,000
+May be a little unstable.
+
+61
+00:04:32,000 --> 00:04:34,000
+So usually we will be in the 3D window.
+
+62
+00:04:34,000 --> 00:04:36,000
+First, the panel line is simulated.
+
+63
+00:04:36,000 --> 00:04:38,000
+Let it fold first.
+
+64
+00:04:38,000 --> 00:04:41,000
+Then we sew it to the belt.
+
+65
+00:04:44,000 --> 00:04:48,000
+After folding, we first rotate it to the side of the virtual model.
+
+66
+00:04:49,000 --> 00:04:56,000
+Then we repeat the fold angle.
+
+67
+00:04:56,000 --> 00:04:59,000
+Then we copy and paste a panel line.
+
+68
+00:04:59,000 --> 00:05:02,000
+Note that it is a copy and paste, not a copy and paste a clonical symmetrical panel.
+
+69
+00:05:02,000 --> 00:05:05,000
+Or copy and paste a mirror.
+
+70
+00:05:05,000 --> 00:05:07,000
+It's directly copied and pasted.
+
+71
+00:05:07,000 --> 00:05:10,000
+Because the direction of the line is one direction.
+
+72
+00:05:10,000 --> 00:05:12,000
+If you have a symmetrical panel line,
+
+73
+00:05:12,000 --> 00:05:14,000
+It's from the middle to the two sides to go along.
+
+74
+00:05:14,000 --> 00:05:16,000
+It's not the way of the clothing group.
+
+75
+00:05:16,000 --> 00:05:18,000
+Then we use the fold angle tool.
+
+76
+00:05:18,000 --> 00:05:24,000
+First, sew the waistband, and then click from the left side of the pleats.
+
+77
+00:05:24,000 --> 00:05:31,000
+Here is also, first sew the waistband, then click the starting point, along the mouse, and then click here at the end.
+
+78
+00:05:31,000 --> 00:05:35,000
+Then start to simulate, wait for the panel to simulate, that's it.
+
+79
+00:05:37,000 --> 00:05:42,000
+If the fold here is not very obvious after simulation, we can print the panel first.
+
+80
+00:05:42,000 --> 00:05:49,000
+After simulation, use the sewing machine to sew the front and back.
+
+81
+00:05:56,000 --> 00:05:59,000
+After the final completion, you can remove the hardening.
+
+82
+00:06:01,000 --> 00:06:06,000
+Now we can clearly see from the bottom that its folding direction will not change.
+
+83
+00:06:10,000 --> 00:06:12,000
+Then let's take a look at how to do it.
+
+84
+00:06:12,000 --> 00:06:14,000
+First, we need to modify the waistband.
+
+85
+00:06:15,000 --> 00:06:19,000
+First of all, many models will have a much wider waist than the waist.
+
+86
+00:06:19,000 --> 00:06:24,000
+So if we directly use the whole waist to make the skirt, the front looks very flat.
+
+87
+00:06:24,000 --> 00:06:29,000
+But the back here, because the hips are fuller, so the fold may expand.
+
+88
+00:06:32,000 --> 00:06:34,000
+Then let's see how to modify it.
+
+89
+00:06:34,000 --> 00:06:38,000
+In fact, the way to modify the waistband is a bit troublesome.
+
+90
+00:06:38,000 --> 00:06:42,000
+Because the waistband is piled up here on the waist.
+
+91
+00:06:42,000 --> 00:06:48,000
+If we stretch the waistband directly, there may be an interlocking problem.
+
+92
+00:06:48,000 --> 00:06:53,000
+So in most cases, we may do it again directly from the beginning.
+
+93
+00:06:53,000 --> 00:06:58,000
+So we have a lot of sewing lines that need to be deleted.
+
+94
+00:07:06,000 --> 00:07:09,000
+After that, repeat the operation as before,
+
+95
+00:07:09,000 --> 00:07:11,000
+but we need to stretch the waistband a little wider.
+
+96
+00:07:13,000 --> 00:07:15,000
+Do this a couple of times.
+
+97
+00:07:15,000 --> 00:07:17,740
+Now I have two pleats of seam
+
+98
+00:07:19,000 --> 00:07:21,000
+Then the waist is folded into the middle.
+
+99
+00:07:21,000 --> 00:07:23,000
+And then we can see that the strap of the waist is too high.
+
+100
+00:07:23,000 --> 00:07:26,000
+This means that if you do not stitch the waistband right from here,
+
+101
+00:07:26,000 --> 00:07:28,000
+the waist will not be comfortable.
+
+102
+00:07:28,000 --> 00:07:30,000
+Then the waist band is folded into the middle.
+
+103
+00:07:30,000 --> 00:07:32,000
+Let's try to do the same on the other side.
+
+104
+00:07:32,000 --> 00:07:33,000
+This is how it looks at one side.
+
+105
+00:07:33,000 --> 00:07:35,000
+So it is made like this.
+
+106
+00:07:36,000 --> 00:07:38,000
+And if you fold the sides of the waist,
+
+107
+00:07:38,000 --> 00:07:40,000
+you will have a very thin waistband.
+
+108
+00:07:40,000 --> 00:08:09,980
+Thank you.
+
+109
+00:08:10,000 --> 00:08:29,560
+You can see that when our board is wider, in fact, from the back, it does not have a very obvious problem of expansion.
+
+110
+00:08:29,560 --> 00:08:34,960
+Of course, in addition to this, you can also make this board into a arched board.
+
+111
+00:08:34,960 --> 00:08:39,980
+In order to prevent the board from transforming,
+
+112
+00:08:39,980 --> 00:08:42,460
+it is the same as the previous videos.
+
+113
+00:08:42,460 --> 00:08:45,360
+We can directly copy a fabric here,
+
+114
+00:08:45,360 --> 00:08:47,960
+and then increase the strength of the gold-plated sandpaper of this fabric,
+
+115
+00:08:47,960 --> 00:08:51,159
+or use Fusible Rigid.
+
+116
+00:08:51,159 --> 00:08:56,860
+In addition, we can also make it look more close to the physical properties on the top.
+
+117
+00:08:56,860 --> 00:09:00,100
+First, select the physical properties of this skirt part,
+
+118
+00:09:00,100 --> 00:09:02,539
+and then reduce the strength of the gold-plated sandpaper a little bit,
+
+119
+00:09:02,539 --> 00:09:04,860
+so that it will have a better hammering feeling.
+
+120
+00:09:04,860 --> 00:09:08,039
+Then reduce the bending strength a little bit,
+
+121
+00:09:08,039 --> 00:09:09,980
+so that it looks more soft.
+
+122
+00:09:09,980 --> 00:09:18,460
+Also, this is our particle diameter can be reduced a little bit.
+
+123
+00:09:18,460 --> 00:09:22,460
+When our particle diameter is reduced,
+
+124
+00:09:22,460 --> 00:09:25,960
+there is no small black spot caused by the gap in the network.
+
+125
+00:09:25,960 --> 00:09:27,960
+But here we will see that,
+
+126
+00:09:27,960 --> 00:09:29,960
+in fact, because the length of the board is not right,
+
+127
+00:09:29,960 --> 00:09:34,860
+so the skirt board at the bottom looks like there will be some wrinkles on the top.
+
+128
+00:09:34,860 --> 00:09:38,259
+If you want to smooth these wrinkles, it is also possible.
+
+129
+00:09:39,980 --> 00:09:41,980
+After polishing the surface,
+
+130
+00:09:41,980 --> 00:09:47,980
+we use the stabilizer to adjust the thermal resistance,
+
+131
+00:09:47,980 --> 00:09:52,000
+no matter how high is the thermal resistance to itself.
+
+132
+00:09:52,000 --> 00:09:57,180
+Then we will adjust the thermal resistance through the properties in the physical properties.
+
+133
+00:09:57,180 --> 00:10:00,080
+The formwork under the formwork editor has deformation rate.
+
+134
+00:10:00,080 --> 00:10:05,500
+The deformation rate is controlled by whether the fabric is easily deformed under the influence of external forces.
+
+135
+00:10:05,500 --> 00:10:07,980
+For example, the ferrous line is the most obvious example.
+
+136
+00:10:07,980 --> 00:10:09,580
+When the deformation rate is 100, the fold of the ferrous line position will be smoothed,
+
+137
+00:10:09,580 --> 00:10:12,580
+there will be no change in the shape of the fold.
+
+138
+00:10:17,580 --> 00:10:24,580
+Next, I will show you how to deal with some of the problems we encounter when we make the uniform.
+
+139
+00:10:26,580 --> 00:10:30,580
+First of all, when we make the uniform, we often encounter a problem,
+
+140
+00:10:30,580 --> 00:10:33,580
+that is, the plate, because it is folded,
+
+141
+00:10:33,580 --> 00:10:37,580
+so in the process of simulation, if the simulation is unstable,
+
+142
+00:10:37,580 --> 00:10:43,580
+sometimes it may happen that the part that should be folded should be folded in.
+
+143
+00:10:43,580 --> 00:10:49,580
+In the case of folding problems like this, we can adjust it with a fixed needle tool.
+
+144
+00:10:49,580 --> 00:10:53,580
+First of all, we can go back to the previous stabilization,
+
+145
+00:10:53,580 --> 00:10:58,580
+and see if we can manually adjust it to prevent such problems.
+
+146
+00:10:58,580 --> 00:11:01,580
+But if we fail to drag it out,
+
+147
+00:11:01,580 --> 00:11:05,580
+we can use a fixed needle to pull out the middle line.
+
+148
+00:11:06,580 --> 00:11:07,580
+First of all,
+
+149
+00:11:07,580 --> 00:11:10,580
+we can select this edge,
+
+150
+00:11:10,580 --> 00:11:14,580
+we can select a small piece of the fixed needle in the 2D window or the 3D window,
+
+151
+00:11:14,580 --> 00:11:16,580
+find its approximate position,
+
+152
+00:11:16,580 --> 00:11:19,580
+and then return to the time when the fixed needle was not created,
+
+153
+00:11:19,580 --> 00:11:23,580
+add a fixed needle along the edge of this hole,
+
+154
+00:11:23,580 --> 00:11:28,580
+and then move the fixed needle when there is no fire simulation in the 3D space.
+
+155
+00:11:28,580 --> 00:11:31,580
+When we start the simulation, the board will automatically fold,
+
+156
+00:11:31,580 --> 00:11:35,580
+then we can delete this fixed needle and simulate it.
+
+157
+00:11:37,580 --> 00:11:40,580
+Next, we can put it together,
+
+158
+00:11:40,580 --> 00:11:44,580
+use the fixed needle tool to sew the front middle and the back middle together.
+
+159
+00:11:51,580 --> 00:11:53,580
+After we start the simulation,
+
+160
+00:11:53,580 --> 00:11:56,580
+we will find that there are some shaking problems on the surface.
+
+161
+00:11:56,580 --> 00:11:59,580
+This is because our deformation intensity is 100.
+
+162
+00:11:59,580 --> 00:12:02,580
+In the process of recording some animation,
+
+163
+00:12:02,580 --> 00:12:04,580
+if it is not particularly obvious,
+
+164
+00:12:04,580 --> 00:12:06,580
+do not set the deformation rate to 100.
+
+165
+00:12:06,580 --> 00:12:09,580
+But it doesn't matter if we do the mirroring.
+
+166
+00:12:13,580 --> 00:12:16,580
+Then we can reduce the overall particle diameter to 5,
+
+167
+00:12:16,580 --> 00:12:19,580
+because we are going to delete the inner line later.
+
+168
+00:12:22,580 --> 00:12:24,580
+When the particle diameter is 5,
+
+169
+00:12:24,580 --> 00:12:27,580
+the overall computer operation speed will be slower.
+
+170
+00:12:27,580 --> 00:12:28,580
+At this time,
+
+171
+00:12:28,580 --> 00:12:30,580
+if we delete the inner line,
+
+172
+00:12:30,580 --> 00:12:33,580
+we can simulate it relatively slowly.
+
+173
+00:12:36,580 --> 00:12:39,580
+Double-click twice on an inner line,
+
+174
+00:12:39,580 --> 00:12:42,580
+you can select the inner line on the entire board.
+
+175
+00:12:42,580 --> 00:12:45,580
+Then we can delete these inner lines.
+
+176
+00:12:45,580 --> 00:12:46,580
+In the process,
+
+177
+00:12:46,580 --> 00:12:49,580
+we can double-click to simulate it briefly.
+
+178
+00:12:49,580 --> 00:12:53,580
+This simulation of the deformation will look softer.
+
+179
+00:13:00,580 --> 00:13:04,580
+Next, let's see what happens when the particle diameter is 15.
+
+180
+00:13:06,580 --> 00:13:09,580
+When the particle diameter is 15,
+
+181
+00:13:09,580 --> 00:13:11,580
+if we delete the inner line,
+
+182
+00:13:11,580 --> 00:13:14,580
+we can see that because the network is relatively small,
+
+183
+00:13:14,580 --> 00:13:16,580
+so if we simulate it,
+
+184
+00:13:16,580 --> 00:13:18,580
+first, its fold is easy to dissipate.
+
+185
+00:13:18,580 --> 00:13:20,580
+Second, its fold is not smooth.
+
+186
+00:13:26,580 --> 00:13:28,580
+In addition to the knife fold that we just demonstrated,
+
+187
+00:13:28,580 --> 00:13:31,580
+we also have a method of folding called the bow fold.
+
+188
+00:13:31,580 --> 00:13:32,580
+Here,
+
+189
+00:13:32,580 --> 00:13:34,580
+we can see that the angle of the fold is different.
+
+190
+00:13:34,580 --> 00:13:36,580
+Here,
+
+191
+00:13:36,580 --> 00:13:37,580
+its difference is just that
+
+192
+00:13:37,580 --> 00:13:39,580
+when we flip the paper,
+
+193
+00:13:39,580 --> 00:13:41,580
+we choose the middle option,
+
+194
+00:13:41,580 --> 00:13:42,580
+the bow fold.
+
+195
+00:13:42,580 --> 00:13:44,580
+Then let's take a look at the final effect of the fold.
+
+196
+00:13:53,580 --> 00:13:55,580
+After our hardening simulation,
+
+197
+00:13:55,580 --> 00:13:59,580
+we can see that this board is now folded like this,
+
+198
+00:13:59,580 --> 00:14:02,580
+and it has a groove and a protrusion.
+
+199
+00:14:02,580 --> 00:14:04,580
+Then we now put the board,
+
+200
+00:14:04,580 --> 00:14:06,580
+let's sew it up and take a look.
+
+201
+00:14:08,580 --> 00:14:11,580
+Here we can see that when we use the sewing paper tool,
+
+202
+00:14:11,580 --> 00:14:13,580
+its method is the same as that of the knife fold.
+
+203
+00:14:13,580 --> 00:14:15,580
+Just sew from left to right.
+
+204
+00:14:29,580 --> 00:14:30,580
+After sewing up,
+
+205
+00:14:30,580 --> 00:14:32,580
+we can see from its bottom that
+
+206
+00:14:32,580 --> 00:14:33,580
+it has a groove,
+
+207
+00:14:33,580 --> 00:14:35,580
+and there is a protruding structure.
+
+208
+00:14:48,580 --> 00:14:50,580
+When the angle of the fold is relatively low,
+
+209
+00:14:50,580 --> 00:14:52,580
+let's take a look at the final effect inside the book.
+
+210
+00:14:52,580 --> 00:14:53,580
+The final effect,
+
+211
+00:14:53,580 --> 00:14:57,580
+we can see that its structure is like a bow.
+
+212
+00:14:57,580 --> 00:15:00,580
+So this fold is called the bow fold.
+
+213
+00:15:00,580 --> 00:15:02,580
+So many second-dimensional clothes,
+
+214
+00:15:02,580 --> 00:15:04,580
+they are mostly bow or knife.
+
+215
+00:15:04,580 --> 00:15:05,580
+That is, when we sew them up,
+
+216
+00:15:05,580 --> 00:15:35,560
+Thank you.
+

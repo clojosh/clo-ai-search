@@ -1,0 +1,308 @@
+1
+00:00:00,000 --> 00:00:15,000
+First, at the bottom of the file menu in the main menu, you can find the input menu.
+
+2
+00:00:15,000 --> 00:00:24,000
+You can choose FBX or Alembic files according to your needs.
+
+3
+00:00:24,000 --> 00:00:30,000
+Remember to select the animation, catch animation, and auto-generate setting.
+
+4
+00:00:30,000 --> 00:00:41,000
+After entering the model file with the action, you can see the action of the character in the animation mode, and then you have to record the animation in the mode.
+
+5
+00:00:41,000 --> 00:00:46,000
+And you can see that there is a setting near the virtual model.
+
+6
+00:00:46,000 --> 00:00:52,000
+In different actions, the actual posture is different, and sometimes it is more difficult to wear good clothes.
+
+7
+00:00:52,000 --> 00:00:54,000
+Therefore, we can first select the animation, catch animation, and auto-generate setting.
+
+8
+00:00:54,000 --> 00:00:59,000
+Then save the actual model as OBJ as a backup.
+
+9
+00:00:59,000 --> 00:01:05,000
+When saving, remember the selection option.
+
+10
+00:01:05,000 --> 00:01:10,000
+In advance, I have prepared an OBJ model of T-pose.
+
+11
+00:01:10,000 --> 00:01:16,000
+It is also exported again in the software to ensure that these two models have the same face number.
+
+12
+00:01:16,000 --> 00:01:22,000
+As long as the face number is the same, you can perform morph target.
+
+13
+00:01:22,000 --> 00:01:32,000
+Then import the model of T-pose to wear clothes.
+
+14
+00:01:32,000 --> 00:01:38,000
+After opening the setting point, you can see that the setting point has been re-created and does not fit the virtual model.
+
+15
+00:01:38,000 --> 00:01:46,000
+In the virtual model editor, you can modify the properties of these setting boards in the settings column.
+
+16
+00:01:46,000 --> 00:01:50,000
+After the modification is complete, you can select the setting board in the 3D window and adjust the setting board with the positioning ball.
+
+17
+00:01:50,000 --> 00:02:00,000
+In fact, the setting board is the shape that will form when a board is arranged on the setting point.
+
+18
+00:02:00,000 --> 00:02:03,000
+And the subsequent adjustments are based on this setting board.
+
+19
+00:02:03,000 --> 00:02:11,000
+After adjusting a model setting board, you can save the setting board and use it again on a similar model next time.
+
+20
+00:02:11,000 --> 00:02:18,000
+And as long as this model is re-saved as a virtual model,
+
+21
+00:02:18,000 --> 00:02:26,000
+the next time you open it, it will also have the setting board information.
+
+22
+00:02:26,000 --> 00:02:33,000
+Now, double-click to import a set of pre-set clothes.
+
+23
+00:02:33,000 --> 00:02:38,000
+Since we are going to use the transform function later, in order to save the time used in the transformation,
+
+24
+00:02:38,000 --> 00:02:43,000
+we will first increase all the clothing examples.
+
+25
+00:02:43,000 --> 00:02:46,000
+After increasing, we will simulate it.
+
+26
+00:02:48,000 --> 00:02:57,000
+After increasing, we will simulate it.
+
+27
+00:02:57,000 --> 00:03:01,000
+After stabilizing, select the OBJ file to be imported.
+
+28
+00:03:01,000 --> 00:03:08,000
+For the type of import, select Morph Target.
+
+29
+00:03:08,000 --> 00:03:13,000
+After importing, the model will be transformed, and the model's posture will also be modified.
+
+30
+00:03:13,000 --> 00:03:16,000
+After importing, the model will be transformed, and the model's posture will also be modified.
+
+31
+00:03:16,000 --> 00:03:20,000
+Then, we need to make some basic adjustments to these clothing examples.
+
+32
+00:03:20,000 --> 00:03:25,000
+First, reduce the surface diameter of the model to 1.
+
+33
+00:03:25,000 --> 00:03:28,000
+The surface diameter is the air thickness around the model.
+
+34
+00:03:28,000 --> 00:03:33,000
+Reducing this value can make the clothing look more realistic.
+
+35
+00:03:33,000 --> 00:03:35,000
+At the same time, we also need to reduce the conflict density.
+
+36
+00:03:35,000 --> 00:03:39,000
+The conflict density is the air thickness around the model.
+
+37
+00:03:39,000 --> 00:03:43,000
+The conflict density is the air thickness around the model.
+
+38
+00:03:43,000 --> 00:03:46,000
+Then, we have to reduce the overall size of the clothing example.
+
+39
+00:03:46,000 --> 00:03:51,000
+This will make the clothing more stable in the production process, and the details will be more detailed.
+
+40
+00:03:51,000 --> 00:03:57,000
+Reduce the surface diameter of the model to 1.
+
+41
+00:03:57,000 --> 00:04:01,000
+For the smaller version of the model, considering that its size is relatively small,
+
+42
+00:04:01,000 --> 00:04:04,000
+it is best to reduce the size of the example to 3 or less.
+
+43
+00:04:04,000 --> 00:04:07,000
+Reduce the surface diameter to 0.
+
+44
+00:04:07,000 --> 00:04:09,000
+Reduce the surface diameter to 0.
+
+45
+00:04:09,000 --> 00:04:25,000
+After the costume is finished, delete the model
+
+46
+00:04:25,000 --> 00:04:35,000
+Then enter the file with the action
+
+47
+00:04:35,000 --> 00:04:46,000
+Don't forget to reduce the surface diameter to 1 because you have already changed a new model
+
+48
+00:04:46,000 --> 00:04:52,000
+Then switch to animation mode and prepare to record the animation
+
+49
+00:04:52,000 --> 00:05:00,000
+Click the recording button in the lower left corner to start recording the animation
+
+50
+00:05:00,000 --> 00:05:04,899
+In the process, you can click record again to pause
+
+51
+00:05:05,000 --> 00:05:13,000
+In animation mode, the model type will be changed to a more stable but more time-consuming finished model
+
+52
+00:05:13,000 --> 00:05:17,000
+To ensure the quality of the animation, do not change the model preset
+
+53
+00:05:17,000 --> 00:05:23,000
+After recording, you can drag the playback bar back to the starting position to play again
+
+54
+00:05:23,000 --> 00:05:34,000
+In the process of playing, I found that the hat part will hang on the shoulder at the end of recording
+
+55
+00:05:34,000 --> 00:05:35,000
+In the process, I found that the hat part will hang on the shoulder at the end of recording
+
+56
+00:05:35,000 --> 00:05:41,000
+I checked the play area to find the part where animation needs to be changed
+
+57
+00:05:41,000 --> 00:05:44,000
+When recording is not started, you can turn on the simulation to adjust the simulation effect
+
+58
+00:05:44,000 --> 00:05:53,000
+Adjust the current frame rate
+
+59
+00:05:53,000 --> 00:06:03,000
+Then you can find the frame that needs to be slightly adjusted in the shape of the clothing and modify the shape
+
+60
+00:06:03,000 --> 00:06:04,000
+Then you can find the frame that needs to be slightly adjusted in the shape of the clothing and modify the shape
+
+61
+00:06:04,000 --> 00:06:17,000
+Let's change the format.
+
+62
+00:06:17,000 --> 00:06:24,000
+After changing the format, click again to record and copy the previous animation.
+
+63
+00:06:24,000 --> 00:06:33,000
+This kind of editing method is more suitable for projects that have a low speed of computer operation when recording animation.
+
+64
+00:06:33,000 --> 00:06:44,000
+Another method is to manually drag the costume in the process of recording the animation.
+
+65
+00:06:44,000 --> 00:06:53,000
+This is more natural.
+
+66
+00:06:53,000 --> 00:06:59,000
+After covering, if you feel that the simulation effect is not ideal, you can delete it.
+
+67
+00:06:59,000 --> 00:07:02,000
+In addition, once you start recording the animation,
+
+68
+00:07:02,000 --> 00:07:08,000
+please try to avoid going back to the usual simulation mode to make changes to the version.
+
+69
+00:07:08,000 --> 00:07:11,000
+Once the grid is changed, the animation needs to be recorded from the beginning.
+
+70
+00:07:11,000 --> 00:07:14,000
+Please pay attention.
+
+71
+00:07:14,000 --> 00:07:21,000
+After deleting, you can keep the original animation.
+
+72
+00:07:21,000 --> 00:07:27,000
+After recording, you can export. It is recommended to export to Alembic format.
+
+73
+00:07:32,000 --> 00:07:40,000
+When exporting, you can choose whether to export the model with the mushroom model.
+
+74
+00:07:40,000 --> 00:07:43,000
+I'm recording now.
+
+75
+00:07:43,000 --> 00:07:50,000
+After editing a Просто built, the model needs to do a quick amazingly video camera.
+
+76
+00:07:50,000 --> 00:07:56,000
+You can recall what you've seen so far and show it when you finish the video.
+
+77
+00:07:56,000 --> 00:07:58,000
+After you finish the video, you can go back to different functions.
+

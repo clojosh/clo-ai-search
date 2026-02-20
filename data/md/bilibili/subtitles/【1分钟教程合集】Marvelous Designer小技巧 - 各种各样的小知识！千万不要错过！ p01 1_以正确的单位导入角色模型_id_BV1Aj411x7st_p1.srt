@@ -1,0 +1,88 @@
+1
+00:00:00,000 --> 00:00:07,000
+Let's take a look at how to check if the virtual model is correctly inserted.
+
+2
+00:00:07,000 --> 00:00:10,000
+First, we will insert the character model into the scene.
+
+3
+00:00:10,000 --> 00:00:12,000
+We need to select the insert unit.
+
+4
+00:00:12,000 --> 00:00:14,000
+Choosing the wrong unit may cause problems.
+
+5
+00:00:14,000 --> 00:00:16,000
+You can refer to the floor grid.
+
+6
+00:00:16,000 --> 00:00:19,000
+Now the entire virtual model is about the same size as a floor grid.
+
+7
+00:00:19,000 --> 00:00:23,000
+Usually, for virtual models, only one corner needs to be connected to two floor grids.
+
+8
+00:00:23,000 --> 00:00:25,000
+We will create a template for the virtual model.
+
+9
+00:00:25,000 --> 00:00:28,000
+Then look at the conflict problems that may occur.
+
+10
+00:00:28,000 --> 00:00:30,000
+We will arrange the template around the virtual model.
+
+11
+00:00:30,000 --> 00:00:31,000
+Then look at the simulation.
+
+12
+00:00:31,000 --> 00:00:33,000
+You can see that the simulation quality is very low.
+
+13
+00:00:33,000 --> 00:00:36,000
+This is because the template produced according to the model is too small.
+
+14
+00:00:36,000 --> 00:00:37,000
+The particle diameter is too large.
+
+15
+00:00:37,000 --> 00:00:38,000
+The grid is too small.
+
+16
+00:00:38,000 --> 00:00:43,000
+Therefore, too small virtual models may cause the different default values ​​of the template to not match each other.
+
+17
+00:00:43,000 --> 00:00:45,000
+Consequently, various problems arise.
+
+18
+00:00:45,000 --> 00:00:48,000
+At this time, we need to re-insert a larger unit into the virtual model.
+
+19
+00:00:48,000 --> 00:00:53,000
+We can add a default virtual model to the work area as a comparison reference.
+
+20
+00:00:53,000 --> 00:00:57,000
+We can see that the self-defined virtual model is the opposite of the default size.
+
+21
+00:00:57,000 --> 00:00:58,000
+Such a virtual model
+
+22
+00:00:58,000 --> 00:01:00,000
+can continue to make clothing.
+

@@ -1,0 +1,482 @@
+[
+    {
+        "article_id": "115012226927",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012226927",
+        "title": "Segment Puckering",
+        "content": "**List of Contents** Segment Puckering Create Puckering **Segment Puckering** \\- Create Puckering to segments of Pattern outlines and Internal Lines. \\- Select the ![](https://support.clo3d.com/hc/article_attachments/115022651288/mceclip0.png) **Segment Puckering** tool from the 2D toolbar. \\- Or, navigate to the Main Menu and select Material ▶ Puckering ▶ **Segment Puckering.** ** Create Puckering** \\- Select the ![](https://support.clo3d.com/hc/article_attachments/115022651288/mceclip0.png) **Segment Puckering** tool from the 2D toolbar. \\- Hover over the segment to apply Segment Puckering. \\- The segment will be highlighted. \\- Click the segment. \\- The Puckering will be applied to the selected segment. Go back to the List of Contents",
+        "content_description": "This web page provides a concise guide on using the Segment Puckering tool in CLO 3D to enhance pattern outlines and internal lines.",
+        "created_at": "2025-06-24T06:22:31Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=8Jx5DAJoPy0",
+            "https://www.youtube.com/watch?v=ApjpTjfj38I"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 200
+    },
+    {
+        "article_id": "115014899168",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115014899168",
+        "title": "Edit V-Ray Light Properties",
+        "content": "Configure the light properties for the final render image. [![Youtube Icon.png](https://support.clo3d.com/hc/article_attachments/45588624495001) Watch Tutorial Video](https://youtu.be/ume5lYEU9hc) 1. Click ![Light Properties On.png](https://support.clo3d.com/hc/article_attachments/45588624503961)**Light Properties** in thr Render toolbar. 2. Refer to the below table and edit the light properties in Property Editor as needed. It is recommended to use only necessary lights as the number of lights increase, the render speed may slow down. **Option** | **Description** ---|--- **Preset ** | Set the Preset for the light. When hovering the mouse over each presets, you can check the result of applying light in advance. ** ****Overall** | **Name** | ![Update.png](https://support.clo3d.com/hc/article_attachments/45588523657753) Set custom names for render lights to easily identify them. **Intensity/Color** | Adjust the intensity and color of the light. **Activate** | Activate or deactivate the light. **Show** | Show or hide the light. Sphere, rectangle, and dome lights can be shown or hidden separately in the 3D/Render window. **Dome Light** | **Environment Map** | Load an Environment Map. Environment Map refers to light settings processed as an image (HDR). **Light Angle** | Adjust the angle of the light shines on Avatars. **Rectangle Light (Three-Point Light)** | **Width/ Height** | Adjust the width and height of the Rectangle Lights. * To create a three-dimensional render image, there must be a key light. Add key lights as needed to create more dynamic images. * When the Rectangle Lights are used along with the Dome Light, generally, a Rectangle Light is used as a key light. Thus, when using Rectangle Lights in combination with the Dome Light, use a HDRI image without a bright spot which acts as a key light. **Sphere Light** | **Radius** | Set the radius of the Sphere Light. **Spot Light** | **Cone Angle** | Adjust the angle of the Spot Light. The higher the value is, the wider the light area is. ![Cone_Angle.png](https://support.clo3d.com/hc/article_attachments/360057379574) **Penumbra Angle** | Adjust the penumbra angle. The higher the value is, the blended the light is. ![Penumbra_Angle.png](https://support.clo3d.com/hc/article_attachments/360058215273) **Shadow Radius** | Adjust the sharpness of the shadow. The higher the value is, the blended the shadow is. ![Shadow_Radius.png](https://support.clo3d.com/hc/article_attachments/360057380494) **IES Light** | **IES File** | Load an IES light file. An IES file stores the data of the brightness and shape of the actual light in real-life. **Intensity (lm)** | Specified: The light intensity of the file is applied as-is. Custom: Adjust the light's intensity as needed. **Ground Shadow** | Show or hide shadows on the ground. **Open/Save** | Open or Save the setting as a file.",
+        "content_description": "This web page provides a comprehensive guide to configuring light properties for optimal final render images, including detailed instructions and a tutorial video.",
+        "created_at": "2025-06-23T13:53:05Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003861567,
+        "Section": "V-Ray Render",
+        "Tokens": 694
+    },
+    {
+        "article_id": "360000655908",
+        "source": "https://support.clo3d.com/hc/en-us/articles/360000655908",
+        "title": "Segment Topstitch",
+        "content": "**Segment Topstitch** **-** Establish the Topstitch along the Segments of the Pattern outlines and the Internal Shapes/ Lines. \\- Select the ![Toolbar_Common_Stitch_Normal.png](https://support.clo3d.com/hc/article_attachments/360001029448/Toolbar_Common_Stitch_Normal.png)**Segment Topstitch** tool from the 2D toolbar. \\- Or, navigate to the Main Menu and select Material ▶ **Segment Topstitch**. \\- Hover over the desired Segment of the Pattern outlines or the Internal Lines. \\- Click and on the Segment. \\- The Segment Topstitch created on the Pattern outlines or the Internal Lines should be highlighted in pink.",
+        "content_description": "This webpage provides a step-by-step guide on how to establish a Segment Topstitch along pattern outlines and internal shapes using the appropriate tools in the design software.",
+        "created_at": "2025-06-23T07:06:07Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=XYMtMb_W7I8"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 146
+    },
+    {
+        "article_id": "115012378448",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012378448",
+        "title": "Paste",
+        "content": "**List of Contents** Paste Paste with Specific Values **Paste** \\- Paste copied Patterns and Internal Shapes. * **Paste a Pattern ** \\- Navigate to the 2D toolbar and select the ![](https://support.clo3d.com/hc/article_attachments/115021447968/mceclip0.png) **Transform Pattern** tool or the ![](https://support.clo3d.com/hc/article_attachments/115021447988/mceclip1.png) **Edit Pattern** tool. \\- Right-click on the Pattern to be duplicated and select **Copy.** \\- The selected Pattern will be duplicated. \\- Right-click on the 2D window and select **Paste** from the pop-up menu. \\- The duplicated Pattern will follow along with the mouse cursor. \\- Click on the 2D window to Paste the Pattern. \\- The identical Pattern will be created in the 2D window. -※ Note: Trims are copied and pasted along with Patterns (ver5.0.0.) * **Paste an Internal Shape** \\- Navigate to the 2D toolbar and select the ![](https://support.clo3d.com/hc/article_attachments/115021447968/mceclip0.png) **Transform Pattern** tool or the ![](https://support.clo3d.com/hc/article_attachments/115021447988/mceclip1.png) **Edit Pattern** tool. \\- Right click on the Internal Shape to be duplicated and select **Copy.** \\- The selected Internal Shape will be duplicated. \\- Right click on the 2D window and select **Paste** from the pop-up menu. \\- The duplicated Internal Shape will follow along the mouse cursor. \\- Click within the Pattern to Paste the Internal Shape. \\- The identical Internal Shape will be created in the 2D window. ** Paste with Specific Values** * **Paste a Pattern** \\- Navigate to the 2D toolbar and select the ![](https://support.clo3d.com/hc/article_attachments/115021447968/mceclip0.png) **Transform Pattern** tool or the ![](https://support.clo3d.com/hc/article_attachments/115021447988/mceclip1.png) **Edit Pattern** tool. \\- Right click on the Pattern to be duplicated and select **Copy.** \\- The selected Pattern will be duplicated. \\- Right click on the 2D window and select **Paste** from the pop-up menu. \\- The duplicated Pattern will follow along the mouse cursor. \\- Right click on the 2D window to access the **Paste** pop-up window. \\- Enter the desired values to Interval and Number Of Shapes. Then, click OK. \\- The Pattern will be pasted based on the settings. * **Paste an Internal Shapes ** \\- Navigate to the 2D toolbar and select the ![](https://support.clo3d.com/hc/article_attachments/115021447968/mceclip0.png) **Transform Pattern** tool or the ![](https://support.clo3d.com/hc/article_attachments/115021447988/mceclip1.png) **Edit Pattern** tool. \\- Right click on the Internal Shape to be duplicated and select **Copy.** \\- The selected Internal Shape will be duplicated. \\- Right click on the 2D window and select **Paste** from the pop-up menu. \\- The duplicated Internal Shape will follow along the mouse cursor. \\- Right click on the 2D window to access the **Paste** pop-up window. \\- Enter the desired values to Internval, Number OF Shapes, and Position. Then, click OK. \\- The Internal Shape will be pasted based on the settings. Go back to the List of Contents",
+        "content_description": "This webpage provides a comprehensive guide on how to copy and paste patterns and internal shapes in a 2D design environment, including options for pasting with specific values.",
+        "created_at": "2025-06-23T06:57:04Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=9AYlKFvBdfc",
+            "https://www.youtube.com/watch?v=TplJM7z79bY",
+            "https://www.youtube.com/watch?v=sLohWrXuAZE",
+            "https://www.youtube.com/watch?v=ZmpPxOhezg0"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 786
+    },
+    {
+        "article_id": "115012227227",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012227227",
+        "title": "Particle Distance",
+        "content": "**List of Contents** Particle Distance Adjust Particle Distance **Particle Distance** \\- Adjust Particle Distance to manage the Garment quality and Simulation speed. \\- Navigate to Property Editor ▶ Simulation Properties ▶ **Particle Distance** ** Adjust Particle Distance** \\- Using the ![](https://support.clo3d.com/hc/article_attachments/115022678287/mceclip0.png) **Transform pattern** tool, select the Pattern to be edited. \\- Navigate to the Property Editor ▶ Simulation Properties ▶ **Particle Distance.** \\- The default value of the **Particle Distance** is 20. Lower this value to 5 and simulate. \\- The quality of the 3D Garment increases as the size of the Particle Distance decreases. Go back to the List of Contents",
+        "content_description": "This web page provides a comprehensive guide on adjusting Particle Distance to enhance garment quality and simulation speed in 3D design software.",
+        "created_at": "2025-06-23T03:47:12Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=_u4mt-Yg3ew",
+            "https://www.youtube.com/watch?v=goDk-yEFzfM"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 162
+    },
+    {
+        "article_id": "115000521447",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115000521447",
+        "title": "3D Snapshot",
+        "content": "**List of Contents** Single View Multi View Save 3D window snapshots from one or more angles as images. 1. Click the Main Menu ▶ File ▶ Snapshot ▶ **3D Window (F10)** 2. Enter desired file name and location, then click **Save**. 3. Set details as needed: #### **Single View** **Option** | **Description** ---|--- **Image** **Size** | **Preset** | Customize or select from provided preset options. **Orientation** | Select from portrait or landscape orientation options. **Width** | Set the width of the image. **Height** | Set the height of the image. **Unit** | Sets the unit of measurement for the image. **Resolution** | Sets the pixels per inch for the image. From ver3.2.0, the image resolution (ppi) will automatically adjust depending on the selected paper size for optimal printing results. **Colorway**** ** | ![Update.png](https://support.clo3d.com/hc/article_attachments/44189528036633) Set whether to save only the current colorway or all colorways. Or, choose specific colorways by clicking the ![Select Colorway.png](https://support.clo3d.com/hc/article_attachments/44191274180633) **Select Colorways** button. **Option** | **Transparent Background** | Save the image with a transparent background. **Save HTML File ** | A HTML file of the snapshot is also saved. **Reset** | Resets the options back to the program default settings. #### **Multiview** **Option** | **Description** ---|--- **Preview** | **Preset** | Mouse-over on the preview image ▶ Select desired view option from drop-down menu. **Custom** | Customize view angle in the 3D window. Mouse-over on the preview image ▶ Click on the camera icon. **Layout** | **View Count** | Select the number of views to capture. Set it up to 10 views. (ver 5.2) **Layout** | Select from horizontal/vertical/box layout options. **Single ****Image ****Size** | **Preset** | Customize or select from preset image size. **Orientation** | Select from portrait or landscape orientation options. **Width** | Set the width of the image. **Height** | Set the height of the image. **Unit** | Sets the unit of measurement for the image. **Resolution** | Sets the pixels per inch for the image. From ver3.2.0, the image resolution (ppi) will automatically adjust depending on the selected paper size for optimal printing results. **Colorway** | ![Update.png](https://support.clo3d.com/hc/article_attachments/44189528036633) Set whether to save only the current colorway or all colorways. Or, choose specific colorways by clicking the ![Select Colorway.png](https://support.clo3d.com/hc/article_attachments/44191274180633) **Select Colorways** button. **Option** | **Transparent Background** | Save the image with a transparent background. **Save Separate Images** | Save the multi-view in individual images. **Save HTML File ** | A HTML file of the snapshot is also saved. **Open** | Open all the setting options in *.mvs file format. **Save** | Save all the setting options in *.mvs file format. **Reset** | Resets the options back to the program default settings. Go back to the List of Contents",
+        "content_description": "This webpage provides detailed instructions for capturing and saving 3D window snapshots in both single and multi-view formats, including customizable options for image size, orientation, resolution, and colorways.",
+        "created_at": "2025-06-18T19:56:33Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628367,
+        "Section": "File Open/Save",
+        "Tokens": 734
+    },
+    {
+        "article_id": "115012225927",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012225927",
+        "title": "Smart Arrangement",
+        "content": "**Smart Arrangement** \\- Arrange the Patterns near their sewn pairs maintaining their drape. \\- Choose the ![](https://support.clo3d.com/hc/article_attachments/115021552387/mceclip0.png) **Select/Move** tool from the 3D toolbar and navigate to the 3D window. \\- Right-click on the 3D Garment and select **Smart Arrangement.** \\- The selected Pattern will be arranged next to the sewn pair without distortion of the drape.",
+        "content_description": "The purpose of this web page is to guide users on how to effectively use the Smart Arrangement feature to align patterns with their sewn pairs while preserving their drape in a 3D garment design.",
+        "created_at": "2025-06-18T10:26:04Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=wysSD11q5Qc"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 110
+    },
+    {
+        "article_id": "115012379648",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012379648",
+        "title": "Flip Horizontally (3D)",
+        "content": "**Flip Horizontally** \\- Flip the selected Pattern horizontally. \\- Choose the ![](https://support.clo3d.com/hc/article_attachments/115021552387/mceclip0.png) **Select/Move** tool from the 3D toolbar and navigate to the 3D window. \\- Right-click on the 3D Garment and select **Flip Horizontally.** \\- The selected Pattern will flip horizontally, maintaining its drape",
+        "content_description": "This web page provides instructions for flipping a selected pattern horizontally in the 3D garment interface while preserving its drape.",
+        "created_at": "2025-06-18T10:25:04Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=Cx7f8Ri-hQs"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 95
+    },
+    {
+        "article_id": "115002687328",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115002687328",
+        "title": "Pose (POS/HPOS) Open/Save",
+        "content": "**Objective** Use this function to load an Avatar's Pose or location information. A variety of Avatar Poses are provided in the Library window. **Location** Main Menu ▶ File ▶ Open/ Save As ▶ **Pose/ Hand Pose (ver 7.1)** **Operation** **Open Pose** 1. Click the menu of the Location to open a Pose/Hand Pose. → Open Pose window appears. 2. Set the options and click the **OK** button. **Pose Only** | Applies the Pose Motion Data (Joint rotation) only, while maintaining the Avatar's Size. ---|--- **Pose & Joint Translation** | Applies the Avatar's Size, Pose, Motion Data (joint rotation) and Joint positions **Partial Pose (ver 7.1)** | Apply all pose files, or apply Hand Pose only. → If the pose is changed and the garments are put on, it is automatically simulated. **Save Pose** 1. Select the menu indicated. → The Save File window appears. → When there are more than two Avatars, select the appropriate one from the Save Pose window. 2. Designate the file name and the path and select the **Save** button. → The Pose(POS/HPOS) file is saved.",
+        "content_description": "This web page serves as a guide for loading, applying, and saving Avatar poses and location information using the Pose/Hand Pose feature in version 7.1.",
+        "created_at": "2025-06-16T08:53:08Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628367,
+        "Section": "File Open/Save",
+        "Tokens": 261
+    },
+    {
+        "article_id": "115012381208",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012381208",
+        "title": "Reset 3D Arrangement (Selected)",
+        "content": "**Reset 3D Arrangement (Selected)** When you place fabric using Arrangement Points, it wraps around the avatar in a draped form. If you want to undo that and return the fabric to its original, flat position, use the Reset 3D Arrangement function. \\- Use **Reset 3D Arrangement (Selected)![](https://support.clo3d.com/hc/article_attachments/48000411030937)** when Garments are not properly draped after arranging them in the 3D window. \\- Right-click on the Pattern to be re-arranged and select **Reset 3D Arrangement (Selected).** \\- The selected Pattern will be re-arranged in the 3D window prior to the Simulation.",
+        "content_description": "The \"Reset 3D Arrangement\" feature allows you to easily revert fabric draping back to its original flat state, ensuring proper arrangement before simulation in the 3D window.",
+        "created_at": "2025-06-16T04:50:42Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=Hxe0BwEXzQo"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 154
+    },
+    {
+        "article_id": "115012226367",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012226367",
+        "title": "Garment File Save/Open",
+        "content": "**List of Contents** Garment File Open Garment File Save Garment File **Garment File** \\- The Garment file is composed with followings: 3D Garments, 2D Patterns, Colorways, Print Layout, and comments. Save above information along with 3D Garments as a .zpac file and re-open to edit. ** Open Garment File** \\- Navigate to the Main Menu and select File ▶ Open ▶ **Garment.** \\- Locate the garment file and select **Open.** The selected garment file will load. **Save Garment File** \\- Navigate to the Main Menu and select File ▶ Save As ▶ **Garment.** \\- Assign the saving path and the file name, then click **Save.** Go back to the List of Contents",
+        "content_description": "This webpage serves as a comprehensive guide for managing garment files, detailing the processes for opening and saving files containing 3D garments, 2D patterns, colorways, print layouts, and comments.",
+        "created_at": "2025-06-16T03:28:57Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=jB27g_SM2I4",
+            "https://www.youtube.com/watch?v=XE8fUfTfDzk"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 171
+    },
+    {
+        "article_id": "115012227207",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012227207",
+        "title": "Show UV Guide",
+        "content": "**Show UV Guide** \\- Check the UV area before exporting the 3D Garment. \\- Select the ![](https://support.clo3d.com/hc/article_attachments/115022677527/mceclip0.png) **Show** **UV Guide** tool from the 2D toolbar. \\- Or, navigate to and select Main Menu ▶ Display ▶ 2D Pattern ▶ **Show** **UV Guide. ** \\- When the ![](https://support.clo3d.com/hc/article_attachments/115022677527/mceclip0.png) **Show UV Guide** tool is activated, the marquee box showing the UV area will appear.",
+        "content_description": "The \"Show UV Guide\" page provides instructions for checking the UV area before exporting a 3D garment, ensuring optimal pattern display and accuracy.",
+        "created_at": "2025-06-16T03:27:21Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=LFVafDNnxyI"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 142
+    },
+    {
+        "article_id": "115012381328",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012381328",
+        "title": "Show/Hide Avatar",
+        "content": "**List of Contents** Avatar Display Icons Show Avatar Show Arrangement Point Show Bounding Volumes Show Avatar Measurements Show Avatar Tape Show 3D Lines **Avatar Display Icons** \\- Show or hide icons related to Avatars. \\- Navigate to the 3D window and hover over the second icon in the Vertical View Toggle Menu. ** ****Show Avatar** \\- Click the ![](https://support.clo3d.com/hc/article_attachments/115022729208/mceclip6.png) **Show Avatar** icon to show or hide avatars from the 3D window. **Show Arrangement Point** \\- Click the ![](https://support.clo3d.com/hc/article_attachments/115022667947/mceclip11.png) **Show Arrangement****Point** icon to show or hide arrangement points on Avatar. **Show Bounding Volumes** \\- Click the ![](https://support.clo3d.com/hc/article_attachments/115022729828/mceclip8.png) **Show Bounding Volumes** icon to show or hide bounding volumes on Avatar. **Show Avatar Measurements** \\- Click the ![](https://support.clo3d.com/hc/article_attachments/115022729868/mceclip9.png) **Show Avatar Measurements** icon to show or hide measurements on Avatars.。 **Show Avatar Tape** \\- Click the ![](https://support.clo3d.com/hc/article_attachments/115022668107/mceclip12.png) **Show Avatar Tape** icon to show or hide Avatar Tapes on Avatars. **Show 3D Lines** \\- Click the ![](https://support.clo3d.com/hc/article_attachments/115022668127/mceclip14.png) **Show 3D Lines** icon to show or hide 3D lines drawn on Avatar. Go back to the List of Contents",
+        "content_description": "This web page provides a comprehensive guide on how to display and manage various avatar-related features in the 3D window.",
+        "created_at": "2025-06-13T03:03:16Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=XJUAbo31JBo",
+            "https://www.youtube.com/watch?v=G5GPqukCjbY",
+            "https://www.youtube.com/watch?v=PsQrarfO6NU",
+            "https://www.youtube.com/watch?v=dsQryIqd_3Q",
+            "https://www.youtube.com/watch?v=dQWTd_EYHzM",
+            "https://www.youtube.com/watch?v=vUcr-hzgCyk",
+            "https://www.youtube.com/watch?v=YechGNCPsbg"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 389
+    },
+    {
+        "article_id": "37542686165529",
+        "source": "https://support.clo3d.com/hc/en-us/articles/37542686165529",
+        "title": "POM Object Browser",
+        "content": "## **New in 2024.2** **List of Content** Folders Add Move Delete View Graded Sizes #### **Improving the POM object browser so users can organize and view they points of measure easily within CLO. ** #### #### **Organize Folders** Using the folders within POM will allow you to organize all your POM however you like, for example you could organize them by pattern piece, or by measurement type, any way that works for you. **** ![Divider_Dash.png](https://support.clo3d.com/hc/article_attachments/37883938236185) #### **Add** 1. Click on the ![add folder.png](https://support.clo3d.com/hc/article_attachments/37543357829657) **Add Folder** button at the top in POM tab in Object Browser. 2. Edit the folder name and then click away or hit Enter key to apply the changes. * Afterwards, double-click on the folder name to rename it. 3. Click on the ![add.png](https://support.clo3d.com/hc/article_attachments/37543357840665) **Add** button within folder to add new POM within a folder. 4. Click on the ![arrow.png](https://support.clo3d.com/hc/article_attachments/37543329543321)**Arrow** within the Folder to collapse all the POM in the folder. ![Divider_Dash.png](https://support.clo3d.com/hc/article_attachments/37883938236185) #### **Move** 1. Drag and drop the POMs between the different folders to move them to another folder. * Hold down the Shift key to select multiple POMs at once and move them all. ![Divider_Dash.png](https://support.clo3d.com/hc/article_attachments/37883938236185) #### **Delete** 1. Click on the ![delete.png](https://support.clo3d.com/hc/article_attachments/37543357842329) **Delete** button to delete an entire folder or POMs within a folder. **📝****Note:** If there are active POMs within the folder a pop up will come up asking you; _If you would like to delete the POMs or move them to the default folder._ #### #### **View Graded Sizes** When Grading is applied to pattern, you will be able to view or hide different graded sizes within the Object Browser POM to improve visibility. When a pattern has grading applied the Graded sizes will automatically appear within the POM Object browser. **** 1. Click on the size to hide it easily. 2. Click on the size again to quickly reactivate it.",
+        "content_description": "Discover the new features in CLO 2024.2 that enhance the POM object browser, allowing users to effortlessly organize, view, and manage their points of measure with customizable folders and improved graded size visibility.",
+        "created_at": "2025-06-11T09:53:29Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=v5VF7j7rrBc",
+            "https://www.youtube.com/watch?v=B3UdATm9Ylc"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 360004712034,
+        "Section": "POM",
+        "Tokens": 568
+    },
+    {
+        "article_id": "360000742668",
+        "source": "https://support.clo3d.com/hc/en-us/articles/360000742668",
+        "title": "Grading",
+        "content": "**List of Contents** Grading Create Size Group Add Size Delete **Grading** \\- Create and edit grading rules of a 3D Garment. \\- Create Size Group Object Browser ▶ Grading Tab ▶ **+Add** Add Size Object Browser ▶ Grading Tab ▶ Size Group (Select the One to be Edited) ▶ **+** **Create Size Group** \\- Click the **+** button in the Object Browser’s Grading tab to add a new Size Group. \\- By default, a new Size Group is added and one Base Size is created. \\- Click the Size Group or the Size to view and edit its properties in the Property Editor. **Add Size** \\- Click the **+** button next to each Size under a Size Group. \\- A new Size is added and number is added at the end of the Size name in created order. \\- Toggle on the check box in front to each Size to assign as Base Size. **Delete** **** \\- Click the **Delete** icon on each Size’s right to delete the selected Size. \\- Similarly, click the **Delete** icon on each Size Group’s right to delete the selected Size Group. \\- When a Size Group is deleted, its Sizes under the Group are also deleted. ※ Note: * In order to paste in a grading value, the selected point must have a [Grading Size Group](https://support.clo3d.com/hc/en-us/articles/115015578947). * Multiple grading values on multiple points cannot be pasted at once. However, one copied value can be pasted to multiple points. * Use the shortcuts: Crtl+Z, Ctrl+Y to undo or redo copy and paste. * Hide Patterns' grading rules using [Show/Hide Grading](https://support.clo3d.com/hc/en-us/articles/115015876648). Go back to the List of Contents",
+        "content_description": "This web page provides a comprehensive guide for creating, managing, and deleting grading rules and size groups for 3D garments.",
+        "created_at": "2025-06-11T05:11:32Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=PBTvcGPwdKA",
+            "https://www.youtube.com/watch?v=Pl9_EgO3WYQ",
+            "https://www.youtube.com/watch?v=QEbdL_-LdhA",
+            "https://www.youtube.com/watch?v=b8VCgGfiMe4"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 399
+    },
+    {
+        "article_id": "115012381408",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012381408",
+        "title": "Solidify",
+        "content": "**List of Contents** Solidify Result of Solidify **Solidify** \\- Fix the drape of the Pattern and maintain the shape while simulating. \\- Use the Solidify function when creating a hat’s cap and a bra’s cup where Pattern shapes need to be fixed. \\- Select the Patterns using the ![](https://support.clo3d.com/hc/article_attachments/115022683507/mceclip0.png) **Transform Pattern** tool, right click, and select the **Solidify** option from the pop-up menu. \\- Or, select the Patterns using the ![](https://support.clo3d.com/hc/article_attachments/115022683507/mceclip0.png) **Transform Pattern** tool, navigate to the Property Editor and toggle on **Solidify** **Result of Solidify** \\- The selected Pattern will maintain its drape. \\- Set how strong Pattern will maintain its drape by adjusting the **Strengthen** option. \\- The Selected Pattern will maintain its drape depending on the Strengthen setting when the ![](https://support.clo3d.com/hc/article_attachments/115022683567/mceclip1.png)**Simulation** is activated. Go back to the List of Contents",
+        "content_description": "This webpage provides a comprehensive guide on using the Solidify function in CLO 3D to enhance the drape and shape of patterns for garments like hats and bras during simulation.",
+        "created_at": "2025-06-11T05:10:02Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=jW7YiDEbfhU",
+            "https://www.youtube.com/watch?v=zkhlay2bIP8"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 258
+    },
+    {
+        "article_id": "115012223847",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012223847",
+        "title": "Flatten",
+        "content": "**List of Contents** Flatten Extract Pattern **Flatten ** \\- Extract Patterns based on the shapes on an Avatar, drawn with Line (Avatar.) \\- Select the![](https://support.clo3d.com/hc/article_attachments/115021385127/mceclip0.png) **Flatten** tool from the 3D toolbar. \\- Or, navigate to the Main Menu ▶ 3D Garment ▶ **Flatten.** ** Extract pattern** * **Extract Pattern ** \\- Select desired shapes on the Avatar to extract Patterns. \\- Hover the mouse over the shapes to the extracted. \\- The shape is highlighted in light-blue. \\- Click all shapes to be extracted. \\- Hit the Enter key on the keyboard. \\- The selected shapes are extracted as Patterns and appear in both the 3D and 2D windows. \\- The Default Fabric is automatically applied to Patterns that are extracted using the Flatten tool. \\- Patterns adjacent to each other are sewn automatically. \\- The Line (Avatar) remains on the Avatar. * **Extract Pattern by Selecting All ** \\- Press Ctrl+A on the keyboard while the![](https://support.clo3d.com/hc/article_attachments/115021385127/mceclip0.png) **Flatten** tool is selected, to extract all Patterns. \\- All Patterns are selected. \\- Hit the Enter key on the keyboard. \\- All selected shapes are extracted as Patterns and appear in both of the 3D and 2D windows. \\- The Default Fabric is automatically applied to Patterns that are extracted using the Flatten tool. \\- Patterns adjacent to each other are sewn automatically. \\- The Line (Avatar) remains on the Avatar. * **Cancel Selection** * **Cancel Individually** \\- Reselect the shape to cancel selection individually. * **Cancel All** \\- To cancel all selections, hit the Esc key on the keyboard or Ctrl+Z at the same time. Go back to the List of Contents",
+        "content_description": "This web page serves as a comprehensive guide for using the Flatten tool in garment design software to extract patterns from an Avatar, detailing step-by-step instructions and shortcuts for efficient pattern extraction.",
+        "created_at": "2025-06-06T08:27:44Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=KnZMw9OoIYs",
+            "https://www.youtube.com/watch?v=BlkjbhN3gKY",
+            "https://www.youtube.com/watch?v=U6GFu_OYeOY",
+            "https://www.youtube.com/watch?v=bTXxAquN1GM"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 419
+    },
+    {
+        "article_id": "360000686828",
+        "source": "https://support.clo3d.com/hc/en-us/articles/360000686828",
+        "title": "AI Import of Patterns with Prints/Graphics Applied",
+        "content": "**List of Contents** Import – Adobe (AI/PDF) Importing Patterns with Prints/Graphics **Import - Adobe (AI/PDF) ** \\- AI Patterns with graphics can be imported into CLO together, without having to import them separately. \\- Navigate to Main Menu ▶ Import ▶ **ADOBE (AI/PDF).** **Importing Patterns with Prints/Graphics ** \\- Navigate to Main Menu ▶ Import ▶ **ADOBE (AI/PDF)**. A file browser to select AI file will appear. Select the AI file to be imported. \\- The Import AI/PDF pop-up window will appear. \\- Toggle on **Import as Internal Shape** and **Import as Graphic.** \\- Adjust related options in the Import AI/PDF pop-up window and select OK. \\- The selected AI file will be imported with Prints/Graphics and each item can be edited individually. Go back to the List of Contents",
+        "content_description": "This web page provides a step-by-step guide for importing Adobe (AI/PDF) patterns and graphics into CLO, allowing users to efficiently combine and edit their designs.",
+        "created_at": "2025-06-05T03:13:24Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=K8XQettZT9I",
+            "https://www.youtube.com/watch?v=7_NGcZtdRKc"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 191
+    },
+    {
+        "article_id": "115012380248",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012380248",
+        "title": "Emission Color\t",
+        "content": "**Emission Color** \\- Adjust the **Emission Color** to express retro-reflection and luminous materials which emit light by itself. \\- Select the fabric item in the Object Browser to apply the Emission Color. \\- Navigate to the Property Editor and select the color chip next to Material ▶ **Emission Color.** \\- The Color window will appear allowing you to select the Emission Color. \\- Click or type in desired values to RGB to apply the desired Emission Color to the fabric.",
+        "content_description": "This web page provides a step-by-step guide for adjusting the Emission Color of fabric materials to achieve desired retro-reflection and luminosity in your designs.",
+        "created_at": "2025-06-04T04:00:33Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=vtzyXCd0tLE"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 106
+    },
+    {
+        "article_id": "115012379688",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012379688",
+        "title": "Reverse Arrange - Vertically",
+        "content": "**Reverse Arrange - Vertically** \\- Reverse the Patterns vertically maintaining the curvature of the Patterns created when arranging them using the Arrangement Points. \\- Choose the ![](https://support.clo3d.com/hc/article_attachments/115021552387/mceclip0.png) **Select/Move** tool from the 3D toolbar and navigate to the 3D window. \\- Right-click on the 3D Garment and select Reverse Arrange ▶ **Vertically.** \\- The selected Pattern will flip vertically maintaining the curvature created when arranged via Arrangement Points.",
+        "content_description": "Discover how to reverse the vertical arrangement of patterns while preserving their curvature using the Select/Move tool in the 3D window.",
+        "created_at": "2025-06-04T03:02:53Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=F743wtOp1Ac"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 120
+    },
+    {
+        "article_id": "115002727468",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115002727468",
+        "title": "Quadrangular/Triangular Mesh",
+        "content": "**Convert synchronized 3D Garments into quadrangular or triangular mesh structures.** **![29. Quad Mesh Improvement.png](https://support.clo3d.com/hc/article_attachments/39597030520857)** **📝****Note:** Please refer below explanation on different usages of Quadrangular Mesh versus Triangular Mesh. As the program speed may differ due to the difference in their intrinsic characteristics, please select most appropriate Mesh Type based on your needs. To use our program most efficiently, however, we **strongly suggest** you to set all Pattern Mesh to Triangular when editing 3D Garments, and then change ONLY necessary Patterns' Mesh type to Quadrangular to complete the Garment. * **When to Use Triangular Mesh** : **All Cases,****** except for special cases needed to use Quadrangular Mesh. * **When to Use Quadrangular Mesh** : When a detail of 3D Garment needs to round smoothly such as shirts collar or piping. #### 1. Click the pattern in 2D or 3D window. 2. Change the Mesh Type to the Quad (Otimized) in the Property Editor.",
+        "content_description": "Convert synchronized 3D garments into optimized quadrangular or triangular mesh structures for enhanced editing and detail refinement.",
+        "created_at": "2025-05-29T06:19:15Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000885367,
+        "Section": "3D Mesh / PIN",
+        "Tokens": 238
+    },
+    {
+        "article_id": "360025716814",
+        "source": "https://support.clo3d.com/hc/en-us/articles/360025716814",
+        "title": "Edit 2D POM",
+        "content": "**List of Contents** **Move** **Option** **Objective** Move Point/Segment or delete POM. [Watch Tutorial Video here](https://www.youtube.com/watch?v=Cje0BzHiEAk) **Location**** ** Main Menu ▶ 2D Pattern ▶ Point of Measure ▶**Edit Point of Measure** 2D Toolbar ▶ ![pommmm.jpg](https://support.clo3d.com/hc/article_attachments/360040771653/pommmm.jpg) **Edit Point of Measure** **Operation ** **Move**** ** 1. Click on a point or a whole segment of the POM to be edited. → The point or segment is selected. → A pop-up menu appears when multiple POM points are overlapped. 2. Drag to the desired position. → The POM is moved to the position. → Similar to creating a POM, the line linking two Patterns is maintained as a link in the case of Group POM. 3. **When moving Segment and Curved points of a curved POM, hold down the D key on the keyboard and click-and-drag to move the selected points only. ** → The selected point is moved. **Option** 1. Right click on POM to set the options as needed. **Delete** | Delete the selected POM. ---|--- **Reverse** | Reverse the direction of the POM. **Segment Type/ Straight Type** | Apply as Pattern Outline or Straight Line. **X/ Y Dist Type** | Show the X/ Y axis distance based on the selected outline. **※ Note:****POM is moved when its intersected Pattern Oulines and Internal Lines are moved.**",
+        "content_description": "This webpage provides a comprehensive guide on how to move or delete Points of Measure (POM) within your design, complete with step-by-step instructions and a tutorial video.",
+        "created_at": "2025-05-29T02:53:41Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 360004712034,
+        "Section": "POM",
+        "Tokens": 353
+    },
+    {
+        "article_id": "115000499067",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115000499067",
+        "title": "Alembic Import/Export",
+        "content": "**List of Contents** Import Export #### Import/Export the object, cache, normal, and animation data contained within an Alembic file. #### #### **Import** 1. Click Main Menu ▶ File ▶ Import ▶**Alembic.** 2. Select the desired file and click **OK**. 3. Select the settings as needed and click **OK**. → The Alembic file is imported based on the setting. Option | **Description** ---|--- **FPS** | Sets the frame rate of the cache data. **Scale** | Input the scale directly or select from the available units. **Garment Position** | Moves the Garment to the location of the first frame. #### #### **Export** 1. Click the Main Menu ▶ File ▶ Export ▶ **Alembic.** 2. Designate the file saving path and the file name. Then, click **OK**. → The Export Alembic window appears. 3. Select the settings as needed and click **OK**. → The file is exported as an Alembic file based on the setting. Option | **Description** ---|--- **File** | Set the file type (OGAWA/HDF5) for export. **Object** | **Unweld** Exports the Vertex (points of the mesh) of the parts of the pattern that are sewn together into one line into multiple objects. | ******Weld** Combines the Vertex (points of the mesh) of the parts of the pattern that are sewn together into one line into one point. **Weld Selected Pattern:** Weld based on the sewing line that connects the selected patterns **Thin** Ensures that the thickness will not be exported even if the rendering thickness value is increased beforehand. | **Thick** Exports a pattern with its rendering thickness values in its increased state. **Combined UV Coordinates:** Exports all Garment Pattern texture data fit to UV Coordinates ranging from 0 to 1. **Include Avatar Shape:** Save the Avatar as part of the file. **FPS** | Sets the frame rate of the cache data. **Step** | Adds/Subtracts frames for the recorded Animation according to the entered value. **Frame Relative Sample** | Sets the low and high values for frame relative sampling. **Scale** | Adjusts the scale of the file being exported when a value is entered or the desired unit from “Unit in file to import” is selected.",
+        "content_description": "This web page serves as a comprehensive guide for importing and exporting Alembic files, detailing step-by-step instructions and customizable settings for managing object, cache, normal, and animation data effectively.",
+        "created_at": "2025-05-25T11:40:10Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628387,
+        "Section": "File Import/Export",
+        "Tokens": 510
+    },
+    {
+        "article_id": "115012950648",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012950648",
+        "title": "Does CLO have an online community?",
+        "content": "**Yes, CLO has an active and supportive community!** The CLO community is made up of users from all over the world! From beginners to experienced professionals, who share knowledge, ask questions, and exchange tips about using CLO. ### **Where Can You Find the CLO Community?** * [**CONNECT** ](https://connect.clo-set.com/community)is CLO’s official community platform, where users can: * Interact, ask questions, and share their projects. * Offer or request personalized training. * Participate in **challenges.** * Explore inspiring **user stories.** * Browse or post on the **job board.** * Stay updated with events, news, and more. * **[CLO Discord](https://discord.com/invite/CujT8B5m5g)** offers real-time interaction between community members and CLO designers. It’s a place to: * Chat casually or get quick help. * Discuss tips and workflows. * Share feedback and feature requests. * Get support from experienced users and CLO staff. ### **Why Join the Community?** Being part of the CLO community helps you: * Learn faster from experienced users; * Connect with professionals in the digital fashion industry. * * * If you have any questions, please [Contact Us.](https://clo3d.com/en/support/contactus)",
+        "content_description": "Discover a vibrant global community of CLO users, where you can share knowledge, seek support, and connect with fellow digital fashion enthusiasts through our official platform and Discord.",
+        "created_at": "2025-05-20T00:32:47Z",
+        "youtube_links": [],
+        "CategoryId": 24022165341209,
+        "Category": "FAQ",
+        "SectionId": 24022283048601,
+        "Section": "Support & Training",
+        "Tokens": 281
+    },
+    {
+        "article_id": "115000415867",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115000415867",
+        "title": "Gizmo Axis Setting",
+        "content": "**Objective** There are three different Gizmo types in CLO. Select and utilize it as needed. ** Location** Main Menu ▶ Preferences ▶ **Gizmo** 3D Window ▶ Right-click (on the 3D window) ▶ **Gizmo** **Operation** 1. Follow the indicated guideline below: Main Menu ▶ Preferences ▶ **Gizmo** 3D Window ▶ Right-click (on the 3D window) ▶ **Gizmo ** 2. Select a desired **Gizmo**. 3. Select an object with **Select/Move Tool**. → The chosen type of **Gizmo** appears. 4. Click the axis of the **Gizmo** ▶ Drag it to the desired location. → The chosen object moves along with the Gizmo. **Screen Coordinate Gizmo** | Screen Coordinate Gizmo is based on the camera axis. Change the camera view in order to change the gizmo axis. Selected object moves along with the camera axis. ---|--- **Local Coordinate Gizmo** | Local Coordinate Gizmo axis is based on following the native direction of an object. Mainly usable when designing poses from the avatar's X-ray joint points. Selected object moves to native direction of an object. **World Coordinate Gizmo** | World Coordinate Gizmo is based on 3D space regardless of screens or objects. Selected object moves based on 3D space regardless of screens or objects.",
+        "content_description": "This web page provides guidance on selecting and utilizing the three types of Gizmos in CLO for effective object manipulation within the 3D workspace.",
+        "created_at": "2025-04-29T06:37:14Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115002522408,
+        "Section": "Preferences/Settings",
+        "Tokens": 308
+    },
+    {
+        "article_id": "115000494107",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115000494107",
+        "title": "3D File (OBJ) Import/Export",
+        "content": "**List of Contents** **Import/ Import (Add) OBJ** **Export OBJ** #### **Import OBJs as avatars, trims, and garments. ** **📝****Note:** 3D garments created in CLO can be exported as OBJ and compatible with other 3D software. An MTL file which saves material properties of the exported 3D garment is created at the time of OBJ export. #### #### **Import/ Import (Add) OBJ** 1. Click the Main Menu » File » Import/Import (Add) » **OBJ** 2. Select ta desired file and click **Open**. 3. Click**OK** after configuring options.** ** ** Object Type ** | ** Load as Avatar ** | Load an OBJ as an avatar to drape garments. **Automatically Add Arrangement Points -** Arrangement Points are automatically created based on the OBJ. **📝****Note:** Arrangement Points are properly created only when avatars are in either A or T-pose. ![00__1_.jpg](https://support.clo3d.com/hc/article_attachments/360003078687) ---|---|--- ** Load as Trim ** | Load an OBJ as a trim. OBJs imported as trims do not calculate collision. ** Load as Garment ** | Import and simulate an OBJ created in other 3D software such as Maya, 3ds Max, etc.). Toggle on **Trace 2D Patterns from UV Map** to automatically generate patterns based on the UV information. ** Load as Morph Target ** | Load an OBJ to morph already imported OBJ. Configure **Morphing Frame Count** to control morphing speed. Higher the value is, slower the morphing is. **📝****Note:** Morphing refers to a method to transform appearance of an OBJ according to another OBJ. For CLO avatars, users can modify the shape or pose by using **Avatar Size Editor** or **Show X-Ray Joints** features, but users cannot easily change imported OBJs created in other 3D software due to un-rigged joints or loss of joint information. Thus, users can utilize Load as Morph Target feature to change body shape or pose of the imported OBJ. However, to do so, users need two or more OBJ files with the identical mesh structure. ** Scale ** | Type in the Scale or select the desired unit. ** Axis Conversion ** | Invert each axis of the OBJ as needed. ** Translation ** | Locate the import position of the OBJ. Toggle on Align Bottom to Ground to surface the OBJ when it is located below the ground. #### #### **Export OBJ** 1. Click the Main Menu » File » Export » **OBJ/OBJ(Selected)** menu. 2. Locate the saving path and click **Save**. 3. Configure the options and click **OK**. **Object** **** **** **** | **Select All Patterns** | Select or deselect all Patterns. ---|---|--- ** Select All Avatars ** | Select or deselect all avatars/ objects. ** Select All Graphics/ Top-stitches ** | Select or deselect all graphics or top-stitches. Individual selection is available on the drop-down menu on the right. **Single Object/Multiple Objects** | Choose to export as a single object or multiple objects. **Unweld/ Weld** | Choose to export vertex (points of mesh) of sewn pattern parts as multiple objects or a single point. **Thin/ Thick** | Choose to export the object with thickness or not. **Combined UV Coordinates** | A combined UV coordinates is also exported. **Include Internal Shape** | Export with internal line and/or shape information . **Scale** | Scale the exported object's size. **Axis Conversion** | Change directions of object's each axis. **File** | **Save Colorway** | Export colorway along with the *.obj file. **Maintain Individual Texture Image Coordinates** | Each colorway is exported individually as *.obj and *.mtl files. **Share Texture Image Coordinates** | All colorways are exported as a single *.obj and as many *.mtl files as colorways. **Save with Absolute Texture Image File Path ** | Export OBJ to the original file's saving path. **📝****Note:** When there is not image file at the original path, it may get lost as this option only saves the path. **Save with Texture Files (ZIP)** | Export OBJs along with textures. **Diffuse Color Combined on Texture** | When color is applied to the texture, the color is blended into the texture when exporting. **Exclude Ambient Map & Color (Modo)** | Ambient Map and color are excluded when exporting. **Save with Transparency Map Extracted from Diffuse Map** | Alpha Map is included when exporting. **Save with Meta Data(XML)** | Exports garment's patter(Mesh), physical property and sewing information as Meta Data. Combine and save garment's texture image and color as a single image. Go back to the List of Contents",
+        "content_description": "This web page provides comprehensive instructions for importing and exporting OBJ files in CLO, detailing the processes for using them as avatars, trims, garments, and morph targets, along with essential configuration options.",
+        "created_at": "2025-04-29T06:36:43Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628387,
+        "Section": "File Import/Export",
+        "Tokens": 1034
+    },
+    {
+        "article_id": "360055227373",
+        "source": "https://support.clo3d.com/hc/en-us/articles/360055227373",
+        "title": "Automatic Rigging & Converter",
+        "content": "Conver to Avatar Custom Rigging **Objective** Add joints or convert user data to CLO avatars and use CLO Avatar Editor. ** Location** Main Menu ▶Avatar ▶ **Auto Convert to Avatar** ** Operation** **Convert to Avatar** 1. Select the tool/menu indicated. → Auto Convert to Avatar pop-up menu appears. → The Auto Avatar Converter deletes all avatars in the 3D window. 2. After setting the options below, click the Convert button. **Menu** | **Description** ---|--- **Open the file to be converted** | Click the Open button on the right to load 3D dummy and scan files to be rigged and converted. **※ Note:** The Daz3D Genesis 8 version of the file is automatically recognized and converted into each high-quality avatar and accessory. The converted accessories are compatible with avatars of the same version and gender.(ver 7.3**[![Youtube_Icon__1_.png](https://support.clo3d.com/hc/article_attachments/35994900272793)](https://youtu.be/WRkb4MR0dP0?si=He--Y05xs3Pr2aki&t=1746)**) **Gender** | Set the gender of the avatar to be converted **Converting Option** | Convert an avatar automatically or [Maintain Custom Rig.](https://support.clo3d.com/hc/ko/articles/360055227373-%EC%9E%90%EB%8F%99-%EC%95%84%EB%B0%94%ED%83%80-%EB%A6%AC%EA%B9%85-%EB%B3%80%ED%99%98-ver-6-0-#Click1) **Converted Output (AVT)** | **CLO Skin Style ** The body shape of the original file is maintained and only the appearance is converted to a CLO avatar and joint points are added. | **※ Note:** When converting to the avatar, size editing is not possible. The CLO Avatar Size Editor automatically fits into a realistic body shape based on thousands of actual scanned data so it cannot keep the body shape of the original file. **Rigging only** Only the joint points are added while maintaining both the body shape and appearance of the original file.** ** **Convert to[size editable avatar](https://support.clo3d.com/hc/en-us/articles/360013257553--Size-Editor-Adjust-Avatar-Size-ver5-0-0-and-Above-) **Change the CLO avatar body shape so that the size can be edited while maintaining the appearance of the file to be converted and add joint points. **※Note: **The conversion options below can be multi-selected and are compatible with the CLO avatar pose/motion provided in the Library after conversion. **Save** | Click the Save button on the right and specify the path to save the converted avatar file. → The file will be converted to an avatar with the options users set which may take 5-10 minutes. **Custom Rigging** * **Opacity Setting** Change the opacity of the garment to make it easier to see the avatar. 1. 3D Tool Bar ▶ Select the file to convert with **Select/Move Tool**. 2. Property Editor ▶ Material (Selected) ▶ Basic Parameters ▶ Set **the opacity** to **50**. 3. Change the color of the file as required. * **Adjust Whole Body** [Main Menu ▶ Avatar ▶ Avatar Size Editor](https://support.clo3d.com/hc/ko/articles/360013257553-%EC%95%84%EB%B0%94%ED%83%80-%EC%82%AC%EC%9D%B4%EC%A6%88-%EC%A1%B0%EC%A0%88) Align the CLO avatar with the Custom avatar by adjusting the below 3 points of measurement. * Align the height of the shoulder and inseam. Choose one of the cases applicable. **A****.** When using Total Height Click the up/down triangle button to the right of the Total Height number box to increase or decrease the avatar's height so the shoulder line is the same on both avatars. The shoulder shape of the Custom Avatar and the CLO avatar are different, so it is not necessary to perfectly match the shoulder position. Just using the triangle button ![mceclip1.png](https://support.clo3d.com/hc/article_attachments/4403266924313) to align with a similar shoulder line is sufficient, and you do not need to manually enter a precise value to align. Some errors are automatically adjusted during conversion. ![mceclip2.png](https://support.clo3d.com/hc/article_attachments/4403260258073) **B.** When using HPS Height and Inseam If the inseam height difference is too large when adjusting the shoulder line through Total Height, the shoulder line is adjusted according to the inseam measurement. After fixing, adjust the Inseam to fit. At this time, change the unnaturally deformed upper body naturally by adjusting the height of the CF/CB Neck to Waist. **B-1)** Set the Height type to the HPS Height. **B-2)** Align the shoulder height using the up/under triangle button in the input box. **B-3)** Details ▶ Inseam Height align the inseam height using the up/under triangle button. ![mceclip3.png](https://support.clo3d.com/hc/article_attachments/4403266934169) As the width of the adjustment of the inseam increases, the length of the upper body changes according to the Inseam. Since the CF/CB Neck to Waist value that controls the length of the upper body is fixed, the body shape may change unnaturally. In this case, it can be reflected in the result, so it is important to match the face and body shape of the avatars naturally. Recover naturally by following the method below. * **B-4)** Details ▶ CF Neck to Waist/CB Neck to Waist. Press the triangle button on the right side of the number box in the opposite direction you pressed in the inseam to adjust the body shape until it looks natural. (e.g, if the length of the Inseam is shortened, the lengths of the two lower upper body lengths will be increased.) Normally, if you press the CF and CB triangle buttons the same number of times, the body shape is adjusted with a balanced front/back. ![mceclip4.png](https://support.clo3d.com/hc/article_attachments/4403260267033) * Match the arm length 1. Check the arm length once you adjust the shoulder height and the inseam. 2. If the lengths to the wrist are different, click the up/down triangle button to the right of the CF Neck to Wrist number box to match the length to the avatar's wrist. ![mceclip5.png](https://support.clo3d.com/hc/article_attachments/4403266946969) * **Adjusting pose** [Avatar Display in the 3D window ▶ Show X-Ray Joints](https://support.clo3d.com/hc/ko/articles/115000406887-%EC%95%84%EB%B0%94%ED%83%80-%ED%8F%AC%EC%A6%88-%EB%B3%80%EA%B2%BD) Match the pose and the joint points of the CLO avatar according to the pose of the Custom Avatar so that the two avatars overlap each other. Rotate the joints to make both avatars overlap. **※Note:** If you can't see the overlapped avatars well when Show X-Ray Joints in on, click the joint and press Shift+X to keep using the Gizmo to adjust the joints with the textured avatar. To utilize the above method, you need to change the default gizmo of the 3D window to [Local Coordinate](https://support.clo3d.com/hc/ko/articles/115000415867-%EA%B8%B0%EC%A6%88%EB%AA%A8-%EC%B6%95-%EB%B3%80%EA%B2%BD), which is the same as the joint point view mode. * Fitting the lower body 1. Click the avatar's center joint point (purple) to bring up the gizmo and adjust the front/back position so the hips of the two avatars overlap. 2. Click the hip joint to check both the front and the side, and align the ankles of the two avatars so that they overlap. 3. Click the ankle point to adjust the insteps of the two avatars to overlap. * Fitting the upper body 1. Click the waist joint and rotate it from the side until the front of the avatar's neck and shoulders are overlapped. If you can't hit it all at once, align the shoulders first, then rotate the joint point on the side where the neck starts to align the front of the neck. ![mceclip6.png](https://support.clo3d.com/hc/article_attachments/4403266956057) 2. Rotate the shoulder point to adjust the cuff to overlap. If it is not possible to align the wrist joint with the shoulder joint point, **align** the elbow joint first, then **rotate** the elbow joint to align the wrist joint. 3. Click the wrist joint point to align the back of the hand. First, align the first finger joints/knuckle placements If the length of your finger is different, adjust the value of “Avatar Size Editing Window ▶ Details ▶ Arm ▶ Hand” to match the length. ![mceclip7.png](https://support.clo3d.com/hc/article_attachments/4403266960793) 4. Click the joint point that is connected to the finger near the wrist joint point to align the gap between the fingers. ![mceclip8.png](https://support.clo3d.com/hc/article_attachments/4403266964505) 5. Click the joint point where the finger starts to overlap the finger to the end. Rather than mesh the fingers of the two avatars, focus on locating the joint points at the appropriate places on the Custom avatar. ![mceclip9.png](https://support.clo3d.com/hc/article_attachments/4403266968473)",
+        "content_description": "The purpose of this web page is to guide users through the process of converting 3D dummy and scan files into CLO avatars with custom rigging options using the Auto Convert to Avatar feature.",
+        "created_at": "2025-04-29T06:34:28Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=LvIJPBT7EOo"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000716747,
+        "Section": "Avatar",
+        "Tokens": 2196
+    },
+    {
+        "article_id": "115012223867",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012223867",
+        "title": "Human IK – Edit Full Body/ Edit Body Part",
+        "content": "**Human IK - Edit Full Body/Edit Body Part ** \\- Decide how to move and rotate Avatar joints. Only one option can be used at a time. * **Edit Full Body \\- **When moving and rotating a single joint, all others joints will be modified as well to create an organic pose. * **Edit Body Part ** \\- When moving and rotating a single joint, only directly connected joints will be modified.",
+        "content_description": "\"Explore precise control of Avatar movements with Human IK's Full Body and Body Part editing features, allowing for organic poses or targeted joint adjustments.\"",
+        "created_at": "2025-04-29T06:31:17Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=cSGxKH9NXGY",
+            "https://www.youtube.com/watch?v=akpCa7X1MYc"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 86
+    },
+    {
+        "article_id": "39336772755737",
+        "source": "https://support.clo3d.com/hc/en-us/articles/39336772755737",
+        "title": "Offset Avatar Joint",
+        "content": "## **New in 2024.2** #### **Adjust avatar joint offsets for various body shapes using just a single motion file** **![21. Avatar Joint Offset.png](https://support.clo3d.com/hc/article_attachments/39598607549081)** **📝****Note:** This can be helpful when the same avatar has varying body shapes. For example, the offset can be adjusted to correct the distance between the hands and hips in a motion when it does not align due to the avatar's body shape. #### 1. Open the Motion file in Animation Mode. 2. Right-click on the animation layer corresponding to the motion file, and click the**Offset Joint** menu. 3. Click on the Joint. 4. Rotate directly with the gizmo or adjust each axis in the Offset Joint window. → The joint offset is applied to the motion where you right-clicked.",
+        "content_description": "Discover how to easily adjust avatar joint offsets for diverse body shapes using a single motion file in the latest 2024.2 update.",
+        "created_at": "2025-04-29T06:30:28Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000716747,
+        "Section": "Avatar",
+        "Tokens": 187
+    },
+    {
+        "article_id": "115000427148",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115000427148",
+        "title": "Reset Joints",
+        "content": "### **Objective** Reset avatar's joints back to before editing (ver2.3.0). ### ** Location** 3D Window ▶ Right-click Pop-up Menu (On Avatar) ▶ **Reset Joints** ** Operation** 1. Follow the indicated guideline below: 3D Window ▶ Right-click Pop-up Menu (On Avatar) ▶ **Reset Joints** → Avatar's joints reset.",
+        "content_description": "This web page provides instructions for resetting an avatar's joints to their default position prior to editing in version 2.3.0.",
+        "created_at": "2025-04-29T06:29:30Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000716747,
+        "Section": "Avatar",
+        "Tokens": 86
+    }
+]

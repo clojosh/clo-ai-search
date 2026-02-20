@@ -1,0 +1,928 @@
+1
+00:00:00,000 --> 00:00:12,000
+Now let's start to create a zipper
+
+2
+00:00:12,000 --> 00:00:22,000
+First, use the Edit Seamstress tool to check the seam length of the lid
+
+3
+00:00:22,000 --> 00:00:29,000
+Then use the Add Seamstress tool in the Edit Seamstress tool group to add a seam point to the correct position
+
+4
+00:00:29,000 --> 00:00:34,000
+Then use the Edit Seamstress tool to add the seam length of the two lines we just saw in Seam 1
+
+5
+00:00:34,000 --> 00:00:38,000
+That is 90mm, then click OK to complete the creation of the point
+
+6
+00:00:38,000 --> 00:00:42,000
+Create another straight line point in the same way
+
+7
+00:00:42,000 --> 00:00:47,000
+Use the Edit Seamstress tool to select the middle seam line, then press Delete to delete
+
+8
+00:00:47,000 --> 00:00:52,000
+Because we are going to create a zipper here later
+
+9
+00:00:52,000 --> 00:00:57,000
+Open the simulation, simulate for a while, then close the simulation, let the bag open a hole
+
+10
+00:00:59,000 --> 00:01:10,000
+Since it is more difficult to choose a zipper from the inside, we will select the zipper tool in the 3D tool column and then go to the 2D window to create a zipper
+
+11
+00:01:10,000 --> 00:01:18,000
+Start creating a zipper from a short distance away from the cut point created before
+
+12
+00:01:18,000 --> 00:01:26,000
+Click to start creating a zipper, then press the double click to complete the creation, and also pay attention to the short distance
+
+13
+00:01:26,000 --> 00:01:29,000
+After double clicking, you will find that the line has become black
+
+14
+00:01:29,000 --> 00:01:33,000
+Next, we are going to select the other side of the zipper
+
+15
+00:01:33,000 --> 00:01:40,000
+Click on the starting position, follow the direction of the seam, double click to complete the selection
+
+16
+00:01:40,000 --> 00:01:51,000
+When you are done, you can see the zipper in the 3D window, press the control button to simulate the zipper effect to ensure that the seam is correct
+
+17
+00:01:51,000 --> 00:01:58,000
+Select the zipper, in the property editor window, we can adjust the shape of it and the zipper opening, here the opening is selected to close the opening
+
+18
+00:01:59,000 --> 00:02:10,000
+In the 3D window zipper, press the button, in the property editor window on the right side, reduce the particle diameter of the zipper to 10
+
+19
+00:02:10,000 --> 00:02:16,000
+After opening the simulation, you will see that the zipper is installed
+
+20
+00:02:16,000 --> 00:02:28,000
+Next, let's create the cover of this zipper
+
+21
+00:02:28,000 --> 00:02:32,000
+Use the tool to check the length of this edge, that is, the length of the zipper.
+
+22
+00:02:33,000 --> 00:02:37,000
+Select the rectangle tool and click on the 2D window.
+
+23
+00:02:39,000 --> 00:02:45,000
+Enter the corresponding value in the rectangular window of the spring-loaded creation, and then click the Confirm button.
+
+24
+00:02:46,000 --> 00:02:51,000
+In the 3D window, adjust the position of the panel by positioning the ball, and place it near the seam position.
+
+25
+00:02:58,000 --> 00:03:06,000
+Use the tool to turn the corner of the panel into a corner.
+
+26
+00:03:07,000 --> 00:03:21,000
+Use the tool to merge the newly created panel with the edge of the zipper.
+
+27
+00:03:22,000 --> 00:03:27,000
+Change back to the adjustment panel tool.
+
+28
+00:03:28,000 --> 00:03:33,000
+Select this panel and adjust the thickness to 1 to increase its visual thickness.
+
+29
+00:03:38,000 --> 00:03:41,000
+Harden this panel and then start the simulation.
+
+30
+00:03:44,000 --> 00:03:49,000
+After the simulation is complete, turn off the hardening, and then turn on the濃密紋理表面 to check the thickness.
+
+31
+00:03:49,000 --> 00:03:55,000
+Turn off the hardening, and then turn on the濃密紋理表面 to check the thickness.
+
+32
+00:03:56,000 --> 00:04:00,000
+After completion, gradually reduce the particle diameter from 20 to 5.
+
+33
+00:04:01,000 --> 00:04:04,000
+Turn off the hardening, and then turn on the濃密紋理表面 to check the thickness.
+
+34
+00:04:05,000 --> 00:04:10,000
+After stopping the simulation, click on the pull button to adjust the position of the panel by positioning the ball.
+
+35
+00:04:11,000 --> 00:04:16,000
+Turn off the hardening, and then turn on the濃密紋理表面 to check the thickness.
+
+36
+00:04:16,000 --> 00:04:31,000
+Then increase the rendering thickness to 2 to increase the visual thickness.
+
+37
+00:04:32,000 --> 00:04:39,000
+Next, we will create a zipper in the center of the bag, as before.
+
+38
+00:04:40,000 --> 00:04:45,000
+Use the editor line tool to select the seam line here, and delete it with the delete key.
+
+39
+00:04:47,000 --> 00:04:53,000
+Turn on the simulation to show the opening position of the seam line.
+
+40
+00:04:54,000 --> 00:05:01,000
+In the 3D window, simulate the hardening of the lid.
+
+41
+00:05:02,000 --> 00:05:12,000
+Next, select the zipper tool in the 3D tool bar, click on the starting point, double-click to complete the end point, and pay attention to the two ends to reserve some positions.
+
+42
+00:05:13,000 --> 00:05:15,000
+Then enter the second paragraph and also click on the starting point.
+
+43
+00:05:16,000 --> 00:05:17,000
+Then enter the second paragraph and also click on the starting point to reserve some positions.
+
+44
+00:05:17,000 --> 00:05:20,000
+Then enter the second paragraph and also click on the starting point, double-click to complete the end point.
+
+45
+00:05:24,000 --> 00:05:31,000
+After pulling the lid out with the positioning ball, check if the zipper is correctly added, and then make sure to harden the lid to prevent conflict, then simulate it.
+
+46
+00:05:32,000 --> 00:05:40,000
+After checking, hardening the lid prevents conflicts, and then simulate it.
+
+47
+00:05:41,000 --> 00:05:44,000
+Click on the zipper head as before to change the shape and position of the zipper.
+
+48
+00:05:44,000 --> 00:05:48,600
+You can change the shape of the zipper and the opening, and change the opening to a closed opening.
+
+49
+00:05:50,100 --> 00:05:55,000
+Click on the zipper bar, and then in the attribute editor, reduce its particle diameter to 10.
+
+50
+00:06:01,899 --> 00:06:07,000
+After the simulation stops, adjust the position of the zipper pull head again, which is more realistic.
+
+51
+00:06:14,000 --> 00:06:21,000
+In the 3D window, select the cover, click on the right button to undo the hardening, and then simulate it again to change the application.
+
+52
+00:06:24,000 --> 00:06:28,000
+Select the cover, set the rendering thickness to 2 to set the thickness.
+
+53
+00:06:31,000 --> 00:06:36,000
+As before, adjust the zipper pull head after the simulation to avoid wearing the film.
+
+54
+00:06:44,000 --> 00:07:02,000
+First, before creating a belt for the bag, we need to ensure that the T-shirt will not be affected by it in the later simulation process, so we need to use the zipper to turn the clothing into a tight one first.
+
+55
+00:07:04,000 --> 00:07:08,000
+Use the adjustment panel tool to select all T-shirt panels.
+
+56
+00:07:09,000 --> 00:07:13,000
+In the attribute editor, reduce the zipper pull head from 100 to 95, and then click on the control button.
+
+57
+00:07:14,000 --> 00:07:16,000
+Click on the control button to start the simulation.
+
+58
+00:07:17,000 --> 00:07:25,000
+You will see the clothes tighten and become tight, and then please gradually reduce the zipper pull head to 80 while simulating.
+
+59
+00:07:26,000 --> 00:07:29,000
+After stopping the simulation, freeze these panels.
+
+60
+00:07:31,000 --> 00:07:37,000
+Since it is already frozen, it will be frozen in the 3D space during the simulation process.
+
+61
+00:07:38,000 --> 00:07:41,000
+Use the adjustment panel tool to select all T-shirt panels.
+
+62
+00:07:41,000 --> 00:07:45,000
+Use the adjustment panel tool to move them closer to the back of the virtual model.
+
+63
+00:07:48,000 --> 00:07:51,000
+Next, we need to do the hand-raising part of the bag.
+
+64
+00:08:00,000 --> 00:08:05,000
+In the virtual model neck position, make a rectangular panel that is about the width of the cutout.
+
+65
+00:08:06,000 --> 00:08:09,000
+In the 3D window, select the created panel.
+
+66
+00:08:09,000 --> 00:08:12,000
+Then move the cutout to the bag.
+
+67
+00:08:13,000 --> 00:08:17,000
+Then use the free-format tool to sew it to the right position.
+
+68
+00:08:22,000 --> 00:08:27,000
+Use the adjustment panel tool to increase the thickness of the cutout to 2.
+
+69
+00:08:31,000 --> 00:08:35,000
+Then select the hardening in the right-click menu, then simulate.
+
+70
+00:08:35,000 --> 00:08:45,000
+Stop the simulation, use the edit line tool to adjust the position of the line, so that the hand-raising becomes more concentrated.
+
+71
+00:08:46,000 --> 00:08:55,000
+When adjusting to the right position, the particle diameter is gradually reduced from 20 to 5.
+
+72
+00:08:56,000 --> 00:09:01,000
+After the hand-raising is done, we will start to make the bag.
+
+73
+00:09:01,000 --> 00:09:10,000
+Select the rectangular tool in the created panel tool group, and click in the window of the 2D panel.
+
+74
+00:09:11,000 --> 00:09:15,000
+Enter the specific number in the created rectangular window to create the strap of the bag.
+
+75
+00:09:16,000 --> 00:09:22,000
+Here, enter 60 mm for the width, and enter 380 mm for the height.
+
+76
+00:09:23,000 --> 00:09:30,000
+Continue to click in the 2D window, enter 30 mm for the width, and 350 mm for the height, as the bottom of the bag strap.
+
+77
+00:09:32,000 --> 00:09:38,000
+In the 2D window and 3D window, move the panel to a position that is convenient for sewing.
+
+78
+00:09:44,000 --> 00:09:51,000
+To mark the position we want to sew, we will use the plus point division tool to add a straight line point.
+
+79
+00:09:52,000 --> 00:10:00,000
+Since the width of the two panels is 30, so we add a straight line point with a distance of 15 on both sides of the right button.
+
+80
+00:10:02,000 --> 00:10:08,000
+Then, in order to mark the position of the seam allowance, we also add two points on the bottom line of the bag panel.
+
+81
+00:10:09,000 --> 00:10:16,000
+On the panel, click on the right button to create a point with a distance of 30, and add another point on the other end.
+
+82
+00:10:23,000 --> 00:10:28,000
+Next, we will use the free sewing tool to create the seam allowance line.
+
+83
+00:10:32,000 --> 00:10:38,000
+Then, we will add the waist belt.
+
+84
+00:10:39,000 --> 00:10:46,000
+We are going to use the belt fit tool to choose the belt version and increase its cabling thickness.
+
+85
+00:10:47,000 --> 00:10:53,000
+The width of the upper belt is 10 mm cabling thickness. The width of the lower belt is 2 mm cabling thickness.
+
+86
+00:10:55,000 --> 00:10:57,000
+Then, select the bag belt version.
+
+87
+00:10:57,000 --> 00:11:01,000
+Now the outside of the belt is arched, so we have to shorten this line
+
+88
+00:11:01,000 --> 00:11:05,000
+Use the edit panel tool to select the point on the outside of the belt and move it down a little
+
+89
+00:11:05,000 --> 00:11:09,000
+When you start the simulation again, you will see that the shortening on one side of the belt becomes more suitable for the human body
+
+90
+00:11:09,000 --> 00:11:13,000
+Next, we will do the same thing to the bottom belt
+
+91
+00:11:13,000 --> 00:11:17,000
+You can choose the side point, then press the direction button and the upper button to adjust
+
+92
+00:11:17,000 --> 00:11:21,000
+Re-model the belt to the original shape
+
+93
+00:11:21,000 --> 00:11:25,000
+You will see that it is correctly aligned
+
+94
+00:11:25,000 --> 00:11:29,000
+Now we can temporarily freeze the belt plate on the top
+
+95
+00:11:29,000 --> 00:11:33,000
+Select the rectangular tool and press the button in the 2D window
+
+96
+00:11:33,000 --> 00:11:37,000
+In the rectangular window, enter the specific number to make the part where the bag strap is pulled down
+
+97
+00:11:37,000 --> 00:11:41,000
+I will set the width to 30, and the height to 30
+
+98
+00:11:41,000 --> 00:11:45,000
+Then press the button in the 2D window
+
+99
+00:11:45,000 --> 00:11:49,000
+Then press the button in the 2D window
+
+100
+00:11:49,000 --> 00:11:51,000
+Then press the button in the 2D window
+
+101
+00:11:51,000 --> 00:11:53,000
+The width of the belt is 350
+
+102
+00:11:53,000 --> 00:11:57,000
+Move it in the 3D window and use the modern sewing machine to sew
+
+103
+00:12:03,000 --> 00:12:07,000
+Use the adjustment panel tool to choose the center panel
+
+104
+00:12:07,000 --> 00:12:11,000
+In the handwritter, the added thickness is set to 2
+
+105
+00:12:11,000 --> 00:12:15,000
+Then select the hardening and simulation in the right-click menu
+
+106
+00:12:15,000 --> 00:12:19,000
+Use the handwritter, the added thickness is set to 2
+
+107
+00:12:19,000 --> 00:12:28,000
+Use the tool to select the top line of the bottom two bundles, and use the built-in line to set the built-in line to 80
+
+108
+00:12:34,000 --> 00:12:38,000
+Use the tool to merge the two inner lines together
+
+109
+00:12:38,000 --> 00:12:45,000
+Use the tool to merge the two inner lines together
+
+110
+00:12:47,000 --> 00:12:53,000
+Repeat the steps to create another set of inner lines with a diameter of 120 cm from the top of the board
+
+111
+00:13:02,000 --> 00:13:05,000
+Also merge the two inner lines to simulate
+
+112
+00:13:08,000 --> 00:13:12,000
+Use the tool to merge the two inner lines to simulate
+
+113
+00:13:17,000 --> 00:13:23,000
+Now go to the 3D tool bar and select the tool to merge the two inner lines together
+
+114
+00:13:29,000 --> 00:13:35,000
+Use the positioning ball to adjust the band to bend the band to match the structure
+
+115
+00:13:38,000 --> 00:13:42,000
+Use the tool to adjust the band to match the structure
+
+116
+00:13:47,000 --> 00:13:54,000
+When you think the adjustment is appropriate, you can click on the Buccle button under Hardware and Trims in the Library window
+
+117
+00:13:54,000 --> 00:13:57,000
+Double click to open the Buccle you want to use
+
+118
+00:13:58,000 --> 00:14:01,000
+For the loading type, select Add, and for the object type, select Add
+
+119
+00:14:05,000 --> 00:14:07,000
+Use the positioning ball to select the add-on to be inserted
+
+120
+00:14:08,000 --> 00:14:10,000
+and rotate it to the right position.
+
+121
+00:14:12,000 --> 00:14:14,299
+Click on the shrink icon on the top right of the locator
+
+122
+00:14:14,299 --> 00:14:17,799
+and then drag the axis of the locator to shrink in all directions.
+
+123
+00:14:18,299 --> 00:14:20,799
+Click on the water-drying tool on the top right of the locator
+
+124
+00:14:20,799 --> 00:14:21,799
+and then click on the bag.
+
+125
+00:14:21,799 --> 00:14:24,100
+You can attach the bag to the fabric.
+
+126
+00:14:32,100 --> 00:14:33,899
+Then click on the shrink button again
+
+127
+00:14:33,899 --> 00:14:35,500
+to switch back to the normal locator
+
+128
+00:14:35,500 --> 00:14:37,399
+and adjust its position.
+
+129
+00:14:38,000 --> 00:14:40,000
+Click on the shrink button on the top right of the locator
+
+130
+00:14:40,000 --> 00:14:42,000
+and then drag the axis of the locator to shrink in all directions.
+
+131
+00:14:44,000 --> 00:14:46,000
+Select the fixed pin, click on the right button
+
+132
+00:14:46,000 --> 00:14:48,000
+and select to delete all fixed pins.
+
+133
+00:14:50,600 --> 00:14:52,600
+Use the fixed pin set tool
+
+134
+00:14:52,600 --> 00:14:54,200
+to select the part grid of the sheet
+
+135
+00:14:54,200 --> 00:14:55,600
+and continue to adjust the sheet
+
+136
+00:14:55,600 --> 00:14:57,600
+to make the sheet look more natural.
+
+137
+00:15:02,200 --> 00:15:04,500
+When adjusting to the appropriate effect,
+
+138
+00:15:04,500 --> 00:15:06,600
+delete all fixed pins again.
+
+139
+00:15:08,000 --> 00:15:10,000
+You can see the sheet with the same kımm as follows.
+
+140
+00:15:11,000 --> 00:15:13,000
+Then select all the bag sheets,
+
+141
+00:15:13,000 --> 00:15:14,000
+right click to choose the freeze option
+
+142
+00:15:14,000 --> 00:15:15,000
+and freeze them.
+
+143
+00:15:15,000 --> 00:15:19,000
+Then select all the bag sheets,
+
+144
+00:15:19,000 --> 00:15:23,000
+select copy them from the right-click list.
+
+145
+00:15:23,000 --> 00:15:27,000
+Then choose the mirror addon in the right-click list
+
+146
+00:15:27,000 --> 00:15:29,000
+to copy the other side of the belt.
+
+147
+00:15:34,000 --> 00:15:36,000
+Check the effect of copying the result in the 3D window,
+
+148
+00:15:36,000 --> 00:15:42,000
+Then use the free sewing tool to create a sewing line between the belt and the bag
+
+149
+00:15:49,899 --> 00:15:57,500
+Due to the previous adjustment of the belt point, we now use the edit sewing line tool to adjust the end point of the sewing line to the equal length
+
+150
+00:15:57,500 --> 00:16:08,500
+Choose the thickest bag strap, untie it, then harden it, then turn on the simulation
+
+151
+00:16:19,799 --> 00:16:24,200
+Then choose the thin bag strap at the bottom, untie them, then harden these panels
+
+152
+00:16:27,500 --> 00:16:30,500
+Then choose the thin bag strap at the bottom, untie them, then turn on the simulation
+
+153
+00:16:38,500 --> 00:16:47,500
+Select the same tool, click and drag the mouse, select the part between the inner line of the frame in the 2D window, add a fixed needle to the mesh of the buckle part
+
+154
+00:16:50,500 --> 00:16:55,500
+Simulate, rotate the view in the 3D window to see if there is anything strange
+
+155
+00:16:57,500 --> 00:17:09,500
+Then use the edit sewing line tool to select the right-hand section of the back bag strap, select the inner line of the shoulder strap, create a section to be cut
+
+156
+00:17:09,500 --> 00:17:13,500
+Set the shoulder strap to 30, then click the confirm button
+
+157
+00:17:13,500 --> 00:17:18,500
+I will select this line, and then select the cut and sew in the menu on the right-hand side
+
+158
+00:17:18,500 --> 00:17:23,500
+Then use the adjustment sewing line tool to select the sewing line and harden these panels and simulate
+
+159
+00:17:27,500 --> 00:17:34,500
+Then untie the T-shirt panel, we will later return the T-shirt to its original shape
+
+160
+00:17:34,500 --> 00:17:43,500
+Now we need to freeze the bag strap so that their shape does not change
+
+161
+00:17:43,500 --> 00:17:50,500
+Then increase the tail shrink rate to 85 and simulate
+
+162
+00:17:50,500 --> 00:17:56,500
+Then gradually increase to 100 and simulate, return the T-shirt to its original state
+
+163
+00:17:56,500 --> 00:17:57,500
+Then gradually increase to 100 and simulate, return the T-shirt to its original state
+
+164
+00:17:57,500 --> 00:17:59,500
+Then gradually increase to 100 and simulate, return the T-shirt to its original state
+
+165
+00:17:59,500 --> 00:18:06,500
+Then gradually increase to 100 and simulate, return the T-shirt to its original state
+
+166
+00:18:06,500 --> 00:18:12,500
+Now to improve the details of the backpack, we need to reduce all the particle diameter of the finished panel
+
+167
+00:18:12,500 --> 00:18:14,500
+To prevent it from moving, we separate it
+
+168
+00:18:14,500 --> 00:18:22,500
+To prevent it from moving, we separate it
+
+169
+00:18:22,500 --> 00:18:26,500
+For the front and side panels of the backpack
+
+170
+00:18:26,500 --> 00:18:43,500
+We will increase the thickness of their increase in the attribute editor to 2
+
+171
+00:18:43,500 --> 00:18:49,500
+Go to the Fabric window and click the Add button to add a new fabric and modify the name
+
+172
+00:18:49,500 --> 00:18:55,500
+Then select all the panels on the outside and click the application icon next to the fabric
+
+173
+00:18:56,500 --> 00:19:04,740
+Then go to the Library window, in the Fabric folder, we search to find the Oxford fabric
+
+174
+00:19:04,740 --> 00:19:14,740
+Then drag this fabric to the new fabric just now, you will see that all the applications of this fabric version have changed
+
+175
+00:19:14,740 --> 00:19:19,859
+Then unzip all the hard drives other than the bottom version
+
+176
+00:19:26,500 --> 00:19:33,380
+After clicking on the fabric, click on the small arrow at the bottom of the text option to the left
+
+177
+00:19:33,380 --> 00:19:37,059
+Click on the color to apply color to the text
+
+178
+00:19:37,059 --> 00:19:44,740
+You can choose a favorite color here, I choose light blue here
+
+179
+00:19:44,740 --> 00:19:53,619
+Click on the new fabric in the fabric window, then drag the Oxford fabric to it to apply its preset
+
+180
+00:19:56,500 --> 00:20:02,180
+In the fabric window, change the name and color of the fabric according to your needs
+
+181
+00:20:02,180 --> 00:20:14,180
+Then we choose all the versions of this fabric to be applied, then click on the application next to the fabric
+
+182
+00:20:14,180 --> 00:20:22,180
+Select the bottom version, unzip
+
+183
+00:20:26,500 --> 00:20:34,180
+Then waited for the corresponding advisors to draw the象
+
+184
+00:20:34,180 --> 00:20:37,220
+This type of fabric can be used instead of petal
+
+185
+00:20:37,220 --> 00:20:44,099
+Use the adjustment panel to house all the hints
+
+186
+00:20:44,819 --> 00:20:48,819
+And apply this one to them
+
+187
+00:20:48,819 --> 00:20:51,460
+Then unzip them and peel out the holings
+
+188
+00:20:51,460 --> 00:20:55,299
+Now just read all the colour versions and adjust them as needed
+
+189
+00:20:55,299 --> 00:20:56,180
+Check again for overall results
+
+190
+00:20:56,180 --> 00:21:01,180
+After confirming, we will start making the name line and other details.
+
+191
+00:21:01,180 --> 00:21:06,180
+Click on the free name line tool in the name line tool group.
+
+192
+00:21:06,180 --> 00:21:14,180
+Click on the point on the inner line as the starting point, then move the mouse along the inner line, then click on the starting point again to complete the free name line creation.
+
+193
+00:21:14,180 --> 00:21:24,180
+Click on the copy icon in the upper right corner of the fabric window, copy a spring out, click on the title to move to the top stage, and drag this window into the fabric window to combine them.
+
+194
+00:21:24,180 --> 00:21:31,180
+Click on the name line, and change the shape of the shape in the familiar editor to Overlock.
+
+195
+00:21:31,180 --> 00:21:41,180
+Then, according to the preview effect in the 3D window, change the distance between the name line and the setting section to a smaller number, I will set it to 0.7.
+
+196
+00:21:41,180 --> 00:21:51,180
+We will set the thickness of the name line to 0.4, set the length to 1.9, and the width to 3.7.
+
+197
+00:21:51,180 --> 00:21:53,180
+Continue to create a new layer for other pockets.
+
+198
+00:21:53,180 --> 00:21:54,180
+Continue to create a new layer for other pockets.
+
+199
+00:21:54,180 --> 00:22:09,180
+Click on the free name line tool in the inner line to create a new name line.
+
+200
+00:22:09,180 --> 00:22:14,180
+Click on the free name line window to add a new name line style.
+
+201
+00:22:14,180 --> 00:22:23,180
+Then select the free name line tool and add a new name line to the bottom of the zipper.
+
+202
+00:22:25,180 --> 00:22:31,180
+Then select the increased name line type in the property editor to change various properties.
+
+203
+00:22:31,180 --> 00:22:46,180
+I will change the length to 1.8, and the thickness of the line to 0.6, and the diameter to 8.
+
+204
+00:22:46,180 --> 00:22:52,180
+Choose the Edit Fcji tool, choose the bottom line of the zipper on the zipper line, and then select the inner line diameter.
+
+205
+00:22:54,180 --> 00:22:58,180
+Set the diameter to 10 mm
+
+206
+00:22:58,180 --> 00:23:03,180
+Then set the line diameter to 10 mm
+
+207
+00:23:03,180 --> 00:23:09,180
+Click on the inner line we just created to set the fold angle
+
+208
+00:23:09,180 --> 00:23:13,180
+When the fold angle is less than 180 degrees, it will protrude outward on this side
+
+209
+00:23:13,180 --> 00:23:19,180
+Here we need an inward fold effect, so set the value to 180 degrees
+
+210
+00:23:24,180 --> 00:23:30,180
+Here we set it to 210 degrees and turn on the simulation again
+
+211
+00:23:30,180 --> 00:23:41,180
+Then, because the line is folded in the position, it will cause the line to be a little broken and unstable, we need to adjust it
+
+212
+00:23:41,180 --> 00:23:46,180
+In the 3D window, click the display inner line button to hide the inner line
+
+213
+00:23:46,180 --> 00:23:52,180
+Then select the new line type again, adjust the diameter to prevent the line from being folded
+
+214
+00:23:52,180 --> 00:23:54,180
+Now the line is displayed as a normal white line
+
+215
+00:23:54,180 --> 00:23:57,180
+Then continue to adjust other values
+
+216
+00:24:02,180 --> 00:24:09,180
+Use the positioning ball to adjust the position of the pull head so that it does not penetrate the plate
+
+217
+00:24:09,180 --> 00:24:22,180
+Select the line segment line to add some lines to the edge of the pocket
+
+218
+00:24:22,180 --> 00:24:24,180
+Click the copy button to copy a line type
+
+219
+00:24:24,180 --> 00:24:31,180
+Select the edit line tool in the line tool group, select these new lines
+
+220
+00:24:31,180 --> 00:24:35,180
+Click the apply button to apply the new line type to these lines
+
+221
+00:24:35,180 --> 00:24:46,180
+According to the required effect, change the values ​​of the copied lines, such as diameter, length, color, etc.
+
+222
+00:24:46,180 --> 00:24:52,180
+Select the pocket plate to gradually reduce their particle diameter from 20 to 5
+
+223
+00:24:54,180 --> 00:25:04,180
+Select the camera to add some dog-shaped lines
+
+224
+00:25:04,180 --> 00:25:08,180
+In the element editor window, slide to the bottom to open the physical elements values
+
+225
+00:25:08,180 --> 00:25:15,180
+You can see this fabric's various physical elements
+
+226
+00:25:15,180 --> 00:25:20,180
+We will increase some corner intensity values to create a thicker and stiffer effect
+
+227
+00:25:20,180 --> 00:25:22,180
+Please pay attention when we use the magnifying glass
+
+228
+00:25:22,180 --> 00:25:29,420
+Please note that when we use the hardening function, in fact, the bend strength of the version is as if it has been temporarily increased
+
+229
+00:25:29,420 --> 00:25:39,680
+After improving the bend strength of the front and rear and the bend strength of the front and rear, and the simulation is stable, we can increase the bend strength in the direction of the two corner lines to 70
+
+230
+00:25:39,680 --> 00:25:44,980
+Then you can increase the bend strength to a higher value according to your needs
+
+231
+00:25:44,980 --> 00:25:48,880
+The bag production part is over, please look forward to our subsequent other videos
+
+232
+00:25:52,180 --> 00:25:56,460
+Thank you for watching
+

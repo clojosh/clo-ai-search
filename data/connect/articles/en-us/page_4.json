@@ -1,0 +1,30 @@
+[
+    {
+        "article_id": "45304302752537",
+        "source": "https://support-connect.clo-set.com/hc/en-us/articles/45304302752537-MetaHuman-workflow-with-LiveSync",
+        "title": "MetaHuman workflow with LiveSync",
+        "content": "Please note that this feature is _experimental_. You can bring your own MetaHuman to CLO and Marvelous Designer for fitting garments: * Create your own MetaHuman or download preset MetaHuman into Unreal Editor. You can follow the official MetaHuman setup & guide provided by Epic Games: [Getting Started with MetaHumans in Unreal Engine](https://docs.metahuman.unrealengine.com/en-US/metahumans-unreal-engine/getting-started/) Once MetaHuman is successfully imported in Unreal Editor, create an IK Retargeter asset. ![Untitled \\(1\\).png](https://support-connect.clo-set.com/hc/article_attachments/45775751131929) Then, create a source IK Rig. ![Untitled \\(3\\).png](https://support-connect.clo-set.com/hc/article_attachments/45775767823001) Once the source IK Rig is created, a target IK Rig can be set. MetaHuman Retargeter sample can be seen in the image below. ![Untitled \\(4\\).png](https://support-connect.clo-set.com/hc/article_attachments/45775760920217)![Untitled \\(5\\).png](https://support-connect.clo-set.com/hc/article_attachments/45775761160089) Open Animation Editor ([Unreal Animation Editor](https://docs.unrealengine.com/5.3/en-US/animation-sequence-editor-in-unreal-engine/)). ![Untitled \\(6\\).png](https://support-connect.clo-set.com/hc/article_attachments/45775752614169) For the target MetaHuman, there are 2 sets of data within Animation Editor (see 1 and 2 in the image above): 1. a list of animation assets that can be applied to MetaHuman 2. components of MetaHuman (it is set automatically) In the 1st set of data, you can select an animation asset to export, then add or remove Collection to be exported in the 2nd set of data. ⚠️ **Please note** ⚠️: _Skeletal Mesh corresponding to a body must be placed at the top of the Skeletal Mesh section of “Additional Meshes”, which can be seen in ‘2’ of the image above (f_med_unw_body is at the top, while other Skeletal Meshes such as Bernice_FaceMesh is placed under the body mesh in terms of order)._ Pressing LiveSync button in the top toolbar brings out a context menu:![Untitled \\(7\\).png](https://support-connect.clo-set.com/hc/article_attachments/45775768999193) ![](https://support-connect.clo-set.com/hc/article_attachments/45775771345689) Selecting Skeleltal Mesh shows Export Dialog as the following: ![](https://support-connect.clo-set.com/hc/article_attachments/45775778950553) At the moment, the Ref Skeleton option is disabled, thus, it can be disregarded. After pressing Export button, it can be observed that MetaHuman Skeletal Mesh with animation is successfully imported in CLO or Marvelous Designer. ![](https://support-connect.clo-set.com/hc/article_attachments/45775803777817) Garments can be fit on the imported MetaHuman, and the results can be simply sent to CLO/MD LiveSync Editor using Update. Please note that you cannot save/export imported MetaHuman as different file formats other than ZPRJ in CLO/Marvelous Designer.",
+        "content_description": "This web page provides a comprehensive guide for users to import and fit their own MetaHumans in CLO and Marvelous Designer, highlighting the experimental nature of the feature and offering step-by-step instructions for setup and garment fitting.",
+        "created_at": "2025-04-15T13:31:59Z",
+        "youtube_links": [],
+        "CategoryId": 44704952678809,
+        "Category": "LiveSync",
+        "SectionId": 44750777951129,
+        "Section": "User guide for LiveSync 1",
+        "Tokens": 715
+    },
+    {
+        "article_id": "45304279508633",
+        "source": "https://support-connect.clo-set.com/hc/en-us/articles/45304279508633-Opening-CLO-MD-LiveSync-Editor",
+        "title": "Opening CLO/MD LiveSync Editor",
+        "content": "![](https://support-connect.clo-set.com/hc/article_attachments/45775577234073) Navigate to CLO/MD Live Sync Editor by going to **Window > CLO/MD LiveSync Editor**. When opening Live Sync Editor for the first time, you may get a warning pop-up window saying **Missing Project Settings**. Simply click **Enable Missing** , then click **Restart Now** in the second pop-up window. Then your Unreal Project will restart, and LiveSync becomes ready to be used. We highly recommend you to create a new Unreal project when starting with LiveSync, as LiveSync requires a couple of experimental features to be enabled, which may conflict with assets if LiveSync is added to existing projects. Note that **[asset migration](https://docs.unrealengine.com/5.3/en-US/migrating-assets-in-unreal-engine/)** can be utilized to bring assets from another project into a new project. Unreal Engine features and assets requiring DirectX 12 is not fully compatible with LiveSync at the moment. ![Untitled.jpeg](https://support-connect.clo-set.com/hc/article_attachments/45775570644633)",
+        "content_description": "This web page provides step-by-step instructions for setting up and using the CLO/MD Live Sync Editor in Unreal Engine, including troubleshooting tips and best practices for project management.",
+        "created_at": "2025-04-15T13:28:49Z",
+        "youtube_links": [],
+        "CategoryId": 44704952678809,
+        "Category": "LiveSync",
+        "SectionId": 44750777951129,
+        "Section": "User guide for LiveSync 1",
+        "Tokens": 236
+    }
+]

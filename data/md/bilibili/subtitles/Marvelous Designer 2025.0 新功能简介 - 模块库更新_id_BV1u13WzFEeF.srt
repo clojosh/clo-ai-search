@@ -1,0 +1,744 @@
+1
+00:00:00,000 --> 00:00:08,000
+Welcome to the new feature introduction video of Marvelous Designer 2025.
+
+2
+00:00:08,000 --> 00:00:15,000
+In the 2025 version, you can experience the latest module library to improve your work efficiency.
+
+3
+00:00:15,000 --> 00:00:23,000
+In the window options in the main menu, you can choose to display or hide the module library window.
+
+4
+00:00:23,000 --> 00:00:30,000
+The module editor and module editor in the previous version have been integrated into the module library.
+
+5
+00:00:30,000 --> 00:00:38,000
+As in the previous version, click the small arrow in the upper right corner to choose to fold or display the module library window.
+
+6
+00:00:38,000 --> 00:00:44,000
+In the previous version, the module components were defined in the module editor.
+
+7
+00:00:44,000 --> 00:00:47,000
+Then go to the module editor to use it.
+
+8
+00:00:47,000 --> 00:00:52,000
+Now you can directly define the module components in the module library.
+
+9
+00:00:52,000 --> 00:00:56,000
+The module library structure order is the group type style component.
+
+10
+00:00:56,000 --> 00:01:02,000
+The current structure order is very convenient for the management and integration of these design components.
+
+11
+00:01:02,000 --> 00:01:12,000
+If you need to define certain versions of the 3D window as components, you need to follow the structure from the group to find the corresponding style type.
+
+12
+00:01:12,000 --> 00:01:16,000
+Now we will explain the module library structure from the outside to the inside.
+
+13
+00:01:16,000 --> 00:01:18,000
+The outer layer is the group.
+
+14
+00:01:18,000 --> 00:01:21,000
+You can choose a group to add styles.
+
+15
+00:01:21,000 --> 00:01:25,000
+Or click the add button in the upper right corner to choose the group to add.
+
+16
+00:01:25,000 --> 00:01:28,000
+Choose the folder to store the group files.
+
+17
+00:01:28,000 --> 00:01:33,000
+Then the category and style of the subordinates will be stored in this folder.
+
+18
+00:01:33,000 --> 00:01:36,000
+Click the right arrow on the group file folder.
+
+19
+00:01:36,000 --> 00:01:40,000
+You can choose to copy the file folder path or delete the file folder.
+
+20
+00:01:40,000 --> 00:01:44,000
+You can click the refresh button to refresh the group list.
+
+21
+00:01:44,000 --> 00:01:47,000
+In this tutorial, we will choose the male group.
+
+22
+00:01:47,000 --> 00:01:49,000
+When you double click a group,
+
+23
+00:01:49,000 --> 00:01:52,000
+it will display the categories below the group.
+
+24
+00:01:52,000 --> 00:01:56,000
+In the upper left corner, you can see the structure of the current folder.
+
+25
+00:01:56,000 --> 00:01:59,000
+Click the group name to go back to the group list.
+
+26
+00:01:59,000 --> 00:02:03,000
+You can use the existing category or click the add button.
+
+27
+00:02:03,000 --> 00:02:05,000
+Choose to add a category.
+
+28
+00:02:05,000 --> 00:02:07,000
+Add a clothing category.
+
+29
+00:02:07,000 --> 00:02:10,000
+Click the refresh button to refresh the category folder.
+
+30
+00:02:10,000 --> 00:02:15,000
+However, only the folder that contains the component module will be displayed in the module library.
+
+31
+00:02:15,000 --> 00:02:18,000
+In the category folder, click the right arrow.
+
+32
+00:02:18,000 --> 00:02:22,000
+You can choose to copy the folder path or delete the file folder.
+
+33
+00:02:22,000 --> 00:02:26,000
+In this tutorial, we will choose the Basic Shirts category.
+
+34
+00:02:26,000 --> 00:02:28,000
+When you double click the category folder,
+
+35
+00:02:28,000 --> 00:02:31,000
+it will display all the categories below the category.
+
+36
+00:02:31,000 --> 00:02:38,000
+Now, we will add the original half-sleeved T-shirt in the default asset library as an example to define the style.
+
+37
+00:02:38,000 --> 00:02:41,000
+Click the add button in the upper right corner.
+
+38
+00:02:41,000 --> 00:02:43,000
+Choose the add style menu.
+
+39
+00:02:43,000 --> 00:02:47,000
+In the pop-up window, enter the name and set the shortcut.
+
+40
+00:02:47,000 --> 00:02:52,000
+The app will default to use the fashion shortcut in the 3D window as the shortcut.
+
+41
+00:02:52,000 --> 00:02:54,000
+Then click OK.
+
+42
+00:02:54,000 --> 00:02:57,000
+If you want to use other pictures as shortcuts,
+
+43
+00:02:57,000 --> 00:03:02,000
+you can click the icon on the camera and then go to the folder.
+
+44
+00:03:02,000 --> 00:03:08,000
+You can click the icon mode to switch the display mode to preview or list type.
+
+45
+00:03:08,000 --> 00:03:12,000
+Click the refresh button to refresh the style list.
+
+46
+00:03:12,000 --> 00:03:15,000
+Click the right arrow on the style shortcut.
+
+47
+00:03:15,000 --> 00:03:17,000
+Click the edit style menu.
+
+48
+00:03:17,000 --> 00:03:20,000
+You can adjust the style shortcut or name.
+
+49
+00:03:20,000 --> 00:03:25,000
+You can also delete the style type by deleting the options.
+
+50
+00:03:25,000 --> 00:03:28,000
+Click the add button in the upper right corner.
+
+51
+00:03:28,000 --> 00:03:31,000
+You can choose to assign the style to the product line.
+
+52
+00:03:31,000 --> 00:03:33,000
+After selecting this option,
+
+53
+00:03:33,000 --> 00:03:38,000
+you will add a new product line file to the top of the style under the category.
+
+54
+00:03:38,000 --> 00:03:41,000
+You can expand these styles.
+
+55
+00:03:41,000 --> 00:03:43,000
+In the top right corner of the product line list,
+
+56
+00:03:43,000 --> 00:03:45,000
+click the add product line option.
+
+57
+00:03:45,000 --> 00:03:50,000
+In the pop-up window, set the name and shortcut of the new product line.
+
+58
+00:03:50,000 --> 00:03:55,000
+You can also choose to add a new product line to the same style,
+
+59
+00:03:55,000 --> 00:03:57,000
+and then copy the selected product line.
+
+60
+00:03:57,000 --> 00:03:59,000
+Add a new product line to it.
+
+61
+00:03:59,000 --> 00:04:02,000
+The name and shortcut can also be adjusted.
+
+62
+00:04:02,000 --> 00:04:04,000
+Double-click to open the product line.
+
+63
+00:04:04,000 --> 00:04:07,000
+You can see the style type below.
+
+64
+00:04:13,000 --> 00:04:16,000
+Now let's select a clothing type first.
+
+65
+00:04:16,000 --> 00:04:18,000
+Then select a style type.
+
+66
+00:04:18,000 --> 00:04:21,000
+Here I choose a men's top.
+
+67
+00:04:21,000 --> 00:04:24,000
+Then select the low-brow embroidery style.
+
+68
+00:04:24,000 --> 00:04:29,000
+After opening, you can see the component modules of each part under the selected style.
+
+69
+00:04:29,000 --> 00:04:32,000
+Double-click on other styles.
+
+70
+00:04:32,000 --> 00:04:36,000
+You can switch to other styles under the same type.
+
+71
+00:04:36,000 --> 00:04:41,000
+You can see the components of the front, back, sleeves, and collar here.
+
+72
+00:04:41,000 --> 00:04:45,000
+Each type of component has multiple components to change.
+
+73
+00:04:45,000 --> 00:04:48,000
+It is the same as the previous modular configuration.
+
+74
+00:04:48,000 --> 00:04:51,000
+The double-click module component will be added to the component.
+
+75
+00:04:51,000 --> 00:04:55,000
+If there is a component, it will switch to the selected component.
+
+76
+00:04:55,000 --> 00:04:58,000
+Each part of the clothing is called a component.
+
+77
+00:04:58,000 --> 00:05:05,000
+For example, in T-shirt, the components are the front, back, sleeves, and collar.
+
+78
+00:05:05,000 --> 00:05:07,000
+After setting the component type,
+
+79
+00:05:07,000 --> 00:05:10,000
+you can define the clothing version in the 3D window
+
+80
+00:05:10,000 --> 00:05:12,000
+and define it as a variety of components.
+
+81
+00:05:12,000 --> 00:05:19,000
+Now let's learn how to add a component type without a component structure.
+
+82
+00:05:19,000 --> 00:05:25,000
+Click on the Add button in the upper right corner to open the Add menu.
+
+83
+00:05:25,000 --> 00:05:27,000
+Select Add component type.
+
+84
+00:05:27,000 --> 00:05:32,000
+You can set the new component type in the pop-up window.
+
+85
+00:05:32,000 --> 00:05:36,000
+The top type is the clothing location of the component.
+
+86
+00:05:36,000 --> 00:05:39,000
+The bottom is the type label to set them.
+
+87
+00:05:39,000 --> 00:05:43,000
+In the default situation, the label and the selected component type are the same.
+
+88
+00:05:43,000 --> 00:05:46,000
+You can also modify it according to your needs.
+
+89
+00:05:46,000 --> 00:05:50,000
+If you want to do different styles or types of design for the same part,
+
+90
+00:05:50,000 --> 00:05:52,000
+you can use the labels.
+
+91
+00:05:52,000 --> 00:05:54,000
+Their classification is very useful.
+
+92
+00:05:54,000 --> 00:05:58,000
+You can choose to save the component configuration in the upper right corner.
+
+93
+00:05:58,000 --> 00:06:00,000
+After saving the component configuration,
+
+94
+00:06:00,000 --> 00:06:03,000
+these component types will be saved as configuration files.
+
+95
+00:06:03,000 --> 00:06:07,000
+Next time you open it, you can call this component structure.
+
+96
+00:06:09,000 --> 00:06:13,000
+Select Open component configuration option.
+
+97
+00:06:13,000 --> 00:06:16,000
+You can open the previously saved configuration.
+
+98
+00:06:16,000 --> 00:06:21,000
+Later, we will learn how to use the automatic module fastening label function.
+
+99
+00:06:21,000 --> 00:06:27,000
+Click on the Add button in the upper right corner to open the new component list.
+
+100
+00:06:27,000 --> 00:06:30,000
+When all component types are set,
+
+101
+00:06:30,000 --> 00:06:34,000
+you can start adding components for each type.
+
+102
+00:06:34,000 --> 00:06:38,000
+Click on the Add new component button in the upper right corner of the component type.
+
+103
+00:06:39,000 --> 00:06:42,000
+The module generator window will appear.
+
+104
+00:06:42,000 --> 00:06:44,000
+In the window pop-up,
+
+105
+00:06:44,000 --> 00:06:47,000
+a module type will be displayed in the list.
+
+106
+00:06:47,000 --> 00:06:50,000
+Here you can manage the components under each type.
+
+107
+00:06:50,000 --> 00:06:55,000
+In the upper right corner, you can choose to edit the module type and configuration.
+
+108
+00:06:55,000 --> 00:06:57,000
+In the module edit area,
+
+109
+00:06:57,000 --> 00:07:01,000
+you can save, edit or delete these module components.
+
+110
+00:07:03,000 --> 00:07:06,000
+Using the automatic module fastening label option,
+
+111
+00:07:06,000 --> 00:07:11,000
+you can quickly separate the modules into each component type.
+
+112
+00:07:11,000 --> 00:07:13,000
+After selecting the option,
+
+113
+00:07:13,000 --> 00:07:16,000
+you will see that each module automatically changes its color
+
+114
+00:07:16,000 --> 00:07:18,000
+to distinguish its component type.
+
+115
+00:07:18,000 --> 00:07:21,000
+You can refer to the name and color
+
+116
+00:07:21,000 --> 00:07:25,000
+to determine whether these modules are correctly matched to the type of component.
+
+117
+00:07:30,000 --> 00:07:33,000
+If the modules are correctly matched to the component type,
+
+118
+00:07:33,000 --> 00:07:37,000
+click on the save button on the right side of the camera icon.
+
+119
+00:07:37,000 --> 00:07:39,000
+You can save the module.
+
+120
+00:07:41,000 --> 00:07:43,000
+When the module is correctly saved,
+
+121
+00:07:43,000 --> 00:07:46,000
+the hook icon on the left side will light up,
+
+122
+00:07:46,000 --> 00:07:49,000
+which means that the module has been activated.
+
+123
+00:07:50,000 --> 00:07:53,000
+If the automatic module fastening function is not working correctly,
+
+124
+00:07:53,000 --> 00:07:55,000
+you can click on the marker icon
+
+125
+00:07:55,000 --> 00:07:59,000
+to manually select the module type.
+
+126
+00:07:59,000 --> 00:08:01,000
+You can click on the module type
+
+127
+00:08:01,000 --> 00:08:03,000
+or click on the shift key to select multiple modules.
+
+128
+00:08:03,000 --> 00:08:06,000
+Then press the enter key to confirm the selection.
+
+129
+00:08:06,000 --> 00:08:09,000
+When all the module types are correctly saved,
+
+130
+00:08:09,000 --> 00:08:12,000
+the add button on the bottom will activate.
+
+131
+00:08:12,000 --> 00:08:13,000
+After clicking on the add button,
+
+132
+00:08:13,000 --> 00:08:15,000
+a spring will pop up.
+
+133
+00:08:15,000 --> 00:08:17,000
+Click on the prompt operation
+
+134
+00:08:17,000 --> 00:08:21,000
+to check whether the sewing line structure between the modules is correct.
+
+135
+00:08:22,000 --> 00:08:23,000
+Click on the sewing line.
+
+136
+00:08:23,000 --> 00:08:26,000
+You will see the marking on the sewing line.
+
+137
+00:08:26,000 --> 00:08:29,000
+The prompt is the label of the module component on both sides of the sewing line.
+
+138
+00:08:29,000 --> 00:08:31,000
+If the sewing line is wrong,
+
+139
+00:08:31,000 --> 00:08:32,000
+please click on the cancel button
+
+140
+00:08:32,000 --> 00:08:34,000
+to manually adjust the sewing line
+
+141
+00:08:34,000 --> 00:08:36,000
+and try again.
+
+142
+00:08:36,000 --> 00:08:38,000
+After confirming the sewing line,
+
+143
+00:08:38,000 --> 00:08:41,000
+click on the confirm key to confirm the definition of the module.
+
+144
+00:08:42,000 --> 00:08:44,000
+Then adjust the clothing panel
+
+145
+00:08:44,000 --> 00:08:47,000
+and re-register an additional module.
+
+146
+00:08:51,000 --> 00:08:53,000
+Click on the add new module button
+
+147
+00:08:53,000 --> 00:08:55,000
+in the upper right corner of the module type.
+
+148
+00:08:55,000 --> 00:08:57,000
+The window of the 2D panel
+
+149
+00:08:57,000 --> 00:09:00,000
+will switch to the mode of selecting panels.
+
+150
+00:09:00,000 --> 00:09:04,000
+Follow the mouse button to select the panels in the window of 2D.
+
+151
+00:09:04,000 --> 00:09:07,000
+Click on the shift key to select the panels.
+
+152
+00:09:07,000 --> 00:09:10,000
+Click on the enter key to confirm the selection of panels.
+
+153
+00:09:10,000 --> 00:09:13,000
+Then, edit the shrink chart and name.
+
+154
+00:09:13,000 --> 00:09:15,000
+As the new modules increase,
+
+155
+00:09:15,000 --> 00:09:18,000
+you can switch them in the module library.
+
+156
+00:09:23,000 --> 00:09:25,000
+After switching the modules,
+
+157
+00:09:25,000 --> 00:09:28,000
+the automatically detect the matching between the modules
+
+158
+00:09:28,000 --> 00:09:31,000
+and return the sewing line.
+
+159
+00:09:31,000 --> 00:09:33,000
+Click on the right button on the module.
+
+160
+00:09:33,000 --> 00:09:36,000
+You can select the corresponding option in the menu.
+
+161
+00:09:36,000 --> 00:09:40,000
+Delete the selected module and delete this module.
+
+162
+00:09:44,000 --> 00:09:46,000
+Share the selected module.
+
+163
+00:09:46,000 --> 00:09:48,000
+Share the selected module
+
+164
+00:09:48,000 --> 00:09:51,000
+to other models under the same category.
+
+165
+00:09:52,000 --> 00:09:56,000
+Change the shrink chart and replace the shrink chart of the module.
+
+166
+00:09:58,000 --> 00:10:01,000
+Use the new module to replace it.
+
+167
+00:10:01,000 --> 00:10:04,000
+Change this module to a newly defined module.
+
+168
+00:10:04,000 --> 00:10:06,000
+Finally, let's look at the related settings
+
+169
+00:10:06,000 --> 00:10:09,000
+of the module in the user's self-definition.
+
+170
+00:10:09,000 --> 00:10:11,000
+Go to the main menu.
+
+171
+00:10:11,000 --> 00:10:13,000
+Set the user's self-definition.
+
+172
+00:10:13,000 --> 00:10:15,000
+Find other options.
+
+173
+00:10:15,000 --> 00:10:18,000
+Protect module optimization by limiting editing.
+
+174
+00:10:19,000 --> 00:10:21,000
+When this option is selected,
+
+175
+00:10:21,000 --> 00:10:25,000
+add, edit, delete and automatic module optimization labels
+
+176
+00:10:25,000 --> 00:10:27,000
+will no longer be usable.
+
+177
+00:10:27,000 --> 00:10:30,000
+Reduce the number of modules and limit editing.
+
+178
+00:10:33,000 --> 00:10:36,000
+Prohibit a mixture of modules of different styles.
+
+179
+00:10:36,000 --> 00:10:37,000
+After opening the module,
+
+180
+00:10:37,000 --> 00:10:40,000
+you can't mix different modules
+
+181
+00:10:40,000 --> 00:10:42,000
+and make them into one set of clothing.
+
+182
+00:10:42,000 --> 00:10:46,000
+When you add a module from a different style,
+
+183
+00:10:46,000 --> 00:10:48,000
+a warning window will pop up.
+
+184
+00:10:48,000 --> 00:10:49,000
+If necessary,
+
+185
+00:10:49,000 --> 00:10:53,000
+you can click the window button and select and verify.
+
+186
+00:10:57,000 --> 00:11:26,980
+Thank you.
+

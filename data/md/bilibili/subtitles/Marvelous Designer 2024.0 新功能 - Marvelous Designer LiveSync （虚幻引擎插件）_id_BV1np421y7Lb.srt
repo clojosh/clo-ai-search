@@ -1,0 +1,272 @@
+1
+00:00:00,000 --> 00:00:11,000
+LiveSync is a tool to connect Marvelous Designer with a virtual editor.
+
+2
+00:00:11,000 --> 00:00:20,000
+With this feature, Marvelous Designer can connect to virtual editors and import and export files seamlessly.
+
+3
+00:00:20,000 --> 00:00:28,000
+To download the necessary files required to install the virtual engine, please click on the main menu to help Marvelous Designer LiveSync.
+
+4
+00:00:28,000 --> 00:00:37,000
+A web page will pop up, you can learn more information and download the plugin on this page.
+
+5
+00:00:37,000 --> 00:00:44,000
+Scroll down this page, you can learn more information, click on Get LiveSync, you can start downloading the plugin.
+
+6
+00:00:44,000 --> 00:00:49,000
+In addition, please check the manual on the Connect page to understand how to install and use this plugin.
+
+7
+00:00:49,000 --> 00:00:55,000
+Please download the Substance 3D virtual engine plugin first, so that you can use the Substance material on Marvelous Designer clothing.
+
+8
+00:00:55,000 --> 00:00:58,000
+Otherwise, the clothing will use the default material.
+
+9
+00:00:58,000 --> 00:01:06,000
+Unzip the downloaded zip file and install LiveSync to virtual engine 5.3.
+
+10
+00:01:06,000 --> 00:01:11,000
+Please put the Cloud LiveSync file in the plugin folder of your virtual engine.
+
+11
+00:01:11,000 --> 00:01:18,000
+The path is as follows, Epic Games, UE5.3, Engine, Plugins, Marketplace.
+
+12
+00:01:18,000 --> 00:01:25,000
+In this folder, you can see that there is also a Substance 3D plugin folder.
+
+13
+00:01:25,000 --> 00:01:27,000
+Open it.
+
+14
+00:01:27,000 --> 00:01:32,000
+Open the Unreal project.
+
+15
+00:01:32,000 --> 00:01:42,000
+Please make sure that the Cloud LiveSync and Substance 3D plugin are already available in the plugin settings.
+
+16
+00:01:42,000 --> 00:01:51,000
+You can go to Edit, Project Settings, then go to the Windows project, and set the default RHI value to DirectX11.
+
+17
+00:01:51,000 --> 00:01:56,000
+Please note that setting DirectX12 may cause the virtual engine 5.3 to crash accidentally through the drive program.
+
+18
+00:01:56,000 --> 00:02:03,000
+Please note that setting DirectX12 may cause the virtual engine 5.3 to crash accidentally through the drive program.
+
+19
+00:02:03,000 --> 00:02:12,000
+Search for transparency, open and enable the experimental option to remove the local transparency.
+
+20
+00:02:12,000 --> 00:02:15,000
+Then restart the virtual editor.
+
+21
+00:02:15,000 --> 00:02:20,000
+To use the unified material option, please confirm that the UV picture is correctly arranged in the non-folded part.
+
+22
+00:02:20,000 --> 00:02:23,000
+To use the unified material option, please confirm that the UV picture is correctly arranged in the non-folded part.
+
+23
+00:02:23,000 --> 00:02:26,199
+Go to the window of the virtual machine and click on the CloudMD LiveSync Editor.
+
+24
+00:02:28,800 --> 00:02:34,000
+Click on the update button to import the costume and virtual model into the CloudMD LiveSync Editor.
+
+25
+00:02:36,599 --> 00:02:41,099
+Please make sure that there is no active simulation or recording animation in Marvelous Designer.
+
+26
+00:02:41,500 --> 00:02:46,300
+And please switch to the simulation mode or UV editor mode, then click on the update button.
+
+27
+00:02:46,300 --> 00:02:54,800
+In the virtual machine, the created color changer will match the fabric used in Marvelous Designer.
+
+28
+00:02:55,700 --> 00:03:01,500
+The Unified Material option is very useful when applying it to the costume or when there are multiple secondary documents.
+
+29
+00:03:06,500 --> 00:03:11,800
+Please note that you can select the costume or virtual model from the left of the editor by clicking on the object list on the left.
+
+30
+00:03:11,800 --> 00:03:13,900
+Then press the delete button to delete.
+
+31
+00:03:16,300 --> 00:03:29,300
+When you are sure that the assets in the LiveSync Editor have been uploaded to the virtual machine content browser, please select the assets you need from the list on the left.
+
+32
+00:03:31,800 --> 00:03:34,800
+Here I will not only import the virtual model, but also the costume.
+
+33
+00:03:35,300 --> 00:03:38,300
+Click on the save button and select the saved grid type.
+
+34
+00:03:39,500 --> 00:03:42,600
+Due to the file and animation, I will save it as Geometry Cache.
+
+35
+00:03:46,300 --> 00:03:49,300
+Click on the save button and select the saved grid type.
+
+36
+00:03:50,300 --> 00:03:53,300
+Select the saved content browser path.
+
+37
+00:04:01,300 --> 00:04:04,300
+Click and drag this object to the scene.
+
+38
+00:04:07,300 --> 00:04:14,300
+Now you can view the files you created in Marvelous Designer in the virtual machine and create them later.
+
+39
+00:04:16,300 --> 00:04:19,300
+Now you can view the files you created in Marvelous Designer in the virtual machine and create them later.
+
+40
+00:04:20,300 --> 00:04:24,300
+You can also use LiveSync to import MetaHuman into Marvelous Designer.
+
+41
+00:04:25,300 --> 00:04:28,300
+Open Crystal Bridge from the virtual machine.
+
+42
+00:04:30,300 --> 00:04:34,300
+Download your MetaHuman and click on Add to add it to your project.
+
+43
+00:04:36,300 --> 00:04:39,300
+Drag your MetaHuman to the window.
+
+44
+00:04:40,300 --> 00:04:43,300
+You can use IK to recreate the animation in the virtual machine.
+
+45
+00:04:43,300 --> 00:04:44,300
+You can use IK to recreate the animation in the virtual machine.
+
+46
+00:04:44,300 --> 00:04:45,300
+You can use IK to recreate the animation in the virtual machine.
+
+47
+00:04:45,300 --> 00:04:48,300
+You can use IK to recreate the animation in the virtual machine.
+
+48
+00:04:49,300 --> 00:04:50,300
+Let's add one series of ruined maps.
+
+49
+00:04:51,300 --> 00:04:54,300
+Drag your MetaHuman to adds in your Sequencer.
+
+50
+00:04:54,300 --> 00:04:56,300
+Drag your MetaHuman to adds in your Sequencer.
+
+51
+00:04:57,300 --> 00:04:59,300
+Click the equal cell button next to the face of the character name.
+
+52
+00:04:59,300 --> 00:05:01,300
+Click the equal cell button next to the face of the character name.
+
+53
+00:05:02,300 --> 00:05:04,300
+Add keys to a keyword in your Sequencer.
+
+54
+00:05:06,300 --> 00:05:10,300
+To set the key to the Jason, add his movements.
+
+55
+00:05:10,300 --> 00:05:11,300
+To set the key to the Jason, add his movements.
+
+56
+00:05:12,300 --> 00:05:13,300
+locate this key and click on proceed.
+
+57
+00:05:13,300 --> 00:05:18,100
+You can choose to create a related animation series by clicking on the Body icon on the Sequencer.
+
+58
+00:05:18,100 --> 00:05:20,100
+To save it as an animation series.
+
+59
+00:05:22,800 --> 00:05:24,300
+Select the path and save.
+
+60
+00:05:25,400 --> 00:05:28,900
+After opening the animation series, you will see your MetaHuman animation.
+
+61
+00:05:30,500 --> 00:05:33,000
+There is a CLO LiveSync button at the top.
+
+62
+00:05:34,699 --> 00:05:38,000
+Please make sure to open the CLO MD LiveSync window at the same time.
+
+63
+00:05:38,000 --> 00:05:43,899
+Click on the CLO LiveSync button at the top of the toolbar and a menu will pop up.
+
+64
+00:05:45,500 --> 00:05:47,800
+After setting it up, click on the Export button.
+
+65
+00:05:49,500 --> 00:05:54,100
+The MetaHuman skeleton with animation will be successfully imported to Marvelous Designer.
+
+66
+00:05:59,300 --> 00:06:03,199
+You can now wear the costume and record the animation on the imported virtual model.
+
+67
+00:06:04,399 --> 00:06:06,899
+Thank you for watching. See you in the next video.
+
+68
+00:06:08,000 --> 00:06:10,000
+Thanks for watching.
+

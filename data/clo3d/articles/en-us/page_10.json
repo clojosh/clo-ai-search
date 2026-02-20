@@ -1,0 +1,456 @@
+[
+    {
+        "article_id": "115012377468",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012377468",
+        "title": "Human IK",
+        "content": "**List of Contents** Definition of Human IK Human IK Use Human IK ** Definition of Human IK** \\- Avatar joints are organically linked that joints move naturally when modifying one particular joint, allowing easier pose modification process. ** Human IK** \\- Hover over the second icon in the Vertical View Toggle Menu to view Avatar Display options. \\- Select the ![](https://support.clo3d.com/hc/article_attachments/115021444148/mceclip1.png) **Show X-ray Joints** icon. \\- The Human IK window will appear on the right top corner of the 3D window. **Use Human IK** ** ** * **Move Joints** \\- Avatar joints will appear in yellow-green on the Avatar’s elbows, knees, and more. \\- Click and drag the desired Avatar joint to modify the pose. * **Rotate Joints** \\- When the Avatar joint is clicked once, the **Gizmo** tool will appear. \\- Use the circles of the **Gizmo** tool to rotate joint and modify the pose. Go back to the List of Contents",
+        "content_description": "This web page serves as a comprehensive guide to understanding and utilizing Human IK for natural pose modification of avatars in a 3D environment.",
+        "created_at": "2025-04-29T06:28:49Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=dtYCS6fOjIs",
+            "https://www.youtube.com/watch?v=i0B1d2VVvOQ",
+            "https://www.youtube.com/watch?v=gtJVFyh8EUI"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 226
+    },
+    {
+        "article_id": "115009052548",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115009052548",
+        "title": "Adjust Avatar Joints",
+        "content": "#### **List of Contents** Show Avatar Joints FK (Forward Kinematics) IK (Inverse Kinematics) Set Joint Size #### **Change the avatar pose by moving and rotating the avatar joint ** #### #### **Show Avatar Joints** 1. Hover over the ![Avatar Main Hover.png](https://support.clo3d.com/hc/article_attachments/38295892402329) **Avatar Display** in the 3D window, then click the ![Avatar Sub Avatar Joints Hover.png](https://support.clo3d.com/hc/article_attachments/38295863753497)**Show Avatar Joints**. #### #### **FK (Forward Kinematics)** You can adjust each joint individually to fine-tune the pose. 1. Use the[ Gizmo](https://support.clo3d.com/hc/ko/articles/115000513928-%EA%B8%B0%EC%A6%88%EB%AA%A8%EB%A1%9C-%EC%9D%B4%EB%8F%99-%EB%B0%8F-%ED%9A%8C%EC%A0%84) to adjust the position and rotation by clicking on the joint. #### #### **IK (Inverse Kinematics)** You can adjust the specific joint, and the organically linked joints are automatically calculated to easily express realistic pose. 1. Change the mode to**IK** in Avatar Joint window. 2. Set the options as needed. Option | **Description** ---|--- **Full Body** | When a single joint is modified, it affects all other joints which are organically linked to the single joint. **Body Part** | When a single joint is modified, only directly connected joints are modified. **Constrain Joint Translation** | Activate the option to prevent unwanted movement of the selected joint caused by other moving joints. However, for natural modification of the Avatar, the constrained joint may move slightly. **Constrain Joint Rotation** | Activate the option to prevent unwanted movement of the selected joint caused by other rotating joints. However, for natural modification of the Avatar, the constrained joint may rotate slightly. 3. Use the Gizmo to adjust the position and rotation by clicking on the joint. _* If the joints and axes of the avatar are symmetrical, you can adjust the joints symmetrically by clicking the symmetric button next to the Gizmo. _ **📝****Note:** * Human IK created in other 3D software is not compatible with CLO. * To import avatars created in other 3D software, the avatar must have the same bone structure and names. * To refer to CLO avatars' bone structures and names, please download the files below. #### #### ![Label_Final.png](https://support.clo3d.com/hc/article_attachments/38305848749081) #### **Set Joint Size** Set the joint size smaller to make selection easier on avatars with a lot of joints. ![](https://support.clo3d.com/hc/article_attachments/38306484487193) 1. Enter the size in the Avatar Joint window. #### Go back to the List of Contents",
+        "content_description": "This web page provides detailed instructions on how to manipulate avatar joints using Forward and Inverse Kinematics to customize poses in a 3D environment effectively.",
+        "created_at": "2025-04-29T06:27:26Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000716747,
+        "Section": "Avatar",
+        "Tokens": 648
+    },
+    {
+        "article_id": "115012377448",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012377448",
+        "title": "Human IK – Constrain Joint Rotation",
+        "content": "**Human IK - Constrain Joint Rotation** \\- Fix the selected joint to minimize the modification when other joints are rotated. \\- For organic movement, the selected joint may not completely be constrained. \\- Select the Avatar joint to be constrained and click the ![](https://support.clo3d.com/hc/article_attachments/115021387107/mceclip0.png) **Constrain Joint Rotation** icon from the Human IK window. \\- The constrained joint will turn grey and the alphabet R will hover over the joint.",
+        "content_description": "This web page provides guidance on how to use the Human IK feature to constrain joint rotation for improved organic movement in character animation.",
+        "created_at": "2025-04-29T06:26:44Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=BHU-Ch7uC8I"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 108
+    },
+    {
+        "article_id": "115012377488",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012377488",
+        "title": "Human IK – Constrain Joint Translation",
+        "content": "**Human IK - Constrain Joint Translation** \\- Fix the selected joint to minimize the modification when other joints are moved. \\- For organic movement, the selected joint may not completely be constrained. \\- Select the Avatar joint to be constrained and click the ![](https://support.clo3d.com/hc/article_attachments/115021387127/mceclip0.png) **Constrain Joint Translation** icon from the Human IK window. \\- The constrained joint will turn grey and the alphabet T will hover over the joint.",
+        "content_description": "This web page provides guidance on using the Human IK feature to constrain joint translation for improved organic movement in character animation.",
+        "created_at": "2025-04-29T06:25:26Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=3KHlVviBtB8"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 108
+    },
+    {
+        "article_id": "115012223907",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012223907",
+        "title": "Human IK – Show Human IK Joint",
+        "content": "**Human IK - Show Human IK Joint** \\- Link and move joints organically. -The ![](https://support.clo3d.com/hc/article_attachments/115021387367/mceclip0.png) **Show Human IK Joint** is activated by default when the **Show X-Ray Joints** icon is selected. \\- Click the ![](https://support.clo3d.com/hc/article_attachments/115021387367/mceclip0.png) Show Human IK Joint to deactivate the function. When the **Human IK** is deactivated, each joint will move separately.",
+        "content_description": "This web page provides guidance on how to activate and deactivate the Human IK joint feature for organic joint movement in your animations.",
+        "created_at": "2025-04-29T06:24:41Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=TG0ucloN_Xg"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 121
+    },
+    {
+        "article_id": "360055936213",
+        "source": "https://support.clo3d.com/hc/en-us/articles/360055936213",
+        "title": "Grading Review",
+        "content": "**List of Contents** Generate Data for Review Open Layout Setting Full Screen Save Image #### **All Grading Sizes of Garments and Avatars can be compared on one screen.** **Grading Review is activated based on the simulated results for each grading size. ** #### #### ******Generate Data for Review** 1. Click the Pair Avatar tab and click the **Update** after [creating](https://support.clo3d.com/hc/en-us/articles/115015578947-Add-Apply-Grading) and [editing](https://support.clo3d.com/hc/en-us/articles/115015798567-Edit-Grading) the grading. → The 3D window's avatar is basically applied to all sizes. → If there are two or more size groups, they are combined based on the base size. 2. [Change the avatar for each grading size](https://support.clo3d.com/hc/en-us/articles/360055935233-Pair-Avatar-for-Grading-Size-ver-6-0-) as needed. 3. Click the checkbox to the right of each size item and simulate. → The simulation result of the garment of the size on the avatar is automatically saved. → After simulation for each size, if the mesh of the pattern is changed due to work such as pattern correction, simulation must be performed again. #### #### ******Open** 1. Click the Main Menu ▶ Production ▶ **Grading Review.** 2. If re-simulation is required, click the ![Simulation Normal On.png](https://support.clo3d.com/hc/article_attachments/37942141269017)**simulation** at the top left of each size. 3. Move, zoom and rotate the view of the 3D window. 4. Click the icon at the top to set [the rendering status of the garment and avatar](https://support.clo3d.com/hc/en-us/articles/115001025968-3D-Window-Display-Icons-). ![Divider_Dash.png](https://support.clo3d.com/hc/article_attachments/37942125826585) ### ![Label.png](https://support.clo3d.com/hc/article_attachments/39592363602457) Show or hide the**Pressure map** in the Grading Review. _****_ 1. Click and hold the ![Fit Maps Off Hover.png](https://support.clo3d.com/hc/article_attachments/37942325625881)**Fit Maps** tool for more than 2 seconds, then click the ![Fit Maps Pressure Map Hover.png](https://support.clo3d.com/hc/article_attachments/37942325637145)**Pressure Map. ** 2. Re-simulate to get the result. #### #### ******Layout Setting** 1. Enter the width and height directly to adjust the size of each 3D window. 2. Click the![Review Warp On.png](https://support.clo3d.com/hc/article_attachments/37942141294873)**Layout** to set the 3D window layout. **Options** | **Description** ---|--- **Wrap** | The 3D windows will be wrapped and aligned according to the width of the Grading Review window **Horizontal** | Align the 3D windows horizontally. **Vertical** | Align the 3D windows vertically. **Panoramic**** **| All grading sizes can be checked and compared at one in a single 3D window. **Rotation** | Each grading size rotates on the X-axis. **Distance** | The Space for each grading size is adjusted 3. Click the ![Review Reset Layout On.png](https://support.clo3d.com/hc/article_attachments/37942125896857)**Reset Layout** to return to the initial layout. #### #### ******Full Screen** 1. Click the![Review Full Screen On.png](https://support.clo3d.com/hc/article_attachments/37942125903769)**Full Screen.** 2. Press the ESC key on your keyboard to exit Full Screen. #### #### ******Save Image** 1. Click the ![Review Save On.png](https://support.clo3d.com/hc/article_attachments/37942141309593)**Save** and specify a name and path. 2. Check the option to save Transparent Background and Separate Images and click the 'Save'. #### **📝****Note****:** Right-click on the screen▶ if you click the Hide Grading Size, the hidden size disappears in the 3D window. Go back to the List of Contents",
+        "content_description": "This web page serves as a comprehensive guide for users to generate, review, and customize garment grading data in a 3D environment, allowing for efficient comparisons of various sizes and avatars.",
+        "created_at": "2025-04-29T05:54:27Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=p52VfLC0_DA"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 360005044033,
+        "Section": "Review",
+        "Tokens": 959
+    },
+    {
+        "article_id": "115013660447",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115013660447",
+        "title": "How do you fit 3D Garments in CLO?",
+        "content": "**Question** How do you fit 3D Garments in CLO? **Answer** To check fit, [create and drape](quick%20start%20link) 3D Garments first. [Draft](https://support.clo3d.com/hc/en-us/sections/115000642008) your own Patterns in CLO or import Patterns created in other 2D CAD software to CLO, and then sew and drape Patterns on an Avatar. For more accurate fitting process, please use the Attach to [Avatar Tape](https://support.clo3d.com/hc/en-us/sections/115000716827-%EC%95%84%EB%B0%94%ED%83%80-%ED%85%8C%EC%9D%B4%ED%94%84) function to align the 3D Garment's shoulder seams to the Avatar's shoulder line. Then, select the desired texture rendering style from Transparent Surface, Fit Map, Stress Map, and Strain Map, and use various types of Garment Measure to further examine the fit.",
+        "content_description": "This webpage provides a step-by-step guide on how to create, drape, and accurately fit 3D garments in CLO using various tools and techniques.",
+        "created_at": "2025-04-29T05:54:01Z",
+        "youtube_links": [],
+        "CategoryId": 24022165341209,
+        "Category": "FAQ",
+        "SectionId": 24022295837977,
+        "Section": "Garments & Patterns",
+        "Tokens": 228
+    },
+    {
+        "article_id": "115012227287",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012227287",
+        "title": "Strain Map",
+        "content": "**Strain Map** * **Strain Map** ** ** \\- Check the stretch of the 3D Garment due to the external pressure. \\- Hover over the third icon in the Vertical View Toggle Menu in the 3D window. Then, select the **![](https://support.clo3d.com/hc/en-us/article_attachments/115001815847/CLT_Group_05Stress_Normal.png)****Strain map** icon. \\- The **Strain Map** shows the stretch caused by the external pressure applied to the 3D Garment. \\- The part with no stretch will appear in green, but with greater stretch, the part of the Garment will turn closer to red.",
+        "content_description": "The Strain Map page enables users to visualize the stretch of a 3D garment under external pressure, highlighting areas of minimal to maximum stretch through a color-coded system.",
+        "created_at": "2025-04-29T04:56:25Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=OkN7wbTlcpk"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 149
+    },
+    {
+        "article_id": "360001430908",
+        "source": "https://support.clo3d.com/hc/en-us/articles/360001430908",
+        "title": "3D Quality Standard (ver4.0.0)",
+        "content": "Download our 3D Quality Standard and create high quality 3D garments. ![thumb_standards.jpg](https://support.clo3d.com/hc/article_attachments/360015297914/thumb_standards.jpg)",
+        "content_description": "Download our 3D Quality Standard to elevate your designs and produce high-quality 3D garments effortlessly.",
+        "created_at": "2025-04-28T13:00:41Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 29864642061593,
+        "Section": "Guides",
+        "Tokens": 44
+    },
+    {
+        "article_id": "115012225907",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012225907",
+        "title": "Refresh Textures",
+        "content": "**Refresh Texture** \\- After editing and saving the texture image in any image editing software such as Adobe Photoshop, Adobe Illustrator, and more, click the Refresh button in CLO to apply the changes instantly. \\- Right-click on the 3D window and select **Refresh Textures.** \\- Edit and save the texture image as its original file name in any image editing software. \\- Navigate back to CLO and right click to select **Refresh Textures** from the pop-up menu. \\- The textures applied to Patterns will be updated.",
+        "content_description": "This web page provides a quick guide on how to instantly apply updated texture images in CLO after editing them in various image editing software.",
+        "created_at": "2025-04-21T05:53:12Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=vcHqGb-JMxk"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 113
+    },
+    {
+        "article_id": "115012380948",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012380948",
+        "title": "Split",
+        "content": "**Split** \\- Split a single segment into multiple segments by entering specific values. \\- Select the ![](https://support.clo3d.com/hc/article_attachments/115022639888/mceclip0.png) **Edit Pattern** tool from the 2D toolbar. \\- Right-click on a segment to be split and select **Split** from the pop-up menu. The Split Window will appear. \\- Select and modify below options as needed. * **Split into Two Lines \\- **Follow the instruction above to open the Split window. \\- Select **Split into Two Lines.** \\- Enter desired lengths or ratios for **LINE 1** and **LINE 2.** \\- Select OK. \\- The selected segment will be split based on the setting. * **Split by Length ** \\- Follow the instruction above to open the Split window. \\- Select **Split by Length.** \\- Enter desired values to **Segment Length** , **Number of Segments** , and **Direction**. \\- Select OK. \\- The selected segment will be split based on the setting. * **Uniform Split** \\- Follow the instruction above to open the Split window. \\- Select **Uniform Split.** \\- Enter desired values to **Number of Segments.** \\- Select OK. \\- The selected segment will be uniformly split based on the setting.",
+        "content_description": "This web page provides detailed instructions on how to effectively split a single segment into multiple segments using various methods in the 2D toolbar.",
+        "created_at": "2025-04-21T05:38:39Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=CaF7Wm8ijNM",
+            "https://www.youtube.com/watch?v=Nkrs82AeBDU",
+            "https://www.youtube.com/watch?v=sLdS72lwXys",
+            "https://www.youtube.com/watch?v=l7gzn4pn2lE"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 287
+    },
+    {
+        "article_id": "4422839218713",
+        "source": "https://support.clo3d.com/hc/en-us/articles/4422839218713",
+        "title": "Corporate Firewall Setup and Allow-listing CLO Endpoints",
+        "content": "### Applicable for: Enterprise users who using corporate firewall and allow-listing policies First, make sure you have corporate firewalls and allow-listing policies in place on your network systems. If you are not familiar with this, please contact your company's IT and/or security team for this setup. Non-firewalled customers will not need to do this. Also, you do not need to configure the settings below for the firewall provided by Windows and macOS. ### Note * CLO authentication servers only allow HTTPS communication. Therefore, only port 443 is discussed in this article. * Until CLO 6.1, the **verify: peer** option inside the CLO software was **disabled**. But from CLO 6.2, the **verify: peer** option has been **enabled**. So if your company uses **SSL Inspection** on your secure network system, please check its detailed settings. Again, if your security system has SSL Inspection running, change that option. You will be able to make optional changes only for the CLO software. * If you are experiencing problems downloading in-app assets, add the domain *.clo-set.com to your allow-list. * A prominent security service that uses SSL Inspection is Zsclaer™, you can learn more about [SSL Inspection on their webpage](https://www.zscaler.com/resources/security-terms-glossary/what-is-ssl-inspection). ## 1 Add below info in your corporate firewall settings * CLO auth-server IPs * 52.1.24.50 * 52.20.29.14 * Protocol and port * https / 443 port * If you need CLO server domain information, please contact the CLO team. ## 2 Enable the Firewall option in CLO login window * Note that the information provided below is only for customers using corporate firewall solutions, not Windows or macOS firewall features. Check with your company's IT or security team whether you use a firewall. ![v2024_using_firewall.png](https://support.clo3d.com/hc/article_attachments/30795316023065)",
+        "content_description": "This page provides essential guidance for enterprise users on configuring corporate firewalls and allow-listing policies to ensure secure access to CLO authentication servers.",
+        "created_at": "2025-04-16T09:56:28Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000081588,
+        "Section": "Install / Run",
+        "Tokens": 427
+    },
+    {
+        "article_id": "115000296768",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115000296768",
+        "title": "Graphics Card Problems and Troubleshooting",
+        "content": "1\\. By updating the graphics card driver, you can solve and prevent graphics card-related problems that may occur while using the CLO software. 2\\. Guides you on how to properly connect your desktop graphics card and monitor. ### Applicable for: All users of CLO software * * * ## Common Problems 1\\. OpenGL version warning appears when running CLO software as shown in the figure below. ![001_CLO_error.png](https://support.clo3d.com/hc/article_attachments/11907102744473) 2\\. Graphics/texture errors or rendering images appear strange while running CLO software. 3\\. If the CLO GPU-simulation or GPU-rendering speed is lower than the expected performance of your computer's specifications. * * * ## How to Update Graphics Card Driver Step 1) Find out the product name of the graphics card (GPU) installed in your desktop computer or laptop. * As shown in the figure below, you can find the model name of your graphics card (GPU) in the Performance tab of Windows Task Manager. ![002_Task_Manager.png](https://support.clo3d.com/hc/article_attachments/11907339007001) Step 2) Search and download the latest driver matching the product name from each manufacturer's website. * Note that even if the graphics card model name looks the same or similar, the drivers for laptops and desktops, and for workstations and servers are different. Search for and install the driver for the type of computer you are using. * [AMD Radeon Driver Download (Link)](https://www.amd.com/en/support) * [Nvidia Driver Download (Link)](https://www.nvidia.com/Download/index.aspx?lang=en) * [Intel Graphics Driver Download (Link)](https://www.intel.com/content/www/us/en/download-center/home.html) Step 3) Run the downloaded driver file. It is recommended to install with administrator privileges. * A computer reboot may be required after driver installation. Follow the on-screen instructions. ![003_RunAsAdministrator.png](https://support.clo3d.com/hc/article_attachments/11907829801369) * * * ## Connecting the monitor and graphics card correctly As shown in the figure below, if the monitor cable is connected to the integrated graphics (a.k.a., iGPU, internal GPU), the integrated graphics is mainly used instead of the discrete graphics (a.k.a., external GPU, dedicated GPU). In this case, you may encounter several issues while launching and working on the CLO software, including OpenGL version warnings. ![004_Connectors.JPG](https://support.clo3d.com/hc/article_attachments/11908381625497) **How to fix** Step 1) Save the files you are working on and turn off the computer completely. Step 2) Connect the monitor cable to the external graphics card and turn on the computer. Connect all monitor cables to the external graphics card, even when using more than one monitor. Step 3) If there is no screen output on the monitor, try reconnecting the monitor power. The pictures below show the discrete graphics card installed and cabled. ![007_desktop.jpg](https://support.clo3d.com/hc/article_attachments/44942675738777) ![008_desktop.jpg](https://support.clo3d.com/hc/article_attachments/44942668883481) **See also** * Supported monitor cable types vary depending on the graphic card and monitor. * If you are using the latest monitor and the latest graphic card, most support HDMI or DP (DisplayPort). * Find the right cable for your monitor and graphics card. [Saved search (Link)](https://www.google.com/search?q=monitor+cable+types&oq=monitor+cable) * * * ## Read more * CLO software automatically detects the graphics card and driver installed in the computer when launching, and displays a warning if an unsupported graphics card or outdated driver is found. Please refer to the guide above to solve the problem. * If you are using a laptop with an Nvidia graphics card, the laptop will have either an AMD processor or an Intel processor with integrated graphics GPU and Nvidia GPU, respectively, depending on the situation. If an openGL-related error appears while using the CLO software, select 'High-performance Nvidia processor' in the Nvidia control panel as shown below and click Apply. ![005_Nvidia_Control_Panel.png](https://support.clo3d.com/hc/article_attachments/11909209788825) * If you set Windows Update to 'Auto', it will automatically install the latest graphics card driver. However, the driver provided by the graphics card manufacturer's website is more up-to-date than the Windows update version. * It is recommended to update the graphics card driver at least once every 6 months. It helps with CLO software as well as all other graphics programs and overall system performance and stability. * To check GPU usage in Windows, select GPU in the Performance tab of Task Manager as shown below. ![006_CUDA.png](https://support.clo3d.com/hc/article_attachments/11909425727769) * If you are using a Mac, the graphics card driver is included in macOS. If you update to the latest macOS, the latest graphics card driver is also installed. * To check CPU-GPU usage on Mac, use the Activity Monitor app built-in to macOS. * Also check the [CLO system requirements](https://support.clo3d.com/hc/en-us/articles/115000307168) for graphics card related information.",
+        "content_description": "This web page provides essential guidance for CLO software users on updating graphics card drivers and properly connecting their graphics card to prevent and resolve common graphics-related issues.",
+        "created_at": "2025-04-16T08:45:44Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000081588,
+        "Section": "Install / Run",
+        "Tokens": 1139
+    },
+    {
+        "article_id": "115012226407",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012226407",
+        "title": "Desaturation\t",
+        "content": "**Desaturation** | \\- Remove the color of the fabric, but maintain its Pattern and texture to apply a different color to the fabric. \\- Select the desired fabric item from the Object Browser to remove its color. \\- Navigate to the Property Editor and expand the Material ▶ Texture to see its child menus. \\- Toggle on the **Desaturation.** \\- The fabric’s color will be removed but its Pattern and texture will be remained. \\- Adjust the Shadow Intensity and Shadow Brightness to edit the texture’s shadow.",
+        "content_description": "The purpose of this web page is to guide users in desaturating fabric colors while preserving their patterns and textures, allowing for customized color applications.",
+        "created_at": "2025-04-16T02:59:38Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=nPw-QEJ_9B0"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 113
+    },
+    {
+        "article_id": "360025829253",
+        "source": "https://support.clo3d.com/hc/en-us/articles/360025829253",
+        "title": "Unfold Symmetric Editing (with Sewing)",
+        "content": "**List of Contents** **Unfold Symmetric Editing (with Sewing)** **Remove Linked Editing ** #### Edit a single pattern symmetrically based on its center line. ![Youtube Icon.png](https://support.clo3d.com/hc/article_attachments/45585768975001)[ Watch Video](https://www.youtube.com/watch?v=tj6VwcZyH0w) ** ****Location** **Unfold Symmetric Editing (with Sewing)** Right-Click Pop-Up Menu (on Line) ▶ **Unfold Symmetric Editing with Sewing** **Remove Linked Editing** Right-Click Pop-Up Menu (on Pattern) ▶ **Remove Linked Editing** ** Operation** **Unfold Symmetric Editing (with Sewing)** 1. Select a Pattern Outline with the **![____2.jpg](https://support.clo3d.com/hc/article_attachments/360039921594)Edit Pattern** tool. 2. Select the tool/menu indicated in Location. → The pattern unfolds as a symmetric pattern based on the selected line. **Remove Linked Editing** 1. Select a Pattern with the **![____3.jpg](https://support.clo3d.com/hc/article_attachments/360039921614)****Transform Pattern** tool. 2. Select the tool/menu indicated in Location. → The linked editing is removed. **※ Note:** Right-click on the unfolded pattern which is not symmetric and select **Half Symmetric Editing (with Sewing)** , it can be edited as a symmetric pattern. Go back to the List of Contents",
+        "content_description": "This web page provides comprehensive instructions for utilizing Unfold Symmetric Editing and removing Linked Editing in pattern design, complete with visual aids and video tutorials.",
+        "created_at": "2025-04-10T06:07:03Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000617868,
+        "Section": "2D Pattern Edit",
+        "Tokens": 319
+    },
+    {
+        "article_id": "360000730068",
+        "source": "https://support.clo3d.com/hc/en-us/articles/360000730068",
+        "title": "\"MSVCP100.dll was not found\" error - troubleshooting",
+        "content": "This article is for Windows users only. When running the CLO software, it may not run with the following error. This is caused by missing or outdated Visual C++ Redistributable which essential Windows components to running CLO software. Additionally, the latest CLO installer includes the Visual C++ Redistributable package for that version, which is installed together with the CLO installation. ![dll2.png](https://support.clo3d.com/hc/article_attachments/360001172007) **How to solve** * Visit [Microsoft website](https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170), then download and install the latest Visual C++ Redistributable. * For Windows 10 or 11 computer users with an Intel or AMD processor, download the X64 architecture as shown below. ![002_x64.png](https://support.clo3d.com/hc/article_attachments/45219705062041) **Note** * In some cases, you may need to remove older versions of the Visual C++ Redistributable installed on your computer. * The Visual C++ Redistributable is backwards compatible with older versions, so we recommend installing only the most recent version.",
+        "content_description": "This page provides guidance for Windows users on resolving errors related to the CLO software caused by missing or outdated Visual C++ Redistributable components.",
+        "created_at": "2025-04-01T06:29:34Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000081588,
+        "Section": "Install / Run",
+        "Tokens": 251
+    },
+    {
+        "article_id": "360042697774",
+        "source": "https://support.clo3d.com/hc/en-us/articles/360042697774",
+        "title": "When macOS displays a warning on first launch",
+        "content": "## Problem Situations * When launch CLO, macOS shows that it is an unverified developer's app. * When launch CLO, macOS shows that it is a malicious software. * When launch CLO, macOS shows that CLO is an app downloaded from the Internet. ![mceclip3.png](https://support.clo3d.com/hc/article_attachments/360057237694) ![CLO_Jul_2023.png](https://support.clo3d.com/hc/article_attachments/21603002218649) * * * ## How to solve First, please make sure that you must download the CLO app from [CLO official website](https://www.clo3d.com/en/clo/download). CLO software is distributed after being signed by a verified developer and notarized by Apple. 1 Simply click the “Show in Finder” then RIGHT CLICK and select Open. 2 It will give you a similar Error, but OPEN will be an option. Just Click Open and you should be fine. * * * ## References Since the release of macOS Catalina, Apple has changed the macOS policy to: * [About the security content of macOS Catalina 10.15](https://support.apple.com/en-us/HT210634) * [Change Security & Privacy General preferences on Mac](https://support.apple.com/guide/mac-help/change-security-privacy-general-preferences-mh11784/mac) * [Open a Mac app from an unidentified developer](https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unidentified-developer-mh40616/mac) * [Find out which macOS your Mac is using](https://support.apple.com/en-us/HT201260)",
+        "content_description": "This webpage provides solutions for resolving macOS security warnings when launching the CLO app, ensuring a safe and verified installation experience.",
+        "created_at": "2025-04-01T06:18:09Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000081588,
+        "Section": "Install / Run",
+        "Tokens": 353
+    },
+    {
+        "article_id": "4409404113177",
+        "source": "https://support.clo3d.com/hc/en-us/articles/4409404113177",
+        "title": "CLO Silent Install (No GUI Install)",
+        "content": "CLO software is distributed on the official CLO website in two file formats: .exe for Windows and .dmg for macOS. So, it is common for end users to install CLO through GUI, but you can install CLO software without a GUI using the commands described below. This would be a convenient way when installing CLO software in an environment with multiple PCs, such as a school and company. **Windows** 1 Search for Command Prompt (CMD) in Windows Search and run it as administrator. ![001_CMD.png](https://support.clo3d.com/hc/article_attachments/22885472931865) 2 Enter the following into the Command Prompt:\n``` CLO_Network_OnlineAuth_7_2_116_Installer_x64.exe /S /USERNAME=<Windows Login ID> /D=<CLO install path>\n``` eg) CLO_Network_OnlineAuth_7_2_116_Installer_x64.exe /S /USERNAME=johndoe /D=C:\\Program Files\\CLO Network OnlineAuth_7.2.116 * Enter the above command in the path where the CLO installer is saved. * USERNAME is the user name you see when you log in to Windows. * Depending on your Windows login permissions, a User Account Control warning window may appear. If you see a UAC warning, click Yes to continue the installation. **macOS** 1 Download the attached script file. 2 Run Terminal.app on your Mac. 3 Enter the following into the Terminal:\n``` sh install_clo_dmg.sh /Users/<username>/downloads/CLO_Network_OnlineAuth_7_2_116_Installer.dmg CLO_Standalone_OnlineAuth.app\n``` eg) sh install_clo_dmg.sh /Users/johndoe/downloads/CLO_Network_OnlineAuth_7_2_116_Installer.dmg CLO_Network_OnlineAuth.app * USERNAME is the user name you see when you log in to Mac. For macOS, the App name you must enter varies depending on the type of CLO product you want to install. Please check the product name carefully before entering it. * CLO_Network_OnlineAuth * CLO_Network * CLO_Standalone_OnlineAuth * CLO_Standalone",
+        "content_description": "This web page provides a step-by-step guide for installing CLO software on Windows and macOS via command line, offering a streamlined solution for environments with multiple PCs.",
+        "created_at": "2025-04-01T05:55:56Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000081588,
+        "Section": "Install / Run",
+        "Tokens": 469
+    },
+    {
+        "article_id": "4417463135129",
+        "source": "https://support.clo3d.com/hc/en-us/articles/4417463135129",
+        "title": "Proxy Setup for CLO Software Login",
+        "content": "### Applicable for: Enterprise users who using CLO 6.2 or later First check whether your company's network system is running a proxy server or a service acting as a proxy. If you are not using a proxy, the settings below are not required. ### Technical Background The CLO software and CLO authentication server do not provide proxy server and firewall functions. The proxy server setting provided in the login window of CLO 6.1 version was a convenience function provided that network requests that occur during CLO login go through the proxy server used by your company, and this option is not provided from CLO 6.2 onwards. Enterprise customers who are building secure network system such as proxy servers and firewalls can find this article helpful. However, except in very special cases, individual users do not need proxy server settings and/or firewall settings. Note that although there are firewalls provided at the OS level, such as Windows or macOS, the firewall described in this article mainly refers to a firewall solution that is part of the secure network that enterprises build. ### See also [Corporate Firewall Setup and Allow-listing CLO Endpoints (Link)](https://support.clo3d.com/hc/en-us/articles/4422839218713) ### Overview Within the corporate security network, login requests for CLO software are processed as follows: * CLO login requests must pass through a security program such as an antivirus. * CLO login requests must go through a proxy server to the Internet. * CLO login requests must pass through the firewall to the Internet. ![security_setup.svg](https://support.clo3d.com/hc/article_attachments/4417462741529) Note that this is a picture constructed to help users understand. Actual proxy server configuration and behavior may differ from the picture. Please contact your company's IT team for more specific details. * * * ### ### Windows User: Add proxy server config into Windows Environment Variables 1) Open Windows system Environment ![001_env.png](https://support.clo3d.com/hc/article_attachments/4417484971929) 2) Go to the Advanced, click the Environment Variables ![002_variables.png](https://support.clo3d.com/hc/article_attachments/4417471148057) 3) Click New on the System variables ![003_system_variables.png](https://support.clo3d.com/hc/article_attachments/4417484991129) 4) Add your proxy server information as a new System variable * Variable name \"CLO_HTTP(S)_PROXY\" must be entered in uppercase. * If you are using HTTPS protocol, enter the variable name as \"CLO_HTTPS_PROXY\". * If you are using HTTP protocol, enter the variable name as \"CLO_HTTP_PROXY\". * If you use an ID and password to access the proxy server in your company, enter it according to the rules of \"userID:password@proxy server domain:port\". * You must enter the information used by your company, not the CLO account information, and the figure below is only an example. ![EV_001.png](https://support.clo3d.com/hc/article_attachments/4720318662809) ![EV_002.png](https://support.clo3d.com/hc/article_attachments/4720275106201) * If you use an IP and port to access the proxy server in your company, enter them according to the \"ip:port\" rules. The figure below is an example. ![EV_003.png](https://support.clo3d.com/hc/article_attachments/4720275685785) * * * ### ### Mac Users: Edit .zprofile file 1) Starting from macOS Catalina, the default shell has changed from bash to zsh. So put your proxy server settings in .zprofile instead of the traditional .bash_profile. 2) If there is no .zprofile file in your Mac Home directory, create a new one. * This file is hidden by default. Therefore, it is not visible in the Mac folder or Finder. * Open the macOS Terminal app and follow the steps below. * pwd: This command displays where you are now. * ls -a: This command displays all files in the current directory. * sudo vi ~/.zprofile: This command opens the .zprofile file if it already exists, and creates it if it doesn't exist. 3) Enter and save the proxy server information your company is using in the .zprofile file. * Open the .zprofile file and enter and save the proxy server information your company is using as shown below. * export CLO_HTTP_PROXY needs to be additionally called to use the proxy configuration. ``` CLO_HTTP_PROXY={proxyserver ip}:{port}\nexport CLO_HTTP_PROXY\n``` * If using the HTTPS protocol, enter CLO_HTTPS_PROXY. * If using the HTTP protocol, enter CLO_HTTP_PROXY. * The input method may differ depending on the protocol used (HTTP or HTTPS) and the connection method used (id+password or ip:port). Enter it according to the proxy server approach your company is using. * The .zprofile file name must be saved as is, and this file does not have an extension.",
+        "content_description": "This webpage provides essential guidance for enterprise users of CLO 6.2 or later on configuring proxy server settings necessary for secure network operations.",
+        "created_at": "2025-04-01T05:48:11Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000081588,
+        "Section": "Install / Run",
+        "Tokens": 1070
+    },
+    {
+        "article_id": "17427559323673",
+        "source": "https://support.clo3d.com/hc/en-us/articles/17427559323673",
+        "title": "Troubleshoot: Restricting Logins For This Version",
+        "content": "Some CLO versions do not allow login, and in this case, it is displayed as show in the figure below. * Among the various officially distributed versions, if it is determined that there is a defect that affects the user's work process and its result, the CLO team stops distributing that version and restricts logins from that version. This includes several versions that the CLO team calls \"deprecated\" and open-beta-test builds released long ago. ![001_restricted.png](https://support.clo3d.com/hc/article_attachments/24514019984025) * * * ## **Quit that version and install the latest version** * **[Download the latest CLO installer here](https://clo3d.com/en/clo/download/installer)** ## **See also** * [How to deactivate CLO from website](https://support.clo3d.com/hc/en-us/articles/1500000942261) * [How to uninstall CLO completely](https://support.clo3d.com/hc/en-us/articles/16218721000601) * [Install CLO with administrator privileges](https://support.clo3d.com/hc/en-us/articles/17074279996697)",
+        "content_description": "This page provides guidance on identifying deprecated CLO versions that restrict login access, and offers instructions for downloading the latest version to ensure optimal functionality.",
+        "created_at": "2025-04-01T05:27:52Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000081588,
+        "Section": "Install / Run",
+        "Tokens": 247
+    },
+    {
+        "article_id": "36700555249561",
+        "source": "https://support.clo3d.com/hc/en-us/articles/36700555249561",
+        "title": "How to Solve \"Error Code 400\" Login Failure",
+        "content": "This article explains how to solve login failures due to \"Error Code: 400\" and/or \"Error Code: 10002\". **Technical Background** Starting in March 2024, [the CLO team has integrated the different accounts of users](https://landing.clo-set.com/allatonce) using CLO software, CLO-SET, and CONNECT into one, and the CLO software have changed the login via CLO-SET webpage instead of entering ID and password in the login window. This policy will be applied from CLO version 2024.0, and previously released CLO 7.x or 6.x versions will run by entering ID and password. After the account integration, if the previously-used-user-login-information and the newly-integrated-user-information do not match, or if old-user-information is stored in the web browser being used, the CLO software login will fail and an error message will be displayed. **Problem Situations** ![001_ErrorCode_400.png](https://support.clo3d.com/hc/article_attachments/36701673887641) ![002_now_signed_in_to_CLO-SET.png](https://support.clo3d.com/hc/article_attachments/36701673892761) * Launched CLO, but get an error message instead of logging in. * Successfully logged in to CLO-SET on a web browser, but get an error message. * * * **Causes and Solutions** **In case of security app blocks CLO's internet connection** * If an antivirus, firewall, or web monitoring program installed on your computer blocks the CLO software from communicating with the Internet, CLO login will fail. * Change the Internet connection of CLO software to \"Allow\" in the detailed settings of your antivirus, firewall, or web monitoring program, and then run the CLO software again. **CLO software does not have sufficient file read and write permissions** * [**Refer to this web post**](https://support.clo3d.com/hc/en-us/articles/17074279996697) to grant administrator rights to the CLO software and then run CLO again. **CLO-SET password error** * [**Refer to this web post**](https://support.clo3d.com/hc/en-us/articles/29936192175129) to reset your CLO-SET password and then run CLO again. **Web browser security policy or web browser cache error** * Web browsers with strict security policies or specific web browsers may have problems accessing the CLO-SET webpage. In this case, please try using a different web browser instead of the one you were using. Also, check again your web browser's security settings. * You may be experiencing problems logging into CLO-SET due to an outdated web browser cache. In this case, clear your cache and try logging in again. This [saved-search](https://www.google.com/search?q=how+to+clear+web+browser+cache&oq=how+to+clear+web+browser+cache&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDg1OTFqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8) will help. **CLO software configuration error** * The internal configuration and settings of the CLO software may have been damaged during the CLO Live Update and install. * [**Refer to this web post**](https://support.clo3d.com/hc/en-us/articles/16218721000601) to completely uninstall the CLO software and fresh install it using the latest installer. Don't forget to back up your working files to a safe place before uninstalling CLO software. * * * **Read More** * Learn more about [CLO-SET Account Integration](https://landing.clo-set.com/allatonce) here. See also [CLO Account Integration User Guide](https://support.clo3d.com/hc/en-us/articles/28934650069785). * If you have followed the steps above but are still unable to log in, please send us your screenshot or error code via [**Contact Us**](https://clo3d.com/en/support/contactus/technical).",
+        "content_description": "This webpage provides troubleshooting solutions for resolving login failures due to \"Error Code: 400\" and \"Error Code: 10002\" in the newly integrated CLO software environment.",
+        "created_at": "2025-04-01T05:16:57Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000081588,
+        "Section": "Install / Run",
+        "Tokens": 880
+    },
+    {
+        "article_id": "23206278838681",
+        "source": "https://support.clo3d.com/hc/en-us/articles/23206278838681",
+        "title": "How to Prevent CLO File Corruption",
+        "content": "This article describes why CLO's project file .zprj and garment file .zpac are corrupted and how to prevent them. **Problem Situations** ![001_unzip_error.png](https://support.clo3d.com/hc/article_attachments/23206992583705) * When launching CLO, get an error saying failed to read the project file. * When opening a project file saved on computer, it says it is unreadable. * When trying to save the file it says it can't be saved. * Opening the file takes a long time and eventually fails. * * * **Causes and Solutions** **Case1** **Disk Full... Actually** ![01 - Disk Full.png](https://support.clo3d.com/hc/article_attachments/23723388965273) * If disk space is insufficient during the process of designing and saving garments in CLO software, file corruption may actually occur. So make sure you have enough free space on your PC's drive. * We recommend that you have at least 20GB of free space to install and run the CLO software. You can make free space by deleting or backing up unnecessary files. * **See also:[CLO System Requirements](https://support.clo3d.com/hc/en-us/articles/115000307168)** **Case2** **Mechanical Malfunction and/or Connection Failure** ![02 - Mechanical Malfunction.png](https://support.clo3d.com/hc/article_attachments/23723394477849) * File corruption may occur due to physical failure, disk error, or poor connection. * You can check disk status through the built-in disk management app or disk management utility on Windows and macOS. * In case of physical failure, contact your company's IT support department or the place of purchase. **Case3** **No Permission to File Read and Write** ![03 - No Permission.png](https://support.clo3d.com/hc/article_attachments/23723388981913) * All computer operating systems, including Windows and macOS, have permission to read/write your files. If you do not have or only have partial permissions to read/write, CLO file corruption may occur. Following post explains how to gain read/write permissions for CLO files in Windows and macOS. **[Disk access rights required when CLO running](https://support.clo3d.com/hc/en-us/articles/17074279996697)** * If you are a corporate customer, please contact your company's IT/Security department. **Case4** **Blocking File Read and Write, or Data Tampering by Security Apps** ![04 - Blocking file RW.png](https://support.clo3d.com/hc/article_attachments/23723388997401) * Certain security programs, such as antivirus and Internet communication monitoring tools, may restrict Internet access and file creation of software such as CLO. **In their detailed settings, change the CLO software's Internet access and file read/write settings to \"Allow\".** * In the case of enterprise companies, they often use stronger security solutions than those described above, and in some cases, the files themselves created by CLO are tampered with. For corporate users, please contact your IT/Security department. **Case5** **Two or More CLOs Running Simultaneously** ![05 - Two or more CLOs Running.png](https://support.clo3d.com/hc/article_attachments/23723389001497) * If you use two or more CLO software at the same time, there is a possibility that the internal data of the CLO project file may be lost or corrupted. * All you know that it's a good way to save file often. And **if you need to save the final result, save it with only one CLO running.** **Case6** **External Storage Connection Failure** ![06 - External Storage.png](https://support.clo3d.com/hc/article_attachments/23723394520729) * File corruption may occur while reading or writing CLO files on external storage such as USB stick or portable hard disk. Although these are convenient, in reality, physical detection failures and connection failures are relatively frequent. * When transferring files between external device and your PC, it often appears that the file-transfer has been complete, but in reality, the all data has not been completely transferred. To check whether the file was completely transferred, simply compare the file size. * **In summary, allow plenty of time when exchanging files with external storage devices.** **Case7** **Network Drive or Cloud Sync Failure** ![07 - Network Drives.png](https://support.clo3d.com/hc/article_attachments/23723389012249) * If you use a NAS and various Internet cloud sync services, CLO files may be corrupted during file transfer over the network. Additionally, cloud sync services may have problems that removing or damaging files on the local computer during the sync process. * If you use a cloud sync service, set it to sync only specific folders, excluding folders and directories referenced by the CLO software. **For example, disable syncing your Desktop and Documents folders.** * * * **Read More** **1** For example, the size of the zprj and zpac files, including the CLO basic t-shirt and basic avatar, is approximately 20MB. If your files are smaller than expected, it means the internal data may be corrupted. If your project file is less than 1MB in size, it cannot be recovered because all clothing data inside the file has been lost. **2** When recording animations of flashy, heavy garments, the project file size will be very large, and this animation recording data may be fragile in some user scenarios. If you are recording a long animation, dividing the entire scene into sections as shown below will help prevent file corruption. ![008_animation.png](https://support.clo3d.com/hc/article_attachments/23728221927449) **3** Do not save files inside the CLO.app package. All Mac applications, including CLO, have a folder structure as shown below. It looks like a single icon, but multiple files and folders are bundled together to form an app. You can view it by right-clicking and selecting Show Package Contents. When you reinstall CLO or perform a live update, all existing files here will be deleted and replaced with the latest files. So never save your work files here. ![macOS_app_structure.png](https://support.clo3d.com/hc/article_attachments/34786160865945) * * * **File Recovery** If you would like to recover your file, please send us your problem file as is via **[Contact Us](https://clo3d.com/en/support/contactus/technical)**. And if the size of the file you want to recover exceeds 50MB, please send it via cloud sharing like as Google Drive, WeTransfer, OneDrive, or iCloud.",
+        "content_description": "This webpage aims to inform users about the causes of corruption in CLO's project and garment files and provide preventative measures to ensure file integrity.",
+        "created_at": "2025-04-01T04:59:22Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000081588,
+        "Section": "Install / Run",
+        "Tokens": 1423
+    },
+    {
+        "article_id": "17074279996697",
+        "source": "https://support.clo3d.com/hc/en-us/articles/17074279996697",
+        "title": "Disk access rights required when CLO is running",
+        "content": "In order for the CLO to operate normally, sufficient read and write permissions are required on the disk in the user's computer. This 'read and write rights' must apply to all storage devices in the user's computer, including hard disk and SSD. Usually, this task is done in the same way as installing with admin rights and running with admin rights, and through this way, various unexpected errors also can be prevented. **Please note** that this may require assistance from the administrator of your computer, i.e. your IT or security team. **Common problematic situations** * File write error occurs while installing CLO software. * Unable to launch CLO, it is not responding. * Able to run CLO, but not responding when using certain functions. * Installed CLO, but there are no default asset files like avatars and garments. * Unable to save files to specific folders or directories. * Not responding or crashes when loading or saving certain files. * A warning window \"You don't have permission to download\" appears. ![001_Windows.png](https://support.clo3d.com/hc/article_attachments/17078066098201) * * * **Windows** 1 After logging in to Windows with the Windows administrator profile, install the CLO with administrator privileges. Click Run as administrator and a Windows User Account Control pop-up will appear. Select Yes. ![007_Run_as_Administrator.png](https://support.clo3d.com/hc/article_attachments/27790394854297) * If your school or company security policy requires you to log in to Windows with guest privileges rather than administrator privileges, go to step 2 below. 2 After exiting the CLO software, go to the path where the CLO is installed. 3 Right-click the CLO executable file, select Properties, and select Users from the Security tab. 4 Click Edit and change the permissions as shown in the picture. Read & execute, Read, Write items must be selected. 5 When you're done applying permissions, choose Apply. ![002_Windows.png](https://support.clo3d.com/hc/article_attachments/17078067715225) * * * **macOS** 1 Go to System Settings > Privacy & Security > Full Disk Access. 2 Click + icon at the bottom of the window, click the CLO from Applications, and Open it. 3 Click the CLO app and enable toggle switch. ![CLO_Full_Disk_Access.png](https://support.clo3d.com/hc/article_attachments/21306070478233)",
+        "content_description": "This web page provides essential guidance on configuring read and write permissions for the CLO software on both Windows and macOS to ensure optimal functionality and prevent common errors.",
+        "created_at": "2025-04-01T04:56:04Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000081588,
+        "Section": "Install / Run",
+        "Tokens": 527
+    },
+    {
+        "article_id": "115012380888",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012380888",
+        "title": "Offset as Internal Line",
+        "content": "**Offset as Internal Line** * **Offset as Internal Line ** \\- Create Internal Lines based on the selected Internal Line or Internal Shape with the designated interval. * **Offset an Internal Line ** \\- Select the ![](https://support.clo3d.com/hc/article_attachments/115022571447/mceclip0.png) **Edit Pattern** tool from the 2D toolbar. \\- Navigate to the 2D window and right click on the Internal Line to be duplicated and select **Offset as Internal Line** from the pop-up menu. \\- The Offset as Internal Line Window will appear. \\- Designate the **Number of Offsets** and **Distance.** \\- The preview of duplicated Internal Lines will appear in the 2D window. To change the direction of the duplicated Internal Lines, toggle on **Reverse Direction.** \\- To extend the duplicated Internal Lines to meet the Pattern outline, toggle on **Extend.** \\- Select OK. \\- The Internal Line will be duplicated based on the setting. * **Offset an Internal Shape** \\- Select the ![](https://support.clo3d.com/hc/article_attachments/115022571447/mceclip0.png) **Transform Pattern** tool or the ![](https://support.clo3d.com/hc/article_attachments/115022571767/mceclip1.png) **Edit Pattern** tool from the 2D toolbar. \\- Navigate to the 2D window and right click on the Internal Shape to be duplicated and select **Offset as Internal Line** from the pop-up menu. \\- The Offset as Internal Line Window will appear. \\- Designate the **Number of Offsets** and **Distance.** \\- The preview of duplicated Internal Shapes will appear in the 2D window. To change the direction of the duplicated Internal Shapes, toggle on **Reverse Direction.** \\- Select OK. \\- The Internal Shape will be duplicated based on the setting.",
+        "content_description": "This webpage provides a step-by-step guide on how to create and manipulate internal lines and shapes in a 2D design environment using the offset feature.",
+        "created_at": "2025-03-25T06:06:12Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=W8FpKd2inLg",
+            "https://www.youtube.com/watch?v=iBJyOrkMvaI"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 404
+    },
+    {
+        "article_id": "115012378428",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012378428",
+        "title": "Layer Clone (Under)",
+        "content": "**Layer Clone (Under)** \\- Duplicate a Pattern in its draped state and place it directly under the original Pattern. Sewing Lines will be automatically applied to the Pattern outlines and Internal Lines to connect the cloned Pattern to the original Pattern. \\- The Layer Clone (Under) function is efficient when creating a double-layered Garment such as padding, collar, cuffs, and more. \\- Select the ![](https://support.clo3d.com/hc/article_attachments/115021447968/mceclip0.png) **Transform Pattern** tool or the ![](https://support.clo3d.com/hc/article_attachments/115021447988/mceclip1.png)**Edit Pattern** tool from the 2D toolbar. \\- Navigate to the 2D window and right click on the Pattern to be cloned and select **Layer Clone (Under)** from the pop-up menu. \\- The cloned Pattern will follow along the mouse. Click on the 2D window to place the cloned Pattern. \\- In the 3D window, the cloned Pattern will be directly placed under the original Pattern and its Pattern outlines and Internal Lines will be sewn to the original Pattern. \\- The cloned Patterns will be highlighted in light green in the 2D window and the linked editing will be applied.",
+        "content_description": "The Layer Clone (Under) feature simplifies the creation of double-layered garments by allowing users to efficiently duplicate a pattern in its draped state, complete with automatic sewing lines connecting it to the original.",
+        "created_at": "2025-03-25T05:41:09Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=D9WO-YvA0FM"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 267
+    },
+    {
+        "article_id": "900005482586",
+        "source": "https://support.clo3d.com/hc/en-us/articles/900005482586",
+        "title": "Can I use CLO's default avatars for posting on my website?  ",
+        "content": "**Question** Can I use CLO avatars for posting on my website? **Answer** Yes. Please carefully read the guideline described in [CLO Terms of Service](https://legal.clo-set.com/additional-clo) (4.1 CLO’s Default Avatars). By following the guideline, you can consistently use CLO's default avatars for posting on your website, social media, and blogs without charging a royalty fee. Please include the attribution below: **Attribution: \"CLO Virtual Fashion, Inc. owns all rights to the avatar displayed** \" ​**Font type: Avenir Next Font Font size: 10 Font Color: 323236**​ If you have any concerns or questions, please [contact us](https://www.clo3d.com/contact).",
+        "content_description": "This webpage provides guidelines for the proper use of CLO avatars on your website, ensuring compliance with CLO's Terms of Service while allowing for royalty-free posting.",
+        "created_at": "2025-03-24T14:26:25Z",
+        "youtube_links": [],
+        "CategoryId": 24022165341209,
+        "Category": "FAQ",
+        "SectionId": 24022297098393,
+        "Section": "Avatars & Fitting",
+        "Tokens": 162
+    },
+    {
+        "article_id": "115014763827",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115014763827",
+        "title": "Create Pattern Symbols",
+        "content": "**Objective** Add pattern instruction markings on 2D Patterns using with Pattern Symbols. **Location** Main Menu ▶ 2D Pattern ▶ Pattern Annotation ▶ **Pattern Symbol** 2D Toolbar ▶ ![pattern_instruction_line.png](https://support.clo3d.com/hc/article_attachments/115025923068/pattern_instruction_line.png) **Pattern Symbol** **Operation** 1. Follow the indicated guideline below: Main Menu ▶ 2D Pattern ▶ Pattern Annotation ▶ **Pattern Symbol** 2D Toolbar ▶ ![pattern_instruction_line.png](https://support.clo3d.com/hc/article_attachments/115025923068/pattern_instruction_line.png) **Pattern Symbol** 2. Hover the mouse over the Pattern outline or Internal Line where Pattern Symbol is to be added. → The Pattern outline or Internal Line is highlighted in light-blue. 3. Click on the segment. → A Pattern Symbol is created on the selected segment. → The Place on Fold 1 mark is added by default. **※Note:** * To create a Pattern Symbol on multiple segments, please select all Pattern outlines or Internal Lines while holding down the Shift key on the keyboard. Or, click and drag on the 2D window, or use the [Polygon Lasso Selection](https://support.clo3d.com/hc/en-us/articles/115004324447) function to select multiple segments at once. * To hide or show Pattern Symbols, right click on the 2D window with the ![edit_pattern.png](https://support.clo3d.com/hc/article_attachments/115025923628/edit_pattern.png) **Edit Pattern** tool and select **Show Annotations**. (Below ver4.0) * Main Menu ▶ Display ▶ 2D Information ▶ **Show Annotations** (ver5.0 or later) * 2D Window ▶ 2D Information Display ▶ **Show Annotations** (ver5.0 or later)",
+        "content_description": "This web page provides step-by-step instructions for adding pattern instruction markings to 2D patterns using Pattern Symbols in the CLO 3D software.",
+        "created_at": "2025-03-14T01:45:27Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003578728,
+        "Section": "2D Pattern Information",
+        "Tokens": 407
+    },
+    {
+        "article_id": "115013821808",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115013821808",
+        "title": "Can I create Patterns from scratch in CLO?",
+        "content": "**Question** Can I create Patterns from scratch in CLO? **Answer** Yes, you can create patterns from scratch in CLO software. Please refer to the tutorial videos below: 1\\. **[Making a pattern](https://www.youtube.com/watch?v=m4uUScYmY9Q&list=PLqL8Ymi3Z68CVPyVcVMfVgVwsEXDy0hOh)** \\-- You will learn how to make a basic pattern block from scratch. 2\\. [**Drafting a Pattern**](https://www.youtube.com/watch?v=MXZeSqCOi1Q&list=PLqL8Ymi3Z68CVPyVcVMfVgVwsEXDy0hOh&index=2) \\-- You will learn how to combine the CLO editing tools to draft a bodice pattern and a sleeve. 3\\. **[From Pattern to Production](https://www.youtube.com/watch?v=ymzkFaceBek&list=PLqL8Ymi3Z68CVPyVcVMfVgVwsEXDy0hOh&index=3)** \\-- You will learn the whole garment creation process in CLO, making it ready for production. *Please refer to **[Create](https://support.clo3d.com/hc/en-us/sections/115000642008-2D-PATTERN)** and **[Edit](https://support.clo3d.com/hc/en-us/articles/115012380108)** Pattern manuals in CLO Help Center. On the other hand, CONNECT offers over 700 free patterns for both female and male versions, allowing you to easily start customizing without the need to create a pattern. Please visit the [**CONNECT platform**](https://connect.clo-set.com/portfolio/208988/collection/collections). ![](https://support.clo3d.com/hc/article_attachments/40473323843737) If you are familiar with generating or downloading 3D patterns, then you would be interested in the feature called \"**[EveryWear](https://connect.clo-set.com/everywear)** \": The EveryWear feature connects creators' digital outfits with avatars and digital spaces, allowing for easy optimization of outfits designed in CLO and Marvelous Designer for various platforms such as games, metaverses, and entertainment. It includes processes for fitting outfits, mesh optimization, rigging, UV packing, and texture baking, making it versatile for creators looking to enhance their digital designs for different applications. For more details, you can refer to the tutorial available on YouTube:",
+        "content_description": "Discover how to create patterns from scratch in CLO software with helpful tutorials and explore additional resources like free patterns and the EveryWear feature for enhancing your digital designs.",
+        "created_at": "2025-03-12T08:20:24Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=wKjp2Xo0VCQ"
+        ],
+        "CategoryId": 24022165341209,
+        "Category": "FAQ",
+        "SectionId": 24022295837977,
+        "Section": "Garments & Patterns",
+        "Tokens": 547
+    },
+    {
+        "article_id": "115012226067",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012226067",
+        "title": "Clone Pattern with Linked Editing – Symmetry Pattern (with Sewing)",
+        "content": "**List of Contents** Symmetry Pattern (With Sewing) Apply Symmetry Pattern (With Sewing) **Symmetry Pattern (With Sewing)** \\- Duplicate Patterns symmetrically with the linked editing function to edit Patterns and Sewing Lines at the same time. **Apply Symmetry Pattern (With Sewing)** \\- Navigate to the 2D toolbar and select the ![](https://support.clo3d.com/hc/article_attachments/115021849587/mceclip0.png) **Transform Pattern** tool or the ![](https://support.clo3d.com/hc/article_attachments/115021911008/mceclip1.png) **Edit Pattern** tool \\- Right-click on the Pattern to be duplicated and select Clone Pattern with Linked Editing – **Symmetry Pattern (With Sewing).** \\- The duplicated Pattern will follow along with the mouse cursor. \\- Click on the 2D window to paste the duplicated Pattern. \\- The symmetrized Patterns will be highlighted in blue. \\- Since the Patterns are symmetrized, they can be edited symmetrically at the same time along with their Sewing Lines. Go back to the List of Contents",
+        "content_description": "Discover how to efficiently create and edit symmetrical sewing patterns using linked editing tools on this web page.",
+        "created_at": "2025-03-12T04:20:37Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=exDXe-fAeFk"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 243
+    },
+    {
+        "article_id": "115012377708",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012377708",
+        "title": "Clone as Reference Line",
+        "content": "**Clone as Reference Line** * **Clone as Reference Line ** \\- Create a Reference Line to refer to when editing a Pattern \\- Select the ![](https://support.clo3d.com/hc/article_attachments/115021447968/mceclip0.png) **Transform Pattern** tool or the ![](https://support.clo3d.com/hc/article_attachments/115021447988/mceclip1.png) **Edit Pattern** tool from the 2D toolbar. \\- Right-click on the Pattern and select **Clone as Reference Line** from the pop-up menu. \\- A Reference Line will be created. \\- Navigate to the 2D toolbar and select![](https://support.clo3d.com/hc/article_attachments/115021447988/mceclip1.png) **Edit Pattern** tool. Then, click and drag to move the desired point or line on the Pattern. \\- The original shape of the Pattern will appear as a Reference Line.",
+        "content_description": "Learn how to create a Reference Line for precise editing of patterns in your design workflow.",
+        "created_at": "2025-03-12T04:19:43Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=6eb2kFjTbBY"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 202
+    }
+]

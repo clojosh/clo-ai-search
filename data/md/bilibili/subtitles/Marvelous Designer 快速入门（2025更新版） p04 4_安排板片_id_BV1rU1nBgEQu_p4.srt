@@ -1,0 +1,256 @@
+1
+00:00:00,000 --> 00:00:15,000
+First, click on the right button in the blank area of the 2D window to set the 2D background, then click on Reset to reset the 2D background.
+
+2
+00:00:15,000 --> 00:00:24,000
+Before starting the 3D arrangement, we can first organize the 2D panels in the 2D window, such as the parallel panels.
+
+3
+00:00:24,000 --> 00:00:35,000
+Select the two front panels in the frame, then click on the right button on the panel to select Align, then select Up to align the two panels up and down.
+
+4
+00:00:35,000 --> 00:00:46,000
+Then go to the 3D tool bar, select Rearrange 2D Arrangement, All, align the panels of the 3D window to the arrangement of the 2D panel.
+
+5
+00:00:46,000 --> 00:00:52,000
+Next, we will arrange the panels around the virtual model through the arrangement point.
+
+6
+00:00:52,000 --> 00:00:58,000
+First, press Ctrl A to select all the panels, then click on the panel, and a positional ball will appear.
+
+7
+00:00:58,000 --> 00:01:03,000
+In the default situation, the positional ball is targeted at the viewing angle of the screen.
+
+8
+00:01:03,000 --> 00:01:13,000
+In the case of rotating the viewing angle, the three different colors of the X, Y, and Z lines will not be in the same position, and will always remain in the relative position of the lens view.
+
+9
+00:01:13,000 --> 00:01:21,000
+In order to make it easier to use, we can click on the right button in the 3D background to select the positional ball. There are three options here.
+
+10
+00:01:21,000 --> 00:01:22,000
+Here are the three options.
+
+11
+00:01:22,000 --> 00:01:32,000
+In addition to the screen coordinates that we have just mentioned, there are also partial coordinates and world coordinates.
+
+12
+00:01:32,000 --> 00:01:37,000
+Partial coordinates are the coordinates of the object itself.
+
+13
+00:01:37,000 --> 00:01:43,000
+For example, here I have a butterfly node from the outside.
+
+14
+00:01:43,000 --> 00:01:49,000
+When I rotate this butterfly node, the positional ball will rotate with it.
+
+15
+00:01:49,000 --> 00:01:51,000
+And if we change the positional ball to 3D,
+
+16
+00:01:51,000 --> 00:02:01,000
+the positional ball will be fixed to the world coordinates.
+
+17
+00:02:01,000 --> 00:02:06,000
+You can choose the appropriate coordinates according to your needs.
+
+18
+00:02:06,000 --> 00:02:09,000
+Here I choose the partial coordinates.
+
+19
+00:02:09,000 --> 00:02:18,000
+The created panels in the software will use world coordinates, and the models imported from outside will use their original coordinates.
+
+20
+00:02:18,000 --> 00:02:26,000
+Select all the panels in the software and drag the green line to align the panels to the position of the virtual model.
+
+21
+00:02:26,000 --> 00:02:33,000
+Or drag the yellow square to align the panels.
+
+22
+00:02:33,000 --> 00:02:38,000
+Next, go to the virtual model display list in the 3D view menu.
+
+23
+00:02:38,000 --> 00:02:42,000
+Select the display point and display layout.
+
+24
+00:02:42,000 --> 00:02:46,000
+The green circle around the virtual model is the layout.
+
+25
+00:02:46,000 --> 00:02:50,000
+The blue point on the layout board is the layout point.
+
+26
+00:02:50,000 --> 00:02:57,000
+When we select a panel, the mouse will stop at the layout point, which can predict the layout effect.
+
+27
+00:02:57,000 --> 00:03:04,000
+The center of the panel will be placed on this layout point, and then rotate along the layout board.
+
+28
+00:03:04,000 --> 00:03:08,000
+Click on the layout point to arrange the sleeve panels.
+
+29
+00:03:08,000 --> 00:03:13,000
+You can see that when the panels are arranged, the panels on the other side are also arranged.
+
+30
+00:03:13,000 --> 00:03:14,000
+If there is a gray circle around the layout point,
+
+31
+00:03:14,000 --> 00:03:19,000
+then this point is the alignment point.
+
+32
+00:03:19,000 --> 00:03:25,000
+When the panels are arranged on the alignment point, the other side of the panel will automatically be arranged.
+
+33
+00:03:25,000 --> 00:03:33,000
+When you turn on the display layout board, you may select the layout board when you click on the panel.
+
+34
+00:03:33,000 --> 00:03:38,000
+Therefore, in order to prevent non-operational operation, we can turn off the display layout board.
+
+35
+00:03:38,000 --> 00:03:43,000
+When selecting multiple panels, you can place them as a whole in the layout.
+
+36
+00:03:44,000 --> 00:03:46,000
+Click on the layout board.
+
+37
+00:03:46,000 --> 00:03:52,000
+Press the Shift key to click on two front panels and place them on the corresponding layout point.
+
+38
+00:03:52,000 --> 00:03:55,000
+You can see that the two panels are arranged together.
+
+39
+00:03:55,000 --> 00:04:00,000
+The keys in the 3D window will also react at the same time to the effect after arrangement.
+
+40
+00:04:03,000 --> 00:04:07,000
+We can also separate the front panels.
+
+41
+00:04:07,000 --> 00:04:11,000
+But after arrangement, we will see that the panels are overlapping.
+
+42
+00:04:11,000 --> 00:04:13,000
+You can find the layout in the property editor.
+
+43
+00:04:13,000 --> 00:04:16,000
+In the property editor, you can find the layout option.
+
+44
+00:04:16,000 --> 00:04:19,000
+By adjusting the position of the X-Row and Y-Row,
+
+45
+00:04:19,000 --> 00:04:24,000
+the panels will be separated from each other and adjusted to a position slightly higher than the border line.
+
+46
+00:04:24,000 --> 00:04:27,000
+The arrangement option is also set to be symmetrical.
+
+47
+00:04:27,000 --> 00:04:30,000
+Since we want to sew the border line afterwards,
+
+48
+00:04:30,000 --> 00:04:32,000
+we must ensure that when the panel is arranged,
+
+49
+00:04:32,000 --> 00:04:37,000
+the following sewing lines will not cause the panel to pass through the body to sew.
+
+50
+00:04:37,000 --> 00:04:40,000
+Then place the back panel in the appropriate position.
+
+51
+00:04:40,000 --> 00:04:41,000
+By adjusting the position of the panel,
+
+52
+00:04:41,000 --> 00:04:45,000
+the panel will be separated from the model or close to the model.
+
+53
+00:04:45,000 --> 00:04:49,000
+Adjusting the position of the panel will make the panel no longer intersect with the model.
+
+54
+00:04:49,000 --> 00:04:54,000
+Then adjust the Y-Row to make the panel line exceed the model.
+
+55
+00:04:54,000 --> 00:04:58,000
+Then place the pocket in the location of the chest.
+
+56
+00:05:00,000 --> 00:05:03,000
+When choosing a panel, the mouse is stopped at the point of arrangement.
+
+57
+00:05:03,000 --> 00:05:06,000
+It may re-arrange the panel and cause misoperations.
+
+58
+00:05:06,000 --> 00:05:08,000
+Hence, when we do not need the point of arrangement,
+
+59
+00:05:08,000 --> 00:05:18,000
+The axis of the positioning ball can be pulled out of the pocket of the board to avoid cross-stitching.
+
+60
+00:05:18,000 --> 00:05:23,000
+The 3D arrangement of the board is based on the direction of the 2D window.
+
+61
+00:05:23,000 --> 00:05:32,000
+You can go to the arrangement and direction in the attribute editor to adjust the angle and let the board return to the correct arrangement position.
+
+62
+00:05:32,000 --> 00:05:41,000
+If the board overlaps with other boards and cannot be selected, you can select a board that is blocked and press Shift and Q to hide it.
+
+63
+00:05:41,000 --> 00:05:47,000
+Then drag the axis of the positioning ball to the appropriate position of the pocket board.
+
+64
+00:05:47,000 --> 00:05:52,000
+Now you can save the project file and prepare to learn the following sewing.
+

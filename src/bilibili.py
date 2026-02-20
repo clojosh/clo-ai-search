@@ -3,12 +3,17 @@ import json
 import multiprocessing
 import os
 import re
-from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime, timedelta
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from posixpath import basename, splitext
+from typing import Any, Dict, List
 
+import av
 import questionary
+import torch
 import yt_dlp
+from faster_whisper import WhisperModel
 from rich.console import Console
 from tqdm import tqdm
 
@@ -18,20 +23,38 @@ from tools.azure import Azure
 # Initialize Rich console for pretty logging
 console = Console()
 
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+model = WhisperModel(
+    "large-v3",
+    device=DEVICE,
+    compute_type="float16",  # or "int8_float16" if VRAM constrained
+)
+
 
 class Bilibili:
-    def __init__(self, azure: Azure, cookie_path: str = "bilibili.com_cookies.txt"):
+    def __init__(self, azure: Azure):
         self.azure = azure
-        self.cookie_path = cookie_path
         self.base_dir = Path("data/md/bilibili")
+        self.cookie_path = os.path.join(os.getcwd(), self.base_dir, "bilibili_cookies.txt")
+        self.video_dir = self.base_dir / "videos"
         self.subtitle_dir = self.base_dir / "subtitles"
         self.transcript_dir = self.base_dir / "transcripts"
+        self.metadata_dir = self.base_dir / "metadata"
 
         # Ensure directories exist
+        self.video_dir.mkdir(parents=True, exist_ok=True)
         self.subtitle_dir.mkdir(parents=True, exist_ok=True)
         self.transcript_dir.mkdir(parents=True, exist_ok=True)
+        self.metadata_dir.mkdir(parents=True, exist_ok=True)
 
-    def sanitize_path(self, name: str) -> str:
+    def has_audio(self, file_path: str) -> bool:
+        try:
+            container = av.open(file_path)
+            return len(container.streams.audio) > 0
+        except Exception:
+            return False
+
+    def sanitize_filename(self, name: str) -> str:
         """Removes illegal characters from filenames."""
         return re.sub(r'[\\/*?:"<>|]', "", name)
 
@@ -55,7 +78,115 @@ class Bilibili:
             "no_warnings": True,
         }
 
-    def fetch_channel_videos(self, channel_url: str, limit: int = 100) -> List[Dict[str, Any]]:
+    def retrieve_video_metadata(self, video_url: str):
+        """Fetches and saves metadata for a single video."""
+        opts = {
+            **self._get_common_opts(),
+            "extract_flat": False,
+        }
+
+        with yt_dlp.YoutubeDL(opts) as ydl:
+            info = ydl.extract_info(video_url, download=False)
+
+            if info.get("entries") is None:
+                with open(f"{self.base_dir / info.get('id')}.json", "w", encoding="utf-8") as f:
+                    json.dump(info, f, ensure_ascii=False, indent=4)
+            else:
+                for entry in info.get("entries", []):
+                    console.print(f"Title: {entry.get('title')}")
+                    console.print(f"ID: {entry.get('id')}")
+                    console.print(f"URL: {entry.get('webpage_url')}")
+                    console.print(f"Upload Date: {entry.get('upload_date')}")
+                    console.print(f"Description: {entry.get('description')}\n")
+
+                    with open(f"{self.base_dir / entry.get('id')}.json", "w", encoding="utf-8") as f:
+                        json.dump(info, f, ensure_ascii=False, indent=4)
+
+    # Method 1
+    def download_channel_videos(self, channel_url: str):
+        ydl_opts = {
+            # Limit video height to 720p and merge with best audio
+            "format": "bv*[height<=720]+ba/b[height<=720] / best[height<=720]",
+            "cookiefile": self.cookie_path,
+            "merge_output_format": "mp4",  # Forces the final file into MP4 container
+            "noplaylist": False,  # Ensure it downloads the whole channel/playlist
+            "ignoreerrors": True,
+            "sleep_interval": 2,  # Prevent IP flagging
+            "outtmpl": str(self.video_dir / "%(title)s_id_%(id)s.%(ext)s"),
+            # "playlistend": 5,
+        }
+
+        try:
+            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                info = ydl.extract_info(channel_url, download=True)
+
+                for entry in info["entries"]:
+                    # Handle both single videos and playlists (multi-part)
+                    sub_entries = entry.get("entries", [entry])
+
+                    for sub_entry in sub_entries:
+                        title = self.sanitize_filename(sub_entry.get("title"))
+                        print(f"Saving metadata for {title}")
+
+                        raw_date = sub_entry.get("upload_date", "19700101")
+                        formatted_date = datetime.strptime(raw_date, "%Y%m%d").strftime("%Y-%m-%dT00:00:00Z")
+
+                        doc = {
+                            "video_id": sub_entry.get("id"),
+                            "title": title,
+                            "url": sub_entry.get("webpage_url"),
+                            "published_at": formatted_date,
+                            "description": sub_entry.get("description"),
+                        }
+
+                        save_path = self.metadata_dir / f"{title}.json"
+
+                        with open(save_path, "w+", encoding="utf-8") as f:
+                            json.dump(doc, f, ensure_ascii=False, indent=4)
+
+        except Exception as e:
+            print(e)
+
+    def generate_subtitle(self, video_path: str, output_srt_path: str):
+        """
+        Generate subtitle for a single video using faster-whisper.
+        """
+
+        def format_srt_time(seconds: float) -> str:
+            td = timedelta(seconds=seconds)
+            total_seconds = int(td.total_seconds())
+            hours = total_seconds // 3600
+            minutes = (total_seconds % 3600) // 60
+            secs = total_seconds % 60
+            millis = int((seconds - int(seconds)) * 1000)
+            return f"{hours:02}:{minutes:02}:{secs:02},{millis:03}"
+
+        video_title = splitext(basename(video_path))[0]
+        print(f"\nGenerating subtitles for {video_title}")
+
+        segments, info = model.transcribe(
+            os.path.join(video_path),
+            language="en",
+            task="translate",
+            beam_size=5,
+            # vad_filter=True,  # Skip silence
+            # vad_parameters=dict(min_silence_duration_ms=500),
+            log_progress=True,  # safer in batch runs
+        )
+
+        srt_content = []
+        for i, seg in enumerate(segments, start=1):
+            start = format_srt_time(seg.start)
+            end = format_srt_time(seg.end)
+            text = seg.text.strip()
+
+            srt_content.append(f"{i}\n{start} --> {end}\n{text}\n\n")
+
+        with open(output_srt_path, "w", encoding="utf-8") as f:
+            f.write("".join(srt_content))
+
+    # Method 2
+    def fetch_channel_videos(self, channel_url: str, limit: int = 200) -> List[Dict[str, Any]]:
         """Retrieves a list of video entries from a channel."""
         opts = {
             **self._get_common_opts(),
@@ -120,7 +251,7 @@ class Bilibili:
                 "transcript": transcript,
             }
 
-            filename = f"{self.sanitize_path(entry['title'])}.json"
+            filename = f"{self.sanitize_filename(entry['title'])}.json"
             save_path = self.transcript_dir / filename
 
             with open(save_path, "w", encoding="utf-8") as f:
@@ -139,7 +270,9 @@ class Bilibili:
         Returns:
             None
         """
-        azure, file_path = params
+        stage, brand, file_path = params
+
+        azure = Azure(stage, brand)
 
         # Read the transcripts from the file
         with open(file_path, "r", encoding="utf-8") as file:
@@ -167,68 +300,61 @@ class Bilibili:
 
     def mp_prepare_transcripts(self):
         files = os.listdir(self.transcript_dir)
-        num_workers = 4  # Adjust based on your API limits
+        num_workers = 5  # Adjust based on your API limits
 
         # Pass the worker index (i % num_workers) so they don't fight for the same line
-        prepare_transcripts_params = [(self.azure, os.path.join(self.transcript_dir, f)) for f in files]
+        prepare_transcripts_params = [(self.azure.stage, self.azure.brand, os.path.join(self.transcript_dir, f)) for f in files]
         # Main progress bar (Position 0)
         with multiprocessing.Pool(num_workers) as p:
             for _ in tqdm(p.imap_unordered(Bilibili.prepare_transcripts, prepare_transcripts_params), total=len(prepare_transcripts_params), desc="Overall Progress", position=0):
                 pass
 
-    def upload_transcripts(self):
-        for file in tqdm(os.listdir(os.path.join(self.transcript_dir)), desc="Uploading Transcripts", colour="green", position=0, leave=True):
-            with open(os.path.join(self.transcript_dir, file), "r", encoding="utf-8") as f:
-                transcript = json.load(f)
+    def upload_transcripts(self, file):
+        with open(os.path.join(self.transcript_dir, file), "r", encoding="utf-8") as f:
+            transcript = json.load(f)
 
-                if transcript["transcript"] == "":
-                    continue
+            if transcript["transcript"] == "":
+                return
 
-                if "summary" in transcript:
-                    if transcript["summary"] == "" or len(transcript["summary"]) < 150:
-                        continue
+            if "summary" in transcript:
+                if transcript["summary"] == "" or len(transcript["summary"]) < 150:
+                    return
 
-                if transcript["video_id"].startswith("_"):
-                    transcript["video_id"] = "YT" + transcript["video_id"]
+            if transcript["video_id"].startswith("_"):
+                transcript["video_id"] = "YT" + transcript["video_id"]
 
-                self.azure.search_client.upload_documents(
-                    {
-                        "@search.action": "mergeOrUpload",
-                        "article_id": transcript["video_id"],
-                        "source": transcript["url"],
-                        "title": transcript["title"],
-                        "content": transcript["summary"] if "summary" in transcript else transcript["transcript"],
-                        "content_description": transcript["description"],
-                        "created_at": transcript["published_at"],
-                        "youtube_links": [transcript["url"]],
-                        "title_vector": self.azure.openai_helper.generate_embeddings(text=transcript["title"]),
-                        "content_vector": self.azure.openai_helper.generate_embeddings(text=transcript["summary"]),
-                    }
-                )
-
-    async def run_scaper(self, channel_url: str):
-        """Main entry point for the scraper."""
-        videos = self.fetch_channel_videos(channel_url)
-        console.print(f"Found [bold]{len(videos)}[/bold] videos. Processing...\n")
-
-        # yt-dlp is blocking, so we run it in a thread pool to avoid freezing the loop
-        loop = asyncio.get_event_loop()
-        for video in videos:
-            await loop.run_in_executor(None, self.process_video, video["id"])
+            self.azure.search_client.upload_documents(
+                {
+                    "@search.action": "mergeOrUpload",
+                    "article_id": transcript["video_id"],
+                    "source": transcript["url"],
+                    "title": transcript["title"],
+                    "content": transcript["summary"] if "summary" in transcript else transcript["transcript"],
+                    "content_description": transcript["description"],
+                    "created_at": transcript["published_at"],
+                    "youtube_links": [transcript["url"]],
+                    "title_vector": self.azure.openai_helper.generate_embeddings(text=transcript["title"]),
+                    "content_vector": self.azure.openai_helper.generate_embeddings(text=transcript["summary"]),
+                }
+            )
 
 
 if __name__ == "__main__":
     # Configuration
-    TARGET_CHANNEL = "https://space.bilibili.com/431424487/video"
+    TARGET_CHANNEL = "https://space.bilibili.com/431424487/upload/video"
 
     stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
     brand = questionary.select("Which brand?", choices=["clo3d", "md", "allinone"]).ask()
     task = questionary.select(
         "What task?",
         choices=[
-            "Get All Transcripts",
+            "Download All Videos (Method 1)",
+            "Generate All Subtitles (Method 1)",
+            "Correlate Subtitles with Metadata (Method 1)",
+            "Get All Transcripts (Method 2)",
             "Prepare All Transcripts",
             "Upload All Transcripts",
+            "Retrieve Video Metadata (Method 1)",
             "Prepare Transcript",
             "Upload Transcript",
             "Find & Delete AI Search Documents",
@@ -239,14 +365,69 @@ if __name__ == "__main__":
     downloader = Bilibili(azure)
     ai_search = AISearch(azure)
 
-    if task == "Get All Transcripts":
-        asyncio.run(downloader.run_scaper(TARGET_CHANNEL))
+    if task == "Download All Videos":
+        downloader.download_channel_videos(TARGET_CHANNEL)
+
+    elif task == "Generate All Subtitles":
+        for video_file in os.listdir(downloader.video_dir):
+            video_path = os.path.join(downloader.video_dir, video_file)
+
+            output_srt_path = os.path.join(downloader.subtitle_dir, os.path.splitext(video_file)[0] + ".srt")
+            if os.path.exists(output_srt_path):
+                continue  # Skip if subtitle already exists
+
+            if not downloader.has_audio(video_path):
+                continue
+
+            downloader.generate_subtitle(video_path, output_srt_path)
+
+    elif task == "Correlate Subtitles with Metadata":
+        for files in os.listdir(downloader.metadata_dir):
+            with open(os.path.join(downloader.metadata_dir, files), "r", encoding="utf-8") as f:
+                metadata = json.load(f)
+
+            title = metadata["title"]
+            video_id = metadata["video_id"]
+
+            # Find matching subtitle file
+            subtitle_file = next((s for s in os.listdir(downloader.subtitle_dir) if video_id in s), None)
+
+            if subtitle_file:
+                with open(os.path.join(downloader.subtitle_dir, subtitle_file), "r", encoding="utf-8") as f:
+                    srt_content = f.read()
+
+                transcript = downloader.clean_srt_to_txt(srt_content)
+
+                doc = {
+                    "video_id": video_id,
+                    "title": title,
+                    "url": metadata["url"],
+                    "published_at": metadata["published_at"],
+                    "description": metadata["description"],
+                    "transcript": transcript,
+                }
+
+                save_path = downloader.transcript_dir / f"{downloader.sanitize_filename(title)}.json"
+                with open(save_path, "w+", encoding="utf-8") as f:
+                    json.dump(doc, f, ensure_ascii=False, indent=4)
+
+    elif task == "Get All Transcripts":
+        videos = downloader.fetch_channel_videos(TARGET_CHANNEL)
+
+        for video in videos:
+            asyncio.run(downloader.process_video(video["id"]))
 
     elif task == "Prepare All Transcripts":
         downloader.mp_prepare_transcripts()
 
     elif task == "Upload All Transcripts":
-        downloader.upload_transcripts()
+        files = os.listdir(downloader.transcript_dir)
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            list(tqdm(executor.map(downloader.upload_transcripts, files), total=len(files), desc="Uploading"))
+
+    elif task == "Retrieve Video Metadata":
+        video_url = questionary.text("Enter the video URL:").ask()
+        downloader.retrieve_video_metadata(video_url)
 
     elif task == "Prepare Transcript":
         file = questionary.select("Which transcript file?", choices=os.listdir(downloader.transcript_dir)).ask()

@@ -1,0 +1,148 @@
+1
+00:00:00,000 --> 00:00:04,000
+Self-designed model software simulation
+
+2
+00:00:04,000 --> 00:00:08,000
+Now software model simulation can be used to self-design virtual models,
+
+3
+00:00:08,000 --> 00:00:14,000
+including simple non-human shapes or virtual models without bones.
+
+4
+00:00:14,000 --> 00:00:18,000
+Now add an OBJ or FBX virtual model.
+
+5
+00:00:18,000 --> 00:00:23,000
+Here we add an OBJ file, then confirm the virtual model that is imported.
+
+6
+00:00:23,000 --> 00:00:29,000
+Please note that the virtual model you import cannot have a hole or a self-interference problem.
+
+7
+00:00:29,000 --> 00:00:33,000
+Go to the 3D window of the virtual model rendering type,
+
+8
+00:00:33,000 --> 00:00:38,000
+select the semi-transparent surface or display the frame to preview and check the potential problems.
+
+9
+00:00:38,000 --> 00:00:45,000
+Insert a costume that matches the size of the virtual model or create a costume for the virtual model.
+
+10
+00:00:45,000 --> 00:00:49,000
+Select the virtual model, then go to the property editor.
+
+11
+00:00:49,000 --> 00:00:53,000
+Under the surface settings, you can select the software model simulation.
+
+12
+00:00:53,000 --> 00:00:58,000
+Please remember to select CPU simulation, then turn on the simulation.
+
+13
+00:00:59,000 --> 00:01:07,000
+In this example, we will adjust the software model strength to 6500 and then check the final result.
+
+14
+00:01:12,000 --> 00:01:17,000
+In addition, you can also apply software model simulation to a simple structure object.
+
+15
+00:01:17,000 --> 00:01:21,000
+In this example, we are using a very simple object.
+
+16
+00:01:21,000 --> 00:01:27,000
+You can find it in the picture library, virtual model, fill-in model, and find it.
+
+17
+00:01:27,000 --> 00:01:31,000
+You need to select the virtual model display type.
+
+18
+00:01:36,000 --> 00:01:40,000
+Now we add the material outside of this model.
+
+19
+00:01:40,000 --> 00:01:45,000
+Create a rectangular board, place the board on the model.
+
+20
+00:01:45,000 --> 00:01:48,000
+Open the simulation, let it hang on the model.
+
+21
+00:01:48,000 --> 00:01:53,000
+Now we use the line sewing tool to sew the two ends of this fabric together.
+
+22
+00:01:53,000 --> 00:01:56,000
+In this example, we reduce the particle strength to 10,
+
+23
+00:01:56,000 --> 00:02:03,000
+then harden the board to make the simulation more stable and the effect more obvious.
+
+24
+00:02:03,000 --> 00:02:09,000
+Select the model, then open the software model simulation in the property editor.
+
+25
+00:02:09,000 --> 00:02:13,000
+Also remember to switch to CPU simulation, then turn on the simulation.
+
+26
+00:02:13,000 --> 00:02:18,000
+After opening the simulation, we will see the model under pressure transformation.
+
+27
+00:02:18,000 --> 00:02:23,000
+If your virtual model has an insertion part or a hole, a wrong spring will pop out.
+
+28
+00:02:23,000 --> 00:02:25,000
+In this example, this model has an insertion part.
+
+29
+00:02:25,000 --> 00:02:29,000
+This model also has a hole and insertion problem.
+
+30
+00:02:29,000 --> 00:02:33,000
+According to the conventional operation steps, this model is referred to as a virtual model.
+
+31
+00:02:33,000 --> 00:02:38,000
+After loading, we create a template to affect this model.
+
+32
+00:02:38,000 --> 00:02:42,000
+If you try to activate the software simulation function and open the simulation,
+
+33
+00:02:42,000 --> 00:02:47,000
+you will see the error prompt and point out the current file.
+
+34
+00:02:47,000 --> 00:02:53,000
+If you click OK, you will turn off the spring and disable the software model simulation.
+
+35
+00:02:55,000 --> 00:03:05,000
+Therefore, we again recommend that you open the semi-transparent display or open the display frame to check whether there is a problem affecting the software simulation.
+
+36
+00:03:05,000 --> 00:03:15,000
+If you want to use software model simulation for this model, you need to solve the problem first, then import the file into Marvelous Designer again.
+
+37
+00:03:15,000 --> 00:03:19,000
+That's all for this video. See you in the next video.
+

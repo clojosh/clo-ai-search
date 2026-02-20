@@ -1,0 +1,484 @@
+1
+00:00:00,000 --> 00:00:18,000
+Hello everyone, today we are going to learn how to use the selection grid tool to deal with the problem of clothes passing through the model.
+
+2
+00:00:18,000 --> 00:00:24,000
+Since we are going to use the selection grid tool, let's first learn about its basic knowledge.
+
+3
+00:00:24,000 --> 00:00:28,000
+Select the mouse and select the grid brush tool.
+
+4
+00:00:28,000 --> 00:00:32,000
+In the drop-down menu, you can see three selection grid tools that can be used.
+
+5
+00:00:32,000 --> 00:00:35,000
+The first is the selection grid brush.
+
+6
+00:00:35,000 --> 00:00:42,000
+Use this tool to press the mouse and left keys on the board and drag and drop to highlight the selected area.
+
+7
+00:00:42,000 --> 00:00:46,000
+There are various additional functions that can be used on the right key in the selected area.
+
+8
+00:00:46,000 --> 00:00:51,000
+For example, the selected part of the grid is divided into details and the selected area is converted into a fixed frame.
+
+9
+00:00:51,000 --> 00:00:54,000
+Or you can move it around or shape it.
+
+10
+00:00:54,000 --> 00:00:59,000
+Among them, the part of the grid is converted into a fixed frame and the part of the grid is frozen, which is related to soft selection.
+
+11
+00:00:59,000 --> 00:01:02,000
+The darker the selected area is, the stronger the application effect is.
+
+12
+00:01:02,000 --> 00:01:06,000
+In the brush setting, the strength of the brush is the strength of the brush in the painting process.
+
+13
+00:01:06,000 --> 00:01:09,000
+The higher the number, the stronger the selection area effect.
+
+14
+00:01:09,000 --> 00:01:15,000
+On the other hand, the lower the strength, the softer the application effect.
+
+15
+00:01:17,000 --> 00:01:21,000
+The size is the size of the area selected by the brush.
+
+16
+00:01:21,000 --> 00:01:23,000
+The focus is on the center of the brush.
+
+17
+00:01:23,000 --> 00:01:25,000
+The center of the brush is completely applied.
+
+18
+00:01:25,000 --> 00:01:27,000
+The size of the area is not reduced.
+
+19
+00:01:27,000 --> 00:01:30,000
+When the focus value is high, the reduction area is very small.
+
+20
+00:01:30,000 --> 00:01:32,000
+Most of them are completely applied to the set strength value.
+
+21
+00:01:32,000 --> 00:01:36,000
+The smaller the focus value, the more the reduction part.
+
+22
+00:01:36,000 --> 00:01:41,000
+It should be noted that the selection grid brush function is not able to move or rotate the grid.
+
+23
+00:01:41,000 --> 00:01:46,000
+So its function is to select the grid and then use the right keys.
+
+24
+00:01:46,000 --> 00:01:50,000
+Now let's take a look at the selection grid comparison function.
+
+25
+00:01:50,000 --> 00:01:52,000
+Use the selection grid comparison function.
+
+26
+00:01:52,000 --> 00:01:58,000
+In the 3D window, hold down the left mouse button and drag the mouse to select the grid that needs to be modified.
+
+27
+00:01:58,000 --> 00:02:05,000
+The selected area will be highlighted in green and will be highlighted in the same way in the 2D and 3D windows.
+
+28
+00:02:05,000 --> 00:02:09,000
+Similarly, we can use this tool to select the grid top in the 2D window.
+
+29
+00:02:09,000 --> 00:02:13,000
+Click on the 2D or 3D background to cancel the selection grid.
+
+30
+00:02:13,000 --> 00:02:17,000
+Click on the grid top to select only one grid top.
+
+31
+00:02:17,000 --> 00:02:21,000
+Click on the grid top on the line to select the entire line.
+
+32
+00:02:22,000 --> 00:02:28,000
+Double-click on the grid in the version and select the grid top of the entire version.
+
+33
+00:02:28,000 --> 00:02:36,000
+When choosing a section, if you select another section directly, the selection will be cancelled.
+
+34
+00:02:36,000 --> 00:02:43,000
+If we need to select several grid top of the area at the same time,
+
+35
+00:02:43,000 --> 00:02:50,000
+then we need to hold down the CTRL and SHIFT keys to stop selecting and then select all the grid top.
+
+36
+00:02:50,000 --> 00:02:51,000
+The grid top that needs to be selected is selected.
+
+37
+00:02:52,000 --> 00:03:06,000
+If you only press Shift and continue to select the grid, then the selected grid will be canceled, and the unselected grid will be selected.
+
+38
+00:03:06,000 --> 00:03:17,000
+If you only press Ctrl and continue to select, then the selected grid will be canceled.
+
+39
+00:03:17,000 --> 00:03:21,000
+After selecting, click on the selected grid.
+
+40
+00:03:21,000 --> 00:03:33,000
+You can move or rotate the selected area by positioning the ball.
+
+41
+00:03:33,000 --> 00:03:43,000
+Note that the center of rotation is where you click when selecting the grid.
+
+42
+00:03:47,000 --> 00:03:54,000
+After adjusting the grid position, turn on the simulation.
+
+43
+00:03:54,000 --> 00:04:01,000
+The board will reset the simulation and return to the correct simulation position.
+
+44
+00:04:01,000 --> 00:04:05,000
+When using the Select Grid Comparison or Select Grid Search function,
+
+45
+00:04:05,000 --> 00:04:08,000
+right-click on the grid in the selected area.
+
+46
+00:04:08,000 --> 00:04:10,000
+There is an option to rotate the grid level.
+
+47
+00:04:10,000 --> 00:04:15,000
+After selecting this option, the selected grid will automatically rotate the level.
+
+48
+00:04:15,000 --> 00:04:17,000
+If you select the grid,
+
+49
+00:04:17,000 --> 00:04:19,000
+the grid will rotate vertically,
+
+50
+00:04:19,000 --> 00:04:21,000
+and the grid will rotate vertically.
+
+51
+00:04:21,000 --> 00:04:25,000
+These functions are used to quickly adjust the grid position.
+
+52
+00:04:25,000 --> 00:04:31,000
+Grid rotation is mainly used to deal with the problem of grid surface damage or the back of the grid.
+
+53
+00:04:31,000 --> 00:04:33,000
+Here we will learn about the deep-layer fixing pin.
+
+54
+00:04:33,000 --> 00:04:37,000
+If the selected grid area is converted into a fixing pin,
+
+55
+00:04:37,000 --> 00:04:39,000
+then after we open the simulation,
+
+56
+00:04:39,000 --> 00:04:42,000
+this area will not return to its original position.
+
+57
+00:04:42,000 --> 00:04:45,000
+They will be fixed in the 3D space.
+
+58
+00:04:45,000 --> 00:04:47,000
+Right-click on the fixing pin area,
+
+59
+00:04:47,000 --> 00:04:49,000
+we can delete the extra fixing pins.
+
+60
+00:04:49,000 --> 00:04:53,000
+We will talk about the other functions in other tutorial videos.
+
+61
+00:04:53,000 --> 00:04:55,000
+There is not much to talk about here.
+
+62
+00:04:55,000 --> 00:04:58,000
+Finally, I will briefly introduce the Select Grid Comparison function.
+
+63
+00:04:58,000 --> 00:05:03,000
+The difference between this tool and the Select Grid Comparison tool is only in the method of selecting the grid.
+
+64
+00:05:03,000 --> 00:05:08,000
+The Select Grid Comparison tool is to use a mouse to draw a locking area,
+
+65
+00:05:08,000 --> 00:05:11,000
+and then select the grid peak in the area.
+
+66
+00:05:11,000 --> 00:05:15,000
+Now let's see how to use the Select Grid tool to deal with the problem of hand insertion.
+
+67
+00:05:15,000 --> 00:05:22,000
+In the process of using the Select Grid tool to select the grid peak and adjust it,
+
+68
+00:05:22,000 --> 00:05:27,000
+we can only select the grid that can be seen in the current view.
+
+69
+00:05:27,000 --> 00:05:33,000
+If the grid in the area is blocked by other objects in the 3D space,
+
+70
+00:05:33,000 --> 00:05:35,000
+such as a virtual model,
+
+71
+00:05:35,000 --> 00:05:37,000
+or by other panels,
+
+72
+00:05:37,000 --> 00:05:40,000
+or in a position that cannot be seen in our view,
+
+73
+00:05:40,000 --> 00:05:43,000
+then there is no way to be selected at the same time.
+
+74
+00:05:43,000 --> 00:05:45,000
+Therefore, in the process of selection,
+
+75
+00:05:45,000 --> 00:05:47,000
+we can select the grid in the 3D space first,
+
+76
+00:05:47,000 --> 00:05:50,000
+and then refer to the position of the green height.
+
+77
+00:05:50,000 --> 00:05:55,000
+In the 2D window, select the grid that needs to be modified in the frame,
+
+78
+00:05:55,000 --> 00:05:59,000
+and then move it back to the 3D window.
+
+79
+00:05:59,000 --> 00:06:03,000
+This can avoid the problem of the invisible grid being unable to be selected.
+
+80
+00:06:03,000 --> 00:06:06,000
+Next, we will repeat the previous operation.
+
+81
+00:06:06,000 --> 00:06:10,000
+After selecting the grid in the 2D window,
+
+82
+00:06:10,000 --> 00:06:12,000
+go back to the 3D window, use the positioning ball,
+
+83
+00:06:12,000 --> 00:06:14,000
+and pull these grid out a little,
+
+84
+00:06:14,000 --> 00:06:17,000
+so that they do not intersect with the hand.
+
+85
+00:06:17,000 --> 00:06:20,000
+Then there are some repeated operations.
+
+86
+00:06:20,000 --> 00:06:22,000
+We can adjust them in large pieces first,
+
+87
+00:06:22,000 --> 00:06:25,000
+and then adjust them in small parts.
+
+88
+00:06:25,000 --> 00:06:27,000
+Then turn on the simulation,
+
+89
+00:06:27,000 --> 00:06:46,000
+wait for the panel to slowly simulate the original position.
+
+90
+00:06:52,000 --> 00:06:54,000
+After the simulation is complete,
+
+91
+00:06:54,000 --> 00:07:01,000
+we will continue to select the grid in the 2D window,
+
+92
+00:07:01,000 --> 00:07:04,000
+and then move them to the 3D space.
+
+93
+00:07:10,000 --> 00:07:13,000
+Next, let's take a look at how to adjust the other side.
+
+94
+00:07:13,000 --> 00:07:17,000
+On the other side, the entire sleeve panel is outside.
+
+95
+00:07:17,000 --> 00:07:20,000
+What we have to do is to lift the sleeve up first,
+
+96
+00:07:20,000 --> 00:07:23,000
+so that the sleeve panel can be aligned with the position of the wrist.
+
+97
+00:07:24,000 --> 00:07:30,000
+When the sleeve panel is almost aligned with the position of the wrist,
+
+98
+00:07:30,000 --> 00:07:32,000
+we will pause the simulation,
+
+99
+00:07:32,000 --> 00:07:34,000
+and then we will start to select the grid.
+
+100
+00:07:34,000 --> 00:07:35,000
+Here it is still the same,
+
+101
+00:07:35,000 --> 00:07:37,000
+we select it in the 3D space,
+
+102
+00:07:37,000 --> 00:07:39,000
+and then in the 2D space,
+
+103
+00:07:39,000 --> 00:07:42,000
+use the position of the height just now as a reference to select the grid,
+
+104
+00:07:42,000 --> 00:07:44,000
+and then go back to the 3D space,
+
+105
+00:07:44,000 --> 00:07:46,000
+let the grid pass through the wrist,
+
+106
+00:07:46,000 --> 00:07:50,000
+and pull out some of the other holes.
+
+107
+00:07:50,000 --> 00:07:53,000
+Then press the control button to start the simulation,
+
+108
+00:07:53,000 --> 00:07:55,000
+and wait for the simulation to stabilize.
+
+109
+00:07:56,000 --> 00:07:58,000
+If there are still some gaps,
+
+110
+00:07:58,000 --> 00:08:00,000
+then continue to repeat the previous operation.
+
+111
+00:08:04,000 --> 00:08:08,000
+Finally, if the positioning ball you use is different from the coordinate system used in my video,
+
+112
+00:08:08,000 --> 00:08:11,000
+it may be that you used a default screen coordinate.
+
+113
+00:08:11,000 --> 00:08:14,000
+Right-click in the 3D background,
+
+114
+00:08:14,000 --> 00:08:15,000
+select the positioning ball,
+
+115
+00:08:15,000 --> 00:08:17,000
+you can select the world coordinate,
+
+116
+00:08:17,000 --> 00:08:18,000
+so it's the same as me,
+
+117
+00:08:18,000 --> 00:08:20,000
+it's based on the world as a coordinate.
+
+118
+00:08:20,000 --> 00:08:23,000
+Because the default screen coordinate is based on the camera,
+
+119
+00:08:23,000 --> 00:08:25,000
+so it's based on the 3D view.
+
+120
+00:08:25,000 --> 00:08:26,000
+See you next time.
+
+121
+00:08:26,000 --> 00:08:27,000
+Bye bye.
+

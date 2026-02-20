@@ -1,0 +1,1592 @@
+1
+00:00:00,000 --> 00:00:22,000
+Hello everyone, I am Xueli. In this video, we will learn how to use some settings and functions to avoid some problems in the animation production process.
+
+2
+00:00:22,000 --> 00:00:39,000
+Before starting today's content, please make sure you have watched our animation entry video. In that video, we briefly introduced how to make animation in Marvelous Designer and how to make your animation stable through some settings.
+
+3
+00:00:39,000 --> 00:00:50,000
+In this video, I used version 6.1.723. Until this version, we have fixed a lot of problems related to LNBEC files.
+
+4
+00:00:50,000 --> 00:00:53,000
+So I hope everyone can update to the latest version as much as possible.
+
+5
+00:00:53,000 --> 00:00:55,000
+Next, let's take a look at the first case.
+
+6
+00:00:55,000 --> 00:01:00,000
+In this case, we can see that it has a structure similar to Hanfu.
+
+7
+00:01:00,000 --> 00:01:08,000
+Hanfu itself is relatively loose, and many times Hanfu will have some small accessories, such as butterflies and so on.
+
+8
+00:01:08,000 --> 00:01:11,000
+Here we will complete the action replacement first.
+
+9
+00:01:11,000 --> 00:01:16,000
+First of all, I am using Hanna here, which is the virtual model built into our software.
+
+10
+00:01:16,000 --> 00:01:19,000
+If you need to make an action replacement,
+
+11
+00:01:19,000 --> 00:01:26,000
+then we now need two OBJ models to make the action replacement, because we want to use the MorphTarget function.
+
+12
+00:01:26,000 --> 00:01:32,000
+So let's delete the original virtual model first, and then import OBJ into the file in the upper left corner.
+
+13
+00:01:32,000 --> 00:01:37,000
+Select an OBJ model that we have prepared before in the output menu.
+
+14
+00:01:37,000 --> 00:01:41,000
+Here we do not need to click on the automatic production arrangement point.
+
+15
+00:01:41,000 --> 00:01:47,000
+Just pay attention to the unit and click OK.
+
+16
+00:01:47,000 --> 00:01:54,000
+After the OBJ model is imported, we adjust its surface diameter in the property menu on the right.
+
+17
+00:01:54,000 --> 00:01:59,000
+Because when I was making this set of Hanfu before, the surface diameter I used was 0.
+
+18
+00:01:59,000 --> 00:02:03,000
+So here we need to modify it at the same time.
+
+19
+00:02:03,000 --> 00:02:07,000
+Otherwise, it may be unstable during our second simulation.
+
+20
+00:02:07,000 --> 00:02:12,000
+After modifying the surface diameter to 0, we will simulate it by pressing the control key.
+
+21
+00:02:12,000 --> 00:02:15,000
+After the simulation, we will observe if there is any unstable place.
+
+22
+00:02:15,000 --> 00:02:18,000
+After there is no unstable place, we will proceed to the next step.
+
+23
+00:02:18,000 --> 00:02:21,000
+Then we will observe this set of clothes.
+
+24
+00:02:21,000 --> 00:02:26,000
+First of all, in this set of clothes, we can clearly see that there is a butterfly knot in front of it.
+
+25
+00:02:26,000 --> 00:02:31,000
+Although the structure of the butterfly knot is very small and the number of sheets is not very large,
+
+26
+00:02:31,000 --> 00:02:37,000
+it is easy to produce some instability because it has folds and layers.
+
+27
+00:02:37,000 --> 00:02:40,000
+Especially when some movements are relatively large.
+
+28
+00:02:40,000 --> 00:02:44,000
+So we need to fix the knot of the butterfly knot first.
+
+29
+00:02:44,000 --> 00:02:49,000
+First of all, since the knot is small, it will cover most of the other sheets.
+
+30
+00:02:49,000 --> 00:02:53,000
+So we can reduce its particle diameter to 1.
+
+31
+00:02:53,000 --> 00:02:58,000
+We can reduce its particle diameter to 4 or 3 for other knots.
+
+32
+00:02:58,000 --> 00:03:00,000
+You don't have to worry about this.
+
+33
+00:03:00,000 --> 00:03:03,000
+Because the whole sheet is not a very large sheet.
+
+34
+00:03:03,000 --> 00:03:06,000
+So it doesn't matter if you reduce the particle diameter a little bit.
+
+35
+00:03:06,000 --> 00:03:09,000
+For a structure that is easy to fall like a butterfly knot,
+
+36
+00:03:09,000 --> 00:03:12,000
+what we need to do is to fix it with a fake sewing needle.
+
+37
+00:03:12,000 --> 00:03:15,000
+We will fix it between the two sheets.
+
+38
+00:03:15,000 --> 00:03:18,000
+Here we choose the fake sewing tool.
+
+39
+00:03:18,000 --> 00:03:20,000
+Click on the knot to the upper position.
+
+40
+00:03:20,000 --> 00:03:23,000
+Then click on the belt to the middle position.
+
+41
+00:03:23,000 --> 00:03:28,000
+When creating a fake sewing needle, try to match these two sheets with a flat state.
+
+42
+00:03:28,000 --> 00:03:31,000
+So that you can find the seam point more accurately.
+
+43
+00:03:31,000 --> 00:03:33,000
+Then open the simulation by pressing the control key.
+
+44
+00:03:33,000 --> 00:03:38,000
+We will see that the knot of the butterfly knot will gradually be fixed near the waist.
+
+45
+00:03:38,000 --> 00:03:41,000
+Here we add a fake sewing needle at the knot position.
+
+46
+00:03:41,000 --> 00:03:44,000
+This can prevent the whole thing from shaking up and down.
+
+47
+00:03:44,000 --> 00:03:48,000
+Because more intense shaking will cause the structure of the butterfly knot to fall apart.
+
+48
+00:03:48,000 --> 00:03:52,000
+The most common place for the butterfly knot to be sewn is near its knot.
+
+49
+00:03:52,000 --> 00:03:55,000
+So we first fix the knot.
+
+50
+00:03:55,000 --> 00:03:59,000
+Next, we can import the second OBJ file that we have prepared in advance.
+
+51
+00:03:59,000 --> 00:04:01,000
+Then transform it.
+
+52
+00:04:01,000 --> 00:04:06,000
+Here we simply review how this OBJ file is extracted.
+
+53
+00:04:06,000 --> 00:04:11,000
+First, you need to import the model with the animation into Marvelous Designer.
+
+54
+00:04:11,000 --> 00:04:14,000
+Then open the animation editor at the bottom of the screen.
+
+55
+00:04:14,000 --> 00:04:17,000
+Then we find the first needle of this action.
+
+56
+00:04:17,000 --> 00:04:22,000
+In the form of the first needle, the upper left corner is redirected to the virtual model.
+
+57
+00:04:22,000 --> 00:04:26,000
+Of course, you can also make it in other 3D files.
+
+58
+00:04:26,000 --> 00:04:32,000
+It's just that we need to make sure that the face number of these two models is the same and the number of dots is the same.
+
+59
+00:04:37,000 --> 00:04:39,000
+Then we continue with the steps just now.
+
+60
+00:04:39,000 --> 00:04:44,000
+After selecting the second OBJ file that was extracted just now,
+
+61
+00:04:44,000 --> 00:04:48,000
+we switch to Morph Target in the object type column.
+
+62
+00:04:52,000 --> 00:05:00,000
+After that, our system will move these two OBJ files that you have imported to point to point.
+
+63
+00:05:00,000 --> 00:05:03,000
+There is a transform body number at the bottom.
+
+64
+00:05:03,000 --> 00:05:08,000
+The more transform body numbers, the slower the calculation of this action.
+
+65
+00:05:08,000 --> 00:05:10,000
+The slower it is, the more stable it is.
+
+66
+00:05:10,000 --> 00:05:13,000
+Then we click OK to transform.
+
+67
+00:05:13,000 --> 00:05:18,000
+In the process of transforming, because it is moving point by point,
+
+68
+00:05:18,000 --> 00:05:23,000
+there may be some flatness of the human body in the process.
+
+69
+00:05:23,000 --> 00:05:26,000
+If the difference between the action and the action is too big,
+
+70
+00:05:26,000 --> 00:05:30,000
+we recommend that you best be able to find a way to make a transition in the middle.
+
+71
+00:05:30,000 --> 00:05:34,000
+Here we can see that in fact, in the transformation process,
+
+72
+00:05:34,000 --> 00:05:39,000
+we have already found some problems in the animation process of the costume.
+
+73
+00:05:39,000 --> 00:05:42,000
+For example, now my knot is very stable,
+
+74
+00:05:42,000 --> 00:05:45,000
+but if you don't fix the knot,
+
+75
+00:05:45,000 --> 00:05:49,000
+it may shake during this transformation process.
+
+76
+00:05:49,000 --> 00:05:53,000
+After the transformation is over, we can switch the view
+
+77
+00:05:53,000 --> 00:05:56,000
+to see if there are any other places to be changed.
+
+78
+00:05:56,000 --> 00:06:01,000
+Here I found that there was a cloth that was pierced because of the movement of the finger just now.
+
+79
+00:06:01,000 --> 00:06:03,000
+Here we can open the simulation,
+
+80
+00:06:03,000 --> 00:06:07,000
+and manually drag the plate.
+
+81
+00:06:07,000 --> 00:06:09,000
+After dragging it out,
+
+82
+00:06:09,000 --> 00:06:12,000
+we can check the internal plate.
+
+83
+00:06:12,000 --> 00:06:13,000
+After selecting a plate,
+
+84
+00:06:13,000 --> 00:06:16,000
+press Shift Q to hide this plate.
+
+85
+00:06:16,000 --> 00:06:17,000
+Then we look at the internal plate,
+
+86
+00:06:17,000 --> 00:06:19,000
+see if there are any cracks or deformations.
+
+87
+00:06:19,000 --> 00:06:21,000
+After checking, if there is no problem,
+
+88
+00:06:21,000 --> 00:06:25,000
+we can press Shift W to display all the plates.
+
+89
+00:06:25,000 --> 00:06:27,000
+In the process of checking,
+
+90
+00:06:27,000 --> 00:06:30,000
+we try to look at some parts more comprehensively,
+
+91
+00:06:30,000 --> 00:06:33,000
+especially parts like the bottom of the page.
+
+92
+00:06:33,000 --> 00:06:35,000
+In the case of the heel of the foot,
+
+93
+00:06:35,000 --> 00:06:37,000
+because of our shoes,
+
+94
+00:06:37,000 --> 00:06:38,000
+generally speaking,
+
+95
+00:06:38,000 --> 00:06:40,000
+there are more gaps in the net.
+
+96
+00:06:40,000 --> 00:06:41,000
+And sometimes,
+
+97
+00:06:41,000 --> 00:06:43,000
+the problem of the hair line in the net
+
+98
+00:06:43,000 --> 00:06:46,000
+will lead to the pattern to have some Western-style problems.
+
+99
+00:06:46,000 --> 00:06:48,000
+So here we can first
+
+100
+00:06:48,000 --> 00:06:52,000
+reduce the particle diameter of the entire skirt pattern to 8.
+
+101
+00:06:52,000 --> 00:06:54,000
+After modifying the particle diameter,
+
+102
+00:06:54,000 --> 00:06:56,000
+the overall net gap will increase,
+
+103
+00:06:56,000 --> 00:07:01,000
+and it is not easy to penetrate the place where the shoes are interspersed.
+
+104
+00:07:01,000 --> 00:07:05,000
+Then if we find that there is still a gap after reducing the particle diameter,
+
+105
+00:07:05,000 --> 00:07:10,000
+we can try to increase the surface diameter of the entire virtual model to 1.
+
+106
+00:07:10,000 --> 00:07:13,000
+Then press the control key to simulate,
+
+107
+00:07:13,000 --> 00:07:18,000
+let the plate and the surface diameter we just adjusted be re-closed.
+
+108
+00:07:18,000 --> 00:07:20,000
+Now we go back to the back,
+
+109
+00:07:20,000 --> 00:07:24,000
+we will find that the previous penetration problem has been solved.
+
+110
+00:07:24,000 --> 00:07:26,000
+Then check the knot position,
+
+111
+00:07:26,000 --> 00:07:30,000
+see if there is any change in the process of changing the action.
+
+112
+00:07:30,000 --> 00:07:32,000
+If there is no other problem,
+
+113
+00:07:32,000 --> 00:07:35,000
+we can start to reduce the particle diameter of the outer layer of the pattern,
+
+114
+00:07:35,000 --> 00:07:37,000
+and simulate it.
+
+115
+00:07:37,000 --> 00:07:39,000
+Because once you start recording the animation,
+
+116
+00:07:39,000 --> 00:07:42,000
+you can't change the particle diameter anymore.
+
+117
+00:07:42,000 --> 00:07:46,000
+So we have to prepare these adjustments in advance.
+
+118
+00:07:46,000 --> 00:07:48,000
+After adjusting the particle diameter,
+
+119
+00:07:48,000 --> 00:07:53,000
+we need to adjust the physical properties of the skirt pattern.
+
+120
+00:07:53,000 --> 00:07:57,000
+When we usually use Marvelous Designer to make Hanfu
+
+121
+00:07:57,000 --> 00:07:59,000
+and some dressings,
+
+122
+00:07:59,000 --> 00:08:04,000
+sometimes we will choose some比較有玄錘性的面料,
+
+123
+00:08:04,000 --> 00:08:06,000
+to make it look more intimate.
+
+124
+00:08:06,000 --> 00:08:10,000
+But these fabrics are often because of their own physical properties.
+
+125
+00:08:10,000 --> 00:08:13,000
+In the process of opening the animation simulation,
+
+126
+00:08:13,000 --> 00:08:17,000
+there may be an unstable or strong rebound effect.
+
+127
+00:08:17,000 --> 00:08:20,000
+So we need to make some adjustments to its physical properties.
+
+128
+00:08:20,000 --> 00:08:25,000
+First of all, here we can see that the fabric used in the skirt pattern is silk chiffon,
+
+129
+00:08:25,000 --> 00:08:27,000
+that is, snow-covered fabric.
+
+130
+00:08:27,000 --> 00:08:28,000
+Snow-covered fabric,
+
+131
+00:08:28,000 --> 00:08:30,000
+which has a very low particle diameter,
+
+132
+00:08:30,000 --> 00:08:31,000
+is only 0.
+
+133
+00:08:31,000 --> 00:08:35,000
+We need to increase the particle diameter to at least 4 or above,
+
+134
+00:08:35,000 --> 00:08:39,000
+in order to ensure that it can run as steadily as possible.
+
+135
+00:08:39,000 --> 00:08:40,000
+In addition,
+
+136
+00:08:40,000 --> 00:08:43,000
+because the overall properties of this pattern are all soft,
+
+137
+00:08:43,000 --> 00:08:46,000
+it may have a strong rebound effect
+
+138
+00:08:46,000 --> 00:08:49,000
+during the animation calculation or simulation process.
+
+139
+00:08:49,000 --> 00:08:51,000
+So at this time,
+
+140
+00:08:51,000 --> 00:08:56,000
+we need to increase the properties of the inner damping at the bottom of the fabric.
+
+141
+00:08:56,000 --> 00:08:57,000
+The inner damping properties
+
+142
+00:08:57,000 --> 00:09:00,000
+affect the density of the fabric rebound.
+
+143
+00:09:00,000 --> 00:09:01,000
+After this number is increased,
+
+144
+00:09:01,000 --> 00:09:04,000
+the movement and rebound of the fabric will become slower,
+
+145
+00:09:04,000 --> 00:09:09,000
+as if there is resistance in the air to prevent it from rebounding.
+
+146
+00:09:09,000 --> 00:09:11,000
+This can help us stabilize the structure.
+
+147
+00:09:11,000 --> 00:09:14,000
+Secondly, we need to increase the density of the fabric,
+
+148
+00:09:14,000 --> 00:09:17,000
+because we have just adjusted the tension of the corner line.
+
+149
+00:09:17,000 --> 00:09:19,000
+So the higher the tension of the corner line,
+
+150
+00:09:19,000 --> 00:09:23,000
+the more difficult it is for the fabric to rotate in the direction of the corner line.
+
+151
+00:09:23,000 --> 00:09:26,000
+So it will sacrifice some of the rotation of the fabric.
+
+152
+00:09:26,000 --> 00:09:27,000
+Therefore,
+
+153
+00:09:27,000 --> 00:09:29,000
+we can increase the density of the fabric
+
+154
+00:09:29,000 --> 00:09:33,000
+to make it look more intimate and more vertical.
+
+155
+00:09:33,000 --> 00:09:34,000
+In addition,
+
+156
+00:09:34,000 --> 00:09:35,000
+increasing the density of the fabric
+
+157
+00:09:35,000 --> 00:09:38,000
+can also prevent the fabric from making a strong rebound.
+
+158
+00:09:38,000 --> 00:09:40,000
+To prevent the rebound,
+
+159
+00:09:40,000 --> 00:09:43,000
+it can effectively prevent the movement of the model to be too fast,
+
+160
+00:09:43,000 --> 00:09:45,000
+causing the fabric to follow the model,
+
+161
+00:09:45,000 --> 00:09:47,000
+so some shaking occurs.
+
+162
+00:09:47,000 --> 00:09:50,000
+Next is the setting of our belt.
+
+163
+00:09:50,000 --> 00:09:53,000
+I have already mentioned to you before.
+
+164
+00:09:53,000 --> 00:09:55,000
+Our belt will be replaced with a harder fabric,
+
+165
+00:09:55,000 --> 00:09:57,000
+which is the Fusible Rigid.
+
+166
+00:09:57,000 --> 00:09:59,000
+The Fusible Rigid fabric used here
+
+167
+00:09:59,000 --> 00:10:02,000
+is very elastic and has a very high tension of the corner line.
+
+168
+00:10:02,000 --> 00:10:03,000
+At the same time,
+
+169
+00:10:03,000 --> 00:10:05,000
+it also has a very high bending strength.
+
+170
+00:10:05,000 --> 00:10:09,000
+This means that it is a fabric that is not easy to bend and stretch.
+
+171
+00:10:09,000 --> 00:10:11,000
+We can see that even the skirt version
+
+172
+00:10:11,000 --> 00:10:14,000
+is a very large version.
+
+173
+00:10:14,000 --> 00:10:18,000
+We can see that it has a very large number of creases in the model.
+
+174
+00:10:18,000 --> 00:10:19,000
+However,
+
+175
+00:10:19,000 --> 00:10:22,000
+the belt version has a very small number of creases.
+
+176
+00:10:22,000 --> 00:10:24,000
+As for the skirt version with a large number of creases,
+
+177
+00:10:24,000 --> 00:10:27,000
+it will definitely drag the belt down.
+
+178
+00:10:27,000 --> 00:10:31,000
+So in order to prevent the skirt from falling down
+
+179
+00:10:31,000 --> 00:10:33,000
+during some running and jumping processes,
+
+180
+00:10:33,000 --> 00:10:36,000
+we must replace the belt with this kind of
+
+181
+00:10:36,000 --> 00:10:37,000
+not easy to stretch,
+
+182
+00:10:37,000 --> 00:10:39,000
+bend strength is relatively high attribute.
+
+183
+00:10:39,000 --> 00:10:40,000
+In addition,
+
+184
+00:10:40,000 --> 00:10:44,000
+we also need to further improve the friction coefficient of this fabric.
+
+185
+00:10:44,000 --> 00:10:46,000
+After improving the friction coefficient,
+
+186
+00:10:46,000 --> 00:10:48,000
+all the sheets that use this fabric attribute,
+
+187
+00:10:48,000 --> 00:10:50,000
+that is to say our belt,
+
+188
+00:10:50,000 --> 00:10:52,000
+it will not be easy to slide,
+
+189
+00:10:52,000 --> 00:10:54,000
+because the friction force becomes too strong,
+
+190
+00:10:54,000 --> 00:10:56,000
+you can imagine that
+
+191
+00:10:56,000 --> 00:10:58,000
+when we have a lot of friction,
+
+192
+00:10:58,000 --> 00:11:00,000
+it is very difficult to separate these two objects.
+
+193
+00:11:00,000 --> 00:11:01,000
+In this way,
+
+194
+00:11:01,000 --> 00:11:03,000
+we can further prevent the skirt from falling down
+
+195
+00:11:03,000 --> 00:11:07,000
+during the following action process.
+
+196
+00:11:07,000 --> 00:11:09,000
+After a short simulation,
+
+197
+00:11:09,000 --> 00:11:11,000
+we can start replacing the virtual model.
+
+198
+00:11:11,000 --> 00:11:12,000
+First,
+
+199
+00:11:12,000 --> 00:11:14,000
+delete the excess virtual model,
+
+200
+00:11:14,000 --> 00:11:18,000
+and then import the FBX file with the action.
+
+201
+00:11:18,000 --> 00:11:19,000
+When importing,
+
+202
+00:11:19,000 --> 00:11:21,000
+everyone should also pay attention to
+
+203
+00:11:21,000 --> 00:11:23,000
+whether the unit here is the unit when we export.
+
+204
+00:11:24,000 --> 00:11:26,000
+After importing the FBX file,
+
+205
+00:11:26,000 --> 00:11:27,000
+we must know that
+
+206
+00:11:27,000 --> 00:11:28,000
+every new imported file,
+
+207
+00:11:28,000 --> 00:11:30,000
+it is default surface diameter is 3.
+
+208
+00:11:30,000 --> 00:11:32,000
+Here we modify it to 1.
+
+209
+00:11:32,000 --> 00:11:34,000
+Then we simulate it briefly,
+
+210
+00:11:34,000 --> 00:11:36,000
+so that the version is in interaction with this virtual model.
+
+211
+00:11:36,000 --> 00:11:38,000
+Now we can start preparing for recording animation.
+
+212
+00:11:38,000 --> 00:11:40,000
+Click on the small triangle mark at the bottom of the screen,
+
+213
+00:11:40,000 --> 00:11:42,000
+we can open the animation editor.
+
+214
+00:11:42,000 --> 00:11:44,000
+Open the animation editor,
+
+215
+00:11:44,000 --> 00:11:45,000
+we can see that
+
+216
+00:11:45,000 --> 00:11:47,000
+the animation is being recorded.
+
+217
+00:11:47,000 --> 00:11:48,000
+We can see that
+
+218
+00:11:48,000 --> 00:11:49,000
+the animation is being recorded.
+
+219
+00:11:49,000 --> 00:11:50,000
+We can see that
+
+220
+00:11:50,000 --> 00:11:51,000
+the animation is being recorded.
+
+221
+00:11:51,000 --> 00:11:52,000
+We can see that
+
+222
+00:11:52,000 --> 00:11:53,000
+the animation is being recorded.
+
+223
+00:11:53,000 --> 00:11:55,000
+After opening the animation editor,
+
+224
+00:11:55,000 --> 00:11:56,000
+we will pull the progress bar
+
+225
+00:11:56,000 --> 00:11:58,000
+to the first frame of all your actions.
+
+226
+00:11:58,000 --> 00:12:00,000
+If you open the animation editor,
+
+227
+00:12:00,000 --> 00:12:02,000
+it does not reach the starting point,
+
+228
+00:12:02,000 --> 00:12:03,000
+we can see that
+
+229
+00:12:03,000 --> 00:12:05,000
+if you directly click on the simulation,
+
+230
+00:12:05,000 --> 00:12:07,000
+the costume is not worn on the virtual model,
+
+231
+00:12:07,000 --> 00:12:09,000
+and the recording is not stable afterwards.
+
+232
+00:12:09,000 --> 00:12:11,000
+Or you can change the current frame number
+
+233
+00:12:11,000 --> 00:12:14,000
+to the starting point of all your action bars.
+
+234
+00:12:14,000 --> 00:12:16,000
+The starting point here is the 0th frame,
+
+235
+00:12:16,000 --> 00:12:18,000
+so I will put the current frame number
+
+236
+00:12:18,000 --> 00:12:19,000
+to the 0th frame.
+
+237
+00:12:19,000 --> 00:12:21,000
+After modifying the starting point,
+
+238
+00:12:21,000 --> 00:12:23,000
+we increase the quality of the simulation a little bit,
+
+239
+00:12:23,000 --> 00:12:26,000
+here we set the quality of the simulation to 5,
+
+240
+00:12:26,000 --> 00:12:28,000
+which is the finished quality.
+
+241
+00:12:28,000 --> 00:12:30,000
+The higher the quality of the simulation,
+
+242
+00:12:30,000 --> 00:12:33,000
+the higher the precision of the simulation,
+
+243
+00:12:33,000 --> 00:12:35,000
+that is, the more stable it is.
+
+244
+00:12:35,000 --> 00:12:37,000
+The reason why it is stable
+
+245
+00:12:37,000 --> 00:12:40,000
+is because the higher the precision of the simulation,
+
+246
+00:12:40,000 --> 00:12:42,000
+the longer the simulation time
+
+247
+00:12:42,000 --> 00:12:43,000
+you need for each frame,
+
+248
+00:12:43,000 --> 00:12:46,000
+because it needs to be recalculated in the background.
+
+249
+00:12:46,000 --> 00:12:47,000
+So the higher the value,
+
+250
+00:12:47,000 --> 00:12:48,000
+the more precise the simulation,
+
+251
+00:12:48,000 --> 00:12:50,000
+and the time it takes to calculate
+
+252
+00:12:50,000 --> 00:12:51,000
+will increase accordingly.
+
+253
+00:12:51,000 --> 00:12:53,000
+I strongly recommend that you
+
+254
+00:12:53,000 --> 00:12:55,000
+set the quality of the simulation to 5
+
+255
+00:12:55,000 --> 00:12:57,000
+for this kind of unstable clothing.
+
+256
+00:12:57,000 --> 00:12:58,000
+In addition,
+
+257
+00:12:58,000 --> 00:13:00,000
+we can drag and drop the progress bar
+
+258
+00:13:00,000 --> 00:13:03,000
+to check the range of action between each frame.
+
+259
+00:13:03,000 --> 00:13:04,000
+Drag and drop the progress bar,
+
+260
+00:13:04,000 --> 00:13:06,000
+we will find that this action
+
+261
+00:13:06,000 --> 00:13:08,000
+changes the range of action between each frame
+
+262
+00:13:08,000 --> 00:13:10,000
+a little bit.
+
+263
+00:13:10,000 --> 00:13:12,000
+So we need to adjust the scene time change
+
+264
+00:13:12,000 --> 00:13:14,000
+to 3 or 5
+
+265
+00:13:14,000 --> 00:13:17,000
+by increasing the total frame number
+
+266
+00:13:17,000 --> 00:13:21,000
+to reduce the range of action between each frame.
+
+267
+00:13:21,000 --> 00:13:22,000
+But here,
+
+268
+00:13:22,000 --> 00:13:23,000
+please note that
+
+269
+00:13:23,000 --> 00:13:24,000
+your end frame
+
+270
+00:13:24,000 --> 00:13:27,000
+should not exceed 1000 frames.
+
+271
+00:13:27,000 --> 00:13:28,000
+The main reason here is that
+
+272
+00:13:28,000 --> 00:13:31,000
+after we simulate a certain number of frames,
+
+273
+00:13:31,000 --> 00:13:33,000
+it may not be 1000 frames,
+
+274
+00:13:33,000 --> 00:13:35,000
+it may be 2000 frames or 3000 frames.
+
+275
+00:13:35,000 --> 00:13:36,000
+In short,
+
+276
+00:13:36,000 --> 00:13:38,000
+after the simulation to this number of frames,
+
+277
+00:13:38,000 --> 00:13:39,000
+if you suddenly find that
+
+278
+00:13:39,000 --> 00:13:40,000
+all the clothes
+
+279
+00:13:40,000 --> 00:13:42,000
+start to explode,
+
+280
+00:13:42,000 --> 00:13:44,000
+or they have a strong shaking,
+
+281
+00:13:44,000 --> 00:13:45,000
+it is very likely that
+
+282
+00:13:45,000 --> 00:13:46,000
+it is because the memory has exploded
+
+283
+00:13:46,000 --> 00:13:47,000
+or the memory has exploded
+
+284
+00:13:47,000 --> 00:13:49,000
+and reached the limit.
+
+285
+00:13:49,000 --> 00:13:50,000
+If this happens,
+
+286
+00:13:50,000 --> 00:13:51,000
+please pause the recording first.
+
+287
+00:13:51,000 --> 00:13:53,000
+Drag and drop the progress bar
+
+288
+00:13:53,000 --> 00:13:55,000
+back to a more stable frame number.
+
+289
+00:13:55,000 --> 00:13:57,000
+Save that animation first.
+
+290
+00:13:57,000 --> 00:13:58,000
+Then delete the animation,
+
+291
+00:13:58,000 --> 00:14:00,000
+start to simulate from that frame again,
+
+292
+00:14:00,000 --> 00:14:02,000
+and save the animation again.
+
+293
+00:14:02,000 --> 00:14:03,000
+In other words,
+
+294
+00:14:03,000 --> 00:14:04,000
+it is best to divide the animation
+
+295
+00:14:04,000 --> 00:14:06,000
+into sections.
+
+296
+00:14:06,000 --> 00:14:07,000
+In addition,
+
+297
+00:14:07,000 --> 00:14:09,000
+in the process of recording the animation,
+
+298
+00:14:09,000 --> 00:14:11,000
+we often have to pull the lens
+
+299
+00:14:11,000 --> 00:14:13,000
+to these places that are easy to be unstable,
+
+300
+00:14:13,000 --> 00:14:15,000
+such as the butterfly knot,
+
+301
+00:14:15,000 --> 00:14:16,000
+or the night,
+
+302
+00:14:16,000 --> 00:14:17,000
+this kind of place
+
+303
+00:14:17,000 --> 00:14:19,000
+that is easy to have an interruption problem.
+
+304
+00:14:19,000 --> 00:14:20,000
+Take a look,
+
+305
+00:14:20,000 --> 00:14:22,000
+see if there is any problem in this point.
+
+306
+00:14:24,000 --> 00:14:26,000
+Then I will show you
+
+307
+00:14:26,000 --> 00:14:28,000
+the effect we recorded
+
+308
+00:14:28,000 --> 00:14:29,000
+in different scenes
+
+309
+00:14:29,000 --> 00:14:31,000
+under different time changes.
+
+310
+00:14:31,000 --> 00:14:32,000
+First of all,
+
+311
+00:14:32,000 --> 00:14:33,000
+what we see now
+
+312
+00:14:33,000 --> 00:14:35,000
+is the recording animation effect
+
+313
+00:14:35,000 --> 00:14:37,000
+when the scene changes time to 3.
+
+314
+00:14:37,000 --> 00:14:38,000
+You can see that
+
+315
+00:14:38,000 --> 00:14:39,000
+the butterfly knot part
+
+316
+00:14:39,000 --> 00:14:40,000
+is still naturally shaking,
+
+317
+00:14:40,000 --> 00:14:43,000
+and once we fix the knot,
+
+318
+00:14:43,000 --> 00:14:44,000
+it is not easy
+
+319
+00:14:44,000 --> 00:14:46,000
+to have any other interruption.
+
+320
+00:14:46,000 --> 00:14:47,000
+So we must find
+
+321
+00:14:47,000 --> 00:14:48,000
+the reason why it is unstable.
+
+322
+00:14:48,000 --> 00:14:49,000
+Next,
+
+323
+00:14:49,000 --> 00:14:51,000
+let's take a look at the effect
+
+324
+00:14:51,000 --> 00:14:52,000
+when the scene change time
+
+325
+00:14:52,000 --> 00:14:54,000
+is set to 5 times.
+
+326
+00:14:54,000 --> 00:14:56,000
+When the scene change time is set to 5,
+
+327
+00:14:56,000 --> 00:14:57,000
+we will see that
+
+328
+00:14:57,000 --> 00:14:58,000
+the butterfly knot
+
+329
+00:14:58,000 --> 00:15:00,000
+is almost not shaking.
+
+330
+00:15:00,000 --> 00:15:01,000
+This is also a problem
+
+331
+00:15:01,000 --> 00:15:03,000
+caused by increasing the scene change time
+
+332
+00:15:03,000 --> 00:15:04,000
+too high,
+
+333
+00:15:04,000 --> 00:15:06,000
+because its simulation is too stable.
+
+334
+00:15:06,000 --> 00:15:07,000
+Basically,
+
+335
+00:15:07,000 --> 00:15:08,000
+between each needle,
+
+336
+00:15:08,000 --> 00:15:09,000
+because when we finally
+
+337
+00:15:09,000 --> 00:15:10,000
+knock it out,
+
+338
+00:15:10,000 --> 00:15:11,000
+we will return its needle number
+
+339
+00:15:11,000 --> 00:15:13,000
+to the original needle number,
+
+340
+00:15:13,000 --> 00:15:15,000
+it may cause it to look like
+
+341
+00:15:15,000 --> 00:15:16,000
+there is no intense shaking,
+
+342
+00:15:16,000 --> 00:15:18,000
+and lose some of the simulation texture.
+
+343
+00:15:18,000 --> 00:15:19,000
+Therefore,
+
+344
+00:15:19,000 --> 00:15:20,000
+we can record a small section
+
+345
+00:15:20,000 --> 00:15:21,000
+of the scene change time
+
+346
+00:15:21,000 --> 00:15:22,000
+under different scene changes
+
+347
+00:15:22,000 --> 00:15:24,000
+to see its general direction.
+
+348
+00:15:24,000 --> 00:15:25,000
+As long as it is guaranteed
+
+349
+00:15:25,000 --> 00:15:26,000
+to be stable
+
+350
+00:15:26,000 --> 00:15:27,000
+under this scene change time,
+
+351
+00:15:27,000 --> 00:15:28,000
+it will be fine.
+
+352
+00:15:28,000 --> 00:15:29,000
+Before we knock it out at the end,
+
+353
+00:15:29,000 --> 00:15:30,000
+we must remember to
+
+354
+00:15:30,000 --> 00:15:31,000
+adjust the scene change time
+
+355
+00:15:31,000 --> 00:15:32,000
+to 1.
+
+356
+00:15:32,000 --> 00:15:33,000
+After the scene change time
+
+357
+00:15:33,000 --> 00:15:34,000
+is adjusted to 1,
+
+358
+00:15:34,000 --> 00:15:35,000
+it will look like
+
+359
+00:15:35,000 --> 00:15:36,000
+it is in the normal
+
+360
+00:15:36,000 --> 00:15:37,000
+flow of time.
+
+361
+00:15:37,000 --> 00:15:38,000
+Finally,
+
+362
+00:15:38,000 --> 00:15:39,000
+we can knock out
+
+363
+00:15:39,000 --> 00:15:40,000
+the alembic file
+
+364
+00:15:40,000 --> 00:15:41,000
+in the upper left corner.
+
+365
+00:15:41,000 --> 00:15:42,000
+Now,
+
+366
+00:15:42,000 --> 00:15:43,000
+let's take a look
+
+367
+00:15:43,000 --> 00:15:44,000
+at the effect
+
+368
+00:15:44,000 --> 00:15:45,000
+when the scene change time
+
+369
+00:15:45,000 --> 00:15:46,000
+is set to 1.
+
+370
+00:15:48,000 --> 00:15:49,000
+We will return the scene change
+
+371
+00:15:49,000 --> 00:15:50,000
+time to 1.
+
+372
+00:15:50,000 --> 00:15:51,000
+A couple of time
+
+373
+00:15:51,000 --> 00:15:52,000
+to the moment
+
+374
+00:15:52,000 --> 00:15:53,000
+the scene change
+
+375
+00:15:53,000 --> 00:15:54,000
+time is set to 1.
+
+376
+00:15:54,000 --> 00:15:55,000
+After that,
+
+377
+00:15:55,000 --> 00:15:56,000
+we will move on
+
+378
+00:15:56,000 --> 00:15:57,000
+to the next set of
+
+379
+00:15:57,000 --> 00:15:58,000
+scene change time.
+
+380
+00:15:58,000 --> 00:15:59,000
+Now,
+
+381
+00:15:59,000 --> 00:16:00,000
+the scene is set to 1.
+
+382
+00:16:00,000 --> 00:16:01,000
+We can see
+
+383
+00:16:01,000 --> 00:16:02,000
+that this is a
+
+384
+00:16:02,000 --> 00:16:03,000
+scene change
+
+385
+00:16:03,000 --> 00:16:04,000
+time,
+
+386
+00:16:04,000 --> 00:16:05,000
+we can edit
+
+387
+00:16:05,000 --> 00:16:06,000
+the scene change time
+
+388
+00:16:06,000 --> 00:16:07,000
+and the scene
+
+389
+00:16:07,000 --> 00:16:08,000
+can be edited
+
+390
+00:16:08,000 --> 00:16:09,279
+into
+
+391
+00:16:09,279 --> 00:16:11,000
+a plane for the scene change.
+
+392
+00:16:11,000 --> 00:16:12,000
+From here,
+
+393
+00:16:12,000 --> 00:16:13,000
+we can see
+
+394
+00:16:13,000 --> 00:16:14,000
+how the scene
+
+395
+00:16:14,000 --> 00:16:14,899
+change time
+
+396
+00:16:14,899 --> 00:16:16,000
+is changed by
+
+397
+00:16:16,000 --> 00:16:17,000
+the continuous
+
+398
+00:16:17,000 --> 00:16:18,000
+time
+

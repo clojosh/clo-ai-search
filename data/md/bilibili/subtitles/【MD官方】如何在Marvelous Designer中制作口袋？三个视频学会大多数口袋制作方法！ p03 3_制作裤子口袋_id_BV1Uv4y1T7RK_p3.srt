@@ -1,0 +1,328 @@
+1
+00:00:00,000 --> 00:00:03,600
+Finally, let's learn how to make a pair of pants.
+
+2
+00:00:03,600 --> 00:00:08,099
+First of all, you can use the internal multidirectional line tool
+
+3
+00:00:08,099 --> 00:00:12,000
+to draw a line that we will use later to cut the internal line.
+
+4
+00:00:12,000 --> 00:00:15,800
+In the process of drawing, press the Ctrl key and click to create a curve point.
+
+5
+00:00:15,800 --> 00:00:18,000
+Double click to complete the creation.
+
+6
+00:00:19,500 --> 00:00:23,500
+After the creation is finished, use the edit version tool to select this line.
+
+7
+00:00:23,500 --> 00:00:25,500
+Right-click to select Cut.
+
+8
+00:00:25,500 --> 00:00:33,500
+After the simulation is started, you can see that there is no vermilion between the two panels.
+
+9
+00:00:33,500 --> 00:00:36,500
+Then we will continue to complete the pocket cloth.
+
+10
+00:00:38,500 --> 00:00:42,500
+Now we choose the edge of the pocket for this seam.
+
+11
+00:00:42,500 --> 00:00:47,500
+Here we right-click on this edge to select the panel outline expansion.
+
+12
+00:00:47,500 --> 00:00:54,500
+After selecting the panel outline expansion, we can set the width of the panel expansion.
+
+13
+00:00:54,500 --> 00:00:55,500
+In the side corner below,
+
+14
+00:00:55,500 --> 00:00:57,500
+we need to switch to Extend,
+
+15
+00:00:57,500 --> 00:01:01,500
+so that it can be expanded according to the original ratio.
+
+16
+00:01:03,500 --> 00:01:06,500
+After the expansion is completed, click OK.
+
+17
+00:01:06,500 --> 00:01:09,500
+Don't forget to select the internal line.
+
+18
+00:01:09,500 --> 00:01:14,500
+This internal line is what we will use to sew the pocket cloth later.
+
+19
+00:01:14,500 --> 00:01:16,500
+After the panel outline expansion,
+
+20
+00:01:16,500 --> 00:01:19,500
+there will be a gap between the pocket and the pants panel.
+
+21
+00:01:19,500 --> 00:01:24,500
+So here we set a negative 1 layer for the pocket.
+
+22
+00:01:24,500 --> 00:01:27,500
+Because its layer is smaller than the pants 0,
+
+23
+00:01:27,500 --> 00:01:31,500
+it will automatically fit in after we start the simulation.
+
+24
+00:01:31,500 --> 00:01:35,500
+After the pocket has been automatically simulated to the inside,
+
+25
+00:01:35,500 --> 00:01:40,500
+we need to fix the extended part of it on the pants,
+
+26
+00:01:40,500 --> 00:01:42,500
+that is, to sew with the pants.
+
+27
+00:01:42,500 --> 00:01:45,500
+So now we have to choose the free sewing tool,
+
+28
+00:01:45,500 --> 00:01:48,500
+because we haven't set the cut point yet,
+
+29
+00:01:48,500 --> 00:01:50,500
+so we use the free sewing tool directly.
+
+30
+00:01:50,500 --> 00:01:51,500
+Click, click.
+
+31
+00:01:51,500 --> 00:01:52,500
+After sewing,
+
+32
+00:01:52,500 --> 00:01:56,500
+we also sew the bottom here to the pants panel.
+
+33
+00:01:56,500 --> 00:02:01,500
+Now, because the side of our pants and pocket are also stacked together,
+
+34
+00:02:01,500 --> 00:02:02,500
+and then sewed,
+
+35
+00:02:02,500 --> 00:02:05,500
+so we change the type of sewing line to Turn,
+
+36
+00:02:05,500 --> 00:02:07,500
+so that it can prevent instability.
+
+37
+00:02:07,500 --> 00:02:09,500
+Including the sewing line above,
+
+38
+00:02:09,500 --> 00:02:10,500
+it is the same.
+
+39
+00:02:10,500 --> 00:02:12,500
+In fact, at this point,
+
+40
+00:02:12,500 --> 00:02:17,500
+in general, our pants shoes are made like this.
+
+41
+00:02:17,500 --> 00:02:21,500
+But if you are moving or doing some special actions,
+
+42
+00:02:21,500 --> 00:02:24,500
+you can see that it is hollow in the middle.
+
+43
+00:02:24,500 --> 00:02:27,500
+We can fill this pocket.
+
+44
+00:02:27,500 --> 00:02:31,500
+First of all, we copy and paste this pocket panel,
+
+45
+00:02:31,500 --> 00:02:36,500
+and cut it along the inner line created before.
+
+46
+00:02:36,500 --> 00:02:39,500
+Before we officially sew,
+
+47
+00:02:39,500 --> 00:02:43,500
+we can put the position of this panel first.
+
+48
+00:02:43,500 --> 00:02:46,500
+Put it almost outside the pocket,
+
+49
+00:02:46,500 --> 00:02:50,500
+and then we choose this inner line in the middle to cut.
+
+50
+00:02:50,500 --> 00:02:52,500
+After cutting the inner line,
+
+51
+00:02:52,500 --> 00:02:54,500
+we delete the excess part.
+
+52
+00:02:54,500 --> 00:03:00,500
+Now we move the pants to the very outside of this side.
+
+53
+00:03:00,500 --> 00:03:02,500
+In the 3D space,
+
+54
+00:03:02,500 --> 00:03:05,500
+we can start to sew after arranging the panel.
+
+55
+00:03:05,500 --> 00:03:11,500
+First, we sew the top and bottom of this side part.
+
+56
+00:03:11,500 --> 00:03:13,500
+Also sew to the top of the pants.
+
+57
+00:03:13,500 --> 00:03:16,500
+Don't forget to change the type of sewing line to Turn.
+
+58
+00:03:20,500 --> 00:03:24,500
+Then we sew to the top of the pants.
+
+59
+00:03:24,500 --> 00:03:28,500
+Also sew to the top of the pants.
+
+60
+00:03:28,500 --> 00:03:32,500
+Then we sew the opening of the side and the opening of the pants together.
+
+61
+00:03:32,500 --> 00:03:42,500
+Then the bottom of the side and the pocket of the pocket are sewed together.
+
+62
+00:03:42,500 --> 00:03:46,500
+After creating the model of the charger,
+
+63
+00:03:46,500 --> 00:03:48,500
+there is one point to note here.
+
+64
+00:03:48,500 --> 00:03:58,500
+Please note that the inner side and the pants are sewn together, but we have said before that we should not sew across the layer.
+
+65
+00:03:58,500 --> 00:04:02,500
+Here we first open the simulation to see if it is unstable.
+
+66
+00:04:02,500 --> 00:04:05,500
+We will see that there is some instability here.
+
+67
+00:04:05,500 --> 00:04:08,500
+Next, we will deal with the problem of shaking.
+
+68
+00:04:08,500 --> 00:04:12,500
+First of all, we need to know that the side and the pants can be sewn together.
+
+69
+00:04:12,500 --> 00:04:14,500
+These two panels are pasted together.
+
+70
+00:04:14,500 --> 00:04:18,500
+So here we choose the pair between the pants pocket and the pants pocket.
+
+71
+00:04:18,500 --> 00:04:20,500
+Delete by clicking Delete.
+
+72
+00:04:20,500 --> 00:04:24,500
+Then we sew the pocket cloth to the side of the pocket.
+
+73
+00:04:24,500 --> 00:04:27,500
+Remember to change the type of the pocket cloth to Turn.
+
+74
+00:04:27,500 --> 00:04:32,500
+After the modification, we can see that the side of the simulation is very stable.
+
+75
+00:04:32,500 --> 00:04:34,500
+There is no such shaking problem.
+
+76
+00:04:34,500 --> 00:04:37,500
+Finally, we put the middle piece of this piece of cloth.
+
+77
+00:04:37,500 --> 00:04:40,500
+Now we can see that it is actually facing the back.
+
+78
+00:04:40,500 --> 00:04:42,500
+We have to choose to turn the surface.
+
+79
+00:04:42,500 --> 00:04:44,500
+Let it face the same direction.
+
+80
+00:04:47,500 --> 00:04:55,500
+After completion, we finally return all the layers to the normal state.
+
+81
+00:04:57,500 --> 00:04:59,500
+That's the end of this video.
+
+82
+00:04:59,500 --> 00:05:01,500
+See you next time, bye.
+

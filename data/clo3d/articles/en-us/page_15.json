@@ -1,0 +1,489 @@
+[
+    {
+        "article_id": "115000563768",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115000563768",
+        "title": "Offset Pattern Outline",
+        "content": "### **Objective** Extend (ver3.0.0) or retract (ver5.1.0) the Pattern outline while maintaining its original shape. ** Location** Right Click Pop-Up Menu ▶ **Offset Pattern Outline** ** Operation** 1. With the **![](https://support.clo3d.com/hc/en-us/article_attachments/115002199388/1.png)Transform Pattern** tool or the ![](https://support.clo3d.com/hc/en-us/article_attachments/115002171407/2.png) **Edit Pattern** tool, select the entire or partial Pattern outline. 2. Follow the indicated guideline below: Right Click Pop-Up Menu ▶ **Offset Pattern Outline ** → The Offset Pattern Outline Window appears. 3. Adjust following options as needed. **Option** | **Description** ---|--- **Direction** **(ver5.1.0)** | **Extend** | Extend Pattern Outlines. **Retract** | Retract Pattern Outlines. ※Note: Only **Distance** can be modified when **Retract** is selected. **Distance ** | Set how much in distance the Pattern outline is extended. **Number of Offsets** | Set the number of offsets to be created. **Total Distance** | Total Distance = Distance x Number of Offsets **Create Internal Line** | Create Internal Lines at where the original Pattern outlines existed. **Side Segment Type** | **Perpendicular** | Extends the Pattern outline perpendicular to the selected Pattern outline. **Extend Side Segments (ver3.0.0)** | Extends the Pattern outline while matching the angles of the segments on either side. **Mirror** **(ver5.0.0)** | Extends the Pattern outline based on the corner angle created with the selected Pattern outline and its adjacent one. ![mirror.png](https://support.clo3d.com/hc/article_attachments/360017517274/mirror.png) **Default Corner** | Extends the Pattern outline all around the selected segment or Pattern. **Right Angled Corner** | Extends the Pattern outline all around the selected segment or Pattern and converting corners to right angles. **Unfilled Corner** | Extends the Pattern outline all around the selected segment or pattern, except for corners. 4. Click **OK**. → The Pattern outlines are offset according to the settings. → Curve points are optimized automatically. (ver 5.2)",
+        "content_description": "This web page provides a step-by-step guide on how to extend or retract the Pattern outline in design software while preserving its original shape.",
+        "created_at": "2024-10-28T09:14:57Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000617868,
+        "Section": "2D Pattern Edit",
+        "Tokens": 502
+    },
+    {
+        "article_id": "115002805688",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115002805688",
+        "title": "2D Pattern - Exporting Patterns from Yuka(SuperALPHA: Plus Yuka Pattern CAD System)",
+        "content": "**Objective** Export patterns as a DXF file from Yuka in order to use them in CLO. **※ Note:** **Things to Check Before Exporting Patterns** * Confirm that patterns are closed shapes and all segments are connected. * Patterns must be closed in order to virtualize them in the 3D environment. * Confirm that patterns are not intersecting each other. * If patterns' light blue bounding boxes are intersecting, the overlapped area will not be exported properly. ![](https://support.clo3d.com/hc/en-us/article_attachments/115005715647/60.png) **Operation** **DXF-AAMA Export** 1. Follow the indicated guideline below: File ▶ EXPORT ▶ **Set TIIP/AAMA** (exps) ![](https://support.clo3d.com/hc/en-us/article_attachments/115005715667/61.png) 2. In the Set DXF Export window’s Pattern Outer lines only check **Margins (Cutting Lines) only**. Set the CAD type as **Etc.** and press **OK**. ![](https://support.clo3d.com/hc/en-us/article_attachments/115005715687/62.png) 3. Follow the indicated guideline below: File ▶ EXPORT ▶**Set TIIP/AAMA** (exp) ![](https://support.clo3d.com/hc/en-us/article_attachments/115005715707/63.png) 4. In the Export DXF window’s File Type check **AAMA**. After setting whether or not the pattern has any margins in Print Pattern Classification, click the **Entire Area** on the right. ![](https://support.clo3d.com/hc/en-us/article_attachments/115005768228/64__1_.png) 5. Press **Reference** on the Designate Export window to set the path to export the DXF and click **OK**. ![](https://support.clo3d.com/hc/en-us/article_attachments/115005715727/65.png) 6. If a warning window saying “There is a warning pattern” pops up, click **OK** first and then check the pattern’s status on the window that appears afterwards. ![](https://support.clo3d.com/hc/en-us/article_attachments/115005768248/66.png) 7. If all the patterns appear as “OK” then proceed to click **OK** to finish. If there are any that appear as “NG” find them and fix the problem. Patterns may have problems when outer and sewing lines are swapped. ![](https://support.clo3d.com/hc/en-us/article_attachments/115005768268/67.png)",
+        "content_description": "This web page provides a step-by-step guide to exporting patterns as DXF files from Yuka for use in CLO, ensuring all necessary checks and settings are completed for a successful export.",
+        "created_at": "2024-10-28T09:14:01Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628387,
+        "Section": "File Import/Export",
+        "Tokens": 565
+    },
+    {
+        "article_id": "115012226627",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012226627",
+        "title": "Hide All 3D Patterns",
+        "content": "**Hide All 3D Patterns** \\- Hide all Patterns in the 3D window. \\- Right-click on the 3D window and select **Hide All 3D Patterns** from the pop-up menu. \\- All Patterns in the 3D Window will be hidden. \\- To show all Patterns, right click on the 3D window and select **Show All 3D Patterns** from the pop-up menu.",
+        "content_description": "This web page provides instructions for hiding and showing all 3D patterns in the 3D window through a simple right-click menu.",
+        "created_at": "2024-10-28T09:12:06Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=rH_HkdheJUo"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 91
+    },
+    {
+        "article_id": "115012380688",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012380688",
+        "title": "Extend/Trim & Add Point to Pattern Outline",
+        "content": "**List of Contents** Extend/Trim & Add Point to Pattern Outline Use Extend/Trim & Add Point to Pattern Outline **Extend/Trim& Add Point to Pattern Outline** \\- Add point to the Pattern outline while extending or trimming the Internal Line. \\- Right-click on the Internal Line and select **Extend/Trim & Add Point to Pattern Outline** from the pop-up menu. ** Use Extend/Trim& Add Point to Pattern Outline** \\- Use the ![](https://support.clo3d.com/hc/article_attachments/115022471348/mceclip0.png) **Transform Pattern** tool or the ![](https://support.clo3d.com/hc/article_attachments/115022402107/mceclip1.png) **Edit Pattern****** tool to right click on the Internal Line \\- Select **Extend/Trim & Add Point to Pattern Outline** from the pop-up menu. \\- The selected Internal Line will extend or trim to the Pattern outline while points are added. Go back to the List of Contents",
+        "content_description": "This web page provides detailed instructions on how to use the \"Extend/Trim & Add Point to Pattern Outline\" feature for manipulating internal lines in pattern design.",
+        "created_at": "2024-10-28T09:11:46Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=Jzs0vmGlfbU",
+            "https://www.youtube.com/watch?v=P6tYVh63hn0"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 209
+    },
+    {
+        "article_id": "115004273427",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115004273427",
+        "title": "2D Pattern (AI/PDF) Import/Export",
+        "content": "**List of Contents** Import Adobe (AI/PDF) Import (Add) Adobe (AI/PDF) Export Adobe (PDF) **Objective ** Import Adobe (AI/PDF) formatted patterns into CLO, and export patterns created in CLO as a PDF file. ** Location** **Import Adobe (AI/ PDF) ** Main Menu ▶ File ▶ Import ▶ **Adobe (AI/ PDF)** **Import (Add) Adobe (AI/ PDF) ** Main Menu ▶ Import (Add) ▶ **Adobe (AI/ PDF)** **Export Adobe (PDF) ** Main Menu ▶ File ▶ Export ▶ **Adobe (PDF)** ** Operation** **Import Adobe (AI/ PDF)** 1. Follow the indicated guideline below: Main Menu ▶ File ▶ Import ▶ **Adobe (AI/ PDF)** → The Open File window appears. 2. Select the desired file to be imported and click **OK**. → The Import Adobe (AI/ PDF) window appears. 3. Adjust the settings as needed and select **OK**. **※ Note: ****Import Adobe (AI/ PDF) Options** **** **** **Scale** | Select the unit used in AI. ---|--- **Rotation** | Rotate all patterns as importing them. **Option** **(Import as Baseline)** | All shapes encompassed within their outer shape (pattern) will be imported as baselines. **Option** **(Import as Internal Shapes)** | All shapes encompassed within their outer shape (pattern) will be imported as internal shapes (ver3.1.0). **Option** **(Import as Graphic)** | All shapes/images encompasses within their outer shape (pattern) will be imported as graphics (ver3.1.0). Open shapes with color information will be imported as graphics as well (ver3.1.0). **Import (Add) Adobe (AI/ PDF)** 1. Follow the indicated guideline below: Main Menu ▶ Import (Add) ▶**Adobe (AI/ PDF)** → The Open File window appears. 2. As setting Import Adobe (AI/PDF) options, adjust Import (Add) Adobe (AI/PDF) options as needed. **Export Adobe (PDF)** 1. Follow the indicated guideline below: Main Menu ▶ File ▶ Export ▶ **Adobe (PDF)** → The Save File window appears. 2. Type in the file name and designate the path the file is exported to. → The Export PDF window appears. 3. Adjust Scale and Rotation, and then click **OK**. → The patterns will be exported as a PDF file. Go back to the List of Contents",
+        "content_description": "\"This webpage provides a comprehensive guide for importing Adobe (AI/PDF) patterns into CLO and exporting CLO patterns as PDF files.\"",
+        "created_at": "2024-10-28T09:09:51Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628387,
+        "Section": "File Import/Export",
+        "Tokens": 549
+    },
+    {
+        "article_id": "115012380548",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012380548",
+        "title": "Hide 3D Pattern",
+        "content": "**Hide 3D Pattern** Hide 3D Pattern Hide All 3D Patterns **Hide 3D Pattern** \\- Hide 3D Patterns from the 3D window at your convenience. \\- Select the ![](https://support.clo3d.com/hc/article_attachments/115022464648/mceclip0.png) **Select/Move** tool from the 3D toolbar. Right-click on the Patterns in the 3D window and select Hide 3D Pattern from the pop-up menu. The selected Patterns will be hidden from the 3D window. \\- The hidden Pattern cannot be selected nor moved in the 3D window. ** Hide All 3D Patterns** \\- Hide All 3D Patterns from the 3D window at your convenience. \\- Select the ![](https://support.clo3d.com/hc/article_attachments/115022464648/mceclip0.png) **Select/Move** tool from the 3D toolbar. Right-click on the Patterns in the 3D window and select Hide All 3D Pattern from the pop-up menu. All Patterns will be hidden from the 3D window. Go back to the List of Contents",
+        "content_description": "This web page provides instructions on how to conveniently hide individual or all 3D patterns from the 3D window in your design software.",
+        "created_at": "2024-10-28T09:09:14Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=ji3Z_bvBx-o",
+            "https://www.youtube.com/watch?v=FGuSgnZRVlA"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 250
+    },
+    {
+        "article_id": "115012379608",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012379608",
+        "title": "Delete All Pins on Selected Patterns",
+        "content": "**Delete All Pins on Selected Patterns** \\- Delete pins on each Pattern. \\- Choose the ![](https://support.clo3d.com/hc/article_attachments/115021552387/mceclip0.png) **Select/Move** tool from the 3D toolbar. Navigate to the 3D window and right click on the 3D Garment, and then select pin ▶ **Delete All Pins on Selected Patterns.** \\- All pins created on the selected Pattern will be deleted.",
+        "content_description": "The purpose of this web page is to guide users on how to efficiently delete all pins from selected patterns in a 3D garment using the Select/Move tool.",
+        "created_at": "2024-10-28T09:08:44Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=aeQR6lbGx14"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 104
+    },
+    {
+        "article_id": "360000740568",
+        "source": "https://support.clo3d.com/hc/en-us/articles/360000740568",
+        "title": "Edit Pattern Symbol Properties",
+        "content": "**List of Contents** Pattern Symbol Edit Properties **Pattern Symbol ** \\- Modify created Pattern Symbols as needed. \\- Main Menu ▶ 2D Pattern ▶ Pattern Annotation ▶ ![pattern_instruction_line.png](https://support.clo3d.com/hc/article_attachments/360001190207/pattern_instruction_line.png)**Pattern Symbol or![edit_annotation.png](https://support.clo3d.com/hc/article_attachments/360001177128/edit_annotation.png) Edit Annotation.** \\- 2D Toolbar ▶ ![pattern_instruction_line.png](https://support.clo3d.com/hc/article_attachments/360001190207/pattern_instruction_line.png)**Pattern Symbol or![edit_annotation.png](https://support.clo3d.com/hc/article_attachments/360001177128/edit_annotation.png) Edit Annotation.** **Edit Properties** \\- Click the Pattern Symbol to be edited. \\- Selected Pattern Symbol’s properties appear in the Property Editor. * Name Rename selected Pattern Symbol. * Line Type Select the Shape of the Pattern Symbol. * Flip This option only appears when a Pattern Symbol is added to an Internal Line. Pattern Symbol is flipped to the other side of the selected Internal Line. Go back to the List of Contents",
+        "content_description": "This web page provides instructions for modifying and editing Pattern Symbols and their properties in a 2D design environment.",
+        "created_at": "2024-10-28T09:08:13Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=TuCpD_v4lgE",
+            "https://www.youtube.com/watch?v=69Fi_Wu8lmA"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 253
+    },
+    {
+        "article_id": "115015802448",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115015802448",
+        "title": "Pattern Instruction Lines",
+        "content": "**List of Contents** Pattern Symbol Create Pattern Symbol Select Pattern Symbol Delete Pattern Symbol **Pattern Symbol **\\- Create, select, and delete instruction lines on Patterns to guide construction. \\- Navigate to the Main Menu and select 2D Pattern ▶ Pattern Annotation ▶ **Pattern Symbol.** \\- Select the![](https://support.clo3d.com/hc/article_attachments/115026530867/mceclip1.png) **Pattern Symbol** tool from the 2D toolbar. ** Create Pattern Symbol** * **Create a Single Pattern Symbol ** \\- Hover the mouse over the Pattern outline or Internal Line where the Pattern Symbol should be created. \\- The segment is highlighted in light-blue. \\- Click on the segment to create the symbol. \\- The Place on Fold 1 symbol is created by default. * **Create Multiple Pattern Symbols ** \\- To create more than one Pattern Symbols on multiple Pattern outlines or Internal Lines, select all desired segments while holding down the Shift key on the keyboard. \\- You may also click and drag on the 2D window or use the **Lasso Selection** to select multiple segments. **Select Pattern Symbol ** \\- Select the Pattern outline or the Internal Line where the Pattern Symbol is created. \\- The Pattern Symbol is selected as it’s highlighted in yellow. \\- To select all Pattern Symbols, hold down the Ctrl + A keys at the same time. **Delete Pattern Symbol ** \\- To delete the Pattern Symbol, select and hit the Delete key on the keyboard. \\- Or, right click on the Pattern Symbol to be deleted and select **Delete** from the pop-up menu. Go back to the List of Contents",
+        "content_description": "This webpage provides a comprehensive guide on how to create, select, and delete Pattern Symbols in the 2D Pattern Annotation tool for effective pattern construction.",
+        "created_at": "2024-10-28T09:07:23Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=8-Cm61pkfwQ",
+            "https://www.youtube.com/watch?v=mChb7-S3M8s",
+            "https://www.youtube.com/watch?v=_FuGF_Mh_1g",
+            "https://www.youtube.com/watch?v=yNqtBOvAgRE",
+            "https://www.youtube.com/watch?v=-TN28hT_Fu8"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 343
+    },
+    {
+        "article_id": "115012373687",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012373687",
+        "title": "Create Multiple Patterns or Internal Shapes and Input Intervals",
+        "content": "### **Objective** Designate the number of shapes and input the interval when creating Patterns or Internal Lines. ** Location** Main Menu ▶ 2D Pattern ▶ Create ▶ Applicable Tools 2D Toolbar ▶ Applicable Tools **※ Note: ** * Applicable tools are as follows: **![Toolbar_2D_Shape_Square.png](https://support.clo3d.com/hc/article_attachments/115022049428/Toolbar_2D_Shape_Square.png)Rectangle** tool, **![Toolbar_2D_Shape_Inner_Square.png](https://support.clo3d.com/hc/article_attachments/115022049468/Toolbar_2D_Shape_Inner_Square.png)Internal Rectangle** tool, **![Toolbar_2D_Shape_Circle.png](https://support.clo3d.com/hc/article_attachments/115021994327/Toolbar_2D_Shape_Circle.png)Ellipse** tool, **![Toolbar_2D_Shape_Inner_Circle.png](https://support.clo3d.com/hc/article_attachments/115022049448/Toolbar_2D_Shape_Inner_Circle.png)Internal Ellipse** tool. ** Operation** 1. Follow the indicated guideline as below: Main Menu ▶ 2D Pattern ▶ Create ▶ Applicable Tools 2D Toolbar ▶ Applicable Tools 2. Click once on the 2D window. → The pop-up window with options to create the selected Pattern or Internal Shape appears. 3. Enter desired values for options below the Replicate category and click **OK**. **Name** | **Description** ---|--- **Number of Shapes** | Set the number of replicated shapes. **Interval** | Set the distance between each Pattern or Internal Shape/Line. **Angle** | Set the direction that the replicated Patterns are placed. → The Patterns or Internal Shapes/Lines are replicated based on the settings.",
+        "content_description": "This web page provides a step-by-step guide for creating and customizing Patterns or Internal Lines in a 2D design environment by specifying the number of shapes, intervals, and angles.",
+        "created_at": "2024-10-28T09:05:05Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000642008,
+        "Section": "2D Pattern",
+        "Tokens": 403
+    },
+    {
+        "article_id": "360000476728",
+        "source": "https://support.clo3d.com/hc/en-us/articles/360000476728",
+        "title": "Select/Move Pattern Annotation",
+        "content": "**List of Contents** Select/Move Pattern Annotation Moving Pattern Annotation Deleting Pattern Annotation **Select/Move Pattern Annotation ** \\- Create and edit Pattern Annotation on Patterns in the 2D Window. \\- Select the **Pattern Annotation** tool from the 2D toolbar. **Moving Pattern Annotation ** \\- Select the **Select/Move Pattern Annotation** tool from the 2D toolbar. \\- Navigate to the 2D Window. \\- Click and drag the pattern annotation to be moved. **Deleting Pattern Annotation** \\- With the **Select/Move Pattern Annotation** tool selected, right click on the pattern annotation to be deleted. \\- Click DELETE. The selected pattern annotation will be deleted. \\- Or, select the pattern annotation and hit Delete key on the keyboard. Go back to the List of Contents",
+        "content_description": "This web page provides instructions for creating, moving, and deleting Pattern Annotations in the 2D window.",
+        "created_at": "2024-10-28T08:55:43Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=qAxWRLHb4Qk",
+            "https://www.youtube.com/watch?v=TkM9tJmZ5b0",
+            "https://www.youtube.com/watch?v=1Ml4Vbq8GMg"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 166
+    },
+    {
+        "article_id": "360043100233",
+        "source": "https://support.clo3d.com/hc/en-us/articles/360043100233",
+        "title": "Add Dart with Fullness (ver 5.2)",
+        "content": "**Objective** Add fullness to a Pattern while adding a Dart. ** Location** Main Menu ▶ 2D Pattern ▶ Edit ▶ **Edit Pattern** ** **2D Toolbar ▶![Toolbar_2D_Pattern_Edit.png](https://support.clo3d.com/hc/article_attachments/360000037167/Toolbar_2D_Pattern_Edit.png)**Edit Pattern** **** **Operation** 1. Select the tool/menu indicated in Location. 2. Right-click on the point where the Dart needs to be created and select **Add Dart with Fullness**. → A reference line extended from the selected point to the mouse cursor appears. 3. Click on a Pattern outline. → The Pattern is divided in half based on the reference line. 4. Select a side or the center to add the Dart. Then, move the mouse cursor the adjust the size of the Dart. → A preview of the adjusted Pattern with the Dart and fullness appears. 5. Move the mouse cursor along the centerline to assign the length of the Dart. → A Dart is added with fullness according to the assigned width and length. **※ Note: **Right-click while setting the width and length of the Dart to input specific values.",
+        "content_description": "This web page provides a step-by-step guide for adding fullness to a pattern while incorporating a dart using the Edit Pattern tool in the 2D Toolbar.",
+        "created_at": "2024-10-28T08:54:46Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=WWwjav-SvdA"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 360007285034,
+        "Section": "Dart / Pleats / Fullness",
+        "Tokens": 257
+    },
+    {
+        "article_id": "115012226047",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012226047",
+        "title": "Clone Pattern with Linked Editing – Instance Pattern",
+        "content": "**List of Contents** Instance Pattern Apply Instance Pattern **Instance Pattern** \\- Duplicate Patterns with the linked editing function to edit them identically at the same time. **Apply Instance Pattern** \\- Navigate to the 2D toolbar and select the ![](https://support.clo3d.com/hc/article_attachments/115021849587/mceclip0.png) **Transform Pattern** tool or the ![](https://support.clo3d.com/hc/article_attachments/115021911008/mceclip1.png) **Edit Pattern** tool. \\- Right-click on the Pattern to be duplicated and select Clone Pattern with Linked Editing – **Instance Pattern.** \\- The duplicated Pattern will follow along with the mouse cursor. \\- Click on the 2D window to paste the duplicated Pattern. \\- The linked Patterns will be highlighted in yellow-green. \\- Since the Patterns are linked, they can be edited simultaneously. Go back to the List of Contents",
+        "content_description": "This web page provides a step-by-step guide on using the Instance Pattern feature to efficiently duplicate and edit patterns simultaneously in your design workflow.",
+        "created_at": "2024-10-28T08:52:30Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=_Qdwc2mADNI"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 197
+    },
+    {
+        "article_id": "115000393188",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115000393188",
+        "title": "Snap to Pattern",
+        "content": "**Objective** Activate **Snap to Pattern** to create and edit Internal Shapes and Sewing Lines that accurately fit the point and line. ** Location** Main Menu ▶ Preferences ▶ **Snap to Pattern** Right-Click Pop-Up Menu (on 2D Window) ▶ **Snap to Pattern** ** Operation** 1. Follow the indicated guideline below: Main Menu ▶ Preferences ▶**Snap to Pattern** Right-Click Pop-Up Menu (on 2D Window) ▶ **Snap to Pattern** 2. Create or edit Internal Shapes and Sewing Lines while **Snap to Pattern** is activated. → The Internal Shapes and Sewing Lines snap to the closest point or line. **※ Note:** **Snap to Pattern** is activated by default. Check off the option to deactivate the function.",
+        "content_description": "This web page provides instructions for activating and using the **Snap to Pattern** feature to accurately create and edit Internal Shapes and Sewing Lines in your designs.",
+        "created_at": "2024-10-28T08:51:41Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115002522408,
+        "Section": "Preferences/Settings",
+        "Tokens": 166
+    },
+    {
+        "article_id": "115012377628",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012377628",
+        "title": "Apply Linked Editing – Instance Pattern",
+        "content": "**List of Contents** Instance Pattern Apply Instance Pattern Remove Instance Pattern **Instance Pattern** \\- Edit identical Patterns simultaneously. ** Apply Instance Pattern** \\- Navigate to the 2D toolbar and select the ![](https://support.clo3d.com/hc/article_attachments/115021447968/mceclip0.png) **Transform Pattern** tool or ![](https://support.clo3d.com/hc/article_attachments/115021447988/mceclip1.png) **Edit Pattern** tool. \\- Right-click on the Patterns to be linked and select Apply Linked Editing – **Instance Pattern** from the pop-up menu. \\- The linked Patterns will be highlighted in yellow-green. \\- The linked Patterns can be edited at the same time. **Remove Instance Pattern** \\- Navigate to the 2D toolbar and select the ![](https://support.clo3d.com/hc/article_attachments/115021447968/mceclip0.png) **Transform Pattern** tool or the ![](https://support.clo3d.com/hc/article_attachments/115021447988/mceclip1.png)**Edit Pattern** tool. \\- Right-click on the Patterns to be unlinked and select **Remove Linked Editing** from the pop-up menu. \\- The linked Patterns will be separated. \\- The Patterns can be edited individually. Go back to the List of Contents",
+        "content_description": "This web page provides a concise guide on how to apply and remove the Instance Pattern feature for simultaneous editing of identical patterns in a 2D design environment.",
+        "created_at": "2024-10-28T08:50:35Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=89gLqS2ZxZM",
+            "https://www.youtube.com/watch?v=n99HbrpHdhI"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 282
+    },
+    {
+        "article_id": "360000767328",
+        "source": "https://support.clo3d.com/hc/en-us/articles/360000767328",
+        "title": "Pattern Symbol",
+        "content": "**List of Contents** Pattern Symbol Create **Pattern Symbol ** \\- Add or delete guidelines for garment construction. \\- Main Menu ▶ 2D Pattern ▶ Pattern Annotation ▶ **Pattern Symbol** \\- 2D Toolbar ▶ ![pattern_instruction_line.png](https://support.clo3d.com/hc/article_attachments/360001204588/pattern_instruction_line.png)**Pattern Symbol** **Create** * **Create a Single Pattern Symbol** \\- Click the Pattern outline or Internal Line where a Pattern Symbol should be added. \\- A Pattern Symbol is added to the selected segment. \\- Place on Fold symbol is added by default. * **Create Multiple Pattern Symbols ** \\- To create Pattern Symbols on multiple segments, hold down the Shift key while selecting desired segments. \\- Or, click and drag or use lasso selection to apply Pattern symbols to multiple segments. Go back to the List of Contents",
+        "content_description": "This web page provides a comprehensive guide on creating and managing pattern symbols for garment construction in a 2D design environment.",
+        "created_at": "2024-10-28T08:42:56Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=-i45ZzLRH3Y",
+            "https://www.youtube.com/watch?v=CM7Yq_Z-RZY",
+            "https://www.youtube.com/watch?v=jIl1YLM8ZA8"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 187
+    },
+    {
+        "article_id": "115015816148",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115015816148",
+        "title": "Edit Pattern Instruction Lines",
+        "content": "**List of Contents** Pattern Instruction Line Properties Edit Properties **Pattern Instruction Line Properties **\\- Edit properties for Pattern Symbols as needed. \\- Navigate to the Main Menu and select 2D Pattern ▶ Pattern Annotation ▶ **Pattern Symbol** or **Edit Annotation.** \\- Select the![](https://support.clo3d.com/hc/article_attachments/115026558887/mceclip1.png) **Edit Annotation** or ![](https://support.clo3d.com/hc/article_attachments/115026558907/mceclip3.png) **Pattern Symbol** tool from the 2D toolbar. ** Edit Properties ** \\- Select the Pattern Symbol to be modified. \\- Navigate to the Property Editor to view the selected Pattern Symbol’s properties. * **Name** \\- Rename the Pattern Symbol. * **Line Type** \\- Select the type of the Pattern Symbol as needed. * **Flip** \\- This option only appears when the Pattern Symbol is created on an Internal Line. \\- Toggle on the option to place the Pattern Symbol on the other side of the Internal Line. Go back to the List of Contents",
+        "content_description": "This web page provides step-by-step instructions for editing properties of Pattern Symbols in a 2D design environment.",
+        "created_at": "2024-10-28T08:42:00Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=Jc3nCoBaS44",
+            "https://www.youtube.com/watch?v=i-V_G8L73ag"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 232
+    },
+    {
+        "article_id": "115012377668",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012377668",
+        "title": "Apply Linked Editing – Symmetry Pattern",
+        "content": "**List of Contents** Symmetry Pattern Apply Symmetry Pattern Remove Symmetry Pattern **Symmetry Pattern** \\- Edit identical Patterns symmetrically at the same time. ** Apply Symmetry Pattern** \\- Navigate to the 2D toolbar and select the ![](https://support.clo3d.com/hc/article_attachments/115021447968/mceclip0.png) **Transform Pattern** tool or ![](https://support.clo3d.com/hc/article_attachments/115021447988/mceclip1.png) Edit Pattern tool. \\- Right-click on the Patterns to be linked and select Apply Linked Editing – **Symmetry Pattern** from the pop-up menu. \\- The symmetrized Patterns will be highlighted in light blue. \\- The symmetrized Patterns can be edited symmetrically at the same time. **Remove Symmetry Pattern** \\- Navigate to the 2D toolbar and select the ![](https://support.clo3d.com/hc/article_attachments/115021447968/mceclip0.png) **Transform pattern** tool or ![](https://support.clo3d.com/hc/article_attachments/115021447988/mceclip1.png) **Edit Pattern** tool. \\- Right-click on the Patterns to be unlinked and select **Remove Linked Editing** from the pop-up menu. \\- The symmetrized Patterns will be separated. \\- The Patterns can be edited individually. Go back to the List of Contents",
+        "content_description": "This webpage provides guidance on how to apply and remove symmetry patterns in your designs, allowing for simultaneous editing of identical patterns.",
+        "created_at": "2024-10-28T08:40:58Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=-JDIFgOotxQ",
+            "https://www.youtube.com/watch?v=j-X1mK_1dok"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 303
+    },
+    {
+        "article_id": "115000393428",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115000393428",
+        "title": "Deactivate (Pattern Only)/Activate ",
+        "content": "**Objective** Deactivated Patterns are considered as nonexistence in the 3D window. Therefore the rest of the Patterns simulate through the deactivated Patterns. The function is generally used to keep complicated details such as pleats or slits, from avoiding collapsing. When deactivating certain Patterns, the Simulation speed gets faster as it excludes them from calculation. **Location** 3D Toolbar ▶ ![](https://support.clo3d.com/hc/en-us/article_attachments/115005490267/Toolbar_3D_Select_Move.png) Select/Move ▶ 3D Garment Right-Click Pop-up Menu ▶ **Deactivate (Pattern Only)** / **Activate** 2D Toolbar ▶ ![](https://support.clo3d.com/hc/en-us/article_attachments/115005490287/Toolbar_2D_Pattern_Transform.png) Transform Pattern ▶ 2D Pattern Right-Click Pop-up Menu ▶ **Deactivate (Pattern Only)** / **Activate** **Operation** 1. Follow the indicated guideline: 3D Toolbar ▶ ![](https://support.clo3d.com/hc/en-us/article_attachments/115005490267/Toolbar_3D_Select_Move.png) Select/Move ▶ 3D Garment Right-Click Pop-up Menu ▶ **Deactivate (Pattern Only)** / **Activate** 2D Toolbar ▶ ![](https://support.clo3d.com/hc/en-us/article_attachments/115005490287/Toolbar_2D_Pattern_Transform.png) Transform Pattern ▶ 2D Pattern Right-Click Pop-up Menu ▶ **Deactivate (Pattern Only)** / **Activate** → The selected Pattern is now being deactivated/activated.",
+        "content_description": "This web page provides a concise guide on how to deactivate and activate Patterns in a 3D simulation environment to enhance performance and manage complexity without compromising design integrity.",
+        "created_at": "2024-10-28T08:36:39Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628287,
+        "Section": "Simulation",
+        "Tokens": 355
+    },
+    {
+        "article_id": "115012380528",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012380528",
+        "title": "Graphic (3D Pattern)",
+        "content": "**List of Contents** Graphic 3D Pattern Add Graphic **Graphic（3D Pattern）** \\- Add Graphics to 3D Garments in the 3D window. \\- Select the ![](https://support.clo3d.com/hc/article_attachments/115022458008/mceclip0.png) **Graphic** (**3D Pattern)** tool from the 3D toolbar. \\- Or, navigate to the Main Menu and select Material ▶ Graphic ▶ **Graphic**(**3D Pattern)** ** Add Graphic** \\- When the![](https://support.clo3d.com/hc/article_attachments/115022458008/mceclip0.png) **Graphic(3D Pattern)** tool is selected, the File Browser will appear. \\- Select the image file to be added. The mouse cursor will change to the graphic icon. \\- Click on the position where the graphic should be added. \\- The**Add Graphic** window will appear. \\- Enter values to Width and Height, and click OK. \\- The graphic will be added based on the settings. Go back to the List of Contents",
+        "content_description": "This web page provides a step-by-step guide on how to add graphics to 3D garments using the Graphic (3D Pattern) tool in the 3D window.",
+        "created_at": "2024-10-28T07:51:44Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=kBwCxa7kb4Y",
+            "https://www.youtube.com/watch?v=zJZZB058Xig"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 233
+    },
+    {
+        "article_id": "115012379968",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012379968",
+        "title": "Deactivate (Pattern Only)",
+        "content": "**List of Contents** Deactivate (Pattern Only) Result of Deactivate (Pattern Only) Features of Deactivate (Pattern Only) **Deactivate (Pattern Only)** \\- Deactivate selected Patterns to easily perform meticulous editing on the 3D Garment. \\- Select desired Patterns to be deactivated and right click to access the pop-up menu. Then, select **Deactivate (Pattern Only).** ** Result of Deactivate (Pattern Only)** \\- When the selected Patterns are properly deactivated, Patterns should turn translucent navy. When the Simulation is activated, deactivated Patterns will not move, but sewing lines will still be activated. \\- To activate the selected Patterns, right click again and select **Activate.** **Features of Deactivate (Pattern Only)** \\- Deactivated Patterns will not be calculated for collision. \\- Simulate overlapped Patterns, one being activated and the other being deactivated. The activated Pattern will easily pass through the deactivated Pattern. Go back to the List of Contents",
+        "content_description": "This web page provides a comprehensive guide on how to deactivate specific patterns in 3D garment design for precise editing, along with the resulting visual changes and features of this function.",
+        "created_at": "2024-10-28T07:50:29Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=Y9KRz0vrvPA",
+            "https://www.youtube.com/watch?v=tC9MUU71wJo",
+            "https://www.youtube.com/watch?v=sXaQFp_QEN0"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 200
+    },
+    {
+        "article_id": "115012377688",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012377688",
+        "title": "Apply Linked Editing – Symmetry Pattern (with Sewing)",
+        "content": "**List of Contents** Symmetry Pattern (with Sewing) Apply Symmetry Pattern (with Sewing) Remove Symmetry Pattern (with Sewing) **Symmetry Pattern (with Sewing)** \\- Edit identical Patterns symmetrically at the same, including their Sewing Lines. ** Apply Symmetry Pattern (with Sewing)** \\- Navigate to the 2D toolbar and select the ![](https://support.clo3d.com/hc/article_attachments/115021447968/mceclip0.png)**Transform Pattern** tool or the ![](https://support.clo3d.com/hc/article_attachments/115021447988/mceclip1.png) **Edit Pattern** tool. \\- Right-click on the Patterns to be linked and select Apply Linked Editing – **Symmetry Pattern (with Sewing)** from the pop-up menu. \\- The symmetrized Patterns will be highlighted in blue. \\- The symmetrized Patterns can be edited symmetrically at the same time. **Remove Symmetry Pattern (with Sewing)** \\- Navigate to the 2D toolbar and select the ![](https://support.clo3d.com/hc/article_attachments/115021447968/mceclip0.png) **Transform Pattern** tool or the ![](https://support.clo3d.com/hc/article_attachments/115021447988/mceclip1.png) **Edit Pattern** tool. \\- Right-click on the Patterns to be unlinked and select **Remove Linked Editing** from the pop-up menu. \\- The symmetrized Patterns will be separated. \\- The Patterns can be edited individually. Go back to the List of Contents",
+        "content_description": "This web page provides a comprehensive guide on how to edit, apply, and remove symmetry patterns in sewing, enabling users to efficiently manage identical patterns and their sewing lines.",
+        "created_at": "2024-10-28T07:47:26Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=JzRfxVV4fJY",
+            "https://www.youtube.com/watch?v=BTNRHvVdD5c"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 341
+    },
+    {
+        "article_id": "115012226567",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012226567",
+        "title": "Graphic (2D Pattern)",
+        "content": "**List of Contents** Graphic (2D Pattern) Add Graphic **Graphic (2D Pattern)** \\- Add Graphics to Patterns in the 2D window. \\- Select the ![](https://support.clo3d.com/hc/article_attachments/115022458008/mceclip0.png) **Graphic(2D Pattern)** tool from the 2D toolbar. \\- Or, navigate to the Main Menu and select Materials ▶ Graphic ▶ **Graphic(2D Pattern).** ** Add Graphic** \\- When the ![](https://support.clo3d.com/hc/article_attachments/115022458008/mceclip0.png) **Graphic(2D Pattern)** tool is selected, the File Browser will appear. \\- Select the image file to be added. The mouse cursor will change to the Graphic icon. \\- When the mouse is hovering over the Pattern, guidelines indicating the distance between the Pattern outlines and the center of the Graphic will appear. \\- Click on the position where the Graphic should be added. \\- The Add Graphic window will appear. \\- Enter values to Width, Height, and Position and click OK. \\- The Graphic will be added based on the settings. Go back to the List of Contents",
+        "content_description": "This webpage provides step-by-step instructions for adding graphics to patterns in the 2D window using the Graphic(2D Pattern) tool.",
+        "created_at": "2024-10-28T07:45:17Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=AyujpdcjWeQ",
+            "https://www.youtube.com/watch?v=bhdHc6mR6rQ"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 256
+    },
+    {
+        "article_id": "360000726407",
+        "source": "https://support.clo3d.com/hc/en-us/articles/360000726407",
+        "title": "Select/Delete Pattern Symbol",
+        "content": "**List of Contents** Pattern Symbol Select Delete **Pattern Symbol** \\- Select or delete selected Pattern Symbol. \\- Main Menu ▶ 2D Pattern ▶ Pattern Annotation ▶ ![pattern_instruction_line.png](https://support.clo3d.com/hc/article_attachments/360001190207/pattern_instruction_line.png)**Pattern Symbol or![edit_annotation.png](https://support.clo3d.com/hc/article_attachments/360001177128/edit_annotation.png) Edit Annotation.** \\- 2D Toolbar ▶ ![pattern_instruction_line.png](https://support.clo3d.com/hc/article_attachments/360001190207/pattern_instruction_line.png)**Pattern Symbol or![edit_annotation.png](https://support.clo3d.com/hc/article_attachments/360001177128/edit_annotation.png) Edit Annotation.** **Select** **** \\- Click on the Pattern outline or Internal Line where a Pattern Symbol is added. \\- The Pattern Symbol is selected and highlighted. \\- To select all Pattern Symbols, hit Ctrl+A keys on keyboard. **Delete** **** \\- Click on the Pattern outline or Internal Line where a Pattern Symbol is added. \\- Right-click on the segment and select Delete to erase the Pattern Symbol. \\- Or, hit the Delete key from the keyboard Go back to the List of Contents",
+        "content_description": "This web page provides instructions for selecting and deleting Pattern Symbols in a 2D pattern annotation tool.",
+        "created_at": "2024-10-28T07:43:41Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=tbnoJsJ07dg",
+            "https://www.youtube.com/watch?v=d9HP2b8gw2Y",
+            "https://www.youtube.com/watch?v=EqKylC7qVOU"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 271
+    },
+    {
+        "article_id": "115000376987",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115000376987",
+        "title": "Deactivate(Pattern & Sewing)/Activate",
+        "content": "### **Objective** Deactivated Patterns are considered as nonexistence in the 3D window. Therefore the rest of the Patterns simulate through the deactivated Patterns. The function is generally used to keep complicated details such as pleats or slits, from avoiding collapsing (ver2.3.0). **※ Note:** When deactivating certain Patterns, the Simulation speed gets faster as it excludes them from calculation. **Location** 3D Toolbar ▶ ![](https://support.clo3d.com/hc/en-us/article_attachments/115005490267/Toolbar_3D_Select_Move.png) Select/Move ▶ 3D Garment Right-Click Pop-up Menu ▶ **Deactivate (Pattern & Sewing)** / **Activate** 2D Toolbar ▶ ![](https://support.clo3d.com/hc/en-us/article_attachments/115005490287/Toolbar_2D_Pattern_Transform.png) Transform Pattern ▶ 2D Pattern Right-Click Pop-up Menu ▶ **Deactivate (Pattern & Sewing)** / **Activate** **Operation** 1. Follow the indicated guideline below: 3D Toolbar ▶ ![](https://support.clo3d.com/hc/en-us/article_attachments/115005490267/Toolbar_3D_Select_Move.png) Select/Move ▶ 3D Garment Right-Click Pop-up Menu ▶ **Deactivate (Pattern & Sewing)** / **Activate** 2D Toolbar ▶ ![](https://support.clo3d.com/hc/en-us/article_attachments/115005490287/Toolbar_2D_Pattern_Transform.png) Transform Pattern ▶ 2D Pattern Right-Click Pop-up Menu ▶ **Deactivate (Pattern & Sewing)** / **Activate** → The selected Patterns and connected Sewing Lines are now being deactivated/activated.",
+        "content_description": "This web page provides a guide on how to deactivate and activate Patterns in a 3D garment simulation to enhance performance and maintain design details.",
+        "created_at": "2024-10-28T07:39:33Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000628287,
+        "Section": "Simulation",
+        "Tokens": 381
+    },
+    {
+        "article_id": "115000525027",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115000525027",
+        "title": "Smart Arrangement ",
+        "content": "### **Objective** Arrange a new Pattern onto an existing Pattern while maintaining 3D draping state (ver3.0.0). ** Location** 3D Toolbar ▶ ![](https://support.clo3d.com/hc/en-us/article_attachments/115005703607/Toolbar_3D_Select_Move.png) Select/Move ▶ 3D Pattern Right-Click Pop-Up Menu ▶ **Smart Arrangement** ** Operation** 1. Utilizing the 2D sewing tools, sew a new Pattern to an existing Pattern that is being draped. 2. Follow the indicated guideline below: 3D Toolbar ▶ ![](https://support.clo3d.com/hc/en-us/article_attachments/115005703607/Toolbar_3D_Select_Move.png) Select/Move ▶ 3D Pattern Right-Click Pop-Up Menu ▶ **Smart Arrangement** → The selected Pattern is now being arranged to where it is sewn as draped.",
+        "content_description": "This web page provides a step-by-step guide for arranging a new pattern onto an existing 3D draped pattern using the Smart Arrangement feature in the 3D Toolbar.",
+        "created_at": "2024-10-28T07:27:03Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000641628,
+        "Section": "Pattern: 3D Arrangement ",
+        "Tokens": 201
+    },
+    {
+        "article_id": "115012333407",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012333407",
+        "title": "Clone Pattern with Linked Editing – Symmetry Pattern",
+        "content": "**List of Contents** Symmetry Pattern Apply Symmetry Pattern **Symmetry Pattern ** \\- Duplicate Patterns symmetrically with the linked editing function to edit Patterns simultaneously. ** Apply Symmetry Pattern** \\- Navigate to the 2D toolbar and select the ![](https://support.clo3d.com/hc/article_attachments/115021849587/mceclip0.png) **Transform Pattern** tool or the ![](https://support.clo3d.com/hc/article_attachments/115021911008/mceclip1.png) **Edit Pattern** tool. \\- Right-click on the Pattern to be duplicated and select Clone Pattern with Linked Editing – **Symmetry Pattern.** \\- The duplicated Pattern will follow along with the mouse cursor. \\- Click on the 2D window to paste the duplicated Pattern. \\- The symmetrized Patterns will be highlighted in light blue. \\- Since the Patterns are symmetrized, they can be edited symmetrically at the same time. Go back to the List of Contents",
+        "content_description": "This webpage provides a step-by-step guide on how to apply and edit symmetrical patterns using linked editing features in the design software.",
+        "created_at": "2024-10-28T07:26:07Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=Tf39eo_0vOU"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 210
+    },
+    {
+        "article_id": "115012380908",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012380908",
+        "title": "Offset Pattern Outline",
+        "content": "**Offset Pattern Outline** * **Offset Pattern Outline ** \\- Extend the Pattern outline while maintaining the shape of the Pattern. * **Offset a Segment ** \\- Select the ![](https://support.clo3d.com/hc/article_attachments/115022571447/mceclip0.png) **Edit Pattern** tool from the 2D toolbar. \\- Navigate to the 2D window, right click on a segment of a Pattern and select **Offset Pattern Outline** from the pop-up menu. \\- The Offset Pattern Outline Window will appear. * **Distance** : set how much the Offset Pattern Outline will be apart from the original Pattern outline. * **Number of Offsets** : set how many offsets will be duplicated. * **Total Distance** : total distance equals to the result of Distance multiplying Number of Offsets. * **Create Internal Line** : toggle on to convert the original Pattern outline as an Internal Line. * **Extend Side Segments** : toggle on the option to extend adjacent Pattern outlines, maintaining their original slope. * **Default Corner, Right Angled Corner, and Unfilled Corner** : decide how corners of the offset Pattern outline will be shaped. This option is not used when offsetting a segment. * **Offset an Entire Pattern ** \\- Select the ![](https://support.clo3d.com/hc/article_attachments/115022571447/mceclip0.png) **Transform Pattern** tool or the![](https://support.clo3d.com/hc/article_attachments/115022571767/mceclip1.png) **Edit Pattern** tool from the 2D toolbar. \\- Navigate to the 2D window, right click on a Pattern and select **Offset Pattern Outline** from the pop-up menu. \\- The Offset Pattern Outline Window will appear. * **Distance** : set how much the Offset Pattern Outline will be apart from the original pattern outline. * **Number of Offsets** : set how many offsets will be duplicated. * **Total Distance** : total distance equals to the result of Distance multiplying Number of Offsets. * **Create Internal Line** : toggle on to convert the original Pattern outline as an Internal Line. * **Extend Side Segments** : toggle on the option to extend adjacent Pattern outlines, maintaining their original slope. This is not used when offsetting an entire Pattern. * **Default Corner, Right Angled Corner, and Unfilled Corner** : decide how corners of the offset Pattern outline will be shaped. The Pattern outline will be offset based on the setting.",
+        "content_description": "This web page provides a comprehensive guide on how to use the Offset Pattern Outline feature to extend and customize pattern outlines in a design software.",
+        "created_at": "2024-10-28T07:22:58Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=89K2uzTOe4c",
+            "https://www.youtube.com/watch?v=_93HaonYlfQ"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 520
+    },
+    {
+        "article_id": "115012381248",
+        "source": "https://support.clo3d.com/hc/en-us/articles/115012381248",
+        "title": "Segment Sewing",
+        "content": "**List of Contents** Segment Sewing Establish Sewing Lines Directional Notches Divide Sewing Lines Based on Notches **Segment Sewing** \\- Establish Sewing Lines on segments, split by points, to connect Patterns. \\- Select the ![](https://support.clo3d.com/hc/article_attachments/115022653788/mceclip0.png) **Segment Sewing** tool from the 2D toolbar. \\- Or, navigate to and select Main Menu ▶ Sewing ▶ **Segment Sewing.** ** Establish Sewing Lines** \\- Select the ![](https://support.clo3d.com/hc/article_attachments/115022653788/mceclip0.png) **Segment Sewing** tool from the 2D toolbar. \\- Navigate to the 2D window. \\- Click on a segment on a Pattern to establish the first half of the Sewing Line. \\- Then, hover the mouse over the segment where the second half of the Sewing Line will be placed to. \\- Drag the mouse to alter the direction of the Directional Notch as desired. \\- Click on the segment to establish the second half of the Sewing Line. \\- A pair of Sewing Lines is completed. \\- The Sewing Line difference will hover over the mouse cursor. \\- When the Sewing Line difference is larger than 1mm, the value will appear in red to alert users. **Directional Notches** \\- The direction of the Directional Notches can be changed by moving the mouse on the Sewing Lines. \\- To reset the Directional Notches on a pair of Sewing Lines, hit the ESC key or the Ctrl+Z keys on the keyboard. **Divide Sewing Lines Based On Nothches(ver4.1.0)** \\- Now sewing lines can be created snapping on notches, without adding segment points. \\- Select the ![](https://support.clo3d.com/hc/article_attachments/115022653788/mceclip0.png)**Segment Sewing** tool from the 2D toolbar. \\- Establish sewing lines based on notches. Go back to the List of Contents",
+        "content_description": "This webpage provides a comprehensive guide on utilizing the Segment Sewing tool in Clo3D to establish and manage sewing lines and directional notches on patterns.",
+        "created_at": "2024-10-28T07:02:15Z",
+        "youtube_links": [
+            "https://www.youtube.com/watch?v=xlE08VVux5M",
+            "https://www.youtube.com/watch?v=zxXoWyYlINc",
+            "https://www.youtube.com/watch?v=6RfaA1mApNk",
+            "https://www.youtube.com/watch?v=jvyaHp-R5c0"
+        ],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115003292548,
+        "Section": "Index",
+        "Tokens": 451
+    },
+    {
+        "article_id": "360001771047",
+        "source": "https://support.clo3d.com/hc/en-us/articles/360001771047",
+        "title": "[3D Tool] Segment Sewing",
+        "content": "### **Objective** In the 3D window, easily establish Sewing Lines on segments of Patterns or Internal Shapes/Lines. ** Location** Main Menu ▶ Sewing ▶ **Segment Sewing** 2D or 3D Toolbar ▶ ![](https://support.clo3d.com/hc/en-us/article_attachments/115001250948/_______.png) **Segment Sewing** ** Operation** 1. Follow the indicated guideline below: Main Menu ▶ Sewing ▶ **Segment Sewing** 2D or 3D Toolbar ▶ ![](https://support.clo3d.com/hc/en-us/article_attachments/115001250948/_______.png) **Segment Sewing ** → All sew-able segments are bolded. → All Sewing Lines appear in both 2D and 3D windows. 2. Navigate to the 3D window. 3. Click once on the Pattern Outline to establish the first half of the seam. 4. With the mouse cursor, hover over the segment to be sewn to the first half of the seam. → When moving the mouse cursor, a blue point appears indicating the length of the first half of the seam. 5. When the mouse cursor is moved close to the blue point, the Sewing Line snaps to the point (ver5.1.0). Drag the mouse to make the the Directional Notches parallel to each other. Then, click to establish the second half of the seam. **※ Note** * When Directional Notches are crossed, the Sewing Lines in the 3D window are crossed as well. When Patterns are simulated at this state, either one of the Patterns is reversed and then sewn to the other Pattern. * Use the shortcut to establish M:N Sewing Lines. For more detail, please reference [M:N Segment Sewing](https://support.clo3d.com/hc/en-us/articles/360001771067).",
+        "content_description": "The purpose of this web page is to provide a clear guide for establishing Sewing Lines on segments of Patterns or Internal Shapes/Lines in both 2D and 3D environments within the software.",
+        "created_at": "2024-10-28T07:00:56Z",
+        "youtube_links": [],
+        "CategoryId": 115000064648,
+        "Category": "Manual",
+        "SectionId": 115000641848,
+        "Section": "Sewing",
+        "Tokens": 408
+    }
+]

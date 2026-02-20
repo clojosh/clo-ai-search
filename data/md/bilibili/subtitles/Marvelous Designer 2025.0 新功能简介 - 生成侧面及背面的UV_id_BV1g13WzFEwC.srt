@@ -1,0 +1,120 @@
+1
+00:00:00,000 --> 00:00:10,000
+Welcome to the new feature introduction video of Marvelous Designer 2025.
+
+2
+00:00:10,000 --> 00:00:16,000
+In the current version, you can turn on the side and back UVs of the expanded version.
+
+3
+00:00:16,000 --> 00:00:21,000
+Let's open the default T-shirt first to see the updated content.
+
+4
+00:00:21,000 --> 00:00:28,000
+In the 3D window, first change the clothing rendering type to the dense texture surface.
+
+5
+00:00:28,000 --> 00:00:35,000
+When you turn on the dense texture surface, you can see the material picture and the thickness of the side at the same time.
+
+6
+00:00:35,000 --> 00:00:42,000
+Select all panels and adjust the rendering thickness in the property editor.
+
+7
+00:00:42,000 --> 00:00:47,000
+When the thickness is increased and the rendering is improved, you will get a more obvious effect.
+
+8
+00:00:47,000 --> 00:00:56,000
+If you need to check the UV layout, please go to the main menu window and open the UV editor.
+
+9
+00:00:56,000 --> 00:00:58,000
+Select all panels.
+
+10
+00:00:58,000 --> 00:01:03,000
+In the property editor, select the side option under the expanded UV.
+
+11
+00:01:03,000 --> 00:01:09,000
+At this time, the side UV of the panel will show the thickness of the panel.
+
+12
+00:01:09,000 --> 00:01:16,000
+The side UV of the panel with the rectangular outer frame is extremely expanded.
+
+13
+00:01:16,000 --> 00:01:24,000
+Then select the panels in the back and open the back UV expansion of these panels.
+
+14
+00:01:24,000 --> 00:01:26,000
+Then move the front and side UV of the back panel to the side.
+
+15
+00:01:26,000 --> 00:01:31,000
+You will see the generated panel back UV.
+
+16
+00:01:31,000 --> 00:01:35,000
+The black outer frame is the front and side UV.
+
+17
+00:01:35,000 --> 00:01:37,000
+The independent one is the panel back UV.
+
+18
+00:01:37,000 --> 00:01:44,000
+If the back UV expansion is closed, you can't see it and you can't edit the back UV.
+
+19
+00:01:44,000 --> 00:01:52,000
+Now we put the front UV in one line and the back UV in one line.
+
+20
+00:01:52,000 --> 00:01:55,000
+Then export the object file.
+
+21
+00:01:56,000 --> 00:02:00,000
+When exporting, you need to keep the UV layout.
+
+22
+00:02:00,000 --> 00:02:03,000
+Please click on the unified UV coordinate N.
+
+23
+00:02:03,000 --> 00:02:07,000
+Click on the option you need to select and then click OK.
+
+24
+00:02:07,000 --> 00:02:14,000
+Then import the file into Substance Painter to view the UV image.
+
+25
+00:02:14,000 --> 00:02:22,000
+You will see that the UV image has been correctly arranged and exported.
+
+26
+00:02:22,000 --> 00:02:33,000
+You can see the additional material on the back side and side panel.
+
+27
+00:02:33,000 --> 00:02:37,000
+Now we re-add the material for the outfit.
+
+28
+00:02:37,000 --> 00:02:49,000
+You can see the UV on the side and back panels are correctlyских and there are no problems with the wrong rendering.
+
+29
+00:02:49,000 --> 00:02:51,000
+Now we can add the new corresponding UV.
+
+30
+00:02:51,000 --> 00:03:20,979
+Thank you.
+

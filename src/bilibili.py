@@ -332,7 +332,7 @@ class Bilibili:
                     "content": transcript["summary"] if "summary" in transcript else transcript["transcript"],
                     "content_description": transcript["description"],
                     "created_at": transcript["published_at"],
-                    "youtube_links": [transcript["url"]],
+                    "youtube_links": [],
                     "title_vector": self.azure.openai_helper.generate_embeddings(text=transcript["title"]),
                     "content_vector": self.azure.openai_helper.generate_embeddings(text=transcript["summary"]),
                 }

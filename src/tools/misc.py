@@ -356,7 +356,47 @@ def ensure_absolute_markdown_urls(markdown_text: str, base_url: str) -> str:
     return link_regex.sub(replacer, markdown_text)
 
 
-if __name__ == "__main__":
-    url = "https://support.clo3d.com/hc/en-us/article_attachments/115000993607/_______.png"
+def get_version_info_by_article_id(article_id, json_data):
+    """
+    Searches for an article_id and returns the version and year.
+    """
+    target_id = str(article_id)
 
-    print(check_image_exists(url))
+    for entry in json_data:
+        raw_version_string = entry.get("version", "")
+        features = entry.get("features", [])
+
+        # 1. Extract Version: Look for digits and dots at the start
+        # e.g., "2025.2"
+        v_match = re.search(r"(\d+\.\d+)", raw_version_string)
+        version_num = v_match.group(1) if v_match else raw_version_string
+
+        # 2. Extract Year: Look for any 4-digit number inside parentheses
+        # e.g., "(... 2025)"
+        y_match = re.search(r"\(.*(\d{4}).*\)", raw_version_string)
+        year = y_match.group(1) if y_match else None
+
+        # 3. Search Features
+        for feature in features:
+            url = feature.get("url")
+            if url:
+                # Matches the numeric ID in the URL path
+                id_match = re.search(r"/articles/(\d+)", url)
+                if id_match and id_match.group(1) == target_id:
+                    return {"version": version_num, "year": year}
+
+    return None
+
+
+if __name__ == "__main__":
+    raw_version_string = "2025.2 (November 2025)"
+    # 1. Extract Version: Look for a pattern of digits and dots at the beginning of the string
+    v_match = re.search(r"(\d+\.\d+)", raw_version_string)
+    version_num = v_match.group(1) if v_match else raw_version_string
+
+    # 2. Extract Year: Look for any 4-digit number inside parentheses
+    # e.g., "(... 2025)"
+    y_match = re.search(r"\(.*(\d{4}).*\)", raw_version_string)
+    year = y_match.group(1) if y_match else None
+
+    print(f"Version: {version_num}, Year: {year}")

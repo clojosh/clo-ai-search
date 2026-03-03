@@ -143,32 +143,19 @@ class AISearch:
     def create_search_index(self, index_name=None):
         # Create a search index
         fields = [
+            # 1. Identity
             SimpleField(name="article_id", type=SearchFieldDataType.String, key=True),
+            # 2. Core Searchable Content
+            SearchableField(name="title", type=SearchFieldDataType.String, searchable=True, retrievable=True),
+            SearchableField(name="content", type=SearchFieldDataType.String, searchable=True, retrievable=True),
+            SearchableField(name="content_description", type=SearchFieldDataType.String, searchable=True, retrievable=True),
+            # 3. Metadata & Categorization
             SearchableField(name="source", type=SearchFieldDataType.String, retrievable=True),
-            SearchableField(
-                name="title",
-                type=SearchFieldDataType.String,
-                searchable=True,
-                retrievable=True,
-            ),
-            SearchableField(
-                name="content",
-                type=SearchFieldDataType.String,
-                searchable=True,
-                retrievable=True,
-            ),
-            SearchableField(
-                name="content_description",
-                type=SearchFieldDataType.String,
-                searchable=True,
-                retrievable=True,
-            ),
-            SearchableField(
-                name="created_at",
-                type=SearchFieldDataType.DateTimeOffset,
-                searchable=True,
-                retrievable=True,
-            ),
+            SimpleField(name="software_version", type=SearchFieldDataType.String, filterable=True, facetable=True),
+            SimpleField(name="release_year", type=SearchFieldDataType.Int32, filterable=True),
+            SimpleField(name="category", type=SearchFieldDataType.String, filterable=True),
+            SearchableField(name="created_at", type=SearchFieldDataType.DateTimeOffset, searchable=True, retrievable=True),
+            # 4. Collections
             SearchableField(
                 name="youtube_links",
                 collection=True,
@@ -176,17 +163,6 @@ class AISearch:
                 searchable=True,
                 retrievable=True,
             ),
-            # ComplexField(
-            #     name="InlineImages",
-            #     collection=True,
-            #     fields=[
-            #         SimpleField(name="PlaceHolder", type=SearchFieldDataType.String),
-            #         SimpleField(name="source", type=SearchFieldDataType.String),
-            #         SimpleField(name="Alt", type=SearchFieldDataType.String),
-            #         SimpleField(name="Width", type=SearchFieldDataType.String),
-            #         SimpleField(name="Height", type=SearchFieldDataType.String),
-            #     ],
-            # ),
             SearchField(
                 name="title_vector",
                 type=SearchFieldDataType.Collection(SearchFieldDataType.Single),

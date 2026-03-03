@@ -5,7 +5,6 @@ import re
 from datetime import datetime
 from math import ceil
 
-import parmap
 import questionary
 import requests  # type: ignore
 from rich import print

@@ -1,5 +1,4 @@
 import json
-import multiprocessing
 import os
 import re
 import sys
@@ -13,7 +12,16 @@ from tqdm import tqdm
 
 from ai_search import AISearch
 from tools.azure import Azure
-from tools.misc import check_image_exists, extract_youtube_links, get_section_and_category, html_to_markdown_converter, num_tokens_from_string, remove_unwanted_markdown_images, trim_tokens
+from tools.misc import (
+    check_image_exists,
+    extract_youtube_links,
+    get_section_and_category,
+    get_version_info_by_article_id,
+    html_to_markdown_converter,
+    num_tokens_from_string,
+    remove_unwanted_markdown_images,
+    trim_tokens,
+)
 
 
 class Article:
@@ -117,6 +125,24 @@ class Article:
                 article["id"] = str(article["id"])
                 article["section_id"], article["section"], article["category_id"], article["category"] = get_section_and_category(self.azure, article["section_id"])
 
+                if self.azure.brand == "md":
+                    for file in os.listdir(os.path.join("src", "features_mapping", self.azure.brand)):
+                        with open(os.path.join("src", "features_mapping", self.azure.brand, file), "r", encoding="utf-8") as f:
+                            json_data = json.load(f)
+
+                        metadata = get_version_info_by_article_id(article["id"], json_data)
+                        if metadata:
+                            article["software_version"] = metadata["version"]
+                            article["release_year"] = metadata["year"]
+                            break
+
+                    if "software_version" not in article:
+                        software_version = re.findall(r"\((?:Ver\.\s)?([\d.]+)\)", article["title"], re.IGNORECASE)
+                        article["software_version"] = software_version[0] if len(software_version) > 0 else ""
+
+                        release_year = re.findall(r"\((?:Ver\.\s)?[\d.]+\s?-\s?(\d{4})\)", article["title"], re.IGNORECASE)
+                        article["release_year"] = release_year[0] if len(release_year) > 0 else ""
+
                 documents.append(
                     {
                         "article_id": article["id"],
@@ -126,11 +152,13 @@ class Article:
                         "content_description": self.azure.openai_helper.create_webpage_description(article["body"]),
                         "created_at": article["updated_at"],
                         "youtube_links": article["youtube_links"],
-                        "CategoryId": article["category_id"],
-                        "Category": article["category"],
-                        "SectionId": article["section_id"],
-                        "Section": article["section"],
-                        "Tokens": num_tokens_from_string(article["body"], "gpt-4"),
+                        "category_id": article["category_id"],
+                        "category": article["category"],
+                        "section_id": article["section_id"],
+                        "section": article["section"],
+                        "software_version": article["software_version"] if "software_version" in article else "",
+                        "release_year": int(article["release_year"]) if "release_year" in article and article["release_year"] else None,
+                        "tokens": num_tokens_from_string(article["body"], "gpt-4"),
                     }
                 )
 
@@ -211,8 +239,8 @@ class Article:
 
             articles = [json_objects["article"]] if article_id is not None else json_objects["articles"]
 
-            # Use self.azure and self.brand directly
-            documents = self.extract_content_from_zendesk_article(self.brand, articles)
+            # Use self.azure and self.azure.brand directly
+            documents = self.extract_content_from_zendesk_article(self.azure.brand, articles)
 
             if documents:
                 filename = "page_0.json" if article_id is not None else f"page_{page}.json"
@@ -225,18 +253,19 @@ class Article:
         with open(os.path.join(self.azure.get_article_path(), file), "r", encoding="utf-8") as f:
             documents = json.load(f)
 
+        for i, document in enumerate(documents):
             if document["content"] == "":
                 document["content"] = document["title"]
 
             documents[i]["@search.action"] = "mergeOrUpload"
             documents[i]["title_vector"] = self.azure.openai_helper.generate_embeddings(text=document["title"])
             documents[i]["content_vector"] = self.azure.openai_helper.generate_embeddings(text=document["content"])
+            documents[i]["category"] = documents[i]["section"]
 
-            del documents[i]["Tokens"]
-            del documents[i]["SectionId"]
-            del documents[i]["Section"]
-            del documents[i]["CategoryId"]
-            del documents[i]["Category"]
+            del documents[i]["tokens"]
+            del documents[i]["section_id"]
+            del documents[i]["section"]
+            del documents[i]["category_id"]
 
         if brand == "clovf":
             # Upload clovf articles to both clo3d and clo-set

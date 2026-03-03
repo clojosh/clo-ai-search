@@ -195,7 +195,12 @@ class Posts:
         brand_posts: dict = {"clo3d": [], "closet": [], "connect": [], "md": []}
 
         for post in tqdm(posts, position=((page % 5) + 1), desc=f"Page {page}", colour="red", leave=False):
-            # 260 = Job Board
+            # 210 = General
+            # 220 = QnA
+            # 215 = Challenge
+            # 230 = Projects & Steps
+            # 240 = Tips & Tricks
+            # 250 = User Feedback
             if post["category"] == 260 or post["category"] == 230:
                 continue
 
@@ -244,7 +249,7 @@ class Posts:
 
             posts = json.loads(posts_response.text)
 
-        with ThreadPoolExecutor(max_workers=5) as executor:
+        with ThreadPoolExecutor(max_workers=10) as executor:
             list(tqdm(executor.map(lambda p: self.get_posts(*p), tasks), total=len(tasks), desc="Processing Posts", colour="blue"))
 
     @staticmethod
@@ -270,6 +275,8 @@ class Posts:
                             "content_description": document["content_description"],
                             "created_at": document["created_at"],
                             "youtube_links": [],
+                            "software_version": "",
+                            "release_year": None,
                             "title_vector": azure.openai_helper.generate_embeddings(text=document["title"]),
                             "content_vector": azure.openai_helper.generate_embeddings(text=document["content"] if document["content"] != "" else document["post_title"]),
                         }

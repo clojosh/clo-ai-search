@@ -2,10 +2,10 @@ import json
 import multiprocessing
 import os
 import re
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 from math import ceil
 
-import parmap
 import questionary
 import requests  # type: ignore
 from rich import print
@@ -24,8 +24,7 @@ class Posts:
     def __init__(self, azure: Azure):
         self.azure = azure
 
-    @staticmethod
-    def generate_posts_endpoint(tags: str = "", category: str = "", search_after: list = [], page_size: str = "30") -> str:
+    def generate_posts_endpoint(self, tags: str = "", category: str = "", search_after: list = [], page_size: str = "30") -> str:
         """Generates the endpoint for retrieving a list of posts from the community API.
 
         Args:
@@ -45,8 +44,7 @@ class Posts:
 
         return endpoint
 
-    @staticmethod
-    def is_comment_allowed(message: str) -> bool:
+    def is_comment_allowed(self, message: str) -> bool:
         """Checks if a comment is allowed.
 
         Args:
@@ -74,8 +72,7 @@ class Posts:
         # If the comment doesn't contain any links to the allowed domains, disallow it
         return False
 
-    @staticmethod
-    def replace_links_with_community_url(message: str, post_url: str) -> str:
+    def replace_links_with_community_url(self, message: str, post_url: str) -> str:
         url_pattern = r"http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+"
 
         matches = re.findall(url_pattern, message)
@@ -84,8 +81,7 @@ class Posts:
 
         return message
 
-    @staticmethod
-    def get_comments(post_id: str) -> str:
+    def get_comments(self, post_id: str) -> str:
         """
         Retrieves all the comments for a given post from the community API.
 
@@ -110,19 +106,19 @@ class Posts:
             combined_comments = ""
             for i, comment in enumerate(comments["comments"]):
                 # Skip comments that are None or not allowed
-                if comment["commentMessage"] is None or not Posts.is_comment_allowed(comment["commentMessage"]):
+                if comment["commentMessage"] is None or not self.is_comment_allowed(comment["commentMessage"]):
                     continue
 
                 if i != 0:
                     combined_comments += "\n\n"
 
-                combined_comments += f"Comment {i + 1}: " + Posts.replace_links_with_community_url(
+                combined_comments += f"Comment {i + 1}: " + self.replace_links_with_community_url(
                     trim_tokens(remove_html_tags(comment["commentMessage"])), "https://connect.clo-set.com/community/post/" + post_id
                 )
 
                 if comment["replies"] is not None:
                     for i, reply in enumerate(comment["replies"]):
-                        combined_comments += f"\nReply {i + 1}: " + Posts.replace_links_with_community_url(
+                        combined_comments += f"\nReply {i + 1}: " + self.replace_links_with_community_url(
                             trim_tokens(remove_html_tags(reply["commentMessage"])), "https://connect.clo-set.com/community/post/" + post_id
                         )
 
@@ -132,8 +128,7 @@ class Posts:
             print(f"Error fetching comments for post {post_id}: {e}")
             return ""
 
-    @staticmethod
-    def get_brand_types_for_post(post: dict):
+    def get_brand_types_for_post(self, post: dict):
         """
         Determines the brand types associated with a given post based on its tags, title, and summary.
 
@@ -163,9 +158,7 @@ class Posts:
 
         return brands_found
 
-    @staticmethod
-    def get_post(stage: str, brand: str, post_id: str):
-        azure = Azure(stage, brand)
+    def get_post(self, post_id: str):
         response = requests.request(
             "GET",
             POST_DETAIL.format(post_id=post_id),
@@ -178,7 +171,7 @@ class Posts:
         post = json.loads(response.text)
 
         comment_content = ""
-        comments = Posts.get_comments(post["postId"])
+        comments = self.get_comments(post["postId"])
         if comments:
             comment_content = "\n\n### Community Post Comments:\n" + comments
 
@@ -190,7 +183,7 @@ class Posts:
             "url": "https://connect.clo-set.com/community/post/" + post["postId"],
             "title": post["title"],
             "content": content + comment_content,
-            "content_description": azure.openai_helper.create_webpage_description(content) if content else "",
+            "content_description": self.azure.openai_helper.create_webpage_description(content) if content else "",
             "created_at": post["registeredDate"],
             "category": post["category"],
             "tags": post["tags"],
@@ -198,17 +191,17 @@ class Posts:
 
         return document
 
-    @staticmethod
-    def get_posts(stage: str, brand: str, posts: list, page: int):
+    def get_posts(self, posts: list, page: int):
         brand_posts: dict = {"clo3d": [], "closet": [], "connect": [], "md": []}
+
         for post in tqdm(posts, position=((page % 5) + 1), desc=f"Page {page}", colour="red", leave=False):
             # 260 = Job Board
             if post["category"] == 260 or post["category"] == 230:
                 continue
 
-            document = Posts.get_post(stage, brand, post["postId"])
+            document = self.get_post(post["postId"])
 
-            brand_types = Posts.get_brand_types_for_post(post)
+            brand_types = self.get_brand_types_for_post(post)
             for brand_type in brand_types:
                 brand_posts[brand_type].append(document)
 
@@ -222,7 +215,7 @@ class Posts:
             with open(os.path.join(os.getcwd(), "data", brand_type, "posts", f"page_{page}.json"), "w+", encoding="utf-8") as f:
                 json.dump(documents, f, ensure_ascii=False, indent=4)
 
-    def mp_get_posts(self):
+    def mt_get_posts(self):
         posts_response = requests.request(
             "GET",
             self.generate_posts_endpoint(),
@@ -238,7 +231,7 @@ class Posts:
 
         tasks = []
         for page in tqdm(range(page_count), desc="Aggregating Posts", colour="green"):
-            tasks.append((self.azure.stage, self.azure.brand, posts["posts"], page))
+            tasks.append((posts["posts"], page))
 
             posts_response = requests.request(
                 "GET",
@@ -251,12 +244,8 @@ class Posts:
 
             posts = json.loads(posts_response.text)
 
-        with multiprocessing.Pool(5) as p:
-            p.starmap_async(
-                Posts.get_posts,
-                tasks,
-                error_callback=lambda e: print(e),
-            )
+        with ThreadPoolExecutor(max_workers=5) as executor:
+            list(tqdm(executor.map(lambda p: self.get_posts(*p), tasks), total=len(tasks), desc="Processing Posts", colour="blue"))
 
     @staticmethod
     def upload(stage: str, brand: str, posts_path: str, file: str, position: int):
@@ -360,21 +349,18 @@ if __name__ == "__main__":
     task = questionary.select("What task?", choices=["Get Post", "Get All Posts", "Upload All Posts", "Find & Delete AI Search Documents"]).ask()
 
     azure = Azure(stage, brand)
+    post = Posts(azure)
     ai_search = AISearch(Azure(stage, brand))
 
     if task == "Get Post":
         post_id = questionary.text("Post ID:").ask()
 
-        post = Posts(azure)
-
         print(post.get_post(stage, "clo3d", post_id=post_id))
 
     elif task == "Get All Posts":
-        post = Posts(azure)
-        post.mp_get_posts()
+        post.mt_get_posts()
 
     elif task == "Upload All Posts":
-        post = Posts(azure)
         post.mp_upload()
 
     elif task == "Find & Delete AI Search Documents":

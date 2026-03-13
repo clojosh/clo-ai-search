@@ -105,10 +105,11 @@ class APICLO:
             api_list.append(
                 {
                     "article_id": shortuuid.uuid(),
-                    "source": url + "#" + tag_id,
+                    "url": url + "#" + tag_id,
                     "title": "".join([t.text for t in title]).replace("def", "").replace("\uf0c1", "").strip(),
                     "content": cleaned_markdown_content,
                     "content_description": content_description.replace("@brief ", "").replace("\uf0c1", "").strip(),
+                    "source": "MD API",
                     "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                     "youtube_links": [],
                 }
@@ -140,11 +141,12 @@ class APICLO:
         api_list.append(
             {
                 "article_id": shortuuid.uuid(),
-                "source": url,
+                "url": url,
                 "title": "Initialization of API Option Types",
                 "content": cleaned_markdown_content,
                 "content_description": "Initialization of API Option Types",
                 "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "source": "MD API",
                 "youtube_links": [],
             }
         )
@@ -161,11 +163,12 @@ class APICLO:
             api_list.append(
                 {
                     "article_id": shortuuid.uuid(),
-                    "source": url + "#" + tag_id,
+                    "url": url + "#" + tag_id,
                     "title": title.replace("\uf0c1", "").strip(),
                     "content": cleaned_markdown_content,
                     "content_description": "List of API Option Types",
                     "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                    "source": "MD API",
                     "youtube_links": [],
                 }
             )
@@ -189,10 +192,11 @@ class APICLO:
         python_api = [
             {
                 "article_id": shortuuid.uuid(),  # Generate a unique identifier
-                "source": self.base_url + "register.html",  # URL of the original source
+                "url": self.base_url + "register.html",  # URL of the original source
                 "title": "Python API",  # Title of the article
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
+                "source": "MD API",  # Source of the article
                 "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
                 "youtube_links": [],  # List of YouTube links associated with the article
             }
@@ -221,10 +225,11 @@ class APICLO:
         plugin_management = [
             {
                 "article_id": shortuuid.uuid(),  # Generate a unique identifier
-                "source": self.base_url + "register.html",  # URL of the original source
+                "url": self.base_url + "register.html",  # URL of the original source
                 "title": "Plugin Management",  # Title of the article
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
+                "source": "MD API",  # Source of the article
                 "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
                 "youtube_links": [],  # List of YouTube links associated with the article
             }
@@ -255,10 +260,11 @@ class APICLO:
             api_list.append(
                 {
                     "article_id": shortuuid.uuid(),
-                    "source": url + "#" + tag_id,
+                    "url": url + "#" + tag_id,
                     "title": title.replace("\uf0c1", "").strip(),
                     "content": cleaned_markdown_content,
                     "content_description": "Script for " + title.replace("\uf0c1", "").strip(),
+                    "source": "MD API",
                     "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                     "youtube_links": [],
                 }
@@ -372,7 +378,7 @@ if __name__ == "__main__":
             md_api.delete_document(os.path.join(md_api.api_path, files))
 
     elif task == "Find & Delete AI Search Documents":
-        search_fields_options = ["article_id", "source", "title", "content", "content_description"]
+        search_fields_options = ["article_id", "url", "title", "content", "content_description"]
 
         search_field = questionary.select("Search field?", choices=search_fields_options).ask()
         search_text = questionary.text("Search value?").ask()
@@ -380,7 +386,7 @@ if __name__ == "__main__":
         documents = AISearch(Azure(stage, "md")).ai_search.find_all_ai_search_documents(search_fields=[search_field], search_text=search_text)
 
         for document in documents:
-            print(document["article_id"] + "\n" + document["source"], "\n")
+            print(document["article_id"] + "\n" + document["url"], "\n")
 
         print(f"\nTotal documents found: {len(documents)}\n")
 

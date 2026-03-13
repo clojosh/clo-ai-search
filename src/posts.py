@@ -2,6 +2,7 @@ import json
 import multiprocessing
 import os
 import re
+import shutil
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 from math import ceil
@@ -184,6 +185,7 @@ class Posts:
             "title": post["title"],
             "content": content + comment_content,
             "content_description": self.azure.openai_helper.create_webpage_description(content) if content else "",
+            "source": "Connect Community",
             "created_at": post["registeredDate"],
             "category": post["category"],
             "tags": post["tags"],
@@ -195,6 +197,7 @@ class Posts:
         brand_posts: dict = {"clo3d": [], "closet": [], "connect": [], "md": []}
 
         for post in tqdm(posts, position=((page % 5) + 1), desc=f"Page {page}", colour="red", leave=False):
+            # 100 = Notice
             # 210 = General
             # 220 = QnA
             # 215 = Challenge
@@ -252,57 +255,52 @@ class Posts:
         with ThreadPoolExecutor(max_workers=10) as executor:
             list(tqdm(executor.map(lambda p: self.get_posts(*p), tasks), total=len(tasks), desc="Processing Posts", colour="blue"))
 
-    @staticmethod
-    def upload(stage: str, brand: str, posts_path: str, file: str, position: int):
-        azure = Azure(stage, brand)
-
+    def upload(self, posts_path: str, file: str):
         with open(os.path.join(posts_path, file), "r", encoding="utf-8") as f:
             documents = json.load(f)
 
             try:
                 upload_documents = []
-                for i, document in enumerate(tqdm(documents, desc=f"Uploading {file}", colour="green", position=position, leave=True)):
+                for document in documents:
                     if document["content"] == "":
                         continue
+
+                    if document["category"] == 100:
+                        document["category"] = "Notice"
+                    elif document["category"] == 110:
+                        document["category"] = "User Spotlight"
+                    elif document["category"] == 210:
+                        document["category"] = "General"
+                    elif document["category"] == 220:
+                        document["category"] = "QnA"
+                    elif document["category"] == 215:
+                        document["category"] = "Challenge"
+                    elif document["category"] == 230:
+                        document["category"] = "Projects & Steps"
+                    elif document["category"] == 240:
+                        document["category"] = "Tips & Tricks"
+                    elif document["category"] == 250:
+                        document["category"] = "User Feedback"
 
                     upload_documents.append(
                         {
                             "@search.action": "mergeOrUpload",
                             "article_id": document["id"],
-                            "source": document["url"],
+                            "url": document["url"],
                             "title": document["title"],
                             "content": document["content"],
                             "content_description": document["content_description"],
+                            "source": document["source"],
                             "created_at": document["created_at"],
-                            "youtube_links": [],
-                            "software_version": "",
-                            "release_year": None,
-                            "title_vector": azure.openai_helper.generate_embeddings(text=document["title"]),
-                            "content_vector": azure.openai_helper.generate_embeddings(text=document["content"] if document["content"] != "" else document["post_title"]),
+                            "title_vector": self.azure.openai_helper.generate_embeddings(text=document["title"]),
+                            "content_vector": self.azure.openai_helper.generate_embeddings(text=document["content"] if document["content"] != "" else document["post_title"]),
                         }
                     )
 
-                azure.search_client.upload_documents(upload_documents)
+                self.azure.search_client.upload_documents(upload_documents)
 
-            except Exception:
-                print(f"Failed to upload: {document['id']}")
-
-    def mp_upload(self):
-        file_paths = sorted(
-            os.listdir(os.path.join(os.getcwd(), "data", self.azure.brand, "posts")),
-            key=lambda x: int(x.partition("_")[2].partition(".")[0]),
-        )
-
-        upload_posts_params = []
-        for i, file in enumerate(file_paths):
-            upload_posts_params.append((self.azure.stage, self.azure.brand, os.path.join(os.getcwd(), "data", self.azure.brand, "posts"), file, i))
-
-        with multiprocessing.Pool(5) as p:
-            p.starmap_async(
-                Posts.upload,
-                upload_posts_params,
-                error_callback=lambda e: print(e),
-            )
+            except Exception as e:
+                print(e)
 
     def delete_posts(self, index_path: str, age: int = 3):
         """
@@ -368,7 +366,23 @@ if __name__ == "__main__":
         post.mt_get_posts()
 
     elif task == "Upload All Posts":
-        post.mp_upload()
+        if azure.brand == "allinone":
+            for folder in os.listdir("data"):
+                if folder != "allinone":
+                    posts_folder = os.path.join("data", folder, "posts")
+                    if os.path.exists(posts_folder):
+                        for file in os.listdir(posts_folder):
+                            shutil.copy(
+                                os.path.join(posts_folder, file),
+                                os.path.join("data", "allinone", "posts", f"{folder}_{file}"),
+                            )
+
+        upload_posts_params = []
+        for file in os.listdir(os.path.join(os.getcwd(), "data", azure.brand, "posts")):
+            upload_posts_params.append((os.path.join(os.getcwd(), "data", azure.brand, "posts"), file))
+
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            list(tqdm(executor.map(lambda p: post.upload(*p), upload_posts_params), total=len(upload_posts_params), desc="Uploading Posts", colour="magenta"))
 
     elif task == "Find & Delete AI Search Documents":
         search_fields_options = ["article_id", "source", "title", "content", "content_description"]

@@ -145,24 +145,15 @@ class AISearch:
         fields = [
             # 1. Identity
             SimpleField(name="article_id", type=SearchFieldDataType.String, key=True),
+            SearchableField(name="url", type=SearchFieldDataType.String, filterable=True, searchable=True, retrievable=True, sortable=True),
             # 2. Core Searchable Content
-            SearchableField(name="title", type=SearchFieldDataType.String, searchable=True, retrievable=True),
-            SearchableField(name="content", type=SearchFieldDataType.String, searchable=True, retrievable=True),
-            SearchableField(name="content_description", type=SearchFieldDataType.String, searchable=True, retrievable=True),
-            # 3. Metadata & Categorization
-            SearchableField(name="source", type=SearchFieldDataType.String, retrievable=True),
-            SimpleField(name="software_version", type=SearchFieldDataType.String, filterable=True, facetable=True),
-            SimpleField(name="release_year", type=SearchFieldDataType.Int32, filterable=True),
-            SimpleField(name="category", type=SearchFieldDataType.String, filterable=True),
-            SearchableField(name="created_at", type=SearchFieldDataType.DateTimeOffset, searchable=True, retrievable=True),
+            SearchableField(name="title", type=SearchFieldDataType.String, filterable=True, searchable=True, retrievable=True, sortable=True),
+            SearchableField(name="content", type=SearchFieldDataType.String, filterable=True, searchable=True, retrievable=True, sortable=True),
+            SearchableField(name="content_description", type=SearchFieldDataType.String, filterable=True, searchable=True, retrievable=True, sortable=True),
+            # 3. Metadata
+            SearchableField(name="source", type=SearchFieldDataType.String, filterable=True, searchable=True, retrievable=True, sortable=True),
+            SearchableField(name="created_at", type=SearchFieldDataType.DateTimeOffset, filterable=True, searchable=True, retrievable=True, sortable=True),
             # 4. Collections
-            SearchableField(
-                name="youtube_links",
-                collection=True,
-                type=SearchFieldDataType.Collection(SearchFieldDataType.Single),
-                searchable=True,
-                retrievable=True,
-            ),
             SearchField(
                 name="title_vector",
                 type=SearchFieldDataType.Collection(SearchFieldDataType.Single),

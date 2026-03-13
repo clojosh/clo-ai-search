@@ -88,12 +88,12 @@ class APICLO:
         env_setup_build = [
             {
                 "article_id": shortuuid.uuid(),  # Generate a unique identifier
-                "source": url,  # URL of the original source
+                "url": url,  # URL of the original source
                 "title": "Environment Setup & Build",  # Title of the article
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
+                "source": "CLO API",
                 "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
-                "youtube_links": [],  # List of YouTube links associated with the article
             }
         ]
 
@@ -113,12 +113,12 @@ class APICLO:
         plugin_management = [
             {
                 "article_id": shortuuid.uuid(),  # Generate a unique identifier
-                "source": self.base_url + "register.html",  # URL of the original source
+                "url": self.base_url + "register.html",  # URL of the original source
                 "title": "Plugin Management",  # Title of the article
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
+                "source": "CLO API",  # Source of the article
                 "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
-                "youtube_links": [],  # List of YouTube links associated with the article
             }
         ]
 
@@ -147,12 +147,12 @@ class APICLO:
             api_list.append(
                 {
                     "article_id": shortuuid.uuid(),
-                    "source": url + "#" + tag_id,
+                    "url": url + "#" + tag_id,
+                    "source": "CLO API",
                     "title": title.replace("\uf0c1", "").strip(),
                     "content": cleaned_markdown_content,
                     "content_description": "Script for " + title.replace("\uf0c1", "").strip(),
                     "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-                    "youtube_links": [],
                 }
             )
 
@@ -185,12 +185,12 @@ class APICLO:
             api_list.append(
                 {
                     "article_id": shortuuid.uuid(),
-                    "source": url + "#" + tag_id,
+                    "url": url + "#" + tag_id,
+                    "source": "CLO API",
                     "title": title.replace("\uf0c1", "").strip(),
                     "content": cleaned_markdown_content,
                     "content_description": "List of API Option Types",
                     "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-                    "youtube_links": [],
                 }
             )
 
@@ -226,12 +226,12 @@ class APICLO:
             api_list.append(
                 {
                     "article_id": shortuuid.uuid(),
-                    "source": url + "#" + tag_id,
+                    "url": url + "#" + tag_id,
+                    "source": "CLO API",
                     "title": "".join([t.text for t in title]).replace("def", "").replace("\uf0c1", "").strip(),
                     "content": cleaned_markdown_content,
                     "content_description": content_description.replace("@brief ", "").replace("\uf0c1", "").strip(),
                     "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-                    "youtube_links": [],
                 }
             )
 
@@ -254,12 +254,12 @@ class APICLO:
         python_api = [
             {
                 "article_id": shortuuid.uuid(),  # Generate a unique identifier
-                "source": self.base_url + "register.html",  # URL of the original source
+                "url": self.base_url + "register.html",  # URL of the original source
+                "source": "CLO API",  # Source of the article
                 "title": "Python API",  # Title of the article
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
                 "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
-                "youtube_links": [],  # List of YouTube links associated with the article
             }
         ]
 
@@ -279,12 +279,12 @@ class APICLO:
         library_window_api = [
             {
                 "article_id": shortuuid.uuid(),  # Generate a unique identifier
-                "source": url,  # URL of the original source
+                "url": url,  # URL of the original source
+                "source": "CLO API",  # Source of the article
                 "title": "Library Window API",  # Title of the article
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
                 "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
-                "youtube_links": [],  # List of YouTube links associated with the article
             }
         ]
 
@@ -304,12 +304,12 @@ class APICLO:
         api_sdk = [
             {
                 "article_id": shortuuid.uuid(),  # Generate a unique identifier
-                "source": url,  # URL of the original source
+                "url": url,  # URL of the original source
+                "source": "CLO API",  # Source of the article
                 "title": "SDK",  # Title of the article
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
                 "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
-                "youtube_links": [],  # List of YouTube links associated with the article
             }
         ]
 
@@ -329,12 +329,12 @@ class APICLO:
         clo_event_plugin = [
             {
                 "article_id": shortuuid.uuid(),  # Generate a unique identifier
-                "source": url,  # URL of the original source
+                "url": url,  # URL of the original source
+                "source": "CLO API",  # Source of the article
                 "title": "CLO Event Plugin",  # Title of the article
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
                 "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
-                "youtube_links": [],  # List of YouTube links associated with the article
             }
         ]
 
@@ -354,12 +354,12 @@ class APICLO:
         plugin_placement_startup = [
             {
                 "article_id": shortuuid.uuid(),  # Generate a unique identifier
-                "source": url,  # URL of the original source
+                "url": url,  # URL of the original source
+                "source": "CLO API",  # Source of the article
                 "title": "Plugin Placement Startup",  # Title of the article
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
                 "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
-                "youtube_links": [],  # List of YouTube links associated with the article
             }
         ]
 
@@ -493,7 +493,7 @@ if __name__ == "__main__":
             clo_api.delete_document(os.path.join(clo_api.api_path, files))
 
     elif task == "Find & Delete AI Search Documents":
-        search_fields_options = ["article_id", "source", "title", "content", "content_description"]
+        search_fields_options = ["article_id", "url", "title", "content", "content_description"]
 
         search_field = questionary.select("Search field?", choices=search_fields_options).ask()
         search_text = questionary.text("Search value?").ask()
@@ -501,7 +501,7 @@ if __name__ == "__main__":
         documents = ai_search.find_all_ai_search_documents(search_fields=[search_field], search_text=search_text)
 
         for document in documents:
-            print(document["article_id"] + "\n" + document["source"], "\n")
+            print(document["article_id"] + "\n" + document["url"], "\n")
 
         print(f"\nTotal documents found: {len(documents)}\n")
 

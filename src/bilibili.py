@@ -34,7 +34,7 @@ model = WhisperModel(
 class Bilibili:
     def __init__(self, azure: Azure):
         self.azure = azure
-        self.base_dir = Path("data/md/bilibili")
+        self.base_dir = Path(f"data/{azure.brand}/bilibili")
         self.cookie_path = os.path.join(os.getcwd(), self.base_dir, "bilibili_cookies.txt")
         self.video_dir = self.base_dir / "videos"
         self.subtitle_dir = self.base_dir / "subtitles"
@@ -105,8 +105,8 @@ class Bilibili:
     # Method 1
     def download_channel_videos(self, channel_url: str):
         ydl_opts = {
-            # Limit video height to 720p and merge with best audio
-            "format": "bv*[height<=720]+ba/b[height<=720] / best[height<=720]",
+            # Limit video height to 480p and merge with best audio
+            "format": "bv*[height<=480]+ba/b[height<=480] / best[height<=480]",
             "cookiefile": self.cookie_path,
             "merge_output_format": "mp4",  # Forces the final file into MP4 container
             "noplaylist": False,  # Ensure it downloads the whole channel/playlist
@@ -249,6 +249,7 @@ class Bilibili:
                 "published_at": formatted_date,
                 "description": entry.get("description"),
                 "transcript": transcript,
+                "source": "Bilibili",
             }
 
             filename = f"{self.sanitize_filename(entry['title'])}.json"
@@ -259,21 +260,16 @@ class Bilibili:
 
             console.print(f"[green]✓ Saved transcript:[/green] {entry.get('title')}")
 
-    @staticmethod
-    def prepare_transcripts(params):
+    def prepare_transcripts(self, file_path: str):
         """
         Prepares transcripts by translating and summarizing them.
 
         Args:
-            params (tuple): A tuple containing the stage, brand, file path, and worker id.
+            file_path (str): The path to the transcript file.
 
         Returns:
             None
         """
-        stage, brand, file_path = params
-
-        azure = Azure(stage, brand)
-
         # Read the transcripts from the file
         with open(file_path, "r", encoding="utf-8") as file:
             transcript = json.load(file)
@@ -284,13 +280,13 @@ class Bilibili:
             if transcript["transcript"] == "" or len(transcript["transcript"]) < 150:
                 transcript["summary"] = ""
             else:
-                title = azure.openai_helper.generate_translation(transcript["title"], target_language="English")
+                title = self.azure.openai_helper.generate_translation(transcript["title"], target_language="English")
                 transcript["title"] = title.replace('"', "")
 
-                summary = azure.openai_helper.generate_structured_transcript(title, transcript["transcript"])
+                summary = self.azure.openai_helper.generate_structured_transcript(title, transcript["transcript"])
                 transcript["summary"] = summary
 
-                description = azure.openai_helper.generate_translation(transcript["description"], target_language="English")
+                description = self.azure.openai_helper.generate_translation(transcript["description"], target_language="English")
                 transcript["description"] = description
         except Exception as e:
             raise e
@@ -298,19 +294,8 @@ class Bilibili:
         with open(file_path, "w", encoding="utf-8") as file:
             json.dump(transcript, file, ensure_ascii=False, indent=4)
 
-    def mp_prepare_transcripts(self):
-        files = os.listdir(self.transcript_dir)
-        num_workers = 5  # Adjust based on your API limits
-
-        # Pass the worker index (i % num_workers) so they don't fight for the same line
-        prepare_transcripts_params = [(self.azure.stage, self.azure.brand, os.path.join(self.transcript_dir, f)) for f in files]
-        # Main progress bar (Position 0)
-        with multiprocessing.Pool(num_workers) as p:
-            for _ in tqdm(p.imap_unordered(Bilibili.prepare_transcripts, prepare_transcripts_params), total=len(prepare_transcripts_params), desc="Overall Progress", position=0):
-                pass
-
-    def upload_transcripts(self, file):
-        with open(os.path.join(self.transcript_dir, file), "r", encoding="utf-8") as f:
+    def upload_transcripts(self, file_path: str):
+        with open(file_path, "r", encoding="utf-8") as f:
             transcript = json.load(f)
 
             if transcript["transcript"] == "":
@@ -327,12 +312,12 @@ class Bilibili:
                 {
                     "@search.action": "mergeOrUpload",
                     "article_id": transcript["video_id"],
-                    "source": transcript["url"],
+                    "url": transcript["url"],
                     "title": transcript["title"],
                     "content": transcript["summary"] if "summary" in transcript else transcript["transcript"],
                     "content_description": transcript["description"],
+                    "source": "Bilibili",
                     "created_at": transcript["published_at"],
-                    "youtube_links": [],
                     "title_vector": self.azure.openai_helper.generate_embeddings(text=transcript["title"]),
                     "content_vector": self.azure.openai_helper.generate_embeddings(text=transcript["summary"]),
                 }
@@ -341,7 +326,8 @@ class Bilibili:
 
 if __name__ == "__main__":
     # Configuration
-    TARGET_CHANNEL = "https://space.bilibili.com/431424487/upload/video"
+    CLO3D_TARGET_CHANNEL = "https://space.bilibili.com/477753185/upload/video"
+    MD_TARGET_CHANNEL = "https://space.bilibili.com/431424487/upload/video"
 
     stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
     brand = questionary.select("Which brand?", choices=["clo3d", "md", "allinone"]).ask()
@@ -365,10 +351,10 @@ if __name__ == "__main__":
     downloader = Bilibili(azure)
     ai_search = AISearch(azure)
 
-    if task == "Download All Videos":
-        downloader.download_channel_videos(TARGET_CHANNEL)
+    if task == "Download All Videos (Method 1)":
+        downloader.download_channel_videos(CLO3D_TARGET_CHANNEL if brand in ["clo3d"] else MD_TARGET_CHANNEL)
 
-    elif task == "Generate All Subtitles":
+    elif task == "Generate All Subtitles (Method 1)":
         for video_file in os.listdir(downloader.video_dir):
             video_path = os.path.join(downloader.video_dir, video_file)
 
@@ -381,7 +367,7 @@ if __name__ == "__main__":
 
             downloader.generate_subtitle(video_path, output_srt_path)
 
-    elif task == "Correlate Subtitles with Metadata":
+    elif task == "Correlate Subtitles with Metadata (Method 1)":
         for files in os.listdir(downloader.metadata_dir):
             with open(os.path.join(downloader.metadata_dir, files), "r", encoding="utf-8") as f:
                 metadata = json.load(f)
@@ -411,30 +397,34 @@ if __name__ == "__main__":
                 with open(save_path, "w+", encoding="utf-8") as f:
                     json.dump(doc, f, ensure_ascii=False, indent=4)
 
-    elif task == "Get All Transcripts":
-        videos = downloader.fetch_channel_videos(TARGET_CHANNEL)
+    elif task == "Get All Transcripts (Method 2)":
+        videos = downloader.fetch_channel_videos(CLO3D_TARGET_CHANNEL if brand in ["clo3d"] else MD_TARGET_CHANNEL)
 
         for video in videos:
             asyncio.run(downloader.process_video(video["id"]))
 
     elif task == "Prepare All Transcripts":
-        downloader.mp_prepare_transcripts()
+        files = [os.path.join(downloader.transcript_dir, f) for f in os.listdir(downloader.transcript_dir)]
+
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            # executor.map maintains order; for unordered with tqdm, we use list comprehension or submit
+            list(tqdm(executor.map(downloader.prepare_transcripts, files), total=len(files), desc="Overall Progress"))
 
     elif task == "Upload All Transcripts":
-        files = os.listdir(downloader.transcript_dir)
+        file_paths = [os.path.join(downloader.transcript_dir, f) for f in os.listdir(downloader.transcript_dir)]
         with ThreadPoolExecutor(max_workers=10) as executor:
-            list(tqdm(executor.map(downloader.upload_transcripts, files), total=len(files), desc="Uploading"))
+            list(tqdm(executor.map(downloader.upload_transcripts, file_paths), total=len(file_paths), desc="Uploading"))
 
-    elif task == "Retrieve Video Metadata":
+    elif task == "Retrieve Video Metadata (Method 1)":
         video_url = questionary.text("Enter the video URL:").ask()
         downloader.retrieve_video_metadata(video_url)
 
-    elif task == "Prepare Transcript":
+    elif task == "Prepare Transcript (Method 1)":
         file = questionary.select("Which transcript file?", choices=os.listdir(downloader.transcript_dir)).ask()
         downloader.prepare_transcripts((stage, brand, os.path.join(downloader.transcript_dir, file), 0))
 
     elif task == "Find & Delete AI Search Documents":
-        search_fields_options = ["article_id", "source", "title", "content", "content_description"]
+        search_fields_options = ["article_id", "url", "title", "content", "content_description"]
 
         search_field = questionary.select("Search field?", choices=search_fields_options).ask()
         search_text = questionary.text("Search value?").ask()
@@ -442,7 +432,7 @@ if __name__ == "__main__":
         documents = ai_search.find_all_ai_search_documents(search_fields=[search_field], search_text=search_text)
 
         for document in documents:
-            print(document["article_id"] + "\n" + document["source"], "\n")
+            print(document["article_id"] + "\n" + document["url"], "\n")
 
         print(f"\nTotal documents found: {len(documents)}\n")
 

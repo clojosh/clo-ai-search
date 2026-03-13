@@ -1,9 +1,10 @@
 import json
 import os
 import re
+import shutil
 import sys
 from collections import defaultdict
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import questionary
 import requests  # type: ignore
@@ -12,16 +13,7 @@ from tqdm import tqdm
 
 from ai_search import AISearch
 from tools.azure import Azure
-from tools.misc import (
-    check_image_exists,
-    extract_youtube_links,
-    get_section_and_category,
-    get_version_info_by_article_id,
-    html_to_markdown_converter,
-    num_tokens_from_string,
-    remove_unwanted_markdown_images,
-    trim_tokens,
-)
+from tools.misc import check_image_exists, get_section_and_category, html_to_markdown_converter, num_tokens_from_string, remove_unwanted_markdown_images, trim_tokens
 
 
 class Article:
@@ -115,8 +107,6 @@ class Article:
                 if len(url_matches) > 0:
                     article["html_url"] = url_matches[0]
 
-                article["youtube_links"] = extract_youtube_links(str(article["body"]))
-
                 markdown = html_to_markdown_converter(str(article["body"]))
                 markdown = remove_unwanted_markdown_images(markdown)
 
@@ -125,39 +115,19 @@ class Article:
                 article["id"] = str(article["id"])
                 article["section_id"], article["section"], article["category_id"], article["category"] = get_section_and_category(self.azure, article["section_id"])
 
-                if self.azure.brand == "md":
-                    for file in os.listdir(os.path.join("src", "features_mapping", self.azure.brand)):
-                        with open(os.path.join("src", "features_mapping", self.azure.brand, file), "r", encoding="utf-8") as f:
-                            json_data = json.load(f)
-
-                        metadata = get_version_info_by_article_id(article["id"], json_data)
-                        if metadata:
-                            article["software_version"] = metadata["version"]
-                            article["release_year"] = metadata["year"]
-                            break
-
-                    if "software_version" not in article:
-                        software_version = re.findall(r"\((?:Ver\.\s)?([\d.]+)\)", article["title"], re.IGNORECASE)
-                        article["software_version"] = software_version[0] if len(software_version) > 0 else ""
-
-                        release_year = re.findall(r"\((?:Ver\.\s)?[\d.]+\s?-\s?(\d{4})\)", article["title"], re.IGNORECASE)
-                        article["release_year"] = release_year[0] if len(release_year) > 0 else ""
-
                 documents.append(
                     {
                         "article_id": article["id"],
-                        "source": article["html_url"],
+                        "url": article["html_url"],
                         "title": article["title"],
                         "content": article["body"],
                         "content_description": self.azure.openai_helper.create_webpage_description(article["body"]),
+                        "source": "Zendesk",
                         "created_at": article["updated_at"],
-                        "youtube_links": article["youtube_links"],
                         "category_id": article["category_id"],
                         "category": article["category"],
                         "section_id": article["section_id"],
                         "section": article["section"],
-                        "software_version": article["software_version"] if "software_version" in article else "",
-                        "release_year": int(article["release_year"]) if "release_year" in article and article["release_year"] else None,
                         "tokens": num_tokens_from_string(article["body"], "gpt-4"),
                     }
                 )
@@ -224,9 +194,7 @@ class Article:
             json.dump(all_bad_images, f, ensure_ascii=False, indent=4)
 
     def get_zendesk_articles(self, article_path: str, article_id: str, page: str):
-        if article_id is not None:
-            print(f"\nRetrieving Article {article_id}")
-        else:
+        if article_id:
             print(f"\nRetrieving Page {page}")
 
         # No need to instantiate Azure again; we use the one attached to this instance
@@ -249,23 +217,23 @@ class Article:
         except Exception as e:
             print(f"Error on page {page}: {e}")
 
-    def upload_document(self, file: str):
+    def upload_document(self, file: str, pos: int = 0):
         with open(os.path.join(self.azure.get_article_path(), file), "r", encoding="utf-8") as f:
             documents = json.load(f)
 
-        for i, document in enumerate(documents):
+        for i, document in enumerate(tqdm(documents, desc=f"File: {file[:10]}", position=pos, leave=False)):
             if document["content"] == "":
                 document["content"] = document["title"]
 
             documents[i]["@search.action"] = "mergeOrUpload"
             documents[i]["title_vector"] = self.azure.openai_helper.generate_embeddings(text=document["title"])
             documents[i]["content_vector"] = self.azure.openai_helper.generate_embeddings(text=document["content"])
-            documents[i]["category"] = documents[i]["section"]
 
             del documents[i]["tokens"]
             del documents[i]["section_id"]
             del documents[i]["section"]
             del documents[i]["category_id"]
+            del documents[i]["category"]
 
         if brand == "clovf":
             # Upload clovf articles to both clo3d and clo-set
@@ -307,8 +275,12 @@ if __name__ == "__main__":
         article_path = azure.get_article_path()
 
         with ThreadPoolExecutor(max_workers=10) as executor:
-            for page in range(1, page_count + 1):
-                executor.submit(article.get_zendesk_articles, article_path, None, str(page))
+            # 1. Map the futures to a list
+            futures = [executor.submit(article.get_zendesk_articles, article_path, None, str(page)) for page in range(1, page_count + 1)]
+
+            # 2. Wrap as_completed with tqdm to track progress as tasks finish
+            for _ in tqdm(as_completed(futures), total=len(futures), desc="Downloading Articles"):
+                pass
 
     elif task == "Find All Articles with Bad Images":
         article.mt_find_articles_invalid_images()
@@ -325,22 +297,23 @@ if __name__ == "__main__":
                         sys.exit()
 
     elif task == "Upload All Articles":
-        # if brand == "allinone":
-        #     for folder in os.listdir("data"):
-        #         if folder != "allinone":
-        #             for file in os.listdir(os.path.join("data", folder, "articles", "en-us")):
-        #                 shutil.copy(
-        #                     os.path.join("data", folder, "articles", "en-us", file),
-        #                     os.path.join(article.azure.get_article_path(), f"{folder}_{file}"),
-        #                 )
-
         if azure.brand == "allinone":
+            for folder in os.listdir("data"):
+                if folder != "allinone":
+                    for file in os.listdir(os.path.join("data", folder, "articles", "en-us")):
+                        shutil.copy(
+                            os.path.join("data", folder, "articles", "en-us", file),
+                            os.path.join(article.azure.get_article_path(), f"{folder}_{file}"),
+                        )
             files = os.listdir(azure.get_article_path())
         else:
             files = sorted(os.listdir(azure.get_article_path()), key=lambda x: int(x.partition("_")[2].partition(".")[0]))
 
         with ThreadPoolExecutor(max_workers=10) as executor:
-            list(tqdm(executor.map(article.upload_document, files), total=len(files), desc="Uploading"))
+            futures = [executor.submit(article.upload_document, file, i + 1) for i, file in enumerate(files)]
+
+            for _ in tqdm(as_completed(futures), total=len(files), desc="Overall Progress", position=0):
+                pass
 
     elif task == "Delete Article":
         article_id = questionary.text("Article ID").ask()

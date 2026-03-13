@@ -217,11 +217,11 @@ class Article:
         except Exception as e:
             print(f"Error on page {page}: {e}")
 
-    def upload_document(self, file: str, pos: int = 0):
-        with open(os.path.join(self.azure.get_article_path(), file), "r", encoding="utf-8") as f:
+    def upload_document(self, file_path: str, pos: int = 0):
+        with open(file_path, "r", encoding="utf-8") as f:
             documents = json.load(f)
 
-        for i, document in enumerate(tqdm(documents, desc=f"File: {file[:10]}", position=pos, leave=False)):
+        for i, document in enumerate(tqdm(documents, desc=f"File: {os.path.basename(file_path)}", position=pos, leave=False)):
             if document["content"] == "":
                 document["content"] = document["title"]
 
@@ -310,7 +310,7 @@ if __name__ == "__main__":
             files = sorted(os.listdir(azure.get_article_path()), key=lambda x: int(x.partition("_")[2].partition(".")[0]))
 
         with ThreadPoolExecutor(max_workers=10) as executor:
-            futures = [executor.submit(article.upload_document, file, i + 1) for i, file in enumerate(files)]
+            futures = [executor.submit(article.upload_document, os.path.join(azure.get_article_path(), file), i + 1) for i, file in enumerate(files)]
 
             for _ in tqdm(as_completed(futures), total=len(files), desc="Overall Progress", position=0):
                 pass

@@ -3,6 +3,7 @@ import json
 import multiprocessing
 import os
 import re
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 
 import questionary
@@ -367,27 +368,16 @@ class APICLO:
         with open(os.path.join(self.api_path, "plugin_placement_startup.json"), "w+", encoding="utf-8") as f:
             json.dump(plugin_placement_startup, f, indent=4)
 
-    @staticmethod
-    def upload_document(stage: str, brand: str, api_dir_path: str, file: str, position: int = 0):
-        azure = Azure(stage, brand)
-
-        with open(os.path.join(api_dir_path, file), "r", encoding="utf-8") as f:
+    def upload_document(self, file_path: str, position: int = 0):
+        with open(file_path, "r", encoding="utf-8") as f:
             documents = json.load(f)
 
-            for i, document in enumerate(tqdm(documents, desc=f"Uploading {os.path.basename(file)}", colour="green", position=position, leave=True)):
+            for i, document in enumerate(tqdm(documents, desc=f"Uploading {os.path.basename(file_path)}", colour="green", position=position, leave=True)):
                 documents[i]["@search.action"] = "mergeOrUpload"
-                documents[i]["title_vector"] = azure.openai_helper.generate_embeddings(text=document["title"])
-                documents[i]["content_vector"] = azure.openai_helper.generate_embeddings(text=document["content"])
+                documents[i]["title_vector"] = self.azure.openai_helper.generate_embeddings(text=document["title"])
+                documents[i]["content_vector"] = self.azure.openai_helper.generate_embeddings(text=document["content"])
 
-            azure.search_client.upload_documents(documents)
-
-    def mp_upload_documents(self):
-        upload_params = []
-        for i, file in enumerate(os.listdir(self.api_path)):
-            upload_params.append((self.azure.stage, self.azure.brand, self.api_path, file, i))
-
-        with multiprocessing.Pool(2) as p:
-            p.starmap(APICLO.upload_document, upload_params)
+            self.azure.search_client.upload_documents(documents)
 
     def delete_document(self, api_dir_path: str):
         with open(api_dir_path, "r", encoding="utf-8") as f:
@@ -479,10 +469,14 @@ if __name__ == "__main__":
 
     elif task == "Upload Document":
         api_document = questionary.select("Which API document?", choices=os.listdir(os.path.join(clo_api.api_path))).ask()
-        clo_api.upload_document(stage, "clo3dapi", clo_api.api_path, api_document)
+        clo_api.upload_document(os.path.join(clo_api.api_path, api_document))
 
     elif task == "Upload All Documents":
-        clo_api.mp_upload_documents()
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            futures = [executor.submit(clo_api.upload_document, os.path.join(clo_api.get_article_path(), file), i + 1) for i, file in enumerate(os.listdir(clo_api.api_path))]
+
+            for _ in tqdm(asyncio.as_completed(futures), total=len(os.listdir(clo_api.api_path)), desc="Overall Progress", position=0):
+                pass
 
     elif task == "Delete Document":
         api_document = questionary.select("Which API document?", choices=os.listdir(os.path.join(clo_api.api_path))).ask()

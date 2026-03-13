@@ -1,0 +1,4464 @@
+1
+00:00:01,000 --> 00:00:05,000
+Hello everyone, I am Sherry from Marvelous Designer.
+
+2
+00:00:05,000 --> 00:00:10,000
+Next, I will show you some new features of Marvelous Designer 9.
+
+3
+00:00:16,000 --> 00:00:20,000
+First of all, our first new feature is GPU simulation.
+
+4
+00:00:20,000 --> 00:00:34,000
+In the previous version, we usually used normal simulation.
+
+5
+00:00:34,000 --> 00:00:40,000
+In our new version, we added a new simulation preset, which is GPU simulation.
+
+6
+00:00:40,000 --> 00:00:45,000
+Let's take a look at the normal simulation.
+
+7
+00:00:45,000 --> 00:00:49,000
+In this version, the particle diameter is relatively small.
+
+8
+00:00:49,000 --> 00:00:50,000
+The particle diameter is 15.
+
+9
+00:00:50,000 --> 00:00:53,000
+And in this version, the particle diameter is relatively large.
+
+10
+00:00:53,000 --> 00:00:58,000
+If we start the simulation, you will see that our simulation speed will be slower.
+
+11
+00:01:03,000 --> 00:01:09,000
+In the past, when we used the long-press simulation key, there were some presets here.
+
+12
+00:01:09,000 --> 00:01:11,000
+There are some basic simulations below.
+
+13
+00:01:11,000 --> 00:01:15,000
+This is our most common, most commonly used simulation attribute.
+
+14
+00:01:15,000 --> 00:01:19,000
+And the simulation completion is a simulation preset used to make animation.
+
+15
+00:01:19,000 --> 00:01:21,000
+There is also a detailed simulation.
+
+16
+00:01:21,000 --> 00:01:25,000
+This is a simulation preset that we will use when we need to make some very, very detailed costumes.
+
+17
+00:01:25,000 --> 00:01:30,000
+This is a simulation preset that we will use when we need to make some very, very detailed costumes.
+
+18
+00:01:30,000 --> 00:01:34,000
+Now, we have added a simulation preset called GPU simulation.
+
+19
+00:01:34,000 --> 00:01:41,000
+GPU simulation is based on our computer graphics card.
+
+20
+00:01:41,000 --> 00:01:45,000
+Here, we will use GPU simulation.
+
+21
+00:01:49,000 --> 00:02:00,000
+When we start the GPU simulation, it needs to open a GPU simulation.
+
+22
+00:02:00,000 --> 00:02:02,000
+So it will be slower at the beginning of the simulation.
+
+23
+00:02:02,000 --> 00:02:08,000
+But we can see later that when we start the GPU simulation, even if our particle diameter is only 5,
+
+24
+00:02:08,000 --> 00:02:13,000
+and now we drag and drop this board, its operation speed is very fast.
+
+25
+00:02:13,000 --> 00:02:15,000
+This is our GPU simulation.
+
+26
+00:02:15,000 --> 00:02:18,000
+It will be based on a graphics card that we usually use on our computers.
+
+27
+00:02:18,000 --> 00:02:22,000
+So we can use GPU simulation to increase the speed.
+
+28
+00:02:22,000 --> 00:02:29,000
+If your graphics card attribute is better, its simulation speed will be faster.
+
+29
+00:02:29,000 --> 00:02:36,000
+But when we start the simulation, we will see that the GPU simulation is different from the CPU simulation.
+
+30
+00:02:36,000 --> 00:02:39,000
+So we suggest that when you are making costumes,
+
+31
+00:02:39,000 --> 00:02:41,000
+when you are making a combination costume,
+
+32
+00:02:41,000 --> 00:02:45,000
+or when you are making a small particle diameter costume,
+
+33
+00:02:45,000 --> 00:02:47,000
+use GPU simulation.
+
+34
+00:02:47,000 --> 00:02:50,000
+When we want to finish the final production effect,
+
+35
+00:02:50,000 --> 00:02:52,000
+we will switch back to the CPU simulation.
+
+36
+00:02:52,000 --> 00:02:58,000
+This is a simulation of the usual GPU simulation preset.
+
+37
+00:02:58,000 --> 00:03:01,000
+Next, I will introduce our second new feature,
+
+38
+00:03:01,000 --> 00:03:12,000
+which is our symmetrical editor.
+
+39
+00:03:12,000 --> 00:03:15,000
+This new feature is what we used to use in the past.
+
+40
+00:03:15,000 --> 00:03:20,000
+In the past, when we used the previous version of Marvelous Designer,
+
+41
+00:03:20,000 --> 00:03:23,000
+if we only had half of the board,
+
+42
+00:03:23,000 --> 00:03:27,000
+we would usually use the function of the vertical alignment board,
+
+43
+00:03:27,000 --> 00:03:29,000
+the board and the sewing line.
+
+44
+00:03:29,000 --> 00:03:33,000
+But now, we can directly select one of its middle lines.
+
+45
+00:03:33,000 --> 00:03:37,000
+On the right, we will have a function of the horizontal edit sewing line.
+
+46
+00:03:37,000 --> 00:03:39,000
+When we select this function,
+
+47
+00:03:39,000 --> 00:03:44,000
+we can see that this board will automatically open as a complete board.
+
+48
+00:03:44,000 --> 00:03:47,000
+And when we edit its half,
+
+49
+00:03:47,000 --> 00:03:51,000
+the other half will be edited simultaneously.
+
+50
+00:03:51,000 --> 00:03:56,000
+And if we create an internal shape in the middle,
+
+51
+00:03:56,000 --> 00:04:01,000
+the other side will also create a symmetrical internal shape at the same time.
+
+52
+00:04:01,000 --> 00:04:05,000
+When we edit the half of the board,
+
+53
+00:04:05,000 --> 00:04:09,000
+the other side will be edited simultaneously.
+
+54
+00:04:09,000 --> 00:04:15,000
+Or, when we now have a pair of symmetrical boards
+
+55
+00:04:15,000 --> 00:04:19,000
+and a pair of symmetrical boards,
+
+56
+00:04:19,000 --> 00:04:22,000
+if we create a sewing line in the middle,
+
+57
+00:04:22,000 --> 00:04:28,000
+we can see that the other half will also automatically create a symmetrical sewing line.
+
+58
+00:04:28,000 --> 00:04:31,000
+If we want to cancel the connection of this board
+
+59
+00:04:31,000 --> 00:04:35,000
+and make it a board that can be operated on one side,
+
+60
+00:04:35,000 --> 00:04:38,000
+we can find a solution in the menu on the right.
+
+61
+00:04:38,000 --> 00:04:39,000
+In the menu on the left,
+
+62
+00:04:39,000 --> 00:04:41,000
+there is a release link.
+
+63
+00:04:41,000 --> 00:04:44,000
+At this time, if we modify this board again,
+
+64
+00:04:44,000 --> 00:04:48,000
+we will see that this board can only be modified on one side,
+
+65
+00:04:48,000 --> 00:04:54,000
+and cannot be modified on both sides.
+
+66
+00:04:54,000 --> 00:04:58,000
+If you have previous project files,
+
+67
+00:04:58,000 --> 00:05:03,000
+our previous project files may have a set of symmetrical relationships,
+
+68
+00:05:03,000 --> 00:05:04,000
+but it doesn't matter.
+
+69
+00:05:04,000 --> 00:05:06,000
+We can directly select one of them.
+
+70
+00:05:06,000 --> 00:05:07,000
+We want to merge the line,
+
+71
+00:05:07,000 --> 00:05:10,000
+and then there is a merge in the single link.
+
+72
+00:05:10,000 --> 00:05:13,000
+In this way, the board after merging
+
+73
+00:05:13,000 --> 00:05:17,000
+is still symmetrical as the previous board.
+
+74
+00:05:17,000 --> 00:05:21,000
+At the same time, we can make some changes that we need.
+
+75
+00:05:25,000 --> 00:05:28,000
+In addition to the fact that we can make a symmetrical relationship
+
+76
+00:05:28,000 --> 00:05:31,000
+with the existing board,
+
+77
+00:05:31,000 --> 00:05:35,000
+we can also create a board that will be symmetrical itself.
+
+78
+00:05:35,000 --> 00:05:38,000
+Here, for example, we choose a multidirectional tool,
+
+79
+00:05:38,000 --> 00:05:44,000
+and then we start to create a board on the other side.
+
+80
+00:05:44,000 --> 00:05:46,000
+Here, click the right button,
+
+81
+00:05:46,000 --> 00:05:48,000
+there will be an option pop-up.
+
+82
+00:05:48,000 --> 00:05:50,000
+Here, there is a depth mirror tool.
+
+83
+00:05:50,000 --> 00:05:52,000
+If we open this function,
+
+84
+00:05:52,000 --> 00:05:55,000
+we can see that it will give us a horizontal line
+
+85
+00:05:55,000 --> 00:05:57,000
+to make a horizontal symmetry.
+
+86
+00:05:57,000 --> 00:06:00,000
+At the bottom, we can choose a axis.
+
+87
+00:06:00,000 --> 00:06:03,000
+We can make a symmetry according to the original line rate,
+
+88
+00:06:03,000 --> 00:06:07,000
+or we can choose x-axis or y-axis to make a symmetry.
+
+89
+00:06:07,000 --> 00:06:10,000
+For example, if we choose a line now,
+
+90
+00:06:10,000 --> 00:06:12,000
+after clicking OK, we will see that
+
+91
+00:06:12,000 --> 00:06:14,000
+every time we create a line,
+
+92
+00:06:14,000 --> 00:06:17,000
+this line will be based on the axis of our middle line
+
+93
+00:06:17,000 --> 00:06:19,000
+to make a symmetry.
+
+94
+00:06:19,000 --> 00:06:21,000
+And when we complete the creation,
+
+95
+00:06:21,000 --> 00:06:23,000
+the line in the middle will become
+
+96
+00:06:23,000 --> 00:06:26,000
+the open line we just selected.
+
+97
+00:06:26,000 --> 00:06:29,000
+If we modify the other half of it at this time,
+
+98
+00:06:29,000 --> 00:06:32,000
+the other half will also be based on this middle axis line
+
+99
+00:06:32,000 --> 00:06:35,000
+to make a symmetry.
+
+100
+00:06:35,000 --> 00:06:37,000
+In addition,
+
+101
+00:06:37,000 --> 00:06:39,000
+if we now choose to create
+
+102
+00:06:39,000 --> 00:06:42,000
+an inner polygon or a line,
+
+103
+00:06:44,000 --> 00:06:47,000
+we can also create
+
+104
+00:06:47,000 --> 00:06:50,000
+a symmetrical inner shape.
+
+105
+00:06:50,000 --> 00:06:53,000
+This is our second new function.
+
+106
+00:06:55,000 --> 00:06:57,000
+Next,
+
+107
+00:06:57,000 --> 00:06:59,000
+we have the third new function,
+
+108
+00:06:59,000 --> 00:07:01,000
+which is our penetration chart.
+
+109
+00:07:02,000 --> 00:07:07,000
+When we used Marvelous Designer,
+
+110
+00:07:07,000 --> 00:07:09,000
+we usually met many people
+
+111
+00:07:09,000 --> 00:07:26,019
+who needed to rebreed the grid in
+
+112
+00:07:26,019 --> 00:07:28,000
+Marvelous Designer.
+
+113
+00:07:28,000 --> 00:07:30,000
+Now we can même this type ofIES
+
+114
+00:07:30,000 --> 00:07:36,000
+We added two tools, one is the creation tool, and the other is the edit tool.
+
+115
+00:07:36,000 --> 00:07:41,000
+When we select the creation tool, if we place the mouse on a board,
+
+116
+00:07:41,000 --> 00:07:46,000
+we will see that the board we want to select will automatically become a white board,
+
+117
+00:07:46,000 --> 00:07:50,000
+and the other boards will become a gray semi-transparent state.
+
+118
+00:07:50,000 --> 00:07:55,000
+Then we can start to build a rebuild tool for this board.
+
+119
+00:07:55,000 --> 00:07:59,000
+We can choose to build a rebuild tool for the board in the 3D window,
+
+120
+00:07:59,000 --> 00:08:04,000
+or a rebuild tool for the board in the 2D window.
+
+121
+00:08:08,000 --> 00:08:11,000
+After we complete a simple layout,
+
+122
+00:08:11,000 --> 00:08:15,000
+we can make a detail for the grid.
+
+123
+00:08:21,000 --> 00:08:25,000
+We can not only manually make a detail for the grid,
+
+124
+00:08:25,000 --> 00:08:29,000
+but we can also directly use the edit tool.
+
+125
+00:08:29,000 --> 00:08:32,000
+Then the single right-click button has an all-select,
+
+126
+00:08:32,000 --> 00:08:35,000
+which will automatically create our selection.
+
+127
+00:08:39,000 --> 00:08:45,000
+Before our board is selected by us,
+
+128
+00:08:45,000 --> 00:08:49,000
+we can also expand the layout.
+
+129
+00:08:49,000 --> 00:08:54,000
+When we select a border of the layout,
+
+130
+00:08:54,000 --> 00:08:57,000
+we can directly expand this layout.
+
+131
+00:08:57,000 --> 00:08:58,000
+Then we can select a border of the layout.
+
+132
+00:08:58,000 --> 00:08:59,000
+Then we can directly expand this layout.
+
+133
+00:08:59,000 --> 00:09:02,000
+Then we can directly expand this layout.
+
+134
+00:09:02,000 --> 00:09:03,000
+In this way, we can directly extend and crazy-slip
+
+135
+00:09:03,000 --> 00:09:06,000
+this layout in our design.
+
+136
+00:09:06,000 --> 00:09:07,000
+Then we can start to adjust
+
+137
+00:09:07,000 --> 00:09:12,000
+the slagged points of the slagged plane.
+
+138
+00:09:12,000 --> 00:09:15,000
+Otherwise, if we need to merge two slagged points,
+
+139
+00:09:15,000 --> 00:09:18,000
+we can select the two slagged points,
+
+140
+00:09:18,000 --> 00:09:21,000
+and click the right-click to merge.
+
+141
+00:09:21,000 --> 00:09:23,000
+Then we can merge one of these slagged point.
+
+142
+00:09:23,000 --> 00:09:25,000
+Of course, for example,
+
+143
+00:09:25,000 --> 00:09:27,000
+I can create a slagged plane again now.
+
+144
+00:09:27,000 --> 00:09:42,000
+Now I have two topos, and we often have to merge the middle line.
+
+145
+00:09:42,000 --> 00:09:47,000
+If it is not convenient to merge the two points at the same time,
+
+146
+00:09:47,000 --> 00:09:50,000
+we can use the editor topo tool.
+
+147
+00:09:50,000 --> 00:09:53,000
+In the 2D or 3D window, press the right button,
+
+148
+00:09:53,000 --> 00:09:56,000
+there is a function called Merge All.
+
+149
+00:09:56,000 --> 00:09:59,000
+When we select Merge All,
+
+150
+00:09:59,000 --> 00:10:05,000
+we can set the length of the upper right corner of the 3D window.
+
+151
+00:10:05,000 --> 00:10:08,000
+When we set a length value,
+
+152
+00:10:08,000 --> 00:10:13,000
+the distance between the two topos is less than the value we set,
+
+153
+00:10:13,000 --> 00:10:17,000
+then the two topos will merge automatically.
+
+154
+00:10:17,000 --> 00:10:19,000
+For example, the value we set is 3.
+
+155
+00:10:19,000 --> 00:10:23,000
+If we click Apply, there is no merge point.
+
+156
+00:10:23,000 --> 00:10:25,000
+Because the distance between the two points
+
+157
+00:10:25,000 --> 00:10:27,000
+is more than 3 mm.
+
+158
+00:10:27,000 --> 00:10:31,000
+If I set this value to 10 mm,
+
+159
+00:10:31,000 --> 00:10:33,000
+and then click Apply,
+
+160
+00:10:33,000 --> 00:10:37,000
+we can see that the middle line will merge automatically.
+
+161
+00:10:37,000 --> 00:10:42,000
+This is the function of Merge All.
+
+162
+00:10:42,000 --> 00:10:44,000
+In addition,
+
+163
+00:10:44,000 --> 00:10:49,000
+if we need to create a topo for this pocket,
+
+164
+00:10:49,000 --> 00:10:52,000
+when creating a topo in the 3D window,
+
+165
+00:10:52,000 --> 00:10:57,000
+we need to place the mouse on the single plate,
+
+166
+00:10:57,000 --> 00:10:59,000
+not on the back plate.
+
+167
+00:10:59,000 --> 00:11:04,000
+I recommend you to create a topo in the 2D window.
+
+168
+00:11:04,000 --> 00:11:10,000
+It will also create a topo according to the original plate shape.
+
+169
+00:11:12,000 --> 00:11:16,000
+When we create a topo,
+
+170
+00:11:16,000 --> 00:11:19,000
+we need to select the topo as a plate.
+
+171
+00:11:19,000 --> 00:11:20,000
+At this time,
+
+172
+00:11:20,000 --> 00:11:23,000
+we can use the editor topo tool.
+
+173
+00:11:23,000 --> 00:11:25,000
+In the 2D or 3D window,
+
+174
+00:11:25,000 --> 00:11:27,000
+click the right button.
+
+175
+00:11:27,000 --> 00:11:30,000
+You can see that there is an All Rebuild grid.
+
+176
+00:11:30,000 --> 00:11:31,000
+But here,
+
+177
+00:11:31,000 --> 00:11:32,000
+one is the pocket,
+
+178
+00:11:32,000 --> 00:11:34,000
+the other is the replacement.
+
+179
+00:11:34,000 --> 00:11:37,000
+The difference between these two options is that
+
+180
+00:11:37,000 --> 00:11:40,000
+when you select the pocket,
+
+181
+00:11:40,000 --> 00:11:43,000
+we will automatically convert the topo surface of the creation
+
+182
+00:11:43,000 --> 00:11:46,000
+into a new version.
+
+183
+00:11:46,000 --> 00:11:48,000
+As you can see,
+
+184
+00:11:48,000 --> 00:11:52,000
+I can now use the topo
+
+185
+00:11:52,000 --> 00:11:55,000
+as a separate version.
+
+186
+00:11:58,000 --> 00:12:00,000
+But when I select the bottom one,
+
+187
+00:12:00,000 --> 00:12:02,000
+All Rebuild grid,
+
+188
+00:12:02,000 --> 00:12:04,000
+and replace it,
+
+189
+00:12:04,000 --> 00:12:06,000
+the original version will be replaced
+
+190
+00:12:06,000 --> 00:12:08,000
+with the current version.
+
+191
+00:12:13,000 --> 00:12:17,000
+When we create the topo version,
+
+192
+00:12:17,000 --> 00:12:23,000
+if we open the display box on the left,
+
+193
+00:12:23,000 --> 00:12:25,000
+we can see that
+
+194
+00:12:25,000 --> 00:12:27,000
+the new version,
+
+195
+00:12:27,000 --> 00:12:29,000
+its grid layout,
+
+196
+00:12:29,000 --> 00:12:33,000
+is the grid layout of the topo we just created.
+
+197
+00:12:33,000 --> 00:12:35,000
+This is our third new feature,
+
+198
+00:12:35,000 --> 00:12:37,000
+the topo.
+
+199
+00:12:42,000 --> 00:12:44,000
+The fourth new feature
+
+200
+00:12:44,000 --> 00:12:46,000
+is the grid division.
+
+201
+00:12:47,000 --> 00:12:50,000
+In the process of using Values Designer,
+
+202
+00:12:50,000 --> 00:12:53,000
+you may encounter some of the following thoughts,
+
+203
+00:12:53,000 --> 00:12:54,000
+such as whether or not
+
+204
+00:12:54,000 --> 00:12:56,000
+you can gradually clean up some of the folds.
+
+205
+00:12:56,000 --> 00:12:58,000
+In our new feature,
+
+206
+00:12:58,000 --> 00:13:00,000
+we have added a new feature,
+
+207
+00:13:00,000 --> 00:13:03,000
+which is the grid division feature.
+
+208
+00:13:03,000 --> 00:13:04,000
+Before that,
+
+209
+00:13:04,000 --> 00:13:06,000
+I would like to introduce
+
+210
+00:13:06,000 --> 00:13:08,000
+a new tool in this version,
+
+211
+00:13:08,000 --> 00:13:10,000
+which is the brush selection tool.
+
+212
+00:13:10,000 --> 00:13:12,000
+Select the grid brush tool.
+
+213
+00:13:12,000 --> 00:13:15,000
+When we select this tool,
+
+214
+00:13:15,000 --> 00:13:16,000
+we can see that
+
+215
+00:13:16,000 --> 00:13:19,000
+we can directly use the brush
+
+216
+00:13:19,000 --> 00:13:21,000
+to select a part of the grid.
+
+217
+00:13:21,000 --> 00:13:23,000
+In the upper right corner,
+
+218
+00:13:23,000 --> 00:13:24,000
+you can see that
+
+219
+00:13:24,000 --> 00:13:26,000
+there is a tool bar set by the brush.
+
+220
+00:13:26,000 --> 00:13:29,000
+Here we can set the size of the brush.
+
+221
+00:13:33,000 --> 00:13:36,000
+When we modify the size of the brush,
+
+222
+00:13:36,000 --> 00:13:37,000
+you can see that
+
+223
+00:13:37,000 --> 00:13:39,000
+the size of the brush has become larger.
+
+224
+00:13:39,000 --> 00:13:42,000
+When we select a part of the grid,
+
+225
+00:13:42,000 --> 00:13:44,000
+there is a grid division button.
+
+226
+00:13:46,000 --> 00:13:48,000
+As you can see,
+
+227
+00:13:48,000 --> 00:13:50,000
+when we select this version,
+
+228
+00:13:50,000 --> 00:13:53,000
+its particle diameter is 20.
+
+229
+00:13:53,000 --> 00:13:54,000
+As you can see,
+
+230
+00:13:54,000 --> 00:13:57,000
+this grid is still a relatively large grid.
+
+231
+00:13:57,000 --> 00:14:00,000
+However, when we divide it into parts,
+
+232
+00:14:00,000 --> 00:14:02,000
+the number of grids in this area
+
+233
+00:14:02,000 --> 00:14:04,000
+will increase,
+
+234
+00:14:04,000 --> 00:14:07,000
+and the grid will become more delicate.
+
+235
+00:14:07,000 --> 00:14:09,000
+When we divide a part of the grid
+
+236
+00:14:09,000 --> 00:14:11,000
+into a grid,
+
+237
+00:14:11,000 --> 00:14:13,000
+in the right-hand attribute editor,
+
+238
+00:14:13,000 --> 00:14:15,000
+we can write the name of this grid.
+
+239
+00:14:15,000 --> 00:14:17,000
+We can also write the name of the grid
+
+240
+00:14:17,000 --> 00:14:18,000
+and its level.
+
+241
+00:14:18,000 --> 00:14:20,000
+When we set its level
+
+242
+00:14:20,000 --> 00:14:21,000
+to a higher level,
+
+243
+00:14:21,000 --> 00:14:23,000
+for example, 2,
+
+244
+00:14:23,000 --> 00:14:24,000
+you can see that
+
+245
+00:14:24,000 --> 00:14:28,000
+the grid here will become very delicate.
+
+246
+00:14:28,000 --> 00:14:30,000
+If we set this part of the grid
+
+247
+00:14:30,000 --> 00:14:33,000
+to 0,
+
+248
+00:14:33,000 --> 00:14:34,000
+you can see that
+
+249
+00:14:34,000 --> 00:14:39,000
+it returns to the original grid.
+
+250
+00:14:39,000 --> 00:14:42,000
+If we delete a part of the grid here,
+
+251
+00:14:42,000 --> 00:14:44,000
+we can delete this part of the grid
+
+252
+00:14:44,000 --> 00:14:45,000
+directly.
+
+253
+00:14:45,000 --> 00:14:47,000
+It returns to the original grid.
+
+254
+00:14:47,000 --> 00:14:51,000
+This may not be very intuitive.
+
+255
+00:14:51,000 --> 00:14:53,000
+Next, I will show you
+
+256
+00:14:53,000 --> 00:14:55,000
+some of the functions
+
+257
+00:14:55,000 --> 00:14:57,000
+in the actual use process.
+
+258
+00:14:58,000 --> 00:14:59,000
+First of all,
+
+259
+00:14:59,000 --> 00:15:00,000
+you can see that
+
+260
+00:15:00,000 --> 00:15:01,000
+these two versions
+
+261
+00:15:01,000 --> 00:15:02,000
+are exactly the same.
+
+262
+00:15:02,000 --> 00:15:04,000
+If I start the simulation,
+
+263
+00:15:04,000 --> 00:15:05,000
+you can see that
+
+264
+00:15:05,000 --> 00:15:08,000
+because of some of the characteristics of our grid,
+
+265
+00:15:08,000 --> 00:15:11,000
+its grid looks very uneven.
+
+266
+00:15:11,000 --> 00:15:12,000
+But now,
+
+267
+00:15:12,000 --> 00:15:14,000
+if we drag this version,
+
+268
+00:15:14,000 --> 00:15:16,000
+its movement speed is still quite fast.
+
+269
+00:15:16,000 --> 00:15:18,000
+The response speed is still very fast.
+
+270
+00:15:18,000 --> 00:15:20,000
+But if I want to make it
+
+271
+00:15:20,000 --> 00:15:22,000
+into a more detailed version,
+
+272
+00:15:22,000 --> 00:15:24,000
+I need to adjust its
+
+273
+00:15:24,000 --> 00:15:26,000
+particle structure.
+
+274
+00:15:26,000 --> 00:15:27,000
+For example, here is 20.
+
+275
+00:15:27,000 --> 00:15:30,000
+I need to adjust it to 10.
+
+276
+00:15:30,000 --> 00:15:32,000
+Then, open the simulation again.
+
+277
+00:15:32,000 --> 00:15:33,000
+You can see that
+
+278
+00:15:33,000 --> 00:15:34,000
+now our version
+
+279
+00:15:34,000 --> 00:15:36,000
+will become more smooth
+
+280
+00:15:36,000 --> 00:15:38,000
+and looks softer.
+
+281
+00:15:38,000 --> 00:15:40,000
+But if we drag this version,
+
+282
+00:15:40,000 --> 00:15:41,000
+it is very obvious
+
+283
+00:15:41,000 --> 00:15:42,000
+that its response speed
+
+284
+00:15:42,000 --> 00:15:43,000
+will not be like
+
+285
+00:15:43,000 --> 00:15:44,000
+the one on the right,
+
+286
+00:15:44,000 --> 00:15:47,000
+which is only as fast as 20 particles.
+
+287
+00:15:47,000 --> 00:15:49,000
+But sometimes,
+
+288
+00:15:49,000 --> 00:15:50,000
+we only need to
+
+289
+00:15:50,000 --> 00:15:51,000
+let the upper part
+
+290
+00:15:51,000 --> 00:15:53,000
+maintain such a fine fold.
+
+291
+00:15:53,000 --> 00:15:55,000
+But for the lower part,
+
+292
+00:15:55,000 --> 00:15:56,000
+we don't need to
+
+293
+00:15:56,000 --> 00:15:58,000
+make it into a very fine fold.
+
+294
+00:15:58,000 --> 00:16:01,000
+Because if we compare the two versions,
+
+295
+00:16:01,000 --> 00:16:03,000
+their differences are
+
+296
+00:16:03,000 --> 00:16:04,000
+more obvious
+
+297
+00:16:04,000 --> 00:16:06,000
+on this one.
+
+298
+00:16:06,000 --> 00:16:07,000
+At this point,
+
+299
+00:16:07,000 --> 00:16:09,000
+we can use the grid selection tool
+
+300
+00:16:11,000 --> 00:16:13,000
+to select the upper part of the version.
+
+301
+00:16:13,000 --> 00:16:14,000
+Then, we can see
+
+302
+00:16:14,000 --> 00:16:16,000
+that there is a grid separation
+
+303
+00:16:16,000 --> 00:16:18,000
+on the right side.
+
+304
+00:16:18,000 --> 00:16:20,000
+When we do grid separation
+
+305
+00:16:20,000 --> 00:16:22,000
+on this part,
+
+306
+00:16:22,000 --> 00:16:25,000
+and open the simulation again,
+
+307
+00:16:25,000 --> 00:16:26,000
+we will see that
+
+308
+00:16:26,000 --> 00:16:28,000
+the upper part of this version
+
+309
+00:16:28,000 --> 00:16:31,000
+looks a little softer.
+
+310
+00:16:31,000 --> 00:16:32,000
+The lower part of this version
+
+311
+00:16:32,000 --> 00:16:34,000
+still maintains the original shape.
+
+312
+00:16:34,000 --> 00:16:36,000
+When we do a grid separation
+
+313
+00:16:36,000 --> 00:16:37,000
+for the horizontal part,
+
+314
+00:16:37,000 --> 00:16:39,000
+the speed of our computer
+
+315
+00:16:39,000 --> 00:16:41,000
+is still very smooth.
+
+316
+00:16:41,000 --> 00:16:42,000
+But the horizontal part
+
+317
+00:16:42,000 --> 00:16:44,000
+is still very smooth.
+
+318
+00:16:44,000 --> 00:16:45,000
+So we can see
+
+319
+00:16:45,000 --> 00:16:46,000
+that the horizontal part
+
+320
+00:16:46,000 --> 00:16:48,000
+is still very smooth.
+
+321
+00:16:48,000 --> 00:16:49,000
+Of course,
+
+322
+00:16:49,000 --> 00:16:50,000
+if you don't want to
+
+323
+00:16:50,000 --> 00:16:52,000
+show the grid separation,
+
+324
+00:16:52,000 --> 00:16:53,000
+because the grid separation area
+
+325
+00:16:53,000 --> 00:16:54,000
+reminds you that
+
+326
+00:16:54,000 --> 00:16:55,000
+this grid is very fine.
+
+327
+00:16:55,000 --> 00:16:57,000
+We will change its color.
+
+328
+00:16:57,000 --> 00:16:58,000
+If you don't want to
+
+329
+00:16:58,000 --> 00:16:59,000
+show the grid separation,
+
+330
+00:16:59,000 --> 00:17:01,000
+in the 3D window,
+
+331
+00:17:01,000 --> 00:17:04,000
+there is a grid separation tool.
+
+332
+00:17:04,000 --> 00:17:07,000
+We can hide this tool.
+
+333
+00:17:07,000 --> 00:17:08,000
+So we can't see
+
+334
+00:17:08,000 --> 00:17:10,000
+its grid separation.
+
+335
+00:17:10,000 --> 00:17:12,000
+This is our fourth new function,
+
+336
+00:17:12,000 --> 00:17:14,000
+the grid separation tool.
+
+337
+00:17:17,000 --> 00:17:18,000
+OK.
+
+338
+00:17:18,000 --> 00:17:19,000
+Well,
+
+339
+00:17:19,000 --> 00:17:21,000
+that's it for
+
+340
+00:17:21,000 --> 00:17:22,000
+some of our
+
+341
+00:17:22,000 --> 00:17:23,000
+simple and latest
+
+342
+00:17:23,000 --> 00:17:24,000
+new functions.
+
+343
+00:17:24,000 --> 00:17:25,000
+But,
+
+344
+00:17:25,000 --> 00:17:26,000
+I have some
+
+345
+00:17:26,000 --> 00:17:27,000
+optimization
+
+346
+00:17:27,000 --> 00:17:28,000
+and some
+
+347
+00:17:28,000 --> 00:17:29,000
+production techniques.
+
+348
+00:17:29,000 --> 00:17:30,000
+The first one
+
+349
+00:17:30,000 --> 00:17:31,000
+is that
+
+350
+00:17:31,000 --> 00:17:32,000
+in our new version,
+
+351
+00:17:32,000 --> 00:17:34,000
+there is a new optimization,
+
+352
+00:17:34,000 --> 00:17:36,000
+which is 3D environment display.
+
+353
+00:17:36,000 --> 00:17:37,000
+I don't know
+
+354
+00:17:37,000 --> 00:17:38,000
+if you have
+
+355
+00:17:38,000 --> 00:17:39,000
+used these functions
+
+356
+00:17:39,000 --> 00:17:40,000
+in your daily use.
+
+357
+00:17:40,000 --> 00:17:41,000
+For example,
+
+358
+00:17:41,000 --> 00:17:42,000
+in our 3D window,
+
+359
+00:17:42,000 --> 00:17:45,000
+there is an environment display tool.
+
+360
+00:17:45,000 --> 00:17:46,000
+The first one is
+
+361
+00:17:46,000 --> 00:17:48,000
+our lighting controller.
+
+362
+00:17:48,000 --> 00:17:49,000
+When we choose to
+
+363
+00:17:49,000 --> 00:17:52,000
+display the lighting controller,
+
+364
+00:17:52,000 --> 00:17:53,000
+a lighting controller
+
+365
+00:17:53,000 --> 00:17:54,000
+will appear
+
+366
+00:17:54,000 --> 00:17:55,000
+in the 3D window.
+
+367
+00:17:55,000 --> 00:17:56,000
+We can adjust
+
+368
+00:17:56,000 --> 00:17:57,000
+the brightness
+
+369
+00:17:57,000 --> 00:17:58,000
+and the angle
+
+370
+00:17:58,000 --> 00:17:59,000
+of its lighting
+
+371
+00:17:59,000 --> 00:18:00,000
+by clicking
+
+372
+00:18:00,000 --> 00:18:05,000
+on this lighting controller.
+
+373
+00:18:05,000 --> 00:18:06,000
+But it is only
+
+374
+00:18:06,000 --> 00:18:08,000
+working in our 3D space.
+
+375
+00:18:08,000 --> 00:18:09,000
+In order to make it easier
+
+376
+00:18:09,000 --> 00:18:10,000
+for you to look at
+
+377
+00:18:10,000 --> 00:18:11,000
+the 3D view,
+
+378
+00:18:11,000 --> 00:18:12,000
+we need to
+
+379
+00:18:12,000 --> 00:18:13,000
+adjust the brightness
+
+380
+00:18:13,000 --> 00:18:14,000
+and the angle of its lighting.
+
+381
+00:18:14,000 --> 00:18:15,000
+Also,
+
+382
+00:18:15,000 --> 00:18:16,000
+there is a wind controller
+
+383
+00:18:16,000 --> 00:18:17,000
+next to it.
+
+384
+00:18:17,000 --> 00:18:18,000
+I don't know
+
+385
+00:18:18,000 --> 00:18:19,000
+if you have noticed
+
+386
+00:18:19,000 --> 00:18:20,000
+that our software
+
+387
+00:18:20,000 --> 00:18:21,000
+can produce wind.
+
+388
+00:18:21,000 --> 00:18:22,000
+If we choose
+
+389
+00:18:22,000 --> 00:18:23,000
+the wind controller,
+
+390
+00:18:23,000 --> 00:18:24,000
+there is a light
+
+391
+00:18:24,000 --> 00:18:25,000
+on the right.
+
+392
+00:18:25,000 --> 00:18:26,000
+After we turn on
+
+393
+00:18:26,000 --> 00:18:27,000
+the light,
+
+394
+00:18:27,000 --> 00:18:28,000
+we can
+
+395
+00:18:28,000 --> 00:18:29,000
+simulate
+
+396
+00:18:29,000 --> 00:18:30,000
+the effect
+
+397
+00:18:30,000 --> 00:18:31,000
+of blowing wind.
+
+398
+00:18:31,000 --> 00:18:32,000
+If we don't need
+
+399
+00:18:32,000 --> 00:18:33,000
+the effect of blowing wind,
+
+400
+00:18:33,000 --> 00:18:34,000
+just click
+
+401
+00:18:34,000 --> 00:18:35,000
+to close
+
+402
+00:18:35,000 --> 00:18:36,000
+the simulation.
+
+403
+00:18:36,000 --> 00:18:37,000
+That's it.
+
+404
+00:18:37,000 --> 00:18:38,000
+Thank you.
+
+405
+00:18:40,000 --> 00:18:43,000
+In addition,
+
+406
+00:18:43,000 --> 00:18:44,000
+we can also
+
+407
+00:18:44,000 --> 00:18:45,000
+adjust
+
+408
+00:18:45,000 --> 00:18:46,000
+whether the 3D window
+
+409
+00:18:46,000 --> 00:18:47,000
+shows
+
+410
+00:18:47,000 --> 00:18:48,000
+shadows.
+
+411
+00:18:48,000 --> 00:18:49,000
+Sometimes,
+
+412
+00:18:49,000 --> 00:18:50,000
+shadows
+
+413
+00:18:50,000 --> 00:18:51,000
+may affect
+
+414
+00:18:51,000 --> 00:18:52,000
+the effect
+
+415
+00:18:52,000 --> 00:18:53,000
+of our observation.
+
+416
+00:18:53,000 --> 00:18:54,000
+Finally,
+
+417
+00:18:54,000 --> 00:18:55,000
+there is
+
+418
+00:18:55,000 --> 00:18:56,000
+a new function.
+
+419
+00:18:56,000 --> 00:18:57,000
+There is
+
+420
+00:18:57,000 --> 00:18:58,000
+a display
+
+421
+00:18:58,000 --> 00:18:59,000
+grid.
+
+422
+00:18:59,000 --> 00:19:00,000
+Here,
+
+423
+00:19:00,000 --> 00:19:01,000
+we can choose
+
+424
+00:19:01,000 --> 00:19:02,000
+whether
+
+425
+00:19:02,000 --> 00:19:03,000
+it shows
+
+426
+00:19:03,000 --> 00:19:04,000
+the grid
+
+427
+00:19:04,000 --> 00:19:05,000
+in our 3D window.
+
+428
+00:19:05,000 --> 00:19:06,000
+In addition,
+
+429
+00:19:06,000 --> 00:19:07,000
+we can also
+
+430
+00:19:07,000 --> 00:19:08,000
+adjust
+
+431
+00:19:08,000 --> 00:19:09,000
+whether
+
+432
+00:19:09,000 --> 00:19:10,000
+the 3D window shows
+
+433
+00:19:10,000 --> 00:19:11,000
+shadows in
+
+434
+00:19:11,000 --> 00:19:12,000
+the 3D window.
+
+435
+00:19:12,000 --> 00:19:13,000
+We can also
+
+436
+00:19:13,000 --> 00:19:14,000
+adjust
+
+437
+00:19:14,000 --> 00:19:15,000
+whether
+
+438
+00:19:15,000 --> 00:19:16,000
+the 3D window
+
+439
+00:19:16,000 --> 00:19:17,000
+shows
+
+440
+00:19:17,000 --> 00:19:18,000
+shadows in
+
+441
+00:19:18,000 --> 00:19:19,000
+the 3D window.
+
+442
+00:19:19,000 --> 00:19:20,000
+We can also
+
+443
+00:19:20,000 --> 00:19:21,000
+adjust
+
+444
+00:19:21,000 --> 00:19:22,000
+whether
+
+445
+00:19:22,000 --> 00:19:23,000
+the 3D window
+
+446
+00:19:23,000 --> 00:19:24,000
+shows
+
+447
+00:19:24,000 --> 00:19:25,000
+shadows in
+
+448
+00:19:25,000 --> 00:19:26,000
+the 3D window.
+
+449
+00:19:26,000 --> 00:19:27,000
+In addition,
+
+450
+00:19:27,000 --> 00:19:28,000
+everyone may
+
+451
+00:19:28,000 --> 00:19:29,000
+have noticed
+
+452
+00:19:29,000 --> 00:19:30,000
+that there are
+
+453
+00:19:30,000 --> 00:19:31,000
+some tools
+
+454
+00:19:31,000 --> 00:19:32,000
+in our 3D window
+
+455
+00:19:32,000 --> 00:19:33,000
+that have been
+
+456
+00:19:33,000 --> 00:19:34,000
+accumulated
+
+457
+00:19:34,000 --> 00:19:35,000
+in two main tools.
+
+458
+00:19:35,000 --> 00:19:36,000
+One is
+
+459
+00:19:36,000 --> 00:19:37,000
+that we created
+
+460
+00:19:37,000 --> 00:19:38,000
+multidirectional tools.
+
+461
+00:19:38,000 --> 00:19:44,000
+That's all for the main content of our new project.
+
+462
+00:19:44,000 --> 00:19:50,000
+Here I would like to share some tips with you.
+
+463
+00:19:50,000 --> 00:19:54,000
+The most frequently asked question we receive is
+
+464
+00:19:54,000 --> 00:19:58,000
+what are the characteristics and the main reasons
+
+465
+00:19:58,000 --> 00:20:05,000
+for the effect of the effect when making clothes?
+
+466
+00:20:05,000 --> 00:20:08,000
+Next, I would like to introduce to you
+
+467
+00:20:08,000 --> 00:20:13,000
+some of the main reasons for the effect of the effect.
+
+468
+00:20:13,000 --> 00:20:17,000
+First of all, I would like to show you
+
+469
+00:20:17,000 --> 00:20:22,000
+what are the different effects of the effect
+
+470
+00:20:22,000 --> 00:20:25,000
+when we make clothes
+
+471
+00:20:25,000 --> 00:20:30,000
+when we have different attributes.
+
+472
+00:20:30,000 --> 00:20:34,000
+First of all, you can see this row of clothes at the bottom.
+
+473
+00:20:34,000 --> 00:20:35,000
+They are directly on the bottom window.
+
+474
+00:20:35,000 --> 00:20:37,000
+There is no difference between them.
+
+475
+00:20:37,000 --> 00:20:39,000
+On the right side, you can see
+
+476
+00:20:39,000 --> 00:20:41,000
+that the plants are the same.
+
+477
+00:20:41,000 --> 00:20:45,000
+Some of the particles are the same.
+
+478
+00:20:45,000 --> 00:20:48,000
+Why do we see different patterns
+
+479
+00:20:48,000 --> 00:20:53,000
+when we start the simulation?
+
+480
+00:20:53,000 --> 00:20:56,000
+The most obvious reason is that
+
+481
+00:20:56,000 --> 00:20:59,000
+when we start the simulation,
+
+482
+00:20:59,000 --> 00:21:02,000
+the first pattern is not smooth.
+
+483
+00:21:02,000 --> 00:21:04,000
+The second pattern is smooth
+
+484
+00:21:04,000 --> 00:21:05,000
+in a larger area.
+
+485
+00:21:05,000 --> 00:21:08,000
+The third pattern is very smooth.
+
+486
+00:21:08,000 --> 00:21:10,000
+The last pattern shows that
+
+487
+00:21:10,000 --> 00:21:12,000
+all the folds are very fine.
+
+488
+00:21:12,000 --> 00:21:15,000
+Where are the differences?
+
+489
+00:21:15,000 --> 00:21:16,000
+The reason is that
+
+490
+00:21:16,000 --> 00:21:19,000
+when we open the door and show the frame,
+
+491
+00:21:19,000 --> 00:21:21,000
+we will see that
+
+492
+00:21:21,000 --> 00:21:25,000
+the grid arrangement of these four patterns is different.
+
+493
+00:21:25,000 --> 00:21:29,000
+The first grid arrangement,
+
+494
+00:21:29,000 --> 00:21:32,000
+you can see that it is a triangular grid.
+
+495
+00:21:32,000 --> 00:21:34,000
+What are the characteristics of a triangular grid?
+
+496
+00:21:34,000 --> 00:21:36,000
+When you look at it,
+
+497
+00:21:36,000 --> 00:21:38,000
+its top is others of a triangular grid.
+
+498
+00:21:38,000 --> 00:21:40,000
+Its top is of a triangular grid.
+
+499
+00:21:40,000 --> 00:21:42,000
+It cannot be like a four-grid grid.
+
+500
+00:21:42,000 --> 00:21:43,000
+It is very neat.
+
+501
+00:21:43,000 --> 00:21:45,000
+When we simulate it,
+
+502
+00:21:45,000 --> 00:21:46,000
+we will see that
+
+503
+00:21:46,000 --> 00:21:47,000
+when we have a panel,
+
+504
+00:21:47,000 --> 00:21:49,000
+it is a triangular grid.
+
+505
+00:21:49,000 --> 00:21:50,000
+When we have a panel,
+
+506
+00:21:50,000 --> 00:21:52,000
+it is a triangular grid.
+
+507
+00:21:52,000 --> 00:21:56,000
+This is because we see the feeling of the upper grid of the three corners of the screen.
+
+508
+00:21:56,000 --> 00:21:58,000
+But in the right square grid,
+
+509
+00:21:58,000 --> 00:22:01,000
+the pattern is relatively smooth
+
+510
+00:22:01,000 --> 00:22:03,000
+when you look at the big areas below.
+
+511
+00:22:03,000 --> 00:22:10,000
+If we click on the display frame, we will find that it still has these unevenness problems.
+
+512
+00:22:10,000 --> 00:22:13,000
+Why is the third version more smooth?
+
+513
+00:22:13,000 --> 00:22:17,000
+It is because we used the reset grid function on this version.
+
+514
+00:22:17,000 --> 00:22:21,000
+When we added a new function to reset grid in MD8,
+
+515
+00:22:21,000 --> 00:22:25,000
+we will see that this version is very, very smooth.
+
+516
+00:22:25,000 --> 00:22:32,000
+The last version, why is it the most smooth and the most detailed one in the sewing box?
+
+517
+00:22:32,000 --> 00:22:36,000
+In fact, the properties of these four versions are exactly the same.
+
+518
+00:22:36,000 --> 00:22:43,000
+The small difference between the last two versions is due to the different particles.
+
+519
+00:22:43,000 --> 00:22:47,000
+If we look at the display frame, we can also feel that
+
+520
+00:22:47,000 --> 00:22:51,000
+the number of grid spaces here is significantly less than the number of grid spaces here.
+
+521
+00:22:51,000 --> 00:22:57,000
+When we have more grid spaces, the curve becomes smoother.
+
+522
+00:23:02,000 --> 00:23:09,000
+Next, let's take a look at how different these versions look when we have different particles.
+
+523
+00:23:15,000 --> 00:23:19,000
+In the middle row, the particles of the four versions are very different.
+
+524
+00:23:19,000 --> 00:23:26,000
+From left to right, the particles are 20, 10, 5 and 3.
+
+525
+00:23:26,000 --> 00:23:31,000
+As you can see, when your particles are 20, your simulation speed is very fast.
+
+526
+00:23:31,000 --> 00:23:34,000
+The left version is almost finished,
+
+527
+00:23:34,000 --> 00:23:38,000
+and the right version is just starting to be simulated.
+
+528
+00:23:38,000 --> 00:23:41,000
+We need to wait a little bit, because the version is relatively large,
+
+529
+00:23:41,000 --> 00:23:45,000
+and the last version has smaller particles.
+
+530
+00:23:45,000 --> 00:23:49,000
+As you can see, we are also simulating at the same time.
+
+531
+00:23:49,000 --> 00:23:52,000
+The left version is already simulated.
+
+532
+00:23:52,000 --> 00:23:56,000
+The right version of the particles is the third version,
+
+533
+00:23:56,000 --> 00:24:00,000
+and the simulation speed is very slow.
+
+534
+00:24:00,000 --> 00:24:03,000
+As you can clearly see,
+
+535
+00:24:03,000 --> 00:24:08,000
+the first version does not look very original.
+
+536
+00:24:08,000 --> 00:24:12,000
+Its fold is very stiff and stiff.
+
+537
+00:24:12,000 --> 00:24:17,000
+The second version's fold effect is already more original.
+
+538
+00:24:17,000 --> 00:24:21,000
+In the third version, we can see that it has more fine folds,
+
+539
+00:24:21,000 --> 00:24:24,000
+and its fold is very fine.
+
+540
+00:24:24,000 --> 00:24:27,000
+The last version is still being simulated,
+
+541
+00:24:27,000 --> 00:24:29,000
+so let's not waste our time.
+
+542
+00:24:29,000 --> 00:24:31,000
+The third version is almost finished.
+
+543
+00:24:31,000 --> 00:24:36,000
+The difference between the second version and the third version is not very big.
+
+544
+00:24:36,000 --> 00:24:41,000
+The difference is only a small difference.
+
+545
+00:24:41,000 --> 00:24:45,000
+Here you can see that
+
+546
+00:24:45,000 --> 00:24:47,000
+when the particle scale is 20,
+
+547
+00:24:47,000 --> 00:24:49,000
+and the particle scale is 10,
+
+548
+00:24:49,000 --> 00:24:51,000
+the difference is already very big.
+
+549
+00:24:51,000 --> 00:24:54,000
+So when you are using Amaros Designer,
+
+550
+00:24:54,000 --> 00:24:58,000
+it is recommended that you lower the particle scale to 10 or 5.
+
+551
+00:24:58,000 --> 00:25:01,000
+But if the operation speed is relatively slow,
+
+552
+00:25:01,000 --> 00:25:04,000
+you can use 10 for the whole version,
+
+553
+00:25:04,000 --> 00:25:08,000
+and then divide it into a small part.
+
+554
+00:25:16,000 --> 00:25:19,000
+This is the first version.
+
+555
+00:25:28,000 --> 00:25:37,000
+Let's look at the first version.
+
+556
+00:25:37,000 --> 00:25:42,000
+You can see that all the shapes are the same.
+
+557
+00:25:42,000 --> 00:25:46,000
+Why do these versions look a little different?
+
+558
+00:25:46,000 --> 00:25:48,000
+Because these versions,
+
+559
+00:25:48,000 --> 00:25:50,000
+first of all,
+
+560
+00:25:50,000 --> 00:25:54,000
+when we look at the 2D window,
+
+561
+00:25:58,000 --> 00:26:00,000
+it's okay.
+
+562
+00:26:00,000 --> 00:26:04,000
+It's just that it's a little bit weird.
+
+563
+00:26:04,000 --> 00:26:06,000
+In the first version,
+
+564
+00:26:06,000 --> 00:26:09,000
+all the shapes of the two versions are the same.
+
+565
+00:26:09,000 --> 00:26:11,000
+Including their physical properties,
+
+566
+00:26:11,000 --> 00:26:13,000
+they are also the same.
+
+567
+00:26:13,000 --> 00:26:15,000
+But they are very obvious.
+
+568
+00:26:15,000 --> 00:26:17,000
+We can see that the top version is very brittle.
+
+569
+00:26:17,000 --> 00:26:19,000
+Like girls,
+
+570
+00:26:19,000 --> 00:26:22,000
+in summer, they will wear very soft snow-covered skirts.
+
+571
+00:26:22,000 --> 00:26:25,000
+But the bottom version looks very hard.
+
+572
+00:26:25,000 --> 00:26:27,000
+The reason is because
+
+573
+00:26:27,000 --> 00:26:31,000
+the composition of these two versions is very different.
+
+574
+00:26:31,000 --> 00:26:35,000
+You may not know much about fashion.
+
+575
+00:26:35,000 --> 00:26:37,000
+When we make clothes,
+
+576
+00:26:37,000 --> 00:26:38,000
+for example,
+
+577
+00:26:38,000 --> 00:26:40,000
+this line and this line,
+
+578
+00:26:40,000 --> 00:26:42,000
+the two lines are almost the same length.
+
+579
+00:26:42,000 --> 00:26:44,000
+So when you look at it from the waist,
+
+580
+00:26:44,000 --> 00:26:45,000
+it's very flat.
+
+581
+00:26:45,000 --> 00:26:47,000
+But the length of the bottom version
+
+582
+00:26:47,000 --> 00:26:49,000
+and the top version are very different.
+
+583
+00:26:49,000 --> 00:26:51,000
+When we have a lot of difference,
+
+584
+00:26:51,000 --> 00:26:53,000
+it is easy to pile up here
+
+585
+00:26:53,000 --> 00:26:55,000
+into a large part of the pleats.
+
+586
+00:26:55,000 --> 00:26:56,000
+That is,
+
+587
+00:26:56,000 --> 00:26:58,000
+if you don't know the version,
+
+588
+00:26:58,000 --> 00:27:00,000
+you may choose to use
+
+589
+00:27:00,000 --> 00:27:02,000
+our rectangular version
+
+590
+00:27:02,000 --> 00:27:04,000
+when you make clothes directly.
+
+591
+00:27:04,000 --> 00:27:06,000
+There will be such a
+
+592
+00:27:06,000 --> 00:27:09,000
+stiff and stiff pleats.
+
+593
+00:27:11,000 --> 00:27:13,000
+In the first version,
+
+594
+00:27:13,000 --> 00:27:14,000
+we can see that
+
+595
+00:27:14,000 --> 00:27:15,000
+in fact,
+
+596
+00:27:15,000 --> 00:27:17,000
+there are some differences
+
+597
+00:27:17,000 --> 00:27:19,000
+between our versions.
+
+598
+00:27:19,000 --> 00:27:20,000
+The reason is that
+
+599
+00:27:20,000 --> 00:27:21,000
+in the first version,
+
+600
+00:27:21,000 --> 00:27:23,000
+you can see in the upper right corner,
+
+601
+00:27:23,000 --> 00:27:25,000
+it uses default fabrics.
+
+602
+00:27:25,000 --> 00:27:27,000
+In the process of using MD,
+
+603
+00:27:27,000 --> 00:27:29,000
+you may not pay much attention
+
+604
+00:27:29,000 --> 00:27:31,000
+to the fact that
+
+605
+00:27:31,000 --> 00:27:33,000
+our fabrics
+
+606
+00:27:33,000 --> 00:27:36,000
+have different physical properties.
+
+607
+00:27:36,000 --> 00:27:37,000
+For example,
+
+608
+00:27:37,000 --> 00:27:38,000
+in the first version,
+
+609
+00:27:38,000 --> 00:27:40,000
+it uses default fabrics.
+
+610
+00:27:40,000 --> 00:27:41,000
+It looks like
+
+611
+00:27:41,000 --> 00:27:43,000
+the bottom is flat.
+
+612
+00:27:43,000 --> 00:27:45,000
+There is no feeling of stretching.
+
+613
+00:27:45,000 --> 00:27:47,000
+But in the second version,
+
+614
+00:27:47,000 --> 00:27:49,000
+you can clearly feel
+
+615
+00:27:49,000 --> 00:27:51,000
+that it has a feeling of hammering.
+
+616
+00:27:51,000 --> 00:27:52,000
+Because you see,
+
+617
+00:27:52,000 --> 00:27:54,000
+it hammered longer below.
+
+618
+00:27:54,000 --> 00:27:56,000
+It is like a skirt.
+
+619
+00:27:56,000 --> 00:27:57,000
+It is hammered very,
+
+620
+00:27:57,000 --> 00:27:59,000
+very long.
+
+621
+00:27:59,000 --> 00:28:00,000
+The reason is that
+
+622
+00:28:00,000 --> 00:28:01,000
+in the second version,
+
+623
+00:28:01,000 --> 00:28:03,000
+it uses the default fabric.
+
+624
+00:28:03,000 --> 00:28:05,000
+When we click on this fabric,
+
+625
+00:28:05,000 --> 00:28:08,000
+there is a physical attribute preset below.
+
+626
+00:28:08,000 --> 00:28:11,000
+Here is a silk chiffon.
+
+627
+00:28:11,000 --> 00:28:14,000
+It is a default fabric.
+
+628
+00:28:14,000 --> 00:28:16,000
+This fabric has a feature.
+
+629
+00:28:16,000 --> 00:28:18,000
+When we click on it,
+
+630
+00:28:18,000 --> 00:28:19,000
+we will find that
+
+631
+00:28:19,000 --> 00:28:20,000
+its gold-plated sand strength
+
+632
+00:28:20,000 --> 00:28:22,000
+is very small.
+
+633
+00:28:22,000 --> 00:28:23,000
+In addition,
+
+634
+00:28:23,000 --> 00:28:25,000
+it is only 0.
+
+635
+00:28:25,000 --> 00:28:27,000
+The gold-plated sand strength
+
+636
+00:28:27,000 --> 00:28:28,000
+affects the stretching performance
+
+637
+00:28:28,000 --> 00:28:30,000
+of our fabric.
+
+638
+00:28:30,000 --> 00:28:31,000
+When its gold-plated sand strength
+
+639
+00:28:31,000 --> 00:28:33,000
+is very small,
+
+640
+00:28:33,000 --> 00:28:34,000
+this fabric
+
+641
+00:28:34,000 --> 00:28:36,000
+can be stretched very easily.
+
+642
+00:28:36,000 --> 00:28:38,000
+You may not have any idea
+
+643
+00:28:38,000 --> 00:28:39,000
+about how easy it is to stretch.
+
+644
+00:28:39,000 --> 00:28:40,000
+You can imagine that
+
+645
+00:28:40,000 --> 00:28:41,000
+for example,
+
+646
+00:28:41,000 --> 00:28:44,000
+you wear a leather top.
+
+647
+00:28:44,000 --> 00:28:46,000
+You wear a leather top.
+
+648
+00:28:46,000 --> 00:28:47,000
+Many times,
+
+649
+00:28:47,000 --> 00:28:48,000
+there are some leather
+
+650
+00:28:48,000 --> 00:28:50,000
+that are not easy to stretch.
+
+651
+00:28:50,000 --> 00:28:52,000
+But if you wear a sweater,
+
+652
+00:28:52,000 --> 00:28:54,000
+it is easy to stretch.
+
+653
+00:28:54,000 --> 00:28:55,000
+For example,
+
+654
+00:28:55,000 --> 00:28:57,000
+a sweater that is easy to stretch,
+
+655
+00:28:57,000 --> 00:28:58,000
+its gold-plated sand strength
+
+656
+00:28:58,000 --> 00:29:00,000
+is relatively small.
+
+657
+00:29:00,000 --> 00:29:01,000
+For example,
+
+658
+00:29:01,000 --> 00:29:03,000
+a leather top that is hard to stretch,
+
+659
+00:29:03,000 --> 00:29:04,000
+its gold-plated sand strength
+
+660
+00:29:04,000 --> 00:29:05,000
+is relatively large.
+
+661
+00:29:05,000 --> 00:29:06,000
+For example,
+
+662
+00:29:06,000 --> 00:29:07,000
+a silk chiffon fabric,
+
+663
+00:29:07,000 --> 00:29:08,000
+its gold-plated sand strength
+
+664
+00:29:08,000 --> 00:29:10,000
+is even only 3.
+
+665
+00:29:10,000 --> 00:29:12,000
+Because its purity is very, very good.
+
+666
+00:29:12,000 --> 00:29:13,000
+This is why
+
+667
+00:29:13,000 --> 00:29:15,000
+we wear dresses in summer
+
+668
+00:29:15,000 --> 00:29:16,000
+and use silk-plated fabric.
+
+669
+00:29:16,000 --> 00:29:18,000
+It will look very floating.
+
+670
+00:29:18,000 --> 00:29:20,000
+It is because it is very soft,
+
+671
+00:29:20,000 --> 00:29:21,000
+very soft.
+
+672
+00:29:22,000 --> 00:29:24,000
+Since our fabric strength
+
+673
+00:29:24,000 --> 00:29:25,000
+will affect so much,
+
+674
+00:29:25,000 --> 00:29:28,000
+the last two panels
+
+675
+00:29:28,000 --> 00:29:30,000
+are actually different.
+
+676
+00:29:30,000 --> 00:29:32,000
+If we look at the bottom,
+
+677
+00:29:32,000 --> 00:29:34,000
+there are two long ones here.
+
+678
+00:29:34,000 --> 00:29:35,000
+The middle one is shorter.
+
+679
+00:29:35,000 --> 00:29:36,000
+The one next to it
+
+680
+00:29:36,000 --> 00:29:37,000
+is longer in the middle
+
+681
+00:29:37,000 --> 00:29:39,000
+and shorter on both sides.
+
+682
+00:29:39,000 --> 00:29:40,000
+Why is that?
+
+683
+00:29:40,000 --> 00:29:43,000
+Because when you make clothes,
+
+684
+00:29:43,000 --> 00:29:46,000
+you may not notice it.
+
+685
+00:29:46,000 --> 00:29:48,000
+We have an editing text tool here.
+
+686
+00:29:48,000 --> 00:29:49,000
+When we choose
+
+687
+00:29:49,000 --> 00:29:51,000
+the editing text tool,
+
+688
+00:29:51,000 --> 00:29:53,000
+we will see that
+
+689
+00:29:53,000 --> 00:29:55,000
+the three panels at the end
+
+690
+00:29:55,000 --> 00:29:56,000
+have a slightly different
+
+691
+00:29:56,000 --> 00:29:58,000
+pattern direction.
+
+692
+00:29:58,000 --> 00:29:59,000
+Some panels
+
+693
+00:29:59,000 --> 00:30:02,000
+have a vertical pattern direction.
+
+694
+00:30:02,000 --> 00:30:03,000
+This is actually called
+
+695
+00:30:03,000 --> 00:30:04,000
+the gold-plated sand direction.
+
+696
+00:30:04,000 --> 00:30:06,000
+This is called the gold-plated sand direction.
+
+697
+00:30:06,000 --> 00:30:07,000
+It doesn't matter
+
+698
+00:30:07,000 --> 00:30:08,000
+if you don't know
+
+699
+00:30:08,000 --> 00:30:09,000
+the gold-plated sand direction.
+
+700
+00:30:09,000 --> 00:30:10,000
+Anyway,
+
+701
+00:30:10,000 --> 00:30:11,000
+as long as we see
+
+702
+00:30:11,000 --> 00:30:12,000
+the difference in the middle,
+
+703
+00:30:12,000 --> 00:30:14,000
+it is written, right?
+
+704
+00:30:14,000 --> 00:30:16,000
+When you use
+
+705
+00:30:16,000 --> 00:30:18,000
+the editing text tool,
+
+706
+00:30:18,000 --> 00:30:20,000
+to click this part,
+
+707
+00:30:20,000 --> 00:30:21,000
+you will find that
+
+708
+00:30:21,000 --> 00:30:22,000
+this axis
+
+709
+00:30:22,000 --> 00:30:24,000
+is close to the vertical one.
+
+710
+00:30:24,000 --> 00:30:26,000
+But if you click here,
+
+711
+00:30:26,000 --> 00:30:27,000
+you will find that
+
+712
+00:30:27,000 --> 00:30:28,000
+it is oblique.
+
+713
+00:30:28,000 --> 00:30:29,000
+Then you will find that
+
+714
+00:30:29,000 --> 00:30:30,000
+actually,
+
+715
+00:30:30,000 --> 00:30:31,000
+every time we click
+
+716
+00:30:31,000 --> 00:30:32,000
+this longer place,
+
+717
+00:30:32,000 --> 00:30:33,000
+it is all oblique.
+
+718
+00:30:33,000 --> 00:30:34,000
+Right?
+
+719
+00:30:34,000 --> 00:30:36,000
+Why is it oblique
+
+720
+00:30:36,000 --> 00:30:39,000
+and the board is longer?
+
+721
+00:30:39,000 --> 00:30:41,000
+Because our fabric properties
+
+722
+00:30:41,000 --> 00:30:42,000
+can be seen
+
+723
+00:30:42,000 --> 00:30:43,000
+that the angle of contact
+
+724
+00:30:43,000 --> 00:30:44,000
+is zero.
+
+725
+00:30:44,000 --> 00:30:45,000
+It means that
+
+726
+00:30:45,000 --> 00:30:46,000
+you can stretch
+
+727
+00:30:46,000 --> 00:30:48,000
+the top of your shoe
+
+728
+00:30:48,000 --> 00:30:49,000
+by the maximum extent.
+
+729
+00:30:49,000 --> 00:30:50,000
+So,
+
+730
+00:30:50,000 --> 00:30:51,000
+every time
+
+731
+00:30:51,000 --> 00:30:53,000
+we click this board,
+
+732
+00:30:53,000 --> 00:30:54,000
+we will find that
+
+733
+00:30:54,000 --> 00:30:55,000
+it is oblique.
+
+734
+00:30:55,000 --> 00:30:56,000
+When this axis
+
+735
+00:30:56,000 --> 00:30:57,000
+is oblique,
+
+736
+00:30:57,000 --> 00:30:58,000
+that is,
+
+737
+00:30:58,000 --> 00:30:59,000
+when it is in the right angle,
+
+738
+00:30:59,000 --> 00:31:00,000
+this board
+
+739
+00:31:00,000 --> 00:31:01,000
+is easy to stretch
+
+740
+00:31:01,000 --> 00:31:02,000
+in this part.
+
+741
+00:31:02,000 --> 00:31:03,000
+So,
+
+742
+00:31:03,000 --> 00:31:04,000
+during the process
+
+743
+00:31:04,000 --> 00:31:05,000
+of making,
+
+744
+00:31:05,000 --> 00:31:06,000
+you can check
+
+745
+00:31:06,000 --> 00:31:07,000
+if the direction of your fabric
+
+746
+00:31:07,000 --> 00:31:08,000
+is right.
+
+747
+00:31:08,000 --> 00:31:09,000
+Sometimes,
+
+748
+00:31:09,000 --> 00:31:10,000
+when the right angle of contact
+
+749
+00:31:10,000 --> 00:31:12,000
+is very small,
+
+750
+00:31:12,000 --> 00:31:13,000
+the fabric
+
+751
+00:31:13,000 --> 00:31:14,000
+you put on
+
+752
+00:31:14,000 --> 00:31:15,000
+is also oblique.
+
+753
+00:31:15,000 --> 00:31:16,000
+In the middle,
+
+754
+00:31:16,000 --> 00:31:17,000
+the skirt
+
+755
+00:31:17,000 --> 00:31:18,000
+may be very long.
+
+756
+00:31:18,000 --> 00:31:19,000
+It is not
+
+757
+00:31:19,000 --> 00:31:20,000
+exactly the same
+
+758
+00:31:20,000 --> 00:31:21,000
+as the length
+
+759
+00:31:21,000 --> 00:31:22,000
+of the skirt.
+
+760
+00:31:22,000 --> 00:31:23,000
+So,
+
+761
+00:31:23,000 --> 00:31:24,000
+it is not exactly
+
+762
+00:31:24,000 --> 00:31:25,000
+the same as the length
+
+763
+00:31:25,000 --> 00:31:26,000
+of the skirt.
+
+764
+00:31:26,000 --> 00:31:27,000
+In addition,
+
+765
+00:31:27,000 --> 00:31:28,000
+I would like to
+
+766
+00:31:28,000 --> 00:31:29,000
+show you
+
+767
+00:31:29,000 --> 00:31:30,000
+the folding effect
+
+768
+00:31:30,000 --> 00:31:31,000
+of different boards.
+
+769
+00:31:33,000 --> 00:31:34,000
+Mainly,
+
+770
+00:31:34,000 --> 00:31:35,000
+for some of our
+
+771
+00:31:35,000 --> 00:31:36,000
+usually made
+
+772
+00:31:36,000 --> 00:31:37,000
+skirts
+
+773
+00:31:37,000 --> 00:31:38,000
+or some
+
+774
+00:31:38,000 --> 00:31:39,000
+contract edges,
+
+775
+00:31:39,000 --> 00:31:40,000
+now,
+
+776
+00:31:40,000 --> 00:31:41,000
+let's look at
+
+777
+00:31:41,000 --> 00:31:42,000
+the bottom
+
+778
+00:31:42,000 --> 00:31:43,000
+of the board first.
+
+779
+00:31:45,000 --> 00:31:46,000
+You can see
+
+780
+00:31:46,000 --> 00:31:47,000
+that
+
+781
+00:31:47,000 --> 00:31:48,000
+we also
+
+782
+00:31:48,000 --> 00:31:49,000
+have
+
+783
+00:31:49,000 --> 00:31:50,000
+a rectangular board
+
+784
+00:31:50,000 --> 00:31:51,000
+of the same size.
+
+785
+00:31:51,000 --> 00:31:52,000
+The size
+
+786
+00:31:52,000 --> 00:31:53,000
+of the board
+
+787
+00:31:53,000 --> 00:31:54,000
+below us
+
+788
+00:31:54,000 --> 00:31:55,000
+is not the same
+
+789
+00:31:55,000 --> 00:31:56,000
+as the width.
+
+790
+00:31:56,000 --> 00:31:57,000
+The one on the left
+
+791
+00:31:57,000 --> 00:31:58,000
+is the narrowest
+
+792
+00:31:58,000 --> 00:31:59,000
+and the one on the right
+
+793
+00:31:59,000 --> 00:32:00,000
+is the widest.
+
+794
+00:32:00,000 --> 00:32:01,000
+At this time,
+
+795
+00:32:01,000 --> 00:32:02,000
+we can see
+
+796
+00:32:02,000 --> 00:32:03,000
+that from left to right,
+
+797
+00:32:03,000 --> 00:32:04,000
+our pleats
+
+798
+00:32:04,000 --> 00:32:05,000
+are only three
+
+799
+00:32:05,000 --> 00:32:06,000
+large pleats
+
+800
+00:32:06,000 --> 00:32:07,000
+from the beginning
+
+801
+00:32:07,000 --> 00:32:08,000
+to the right.
+
+802
+00:32:08,000 --> 00:32:09,000
+There may be
+
+803
+00:32:09,000 --> 00:32:10,000
+only six or seven
+
+804
+00:32:10,000 --> 00:32:11,000
+pleats left.
+
+805
+00:32:11,000 --> 00:32:12,000
+The reason is
+
+806
+00:32:12,000 --> 00:32:13,000
+how wide
+
+807
+00:32:13,000 --> 00:32:14,000
+the board
+
+808
+00:32:14,000 --> 00:32:15,000
+below us
+
+809
+00:32:15,000 --> 00:32:16,000
+is.
+
+810
+00:32:16,000 --> 00:32:17,000
+But
+
+811
+00:32:17,000 --> 00:32:18,000
+if we look at
+
+812
+00:32:18,000 --> 00:32:19,000
+the bottom
+
+813
+00:32:19,000 --> 00:32:20,000
+of the board,
+
+814
+00:32:20,000 --> 00:32:21,000
+the size
+
+815
+00:32:21,000 --> 00:32:22,000
+of the pleats
+
+816
+00:32:22,000 --> 00:32:23,000
+is actually
+
+817
+00:32:23,000 --> 00:32:24,000
+almost the same.
+
+818
+00:32:24,000 --> 00:32:25,000
+The width
+
+819
+00:32:25,000 --> 00:32:26,000
+of the board
+
+820
+00:32:26,000 --> 00:32:27,000
+is almost the same.
+
+821
+00:32:27,000 --> 00:32:28,000
+What does this
+
+822
+00:32:28,000 --> 00:32:29,000
+mean?
+
+823
+00:32:29,000 --> 00:32:30,000
+It means that
+
+824
+00:32:30,000 --> 00:32:31,000
+if you make
+
+825
+00:32:31,000 --> 00:32:32,000
+a puffy skirt
+
+826
+00:32:32,000 --> 00:32:33,000
+or
+
+827
+00:32:33,000 --> 00:32:34,000
+some
+
+828
+00:32:34,000 --> 00:32:35,000
+effects
+
+829
+00:32:35,000 --> 00:32:36,000
+you need,
+
+830
+00:32:36,000 --> 00:32:37,000
+if you just
+
+831
+00:32:37,000 --> 00:32:38,000
+sew a rectangular
+
+832
+00:32:38,000 --> 00:32:39,000
+board
+
+833
+00:32:39,000 --> 00:32:40,000
+below,
+
+834
+00:32:40,000 --> 00:32:41,000
+the width
+
+835
+00:32:41,000 --> 00:32:42,000
+may be
+
+836
+00:32:42,000 --> 00:32:43,000
+almost the same.
+
+837
+00:32:43,000 --> 00:32:44,000
+But
+
+838
+00:32:44,000 --> 00:32:45,000
+visually,
+
+839
+00:32:45,000 --> 00:32:46,000
+the pleats
+
+840
+00:32:46,000 --> 00:32:47,000
+are more
+
+841
+00:32:47,000 --> 00:32:48,000
+or less.
+
+842
+00:32:48,000 --> 00:32:49,000
+And we can see
+
+843
+00:32:49,000 --> 00:32:50,000
+that when a board
+
+844
+00:32:50,000 --> 00:32:51,000
+is very wide
+
+845
+00:32:51,000 --> 00:32:52,000
+and wide
+
+846
+00:32:52,000 --> 00:32:53,000
+below,
+
+847
+00:32:53,000 --> 00:32:54,000
+the pleats
+
+848
+00:32:54,000 --> 00:32:55,000
+will be
+
+849
+00:32:55,000 --> 00:32:56,000
+pressed
+
+850
+00:32:56,000 --> 00:32:57,000
+very finely.
+
+851
+00:32:57,000 --> 00:32:58,000
+Because we need
+
+852
+00:32:58,000 --> 00:32:59,000
+to press
+
+853
+00:32:59,000 --> 00:33:00,000
+both sides
+
+854
+00:33:00,000 --> 00:33:01,000
+inward,
+
+855
+00:33:01,000 --> 00:33:02,000
+the pleats
+
+856
+00:33:02,000 --> 00:33:03,000
+formed
+
+857
+00:33:03,000 --> 00:33:04,000
+by this board
+
+858
+00:33:04,000 --> 00:33:05,000
+will be
+
+859
+00:33:05,000 --> 00:33:06,000
+very fine
+
+860
+00:33:06,000 --> 00:33:07,000
+when you
+
+861
+00:33:07,000 --> 00:33:08,000
+look at
+
+862
+00:33:08,000 --> 00:33:09,000
+the pleats
+
+863
+00:33:09,000 --> 00:33:10,000
+formed
+
+864
+00:33:10,000 --> 00:33:11,000
+by the first one.
+
+865
+00:33:11,000 --> 00:33:12,000
+The reason is
+
+866
+00:33:12,000 --> 00:33:13,000
+because you put
+
+867
+00:33:13,000 --> 00:33:14,000
+too much fabric
+
+868
+00:33:14,000 --> 00:33:15,000
+here,
+
+869
+00:33:15,000 --> 00:33:16,000
+the pleats
+
+870
+00:33:16,000 --> 00:33:17,000
+will be
+
+871
+00:33:17,000 --> 00:33:18,000
+too thin
+
+872
+00:33:18,000 --> 00:33:19,000
+when you
+
+873
+00:33:19,000 --> 00:33:20,000
+put
+
+874
+00:33:20,000 --> 00:33:21,000
+too much fabric
+
+875
+00:33:21,000 --> 00:33:22,000
+on it.
+
+876
+00:33:22,000 --> 00:33:23,000
+For example,
+
+877
+00:33:23,000 --> 00:33:24,000
+the middle
+
+878
+00:33:24,000 --> 00:33:25,000
+row
+
+879
+00:33:25,000 --> 00:33:26,000
+you can see
+
+880
+00:33:26,000 --> 00:33:27,000
+that
+
+881
+00:33:27,000 --> 00:33:28,000
+its shape
+
+882
+00:33:28,000 --> 00:33:29,000
+is a little
+
+883
+00:33:29,000 --> 00:33:30,000
+different
+
+884
+00:33:30,000 --> 00:33:31,000
+from the
+
+885
+00:33:31,000 --> 00:33:32,000
+bottom row.
+
+886
+00:33:32,000 --> 00:33:33,000
+When we
+
+887
+00:33:33,000 --> 00:33:34,000
+start the
+
+888
+00:33:34,000 --> 00:33:35,000
+simulation,
+
+889
+00:33:35,000 --> 00:33:36,000
+we will see
+
+890
+00:33:36,000 --> 00:33:37,000
+that
+
+891
+00:33:37,000 --> 00:33:38,000
+the pleats
+
+892
+00:33:38,000 --> 00:33:39,000
+below
+
+893
+00:33:39,000 --> 00:33:40,000
+have a
+
+894
+00:33:40,000 --> 00:33:41,000
+clear
+
+895
+00:33:41,000 --> 00:33:42,000
+difference.
+
+896
+00:33:42,000 --> 00:33:43,000
+Where is the
+
+897
+00:33:43,000 --> 00:33:44,000
+difference?
+
+898
+00:33:44,000 --> 00:33:45,000
+The length
+
+899
+00:33:45,000 --> 00:33:46,000
+of the
+
+900
+00:33:46,000 --> 00:33:47,000
+pleats
+
+901
+00:33:47,000 --> 00:33:48,000
+below
+
+902
+00:33:48,000 --> 00:33:49,000
+is
+
+903
+00:33:49,000 --> 00:33:50,000
+618
+
+904
+00:33:50,000 --> 00:33:51,000
+and
+
+905
+00:33:51,000 --> 00:33:52,000
+the length
+
+906
+00:33:52,000 --> 00:33:53,000
+of the
+
+907
+00:33:53,000 --> 00:33:54,000
+bottom
+
+908
+00:33:54,000 --> 00:33:55,000
+is
+
+909
+00:33:55,000 --> 00:33:56,000
+600.
+
+910
+00:33:56,000 --> 00:33:57,000
+The length
+
+911
+00:33:57,000 --> 00:33:58,000
+of the
+
+912
+00:33:58,000 --> 00:33:59,000
+bottom
+
+913
+00:33:59,000 --> 00:34:00,000
+is
+
+914
+00:34:00,000 --> 00:34:01,000
+the same
+
+915
+00:34:01,000 --> 00:34:02,000
+but
+
+916
+00:34:02,000 --> 00:34:03,000
+the shape
+
+917
+00:34:03,000 --> 00:34:04,000
+is
+
+918
+00:34:04,000 --> 00:34:05,000
+very
+
+919
+00:34:05,000 --> 00:34:06,000
+different.
+
+920
+00:34:06,000 --> 00:34:07,000
+The reason is
+
+921
+00:34:07,000 --> 00:34:08,000
+that
+
+922
+00:34:08,000 --> 00:34:09,000
+the top
+
+923
+00:34:09,000 --> 00:34:10,000
+is
+
+924
+00:34:10,000 --> 00:34:11,000
+a fan
+
+925
+00:34:11,000 --> 00:34:12,000
+pleat
+
+926
+00:34:12,000 --> 00:34:13,000
+and
+
+927
+00:34:13,000 --> 00:34:14,000
+the bottom
+
+928
+00:34:14,000 --> 00:34:15,000
+is a
+
+929
+00:34:15,000 --> 00:34:16,000
+flat
+
+930
+00:34:16,000 --> 00:34:17,000
+pleat.
+
+931
+00:34:17,000 --> 00:34:18,000
+The
+
+932
+00:34:18,000 --> 00:34:19,000
+seam
+
+933
+00:34:19,000 --> 00:34:20,000
+between
+
+934
+00:34:20,000 --> 00:34:21,000
+the
+
+935
+00:34:21,000 --> 00:34:22,000
+two
+
+936
+00:34:22,000 --> 00:34:23,000
+pleats
+
+937
+00:34:23,000 --> 00:34:24,000
+is very
+
+938
+00:34:24,000 --> 00:34:25,000
+flat.
+
+939
+00:34:25,000 --> 00:34:26,000
+But the
+
+940
+00:34:26,000 --> 00:34:27,000
+bottom
+
+941
+00:34:27,000 --> 00:34:28,000
+pleat
+
+942
+00:34:28,000 --> 00:34:29,000
+is
+
+943
+00:34:29,000 --> 00:34:30,000
+rectangular
+
+944
+00:34:30,000 --> 00:34:31,000
+and
+
+945
+00:34:31,000 --> 00:34:32,000
+the
+
+946
+00:34:32,000 --> 00:34:33,000
+top
+
+947
+00:34:33,000 --> 00:34:34,000
+pleat
+
+948
+00:34:34,000 --> 00:34:35,000
+looks
+
+949
+00:34:35,000 --> 00:34:36,000
+softer
+
+950
+00:34:36,000 --> 00:34:37,000
+and
+
+951
+00:34:37,000 --> 00:34:38,000
+more
+
+952
+00:34:38,000 --> 00:34:39,000
+regular.
+
+953
+00:34:39,000 --> 00:34:40,000
+And
+
+954
+00:34:40,000 --> 00:34:41,000
+if we
+
+955
+00:34:41,000 --> 00:34:42,000
+look
+
+956
+00:34:42,000 --> 00:34:43,000
+at the
+
+957
+00:34:43,000 --> 00:34:44,000
+pleats
+
+958
+00:34:44,000 --> 00:34:45,000
+below,
+
+959
+00:34:45,000 --> 00:34:46,000
+they are
+
+960
+00:34:46,000 --> 00:34:47,000
+a little
+
+961
+00:34:47,000 --> 00:34:48,000
+smaller.
+
+962
+00:34:48,000 --> 00:34:49,000
+The reason is
+
+963
+00:34:49,000 --> 00:34:50,000
+because
+
+964
+00:34:50,000 --> 00:34:51,000
+the top
+
+965
+00:34:51,000 --> 00:34:52,000
+pleats
+
+966
+00:34:52,000 --> 00:34:53,000
+I will
+
+967
+00:34:53,000 --> 00:34:54,000
+show you
+
+968
+00:34:54,000 --> 00:34:55,000
+later.
+
+969
+00:34:55,000 --> 00:34:56,000
+When
+
+970
+00:34:56,000 --> 00:34:57,000
+you
+
+971
+00:34:57,000 --> 00:34:58,000
+sew
+
+972
+00:34:58,000 --> 00:34:59,000
+these
+
+973
+00:34:59,000 --> 00:35:00,000
+pleats
+
+974
+00:35:00,000 --> 00:35:01,000
+how
+
+975
+00:35:01,000 --> 00:35:02,000
+different
+
+976
+00:35:02,000 --> 00:35:03,000
+are
+
+977
+00:35:03,000 --> 00:35:04,000
+the
+
+978
+00:35:04,000 --> 00:35:05,000
+length
+
+979
+00:35:05,000 --> 00:35:06,000
+of
+
+980
+00:35:06,000 --> 00:35:07,000
+the
+
+981
+00:35:07,000 --> 00:35:08,000
+pleats
+
+982
+00:35:08,000 --> 00:35:09,000
+when
+
+983
+00:35:09,000 --> 00:35:10,000
+they
+
+984
+00:35:10,000 --> 00:35:11,000
+are
+
+985
+00:35:11,000 --> 00:35:12,000
+folded.
+
+986
+00:35:12,000 --> 00:35:13,000
+When we
+
+987
+00:35:13,000 --> 00:35:14,000
+start
+
+988
+00:35:14,000 --> 00:35:15,000
+to
+
+989
+00:35:15,000 --> 00:35:16,000
+simulate,
+
+990
+00:35:16,000 --> 00:35:17,000
+we will
+
+991
+00:35:17,000 --> 00:35:18,000
+see that
+
+992
+00:35:18,000 --> 00:35:19,000
+these
+
+993
+00:35:19,000 --> 00:35:20,000
+pleats
+
+994
+00:35:20,000 --> 00:35:21,000
+and
+
+995
+00:35:21,000 --> 00:35:22,000
+the
+
+996
+00:35:22,000 --> 00:35:23,000
+top
+
+997
+00:35:23,000 --> 00:35:24,000
+pleats
+
+998
+00:35:24,000 --> 00:35:25,000
+are
+
+999
+00:35:25,000 --> 00:35:26,000
+the same length.
+
+1000
+00:35:26,000 --> 00:35:27,000
+But
+
+1001
+00:35:27,000 --> 00:35:28,000
+we can see that
+
+1002
+00:35:28,000 --> 00:35:29,000
+the pleats
+
+1003
+00:35:29,000 --> 00:35:30,000
+on the left
+
+1004
+00:35:30,000 --> 00:35:31,000
+have only
+
+1005
+00:35:31,000 --> 00:35:32,000
+one-fourth
+
+1006
+00:35:32,000 --> 00:35:33,000
+of the
+
+1007
+00:35:33,000 --> 00:35:34,000
+pleats.
+
+1008
+00:35:34,000 --> 00:35:35,000
+The
+
+1009
+00:35:35,000 --> 00:35:36,000
+last
+
+1010
+00:35:36,000 --> 00:35:37,000
+one
+
+1011
+00:35:37,000 --> 00:35:38,000
+is
+
+1012
+00:35:38,000 --> 00:35:39,000
+almost
+
+1013
+00:35:39,000 --> 00:35:40,000
+one
+
+1014
+00:35:40,000 --> 00:35:41,000
+and
+
+1015
+00:35:41,000 --> 00:35:42,000
+the
+
+1016
+00:35:42,000 --> 00:35:43,000
+last one
+
+1017
+00:35:43,000 --> 00:35:44,000
+is
+
+1018
+00:35:44,000 --> 00:35:45,000
+almost
+
+1019
+00:35:45,000 --> 00:35:46,000
+one-fourth
+
+1020
+00:35:46,000 --> 00:35:47,000
+of the
+
+1021
+00:35:47,000 --> 00:35:48,000
+pleats.
+
+1022
+00:35:48,000 --> 00:35:49,000
+When
+
+1023
+00:35:49,000 --> 00:35:50,000
+you
+
+1024
+00:35:50,000 --> 00:35:51,000
+sew
+
+1025
+00:35:51,000 --> 00:35:52,000
+these
+
+1026
+00:35:52,000 --> 00:35:53,000
+pleats
+
+1027
+00:35:53,000 --> 00:35:54,000
+on
+
+1028
+00:35:54,000 --> 00:35:55,000
+the
+
+1029
+00:35:55,000 --> 00:35:56,000
+top
+
+1030
+00:35:56,000 --> 00:35:57,000
+of
+
+1031
+00:35:57,000 --> 00:35:58,000
+the
+
+1032
+00:35:58,000 --> 00:35:59,000
+top
+
+1033
+00:35:59,000 --> 00:36:00,000
+of
+
+1034
+00:36:00,000 --> 00:36:01,000
+the
+
+1035
+00:36:01,000 --> 00:36:02,000
+top
+
+1036
+00:36:02,000 --> 00:36:03,000
+of
+
+1037
+00:36:03,000 --> 00:36:04,000
+the
+
+1038
+00:36:04,000 --> 00:36:05,000
+top
+
+1039
+00:36:05,000 --> 00:36:06,000
+of
+
+1040
+00:36:06,000 --> 00:36:07,000
+the
+
+1041
+00:36:07,000 --> 00:36:08,000
+top
+
+1042
+00:36:08,000 --> 00:36:09,000
+of
+
+1043
+00:36:09,000 --> 00:36:10,239
+the top
+
+1044
+00:36:10,239 --> 00:36:11,079
+of the
+
+1045
+00:36:11,079 --> 00:36:11,360
+top
+
+1046
+00:36:11,360 --> 00:36:11,840
+of the
+
+1047
+00:36:11,840 --> 00:36:12,159
+top
+
+1048
+00:36:12,159 --> 00:36:12,599
+as
+
+1049
+00:36:12,599 --> 00:36:13,000
+the
+
+1050
+00:36:13,000 --> 00:36:14,639
+breasts
+
+1051
+00:36:14,639 --> 00:36:15,679
+the
+
+1052
+00:36:15,679 --> 00:36:18,079
+overlap
+
+1053
+00:36:18,079 --> 00:36:19,079
+both
+
+1054
+00:36:19,079 --> 00:36:20,079
+viewed
+
+1055
+00:36:20,079 --> 00:36:21,000
+by
+
+1056
+00:36:21,000 --> 00:36:21,480
+the
+
+1057
+00:36:21,480 --> 00:36:22,400
+pied
+
+1058
+00:36:22,400 --> 00:36:23,119
+和
+
+1059
+00:36:23,119 --> 00:36:24,000
+wide
+
+1060
+00:36:24,000 --> 00:36:24,880
+and
+
+1061
+00:36:24,880 --> 00:36:27,380
+wide
+
+1062
+00:36:27,380 --> 00:36:28,719
+waist
+
+1063
+00:36:28,719 --> 00:36:29,320
+and
+
+1064
+00:36:29,320 --> 00:36:30,159
+depth
+
+1065
+00:36:30,159 --> 00:36:31,019
+you
+
+1066
+00:36:31,019 --> 00:36:32,000
+weight
+
+1067
+00:36:32,000 --> 00:36:33,639
+followed
+
+1068
+00:36:33,639 --> 00:36:34,619
+by
+
+1069
+00:36:34,619 --> 00:36:35,199
+the
+
+1070
+00:36:35,199 --> 00:36:35,800
+width
+
+1071
+00:36:35,800 --> 00:36:36,639
+and
+
+1072
+00:36:36,639 --> 00:36:37,719
+weight
+
+1073
+00:36:37,719 --> 00:36:38,239
+of
+
+1074
+00:36:38,239 --> 00:36:38,860
+a
+
+1075
+00:36:38,860 --> 00:36:43,860
+When the size is small and there is a lot of volume, the panel is very large.
+
+1076
+00:36:44,860 --> 00:36:49,860
+In addition, when we are doing such an effect,
+
+1077
+00:36:49,860 --> 00:36:53,860
+why do we choose a spiral panel?
+
+1078
+00:36:53,860 --> 00:36:57,860
+In fact, this panel is not a triangular panel,
+
+1079
+00:36:57,860 --> 00:37:00,860
+it is a spiral panel.
+
+1080
+00:37:00,860 --> 00:37:02,860
+Why is it a spiral panel?
+
+1081
+00:37:02,860 --> 00:37:10,860
+Because a spiral panel allows us to get the largest area.
+
+1082
+00:37:10,860 --> 00:37:13,860
+Because as we can see,
+
+1083
+00:37:13,860 --> 00:37:16,860
+when we take a whole surface,
+
+1084
+00:37:16,860 --> 00:37:19,860
+the fold here is the most foldable.
+
+1085
+00:37:19,860 --> 00:37:21,860
+So when we make something,
+
+1086
+00:37:21,860 --> 00:37:26,860
+for example, we want to add a fold of fabric to a diagonal,
+
+1087
+00:37:26,860 --> 00:37:30,860
+we can make a spiral panel.
+
+1088
+00:37:31,860 --> 00:37:32,860
+And we can see
+
+1089
+00:37:32,860 --> 00:37:36,860
+that it gradually becomes narrower from a very wide panel.
+
+1090
+00:37:39,860 --> 00:37:41,860
+Similarly, we can also see that
+
+1091
+00:37:41,860 --> 00:37:44,860
+if we want to make some more floating bottom panels,
+
+1092
+00:37:44,860 --> 00:37:46,860
+we need to expand this panel.
+
+1093
+00:37:46,860 --> 00:37:48,860
+How to expand it?
+
+1094
+00:37:48,860 --> 00:37:51,860
+There is a tool in our 2D window.
+
+1095
+00:37:51,860 --> 00:37:53,860
+Do you know?
+
+1096
+00:37:53,860 --> 00:37:55,860
+There is an extension tool here.
+
+1097
+00:37:55,860 --> 00:37:58,860
+When we choose the extension tool,
+
+1098
+00:37:58,860 --> 00:38:05,860
+for example, we now have a panel,
+
+1099
+00:38:05,860 --> 00:38:10,860
+and then we can use the extension tool
+
+1100
+00:38:10,860 --> 00:38:13,860
+to select the edge we want to use,
+
+1101
+00:38:13,860 --> 00:38:15,860
+and then select a surface.
+
+1102
+00:38:15,860 --> 00:38:19,860
+We can extend this panel.
+
+1103
+00:38:19,860 --> 00:38:21,860
+When we extend it,
+
+1104
+00:38:21,860 --> 00:38:25,860
+we can see that it will form a circle like the left side of us.
+
+1105
+00:38:25,860 --> 00:38:27,860
+This makes it easy for us to keep this line above us,
+
+1106
+00:38:27,860 --> 00:38:29,860
+and when this line is not moving above us,
+
+1107
+00:38:29,860 --> 00:38:31,860
+we can make the amount below it as much as possible.
+
+1108
+00:38:31,860 --> 00:38:32,860
+In this way,
+
+1109
+00:38:32,860 --> 00:38:34,860
+when we usually make some,
+
+1110
+00:38:34,860 --> 00:38:35,860
+for example,
+
+1111
+00:38:35,860 --> 00:38:37,860
+when we want to make some bubble sleeves,
+
+1112
+00:38:37,860 --> 00:38:39,860
+or when we want to make some lantern sleeves,
+
+1113
+00:38:39,860 --> 00:38:40,860
+we can use this function.
+
+1114
+00:38:40,860 --> 00:38:43,860
+Or when we want to make some dresses,
+
+1115
+00:38:43,860 --> 00:38:45,860
+we can use this function.
+
+1116
+00:38:45,860 --> 00:38:46,860
+Then, I will introduce you to
+

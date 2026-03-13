@@ -1,0 +1,1028 @@
+1
+00:00:00,000 --> 00:00:12,000
+Hello everyone, this video is for you to explain how to make a self-designed cloth zipper
+
+2
+00:00:12,000 --> 00:00:15,000
+First of all, we open the window of the drawer
+
+3
+00:00:15,000 --> 00:00:21,000
+Insert, we need to make a OBJ component of the zipper
+
+4
+00:00:21,000 --> 00:00:24,000
+Then we find our zipper on the component side
+
+5
+00:00:24,000 --> 00:00:27,000
+Then find our zipper inside
+
+6
+00:00:27,000 --> 00:00:32,000
+Double click to open, we can see that there is an OBJ file
+
+7
+00:00:32,000 --> 00:00:35,000
+Find the zipper you want to use
+
+8
+00:00:35,000 --> 00:00:39,000
+Then double-click to add it to our window
+
+9
+00:00:39,000 --> 00:00:46,000
+Select the component type
+
+10
+00:00:46,000 --> 00:00:48,000
+Then the unit is default to mm
+
+11
+00:00:48,000 --> 00:00:50,000
+We adjust it to mm here
+
+12
+00:00:50,000 --> 00:00:56,000
+In this case, the entire zipper is 10 times the original size
+
+13
+00:00:56,000 --> 00:00:57,000
+It is useful for packaging
+
+14
+00:00:57,000 --> 00:01:00,000
+Then click OK
+
+15
+00:01:00,000 --> 00:01:05,000
+After adding it in, we close the window of the drawer first
+
+16
+00:01:05,000 --> 00:01:10,000
+Then see this zipper is now added in
+
+17
+00:01:10,000 --> 00:01:12,000
+You can see that the zipper is added in
+
+18
+00:01:12,000 --> 00:01:14,000
+It's in our 3D window
+
+19
+00:01:14,000 --> 00:01:17,000
+The position of the coordinate point
+
+20
+00:01:17,000 --> 00:01:20,000
+Then we have to self-define the zipper
+
+21
+00:01:20,000 --> 00:01:22,000
+The self-defining position
+
+22
+00:01:22,000 --> 00:01:24,000
+It is needed to be in the position of the zipper
+
+23
+00:01:24,000 --> 00:01:26,000
+To the position of the coordinate point
+
+24
+00:01:26,000 --> 00:01:28,000
+So that its self-defined position
+
+25
+00:01:28,000 --> 00:01:30,000
+Can be correctly added to the zipper
+
+26
+00:01:30,000 --> 00:01:33,000
+So we can align it first
+
+27
+00:01:33,000 --> 00:01:36,000
+It will be more convenient when it falls out
+
+28
+00:01:36,000 --> 00:01:39,000
+No need to adjust anymore
+
+29
+00:01:39,000 --> 00:01:41,000
+You can come down a little more
+
+30
+00:01:41,000 --> 00:01:43,000
+Leave some space for it here
+
+31
+00:01:43,000 --> 00:01:47,000
+You can see that now our entire zipper is lower than our ground
+
+32
+00:01:47,000 --> 00:01:50,000
+If we want to simulate a plate below the ground
+
+33
+00:01:50,000 --> 00:01:53,000
+We can use this simulation attribute of the 3D window
+
+34
+00:01:53,000 --> 00:01:55,000
+In the blank of the 3D window
+
+35
+00:01:55,000 --> 00:01:57,000
+Open the right arrow in the blank
+
+36
+00:01:57,000 --> 00:02:01,000
+Then click on this little triangle on the ground
+
+37
+00:02:01,000 --> 00:02:03,000
+Close this conflict
+
+38
+00:02:03,000 --> 00:02:06,000
+So we can simulate it normally on the ground
+
+39
+00:02:06,000 --> 00:02:08,000
+Then our component
+
+40
+00:02:08,000 --> 00:02:10,000
+You also need to pay attention
+
+41
+00:02:10,000 --> 00:02:12,000
+Need to freeze it
+
+42
+00:02:12,000 --> 00:02:16,000
+If it is frozen, it will not move in this position
+
+43
+00:02:16,000 --> 00:02:17,000
+For our zipper
+
+44
+00:02:17,000 --> 00:02:20,000
+If you want to change its size
+
+45
+00:02:20,000 --> 00:02:23,000
+We can also select the component in the object window
+
+46
+00:02:23,000 --> 00:02:25,000
+Then select this zipper after
+
+47
+00:02:25,000 --> 00:02:27,000
+In the position of the specifications in the attribute editor
+
+48
+00:02:27,000 --> 00:02:29,000
+To change its size
+
+49
+00:02:29,000 --> 00:02:31,000
+For example, I want it
+
+50
+00:02:31,000 --> 00:02:33,000
+The direction of the Y-axis becomes shorter
+
+51
+00:02:33,000 --> 00:02:36,000
+Then I unlock this fixed ratio
+
+52
+00:02:36,000 --> 00:02:40,000
+Then adjust it to a smaller value here
+
+53
+00:02:40,000 --> 00:02:46,000
+Then I put its position back again
+
+54
+00:02:46,000 --> 00:02:49,000
+So we can do this for the size of the zipper
+
+55
+00:02:49,000 --> 00:02:51,000
+Self-defined change
+
+56
+00:02:51,000 --> 00:02:58,000
+We now come to create a cloth plate on the zipper
+
+57
+00:02:58,000 --> 00:03:01,000
+Then first of all
+
+58
+00:03:01,000 --> 00:03:03,000
+We choose the shape tool
+
+59
+00:03:03,000 --> 00:03:07,000
+Then click in the 2D window
+
+60
+00:03:07,000 --> 00:03:09,000
+Then this width
+
+61
+00:03:09,000 --> 00:03:13,000
+It's a little bit narrower than the top of this zipper
+
+62
+00:03:13,000 --> 00:03:15,000
+Let's take a look at the width of this zipper
+
+63
+00:03:15,000 --> 00:03:16,000
+Is 60
+
+64
+00:03:16,000 --> 00:03:19,000
+So let's create a 40 here
+
+65
+00:03:19,000 --> 00:03:26,000
+Then set the height to 200
+
+66
+00:03:26,000 --> 00:03:29,000
+Click to confirm
+
+67
+00:03:29,000 --> 00:03:32,000
+Then in the 3D window
+
+68
+00:03:32,000 --> 00:03:34,000
+We move it through this positioning ball
+
+69
+00:03:34,000 --> 00:03:37,000
+To the position near our zipper
+
+70
+00:03:37,000 --> 00:03:40,000
+What I choose here is the positioning ball of the world coordinate
+
+71
+00:03:40,000 --> 00:03:42,000
+You can switch here at the coordinate
+
+72
+00:03:42,000 --> 00:03:43,000
+In this case
+
+73
+00:03:43,000 --> 00:03:45,000
+No matter which view we switch
+
+74
+00:03:45,000 --> 00:03:48,000
+The position of this coordinate will not change
+
+75
+00:03:49,000 --> 00:03:52,000
+Then we can look at it in a specific perspective
+
+76
+00:04:04,000 --> 00:04:06,000
+Put it in the same position
+
+77
+00:04:06,000 --> 00:04:09,000
+We are going to cut the dragon layer
+
+78
+00:04:09,000 --> 00:04:16,000
+The inside of the dragon layer is easy to put aside
+
+79
+00:04:16,000 --> 00:04:17,000
+In the 3D window
+
+80
+00:04:17,000 --> 00:04:18,000
+Divide it into two parts
+
+81
+00:04:18,000 --> 00:04:23,000
+Then we switch to the editor sewing line tool
+
+82
+00:04:23,000 --> 00:04:28,000
+We only keep the sewing line of the upper and lower ends
+
+83
+00:04:28,000 --> 00:04:33,000
+Then change the particle diameter of the sheet to 5
+
+84
+00:04:33,000 --> 00:04:38,000
+The conflict thickness is changed to 1
+
+85
+00:04:38,000 --> 00:04:41,000
+Then turn on the simulation
+
+86
+00:04:41,000 --> 00:04:46,000
+You can see that this sheet is divided into two parts
+
+87
+00:04:46,000 --> 00:04:50,000
+You can see that this sheet is naturally simulated on the sheet
+
+88
+00:04:54,000 --> 00:04:58,000
+Now I need to make it more flat
+
+89
+00:04:58,000 --> 00:05:00,000
+That can be in this position
+
+90
+00:05:00,000 --> 00:05:02,000
+For example, add a sewing line here
+
+91
+00:05:02,000 --> 00:05:04,000
+We click on the 3D window
+
+92
+00:05:04,000 --> 00:05:06,000
+There is a small blue dot here
+
+93
+00:05:06,000 --> 00:05:09,000
+Then we go to create an internal multidirectional line
+
+94
+00:05:09,000 --> 00:05:11,000
+Near the small blue dot
+
+95
+00:05:13,000 --> 00:05:15,000
+Then create a sewing line
+
+96
+00:05:15,000 --> 00:05:16,000
+Then create a sewing line
+
+97
+00:05:16,000 --> 00:05:19,000
+Let's sew up
+
+98
+00:05:19,000 --> 00:05:22,000
+We also add a sewing line here
+
+99
+00:05:22,000 --> 00:05:25,000
+Select our editor sheet tool
+
+100
+00:05:25,000 --> 00:05:26,000
+Click on the Z key
+
+101
+00:05:26,000 --> 00:05:29,000
+Then right-click to add to the outside of the sheet
+
+102
+00:05:29,000 --> 00:05:31,000
+Cut this line
+
+103
+00:05:31,000 --> 00:05:33,000
+We use the sewing line tool directly
+
+104
+00:05:33,000 --> 00:05:36,000
+Sew this section together with this section
+
+105
+00:05:36,000 --> 00:05:38,000
+After sewing
+
+106
+00:05:38,000 --> 00:05:42,000
+Remember to change these two sewing lines to overlays
+
+107
+00:05:42,000 --> 00:05:44,000
+Simulate again
+
+108
+00:05:44,000 --> 00:05:46,000
+That's it
+
+109
+00:05:46,000 --> 00:05:49,000
+If we need to edit this sheet
+
+110
+00:05:49,000 --> 00:05:53,000
+For example, I can stretch it a little longer at the bottom
+
+111
+00:05:53,000 --> 00:05:55,000
+Stretch another 3mm
+
+112
+00:05:55,000 --> 00:05:58,000
+After simulation, we find that there is a conflict in the sheet
+
+113
+00:05:58,000 --> 00:06:00,000
+Return to the simulation
+
+114
+00:06:00,000 --> 00:06:02,000
+Change to the texture surface display
+
+115
+00:06:04,000 --> 00:06:07,000
+Then this sheet should be in front of this sheet
+
+116
+00:06:07,000 --> 00:06:10,000
+Then we can use the setting layer tool
+
+117
+00:06:10,000 --> 00:06:12,000
+Set layers for two sheets
+
+118
+00:06:12,000 --> 00:06:14,000
+Just simulate it
+
+119
+00:06:14,000 --> 00:06:17,000
+Then we move this corner up a little
+
+120
+00:06:17,000 --> 00:06:21,000
+Move 20
+
+121
+00:06:21,000 --> 00:06:23,000
+Make a diagonal angle design
+
+122
+00:06:23,000 --> 00:06:29,000
+After the sheet adjustment number
+
+123
+00:06:29,000 --> 00:06:32,000
+Can apply the fabric
+
+124
+00:06:32,000 --> 00:06:34,000
+Then we are in the library window
+
+125
+00:06:34,000 --> 00:06:38,000
+Find the fabric
+
+126
+00:06:38,000 --> 00:06:41,000
+I want to use a piece of fabric here
+
+127
+00:06:41,000 --> 00:06:43,000
+We can search for it
+
+128
+00:06:44,000 --> 00:06:49,000
+Directly drag the desired fabric to the original fabric
+
+129
+00:06:49,000 --> 00:06:50,000
+Cover add
+
+130
+00:06:50,000 --> 00:06:51,000
+Let it have texture
+
+131
+00:06:51,000 --> 00:06:53,000
+Then simulate
+
+132
+00:06:53,000 --> 00:06:56,000
+This piece of fabric will be stiffer
+
+133
+00:06:56,000 --> 00:07:00,000
+At this time, switch to the thick texture surface to see
+
+134
+00:07:00,000 --> 00:07:04,000
+Then we can add another sticker on top
+
+135
+00:07:04,000 --> 00:07:07,000
+We go to choose a sticker we want to add
+
+136
+00:07:07,000 --> 00:07:11,000
+Right-click to add as a sticker
+
+137
+00:07:11,000 --> 00:07:13,000
+Then put it on our 2D window panel
+
+138
+00:07:13,000 --> 00:07:16,000
+Add it to the small panel
+
+139
+00:07:16,000 --> 00:07:18,000
+This sticker is a bit big
+
+140
+00:07:18,000 --> 00:07:20,000
+We can shrink it a bit
+
+141
+00:07:29,000 --> 00:07:31,000
+That's about it
+
+142
+00:07:33,000 --> 00:07:35,000
+After this is done
+
+143
+00:07:35,000 --> 00:07:38,000
+We will export this pull out as an OBJ
+
+144
+00:07:38,000 --> 00:07:45,000
+File export OBJ
+
+145
+00:07:45,000 --> 00:07:51,000
+Find the file holder
+
+146
+00:07:51,000 --> 00:07:58,000
+Name save
+
+147
+00:07:58,000 --> 00:07:59,000
+When saving
+
+148
+00:07:59,000 --> 00:08:02,000
+We pay attention to the export options
+
+149
+00:08:02,000 --> 00:08:05,000
+Choose all the panels and stickers and accessories
+
+150
+00:08:05,000 --> 00:08:06,000
+Then multiple targets
+
+151
+00:08:06,000 --> 00:08:07,000
+Then compare here
+
+152
+00:08:07,000 --> 00:08:09,000
+Then in this proportion
+
+153
+00:08:09,000 --> 00:08:11,000
+We just used this centimeter
+
+154
+00:08:11,000 --> 00:08:13,000
+This side is also a unit unit with centimeters
+
+155
+00:08:13,000 --> 00:08:15,000
+Then here we choose to save with the file
+
+156
+00:08:15,000 --> 00:08:17,000
+Save as zip
+
+157
+00:08:19,000 --> 00:08:20,000
+This can not be hooked
+
+158
+00:08:20,000 --> 00:08:22,000
+The following three are not hooked
+
+159
+00:08:22,000 --> 00:08:23,000
+Just hook this one
+
+160
+00:08:23,000 --> 00:08:25,000
+Click to confirm
+
+161
+00:08:28,000 --> 00:08:29,000
+After confirmation
+
+162
+00:08:29,000 --> 00:08:31,000
+We come to the file holder
+
+163
+00:08:33,000 --> 00:08:35,000
+Find this zip file just saved
+
+164
+00:08:35,000 --> 00:08:37,000
+This is the zip file
+
+165
+00:08:37,000 --> 00:08:39,000
+We will decompress it
+
+166
+00:08:39,000 --> 00:08:45,000
+This is the file holder that we decompress
+
+167
+00:08:45,000 --> 00:08:47,000
+In this
+
+168
+00:08:47,000 --> 00:08:49,000
+Now we have a file
+
+169
+00:08:49,000 --> 00:08:51,000
+Save
+
+170
+00:08:51,000 --> 00:08:55,000
+Save the project file
+
+171
+00:08:55,000 --> 00:08:57,000
+If there is a follow-up change
+
+172
+00:08:57,000 --> 00:08:59,000
+Can also be changed on the original file
+
+173
+00:08:59,000 --> 00:09:01,000
+If there is a follow-up change
+
+174
+00:09:01,000 --> 00:09:03,000
+Can also be changed on the original file
+
+175
+00:09:05,000 --> 00:09:06,000
+We see here
+
+176
+00:09:06,000 --> 00:09:23,159
+If the file holder
+
+177
+00:09:23,159 --> 00:09:24,120
+maison
+
+178
+00:09:24,120 --> 00:09:25,000
+Then it won't show this
+
+179
+00:09:25,000 --> 00:09:26,000
+copy
+
+180
+00:09:26,000 --> 00:09:27,000
+This is the file holder
+
+181
+00:09:27,000 --> 00:09:29,000
+Exposed to the back side
+
+182
+00:09:29,000 --> 00:09:31,000
+We should also성
+
+183
+00:09:35,000 --> 00:09:38,600
+For the ratio, we still choose cm, pay attention here
+
+184
+00:09:38,600 --> 00:09:43,600
+If it is still 100% poured in, this slice will be very large
+
+185
+00:09:43,600 --> 00:09:46,399
+We should adjust it to 10%
+
+186
+00:09:46,399 --> 00:09:50,399
+Because we originally from mm to cm, it is 10 times magnified
+
+187
+00:09:50,399 --> 00:09:53,600
+Now we are returning from mm to mm
+
+188
+00:09:53,600 --> 00:09:56,200
+So it should be 10% of the original
+
+189
+00:09:56,200 --> 00:09:58,200
+Then this OBJ
+
+190
+00:09:58,200 --> 00:10:00,600
+Let's click on this browser button
+
+191
+00:10:00,600 --> 00:10:03,200
+Find this OBJ that does not bring slices
+
+192
+00:10:03,200 --> 00:10:04,200
+Click open
+
+193
+00:10:04,200 --> 00:10:07,800
+You can see that it is in the preview window below us
+
+194
+00:10:07,800 --> 00:10:09,800
+You can preview 360 degrees
+
+195
+00:10:09,800 --> 00:10:11,800
+Click OK
+
+196
+00:10:11,800 --> 00:10:13,800
+Then we will do this preset
+
+197
+00:10:13,800 --> 00:10:17,800
+After doing it, we now open a costume with a 3D zipper
+
+198
+00:10:21,800 --> 00:10:23,800
+Let's apply this slice
+
+199
+00:10:24,800 --> 00:10:27,800
+Then we find the position of this slice on our costume
+
+200
+00:10:29,200 --> 00:10:31,400
+We see this little triangle at the bottom
+
+201
+00:10:31,400 --> 00:10:32,400
+Click this
+
+202
+00:10:32,400 --> 00:10:34,000
+It's what we just did
+
+203
+00:10:34,000 --> 00:10:36,600
+We can change it
+
+204
+00:10:36,600 --> 00:10:40,600
+We can see that it is now on our clothes
+
+205
+00:10:40,600 --> 00:10:44,600
+If we want to edit its material
+
+206
+00:10:44,600 --> 00:10:45,600
+It is also possible
+
+207
+00:10:45,600 --> 00:10:48,600
+Select the corresponding object to edit
+
+208
+00:10:48,600 --> 00:10:52,600
+The first click is to select the entire head of the zipper and the mouth
+
+209
+00:10:52,600 --> 00:10:55,600
+The second click is to select our zipper
+
+210
+00:10:55,600 --> 00:10:57,600
+There are different elements on the zipper
+
+211
+00:10:57,600 --> 00:10:59,600
+Then we can set them separately
+
+212
+00:10:59,600 --> 00:11:01,600
+For example, I want to set our cloth bag
+
+213
+00:11:01,600 --> 00:11:03,000
+Click this cloth bag
+
+214
+00:11:03,000 --> 00:11:04,000
+The cloth bag above
+
+215
+00:11:04,000 --> 00:11:06,600
+If I want to edit this sticker of mine
+
+216
+00:11:06,600 --> 00:11:08,600
+Click the position of the sticker
+
+217
+00:11:08,600 --> 00:11:11,600
+You can replace it with other texture pictures
+
+218
+00:11:11,600 --> 00:11:12,600
+But this texture picture
+
+219
+00:11:12,600 --> 00:11:15,600
+Everyone needs to pay attention to its ratio and position
+
+220
+00:11:15,600 --> 00:11:16,600
+It is locked here
+
+221
+00:11:16,600 --> 00:11:20,600
+So if you use other pictures to replace it
+
+222
+00:11:20,600 --> 00:11:22,600
+There may be some deformations
+
+223
+00:11:22,600 --> 00:11:25,600
+But you can replace the color
+
+224
+00:11:25,600 --> 00:11:29,600
+For example, I changed this hole to another color
+
+225
+00:11:33,000 --> 00:11:36,000
+Then edit without texture
+
+226
+00:11:36,000 --> 00:11:45,000
+We can also replace it
+
+227
+00:11:45,000 --> 00:11:47,000
+And this texture picture
+
+228
+00:11:47,000 --> 00:11:52,000
+If you think it needs to be adjusted to this ratio now
+
+229
+00:11:52,000 --> 00:11:59,000
+You can change it again and adjust this ratio
+
+230
+00:11:59,000 --> 00:12:01,000
+Enlarge it 10 times and change it to 11
+
+231
+00:12:01,000 --> 00:12:02,799
+You can see that this ratio is changed
+
+232
+00:12:03,000 --> 00:12:07,000
+Of course, we also have to put our texture picture
+
+233
+00:12:07,000 --> 00:12:09,000
+This ratio is also adjusted to 11
+
+234
+00:12:09,000 --> 00:12:11,000
+So it's right
+
+235
+00:12:11,000 --> 00:12:14,000
+Then you can see the zipper we have now
+
+236
+00:12:14,000 --> 00:12:16,000
+Select again
+
+237
+00:12:16,000 --> 00:12:19,000
+You can make the strength of this texture picture
+
+238
+00:12:19,000 --> 00:12:20,000
+You can make it a little bigger
+
+239
+00:12:20,000 --> 00:12:22,000
+To increase the texture of the text
+
+240
+00:12:22,000 --> 00:12:24,000
+The ratio here is 11% a little too big
+
+241
+00:12:24,000 --> 00:12:26,000
+Adjust to 5
+
+242
+00:12:33,000 --> 00:12:41,000
+And if you want to add a layer to this layer
+
+243
+00:12:41,000 --> 00:12:43,000
+Or to make another layer
+
+244
+00:12:43,000 --> 00:12:45,000
+It is important to adjust the height of the texture picture
+
+245
+00:12:45,000 --> 00:12:48,000
+You can choose this layer
+
+246
+00:12:48,000 --> 00:12:50,000
+And then go to the top
+
+247
+00:12:50,000 --> 00:12:52,000
+It is important to save
+
+248
+00:12:52,000 --> 00:12:54,000
+Select this file
+
+249
+00:12:54,000 --> 00:12:57,000
+You can see the drawer where you want to save
+
+250
+00:12:57,000 --> 00:12:58,000
+For example
+
+251
+00:12:58,000 --> 00:13:00,000
+What I want to save is this layer
+
+252
+00:13:00,000 --> 00:13:02,000
+Click OK
+
+253
+00:13:03,000 --> 00:13:08,000
+I will switch it back to another type of puller
+
+254
+00:13:08,000 --> 00:13:13,000
+Then you can open it here
+
+255
+00:13:13,000 --> 00:13:17,000
+Find the puller we just saved
+
+256
+00:13:17,000 --> 00:13:22,000
+You can see that it is the puller just saved
+
+257
+00:13:22,000 --> 00:13:26,000
+The above is our custom puller
+

@@ -1,0 +1,784 @@
+1
+00:00:00,000 --> 00:00:09,000
+In this video, I will explain the application techniques of UV.
+
+2
+00:00:09,000 --> 00:00:13,000
+First, let's talk about what is UV.
+
+3
+00:00:13,000 --> 00:00:16,000
+UV refers to the two axes of 2D texture space.
+
+4
+00:00:16,000 --> 00:00:23,000
+The level of U and vertical, V, correspond to the x-axis and y-axis in the standard 2D sticker.
+
+5
+00:00:23,000 --> 00:00:28,000
+UV is the surface details such as the color pattern of the 3D model surface.
+
+6
+00:00:28,000 --> 00:00:32,000
+After opening and processing, it is presented in the form of a 2D image.
+
+7
+00:00:32,000 --> 00:00:40,000
+UV can tell the software how to wrap the 2D image on the surface of the 3D model.
+
+8
+00:00:40,000 --> 00:00:43,000
+For example, the model of Santa Claus in the picture.
+
+9
+00:00:43,000 --> 00:00:49,000
+On the left is the flat opening picture of the model surface and the UV picture of Santa Claus.
+
+10
+00:00:49,000 --> 00:00:57,000
+The details such as color patterns and other surface details will be displayed in the corresponding position of the 3D model.
+
+11
+00:00:57,000 --> 00:00:58,000
+When I open the UV image, I can see that the color pattern of the 3D model is in the 3D model.
+
+12
+00:00:58,000 --> 00:01:10,000
+When we finish 3D clothing and want to import it into other 3D software, we need to process the UV image to ensure that the texture of the surface material can be correctly imported into other software.
+
+13
+00:01:10,000 --> 00:01:14,000
+Next, we open a package of the project file.
+
+14
+00:01:14,000 --> 00:01:19,000
+Open the UV editor in the main menu bar of the material UV.
+
+15
+00:01:19,000 --> 00:01:27,000
+Since this package is made up of 2D flat panels, its UV image is the various panels of the 3D package.
+
+16
+00:01:27,000 --> 00:01:32,000
+We can adjust the position of the panels by moving the slider to adjust the position of the panels.
+
+17
+00:01:32,000 --> 00:01:37,000
+In the right side of the UV editor is a series of tools for UV.
+
+18
+00:01:37,000 --> 00:01:40,000
+First, we fill in the UV image.
+
+19
+00:01:40,000 --> 00:01:43,000
+Click on the automatic UV fill.
+
+20
+00:01:43,000 --> 00:01:44,000
+Open the window.
+
+21
+00:01:44,000 --> 00:01:47,000
+In the window, first look at the UV area.
+
+22
+00:01:47,000 --> 00:01:52,000
+Here, the default option is to fill in the 0, 1 area.
+
+23
+00:01:52,000 --> 00:01:53,000
+Click on the application.
+
+24
+00:01:53,000 --> 00:01:56,000
+All UVs will be displayed in the 0, 1 area.
+
+25
+00:01:56,000 --> 00:02:01,000
+That is, in the first unit area of the first line of the coordinate axis.
+
+26
+00:02:01,000 --> 00:02:06,000
+The selected area can be self-defined and selected to fill in the coordinate area.
+
+27
+00:02:06,000 --> 00:02:12,000
+Here, we can use this option to arrange the UV image of the component separately in another area.
+
+28
+00:02:12,000 --> 00:02:14,000
+Select the UV image of the component.
+
+29
+00:02:14,000 --> 00:02:17,000
+The selected area is 1, 2.
+
+30
+00:02:17,000 --> 00:02:18,000
+Click on the application.
+
+31
+00:02:18,000 --> 00:02:22,000
+This way, the UV image of the component can be filled in the 1, 2 area.
+
+32
+00:02:22,000 --> 00:02:24,000
+Select the UV again.
+
+33
+00:02:24,000 --> 00:02:28,000
+In this way, the UV image of the component can be filled in the 0, 1 area.
+
+34
+00:02:28,000 --> 00:02:31,000
+This way, you can enlarge the accessories and the UV version to a certain extent.
+
+35
+00:02:31,000 --> 00:02:34,000
+The clarity of the text is improved.
+
+36
+00:02:34,000 --> 00:02:41,000
+Because most of the 3D application software, the only UV space that can be used is 0 to 1 coordinate space.
+
+37
+00:02:41,000 --> 00:02:48,000
+In order to better integrate with most 3D software, it is recommended to fill in the 0 to 1 coordinate area.
+
+38
+00:02:48,000 --> 00:02:52,000
+In this case, all UVs need to be filled in the 0, 1 area again.
+
+39
+00:02:52,000 --> 00:02:56,000
+Next, let's talk about the meaning of these options.
+
+40
+00:02:56,000 --> 00:02:58,000
+The first one is fill in.
+
+41
+00:02:58,000 --> 00:03:01,000
+Through it, the coordinate area of the UV image can be set.
+
+42
+00:03:01,000 --> 00:03:05,000
+The value range is 0.001 to 0.999.
+
+43
+00:03:05,000 --> 00:03:09,000
+The larger the value, the greater the coordinate area between the panels.
+
+44
+00:03:09,000 --> 00:03:14,000
+For example, when I change the value to 0.050, you can see that the coordinate area of the panel UV is larger.
+
+45
+00:03:14,000 --> 00:03:17,000
+The corresponding UV image is also reduced.
+
+46
+00:03:17,000 --> 00:03:20,000
+We will change it to 0.001.
+
+47
+00:03:20,000 --> 00:03:22,000
+Next, look at the accuracy.
+
+48
+00:03:22,000 --> 00:03:25,000
+The value can be adjusted within the range of 1 to 5.
+
+49
+00:03:25,000 --> 00:03:28,000
+The larger the value, the more accurate the layout is placed.
+
+50
+00:03:28,000 --> 00:03:32,000
+To ensure the accuracy of the UV layout and more reasonable use of UV space,
+
+51
+00:03:32,000 --> 00:03:35,000
+At the same time, it also requires the appropriate calculation speed.
+
+52
+00:03:35,000 --> 00:03:38,000
+The default value is 3.
+
+53
+00:03:38,000 --> 00:03:42,000
+But when the number of panels is too many and the layout speed is slower,
+
+54
+00:03:42,000 --> 00:03:47,000
+The accuracy can be reduced to produce a quick layout result.
+
+55
+00:03:47,000 --> 00:03:49,000
+Next is the fixed ratio.
+
+56
+00:03:49,000 --> 00:03:51,000
+Due to the relative size of the UV panel,
+
+57
+00:03:51,000 --> 00:03:54,000
+The default is the same as the 2D panel.
+
+58
+00:03:54,000 --> 00:03:57,000
+The size ratio of the current size of the UV image that should be selected can be locked.
+
+59
+00:03:57,000 --> 00:04:02,000
+To maintain the ratio consistent with the 2D panel during the filling process.
+
+60
+00:04:02,000 --> 00:04:06,000
+Therefore, the fixed ratio will generally be selected.
+
+61
+00:04:06,000 --> 00:04:09,000
+If the fixed ratio is cancelled and then filled,
+
+62
+00:04:09,000 --> 00:04:12,000
+You can see that in order to increase the usage rate of UV space,
+
+63
+00:04:12,000 --> 00:04:14,000
+Some panels will be enlarged or reduced.
+
+64
+00:04:14,000 --> 00:04:18,000
+This will lead to the final 3D model.
+
+65
+00:04:18,000 --> 00:04:22,000
+There will be a difference in the degree of clarity between the different panels.
+
+66
+00:04:22,000 --> 00:04:26,000
+Ctrl plus Z returns to the previous UV layout state.
+
+67
+00:04:26,000 --> 00:04:31,000
+Restore the normal ratio of the panel or press the right button in the blank area directly.
+
+68
+00:04:31,000 --> 00:04:36,000
+Select all UVs to be rearranged to the position of the 2D panel window.
+
+69
+00:04:36,000 --> 00:04:41,000
+This will make the UV and the 2D panel layout different.
+
+70
+00:04:41,000 --> 00:04:43,000
+Select the fixed ratio.
+
+71
+00:04:43,000 --> 00:04:45,000
+The following is the rotation.
+
+72
+00:04:45,000 --> 00:04:47,000
+Select Rotate and then click Apply.
+
+73
+00:04:47,000 --> 00:04:50,000
+You can see that in order to increase the usage rate of the UV space,
+
+74
+00:04:50,000 --> 00:04:53,000
+The UV is rotated to some panels.
+
+75
+00:04:53,000 --> 00:04:56,000
+For UV images of patterns such as lines and flowers,
+
+76
+00:04:56,000 --> 00:04:59,000
+If you want to keep the pattern consistent in the number direction,
+
+77
+00:04:59,000 --> 00:05:01,000
+You don't have to select Rotate.
+
+78
+00:05:01,000 --> 00:05:04,000
+If the pattern of individual panels is not consistent in the direction,
+
+79
+00:05:04,000 --> 00:05:07,000
+You can right-click on the UV of the panel.
+
+80
+00:05:07,000 --> 00:05:12,000
+Select the UV pattern with horizontal or vertical rotation to get a consistent UV pattern.
+
+81
+00:05:12,000 --> 00:05:14,000
+The following is the optimization layout.
+
+82
+00:05:14,000 --> 00:05:17,000
+The optimization layout is a more advanced calculation method.
+
+83
+00:05:17,000 --> 00:05:20,000
+It maximizes the usage rate of UV space.
+
+84
+00:05:20,000 --> 00:05:23,000
+In order to obtain a clearer and higher quality UV layout.
+
+85
+00:05:23,000 --> 00:05:26,000
+And reduce space waste to the maximum extent.
+
+86
+00:05:26,000 --> 00:05:29,000
+This will make the final pattern as clear as possible.
+
+87
+00:05:29,000 --> 00:05:33,000
+In contrast, the optimization layout will take a longer time to calculate.
+
+88
+00:05:33,000 --> 00:05:35,000
+Here we choose the optimization layout.
+
+89
+00:05:35,000 --> 00:05:37,000
+There is one more thing to note.
+
+90
+00:05:37,000 --> 00:05:39,000
+The leather fabric used in this bag.
+
+91
+00:05:39,000 --> 00:05:43,000
+The back and sides use different materials and colors on the front and sides.
+
+92
+00:05:43,000 --> 00:05:45,000
+So how to show the pattern of the back and sides.
+
+93
+00:05:45,000 --> 00:05:48,000
+And do the UV layout together?
+
+94
+00:05:48,000 --> 00:05:51,000
+First, select the pattern of the leather fabric used in the application.
+
+95
+00:05:51,000 --> 00:05:54,000
+At the bottom of the property editor.
+
+96
+00:05:54,000 --> 00:05:56,000
+Find UV Expansion.
+
+97
+00:05:56,000 --> 00:05:58,000
+Open the back and sides.
+
+98
+00:05:58,000 --> 00:06:00,000
+Select the moving side of the pattern again.
+
+99
+00:06:00,000 --> 00:06:04,000
+You can see the UV pattern of the back and sides is displayed.
+
+100
+00:06:04,000 --> 00:06:07,000
+If the UV pattern of the back and sides is not displayed.
+
+101
+00:06:07,000 --> 00:06:10,000
+You need to check if the surface of the dense pattern is opened.
+
+102
+00:06:10,000 --> 00:06:13,000
+Come to the UV fill window.
+
+103
+00:06:13,000 --> 00:06:16,000
+After the UV fill window options are set.
+
+104
+00:06:16,000 --> 00:06:18,000
+Click on the application.
+
+105
+00:06:18,000 --> 00:06:21,000
+The UV pattern layout is completed.
+
+106
+00:06:21,000 --> 00:06:23,000
+You can apply the UV quick photo below.
+
+107
+00:06:23,000 --> 00:06:27,000
+The current UV layout is exported as a 2D image.
+
+108
+00:06:27,000 --> 00:06:32,000
+As a trial reference.
+
+109
+00:06:32,000 --> 00:06:34,000
+Next is the baking pattern.
+
+110
+00:06:34,000 --> 00:06:36,000
+It can be according to the current UV layout.
+
+111
+00:06:36,000 --> 00:06:39,000
+The corresponding pattern, line drawing, calligraphy drawing, etc.
+
+112
+00:06:39,000 --> 00:06:41,000
+The different materials are baked and stored together.
+
+113
+00:06:41,000 --> 00:06:42,000
+Before that.
+
+114
+00:06:42,000 --> 00:06:43,000
+Before that.
+
+115
+00:06:43,000 --> 00:06:47,000
+You can check all the patterns through the top left corner.
+
+116
+00:06:47,000 --> 00:06:49,000
+Open the baking pattern.
+
+117
+00:06:49,000 --> 00:06:52,000
+Set up the preservation path and size pixels.
+
+118
+00:06:52,000 --> 00:06:55,000
+The following fill pattern opening and closing.
+
+119
+00:06:55,000 --> 00:06:58,000
+You can extend the pattern to the UV edge.
+
+120
+00:06:58,000 --> 00:07:00,000
+Self-defined pixels or unlimited extension.
+
+121
+00:07:00,000 --> 00:07:02,000
+Prevent the final pattern.
+
+122
+00:07:02,000 --> 00:07:07,000
+There is a visible gap as shown in the picture below.
+
+123
+00:07:07,000 --> 00:07:10,000
+The baking pattern is moving under the UV.
+
+124
+00:07:10,000 --> 00:07:13,000
+We select the plate that needs to be moved.
+
+125
+00:07:13,000 --> 00:07:14,000
+Click on the UV move.
+
+126
+00:07:14,000 --> 00:07:17,000
+You can move the plate up and down or left and right.
+
+127
+00:07:17,000 --> 00:07:19,000
+The overall position is moved.
+
+128
+00:07:19,000 --> 00:07:21,000
+At the bottom distance here.
+
+129
+00:07:21,000 --> 00:07:24,000
+You can enter the unit distance that is moved once per unit.
+
+130
+00:07:24,000 --> 00:07:25,000
+Here is 1.
+
+131
+00:07:25,000 --> 00:07:28,000
+Move a unit area every time.
+
+132
+00:07:28,000 --> 00:07:29,000
+Enter 0.5.
+
+133
+00:07:29,000 --> 00:07:33,000
+Move 0.5 units area every time.
+
+134
+00:07:33,000 --> 00:07:37,000
+The tool is generally used to adjust the position of the overall UV pattern.
+
+135
+00:07:37,000 --> 00:07:39,000
+After processing the UV pattern of the 3D bag.
+
+136
+00:07:39,000 --> 00:07:42,000
+Move it to another 3D format.
+
+137
+00:07:42,000 --> 00:07:46,000
+This process will also move the UV pattern of the file out.
+
+138
+00:07:46,000 --> 00:07:51,000
+For example, this time I need to move the file to the FBX format.
+
+139
+00:07:51,000 --> 00:07:55,000
+In the window of the spring, I chose a single target.
+
+140
+00:07:55,000 --> 00:08:00,000
+A single target can merge all the plates into a complete grid and move out.
+
+141
+00:08:00,000 --> 00:08:06,000
+And multiple targets is to move each plate out as a separate grid.
+
+142
+00:08:06,000 --> 00:08:08,000
+Then select the one after moving out.
+
+143
+00:08:09,000 --> 00:08:11,000
+The thin one only outputs the flat grid.
+
+144
+00:08:11,000 --> 00:08:13,000
+The thick one will contain the thickness of the fabric.
+
+145
+00:08:13,000 --> 00:08:16,000
+So here I choose the thick one.
+
+146
+00:08:16,000 --> 00:08:19,000
+Next, make sure to click on the unified UV coordinates.
+
+147
+00:08:19,000 --> 00:08:25,000
+In this way, all the UV information of the 3D bag can be combined into a single and orderly UV sticker.
+
+148
+00:08:25,000 --> 00:08:30,000
+Ensure that the whole bag's pattern is correct and even.
+
+149
+00:08:30,000 --> 00:08:33,000
+After clicking on the unified UV coordinates, there will be some options below.
+
+150
+00:08:33,000 --> 00:08:36,000
+Let's take a look at them separately.
+
+151
+00:08:36,000 --> 00:08:37,000
+The first one is the picture size.
+
+152
+00:08:37,000 --> 00:08:38,000
+It can be controlled.
+
+153
+00:08:38,000 --> 00:08:40,000
+It can control the size of the UV pattern.
+
+154
+00:08:40,000 --> 00:08:43,000
+Generally, the number of inputs is 1024.
+
+155
+00:08:43,000 --> 00:08:48,000
+The larger the number, the clearer the FBX pattern will be obtained.
+
+156
+00:08:48,000 --> 00:08:52,000
+But the corresponding model size will also be larger.
+
+157
+00:08:52,000 --> 00:08:55,000
+The second one is the fill-in pattern.
+
+158
+00:08:55,000 --> 00:08:56,000
+The default is 5 pixels.
+
+159
+00:08:56,000 --> 00:08:58,000
+What does it do?
+
+160
+00:08:58,000 --> 00:09:00,000
+Let's take a look at the following example.
+
+161
+00:09:00,000 --> 00:09:04,000
+In the new colo program, we import an FBX.
+
+162
+00:09:04,000 --> 00:09:07,000
+The fill-in pattern of this FBX is 0.
+
+163
+00:09:07,000 --> 00:09:13,000
+This means that the fill-in pattern does not extend beyond the edge.
+
+164
+00:09:13,000 --> 00:09:17,000
+We can see that the edge plus the part of the partition will appear illiterate.
+
+165
+00:09:17,000 --> 00:09:20,000
+This is because the printed version is thick.
+
+166
+00:09:20,000 --> 00:09:26,000
+According to the concept of UV.
+
+167
+00:09:26,000 --> 00:09:31,000
+The fill-in pattern of the partition is to extend to a certain distance,
+
+168
+00:09:31,000 --> 00:09:35,000
+in order to ensure that the part with a certain thickness is fully wrapped around the fill-in pattern.
+
+169
+00:09:35,000 --> 00:09:38,000
+Here I set the fill texture to 8
+
+170
+00:09:38,000 --> 00:09:42,000
+It means that the edge of the UV image will have 8 pixel texture fill
+
+171
+00:09:42,000 --> 00:09:47,000
+This can ensure that the entire model is covered with texture
+
+172
+00:09:47,000 --> 00:09:50,000
+Next we will import another FBX
+
+173
+00:09:50,000 --> 00:09:54,000
+This FBX is set to 8 pixel texture fill
+
+174
+00:09:54,000 --> 00:09:58,000
+After enlarging, you can see that the edge is normal
+
+175
+00:09:58,000 --> 00:10:00,000
+Note
+
+176
+00:10:00,000 --> 00:10:04,000
+In order to prevent the UVs from overlapping after the texture fill
+
+177
+00:10:04,000 --> 00:10:09,000
+It is recommended to slightly enlarge the edge of the UV image when doing UV arrangement
+
+178
+00:10:09,000 --> 00:10:12,000
+For example, input 0.005 here in the fill
+
+179
+00:10:12,000 --> 00:10:15,000
+So that there will be a little more space between the sheets
+
+180
+00:10:15,000 --> 00:10:19,000
+Provide sufficient space for the fill texture fill
+
+181
+00:10:19,000 --> 00:10:21,000
+After setting the fill texture fill
+
+182
+00:10:21,000 --> 00:10:25,000
+Select the type of sticker that needs to be saved below
+
+183
+00:10:25,000 --> 00:10:29,000
+Click to confirm that FBX has been exported
+
+184
+00:10:29,000 --> 00:10:34,000
+You can edit the exported FBX into other 3D software
+
+185
+00:10:34,000 --> 00:10:37,000
+Here we can edit the import
+
+186
+00:10:37,000 --> 00:10:41,000
+Due to the export model, the UV image is PNG
+
+187
+00:10:41,000 --> 00:10:44,000
+So the imported model will be a transparent effect
+
+188
+00:10:44,000 --> 00:10:49,000
+At this time, you need to open the high-quality rendering and you can check it normally
+
+189
+00:10:49,000 --> 00:10:52,000
+Its UV image can be imported into a picture software
+
+190
+00:10:52,000 --> 00:10:55,000
+Edit in PSAI
+
+191
+00:10:55,000 --> 00:10:57,000
+For example, I made a color adjustment to the UV image
+
+192
+00:10:57,000 --> 00:11:02,000
+You can apply the edited UV image to the text in this column
+
+193
+00:11:02,000 --> 00:11:03,000
+This can make the FBX
+
+194
+00:11:03,000 --> 00:11:06,000
+This can make the FBX model more colorful
+
+195
+00:11:06,000 --> 00:11:09,000
+The above is the content of UV application skills
+
+196
+00:11:09,000 --> 00:11:10,000
+Thank you for watching
+

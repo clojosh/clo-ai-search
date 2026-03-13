@@ -1,0 +1,1376 @@
+1
+00:00:00,000 --> 00:00:05,000
+In this video, I will introduce you to the key needle animation function.
+
+2
+00:00:05,000 --> 00:00:14,000
+In 2025.0, the key needle can be applied to various elements, such as colors, fabrics, panels, joints, fixed needles, and wind control devices,
+
+3
+00:00:14,000 --> 00:00:17,000
+to achieve natural transition animation at any time.
+
+4
+00:00:17,000 --> 00:00:21,000
+The original animation mode was changed to animation editor after this update,
+
+5
+00:00:21,000 --> 00:00:24,000
+which is convenient for everyone to make animation directly in the simulation mode.
+
+6
+00:00:24,000 --> 00:00:27,000
+The overall usability has also been improved.
+
+7
+00:00:27,000 --> 00:00:32,000
+Click on the animation in the top menu, then select the animation editor to open it.
+
+8
+00:00:32,000 --> 00:00:38,000
+First, let's take a look at the animation editor layout after the update, and see how to set up the key needle.
+
+9
+00:00:38,000 --> 00:00:42,000
+You can see that the tool bar at the top of the editor retains familiar options,
+
+10
+00:00:42,000 --> 00:00:46,000
+such as recording, playback, camera animation, and simulation quality.
+
+11
+00:00:46,000 --> 00:00:49,000
+In addition, the automatic key needle function has been added,
+
+12
+00:00:49,000 --> 00:00:53,000
+and other settings related to the configuration have been moved to the configuration panel on the right.
+
+13
+00:00:53,000 --> 00:00:55,000
+On the left side of the editor,
+
+14
+00:00:55,000 --> 00:00:57,000
+the animation layer list will be set to the tree structure,
+
+15
+00:00:57,000 --> 00:00:59,000
+and the animation object in the scene will be displayed.
+
+16
+00:00:59,000 --> 00:01:05,000
+When applying animation, the costume, wind controller, and flag will appear as the object layer in the top layer.
+
+17
+00:01:05,000 --> 00:01:10,000
+Click on the triangle next to each object to check the properties that can be animated.
+
+18
+00:01:10,000 --> 00:01:13,000
+These properties will be displayed as the property layer.
+
+19
+00:01:13,000 --> 00:01:17,000
+The name of the object layer cannot be edited directly in the animation editor,
+
+20
+00:01:17,000 --> 00:01:23,000
+but for some objects, you can rename them in the object window scene selection card.
+
+21
+00:01:23,000 --> 00:01:25,000
+To set up the key needle,
+
+22
+00:01:25,000 --> 00:01:28,000
+please click on the right side of the property layer to insert the key needle.
+
+23
+00:01:28,000 --> 00:01:29,000
+According to the different properties,
+
+24
+00:01:29,000 --> 00:01:32,000
+you can use the option box to start or stop using the property,
+
+25
+00:01:32,000 --> 00:01:35,000
+or enter the specific value to manually set up the key needle.
+
+26
+00:01:35,000 --> 00:01:38,000
+The key needle will be displayed as a zero-shape icon,
+
+27
+00:01:38,000 --> 00:01:39,000
+easy to identify.
+
+28
+00:01:39,000 --> 00:01:44,000
+The animation track in the middle of the screen will be adjusted to display the animation range of each object,
+
+29
+00:01:44,000 --> 00:01:47,000
+helping you to clearly control the animation time and space.
+
+30
+00:01:47,000 --> 00:01:49,000
+Animated animation based on simulation storage,
+
+31
+00:01:49,000 --> 00:01:51,000
+such as costume or software model animation,
+
+32
+00:01:51,000 --> 00:01:52,000
+will be displayed as red,
+
+33
+00:01:52,000 --> 00:01:54,000
+while key needle animation will be displayed as gray.
+
+34
+00:01:55,000 --> 00:01:58,000
+Click on the animation button on the top left side
+
+35
+00:01:58,000 --> 00:02:00,000
+to open a list of objects that support animation,
+
+36
+00:02:00,000 --> 00:02:01,000
+including colors,
+
+37
+00:02:01,000 --> 00:02:02,000
+materials,
+
+38
+00:02:02,000 --> 00:02:03,000
+panels,
+
+39
+00:02:03,000 --> 00:02:04,000
+virtual models,
+
+40
+00:02:04,000 --> 00:02:05,000
+and cameras.
+
+41
+00:02:05,000 --> 00:02:06,000
+After selecting the object,
+
+42
+00:02:06,000 --> 00:02:08,000
+it will be added to the list of objects,
+
+43
+00:02:08,000 --> 00:02:10,000
+and you can apply the key needle for it.
+
+44
+00:02:10,000 --> 00:02:11,000
+Next,
+
+45
+00:02:11,000 --> 00:02:15,000
+let's take a look at the time line area in the middle of the interface.
+
+46
+00:02:15,000 --> 00:02:17,000
+The curve line above the gray bar on the top of the top part
+
+47
+00:02:17,000 --> 00:02:18,000
+indicates the range of play.
+
+48
+00:02:18,000 --> 00:02:21,000
+It defines the part that will be played in the animation.
+
+49
+00:02:21,000 --> 00:02:24,000
+You can adjust the range of play in the following ways.
+
+50
+00:02:24,000 --> 00:02:25,000
+Drag both ends,
+
+51
+00:02:25,000 --> 00:02:27,000
+directly drag the two ends of the gray bar,
+
+52
+00:02:27,000 --> 00:02:29,000
+drag the entire time axis,
+
+53
+00:02:29,000 --> 00:02:32,000
+press the mouse button to drag the entire gray bar,
+
+54
+00:02:32,000 --> 00:02:34,000
+and you can move the play range.
+
+55
+00:02:34,000 --> 00:02:36,000
+The key needle and end needle after adjustment
+
+56
+00:02:36,000 --> 00:02:38,000
+will also be implemented in the configuration panel.
+
+57
+00:02:38,000 --> 00:02:40,000
+You can also directly enter values ​​in the configuration panel
+
+58
+00:02:40,000 --> 00:02:44,000
+to set them.
+
+59
+00:02:44,000 --> 00:02:46,000
+Click on the right arrow on the time axis,
+
+60
+00:02:46,000 --> 00:02:49,000
+you can choose to set the starting or ending needle,
+
+61
+00:02:49,000 --> 00:02:53,000
+and set the current needle as the starting or end point of the play range.
+
+62
+00:02:53,000 --> 00:02:56,000
+Choose to limit the range in the action needle,
+
+63
+00:02:56,000 --> 00:03:00,000
+the play range will automatically adjust to the position of all existing key needles.
+
+64
+00:03:00,000 --> 00:03:01,000
+In addition,
+
+65
+00:03:01,000 --> 00:03:06,000
+you can press the Ctrl key and roll the mouse wheel to search for the size of the time axis,
+
+66
+00:03:06,000 --> 00:03:09,000
+so that you can check the range of the needle more carefully.
+
+67
+00:03:09,000 --> 00:03:13,000
+The time axis slider at the bottom allows you to set the range of the needle.
+
+68
+00:03:13,000 --> 00:03:15,000
+Click on the right arrow in the slider area,
+
+69
+00:03:15,000 --> 00:03:17,000
+there will be three options.
+
+70
+00:03:17,000 --> 00:03:19,000
+Choose to configure the action needle,
+
+71
+00:03:19,000 --> 00:03:21,000
+the time axis will automatically adjust to all animation layers,
+
+72
+00:03:21,000 --> 00:03:24,000
+and the range between the first and last key needle in the animation layer.
+
+73
+00:03:24,000 --> 00:03:26,000
+To configure the play range,
+
+74
+00:03:26,000 --> 00:03:30,000
+adjust the test picture according to the currently defined play range.
+
+75
+00:03:30,000 --> 00:03:32,000
+To configure all needles,
+
+76
+00:03:32,000 --> 00:03:34,000
+adjust the test picture according to the current time axis
+
+77
+00:03:34,000 --> 00:03:37,000
+with the smallest and largest needles set at both ends of the slider.
+
+78
+00:03:37,000 --> 00:03:42,000
+You can also directly click on the button on the right side of the input frame of the end needle to complete this operation.
+
+79
+00:03:42,000 --> 00:03:46,000
+The configuration panel on the right allows you to control some general play settings,
+
+80
+00:03:46,000 --> 00:03:48,000
+such as the time axis range,
+
+81
+00:03:48,000 --> 00:03:50,000
+scene time curve and display units.
+
+82
+00:03:50,000 --> 00:03:52,000
+Two new options have been added,
+
+83
+00:03:52,000 --> 00:03:54,000
+the real time and save time.
+
+84
+00:03:54,000 --> 00:03:55,000
+The real time,
+
+85
+00:03:55,000 --> 00:03:57,000
+which is often referred to as FPS,
+
+86
+00:03:57,000 --> 00:03:59,000
+it defines the rate of play per second.
+
+87
+00:03:59,000 --> 00:04:00,000
+The higher the real time,
+
+88
+00:04:00,000 --> 00:04:02,000
+the smoother the animation playback,
+
+89
+00:04:02,000 --> 00:04:05,000
+but it will also increase the rendering time and file size.
+
+90
+00:04:05,000 --> 00:04:08,000
+You can choose the right real time according to the needs of the project,
+
+91
+00:04:08,000 --> 00:04:10,000
+to balance quality and performance.
+
+92
+00:04:10,000 --> 00:04:11,000
+Save time,
+
+93
+00:04:11,000 --> 00:04:15,000
+control how to deal with the key needle when changing the real time.
+
+94
+00:04:15,000 --> 00:04:17,000
+When this option is closed,
+
+95
+00:04:17,000 --> 00:04:19,000
+the total play time will remain unchanged,
+
+96
+00:04:19,000 --> 00:04:23,000
+but the real time of the key needle will be adjusted according to the new real time per second.
+
+97
+00:04:23,000 --> 00:04:25,000
+When this option is turned on,
+
+98
+00:04:25,000 --> 00:04:27,000
+the real time of the key needle will remain unchanged,
+
+99
+00:04:27,000 --> 00:04:30,000
+and the total play time will be adjusted according to the new real time per second.
+
+100
+00:04:30,000 --> 00:04:32,000
+Through these new functions,
+
+101
+00:04:32,000 --> 00:04:36,000
+you can more flexibly control the range and speed of animation playback,
+
+102
+00:04:36,000 --> 00:04:38,000
+and optimize your workflow.
+
+103
+00:04:38,000 --> 00:04:41,000
+Now let's learn how to create and edit animation.
+
+104
+00:04:41,000 --> 00:04:44,000
+For save animation based on simulation,
+
+105
+00:04:44,000 --> 00:04:46,000
+such as clothing or software models,
+
+106
+00:04:46,000 --> 00:04:48,000
+you can continue to use the record button as before.
+
+107
+00:04:49,000 --> 00:04:51,000
+In the 2025 version,
+
+108
+00:04:51,000 --> 00:04:54,000
+we added the function of cutting and merging animation layers.
+
+109
+00:04:54,000 --> 00:04:55,000
+In the past,
+
+110
+00:04:55,000 --> 00:04:58,000
+we often needed to go through the third-party software
+
+111
+00:04:58,000 --> 00:05:01,000
+to edit and record the good animation layers.
+
+112
+00:05:01,000 --> 00:05:02,000
+Now,
+
+113
+00:05:02,000 --> 00:05:05,000
+you can freely cut or merge them according to your needs.
+
+114
+00:05:05,000 --> 00:05:06,000
+To cut a layer,
+
+115
+00:05:06,000 --> 00:05:08,000
+right-click on the layer you want to cut,
+
+116
+00:05:08,000 --> 00:05:10,000
+then select the cut layer.
+
+117
+00:05:10,000 --> 00:05:12,000
+The layer will be cut in the current real time,
+
+118
+00:05:12,000 --> 00:05:16,000
+and the chip will appear directly in the track above the original layer.
+
+119
+00:05:16,000 --> 00:05:17,000
+To merge multiple layers,
+
+120
+00:05:17,000 --> 00:05:18,000
+press the Ctrl key,
+
+121
+00:05:18,000 --> 00:05:21,000
+and select the layer you want to merge.
+
+122
+00:05:21,000 --> 00:05:23,000
+Or use the Shift key to select continuously,
+
+123
+00:05:23,000 --> 00:05:26,000
+then right-click and select the merge layer.
+
+124
+00:05:26,000 --> 00:05:27,000
+When merging layers,
+
+125
+00:05:27,000 --> 00:05:29,000
+it will be the top layer as the standard.
+
+126
+00:05:29,000 --> 00:05:32,000
+Because the current animation layer is cut and received,
+
+127
+00:05:32,000 --> 00:05:35,000
+so the effect between them is naturally continued.
+
+128
+00:05:35,000 --> 00:05:37,000
+If there is a overlap,
+
+129
+00:05:37,000 --> 00:05:40,000
+the higher-level data will be prioritized during the merging process.
+
+130
+00:05:40,000 --> 00:05:43,000
+We can also play and check the effect before merging the layer.
+
+131
+00:05:43,000 --> 00:05:45,000
+This is consistent with the effect after merging.
+
+132
+00:05:45,000 --> 00:05:46,000
+After confirming the effect,
+
+133
+00:05:46,000 --> 00:05:48,000
+merge layer operation is possible.
+
+134
+00:05:48,000 --> 00:05:50,000
+In the case of file storage animation,
+
+135
+00:05:50,000 --> 00:05:52,000
+it is different from the object listed in the animation menu.
+
+136
+00:05:52,000 --> 00:05:54,000
+It requires manual setting of keyframes,
+
+137
+00:05:54,000 --> 00:05:56,000
+so that the animation works.
+
+138
+00:05:56,000 --> 00:05:59,000
+Let's look at every animation project,
+
+139
+00:05:59,000 --> 00:06:00,000
+and review how to set keyframes,
+
+140
+00:06:00,000 --> 00:06:02,000
+and other important things to note.
+
+141
+00:06:02,000 --> 00:06:05,000
+We will start from the color animation.
+
+142
+00:06:05,000 --> 00:06:07,000
+There are two ways to set keyframes,
+
+143
+00:06:07,000 --> 00:06:10,000
+use the add animation button in the layer table.
+
+144
+00:06:10,000 --> 00:06:12,000
+Set directly from the editor
+
+145
+00:06:12,000 --> 00:06:14,000
+or attribute editor of the object.
+
+146
+00:06:14,000 --> 00:06:16,000
+Click on the add animation button.
+
+147
+00:06:16,000 --> 00:06:17,000
+Select the color.
+
+148
+00:06:17,000 --> 00:06:21,000
+Create an empty flag layer, then click on the triangle on the left
+
+149
+00:06:21,000 --> 00:06:23,000
+Open layer, check its properties
+
+150
+00:06:23,000 --> 00:06:27,000
+In the drop-down menu, you can see the flag list that can be used for clothing
+
+151
+00:06:27,000 --> 00:06:32,000
+The content of the flag list display will be updated in real time according to the flag in the flag editor
+
+152
+00:06:32,000 --> 00:06:36,000
+Now, we first add a key pin for the white flag
+
+153
+00:06:36,000 --> 00:06:39,000
+The first key pin will appear on the first pin in the hidden layer
+
+154
+00:06:39,000 --> 00:06:42,000
+The key pin is based on the setting of the current pin
+
+155
+00:06:42,000 --> 00:06:45,000
+You can directly move the head to the target pin
+
+156
+00:06:45,000 --> 00:06:48,000
+Then select the flag color and click to insert the key pin
+
+157
+00:06:48,000 --> 00:06:51,000
+Or enter the number of pins in the current pin input frame
+
+158
+00:06:51,000 --> 00:06:55,000
+It's the same, select the flag color and click to insert the key pin
+
+159
+00:06:55,000 --> 00:06:58,000
+To check whether the key pin has been added correctly
+
+160
+00:06:58,000 --> 00:07:01,000
+You can use the arrow buttons on the left and right sides of the key pin
+
+161
+00:07:01,000 --> 00:07:05,000
+They can make you quickly jump between the existing key pins
+
+162
+00:07:05,000 --> 00:07:09,000
+After confirming that the key pin is in place, return to the first pin and click the play button
+
+163
+00:07:09,000 --> 00:07:11,000
+You will see the flag color smooth
+
+164
+00:07:11,000 --> 00:07:15,000
+The natural animation effect is presented by the set key pin
+
+165
+00:07:15,000 --> 00:07:21,000
+Now let's see how to add the key pin directly from the flag editor
+
+166
+00:07:21,000 --> 00:07:24,000
+Move to the position you want to add the key pin
+
+167
+00:07:24,000 --> 00:07:28,000
+Select a flag color and then click to insert the key pin in the upper right corner of the editor
+
+168
+00:07:28,000 --> 00:07:34,000
+After adding the key pin, you can drag the two ends of the object layer to adjust the overall length
+
+169
+00:07:34,000 --> 00:07:36,000
+At the same time, keep the relative distance between them
+
+170
+00:07:36,000 --> 00:07:40,000
+You can also drag the entire layer to move all key pins at once
+
+171
+00:07:40,000 --> 00:07:44,000
+Or press and drag each key pin to a new position to adjust its position
+
+172
+00:07:44,000 --> 00:07:50,000
+You can select multiple key pins together by clicking or pressing Shift
+
+173
+00:07:50,000 --> 00:07:54,000
+And as a group of movements, keep them relative
+
+174
+00:07:54,000 --> 00:07:59,000
+To delete a specific key pin, please press and drag each key pin to select multiple key pins
+
+175
+00:07:59,000 --> 00:08:02,000
+Then right-click and select Delete Key Pin
+
+176
+00:08:02,000 --> 00:08:06,000
+Or press the Delete key on the keyboard to delete the key pin
+
+177
+00:08:06,000 --> 00:08:09,000
+If the animation layer is too much to slow down the playback
+
+178
+00:08:09,000 --> 00:08:11,000
+You can click the eye icon on the left side
+
+179
+00:08:11,000 --> 00:08:13,000
+Activate or turn off the playback of one animation
+
+180
+00:08:13,000 --> 00:08:16,000
+Let's just play it and see the current speed
+
+181
+00:08:19,000 --> 00:08:21,000
+Now cut back to the first pin
+
+182
+00:08:21,000 --> 00:08:23,000
+Turn off the animation of the flag color
+
+183
+00:08:23,000 --> 00:08:26,000
+You can see that after turning off the flag color animation layer
+
+184
+00:08:26,000 --> 00:08:28,000
+The playback speed of the animation is obviously faster
+
+185
+00:08:29,000 --> 00:08:31,000
+If you want to delete the animation layer
+
+186
+00:08:31,000 --> 00:08:33,000
+Please right-click on the layer in the list
+
+187
+00:08:33,000 --> 00:08:35,000
+Then select Delete Layer
+
+188
+00:08:35,000 --> 00:08:37,000
+Since the layer uses a tree structure
+
+189
+00:08:37,000 --> 00:08:40,000
+Therefore, deleting the object layer will also delete the related attribute layer
+
+190
+00:08:41,000 --> 00:08:43,000
+If you accidentally delete the attribute layer
+
+191
+00:08:43,000 --> 00:08:46,000
+You can right-click on the object layer and select
+
+192
+00:08:46,000 --> 00:08:48,000
+Increase layer to re-add
+
+193
+00:08:48,000 --> 00:08:50,000
+You will see a list of movable attributes
+
+194
+00:08:50,000 --> 00:08:53,000
+And you can choose the attribute to be added separately
+
+195
+00:08:55,000 --> 00:08:58,000
+Now let's see how to create a virtual model animation
+
+196
+00:08:58,000 --> 00:09:02,000
+Including using the joint point to adjust the posture and set the key pin
+
+197
+00:09:02,000 --> 00:09:04,000
+Click the Increase Animation button
+
+198
+00:09:04,000 --> 00:09:06,000
+The mouse will stop on the virtual model list
+
+199
+00:09:06,000 --> 00:09:10,000
+At this time, the virtual model list added in the current scene will appear
+
+200
+00:09:10,000 --> 00:09:11,000
+Click the virtual model you need
+
+201
+00:09:11,000 --> 00:09:13,000
+Add it to the layer list
+
+202
+00:09:13,000 --> 00:09:16,000
+Click the triangle to open and check its attribute layer
+
+203
+00:09:17,000 --> 00:09:20,000
+To add the current position as the first key pin
+
+204
+00:09:20,000 --> 00:09:22,000
+Please set the current pin as 0 first
+
+205
+00:09:22,000 --> 00:09:26,000
+Then click the key pin button on the right side to set the key pin
+
+206
+00:09:26,000 --> 00:09:28,000
+Press the Shift and X keys on the keyboard
+
+207
+00:09:28,000 --> 00:09:32,000
+You can display the virtual model's joint point in the 3D window
+
+208
+00:09:32,000 --> 00:09:35,000
+Next, move the playback head to change the position of the pin
+
+209
+00:09:35,000 --> 00:09:37,000
+Adjust the joint point to modify the posture
+
+210
+00:09:37,000 --> 00:09:40,000
+Then click the key pin button on the right side of the joint layer to insert the key pin button
+
+211
+00:09:40,000 --> 00:09:42,000
+Set another key pin
+
+212
+00:09:42,000 --> 00:09:45,000
+Because virtual model animation usually needs to be repeated
+
+213
+00:09:45,000 --> 00:09:48,000
+The steps of moving the pin, adjusting the position and inserting the key pin
+
+214
+00:09:48,000 --> 00:09:51,000
+Therefore, the automatic key pin function will be more efficient
+
+215
+00:09:51,000 --> 00:09:54,000
+You can insert the key pin manually in the first pin
+
+216
+00:09:54,000 --> 00:09:56,000
+Open the automatic key pin
+
+217
+00:09:56,000 --> 00:10:00,000
+In this way, any subsequent joint adjustment will automatically generate the key pin
+
+218
+00:10:00,000 --> 00:10:02,000
+If the pin already has a key pin
+
+219
+00:10:02,000 --> 00:10:05,000
+The new position will cover the existing key pin
+
+220
+00:10:05,000 --> 00:10:08,000
+Now the virtual model's posture is roughly edited
+
+221
+00:10:08,000 --> 00:10:10,000
+Let's cut back to the first pin first
+
+222
+00:10:10,000 --> 00:10:12,000
+To confirm the animation effect
+
+223
+00:10:14,000 --> 00:10:16,000
+After confirming the current effect
+
+224
+00:10:16,000 --> 00:10:18,000
+You can also copy and paste the key pin
+
+225
+00:10:19,000 --> 00:10:22,000
+Click or drag to select one or more key pins
+
+226
+00:10:22,000 --> 00:10:25,000
+Right-click and select Copy Key Pin
+
+227
+00:10:25,000 --> 00:10:27,000
+Or press Ctrl and C on the keyboard
+
+228
+00:10:27,000 --> 00:10:29,000
+Move the playback head to the pin to be pasted
+
+229
+00:10:29,000 --> 00:10:32,000
+Then right-click and select Paste Key Pin
+
+230
+00:10:32,000 --> 00:10:34,000
+Or press Ctrl and V
+
+231
+00:10:34,000 --> 00:10:36,000
+The key pin will be pasted on the current pin
+
+232
+00:10:36,000 --> 00:10:38,000
+If you paste multiple key pins
+
+233
+00:10:38,000 --> 00:10:41,000
+It will also keep the original pin
+
+234
+00:10:41,000 --> 00:10:43,000
+Now let's play it again
+
+235
+00:10:43,000 --> 00:10:46,000
+Check the animation effect after pasting the key pin
+
+236
+00:10:46,000 --> 00:10:49,000
+You can also right-click on the object layer
+
+237
+00:10:49,000 --> 00:10:51,000
+And use it in the right-click menu
+
+238
+00:10:51,000 --> 00:10:54,000
+Adjust the joint pin and move to the ground function
+
+239
+00:10:56,000 --> 00:11:00,000
+In addition, you can also download and modify the existing MTN file
+
+240
+00:11:00,000 --> 00:11:04,000
+But in order to avoid remodeling in the current scene
+
+241
+00:11:04,000 --> 00:11:06,000
+Please open the file in the new window
+
+242
+00:11:08,000 --> 00:11:11,000
+Now let's see how to set the animation for the board
+
+243
+00:11:11,000 --> 00:11:13,000
+By adding a key pin
+
+244
+00:11:13,000 --> 00:11:16,000
+You can control the change of the material on the selected board at any time
+
+245
+00:11:16,000 --> 00:11:17,000
+To create animation
+
+246
+00:11:17,000 --> 00:11:19,000
+After selecting the board
+
+247
+00:11:19,000 --> 00:11:21,000
+You can increase the animation by pressing the animation button
+
+248
+00:11:21,000 --> 00:11:23,000
+But for the board
+
+249
+00:11:23,000 --> 00:11:27,000
+It is usually more efficient to insert the key pin directly from the property editor
+
+250
+00:11:27,000 --> 00:11:30,000
+First, the position where the key pin needs to be added is set
+
+251
+00:11:30,000 --> 00:11:32,000
+This place has been set as the hand pin
+
+252
+00:11:32,000 --> 00:11:35,000
+Then select the board with the animation effect to be increased
+
+253
+00:11:35,000 --> 00:11:36,000
+In the property editor
+
+254
+00:11:36,000 --> 00:11:38,000
+Select the material for the board to be used
+
+255
+00:11:38,000 --> 00:11:41,000
+Then click the key pin next to the material
+
+256
+00:11:41,000 --> 00:11:44,000
+This will automatically add the board to the layer table
+
+257
+00:11:44,000 --> 00:11:47,000
+And insert a fabric key pin in the current pin
+
+258
+00:11:47,000 --> 00:11:49,000
+Then move the playhead to another pin
+
+259
+00:11:49,000 --> 00:11:52,000
+At this time, you can also click to open the automatic key pin
+
+260
+00:11:52,000 --> 00:11:53,000
+Reduce the operation
+
+261
+00:11:53,000 --> 00:11:56,000
+Change the fabric in the property editor
+
+262
+00:11:56,000 --> 00:11:58,000
+You can repeat this process according to your needs
+
+263
+00:11:58,000 --> 00:12:00,000
+When playing animation
+
+264
+00:12:00,000 --> 00:12:03,000
+You will see that the fabric of the selected board changes with time
+
+265
+00:12:03,000 --> 00:12:07,000
+Now let's see how to set the animation for the fabric property
+
+266
+00:12:07,000 --> 00:12:11,000
+You can set the key pin for the fabric property and the physical property separately
+
+267
+00:12:11,000 --> 00:12:13,000
+Click the increase animation button
+
+268
+00:12:13,000 --> 00:12:15,000
+Then select the fabric to be set for animation
+
+269
+00:12:15,000 --> 00:12:19,000
+The selected fabric will be added to the layer table as the object layer
+
+270
+00:12:19,000 --> 00:12:21,000
+Click the triangle to open it
+
+271
+00:12:21,000 --> 00:12:24,000
+You can see the property layer automatically listed below
+
+272
+00:12:24,000 --> 00:12:28,000
+These property layers include some PBR properties and physical properties
+
+273
+00:12:28,000 --> 00:12:32,000
+If the front side of the fabric and the back side use different textures
+
+274
+00:12:32,000 --> 00:12:36,000
+You can set the key pin for each surface property separately
+
+275
+00:12:36,000 --> 00:12:39,000
+If you only want to add a specific property to the layer table
+
+276
+00:12:39,000 --> 00:12:42,000
+You can select the fabric in the object window
+
+277
+00:12:42,000 --> 00:12:45,000
+Then you can set the key pin according to the usual way
+
+278
+00:12:45,000 --> 00:12:47,000
+Set the current pin, adjust the value
+
+279
+00:12:47,000 --> 00:12:49,000
+Then click to insert the key pin
+
+280
+00:12:49,000 --> 00:12:51,000
+Because the automatic key pin is opened here
+
+281
+00:12:51,000 --> 00:12:55,000
+So next you just need to modify the corresponding property parameters
+
+282
+00:12:55,000 --> 00:12:58,000
+You can add the key pin to the current pin
+
+283
+00:12:58,000 --> 00:13:01,000
+But please remember that the pattern, fabric and color animation
+
+284
+00:13:01,000 --> 00:13:04,000
+All control properties related to the fabric
+
+285
+00:13:04,000 --> 00:13:06,000
+If you change these three types of animation
+
+286
+00:13:06,000 --> 00:13:08,000
+They are applied to the same piece of clothing
+
+287
+00:13:08,000 --> 00:13:11,000
+Their interaction may lead to unexpected results
+
+288
+00:13:11,000 --> 00:13:16,000
+Therefore, it is recommended to separate the pattern or fabric animation from the color animation
+
+289
+00:13:16,000 --> 00:13:20,000
+Next, let's see how to set the animation of the simulation property
+
+290
+00:13:20,000 --> 00:13:22,000
+Click the increase animation button
+
+291
+00:13:22,000 --> 00:13:24,000
+Then select the simulation property
+
+292
+00:13:24,000 --> 00:13:26,000
+An object layer will be added to the layer table
+
+293
+00:13:26,000 --> 00:13:29,000
+But it will not display any property layer in the default situation
+
+294
+00:13:29,000 --> 00:13:31,000
+To display the property layer
+
+295
+00:13:31,000 --> 00:13:34,000
+You need to right-click and select the simulation property in the 3D window
+
+296
+00:13:34,000 --> 00:13:37,000
+Or click on the simulation property layer in the list
+
+297
+00:13:37,000 --> 00:13:39,000
+The preview will be changed to self-defined
+
+298
+00:13:39,000 --> 00:13:42,000
+Then you can set the key pin of gravity and air resistance
+
+299
+00:13:42,000 --> 00:13:45,000
+Next, I will introduce how to set the fixed pin animation
+
+300
+00:13:45,000 --> 00:13:50,000
+Fixed pin animation allows you to set the key pin in the activation or loss state of the fixed pin
+
+301
+00:13:50,000 --> 00:13:54,000
+First, you need to add a fixed pin in the 3D window
+
+302
+00:13:54,000 --> 00:13:59,000
+Then use the increase animation button to add the fixed pin object to the layer table
+
+303
+00:13:59,000 --> 00:14:03,000
+It should be noted that the default name of the fixed pin and the wind controller when creating is the same
+
+304
+00:14:03,000 --> 00:14:06,000
+Therefore, it is recommended that you add a fixed pin
+
+305
+00:14:06,000 --> 00:14:09,000
+Select and rename it in the property editor
+
+306
+00:14:09,000 --> 00:14:13,000
+In this way, you can quickly select the fixed pin that needs to be edited
+
+307
+00:14:13,000 --> 00:14:17,000
+To control the transition between key pins and adjust the animation speed
+
+308
+00:14:17,000 --> 00:14:19,000
+You can set the transition effect
+
+309
+00:14:19,000 --> 00:14:20,000
+To change the transition effect
+
+310
+00:14:20,000 --> 00:14:22,000
+Please select the key pin you need
+
+311
+00:14:22,000 --> 00:14:24,000
+Right-click on the key pin
+
+312
+00:14:24,000 --> 00:14:27,000
+Then select the transition effect from the menu
+
+313
+00:14:27,000 --> 00:14:30,000
+The long-term transition effect will maintain the current transition effect unchanged
+
+314
+00:14:30,000 --> 00:14:33,000
+Until the next key pin is switched to the corresponding effect
+
+315
+00:14:33,000 --> 00:14:35,000
+To make immediate changes
+
+316
+00:14:35,000 --> 00:14:39,000
+The linear transition effect uses the function of connecting different key pins with a straight line
+
+317
+00:14:39,000 --> 00:14:42,000
+To make a smooth and stable transition
+
+318
+00:14:45,000 --> 00:14:49,000
+The three-time transition effect uses the function of connecting the key pins with a curved line
+
+319
+00:14:49,000 --> 00:14:51,000
+To achieve a more dynamic transition effect
+
+320
+00:14:51,000 --> 00:14:55,000
+When using three or more key pins, this function is especially effective
+
+321
+00:14:55,000 --> 00:14:57,000
+Because the transition looks more natural
+
+322
+00:14:57,000 --> 00:15:01,000
+According to the attribute type selected by the key pin in the layer
+
+323
+00:15:01,000 --> 00:15:04,000
+The transition effect that only uses support in the menu
+
+324
+00:15:04,000 --> 00:15:06,000
+To change the transition effect of the key pin
+
+325
+00:15:06,000 --> 00:15:12,000
+The same type will be automatically applied to all key pins in the same position below
+
+326
+00:15:12,000 --> 00:15:14,000
+Finally, click the cancel stop button
+
+327
+00:15:14,000 --> 00:15:18,000
+You can separate the animation editor window into an independent window
+
+328
+00:15:18,000 --> 00:15:20,000
+After canceling the stop, you can click full screen
+
+329
+00:15:20,000 --> 00:15:22,000
+The editor expands to full screen
+
+330
+00:15:22,000 --> 00:15:24,000
+In dual display settings
+
+331
+00:15:24,000 --> 00:15:26,000
+You can use the editor on a separate screen
+
+332
+00:15:26,000 --> 00:15:28,000
+To improve the workflow
+
+333
+00:15:28,000 --> 00:15:30,000
+To restore the original window size
+
+334
+00:15:30,000 --> 00:15:32,000
+Please click the restore button
+
+335
+00:15:32,000 --> 00:15:34,000
+To restart the editor to the colou interface
+
+336
+00:15:34,000 --> 00:15:36,000
+Please click the stop button
+
+337
+00:15:38,000 --> 00:15:41,000
+Then the content about the key pin animation is introduced here
+
+338
+00:15:41,000 --> 00:15:45,000
+Because the wind controller and the camera animation follow the same workflow
+
+339
+00:15:45,000 --> 00:15:47,000
+There is no need to introduce too much
+
+340
+00:15:47,000 --> 00:15:50,000
+If you want to know more detailed information, please visit the user manual
+
+341
+00:15:50,000 --> 00:15:52,000
+I hope you can use your imagination
+
+342
+00:15:52,000 --> 00:15:54,000
+Through the new function of the animation editor
+
+343
+00:15:54,000 --> 00:15:57,000
+To create dynamic and wonderful content
+
+344
+00:16:00,000 --> 00:16:02,000
+Thank you for watching
+

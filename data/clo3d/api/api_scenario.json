@@ -1,0 +1,74 @@
+[
+  {
+    "article_id": "TokeSVSmgZaMCSbq7JT7wm",
+    "url": "https://developer.clo3d.com/scenario.html#auto-hanging",
+    "source": "CLO API",
+    "title": "Auto Hanging",
+    "content": "## Auto Hanging\uf0c1\n``` \nimport utility_api\nimport ApiTypes\n\nprint(\"API Test Scenario - Auto Hanging\")\n\n#Adding Path for Garment and Hanger\ngarmentPath = utility_api.GetCLOAssetFolderPath(True) + \"Garment/Male_T-shirt.zpac\"  # change this to a path to your garment\nhangerPath = utility_api.GetCLOAssetFolderPath(True) + \"Avatar/Hanger/Adult_Shirt_Hanger_V3.avt\"  # change this to a path to your hanger.\n\n#Option for importing OBJ\nobjoption = ApiTypes.ImportExportOption()\nobjoption.scale = 1 # specify this if your hanger is in OBJ. For example, 1 means 1mm scale. 10 means 10cm scale.\n\n#Auto Hanging API\nutility_api.AutoHang(garmentPath, hangerPath, 0, objoption) # toggle the third input - 0 for top hangers, 1 for bottom hangers\n\n```\n\nCopy to clipboard\n\n![_images/shirtspants.gif](https://developer.clo3d.com/_images/shirtspants.gif)\n\n  \n\n\n  \n\n\n  \n\n\nPlease Download the **Auto Hanging Sample** Sample Python Script Here -> [S3](https://s3.us-east-1.amazonaws.com/Outside_Work/CLO_API/example/Auto_Hanging_Example.zip) , [OSS](https://clo3d.oss-cn-shanghai.aliyuncs.com/web/CLO_API/example/Auto_Hanging_Example.zip)",
+    "content_description": "Script for Auto Hanging",
+    "created_at": "2026-03-12T17:23:00Z"
+  },
+  {
+    "article_id": "98AKat2kDQLxT8PnykxX3P",
+    "url": "https://developer.clo3d.com/scenario.html#simulation",
+    "source": "CLO API",
+    "title": "Simulation",
+    "content": "## Simulation\uf0c1\n``` \nimport import_api\nimport utility_api\n\nprint(\"API Test Scenario - Simulation\")\n\ncloAssetFolderPath = \"C:/Users/Public/Documents/CLO/Assets/Avatar/Avatar/\"\ncloGarmentFolderPath = \"C:/Users/Public/Documents/CLO/Assets/Garment/\"\n\n# Import Avatar File(avt)\navtfilePath = cloAssetFolderPath + \"/Female_V2/FV2_Feifei.avt\"\nimport_api.ImportFile(avtfilePath)\n\n# Import Cloth File(zpac)\nzpacfilePath = cloGarmentFolderPath + \"/Female_T-shirt.zpac\"\nimport_api.ImportFile(zpacfilePath)\n\n# Simulation\nutility_api.Simulate(100)\n\n```\n\nCopy to clipboard\n\n![_images/simulation.gif](https://developer.clo3d.com/_images/simulation.gif)",
+    "content_description": "Script for Simulation",
+    "created_at": "2026-03-12T17:23:00Z"
+  },
+  {
+    "article_id": "iYF3oqDuC64ycnDfbxwKy4",
+    "url": "https://developer.clo3d.com/scenario.html#rendering",
+    "source": "CLO API",
+    "title": "Rendering",
+    "content": "## Rendering\uf0c1\n``` \nimport import_api\nimport utility_api\nimport fabric_api\nimport pattern_api\nimport export_api\nprint(\"API Test Scenario - Rendering\")\ncloAssetFolderPath = \"C:/Users/Public/Documents/CLO/Assets\"\n# Import Avatar File(avt)\navtfilePath = cloAssetFolderPath + \"/Avatar/Avatar/Female_V2/FV2_Feifei.avt\"\nimport_api.ImportFile(avtfilePath)\n# Import Cloth File(zpac)\nzpacfilePath = cloAssetFolderPath + \"/Garment/Female_T-shirt.zpac\"\nimport_api.ImportFile(zpacfilePath)\n# Simulation\nutility_api.Simulate(100)\n# Import Fabric(zfab)\nzfabFilePath = cloAssetFolderPath + \"/Materials/Fabric/Cotton_Oxford.zfab\"\naddedFabricIndex = fabric_api.AddFabric(zfabFilePath)\n# Assign Fabric to Pattern\npatternCount = pattern_api.GetPatternCount()\nfor i in range(patternCount):\n    fabric_api.AssignFabricToPattern(addedFabricIndex, i)\n# Rendering\nsavedFilepathList = export_api.ExportRenderingImage(False)\nprint(savedFilepathList) #utility_api.GetCLOTemporaryFolderPath()\n\n```\n\nCopy to clipboard\n\n![automatic](https://developer.clo3d.com/_images/rendering.gif)",
+    "content_description": "Script for Rendering",
+    "created_at": "2026-03-12T17:23:00Z"
+  },
+  {
+    "article_id": "oJrNpLj9UoVdm6iYyXRfF9",
+    "url": "https://developer.clo3d.com/scenario.html#pattern",
+    "source": "CLO API",
+    "title": "Pattern",
+    "content": "## Pattern\uf0c1\n``` \nimport import_api\nimport utility_api\nimport fabric_api\nimport pattern_api\nimport export_api\nprint(\"API Test Scenario - Pattern\")\n# init rectangle\nrectPoints = (\n    (0.0, -300.0, 0)\n    , (0.0, -200.0, 0)\n    , (100.0, -200.0, 0)\n    , (100.0, -300.0, 0)\n    )\npattern_api.CreatePatternWithPoints(rectPoints)\n# free polygon\nfreePolygonPoints = (\n    (0.0, 0.0, 0)\n    , (0.0, 100.0, 3)\n    , (100.0, 100.0, 0)\n    , (200.0, 100.0, 3)\n    , (150.0, 50.0, 3)\n    , (200.0, 50.0, 0)\n    , (300.0, 50.0, 3)\n    , (250.0, 100.0, 3)\n    , (300.0, 100.0, 0)\n    , (350.0, 100.0, 3)\n    , (300.0, 50.0, 0)\n    , (150.0, 0.0, 2)\n    )\npattern_api.CreatePatternWithPoints(freePolygonPoints)\n# half circle\nhalfCirclePoints = (\n    (0.0, 200.0, 0)\n    , (0.0, 300.0, 3)\n    , (100.0, 300.0, 0)\n    , (200.0, 300.0, 3)\n    , (200.0, 200.0, 0)\n    )\npattern_api.CreatePatternWithPoints(halfCirclePoints)\n#Path\ncloAssetFolderPath = \"C:/Users/Public/Documents/CLO/Assets\"\n# Import Fabric(zfab)\nzfabFilePath = cloAssetFolderPath + \"/Materials/Fabric/Cotton_Oxford.zfab\"\naddedFabricIndex = fabric_api.AddFabric(zfabFilePath)\n# Assign Fabric to Pattern\npatternCount = pattern_api.GetPatternCount()\nfor i in range(patternCount):\n    fabric_api.AssignFabricToPattern(addedFabricIndex, i)\n\n```\n\nCopy to clipboard\n\n![automatic](https://developer.clo3d.com/_images/pattern.gif)",
+    "content_description": "Script for Pattern",
+    "created_at": "2026-03-12T17:23:00Z"
+  },
+  {
+    "article_id": "9yciQ9MykvomEXXcSbH4RL",
+    "url": "https://developer.clo3d.com/scenario.html#colorway",
+    "source": "CLO API",
+    "title": "Colorway",
+    "content": "## Colorway\uf0c1\n``` \nimport import_api\nimport utility_api\nimport fabric_api\nprint(\"API Test Scenario - Colorway\")\ncloAssetFolderPath = \"C:/Users/Public/Documents/CLO/Assets\"\n# Import Cloth File(zpac)\nzpacfilePath = cloAssetFolderPath + \"/Garment/Female_T-shirt.zpac\"\nimport_api.ImportFile(zpacfilePath)\n# set target fabric index\ntargetFabricIndex = fabric_api.GetFabricCount() - 1\nfor i in range(3):\n    # copy last colorway\n    colorwayCount = utility_api.GetColorwayCount()\n    copiedColorwayIndex = utility_api.CopyColorway(colorwayCount-1)\n    # set current colorway\n    utility_api.SetCurrentColorwayIndex(copiedColorwayIndex)\n    currentColorwayIndex = utility_api.GetCurrentColorwayIndex()\n    # set colorway name\n    alphabet = chr(ord('A') + (i + 1))\n    colorwayName = \"Colorway \" + alphabet\n    print(currentColorwayIndex, colorwayName)\n    utility_api.SetColorwayName(currentColorwayIndex, colorwayName)\n    # set diffuse color\n    # materialFace - 0:Front, 1:Back, 2:Side\n    r = 0.0\n    g = 0.0\n    b = 0.0\n    if i == 0:\n        r = 1.0\n    elif i == 1:\n        g = 1.0\n    else:\n        b = 1.0\n    fabric_api.SetFabricPBRMaterialBaseColor(currentColorwayIndex, targetFabricIndex, 0, r, g, b, 1.0)\n    # update colorway\n    utility_api.UpdateColorways(True)\n\n```\n\nCopy to clipboard\n\n![automatic](https://developer.clo3d.com/_images/colorway.gif)",
+    "content_description": "Script for Colorway",
+    "created_at": "2026-03-12T17:23:00Z"
+  },
+  {
+    "article_id": "iqUTzgzPYD4xR74uU5WuAx",
+    "url": "https://developer.clo3d.com/scenario.html#substance",
+    "source": "CLO API",
+    "title": "Substance",
+    "content": "## Substance\uf0c1\n``` \nimport import_api\nimport utility_api\nimport fabric_api\nprint(\"API Test Scenario - Substance\")\ncloAssetFolderPath = \"C:/Users/Public/Documents/CLO/Assets\"\n# Import Cloth File(zpac)\nzpacfilePath = cloAssetFolderPath + \"/Garment/Female_T-shirt.zpac\"\nimport_api.ImportFile(zpacfilePath)\n# Import Substance\nlastFabricIndex = fabric_api.GetFabricCount() - 1\nsbsarFilePath = cloAssetFolderPath + \"/Materials/Material/Substance/basicjean.sbsar\"\nfabric_api.ImportSubstanceFileAsFaceType(lastFabricIndex, sbsarFilePath, \"Front\") # FaceType: Front, Back, Side\n\n```\n\nCopy to clipboard\n\n![automatic](https://developer.clo3d.com/_images/substance.gif)",
+    "content_description": "Script for Substance",
+    "created_at": "2026-03-12T17:23:00Z"
+  },
+  {
+    "article_id": "GbSzvj8V8vNc5qZGifVAC6",
+    "url": "https://developer.clo3d.com/scenario.html#schematic-render",
+    "source": "CLO API",
+    "title": "Schematic Render",
+    "content": "## Schematic Render\uf0c1\n``` \nimport import_api\nimport utility_api\nimport fabric_api\nprint(\"API Test Scenario - Schematic Render\")\ncloAssetFolderPath = \"C:/Users/Public/Documents/CLO/Assets\"\n# Import Cloth File(zpac)\nzpacfilePath = cloAssetFolderPath + \"/Garment/Male_T-shirt.zpac\"\nimport_api.ImportFile(zpacfilePath)\n#Activate SchematicRender\nutility_api.SetSchematicRender(True)\n#Deactivate SchematicRender\nutility_api.SetSchematicRender(False)\n\n```\n\nCopy to clipboard\n\n![automatic](https://developer.clo3d.com/_images/schematic.gif)",
+    "content_description": "Script for Schematic Render",
+    "created_at": "2026-03-12T17:23:00Z"
+  },
+  {
+    "article_id": "9qZ84N5YCPGTTpjBrTxH8d",
+    "url": "https://developer.clo3d.com/scenario.html#animation-render",
+    "source": "CLO API",
+    "title": "Animation Render",
+    "content": "## Animation Render\uf0c1\n``` \nimport import_api\nimport utility_api\nimport fabric_api\nimport pattern_api\nimport export_api\nimport ApiTypes\n\navatar_path = \"C:/Users/Public/Documents/CLO/CLO Assets/Avatar/Male/MV2.1_Luka.avt\"\nhair_path = \"C:/Users/Public/Documents/CLO/CLO Assets/Avatar/Male/Accessory/Hair/MV2_Shaved.zacs\"\nmotion_path = \"C:/Users/Public/Documents/CLO/CLO Assets/Avatar/Male/Motion/MV2_Idle.mtn\"\ngarment_path = \"C:/Users/Public/Documents/CLO/CLO Assets/Garment/MV2_Regular Fit Crewneck Half-Sleeve T-Shirts.zpac\"\nfabric_path = \"C:/Users/Public/Documents/CLO/CLO Assets/Fabric/V1_Woven_Denim_Stretch.zfab\"\noutput_zprj_path = \"C:/Users/Public/Documents/CLO/CLO Assets/MyProject.zprj\"\n\n# Import avatar, hair accessory, motion, garment, and fabric files\nAvatarOp = ApiTypes.ImportExportOption()\nimport_api.ImportAvatar(avatar_path, AvatarOp)\nimport_api.ImportFile(hair_path)\nimport_api.ImportFile(motion_path)\nimport_api.ImportFile(garment_path)\naddedFabricIndex = fabric_api.AddFabric(fabric_path)\n\n# Assign fabric to all patterns in the current project for the current colorway\npattern_count = pattern_api.GetPatternCount()\nfor pattern_index in range(pattern_count):\n  fabric_api.AssignFabricToPattern(addedFabricIndex, pattern_index, 1)\n\n# Set animation frame range\nutility_api.SetStartAnimationFrame(0)\nutility_api.SetEndAnimationFrame(450)\n\n# Start animation recording\nutility_api.SetAnimationRecording(True)\n\n# Save the current CLO project as a Zprj file to the specified path\nexport_path = export_api.ExportZPrj(output_zprj_path)\n\nif export_path == \"\":\n  raise Exception(\"Failed to export project file to the specified path.\")\n\n```\n\nCopy to clipboard\n\n![automatic](https://developer.clo3d.com/_images/animation.gif)",
+    "content_description": "Script for Animation Render",
+    "created_at": "2026-03-12T17:23:00Z"
+  }
+]

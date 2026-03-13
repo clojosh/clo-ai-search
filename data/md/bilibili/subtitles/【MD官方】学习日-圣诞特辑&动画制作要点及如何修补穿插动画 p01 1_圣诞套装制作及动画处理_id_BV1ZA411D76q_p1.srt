@@ -1,0 +1,10460 @@
+1
+00:00:00,000 --> 00:00:02,000
+Hello, hello, good evening everyone
+
+2
+00:00:02,000 --> 00:00:04,000
+Hello, hello, good evening everyone
+
+3
+00:00:04,000 --> 00:00:06,000
+Hello everyone, I am Xueni
+
+4
+00:00:06,000 --> 00:00:10,000
+You should know that the tutorial video we made tonight
+
+5
+00:00:10,000 --> 00:00:13,000
+is about the production of the walnut armor set
+
+6
+00:00:13,000 --> 00:00:17,000
+and some of the problems of recording our animation
+
+7
+00:00:20,000 --> 00:00:22,000
+Let's get started
+
+8
+00:00:22,000 --> 00:00:30,000
+First of all, because we are going to make an animation
+
+9
+00:00:30,000 --> 00:00:34,000
+we need a model
+
+10
+00:00:34,000 --> 00:00:37,000
+The model I am going to make for the walnut armor set
+
+11
+00:00:37,000 --> 00:00:41,000
+is a model used by Marvelous Designer
+
+12
+00:00:41,000 --> 00:00:47,000
+which is a virtual model used by our client
+
+13
+00:00:47,000 --> 00:00:50,000
+This virtual model has been uploaded to our official website
+
+14
+00:00:50,000 --> 00:00:52,000
+This virtual model has been uploaded to our official website
+
+15
+00:00:52,000 --> 00:00:55,000
+OK, let's load the model
+
+16
+00:00:57,000 --> 00:01:00,000
+You can see that this is our new male model
+
+17
+00:01:00,000 --> 00:01:06,000
+Click on the shop on our official website called Connect
+
+18
+00:01:06,000 --> 00:01:09,000
+and then find the virtual model category
+
+19
+00:01:09,000 --> 00:01:14,000
+These are some virtual models that we sell on our official website
+
+20
+00:01:17,000 --> 00:01:20,000
+These virtual models are open for free
+
+21
+00:01:20,000 --> 00:01:21,000
+and you can find
+
+22
+00:01:21,000 --> 00:01:22,000
+our
+
+23
+00:01:22,000 --> 00:01:27,000
+free virtual models on our official website
+
+24
+00:01:27,000 --> 00:01:30,000
+You can download and use them on our official website
+
+25
+00:01:30,000 --> 00:01:34,000
+I am using a model called Leo
+
+26
+00:01:37,000 --> 00:01:38,000
+OK
+
+27
+00:01:38,000 --> 00:01:41,000
+After we import the model
+
+28
+00:01:41,000 --> 00:01:46,000
+we can import an OBJ model as a backup
+
+29
+00:01:46,000 --> 00:01:48,000
+Why do we import an OBJ model?
+
+30
+00:01:48,000 --> 00:01:50,000
+It is because
+
+31
+00:01:50,000 --> 00:01:53,000
+when we import an animation
+
+32
+00:01:53,000 --> 00:01:55,000
+we will import the first frame
+
+33
+00:01:55,000 --> 00:01:58,000
+in the form of an OBJ model
+
+34
+00:01:58,000 --> 00:01:59,000
+and then
+
+35
+00:01:59,000 --> 00:02:04,000
+because it is easier to wear clothes in this T-pose pose
+
+36
+00:02:04,000 --> 00:02:08,000
+we will use the move target function of the OBJ model
+
+37
+00:02:08,000 --> 00:02:10,000
+to transform it
+
+38
+00:02:10,000 --> 00:02:13,000
+I will show you later
+
+39
+00:02:13,000 --> 00:02:15,000
+So we need to use the OBJ model
+
+40
+00:02:15,000 --> 00:02:17,000
+in the form of an OBJ model
+
+41
+00:02:17,000 --> 00:02:20,000
+First we need to import an OBJ model
+
+42
+00:02:20,000 --> 00:02:24,000
+and then we need to import an FBX model
+
+43
+00:02:24,000 --> 00:02:27,000
+Why do we need to import an FBX model?
+
+44
+00:02:27,000 --> 00:02:28,000
+Because
+
+45
+00:02:28,000 --> 00:02:30,000
+later we will use
+
+46
+00:02:32,000 --> 00:02:34,000
+In our software
+
+47
+00:02:34,000 --> 00:02:37,000
+this arm open posture is called A-pose
+
+48
+00:02:37,000 --> 00:02:39,000
+It is called T-pose
+
+49
+00:02:39,000 --> 00:02:41,000
+In our software
+
+50
+00:02:41,000 --> 00:02:43,000
+there is no arm that is particularly T-pose
+
+51
+00:02:43,000 --> 00:02:46,000
+and then A-pose is a hand that is closer to the body of the person
+
+52
+00:02:46,000 --> 00:02:49,000
+and then the arm is pointed at the body of the person
+
+53
+00:02:49,000 --> 00:02:50,000
+Ok
+
+54
+00:02:50,000 --> 00:02:52,000
+Why do we need to export an FBX model
+
+55
+00:02:52,000 --> 00:02:54,000
+from here
+
+56
+00:02:54,000 --> 00:02:56,000
+and choose not to export it with the OBJ model
+
+57
+00:02:56,000 --> 00:02:58,000
+because
+
+58
+00:02:58,000 --> 00:03:01,000
+later we will use Maxamo
+
+59
+00:03:01,000 --> 00:03:02,000
+On Maxamo
+
+60
+00:03:02,000 --> 00:03:04,000
+if you are a model with the OBJ model
+
+61
+00:03:04,000 --> 00:03:06,000
+and upload it to the web site of Maxamo
+
+62
+00:03:06,000 --> 00:03:08,000
+then this website
+
+63
+00:03:08,000 --> 00:03:10,000
+will identify your OBJ model
+
+64
+00:03:10,000 --> 00:03:12,000
+and will adapt its action information
+
+65
+00:03:12,000 --> 00:03:14,000
+If you choose to export the OBJ model
+
+66
+00:03:14,000 --> 00:03:15,000
+with the OBJ model
+
+67
+00:03:15,000 --> 00:03:19,400
+If you choose to export with Google, it may not be very convenient to match the action.
+
+68
+00:03:19,400 --> 00:03:24,599
+Here, in order to make it convenient to use the action file on that website,
+
+69
+00:03:25,400 --> 00:03:27,599
+we need to export without Google,
+
+70
+00:03:27,599 --> 00:03:31,199
+and then simply bind Google on that website.
+
+71
+00:03:32,000 --> 00:03:34,400
+Here, we choose to upload virtual model,
+
+72
+00:03:35,000 --> 00:03:40,199
+and then choose the FBX model we just exported.
+
+73
+00:03:40,200 --> 00:03:45,200
+After selecting the model, wait for it to be uploaded.
+
+74
+00:03:48,200 --> 00:03:54,200
+After uploading, we quickly choose to bind the location of each part.
+
+75
+00:03:59,200 --> 00:04:04,200
+Here, if your model itself has an action, you can skip this step.
+
+76
+00:04:04,200 --> 00:04:05,200
+It doesn't matter.
+
+77
+00:04:06,200 --> 00:04:10,200
+Because I chose some actions on their website,
+
+78
+00:04:10,200 --> 00:04:14,200
+so I uploaded my file like this.
+
+79
+00:04:14,200 --> 00:04:18,200
+After that, we can download this model.
+
+80
+00:04:18,200 --> 00:04:22,200
+Then when you import this model to Marvelous Designer,
+
+81
+00:04:22,200 --> 00:04:25,200
+you will see that it has no skin.
+
+82
+00:04:25,200 --> 00:04:28,200
+It's because the newly downloaded file
+
+83
+00:04:28,200 --> 00:04:31,200
+is not in the same folder of the original file.
+
+84
+00:04:31,200 --> 00:04:35,200
+So if you find that after uploading the model,
+
+85
+00:04:35,200 --> 00:04:39,200
+you download it again and find that its skin texture information is gone,
+
+86
+00:04:39,199 --> 00:04:41,199
+don't worry,
+
+87
+00:04:41,199 --> 00:04:48,199
+we will put it in the same folder as the original FBX.
+
+88
+00:04:49,199 --> 00:04:50,199
+Understand?
+
+89
+00:04:50,199 --> 00:04:53,199
+Then here, I want to tell you that
+
+90
+00:04:53,199 --> 00:04:55,199
+some children may be curious
+
+91
+00:04:55,199 --> 00:05:00,199
+why I don't upload the OBJ file directly to the MagSamo platform.
+
+92
+00:05:00,199 --> 00:05:03,199
+It's because on MagSamo,
+
+93
+00:05:03,199 --> 00:05:06,199
+if you upload the OBJ file,
+
+94
+00:05:06,199 --> 00:05:08,199
+it may sometimes put your OBJ,
+
+95
+00:05:08,199 --> 00:05:12,199
+combined with a whole UV.
+
+96
+00:05:12,199 --> 00:05:14,199
+In our model,
+
+97
+00:05:14,199 --> 00:05:17,199
+usually the hair, face, and hands
+
+98
+00:05:17,199 --> 00:05:18,199
+are different,
+
+99
+00:05:18,199 --> 00:05:20,199
+using different UVs.
+
+100
+00:05:20,199 --> 00:05:22,199
+This eye is a little scary.
+
+101
+00:05:22,199 --> 00:05:26,199
+Then we can't let it be uploaded in a whole.
+
+102
+00:05:26,199 --> 00:05:29,199
+So here we choose the FBX format.
+
+103
+00:05:29,199 --> 00:05:31,199
+Understand?
+
+104
+00:05:31,199 --> 00:05:32,199
+In other words,
+
+105
+00:05:32,199 --> 00:05:33,199
+in the previous period,
+
+106
+00:05:33,199 --> 00:05:36,199
+we need to prepare two OBJ files
+
+107
+00:05:36,199 --> 00:05:38,199
+and FBX files,
+
+108
+00:05:38,199 --> 00:05:40,199
+not Google files,
+
+109
+00:05:40,199 --> 00:05:42,199
+to bind the actions on MagSamo.
+
+110
+00:05:42,199 --> 00:05:45,199
+But if you are using your own animation model,
+
+111
+00:05:45,199 --> 00:05:46,199
+it doesn't matter.
+
+112
+00:05:46,199 --> 00:05:47,199
+Okay,
+
+113
+00:05:47,199 --> 00:05:49,199
+then we put the first needle,
+
+114
+00:05:49,199 --> 00:05:52,199
+because the model now is in the first needle of its animation,
+
+115
+00:05:52,199 --> 00:05:54,199
+put the model under this needle,
+
+116
+00:05:54,199 --> 00:05:56,199
+in the form of OBJ,
+
+117
+00:05:56,199 --> 00:05:57,199
+in the second time,
+
+118
+00:05:57,199 --> 00:06:00,199
+so that we have the action of the first needle,
+
+119
+00:06:00,199 --> 00:06:02,199
+also in order to wait a little bit,
+
+120
+00:06:02,199 --> 00:06:04,199
+so that we can use it later.
+
+121
+00:06:04,199 --> 00:06:06,199
+The action of the first needle
+
+122
+00:06:06,199 --> 00:06:08,199
+is also to wait a little bit to adapt the model,
+
+123
+00:06:08,199 --> 00:06:11,199
+to transform the clothes into the current posture,
+
+124
+00:06:11,199 --> 00:06:13,199
+to use it.
+
+125
+00:06:13,199 --> 00:06:14,199
+Okay,
+
+126
+00:06:14,199 --> 00:06:16,199
+then we put this,
+
+127
+00:06:16,199 --> 00:06:18,199
+just now everyone said this,
+
+128
+00:06:18,199 --> 00:06:20,199
+whether it's A pose or T pose,
+
+129
+00:06:20,199 --> 00:06:21,199
+in short,
+
+130
+00:06:21,199 --> 00:06:23,199
+the posture is relatively simple,
+
+131
+00:06:23,199 --> 00:06:25,199
+the arm is relatively straight,
+
+132
+00:06:25,199 --> 00:06:27,199
+this model is poured in.
+
+133
+00:06:27,199 --> 00:06:28,199
+Okay,
+
+134
+00:06:28,199 --> 00:06:29,199
+here we can take a look.
+
+135
+00:06:29,199 --> 00:06:31,199
+If the model is wearing clothes now,
+
+136
+00:06:31,199 --> 00:06:33,199
+and then it's an A pose,
+
+137
+00:06:33,199 --> 00:06:37,199
+we are pouring in the virtual model of the first needle just now,
+
+138
+00:06:37,199 --> 00:06:39,199
+also an OBJ file,
+
+139
+00:06:39,199 --> 00:06:41,199
+because their face is the same,
+
+140
+00:06:41,199 --> 00:06:43,199
+the number of points is also the same,
+
+141
+00:06:43,199 --> 00:06:45,199
+then I pour it in,
+
+142
+00:06:45,199 --> 00:06:49,199
+this clothes will change as the posture of the model changes,
+
+143
+00:06:49,199 --> 00:06:53,199
+you can see that our clothes will become the action of the first needle,
+
+144
+00:06:53,199 --> 00:06:55,199
+the way it is dressed,
+
+145
+00:06:55,199 --> 00:06:59,199
+then we replace it with the FBX file,
+
+146
+00:06:59,199 --> 00:07:02,199
+after the FBX file with the action,
+
+147
+00:07:02,199 --> 00:07:03,199
+that's it,
+
+148
+00:07:03,199 --> 00:07:05,199
+we record the animation again,
+
+149
+00:07:05,199 --> 00:07:08,199
+then it can be recorded directly from the first needle,
+
+150
+00:07:08,199 --> 00:07:11,199
+you don't need to wear clothes on the first needle,
+
+151
+00:07:11,199 --> 00:07:12,199
+because,
+
+152
+00:07:12,199 --> 00:07:13,199
+like T pose,
+
+153
+00:07:13,199 --> 00:07:14,199
+A pose,
+
+154
+00:07:14,199 --> 00:07:15,199
+when you import it to MD,
+
+155
+00:07:15,199 --> 00:07:17,199
+it will automatically form an arrangement,
+
+156
+00:07:17,199 --> 00:07:20,199
+it is more convenient to arrange clothes.
+
+157
+00:07:20,199 --> 00:07:21,199
+In fact,
+
+158
+00:07:21,199 --> 00:07:26,199
+these are all to simplify everyone's production process.
+
+159
+00:07:26,199 --> 00:07:27,199
+Okay,
+
+160
+00:07:27,199 --> 00:07:31,199
+then we will wear clothes on an A pose file,
+
+161
+00:07:31,199 --> 00:07:33,199
+to make clothes,
+
+162
+00:07:33,199 --> 00:07:34,199
+first of all,
+
+163
+00:07:34,199 --> 00:07:35,199
+first of all,
+
+164
+00:07:35,199 --> 00:07:36,199
+a pair of pants,
+
+165
+00:07:36,199 --> 00:07:37,199
+ah,
+
+166
+00:07:37,199 --> 00:07:39,199
+this is the pants of the model in the software,
+
+167
+00:07:39,199 --> 00:07:40,199
+we first pull it up,
+
+168
+00:07:40,199 --> 00:07:41,199
+its waist,
+
+169
+00:07:41,199 --> 00:07:43,199
+and then make a belt,
+
+170
+00:07:43,199 --> 00:07:44,199
+ah,
+
+171
+00:07:44,199 --> 00:07:45,199
+yes,
+
+172
+00:07:45,199 --> 00:07:46,199
+so,
+
+173
+00:07:46,199 --> 00:07:47,199
+in fact,
+
+174
+00:07:47,199 --> 00:07:48,199
+basically,
+
+175
+00:07:48,199 --> 00:07:49,199
+if we want to do the animation process,
+
+176
+00:07:49,199 --> 00:07:50,199
+well,
+
+177
+00:07:50,199 --> 00:07:52,199
+it's like what I just demonstrated,
+
+178
+00:07:52,199 --> 00:07:53,199
+well,
+
+179
+00:07:53,199 --> 00:07:57,199
+about what points to pay attention to in animation production,
+
+180
+00:07:57,199 --> 00:07:59,199
+we will mention it later,
+
+181
+00:07:59,199 --> 00:08:00,199
+now,
+
+182
+00:08:00,199 --> 00:08:02,199
+I will show you how to do it,
+
+183
+00:08:02,199 --> 00:08:04,199
+and then I will import the pants in,
+
+184
+00:08:04,199 --> 00:08:06,199
+because of the default pants in the software,
+
+185
+00:08:06,199 --> 00:08:08,199
+the fabric it uses is the default attribute,
+
+186
+00:08:08,199 --> 00:08:12,199
+then we need to find it in the physics attribute preview column,
+
+187
+00:08:12,199 --> 00:08:14,199
+in the menu below,
+
+188
+00:08:14,199 --> 00:08:15,199
+ah,
+
+189
+00:08:15,199 --> 00:08:17,199
+use a harder fabric for the belt,
+
+190
+00:08:17,199 --> 00:08:18,199
+ah,
+
+191
+00:08:18,199 --> 00:08:19,199
+this fabric name is called,
+
+192
+00:08:19,199 --> 00:08:20,199
+ah,
+
+193
+00:08:20,199 --> 00:08:22,199
+Fusible Rigid,
+
+194
+00:08:22,199 --> 00:08:23,199
+ah,
+
+195
+00:08:23,199 --> 00:08:26,199
+here I did not capture the selected one,
+
+196
+00:08:26,199 --> 00:08:28,199
+you can just listen to the name,
+
+197
+00:08:28,199 --> 00:08:30,199
+if you are not very good at physics,
+
+198
+00:08:30,199 --> 00:08:32,200
+if you are not very good at physics,
+
+199
+00:08:32,200 --> 00:08:34,200
+if you are not very good at physics,
+
+200
+00:08:34,200 --> 00:08:35,200
+ah,
+
+201
+00:08:35,200 --> 00:08:38,200
+you can watch our previous teaching video,
+
+202
+00:08:38,200 --> 00:08:39,200
+ah,
+
+203
+00:08:39,200 --> 00:08:41,200
+after watching this video,
+
+204
+00:08:41,200 --> 00:08:43,200
+you can watch the teaching video,
+
+205
+00:08:43,200 --> 00:08:44,200
+well,
+
+206
+00:08:44,200 --> 00:08:46,200
+then the whole fabric of the pants,
+
+207
+00:08:46,200 --> 00:08:50,200
+we choose to use a common cotton fabric,
+
+208
+00:08:50,200 --> 00:08:51,200
+that is,
+
+209
+00:08:51,200 --> 00:08:52,200
+when making pants,
+
+210
+00:08:52,200 --> 00:08:54,200
+it is generally more common,
+
+211
+00:08:54,200 --> 00:08:55,200
+well,
+
+212
+00:08:55,200 --> 00:08:58,200
+why do we use different fabrics for belts and pants,
+
+213
+00:08:58,200 --> 00:08:59,200
+ah,
+
+214
+00:08:59,200 --> 00:09:01,200
+because the model,
+
+215
+00:09:01,200 --> 00:09:03,200
+its belt is generally,
+
+216
+00:09:03,200 --> 00:09:04,200
+ah,
+
+217
+00:09:04,200 --> 00:09:05,200
+that is,
+
+218
+00:09:05,200 --> 00:09:07,200
+it is a relatively small piece of fabric,
+
+219
+00:09:07,200 --> 00:09:08,200
+well,
+
+220
+00:09:08,200 --> 00:09:09,200
+ah,
+
+221
+00:09:09,200 --> 00:09:11,200
+its pants are relatively long and large,
+
+222
+00:09:11,200 --> 00:09:14,200
+if it is sewed on top of the belt,
+
+223
+00:09:14,200 --> 00:09:17,200
+then the pants itself has its own weight,
+
+224
+00:09:17,200 --> 00:09:19,200
+it will make the belt deformed,
+
+225
+00:09:19,200 --> 00:09:21,200
+so usually,
+
+226
+00:09:21,200 --> 00:09:24,200
+we will make a harder fabric for the belt,
+
+227
+00:09:24,200 --> 00:09:25,200
+ah,
+
+228
+00:09:25,200 --> 00:09:26,200
+that is,
+
+229
+00:09:26,200 --> 00:09:27,200
+these pieces of belt fabric,
+
+230
+00:09:27,200 --> 00:09:28,200
+give it a harder fabric,
+
+231
+00:09:28,200 --> 00:09:31,200
+so that it is not easy to be pulled down and deformed,
+
+232
+00:09:31,200 --> 00:09:35,200
+so that it can also be fixed in the position of the waist,
+
+233
+00:09:35,200 --> 00:09:36,200
+well,
+
+234
+00:09:36,200 --> 00:09:38,200
+then we will cut this pants,
+
+235
+00:09:38,200 --> 00:09:39,200
+ah,
+
+236
+00:09:39,200 --> 00:09:41,200
+because in the effect picture I finished,
+
+237
+00:09:41,200 --> 00:09:42,200
+I thought about it,
+
+238
+00:09:42,200 --> 00:09:43,200
+this pants,
+
+239
+00:09:43,200 --> 00:09:45,200
+I did it above the boots,
+
+240
+00:09:45,200 --> 00:09:48,200
+so we are going to cut the pants now,
+
+241
+00:09:48,200 --> 00:09:49,200
+that,
+
+242
+00:09:49,200 --> 00:09:50,200
+ah,
+
+243
+00:09:50,200 --> 00:09:53,200
+if you cut the pants,
+
+244
+00:09:53,200 --> 00:09:54,200
+ah,
+
+245
+00:09:54,200 --> 00:09:55,200
+yes,
+
+246
+00:09:55,200 --> 00:09:56,200
+I recorded the video,
+
+247
+00:09:56,200 --> 00:09:57,200
+ah,
+
+248
+00:09:57,200 --> 00:09:59,200
+and then,
+
+249
+00:09:59,200 --> 00:10:00,200
+well,
+
+250
+00:10:00,200 --> 00:10:01,200
+in this case,
+
+251
+00:10:01,200 --> 00:10:04,200
+we can use the measurement clothing tool in the original state,
+
+252
+00:10:04,200 --> 00:10:07,200
+to directly carry out the cut in 3D space,
+
+253
+00:10:07,200 --> 00:10:09,200
+after selecting this tool,
+
+254
+00:10:09,200 --> 00:10:10,200
+ah,
+
+255
+00:10:10,200 --> 00:10:13,200
+press Alt 4 to open the transparent display,
+
+256
+00:10:13,200 --> 00:10:14,200
+well,
+
+257
+00:10:14,200 --> 00:10:15,200
+after opening the transparent display,
+
+258
+00:10:15,200 --> 00:10:18,200
+you can click on the position of the waist,
+
+259
+00:10:18,200 --> 00:10:21,200
+to create a layout for measurement,
+
+260
+00:10:21,200 --> 00:10:22,200
+in fact,
+
+261
+00:10:22,200 --> 00:10:24,200
+this clothing measurement board,
+
+262
+00:10:24,200 --> 00:10:26,200
+it itself is used to measure clothing data,
+
+263
+00:10:26,200 --> 00:10:29,200
+but we can use the measurement tool to cut it,
+
+264
+00:10:29,200 --> 00:10:33,200
+so that we can directly cut out the position we want,
+
+265
+00:10:33,200 --> 00:10:35,200
+just delete the excess part,
+
+266
+00:10:35,200 --> 00:10:36,200
+well,
+
+267
+00:10:36,200 --> 00:10:37,200
+when cutting,
+
+268
+00:10:37,200 --> 00:10:41,200
+because our cutting is cut according to the 3D window,
+
+269
+00:10:41,200 --> 00:10:43,200
+so it will have some curve points,
+
+270
+00:10:43,200 --> 00:10:45,200
+we can delete the excess curve points,
+
+271
+00:10:45,200 --> 00:10:49,200
+and then press Alt 1 to return to the normal view,
+
+272
+00:10:49,200 --> 00:10:50,200
+well,
+
+273
+00:10:50,200 --> 00:10:51,200
+when cutting,
+
+274
+00:10:51,200 --> 00:10:52,200
+sometimes,
+
+275
+00:10:52,200 --> 00:10:55,200
+it will not match the line on the side,
+
+276
+00:10:55,200 --> 00:11:06,200
+remember to manually adjust the line,
+
+277
+00:11:06,200 --> 00:11:09,200
+and then we reduce the particle diameter to take a look,
+
+278
+00:11:09,200 --> 00:11:12,200
+the pants must be changed later,
+
+279
+00:11:12,200 --> 00:11:13,200
+because first of all,
+
+280
+00:11:13,200 --> 00:11:14,200
+like it,
+
+281
+00:11:14,200 --> 00:11:17,200
+when we usually go to see the wearing effect of this pants,
+
+282
+00:11:17,200 --> 00:11:19,200
+one is to press Alt 4,
+
+283
+00:11:19,200 --> 00:11:21,200
+to see its transparency,
+
+284
+00:11:21,200 --> 00:11:22,200
+to see if it exists,
+
+285
+00:11:22,200 --> 00:11:24,200
+which places are very tight,
+
+286
+00:11:24,200 --> 00:11:25,200
+or like this,
+
+287
+00:11:25,200 --> 00:11:26,200
+open the pressure map,
+
+288
+00:11:26,200 --> 00:11:27,200
+take a look,
+
+289
+00:11:27,200 --> 00:11:29,200
+ah,
+
+290
+00:11:29,200 --> 00:11:31,200
+through the switching of these two pictures,
+
+291
+00:11:31,200 --> 00:11:33,200
+we will see that the point of this part,
+
+292
+00:11:33,200 --> 00:11:34,200
+ah,
+
+293
+00:11:34,200 --> 00:11:35,200
+is a little closer to the human body,
+
+294
+00:11:35,200 --> 00:11:36,200
+so we pull it down,
+
+295
+00:11:36,200 --> 00:11:38,200
+make it a little further away from the human body,
+
+296
+00:11:38,200 --> 00:11:47,200
+well,
+
+297
+00:11:47,200 --> 00:11:49,200
+then adjust the shape of the pants,
+
+298
+00:11:49,200 --> 00:11:51,200
+ah,
+
+299
+00:11:51,200 --> 00:11:53,200
+when I was adjusting it,
+
+300
+00:11:53,200 --> 00:11:54,200
+in fact,
+
+301
+00:11:54,200 --> 00:11:59,200
+I didn't think about what kind of pants I was going to make in advance,
+
+302
+00:11:59,200 --> 00:12:00,200
+ah,
+
+303
+00:12:00,200 --> 00:12:01,200
+here,
+
+304
+00:12:01,200 --> 00:12:04,200
+we will increase its particle diameter to 15,
+
+305
+00:12:04,200 --> 00:12:07,200
+because we are going to change the pants,
+
+306
+00:12:07,200 --> 00:12:09,200
+so in the process of modification,
+
+307
+00:12:09,200 --> 00:12:13,200
+the particle diameter does not need to be particularly low,
+
+308
+00:12:13,200 --> 00:12:16,200
+so we can temporarily increase its particle diameter,
+
+309
+00:12:16,200 --> 00:12:17,200
+and then,
+
+310
+00:12:17,200 --> 00:12:18,200
+like making pants,
+
+311
+00:12:18,200 --> 00:12:21,200
+we will choose to make some cuts here on the knee,
+
+312
+00:12:21,200 --> 00:12:22,200
+because after making the cut,
+
+313
+00:12:22,200 --> 00:12:25,200
+we can control the curve of the pants,
+
+314
+00:12:25,200 --> 00:12:26,200
+if we don't make the cut,
+
+315
+00:12:26,200 --> 00:12:28,200
+when we control the curve,
+
+316
+00:12:28,200 --> 00:12:31,200
+it will affect the whole side,
+
+317
+00:12:31,200 --> 00:12:32,200
+now,
+
+318
+00:12:32,200 --> 00:12:36,200
+if we want to make some correction of the curve of the legs,
+
+319
+00:12:36,200 --> 00:12:37,200
+for example,
+
+320
+00:12:37,200 --> 00:12:40,200
+we pull this curve in a little bit,
+
+321
+00:12:40,200 --> 00:12:42,200
+remove a part of it,
+
+322
+00:12:42,200 --> 00:12:44,200
+then it will be more close to the body,
+
+323
+00:12:44,200 --> 00:12:45,200
+more straight,
+
+324
+00:12:45,200 --> 00:12:49,200
+and it will not affect the position below the knee,
+
+325
+00:12:52,200 --> 00:12:54,200
+ok,
+
+326
+00:12:54,200 --> 00:12:56,200
+then adjust it a little bit,
+
+327
+00:12:56,200 --> 00:12:58,200
+here,
+
+328
+00:12:58,200 --> 00:13:01,200
+I finally choose to pull the whole side out a little bit,
+
+329
+00:13:01,200 --> 00:13:02,200
+add some material to it,
+
+330
+00:13:02,200 --> 00:13:03,200
+otherwise,
+
+331
+00:13:03,200 --> 00:13:04,200
+the pants are too close together,
+
+332
+00:13:04,200 --> 00:13:08,200
+I think there are some effects that are not what I want,
+
+333
+00:13:08,200 --> 00:13:09,200
+and then,
+
+334
+00:13:09,200 --> 00:13:11,200
+including the curve here,
+
+335
+00:13:11,200 --> 00:13:12,200
+also adjust it a little bit,
+
+336
+00:13:12,200 --> 00:13:14,200
+let it be more flat,
+
+337
+00:13:14,200 --> 00:13:17,200
+then draw that folding line,
+
+338
+00:13:17,200 --> 00:13:18,200
+ah,
+
+339
+00:13:18,200 --> 00:13:20,200
+draw a reference line with the inner line,
+
+340
+00:13:20,200 --> 00:13:21,200
+then set its folding angle,
+
+341
+00:13:21,200 --> 00:13:24,200
+when the folding angle is less than 180 degrees,
+
+342
+00:13:24,200 --> 00:13:27,200
+it protrudes from the front to the outside,
+
+343
+00:13:27,200 --> 00:13:29,200
+you can make such a folding line,
+
+344
+00:13:29,200 --> 00:13:32,200
+and then the pants part is almost the same,
+
+345
+00:13:32,200 --> 00:13:33,200
+ah,
+
+346
+00:13:33,200 --> 00:13:34,200
+right,
+
+347
+00:13:34,200 --> 00:13:35,200
+what I did today is,
+
+348
+00:13:35,200 --> 00:13:36,200
+um,
+
+349
+00:13:36,200 --> 00:13:38,200
+the clothes of the walnut clip,
+
+350
+00:13:38,200 --> 00:13:39,200
+good,
+
+351
+00:13:39,200 --> 00:13:42,200
+then we will do the folded pants,
+
+352
+00:13:42,200 --> 00:13:43,200
+here,
+
+353
+00:13:43,200 --> 00:13:45,200
+I also set the first method,
+
+354
+00:13:45,200 --> 00:13:49,200
+this first method is to draw a rectangular shape,
+
+355
+00:13:49,200 --> 00:13:50,200
+ah,
+
+356
+00:13:50,200 --> 00:13:51,200
+rectangular shape,
+
+357
+00:13:51,200 --> 00:13:53,200
+and then sew it up,
+
+358
+00:13:53,200 --> 00:13:54,200
+after sewing it up,
+
+359
+00:13:54,200 --> 00:13:55,200
+because I opened it,
+
+360
+00:13:55,200 --> 00:13:57,200
+it is a thick texture surface,
+
+361
+00:13:57,200 --> 00:13:58,200
+ah,
+
+362
+00:13:58,200 --> 00:14:01,200
+the thick texture surface is Alt1,
+
+363
+00:14:01,200 --> 00:14:02,200
+that thick texture surface,
+
+364
+00:14:02,200 --> 00:14:05,200
+because it is,
+
+365
+00:14:05,200 --> 00:14:09,200
+the front and the back are displayed as texture surfaces,
+
+366
+00:14:09,200 --> 00:14:10,200
+that is,
+
+367
+00:14:10,200 --> 00:14:12,200
+the front and back of the panel can not be seen,
+
+368
+00:14:12,200 --> 00:14:14,200
+that when arranging the panel,
+
+369
+00:14:14,200 --> 00:14:16,200
+sometimes it will not be clear,
+
+370
+00:14:16,200 --> 00:14:18,200
+whether the position of this panel is correct,
+
+371
+00:14:18,200 --> 00:14:19,200
+for example,
+
+372
+00:14:19,200 --> 00:14:20,200
+this folding line is crossed,
+
+373
+00:14:20,200 --> 00:14:21,200
+ah,
+
+374
+00:14:21,200 --> 00:14:22,200
+like now,
+
+375
+00:14:22,200 --> 00:14:23,200
+if the folding line is crossed,
+
+376
+00:14:23,200 --> 00:14:25,200
+we will press Alt2,
+
+377
+00:14:25,200 --> 00:14:26,200
+press Alt2,
+
+378
+00:14:26,200 --> 00:14:29,200
+then you can open the single display,
+
+379
+00:14:29,200 --> 00:14:31,200
+this is why everyone will say,
+
+380
+00:14:31,200 --> 00:14:32,200
+ah,
+
+381
+00:14:32,200 --> 00:14:33,200
+I sometimes apply thickness,
+
+382
+00:14:33,200 --> 00:14:34,200
+why not display,
+
+383
+00:14:34,200 --> 00:14:35,200
+ah,
+
+384
+00:14:35,200 --> 00:14:36,200
+then at this time,
+
+385
+00:14:36,200 --> 00:14:37,200
+everyone will go to check,
+
+386
+00:14:37,200 --> 00:14:41,200
+whether you used this single display,
+
+387
+00:14:41,200 --> 00:14:42,200
+because the single display,
+
+388
+00:14:42,200 --> 00:14:46,200
+it is to let you see the difference between the front and the back of the panel,
+
+389
+00:14:46,200 --> 00:14:47,200
+the front is white,
+
+390
+00:14:47,200 --> 00:14:48,200
+the back is black,
+
+391
+00:14:48,200 --> 00:14:49,200
+ah,
+
+392
+00:14:49,200 --> 00:14:51,200
+the back is black,
+
+393
+00:14:51,200 --> 00:14:54,200
+so in this way of display,
+
+394
+00:14:54,200 --> 00:14:56,200
+there is no,
+
+395
+00:14:56,200 --> 00:14:57,200
+ah,
+
+396
+00:14:57,200 --> 00:14:59,200
+no thickness can be displayed,
+
+397
+00:14:59,200 --> 00:15:01,200
+so if you want to display the thickness,
+
+398
+00:15:01,200 --> 00:15:02,200
+press Alt1,
+
+399
+00:15:02,200 --> 00:15:03,200
+switch to density,
+
+400
+00:15:03,200 --> 00:15:06,200
+I can see the thickness on the surface,
+
+401
+00:15:06,200 --> 00:15:08,200
+ah,
+
+402
+00:15:08,200 --> 00:15:09,200
+well,
+
+403
+00:15:09,200 --> 00:15:11,200
+like our pants panel,
+
+404
+00:15:11,200 --> 00:15:12,200
+it is like this,
+
+405
+00:15:12,200 --> 00:15:15,200
+then you can manually expand it a little,
+
+406
+00:15:15,200 --> 00:15:16,200
+expand it a little,
+
+407
+00:15:16,200 --> 00:15:17,200
+so that its,
+
+408
+00:15:17,200 --> 00:15:18,200
+um,
+
+409
+00:15:18,200 --> 00:15:19,200
+um,
+
+410
+00:15:19,200 --> 00:15:22,200
+there is also some volume in the upper eye here,
+
+411
+00:15:22,200 --> 00:15:23,200
+good,
+
+412
+00:15:23,200 --> 00:15:26,200
+then it will be a little wider,
+
+413
+00:15:26,200 --> 00:15:29,200
+sometimes we want to do some more special styles,
+
+414
+00:15:29,200 --> 00:15:30,200
+ah,
+
+415
+00:15:30,200 --> 00:15:31,200
+for example,
+
+416
+00:15:31,200 --> 00:15:32,200
+like in my video,
+
+417
+00:15:32,200 --> 00:15:33,200
+ah,
+
+418
+00:15:33,200 --> 00:15:36,200
+I just want to make it a long,
+
+419
+00:15:36,200 --> 00:15:38,200
+folded out,
+
+420
+00:15:38,200 --> 00:15:39,200
+this,
+
+421
+00:15:39,200 --> 00:15:40,200
+pants,
+
+422
+00:15:40,200 --> 00:15:41,200
+but,
+
+423
+00:15:41,200 --> 00:15:44,200
+you will find that the point on both sides is pointed out,
+
+424
+00:15:44,200 --> 00:15:45,200
+right,
+
+425
+00:15:45,200 --> 00:15:46,200
+ah,
+
+426
+00:15:46,200 --> 00:15:47,200
+in fact,
+
+427
+00:15:47,200 --> 00:15:49,200
+what kind of clothes do you usually make,
+
+428
+00:15:49,200 --> 00:15:50,200
+ah,
+
+429
+00:15:50,200 --> 00:15:52,200
+why is this corner pointed,
+
+430
+00:15:52,200 --> 00:15:56,200
+because this side is a pointed corner,
+
+431
+00:15:56,200 --> 00:15:57,200
+ah,
+
+432
+00:15:57,200 --> 00:15:59,200
+let's take a look,
+
+433
+00:15:59,200 --> 00:16:01,200
+I adjusted its,
+
+434
+00:16:01,200 --> 00:16:02,200
+um,
+
+435
+00:16:02,200 --> 00:16:03,200
+width just now,
+
+436
+00:16:03,200 --> 00:16:04,200
+this one,
+
+437
+00:16:04,200 --> 00:16:06,200
+this corner is a triangular,
+
+438
+00:16:06,200 --> 00:16:07,200
+uh,
+
+439
+00:16:07,200 --> 00:16:08,200
+is a sharp corner,
+
+440
+00:16:08,200 --> 00:16:09,200
+then this is a sharp corner,
+
+441
+00:16:09,200 --> 00:16:10,200
+this is a sharp corner,
+
+442
+00:16:10,200 --> 00:16:12,200
+if the two sharp corners are pinned together,
+
+443
+00:16:12,200 --> 00:16:15,200
+then it will be a protruding corner,
+
+444
+00:16:15,200 --> 00:16:16,200
+it is not a flat corner,
+
+445
+00:16:16,200 --> 00:16:18,200
+it is a flat corner,
+
+446
+00:16:18,200 --> 00:16:19,200
+ah,
+
+447
+00:16:19,200 --> 00:16:20,200
+you can see in the upper left corner,
+
+448
+00:16:20,200 --> 00:16:21,200
+ah,
+
+449
+00:16:21,200 --> 00:16:23,200
+we will have a recording in every live broadcast,
+
+450
+00:16:23,200 --> 00:16:26,200
+this pair of boots is not made in MD,
+
+451
+00:16:26,200 --> 00:16:28,200
+but I used to go out,
+
+452
+00:16:28,200 --> 00:16:29,200
+ah,
+
+453
+00:16:29,200 --> 00:16:31,200
+to do boots live in MD,
+
+454
+00:16:31,200 --> 00:16:32,200
+if you have time,
+
+455
+00:16:32,200 --> 00:16:33,200
+you can go back and have a look,
+
+456
+00:16:33,200 --> 00:16:34,200
+ah,
+
+457
+00:16:34,200 --> 00:16:35,200
+the previous recording,
+
+458
+00:16:35,200 --> 00:16:37,200
+so here we use the editor-in-chief tool,
+
+459
+00:16:37,200 --> 00:16:40,200
+to drag a circle out of it,
+
+460
+00:16:40,200 --> 00:16:42,200
+to fill in these two corners,
+
+461
+00:16:42,200 --> 00:16:43,200
+ah,
+
+462
+00:16:43,200 --> 00:16:44,200
+this is what we usually do,
+
+463
+00:16:44,200 --> 00:16:45,200
+basically,
+
+464
+00:16:45,200 --> 00:16:46,200
+I will mention it,
+
+465
+00:16:46,200 --> 00:16:47,200
+you usually say,
+
+466
+00:16:47,200 --> 00:16:49,200
+why can't I find a flat surface,
+
+467
+00:16:49,200 --> 00:16:51,200
+can't find a flat corner,
+
+468
+00:16:51,200 --> 00:16:53,200
+why do I have a corner that will protrude,
+
+469
+00:16:53,200 --> 00:16:54,200
+in most cases,
+
+470
+00:16:54,200 --> 00:16:57,200
+it is the two corners that you are pinned together,
+
+471
+00:16:57,200 --> 00:16:59,200
+it can't be pinned to a flat corner,
+
+472
+00:16:59,200 --> 00:17:00,200
+understand,
+
+473
+00:17:00,200 --> 00:17:01,200
+this is a 90 degree,
+
+474
+00:17:01,200 --> 00:17:02,200
+then this is also a 90 degree,
+
+475
+00:17:02,200 --> 00:17:04,200
+added together is 180 degrees,
+
+476
+00:17:04,200 --> 00:17:10,200
+can be made into a flat corner,
+
+477
+00:17:10,200 --> 00:17:13,200
+so don't forget to use the curve tool,
+
+478
+00:17:13,200 --> 00:17:14,200
+ah,
+
+479
+00:17:14,200 --> 00:17:18,200
+then why do we pull a curve here at the bottom,
+
+480
+00:17:18,200 --> 00:17:20,200
+because now we pull a curve on top,
+
+481
+00:17:20,200 --> 00:17:22,200
+it has a piece of protruding out,
+
+482
+00:17:22,200 --> 00:17:23,200
+right,
+
+483
+00:17:23,200 --> 00:17:25,200
+so we have to do it here at the same time,
+
+484
+00:17:25,200 --> 00:17:26,200
+ah,
+
+485
+00:17:26,200 --> 00:17:32,200
+make it a curve in the middle,
+
+486
+00:17:32,200 --> 00:17:34,200
+good,
+
+487
+00:17:34,200 --> 00:17:36,200
+then this powder line,
+
+488
+00:17:36,200 --> 00:17:38,200
+we will give it a folding angle,
+
+489
+00:17:38,200 --> 00:17:41,200
+here we set it to be 180 degrees,
+
+490
+00:17:41,200 --> 00:17:42,200
+because of this,
+
+491
+00:17:42,200 --> 00:17:43,200
+ah,
+
+492
+00:17:43,200 --> 00:17:44,200
+ah,
+
+493
+00:17:44,200 --> 00:17:45,200
+first of all,
+
+494
+00:17:45,200 --> 00:17:48,200
+the powder line can be set to a folding angle,
+
+495
+00:17:48,200 --> 00:17:52,200
+the folding angle of the powder line is the same as the folding angle of the inner line,
+
+496
+00:17:52,200 --> 00:17:54,200
+if it is greater than 180,
+
+497
+00:17:54,200 --> 00:17:55,200
+that is,
+
+498
+00:17:55,200 --> 00:17:57,200
+between 180 to 360 degrees,
+
+499
+00:17:57,200 --> 00:18:01,200
+it is folded from the front to the inside,
+
+500
+00:18:01,200 --> 00:18:02,200
+so now,
+
+501
+00:18:02,200 --> 00:18:05,200
+since we want the back of this board to be folded out,
+
+502
+00:18:05,200 --> 00:18:07,200
+then this powder line,
+
+503
+00:18:07,200 --> 00:18:12,200
+its folding angle must be greater than 180 degrees,
+
+504
+00:18:12,200 --> 00:18:13,200
+then,
+
+505
+00:18:13,200 --> 00:18:14,200
+ah,
+
+506
+00:18:14,200 --> 00:18:15,200
+usually,
+
+507
+00:18:15,200 --> 00:18:16,200
+after you have frozen the board,
+
+508
+00:18:16,200 --> 00:18:17,200
+you must remember,
+
+509
+00:18:17,200 --> 00:18:20,200
+after you do the operation of these powder lines,
+
+510
+00:18:20,200 --> 00:18:22,200
+remember to defrost,
+
+511
+00:18:22,200 --> 00:18:23,200
+ah,
+
+512
+00:18:23,200 --> 00:18:24,200
+defrost the board,
+
+513
+00:18:24,200 --> 00:18:25,200
+and simulate it together,
+
+514
+00:18:25,200 --> 00:18:26,200
+ah,
+
+515
+00:18:26,200 --> 00:18:27,200
+because if you don't defrost it,
+
+516
+00:18:27,200 --> 00:18:28,200
+sometimes,
+
+517
+00:18:28,200 --> 00:18:29,200
+because,
+
+518
+00:18:29,200 --> 00:18:30,200
+ah,
+
+519
+00:18:30,200 --> 00:18:31,200
+after the board is created,
+
+520
+00:18:31,200 --> 00:18:32,200
+the powder line,
+
+521
+00:18:32,200 --> 00:18:34,200
+it will re-select the grid,
+
+522
+00:18:34,200 --> 00:18:35,200
+sometimes,
+
+523
+00:18:35,200 --> 00:18:36,200
+the grid,
+
+524
+00:18:36,200 --> 00:18:37,200
+in the process of re-selecting,
+
+525
+00:18:37,200 --> 00:18:40,200
+it will have an interruption problem,
+
+526
+00:18:40,200 --> 00:18:41,200
+if you don't defrost and simulate it,
+
+527
+00:18:41,200 --> 00:18:42,200
+then,
+
+528
+00:18:42,200 --> 00:18:44,200
+the interruption problem will be placed there,
+
+529
+00:18:44,200 --> 00:18:45,200
+ah,
+
+530
+00:18:45,200 --> 00:18:46,200
+here,
+
+531
+00:18:46,200 --> 00:18:47,200
+in the middle,
+
+532
+00:18:47,200 --> 00:18:48,200
+I will speed up,
+
+533
+00:18:48,200 --> 00:18:49,200
+because in the middle,
+
+534
+00:18:49,200 --> 00:18:50,200
+in fact,
+
+535
+00:18:50,200 --> 00:18:52,200
+I am modifying the effect of this corner board,
+
+536
+00:18:52,200 --> 00:18:53,200
+then,
+
+537
+00:18:53,200 --> 00:18:54,200
+we will make a clip,
+
+538
+00:18:54,200 --> 00:18:55,200
+ah,
+
+539
+00:18:55,200 --> 00:18:56,200
+this clip,
+
+540
+00:18:56,200 --> 00:18:58,200
+it is a bit like the inflating effect,
+
+541
+00:18:58,200 --> 00:18:59,200
+wait a moment,
+
+542
+00:19:03,200 --> 00:19:04,200
+ah,
+
+543
+00:19:08,200 --> 00:19:10,200
+a clip like this,
+
+544
+00:19:12,200 --> 00:19:15,200
+ok,
+
+545
+00:19:15,200 --> 00:19:17,200
+this corner board,
+
+546
+00:19:17,200 --> 00:19:18,200
+in fact,
+
+547
+00:19:18,200 --> 00:19:19,200
+it is also very convenient to do,
+
+548
+00:19:19,200 --> 00:19:20,200
+ah,
+
+549
+00:19:20,200 --> 00:19:21,200
+we first of all,
+
+550
+00:19:21,200 --> 00:19:22,200
+give it a change,
+
+551
+00:19:22,200 --> 00:19:23,200
+its length,
+
+552
+00:19:23,200 --> 00:19:24,200
+change its width,
+
+553
+00:19:24,200 --> 00:19:27,200
+like our default in the software,
+
+554
+00:19:27,200 --> 00:19:28,200
+um,
+
+555
+00:19:28,200 --> 00:19:29,200
+this corner board,
+
+556
+00:19:29,200 --> 00:19:31,200
+it is a straight board,
+
+557
+00:19:31,200 --> 00:19:33,200
+it has no effect of inflating,
+
+558
+00:19:33,200 --> 00:19:35,200
+you want to do the effect of inflating,
+
+559
+00:19:35,200 --> 00:19:37,200
+you add a breakpoint near the waist,
+
+560
+00:19:37,200 --> 00:19:38,200
+then,
+
+561
+00:19:38,200 --> 00:19:40,200
+move this breakpoint inside,
+
+562
+00:19:40,200 --> 00:19:41,200
+do an inflating effect,
+
+563
+00:19:41,200 --> 00:19:43,200
+also use the function,
+
+564
+00:19:43,200 --> 00:19:44,200
+and thus,
+
+565
+00:19:44,200 --> 00:19:46,200
+it has an illusion that the curve is not moving,
+
+566
+00:19:46,200 --> 00:19:47,200
+this is what the curve is,
+
+567
+00:19:47,200 --> 00:19:48,200
+and then,
+
+568
+00:19:48,200 --> 00:19:49,200
+it will say,
+
+569
+00:19:49,200 --> 00:19:50,200
+release the effect,
+
+570
+00:19:50,200 --> 00:19:51,200
+and we can see the curve,
+
+571
+00:19:51,200 --> 00:19:52,200
+and now,
+
+572
+00:19:52,200 --> 00:19:53,200
+it will let us adjust a bit,
+
+573
+00:19:53,200 --> 00:19:54,200
+we can see the curve,
+
+574
+00:19:54,200 --> 00:19:55,200
+we can see the curve now,
+
+575
+00:19:55,200 --> 00:19:56,200
+we can see that,
+
+576
+00:19:56,200 --> 00:19:57,200
+the curve will not move,
+
+577
+00:19:57,200 --> 00:19:58,200
+and see that,
+
+578
+00:19:58,200 --> 00:19:59,200
+the curve is still rotating,
+
+579
+00:19:59,200 --> 00:20:00,200
+ok,
+
+580
+00:20:00,200 --> 00:20:01,200
+now,
+
+581
+00:20:01,200 --> 00:20:02,200
+look at this,
+
+582
+00:20:02,200 --> 00:20:03,200
+you see,
+
+583
+00:20:03,200 --> 00:20:04,200
+I adjust the curve,
+
+584
+00:20:04,200 --> 00:20:05,200
+you can see this,
+
+585
+00:20:05,200 --> 00:20:06,200
+it is a straight line,
+
+586
+00:20:06,200 --> 00:20:07,200
+you can see,
+
+587
+00:20:07,200 --> 00:20:08,200
+the curve goes inside,
+
+588
+00:20:08,200 --> 00:20:09,200
+it will necessary to adjust,
+
+589
+00:20:09,200 --> 00:20:10,200
+this curve up here,
+
+590
+00:20:10,200 --> 00:20:16,200
+It will be more harmonious after it is put together, and it will not have that sharp corner.
+
+591
+00:20:16,200 --> 00:20:19,200
+After that, let's modify the bottom of the page.
+
+592
+00:20:19,200 --> 00:20:24,200
+It is the same as when we modified the pants before.
+
+593
+00:20:24,200 --> 00:20:31,200
+We will add a straight line to it to maintain the part above this straight line, or the other side.
+
+594
+00:20:31,200 --> 00:20:35,200
+In short, it is not the curve on this side that we modified.
+
+595
+00:20:35,200 --> 00:20:42,200
+Now I will use the edit panel tool to move this point, and it will not affect the curve on the top.
+
+596
+00:20:42,200 --> 00:20:49,200
+So when you are adjusting the curve, remember that if you think part of the curve is OK,
+
+597
+00:20:49,200 --> 00:20:56,200
+or if you don't want to affect them, then press the X key to add a breakpoint with the plus point division tool.
+
+598
+00:20:58,200 --> 00:21:01,200
+Ah, I didn't...
+
+599
+00:21:01,200 --> 00:21:04,200
+I'm still...
+
+600
+00:21:05,200 --> 00:21:07,200
+I'm still healthy.
+
+601
+00:21:07,200 --> 00:21:09,200
+I'm not sick.
+
+602
+00:21:09,200 --> 00:21:11,200
+I'm still in good shape.
+
+603
+00:21:11,200 --> 00:21:15,200
+Then let's merge the front and the back.
+
+604
+00:21:15,200 --> 00:21:17,200
+Let's merge the front and the back.
+
+605
+00:21:17,200 --> 00:21:19,200
+Why do I need to merge them here?
+
+606
+00:21:19,200 --> 00:21:22,200
+It is because we are going to make the inner line later.
+
+607
+00:21:22,200 --> 00:21:24,200
+To do...
+
+608
+00:21:24,200 --> 00:21:26,200
+To do...
+
+609
+00:21:26,200 --> 00:21:28,200
+The effect of the curve layer later.
+
+610
+00:21:28,200 --> 00:21:31,200
+It is to do the effect of the mixed line.
+
+611
+00:21:31,200 --> 00:21:34,200
+So in order to make the panel
+
+612
+00:21:34,200 --> 00:21:37,200
+don't have the mixed line in the middle.
+
+613
+00:21:37,200 --> 00:21:41,200
+We need to merge the front and the back of the panel first.
+
+614
+00:21:41,200 --> 00:21:44,200
+Because when we create the curve layer,
+
+615
+00:21:44,200 --> 00:21:51,200
+it will create the mixed panel line on all the panel lines.
+
+616
+00:21:52,200 --> 00:21:55,200
+So we need to merge the panels first.
+
+617
+00:21:55,200 --> 00:22:00,200
+In this way, the middle part will not be judged as the panel line.
+
+618
+00:22:00,200 --> 00:22:03,200
+And then, to ensure that it can be stable,
+
+619
+00:22:03,200 --> 00:22:06,200
+We need to do a special adjustment.
+
+620
+00:22:06,200 --> 00:22:09,200
+We can remove the confluence here,
+
+621
+00:22:09,200 --> 00:22:11,200
+And make it a complete panel.
+
+622
+00:22:18,200 --> 00:22:21,200
+You normally need to add more vitamins,
+
+623
+00:22:21,200 --> 00:22:24,200
+and take care of your health.
+
+624
+00:22:24,200 --> 00:22:27,200
+Okay, then we draw the inner line.
+
+625
+00:22:27,200 --> 00:22:29,200
+When I draw the inner line,
+
+626
+00:22:29,200 --> 00:22:32,200
+I draw one line randomly first.
+
+627
+00:22:32,200 --> 00:22:34,700
+Then Ctrl-C, Ctrl-E, copy
+
+628
+00:22:34,700 --> 00:22:39,200
+In the process of copying, press the mouse button to enter the specific value
+
+629
+00:22:39,200 --> 00:22:43,200
+You can adjust the scale of the copy and the root number of the copy
+
+630
+00:22:46,700 --> 00:22:49,200
+Then align to the outline of the board
+
+631
+00:22:49,700 --> 00:22:51,700
+Then Ctrl-C, Ctrl-R
+
+632
+00:22:51,700 --> 00:22:56,700
+Put them in a symmetrical position
+
+633
+00:22:58,700 --> 00:23:00,700
+Then align to the outline of the board
+
+634
+00:23:00,700 --> 00:23:11,200
+I think the outline of the board is too square
+
+635
+00:23:11,200 --> 00:23:17,200
+So I use the tool to edit the dotted lines
+
+636
+00:23:17,200 --> 00:23:21,200
+Note that the tool to edit the dotted lines is a triangle
+
+637
+00:23:21,200 --> 00:23:23,200
+There is another triangle in the middle
+
+638
+00:23:23,200 --> 00:23:25,200
+This symbol
+
+639
+00:23:27,200 --> 00:23:29,200
+Then we double-click
+
+640
+00:23:29,200 --> 00:23:30,200
+All the outline of the board
+
+641
+00:23:30,200 --> 00:23:36,200
+Double-click on one board
+
+642
+00:23:36,200 --> 00:23:38,200
+Double-click on one outline of the board
+
+643
+00:23:38,200 --> 00:23:41,200
+You can select all the outline
+
+644
+00:23:41,200 --> 00:23:43,200
+Then pay attention
+
+645
+00:23:43,200 --> 00:23:44,700
+Remind again
+
+646
+00:23:44,700 --> 00:23:46,700
+What we use is the tool to edit dotted lines
+
+647
+00:23:46,700 --> 00:23:49,700
+With the tool to edit dotted lines
+
+648
+00:23:49,700 --> 00:23:51,700
+It can also shrink the lines
+
+649
+00:23:51,700 --> 00:23:54,200
+If you just use the adjustment outline tool
+
+650
+00:23:54,200 --> 00:23:56,200
+It can't shrink the lines
+
+651
+00:23:56,200 --> 00:23:58,200
+After selecting
+
+652
+00:23:58,200 --> 00:23:59,200
+We can go through the box
+
+653
+00:23:59,200 --> 00:24:00,200
+Select the block
+
+654
+00:24:00,200 --> 00:24:05,700
+to set the shape, the middle of the shape.
+
+655
+00:24:05,700 --> 00:24:08,799
+Notice that the double click here activates the center point.
+
+656
+00:24:08,799 --> 00:24:12,200
+I will show you the knowledge point here.
+
+657
+00:24:12,200 --> 00:24:17,700
+For example, now we have a board, and then there is a line above.
+
+658
+00:24:17,700 --> 00:24:23,700
+If we directly use the edit board tool to select this line,
+
+659
+00:24:23,700 --> 00:24:25,700
+it doesn't have the selection box outside.
+
+660
+00:24:25,700 --> 00:24:31,200
+But if we use the edit dot line tool to select this line,
+
+661
+00:24:31,200 --> 00:24:32,200
+it has the selection box.
+
+662
+00:24:32,200 --> 00:24:40,200
+Now we can rotate, and then slide, slide the line.
+
+663
+00:24:40,200 --> 00:24:43,700
+But you will see that when we slide,
+
+664
+00:24:43,700 --> 00:24:48,700
+it all has a fixed point-like feeling, right?
+
+665
+00:24:48,700 --> 00:24:52,700
+Then we can use the double click to activate the center point.
+
+666
+00:24:52,700 --> 00:24:55,200
+See, when we activate the center point,
+
+667
+00:24:55,200 --> 00:24:59,700
+all the points on the selection box will turn orange.
+
+668
+00:24:59,700 --> 00:25:05,700
+In this case, the point in the middle is the center point.
+
+669
+00:25:05,700 --> 00:25:08,700
+We can define the position of this point.
+
+670
+00:25:08,700 --> 00:25:15,200
+For example, we will use the center point as the reference point to slide.
+
+671
+00:25:15,200 --> 00:25:17,200
+You can see that the line I drew,
+
+672
+00:25:17,200 --> 00:25:21,200
+its slide is based on the center fixed position to be slid.
+
+673
+00:25:21,200 --> 00:25:23,700
+If I move this point here,
+
+674
+00:25:23,700 --> 00:25:24,700
+then my slide,
+
+675
+00:25:24,700 --> 00:25:27,200
+it will fix this point,
+
+676
+00:25:27,200 --> 00:25:29,200
+and then slide the line.
+
+677
+00:25:29,200 --> 00:25:32,200
+See?
+
+678
+00:25:32,200 --> 00:25:35,200
+This is the use of the center point.
+
+679
+00:25:35,200 --> 00:25:36,200
+If I fix this point,
+
+680
+00:25:36,200 --> 00:25:38,200
+and rotate it,
+
+681
+00:25:38,200 --> 00:25:40,200
+it will also fix this point,
+
+682
+00:25:40,200 --> 00:25:42,200
+and the center point will not move,
+
+683
+00:25:42,200 --> 00:25:44,200
+and then rotate the line.
+
+684
+00:25:44,200 --> 00:25:46,200
+When it rotates,
+
+685
+00:25:46,200 --> 00:25:48,200
+it can also enter the number of points.
+
+686
+00:25:50,200 --> 00:25:53,200
+This is the edit dot line tool.
+
+687
+00:25:53,200 --> 00:25:56,700
+The edit dot line is different from the edit board.
+
+688
+00:25:56,700 --> 00:25:59,700
+Please pay attention.
+
+689
+00:25:59,700 --> 00:26:04,700
+So here I use the edit dot line tool to select all the lines.
+
+690
+00:26:04,700 --> 00:26:06,700
+On one line,
+
+691
+00:26:06,700 --> 00:26:10,700
+the double click can select the entire line,
+
+692
+00:26:10,700 --> 00:26:12,700
+including the end point of its two ends,
+
+693
+00:26:12,700 --> 00:26:15,700
+and then on the selected whole line,
+
+694
+00:26:15,700 --> 00:26:18,700
+the double click can select all the lines again.
+
+695
+00:26:18,700 --> 00:26:21,700
+Let's move the line.
+
+696
+00:26:21,700 --> 00:26:23,700
+Ah, that's right.
+
+697
+00:26:23,700 --> 00:26:26,200
+So if you usually want to slide the line,
+
+698
+00:26:26,200 --> 00:26:29,200
+or if you want to slide some internal shapes,
+
+699
+00:26:29,200 --> 00:26:32,200
+you can slide it like this.
+
+700
+00:26:32,200 --> 00:26:34,200
+Use the edit dot line to slide.
+
+701
+00:26:34,200 --> 00:26:36,200
+Of course, if it is a closed shape,
+
+702
+00:26:36,200 --> 00:26:39,200
+you can also slide it directly with the adjustment board tool.
+
+703
+00:26:39,200 --> 00:26:40,200
+But here,
+
+704
+00:26:40,200 --> 00:26:42,200
+it is a non-closed shape.
+
+705
+00:26:42,200 --> 00:26:45,200
+There is no express line for the west side.
+
+706
+00:26:45,200 --> 00:26:47,200
+The west side is default,
+
+707
+00:26:47,200 --> 00:26:49,200
+and the west side is opened.
+
+708
+00:26:49,200 --> 00:26:51,200
+Then, because we are going to do the colon layer later,
+
+709
+00:26:51,700 --> 00:26:56,700
+so now we need to reserve all these borders.
+
+710
+00:26:56,700 --> 00:27:01,700
+We will use the edit dot line expansion tool to draw a border,
+
+711
+00:27:01,700 --> 00:27:06,700
+and then cut and sew to make this border.
+
+712
+00:27:06,700 --> 00:27:07,700
+OK.
+
+713
+00:27:07,700 --> 00:27:09,700
+Before I do this,
+
+714
+00:27:09,700 --> 00:27:11,700
+I will make the border first,
+
+715
+00:27:11,700 --> 00:27:14,700
+because after we use the colon layer,
+
+716
+00:27:14,700 --> 00:27:16,700
+if you do the border again,
+
+717
+00:27:16,700 --> 00:27:19,700
+if you use the edit dot line expansion function,
+
+718
+00:27:19,700 --> 00:27:21,700
+the middle section is cut,
+
+719
+00:27:21,700 --> 00:27:24,700
+and the border will be automatically canceled.
+
+720
+00:27:24,700 --> 00:27:26,700
+Because when we cut the board,
+
+721
+00:27:26,700 --> 00:27:28,700
+if it is along here,
+
+722
+00:27:28,700 --> 00:27:31,700
+if there are some border effects,
+
+723
+00:27:31,700 --> 00:27:33,700
+it may be cut off.
+
+724
+00:27:33,700 --> 00:27:37,700
+So we did these borders first before the colon layer.
+
+725
+00:27:39,700 --> 00:27:42,700
+After that, we can use the colon layer function without any worries.
+
+726
+00:27:42,700 --> 00:27:46,700
+Here, the outer and inner of the colon layer is OK.
+
+727
+00:27:46,700 --> 00:27:48,700
+After creating the colon layer,
+
+728
+00:27:48,700 --> 00:27:50,700
+you can see that all the positions of the inner line we drew,
+
+729
+00:27:50,700 --> 00:27:53,700
+will be cut off.
+
+730
+00:27:53,700 --> 00:27:56,700
+The inner and outer layers will have the effect of cut-off lines.
+
+731
+00:27:56,700 --> 00:28:00,700
+Then we will increase the shrink rate of the outer board a little bit,
+
+732
+00:28:00,700 --> 00:28:04,700
+so that the inner and outer layers have the width and length difference,
+
+733
+00:28:04,700 --> 00:28:09,700
+so that we can make some cut-off lines,
+
+734
+00:28:09,700 --> 00:28:15,700
+and some clothes that look like cotton.
+
+735
+00:28:15,700 --> 00:28:18,700
+If you are going to make a down jacket,
+
+736
+00:28:18,700 --> 00:28:19,700
+OK.
+
+737
+00:28:19,700 --> 00:28:21,700
+If you are going to make a down jacket,
+
+738
+00:28:21,700 --> 00:28:23,700
+you need to add some pressure to it.
+
+739
+00:28:23,700 --> 00:28:25,700
+You need to add some pressure to the inner and outer layers.
+
+740
+00:28:25,700 --> 00:28:27,700
+If you are going to make a down jacket,
+
+741
+00:28:27,700 --> 00:28:29,700
+you need to look at the last video,
+
+742
+00:28:29,700 --> 00:28:33,700
+the video of making a multi-layer suit.
+
+743
+00:28:33,700 --> 00:28:35,700
+That video is more detailed.
+
+744
+00:28:38,700 --> 00:28:41,700
+Next, we are going to make the collar.
+
+745
+00:28:42,700 --> 00:28:44,700
+Then, for the collar,
+
+746
+00:28:44,700 --> 00:28:47,700
+we will draw a long rectangle here first.
+
+747
+00:28:47,700 --> 00:28:50,700
+Then we will draw a long rectangle here first.
+
+748
+00:28:50,700 --> 00:28:54,700
+Then we will draw a long rectangle here first.
+
+749
+00:28:55,700 --> 00:28:58,700
+Or you can make it longer than that.
+
+750
+00:28:59,700 --> 00:29:02,700
+Then, we will draw the inner line.
+
+751
+00:29:02,700 --> 00:29:04,700
+After drawing the inner line,
+
+752
+00:29:04,700 --> 00:29:06,700
+we will use the Remembering Fold tool,
+
+753
+00:29:06,700 --> 00:29:08,700
+which is one of our usual tool,
+
+754
+00:29:08,700 --> 00:29:10,700
+and this is how to use Remembering Fold.
+
+755
+00:29:11,700 --> 00:29:14,700
+We will fold this.
+
+756
+00:29:14,700 --> 00:29:27,700
+Let's make a collar, and then I didn't use a sewing fold here, because my inner line is just a fold for it in advance.
+
+757
+00:29:27,700 --> 00:29:36,700
+Because in our software, if you directly put a rectangular board and other lines together,
+
+758
+00:29:36,700 --> 00:29:43,700
+then its arrangement, its fold arrangement is irregular.
+
+759
+00:29:43,700 --> 00:29:48,700
+Because it has this seam line, because the place you arrange is definitely not arranged tightly,
+
+760
+00:29:48,700 --> 00:29:54,700
+then its seam line will work, and then add the length difference of the board, its fold is irregular.
+
+761
+00:29:54,700 --> 00:29:59,700
+If you want to make a regular fold, you can use a folding tool to give them a folding angle in advance,
+
+762
+00:29:59,700 --> 00:30:04,700
+let it fold first, and then print the board. These are all regular operations.
+
+763
+00:30:04,700 --> 00:30:11,700
+Freeze, because we don't need to adjust the clothes board, so freeze it first.
+
+764
+00:30:11,700 --> 00:30:13,700
+On the one hand, it can save the operation.
+
+765
+00:30:13,700 --> 00:30:19,700
+Because the computer runs so many boards, its pressure is also relatively large.
+
+766
+00:30:19,700 --> 00:30:27,700
+On the other hand, the frozen board can prevent it from being transformed by these collar stretchings later.
+
+767
+00:30:27,700 --> 00:30:32,700
+In fact, it is mainly to prevent the stretch and deformation, because there are not many boards now.
+
+768
+00:30:32,700 --> 00:30:35,700
+It won't be very sharp if you simulate it together.
+
+769
+00:30:39,700 --> 00:30:42,700
+Then sew the seam line on the side.
+
+770
+00:30:43,700 --> 00:30:47,700
+Open the simulation.
+
+771
+00:30:51,700 --> 00:31:00,700
+Then here, after I used hardening, even if the board is folded, it will be like this.
+
+772
+00:31:00,700 --> 00:31:05,700
+Because on the one hand, the surface is harder to use, and on the other hand, the particle diameter has not been reduced.
+
+773
+00:31:05,700 --> 00:31:08,700
+In addition, the board itself is relatively wide.
+
+774
+00:31:08,700 --> 00:31:11,700
+Then we set a negative value pressure here.
+
+775
+00:31:11,700 --> 00:31:16,700
+Then we can make the collar edge.
+
+776
+00:31:16,700 --> 00:31:23,700
+Because the negative pressure is from the front of the board to the back, so there is a force.
+
+777
+00:31:23,700 --> 00:31:31,700
+Push this board all the way in, so that the collar edge can be pressed tight to the model's neck.
+
+778
+00:31:31,700 --> 00:31:33,700
+Do you understand?
+
+779
+00:31:33,700 --> 00:31:39,700
+So usually when we make a flower edge, we hope that the flower edge is tight to the human body or the clothes.
+
+780
+00:31:39,700 --> 00:31:43,700
+In this case, we will use a negative pressure to press it in.
+
+781
+00:31:43,700 --> 00:31:46,700
+This value can be adjusted a little bigger.
+
+782
+00:31:46,700 --> 00:31:49,700
+If you feel that it is not very tight.
+
+783
+00:31:49,700 --> 00:31:51,700
+Then it is the same as what we said.
+
+784
+00:31:51,700 --> 00:31:55,700
+In the process of simulation, remember to untie the frozen board.
+
+785
+00:31:55,700 --> 00:31:57,700
+Let's figure it out together.
+
+786
+00:31:57,700 --> 00:31:59,700
+Don't let them be too far away.
+
+787
+00:31:59,700 --> 00:32:02,700
+Then untie it for the last time.
+
+788
+00:32:02,700 --> 00:32:05,700
+In this case, it will sometimes be unstable.
+
+789
+00:32:05,700 --> 00:32:08,700
+Then after we activate the simulation, we will see.
+
+790
+00:32:08,700 --> 00:32:11,700
+Because the board was frozen before, we didn't find it.
+
+791
+00:32:11,700 --> 00:32:15,700
+But now because of our collar board.
+
+792
+00:32:15,700 --> 00:32:18,700
+Its fabric may have used a softer fabric.
+
+793
+00:32:18,700 --> 00:32:20,700
+So it has deformed.
+
+794
+00:32:20,700 --> 00:32:22,700
+So now we find these two boards.
+
+795
+00:32:22,700 --> 00:32:26,700
+Use a harder fabric for it.
+
+796
+00:32:26,700 --> 00:32:30,700
+The harder fabric I am talking about here is the fabric that is not easy to stretch.
+
+797
+00:32:30,700 --> 00:32:36,700
+For example, it is the fabric with a relatively strong neckline.
+
+798
+00:32:36,700 --> 00:32:37,700
+It is not easy to stretch.
+
+799
+00:32:37,700 --> 00:32:38,700
+Because you can see.
+
+800
+00:32:38,700 --> 00:32:42,700
+The edge of this board is probably this long.
+
+801
+00:32:42,700 --> 00:32:46,700
+And the collar board is a little longer than it.
+
+802
+00:32:46,700 --> 00:32:49,700
+Plus the sewing line in the middle.
+
+803
+00:32:49,700 --> 00:32:53,700
+Then this board is easy to be stretched by the collar board.
+
+804
+00:32:53,700 --> 00:32:59,700
+So we will use a fabric that is not easy to be stretched.
+
+805
+00:32:59,700 --> 00:33:03,700
+Then change the collar to a softer fabric.
+
+806
+00:33:08,700 --> 00:33:19,700
+And the collar board is easy to be stretched by the collar board.
+
+807
+00:33:19,700 --> 00:33:22,700
+So now we know what we are going to do with these two pieces of fabric.
+
+808
+00:33:22,700 --> 00:33:24,700
+We can change their names.
+
+809
+00:33:24,700 --> 00:33:26,700
+Otherwise, we will use the wrong fabric again.
+
+810
+00:33:26,700 --> 00:33:29,700
+The next step is to make the jacket.
+
+811
+00:33:29,700 --> 00:33:33,700
+The jacket of the cotton cardigan is relatively simple.
+
+812
+00:33:33,700 --> 00:33:35,700
+It is not difficult to operate.
+
+813
+00:33:35,700 --> 00:33:37,700
+We add a default one.
+
+814
+00:33:37,700 --> 00:33:39,700
+Take the fabric in.
+
+815
+00:33:39,700 --> 00:33:44,700
+Then use pressure to let it quickly pass through the outside of the fabric inside.
+
+816
+00:33:44,700 --> 00:33:49,700
+Remember to return the pressure to zero after doing it.
+
+817
+00:33:49,700 --> 00:33:52,700
+Then we do the cross section first.
+
+818
+00:33:52,700 --> 00:33:55,700
+Because in the end, we can see.
+
+819
+00:33:55,700 --> 00:33:58,700
+In the end, we cross this dress.
+
+820
+00:33:58,700 --> 00:33:59,700
+Right?
+
+821
+00:33:59,700 --> 00:34:01,700
+We put the button on the side.
+
+822
+00:34:01,700 --> 00:34:05,700
+So now we fill out the cross section of the T-shirt first.
+
+823
+00:34:05,700 --> 00:34:09,699
+Because later it will be connected with such a folded structure.
+
+824
+00:34:09,699 --> 00:34:12,699
+So let's do the cross section first.
+
+825
+00:34:12,699 --> 00:34:14,699
+Okay, this is the expansion of the T-shirt.
+
+826
+00:34:14,699 --> 00:34:16,699
+Remember to choose the inner line.
+
+827
+00:34:16,699 --> 00:34:18,699
+Because of the position of the inner line in the middle.
+
+828
+00:34:18,699 --> 00:34:20,699
+Because of this dress.
+
+829
+00:34:20,699 --> 00:34:22,699
+It is now in a normal place.
+
+830
+00:34:22,699 --> 00:34:26,699
+The inner line in the middle is its middle line.
+
+831
+00:34:26,699 --> 00:34:29,699
+This line itself is mixed together.
+
+832
+00:34:29,699 --> 00:34:32,699
+It is a more natural state.
+
+833
+00:34:32,699 --> 00:34:33,699
+So let's finish the cross section.
+
+834
+00:34:33,699 --> 00:34:36,699
+So after we finish the cross section.
+
+835
+00:34:36,699 --> 00:34:40,699
+We can manually adjust the position of the cross section.
+
+836
+00:34:40,699 --> 00:34:43,699
+Because the outer line of the T-shirt is expanded.
+
+837
+00:34:43,699 --> 00:34:46,699
+Although its T-shirt is connected.
+
+838
+00:34:46,699 --> 00:34:49,699
+This line is our model just now.
+
+839
+00:34:49,699 --> 00:34:51,699
+That is, the middle line of the clothing model.
+
+840
+00:34:51,699 --> 00:34:52,699
+It has a sewing line.
+
+841
+00:34:52,699 --> 00:34:55,699
+We have to delete this extra sewing line.
+
+842
+00:34:55,699 --> 00:35:00,699
+Then transfer this sewing line back to the inner line.
+
+843
+00:35:00,699 --> 00:35:02,699
+Then turn on the simulation.
+
+844
+00:35:02,699 --> 00:35:04,699
+Then turn on the simulation before.
+
+845
+00:35:04,699 --> 00:35:05,699
+Because they have some cross section.
+
+846
+00:35:05,699 --> 00:35:07,699
+So let's pull the panel out a little bit first.
+
+847
+00:35:07,699 --> 00:35:10,699
+Don't let it be in the case of a cross section.
+
+848
+00:35:10,699 --> 00:35:13,699
+Add some more sewing lines.
+
+849
+00:35:13,699 --> 00:35:16,699
+In this case, it will only make it more unstable.
+
+850
+00:35:16,699 --> 00:35:19,699
+So we have to consider it in the early stage of the arrangement.
+
+851
+00:35:19,699 --> 00:35:23,699
+Will this sewing line cause it to be a little misaligned?
+
+852
+00:35:23,699 --> 00:35:26,699
+The panel should not be misaligned as much as possible.
+
+853
+00:35:26,699 --> 00:35:28,699
+Then do the shoulder.
+
+854
+00:35:28,699 --> 00:35:31,699
+Because our T-shirt shoulder is still more on the inside.
+
+855
+00:35:31,699 --> 00:35:33,699
+When we make some T-shirts,
+
+856
+00:35:33,699 --> 00:35:35,699
+the shoulder width is relatively wide.
+
+857
+00:35:35,699 --> 00:35:38,699
+Let's move the point of the shoulder out a little bit.
+
+858
+00:35:38,699 --> 00:35:41,699
+Because the point of the shoulder has moved out.
+
+859
+00:35:41,699 --> 00:35:44,699
+The point of the sleeve connecting to it
+
+860
+00:35:44,699 --> 00:35:47,699
+should also come down a little bit.
+
+861
+00:35:47,699 --> 00:35:53,699
+So we just moved this point down a little bit.
+
+862
+00:35:53,699 --> 00:35:55,699
+Then simulate it.
+
+863
+00:36:01,699 --> 00:36:05,699
+Then we make the side a little bit wider.
+
+864
+00:36:05,699 --> 00:36:08,699
+And also make the side of the sleeve a little bit wider.
+
+865
+00:36:08,699 --> 00:36:10,699
+So when you are adjusting,
+
+866
+00:36:10,699 --> 00:36:11,699
+you must remember
+
+867
+00:36:11,699 --> 00:36:13,699
+when you are adjusting,
+
+868
+00:36:13,699 --> 00:36:15,699
+you have to find the point that is related to it
+
+869
+00:36:15,699 --> 00:36:18,699
+or the position that is in harmony with it.
+
+870
+00:36:18,699 --> 00:36:20,699
+You have to modify it together.
+
+871
+00:36:20,699 --> 00:36:21,699
+Don't just change one side.
+
+872
+00:36:21,699 --> 00:36:23,699
+If you just change one side,
+
+873
+00:36:23,699 --> 00:36:27,699
+it is very likely that you will not be satisfied with the shape of the clothes.
+
+874
+00:36:27,699 --> 00:36:29,699
+Right?
+
+875
+00:36:29,699 --> 00:36:30,699
+Okay.
+
+876
+00:36:30,700 --> 00:36:32,700
+You can also ask me any questions
+
+877
+00:36:32,700 --> 00:36:36,700
+during the MD process.
+
+878
+00:36:36,700 --> 00:36:37,700
+Okay.
+
+879
+00:36:37,700 --> 00:36:38,700
+Then I want to see.
+
+880
+00:36:38,700 --> 00:36:41,700
+Then we should make the button here.
+
+881
+00:36:41,700 --> 00:36:42,700
+If you make the button,
+
+882
+00:36:42,700 --> 00:36:45,700
+draw some internal lines to fix it first.
+
+883
+00:36:45,700 --> 00:36:48,700
+Because we are going to do animation later.
+
+884
+00:36:48,700 --> 00:36:51,700
+So we will use this button
+
+885
+00:36:51,700 --> 00:36:56,700
+to use the bag of the button.
+
+886
+00:36:56,700 --> 00:36:58,700
+This bag.
+
+887
+00:36:58,700 --> 00:36:59,700
+We will put it
+
+888
+00:36:59,700 --> 00:37:05,700
+and we will sew it directly on the clothes.
+
+889
+00:37:05,700 --> 00:37:06,700
+Because in this way,
+
+890
+00:37:06,700 --> 00:37:08,700
+you are making some movements that are very large.
+
+891
+00:37:08,700 --> 00:37:10,700
+Because my movement
+
+892
+00:37:10,700 --> 00:37:11,700
+to the end of it,
+
+893
+00:37:11,700 --> 00:37:15,700
+you can see that it is jumping and jumping in the middle.
+
+894
+00:37:15,700 --> 00:37:18,700
+Its width is very large.
+
+895
+00:37:18,700 --> 00:37:21,700
+So we have to make it fixed.
+
+896
+00:37:21,700 --> 00:37:23,700
+Just put these two bags,
+
+897
+00:37:23,700 --> 00:37:25,700
+the position that we can't see on both sides,
+
+898
+00:37:25,700 --> 00:37:26,700
+which is the position where the button is blocked,
+
+899
+00:37:26,700 --> 00:37:27,700
+to fix it.
+
+900
+00:37:27,700 --> 00:37:28,700
+Fix it on the clothes.
+
+901
+00:37:28,700 --> 00:37:29,700
+This way,
+
+902
+00:37:29,700 --> 00:37:32,700
+it won't affect us.
+
+903
+00:37:32,700 --> 00:37:35,700
+Because in this very small position,
+
+904
+00:37:35,700 --> 00:37:37,700
+if we finally
+
+905
+00:37:37,700 --> 00:37:41,700
+only let it use the button to fix the clothes,
+
+906
+00:37:41,700 --> 00:37:43,700
+then its strength is only two points.
+
+907
+00:37:43,700 --> 00:37:47,700
+Or it is one, two, three, four, five, six, six points.
+
+908
+00:37:47,700 --> 00:37:50,700
+Only these six points,
+
+909
+00:37:50,700 --> 00:37:54,700
+then its strength will be bad.
+
+910
+00:37:54,700 --> 00:37:55,700
+First of all,
+
+911
+00:37:55,700 --> 00:37:57,700
+I don't recommend everyone,
+
+912
+00:37:57,700 --> 00:37:58,700
+Clou and MD,
+
+913
+00:37:58,700 --> 00:38:00,700
+to use both software together.
+
+914
+00:38:00,700 --> 00:38:04,700
+Because both of our software are paid software.
+
+915
+00:38:04,700 --> 00:38:10,700
+And the target group of our two software is different.
+
+916
+00:38:10,700 --> 00:38:15,700
+So I don't recommend you to buy both software at the same time.
+
+917
+00:38:15,700 --> 00:38:17,700
+If you are a clothing company,
+
+918
+00:38:17,700 --> 00:38:19,700
+you can use Clou.
+
+919
+00:38:19,700 --> 00:38:21,700
+Because Clou is an integrated software.
+
+920
+00:38:21,700 --> 00:38:22,700
+It is,
+
+921
+00:38:22,700 --> 00:38:25,700
+because both of our software are from the same company.
+
+922
+00:38:25,700 --> 00:38:26,700
+Clou,
+
+923
+00:38:26,700 --> 00:38:28,700
+it is for clothing users.
+
+924
+00:38:28,700 --> 00:38:31,700
+I hope one software can be integrated.
+
+925
+00:38:31,700 --> 00:38:33,700
+With some rendering,
+
+926
+00:38:33,700 --> 00:38:35,700
+these functions can directly produce finished products,
+
+927
+00:38:35,700 --> 00:38:38,700
+visual effects.
+
+928
+00:38:38,700 --> 00:38:41,700
+It is also relatively strong in connection with production.
+
+929
+00:38:41,700 --> 00:38:42,700
+Then our software,
+
+930
+00:38:42,700 --> 00:38:46,700
+is mainly for users in the CG industry.
+
+931
+00:38:46,700 --> 00:38:47,700
+In the future,
+
+932
+00:38:47,700 --> 00:38:48,700
+some of the functions to be seen
+
+933
+00:38:48,700 --> 00:38:50,700
+are also some functions for users in the CG industry.
+
+934
+00:38:56,700 --> 00:38:57,700
+Next,
+
+935
+00:38:57,700 --> 00:39:02,700
+it is to make these internal lines for sewing and buttoning.
+
+936
+00:39:02,700 --> 00:39:05,700
+So I must remind you that,
+
+937
+00:39:05,700 --> 00:39:08,700
+if you want to make the clothes stable enough,
+
+938
+00:39:08,700 --> 00:39:11,700
+you should try to increase the area of its strength.
+
+939
+00:39:11,700 --> 00:39:14,700
+Don't let the clothes,
+
+940
+00:39:14,700 --> 00:39:17,700
+although it looks like only buttoning,
+
+941
+00:39:17,700 --> 00:39:19,700
+and the two sides are tight.
+
+942
+00:39:19,700 --> 00:39:20,700
+But in fact,
+
+943
+00:39:20,700 --> 00:39:22,700
+we will use the fixing of these sewing lines,
+
+944
+00:39:22,700 --> 00:39:25,700
+to avoid these unstable problems.
+
+945
+00:39:25,700 --> 00:39:26,700
+Understand?
+
+946
+00:39:26,700 --> 00:39:28,700
+So when you are making animation,
+
+947
+00:39:28,700 --> 00:39:29,700
+remember,
+
+948
+00:39:29,700 --> 00:39:30,700
+we first give it,
+
+949
+00:39:30,700 --> 00:39:32,700
+especially like buttoning,
+
+950
+00:39:32,700 --> 00:39:34,700
+we first give it a fake one,
+
+951
+00:39:34,700 --> 00:39:37,700
+which looks stable.
+
+952
+00:39:37,700 --> 00:39:38,700
+In fact,
+
+953
+00:39:38,700 --> 00:39:41,700
+we will avoid these problems through sewing lines.
+
+954
+00:39:46,700 --> 00:39:47,700
+Then,
+
+955
+00:39:47,700 --> 00:39:49,700
+like this relatively thin bag,
+
+956
+00:39:49,700 --> 00:39:52,700
+we all have to give it a relatively small particle diameter.
+
+957
+00:39:52,700 --> 00:39:53,700
+Because you think,
+
+958
+00:39:53,700 --> 00:39:54,700
+it is a small version,
+
+959
+00:39:54,700 --> 00:39:58,700
+it must be fixed to the two sides of the clothes.
+
+960
+00:39:58,700 --> 00:40:03,700
+Then we also try to give it some smaller particles diameter,
+
+961
+00:40:03,700 --> 00:40:05,700
+so that it has enough face,
+
+962
+00:40:05,700 --> 00:40:07,700
+to be able to stabilize the simulation.
+
+963
+00:40:10,700 --> 00:40:12,700
+And because the version is relatively small,
+
+964
+00:40:12,700 --> 00:40:15,700
+so it is not very important to increase its face number.
+
+965
+00:40:17,700 --> 00:40:19,700
+It won't take up much resources.
+
+966
+00:40:21,700 --> 00:40:23,700
+Then we make the two ends better.
+
+967
+00:40:24,700 --> 00:40:26,700
+Because in our real life,
+
+968
+00:40:26,700 --> 00:40:28,700
+you must be the button to the button,
+
+969
+00:40:28,700 --> 00:40:31,700
+to the bag.
+
+970
+00:40:31,700 --> 00:40:33,700
+But if we make it in the software,
+
+971
+00:40:33,700 --> 00:40:35,700
+it won't be.
+
+972
+00:40:35,700 --> 00:40:38,700
+We first fix the button to the button,
+
+973
+00:40:38,700 --> 00:40:40,700
+to the model.
+
+974
+00:40:40,700 --> 00:40:42,700
+Through the internal line,
+
+975
+00:40:42,700 --> 00:40:43,700
+and then increase the sewing line,
+
+976
+00:40:43,700 --> 00:40:45,700
+to fix it to the model.
+
+977
+00:40:45,700 --> 00:40:48,700
+I don't understand what you are talking about.
+
+978
+00:40:48,700 --> 00:40:49,700
+I think it is a little bit complicated.
+
+979
+00:40:49,700 --> 00:40:50,700
+It is a little bit complicated.
+
+980
+00:40:50,700 --> 00:40:51,700
+It is a little bit complicated.
+
+981
+00:40:51,700 --> 00:40:52,700
+It is a little bit complicated.
+
+982
+00:40:52,700 --> 00:40:53,700
+It is a little bit complicated.
+
+983
+00:40:53,700 --> 00:40:55,700
+I don't understand what you are talking about.
+
+984
+00:40:57,700 --> 00:40:59,700
+Loosening belt.
+
+985
+00:40:59,700 --> 00:41:02,700
+Is it okay to make a loosing belt in MD?
+
+986
+00:41:02,700 --> 00:41:04,700
+I don't know what you are talking about.
+
+987
+00:41:04,700 --> 00:41:05,700
+In the past,
+
+988
+00:41:05,700 --> 00:41:08,700
+I also made a loosing belt in our tutorial video.
+
+989
+00:41:08,700 --> 00:41:09,700
+Generally speaking,
+
+990
+00:41:09,700 --> 00:41:14,700
+the inner layer is a relatively narrow version,
+
+991
+00:41:14,700 --> 00:41:16,700
+and the outer layer is a relatively wide version.
+
+992
+00:41:16,700 --> 00:41:19,700
+Then just sew them together.
+
+993
+00:41:20,700 --> 00:41:21,700
+Okay.
+
+994
+00:41:21,700 --> 00:41:25,700
+Then, like this plate on both sides,
+
+995
+00:41:25,700 --> 00:41:29,700
+you can see that it used the hardware fabric of the last day,
+
+996
+00:41:29,700 --> 00:41:31,700
+which is the harder fabric.
+
+997
+00:41:31,700 --> 00:41:34,700
+It will stretch the plate,
+
+998
+00:41:34,700 --> 00:41:36,700
+because its stretching performance is not good.
+
+999
+00:41:36,700 --> 00:41:40,700
+Then we first freeze the other plates that fit it,
+
+1000
+00:41:40,700 --> 00:41:44,700
+and then move this plate to the plate that fits it,
+
+1001
+00:41:44,700 --> 00:41:46,700
+and then simulate it.
+
+1002
+00:41:46,700 --> 00:41:49,700
+Try not to let the plate be too far away from the plate that fits it when arranging.
+
+1003
+00:41:49,700 --> 00:41:50,700
+Try not to let the plate be too far away from the plate that fits it when arranging.
+
+1004
+00:41:50,700 --> 00:41:52,700
+Try not to let the plate be too far away from the plate that fits it when arranging.
+
+1005
+00:41:52,700 --> 00:41:54,700
+Otherwise, it may not be stable.
+
+1006
+00:42:00,700 --> 00:42:06,700
+Then also use the inner line to fix this end.
+
+1007
+00:42:06,700 --> 00:42:12,700
+It looks like it is tightly attached to the model.
+
+1008
+00:42:12,700 --> 00:42:15,700
+In fact, it is controlled by the sewing line.
+
+1009
+00:42:16,700 --> 00:42:17,700
+It's still the same.
+
+1010
+00:42:17,700 --> 00:42:19,700
+When we are making animation,
+
+1011
+00:42:19,700 --> 00:42:22,700
+the most important point is to stabilize it.
+
+1012
+00:42:22,700 --> 00:42:27,700
+If the position is too small,
+
+1013
+00:42:27,700 --> 00:42:30,700
+you can use the inner line to do some processing.
+
+1014
+00:42:30,700 --> 00:42:35,700
+Then, we freeze the plate and simulate it together.
+
+1015
+00:42:35,700 --> 00:42:37,700
+Then, we freeze the plate and simulate it together.
+
+1016
+00:42:37,700 --> 00:42:38,700
+Then, we freeze the plate and simulate it together.
+
+1017
+00:42:38,700 --> 00:42:40,700
+Then, we freeze the plate and simulate it together.
+
+1018
+00:42:40,700 --> 00:42:45,700
+The main reason is that we consider that the action is relatively large.
+
+1019
+00:42:45,700 --> 00:42:47,700
+So, we need to use this more complicated method to make it.
+
+1020
+00:42:47,700 --> 00:42:49,700
+So, we need to use this more complicated method to make it.
+
+1021
+00:42:49,700 --> 00:42:51,700
+So, we need to use this more complicated method to make it.
+
+1022
+00:42:51,700 --> 00:42:52,700
+Because it's like a walnut clip.
+
+1023
+00:42:52,700 --> 00:42:53,700
+Because I've seen it.
+
+1024
+00:42:53,700 --> 00:42:54,700
+Because I've seen it.
+
+1025
+00:42:54,700 --> 00:42:55,700
+Because I've seen it.
+
+1026
+00:42:55,700 --> 00:42:56,700
+Because I've seen it.
+
+1027
+00:42:56,700 --> 00:42:57,700
+Because I've seen it.
+
+1028
+00:42:57,700 --> 00:42:58,700
+Because I've seen it.
+
+1029
+00:42:58,700 --> 00:42:59,700
+Because I've seen it.
+
+1030
+00:42:59,700 --> 00:43:00,700
+Because I've seen it.
+
+1031
+00:43:00,700 --> 00:43:01,700
+Because I've seen it.
+
+1032
+00:43:01,700 --> 00:43:02,700
+Because I've seen it.
+
+1033
+00:43:02,700 --> 00:43:03,700
+Because I've seen it.
+
+1034
+00:43:03,700 --> 00:43:05,700
+Because I've seen it.
+
+1035
+00:43:05,700 --> 00:43:06,700
+Because I've seen it.
+
+1036
+00:43:06,700 --> 00:43:07,700
+Because I've seen it.
+
+1037
+00:43:07,700 --> 00:43:08,700
+Because I've seen it.
+
+1038
+00:43:08,700 --> 00:43:09,700
+Because I've seen it.
+
+1039
+00:43:09,700 --> 00:43:10,700
+Because I've seen it.
+
+1040
+00:43:10,700 --> 00:43:11,700
+Because I've seen it.
+
+1041
+00:43:11,700 --> 00:43:12,700
+Because I've seen it.
+
+1042
+00:43:12,700 --> 00:43:13,700
+Because I've seen it.
+
+1043
+00:43:13,700 --> 00:43:14,700
+Because I've seen it.
+
+1044
+00:43:14,700 --> 00:43:15,700
+Because I've seen it.
+
+1045
+00:43:15,700 --> 00:43:18,700
+so that the fold is also a little bit straighter.
+
+1046
+00:43:21,700 --> 00:43:23,700
+Then, using the strength of the diagonal line,
+
+1047
+00:43:23,700 --> 00:43:25,700
+you can add a little bit of height appropriately,
+
+1048
+00:43:25,700 --> 00:43:27,700
+so that it is not easy to stretch and deform.
+
+1049
+00:43:39,700 --> 00:43:43,700
+Next, we will also reduce the diameter of the outer coat,
+
+1050
+00:43:43,700 --> 00:43:46,700
+and then reduce the thickness of the overlap.
+
+1051
+00:43:46,700 --> 00:43:48,700
+Then you can see,
+
+1052
+00:43:48,700 --> 00:43:53,700
+when we were doing these reduction operations just now,
+
+1053
+00:43:53,700 --> 00:43:58,700
+its particle diameter will cause,
+
+1054
+00:43:58,700 --> 00:44:00,700
+because when the particle diameter is reduced,
+
+1055
+00:44:00,700 --> 00:44:02,700
+the grid will rehearse again,
+
+1056
+00:44:02,700 --> 00:44:04,700
+and then we adjusted it just now,
+
+1057
+00:44:04,700 --> 00:44:06,700
+adjusted its thickness of the overlap,
+
+1058
+00:44:06,700 --> 00:44:08,700
+so it is a little unstable.
+
+1059
+00:44:08,700 --> 00:44:10,700
+Then we will use the layer on the outer layer
+
+1060
+00:44:10,700 --> 00:44:12,700
+to let it pass through.
+
+1061
+00:44:13,700 --> 00:44:17,700
+How does the baseball cap make the cap snake bend?
+
+1062
+00:44:21,700 --> 00:44:24,700
+Try adjusting it with a fixed needle.
+
+1063
+00:44:28,700 --> 00:44:30,700
+There is another one,
+
+1064
+00:44:30,700 --> 00:44:32,700
+you can give it some arcs
+
+1065
+00:44:32,700 --> 00:44:34,700
+with the piece you sewed together.
+
+1066
+00:44:35,700 --> 00:44:38,700
+Because the structure of the baseball cap,
+
+1067
+00:44:38,700 --> 00:44:40,700
+you can make it look like this.
+
+1068
+00:44:40,700 --> 00:44:42,700
+You see,
+
+1069
+00:44:42,700 --> 00:44:44,700
+you say this is the cap snake,
+
+1070
+00:44:44,700 --> 00:44:46,700
+then if this side is flat,
+
+1071
+00:44:46,700 --> 00:44:48,700
+then its cap snake,
+
+1072
+00:44:48,700 --> 00:44:50,700
+if you sew it up,
+
+1073
+00:44:50,700 --> 00:44:52,700
+it will probably be flat too.
+
+1074
+00:44:52,700 --> 00:44:54,700
+So you have to make it into a more curved one.
+
+1075
+00:44:54,700 --> 00:44:56,700
+I sewed a flat bag here,
+
+1076
+00:44:56,700 --> 00:44:58,700
+so you can ignore this bag first.
+
+1077
+00:44:58,700 --> 00:45:00,700
+First of all,
+
+1078
+00:45:00,700 --> 00:45:02,700
+this side can also be curved,
+
+1079
+00:45:02,700 --> 00:45:03,700
+see?
+
+1080
+00:45:03,700 --> 00:45:05,700
+Because it will be with this later,
+
+1081
+00:45:05,700 --> 00:45:06,700
+it will be the same as this side.
+
+1082
+00:45:06,700 --> 00:45:07,700
+You can see,
+
+1083
+00:45:07,700 --> 00:45:09,700
+if you sew it together with this side,
+
+1084
+00:45:09,700 --> 00:45:10,700
+including this side,
+
+1085
+00:45:10,700 --> 00:45:12,700
+it also has a curve.
+
+1086
+00:45:12,700 --> 00:45:14,700
+After you sew it together,
+
+1087
+00:45:14,700 --> 00:45:15,700
+it naturally has a curve.
+
+1088
+00:45:15,700 --> 00:45:16,700
+If it has a curve,
+
+1089
+00:45:16,700 --> 00:45:18,700
+it will bend.
+
+1090
+00:45:18,700 --> 00:45:19,700
+Okay,
+
+1091
+00:45:19,700 --> 00:45:22,700
+let's go back to this side.
+
+1092
+00:45:22,700 --> 00:45:24,700
+Oh,
+
+1093
+00:45:24,700 --> 00:45:27,700
+bending weft,
+
+1094
+00:45:27,700 --> 00:45:29,700
+is bending strength.
+
+1095
+00:45:29,700 --> 00:45:31,700
+Bending strength.
+
+1096
+00:45:37,700 --> 00:45:42,700
+I don't understand.
+
+1097
+00:45:42,700 --> 00:45:46,700
+What's the difference between bending weft and bending wrap?
+
+1098
+00:45:46,700 --> 00:45:47,700
+These two,
+
+1099
+00:45:47,700 --> 00:45:49,700
+if you don't understand,
+
+1100
+00:45:49,700 --> 00:45:50,700
+what's the difference between these two?
+
+1101
+00:45:50,700 --> 00:45:51,700
+One of them is the front,
+
+1102
+00:45:51,700 --> 00:45:53,700
+and the other is the back.
+
+1103
+00:45:53,700 --> 00:45:55,700
+It's related to the line of thinking of your fabric,
+
+1104
+00:45:55,700 --> 00:46:00,700
+which is the green line.
+
+1105
+00:46:00,700 --> 00:46:01,700
+One is the front,
+
+1106
+00:46:01,700 --> 00:46:02,700
+and the other is the back.
+
+1107
+00:46:02,700 --> 00:46:05,700
+As for the physical properties,
+
+1108
+00:46:05,700 --> 00:46:06,700
+you can fill in the previous tutorial,
+
+1109
+00:46:06,700 --> 00:46:08,700
+if you want to see it.
+
+1110
+00:46:08,700 --> 00:46:11,700
+Click on the manual of our official space,
+
+1111
+00:46:11,700 --> 00:46:14,700
+you should be able to see the part of the physical properties summary.
+
+1112
+00:46:14,700 --> 00:46:15,700
+After that,
+
+1113
+00:46:15,700 --> 00:46:16,700
+we can add the button.
+
+1114
+00:46:16,700 --> 00:46:17,700
+First of all,
+
+1115
+00:46:17,700 --> 00:46:19,700
+you can put the button on the top of the clothes.
+
+1116
+00:46:19,700 --> 00:46:21,700
+Because the button is between the clothes,
+
+1117
+00:46:21,700 --> 00:46:23,700
+and the small piece of fabric is separated,
+
+1118
+00:46:23,700 --> 00:46:26,700
+it is easy to be unstable.
+
+1119
+00:46:26,700 --> 00:46:27,700
+When we finish adding,
+
+1120
+00:46:27,700 --> 00:46:28,700
+we need to simulate it,
+
+1121
+00:46:28,700 --> 00:46:32,700
+and wait for it to stabilize.
+
+1122
+00:46:32,700 --> 00:46:35,700
+Okay.
+
+1123
+00:46:35,700 --> 00:46:36,700
+Uh,
+
+1124
+00:46:36,700 --> 00:46:38,700
+what did I say?
+
+1125
+00:46:38,700 --> 00:46:40,700
+What is the name of my first video?
+
+1126
+00:46:40,700 --> 00:46:42,700
+Is it a flying suit?
+
+1127
+00:46:42,700 --> 00:46:44,700
+Uh, I'm not sure what you're talking about.
+
+1128
+00:46:44,700 --> 00:46:47,700
+Let's add the button first.
+
+1129
+00:46:47,700 --> 00:46:49,700
+Uh, what I said is that
+
+1130
+00:46:49,700 --> 00:46:51,700
+if you click on our space,
+
+1131
+00:46:51,700 --> 00:46:54,700
+you can search for the physical properties.
+
+1132
+00:46:54,700 --> 00:46:56,700
+Okay.
+
+1133
+00:46:56,700 --> 00:46:59,700
+Okay.
+
+1134
+00:46:59,700 --> 00:47:00,700
+After that,
+
+1135
+00:47:00,700 --> 00:47:05,700
+we will modify the shape of the button.
+
+1136
+00:47:06,700 --> 00:47:09,700
+Okay.
+
+1137
+00:47:09,700 --> 00:47:10,700
+Okay.
+
+1138
+00:47:10,700 --> 00:47:11,700
+After modifying the shape,
+
+1139
+00:47:11,700 --> 00:47:13,700
+we need to simulate it again.
+
+1140
+00:47:13,700 --> 00:47:16,700
+Because you can see that after we modify the shape,
+
+1141
+00:47:16,700 --> 00:47:19,700
+because its structure is different from before,
+
+1142
+00:47:19,700 --> 00:47:21,700
+if it is unstable,
+
+1143
+00:47:21,700 --> 00:47:27,700
+we can use the move button to move the button.
+
+1144
+00:47:27,700 --> 00:47:28,700
+After clicking on the button,
+
+1145
+00:47:28,700 --> 00:47:29,700
+there will be such a positioning ball.
+
+1146
+00:47:29,700 --> 00:47:33,700
+Let's move it and pull it out a little bit.
+
+1147
+00:47:33,700 --> 00:47:34,700
+Okay.
+
+1148
+00:47:34,700 --> 00:47:35,700
+In this version,
+
+1149
+00:47:35,700 --> 00:47:36,700
+in the lower left corner,
+
+1150
+00:47:36,700 --> 00:47:39,700
+we have this version 7.1.14,
+
+1151
+00:47:39,700 --> 00:47:42,700
+uh, 7.1.143,
+
+1152
+00:47:42,700 --> 00:47:48,700
+which is the latest version of Marvelous Designer 12.
+
+1153
+00:47:48,700 --> 00:47:51,700
+Then I will still edit these,
+
+1154
+00:47:51,700 --> 00:47:52,700
+um,
+
+1155
+00:47:52,700 --> 00:47:56,700
+these panels.
+
+1156
+00:47:56,700 --> 00:47:57,700
+Also,
+
+1157
+00:47:57,700 --> 00:47:59,700
+I will adjust its length little by little,
+
+1158
+00:47:59,700 --> 00:48:00,700
+ah,
+
+1159
+00:48:00,700 --> 00:48:01,700
+the length of the back of it,
+
+1160
+00:48:01,700 --> 00:48:04,700
+and make it look like a bird's nest.
+
+1161
+00:48:04,700 --> 00:48:05,700
+Then,
+
+1162
+00:48:05,700 --> 00:48:07,700
+including some arc lines for it,
+
+1163
+00:48:07,700 --> 00:48:09,700
+these,
+
+1164
+00:48:09,700 --> 00:48:12,700
+and then adjust the panels.
+
+1165
+00:48:12,700 --> 00:48:14,700
+Ah,
+
+1166
+00:48:14,700 --> 00:48:15,700
+these,
+
+1167
+00:48:15,700 --> 00:48:18,700
+you can adjust them according to your own needs.
+
+1168
+00:48:18,700 --> 00:48:19,700
+Then,
+
+1169
+00:48:19,700 --> 00:48:21,700
+if you want to do the open and close effect on the back side,
+
+1170
+00:48:21,700 --> 00:48:24,700
+just sew the sewing line in the middle in half.
+
+1171
+00:48:24,700 --> 00:48:25,700
+Then,
+
+1172
+00:48:25,700 --> 00:48:28,700
+just turn it around a little bit on both sides.
+
+1173
+00:48:28,700 --> 00:48:29,700
+Okay.
+
+1174
+00:48:29,700 --> 00:48:30,700
+Next,
+
+1175
+00:48:30,700 --> 00:48:31,700
+we will make the collar.
+
+1176
+00:48:31,700 --> 00:48:32,700
+For the collar,
+
+1177
+00:48:32,700 --> 00:48:33,700
+we will draw an inner line,
+
+1178
+00:48:33,700 --> 00:48:38,700
+and then fold it with the folding arrangement tool.
+
+1179
+00:48:38,700 --> 00:48:39,700
+Then,
+
+1180
+00:48:39,700 --> 00:48:42,700
+because now we have made the overlap position,
+
+1181
+00:48:42,700 --> 00:48:44,700
+after we use the folding arrangement tool,
+
+1182
+00:48:44,700 --> 00:48:47,700
+these two panels are a little interspersed in the middle,
+
+1183
+00:48:47,700 --> 00:48:51,700
+so we will switch here to select the grid,
+
+1184
+00:48:51,700 --> 00:48:52,700
+uh,
+
+1185
+00:48:52,700 --> 00:48:53,700
+the same tool,
+
+1186
+00:48:53,700 --> 00:48:58,700
+and then select this part of the grid in the 2D window,
+
+1187
+00:48:58,700 --> 00:49:02,700
+and then use the positioning ball to drag it out in the 3D space.
+
+1188
+00:49:02,700 --> 00:49:03,700
+Ah,
+
+1189
+00:49:03,700 --> 00:49:04,700
+in this way,
+
+1190
+00:49:04,700 --> 00:49:08,700
+we can prevent them from having an overlap on a plane.
+
+1191
+00:49:08,700 --> 00:49:10,700
+Because once there is an overlap,
+
+1192
+00:49:10,700 --> 00:49:14,700
+these buttons below may be unstable.
+
+1193
+00:49:14,700 --> 00:49:15,700
+So,
+
+1194
+00:49:15,700 --> 00:49:18,700
+we will use the selection grid tool to arrange it in advance.
+
+1195
+00:49:18,700 --> 00:49:19,700
+Okay,
+
+1196
+00:49:19,700 --> 00:49:21,700
+because you can see that our button,
+
+1197
+00:49:21,700 --> 00:49:22,700
+in fact,
+
+1198
+00:49:22,700 --> 00:49:23,700
+when it is in the middle,
+
+1199
+00:49:23,700 --> 00:49:26,700
+there will be some instability when making the false layers of this panel.
+
+1200
+00:49:26,700 --> 00:49:27,700
+So,
+
+1201
+00:49:27,700 --> 00:49:30,700
+we can change a way to make the button.
+
+1202
+00:49:30,700 --> 00:49:31,700
+Because,
+
+1203
+00:49:31,700 --> 00:49:33,700
+if we sew the button to the clothes,
+
+1204
+00:49:33,700 --> 00:49:34,700
+because,
+
+1205
+00:49:34,700 --> 00:49:35,700
+uh,
+
+1206
+00:49:35,700 --> 00:49:41,700
+it will still have some conflict with the panel of this button.
+
+1207
+00:49:41,700 --> 00:49:42,700
+Ah,
+
+1208
+00:49:42,700 --> 00:49:45,700
+so we,
+
+1209
+00:49:45,700 --> 00:49:49,700
+seem to be able to move the grid using the carving function.
+
+1210
+00:49:49,700 --> 00:49:50,700
+Uh,
+
+1211
+00:49:50,700 --> 00:49:51,700
+if we move the grid,
+
+1212
+00:49:51,700 --> 00:49:54,700
+I suggest that we use the selection grid tool to move it.
+
+1213
+00:49:54,700 --> 00:49:57,700
+The carving tool can also be selected,
+
+1214
+00:49:57,700 --> 00:49:58,700
+but the carving tool,
+
+1215
+00:49:58,700 --> 00:50:01,700
+it uses the selection grid brush tool to select the grid.
+
+1216
+00:50:01,700 --> 00:50:04,700
+It can't be selected very well.
+
+1217
+00:50:04,700 --> 00:50:05,700
+Okay,
+
+1218
+00:50:05,700 --> 00:50:07,700
+if the fabric is made of double layers,
+
+1219
+00:50:07,700 --> 00:50:08,700
+or there are no details,
+
+1220
+00:50:08,700 --> 00:50:09,700
+how can you make it?
+
+1221
+00:50:09,700 --> 00:50:10,700
+If there are no details,
+
+1222
+00:50:10,700 --> 00:50:11,700
+how can you make it?
+
+1223
+00:50:11,700 --> 00:50:14,700
+And the inner and outer layers of,
+
+1224
+00:50:14,700 --> 00:50:15,700
+uh,
+
+1225
+00:50:15,700 --> 00:50:16,700
+the shrinkage,
+
+1226
+00:50:16,700 --> 00:50:18,700
+are they using the same shrinkage?
+
+1227
+00:50:18,700 --> 00:50:19,700
+If the outer layer,
+
+1228
+00:50:19,700 --> 00:50:20,700
+you can give more shrinkage.
+
+1229
+00:50:20,700 --> 00:50:21,700
+Yes,
+
+1230
+00:50:21,700 --> 00:50:22,700
+um,
+
+1231
+00:50:22,700 --> 00:50:23,700
+the carving tool will also,
+
+1232
+00:50:23,700 --> 00:50:24,700
+and the carving tool,
+
+1233
+00:50:24,700 --> 00:50:29,700
+you can't choose the panel in the 2D window.
+
+1234
+00:50:29,700 --> 00:50:30,700
+You have to choose the panel in the 3D window.
+
+1235
+00:50:30,700 --> 00:50:32,700
+You have to choose the panel in the 3D window.
+
+1236
+00:50:32,700 --> 00:50:35,700
+And when we choose the grid,
+
+1237
+00:50:35,700 --> 00:50:37,700
+if you choose it in the 3D window,
+
+1238
+00:50:37,700 --> 00:50:40,700
+there are some grids in the back that cannot be selected.
+
+1239
+00:50:40,700 --> 00:50:43,700
+This is why we use the selection grid tool
+
+1240
+00:50:43,700 --> 00:50:46,700
+to select the grid in the 2D window.
+
+1241
+00:50:46,700 --> 00:50:47,700
+Uh,
+
+1242
+00:50:47,700 --> 00:50:49,700
+the fast key of the fixing needle is to press the W key.
+
+1243
+00:50:49,700 --> 00:50:50,700
+Okay,
+
+1244
+00:50:50,700 --> 00:50:52,700
+next is to do this button.
+
+1245
+00:50:52,700 --> 00:50:53,700
+Oh,
+
+1246
+00:50:53,700 --> 00:50:55,700
+the line of the button can be adjusted.
+
+1247
+00:50:55,700 --> 00:50:59,700
+It adjusts the distance between the button and its add-on point.
+
+1248
+00:50:59,700 --> 00:51:02,700
+The length of this line can be set higher,
+
+1249
+00:51:02,700 --> 00:51:07,700
+so that the button will also be a little farther away from the surface of the fabric,
+
+1250
+00:51:07,700 --> 00:51:09,700
+so that it will be more stable.
+
+1251
+00:51:09,700 --> 00:51:10,700
+Of course,
+
+1252
+00:51:10,700 --> 00:51:12,700
+in order to make this button more stable,
+
+1253
+00:51:12,700 --> 00:51:15,700
+we will have other ways to correct this button later.
+
+1254
+00:51:15,700 --> 00:51:16,700
+In fact,
+
+1255
+00:51:16,700 --> 00:51:17,700
+when making animation,
+
+1256
+00:51:17,700 --> 00:51:22,700
+the most important thing to pay attention to is these smaller and smaller parts.
+
+1257
+00:51:22,700 --> 00:51:24,700
+And then it's the collar.
+
+1258
+00:51:24,700 --> 00:51:25,700
+For the collar,
+
+1259
+00:51:25,700 --> 00:51:27,700
+let's freeze the other parts first.
+
+1260
+00:51:27,700 --> 00:51:28,700
+First,
+
+1261
+00:51:28,700 --> 00:51:30,700
+let's make the collar.
+
+1262
+00:51:30,700 --> 00:51:31,700
+Draw a rectangle first.
+
+1263
+00:51:31,700 --> 00:51:37,700
+This rectangle is the total length of the position where we do not sew the collar.
+
+1264
+00:51:37,700 --> 00:51:40,700
+Can the twisted line be deep and solid?
+
+1265
+00:51:40,700 --> 00:51:43,700
+Not yet.
+
+1266
+00:51:43,700 --> 00:51:44,700
+Then,
+
+1267
+00:51:44,700 --> 00:51:48,700
+sew the panel and the collar together.
+
+1268
+00:51:48,700 --> 00:51:49,700
+Ctrl D,
+
+1269
+00:51:49,700 --> 00:51:54,700
+create a symmetrical panel.
+
+1270
+00:51:54,700 --> 00:51:57,700
+Then adjust the distance between the panels.
+
+1271
+00:51:57,700 --> 00:51:59,700
+This is the distance between the panels.
+
+1272
+00:51:59,700 --> 00:52:01,700
+This distance is actually the distance between the panels.
+
+1273
+00:52:01,700 --> 00:52:02,700
+And then,
+
+1274
+00:52:02,700 --> 00:52:04,700
+did you find that when I was making the collar,
+
+1275
+00:52:04,700 --> 00:52:07,700
+I didn't sew the back and the middle first?
+
+1276
+00:52:07,700 --> 00:52:08,700
+Well,
+
+1277
+00:52:08,700 --> 00:52:11,700
+let's take a look at this later.
+
+1278
+00:52:11,700 --> 00:52:22,700
+Now my collar is sewn in a rectangular form on our clothes.
+
+1279
+00:52:22,700 --> 00:52:23,700
+Right?
+
+1280
+00:52:23,700 --> 00:52:24,700
+Then,
+
+1281
+00:52:24,700 --> 00:52:25,700
+for the back and middle,
+
+1282
+00:52:25,700 --> 00:52:26,700
+let's not sew them together first.
+
+1283
+00:52:26,700 --> 00:52:29,700
+Because when we were looking at the collar just now,
+
+1284
+00:52:29,700 --> 00:52:33,700
+we will see that there is one more piece of collar here.
+
+1285
+00:52:33,700 --> 00:52:34,700
+Look,
+
+1286
+00:52:34,700 --> 00:52:38,700
+there is no way for the back and middle to match the neck of the model.
+
+1287
+00:52:38,700 --> 00:52:43,700
+So we have to move the back and middle point inside.
+
+1288
+00:52:43,700 --> 00:52:46,700
+How did you move it just now?
+
+1289
+00:52:46,700 --> 00:52:53,700
+Because this is a recorded video.
+
+1290
+00:52:53,700 --> 00:52:55,700
+Use the editor tool to move this point inside.
+
+1291
+00:52:55,700 --> 00:53:00,700
+Move this point inside a little bit.
+
+1292
+00:53:00,700 --> 00:53:01,700
+Okay,
+
+1293
+00:53:01,700 --> 00:53:03,700
+let's take a look at it later.
+
+1294
+00:53:03,700 --> 00:53:07,700
+Then we sew the back and middle lines together.
+
+1295
+00:53:07,700 --> 00:53:09,700
+Because there is a piece missing in the middle.
+
+1296
+00:53:09,700 --> 00:53:10,700
+After you sew it together,
+
+1297
+00:53:10,700 --> 00:53:12,700
+it will stick together.
+
+1298
+00:53:12,700 --> 00:53:13,700
+After it sticks together,
+
+1299
+00:53:13,700 --> 00:53:17,700
+now the panel will be more in line with the model.
+
+1300
+00:53:17,700 --> 00:53:22,700
+This is why I won't sew the back and middle directly.
+
+1301
+00:53:22,700 --> 00:53:24,700
+It's because we have to make sure that,
+
+1302
+00:53:24,700 --> 00:53:26,700
+under the natural state,
+
+1303
+00:53:26,700 --> 00:53:30,700
+this panel can stick to the neck of the virtual model.
+
+1304
+00:53:30,700 --> 00:53:31,700
+Then,
+
+1305
+00:53:31,700 --> 00:53:34,700
+sew the back and middle together here.
+
+1306
+00:53:34,700 --> 00:53:39,700
+It can also be done under the function of the sewing line.
+
+1307
+00:53:39,700 --> 00:53:43,700
+It's more close.
+
+1308
+00:53:43,700 --> 00:53:46,700
+Because the sewing line will also work.
+
+1309
+00:53:46,700 --> 00:53:49,700
+If the back and middle sewing lines work,
+
+1310
+00:53:49,700 --> 00:53:52,700
+if you don't have a sewing line,
+
+1311
+00:53:52,700 --> 00:53:53,700
+it can also stick together.
+
+1312
+00:53:53,700 --> 00:53:55,700
+If you don't have a sewing line,
+
+1313
+00:53:55,700 --> 00:53:58,700
+it can also stick to the model.
+
+1314
+00:53:58,700 --> 00:53:59,700
+Then,
+
+1315
+00:53:59,700 --> 00:54:01,700
+if we add this model,
+
+1316
+00:54:01,700 --> 00:54:04,700
+and add another uncertain factor of the sewing line,
+
+1317
+00:54:04,700 --> 00:54:08,700
+it will make its shape very strange.
+
+1318
+00:54:08,700 --> 00:54:09,700
+So,
+
+1319
+00:54:09,700 --> 00:54:11,700
+I won't sew the back and middle first.
+
+1320
+00:54:11,700 --> 00:54:14,700
+I will first adjust the shape.
+
+1321
+00:54:14,700 --> 00:54:19,700
+I think this effect should be almost the same.
+
+1322
+00:54:19,700 --> 00:54:20,700
+Then,
+
+1323
+00:54:20,700 --> 00:54:22,700
+sew the back and middle together.
+
+1324
+00:54:22,700 --> 00:54:23,700
+Then,
+
+1325
+00:54:23,700 --> 00:54:27,700
+we use the editor tool to draw a curve.
+
+1326
+00:54:27,700 --> 00:54:31,700
+This is also to ensure that this angle is not too exaggerated.
+
+1327
+00:54:31,700 --> 00:54:32,700
+Let's take a look.
+
+1328
+00:54:32,700 --> 00:54:33,700
+Originally,
+
+1329
+00:54:33,700 --> 00:54:34,700
+this corner is a sharp corner.
+
+1330
+00:54:34,700 --> 00:54:35,700
+Can you see it?
+
+1331
+00:54:35,700 --> 00:54:36,700
+Because it is a sharp corner,
+
+1332
+00:54:36,700 --> 00:54:37,700
+so,
+
+1333
+00:54:37,700 --> 00:54:38,700
+this corner is also a sharp corner.
+
+1334
+00:54:38,700 --> 00:54:39,700
+It is symmetrical.
+
+1335
+00:54:39,700 --> 00:54:40,700
+This corner is also a sharp corner.
+
+1336
+00:54:40,700 --> 00:54:42,700
+The bottom is a flat corner.
+
+1337
+00:54:42,700 --> 00:54:43,700
+Then,
+
+1338
+00:54:43,700 --> 00:54:44,700
+when they fight,
+
+1339
+00:54:44,700 --> 00:54:45,700
+they will protrude again.
+
+1340
+00:54:45,700 --> 00:54:46,700
+After protruding,
+
+1341
+00:54:46,700 --> 00:54:47,700
+this place,
+
+1342
+00:54:47,700 --> 00:54:48,700
+this position,
+
+1343
+00:54:48,700 --> 00:54:49,700
+isn't it?
+
+1344
+00:54:49,700 --> 00:54:50,700
+Look,
+
+1345
+00:54:50,700 --> 00:54:51,700
+my back and middle are now sewed together.
+
+1346
+00:54:51,700 --> 00:54:52,700
+But,
+
+1347
+00:54:52,700 --> 00:54:53,700
+this corner is a sharp corner.
+
+1348
+00:54:53,700 --> 00:54:54,700
+Then,
+
+1349
+00:54:54,700 --> 00:54:55,700
+because there is this powder line,
+
+1350
+00:54:55,700 --> 00:54:56,700
+and because the pattern is not quite right,
+
+1351
+00:54:56,700 --> 00:54:58,700
+it will have a strange effect.
+
+1352
+00:54:58,700 --> 00:54:59,700
+Then,
+
+1353
+00:54:59,700 --> 00:55:02,700
+you have to find the source of this strange effect.
+
+1354
+00:55:02,700 --> 00:55:04,700
+The source is that this corner is too sharp.
+
+1355
+00:55:04,700 --> 00:55:06,700
+Use the editor tool to make it
+
+1356
+00:55:06,700 --> 00:55:09,700
+the effect of straight corners on both sides.
+
+1357
+00:55:09,700 --> 00:55:10,700
+Then,
+
+1358
+00:55:10,700 --> 00:55:11,700
+simulate it again.
+
+1359
+00:55:11,700 --> 00:55:12,700
+Can you see it?
+
+1360
+00:55:12,700 --> 00:55:13,700
+Here,
+
+1361
+00:55:13,700 --> 00:55:14,700
+it becomes straight on both sides.
+
+1362
+00:55:14,700 --> 00:55:15,700
+After that,
+
+1363
+00:55:15,700 --> 00:55:17,700
+it is flat when it is pinned together.
+
+1364
+00:55:17,700 --> 00:55:18,700
+This is also a place
+
+1365
+00:55:18,700 --> 00:55:20,700
+that you should pay more attention to.
+
+1366
+00:55:22,700 --> 00:55:24,700
+This is to remind you repeatedly.
+
+1367
+00:55:24,700 --> 00:55:26,700
+You must pay attention to this flat surface.
+
+1368
+00:55:26,700 --> 00:55:28,700
+Does it look like 360 degrees?
+
+1369
+00:55:28,700 --> 00:55:33,700
+Or 180 degrees?
+
+1370
+00:55:33,700 --> 00:55:34,700
+Then,
+
+1371
+00:55:34,700 --> 00:55:35,700
+you also have to pay attention to
+
+1372
+00:55:35,700 --> 00:55:37,700
+the frozen clothes.
+
+1373
+00:55:37,700 --> 00:55:39,700
+Remember to untie it more often.
+
+1374
+00:55:39,700 --> 00:55:40,700
+Then,
+
+1375
+00:55:40,700 --> 00:55:41,700
+simulate it together.
+
+1376
+00:55:41,700 --> 00:55:43,700
+See if there is any problem.
+
+1377
+00:55:43,700 --> 00:55:44,700
+This is also my collar.
+
+1378
+00:55:44,700 --> 00:55:45,700
+I made it a little too thick.
+
+1379
+00:55:45,700 --> 00:55:48,700
+I will move this point forward a little bit.
+
+1380
+00:55:48,700 --> 00:55:49,700
+Then,
+
+1381
+00:55:49,700 --> 00:55:51,700
+move the panel that is sewed together with it forward a little bit.
+
+1382
+00:55:51,700 --> 00:55:52,700
+Then,
+
+1383
+00:55:52,700 --> 00:55:53,700
+move the panel that is sewed together with it forward a little bit.
+
+1384
+00:55:53,700 --> 00:55:54,700
+After moving,
+
+1385
+00:55:54,700 --> 00:55:55,700
+I found that
+
+1386
+00:55:55,700 --> 00:55:56,700
+when I opened the simulation,
+
+1387
+00:55:56,700 --> 00:55:57,700
+it was unstable.
+
+1388
+00:55:57,700 --> 00:55:58,700
+Then,
+
+1389
+00:55:58,700 --> 00:55:59,700
+I checked it.
+
+1390
+00:55:59,700 --> 00:56:01,700
+It was a problem with the sewing line.
+
+1391
+00:56:01,700 --> 00:56:02,700
+OK,
+
+1392
+00:56:02,700 --> 00:56:03,700
+then we will
+
+1393
+00:56:03,700 --> 00:56:04,700
+re-paste the sewing line
+
+1394
+00:56:04,700 --> 00:56:05,700
+and simulate it.
+
+1395
+00:56:05,700 --> 00:56:06,700
+OK,
+
+1396
+00:56:06,700 --> 00:56:07,700
+now the overall effect is almost the same.
+
+1397
+00:56:07,700 --> 00:56:08,700
+Now,
+
+1398
+00:56:08,700 --> 00:56:09,700
+the overall effect is almost the same.
+
+1399
+00:56:09,700 --> 00:56:10,700
+Now,
+
+1400
+00:56:10,700 --> 00:56:11,700
+now,
+
+1401
+00:56:11,700 --> 00:56:12,700
+the overall effect is almost the same.
+
+1402
+00:56:12,700 --> 00:56:13,700
+Then,
+
+1403
+00:56:13,700 --> 00:56:14,700
+because the collar is not enough to stick together.
+
+1404
+00:56:14,700 --> 00:56:15,700
+Then,
+
+1405
+00:56:15,700 --> 00:56:16,700
+here,
+
+1406
+00:56:16,700 --> 00:56:17,700
+my operation speed may be a little fast.
+
+1407
+00:56:17,700 --> 00:56:18,700
+This is because
+
+1408
+00:56:18,700 --> 00:56:19,700
+I am already used to
+
+1409
+00:56:19,700 --> 00:56:20,700
+the fact that
+
+1410
+00:56:21,700 --> 00:56:22,700
+the sleeves are quite short or high enough.
+
+1411
+00:56:22,700 --> 00:56:23,700
+is because I am already used to the fact that
+
+1412
+00:56:23,700 --> 00:56:24,700
+the sleeves are quite short or high enough.
+
+1413
+00:56:24,700 --> 00:56:26,700
+Let's look at this operation.
+
+1414
+00:56:26,700 --> 00:56:27,700
+First,
+
+1415
+00:56:27,700 --> 00:56:28,700
+I move
+
+1416
+00:56:28,700 --> 00:56:29,700
+this line
+
+1417
+00:56:29,700 --> 00:56:30,700
+here
+
+1418
+00:56:30,700 --> 00:56:31,700
+into this point.
+
+1419
+00:56:31,700 --> 00:56:32,700
+So,
+
+1420
+00:56:32,700 --> 00:56:33,700
+if this line
+
+1421
+00:56:33,700 --> 00:56:34,700
+lifts like this,
+
+1422
+00:56:34,700 --> 00:56:35,700
+it will
+
+1423
+00:56:35,700 --> 00:56:36,700
+be closer to the neck
+
+1424
+00:56:36,700 --> 00:56:37,700
+of the model.
+
+1425
+00:56:37,700 --> 00:56:38,700
+But,
+
+1426
+00:56:38,700 --> 00:56:39,700
+if the points
+
+1427
+00:56:39,700 --> 00:56:40,700
+move inside,
+
+1428
+00:56:40,700 --> 00:56:41,700
+is this corner a horn,
+
+1429
+00:56:41,700 --> 00:56:42,700
+and this corner is a sharp corner,
+
+1430
+00:56:42,700 --> 00:56:43,700
+this corner is a sharp corner,
+
+1431
+00:56:43,700 --> 00:56:44,700
+so
+
+1432
+00:56:44,700 --> 00:56:45,700
+I choose this line
+
+1433
+00:56:45,700 --> 00:56:46,700
+and pull it up
+
+1434
+00:56:47,700 --> 00:56:48,700
+and press the Control key
+
+1435
+00:56:48,700 --> 00:56:49,700
+to balance this line across.
+
+1436
+00:56:49,700 --> 00:56:50,700
+to balance this line across.
+
+1437
+00:56:50,700 --> 00:56:58,340
+This is also a right angle, and this is also a right angle, so that it is parallel, and it is also more suitable for virtual models.
+
+1438
+00:56:58,340 --> 00:57:08,820
+Because my usual operation speed is a little fast, so sometimes I may need to pause and talk to you.
+
+1439
+00:57:08,820 --> 00:57:19,020
+After that, I just deleted all the buttons here, because I found that in the process of simulation, this button delete really affected me too much.
+
+1440
+00:57:19,019 --> 00:57:29,500
+This button itself is easy to be unstable, so I need to find a way to make sure that the button is always stable,
+
+1441
+00:57:29,500 --> 00:57:31,280
+and to fit these two panels.
+
+1442
+00:57:31,280 --> 00:57:37,079
+So I finally chose this, and the first one is because I saw that some wrinkles appeared here.
+
+1443
+00:57:37,079 --> 00:57:43,500
+This wrinkle shows that this line is not dragging this part outward now.
+
+1444
+00:57:43,500 --> 00:57:49,000
+That is, this line is short, and the portion of this line is shorter than the material on the back,
+
+1445
+00:57:49,000 --> 00:57:57,000
+So we have to make it a little longer, so that it can be worn naturally.
+
+1446
+00:58:03,000 --> 00:58:07,000
+Then I decided to do it later.
+
+1447
+00:58:07,000 --> 00:58:11,000
+Let's cut the edges first.
+
+1448
+00:58:11,000 --> 00:58:19,000
+Here we align to the inner line and add points at the intersection.
+
+1449
+00:58:19,000 --> 00:58:23,000
+Then separate the points and delete the excess lines.
+
+1450
+00:58:23,000 --> 00:58:29,000
+I saw that the little friend said that the puncture of the closing button should not be hinted at.
+
+1451
+00:58:29,000 --> 00:58:35,000
+Indeed, because the last way I used to replace it was to close the puncture of the button.
+
+1452
+00:58:35,000 --> 00:58:37,000
+But did you consider a point?
+
+1453
+00:58:37,000 --> 00:58:41,000
+If I attached the button to the top of the clothes,
+
+1454
+00:58:41,000 --> 00:58:48,000
+Because the point of the button is point-to-point,
+
+1455
+00:58:48,000 --> 00:58:54,000
+So if I attach the button to the top of the clothes,
+
+1456
+00:58:54,000 --> 00:58:57,000
+When doing some animation,
+
+1457
+00:58:57,000 --> 00:59:04,000
+The point of the clothes and the button attached to the top of the clothes are always parallel, right?
+
+1458
+00:59:04,000 --> 00:59:07,000
+Then the middle will pass through this ring.
+
+1459
+00:59:07,000 --> 00:59:10,000
+So what we are going to do is,
+
+1460
+00:59:10,000 --> 00:59:13,000
+I'm going to tell you in advance what I'm going to say later.
+
+1461
+00:59:13,000 --> 00:59:16,000
+That is, I will make a piece of board in this ring.
+
+1462
+00:59:16,000 --> 00:59:20,000
+Then the button is attached to the piece of board that cannot be seen.
+
+1463
+00:59:20,000 --> 00:59:23,000
+In this way, the button will move along this ring.
+
+1464
+00:59:23,000 --> 00:59:26,000
+It won't wear out.
+
+1465
+00:59:26,000 --> 00:59:28,000
+Because I'm going to do animation later.
+
+1466
+00:59:28,000 --> 00:59:31,000
+If your button is attached to the top of the clothes,
+
+1467
+00:59:31,000 --> 00:59:34,000
+The clothes have their own calculation and calculation rules.
+
+1468
+00:59:34,000 --> 00:59:37,000
+Do you understand?
+
+1469
+00:59:37,000 --> 00:59:39,000
+So it may wear out.
+
+1470
+00:59:39,000 --> 00:59:43,000
+Yes, so we will turn off its conflict.
+
+1471
+00:59:43,000 --> 00:59:45,000
+But in order to prevent,
+
+1472
+00:59:45,000 --> 00:59:48,000
+If it is attached directly to the top of the clothes,
+
+1473
+00:59:48,000 --> 00:59:52,000
+It will have a problem with the button of the button.
+
+1474
+00:59:52,000 --> 00:59:57,000
+So we will make a piece of board that cannot be seen in the middle.
+
+1475
+00:59:57,000 --> 01:00:00,000
+Of course, it's not a big problem if you just stick it on the top of the clothes.
+
+1476
+01:00:00,000 --> 01:00:02,000
+But if you stick it on the top of the clothes,
+
+1477
+01:00:02,000 --> 01:00:04,000
+I also thought about it.
+
+1478
+01:00:04,000 --> 01:00:06,000
+It may be attached to the top of the clothes.
+
+1479
+01:00:06,000 --> 01:00:08,000
+Because when I was recording the video,
+
+1480
+01:00:08,000 --> 01:00:11,000
+I recorded it while I was doing it.
+
+1481
+01:00:11,000 --> 01:00:13,000
+I also thought about it.
+
+1482
+01:00:13,000 --> 01:00:16,000
+So I haven't added a button at this time.
+
+1483
+01:00:16,000 --> 01:00:18,000
+Then we are going to do the cologne layer.
+
+1484
+01:00:18,000 --> 01:00:23,000
+Because I want to make two layers of structure for this dress.
+
+1485
+01:00:23,000 --> 01:00:25,000
+I want to make two layers of structure.
+
+1486
+01:00:25,000 --> 01:00:32,000
+It's because it's still about making the dress stable.
+
+1487
+01:00:32,000 --> 01:00:34,000
+This dress, we look at it now.
+
+1488
+01:00:34,000 --> 01:00:37,000
+Does it only have these two internal lines?
+
+1489
+01:00:37,000 --> 01:00:39,000
+These two internal lines are working, right?
+
+1490
+01:00:39,000 --> 01:00:43,000
+These two internal lines are one, two, three, four, five, six.
+
+1491
+01:00:43,000 --> 01:00:45,000
+Just these six little dots.
+
+1492
+01:00:45,000 --> 01:00:48,000
+They are controlling my dress.
+
+1493
+01:00:48,000 --> 01:00:51,000
+Its stretch and deformation.
+
+1494
+01:00:51,000 --> 01:00:53,000
+Under such a big premise,
+
+1495
+01:00:53,000 --> 01:00:56,000
+If my model is very exaggerated,
+
+1496
+01:00:56,000 --> 01:00:59,000
+Then these two, these six little bags,
+
+1497
+01:00:59,000 --> 01:01:02,000
+It can't make an effective contract.
+
+1498
+01:01:02,000 --> 01:01:04,000
+Will my dress be unstable?
+
+1499
+01:01:04,000 --> 01:01:05,000
+And this bag is so small.
+
+1500
+01:01:05,000 --> 01:01:06,000
+Will it be connected to my dress?
+
+1501
+01:01:06,000 --> 01:01:09,000
+Will my dress be unstable?
+
+1502
+01:01:09,000 --> 01:01:14,000
+So I need to fix these two clothes in an invisible position.
+
+1503
+01:01:14,000 --> 01:01:18,000
+That is to say, I need to draw an internal line in an invisible position.
+
+1504
+01:01:18,000 --> 01:01:19,000
+Sew up the clothes.
+
+1505
+01:01:19,000 --> 01:01:22,000
+Let it never fall apart.
+
+1506
+01:01:22,000 --> 01:01:25,000
+Can you understand?
+
+1507
+01:01:25,000 --> 01:01:28,000
+So in fact, I did it at the end.
+
+1508
+01:01:28,000 --> 01:01:29,000
+Why?
+
+1509
+01:01:29,000 --> 01:01:31,000
+Why is the result still like this?
+
+1510
+01:01:31,000 --> 01:01:34,000
+Scared me.
+
+1511
+01:01:34,000 --> 01:01:41,000
+So I need to draw an internal line in an invisible position,
+
+1512
+01:01:41,000 --> 01:01:43,000
+to fix it in place.
+
+1513
+01:01:43,000 --> 01:01:47,000
+There is another inner line in this dress.
+
+1514
+01:01:47,000 --> 01:01:53,000
+So I need to fix this in place,
+
+1515
+01:01:53,000 --> 01:01:55,000
+So when we do this,
+
+1516
+01:01:55,000 --> 01:01:57,000
+we look out from the outside,
+
+1517
+01:01:57,000 --> 01:02:00,000
+we can't see the internal line at all, right?
+
+1518
+01:02:00,000 --> 01:02:02,000
+If we want to do this,
+
+1519
+01:02:02,000 --> 01:02:03,000
+If we want to do this,
+
+1520
+01:02:03,000 --> 01:02:15,000
+We need to draw a seam line on the inside of this board and a seam line on the outside of this board, so we need to make a double-layer structure, understand?
+
+1521
+01:02:15,000 --> 01:02:24,000
+In fact, the main purpose of doing double layers is to hide the seam line that will be hidden in the middle to fix the whole dress.
+
+1522
+01:02:24,000 --> 01:02:36,000
+Also to stabilize, so we need to think about whether the strength of this dress is reasonable or not before we make the animation.
+
+1523
+01:02:36,000 --> 01:02:38,000
+Will it cause instability?
+
+1524
+01:02:47,000 --> 01:02:51,000
+I want to see where we talked about just now.
+
+1525
+01:02:51,000 --> 01:02:53,000
+Inflate the head.
+
+1526
+01:02:53,000 --> 01:02:54,000
+In fact, I feel like this...
+
+1527
+01:02:54,000 --> 01:02:56,000
+Inflate the head is quite cute.
+
+1528
+01:03:00,000 --> 01:03:03,000
+Then we do the double-layer structure.
+
+1529
+01:03:03,000 --> 01:03:06,000
+When we do the double-layer structure, everyone should pay attention.
+
+1530
+01:03:06,000 --> 01:03:11,000
+When we did the double-layer structure last time, we also talked about it.
+
+1531
+01:03:11,000 --> 01:03:17,000
+In order to stabilize, in order to stabilize the clothes, we will put this layer of board first.
+
+1532
+01:03:17,000 --> 01:03:23,000
+Because we can't use the double-layer structure directly on the outside or inside,
+
+1533
+01:03:23,000 --> 01:03:25,000
+like these two boards.
+
+1534
+01:03:25,000 --> 01:03:28,000
+If we use the double-layer structure directly on the outside,
+
+1535
+01:03:28,000 --> 01:03:31,000
+because they have such a folded structure in the middle,
+
+1536
+01:03:31,000 --> 01:03:33,000
+then when we do the double-layer structure,
+
+1537
+01:03:33,000 --> 01:03:39,000
+there will definitely be a problem in the two layers of the newly created layer.
+
+1538
+01:03:39,000 --> 01:03:44,000
+If our conflict thickness is all layers, for example, is 1,
+
+1539
+01:03:44,000 --> 01:03:47,000
+then there is no space in the middle layer.
+
+1540
+01:03:47,000 --> 01:03:50,000
+There is no space to add it in.
+
+1541
+01:03:50,000 --> 01:03:51,000
+So we will raise its conflict thickness in advance.
+
+1542
+01:03:51,000 --> 01:03:54,000
+So we will raise its conflict thickness in advance.
+
+1543
+01:03:54,000 --> 01:03:55,000
+For example, increase it to 3,
+
+1544
+01:03:55,000 --> 01:04:00,000
+and then modify its conflict thickness again at 3,
+
+1545
+01:04:00,000 --> 01:04:01,000
+and then switch back to 1.
+
+1546
+01:04:01,000 --> 01:04:05,000
+After switching back to 1, we will not open the simulation.
+
+1547
+01:04:05,000 --> 01:04:09,000
+After not opening the simulation, we will directly give it the interior of the clon layer.
+
+1548
+01:04:09,000 --> 01:04:14,000
+Because the interior of the clon layer will automatically calculate the conflict thickness of your background.
+
+1549
+01:04:14,000 --> 01:04:19,000
+So at this time, we actually have a reserve of 3 around this board.
+
+1550
+01:04:19,000 --> 01:04:22,000
+So at this time, we actually have a reserve of 3 around this board.
+
+1551
+01:04:22,000 --> 01:04:23,000
+So at this time, we actually have a reserve of 3 around this board.
+
+1552
+01:04:23,000 --> 01:04:28,000
+We will reduce the space it needs to 1,
+
+1553
+01:04:28,000 --> 01:04:31,000
+and then add another layer of 1 in the middle.
+
+1554
+01:04:31,000 --> 01:04:33,000
+1 plus 1 is less than 3.
+
+1555
+01:04:33,000 --> 01:04:35,000
+Then the space in the middle is enough.
+
+1556
+01:04:35,000 --> 01:04:39,000
+If it is enough, if you add a model, it will not be unstable.
+
+1557
+01:04:39,000 --> 01:04:40,000
+Understand?
+
+1558
+01:04:40,000 --> 01:04:45,000
+Then we draw the interior line, and then prepare the seal.
+
+1559
+01:04:45,000 --> 01:04:47,000
+After drawing the interior line,
+
+1560
+01:04:47,000 --> 01:04:48,000
+press Alt 4 to open the transparent line.
+
+1561
+01:04:48,000 --> 01:04:49,000
+Press Alt 4 to open the transparent line.
+
+1562
+01:04:49,000 --> 01:04:50,000
+Press Alt 4 to open the transparent line.
+
+1563
+01:04:50,000 --> 01:04:51,000
+Just adjust it a little bit,
+
+1564
+01:04:51,000 --> 01:04:56,000
+so these two inner lines can overlap.
+
+1565
+01:05:02,460 --> 01:05:09,000
+Then remember to cancel 남 genre.
+
+1566
+01:05:09,000 --> 01:05:14,000
+Ok, now let's create the seal line first.
+
+1567
+01:05:14,000 --> 01:05:18,000
+When we adjust later,
+
+1568
+01:05:18,000 --> 01:05:26,300
+Finally, we will remove the joint on the outer layer, and then delete the seam line on this side separately.
+
+1569
+01:05:26,300 --> 01:05:28,800
+Then we will make the buttonhole.
+
+1570
+01:05:28,800 --> 01:05:31,300
+For the buttonhole, we will draw a small plate in the middle first.
+
+1571
+01:05:31,300 --> 01:05:37,199
+For this small plate, we will use the free sewing tool to sew it on the edge of the buttonhole.
+
+1572
+01:05:37,199 --> 01:05:46,500
+After sewing, we will reduce the particle diameter of this small plate a little bit, and also reduce the thickness of the seam line.
+
+1573
+01:05:46,500 --> 01:05:54,500
+Then you can move it or add it to the function, and then simulate it.
+
+1574
+01:05:54,500 --> 01:06:03,000
+We will set its transparency to 0 at the end of such a small plate, so that it can't be seen.
+
+1575
+01:06:03,000 --> 01:06:14,000
+If it is set to 0, then we can use this plate to make the buttonhole.
+
+1576
+01:06:14,000 --> 01:06:16,000
+In this way,
+
+1577
+01:06:16,000 --> 01:06:23,000
+my buttonhole will always be parallel to this line at any time.
+
+1578
+01:06:23,000 --> 01:06:27,000
+That is, it is parallel to this plate.
+
+1579
+01:06:27,000 --> 01:06:28,000
+In fact, it is the same.
+
+1580
+01:06:28,000 --> 01:06:31,000
+Make a fixed fake effect.
+
+1581
+01:06:31,000 --> 01:06:39,000
+These are all to overcome some problems we will have later in the animation process.
+
+1582
+01:06:39,000 --> 01:06:43,000
+Because after I added the buttonhole, it is still unstable.
+
+1583
+01:06:43,000 --> 01:06:46,000
+Then here we turn off the conflict between the buttonholes.
+
+1584
+01:06:46,000 --> 01:06:53,000
+After turning it off, you will find that no matter how I pre-rotate the position of the buttonhole and adjust its position,
+
+1585
+01:06:53,000 --> 01:06:56,000
+the buttonhole will no longer move around with your board.
+
+1586
+01:06:56,000 --> 01:07:00,000
+It will always be fixed to the board in the current form.
+
+1587
+01:07:00,000 --> 01:07:06,000
+Then we just need to adjust it to the parallel form of the board.
+
+1588
+01:07:06,000 --> 01:07:10,000
+In fact, it is OK to add it to the clothes.
+
+1589
+01:07:10,000 --> 01:07:13,000
+That is, if you think this method is annoying,
+
+1590
+01:07:13,000 --> 01:07:17,000
+that is, it is not so easy to operate,
+
+1591
+01:07:17,000 --> 01:07:21,000
+then you can add the buttonhole to the clothes.
+
+1592
+01:07:21,000 --> 01:07:23,000
+It is also possible.
+
+1593
+01:07:23,000 --> 01:07:25,000
+Just to make it more stable,
+
+1594
+01:07:25,000 --> 01:07:27,000
+to make sure that it must be fine,
+
+1595
+01:07:27,000 --> 01:07:30,000
+then use my method.
+
+1596
+01:07:30,000 --> 01:07:38,000
+Next is to make clothes.
+
+1597
+01:07:38,000 --> 01:07:40,000
+Let's put the sleeves inside.
+
+1598
+01:07:43,000 --> 01:07:46,000
+If I fold the sleeves here,
+
+1599
+01:07:46,000 --> 01:07:49,000
+I directly use the expansion function of the panel line.
+
+1600
+01:07:49,000 --> 01:07:52,000
+I didn't draw the rectangle.
+
+1601
+01:07:52,000 --> 01:07:54,000
+When you use the panel line to expand,
+
+1602
+01:07:54,000 --> 01:07:56,000
+you can choose extension.
+
+1603
+01:07:56,000 --> 01:07:59,000
+Then choose mirror from the side angle.
+
+1604
+01:07:59,000 --> 01:08:01,000
+After choosing the mirror,
+
+1605
+01:08:01,000 --> 01:08:03,000
+we will choose the inner line of the depth.
+
+1606
+01:08:03,000 --> 01:08:06,000
+So it will be a mirror pattern.
+
+1607
+01:08:06,000 --> 01:08:10,000
+Then use the tool to fold it.
+
+1608
+01:08:10,000 --> 01:08:12,000
+It will not have...
+
+1609
+01:08:12,000 --> 01:08:15,000
+It is a problem that the shape is not suitable.
+
+1610
+01:08:17,000 --> 01:08:22,000
+The effect of the fold is also similar to the pants side.
+
+1611
+01:08:22,000 --> 01:08:25,000
+So you just need to choose according to the need.
+
+1612
+01:08:25,000 --> 01:08:28,000
+I finally adjusted its shape,
+
+1613
+01:08:28,000 --> 01:08:30,000
+so I still made this panel independent.
+
+1614
+01:08:30,000 --> 01:08:32,000
+In fact, our jacket,
+
+1615
+01:08:32,000 --> 01:08:34,000
+just use a wool fabric for it.
+
+1616
+01:08:34,000 --> 01:08:36,000
+Just make a thicker effect.
+
+1617
+01:08:42,000 --> 01:08:47,000
+Next, we are going to make the shoulder.
+
+1618
+01:08:47,000 --> 01:08:51,000
+When we make cross-stitch to position,
+
+1619
+01:08:51,000 --> 01:08:55,000
+we will use the 3D panel line tool
+
+1620
+01:08:55,000 --> 01:08:58,000
+to draw some lines on the clothes
+
+1621
+01:08:58,000 --> 01:09:01,000
+to mark or position.
+
+1622
+01:09:04,000 --> 01:09:10,000
+After the pattern line is made,
+
+1623
+01:09:10,000 --> 01:09:14,000
+we will use the 3D panel line tool
+
+1624
+01:09:14,000 --> 01:09:16,000
+to make the inner pattern.
+
+1625
+01:09:20,000 --> 01:09:21,000
+OK.
+
+1626
+01:09:21,000 --> 01:09:23,000
+After that, we can delete the excess lines.
+
+1627
+01:09:23,000 --> 01:09:26,000
+Of course, you can also change it directly to the inner pattern.
+
+1628
+01:09:26,000 --> 01:09:29,000
+OK, now we have an inner line for positioning.
+
+1629
+01:09:29,000 --> 01:09:31,000
+And it is an automatic cross-stitch.
+
+1630
+01:09:31,000 --> 01:09:33,000
+And this point is all connected.
+
+1631
+01:09:33,000 --> 01:09:36,000
+Then we will sew a rectangular panel line
+
+1632
+01:09:36,000 --> 01:09:39,000
+to these two inner lines.
+
+1633
+01:09:39,000 --> 01:09:40,000
+OK.
+
+1634
+01:09:40,000 --> 01:09:43,000
+I am doing this because I am familiar with the operation.
+
+1635
+01:09:43,000 --> 01:09:45,000
+If you are doing it by yourself,
+
+1636
+01:09:45,000 --> 01:09:47,000
+you can arrange the panel line first,
+
+1637
+01:09:47,000 --> 01:09:50,000
+and then sew it with 3D sewing.
+
+1638
+01:09:50,000 --> 01:09:51,000
+OK.
+
+1639
+01:09:51,000 --> 01:09:53,000
+Then we can quickly position the shoulder
+
+1640
+01:09:53,000 --> 01:09:57,000
+and sew it together.
+
+1641
+01:10:00,000 --> 01:10:03,000
+So if you are not sure
+
+1642
+01:10:03,000 --> 01:10:06,000
+which position you want to make the panel line,
+
+1643
+01:10:06,000 --> 01:10:08,000
+you can use the 3D panel line
+
+1644
+01:10:08,000 --> 01:10:11,000
+to make the panel line first.
+
+1645
+01:10:11,000 --> 01:10:12,000
+Marking,
+
+1646
+01:10:12,000 --> 01:10:13,000
+these are all possible.
+
+1647
+01:10:13,000 --> 01:10:14,000
+For reference,
+
+1648
+01:10:16,000 --> 01:10:18,000
+you don't have to make the panel line
+
+1649
+01:10:18,000 --> 01:10:20,000
+in the 2D window.
+
+1650
+01:10:20,000 --> 01:10:22,000
+And then the shoulder is also here.
+
+1651
+01:10:22,000 --> 01:10:25,000
+In order to hide its seam line,
+
+1652
+01:10:25,000 --> 01:10:28,000
+I choose to make it a column layer.
+
+1653
+01:10:28,000 --> 01:10:29,000
+Then,
+
+1654
+01:10:31,000 --> 01:10:32,000
+make a column layer
+
+1655
+01:10:32,000 --> 01:10:35,000
+and delete the outer line of the inner line.
+
+1656
+01:10:35,000 --> 01:10:36,000
+OK.
+
+1657
+01:10:36,000 --> 01:10:38,000
+Here we made two
+
+1658
+01:10:38,000 --> 01:10:40,000
+two round panels.
+
+1659
+01:10:40,000 --> 01:10:41,000
+Actually,
+
+1660
+01:10:41,000 --> 01:10:43,000
+it's just a random drawing.
+
+1661
+01:10:43,000 --> 01:10:45,000
+And then I'm going to make the hemline.
+
+1662
+01:10:45,000 --> 01:10:46,000
+If you make the hemline,
+
+1663
+01:10:46,000 --> 01:10:47,000
+it's like this.
+
+1664
+01:10:47,000 --> 01:10:49,000
+We sew the rectangular panel line first.
+
+1665
+01:10:49,000 --> 01:10:51,000
+You don't have to cut the hemline first.
+
+1666
+01:10:51,000 --> 01:10:53,000
+If you cut the small panels one by one first,
+
+1667
+01:10:53,000 --> 01:10:54,000
+it's very troublesome.
+
+1668
+01:10:54,000 --> 01:10:58,000
+We sew the entire rectangular panel line first,
+
+1669
+01:10:58,000 --> 01:11:00,000
+and then we cut it down.
+
+1670
+01:11:03,000 --> 01:11:06,000
+Sew a rectangular panel line first,
+
+1671
+01:11:06,000 --> 01:11:08,000
+and then adjust its length.
+
+1672
+01:11:08,000 --> 01:11:09,000
+Wait a minute.
+
+1673
+01:11:09,000 --> 01:11:10,000
+Our hemline here.
+
+1674
+01:11:10,000 --> 01:11:13,000
+Let's take a look at the final hemline effect.
+
+1675
+01:11:13,000 --> 01:11:14,000
+Finally,
+
+1676
+01:11:14,000 --> 01:11:17,000
+I made these hemlines.
+
+1677
+01:11:17,000 --> 01:11:18,000
+What about him?
+
+1678
+01:11:18,000 --> 01:11:22,000
+It's through the line attached to the panel line.
+
+1679
+01:11:22,000 --> 01:11:26,000
+To make these hemline effects.
+
+1680
+01:11:26,000 --> 01:11:30,000
+So we're going to cut these panels out first.
+
+1681
+01:11:33,000 --> 01:11:34,000
+OK.
+
+1682
+01:11:34,000 --> 01:11:35,000
+We're here.
+
+1683
+01:11:35,000 --> 01:11:37,000
+You first draw the rectangular panel line.
+
+1684
+01:11:37,000 --> 01:11:38,000
+I'm going to sew it up.
+
+1685
+01:11:38,000 --> 01:11:39,000
+After sewing it up,
+
+1686
+01:11:39,000 --> 01:11:41,000
+you can take a look at where it's going to be sewn.
+
+1687
+01:11:41,000 --> 01:11:42,000
+Because it's sewn to the bottom,
+
+1688
+01:11:42,000 --> 01:11:44,000
+it's going to have some conflicts with the shoulders.
+
+1689
+01:11:44,000 --> 01:11:50,000
+So we're going to adjust its hemline manually.
+
+1690
+01:11:50,000 --> 01:11:51,000
+OK.
+
+1691
+01:11:51,000 --> 01:11:52,000
+Hairline reversal.
+
+1692
+01:11:52,000 --> 01:11:55,000
+After you select the middle panel in our software,
+
+1693
+01:11:55,000 --> 01:11:57,000
+there is a flip normal on the right.
+
+1694
+01:11:57,000 --> 01:12:00,000
+It's called reversal.
+
+1695
+01:12:00,000 --> 01:12:01,000
+Uh,
+
+1696
+01:12:01,000 --> 01:12:02,000
+surface reversal.
+
+1697
+01:12:02,000 --> 01:12:03,000
+OK.
+
+1698
+01:12:03,000 --> 01:12:04,000
+Because of this problem,
+
+1699
+01:12:04,000 --> 01:12:05,000
+recently,
+
+1700
+01:12:05,000 --> 01:12:08,000
+I've seen that I've already returned the panel line.
+
+1701
+01:12:08,000 --> 01:12:09,000
+Uh,
+
+1702
+01:12:09,000 --> 01:12:11,000
+if you don't know where it is,
+
+1703
+01:12:11,000 --> 01:12:12,000
+right click,
+
+1704
+01:12:12,000 --> 01:12:13,000
+surface reversal.
+
+1705
+01:12:13,000 --> 01:12:15,000
+Its hemline will automatically turn over.
+
+1706
+01:12:15,000 --> 01:12:21,000
+So you just need to press the surface to turn over.
+
+1707
+01:12:21,000 --> 01:12:23,000
+OK.
+
+1708
+01:12:23,000 --> 01:12:28,000
+Then we use the edit panel tool to select the side lines on both sides.
+
+1709
+01:12:28,000 --> 01:12:32,000
+Then select the inner line according to the curve.
+
+1710
+01:12:32,000 --> 01:12:33,000
+OK.
+
+1711
+01:12:33,000 --> 01:12:34,000
+Then cut them off.
+
+1712
+01:12:34,000 --> 01:12:37,000
+Just simulate it again.
+
+1713
+01:12:37,000 --> 01:12:42,000
+Then remember to separate the panels in the 2D window.
+
+1714
+01:12:42,000 --> 01:12:46,000
+Don't let them overlap.
+
+1715
+01:12:46,000 --> 01:12:50,000
+Adjust its particle diameter and its conflict thickness.
+
+1716
+01:12:50,000 --> 01:12:51,000
+OK.
+
+1717
+01:12:51,000 --> 01:12:56,000
+Then wait for them to be stabilized.
+
+1718
+01:12:56,000 --> 01:13:00,000
+This is the flip of the hemline.
+
+1719
+01:13:00,000 --> 01:13:03,000
+Because we will use the hemline tool to make the hemline.
+
+1720
+01:13:03,000 --> 01:13:05,000
+And then the hemline here.
+
+1721
+01:13:05,000 --> 01:13:07,000
+Because the hemline is a relatively small panel line.
+
+1722
+01:13:07,000 --> 01:13:08,000
+And then you are in,
+
+1723
+01:13:08,000 --> 01:13:09,000
+uh,
+
+1724
+01:13:09,000 --> 01:13:10,000
+movement,
+
+1725
+01:13:10,000 --> 01:13:12,000
+which is more intense.
+
+1726
+01:13:12,000 --> 01:13:13,000
+Uh,
+
+1727
+01:13:13,000 --> 01:13:15,000
+this hemline may be a little unstable.
+
+1728
+01:13:15,000 --> 01:13:22,000
+So let's increase its friction first.
+
+1729
+01:13:22,000 --> 01:13:23,000
+OK.
+
+1730
+01:13:23,000 --> 01:13:24,000
+Uh,
+
+1731
+01:13:24,000 --> 01:13:25,000
+in MD,
+
+1732
+01:13:25,000 --> 01:13:27,000
+the fabric with bending strength will expand.
+
+1733
+01:13:27,000 --> 01:13:31,000
+It won't.
+
+1734
+01:13:31,000 --> 01:13:34,000
+Unless you use the pressure.
+
+1735
+01:13:34,000 --> 01:13:35,000
+After using the pressure,
+
+1736
+01:13:35,000 --> 01:13:42,000
+you have to adjust the pressure value to the opposite value after turning it over on the surface.
+
+1737
+01:13:42,000 --> 01:13:45,000
+Because you can take a look.
+
+1738
+01:13:45,000 --> 01:13:48,000
+For example, now this is this panel.
+
+1739
+01:13:48,000 --> 01:13:50,000
+Uh.
+
+1740
+01:13:50,000 --> 01:13:51,000
+Because,
+
+1741
+01:13:51,000 --> 01:13:56,000
+the width is an attribute that has been set.
+
+1742
+01:13:56,000 --> 01:13:59,000
+It won't be different.
+
+1743
+01:13:59,000 --> 01:14:00,000
+I am like this now.
+
+1744
+01:14:00,000 --> 01:14:02,000
+And then turn it over on the surface.
+
+1745
+01:14:02,000 --> 01:14:11,000
+It's still like this.
+
+1746
+01:14:11,000 --> 01:14:22,000
+Uh?
+
+1747
+01:14:22,000 --> 01:14:23,000
+This,
+
+1748
+01:14:23,000 --> 01:14:27,000
+it won't affect its physical effect.
+
+1749
+01:14:30,000 --> 01:14:33,000
+Unless you give pressure.
+
+1750
+01:14:33,000 --> 01:14:37,000
+For example, you give a,
+
+1751
+01:14:37,000 --> 01:14:38,000
+positive,
+
+1752
+01:14:38,000 --> 01:14:41,000
+positive pressure.
+
+1753
+01:14:41,000 --> 01:14:44,000
+Uh,
+
+1754
+01:14:44,000 --> 01:14:45,000
+it won't.
+
+1755
+01:14:45,000 --> 01:14:46,000
+Do double layers.
+
+1756
+01:14:46,000 --> 01:14:47,000
+Are you talking about,
+
+1757
+01:14:47,000 --> 01:14:48,000
+doing single layers,
+
+1758
+01:14:48,000 --> 01:14:51,000
+and then doing cologne layers?
+
+1759
+01:14:51,000 --> 01:14:53,000
+Uh,
+
+1760
+01:14:53,000 --> 01:14:54,000
+uh,
+
+1761
+01:14:54,000 --> 01:14:55,000
+uh,
+
+1762
+01:14:55,000 --> 01:14:56,000
+uh,
+
+1763
+01:14:56,000 --> 01:14:57,000
+uh,
+
+1764
+01:14:57,000 --> 01:14:58,000
+uh,
+
+1765
+01:14:58,000 --> 01:14:59,000
+uh,
+
+1766
+01:14:59,000 --> 01:15:02,000
+cologne colors?
+
+1767
+01:15:02,000 --> 01:15:09,000
+Eh,
+
+1768
+01:15:09,000 --> 01:15:11,000
+I don't know.
+
+1769
+01:15:11,000 --> 01:15:18,000
+Some indecisive,
+
+1770
+01:15:18,000 --> 01:15:20,000
+uh.
+
+1771
+01:15:20,000 --> 01:15:22,720
+nel
+
+1772
+01:15:22,720 --> 01:15:25,279
+Um,
+
+1773
+01:15:25,279 --> 01:15:27,000
+uh,
+
+1774
+01:15:27,000 --> 01:15:47,000
+Because the pressure is a positive and a negative side of the split board, if you turn the surface, it will need you to re-set it manually.
+
+1775
+01:15:47,000 --> 01:15:55,000
+Because every physical element has its own bending strength.
+
+1776
+01:15:55,000 --> 01:16:13,000
+I added a computer that is i9 12th generation, or 9th generation.
+
+1777
+01:16:13,000 --> 01:16:19,000
+There is a writing on the upper left corner, you can add it if you want a 4-star background.
+
+1778
+01:16:19,000 --> 01:16:25,000
+Then we will increase the friction coefficient of this board, and the bending strength.
+
+1779
+01:16:25,000 --> 01:16:37,000
+So you can see if there are any problems with the abdorah.
+
+1780
+01:16:37,000 --> 01:16:44,000
+You can increase the friction coefficient of the bending strength you are talking about.
+
+1781
+01:16:44,000 --> 01:16:52,000
+Because the surface rotation actually does not affect the true and false sides of the board.
+
+1782
+01:16:52,000 --> 01:16:55,000
+I think you'd better show me.
+
+1783
+01:16:55,000 --> 01:16:58,000
+This is the case that you encounter.
+
+1784
+01:16:58,000 --> 01:17:02,000
+This is the line attached to the fabric.
+
+1785
+01:17:02,000 --> 01:17:05,000
+This line is made by using the OBJ line.
+
+1786
+01:17:05,000 --> 01:17:08,000
+It uses a single-circle OBJ pattern.
+
+1787
+01:17:08,000 --> 01:17:11,000
+And then make a line.
+
+1788
+01:17:11,000 --> 01:17:13,000
+A line.
+
+1789
+01:17:13,000 --> 01:17:19,000
+You can watch the tutorial video of the self-defined line that we made before.
+
+1790
+01:17:19,000 --> 01:17:21,000
+A self-defined OBJ is poured in.
+
+1791
+01:17:21,000 --> 01:17:23,000
+Then adjust its number of boxes.
+
+1792
+01:17:23,000 --> 01:17:30,000
+You can make it into a continuous line.
+
+1793
+01:17:30,000 --> 01:17:32,000
+It has a grid.
+
+1794
+01:17:32,000 --> 01:17:35,000
+Because it is a three-dimensional structure.
+
+1795
+01:17:38,000 --> 01:17:43,000
+If you do not find how to private message, you can enter MD official.
+
+1796
+01:17:43,000 --> 01:17:46,000
+Then send a message.
+
+1797
+01:17:46,000 --> 01:17:49,000
+You can see how to private message.
+
+1798
+01:17:49,000 --> 01:17:51,000
+OK.
+
+1799
+01:17:51,000 --> 01:17:54,000
+If you pay attention to MD official.
+
+1800
+01:17:54,000 --> 01:17:57,000
+It will also send a message to you in the background.
+
+1801
+01:17:57,000 --> 01:18:00,000
+It's about how to add a group.
+
+1802
+01:18:00,000 --> 01:18:01,000
+OK.
+
+1803
+01:18:01,000 --> 01:18:05,000
+Here we adjust the position of the line.
+
+1804
+01:18:05,000 --> 01:18:09,000
+So that it does not have a gap with the position of the hair pin.
+
+1805
+01:18:09,000 --> 01:18:15,000
+OK.
+
+1806
+01:18:15,000 --> 01:18:18,000
+It may be that the BZ user uses it less.
+
+1807
+01:18:18,000 --> 01:18:19,000
+It's normal.
+
+1808
+01:18:19,000 --> 01:18:21,000
+I don't know how to private message.
+
+1809
+01:18:21,000 --> 01:18:24,000
+OK.
+
+1810
+01:18:24,000 --> 01:18:25,000
+Like this blur.
+
+1811
+01:18:25,000 --> 01:18:29,000
+We will use modern media to add next to it.
+
+1812
+01:18:29,000 --> 01:18:31,000
+After adding blur.
+
+1813
+01:18:31,000 --> 01:18:32,000
+First of all.
+
+1814
+01:18:32,000 --> 01:18:35,000
+It is found that the blur here is added to the back.
+
+1815
+01:18:35,000 --> 01:18:39,000
+So we need to change it to all.
+
+1816
+01:18:39,000 --> 01:18:42,000
+You can see both sides.
+
+1817
+01:18:42,000 --> 01:18:43,000
+If you change it,
+
+1818
+01:18:43,000 --> 01:18:47,000
+Because the pen does have the front and back.
+
+1819
+01:18:47,000 --> 01:18:48,000
+Some panels.
+
+1820
+01:18:48,000 --> 01:18:50,000
+Some of them are şan over the front and back of the key is different.
+
+1821
+01:18:50,000 --> 01:19:02,000
+So we choose an obvious type in the obvious type and we can set this whole obvious type only to be displayed on the front side of the board or the back side of the board or the front and the back side of the board.
+
+1822
+01:19:08,000 --> 01:19:12,000
+After that, we will adjust the particle diameter of this fluid.
+
+1823
+01:19:12,000 --> 01:19:18,000
+First, adjust its particle diameter a little lower, because this board is relatively small, and the particle diameter adjustment point is not a big problem.
+
+1824
+01:19:18,000 --> 01:19:26,000
+Then, we try to make this board a more smooth rotation,
+
+1825
+01:19:26,000 --> 01:19:31,000
+so that its 1 is that the number of the grid should be enough, and 2 is that its transition should be smooth enough.
+
+1826
+01:19:31,000 --> 01:19:35,000
+This is obvious, because the obvious type is attached to the grid.
+
+1827
+01:19:35,000 --> 01:19:42,000
+If the number of the grid is too small, there will be some problems with the surface of the obvious type attached to it.
+
+1828
+01:19:42,000 --> 01:19:48,000
+So if you don't know how the obvious type works,
+
+1829
+01:19:48,000 --> 01:19:54,000
+you can go to our previous video and take a look at it.
+
+1830
+01:19:54,000 --> 01:19:57,000
+Then we make this head cover.
+
+1831
+01:19:57,000 --> 01:20:04,000
+The head cover is to draw a shape like this first, and then make a rectangular board on the side.
+
+1832
+01:20:04,000 --> 01:20:07,000
+Then Ctrl D creates a symmetry.
+
+1833
+01:20:07,000 --> 01:20:14,000
+Shift F opens the arrangement board, and then copy these to form the head.
+
+1834
+01:20:14,000 --> 01:20:16,000
+I'm going to form the head.
+
+1835
+01:20:16,000 --> 01:20:18,000
+Form the head of these boards.
+
+1836
+01:20:18,000 --> 01:20:21,000
+Then sew them together.
+
+1837
+01:20:34,000 --> 01:20:36,000
+Okay, then start modeling.
+
+1838
+01:20:39,000 --> 01:20:41,000
+Then print it.
+
+1839
+01:20:41,000 --> 01:20:44,000
+Print the board to make it support the head.
+
+1840
+01:20:48,000 --> 01:20:52,000
+Then we use some new fabric.
+
+1841
+01:20:52,000 --> 01:20:58,000
+In fact, making the head is like making a bag, and then putting the bag on top of the head.
+
+1842
+01:20:58,000 --> 01:21:07,000
+Let's make it stand up first, and then draw a rectangular shape based on these lines that are not sewed together yet.
+
+1843
+01:21:07,000 --> 01:21:11,000
+Then make some round corners, and then sew it up.
+
+1844
+01:21:11,000 --> 01:21:12,000
+Do the same on the side.
+
+1845
+01:21:12,000 --> 01:21:15,000
+Make some round corners, and sew them up.
+
+1846
+01:21:18,000 --> 01:21:23,000
+Then when you sew it, pay attention to see if the length of the sewing line is correct.
+
+1847
+01:21:23,000 --> 01:21:28,000
+After it is correct, then sew up the rest of the parts of the board.
+
+1848
+01:21:28,000 --> 01:21:30,000
+Then simulate it.
+
+1849
+01:21:34,000 --> 01:21:36,000
+Print the board.
+
+1850
+01:21:39,000 --> 01:21:46,000
+This head cover, in fact, I wanted to make an animation of this head cover flying away.
+
+1851
+01:21:46,000 --> 01:21:55,000
+So I made it a little bigger, like a doll's head cover.
+
+1852
+01:21:55,000 --> 01:21:58,000
+What does it mean to wear it the most?
+
+1853
+01:21:58,000 --> 01:22:03,000
+Oh, is it the head cover you wear before you shoot?
+
+1854
+01:22:03,000 --> 01:22:05,000
+Oh, no.
+
+1855
+01:22:05,000 --> 01:22:07,000
+This is just a...
+
+1856
+01:22:07,000 --> 01:22:10,000
+This is just a normal doll's head cover.
+
+1857
+01:22:10,000 --> 01:22:13,000
+This is because we added some pressure to it,
+
+1858
+01:22:13,000 --> 01:22:15,000
+to make it look bigger.
+
+1859
+01:22:15,000 --> 01:22:17,000
+The effect is the same.
+
+1860
+01:22:17,000 --> 01:22:19,000
+Here we have to mention a point.
+
+1861
+01:22:19,000 --> 01:22:23,000
+Why this model can now be put on my head and not fly away,
+
+1862
+01:22:23,000 --> 01:22:28,000
+is because there are some small boards at the bottom that restrict it from flying away.
+
+1863
+01:22:28,000 --> 01:22:31,000
+So when we put pressure on it,
+
+1864
+01:22:31,000 --> 01:22:34,000
+its overall pressure is relatively balanced.
+
+1865
+01:22:34,000 --> 01:22:36,000
+It doesn't fly in one direction.
+
+1866
+01:22:36,000 --> 01:22:38,000
+Because if your board,
+
+1867
+01:22:38,000 --> 01:22:39,000
+you can take a look,
+
+1868
+01:22:39,000 --> 01:22:42,000
+if we only have a single board,
+
+1869
+01:22:42,000 --> 01:22:44,000
+it doesn't...
+
+1870
+01:22:44,000 --> 01:22:47,000
+If it doesn't have the effect of a sewing line,
+
+1871
+01:22:47,000 --> 01:22:51,000
+then the effect of direct pressure is that it will fly away.
+
+1872
+01:22:51,000 --> 01:22:59,000
+So you have to make sure that it is balanced to some extent.
+
+1873
+01:22:59,000 --> 01:23:02,000
+Understand?
+
+1874
+01:23:02,000 --> 01:23:03,000
+Okay.
+
+1875
+01:23:03,000 --> 01:23:06,000
+Then we cut out the hardening.
+
+1876
+01:23:06,000 --> 01:23:07,000
+After cutting out the hardening,
+
+1877
+01:23:07,000 --> 01:23:09,000
+go to the physical element to set it up.
+
+1878
+01:23:09,000 --> 01:23:12,000
+First of all, let's reduce the strength of the gold tail.
+
+1879
+01:23:12,000 --> 01:23:13,000
+All a little bit.
+
+1880
+01:23:13,000 --> 01:23:16,000
+When the strength of the gold tail is reduced,
+
+1881
+01:23:16,000 --> 01:23:19,000
+the fabric will become easier to stretch.
+
+1882
+01:23:19,000 --> 01:23:21,000
+Then the effect of this effect,
+
+1883
+01:23:21,000 --> 01:23:28,000
+when it works on a board with pressure,
+
+1884
+01:23:28,000 --> 01:23:33,000
+it will be easier to inflate.
+
+1885
+01:23:33,000 --> 01:23:38,000
+You can see that the fold of the sewing line position will also decrease.
+
+1886
+01:23:38,000 --> 01:23:42,000
+It feels so suffocating.
+
+1887
+01:23:42,000 --> 01:23:44,000
+It doesn't matter.
+
+1888
+01:23:44,000 --> 01:23:45,000
+It doesn't matter.
+
+1889
+01:23:45,000 --> 01:23:49,000
+Sometimes we don't need to care about the feeling of a virtual model.
+
+1890
+01:23:49,000 --> 01:23:51,000
+Then we increase the strength of the curve a little bit.
+
+1891
+01:23:51,000 --> 01:23:53,000
+Increase the strength of the curve a little bit
+
+1892
+01:23:53,000 --> 01:23:56,000
+in order to make these folds less.
+
+1893
+01:23:56,000 --> 01:24:00,000
+Now this headgear becomes a cuter headgear.
+
+1894
+01:24:00,000 --> 01:24:02,000
+Now let's talk about the assembly.
+
+1895
+01:24:02,000 --> 01:24:04,000
+When making animation,
+
+1896
+01:24:04,000 --> 01:24:07,000
+especially like this configuration,
+
+1897
+01:24:07,000 --> 01:24:10,000
+we usually use OBJ as the assembly form.
+
+1898
+01:24:10,000 --> 01:24:16,000
+And then we attach this metal object to it.
+
+1899
+01:24:16,000 --> 01:24:19,000
+Whether it's a visible model,
+
+1900
+01:24:19,000 --> 01:24:20,000
+a visible board,
+
+1901
+01:24:20,000 --> 01:24:23,000
+or through transparency,
+
+1902
+01:24:23,000 --> 01:24:25,000
+we simply make a constraint with the board.
+
+1903
+01:24:25,000 --> 01:24:28,000
+Just like our button just now.
+
+1904
+01:24:28,000 --> 01:24:33,000
+In short, we will attach this component to some models.
+
+1905
+01:24:38,000 --> 01:24:39,000
+For example, here, I will put this,
+
+1906
+01:24:39,000 --> 01:24:45,000
+this board attached to the inside of this belt,
+
+1907
+01:24:45,000 --> 01:24:50,000
+so that it is a joint simulation with our belt board.
+
+1908
+01:24:50,000 --> 01:24:54,000
+Because after you attach it with a glue tool,
+
+1909
+01:24:54,000 --> 01:25:00,000
+this component will move along the deformation of the board.
+
+1910
+01:25:00,000 --> 01:25:03,000
+It is connected to the point of the button.
+
+1911
+01:25:03,000 --> 01:25:05,000
+Okay, let's take a look at this.
+
+1912
+01:25:05,000 --> 01:25:07,000
+Some friends will say,
+
+1913
+01:25:07,000 --> 01:25:11,000
+oh, since I want to make a joint simulation,
+
+1914
+01:25:11,000 --> 01:25:14,000
+can I use the board directly
+
+1915
+01:25:14,000 --> 01:25:16,000
+to make a very hard component
+
+1916
+01:25:16,000 --> 01:25:20,000
+to replace this日字扣?
+
+1917
+01:25:20,000 --> 01:25:22,000
+Is this okay?
+
+1918
+01:25:22,000 --> 01:25:24,000
+In fact, I need to tell you that
+
+1919
+01:25:24,000 --> 01:25:26,000
+when making animation,
+
+1920
+01:25:26,000 --> 01:25:28,000
+you have a lot of points to pay attention to.
+
+1921
+01:25:28,000 --> 01:25:30,000
+One of them is your fabric.
+
+1922
+01:25:30,000 --> 01:25:33,000
+Its stretch performance can't be too bad.
+
+1923
+01:25:33,000 --> 01:25:35,000
+So let's take a look at a set of animations.
+
+1924
+01:25:35,000 --> 01:25:38,000
+This is just a simple turn over action.
+
+1925
+01:25:41,000 --> 01:25:44,000
+And then after we finished the simulation,
+
+1926
+01:25:44,000 --> 01:25:47,000
+did you see this red pocket?
+
+1927
+01:25:47,000 --> 01:25:50,000
+It's dragging our clothes.
+
+1928
+01:25:50,000 --> 01:25:52,000
+Its deformation is particularly serious.
+
+1929
+01:25:52,000 --> 01:25:53,000
+Why?
+
+1930
+01:25:53,000 --> 01:25:55,000
+It's because of its fine-tuning strength
+
+1931
+01:25:55,000 --> 01:25:58,000
+and the tension of the foot line is too high.
+
+1932
+01:25:58,000 --> 01:26:00,000
+These values ​​are too high.
+
+1933
+01:26:00,000 --> 01:26:02,000
+This fabric is not easy to deform.
+
+1934
+01:26:02,000 --> 01:26:03,000
+During the movement,
+
+1935
+01:26:03,000 --> 01:26:04,000
+it will drag.
+
+1936
+01:26:04,000 --> 01:26:06,000
+It will drag other pieces.
+
+1937
+01:26:06,000 --> 01:26:10,000
+We now change it to a more ordinary fabric.
+
+1938
+01:26:10,000 --> 01:26:13,000
+Change to black fabric.
+
+1939
+01:26:13,000 --> 01:26:14,000
+Let's take a look again.
+
+1940
+01:26:14,000 --> 01:26:17,000
+The stretch performance is not so bad.
+
+1941
+01:26:17,000 --> 01:26:18,000
+In other words,
+
+1942
+01:26:18,000 --> 01:26:21,000
+after the fine-tuning strength is not so high,
+
+1943
+01:26:21,000 --> 01:26:24,000
+its simulation will become more stable.
+
+1944
+01:26:24,000 --> 01:26:26,000
+Some friends will say,
+
+1945
+01:26:26,000 --> 01:26:28,000
+oh, it's the same vertical stretch.
+
+1946
+01:26:28,000 --> 01:26:32,000
+Will it be different if I stretch the bend strength a little higher?
+
+1947
+01:26:32,000 --> 01:26:34,000
+Will the bend strength be higher?
+
+1948
+01:26:34,000 --> 01:26:35,000
+Will it affect it?
+
+1949
+01:26:35,000 --> 01:26:37,000
+In fact, you can take a look.
+
+1950
+01:26:37,000 --> 01:26:42,000
+The bend strength is not so obvious.
+
+1951
+01:26:42,000 --> 01:26:45,000
+The bend strength is more like these two pockets floating in the air.
+
+1952
+01:26:45,000 --> 01:26:47,000
+But it won't drag.
+
+1953
+01:26:47,000 --> 01:26:53,000
+It won't have a strong inertia to drag your clothes.
+
+1954
+01:26:53,000 --> 01:26:54,000
+In addition,
+
+1955
+01:26:54,000 --> 01:26:58,000
+when we do the turn over action,
+
+1956
+01:26:58,000 --> 01:27:02,000
+its action is very large.
+
+1957
+01:27:02,000 --> 01:27:06,000
+When we set its simulation quality again,
+
+1958
+01:27:06,000 --> 01:27:07,000
+first of all,
+
+1959
+01:27:07,000 --> 01:27:09,000
+we can increase its simulation quality a little bit.
+
+1960
+01:27:09,000 --> 01:27:12,000
+Let it simulate as much as possible in each stitch.
+
+1961
+01:27:12,000 --> 01:27:13,000
+Because in our animation,
+
+1962
+01:27:13,000 --> 01:27:16,000
+each stitch will be calculated once.
+
+1963
+01:27:16,000 --> 01:27:22,000
+Then the current state of the calculation is recorded under this stitch.
+
+1964
+01:27:22,000 --> 01:27:25,000
+So the higher your simulation quality,
+
+1965
+01:27:25,000 --> 01:27:27,000
+the higher your calculation accuracy,
+
+1966
+01:27:27,000 --> 01:27:31,000
+the more accurate the data you record under each stitch.
+
+1967
+01:27:31,000 --> 01:27:33,000
+The more accurate, the more accurate.
+
+1968
+01:27:33,000 --> 01:27:37,000
+It will continue to simulate the background.
+
+1969
+01:27:37,000 --> 01:27:40,000
+It will simulate you to a more accurate position.
+
+1970
+01:27:40,000 --> 01:27:42,000
+So the higher the simulation quality,
+
+1971
+01:27:42,000 --> 01:27:44,000
+the more stable the animation will be.
+
+1972
+01:27:44,000 --> 01:27:47,000
+It won't be as intuitive as before.
+
+1973
+01:27:47,000 --> 01:27:49,000
+Let's take a look here.
+
+1974
+01:27:49,000 --> 01:27:53,000
+If we set the animation quality to 5,
+
+1975
+01:27:53,000 --> 01:27:58,000
+you can see that the recording speed will obviously become slower.
+
+1976
+01:27:58,000 --> 01:28:00,000
+Your action looks like this,
+
+1977
+01:28:00,000 --> 01:28:04,000
+it won't be as big as before.
+
+1978
+01:28:04,000 --> 01:28:06,000
+In fact, the action between each stitch
+
+1979
+01:28:06,000 --> 01:28:08,000
+is still the same as before.
+
+1980
+01:28:08,000 --> 01:28:10,000
+How many stitches do you have in total?
+
+1981
+01:28:10,000 --> 01:28:16,000
+There are 105 stitches in total.
+
+1982
+01:28:16,000 --> 01:28:17,000
+But look,
+
+1983
+01:28:17,000 --> 01:28:19,000
+if I increase the simulation quality,
+
+1984
+01:28:19,000 --> 01:28:21,000
+will the simulation be very stable?
+
+1985
+01:28:21,000 --> 01:28:23,000
+If we play it again later,
+
+1986
+01:28:23,000 --> 01:28:24,000
+you will see that
+
+1987
+01:28:24,000 --> 01:28:25,000
+because I didn't record the end here,
+
+1988
+01:28:25,000 --> 01:28:28,000
+its simulation is more stable.
+
+1989
+01:28:28,000 --> 01:28:30,000
+Then we can also set the simulation quality
+
+1990
+01:28:30,000 --> 01:28:33,000
+to 2 or 3.
+
+1991
+01:28:33,000 --> 01:28:37,000
+If your action is not as accurate as before,
+
+1992
+01:28:37,000 --> 01:28:38,000
+you can read it first.
+
+1993
+01:28:38,000 --> 01:28:40,000
+Oh, in the time period where I turned the root,
+
+1994
+01:28:40,000 --> 01:28:43,000
+which is relatively unstable,
+
+1995
+01:28:43,000 --> 01:28:46,000
+the clothes are still in a relatively stable state.
+
+1996
+01:28:46,000 --> 01:28:49,000
+Then I may set the simulation quality to 2.
+
+1997
+01:28:49,000 --> 01:28:51,000
+Then you don't need to set it to 5.
+
+1998
+01:28:51,000 --> 01:28:53,000
+Because the higher the simulation quality,
+
+1999
+01:28:53,000 --> 01:28:59,000
+the longer the time it will take for your computer to record the animation.
+
+2000
+01:29:00,000 --> 01:29:01,000
+In addition,
+
+2001
+01:29:01,000 --> 01:29:04,000
+there is also the scene time change.
+
+2002
+01:29:04,000 --> 01:29:13,000
+The scene time change is used to keep your FPS unchanged,
+
+2003
+01:29:13,000 --> 01:29:16,000
+to double your frame rate.
+
+2004
+01:29:16,000 --> 01:29:18,000
+Because your frame rate has increased.
+
+2005
+01:29:18,000 --> 01:29:19,000
+In addition,
+
+2006
+01:29:19,000 --> 01:29:20,000
+as I said before,
+
+2007
+01:29:20,000 --> 01:29:22,000
+the animation of each stitch
+
+2008
+01:29:22,000 --> 01:29:25,000
+will be calculated in our software
+
+2009
+01:29:25,000 --> 01:29:28,000
+and recorded under the current stitch.
+
+2010
+01:29:28,000 --> 01:29:29,000
+You can see that
+
+2011
+01:29:29,000 --> 01:29:32,000
+because the key stitch was updated in MD12,
+
+2012
+01:29:32,000 --> 01:29:34,000
+so we will record an animation of you
+
+2013
+01:29:34,000 --> 01:29:37,000
+under each stitch.
+
+2014
+01:29:37,000 --> 01:29:40,000
+So in the case of scene time change,
+
+2015
+01:29:40,000 --> 01:29:42,000
+due to your frame rate doubled,
+
+2016
+01:29:42,000 --> 01:29:44,000
+so every simulation will be,
+
+2017
+01:29:44,000 --> 01:29:45,000
+that is,
+
+2018
+01:29:45,000 --> 01:29:46,000
+that is to say,
+
+2019
+01:29:46,000 --> 01:29:49,000
+the resolution will be doubled.
+
+2020
+01:29:49,000 --> 01:29:51,000
+So your computer
+
+2021
+01:29:51,000 --> 01:29:53,000
+is also increasing the resolution time.
+
+2022
+01:29:53,000 --> 01:29:57,000
+But because the action between each stitch and each stitch
+
+2023
+01:29:57,000 --> 01:29:58,000
+has become smaller,
+
+2024
+01:29:58,000 --> 01:30:01,000
+it becomes more stable.
+
+2025
+01:30:01,000 --> 01:30:02,000
+Of course,
+
+2026
+01:30:02,000 --> 01:30:04,000
+these are what we have talked about
+
+2027
+01:30:04,000 --> 01:30:07,000
+in the animation program.
+
+2028
+01:30:14,000 --> 01:30:17,000
+So I usually record in this way,
+
+2029
+01:30:17,000 --> 01:30:20,000
+when the total number of actions is relatively small,
+
+2030
+01:30:20,000 --> 01:30:23,000
+and the action range is relatively large,
+
+2031
+01:30:23,000 --> 01:30:26,000
+it will increase the scene time.
+
+2032
+01:30:26,000 --> 01:30:29,000
+Then I will increase the quality of the simulation a little bit,
+
+2033
+01:30:29,000 --> 01:30:32,000
+so that it becomes a more stable outfit.
+
+2034
+01:30:32,000 --> 01:30:33,000
+You can see that
+
+2035
+01:30:33,000 --> 01:30:34,000
+when I turn it over now,
+
+2036
+01:30:34,000 --> 01:30:37,000
+the simulation of this outfit is very stable.
+
+2037
+01:30:37,000 --> 01:30:39,000
+It won't be like before.
+
+2038
+01:30:39,000 --> 01:30:42,000
+The clothes will shake.
+
+2039
+01:30:42,000 --> 01:30:43,000
+And then in the end,
+
+2040
+01:30:43,000 --> 01:30:44,000
+if the scene time changes,
+
+2041
+01:30:44,000 --> 01:30:46,000
+we will set it to 1.
+
+2042
+01:30:46,000 --> 01:30:47,000
+Okay,
+
+2043
+01:30:47,000 --> 01:30:49,000
+then let's take a look at the density.
+
+2044
+01:30:49,000 --> 01:30:51,000
+The density of this dress is 27.
+
+2045
+01:30:51,000 --> 01:30:54,000
+Now let's set its density to 3.
+
+2046
+01:30:54,000 --> 01:30:55,000
+Let's take a look.
+
+2047
+01:30:55,000 --> 01:30:57,000
+When the density is 3,
+
+2048
+01:30:57,000 --> 01:30:58,000
+because of this fabric,
+
+2049
+01:30:58,000 --> 01:30:59,000
+its own weight
+
+2050
+01:30:59,000 --> 01:31:01,000
+will not affect it so much.
+
+2051
+01:31:01,000 --> 01:31:04,000
+When we turn over the root,
+
+2052
+01:31:04,000 --> 01:31:07,000
+it won't look like the fabric is shaking.
+
+2053
+01:31:07,000 --> 01:31:09,000
+It's more like this fabric
+
+2054
+01:31:09,000 --> 01:31:12,000
+is floating on the outside of the virtual model.
+
+2055
+01:31:14,000 --> 01:31:16,000
+So in the process of adjustment,
+
+2056
+01:31:16,000 --> 01:31:18,000
+you should remember that
+
+2057
+01:31:18,000 --> 01:31:21,000
+the density will also affect your turning.
+
+2058
+01:31:21,000 --> 01:31:23,000
+And this is a little bit
+
+2059
+01:31:23,000 --> 01:31:25,000
+like when you turn over
+
+2060
+01:31:25,000 --> 01:31:28,000
+and when these actions are relatively large.
+
+2061
+01:31:28,000 --> 01:31:29,000
+The higher the density,
+
+2062
+01:31:29,000 --> 01:31:32,000
+its inertia will look more serious.
+
+2063
+01:31:32,000 --> 01:31:33,000
+For example,
+
+2064
+01:31:33,000 --> 01:31:35,000
+if I set the density to 60 now,
+
+2065
+01:31:35,000 --> 01:31:36,000
+you can see that
+
+2066
+01:31:36,000 --> 01:31:38,000
+this version is very obvious.
+
+2067
+01:31:38,000 --> 01:31:39,000
+You can feel that
+
+2068
+01:31:39,000 --> 01:31:42,000
+it looks different from when it was density 3 just now.
+
+2069
+01:31:42,000 --> 01:31:44,000
+This dress will look very heavy.
+
+2070
+01:31:44,000 --> 01:31:48,000
+And then it's very loose.
+
+2071
+01:31:48,000 --> 01:31:49,000
+Okay,
+
+2072
+01:31:49,000 --> 01:31:50,000
+then let's take a look again.
+
+2073
+01:31:50,000 --> 01:31:52,000
+When the friction coefficient is very high,
+
+2074
+01:31:52,000 --> 01:31:54,000
+because in the process of adjustment,
+
+2075
+01:31:54,000 --> 01:31:56,000
+we may feel that
+
+2076
+01:31:56,000 --> 01:31:58,000
+this fabric,
+
+2077
+01:31:58,000 --> 01:32:00,000
+since it is sliding,
+
+2078
+01:32:00,000 --> 01:32:03,000
+let's add some friction coefficient to it.
+
+2079
+01:32:03,000 --> 01:32:05,000
+Then it will also see that
+
+2080
+01:32:05,000 --> 01:32:07,000
+when we adjust the friction coefficient
+
+2081
+01:32:07,000 --> 01:32:09,000
+very, very high,
+
+2082
+01:32:09,000 --> 01:32:11,000
+when it is too high,
+
+2083
+01:32:11,000 --> 01:32:13,000
+this friction coefficient will cause
+
+2084
+01:32:13,000 --> 01:32:16,000
+this dress to always have a friction force.
+
+2085
+01:32:16,000 --> 01:32:18,000
+Whether it is between it and the model
+
+2086
+01:32:18,000 --> 01:32:20,000
+or between it and other panels,
+
+2087
+01:32:20,000 --> 01:32:23,000
+they will all affect each other.
+
+2088
+01:32:23,000 --> 01:32:25,000
+There will be a lot of wrinkles.
+
+2089
+01:32:25,000 --> 01:32:28,000
+So sometimes you are in the process of simulation,
+
+2090
+01:32:28,000 --> 01:32:30,000
+in the process of recording animation,
+
+2091
+01:32:30,000 --> 01:32:32,000
+you must pay attention to check
+
+2092
+01:32:32,000 --> 01:32:33,000
+whether your friction coefficient
+
+2093
+01:32:33,000 --> 01:32:35,000
+will be adjusted too high.
+
+2094
+01:32:35,000 --> 01:32:37,000
+If it is a small panel,
+
+2095
+01:32:37,000 --> 01:32:38,000
+it doesn't matter if the friction coefficient
+
+2096
+01:32:38,000 --> 01:32:40,000
+is slightly higher.
+
+2097
+01:32:40,000 --> 01:32:43,000
+But don't use it in pieces.
+
+2098
+01:32:43,000 --> 01:32:44,000
+Understand?
+
+2099
+01:32:47,000 --> 01:32:49,000
+Here I think I have already made it clear.
+
+2100
+01:32:49,000 --> 01:32:53,000
+Everyone remember to check these.
+
+2101
+01:32:53,000 --> 01:32:56,000
+There are some more about animation later.
+
+2102
+01:32:58,000 --> 01:33:00,000
+I try to put the animation,
+
+2103
+01:33:00,000 --> 01:33:02,000
+everyone may miss some knowledge points,
+
+2104
+01:33:02,000 --> 01:33:04,000
+plus.
+
+2105
+01:33:05,000 --> 01:33:07,000
+There is another one later.
+
+2106
+01:33:07,000 --> 01:33:09,000
+For example, we just want,
+
+2107
+01:33:09,000 --> 01:33:10,000
+I just want this model,
+
+2108
+01:33:10,000 --> 01:33:11,000
+when it turns over,
+
+2109
+01:33:11,000 --> 01:33:13,000
+this dress just doesn't move.
+
+2110
+01:33:13,000 --> 01:33:15,000
+This bottom is fixed in this position.
+
+2111
+01:33:15,000 --> 01:33:17,000
+Then we can use
+
+2112
+01:33:17,000 --> 01:33:18,000
+the virtual model measurement
+
+2113
+01:33:18,000 --> 01:33:20,000
+tool to draw a circle,
+
+2114
+01:33:20,000 --> 01:33:22,000
+a line on the virtual model.
+
+2115
+01:33:22,000 --> 01:33:24,000
+I am using the circle measurement here,
+
+2116
+01:33:24,000 --> 01:33:26,000
+so it is a circle measurement
+
+2117
+01:33:26,000 --> 01:33:28,000
+created along the virtual model.
+
+2118
+01:33:32,000 --> 01:33:34,000
+Then use the virtual model measurement tool
+
+2119
+01:33:34,000 --> 01:33:36,000
+to click on the bottom of the dress,
+
+2120
+01:33:36,000 --> 01:33:38,000
+and then click on this measurement,
+
+2121
+01:33:38,000 --> 01:33:40,000
+attach it to the measurement.
+
+2122
+01:33:42,000 --> 01:33:44,000
+Then we go to record animation.
+
+2123
+01:33:44,000 --> 01:33:46,000
+Then we go to record animation.
+
+2124
+01:33:48,000 --> 01:33:50,000
+Then we go to record animation.
+
+2125
+01:33:50,000 --> 01:33:51,000
+OK.
+
+2126
+01:33:51,000 --> 01:33:53,000
+Then we go to record animation.
+
+2127
+01:33:53,000 --> 01:33:55,000
+Because the dress is already attached
+
+2128
+01:33:55,000 --> 01:33:56,000
+to the virtual model measurement,
+
+2129
+01:33:56,000 --> 01:33:58,000
+so the position of this bottom
+
+2130
+01:33:58,000 --> 01:34:00,000
+is attached to this line all the time.
+
+2131
+01:34:00,000 --> 01:34:02,000
+is attached to this line all the time.
+
+2132
+01:34:02,000 --> 01:34:04,000
+Because this line is on the model,
+
+2133
+01:34:04,000 --> 01:34:06,000
+it is bound to the model.
+
+2134
+01:34:06,000 --> 01:34:07,000
+So this bottom
+
+2135
+01:34:07,000 --> 01:34:08,000
+will not deform.
+
+2136
+01:34:08,000 --> 01:34:10,000
+It will always be attached to this line.
+
+2137
+01:34:10,000 --> 01:34:12,000
+It will always be attached to this line.
+
+2138
+01:34:12,000 --> 01:34:14,000
+It won't shake.
+
+2139
+01:34:14,000 --> 01:34:16,000
+It won't shake.
+
+2140
+01:34:16,000 --> 01:34:18,000
+Then if you want to see
+
+2141
+01:34:18,000 --> 01:34:26,000
+In addition to this, it can also be used with a fixed pin, and the fixed pin is more commonly used to be fixed to the virtual model.
+
+2142
+01:34:26,000 --> 01:34:35,000
+The fixed pin is fixed to a point and the virtual model is fixed together.
+
+2143
+01:34:35,000 --> 01:34:50,000
+If the fixed pin is fixed to the virtual model, you can ensure that some points are always attached to the initial position of the virtual model or the virtual model.
+
+2144
+01:34:50,000 --> 01:34:59,000
+So if you want to fix some points, you will use the fixed pin or attach it to the virtual model to measure these functions.
+
+2145
+01:34:59,000 --> 01:35:04,000
+Then we will talk about another point that may be overlooked by everyone, which is the shape optimization.
+
+2146
+01:35:04,000 --> 01:35:05,000
+Then we will talk about another point that may be overlooked by everyone, which is the shape optimization.
+
+2147
+01:35:05,000 --> 01:35:15,000
+When using shape optimization in a large area of fabric, and when doing this kind of operation with a very large range of motion,
+
+2148
+01:35:15,000 --> 01:35:20,000
+For example, when turning the root, because the whole clothes will turn over,
+
+2149
+01:35:20,000 --> 01:35:24,000
+If you use shape optimization again, this is not good.
+
+2150
+01:35:24,000 --> 01:35:28,000
+You can see that after shape optimization, this piece of clothing will roll up.
+
+2151
+01:35:28,000 --> 01:35:34,000
+So try to avoid using the function of shape optimization when doing animation.
+
+2152
+01:35:34,000 --> 01:35:41,000
+After that, there is another point, which is also when using shape optimization in a part.
+
+2153
+01:35:41,000 --> 01:35:44,000
+If the area you choose is too large,
+
+2154
+01:35:44,000 --> 01:35:50,000
+For example, if you turn the root like me, the whole bottom of this clothes,
+
+2155
+01:35:50,000 --> 01:35:55,000
+You can see that this part of the part has been affected by the area of ​​shape optimization just now.
+
+2156
+01:35:55,000 --> 01:36:03,000
+Under such an action, his clothes look very stiff when folded.
+
+2157
+01:36:03,000 --> 01:36:05,000
+It's not real enough.
+
+2158
+01:36:05,000 --> 01:36:09,000
+And you can see that we delete the part of the shape optimization.
+
+2159
+01:36:09,000 --> 01:36:11,000
+For example, when you record half of the process,
+
+2160
+01:36:11,000 --> 01:36:15,000
+You think, oh, I have this shape optimization, the part of the shape optimization is not good.
+
+2161
+01:36:15,000 --> 01:36:17,000
+I want to delete it.
+
+2162
+01:36:17,000 --> 01:36:20,000
+You can see that because we just chose the grid.
+
+2163
+01:36:20,000 --> 01:36:23,000
+This is an operation to choose the grid.
+
+2164
+01:36:23,000 --> 01:36:28,000
+It is equivalent to you giving him a part of the detail or part.
+
+2165
+01:36:28,000 --> 01:36:31,000
+In short, I chose the grid of the part.
+
+2166
+01:36:31,000 --> 01:36:32,000
+If you put that part of the selection,
+
+2167
+01:36:32,000 --> 01:36:34,000
+If you delete that part of the selection,
+
+2168
+01:36:34,000 --> 01:36:37,000
+Then when he calculates this command,
+
+2169
+01:36:37,000 --> 01:36:42,000
+He will determine that there is a change in your grid.
+
+2170
+01:36:42,000 --> 01:36:48,000
+As a result, your animation data is lost and your model data is lost.
+
+2171
+01:36:48,000 --> 01:36:50,000
+So at this time,
+
+2172
+01:36:50,000 --> 01:36:53,000
+If you want to go back to the action at the beginning,
+
+2173
+01:36:53,000 --> 01:36:56,000
+You will find that this clothes can't go back.
+
+2174
+01:36:56,000 --> 01:37:00,000
+It's because we have a change in the grid.
+
+2175
+01:37:00,000 --> 01:37:04,000
+What are the operations that will cause the grid to change?
+
+2176
+01:37:04,000 --> 01:37:08,000
+First of all, it is to adjust the particle diameter of the plate.
+
+2177
+01:37:08,000 --> 01:37:13,000
+There is also the adjustment of the spring line of the plate.
+
+2178
+01:37:13,000 --> 01:37:16,000
+The spring line will also be affected.
+
+2179
+01:37:16,000 --> 01:37:17,000
+Do you understand?
+
+2180
+01:37:17,000 --> 01:37:20,000
+Because the spring line will cause your model and the top of the grid of the model.
+
+2181
+01:37:20,000 --> 01:37:24,000
+They need to be matched.
+
+2182
+01:37:24,000 --> 01:37:27,000
+That is to say, when you add the spring line,
+
+2183
+01:37:27,000 --> 01:37:29,000
+Its grid will be rearranged.
+
+2184
+01:37:29,000 --> 01:37:32,000
+Then your animation will be lost.
+
+2185
+01:37:32,000 --> 01:37:38,000
+So if you want to create a spring line between the two panels,
+
+2186
+01:37:38,000 --> 01:37:40,000
+You can create it in advance.
+
+2187
+01:37:40,000 --> 01:37:41,000
+And then at the beginning,
+
+2188
+01:37:41,000 --> 01:37:44,000
+Reactivate these spring lines.
+
+2189
+01:37:44,000 --> 01:37:46,000
+And then when you simulate it to half,
+
+2190
+01:37:46,000 --> 01:37:47,000
+Activate the spring line again.
+
+2191
+01:37:47,000 --> 01:37:49,000
+This operation is possible.
+
+2192
+01:37:49,000 --> 01:37:52,000
+But when you simulate it directly to half,
+
+2193
+01:37:52,000 --> 01:37:54,000
+To add the spring line,
+
+2194
+01:37:54,000 --> 01:37:55,000
+That's not working.
+
+2195
+01:37:55,000 --> 01:37:57,000
+Do you understand?
+
+2196
+01:37:57,000 --> 01:37:58,000
+What about the others?
+
+2197
+01:37:58,000 --> 01:38:00,000
+Those will affect the animation.
+
+2198
+01:38:00,000 --> 01:38:01,000
+Causing animation.
+
+2199
+01:38:01,000 --> 01:38:03,000
+Will affect the model animation.
+
+2200
+01:38:03,000 --> 01:38:05,000
+Causing this cloth.
+
+2201
+01:38:05,000 --> 01:38:07,000
+Clothing.
+
+2202
+01:38:07,000 --> 01:38:09,000
+That is, its animation disappears.
+
+2203
+01:38:09,000 --> 01:38:12,000
+Then there is no way to return to the initial action.
+
+2204
+01:38:12,000 --> 01:38:14,000
+The main reason is these.
+
+2205
+01:38:14,000 --> 01:38:16,000
+And then please use the save key.
+
+2206
+01:38:16,000 --> 01:38:18,000
+Press Ctrl S more.
+
+2207
+01:38:18,000 --> 01:38:20,000
+In short, it is correct.
+
+2208
+01:38:20,000 --> 01:38:22,000
+Because you can open the file again.
+
+2209
+01:38:22,000 --> 01:38:23,000
+Right?
+
+2210
+01:38:23,000 --> 01:38:25,000
+OK.
+
+2211
+01:38:25,000 --> 01:38:27,000
+After that, we will fill in this hair.
+
+2212
+01:38:27,000 --> 01:38:29,000
+The method of the hat.
+
+2213
+01:38:29,000 --> 01:38:33,000
+It is the same as the animation of the hat before this year.
+
+2214
+01:38:33,000 --> 01:38:34,000
+Not the animation of the hat.
+
+2215
+01:38:34,000 --> 01:38:36,000
+The live broadcast of the hat.
+
+2216
+01:38:36,000 --> 01:38:38,000
+I have talked about it in that issue.
+
+2217
+01:38:38,000 --> 01:38:41,000
+OK.
+
+2218
+01:38:41,000 --> 01:38:44,000
+Then before opening the animation.
+
+2219
+01:38:44,000 --> 01:38:46,000
+Because we just mentioned it.
+
+2220
+01:38:46,000 --> 01:38:47,000
+You go to edit the version.
+
+2221
+01:38:47,000 --> 01:38:50,000
+These will cause.
+
+2222
+01:38:50,000 --> 01:38:51,000
+Animation.
+
+2223
+01:38:51,000 --> 01:38:52,000
+Those simulation losses.
+
+2224
+01:38:52,000 --> 01:38:54,000
+So here we need to.
+
+2225
+01:38:54,000 --> 01:38:55,000
+Before recording the animation.
+
+2226
+01:38:55,000 --> 01:38:56,000
+Remove these first.
+
+2227
+01:38:56,000 --> 01:38:58,000
+Remove these internal lines.
+
+2228
+01:38:58,000 --> 01:39:00,000
+Then change the particle structure.
+
+2229
+01:39:00,000 --> 01:39:01,000
+Like this.
+
+2230
+01:39:01,000 --> 01:39:03,000
+Understand?
+
+2231
+01:39:07,000 --> 01:39:08,000
+OK.
+
+2232
+01:39:08,000 --> 01:39:09,000
+Let me remind you again.
+
+2233
+01:39:09,000 --> 01:39:10,000
+Everyone.
+
+2234
+01:39:10,000 --> 01:39:11,000
+Take care of your health recently.
+
+2235
+01:39:11,000 --> 01:39:14,000
+Add more vitamin C.
+
+2236
+01:39:14,000 --> 01:39:16,000
+Rest more.
+
+2237
+01:39:22,000 --> 01:39:23,000
+OK.
+
+2238
+01:39:23,000 --> 01:39:24,000
+Then wait.
+
+2239
+01:39:24,000 --> 01:39:25,000
+This one on the neck.
+
+2240
+01:39:25,000 --> 01:39:26,000
+This one on the side.
+
+2241
+01:39:26,000 --> 01:39:27,000
+You can see.
+
+2242
+01:39:27,000 --> 01:39:29,000
+Because we just set it.
+
+2243
+01:39:29,000 --> 01:39:30,000
+Fennel line.
+
+2244
+01:39:30,000 --> 01:39:31,000
+Not Fennel line.
+
+2245
+01:39:31,000 --> 01:39:32,000
+Just.
+
+2246
+01:39:32,000 --> 01:39:35,000
+The fold of the internal line we set just now.
+
+2247
+01:39:35,000 --> 01:39:36,000
+It's.
+
+2248
+01:39:36,000 --> 01:39:37,000
+It's.
+
+2249
+01:39:37,000 --> 01:39:38,000
+It's.
+
+2250
+01:39:38,000 --> 01:39:39,000
+It's.
+
+2251
+01:39:39,000 --> 01:39:40,000
+It's.
+
+2252
+01:39:40,000 --> 01:39:41,000
+It's.
+
+2253
+01:39:41,000 --> 01:39:42,000
+It's.
+
+2254
+01:39:42,000 --> 01:39:43,000
+It's.
+
+2255
+01:39:43,000 --> 01:39:44,000
+It's.
+
+2256
+01:39:44,000 --> 01:39:45,000
+It's.
+
+2257
+01:39:45,000 --> 01:39:46,000
+It's.
+
+2258
+01:39:46,000 --> 01:39:47,000
+It's.
+
+2259
+01:39:47,000 --> 01:39:48,000
+It's.
+
+2260
+01:39:48,000 --> 01:39:49,000
+It's.
+
+2261
+01:39:49,000 --> 01:39:50,000
+It's.
+
+2262
+01:39:50,000 --> 01:39:51,000
+It's.
+
+2263
+01:39:51,000 --> 01:39:52,000
+It's.
+
+2264
+01:39:52,000 --> 01:39:53,000
+It's.
+
+2265
+01:39:53,000 --> 01:39:54,000
+It's.
+
+2266
+01:39:54,000 --> 01:39:55,000
+It's.
+
+2267
+01:39:55,000 --> 01:39:56,000
+It's.
+
+2268
+01:39:56,000 --> 01:39:57,000
+It's.
+
+2269
+01:39:57,000 --> 01:39:58,000
+It's.
+
+2270
+01:39:58,000 --> 01:39:59,000
+It's.
+
+2271
+01:39:59,000 --> 01:40:00,000
+It's.
+
+2272
+01:40:00,000 --> 01:40:01,000
+It's.
+
+2273
+01:40:01,000 --> 01:40:02,000
+It's.
+
+2274
+01:40:02,000 --> 01:40:03,000
+It's.
+
+2275
+01:40:03,000 --> 01:40:04,000
+It's.
+
+2276
+01:40:04,000 --> 01:40:05,000
+It's.
+
+2277
+01:40:05,000 --> 01:40:06,000
+It's.
+
+2278
+01:40:06,000 --> 01:40:07,000
+It's.
+
+2279
+01:40:07,000 --> 01:40:08,000
+It's.
+
+2280
+01:40:08,000 --> 01:40:09,000
+It's.
+
+2281
+01:40:09,000 --> 01:40:10,000
+It's.
+
+2282
+01:40:10,000 --> 01:40:11,000
+It's.
+
+2283
+01:40:11,000 --> 01:40:12,000
+It's.
+
+2284
+01:40:12,000 --> 01:40:13,000
+It's.
+
+2285
+01:40:13,000 --> 01:40:14,000
+It's.
+
+2286
+01:40:14,000 --> 01:40:15,000
+It's.
+
+2287
+01:40:15,000 --> 01:40:16,000
+It's.
+
+2288
+01:40:16,000 --> 01:40:17,000
+It's.
+
+2289
+01:40:17,000 --> 01:40:18,000
+It's.
+
+2290
+01:40:18,000 --> 01:40:19,000
+It's.
+
+2291
+01:40:19,000 --> 01:40:20,000
+It's.
+
+2292
+01:40:20,000 --> 01:40:21,000
+It's.
+
+2293
+01:40:21,000 --> 01:40:22,000
+It's.
+
+2294
+01:40:22,000 --> 01:40:23,000
+It's.
+
+2295
+01:40:23,000 --> 01:40:31,000
+The number of frames will affect how many frames we will experience from the current action to the first frame.
+
+2296
+01:40:31,000 --> 01:40:38,000
+The higher the value, the smoother the transition.
+
+2297
+01:40:38,000 --> 01:40:46,000
+Because some actions are exaggerated, we may need to adjust the deformation frame number to 99.
+
+2298
+01:40:46,000 --> 01:40:51,000
+Otherwise, if the simulation speed is too fast, it may not be stable.
+
+2299
+01:40:51,000 --> 01:40:56,000
+We just need to wait for the transition to the action.
+
+2300
+01:40:56,000 --> 01:41:05,000
+After the transition is completed, we will continue to simulate to see if the position of the flow is unstable.
+
+2301
+01:41:05,000 --> 01:41:09,000
+Just now, we have transformed into an A-pose with the arm attached.
+
+2302
+01:41:09,000 --> 01:41:14,000
+Now we have really transformed it into the first action.
+
+2303
+01:41:14,000 --> 01:41:21,000
+The reason for the transition to A-pose is mainly because we want to make the promotional picture.
+
+2304
+01:41:21,000 --> 01:41:30,000
+The hand of Doraemon is the one I made a copy of and put on the model later.
+
+2305
+01:41:30,000 --> 01:41:38,000
+So when we made the walnut clip, we made a head cap for this model.
+
+2306
+01:41:38,000 --> 01:41:46,000
+By the way, I will upload this model to Connect, which is a free download in our shop.
+
+2307
+01:41:46,000 --> 01:41:50,000
+If you are interested, you can download it later.
+
+2308
+01:41:51,000 --> 01:41:59,000
+Next, we can start recording the animation.
+
+2309
+01:41:59,000 --> 01:42:08,000
+Here, I put a high pressure on the head cap.
+
+2310
+01:42:08,000 --> 01:42:14,000
+I put a high pressure on the head cap to make the head cap fly.
+
+2311
+01:42:14,000 --> 01:42:18,000
+Because when we put a high pressure on the head cap,
+
+2312
+01:42:18,000 --> 01:42:20,000
+the head cap is full.
+
+2313
+01:42:20,000 --> 01:42:23,000
+The weight of the head cap can still be balanced with the pressure.
+
+2314
+01:42:23,000 --> 01:42:25,000
+The head cap will not fly away.
+
+2315
+01:42:25,000 --> 01:42:28,000
+But if we put a high pressure on the head cap now,
+
+2316
+01:42:28,000 --> 01:42:33,000
+the head cap will be blown away because of the high pressure.
+
+2317
+01:42:40,000 --> 01:42:45,000
+After that, we will wait for the animation to be recorded.
+
+2318
+01:42:45,000 --> 01:42:49,000
+Then we see this frame.
+
+2319
+01:42:50,000 --> 01:42:53,000
+Is there a problem with the animation recording later?
+
+2320
+01:42:53,000 --> 01:42:56,000
+The hand and the leg are interlocked.
+
+2321
+01:42:56,000 --> 01:42:58,000
+After the hand and the leg are interlocked,
+
+2322
+01:42:58,000 --> 01:43:04,000
+does our model hook up the pants with the hand now?
+
+2323
+01:43:04,000 --> 01:43:09,000
+I think everyone will often encounter this problem when recording animation.
+
+2324
+01:43:09,000 --> 01:43:12,000
+That is to say, sometimes when your animation is tied,
+
+2325
+01:43:12,000 --> 01:43:16,000
+the hand and the leg are interlocked and the clothes are hooked up.
+
+2326
+01:43:16,000 --> 01:43:18,000
+In Marvelous Designer 12,
+
+2327
+01:43:18,000 --> 01:43:21,000
+because we now have the key pins,
+
+2328
+01:43:21,000 --> 01:43:23,000
+we can put the middle part,
+
+2329
+01:43:23,000 --> 01:43:24,000
+press the Shift key,
+
+2330
+01:43:24,000 --> 01:43:27,000
+you can choose more key pins.
+
+2331
+01:43:27,000 --> 01:43:31,000
+Then delete the key pins that have problems with this animation.
+
+2332
+01:43:35,000 --> 01:43:37,000
+After deleting the key pins,
+
+2333
+01:43:37,000 --> 01:43:39,000
+we will simulate again.
+
+2334
+01:43:39,000 --> 01:43:41,000
+You can see that in each pin,
+
+2335
+01:43:41,000 --> 01:43:43,000
+we can simulate it separately.
+
+2336
+01:43:43,000 --> 01:43:46,000
+Then we freeze all the other panels.
+
+2337
+01:43:46,000 --> 01:43:49,000
+First, fix the pants here.
+
+2338
+01:43:49,000 --> 01:43:51,000
+Use the selection grid tool
+
+2339
+01:43:51,000 --> 01:43:56,000
+to separate the grid from the hand.
+
+2340
+01:43:56,000 --> 01:44:00,000
+Note that I am stuck here in this hand,
+
+2341
+01:44:00,000 --> 01:44:05,000
+just separated from the leg.
+
+2342
+01:44:05,000 --> 01:44:08,000
+That is to say, from this point on,
+
+2343
+01:44:08,000 --> 01:44:12,000
+it won't affect anymore.
+
+2344
+01:44:12,000 --> 01:44:14,000
+We will not affect the second recording.
+
+2345
+01:44:14,000 --> 01:44:15,000
+Because at this time,
+
+2346
+01:44:15,000 --> 01:44:17,000
+the interlocking is over.
+
+2347
+01:44:17,000 --> 01:44:21,000
+So let's find the last pin before the interlocking is over.
+
+2348
+01:44:21,000 --> 01:44:22,000
+Under this pin,
+
+2349
+01:44:22,000 --> 01:44:24,000
+fix the pants first.
+
+2350
+01:44:24,000 --> 01:44:28,000
+Fix it to a stable state without interlocking.
+
+2351
+01:44:28,000 --> 01:44:30,000
+Then you can freeze the other parts.
+
+2352
+01:44:30,000 --> 01:44:33,000
+Freezing will not affect your animation loss.
+
+2353
+01:44:33,000 --> 01:44:37,000
+So what we mainly do is to simulate,
+
+2354
+01:44:37,000 --> 01:44:38,000
+simulate,
+
+2355
+01:44:38,000 --> 01:44:39,000
+constantly simulate
+
+2356
+01:44:39,000 --> 01:44:42,000
+to fix these key pins with problems in the middle.
+
+2357
+01:44:45,000 --> 01:44:48,000
+Can you understand?
+
+2358
+01:44:48,000 --> 01:44:49,000
+Under this pin,
+
+2359
+01:44:49,000 --> 01:44:51,000
+we are stable.
+
+2360
+01:44:51,000 --> 01:44:52,000
+Right?
+
+2361
+01:44:52,000 --> 01:44:53,000
+So at this pin,
+
+2362
+01:44:53,000 --> 01:44:57,000
+we will add the key pin we deleted just now.
+
+2363
+01:44:57,000 --> 01:44:58,000
+At this pin,
+
+2364
+01:44:58,000 --> 01:45:01,000
+there is a create key pin at the bottom right.
+
+2365
+01:45:01,000 --> 01:45:02,000
+Be sure to pay attention.
+
+2366
+01:45:02,000 --> 01:45:05,000
+We need to select this animation bar.
+
+2367
+01:45:05,000 --> 01:45:08,000
+Double click can select this animation bar.
+
+2368
+01:45:08,000 --> 01:45:11,000
+Then right-click to select add key pin.
+
+2369
+01:45:11,000 --> 01:45:14,000
+Let it know that your key pin is added to this bar.
+
+2370
+01:45:14,000 --> 01:45:17,000
+It is not added to the bar below.
+
+2371
+01:45:17,000 --> 01:45:18,000
+Do you understand?
+
+2372
+01:45:18,000 --> 01:45:20,000
+Okay.
+
+2373
+01:45:20,000 --> 01:45:24,000
+Then we will rewind the progress bar.
+
+2374
+01:45:24,000 --> 01:45:28,000
+Let's see if there are still any
+
+2375
+01:45:28,000 --> 01:45:30,000
+interlocking of these hands.
+
+2376
+01:45:30,000 --> 01:45:31,000
+Okay.
+
+2377
+01:45:31,000 --> 01:45:33,000
+If there are any more,
+
+2378
+01:45:33,000 --> 01:45:36,000
+we first select these two layers of animation.
+
+2379
+01:45:36,000 --> 01:45:39,000
+We can select merge at the same time.
+
+2380
+01:45:39,000 --> 01:45:42,000
+First merge these two animations into one layer.
+
+2381
+01:45:42,000 --> 01:45:43,000
+Then we will find another one.
+
+2382
+01:45:43,000 --> 01:45:48,000
+Then we will find the places where the hands have interlocking.
+
+2383
+01:45:48,000 --> 01:45:53,000
+Then delete all the non-stable key pins in the middle.
+
+2384
+01:45:53,000 --> 01:45:55,000
+Then we will look at it again.
+
+2385
+01:45:55,000 --> 01:45:57,000
+Because now there is an animation pin,
+
+2386
+01:45:57,000 --> 01:46:00,000
+it will automatically help us to fill in the animation in the middle.
+
+2387
+01:46:00,000 --> 01:46:01,000
+Right?
+
+2388
+01:46:01,000 --> 01:46:03,000
+Let's take a look at the animation that is filled out.
+
+2389
+01:46:03,000 --> 01:46:05,000
+In the middle,
+
+2390
+01:46:05,000 --> 01:46:10,000
+we must have lost or lost some key pins.
+
+2391
+01:46:10,000 --> 01:46:12,000
+Now it has a more serious interlocking.
+
+2392
+01:46:12,000 --> 01:46:13,000
+Because our key pin,
+
+2393
+01:46:13,000 --> 01:46:15,000
+it is to fill in the top animation.
+
+2394
+01:46:15,000 --> 01:46:18,000
+Its top animation is all parallel.
+
+2395
+01:46:18,000 --> 01:46:20,000
+It can't be in the middle.
+
+2396
+01:46:20,000 --> 01:46:21,000
+It is very intelligent.
+
+2397
+01:46:21,000 --> 01:46:23,000
+It is completely intelligent to fill in the number of pins.
+
+2398
+01:46:23,000 --> 01:46:26,000
+So we have to be in the middle.
+
+2399
+01:46:26,000 --> 01:46:29,000
+Among the more serious interlocking of these pins,
+
+2400
+01:46:29,000 --> 01:46:32,000
+fill in some key pins for it.
+
+2401
+01:46:32,000 --> 01:46:33,000
+Do you understand?
+
+2402
+01:46:33,000 --> 01:46:37,000
+So we are in the middle here.
+
+2403
+01:46:37,000 --> 01:46:40,000
+Let's take a look at those unstable places first.
+
+2404
+01:46:40,000 --> 01:46:41,000
+Take a look.
+
+2405
+01:46:41,000 --> 01:46:45,000
+Then find some of the pins in the middle.
+
+2406
+01:46:45,000 --> 01:46:46,000
+Here.
+
+2407
+01:46:46,000 --> 01:46:53,000
+Let's simulate the places where there is an interlocking between the hands and the legs.
+
+2408
+01:46:53,000 --> 01:46:57,000
+Then here, there is an interlocking between the hands and the legs.
+
+2409
+01:46:57,000 --> 01:46:59,000
+It doesn't matter.
+
+2410
+01:46:59,000 --> 01:47:04,000
+Because in such an interlocking situation,
+
+2411
+01:47:04,000 --> 01:47:07,000
+we don't need to activate that part.
+
+2412
+01:47:07,000 --> 01:47:09,000
+We just freeze that part.
+
+2413
+01:47:09,000 --> 01:47:10,000
+Okay.
+
+2414
+01:47:11,000 --> 01:47:16,000
+Now let's adjust the part where there is an interlocking between the hands and the legs.
+
+2415
+01:47:16,000 --> 01:47:22,000
+That is to say, we can see the position where there is an interlocking between the hands and the legs.
+
+2416
+01:47:22,000 --> 01:47:23,000
+Let's fix it.
+
+2417
+01:47:23,000 --> 01:47:26,000
+Use the selection grid to drag some out and simulate it.
+
+2418
+01:47:30,000 --> 01:47:31,000
+Okay.
+
+2419
+01:47:33,000 --> 01:47:36,000
+After we simulate it,
+
+2420
+01:47:36,000 --> 01:47:37,000
+it's the same.
+
+2421
+01:47:37,000 --> 01:47:40,000
+Remember to choose this layer of clothing.
+
+2422
+01:47:41,000 --> 01:47:42,000
+After selecting it,
+
+2423
+01:47:42,000 --> 01:47:45,000
+select Create Key Point.
+
+2424
+01:47:45,000 --> 01:47:47,000
+Okay.
+
+2425
+01:47:47,000 --> 01:47:49,000
+Now on the left side,
+
+2426
+01:47:49,000 --> 01:47:51,000
+you can see that the fingers,
+
+2427
+01:47:51,000 --> 01:47:52,000
+the hook,
+
+2428
+01:47:52,000 --> 01:47:54,000
+and the pants don't matter anymore.
+
+2429
+01:47:54,000 --> 01:47:55,000
+Right?
+
+2430
+01:47:55,000 --> 01:47:57,000
+Even if we need to fix it in the middle,
+
+2431
+01:47:57,000 --> 01:47:58,000
+okay, no problem.
+
+2432
+01:47:58,000 --> 01:48:00,000
+Now when there is an interlocking between the hands and the legs,
+
+2433
+01:48:00,000 --> 01:48:02,000
+activate the board.
+
+2434
+01:48:02,000 --> 01:48:05,000
+As long as it doesn't affect the position of the interlocking.
+
+2435
+01:48:05,000 --> 01:48:06,000
+Okay.
+
+2436
+01:48:06,000 --> 01:48:07,000
+Okay.
+
+2437
+01:48:07,000 --> 01:48:08,000
+Okay.
+
+2438
+01:48:08,000 --> 01:48:09,000
+Okay.
+
+2439
+01:48:09,000 --> 01:48:10,000
+Okay.
+
+2440
+01:48:10,000 --> 01:48:11,000
+Okay.
+
+2441
+01:48:11,000 --> 01:48:12,000
+Okay.
+
+2442
+01:48:12,000 --> 01:48:13,000
+Okay.
+
+2443
+01:48:13,000 --> 01:48:14,000
+Okay.
+
+2444
+01:48:14,000 --> 01:48:15,000
+Okay.
+
+2445
+01:48:15,000 --> 01:48:16,000
+Okay.
+
+2446
+01:48:16,000 --> 01:48:17,000
+Okay.
+
+2447
+01:48:17,000 --> 01:48:18,000
+Okay.
+
+2448
+01:48:18,000 --> 01:48:19,000
+Okay.
+
+2449
+01:48:19,000 --> 01:48:20,000
+Okay.
+
+2450
+01:48:20,000 --> 01:48:22,000
+If you are afraid that the interlocking will affect the hands,
+
+2451
+01:48:22,000 --> 01:48:25,000
+you can add some fixing needles.
+
+2452
+01:48:25,000 --> 01:48:26,000
+Also,
+
+2453
+01:48:26,000 --> 01:48:30,000
+adding fixing needles will not affect your grid,
+
+2454
+01:48:30,000 --> 01:48:32,000
+so it will not lose motion.
+
+2455
+01:48:32,000 --> 01:48:33,000
+Okay.
+
+2456
+01:48:33,000 --> 01:48:36,000
+You can add some more fixing needles.
+
+2457
+01:48:36,000 --> 01:48:37,000
+In this way,
+
+2458
+01:48:37,000 --> 01:48:38,000
+we always let this part
+
+2459
+01:48:38,000 --> 01:48:40,000
+to be install at the outside of the model.
+
+2460
+01:48:40,000 --> 01:48:46,000
+Let's start the simulation again, wait for the pants to be fixed here and here,
+
+2461
+01:48:46,000 --> 01:48:52,000
+and then add some key stitches under this stitch.
+
+2462
+01:49:03,000 --> 01:49:05,000
+Then let's take a look again.
+
+2463
+01:49:05,000 --> 01:49:09,000
+After that, it's actually a very repetitive operation,
+
+2464
+01:49:09,000 --> 01:49:15,000
+which is to find out if there are any stitches under which the clothes are always interspersed.
+
+2465
+01:49:15,000 --> 01:49:20,000
+Then let's add these interspersed parts to it.
+
+2466
+01:49:22,000 --> 01:49:27,000
+You can see that my left side is always fixed to it.
+
+2467
+01:49:27,000 --> 01:49:33,000
+Through these different stitches, the key stitches are deleted and added,
+
+2468
+01:49:33,000 --> 01:49:35,000
+and we can fix it.
+
+2469
+01:49:35,000 --> 01:49:40,000
+In most cases, the clothes will be interspersed,
+
+2470
+01:49:40,000 --> 01:49:43,000
+or your hands and legs will be interspersed.
+
+2471
+01:49:43,000 --> 01:49:45,000
+How to fix it?
+
+2472
+01:49:45,000 --> 01:49:48,000
+Including this, when I was rotating the view,
+
+2473
+01:49:48,000 --> 01:49:53,000
+I found that the pants seemed to be a little unstable in the back,
+
+2474
+01:49:53,000 --> 01:49:56,000
+so I activated it again.
+
+2475
+01:49:56,000 --> 01:50:00,000
+Then in the freeze, we no longer have any interspersed parts.
+
+2476
+01:50:00,000 --> 01:50:03,000
+Let's let it solve it by itself.
+
+2477
+01:50:05,000 --> 01:50:07,000
+So the key stitch...
+
+2478
+01:50:07,000 --> 01:50:10,000
+In fact, many of you guys didn't notice that
+
+2479
+01:50:10,000 --> 01:50:12,000
+in MAMALESS DESIGNER 12,
+
+2480
+01:50:12,000 --> 01:50:17,000
+the update of the animation editor is actually a relatively large update.
+
+2481
+01:50:17,000 --> 01:50:21,000
+For example, through the creation of these key stitches,
+
+2482
+01:50:21,000 --> 01:50:23,000
+we can to a great extent
+
+2483
+01:50:23,000 --> 01:50:27,000
+fix some problems on our clothes.
+
+2484
+01:50:27,000 --> 01:50:29,000
+Including your movements,
+
+2485
+01:50:29,000 --> 01:50:30,000
+there are some differences,
+
+2486
+01:50:30,000 --> 01:50:34,000
+you can also add and delete these key stitches.
+
+2487
+01:50:34,000 --> 01:50:38,000
+Then, because each of them is equivalent to the previous animation,
+
+2488
+01:50:38,000 --> 01:50:45,000
+you need to adjust these animations during the animation recording process,
+
+2489
+01:50:45,000 --> 01:50:48,000
+to ensure that there will be no problems afterwards.
+
+2490
+01:50:48,000 --> 01:50:50,000
+But now you can record first,
+
+2491
+01:50:50,000 --> 01:50:54,000
+and then you can select those that have problems,
+
+2492
+01:50:54,000 --> 01:50:57,000
+and then fix these problems,
+
+2493
+01:50:57,000 --> 01:50:59,000
+and then record them.
+
+2494
+01:50:59,000 --> 01:51:02,000
+In fact, it is much more intelligent than before.
+
+2495
+01:51:04,000 --> 01:51:07,000
+OK.
+
+2496
+01:51:07,000 --> 01:51:09,000
+OK.
+
+2497
+01:51:15,000 --> 01:51:16,000
+OK.
+
+2498
+01:51:16,000 --> 01:51:18,000
+After that, it's the same.
+
+2499
+01:51:18,000 --> 01:51:21,000
+You need to select Create Key Stitch.
+
+2500
+01:51:28,000 --> 01:51:29,000
+OK.
+
+2501
+01:51:29,000 --> 01:51:33,000
+After that,
+
+2502
+01:51:33,000 --> 01:51:35,000
+if there is some다는anly a gap,
+
+2503
+01:51:35,000 --> 01:51:36,000
+it's OK.
+
+2504
+01:51:36,000 --> 01:51:39,000
+We can just do the simulation directly.
+
+2505
+01:51:39,000 --> 01:51:42,000
+In fact, there are some repeated operations afterwards,
+
+2506
+01:51:42,000 --> 01:51:45,000
+including some key stitches in between.
+
+2507
+01:51:45,000 --> 01:51:46,000
+OK.
+
+2508
+01:51:48,000 --> 01:51:52,000
+Then drag the sheet with the select grid tool,
+
+2509
+01:51:52,000 --> 01:51:54,000
+and remember to check it when you usually do it,
+
+2510
+01:51:54,000 --> 01:51:57,000
+because our key stitch doesn't add key stitches
+
+2511
+01:51:57,000 --> 01:51:57,800
+to sheets separately.
+
+2512
+01:51:57,800 --> 01:51:58,000
+OK.
+
+2513
+01:51:58,000 --> 01:52:08,000
+So remember to check if there are any problems with the other frozen parts.
+
+2514
+01:52:08,000 --> 01:52:14,000
+Also, I saw a user named UGM, it's like this.
+
+2515
+01:52:14,000 --> 01:52:21,000
+It's best not to mention such things on our official platform.
+
+2516
+01:52:21,000 --> 01:52:29,000
+Thank you for supporting our live stream, but please don't be embarrassed.
+
+2517
+01:52:29,000 --> 01:52:31,000
+Thank you.
+
+2518
+01:52:37,000 --> 01:52:40,000
+After that, check if there are any problems.
+
+2519
+01:52:40,000 --> 01:52:47,000
+If there are no problems, you can continue to record the following animations.
+
+2520
+01:52:47,000 --> 01:52:50,000
+At this time, you can activate these versions and record them.
+
+2521
+01:52:50,000 --> 01:52:51,000
+There are no problems.
+
+2522
+01:52:51,000 --> 01:53:01,000
+By the way, when we switch the simulation quality, it's best not to record the animation directly.
+
+2523
+01:53:01,000 --> 01:53:05,000
+You can simulate it by pressing the control key under the first frame.
+
+2524
+01:53:05,000 --> 01:53:17,000
+Let the simulation quality apply to the starting position of the first frame.
+
+2525
+01:53:17,000 --> 01:53:20,000
+Otherwise, under your animation mode,
+
+2526
+01:53:20,000 --> 01:53:24,000
+one is to calculate the following animation,
+
+2527
+01:53:24,000 --> 01:53:30,000
+and the other is that it needs to simulate the simulation quality you set first.
+
+2528
+01:53:30,000 --> 01:53:33,000
+For example, if you used to simulate with the GPU,
+
+2529
+01:53:33,000 --> 01:53:38,000
+now you directly switch to a higher quality simulation and want to record the animation.
+
+2530
+01:53:38,000 --> 01:53:43,000
+In this case, I recommend that you first switch the simulation quality,
+
+2531
+01:53:43,000 --> 01:53:47,000
+then press the control key to simulate, and then start recording.
+
+2532
+01:53:47,000 --> 01:53:48,000
+Okay.
+
+2533
+01:53:48,000 --> 01:53:49,000
+Okay.
+
+2534
+01:53:50,000 --> 01:53:51,000
+Okay.
+
+2535
+01:53:51,000 --> 01:53:52,000
+Okay.
+
+2536
+01:53:52,000 --> 01:53:53,000
+Okay.
+
+2537
+01:53:53,000 --> 01:53:54,000
+Okay.
+
+2538
+01:53:54,000 --> 01:53:55,000
+Okay.
+
+2539
+01:53:55,000 --> 01:53:56,000
+Okay.
+
+2540
+01:53:56,000 --> 01:53:57,000
+Okay.
+
+2541
+01:53:57,000 --> 01:53:58,000
+Okay.
+
+2542
+01:53:58,000 --> 01:53:59,000
+Okay.
+
+2543
+01:53:59,000 --> 01:54:00,000
+Okay.
+
+2544
+01:54:00,000 --> 01:54:01,000
+Okay.
+
+2545
+01:54:01,000 --> 01:54:02,000
+Okay.
+
+2546
+01:54:02,000 --> 01:54:03,000
+Okay.
+
+2547
+01:54:03,000 --> 01:54:04,000
+Okay.
+
+2548
+01:54:04,000 --> 01:54:05,000
+Okay.
+
+2549
+01:54:05,000 --> 01:54:06,000
+Okay.
+
+2550
+01:54:06,000 --> 01:54:07,000
+Okay.
+
+2551
+01:54:07,000 --> 01:54:08,000
+Okay.
+
+2552
+01:54:08,000 --> 01:54:09,000
+Okay.
+
+2553
+01:54:09,000 --> 01:54:10,000
+Okay.
+
+2554
+01:54:10,000 --> 01:54:11,000
+Okay.
+
+2555
+01:54:11,000 --> 01:54:12,000
+Okay.
+
+2556
+01:54:12,000 --> 01:54:13,000
+Okay.
+
+2557
+01:54:13,000 --> 01:54:14,000
+Okay.
+
+2558
+01:54:14,000 --> 01:54:15,000
+Okay.
+
+2559
+01:54:15,000 --> 01:54:16,000
+Okay.
+
+2560
+01:54:16,000 --> 01:54:17,000
+Okay.
+
+2561
+01:54:17,000 --> 01:54:18,000
+Okay.
+
+2562
+01:54:18,000 --> 01:54:27,000
+The key point can be copied, but because there was no way to add key points and delete key points in the past,
+
+2563
+01:54:27,000 --> 01:54:34,000
+so in our version, it is also mentioned by the way, that is, copy the first key point and then move it to the end,
+
+2564
+01:54:34,000 --> 01:54:39,000
+and then paste it, the key point comes down, and you can do the first and last loop.
+
+2565
+01:54:39,000 --> 01:54:48,000
+You can see that our first stitch was just that the head of the walnut clip is still on the body,
+
+2566
+01:54:48,000 --> 01:54:52,000
+and we are also at the last stitch.
+
+2567
+01:54:52,000 --> 01:54:58,000
+You can see that it is no different from the animation, and then I pulled a few stitches in the middle,
+
+2568
+01:54:58,000 --> 01:55:04,000
+so that the fabric animation looks more natural.
+
+2569
+01:55:04,000 --> 01:55:08,000
+Well, it's almost here.
+
+2570
+01:55:08,000 --> 01:55:09,000
+About our animation analysis,
+
+2571
+01:55:09,000 --> 01:55:12,000
+well, that's it for some introductions.
+
+2572
+01:55:12,000 --> 01:55:17,000
+In fact, it won't take a long time to make this set of clothes.
+
+2573
+01:55:17,000 --> 01:55:19,000
+It's still relatively simple.
+
+2574
+01:55:19,000 --> 01:55:23,000
+It takes a lot of time to make this headgear.
+
+2575
+01:55:23,000 --> 01:55:31,000
+Well, like this whole set of clothes, there is that we have uploaded this set of clothes on Connect,
+
+2576
+01:55:31,000 --> 01:55:38,000
+so if you are interested, you can download it and learn about it.
+
+2577
+01:55:38,000 --> 01:55:39,000
+But the thing I uploaded,
+
+2578
+01:55:39,000 --> 01:55:43,000
+the set of clothes I uploaded didn't include this animation,
+
+2579
+01:55:43,000 --> 01:55:47,000
+so if you are interested, you can go to Mixamo,
+
+2580
+01:55:47,000 --> 01:55:51,000
+upload your own or MD's model,
+
+2581
+01:55:51,000 --> 01:55:54,000
+and then choose a suit that you think is suitable,
+
+2582
+01:55:54,000 --> 01:55:56,000
+and then download it,
+
+2583
+01:55:56,000 --> 01:56:01,000
+and try it with our new version of these animation editors.
+
+2584
+01:56:01,000 --> 01:56:04,000
+Yes, it's actually very simple to do the loop.
+
+2585
+01:56:04,000 --> 01:56:08,000
+You just copy the first stitch to the last stitch.
+
+2586
+01:56:09,000 --> 01:56:12,000
+Then you can see that you can make the pattern like this.
+
+2587
+01:56:12,000 --> 01:56:13,000
+So, this is the end of the video.
+
+2588
+01:56:13,000 --> 01:56:14,000
+I hope you all enjoyed it.
+
+2589
+01:56:14,000 --> 01:56:16,000
+Well, I hope you all have a good time.
+
+2590
+01:56:16,000 --> 01:56:18,000
+See you next time.
+
+2591
+01:56:18,000 --> 01:56:19,000
+Bye.
+
+2592
+01:56:19,000 --> 01:56:20,000
+Bye.
+
+2593
+01:56:20,000 --> 01:56:21,000
+Bye.
+
+2594
+01:56:21,000 --> 01:56:22,000
+Bye.
+
+2595
+01:56:22,000 --> 01:56:23,000
+Bye.
+
+2596
+01:56:23,000 --> 01:56:24,000
+Bye.
+
+2597
+01:56:24,000 --> 01:56:25,000
+Bye.
+
+2598
+01:56:25,000 --> 01:56:26,000
+Bye.
+
+2599
+01:56:26,000 --> 01:56:27,000
+Bye.
+
+2600
+01:56:27,000 --> 01:56:28,000
+Bye.
+
+2601
+01:56:28,000 --> 01:56:29,000
+Bye.
+
+2602
+01:56:29,000 --> 01:56:30,000
+Bye.
+
+2603
+01:56:30,000 --> 01:56:31,000
+Bye.
+
+2604
+01:56:31,000 --> 01:56:32,000
+Bye.
+
+2605
+01:56:32,000 --> 01:56:33,000
+Bye.
+
+2606
+01:56:33,000 --> 01:56:34,000
+Bye.
+
+2607
+01:56:34,000 --> 01:56:35,000
+Bye.
+
+2608
+01:56:35,000 --> 01:56:36,000
+Bye.
+
+2609
+01:56:36,000 --> 01:56:37,000
+Bye.
+
+2610
+01:56:37,000 --> 01:56:38,000
+Bye.
+
+2611
+01:56:38,000 --> 01:56:39,000
+Bye.
+
+2612
+01:56:39,000 --> 01:56:40,000
+Bye.
+
+2613
+01:56:40,000 --> 01:56:41,000
+Bye.
+
+2614
+01:56:41,000 --> 01:56:42,000
+Bye.
+
+2615
+01:56:42,000 --> 01:56:44,000
+Bye.
+

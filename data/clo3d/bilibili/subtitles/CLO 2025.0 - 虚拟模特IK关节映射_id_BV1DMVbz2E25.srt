@@ -1,0 +1,552 @@
+1
+00:00:00,000 --> 00:00:05,000
+This video introduces the virtual model IK joint printing function for you.
+
+2
+00:00:05,000 --> 00:00:10,000
+In this version, we have introduced the virtual model IK joint printing function.
+
+3
+00:00:10,000 --> 00:00:15,000
+This function allows the virtual model to be imported from outside to be able to use the action and posture provided by Clo.
+
+4
+00:00:15,000 --> 00:00:20,000
+So let's take a look at the IK joint printing function together.
+
+5
+00:00:20,000 --> 00:00:26,000
+IK joint printing is currently only supported for FBX files with Google information.
+
+6
+00:00:26,000 --> 00:00:31,000
+First, we need to import an FBX file to print the IK joint.
+
+7
+00:00:31,000 --> 00:00:36,000
+Before importing, we need to explain some important things to note before printing IK.
+
+8
+00:00:36,000 --> 00:00:40,000
+FBX files should not have repeated name joints.
+
+9
+00:00:40,000 --> 00:00:48,000
+In addition, virtual models must include joints that include shoulders, elbows, wrists, pelvis, knees, and ankles.
+
+10
+00:00:48,000 --> 00:00:51,000
+T-position is the standard position for reference for IK printing.
+
+11
+00:00:51,000 --> 00:00:54,000
+IK printing with incorrect positioning may lead to errors.
+
+12
+00:00:54,000 --> 00:00:55,000
+Therefore,
+
+13
+00:00:55,000 --> 00:00:58,000
+it is necessary to correctly set the virtual model as T-position.
+
+14
+00:00:58,000 --> 00:01:00,000
+If the virtual model is not T-position,
+
+15
+00:01:00,000 --> 00:01:05,000
+it is necessary to manually adjust the joint point of the virtual model in the 3D window to T-position.
+
+16
+00:01:05,000 --> 00:01:09,000
+In the virtual model information display in the 3D vertical menu bar,
+
+17
+00:01:09,000 --> 00:01:11,000
+open the virtual model joint point,
+
+18
+00:01:11,000 --> 00:01:14,000
+then press the joint point of the virtual model,
+
+19
+00:01:14,000 --> 00:01:16,000
+adjust the virtual model to T-position.
+
+20
+00:01:16,000 --> 00:01:18,000
+It is necessary to note that
+
+21
+00:01:18,000 --> 00:01:22,000
+for non-humanoid images or four animal virtual models in the structure,
+
+22
+00:01:22,000 --> 00:01:24,000
+IK printing may not be correctly applied.
+
+23
+00:01:24,000 --> 00:01:25,000
+Now,
+
+24
+00:01:25,000 --> 00:01:28,000
+let us print the IK joint to the virtual model.
+
+25
+00:01:28,000 --> 00:01:30,000
+In the main menu bar,
+
+26
+00:01:30,000 --> 00:01:33,000
+find the virtual model editor under the virtual model,
+
+27
+00:01:33,000 --> 00:01:35,000
+then select the IK joint option card.
+
+28
+00:01:35,000 --> 00:01:38,000
+Now our virtual model is already T-position.
+
+29
+00:01:38,000 --> 00:01:39,000
+Next,
+
+30
+00:01:39,000 --> 00:01:41,000
+press the set T-position in the upper right corner
+
+31
+00:01:41,000 --> 00:01:43,000
+to identify the adjusted T-position.
+
+32
+00:01:43,000 --> 00:01:46,000
+If the setting is completed according to the above operations,
+
+33
+00:01:46,000 --> 00:01:49,000
+the reset position button on the right will be activated.
+
+34
+00:01:49,000 --> 00:01:52,000
+After adjusting the position during the IK printing process,
+
+35
+00:01:52,000 --> 00:01:54,000
+the reset position button can help you restore the original position.
+
+36
+00:01:54,000 --> 00:01:55,000
+Next,
+
+37
+00:01:55,000 --> 00:01:57,000
+let's print the joint.
+
+38
+00:01:57,000 --> 00:01:59,000
+There are two main ways to print the joint.
+
+39
+00:01:59,000 --> 00:02:01,000
+You can manually print each joint,
+
+40
+00:02:01,000 --> 00:02:05,000
+or you can automatically print the joint by identifying the name of the joint.
+
+41
+00:02:05,000 --> 00:02:06,000
+First,
+
+42
+00:02:06,000 --> 00:02:09,000
+let's see how to manually print the joint according to the joint list.
+
+43
+00:02:09,000 --> 00:02:11,000
+Let's look at the joint list first.
+
+44
+00:02:11,000 --> 00:02:14,000
+The joint printing is divided into the required and the selected category.
+
+45
+00:02:14,000 --> 00:02:17,000
+The corresponding joint name is listed under the category.
+
+46
+00:02:17,000 --> 00:02:19,000
+To ensure that the IK joint printing is accurate,
+
+47
+00:02:19,000 --> 00:02:21,000
+you must print the desired type of IK joint.
+
+48
+00:02:21,000 --> 00:02:22,000
+For example,
+
+49
+00:02:22,000 --> 00:02:25,000
+you must print all the required parts,
+
+50
+00:02:25,000 --> 00:02:26,000
+but for the selected one,
+
+51
+00:02:26,000 --> 00:02:28,000
+although it is not a must-set,
+
+52
+00:02:28,000 --> 00:02:31,000
+if the virtual model has these joints,
+
+53
+00:02:31,000 --> 00:02:34,000
+you can print them to present more accurate movements and positions.
+
+54
+00:02:34,000 --> 00:02:35,000
+Now,
+
+55
+00:02:35,000 --> 00:02:38,000
+let's carefully print the joints of the required project.
+
+56
+00:02:38,000 --> 00:02:39,000
+First,
+
+57
+00:02:39,000 --> 00:02:41,000
+when you click on the name of the joint,
+
+58
+00:02:41,000 --> 00:02:43,000
+you can check the preview on the top
+
+59
+00:02:43,000 --> 00:02:46,000
+to see which part of the selected joint is located in the virtual model.
+
+60
+00:02:46,000 --> 00:02:48,000
+You can also directly click on the joint in the preview
+
+61
+00:02:48,000 --> 00:02:50,000
+to find the corresponding position.
+
+62
+00:02:50,000 --> 00:02:51,000
+Next,
+
+63
+00:02:52,000 --> 00:02:55,000
+select the corresponding joint in the 3D window,
+
+64
+00:02:55,000 --> 00:02:58,000
+or you can first click on the joint in the virtual model,
+
+65
+00:02:58,000 --> 00:03:01,000
+then click on the project in the option card to print it.
+
+66
+00:03:01,000 --> 00:03:04,000
+I will print it from the top.
+
+67
+00:03:04,000 --> 00:03:06,000
+If multiple joints overlap,
+
+68
+00:03:06,000 --> 00:03:08,000
+you can choose which joint to print.
+
+69
+00:03:08,000 --> 00:03:09,000
+After printing,
+
+70
+00:03:09,000 --> 00:03:12,000
+the printing area will be displayed in the preview of the 3D window
+
+71
+00:03:12,000 --> 00:03:16,000
+and the virtual model editor in the green color.
+
+72
+00:03:16,000 --> 00:03:17,000
+In the joint list,
+
+73
+00:03:17,000 --> 00:03:20,000
+there will be a white contrast mark on the left side of the joint,
+
+74
+00:03:20,000 --> 00:03:23,000
+which indicates that the joint printing is complete.
+
+75
+00:03:23,000 --> 00:03:24,000
+In addition,
+
+76
+00:03:24,000 --> 00:03:26,000
+the name of the joint saved for the virtual model
+
+77
+00:03:26,000 --> 00:03:29,000
+will be displayed next to the printing box on the right.
+
+78
+00:03:29,000 --> 00:03:31,000
+If you misprinted the joint,
+
+79
+00:03:31,000 --> 00:03:33,000
+and want to re-select the joint to be printed,
+
+80
+00:03:33,000 --> 00:03:35,000
+you can select the joint in the joint list,
+
+81
+00:03:35,000 --> 00:03:37,000
+or the joint in the preview,
+
+82
+00:03:37,000 --> 00:03:41,000
+then click on another joint to re-print it.
+
+83
+00:03:41,000 --> 00:03:44,000
+Or you can also select the image in the joint list,
+
+84
+00:03:44,000 --> 00:03:46,000
+or the joint in the preview,
+
+85
+00:03:46,000 --> 00:03:49,000
+then press the Delete key on the keyboard to delete it,
+
+86
+00:03:49,000 --> 00:03:52,000
+and then re-select the correct joint point.
+
+87
+00:03:52,000 --> 00:03:53,000
+Now,
+
+88
+00:03:53,000 --> 00:03:55,000
+let's pay attention to the remaining projects.
+
+89
+00:03:55,000 --> 00:03:57,000
+You can see that when printing the left joint,
+
+90
+00:03:57,000 --> 00:03:59,000
+the right one is also printed.
+
+91
+00:03:59,000 --> 00:04:01,000
+This is because the symmetrical printing
+
+92
+00:04:01,000 --> 00:04:04,000
+is not used in the upper right corner of the virtual model editor.
+
+93
+00:04:04,000 --> 00:04:05,000
+Therefore,
+
+94
+00:04:05,000 --> 00:04:07,000
+even if you print one side of the joint,
+
+95
+00:04:07,000 --> 00:04:10,000
+it will automatically identify and print the other side of the joint.
+
+96
+00:04:10,000 --> 00:04:11,000
+Please note that
+
+97
+00:04:11,000 --> 00:04:13,000
+if you want to automatically use symmetrical printing,
+
+98
+00:04:13,000 --> 00:04:16,000
+the joint name must be left and right,
+
+99
+00:04:16,000 --> 00:04:18,000
+or letters L and R or small letters L and R,
+
+100
+00:04:18,000 --> 00:04:21,000
+plus the bottom line is divided left and right.
+
+101
+00:04:21,000 --> 00:04:23,000
+You can select the joint point,
+
+102
+00:04:23,000 --> 00:04:25,000
+and then modify the name in the virtual editor.
+
+103
+00:04:25,000 --> 00:04:27,000
+If you do not open the symmetrical printing,
+
+104
+00:04:27,000 --> 00:04:30,000
+you need to manually print the left and right joints separately.
+
+105
+00:04:30,000 --> 00:04:33,000
+Now let's continue to print all the remaining joints below.
+
+106
+00:04:33,000 --> 00:04:36,000
+Once all the joints of the required project are printed,
+
+107
+00:04:36,000 --> 00:04:39,000
+the state on the right side of the project will be displayed as complete,
+
+108
+00:04:39,000 --> 00:04:42,000
+indicating that the IK printing is complete.
+
+109
+00:04:42,000 --> 00:04:45,000
+Next, let's see how to automatically print the joints.
+
+110
+00:04:45,000 --> 00:04:47,000
+Before automatically printing the joints,
+
+111
+00:04:47,000 --> 00:04:49,000
+let's press the reset button at the top,
+
+112
+00:04:49,000 --> 00:04:51,000
+to reset all the joints printed at the moment.
+
+113
+00:04:51,000 --> 00:04:54,000
+When you press the auto-print button at the bottom,
+
+114
+00:04:54,000 --> 00:04:57,000
+all the required joints under the required project will be automatically printed.
+
+115
+00:04:57,000 --> 00:05:00,000
+You can see that the state is also displayed as complete.
+
+116
+00:05:00,000 --> 00:05:01,000
+But what you need to pay attention to is that
+
+117
+00:05:01,000 --> 00:05:03,000
+only when the joint name of the virtual model
+
+118
+00:05:03,000 --> 00:05:06,000
+is the same as the joint name in the virtual model,
+
+119
+00:05:06,000 --> 00:05:08,000
+or the virtual model file is from
+
+120
+00:05:08,000 --> 00:05:12,000
+DeathMiximoCharacterCreator or MetaHuman,
+
+121
+00:05:12,000 --> 00:05:15,000
+the auto-printing function will work normally.
+
+122
+00:05:15,000 --> 00:05:16,000
+Next, let's take a look at
+
+123
+00:05:16,000 --> 00:05:19,000
+how to store the information of the IK joint printing.
+
+124
+00:05:19,000 --> 00:05:22,000
+The information of the IK joint printing of the virtual model
+
+125
+00:05:22,000 --> 00:05:24,000
+can be stored as an IKS file.
+
+126
+00:05:24,000 --> 00:05:27,000
+You can click on the save and open in the upper right corner,
+
+127
+00:05:27,000 --> 00:05:31,000
+and save the IK data as an IKS file,
+
+128
+00:05:31,000 --> 00:05:35,000
+or open the stored IKS file.
+
+129
+00:05:35,000 --> 00:05:37,000
+After completing all the joint printing,
+
+130
+00:05:37,000 --> 00:05:40,000
+you can directly apply the available posture.
+
+131
+00:05:40,000 --> 00:05:41,000
+What needs to be explained is that
+
+132
+00:05:41,000 --> 00:05:44,000
+IKS files only have the same structure,
+
+133
+00:05:44,000 --> 00:05:47,000
+and are integrated between the virtual models of the same printing method.
+
+134
+00:05:47,000 --> 00:05:50,000
+You can see that the posture has been correctly applied.
+
+135
+00:05:50,000 --> 00:05:55,000
+The virtual model file of the IK joint printing can be stored as the virtual model format that can be leaked.
+
+136
+00:05:55,000 --> 00:05:57,000
+Next time you can use it directly.
+
+137
+00:05:57,000 --> 00:06:01,000
+By using the new IK joint printing function in the virtual model editor,
+
+138
+00:06:01,000 --> 00:06:06,000
+you can more easily use various virtual models in the cloud to realize your design.
+

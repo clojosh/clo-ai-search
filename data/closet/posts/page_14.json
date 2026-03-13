@@ -1,0 +1,13 @@
+[
+  {
+    "id": "673a2e1d9abf4b9b806956bbce096ffc",
+    "url": "https://connect.clo-set.com/community/post/673a2e1d9abf4b9b806956bbce096ffc",
+    "title": "Render Issue",
+    "content": "![27d1298d3577482ea7439b527058e2e5](https://storagefiles.clo-set.com/public/community/202511/673a2e1d9abf4b9b806956bbce096ffc/images/27d1298d3577482ea7439b527058e2e5Screenshot%202025-11-12%20at%2012.21.53.png)Hi everyone,  \nI’m having an issue with rendering in CLO3D. Even though all my settings are the same as usual, the final render image looks blurry and doesn’t get sharp, no matter the resolution or quality level I choose.  \nI’ve checked lighting, camera focus, and render settings, everything seems fine.  \nHas anyone experienced this before or knows what might be causing it?\n\n\n### Community Post Comments:\nComment 1: I would recommend you post all your render properties. But the one thing I see is your noise is set to 0.001. Which means likely our computer cannot finish with such a low level.I usually recommend setting noise to 0.030. I have found the if I render the same image at 0.030 and lower no one can actually visually see a difference. The only thing is going lower means you you need to increase render time and it just takes more time\nReply 1: Thank you !",
+    "content_description": "This web page aims to provide a platform for users to seek and share solutions for rendering issues in CLO3D, particularly focusing on problems related to image clarity and quality.",
+    "source": "Connect Community",
+    "created_at": "2025-11-12T09:29:18.983Z",
+    "category": 220,
+    "tags": ["CLO", "CLO-SET", "CONNECT"]
+  }
+]

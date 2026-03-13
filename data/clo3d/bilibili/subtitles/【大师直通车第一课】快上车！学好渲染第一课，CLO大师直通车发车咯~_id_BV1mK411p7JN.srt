@@ -1,0 +1,3168 @@
+1
+00:00:00,000 --> 00:00:10,000
+欢迎来到今天的直播间。欢迎来到今天的直播间。
+
+2
+00:00:10,000 --> 00:00:12,000
+欢迎来到今天的直播间。
+
+3
+00:00:12,000 --> 00:00:22,000
+那么今天的直播主题呢是这个渲染,所以我们会针对这个渲染相关的功能呢做一个详细的介绍。
+
+4
+00:00:22,000 --> 00:00:27,000
+那下面呢我们就开始今天的直播。
+
+5
+00:00:27,000 --> 00:00:37,000
+抱歉我忘记介绍我了,我呢是今天的主播,我是影音。欢迎大家来捧场看我的直播。
+
+6
+00:00:37,000 --> 00:00:49,000
+然后现在呢我们来看一下这个渲染呢,它是位于这个主菜单,我们点击渲染呢就可以找到相关渲染的一些操作。
+
+7
+00:00:49,000 --> 00:00:55,000
+那么由于我们在5.2新版本中呢更新了3D窗口的渲染引擎,
+
+8
+00:00:55,000 --> 00:00:57,000
+所以呢我们在这个3D窗口里面呢,我们可以看到这个渲染引擎,
+
+9
+00:00:57,000 --> 00:01:02,000
+在这个3D窗口的随时菜单第一个图标呢可以看到一个高品质的渲染3D窗口。
+
+10
+00:01:02,000 --> 00:01:04,000
+我们点击呢就可以开启。
+
+11
+00:01:04,000 --> 00:01:11,000
+那开启之后呢我们可以看到这个高品质渲染的一个3D的效果。
+
+12
+00:01:11,000 --> 00:01:19,000
+那关闭之后呢我们来看一下它的对比。
+
+13
+00:01:19,000 --> 00:01:25,000
+那么普通的3D的这个窗口呢和高品质的渲染窗口,
+
+14
+00:01:25,000 --> 00:01:31,000
+以及这个最终的渲染图片呢我们可以通过这张图片来看一下它们的一个对比。
+
+15
+00:01:31,000 --> 00:01:34,000
+那第一个呢就是我们在普通3D窗口的一个快照。
+
+16
+00:01:34,000 --> 00:01:39,000
+那中间这个呢就是开启了高品质渲染3D快照的一个效果。
+
+17
+00:01:39,000 --> 00:01:46,000
+那么最后呢是最终的一个渲染图片,大家可以根据自己的需要来进行选择。
+
+18
+00:01:46,000 --> 00:01:53,000
+那么下面呢我们可以在这个主菜单文件这里呢来录制一个旋转的视频。
+
+19
+00:01:53,000 --> 00:01:57,000
+我们可以开启这个高品质渲染的一个功能。
+
+20
+00:01:57,000 --> 00:02:02,000
+这样就可以录制一个比较好的一个渲染效果的一个旋转视频。
+
+21
+00:02:02,000 --> 00:02:06,000
+这里呢可以调整一下这个视频的一个方向。
+
+22
+00:02:06,000 --> 00:02:11,000
+以及它所持续的一个时间,然后点击录制。
+
+23
+00:02:11,000 --> 00:02:15,000
+那么现在呢3D窗口就开始录制这个旋转视频了。
+
+24
+00:02:15,000 --> 00:02:21,000
+那持续的时间呢指的就是旋转这样一圈它需要多长时间。
+
+25
+00:02:21,000 --> 00:02:23,000
+那时间呢,
+
+26
+00:02:23,000 --> 00:02:31,000
+越久呢它旋转的这个速度呢也会越慢。
+
+27
+00:02:31,000 --> 00:02:33,000
+这样呢我们的旋转视频就录制完成了。
+
+28
+00:02:33,000 --> 00:02:38,000
+我们可以点击播放来预览一下这个视频。
+
+29
+00:02:38,000 --> 00:02:44,000
+那确认无误之后呢点击保存就可以将这个旋转视频呢给它保存起来。
+
+30
+00:02:44,000 --> 00:02:49,000
+下面我们给它命名。
+
+31
+00:02:49,000 --> 00:02:51,000
+然后这个呢是一个AVI格式的视频。
+
+32
+00:02:51,000 --> 00:02:52,000
+然后这个呢是一个AVI格式的视频。
+
+33
+00:02:52,000 --> 00:03:02,000
+现在视频呢正在保存。
+
+34
+00:03:02,000 --> 00:03:12,000
+下面我们来看一下这个经过高品质渲染的这个旋转视频的一个效果。
+
+35
+00:03:12,000 --> 00:03:20,000
+那经过这个3D窗口渲染引擎的一个优化呢我们可以快速的录制出一个这种比较好的一个效果的旋转视频。
+
+36
+00:03:20,000 --> 00:03:28,000
+它的速度呢非常的快。
+
+37
+00:03:28,000 --> 00:03:30,000
+那么接下来我们把这个给它关闭。
+
+38
+00:03:30,000 --> 00:03:35,000
+下面我们来重点的介绍这个渲染窗口。
+
+39
+00:03:35,000 --> 00:03:38,000
+那打开这个渲染窗口我们可以看一下。
+
+40
+00:03:38,000 --> 00:03:42,000
+在这个渲染窗口上方呢有一排这样的渲染工具栏。
+
+41
+00:03:42,000 --> 00:03:48,000
+我们先来点击第一排第一个它是同步渲染功能。
+
+42
+00:03:48,000 --> 00:03:49,000
+可以刷新一下。
+
+43
+00:03:49,000 --> 00:03:50,000
+这个可以了。
+
+44
+00:03:50,000 --> 00:03:56,000
+这是这个渲染窗口的预览。
+
+45
+00:03:56,000 --> 00:04:03,000
+那同步渲染呢就可以实时的去看到这个渲染的一个效果。
+
+46
+00:04:03,000 --> 00:04:11,000
+我们可以在这个预览窗口呢实时的查看这个渲染的一个效果。
+
+47
+00:04:11,000 --> 00:04:14,000
+那么第二个图标呢是最终渲染。
+
+48
+00:04:14,000 --> 00:04:19,000
+当我们调整好这个所有的参数的时候呢点击这个它才是最终的开始渲染我们的渲染图标。
+
+49
+00:04:19,000 --> 00:04:22,000
+所以不要忘记了。
+
+50
+00:04:22,000 --> 00:04:24,000
+那现在灰色的呢是不能够点击的。
+
+51
+00:04:24,000 --> 00:04:27,000
+因为我们现在的这个同步渲染呢是开启的状态。
+
+52
+00:04:27,000 --> 00:04:30,000
+所以我们必须要先点击这个停止渲染。
+
+53
+00:04:30,000 --> 00:04:33,000
+然后才可以呢进行一个最终的渲染。
+
+54
+00:04:33,000 --> 00:04:40,000
+现在我们点击了停止渲染呢这个最终渲染的图标就可以被选择了。
+
+55
+00:04:40,000 --> 00:04:45,000
+我们点击之后呢这个时候系统才开始做一个最终的渲染。
+
+56
+00:04:45,000 --> 00:04:48,000
+所以大家在做渲染的时候不要忘记了这一步的选择。
+
+57
+00:04:48,000 --> 00:04:51,000
+那现在呢这个图片渲染好了。
+
+58
+00:04:51,000 --> 00:04:53,000
+我们只要打开文件夹。
+
+59
+00:04:53,000 --> 00:04:56,000
+就可以看到已经渲染好的一个图片。
+
+60
+00:04:56,000 --> 00:05:06,000
+这是一个最终渲染的效果。
+
+61
+00:05:06,000 --> 00:05:09,000
+那么这个最终渲染还有什么作用呢?
+
+62
+00:05:09,000 --> 00:05:13,000
+就是如果说我们已经点击了这个。
+
+63
+00:05:13,000 --> 00:05:15,000
+这个停止渲染还有什么作用呢?
+
+64
+00:05:15,000 --> 00:05:17,000
+就是如果有时候我们点击了这个图标呢。
+
+65
+00:05:17,000 --> 00:05:19,000
+那么我们点击了这个最终渲染。
+
+66
+00:05:19,000 --> 00:05:22,000
+那发现呢这个服装需要做一些调整。
+
+67
+00:05:22,000 --> 00:05:26,000
+比如说需要改一下颜色或者修改一下一些细节。
+
+68
+00:05:26,000 --> 00:05:31,000
+那么我们可以及时的停止掉这个渲染来做这个修改。
+
+69
+00:05:31,000 --> 00:05:37,000
+当我们点击了这个最终渲染的时候在这里右上方会出现一个渲染的进度条。
+
+70
+00:05:37,000 --> 00:05:42,000
+那我们需要停止的时候呢直接就点击这个停止就可以了。
+
+71
+00:05:42,000 --> 00:05:45,000
+这是停止渲染功能。
+
+72
+00:05:45,000 --> 00:05:48,000
+那么第四个图标呢是复制当前的图片。
+
+73
+00:05:48,000 --> 00:05:53,000
+我们可以将预览窗口的图片呢给它复制出去。
+
+74
+00:05:53,000 --> 00:06:03,000
+现在我们先来同步渲染一下。
+
+75
+00:06:03,000 --> 00:06:07,000
+好现在我们可以点击这个复制当前的图片。
+
+76
+00:06:07,000 --> 00:06:10,000
+将这个图片呢给它复制出去。
+
+77
+00:06:10,000 --> 00:06:14,000
+那如果说你正在整理一个表格比如说你在做一个Excel的表格。
+
+78
+00:06:14,000 --> 00:06:26,000
+你就可以将复制出来的这个图片呢给它粘贴到表格中去做一些其他的用途。
+
+79
+00:06:26,000 --> 00:06:34,000
+那调整一下这个图片的尺寸我们就可以将这个图片呢给它保存到这个表格当中来。
+
+80
+00:06:34,000 --> 00:06:39,000
+这是复制当前的这个图片。
+
+81
+00:06:44,000 --> 00:06:49,000
+好接着再往后第五个呢是保存当前的图片。
+
+82
+00:06:49,000 --> 00:06:52,000
+那刚才呢只是把它复制出去。
+
+83
+00:06:52,000 --> 00:06:56,000
+那这个呢是可以将预览窗口的图片呢给它保存出去。
+
+84
+00:06:56,000 --> 00:06:59,000
+你可以不用等它最终的一个渲染效果。
+
+85
+00:06:59,000 --> 00:07:04,000
+如果你只是要一个这个预览图你可以将它直接呢保存出去。
+
+86
+00:07:04,000 --> 00:07:09,000
+现在给它命名。
+
+87
+00:07:09,000 --> 00:07:12,000
+好现在我们就看到了一个预览窗口保存出去的一个图片。
+
+88
+00:07:12,000 --> 00:07:13,000
+这个不是最终的一个图片。
+
+89
+00:07:13,000 --> 00:07:15,000
+这个不是最终的渲染效果啊。
+
+90
+00:07:15,000 --> 00:07:19,000
+所以它的清晰度画质没有这个最终渲染的高。
+
+91
+00:07:19,000 --> 00:07:23,000
+所以这个大家要稍微的注意一下。
+
+92
+00:07:23,000 --> 00:07:28,000
+然后接着再往后呢这个是打开已保存的文件夹。
+
+93
+00:07:28,000 --> 00:07:33,000
+它呢是可以让我们快速的找到一个保存文件的一个路径。
+
+94
+00:07:33,000 --> 00:07:38,000
+看到这里呢是我们保存文件的一个文件夹的一个路径。
+
+95
+00:07:38,000 --> 00:07:41,000
+那再往后呢第七个图标是图片视频属性。
+
+96
+00:07:41,000 --> 00:07:42,000
+那再往后呢第七个图标是图片视频属性。
+
+97
+00:07:42,000 --> 00:07:45,000
+那再往后呢第七个图标是图片视频属性。
+
+98
+00:07:45,000 --> 00:07:50,000
+这里呢有比较多的这个参数可以供我们去调整。
+
+99
+00:07:50,000 --> 00:07:56,000
+首先看到在这里呢我们可以打开或者是保存一个图片视频属性的文件。
+
+100
+00:07:56,000 --> 00:07:59,000
+下面这些参数呢有很多。
+
+101
+00:07:59,000 --> 00:08:03,000
+那直接点击打开呢就可以将我们原先调整好的一些参数呢直接打开来使用。
+
+102
+00:08:03,000 --> 00:08:06,000
+那直接点击打开呢就可以将我们原先调整好的一些参数呢直接打开来使用。
+
+103
+00:08:06,000 --> 00:08:07,000
+那再往下我们看到这里呢我们可以选择你要渲染的是图片渲染图片或者是动画。
+
+104
+00:08:07,000 --> 00:08:08,000
+那再往下我们看到这里呢我们可以选择你要渲染的是图片渲染图片或者是动画。
+
+105
+00:08:12,000 --> 00:08:14,000
+Here, I will choose the picture first,
+
+106
+00:08:14,000 --> 00:08:18,000
+which means that I am showing a single picture.
+
+107
+00:08:18,000 --> 00:08:22,000
+Then here, the current view is the current view,
+
+108
+00:08:22,000 --> 00:08:25,000
+which is the current state of the 3D window.
+
+109
+00:08:25,000 --> 00:08:28,000
+The Cosmo view is the self-defined view.
+
+110
+00:08:28,000 --> 00:08:30,000
+We choose the self-defined view.
+
+111
+00:08:30,000 --> 00:08:35,000
+After opening it, you will see a dialogue window of the user's view in the 3D window.
+
+112
+00:08:35,000 --> 00:08:39,000
+Here, we can set a needed view according to our preferences.
+
+113
+00:08:39,000 --> 00:08:43,000
+You can also open the user's view file that was previously saved,
+
+114
+00:08:43,000 --> 00:08:46,000
+or save the view file.
+
+115
+00:08:49,000 --> 00:08:53,000
+On the right side, there is a camera for the current view.
+
+116
+00:08:53,000 --> 00:08:57,000
+We can record the current view here.
+
+117
+00:08:57,000 --> 00:08:59,000
+Click on the camera.
+
+118
+00:08:59,000 --> 00:09:05,000
+Then we can record the current view.
+
+119
+00:09:05,000 --> 00:09:08,000
+Next, I will rotate to the side.
+
+120
+00:09:09,000 --> 00:09:11,000
+Click on the camera again,
+
+121
+00:09:11,000 --> 00:09:15,000
+and we can record the side view.
+
+122
+00:09:18,000 --> 00:09:21,000
+Click on the camera again,
+
+123
+00:09:21,000 --> 00:09:23,000
+and we can record the back view.
+
+124
+00:09:23,000 --> 00:09:29,000
+Finally, if I want to add a detail to the picture,
+
+125
+00:09:29,000 --> 00:09:31,000
+I can zoom in the 3D window,
+
+126
+00:09:31,000 --> 00:09:33,000
+and click on the camera again.
+
+127
+00:09:33,000 --> 00:09:37,000
+In this way, I have saved four self-defined views.
+
+128
+00:09:39,000 --> 00:09:41,000
+After saving the view,
+
+129
+00:09:41,000 --> 00:09:45,000
+our system will follow this self-defined view
+
+130
+00:09:45,000 --> 00:09:48,000
+to render multiple view pictures at a time.
+
+131
+00:09:48,000 --> 00:09:51,000
+To render all the colors according to your style,
+
+132
+00:09:51,000 --> 00:09:54,000
+if you have one, you can hook it up.
+
+133
+00:09:54,000 --> 00:09:58,000
+We can choose the size of the picture here.
+
+134
+00:09:58,000 --> 00:10:02,000
+I use 1920x1080 here.
+
+135
+00:10:02,000 --> 00:10:05,000
+This is a size that matches my display.
+
+136
+00:10:09,000 --> 00:10:11,000
+Next is the direction.
+
+137
+00:10:11,000 --> 00:10:17,000
+You can choose whether it is vertical or horizontal.
+
+138
+00:10:17,000 --> 00:10:18,000
+Let's do the synchronization first.
+
+139
+00:10:18,000 --> 00:10:21,000
+Let's refresh it.
+
+140
+00:10:21,000 --> 00:10:23,000
+We see that the frame outside
+
+141
+00:10:23,000 --> 00:10:27,000
+refers to a frame of the picture.
+
+142
+00:10:27,000 --> 00:10:29,000
+Switch to horizontal.
+
+143
+00:10:29,000 --> 00:10:30,000
+Let's see the effect again.
+
+144
+00:10:30,000 --> 00:10:33,000
+This can be selected according to your style.
+
+145
+00:10:33,000 --> 00:10:34,000
+This can be selected according to your style.
+
+146
+00:10:34,000 --> 00:10:36,000
+This can be selected according to your style.
+
+147
+00:10:36,000 --> 00:10:37,000
+Pay attention to the frame of the picture.
+
+148
+00:10:37,000 --> 00:10:38,000
+Pay attention to the frame of the picture.
+
+149
+00:10:38,000 --> 00:10:41,000
+Click the border of the picture.
+
+150
+00:10:44,000 --> 00:10:47,000
+Next is the width,
+
+151
+00:10:47,000 --> 00:10:49,000
+the ratio and the pixels.
+
+152
+00:10:49,000 --> 00:10:50,000
+We don't have to adjust it.
+
+153
+00:10:50,000 --> 00:10:52,000
+We can choose the color of the background.
+
+154
+00:10:52,000 --> 00:10:54,000
+We can choose the color of the background,
+
+155
+00:10:54,000 --> 00:10:56,000
+so as transparent.
+
+156
+00:10:56,000 --> 00:10:57,000
+Now because I hooked the transparency,
+
+157
+00:10:57,000 --> 00:10:59,000
+I'm going to turn it off.
+
+158
+00:10:59,000 --> 00:11:02,000
+Now the rendered picture
+
+159
+00:11:02,000 --> 00:11:05,000
+represents a background.
+
+160
+00:11:05,000 --> 00:11:06,000
+The new feature is that
+
+161
+00:11:06,000 --> 00:11:08,000
+we can use this door
+
+162
+00:11:08,000 --> 00:11:12,000
+Click on the square to show the background.
+
+163
+00:11:12,000 --> 00:11:16,000
+Now we see that the system has a lot of this kind of background text.
+
+164
+00:11:16,000 --> 00:11:18,000
+There are about 14 of them.
+
+165
+00:11:18,000 --> 00:11:20,000
+Let's choose one of them.
+
+166
+00:11:20,000 --> 00:11:27,000
+Click on this to switch back to the front view I recorded.
+
+167
+00:11:27,000 --> 00:11:32,000
+We see that the preview window now has a background.
+
+168
+00:11:32,000 --> 00:11:35,000
+This is to use the text as a background.
+
+169
+00:11:35,000 --> 00:11:40,000
+You can choose the name of the file and the user name.
+
+170
+00:11:40,000 --> 00:11:46,000
+The name of the file is based on the name of the project file.
+
+171
+00:11:46,000 --> 00:11:51,000
+The path is the folder I mentioned earlier.
+
+172
+00:11:51,000 --> 00:11:56,000
+You can also find the path saved in the file here.
+
+173
+00:11:56,000 --> 00:12:01,000
+You can choose the format of the image according to your needs.
+
+174
+00:12:01,000 --> 00:12:05,000
+You can choose PNG or JPG.
+
+175
+00:12:05,000 --> 00:12:11,000
+There is also a HTML file here.
+
+176
+00:12:11,000 --> 00:12:15,000
+It is a file used by a web browser.
+
+177
+00:12:15,000 --> 00:12:18,000
+You can insert this file into your website.
+
+178
+00:12:18,000 --> 00:12:21,000
+Now I'm going to click on it.
+
+179
+00:12:28,000 --> 00:12:32,000
+After all the parameters have been set,
+
+180
+00:12:32,000 --> 00:12:34,000
+let's go back.
+
+181
+00:12:34,000 --> 00:12:36,000
+Wait a minute.
+
+182
+00:12:36,000 --> 00:12:39,000
+Now we can click on this to stop rendering.
+
+183
+00:12:39,000 --> 00:12:42,000
+This is how you can click on the final rendering.
+
+184
+00:12:42,000 --> 00:12:44,000
+After clicking on the final rendering,
+
+185
+00:12:44,000 --> 00:12:47,000
+the system can now render this image in one go
+
+186
+00:12:47,000 --> 00:12:52,000
+according to the four angles I just defined.
+
+187
+00:13:04,000 --> 00:13:11,000
+Okay, now we have the four angles.
+
+188
+00:13:11,000 --> 00:13:16,000
+Then, here, we can also see the progress bar for rendering
+
+189
+00:13:16,000 --> 00:13:21,000
+and the time required to record the rendering.
+
+190
+00:13:21,000 --> 00:13:25,000
+Now, let's take a look at the final results of the rendering.
+
+191
+00:13:25,000 --> 00:13:32,000
+Let's look at the back side of the image and a special image.
+
+192
+00:13:32,000 --> 00:13:33,000
+Click on the back side of the image,
+
+193
+00:13:33,000 --> 00:13:56,000
+Click Next to view the next image.
+
+194
+00:13:56,000 --> 00:14:01,000
+This is the HTML file.
+
+195
+00:14:01,000 --> 00:14:05,000
+This is the resource folder.
+
+196
+00:14:05,000 --> 00:14:12,000
+The images will be saved here.
+
+197
+00:14:12,000 --> 00:14:16,000
+Next, let's talk about rotating images.
+
+198
+00:14:16,000 --> 00:14:21,000
+You can choose the number of images.
+
+199
+00:14:21,000 --> 00:14:25,000
+There are many options for you to choose.
+
+200
+00:14:25,000 --> 00:14:29,000
+You can also choose the custom number of images.
+
+201
+00:14:29,000 --> 00:14:32,000
+For example, you can enter 12 images here.
+
+202
+00:14:32,000 --> 00:14:41,000
+This means that there are 12 images in 360 degrees rotation.
+
+203
+00:14:41,000 --> 00:14:43,000
+Then you can choose the direction.
+
+204
+00:14:43,000 --> 00:14:47,000
+You can choose either clockwise or counterclockwise.
+
+205
+00:14:47,000 --> 00:14:49,000
+Then save the video.
+
+206
+00:14:49,000 --> 00:14:54,000
+If you need to rotate the video, remember to select this option.
+
+207
+00:14:54,000 --> 00:14:56,000
+In this way, it will rotate.
+
+208
+00:14:56,000 --> 00:14:59,000
+There are not only 12 rotation images.
+
+209
+00:14:59,000 --> 00:15:02,000
+There is also a video.
+
+210
+00:15:02,000 --> 00:15:07,000
+Next, you can adjust the total recording time.
+
+211
+00:15:07,000 --> 00:15:10,000
+That is, how long does it take to rotate a circle?
+
+212
+00:15:10,000 --> 00:15:14,000
+Next is the duration of the single image.
+
+213
+00:15:14,000 --> 00:15:19,000
+I will stop here for the time being.
+
+214
+00:15:19,000 --> 00:15:22,000
+Next is the size of the image.
+
+215
+00:15:22,000 --> 00:15:24,000
+I talked about this before.
+
+216
+00:15:24,000 --> 00:15:26,000
+I won't talk about it anymore.
+
+217
+00:15:26,000 --> 00:15:29,000
+The parameters below are the same.
+
+218
+00:15:29,000 --> 00:15:32,000
+Next, let's talk about the animation.
+
+219
+00:15:32,000 --> 00:15:38,000
+Now we can render the animation here.
+
+220
+00:15:38,000 --> 00:15:44,000
+But the premise is that you need to finish the animation in the animation mode.
+
+221
+00:15:46,000 --> 00:15:49,000
+Then you can choose the area you want to render.
+
+222
+00:15:49,000 --> 00:15:50,000
+Is it all rendering?
+
+223
+00:15:50,000 --> 00:15:53,000
+Or is it a playing area for rendering?
+
+224
+00:15:56,000 --> 00:15:58,000
+Then remember to select this save video.
+
+225
+00:15:58,000 --> 00:16:02,000
+Then you will have a complete video.
+
+226
+00:16:02,000 --> 00:16:03,000
+Then each frame.
+
+227
+00:16:03,000 --> 00:16:06,000
+This is a frame per second.
+
+228
+00:16:06,000 --> 00:16:10,000
+Usually keep this 30 frames per second frame.
+
+229
+00:16:10,000 --> 00:16:15,000
+Then you can choose the direction according to your specific style.
+
+230
+00:16:15,000 --> 00:16:18,000
+Here I will change it to a horizontal one.
+
+231
+00:16:18,000 --> 00:16:21,000
+Then synchronize rendering.
+
+232
+00:16:21,000 --> 00:16:23,000
+Let's take a look at the effect.
+
+233
+00:16:23,000 --> 00:16:27,000
+Because it takes a lot of time to render this animation.
+
+234
+00:16:27,000 --> 00:16:31,000
+Because it takes a lot of time to render this animation.
+
+235
+00:16:31,000 --> 00:16:33,000
+So maybe here.
+
+236
+00:16:33,000 --> 00:16:34,000
+Wait a minute.
+
+237
+00:16:34,000 --> 00:16:39,000
+I'll show you a video of a pre-prepared rendering.
+
+238
+00:16:43,000 --> 00:16:45,000
+Then let's take a look at this.
+
+239
+00:16:45,000 --> 00:16:48,000
+Because our video is not yet able to render.
+
+240
+00:16:48,000 --> 00:16:49,000
+No background.
+
+241
+00:16:49,000 --> 00:16:52,000
+So the transparency is not available.
+
+242
+00:16:52,000 --> 00:16:56,000
+Below is a saved file.
+
+243
+00:16:56,000 --> 00:16:58,000
+Here is a saved file.
+
+244
+00:16:58,000 --> 00:17:00,000
+You can choose the video and the save file.
+
+245
+00:17:00,000 --> 00:17:02,000
+This will depend on which save file you install on your computer.
+
+246
+00:17:02,000 --> 00:17:04,000
+All settings are done.
+
+247
+00:17:04,000 --> 00:17:09,000
+Now we will stop rendering.
+
+248
+00:17:09,000 --> 00:17:12,000
+Now I saw a pre-prepared rendering animation.
+
+249
+00:17:12,000 --> 00:17:14,000
+Now I saw a pre-prepared rendering animation.
+
+250
+00:17:14,000 --> 00:17:17,000
+Now I saw a pre-prepared rendering animation.
+
+251
+00:17:17,000 --> 00:17:20,000
+You can see the solvent of this whole fabric.
+
+252
+00:17:20,000 --> 00:17:21,000
+It's going to make it work.
+
+253
+00:17:21,000 --> 00:17:24,000
+It's more real.
+
+254
+00:17:26,000 --> 00:17:33,000
+Let's switch back to the picture.
+
+255
+00:17:33,000 --> 00:17:41,000
+Here you can see all the properties of the picture video.
+
+256
+00:17:41,000 --> 00:17:44,000
+We can save it.
+
+257
+00:17:44,000 --> 00:17:46,000
+Click Save.
+
+258
+00:17:46,000 --> 00:17:52,000
+If you have a unified specification for rendering,
+
+259
+00:17:52,000 --> 00:18:02,000
+you can save it as a .vmp file.
+
+260
+00:18:02,000 --> 00:18:06,000
+Next time you need to open the folder,
+
+261
+00:18:06,000 --> 00:18:09,000
+it can be rendered in the same format.
+
+262
+00:18:09,000 --> 00:18:13,000
+After saving, let's make some simple adjustments to the properties.
+
+263
+00:18:13,000 --> 00:18:17,000
+For example, change its background to red.
+
+264
+00:18:17,000 --> 00:18:19,000
+And refresh it.
+
+265
+00:18:19,000 --> 00:18:26,000
+Now let's open the file we just saved.
+
+266
+00:18:26,000 --> 00:18:32,000
+All the properties here will be returned to the previous properties.
+
+267
+00:18:39,000 --> 00:18:42,000
+Next, let's look at the properties of the light.
+
+268
+00:18:45,000 --> 00:18:48,000
+After opening the properties of the light,
+
+269
+00:18:48,000 --> 00:18:54,000
+we can see that the renderer has randomly opened the light at the top.
+
+270
+00:18:58,000 --> 00:19:00,000
+Next, let's look at the environment.
+
+271
+00:19:00,000 --> 00:19:05,000
+The system has randomly brought 11 HDR files to the environment.
+
+272
+00:19:05,000 --> 00:19:10,000
+The environment is a light setting that is treated as a picture format.
+
+273
+00:19:10,000 --> 00:19:13,000
+The environment can provide different lighting effects
+
+274
+00:19:13,000 --> 00:19:16,000
+to create a different lighting atmosphere.
+
+275
+00:19:16,000 --> 00:19:17,000
+Now, let's switch it.
+
+276
+00:19:17,000 --> 00:19:20,000
+Let's switch to a different environment.
+
+277
+00:19:20,000 --> 00:19:22,000
+Let's see how it works.
+
+278
+00:19:24,000 --> 00:19:29,000
+Now, we are using a low contrast image.
+
+279
+00:19:29,000 --> 00:19:33,000
+We can see that the lighting is more even and soft.
+
+280
+00:19:37,000 --> 00:19:41,000
+Next, let's choose a high contrast image.
+
+281
+00:19:41,000 --> 00:19:43,000
+We can see that the lighting on the model is dim.
+
+282
+00:19:43,000 --> 00:19:45,000
+The separation is quite obvious.
+
+283
+00:19:45,000 --> 00:19:50,000
+This makes the picture look more three-dimensional.
+
+284
+00:19:50,000 --> 00:19:55,000
+Next, let's look at the effect of the renderer
+
+285
+00:19:55,000 --> 00:19:58,000
+on a different environment.
+
+286
+00:20:06,000 --> 00:20:09,000
+We can see that this is a normal 3D quick photo.
+
+287
+00:20:09,000 --> 00:20:12,000
+After adding the renderer,
+
+288
+00:20:12,000 --> 00:20:14,000
+we can see that the renderer uses a different environment.
+
+289
+00:20:14,000 --> 00:20:17,000
+This is to show the effect of the renderer.
+
+290
+00:20:19,000 --> 00:20:22,000
+There are some which have more even lighting,
+
+291
+00:20:22,000 --> 00:20:24,000
+some have a stronger contrast.
+
+292
+00:20:24,000 --> 00:20:27,000
+These are different contrast effects.
+
+293
+00:20:27,000 --> 00:20:33,000
+You can choose an environment you like.
+
+294
+00:20:33,000 --> 00:20:46,000
+Next, let's look at the intensity of the light.
+
+295
+00:20:46,000 --> 00:20:49,000
+The intensity of the light can be changed.
+
+296
+00:20:49,000 --> 00:20:53,000
+The larger the value, the brighter the light.
+
+297
+00:20:53,000 --> 00:21:00,000
+Now I will gradually adjust the intensity to the maximum.
+
+298
+00:21:00,000 --> 00:21:06,000
+As you can see, the light in the window is very bright.
+
+299
+00:21:06,000 --> 00:21:12,000
+Let's reduce the brightness a little bit.
+
+300
+00:21:12,000 --> 00:21:14,000
+You can also adjust it to 0.
+
+301
+00:21:14,000 --> 00:21:19,000
+0 means the light is off, so it's black.
+
+302
+00:21:19,000 --> 00:21:23,000
+Under normal circumstances, we can use default 1.
+
+303
+00:21:23,000 --> 00:21:25,000
+Let's look at the effect.
+
+304
+00:21:25,000 --> 00:21:30,000
+Under what circumstances can we increase the intensity of the light?
+
+305
+00:21:30,000 --> 00:21:34,000
+For example, let's change the color of the clothing to black.
+
+306
+00:21:34,000 --> 00:21:40,000
+If the color of the clothing is darker, the details may not be very clear.
+
+307
+00:21:40,000 --> 00:21:47,000
+In this case, we can slightly increase the intensity of the light.
+
+308
+00:21:47,000 --> 00:21:53,000
+You can see that the details of the brighter light are clearer.
+
+309
+00:21:53,000 --> 00:21:58,000
+You can also adjust the angle of the light.
+
+310
+00:21:58,000 --> 00:22:05,000
+Let's change the angle of the light to 45 degrees.
+
+311
+00:22:05,000 --> 00:22:12,000
+Let's adjust the intensity to 90 degrees.
+
+312
+00:22:12,000 --> 00:22:14,000
+Let's adjust the intensity to 180 degrees.
+
+313
+00:22:14,000 --> 00:22:23,000
+You can look at the effect separately.
+
+314
+00:22:23,000 --> 00:22:26,000
+Let's go back to default 0.
+
+315
+00:22:26,000 --> 00:22:29,000
+What is the effect of the lock screen option?
+
+316
+00:22:29,000 --> 00:22:31,000
+Let's take a look at the light in the window.
+
+317
+00:22:31,000 --> 00:22:36,000
+The front light is more uniform and normal.
+
+318
+00:22:36,000 --> 00:22:39,000
+Let's switch to the back view.
+
+319
+00:22:39,000 --> 00:22:41,000
+We see that the light is very bright.
+
+320
+00:22:41,000 --> 00:22:46,000
+We need to change the option here.
+
+321
+00:22:46,000 --> 00:22:53,000
+The lock screen option allows the light in each view to remain the same.
+
+322
+00:22:53,000 --> 00:22:56,000
+That is, the light is connected to the lens.
+
+323
+00:22:56,000 --> 00:23:05,000
+The lock screen option allows the light in each view to remain the same.
+
+324
+00:23:05,000 --> 00:23:09,000
+The light is not too bright or too dark.
+
+325
+00:23:09,000 --> 00:23:13,000
+The light is turned on when the light is turned off.
+
+326
+00:23:13,000 --> 00:23:17,000
+When the light is turned off, the light is turned off.
+
+327
+00:23:17,000 --> 00:23:23,000
+When the light is turned on, the light is shown in the 3D window.
+
+328
+00:23:23,000 --> 00:23:25,000
+When the light is not shown, the light is hidden.
+
+329
+00:23:25,000 --> 00:23:30,000
+Let's hide the light in the window.
+
+330
+00:23:30,000 --> 00:23:32,000
+Let's look at the ground shadow.
+
+331
+00:23:32,000 --> 00:23:40,000
+Let's refresh the window.
+
+332
+00:23:40,000 --> 00:23:47,000
+The shadow in the background can be displayed when the light is turned on.
+
+333
+00:23:47,000 --> 00:23:52,000
+This will make the picture look more real.
+
+334
+00:23:52,000 --> 00:23:59,000
+You can see the effect of the shadow.
+
+335
+00:23:59,000 --> 00:24:10,000
+If the background is transparent, you can still keep the ground shadow.
+
+336
+00:24:10,000 --> 00:24:26,000
+That's all about the properties of light.
+
+337
+00:24:26,000 --> 00:24:34,000
+Next is the properties of the lens.
+
+338
+00:24:34,000 --> 00:24:38,000
+Let's take a look at the lens.
+
+339
+00:24:38,000 --> 00:24:45,000
+Field of view is the professional term for photography.
+
+340
+00:24:45,000 --> 00:24:48,000
+Field of view is an extension of the lens.
+
+341
+00:24:48,000 --> 00:24:57,000
+The value of this field can change the size of the lens.
+
+342
+00:24:57,000 --> 00:25:01,000
+Let's see the default value of the field.
+
+343
+00:25:01,000 --> 00:25:04,000
+Let's change the default value to 15.
+
+344
+00:25:04,000 --> 00:25:06,000
+The object will be closer to us.
+
+345
+00:25:06,000 --> 00:25:07,000
+The value of the field will increase.
+
+346
+00:25:07,000 --> 00:25:08,000
+The object will be closer to us.
+
+347
+00:25:08,000 --> 00:25:14,000
+the wider the angle of view we are shooting
+
+348
+00:25:14,000 --> 00:25:18,000
+As the value of the camera keeps increasing
+
+349
+00:25:18,000 --> 00:25:22,000
+the model will move away from us
+
+350
+00:25:22,000 --> 00:25:27,000
+until it disappears in our vision
+
+351
+00:25:27,000 --> 00:25:30,000
+Now, let's insert the default value
+
+352
+00:25:30,000 --> 00:25:33,000
+and let it go back to our vision
+
+353
+00:25:38,000 --> 00:25:45,000
+Next, let's look at the View Orientation
+
+354
+00:25:45,000 --> 00:25:51,000
+In this model, we can select Spherical
+
+355
+00:25:51,000 --> 00:25:55,000
+which is a face-to-face orientation
+
+356
+00:25:55,000 --> 00:25:59,000
+and Absolute
+
+357
+00:25:59,000 --> 00:26:03,000
+which is a face-to-face orientation
+
+358
+00:26:03,000 --> 00:26:05,000
+Let's look at the differences
+
+359
+00:26:05,000 --> 00:26:07,000
+By adjusting the distance
+
+360
+00:26:07,000 --> 00:26:09,000
+of the camera's view
+
+361
+00:26:09,000 --> 00:26:12,000
+we can zoom in or zoom out
+
+362
+00:26:12,000 --> 00:26:15,000
+Let's take a look at the effect
+
+363
+00:26:15,000 --> 00:26:18,000
+By adjusting the distance
+
+364
+00:26:18,000 --> 00:26:21,000
+of the camera's view
+
+365
+00:26:30,000 --> 00:26:33,000
+we can see the effect
+
+366
+00:26:37,000 --> 00:26:41,000
+Let's refresh the image
+
+367
+00:26:55,000 --> 00:26:57,000
+Now, let's change the value
+
+368
+00:26:57,000 --> 00:26:59,000
+to a default value
+
+369
+00:26:59,000 --> 00:27:00,000
+Horizontal Angle
+
+370
+00:27:00,000 --> 00:27:02,000
+is for turning the view
+
+371
+00:27:02,000 --> 00:27:05,000
+in a horizontal direction
+
+372
+00:27:05,000 --> 00:27:06,000
+Vertical Angle
+
+373
+00:27:06,000 --> 00:27:10,000
+You can also rotate the camera in a vertical direction.
+
+374
+00:27:10,000 --> 00:27:12,000
+Now the model is exposed.
+
+375
+00:27:12,000 --> 00:27:15,000
+Let's switch it to the default view.
+
+376
+00:27:15,000 --> 00:27:18,000
+Clipping Plane
+
+377
+00:27:18,000 --> 00:27:21,000
+It determines the start and end of the camera view.
+
+378
+00:27:21,000 --> 00:27:23,000
+That is, the possible shooting distance.
+
+379
+00:27:23,000 --> 00:27:25,000
+Near
+
+380
+00:27:25,000 --> 00:27:29,000
+Set the camera to the closest possible shooting distance.
+
+381
+00:27:29,000 --> 00:27:30,000
+Far
+
+382
+00:27:30,000 --> 00:27:34,000
+Set the camera to the farthest possible shooting distance.
+
+383
+00:27:36,000 --> 00:27:38,000
+Close
+
+384
+00:27:38,000 --> 00:27:42,000
+Set the camera to the farthest possible shooting distance.
+
+385
+00:27:42,000 --> 00:27:44,000
+Next is the actual camera.
+
+386
+00:27:44,000 --> 00:27:49,000
+Here you can adjust the ISO of the camera.
+
+387
+00:27:49,000 --> 00:27:50,000
+ISO
+
+388
+00:27:50,000 --> 00:27:52,000
+And the aperture.
+
+389
+00:27:52,000 --> 00:27:54,000
+And the angle of view.
+
+390
+00:27:54,000 --> 00:27:56,000
+Just like adjusting our real camera.
+
+391
+00:27:56,000 --> 00:27:58,000
+Here we can enter the official website.
+
+392
+00:27:58,000 --> 00:28:01,000
+Enter the keyword in the Help Center.
+
+393
+00:28:01,000 --> 00:28:05,000
+You can find some detailed instructions related to it.
+
+394
+00:28:05,000 --> 00:28:06,000
+Here.
+
+395
+00:28:06,000 --> 00:28:07,000
+Here's the bottom.
+
+396
+00:28:07,000 --> 00:28:11,000
+There are some specific instructions about this real camera.
+
+397
+00:28:11,000 --> 00:28:12,000
+We can look at this.
+
+398
+00:28:12,000 --> 00:28:18,000
+It can set the ISO, aperture, and aperture as the real camera.
+
+399
+00:28:18,000 --> 00:28:23,000
+Then the exposure is the number of light rays that are set into the camera and the brightness of the image.
+
+400
+00:28:23,000 --> 00:28:26,000
+To effectively change the brightness of the image
+
+401
+00:28:26,000 --> 00:28:28,000
+Please use the exposure option,
+
+402
+00:28:28,000 --> 00:28:31,000
+rather than adjusting the brightness of the round-top light.
+
+403
+00:28:31,000 --> 00:28:33,000
+Then the ISO data.
+
+404
+00:28:33,000 --> 00:28:35,000
+We can see
+
+405
+00:28:35,000 --> 00:28:41,000
+You can adjust the sharpness of the focal length and the brightness of the image.
+
+406
+00:28:41,000 --> 00:28:49,000
+You can also adjust the aperture, shutter speed, focus, focal length, etc.
+
+407
+00:28:49,000 --> 00:28:53,000
+If you want to know more about this,
+
+408
+00:28:53,000 --> 00:29:00,000
+you can go to the official website and search for a keyword like I just did.
+
+409
+00:29:05,000 --> 00:29:11,000
+Here is an introduction to the actual camera.
+
+410
+00:29:11,000 --> 00:29:15,000
+The above is the properties of the lens.
+
+411
+00:29:15,000 --> 00:29:17,000
+Finally, let's take a look here.
+
+412
+00:29:17,000 --> 00:29:21,000
+This is a rendering property.
+
+413
+00:29:21,000 --> 00:29:29,000
+Here we can also open or save this rendering property file.
+
+414
+00:29:29,000 --> 00:29:32,000
+You can switch this rendering tool here.
+
+415
+00:29:32,000 --> 00:29:35,000
+You can use your actual computer to
+
+416
+00:29:35,000 --> 00:29:38,000
+adjust the rendering speed of your image.
+
+417
+00:29:38,000 --> 00:29:42,000
+For example, if your system is Windows and NVIDIA graphics card,
+
+418
+00:29:42,000 --> 00:29:49,000
+then it is recommended to choose the GPU CUDA rendering tool to optimize your rendering speed.
+
+419
+00:29:57,000 --> 00:30:00,000
+If you are a Mac system,
+
+420
+00:30:00,000 --> 00:30:04,000
+and your graphics card is AMD or Intel,
+
+421
+00:30:04,000 --> 00:30:10,000
+then it is recommended to use the GPU CUDA rendering tool to optimize your rendering speed.
+
+422
+00:30:10,000 --> 00:30:15,000
+Because I am an NVIDIA graphics card,
+
+423
+00:30:15,000 --> 00:30:18,000
+I choose the GPU CUDA rendering tool.
+
+424
+00:30:18,000 --> 00:30:20,000
+If you use the GPU CUDA rendering tool,
+
+425
+00:30:20,000 --> 00:30:25,000
+you can also choose the GPU CUDA rendering tool to optimize your rendering speed.
+
+426
+00:30:25,000 --> 00:30:29,000
+Reducing the priority of GPU rendering means that
+
+427
+00:30:29,000 --> 00:30:32,000
+if you choose the GPU CUDA rendering tool,
+
+428
+00:30:32,000 --> 00:30:34,000
+you will prioritize other functions,
+
+429
+00:30:34,000 --> 00:30:37,000
+and then use it for rendering.
+
+430
+00:30:40,000 --> 00:30:43,000
+To complete the rendering condition,
+
+431
+00:30:43,000 --> 00:30:47,000
+if the number of focus points is larger,
+
+432
+00:30:47,000 --> 00:30:51,000
+the number of focus points of the rendered images will be larger.
+
+433
+00:30:51,000 --> 00:30:55,000
+Then adjust the longest rendering time according to this.
+
+434
+00:30:55,000 --> 00:30:58,000
+Now its longest rendering time is 20.
+
+435
+00:30:58,000 --> 00:31:01,000
+In general, if we use default values to render,
+
+436
+00:31:01,000 --> 00:31:04,000
+it will take about 1 minute to render a single image.
+
+437
+00:31:04,000 --> 00:31:06,000
+As the model is more complex,
+
+438
+00:31:06,000 --> 00:31:09,000
+and you increase the size and quality of the image,
+
+439
+00:31:09,000 --> 00:31:11,000
+its rendering time will also increase.
+
+440
+00:31:11,000 --> 00:31:15,000
+Here we can set the longest rendering time of a single image.
+
+441
+00:31:15,000 --> 00:31:18,000
+Next, the light source and properties.
+
+442
+00:31:31,000 --> 00:31:34,000
+Let's set the language.
+
+443
+00:31:57,000 --> 00:31:59,000
+This is the taste test signal.
+
+444
+00:31:59,000 --> 00:32:02,000
+This is the one we are going to use.
+
+445
+00:32:12,000 --> 00:32:15,000
+When did it turn off?
+
+446
+00:32:15,000 --> 00:32:17,000
+It's okay, you can continue.
+
+447
+00:32:17,000 --> 00:32:19,000
+Sorry, due to the internet connection,
+
+448
+00:32:19,000 --> 00:32:22,000
+we may have cut the connection in the middle.
+
+449
+00:32:22,000 --> 00:32:26,000
+Let's continue with today's live stream.
+
+450
+00:32:26,000 --> 00:32:31,000
+We just talked about the quality of light source.
+
+451
+00:32:31,000 --> 00:32:35,000
+We can see that there are four options.
+
+452
+00:32:35,000 --> 00:32:37,000
+Low, medium, high and very high.
+
+453
+00:32:37,000 --> 00:32:41,000
+Here is a choice for light source and attribute.
+
+454
+00:32:41,000 --> 00:32:45,000
+If we are rendering white hair,
+
+455
+00:32:45,000 --> 00:32:50,000
+remember to use high or very high light source and attribute.
+
+456
+00:32:50,000 --> 00:32:53,000
+This way, we can render white hair.
+
+457
+00:32:53,000 --> 00:32:56,000
+As the light source and attribute are rendered,
+
+458
+00:32:56,000 --> 00:33:01,000
+the rendering time will also increase accordingly.
+
+459
+00:33:01,000 --> 00:33:06,000
+This is an introduction to rendering.
+
+460
+00:33:11,000 --> 00:33:14,000
+The last one is to render through close-set.
+
+461
+00:33:14,000 --> 00:33:16,000
+We can click on this.
+
+462
+00:33:16,000 --> 00:33:18,000
+There will be a dialogue box.
+
+463
+00:33:18,000 --> 00:33:21,000
+Ask if you want to render on close-set.
+
+464
+00:33:21,000 --> 00:33:23,000
+Just click on run.
+
+465
+00:33:23,000 --> 00:33:25,000
+There will be a circle on the top right.
+
+466
+00:33:25,000 --> 00:33:26,000
+After rendering,
+
+467
+00:33:26,000 --> 00:33:28,000
+a dialogue box will pop up.
+
+468
+00:33:28,000 --> 00:33:29,000
+Click on confirm.
+
+469
+00:33:29,000 --> 00:33:33,000
+It shows that your image has been rendered on close-set.
+
+470
+00:33:33,000 --> 00:33:34,000
+Click on confirm.
+
+471
+00:33:34,000 --> 00:33:36,000
+It will pop up a page like this.
+
+472
+00:33:36,000 --> 00:33:39,000
+You need to enter your ID and password.
+
+473
+00:33:39,000 --> 00:33:44,000
+Here, select the location of the folder you need to save.
+
+474
+00:33:52,000 --> 00:33:53,000
+Okay.
+
+475
+00:33:53,000 --> 00:33:56,000
+Now, click on confirm.
+
+476
+00:33:56,000 --> 00:33:58,000
+On this page,
+
+477
+00:33:58,000 --> 00:34:02,000
+we can see that the image is being rendered.
+
+478
+00:34:02,000 --> 00:34:08,000
+Now, we can see the final rendering effect.
+
+479
+00:34:08,000 --> 00:34:12,000
+We can upload this image to close-set.
+
+480
+00:34:12,000 --> 00:34:15,000
+Then, we can render on close-set.
+
+481
+00:34:15,000 --> 00:34:16,000
+At the same time,
+
+482
+00:34:16,000 --> 00:34:20,000
+this file will also be uploaded to close-set.
+
+483
+00:34:20,000 --> 00:34:22,000
+We can click on 3D file.
+
+484
+00:34:22,000 --> 00:34:24,000
+And then, we can play around.
+
+485
+00:34:33,000 --> 00:34:34,000
+Okay.
+
+486
+00:34:34,000 --> 00:34:37,000
+Now, we can scroll down.
+
+487
+00:34:37,000 --> 00:34:39,000
+The tools bar on the second row
+
+488
+00:34:39,000 --> 00:34:44,000
+shows some new features of 5.2.
+
+489
+00:34:44,000 --> 00:34:48,000
+Click on the light source.
+
+490
+00:34:48,000 --> 00:34:50,000
+It will automatically open the light source.
+
+491
+00:34:50,000 --> 00:34:52,000
+So, when you click again,
+
+492
+00:34:52,000 --> 00:34:58,000
+There will be a dialog box to indicate that the light is already in the environment.
+
+493
+00:34:58,000 --> 00:35:02,000
+Because it is a large environment light, only one can be added.
+
+494
+00:35:02,000 --> 00:35:05,000
+Next, let's add a main light.
+
+495
+00:35:05,000 --> 00:35:09,000
+After clicking, you can see the main light board on the ground of the 3D window.
+
+496
+00:35:09,000 --> 00:35:17,000
+We can rotate and move its position by using the locator.
+
+497
+00:35:17,000 --> 00:35:22,000
+Let's change the position of the locator.
+
+498
+00:35:22,000 --> 00:35:27,000
+Let's adjust the position of the light board and its angle in the 3D window.
+
+499
+00:35:27,000 --> 00:35:32,000
+The line below it is the angle of the light line.
+
+500
+00:35:40,000 --> 00:35:45,000
+Now, to better see the effect of the main light board,
+
+501
+00:35:45,000 --> 00:35:46,000
+let's change the position of the light board.
+
+502
+00:35:46,000 --> 00:35:47,000
+Let's change the position of the light board.
+
+503
+00:35:47,000 --> 00:35:50,000
+Let's turn off the light board.
+
+504
+00:35:50,000 --> 00:35:52,000
+Now, let's refresh the screen.
+
+505
+00:35:55,000 --> 00:35:57,000
+The red line is the refresh screen.
+
+506
+00:36:01,000 --> 00:36:07,000
+Now, we can see the effect of the light on the main light board.
+
+507
+00:36:07,000 --> 00:36:14,000
+The light on the main light board is like a light box in the camera.
+
+508
+00:36:18,000 --> 00:36:25,000
+After clicking, we can adjust the intensity of the light on the main light board.
+
+509
+00:36:25,000 --> 00:36:27,000
+We can increase its brightness.
+
+510
+00:36:33,000 --> 00:36:37,000
+Let's adjust its direction.
+
+511
+00:36:37,000 --> 00:36:42,000
+Next, we can adjust the width and height of the main light board.
+
+512
+00:36:42,000 --> 00:36:46,000
+As the width and height are increased,
+
+513
+00:36:46,000 --> 00:36:52,000
+the area of light is also increased.
+
+514
+00:36:52,000 --> 00:36:57,000
+When we press the right button,
+
+515
+00:36:57,000 --> 00:37:04,000
+the menu will pop up.
+
+516
+00:37:04,000 --> 00:37:10,000
+Then, we can delete the light board.
+
+517
+00:37:10,000 --> 00:37:13,000
+We can also hide the light or reactivate it.
+
+518
+00:37:13,000 --> 00:37:14,000
+Now, we can delete the light board.
+
+519
+00:37:14,000 --> 00:37:24,000
+We can hide the light, but we can't see it in the 3D window.
+
+520
+00:37:24,000 --> 00:37:34,000
+We can hide all the lights in the 3D window, but we can't see it in the 3D window.
+
+521
+00:37:34,000 --> 00:37:38,000
+Next, add a ball-shaped light.
+
+522
+00:37:38,000 --> 00:37:42,000
+The ball-shaped light is a round ball.
+
+523
+00:37:42,000 --> 00:37:46,000
+The light is emitted from the center of the ball.
+
+524
+00:37:46,000 --> 00:37:50,000
+So there is no light-sensitive angle.
+
+525
+00:37:50,000 --> 00:37:54,000
+Now, increase the intensity.
+
+526
+00:37:54,000 --> 00:37:58,000
+The stronger the intensity, the brighter the brightness.
+
+527
+00:37:58,000 --> 00:38:02,000
+Adjust the radius.
+
+528
+00:38:02,000 --> 00:38:06,000
+The larger the radius, the brighter the brightness.
+
+529
+00:38:06,000 --> 00:38:08,000
+The larger the radius, the brighter the brightness.
+
+530
+00:38:08,000 --> 00:38:12,000
+The smaller the radius, the brighter the brightness.
+
+531
+00:38:12,000 --> 00:38:18,000
+Now, add a light-sensitive pink.
+
+532
+00:38:18,000 --> 00:38:20,000
+The light changes color.
+
+533
+00:38:20,000 --> 00:38:24,000
+Adjust the brightness to a brighter color.
+
+534
+00:38:24,000 --> 00:38:30,000
+Adjust the light to a brighter color.
+
+535
+00:38:30,000 --> 00:38:44,000
+Turn off the light and turn off the button to hide the light.
+
+536
+00:38:44,000 --> 00:38:50,000
+Turn off the light and turn on the spotlight.
+
+537
+00:38:50,000 --> 00:38:55,000
+Let's adjust the position of the spotlight.
+
+538
+00:38:55,000 --> 00:39:20,000
+Let's increase the intensity a little bit, because the light is a bit weak.
+
+539
+00:39:20,000 --> 00:39:24,000
+Let's adjust the angle.
+
+540
+00:39:24,000 --> 00:39:25,000
+OK.
+
+541
+00:39:25,000 --> 00:39:37,000
+The 3D window doesn't have a floor, so we can't see the lighting area.
+
+542
+00:39:37,000 --> 00:39:43,000
+Let's place a square plate on the 2D window as the floor.
+
+543
+00:39:43,000 --> 00:39:50,000
+The plate doesn't need to be simulated.
+
+544
+00:39:50,000 --> 00:39:52,000
+It's a rectangle.
+
+545
+00:39:52,000 --> 00:39:54,000
+Let's increase the particle diameter to the maximum.
+
+546
+00:39:54,000 --> 00:39:58,000
+This will reduce the computer's calculation.
+
+547
+00:39:58,000 --> 00:40:07,000
+Let's place the 3D window in the lower right corner of the model.
+
+548
+00:40:16,000 --> 00:40:20,000
+Let's adjust the top view.
+
+549
+00:40:20,000 --> 00:40:23,000
+Let's replace the ground with this plate.
+
+550
+00:40:23,000 --> 00:40:27,000
+Let's open up the renderer.
+
+551
+00:40:27,000 --> 00:40:29,000
+Let's refresh the renderer.
+
+552
+00:40:29,000 --> 00:40:34,000
+This time, we can select all the lighting.
+
+553
+00:40:34,000 --> 00:40:39,000
+Let's make a new adjustment.
+
+554
+00:40:39,000 --> 00:40:45,000
+This time, we can select all the lighting.
+
+555
+00:40:45,000 --> 00:40:47,000
+Let's adjust the position of the 3D window.
+
+556
+00:40:47,000 --> 00:40:49,000
+This time, we can select all the lighting.
+
+557
+00:40:49,000 --> 00:41:09,000
+After adjusting the position, we can see the area where the spotlight is illuminated on the ground.
+
+558
+00:41:09,000 --> 00:41:22,000
+Now we can see the effect of the spotlight.
+
+559
+00:41:22,000 --> 00:41:24,000
+Increase the brightness.
+
+560
+00:41:24,000 --> 00:41:35,000
+Now we can see the area where the spotlight is illuminated on the ground.
+
+561
+00:41:35,000 --> 00:41:38,000
+Here we can adjust the value.
+
+562
+00:41:38,000 --> 00:41:43,000
+Here we can see the width of the area where the spotlight is illuminated.
+
+563
+00:41:43,000 --> 00:41:46,000
+The larger the value, the wider the area.
+
+564
+00:41:46,000 --> 00:41:52,000
+The smaller the value, the narrower the area.
+
+565
+00:41:52,000 --> 00:41:57,000
+Here we can see the softness of the edge of the light.
+
+566
+00:41:57,000 --> 00:42:06,000
+The larger the value, the softer the edge of the light.
+
+567
+00:42:06,000 --> 00:42:15,000
+The Jianghan's light sees the radiance of the flare with a diameter of 1-1.9mm.
+
+568
+00:42:15,000 --> 00:42:22,000
+Lowering the 전�ckehgruang angle enemies the answering angle.
+
+569
+00:42:22,000 --> 00:42:27,000
+Lowering the 전�ckehgruang angle enemies the answering angle.
+
+570
+00:42:27,000 --> 00:42:32,000
+Lowering the 전�ckehgruang angle enemies the answering angle.
+
+571
+00:42:32,000 --> 00:42:35,000
+We can see the 30 inches from where the spotlight is easily reachable.
+
+572
+00:42:36,000 --> 00:42:41,000
+Next, let's take a look at the shadow.
+
+573
+00:42:41,000 --> 00:42:44,000
+The shadow represents the sharpness of the shadow.
+
+574
+00:42:44,000 --> 00:42:49,000
+The higher the value, the softer the shadow will be.
+
+575
+00:42:49,000 --> 00:42:54,000
+The edge of the shadow is very clear.
+
+576
+00:42:54,000 --> 00:43:02,000
+If we increase the value, the edge will be blurred.
+
+577
+00:43:02,000 --> 00:43:07,000
+The shadow will become softer.
+
+578
+00:43:07,000 --> 00:43:14,000
+I won't go into too much detail about the activation and display.
+
+579
+00:43:14,000 --> 00:43:19,000
+Let's turn this off.
+
+580
+00:43:19,000 --> 00:43:24,000
+Next, let's talk about the square light.
+
+581
+00:43:24,000 --> 00:43:28,000
+We can delete this layer from the map.
+
+582
+00:43:28,000 --> 00:43:31,000
+We can delete this layer from the map.
+
+583
+00:43:31,000 --> 00:43:36,000
+We can delete this layer from the map.
+
+584
+00:43:36,000 --> 00:43:40,000
+Let's refresh the map.
+
+585
+00:43:40,000 --> 00:43:44,000
+Let's refresh the map.
+
+586
+00:43:44,000 --> 00:43:47,000
+The square light is also called a direct light.
+
+587
+00:43:47,000 --> 00:43:50,000
+The light of the direct light is a parallel light.
+
+588
+00:43:50,000 --> 00:43:52,000
+There is no specific light source.
+
+589
+00:43:52,000 --> 00:43:55,000
+The light is more even.
+
+590
+00:43:55,000 --> 00:43:57,000
+You can imagine it as a light in an outdoor environment.
+
+591
+00:43:57,000 --> 00:44:00,000
+You can imagine it as a light in an outdoor environment.
+
+592
+00:44:00,000 --> 00:44:05,000
+Now, let's adjust its intensity.
+
+593
+00:44:05,000 --> 00:44:06,000
+Now, let's adjust its intensity.
+
+594
+00:44:06,000 --> 00:44:07,000
+Now, let's adjust its intensity.
+
+595
+00:44:07,000 --> 00:44:08,000
+Now, let's adjust its intensity.
+
+596
+00:44:08,000 --> 00:44:09,000
+Now, let's adjust its intensity.
+
+597
+00:44:09,000 --> 00:44:10,000
+Now, let's adjust its intensity.
+
+598
+00:44:10,000 --> 00:44:11,000
+Now, let's adjust its intensity.
+
+599
+00:44:11,000 --> 00:44:12,000
+Now, let's adjust its intensity.
+
+600
+00:44:12,000 --> 00:44:13,000
+Now, let's adjust its intensity.
+
+601
+00:44:13,000 --> 00:44:14,000
+Now, let's adjust its intensity.
+
+602
+00:44:14,000 --> 00:44:15,000
+Now, let's adjust its intensity.
+
+603
+00:44:15,000 --> 00:44:16,000
+Now, let's adjust its intensity.
+
+604
+00:44:16,000 --> 00:44:17,000
+Now, let's adjust its intensity.
+
+605
+00:44:17,000 --> 00:44:18,000
+Now, let's adjust its intensity.
+
+606
+00:44:18,000 --> 00:44:19,000
+Now, let's adjust its intensity.
+
+607
+00:44:19,000 --> 00:44:20,000
+Now, let's adjust its intensity.
+
+608
+00:44:20,000 --> 00:44:21,000
+Now, let's adjust its intensity.
+
+609
+00:44:21,000 --> 00:44:22,000
+Now, let's adjust its intensity.
+
+610
+00:44:22,000 --> 00:44:23,000
+Now, let's adjust its intensity.
+
+611
+00:44:23,000 --> 00:44:24,000
+Now, let's adjust its intensity.
+
+612
+00:44:24,000 --> 00:44:25,000
+Now, let's adjust its intensity.
+
+613
+00:44:25,000 --> 00:44:26,000
+Now, let's adjust its intensity.
+
+614
+00:44:26,000 --> 00:44:40,000
+I can choose a light gray color to enhance the brightness of the light.
+
+615
+00:44:48,000 --> 00:44:52,000
+This is a square light, also known as a straight light.
+
+616
+00:44:52,000 --> 00:44:54,000
+Let's delete it.
+
+617
+00:44:56,000 --> 00:44:59,000
+The fifth one is the R1S light.
+
+618
+00:44:59,000 --> 00:45:05,000
+The R1S file stores the actual brightness and shape data of the light in reality.
+
+619
+00:45:05,000 --> 00:45:09,000
+The system also has some R1S files.
+
+620
+00:45:09,000 --> 00:45:13,000
+Let's adjust its position in the 3D window.
+
+621
+00:45:13,000 --> 00:45:21,000
+The system has 9 R1S files.
+
+622
+00:45:21,000 --> 00:45:27,000
+Let's change the position of the R1S file.
+
+623
+00:45:27,000 --> 00:45:32,000
+The R1S file is saved in the R1S folder.
+
+624
+00:45:32,000 --> 00:45:36,000
+The R1S file is saved in the R1S folder.
+
+625
+00:45:36,000 --> 00:45:39,000
+It is still running.
+
+626
+00:45:39,000 --> 00:45:42,000
+Let's change the position of the R1S file.
+
+627
+00:45:42,000 --> 00:45:45,000
+and the angle of the sliders.
+
+628
+00:45:48,000 --> 00:45:54,000
+Here you can change the lighting intensity of the IES.
+
+629
+00:45:55,000 --> 00:45:57,000
+Then the color.
+
+630
+00:45:59,000 --> 00:46:04,000
+We can see the effect of using the IES lighting file.
+
+631
+00:46:05,000 --> 00:46:07,000
+Now let's change the file.
+
+632
+00:46:07,000 --> 00:46:14,000
+If you are interested in this, you can try different effects here.
+
+633
+00:46:18,000 --> 00:46:20,000
+Finally, this is the skylight.
+
+634
+00:46:20,000 --> 00:46:23,000
+Because it was in the anti-ignition state just now,
+
+635
+00:46:23,000 --> 00:46:25,000
+it is now ignited.
+
+636
+00:46:25,000 --> 00:46:27,000
+It is a light in a large environment.
+
+637
+00:46:27,000 --> 00:46:31,000
+Now it is basically an introduction to the whole rendering window.
+
+638
+00:46:34,000 --> 00:46:36,000
+We can take a look at the bottom right here.
+
+639
+00:46:36,000 --> 00:46:37,000
+It may look like this.
+
+640
+00:46:37,000 --> 00:46:40,000
+You can choose the size of the preview window.
+
+641
+00:46:40,000 --> 00:46:43,000
+You can choose the display of 100%
+
+642
+00:46:43,000 --> 00:46:46,000
+or the display of other proportions.
+
+643
+00:46:52,000 --> 00:46:55,000
+In addition, let's take a look here.
+
+644
+00:46:55,000 --> 00:47:00,000
+You can also change the 2D window here.
+
+645
+00:47:00,000 --> 00:47:03,000
+Or the rendering window can be changed here.
+
+646
+00:47:08,000 --> 00:47:13,000
+Now let's go to the main menu.
+
+647
+00:47:13,000 --> 00:47:16,000
+We can see the function of rendering through the color set.
+
+648
+00:47:16,000 --> 00:47:19,000
+This is the function I just introduced here.
+
+649
+00:47:19,000 --> 00:47:22,000
+Then the high-quality rendering 3D window
+
+650
+00:47:22,000 --> 00:47:25,000
+is the first icon in the 3D window display menu.
+
+651
+00:47:26,000 --> 00:47:29,000
+That's all for today's live broadcast.
+
+652
+00:47:29,000 --> 00:47:32,000
+Thank you for watching.
+
+653
+00:47:37,000 --> 00:47:43,000
+If you have any questions, please feel free to leave your comments.
+
+654
+00:47:43,000 --> 00:47:46,000
+Theutsis I trust you all will find it useful.
+
+655
+00:47:46,000 --> 00:47:47,000
+I will see you next time.
+
+656
+00:47:47,000 --> 00:47:48,000
+See you then.
+
+657
+00:47:48,000 --> 00:47:49,000
+Thank you.
+
+658
+00:47:49,000 --> 00:47:50,000
+Good evening.
+
+659
+00:47:50,000 --> 00:47:51,000
+Thank you.
+
+660
+00:47:51,000 --> 00:47:52,000
+Good evening.
+
+661
+00:47:52,000 --> 00:47:53,000
+Thank you.
+
+662
+00:47:53,000 --> 00:47:54,000
+You are so warm.
+
+663
+00:47:54,000 --> 00:47:55,000
+Thank you for coming to the show.
+
+664
+00:47:55,000 --> 00:47:56,000
+Thank you.
+
+665
+00:47:56,000 --> 00:47:57,000
+Goodbye.
+
+666
+00:47:57,000 --> 00:47:58,000
+Goodbye.
+
+667
+00:47:58,000 --> 00:47:59,000
+Goodbye.
+
+668
+00:47:59,000 --> 00:48:00,000
+Goodbye.
+
+669
+00:48:00,000 --> 00:48:01,000
+Goodbye.
+
+670
+00:48:01,000 --> 00:48:02,000
+Goodbye.
+
+671
+00:48:02,000 --> 00:48:03,000
+Goodbye.
+
+672
+00:48:03,000 --> 00:48:04,000
+Goodbye.
+
+673
+00:48:04,000 --> 00:48:05,000
+Goodbye.
+
+674
+00:48:05,000 --> 00:48:06,000
+Goodbye.
+
+675
+00:48:06,000 --> 00:48:11,000
+You can watch the video on our official Bilibili account.
+
+676
+00:48:22,000 --> 00:48:27,000
+The video will be released in about 7 days.
+
+677
+00:48:36,000 --> 00:48:42,000
+What is the difference between a rectangular lamp and a rectangular lamp?
+
+678
+00:48:42,000 --> 00:48:45,000
+A rectangular lamp is a rectangular lamp.
+
+679
+00:48:45,000 --> 00:48:49,000
+Only in this area can you see the lamp.
+
+680
+00:48:49,000 --> 00:48:55,000
+A rectangular lamp is a lamp that is rectangular in the entire environment.
+
+681
+00:48:55,000 --> 00:48:58,000
+It is a parallel lamp.
+
+682
+00:49:02,000 --> 00:49:05,000
+A rectangular lamp is only a lamp
+
+683
+00:49:05,000 --> 00:49:08,000
+that is closer to the lamp board.
+
+684
+00:49:08,000 --> 00:49:11,000
+Only in this area can you see the lamp.
+
+685
+00:49:11,000 --> 00:49:15,000
+Unless you adjust the intensity of the lamp to a very high value.
+
+686
+00:49:15,000 --> 00:49:20,000
+A rectangular lamp is a lamp that can be seen in this area.
+
+687
+00:49:27,000 --> 00:49:31,000
+You can download the video editor from the main menu.
+
+688
+00:49:31,000 --> 00:49:34,000
+You can click on the video.
+
+689
+00:49:34,000 --> 00:49:37,000
+If you don't have a video editor installed on your computer,
+
+690
+00:49:37,000 --> 00:49:39,000
+it will pop up a dialog box.
+
+691
+00:49:39,000 --> 00:49:42,000
+You can click on the link on the top.
+
+692
+00:49:42,000 --> 00:49:47,000
+Then you can directly jump to the download page of the video editor.
+
+693
+00:49:54,000 --> 00:49:56,000
+About the setting of hair dyeing.
+
+694
+00:49:56,000 --> 00:49:58,000
+In the future live stream,
+
+695
+00:49:58,000 --> 00:50:03,000
+we will have a live stream dedicated to hair dyeing and other materials.
+
+696
+00:50:04,000 --> 00:50:07,000
+Yes, a live stream dedicated to hair dyeing and other materials.
+
+697
+00:50:07,000 --> 00:50:11,000
+You can follow our WeChat official account.
+
+698
+00:50:11,000 --> 00:50:15,000
+Then you can understand the information sent.
+
+699
+00:50:30,000 --> 00:50:33,000
+On July 3, we will have a live stream dedicated to hair dyeing and other materials.
+
+700
+00:50:33,000 --> 00:50:36,000
+On July 3, we will have a live stream dedicated to hair dyeing and other materials.
+
+701
+00:50:36,000 --> 00:50:39,000
+You can follow our WeChat official account.
+
+702
+00:50:39,000 --> 00:50:42,000
+You can follow our WeChat official account.
+
+703
+00:50:45,000 --> 00:50:48,000
+Self-made models.
+
+704
+00:50:48,000 --> 00:50:51,000
+If your model is the OBJ or FBX file.
+
+705
+00:50:51,000 --> 00:50:54,000
+You can download and use it directly in the cloud.
+
+706
+00:50:54,000 --> 00:50:57,000
+You can download and use it directly in the cloud.
+
+707
+00:51:03,000 --> 00:51:12,000
+As the software updates, the number of new fabrics is increasing.
+
+708
+00:51:12,000 --> 00:51:17,000
+In the beginning, we only had about 40 types of fabrics.
+
+709
+00:51:17,000 --> 00:51:23,000
+Now, we have more than 70 types of fabric in the 5.2 version.
+
+710
+00:51:23,000 --> 00:51:28,000
+I believe there will be more and more of this kind of fabric in the future.
+
+711
+00:51:33,000 --> 00:52:01,000
+Thank you very much.
+
+712
+00:52:01,000 --> 00:52:02,000
+Thank you.
+
+713
+00:52:02,000 --> 00:52:03,000
+Thank you.
+
+714
+00:52:03,000 --> 00:52:10,000
+If the quality of the fabric you are using is too thin,
+
+715
+00:52:10,000 --> 00:52:18,000
+it is not recommended for you to measure the quality of the fabric.
+
+716
+00:52:33,000 --> 00:52:41,000
+Because next week is the holiday of the Dragon Boat Festival, so there will be no live broadcast next Friday.
+
+717
+00:52:51,000 --> 00:53:01,000
+If you don't support GPU simulation, check if your computer needs a GPU drive.
+
+718
+00:53:03,000 --> 00:53:11,000
+Let's see who our guest today is.
+
+719
+00:53:11,000 --> 00:53:16,000
+Our guest today is Molly, who is very familiar with GPU simulation.
+
+720
+00:53:27,000 --> 00:53:31,000
+If you are a fan of GPU simulation,
+
+721
+00:53:31,000 --> 00:53:33,000
+you must be familiar with Molly.
+
+722
+00:53:33,000 --> 00:53:38,000
+You can hear Molly's sweet voice here.
+
+723
+00:53:45,000 --> 00:53:50,000
+For GPU simulation, you need to buy the GPU Simulator.
+
+724
+00:53:50,000 --> 00:53:57,000
+It records the stretch, curve, and other values of the real material.
+
+725
+00:53:57,000 --> 00:54:02,000
+The system will automatically calculate an electronic material.
+
+726
+00:54:02,000 --> 00:54:05,000
+Then you can apply it to 3D clothing.
+
+727
+00:54:07,000 --> 00:54:11,000
+If you want to know more about GPU simulation,
+
+728
+00:54:11,000 --> 00:54:14,000
+please leave a message.
+
+729
+00:54:32,000 --> 00:54:35,000
+If you want to buy the GPU Simulator,
+
+730
+00:54:35,000 --> 00:54:38,000
+you can contact us on the official website.
+
+731
+00:54:51,000 --> 00:54:56,000
+Our official website is www.clo3d.com.
+
+732
+00:54:56,000 --> 00:55:00,000
+You can contact us on the official website.
+
+733
+00:55:02,000 --> 00:55:04,000
+If you want our GU simulation program to work,
+
+734
+00:55:04,000 --> 00:55:06,000
+you can contact us on Instagram,
+
+735
+00:55:06,000 --> 00:55:10,000
+Facebook, and WhatsApp.
+
+736
+00:55:10,000 --> 00:55:11,000
+Follow us on Instagram,
+
+737
+00:55:11,000 --> 00:55:14,000
+Twitter, and Twitter.
+
+738
+00:55:14,000 --> 00:55:21,000
+What is your latest starting point as an externally-s abgean Date sleeve worker?
+
+739
+00:55:22,000 --> 00:55:24,000
+Do you have a future goal as a computer人?
+
+740
+00:55:24,000 --> 00:55:25,000
+なんlah
+
+741
+00:55:25,000 --> 00:55:26,000
+segue
+
+742
+00:55:26,000 --> 00:55:27,000
+Toyota
+
+743
+00:55:27,000 --> 00:55:28,000
+hay
+
+744
+00:55:28,000 --> 00:55:31,000
+W differences
+
+745
+00:55:31,000 --> 00:55:35,000
+您是要一个官方的微信群吗?您是要一个官方的微信群吗?
+
+746
+00:55:35,000 --> 00:55:40,000
+我们现在只有一个针对这个企业用户的一些微信群。我们现在只有一个针对这个企业用户的一些微信群。
+
+747
+00:55:40,000 --> 00:55:43,000
+那么你可以先关注我们的公众号。那么你可以先关注我们的公众号。
+
+748
+00:55:55,000 --> 00:55:58,000
+油性皮肤可以购买吗?油性皮肤可以购买吗?
+
+749
+00:55:58,000 --> 00:56:02,000
+嗯,你是来搞笑的吧?干性皮肤也可以购买哦。嗯,你是来搞笑的吧?干性皮肤也可以购买哦。
+
+750
+00:56:28,000 --> 00:56:35,480
+点击 Waltz 拿落莫让
+
+751
+00:56:51,760 --> 00:56:57,519
+希望大家可以提出关注我们的这些,啊,定期的直播。希望大家可以持续关注我们的这些,啊,定期的直播。
+
+752
+00:56:57,519 --> 00:57:08,519
+We will share with you some tips and detailed instructions on how to use it.
+
+753
+00:57:27,519 --> 00:57:37,519
+If you haven't subscribed to our Bilibili live account yet, please do so now.
+
+754
+00:57:37,519 --> 00:57:47,519
+You can also follow us on our Weibo and Facebook accounts on the right side of the screen.
+
+755
+00:57:47,519 --> 00:57:57,519
+If you want to learn more about our live stream, please click on the link on the right side of the screen.
+
+756
+00:58:17,519 --> 00:58:27,519
+Our live stream will end in 5 minutes.
+
+757
+00:58:27,519 --> 00:58:33,519
+If you have any questions, please feel free to ask.
+
+758
+00:58:33,519 --> 00:58:43,519
+Sorry, our live stream will end in 2 minutes, which is 9 o'clock.
+
+759
+00:58:43,519 --> 00:58:45,519
+Thank you.
+
+760
+00:58:47,519 --> 00:58:57,519
+As long as you enjoy watching our live stream, we will be happy to do more live streams with different topics.
+
+761
+00:59:15,519 --> 00:59:17,519
+Because of the time limit,
+
+762
+00:59:17,519 --> 00:59:21,519
+I thought it would be 5 minutes.
+
+763
+00:59:21,519 --> 00:59:25,519
+Now, we only have 1 minute left.
+
+764
+00:59:25,519 --> 00:59:35,519
+I would like to thank you all for watching our live stream at 8 o'clock tonight.
+
+765
+00:59:35,519 --> 00:59:37,519
+Thank you very much.
+
+766
+00:59:41,519 --> 00:59:45,519
+Please follow us on our Bilibili live account.
+
+767
+00:59:47,519 --> 00:59:51,519
+If you haven't subscribed to our live stream yet, please do so now.
+
+768
+00:59:51,519 --> 00:59:55,519
+Our live stream will end in 5 minutes.
+
+769
+00:59:55,519 --> 00:59:57,519
+I look forward to seeing you next time.
+
+770
+00:59:57,519 --> 00:59:59,519
+See you next time.
+
+771
+00:59:59,519 --> 01:00:01,519
+See you next time.
+
+772
+01:00:01,519 --> 01:00:03,519
+See you next time.
+
+773
+01:00:03,519 --> 01:00:05,519
+See you next time.
+
+774
+01:00:05,519 --> 01:00:07,519
+I would like to say goodbye to you all.
+
+775
+01:00:07,519 --> 01:00:09,519
+I wish you all a good weekend.
+
+776
+01:00:09,519 --> 01:00:11,519
+Good night.
+
+777
+01:00:11,519 --> 01:00:13,519
+Good night.
+
+778
+01:00:13,519 --> 01:00:15,519
+Good night.
+
+779
+01:00:17,519 --> 01:00:19,519
+Good night.
+
+780
+01:00:19,519 --> 01:00:21,519
+Good night.
+
+781
+01:00:21,519 --> 01:00:23,519
+Good night.
+
+782
+01:00:23,519 --> 01:00:25,519
+Good night.
+
+783
+01:00:25,519 --> 01:00:27,519
+Good night.
+
+784
+01:00:27,519 --> 01:00:29,519
+Good night.
+
+785
+01:00:29,519 --> 01:00:31,519
+Good night.
+
+786
+01:00:31,519 --> 01:00:33,519
+Good night.
+
+787
+01:00:33,519 --> 01:00:35,519
+Good night.
+
+788
+01:00:35,519 --> 01:00:37,519
+Good night.
+
+789
+01:00:37,519 --> 01:00:39,519
+Good night.
+
+790
+01:00:39,519 --> 01:00:41,519
+Good night.
+
+791
+01:00:41,519 --> 01:00:43,519
+Good night.
+
+792
+01:00:43,519 --> 01:00:45,519
+Good night.
+

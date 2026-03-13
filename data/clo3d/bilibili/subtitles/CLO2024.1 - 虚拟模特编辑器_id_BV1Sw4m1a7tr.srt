@@ -1,0 +1,312 @@
+1
+00:00:00,000 --> 00:00:02,000
+Hello everyone!
+
+2
+00:00:02,000 --> 00:00:06,500
+In the 2024.1 version, the virtual model editor has been optimized.
+
+3
+00:00:06,500 --> 00:00:13,500
+Adjusting the size is more intuitive and accurate, and it can adjust the shape of the model chest and chest and other specific parts.
+
+4
+00:00:13,500 --> 00:00:15,500
+Let's take a closer look.
+
+5
+00:00:15,500 --> 00:00:24,500
+First, with the update of the virtual model editor, we added a new default virtual model, which is more suitable for the virtual model editor after the update.
+
+6
+00:00:24,500 --> 00:00:33,500
+In the virtual model editor window, you can see the new default model name, the model name is v2.1, and the model name is v1.1.
+
+7
+00:00:33,500 --> 00:00:39,500
+Other virtual models can be found in the Connect store.
+
+8
+00:00:39,500 --> 00:00:42,500
+Open the old version of the virtual model editor here.
+
+9
+00:00:42,500 --> 00:00:45,500
+In the main menu, find the virtual model editor.
+
+10
+00:00:45,500 --> 00:00:47,500
+Open the virtual model editor.
+
+11
+00:00:47,500 --> 00:00:51,500
+At this time, you can see that if you use the virtual model editor to open it,
+
+12
+00:00:51,500 --> 00:00:54,500
+or the one that was previously created in the 2024.1 version,
+
+13
+00:00:54,500 --> 00:00:58,500
+the AVS file will be imported to the new virtual model editor.
+
+14
+00:00:58,500 --> 00:01:02,500
+In the virtual model editor, a warning window will pop up.
+
+15
+00:01:02,500 --> 00:01:07,500
+This is because the size data of the new virtual model editor has changed.
+
+16
+00:01:07,500 --> 00:01:12,500
+Therefore, the model body shape may change according to the size data of the update.
+
+17
+00:01:12,500 --> 00:01:15,500
+So, when creating a virtual model, you need to pay attention to this.
+
+18
+00:01:19,500 --> 00:01:24,500
+Now, the virtual model editor after the update is divided into two aspects, size and shape.
+
+19
+00:01:24,500 --> 00:01:29,500
+In this section, you can choose to preset the size and modify the unit.
+
+20
+00:01:29,500 --> 00:01:35,500
+In the previous version, the size content related to the details of the whole body is all included here.
+
+21
+00:01:35,500 --> 00:01:41,500
+In the previous version, you can choose the simple, basic, high-end human body or human body model in the details.
+
+22
+00:01:41,500 --> 00:01:45,500
+Each type of size project that can be entered and modified is different.
+
+23
+00:01:45,500 --> 00:01:49,500
+After optimization, the UI mountain goes to the basic and high-end model options.
+
+24
+00:01:49,500 --> 00:01:53,500
+You can freely choose and enter the required size project.
+
+25
+00:01:53,500 --> 00:01:57,500
+Click on the gear icon in the upper right corner to display the editable measurement value.
+
+26
+00:01:57,500 --> 00:02:01,500
+At this time, all editable measurement values will appear at the bottom.
+
+27
+00:02:01,500 --> 00:02:05,500
+You can choose the measurement value of the size you need below.
+
+28
+00:02:05,500 --> 00:02:10,500
+The size that is selected and displayed in blue is the size that can be edited.
+
+29
+00:02:10,500 --> 00:02:15,500
+The unselected project will not be displayed when editing and cannot be adjusted directly.
+
+30
+00:02:15,500 --> 00:02:21,500
+But it will automatically adjust to the appropriate size according to the input value in the existing measurement size.
+
+31
+00:02:21,500 --> 00:02:22,500
+After selection,
+
+32
+00:02:22,500 --> 00:02:25,500
+click on the exit button in the upper right corner to complete the settings.
+
+33
+00:02:25,500 --> 00:02:32,500
+You can see that only the project we just selected is in the display and editable state under the size.
+
+34
+00:02:32,500 --> 00:02:38,500
+In addition, in the previous version, the model size of the virtual model was adjusted based on the algorithm.
+
+35
+00:02:38,500 --> 00:02:43,500
+This means that when you modify the height, shoulder height, chest and other full body sizes,
+
+36
+00:02:43,500 --> 00:02:47,500
+it will create the appropriate body shape according to the algorithm and the data you input.
+
+37
+00:02:47,500 --> 00:02:50,500
+We have added the function of individually modifying each size project.
+
+38
+00:02:50,500 --> 00:02:54,500
+This function is expressed by the link icon on the right side of the width and height.
+
+39
+00:02:54,500 --> 00:02:58,500
+If you want to modify the virtual model in the same way as before,
+
+40
+00:02:58,500 --> 00:03:03,500
+you can click on the icon and activate it to modify the virtual model size.
+
+41
+00:03:03,500 --> 00:03:10,500
+You can see that the size below is automatically adjusted with the adjustment of the width and height value.
+
+42
+00:03:13,500 --> 00:03:17,500
+On the contrary, if you click on the icon and cancel the connection again,
+
+43
+00:03:17,500 --> 00:03:19,500
+you can change the width and height value.
+
+44
+00:03:19,500 --> 00:03:24,500
+For example, the chest and height below will remain unchanged.
+
+45
+00:03:24,500 --> 00:03:30,500
+If you want to modify the model height in the same size preset, you can use this function.
+
+46
+00:03:34,500 --> 00:03:37,500
+The new version can also modify the size of the cup.
+
+47
+00:03:37,500 --> 00:03:41,500
+First, select the chest size in the width and enter the value,
+
+48
+00:03:41,500 --> 00:03:44,500
+then enter the chest size below.
+
+49
+00:03:44,500 --> 00:03:48,500
+You can see that the chest is fixed and the cup size will change.
+
+50
+00:03:48,500 --> 00:03:53,500
+In this way, you can create a virtual model of different cup sizes.
+
+51
+00:03:55,500 --> 00:03:58,500
+The following shapes include the adjustment of the arm length,
+
+52
+00:03:58,500 --> 00:04:01,500
+the adjustment of the head circumference and the new width adjustment.
+
+53
+00:04:01,500 --> 00:04:04,500
+For men, you can also adjust the volume of the waist.
+
+54
+00:04:07,500 --> 00:04:12,500
+In the previous version, the waist of the model is not adjustable.
+
+55
+00:04:12,500 --> 00:04:17,500
+This may cause simulation problems when creating tight clothing, such as swimsuits and underwear.
+
+56
+00:04:17,500 --> 00:04:21,500
+Now you can freely adjust the waist of the model,
+
+57
+00:04:21,500 --> 00:04:25,500
+so that it is more convenient to make swimsuits, underwear and other clothes.
+
+58
+00:04:26,500 --> 00:04:30,500
+Next, you can see the virtual model of the 3D window on the left side.
+
+59
+00:04:30,500 --> 00:04:35,500
+Previously, the measurement line position on the virtual model was fixed and unable to be modified.
+
+60
+00:04:35,500 --> 00:04:39,500
+In the new version, we added a virtual model that can move the measurement line function.
+
+61
+00:04:39,500 --> 00:04:44,500
+You can drag and drag the measurement line position directly to adjust the size of the virtual model.
+
+62
+00:04:44,500 --> 00:04:48,500
+First of all, when you open the window of the virtual model editor,
+
+63
+00:04:48,500 --> 00:04:52,500
+the default will automatically start the virtual model measurement tool.
+
+64
+00:04:52,500 --> 00:04:56,500
+Use this tool to drag and drag the actual line on the model to measure.
+
+65
+00:04:56,500 --> 00:05:01,500
+You can see that the selected measurement line is displayed in yellow.
+
+66
+00:05:01,500 --> 00:05:06,500
+And there will be a virtual arrow at the top and bottom of the moving process middle line.
+
+67
+00:05:06,500 --> 00:05:10,500
+These arrows indicate the maximum range of the measurement line that can be moved.
+
+68
+00:05:10,500 --> 00:05:13,500
+In order to avoid exceeding the range of the selected measurement line,
+
+69
+00:05:13,500 --> 00:05:16,500
+you can move the measurement line to the desired position.
+
+70
+00:05:16,500 --> 00:05:19,500
+Or overlap with other measurement lines.
+
+71
+00:05:19,500 --> 00:05:23,500
+The range of movement of the measurement line is limited to three centimeters above and below.
+
+72
+00:05:23,500 --> 00:05:26,500
+After moving the measurement line to the desired position,
+
+73
+00:05:26,500 --> 00:05:31,500
+modify the corresponding size at the window of the virtual model editor on the right side.
+
+74
+00:05:31,500 --> 00:05:35,500
+You can check the effect of the modification at the 3D window.
+
+75
+00:05:35,500 --> 00:05:38,500
+If you want to restore the original position,
+
+76
+00:05:38,500 --> 00:05:42,500
+you can right-click on the measurement line to reset the position or reset all positions.
+
+77
+00:05:43,500 --> 00:05:48,500
+This is the update and improvement content of the virtual model editor function in the 2024.1 version.
+
+78
+00:05:48,500 --> 00:05:54,500
+I hope that you can create a virtual model that satisfies you more easily and accurately by using these functions.
+

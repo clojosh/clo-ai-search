@@ -1,0 +1,356 @@
+1
+00:00:00,000 --> 00:00:05,000
+This video introduces the range pull function for you.
+
+2
+00:00:05,000 --> 00:00:10,000
+Starting from the 2025 version, when you press and pull the clothing in the simulation mode,
+
+3
+00:00:10,000 --> 00:00:15,000
+the area and strength of the support for pull are defined, and the exact adjustment is made according to the needs.
+
+4
+00:00:15,000 --> 00:00:19,000
+Now it shows several application scenarios for range pull.
+
+5
+00:00:19,000 --> 00:00:25,000
+For single-layer clothing, we can make small-range twist details through the range pull function.
+
+6
+00:00:25,000 --> 00:00:29,000
+You can also make relatively large-range suit back adjustment.
+
+7
+00:00:29,000 --> 00:00:36,000
+When you modify the posture, you can use the range pull to adjust the waist with a multi-layer structure.
+
+8
+00:00:36,000 --> 00:00:39,000
+Next, let's take a look at how to use it.
+
+9
+00:00:39,000 --> 00:00:43,000
+To use the range pull, we need to open the simulation first.
+
+10
+00:00:43,000 --> 00:00:48,000
+Once the simulation is opened, select the move tool to switch to the small-handle point pull tool.
+
+11
+00:00:48,000 --> 00:00:54,000
+At this time, we press the point pull tool for two seconds, and we can see the tool group.
+
+12
+00:00:54,000 --> 00:00:59,000
+Press the range pull tool to move the mouse to the 3D window of the clothing.
+
+13
+00:00:59,000 --> 00:01:03,000
+You can see that on the basis of the original grip, two new circles have been added.
+
+14
+00:01:03,000 --> 00:01:05,000
+This is our range brush.
+
+15
+00:01:05,000 --> 00:01:09,000
+It can help you directly understand the range of the influence of the range pull.
+
+16
+00:01:09,000 --> 00:01:13,000
+In addition, we can also see that there is a range pull window setting.
+
+17
+00:01:13,000 --> 00:01:17,000
+The window setting is divided into two main contents, range and options.
+
+18
+00:01:17,000 --> 00:01:19,000
+First, let's look at the range.
+
+19
+00:01:19,000 --> 00:01:23,000
+The reduction type below the range is controlled by the shape of the pull effect.
+
+20
+00:01:23,000 --> 00:01:27,000
+You can switch it to a curve or a straight line.
+
+21
+00:01:27,000 --> 00:01:33,000
+The range of soft selection and the degree of reduction separately control the range of influence when the pull is pulled and the range of the center point.
+
+22
+00:01:33,000 --> 00:01:38,000
+The smaller inner circle in the two circles indicates the area where the pull effect is most directly applied.
+
+23
+00:01:38,000 --> 00:01:43,000
+As the effect is radiated outward, the strength gradually decreases, resulting in a smooth natural reduction.
+
+24
+00:01:43,000 --> 00:01:46,000
+The range of soft selection is controlled by the area affected by the pull.
+
+25
+00:01:46,000 --> 00:01:51,000
+As the value increases, the size of the two circles on the clothing will also be expanded accordingly.
+
+26
+00:01:51,000 --> 00:01:55,000
+The default value is 200, and it can be adjusted within the range of 1 to 500.
+
+27
+00:01:55,000 --> 00:02:01,000
+The degree of reduction is controlled from the core area of the pull to the maximum range of influence.
+
+28
+00:02:01,000 --> 00:02:05,000
+The default value is 0, and it can be adjusted within the range of 2 to 2.
+
+29
+00:02:05,000 --> 00:02:09,000
+The chart area below can help you understand more objectively.
+
+30
+00:02:09,000 --> 00:02:18,000
+When the reduction type is a curve, the pull selection area is not a single pull, but a smoother, rounder, and wider shape.
+
+31
+00:02:18,000 --> 00:02:21,000
+Next, let's use the curve as an example to see the effect.
+
+32
+00:02:21,000 --> 00:02:23,000
+Let's use the default value of the pull sleeve first.
+
+33
+00:02:23,000 --> 00:02:26,000
+Change the soft selection range to 250.
+
+34
+00:02:26,000 --> 00:02:28,000
+Turn to the back of the suit to pull.
+
+35
+00:02:28,000 --> 00:02:33,000
+You will see that the pull effect is more effective in the area where the same core is defined.
+
+36
+00:02:33,000 --> 00:02:37,000
+This time, let's set the soft selection range to 500 and pull the clothing.
+
+37
+00:02:37,000 --> 00:02:42,000
+Compared to before, the area covered by the inner circle and the outer circle is now twice as wide.
+
+38
+00:02:42,000 --> 00:02:44,000
+You can pull a larger area.
+
+39
+00:02:44,000 --> 00:02:47,000
+Now let's set the value to be the smallest.
+
+40
+00:02:47,000 --> 00:02:49,000
+Then pull the panel again.
+
+41
+00:02:49,000 --> 00:02:51,000
+The soft selection range is only 1 mm.
+
+42
+00:02:51,000 --> 00:02:53,000
+This allows us to make a very small range of pull.
+
+43
+00:02:53,000 --> 00:02:56,000
+Next, we will change the soft selection range to 200.
+
+44
+00:02:56,000 --> 00:02:59,000
+And set the reduction degree to the smallest value to 2.
+
+45
+00:02:59,000 --> 00:03:00,000
+Then pull.
+
+46
+00:03:00,000 --> 00:03:03,000
+In this case, the inner circle almost overlaps with the outer circle.
+
+47
+00:03:03,000 --> 00:03:08,000
+The pull effect is evenly distributed in a larger area, rather than concentrated on a specific point.
+
+48
+00:03:08,000 --> 00:03:13,000
+Finally, let's set the maximum value to 2 and pull the clothes again.
+
+49
+00:03:13,000 --> 00:03:17,000
+Through the chart below, you can see that the pull force is highly concentrated at a specific point.
+
+50
+00:03:17,000 --> 00:03:20,000
+This means that accurate operation is performed in small areas.
+
+51
+00:03:21,000 --> 00:03:24,000
+Next, we will adjust the reduction degree to 1.
+
+52
+00:03:24,000 --> 00:03:26,000
+The reduction type is modified to a straight line.
+
+53
+00:03:26,000 --> 00:03:31,000
+The straight line allows you to define a smaller and more detailed core area to be squeezed.
+
+54
+00:03:31,000 --> 00:03:37,000
+After switching to the straight line option, you will notice that the picture becomes sharper and sharper.
+
+55
+00:03:37,000 --> 00:03:43,000
+At this time, when you pull the clothes, you will find that the selection range of the core area is narrower and more accurate than the curve line.
+
+56
+00:03:43,000 --> 00:03:45,000
+So you can control the pull correctly.
+
+57
+00:03:45,000 --> 00:03:49,000
+You can choose the reduction type according to your preferences.
+
+58
+00:03:49,000 --> 00:03:50,000
+Next, let's take a look.
+
+59
+00:03:50,000 --> 00:03:53,000
+How to display and control the pull selection area.
+
+60
+00:03:53,000 --> 00:03:58,000
+At the bottom of the option, the range measurement method defines how to calculate the selection area from the actual point.
+
+61
+00:03:58,000 --> 00:04:01,000
+It is divided into two types, the surface and the straight line.
+
+62
+00:04:01,000 --> 00:04:06,000
+In the surface mode, the pull effect is only applicable to the surface of a selected layer within the specified range.
+
+63
+00:04:06,000 --> 00:04:09,000
+Even if there are multiple layers here, it is the same.
+
+64
+00:04:09,000 --> 00:04:18,000
+However, when the pull and the strip are sewed together, any soft selection range that is defined and the area within the reduction range will be affected at the same time.
+
+65
+00:04:18,000 --> 00:04:23,000
+The straight line option allows you to pull all the sheets within a certain distance.
+
+66
+00:04:23,000 --> 00:04:27,000
+Whether the selected sheet is sewed together with the sheets of other layers,
+
+67
+00:04:27,000 --> 00:04:33,000
+when you use this option to pull the sheet, you will see that all the sheets within the defined range are affected at the same time.
+
+68
+00:04:33,000 --> 00:04:38,000
+The range brush display can help you to understand the range of the pull function more objectively.
+
+69
+00:04:38,000 --> 00:04:41,000
+You can also turn off the range brush display here.
+
+70
+00:04:41,000 --> 00:04:47,000
+Now let's take a look at the use of each range measurement method.
+
+71
+00:04:47,000 --> 00:04:51,000
+The range brush display is only used for the effect of pulling the area when selecting the selected sheet.
+
+72
+00:04:51,000 --> 00:04:55,000
+As you can see, whether it is the surface or the straight line,
+
+73
+00:04:55,000 --> 00:04:59,000
+as a range measurement method and only used for selecting the selected sheet,
+
+74
+00:04:59,000 --> 00:05:04,000
+when the range brush is turned over, it will only affect the currently selected turned over sheet.
+
+75
+00:05:04,000 --> 00:05:07,000
+When you want to pull a specific sheet in the given work process,
+
+76
+00:05:07,000 --> 00:05:12,000
+no matter which range measurement method you choose, this option is very useful.
+
+77
+00:05:12,000 --> 00:05:15,000
+Next, when the full weight function is used,
+
+78
+00:05:15,000 --> 00:05:18,000
+the range brush display will display the pull area in green.
+
+79
+00:05:18,000 --> 00:05:22,000
+If you turn off this option, the range brush display will no longer display the area in green,
+
+80
+00:05:22,000 --> 00:05:25,000
+but it will not affect the effect of the range brush.
+
+81
+00:05:25,000 --> 00:05:29,000
+The range brush is not only used to adjust the overall effect of the clothes,
+
+82
+00:05:29,000 --> 00:05:33,000
+but it can also help to quickly adjust various details such as knotting and knotting.
+
+83
+00:05:33,000 --> 00:05:38,000
+First, re-position the fixed needle and prepare for the knotting.
+
+84
+00:05:38,000 --> 00:05:43,000
+Then select the range brush tool and adjust the range and the degree of reduction according to the area size of the brush.
+
+85
+00:05:45,000 --> 00:05:48,000
+After the setting is complete, turn to the appropriate angle,
+
+86
+00:05:48,000 --> 00:05:51,000
+pull the clothes to complete the knotting details.
+
+87
+00:05:51,000 --> 00:05:57,000
+After achieving the desired effect, delete the fixed needle and continue to simulate.
+
+88
+00:05:57,000 --> 00:06:00,000
+Then the introduction of the range brush function is here,
+
+89
+00:06:00,000 --> 00:06:05,000
+I hope this function can help you quickly adjust the ideal clothing effect.
+

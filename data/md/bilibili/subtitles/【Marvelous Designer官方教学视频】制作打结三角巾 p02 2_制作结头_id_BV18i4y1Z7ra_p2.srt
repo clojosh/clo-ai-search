@@ -1,0 +1,392 @@
+1
+00:00:00,000 --> 00:00:28,000
+The length of the cut-off line can be used to draw a rectangle as a cut-off, and if you are not sure, you can directly use a 30mm wide and 150mm high number.
+
+2
+00:00:30,000 --> 00:00:42,000
+Use the positioning ball to drag the board to the back of the virtual model.
+
+3
+00:00:42,000 --> 00:00:50,000
+Reduce the diameter of the particle to 3, so that the smaller board can have enough face to cover the cut-off position of the large board.
+
+4
+00:00:50,000 --> 00:00:58,000
+Reduce the thickness of the collision to 1.
+
+5
+00:00:58,000 --> 00:01:05,000
+If you are not sure about the size of the small partner, you can use the positioning tool on the upper right of the positioning ball to locate the board near the collision position.
+
+6
+00:01:05,000 --> 00:01:11,000
+After confirming, open the board in the horizontal direction.
+
+7
+00:01:11,000 --> 00:01:19,000
+Create an inner line along the opening position and fold it.
+
+8
+00:01:19,000 --> 00:01:27,000
+Open the texture surface, check the back of the board, then use the fold arrangement tool to fold the board to ensure that the front is facing out.
+
+9
+00:01:28,000 --> 00:01:34,000
+Open the texture surface, check the back of the board, then use the fold arrangement tool to fold the board to ensure that the front is facing out.
+
+10
+00:01:34,000 --> 00:01:44,000
+On the four corners of this board, add four pins to make it convenient to rotate the board.
+
+11
+00:01:44,000 --> 00:01:51,000
+Sew the boards on both sides to form a pipe.
+
+12
+00:01:51,000 --> 00:01:56,000
+Open the model.
+
+13
+00:01:56,000 --> 00:02:01,000
+When pressing Shift, click on the pin, you can select more pins.
+
+14
+00:02:01,000 --> 00:02:07,000
+When opening the model, select the bottom two pins and move them with the positioning tool.
+
+15
+00:02:07,000 --> 00:02:16,000
+If you want to rotate, rotate the pin with the last click as the center.
+
+16
+00:02:16,000 --> 00:02:21,000
+Rotate 360 degrees, which is equivalent to rotating a circle in the middle of this pipe.
+
+17
+00:02:21,000 --> 00:02:24,000
+Close the two ends of the pipe and harden the board.
+
+18
+00:02:24,000 --> 00:02:25,000
+Otherwise, the material is too soft.
+
+19
+00:02:25,000 --> 00:02:32,000
+The space formed is inconvenient to pass through the scarf.
+
+20
+00:02:32,000 --> 00:02:38,000
+Then sew the two ends of the pipe together.
+
+21
+00:02:38,000 --> 00:02:40,000
+Press W to click on the pin.
+
+22
+00:02:40,000 --> 00:02:42,000
+You can delete the existing pin.
+
+23
+00:02:42,000 --> 00:02:44,000
+Delete the two pins on the first end.
+
+24
+00:02:44,000 --> 00:02:49,000
+Open the model.
+
+25
+00:02:49,000 --> 00:02:52,000
+This end will automatically be sewn to a fixed position.
+
+26
+00:02:52,000 --> 00:02:54,000
+And the whole board is fixed in 3D space.
+
+27
+00:02:54,000 --> 00:03:01,000
+It won't fall.
+
+28
+00:03:01,000 --> 00:03:03,000
+When it's stable, stop the simulation.
+
+29
+00:03:03,000 --> 00:03:09,000
+Move the whole board to the position of the scarf.
+
+30
+00:03:09,000 --> 00:03:13,000
+After comparison, it can be seen that the whole board is now very difficult to pass through directly.
+
+31
+00:03:13,000 --> 00:03:15,000
+But we can use more than 100 soles.
+
+32
+00:03:15,000 --> 00:03:19,000
+For the time being, the length of this board has reached the purpose of passing through the scarf.
+
+33
+00:03:19,000 --> 00:03:23,000
+If you are not sure of the end-to-end, you can use the editing tool.
+
+34
+00:03:23,000 --> 00:03:26,000
+The board needs to grow along the vertical direction.
+
+35
+00:03:26,000 --> 00:03:28,000
+So the length of the arrowhead is increased.
+
+36
+00:03:28,000 --> 00:03:32,000
+That is, the slope of the gold.
+
+37
+00:03:32,000 --> 00:03:36,000
+Open the simulation first and change the slope.
+
+38
+00:03:36,000 --> 00:03:37,000
+Then pause the simulation.
+
+39
+00:03:37,000 --> 00:03:39,000
+Put the board near the scarf board.
+
+40
+00:03:39,000 --> 00:03:40,000
+Open the simulation again.
+
+41
+00:03:40,000 --> 00:03:43,000
+Let the circle interact with the frozen board first.
+
+42
+00:03:43,000 --> 00:03:45,000
+Unscrew all the scarf boards.
+
+43
+00:03:45,000 --> 00:03:48,000
+Since the headboard is now stable, simulate it.
+
+44
+00:03:48,000 --> 00:03:50,000
+Delete the fixed pin on the headboard.
+
+45
+00:03:50,000 --> 00:03:52,000
+Unscrew the hardening and continue to simulate.
+
+46
+00:03:52,000 --> 00:03:55,000
+Automatically move the headboard to the next position.
+
+47
+00:03:55,000 --> 00:03:58,000
+We have to copy two such boards and combine them.
+
+48
+00:03:58,000 --> 00:04:00,000
+After selecting the fixed pin,
+
+49
+00:04:00,000 --> 00:04:02,000
+In the menu in the right-hand tab, you can also choose to delete.
+
+50
+00:04:02,000 --> 00:04:05,000
+Delete the fixed pin in the two headboards.
+
+51
+00:04:05,000 --> 00:04:10,000
+After the simulation again, copy and paste the board at the 3D window.
+
+52
+00:04:10,000 --> 00:04:13,000
+After copying a board, adjust its arrangement position.
+
+53
+00:04:13,000 --> 00:04:16,000
+Do not have a lot of interference with the scarf.
+
+54
+00:04:16,000 --> 00:04:20,000
+Simulate it and then copy and paste another board.
+
+55
+00:04:20,000 --> 00:04:23,000
+Due to the fact that each circle has been rotated by itself so far,
+
+56
+00:04:23,000 --> 00:04:27,000
+The effect of keeping these intersections will be more realistic after the merger.
+
+57
+00:04:27,000 --> 00:04:33,000
+After wearing it, reduce the slope to 120.
+
+58
+00:04:33,000 --> 00:04:38,000
+After simulation, drag the board so that the scarf is in a position that can be seen.
+
+59
+00:04:38,000 --> 00:04:39,000
+Do not be squeezed to the inside.
+
+60
+00:04:39,000 --> 00:04:44,000
+It will affect the merger after a while.
+
+61
+00:04:44,000 --> 00:04:47,000
+In the position of the three boards separated at the 2D window,
+
+62
+00:04:47,000 --> 00:04:49,000
+Do not have overlapping parts.
+
+63
+00:04:50,000 --> 00:04:53,000
+Do not have overlapping parts.
+
+64
+00:04:53,000 --> 00:04:56,000
+Then delete the line used to close the line between the boards.
+
+65
+00:04:56,000 --> 00:04:58,000
+Re-create the cross sewing line.
+
+66
+00:04:58,000 --> 00:05:01,000
+Re-create the cross sewing line.
+
+67
+00:05:01,000 --> 00:05:04,000
+Re-create the cross sewing line.
+
+68
+00:05:04,000 --> 00:05:07,000
+After the intersection is created, you can simulate it and see the effect.
+
+69
+00:05:07,000 --> 00:05:10,000
+After the intersection is created, you can simulate it and see the effect.
+
+70
+00:05:20,000 --> 00:05:26,000
+After the intersection is created, you can simulate it and see the effect.
+
+71
+00:05:26,000 --> 00:05:31,000
+After the intersection is created, you can simulate it and see the effect.
+
+72
+00:05:31,000 --> 00:05:33,000
+Like this, it doesn't have aBA.
+
+73
+00:05:33,000 --> 00:05:36,000
+Because the poop-out of the right side came out.
+
+74
+00:05:36,000 --> 00:05:41,000
+If you tighten the趁力 for a moment, the board will be separated.
+
+75
+00:05:41,000 --> 00:05:44,000
+Create a dipping line in the same way as in the video.
+
+76
+00:05:44,000 --> 00:05:47,000
+I will megaselect it.
+
+77
+00:05:47,000 --> 00:06:04,000
+Now this is fine, because it will tighten and loosen after a while, and it will not disperse after tightening.
+
+78
+00:06:04,000 --> 00:06:09,000
+After the molding is stable, gradually return the loosen rate from 120 to 100.
+
+79
+00:06:09,000 --> 00:06:20,000
+Do not tighten it all at once, because now the cut-off plate has been squeezed into the silicone plate, if it becomes too much all at once, it may become unstable because the grid suddenly becomes smaller.
+
+80
+00:06:20,000 --> 00:06:29,000
+In the simulation process, if there is more space for the fabric, you can drag the plate to cover each other.
+
+81
+00:06:29,000 --> 00:06:34,000
+Reduce the loosen rate to 90 again to tighten the cut-off more.
+
+82
+00:06:34,000 --> 00:06:38,000
+You can see that as the loosen rate decreases, the gap in the middle becomes more obvious.
+
+83
+00:06:38,000 --> 00:06:47,000
+You can control it with a sewing needle.
+
+84
+00:06:47,000 --> 00:06:56,000
+Eliminate the straight line left because of the spread, so that it is convenient to continue to merge later.
+
+85
+00:06:56,000 --> 00:07:02,000
+Use the editor sewing line tool, select the sewing line and select merge in the menu in the right-click.
+
+86
+00:07:02,000 --> 00:07:05,000
+You can merge along the sewing line.
+
+87
+00:07:05,000 --> 00:07:08,000
+This will become a whole cut-off plate.
+
+88
+00:07:08,000 --> 00:07:17,000
+If there is no stability in the simulation, you can continue to open the simulation, pause the simulation, and perform a short simulation.
+
+89
+00:07:17,000 --> 00:07:22,000
+After the cut-off or merge operation of the plate, the sewing needle will automatically be deleted.
+
+90
+00:07:22,000 --> 00:07:24,000
+Please re-create it.
+
+91
+00:07:24,000 --> 00:07:30,000
+If the pull of the sewing needle is more severe, you can manually adjust the position with the editor sewing needle.
+
+92
+00:07:38,000 --> 00:07:46,000
+You can see that the cut-off pattern will be less visible.
+
+93
+00:07:46,000 --> 00:07:48,000
+This is the end of the tutorial.
+
+94
+00:07:48,000 --> 00:07:51,000
+Thank you for watching.
+
+95
+00:07:51,000 --> 00:07:53,000
+I hope you will like it.
+
+96
+00:07:53,000 --> 00:07:56,000
+I will be very happy if you subscribe.
+
+97
+00:07:56,000 --> 00:07:59,000
+See you in the next video.
+
+98
+00:07:59,000 --> 00:08:01,000
+Thank you.
+

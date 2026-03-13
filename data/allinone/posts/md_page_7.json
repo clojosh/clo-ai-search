@@ -1,0 +1,79 @@
+[
+  {
+    "id": "075e02f79c6d4b4689c7813c499c61b7",
+    "url": "https://connect.clo-set.com/community/post/075e02f79c6d4b4689c7813c499c61b7",
+    "title": "Simulation causes Alembic Avatar to Reset",
+    "content": "![](https://storagefiles.clo-set.com/public/community/202601/075e02f79c6d4b4689c7813c499c61b7/images/9cea28cde3e24a6d8c30c8a61f948e97Issue.png)\n\nHey guys, does anybody know how to fix this issue?  \n  \nI used to be able to import an Alembic Avatar, reposition and rotate it, run the simulation, which would drape the clothes over the Alembic Avatar, and then play the Alembic Avatar animation so the cloth would follow and react to the animation.   \nNow when I start the start the simulation, the Alembic Avatar resets to its default position it's in upon first importing it into the scene, causing the cloth to distort.   \nSimulation Settings are Normal (Default), using GPU(same happens with CPU though) and Particle Distance of all cloth is set to 20mm.  \nLatest graphics drivers and Marvelous Designer versions are installed.   \nAny help would be much appreciated!\n\n\n### Community Post Comments:\nComment 1: Please share your project file with us through our 'Contact Us' page.🙏🏻https://connect.clo-set.com/community/post/075e02f79c6d4b4689c7813c499c61b7 will be the best way to see what is going on there.",
+    "content_description": "This web page serves as a community forum for troubleshooting issues related to importing and simulating Alembic Avatars in Marvelous Designer.",
+    "source": "Connect Community",
+    "created_at": "2026-01-12T07:59:14.47Z",
+    "category": 210,
+    "tags": ["MarvelousDesigner", "CLO", "CLO-SET", "Animation", "AutoFitting", "Avatar", "Simulation", "Import_Export"]
+  },
+  {
+    "id": "6b55d06b98a54dc99d339c9241172410",
+    "url": "https://connect.clo-set.com/community/post/6b55d06b98a54dc99d339c9241172410",
+    "title": "excelsior uniforms team ",
+    "content": "![80f0192e294c40798ffffaa79d39ac89](https://storagefiles.clo-set.com/public/community/202601/6b55d06b98a54dc99d339c9241172410/images/80f0192e294c40798ffffaa79d39ac89ChatGPT%20Image%2010%20%D9%8A%D9%86%D8%A7%D9%8A%D8%B1%202026%D8%8C%2007_55_16%20%D9%85.png)![631f9e8490374b3d866da24d9f1b3260](https://storagefiles.clo-set.com/public/community/202601/6b55d06b98a54dc99d339c9241172410/images/631f9e8490374b3d866da24d9f1b3260ChatGPT%20Image%2010%20%D9%8A%D9%86%D8%A7%D9%8A%D8%B1%202026%D8%8C%2007_54_34%20%D9%85.png)\n",
+    "content_description": "Discover innovative solutions and insights to enhance your digital experience and engage with our community effectively.",
+    "source": "Connect Community",
+    "created_at": "2026-01-10T16:55:52.18Z",
+    "category": 210,
+    "tags": ["CLO", "MarvelousDesigner", "CLO-SET", "CONNECT", "Substance", "Blender", "3dsMax", "Unity", "AI"]
+  },
+  {
+    "id": "6dcd7f658e5540b19e0d9dff365d8979",
+    "url": "https://connect.clo-set.com/community/post/6dcd7f658e5540b19e0d9dff365d8979",
+    "title": "Issue with Gizmo cannot be manipulated for Trims",
+    "content": "Hi everyone, I am a beginner in Marvelous Designer and I have a question about the Gizmo.\n\nWhen I select a Trim in the 3D window, the Gizmo does appear, but I cannot interact with it. Even if I try to click and drag the arrows or circles on the Gizmo, it doesn't move, rotate, or scale at all. I can only move the Trim by clicking the object itself and dragging it.\n\nDoes anyone know why the Gizmo is unresponsive for Trims and how I can fix this? Thank you!\n\n\n### Community Post Comments:\nComment 1: Could you please upload a video showcasing the issue? Bes ure that you are not in the Glue mode. There are 2 icons whenever you select a Trim., one for the Glue and the other one to transform with the Gizmo.\nReply 1: Please watch this video. I can control the Gizmo for fabric, but not for trims.https://connect.clo-set.com/community/post/6dcd7f658e5540b19e0d9dff365d8979",
+    "content_description": "The purpose of this web page is to seek assistance from the community regarding the unresponsive Gizmo in Marvelous Designer when interacting with Trims.",
+    "source": "Connect Community",
+    "created_at": "2026-01-09T09:24:15.383Z",
+    "category": 220,
+    "tags": ["MarvelousDesigner", "Trim"]
+  },
+  {
+    "id": "d688f1691a404942ba84468a216b8d07",
+    "url": "https://connect.clo-set.com/community/post/d688f1691a404942ba84468a216b8d07",
+    "title": "LiveSync 5.7 - a little help, please? :)",
+    "content": "So, Adobe finally updated the Substance plugin - yay! Except, I'm having a major issue with materials on geometry cache garments. The character without the shadow is wearing a 5.7 LiveSync garment. The other character has a garment from prior to 5.6. Notice that not only does the 5.7 garment not have a shadow, it's also kind of glowing. The result is the same whether I import it with Translucency or Opacity mask. I have no idea what I'm doing wrong. Is anyone else experiencing this? Thanks.![18634a23916d4924968507c1d194252d](https://storagefiles.clo-set.com/public/community/202601/d688f1691a404942ba84468a216b8d07/images/18634a23916d4924968507c1d194252dMD_LiveSync_issue.png)\n\n\n### Community Post Comments:\nComment 1: Solved-ish. I created a new 5.7 project, used LiveSync to import the same garment/animation from MD, and the materials are fine. I migrated that geometry cache to my actual project, and the materials are still okay, so I guess something in my project caused this - maybe a plugin that clashes with LiveSync? - I don't know.\nReply 1: Hi Melissa, glad to hear that it is 'somewhat' resolved! I'll test this with our developers to see if there is anything you should look out for when using Substance materials. As far as I'm concerned, there shouldn't be any issues, apart from having to organize UV maps in MD when using the Unified UV Coordinate option.",
+    "content_description": "This webpage aims to discuss and troubleshoot issues related to the Adobe Substance plugin update, specifically focusing on problems with materials and shadows in geometry cache garments.",
+    "source": "Connect Community",
+    "created_at": "2026-01-09T00:35:08.877Z",
+    "category": 210,
+    "tags": ["LiveSync", "UnrealEngine", "MarvelousDesigner", "Material"]
+  },
+  {
+    "id": "417da2a1004642ccb71ad31fedb4eee5",
+    "url": "https://connect.clo-set.com/community/post/417da2a1004642ccb71ad31fedb4eee5",
+    "title": "Do you want to go swimming? Wanna take a look at the equipment?",
+    "content": "![](https://storagefiles.clo-set.com/public/community/202601/417da2a1004642ccb71ad31fedb4eee5/images/9a9284827aa4495bb6e97dbe1e92ca33%E5%B0%81%E9%9D%A2.png)I made the three items separately. They need to be added one by one, and you can DIY both the colors and textures! If you need them, you can download. I hope you can create interesting works with these materials.\n\n![cd789aff1e20499f925ed2dec1cf34de](https://storagefiles.clo-set.com/public/community/202601/417da2a1004642ccb71ad31fedb4eee5/images/cd789aff1e20499f925ed2dec1cf34de%E6%B3%B3%E9%95%9Cxx.png)![52e2348a97ca4f6a8400bf64b3d98289](https://storagefiles.clo-set.com/public/community/202601/417da2a1004642ccb71ad31fedb4eee5/images/52e2348a97ca4f6a8400bf64b3d98289%E5%91%BC%E5%90%B8%E7%AE%A1xx.png)![cd84a1bd027a4dce92813191ac67a5a6](https://storagefiles.clo-set.com/public/community/202601/417da2a1004642ccb71ad31fedb4eee5/images/cd84a1bd027a4dce92813191ac67a5a6%E6%B3%B3%E5%B8%BDxx.png)For details, check out my homepage.\n",
+    "content_description": "Discover customizable DIY materials that allow you to create unique designs by mixing and matching colors and textures, available for download to inspire your creativity.",
+    "source": "Connect Community",
+    "created_at": "2026-01-06T07:00:26.357Z",
+    "category": 210,
+    "tags": ["CLO", "Rendering", "Colorway", "Contest", "Blender", "Photoshop", "Unity", "Substance", "MarvelousDesigner", "CLO-SET"]
+  },
+  {
+    "id": "3903d7631d4245ec9b73dc79b72e3e14",
+    "url": "https://connect.clo-set.com/community/post/3903d7631d4245ec9b73dc79b72e3e14",
+    "title": "Animation not syncing up after 200 frames",
+    "content": "Hey guys,\n\ni have an issue where my cached animation doesnt sync up after 200 frames. I exported an animated body from blender 5.0 as an alembic file into marvelous designer. Its 502 frames and when simulating the animation everything looks fine. However after scrubbing through the timeline it always appears as if the garment and body stop syncing up right after 200 frames. Any help would be appreciated!:)  \n(screenshot shows right before 200 where its still synced up and after 200 where the body clips through the animated garment)  \n![3c8b84130f6344d9b310c1919908e46a](https://storagefiles.clo-set.com/public/community/202601/3903d7631d4245ec9b73dc79b72e3e14/images/3c8b84130f6344d9b310c1919908e46aimage.png)![d279f178bc4b4798996149b629401a3d](https://storagefiles.clo-set.com/public/community/202601/3903d7631d4245ec9b73dc79b72e3e14/images/d279f178bc4b4798996149b629401a3dimage.png)\n\n\n### Community Post Comments:\nComment 1: If the position of 200frame is about the center, you should check if there is an invisible avatar.\nReply 1: It doesnt show any additional avatars when I hide and unhide all avatars in the viewport\nReply 2: Or maybe you should check if there are other hidden objects too!If you continue to have difficulties, please send me a file and an e-mail at \"kdband12@naver.com\" and I'll help you check it",
+    "content_description": "This webpage aims to seek assistance for resolving a synchronization issue between an animated body and garment in Marvelous Designer after 200 frames of an Alembic-exported animation from Blender.",
+    "source": "Connect Community",
+    "created_at": "2026-01-03T15:17:04.337Z",
+    "category": 220,
+    "tags": ["MarvelousDesigner", "Blender", "Animation", "Simulation"]
+  },
+  {
+    "id": "cec54a57bd5e4cb086b9c876f0ff5c5d",
+    "url": "https://connect.clo-set.com/community/post/cec54a57bd5e4cb086b9c876f0ff5c5d",
+    "title": "Register Pose/Animation",
+    "content": "Are there any workflow videos in detail for this Register Pose/Animation? As I am unable to register for the pose. Searched the manual and online; there are not many details available.  \nworkflow from DAZ3d to MD\n\n  \nThanks\n\n  \n\n",
+    "content_description": "\"Explore detailed workflow videos for registering poses and animations from DAZ3D to Marvelous Designer, addressing common challenges and providing step-by-step guidance.\"",
+    "source": "Connect Community",
+    "created_at": "2026-01-03T04:16:41.587Z",
+    "category": 210,
+    "tags": ["MarvelousDesigner"]
+  }
+]

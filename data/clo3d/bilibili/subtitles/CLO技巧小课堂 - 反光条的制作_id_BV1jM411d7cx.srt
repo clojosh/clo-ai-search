@@ -1,0 +1,252 @@
+1
+00:00:00,000 --> 00:00:09,000
+How to make a backlight strip in Clover?
+
+2
+00:00:09,000 --> 00:00:22,000
+First, add a name line to the place where the backlight strip needs to be added.
+
+3
+00:00:22,000 --> 00:00:29,000
+Then modify the name line type to text.
+
+4
+00:00:29,000 --> 00:00:34,000
+Here you can see the name line text.
+
+5
+00:00:34,000 --> 00:00:40,000
+Next, make a backlight strip text in PS.
+
+6
+00:00:40,000 --> 00:00:50,000
+The size of the text is set to 100x200 pixels.
+
+7
+00:00:50,000 --> 00:00:55,000
+The resolution is 300.
+
+8
+00:00:55,000 --> 00:00:59,000
+You can find some pictures with texture.
+
+9
+00:00:59,000 --> 00:01:06,000
+Or you can directly scan the material as a texture.
+
+10
+00:01:06,000 --> 00:01:16,000
+Process the interface of the texture.
+
+11
+00:01:16,000 --> 00:01:24,000
+After processing, let's save it.
+
+12
+00:01:24,000 --> 00:01:28,000
+After saving, we will add the texture of the backlight strip.
+
+13
+00:01:28,000 --> 00:01:38,000
+Add it to the name line texture.
+
+14
+00:01:38,000 --> 00:01:42,000
+Then set the strength of the backlight strip.
+
+15
+00:01:42,000 --> 00:01:44,000
+Set it to 20.
+
+16
+00:01:44,000 --> 00:01:48,000
+Use it to create a backlight strip.
+
+17
+00:01:48,000 --> 00:01:54,000
+Next, set the material to metal.
+
+18
+00:01:54,000 --> 00:01:57,000
+Then adjust the roughness of the surface.
+
+19
+00:01:57,000 --> 00:02:02,000
+Set it to 40.
+
+20
+00:02:02,000 --> 00:02:04,000
+The strength of the backlight is 100.
+
+21
+00:02:04,000 --> 00:02:07,000
+The metal density is set to 80.
+
+22
+00:02:07,000 --> 00:02:10,000
+Adjust the thickness of the name line.
+
+23
+00:02:10,000 --> 00:02:18,000
+Set it to 5mm.
+
+24
+00:02:18,000 --> 00:02:21,000
+Then set the thickness of the line.
+
+25
+00:02:21,000 --> 00:02:25,000
+Set it to 1cm.
+
+26
+00:02:25,000 --> 00:02:41,000
+This is the width of the backlight strip you need.
+
+27
+00:02:41,000 --> 00:02:47,000
+Next, I will explain how to add backlight strips to the curve.
+
+28
+00:02:47,000 --> 00:02:51,000
+Use the free name line to add a whole circle of name lines.
+
+29
+00:02:51,000 --> 00:02:58,000
+You can see that if you use the name line setting just now,
+
+30
+00:02:58,000 --> 00:03:02,000
+the position of the backlight strip and the thickness are incompatible.
+
+31
+00:03:02,000 --> 00:03:05,000
+So copy a name line in the canvas window.
+
+32
+00:03:05,000 --> 00:03:10,000
+Change this name line to the original name line.
+
+33
+00:03:10,000 --> 00:03:13,000
+Then open the attribute editor.
+
+34
+00:03:13,000 --> 00:03:15,000
+Then open the attribute editor.
+
+35
+00:03:15,000 --> 00:03:17,000
+Then open the attribute editor.
+
+36
+00:03:17,000 --> 00:03:28,000
+In the attribute editor, adjust the gap of the name line to 1.5mm.
+
+37
+00:03:28,000 --> 00:03:35,000
+Adjust the length of the line to 1mm.
+
+38
+00:03:35,000 --> 00:03:39,000
+Adjust the thickness of the line to 0.30mm.
+
+39
+00:03:39,000 --> 00:03:42,000
+Adjust the thickness of the line to 3mm.
+
+40
+00:03:42,000 --> 00:03:43,000
+Such a position and size,
+
+41
+00:03:43,000 --> 00:03:45,000
+such a position and size,
+
+42
+00:03:45,000 --> 00:03:48,860
+The position and size are matching for the curve line.
+
+43
+00:03:50,400 --> 00:03:54,099
+But the effect now, the texture of the line has a lot of creases.
+
+44
+00:03:55,060 --> 00:03:57,900
+So you need to use the edit line tool.
+
+45
+00:03:58,800 --> 00:04:00,139
+Select this line.
+
+46
+00:04:01,060 --> 00:04:05,060
+Open the curve and smooth in the attribute editor.
+
+47
+00:04:05,960 --> 00:04:09,439
+You can see that the backlight strip is now smooth.
+
+48
+00:04:10,259 --> 00:04:11,500
+And there are no creases.
+
+49
+00:04:11,500 --> 00:04:15,960
+Click to turn over, you can turn over the direction of the backlight strip.
+
+50
+00:04:17,899 --> 00:04:21,759
+There is a small creases at the end of the line.
+
+51
+00:04:24,300 --> 00:04:28,639
+In this case, you need to add another line to cover the creases.
+
+52
+00:04:30,800 --> 00:04:33,899
+You also need to turn it over.
+
+53
+00:04:41,500 --> 00:04:44,300
+And you can see that the whole edge is smooth.
+
+54
+00:04:45,000 --> 00:04:47,500
+Now, you can add a new line to the curve.
+
+55
+00:04:48,199 --> 00:04:51,000
+In this case, you need to add another line to the curve.
+
+56
+00:04:51,600 --> 00:04:53,300
+Click to turn over.
+
+57
+00:04:54,000 --> 00:04:55,259
+And there you have it.
+
+58
+00:04:56,459 --> 00:04:57,699
+Now, we are going to create a new line.
+
+59
+00:04:58,199 --> 00:04:59,639
+And click on the next line.
+
+60
+00:05:00,360 --> 00:05:01,800
+And we add another line to the curve.
+
+61
+00:05:02,800 --> 00:05:05,800
+You can see the line is now smooth.
+
+62
+00:05:06,660 --> 00:05:08,699
+Now, click to turn over.
+
+63
+00:05:09,399 --> 00:05:10,699
+And you can see the line is smooth.
+

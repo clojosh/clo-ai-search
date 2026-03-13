@@ -1,0 +1,464 @@
+1
+00:00:00,000 --> 00:00:12,000
+From the Marvelous Designer 2024 version, you can turn on multiple wind control devices.
+
+2
+00:00:12,000 --> 00:00:16,000
+Through this function, you can create a more diversified wind blowing environment.
+
+3
+00:00:16,000 --> 00:00:20,000
+Go to the display environment icon in the 3D window, click to display the wind control device.
+
+4
+00:00:20,000 --> 00:00:25,000
+On the right-click on the wind control device icon, select copy, you can copy a wind control device.
+
+5
+00:00:25,000 --> 00:00:34,000
+You can adjust the position of the copied wind control device, rotate and set the value according to your needs.
+
+6
+00:00:34,000 --> 00:00:37,000
+After setting, record the animation and check the effect.
+
+7
+00:00:37,000 --> 00:00:44,000
+Through multiple wind control devices, we simulated the animation effect of the jellyfish floating.
+
+8
+00:00:44,000 --> 00:00:49,000
+When creating a wind control device, open the wireless border to make it blow wind at an unlimited range.
+
+9
+00:00:49,000 --> 00:00:53,000
+If you close the wireless border, the wind blowing effect will only work within the range marked by the wind control device.
+
+10
+00:00:53,000 --> 00:00:55,000
+You can manually release the wind blowing function.
+
+11
+00:00:55,000 --> 00:01:02,000
+Through the video capture function, you can quickly capture the animation played in the 3D window and save it as a video.
+
+12
+00:01:02,000 --> 00:01:08,000
+You can find the video capture tool in the animation video capture or in the animation editor on the main menu.
+
+13
+00:01:08,000 --> 00:01:14,000
+First, go to the animation editor settings, set the animation playback area, then click the video capture button and click capture.
+
+14
+00:01:14,000 --> 00:01:18,000
+Video capture will be carried out according to the previously set playback area.
+
+15
+00:01:23,000 --> 00:01:25,000
+After opening the video capture button,
+
+16
+00:01:25,000 --> 00:01:28,000
+the video capture button will turn into a stop button.
+
+17
+00:01:28,000 --> 00:01:32,000
+Through this button, you can stop the video capture at any time.
+
+18
+00:01:32,000 --> 00:01:36,000
+After the recording is over, the video will be automatically played in the default playback software.
+
+19
+00:01:47,000 --> 00:01:53,000
+The software model simulation function can more realistically show the transformation of the model's skin tone.
+
+20
+00:01:53,000 --> 00:01:56,000
+We currently only support the default virtual model of Marvelous Designer.
+
+21
+00:01:56,000 --> 00:02:01,000
+If you need to use the software model for custom virtual models, you need to use the automatic virtual model function.
+
+22
+00:02:01,000 --> 00:02:04,000
+Later, we will introduce how to use this function for you.
+
+23
+00:02:04,000 --> 00:02:10,000
+Now, we first select the virtual model in the 3D window and go to the property editor to see the software model simulation.
+
+24
+00:02:10,000 --> 00:02:12,000
+Set the software model intensity.
+
+25
+00:02:12,000 --> 00:02:15,000
+The smaller the value, the softer the skin.
+
+26
+00:02:17,000 --> 00:02:21,000
+When activating the software model simulation, a icon will appear in the lower right corner of the 3D window.
+
+27
+00:02:21,000 --> 00:02:24,000
+This icon will remind you that it is being activated.
+
+28
+00:02:24,000 --> 00:02:29,000
+After opening the model simulation, you will see that the skin is entangled by the bandage and a little concave.
+
+29
+00:02:29,000 --> 00:02:32,000
+When the software model simulation is turned on and the animation is recorded,
+
+30
+00:02:32,000 --> 00:02:35,000
+you will see that the software model simulation will be recorded as a separate animation layer.
+
+31
+00:02:44,000 --> 00:02:47,000
+You can export this animation to the Alembic format.
+
+32
+00:02:51,000 --> 00:02:54,000
+Through the automatic virtual model simulation function,
+
+33
+00:02:54,000 --> 00:02:59,000
+you can convert the virtual model created in other software into the default virtual model in Marvelous Designer.
+
+34
+00:02:59,000 --> 00:03:03,000
+Click on the main menu, virtual model, automatic virtual model simulation.
+
+35
+00:03:03,000 --> 00:03:07,000
+Open an AVT, OBJ or FBX file in the window.
+
+36
+00:03:12,000 --> 00:03:15,000
+Select the appropriate default virtual model according to gender and age.
+
+37
+00:03:15,000 --> 00:03:18,000
+In the conversion option, you can choose to automate or self-define.
+
+38
+00:03:21,000 --> 00:03:24,000
+The MD skin type will remain the body shape of the original model.
+
+39
+00:03:24,000 --> 00:03:28,000
+The neck appearance will be converted to the default virtual model appearance and the joint points will be increased.
+
+40
+00:03:28,000 --> 00:03:34,000
+The neck bone structure will be increased on the basis of maintaining the body shape of the original model and the appearance.
+
+41
+00:03:34,000 --> 00:03:38,000
+The size and editing will change the body shape of the model and the joint points will be increased,
+
+42
+00:03:38,000 --> 00:03:45,000
+so that the model can be transformed into a virtual model that can be used as a virtual model editor to modify the virtual model in various parts of the model.
+
+43
+00:03:45,000 --> 00:03:50,000
+Click on the conversion, you will see the virtual models generated by your image in the 3D window.
+
+44
+00:03:51,000 --> 00:04:00,000
+Now your virtual model has been converted and can use the functions that Marvelous Designer default virtual models can use, such as software model simulation.
+
+45
+00:04:00,000 --> 00:04:06,000
+The Everywhere function can connect the creator's digital costume to all virtual models and digital spaces.
+
+46
+00:04:06,000 --> 00:04:13,000
+Creators can easily optimize the digital costumes made for various digital spaces in Marvelous Designer through Everywhere.
+
+47
+00:04:13,000 --> 00:04:16,000
+For example, web page optimization, UV fill, and logic preparation.
+
+48
+00:04:16,000 --> 00:04:20,000
+Please set your goal, the total number of web pages, according to your needs.
+
+49
+00:04:20,000 --> 00:04:26,000
+Click on the optimization button, your costume web page will be optimized according to the input value.
+
+50
+00:04:26,000 --> 00:04:32,000
+For the optimization of the attached or buttoned web page, please select the attached or go to the physical window to select the type of button.
+
+51
+00:04:32,000 --> 00:04:38,000
+Then go to the attribute editor, select the bottom multi-sided web page optimization function, enter the target web page number in the number.
+
+52
+00:04:38,000 --> 00:04:45,000
+Then the attached button will be optimized according to the input value.
+
+53
+00:04:45,000 --> 00:04:49,000
+Selecting plane will make it turn into a plane and display it as a sticker.
+
+54
+00:04:49,000 --> 00:04:57,000
+If you want to use the four-sided web page, please select the middle version, find the web page in the attribute editor, and select the four-sided optimization option in the drop-down menu.
+
+55
+00:04:57,000 --> 00:05:03,000
+Next is the content of the Google binding.
+
+56
+00:05:03,000 --> 00:05:06,000
+Click on the application button of the Google app under the costume label.
+
+57
+00:05:06,000 --> 00:05:08,000
+You can automatically bind the costume to Google.
+
+58
+00:05:08,000 --> 00:05:10,000
+Then there will be an update and brush button.
+
+59
+00:05:10,000 --> 00:05:15,000
+Click on the brush button to switch to the brush window so that you can adjust the Google binding.
+
+60
+00:05:15,000 --> 00:05:17,000
+Press the Ctrl key to click on a joint point.
+
+61
+00:05:17,000 --> 00:05:18,000
+You can see the joint point.
+
+62
+00:05:18,000 --> 00:05:20,000
+You can see the weight related to the joint point.
+
+63
+00:05:20,000 --> 00:05:24,000
+You can place the weight on the 2D or 3D window.
+
+64
+00:05:24,000 --> 00:05:28,000
+You can use the brush to increase, decrease, and smooth the weight.
+
+65
+00:05:28,000 --> 00:05:31,000
+You can use the brush to increase, decrease, and smooth the weight.
+
+66
+00:05:31,000 --> 00:05:41,000
+Through Shift X, you can move, rotate the joint, or load the posture to see if the costume is correctly followed by the bone, or if there is a penetrating part.
+
+67
+00:05:41,000 --> 00:05:46,000
+When you find that the costume has a hole or an intersection, you can use the sculpt brush to adjust the costume.
+
+68
+00:05:46,000 --> 00:05:48,000
+When you find that the costume has a hole or an intersection, you can use the sculpt brush to adjust the costume.
+
+69
+00:05:48,000 --> 00:05:52,000
+There are two types of mixing modes, Grinding and Smooth.
+
+70
+00:05:52,000 --> 00:05:56,000
+You can press the Ctrl-Tab key to switch to the mixing mode.
+
+71
+00:05:56,000 --> 00:05:58,000
+You can press the Ctrl-Tab key to switch to the mixing mode.
+
+72
+00:05:58,000 --> 00:06:02,000
+Go back to the Everywhere window and switch to the property bar.
+
+73
+00:06:02,000 --> 00:06:07,000
+UV fill can automatically fill the UV block to prevent overlap and quickly arrange the UV picture.
+
+74
+00:06:07,000 --> 00:06:14,000
+You can automatically fill the UV block to prevent overlap and quickly arrange the UV picture.
+
+75
+00:06:14,000 --> 00:06:22,000
+In UV Fill window, enter all the numbers and click on Use.
+
+76
+00:06:22,000 --> 00:06:26,019
+In the final, the
+
+77
+00:06:26,019 --> 00:06:30,000
+vanity cookedback function.
+
+78
+00:06:30,000 --> 00:06:36,000
+In the vanity cookedback window, choose the Macro loan sticker and the environmental light folding sticker options.
+
+79
+00:06:36,000 --> 00:06:42,000
+The amount of light radiation down the UV affippers means the levels of light in a single pixel.
+
+80
+00:06:42,000 --> 00:06:42,899
+Uh, uh, this philosophy is somehow
+
+81
+00:06:42,899 --> 00:06:43,000
+Uh, uh, this philosophy is somehow
+
+82
+00:06:43,000 --> 00:06:43,199
+uh, uh, this philosophy is somehow
+
+83
+00:06:43,199 --> 00:06:43,500
+effect
+
+84
+00:06:43,500 --> 00:06:43,519
+effect
+
+85
+00:06:43,519 --> 00:06:44,000
+effect
+
+86
+00:06:44,000 --> 00:06:49,000
+After you press the button, you can adjust the strength of the hair line sticker by clicking the slider.
+
+87
+00:06:52,000 --> 00:06:57,000
+When you are ready to upload the file to the Connect page, click the upload button in the Everywhere window.
+
+88
+00:06:57,000 --> 00:06:59,000
+After setting up the selection, click OK.
+
+89
+00:06:59,000 --> 00:07:04,000
+This file has been uploaded to Connect. You will go to the page to view it.
+
+90
+00:07:04,000 --> 00:07:07,000
+Click the FBX download button to download the FBX file.
+
+91
+00:07:07,000 --> 00:07:11,000
+Live Sync is a feature that connects Marvelous Designer to the virtual machine.
+
+92
+00:07:11,000 --> 00:07:17,000
+Through this feature, Marvelous Designer can directly import and export files to the virtual machine.
+
+93
+00:07:17,000 --> 00:07:21,000
+In the virtual machine, go to the window of the CloudAMD Live Sync Editor.
+
+94
+00:07:21,000 --> 00:07:27,000
+Click the update button to import the costume and the new model to the CloudAMD Live Sync Editor.
+
+95
+00:07:27,000 --> 00:07:33,000
+When you are sure to save the downloaded assets to the virtual machine's content browser, please select assets.
+
+96
+00:07:33,000 --> 00:07:35,000
+Then click Save Marker.
+
+97
+00:07:35,000 --> 00:07:40,000
+Select the static grid or the integrated grid that is stored by animation.
+
+98
+00:07:40,000 --> 00:07:41,000
+Then click Save Marker.
+
+99
+00:07:41,000 --> 00:07:43,000
+Click Save Marker.
+
+100
+00:07:43,000 --> 00:07:47,000
+Now the assets can be viewed in the content browser.
+
+101
+00:07:49,000 --> 00:07:52,000
+You can create the assets in the following scenarios.
+
+102
+00:08:01,000 --> 00:08:05,000
+You can also import MetalHuman to Marvelous Designer through Live Sync.
+
+103
+00:08:05,000 --> 00:08:26,779
+Nuclear
+
+104
+00:08:31,699 --> 00:08:33,000
+At the bottom of the screen, click the file icon.
+
+105
+00:08:33,000 --> 00:08:34,000
+Click Reload.
+
+106
+00:08:34,000 --> 00:08:39,500
+Click the Live Sync button in the tool bar at the top, and set it according to the option you need to click.
+
+107
+00:08:39,500 --> 00:08:46,500
+After clicking the option, the MetaHuman skeleton network with the animation will be successfully imported to Marvelous Designer.
+
+108
+00:08:50,500 --> 00:08:55,500
+The sewing wrinkle function will make it easier for you to show the details of the outfit.
+
+109
+00:08:55,500 --> 00:08:59,500
+You can create a sewing wrinkle along the outside, inside, and sewing line.
+
+110
+00:08:59,500 --> 00:09:05,000
+We can use the sewing wrinkle tool group in the 2D window to create and adjust the sewing wrinkle.
+
+111
+00:09:05,000 --> 00:09:11,500
+There are three ways to create sewing wrinkle, such as line creation, free creation, and sewing line creation.
+
+112
+00:09:11,500 --> 00:09:17,000
+After creating the sewing wrinkle in the 2D window, you can see the effect of the sewing wrinkle on the 3D costume.
+
+113
+00:09:17,000 --> 00:09:22,500
+Switch the object window to Pugrin, that is, the sewing wrinkle type window, and select a sewing wrinkle type.
+
+114
+00:09:22,500 --> 00:09:28,500
+In the attribute editor at the bottom, you can switch the preset type of sewing wrinkle, or customize the sewing wrinkle style according to your needs.
+
+115
+00:09:28,500 --> 00:09:29,500
+You can also load the custom sewing wrinkle.
+
+116
+00:09:29,500 --> 00:09:33,500
+You can also use custom sewing wrinkle as a pattern or hair sticker for the sewing wrinkle.
+

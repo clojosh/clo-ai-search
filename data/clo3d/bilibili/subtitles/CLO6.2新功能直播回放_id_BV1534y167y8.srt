@@ -1,0 +1,4564 @@
+1
+00:00:00,000 --> 00:00:08,000
+Hello everyone, I am Andy from Cloud3D.
+
+2
+00:00:08,000 --> 00:00:13,000
+Today, my colleague Nicole and I will introduce you to the new features of version 6.2.
+
+3
+00:00:13,000 --> 00:00:20,000
+The new features of version 6.2 are mainly based on four parts.
+
+4
+00:00:20,000 --> 00:00:23,000
+First, let's look at the first part.
+
+5
+00:00:23,000 --> 00:00:35,000
+First, let's look at the first part of the main update.
+
+6
+00:00:35,000 --> 00:00:38,000
+There are five functions in this part.
+
+7
+00:00:38,000 --> 00:00:47,000
+The main functions are BGN's rain costume, folding 3D costume, riding horse, replacement version, and using Colossus assets in Clo.
+
+8
+00:00:47,000 --> 00:00:52,000
+First, let's take a look at the first main function.
+
+9
+00:00:52,000 --> 00:00:53,000
+BGN's rain costume.
+
+10
+00:00:53,000 --> 00:00:55,000
+BGN's rain costume.
+
+11
+00:00:55,000 --> 00:01:03,000
+First, this function can create BGN's rain costume by setting fill and weight.
+
+12
+00:01:03,000 --> 00:01:07,000
+We can see that this is the final presentation effect.
+
+13
+00:01:07,000 --> 00:01:11,000
+You can see that.
+
+14
+00:01:11,000 --> 00:01:13,000
+First, let's go to the software interface.
+
+15
+00:01:13,000 --> 00:01:20,000
+Open the corresponding project file.
+
+16
+00:01:20,000 --> 00:01:22,000
+Double click to open.
+
+17
+00:01:22,000 --> 00:01:30,000
+This is a single-layer costume that has been created.
+
+18
+00:01:30,000 --> 00:01:34,000
+We need to copy and fill it with the layer.
+
+19
+00:01:34,000 --> 00:01:37,000
+First, let's take a look at the location of the fill tool.
+
+20
+00:01:37,000 --> 00:01:39,000
+Come to the main menu bar here.
+
+21
+00:01:39,000 --> 00:01:43,000
+Click on the 2D panel to find the last fill tool.
+
+22
+00:01:43,000 --> 00:01:44,000
+Its position is here.
+
+23
+00:01:44,000 --> 00:01:50,000
+And then we can also click on the last fill tool in the 2D window 2D tool bar.
+
+24
+00:01:50,000 --> 00:01:51,000
+Click on it.
+
+25
+00:01:51,000 --> 00:01:58,000
+Next, let's make a selection and copy of the fill tool.
+
+26
+00:01:58,000 --> 00:02:06,000
+First, we can make a selection of the fill tool by using the cross selection method.
+
+27
+00:02:06,000 --> 00:02:11,000
+In addition, I can also press the Shift key to select all the fill tools.
+
+28
+00:02:11,000 --> 00:02:14,000
+After selecting all the fill tools, the mouse will move.
+
+29
+00:02:14,000 --> 00:02:18,000
+At this time, the fill tool will move along with the light.
+
+30
+00:02:18,000 --> 00:02:24,000
+Let's click on it in the blank.
+
+31
+00:02:24,000 --> 00:02:27,000
+So, we have copied the layer layer.
+
+32
+00:02:27,000 --> 00:02:33,000
+Next, let's set the fill tool for the film.
+
+33
+00:02:33,000 --> 00:02:39,000
+First, select the fill tool for the film.
+
+34
+00:02:39,000 --> 00:02:41,000
+Press the Shift key.
+
+35
+00:02:41,000 --> 00:02:43,000
+Select the fill tool.
+
+36
+00:02:43,000 --> 00:02:46,000
+Come to the property editor here.
+
+37
+00:02:46,000 --> 00:02:48,000
+Let's look at the first column.
+
+38
+00:02:48,000 --> 00:02:50,000
+This is the fill tool category.
+
+39
+00:02:50,000 --> 00:02:52,000
+There are mainly two types of fill tools in it.
+
+40
+00:02:52,000 --> 00:02:53,000
+Press and hold.
+
+41
+00:02:53,000 --> 00:02:55,000
+Then, according to the ratio of press and hold.
+
+42
+00:02:55,000 --> 00:02:57,000
+There are a total of four options here.
+
+43
+00:02:57,000 --> 00:02:58,000
+Click on it.
+
+44
+00:02:58,000 --> 00:03:00,000
+You can see that there are four options in it.
+
+45
+00:03:00,000 --> 00:03:03,000
+You can choose one of them.
+
+46
+00:03:03,000 --> 00:03:08,000
+Click on it.
+
+47
+00:03:08,000 --> 00:03:10,000
+Next is the weight input.
+
+48
+00:03:10,000 --> 00:03:15,000
+We can enter the weight of the fill tool according to the requirements.
+
+49
+00:03:15,000 --> 00:03:17,000
+So, here you have to pay attention.
+
+50
+00:03:17,000 --> 00:03:20,000
+When we select multiple sheets to set the total weight of the fill tool,
+
+51
+00:03:20,000 --> 00:03:25,000
+the fill tool weight of each sheet is assigned according to the ratio of the area.
+
+52
+00:03:25,000 --> 00:03:28,000
+Next, let's come to the width of the air vent.
+
+53
+00:03:28,000 --> 00:03:31,000
+Enter the width of the air vent.
+
+54
+00:03:31,000 --> 00:03:33,000
+Here you have to pay attention.
+
+55
+00:03:33,000 --> 00:03:36,000
+If the air vent line is a regular equal distance,
+
+56
+00:03:36,000 --> 00:03:38,000
+you can enter the number directly.
+
+57
+00:03:38,000 --> 00:03:42,000
+If it is irregular, you need to enter the maximum width of the air vent line.
+
+58
+00:03:42,000 --> 00:03:46,000
+Because the fill tool size is calculated according to the weight of the fill tool and the width of the air vent.
+
+59
+00:03:47,000 --> 00:03:50,000
+We enter Enter.
+
+60
+00:03:50,000 --> 00:03:54,000
+Next, let's set the fill tool for other sheets.
+
+61
+00:03:54,000 --> 00:03:58,000
+Select the front and rear sheets.
+
+62
+00:03:58,000 --> 00:04:04,000
+Here you have to enter the weight and the width of the air vent.
+
+63
+00:04:04,000 --> 00:04:12,000
+Enter the weight of the fill tool and the width of the air vent.
+
+64
+00:04:12,000 --> 00:04:15,000
+Here you have to input the weight of the fill tool.
+
+65
+00:04:15,000 --> 00:04:30,000
+And here we set the weight of each sheet according to the requirements of the agreement class.
+
+66
+00:04:30,000 --> 00:04:44,000
+After the input is completed, we can set the horizontal line of the sheet according to the actual effect of the Yulong Fu.
+
+67
+00:04:44,000 --> 00:04:55,000
+First of all, we first lock the external line of the sheet and select all the horizontal lines.
+
+68
+00:04:55,000 --> 00:05:02,000
+Come to the data editor, open the horizontal line and enter 97 as the ratio value.
+
+69
+00:05:02,000 --> 00:05:05,000
+Because this one of mine needs to set the horizontal line.
+
+70
+00:05:05,000 --> 00:05:11,000
+Then after setting the horizontal line, click directly to simulate.
+
+71
+00:05:11,000 --> 00:05:13,000
+You can see that at this time,
+
+72
+00:05:13,000 --> 00:05:16,000
+according to our fill size, an automatic fill is carried out.
+
+73
+00:05:16,000 --> 00:05:23,000
+After the simulation is stable, we change the model's posture to a vertical one.
+
+74
+00:05:43,000 --> 00:05:53,000
+After the simulation is stable, we turn off the simulation.
+
+75
+00:05:53,000 --> 00:05:57,000
+Then we enlarge the sleeve of the horizontal part.
+
+76
+00:05:57,000 --> 00:06:03,000
+Because we are here to demonstrate the operation of the horizontal line.
+
+77
+00:06:03,000 --> 00:06:10,000
+After we enlarge here,
+
+78
+00:06:10,000 --> 00:06:15,000
+click the fill tool.
+
+79
+00:06:15,000 --> 00:06:20,000
+We first turn off the previously set lock sheet external line.
+
+80
+00:06:20,000 --> 00:06:22,000
+Come to the sleeve here.
+
+81
+00:06:22,000 --> 00:06:25,000
+We click the horizontal line.
+
+82
+00:06:25,000 --> 00:06:29,000
+At this time, the horizontal line is changed from purple to gray.
+
+83
+00:06:29,000 --> 00:06:34,000
+At this time, we simulate.
+
+84
+00:06:34,000 --> 00:06:36,000
+Oh, maybe some students feel that the sound is a little small, right?
+
+85
+00:06:36,000 --> 00:06:38,000
+Then I will make the sound a little louder.
+
+86
+00:06:38,000 --> 00:06:48,000
+Is the sound a little louder now?
+
+87
+00:06:48,000 --> 00:06:56,000
+Is the sound louder now?
+
+88
+00:06:56,000 --> 00:06:58,000
+Okay, I will continue to talk.
+
+89
+00:06:58,000 --> 00:07:01,000
+Okay, I will continue to talk.
+
+90
+00:07:01,000 --> 00:07:02,000
+I will continue to talk.
+
+91
+00:07:02,000 --> 00:07:07,000
+At this time, we can see that we have changed the horizontal line here from purple to gray.
+
+92
+00:07:07,000 --> 00:07:09,000
+At this time, we can see that we have changed the horizontal line here from purple to gray.
+
+93
+00:07:09,000 --> 00:07:11,000
+Then I simulate.
+
+94
+00:07:11,000 --> 00:07:13,000
+Pay attention to the horizontal line of the 3D window here.
+
+95
+00:07:13,000 --> 00:07:16,000
+Is the original horizontal mark gone?
+
+96
+00:07:16,000 --> 00:07:23,000
+That is to say, at this time, the inside and outside layers of this place have been eliminated.
+
+97
+00:07:23,000 --> 00:07:27,000
+So how to restore its horizontal line?
+
+98
+00:07:27,000 --> 00:07:30,000
+We are still using the fill tool.
+
+99
+00:07:30,000 --> 00:07:34,000
+Click the horizontal line here on the sleeve.
+
+100
+00:07:34,000 --> 00:07:36,000
+Let it change from gray to purple.
+
+101
+00:07:36,000 --> 00:07:40,000
+Then we can see that our horizontal line has been restored in the 3D window.
+
+102
+00:07:40,000 --> 00:07:42,000
+Then I simulate.
+
+103
+00:07:42,000 --> 00:07:50,000
+Then at this time, the inside and outside layers of this place have become normal.
+
+104
+00:07:50,000 --> 00:07:53,000
+Then we simulate it to stabilize it.
+
+105
+00:07:53,000 --> 00:07:56,000
+You can see that this is the final effect.
+
+106
+00:07:56,000 --> 00:08:01,000
+Then next, we need to select the outer layer of the panel frame.
+
+107
+00:08:01,000 --> 00:08:02,000
+Come to the parameter editor.
+
+108
+00:08:02,000 --> 00:08:04,000
+Let's see the last function.
+
+109
+00:08:04,000 --> 00:08:06,000
+This function is the real horizontal line.
+
+110
+00:08:06,000 --> 00:08:10,000
+If you want your horizontal line to show a kind of V-shaped effect,
+
+111
+00:08:10,000 --> 00:08:12,000
+we can open it.
+
+112
+00:08:12,000 --> 00:08:14,000
+Pay attention to the effect of the 3D window.
+
+113
+00:08:14,000 --> 00:08:20,000
+After opening it, you can see the change in the 3D window.
+
+114
+00:08:20,000 --> 00:08:24,000
+Then we simulate it and add details.
+
+115
+00:08:24,000 --> 00:08:29,000
+Its final presentation effect is the same as my file.
+
+116
+00:08:29,000 --> 00:08:31,000
+I can take a look.
+
+117
+00:08:31,000 --> 00:08:33,000
+This is the final effect.
+
+118
+00:08:36,000 --> 00:08:39,000
+Let's rotate it.
+
+119
+00:08:39,000 --> 00:08:40,000
+Look at the different angles.
+
+120
+00:08:40,000 --> 00:08:42,000
+Then zoom in.
+
+121
+00:08:42,000 --> 00:08:44,000
+Look at its details.
+
+122
+00:08:44,000 --> 00:08:50,000
+This is the final effect made by a fill tool.
+
+123
+00:08:50,000 --> 00:08:53,000
+Then we can take a look at the following.
+
+124
+00:08:53,000 --> 00:08:55,000
+We can take a look at the following.
+
+125
+00:08:55,000 --> 00:08:58,000
+The same fill object, the same width of the horizontal line.
+
+126
+00:08:58,000 --> 00:09:00,000
+Different weight fill effect comparison.
+
+127
+00:09:00,000 --> 00:09:03,000
+First of all, the first group of photos is 90% goose feather.
+
+128
+00:09:03,000 --> 00:09:04,000
+The horizontal line is 7 centimeters.
+
+129
+00:09:04,000 --> 00:09:05,000
+The weight is 100 grams.
+
+130
+00:09:05,000 --> 00:09:06,000
+In the case of 100 grams,
+
+131
+00:09:06,000 --> 00:09:12,000
+a real and virtual fill effect comparison.
+
+132
+00:09:12,000 --> 00:09:15,000
+Then the second group is a fill effect comparison with a weight of 60 grams.
+
+133
+00:09:15,000 --> 00:09:17,000
+You can take a look.
+
+134
+00:09:17,000 --> 00:09:19,000
+Is the effect more obvious?
+
+135
+00:09:19,000 --> 00:09:21,000
+Then let's look at the third group of photos.
+
+136
+00:09:21,000 --> 00:09:24,000
+This group of pictures shows a comparison effect
+
+137
+00:09:24,000 --> 00:09:27,000
+after the real horizontal line is closed and opened.
+
+138
+00:09:27,000 --> 00:09:30,000
+You can see that after opening the real sewing line,
+
+139
+00:09:30,000 --> 00:09:35,000
+its performance is closer to the real one.
+
+140
+00:09:35,000 --> 00:09:38,000
+You can see that after opening the real sewing line,
+
+141
+00:09:38,000 --> 00:09:41,000
+its performance is closer to the real one.
+
+142
+00:09:41,000 --> 00:09:43,000
+Then let's take a look at the second function.
+
+143
+00:09:43,000 --> 00:09:45,000
+Fold 3D clothing.
+
+144
+00:09:45,000 --> 00:09:48,000
+The main purpose of this function is to fold 3D clothing.
+
+145
+00:09:48,000 --> 00:09:55,000
+First of all, let's open the corresponding project file in the software interface.
+
+146
+00:09:55,000 --> 00:09:56,000
+Double click to open.
+
+147
+00:09:56,000 --> 00:09:57,000
+Double click to open.
+
+148
+00:09:57,000 --> 00:09:59,000
+Double click to open.
+
+149
+00:09:59,000 --> 00:10:00,000
+Double click to open.
+
+150
+00:10:00,000 --> 00:10:01,000
+Double click to open.
+
+151
+00:10:01,000 --> 00:10:02,000
+Double click to open.
+
+152
+00:10:02,000 --> 00:10:03,000
+Double click to open.
+
+153
+00:10:03,000 --> 00:10:04,000
+Double click to open.
+
+154
+00:10:04,000 --> 00:10:05,000
+Double click to open.
+
+155
+00:10:05,000 --> 00:10:06,000
+Double click to open.
+
+156
+00:10:06,000 --> 00:10:07,000
+Double click to open.
+
+157
+00:10:07,000 --> 00:10:08,000
+Double click to open.
+
+158
+00:10:08,000 --> 00:10:09,000
+Double click to open.
+
+159
+00:10:09,000 --> 00:10:10,000
+Double click to open.
+
+160
+00:10:10,000 --> 00:10:11,000
+Double click to open.
+
+161
+00:10:11,000 --> 00:10:12,000
+Double click to open.
+
+162
+00:10:12,000 --> 00:10:13,000
+Double click to open.
+
+163
+00:10:13,000 --> 00:10:14,000
+Double click to open.
+
+164
+00:10:14,000 --> 00:10:15,000
+Double click to open.
+
+165
+00:10:15,000 --> 00:10:16,000
+Double click to open.
+
+166
+00:10:16,000 --> 00:10:17,000
+Double click to open.
+
+167
+00:10:17,000 --> 00:10:18,000
+Double click to open.
+
+168
+00:10:18,000 --> 00:10:19,000
+Double click to open.
+
+169
+00:10:19,000 --> 00:10:20,000
+Double click to open.
+
+170
+00:10:20,000 --> 00:10:21,000
+Double click to open.
+
+171
+00:10:21,000 --> 00:10:22,000
+Double click to open.
+
+172
+00:10:22,000 --> 00:10:23,000
+Double click to open.
+
+173
+00:10:23,000 --> 00:10:24,000
+Double click to open.
+
+174
+00:10:24,000 --> 00:10:25,000
+Double click to open.
+
+175
+00:10:25,000 --> 00:10:26,000
+Double click to open.
+
+176
+00:10:26,000 --> 00:10:27,000
+Double click to open.
+
+177
+00:10:27,000 --> 00:10:28,000
+Double click to open.
+
+178
+00:10:28,000 --> 00:10:29,000
+Double click to open.
+
+179
+00:10:29,000 --> 00:10:30,000
+Double click to open.
+
+180
+00:10:30,000 --> 00:10:31,000
+Double click to open.
+
+181
+00:10:31,000 --> 00:10:32,000
+Double click to open.
+
+182
+00:10:32,000 --> 00:10:33,000
+Double click to open.
+
+183
+00:10:33,000 --> 00:10:37,000
+The upper corner will pop up a window with a foldable 3D costume.
+
+184
+00:10:37,000 --> 00:10:40,000
+There are seven tools in it.
+
+185
+00:10:40,000 --> 00:10:42,000
+Let's take a look at them one by one.
+
+186
+00:10:42,000 --> 00:10:45,000
+The first tool is to rotate the X-axis.
+
+187
+00:10:45,000 --> 00:10:51,000
+This tool can rotate the 3D costume 90 degrees around the X-axis.
+
+188
+00:10:51,000 --> 00:10:58,000
+And it can also place the costume in the office into the center of the ground.
+
+189
+00:10:58,000 --> 00:11:03,000
+Let's adjust the angle to the office angle.
+
+190
+00:11:03,000 --> 00:11:06,000
+The second tool is to rotate the level.
+
+191
+00:11:06,000 --> 00:11:11,000
+This tool can place the costume face down.
+
+192
+00:11:11,000 --> 00:11:15,000
+Because this is a foldable 3D costume, it doesn't need to face down.
+
+193
+00:11:15,000 --> 00:11:19,000
+So I'll click it again to restore its original shape.
+
+194
+00:11:19,000 --> 00:11:25,000
+Let's take a look at the third tool to optimize the quality of the costume.
+
+195
+00:11:25,000 --> 00:11:28,000
+This tool is used to effectively fold 3D costumes.
+
+196
+00:11:28,000 --> 00:11:29,000
+Take a look at this.
+
+197
+00:11:29,000 --> 00:11:35,000
+The distance between the particles and the thickness of the board is applied by the optimization value.
+
+198
+00:11:35,000 --> 00:11:38,000
+The default value of the particle diameter is 10.
+
+199
+00:11:38,000 --> 00:11:39,000
+The thickness of the board is 2.5.
+
+200
+00:11:39,000 --> 00:11:42,000
+You can also change the number according to your needs.
+
+201
+00:11:42,000 --> 00:11:53,000
+After you've changed it, click OK.
+
+202
+00:11:53,000 --> 00:11:57,000
+Let's take a look at the fourth tool.
+
+203
+00:11:57,000 --> 00:11:58,000
+It's called the X-axis.
+
+204
+00:11:58,000 --> 00:12:00,000
+This tool is used to apply parallel modeling.
+
+205
+00:12:00,000 --> 00:12:05,000
+This tool is mainly used to set the right physical properties for the costume.
+
+206
+00:12:05,000 --> 00:12:09,000
+It displays 3D costumes on the ground.
+
+207
+00:12:09,000 --> 00:12:14,000
+After clicking it, let's simulate it.
+
+208
+00:12:14,000 --> 00:12:19,000
+As you can see, the clothes are flat and the fold on the surface has been reduced.
+
+209
+00:12:19,000 --> 00:12:22,000
+In the process of simulation, we can slightly stretch the pants.
+
+210
+00:12:22,000 --> 00:12:25,000
+Let it have a certain distance between the two pants.
+
+211
+00:12:25,000 --> 00:12:27,000
+It's convenient for us to fold the back.
+
+212
+00:12:28,000 --> 00:12:38,000
+After the simulation is stable, stop the simulation.
+
+213
+00:12:38,000 --> 00:12:41,000
+Then we come to the fifth tool.
+
+214
+00:12:41,000 --> 00:12:42,000
+Folding.
+
+215
+00:12:42,000 --> 00:12:45,000
+Appliance folding simulation.
+
+216
+00:12:45,000 --> 00:12:48,000
+Of course, we can take a look at the bottom of the view.
+
+217
+00:12:48,000 --> 00:12:50,000
+It has a state of parallel modeling.
+
+218
+00:12:50,000 --> 00:12:55,000
+It's in this state.
+
+219
+00:12:55,000 --> 00:12:56,000
+And then what's next?
+
+220
+00:12:56,000 --> 00:12:57,000
+We use the folding simulation tool.
+
+221
+00:12:57,000 --> 00:13:00,000
+Click it.
+
+222
+00:13:00,000 --> 00:13:04,000
+This tool is also used to set the right physical properties for the costume.
+
+223
+00:13:04,000 --> 00:13:06,000
+Folding the 3D costume.
+
+224
+00:13:06,000 --> 00:13:10,000
+It can make the costume more flat.
+
+225
+00:13:10,000 --> 00:13:13,000
+We can also look at it from a different perspective.
+
+226
+00:13:13,000 --> 00:13:21,000
+Its effect.
+
+227
+00:13:21,000 --> 00:13:26,000
+If we say that at this time we saw that a certain version was not flat enough.
+
+228
+00:13:26,000 --> 00:13:30,000
+Then we can switch the tool back to the application screen simulation.
+
+229
+00:13:30,000 --> 00:13:33,000
+And then come to the pants here.
+
+230
+00:13:33,000 --> 00:13:35,000
+Select the non-flat version.
+
+231
+00:13:35,000 --> 00:13:39,000
+Select the non-flat version.
+
+232
+00:13:39,000 --> 00:13:41,000
+It can select multiple at the same time.
+
+233
+00:13:41,000 --> 00:13:44,000
+Then simulate.
+
+234
+00:13:44,000 --> 00:13:49,000
+In this way, it will make the non-flat version flat.
+
+235
+00:13:49,000 --> 00:13:54,000
+Reduce the fold on its surface.
+
+236
+00:13:54,000 --> 00:13:57,000
+Notice that after we stabilize it,
+
+237
+00:13:57,000 --> 00:14:00,000
+we must apply the folding simulation at this time.
+
+238
+00:14:00,000 --> 00:14:03,000
+Make the costume more flat.
+
+239
+00:14:03,000 --> 00:14:04,000
+After applying the screen simulation,
+
+240
+00:14:04,000 --> 00:14:10,000
+we must apply the folding simulation to make it more flat.
+
+241
+00:14:10,000 --> 00:14:13,000
+After stabilizing, we switch to the 3D simulation.
+
+242
+00:14:13,000 --> 00:14:18,000
+Then we will start to apply the folding tool to fold the pants.
+
+243
+00:14:18,000 --> 00:14:20,000
+We will use the two tools at the back.
+
+244
+00:14:20,000 --> 00:14:23,000
+Folding tool and folding selection.
+
+245
+00:14:23,000 --> 00:14:25,000
+First, we fold the pants.
+
+246
+00:14:25,000 --> 00:14:30,000
+The tool we use is the folding selection tool.
+
+247
+00:14:30,000 --> 00:14:36,000
+After selecting the tool, select the pants.
+
+248
+00:14:36,000 --> 00:14:38,000
+Note that at this time,
+
+249
+00:14:38,000 --> 00:14:39,000
+after selecting the pants,
+
+250
+00:14:39,000 --> 00:14:40,000
+be sure to click enter.
+
+251
+00:14:40,000 --> 00:14:42,000
+Then draw the folding line.
+
+252
+00:14:42,000 --> 00:14:43,000
+When drawing the folding line,
+
+253
+00:14:43,000 --> 00:14:44,000
+at the starting point,
+
+254
+00:14:44,000 --> 00:14:45,000
+single click,
+
+255
+00:14:45,000 --> 00:14:46,000
+the end point,
+
+256
+00:14:46,000 --> 00:14:47,000
+double click,
+
+257
+00:14:47,000 --> 00:14:50,000
+complete the folding line.
+
+258
+00:14:50,000 --> 00:14:52,000
+Then in the output,
+
+259
+00:14:52,000 --> 00:14:56,000
+we will fold the bottom up.
+
+260
+00:14:56,000 --> 00:15:03,000
+Simulate.
+
+261
+00:15:03,000 --> 00:15:04,000
+After the simulation is stabilized,
+
+262
+00:15:04,000 --> 00:15:06,000
+we stop the simulation.
+
+263
+00:15:06,000 --> 00:15:11,000
+Next, we start to fold the other pants.
+
+264
+00:15:11,000 --> 00:15:12,000
+Again,
+
+265
+00:15:12,000 --> 00:15:13,000
+click enter,
+
+266
+00:15:13,000 --> 00:15:14,000
+then the end point,
+
+267
+00:15:14,000 --> 00:15:16,000
+double click.
+
+268
+00:15:16,000 --> 00:15:17,000
+Note that at this point,
+
+269
+00:15:17,000 --> 00:15:19,000
+when we select the version,
+
+270
+00:15:19,000 --> 00:15:21,000
+if you are not able to
+
+271
+00:15:21,000 --> 00:15:22,000
+select,
+
+272
+00:15:22,000 --> 00:15:23,000
+for example,
+
+273
+00:15:23,000 --> 00:15:24,000
+the following version is not easy to select,
+
+274
+00:15:24,000 --> 00:15:27,000
+then we can directly come to the 2D window
+
+275
+00:15:27,000 --> 00:15:29,000
+to make a selection of the version.
+
+276
+00:15:29,000 --> 00:15:31,000
+After selecting the version,
+
+277
+00:15:31,000 --> 00:15:32,000
+be sure to click enter.
+
+278
+00:15:32,000 --> 00:15:34,000
+Then draw the folding line.
+
+279
+00:15:34,000 --> 00:15:35,000
+After that,
+
+280
+00:15:35,000 --> 00:15:40,000
+we still click on the simulation.
+
+281
+00:15:40,000 --> 00:15:45,000
+Next,
+
+282
+00:15:45,000 --> 00:15:50,000
+we need to match the position of the pants.
+
+283
+00:15:50,000 --> 00:15:51,000
+Next,
+
+284
+00:15:51,000 --> 00:15:53,000
+we need to fold the pants.
+
+285
+00:15:53,000 --> 00:15:55,000
+We use the folding tool.
+
+286
+00:15:55,000 --> 00:16:00,000
+This tool can fold all the pants.
+
+287
+00:16:00,000 --> 00:16:02,000
+Note that when we draw the folding line,
+
+288
+00:16:02,000 --> 00:16:04,000
+we can press the Shift key
+
+289
+00:16:04,000 --> 00:16:08,000
+to draw a straight folding line.
+
+290
+00:16:08,000 --> 00:16:11,000
+If you are not satisfied with your folding line,
+
+291
+00:16:11,000 --> 00:16:12,000
+for example,
+
+292
+00:16:12,000 --> 00:16:13,000
+it is not straight,
+
+293
+00:16:13,000 --> 00:16:14,000
+or it is slanted,
+
+294
+00:16:14,000 --> 00:16:17,000
+we can directly press the ESC key on the keyboard
+
+295
+00:16:17,000 --> 00:16:19,000
+to create the folding line.
+
+296
+00:16:19,000 --> 00:16:20,000
+Then,
+
+297
+00:16:20,000 --> 00:16:22,000
+we can delete the folding line.
+
+298
+00:16:22,000 --> 00:16:23,000
+Then,
+
+299
+00:16:23,000 --> 00:16:29,000
+we need to draw a new one.
+
+300
+00:16:29,000 --> 00:16:34,000
+We fold this version from left to right.
+
+301
+00:16:34,000 --> 00:16:35,000
+Then,
+
+302
+00:16:35,000 --> 00:16:45,000
+we simulate it.
+
+303
+00:16:45,000 --> 00:16:46,000
+Next,
+
+304
+00:16:46,000 --> 00:16:48,000
+we start to make a last fold.
+
+305
+00:16:48,000 --> 00:16:49,000
+A fold.
+
+306
+00:16:49,000 --> 00:16:51,000
+We still use the folding tool.
+
+307
+00:16:51,000 --> 00:16:59,000
+Draw the folding line from the bottom to the top.
+
+308
+00:16:59,000 --> 00:17:17,000
+We simulate it.
+
+309
+00:17:17,000 --> 00:17:18,000
+Finally,
+
+310
+00:17:18,000 --> 00:17:25,000
+After the simulation is stable, we will click on the tool and turn it over.
+
+311
+00:17:25,000 --> 00:17:34,000
+The original position is facing down, so let it face up and turn it over.
+
+312
+00:17:34,000 --> 00:17:38,000
+At this time, we will switch the tool to the tool of selection.
+
+313
+00:17:38,000 --> 00:17:47,000
+Select all the panels and place it in the correct position.
+
+314
+00:17:47,000 --> 00:17:53,000
+We will adjust the angle to the side.
+
+315
+00:17:53,000 --> 00:18:01,000
+Then we will proceed to the last step, which is to improve its quality.
+
+316
+00:18:01,000 --> 00:18:09,000
+At this time, click on the high quality attribute button and click on the simulation.
+
+317
+00:18:09,000 --> 00:18:15,000
+We can see a change.
+
+318
+00:18:15,000 --> 00:18:17,000
+You can see that in the high quality simulation,
+
+319
+00:18:17,000 --> 00:18:27,000
+the clothing folding will be better than before.
+
+320
+00:18:27,000 --> 00:18:33,000
+This is the last step of our folding.
+
+321
+00:18:33,000 --> 00:18:37,000
+When the simulation is stable, we will turn off the simulation.
+
+322
+00:18:37,000 --> 00:18:43,000
+We can adjust the angle to the side and enlarge it.
+
+323
+00:18:43,000 --> 00:18:45,000
+Finally, we will check the folding effect.
+
+324
+00:18:47,000 --> 00:18:54,000
+This is the final folding effect of the jeans.
+
+325
+00:18:54,000 --> 00:18:59,000
+Next, let's look at the third function, the horse.
+
+326
+00:18:59,000 --> 00:19:04,000
+The main function of this function is to switch the horse and simulate it.
+
+327
+00:19:04,000 --> 00:19:07,000
+The simulation state of each horse will be automatically saved.
+
+328
+00:19:07,000 --> 00:19:15,000
+Let's go to the software interface and open the sound project file.
+
+329
+00:19:15,000 --> 00:19:20,000
+Open the software interface.
+
+330
+00:19:20,000 --> 00:19:27,000
+Double click to open it.
+
+331
+00:19:27,000 --> 00:19:33,000
+You can see that this is a link group with horse information.
+
+332
+00:19:33,000 --> 00:19:37,000
+Let's go to the house window and click on the horse button.
+
+333
+00:19:37,000 --> 00:19:41,000
+This is a link group with three sizes of SML.
+
+334
+00:19:41,000 --> 00:19:43,000
+First of all, we first match each size with the virtual model.
+
+335
+00:19:43,000 --> 00:19:48,000
+Let's go to SML.
+
+336
+00:19:48,000 --> 00:19:52,000
+Let's match the virtual model first.
+
+337
+00:19:52,000 --> 00:19:56,000
+We want to click on the 3D model on the right side.
+
+338
+00:19:56,000 --> 00:19:59,000
+Click on this button.
+
+339
+00:19:59,000 --> 00:20:03,000
+Then select the virtual model corresponding to our SML and open it.
+
+340
+00:20:03,000 --> 00:20:08,000
+After matching, remember to simulate it.
+
+341
+00:20:08,000 --> 00:20:12,000
+At this time, after the simulation is stable,
+
+342
+00:20:12,000 --> 00:20:14,000
+we turn off the simulation.
+
+343
+00:20:14,000 --> 00:20:21,000
+At this time, our simulation state is automatically saved.
+
+344
+00:20:21,000 --> 00:20:24,000
+Similarly, let's switch the size to M.
+
+345
+00:20:24,000 --> 00:20:28,000
+Of course, it is to match the 3D model.
+
+346
+00:20:28,000 --> 00:20:32,000
+Select the virtual model corresponding to it and open it.
+
+347
+00:20:32,000 --> 00:20:35,000
+Be sure to simulate.
+
+348
+00:20:35,000 --> 00:20:38,000
+This is the final simulation state of the M size.
+
+349
+00:20:42,000 --> 00:20:44,000
+Finally, it is the L size.
+
+350
+00:20:44,000 --> 00:20:51,000
+Note that this part is the same operation.
+
+351
+00:20:51,000 --> 00:20:56,000
+After matching the virtual model,
+
+352
+00:20:56,000 --> 00:20:58,000
+be sure to simulate.
+
+353
+00:20:58,000 --> 00:21:01,000
+After we have completed the simulation of all three sizes,
+
+354
+00:21:01,000 --> 00:21:03,000
+we come to the size section.
+
+355
+00:21:03,000 --> 00:21:05,000
+Click on the size.
+
+356
+00:21:05,000 --> 00:21:08,000
+After we have completed the simulation of all three sizes,
+
+357
+00:21:08,000 --> 00:21:10,000
+we come to the size section.
+
+358
+00:21:10,000 --> 00:21:11,000
+Click on the size.
+
+359
+00:21:11,000 --> 00:21:13,000
+After we have completed the simulation,
+
+360
+00:21:13,000 --> 00:21:14,000
+we come back to the size section.
+
+361
+00:21:14,000 --> 00:21:18,000
+After we have completed the simulation,
+
+362
+00:21:18,000 --> 00:21:20,000
+we come to the size section.
+
+363
+00:21:20,000 --> 00:21:33,779
+We can see the wear state of the three different sizes of the
+
+364
+00:21:33,779 --> 00:21:36,779
+stereo group.
+
+365
+00:21:36,779 --> 00:21:39,880
+In the following, we look at the fourth main update function,
+
+366
+00:21:39,880 --> 00:21:41,000
+change the panel.
+
+367
+00:21:41,000 --> 00:21:43,700
+and replace it in the form of a specific version.
+
+368
+00:21:43,700 --> 00:21:48,839
+Let's use this link group as an example.
+
+369
+00:21:48,839 --> 00:22:05,059
+Let's go to the software interface and break down the project file of this link group.
+
+370
+00:22:05,059 --> 00:22:21,119
+After breaking down the project file, we will import the modified DXF version file into the software.
+
+371
+00:22:21,119 --> 00:22:31,119
+Double click, then add, then click confirm.
+
+372
+00:22:35,059 --> 00:22:42,059
+You can see that we are going to replace the front and back group and the sleeve version.
+
+373
+00:22:42,059 --> 00:22:48,059
+We first select the front group, right-click, then copy it down.
+
+374
+00:22:48,059 --> 00:22:51,059
+You can also press Ctrl and C on the keyboard.
+
+375
+00:22:51,059 --> 00:22:59,059
+Then come to the original version, right-click, and click on the replace version.
+
+376
+00:22:59,059 --> 00:23:03,059
+So our full group version is replaced.
+
+377
+00:23:03,059 --> 00:23:05,059
+Next, let's replace one.
+
+378
+00:23:05,059 --> 00:23:07,059
+This is the back group version.
+
+379
+00:23:07,059 --> 00:23:11,059
+Still select the back group version, copy it down.
+
+380
+00:23:11,059 --> 00:23:15,059
+Then come to the original version of our back group.
+
+381
+00:23:15,059 --> 00:23:20,059
+Be careful, because our back group is divided into two versions on the left and right sides.
+
+382
+00:23:20,059 --> 00:23:25,059
+But because these two versions are linked versions, we only need to replace one of them.
+
+383
+00:23:25,059 --> 00:23:28,059
+Then the other version will also be replaced.
+
+384
+00:23:28,059 --> 00:23:33,059
+Replace it, you can see that the other version is also replaced.
+
+385
+00:23:33,059 --> 00:23:35,059
+Then the next is the sleeve.
+
+386
+00:23:35,059 --> 00:23:40,059
+Same principle, just replace one of them.
+
+387
+00:23:40,059 --> 00:23:44,059
+After replacing, move the position.
+
+388
+00:23:44,059 --> 00:23:48,059
+We can see a state after replacing the version in the 3D window.
+
+389
+00:23:48,059 --> 00:24:04,059
+Now we delete the excess
+
+390
+00:24:04,059 --> 00:24:12,059
+Notice that the sleeve is replaced from the horn to the leg
+
+391
+00:24:12,059 --> 00:24:18,059
+For this, we need to arrange the pattern
+
+392
+00:24:21,059 --> 00:24:23,059
+First, let's look at the sewing line
+
+393
+00:24:24,059 --> 00:24:30,059
+Because the pattern is retained after replacement, we don't need to sew it again
+
+394
+00:24:33,059 --> 00:24:36,059
+Let's arrange the sleeve pattern
+
+395
+00:24:36,059 --> 00:24:44,059
+This is to make the pattern more stable
+
+396
+00:24:45,059 --> 00:24:48,059
+After arranging, let's model it directly
+
+397
+00:25:06,059 --> 00:25:20,059
+This is to make the pattern more stable
+
+398
+00:25:21,059 --> 00:25:24,059
+This is to make the pattern more stable
+
+399
+00:25:25,059 --> 00:25:28,059
+Let's enlarge the sleeve pattern
+
+400
+00:25:29,059 --> 00:25:33,059
+The original pattern is retained
+
+401
+00:25:34,059 --> 00:25:35,059
+Let's look at the back
+
+402
+00:25:36,059 --> 00:25:38,059
+The sleeve pattern is retained
+
+403
+00:25:41,059 --> 00:25:44,059
+In addition, there are some other information
+
+404
+00:25:45,059 --> 00:25:53,059
+Here, we can see that the replacement information mainly includes the position of the straight line, the curve line, the cut-out base line, the name and number of the pattern, and the information of the pattern
+
+405
+00:25:54,059 --> 00:26:02,059
+The information of the original pattern is retained, such as the sewing line, the pattern pattern, the sticker, the fabric, the name line, and the fold, and finally the button
+
+406
+00:26:04,059 --> 00:26:05,059
+Note that
+
+407
+00:26:05,059 --> 00:26:10,059
+When you are replacing the pattern, you must pay attention to the number of straight lines
+
+408
+00:26:11,059 --> 00:26:13,059
+Only when the number of straight lines is the same can you replace the pattern
+
+409
+00:26:14,059 --> 00:26:20,059
+So when we are adjusting the pattern, we must keep the number of straight lines constant
+
+410
+00:26:23,059 --> 00:26:25,059
+This is the function of replacing the pattern
+
+411
+00:26:26,059 --> 00:26:30,059
+The fifth function is to use the asset in the cloud
+
+412
+00:26:31,059 --> 00:26:34,059
+This function can be downloaded and downloaded in the cloud
+
+413
+00:26:35,059 --> 00:26:38,059
+We can easily find the digitized content uploaded to the cloud
+
+414
+00:26:39,059 --> 00:26:40,059
+Let's reopen the cloud software
+
+415
+00:26:41,059 --> 00:26:44,059
+Open the cloud site icon in the storage window
+
+416
+00:26:45,059 --> 00:26:49,059
+Because if we want to use the cloud asset in the cloud software
+
+417
+00:26:50,059 --> 00:26:53,059
+We need to connect the cloud to the cloud site platform account
+
+418
+00:26:54,059 --> 00:26:56,059
+So our operation is
+
+419
+00:26:57,059 --> 00:27:01,059
+First of all, we have to find the cloud site account button in the upper right corner of the top
+
+420
+00:27:02,059 --> 00:27:03,059
+Click on it
+
+421
+00:27:03,059 --> 00:27:05,059
+Then go to the cloud site account
+
+422
+00:27:06,059 --> 00:27:08,059
+Come to the login interface of the cloud site platform
+
+423
+00:27:14,059 --> 00:27:17,059
+After coming to the interface, enter the account and password of the login
+
+424
+00:27:22,059 --> 00:27:24,059
+Then click on login
+
+425
+00:27:27,059 --> 00:27:30,059
+So we use this account to log into our cloud site platform
+
+426
+00:27:30,059 --> 00:27:32,059
+Return to the interface
+
+427
+00:27:32,059 --> 00:27:34,059
+Return to our cloud software interface
+
+428
+00:27:35,059 --> 00:27:41,059
+You can see that our account is directly added to the window of our cloud software
+
+429
+00:27:47,059 --> 00:27:48,059
+After the account is added
+
+430
+00:27:48,059 --> 00:27:53,059
+Then we need to add some cloud asset to this account
+
+431
+00:28:00,059 --> 00:28:04,059
+We still come to the cloud site platform
+
+432
+00:28:15,059 --> 00:28:17,059
+Click on all companies
+
+433
+00:28:17,059 --> 00:28:21,059
+This is where you will find all kinds of companies
+
+434
+00:28:21,059 --> 00:28:24,059
+We click on a company
+
+435
+00:28:25,059 --> 00:28:27,059
+Then below the company is a variety of brands
+
+436
+00:28:27,059 --> 00:28:29,059
+We choose one of them
+
+437
+00:28:30,059 --> 00:28:33,059
+We come to the interface of the studio
+
+438
+00:28:33,059 --> 00:28:35,059
+There are all kinds of studios in it
+
+439
+00:28:35,059 --> 00:28:38,059
+Let's open the first women's studio
+
+440
+00:28:44,059 --> 00:28:48,059
+You can see that there are all kinds of women's styles in it
+
+441
+00:28:51,059 --> 00:28:55,059
+If I want to take some of the ones in it
+
+442
+00:28:55,059 --> 00:28:58,059
+For example, I want to have one
+
+443
+00:28:58,059 --> 00:28:59,059
+I can click on it
+
+444
+00:28:59,059 --> 00:29:00,059
+I can click on it
+
+445
+00:29:00,059 --> 00:29:02,059
+I can go directly to the cloud site platform
+
+446
+00:29:02,059 --> 00:29:04,059
+Take a look at this one
+
+447
+00:29:07,059 --> 00:29:09,059
+You can also rotate it in different directions
+
+448
+00:29:09,059 --> 00:29:10,059
+To check
+
+449
+00:29:11,059 --> 00:29:13,059
+Let's go back to the women's studio
+
+450
+00:29:15,059 --> 00:29:16,059
+In here
+
+451
+00:29:16,059 --> 00:29:19,059
+We will do a collection of some of them
+
+452
+00:29:27,059 --> 00:29:28,059
+In its upper right corner
+
+453
+00:29:28,059 --> 00:29:29,059
+Click on the collection
+
+454
+00:29:32,059 --> 00:29:34,059
+Here we choose three
+
+455
+00:29:40,059 --> 00:29:42,059
+Then we come to the studio
+
+456
+00:29:45,059 --> 00:29:47,059
+We open another studio
+
+457
+00:29:47,059 --> 00:29:48,059
+Zhenzhi studio
+
+458
+00:29:53,059 --> 00:29:55,059
+When I came to the studio
+
+459
+00:29:55,059 --> 00:29:56,059
+Take a look at its content
+
+460
+00:29:56,059 --> 00:29:58,059
+I found that this whole studio
+
+461
+00:29:58,059 --> 00:30:00,059
+I want to collect it
+
+462
+00:30:00,059 --> 00:30:01,059
+I can click
+
+463
+00:30:03,059 --> 00:30:04,059
+You can browse
+
+464
+00:30:04,059 --> 00:30:08,059
+We can click on the collection button above
+
+465
+00:30:08,059 --> 00:30:09,059
+Click on it
+
+466
+00:30:09,059 --> 00:30:10,059
+After the collection
+
+467
+00:30:10,059 --> 00:30:12,059
+We come to the collection shelf on the left window
+
+468
+00:30:12,059 --> 00:30:14,059
+In here
+
+469
+00:30:14,059 --> 00:30:15,059
+We can check
+
+470
+00:30:15,059 --> 00:30:17,059
+The studio we collected
+
+471
+00:30:17,059 --> 00:30:18,059
+And the collection style
+
+472
+00:30:23,059 --> 00:30:25,059
+Go back to the cloud software interface
+
+473
+00:30:25,059 --> 00:30:27,059
+Pay attention to our operation in the cloud site
+
+474
+00:30:27,059 --> 00:30:29,059
+After the operation is done
+
+475
+00:30:29,059 --> 00:30:30,059
+Be sure to click refresh
+
+476
+00:30:30,059 --> 00:30:32,059
+Be sure to click refresh in the cloud software
+
+477
+00:30:32,059 --> 00:30:34,059
+At this time you can see the Zhenzhi studio
+
+478
+00:30:34,059 --> 00:30:36,059
+It was directly appeared by us
+
+479
+00:30:36,059 --> 00:30:38,059
+At the window of the library
+
+480
+00:30:38,059 --> 00:30:39,059
+We double-click to open
+
+481
+00:30:41,059 --> 00:30:42,059
+Here we can
+
+482
+00:30:42,059 --> 00:30:43,059
+In the browser window
+
+483
+00:30:43,059 --> 00:30:46,059
+View all the content in the Zhenzhi studio
+
+484
+00:30:52,059 --> 00:30:53,059
+In addition
+
+485
+00:30:53,059 --> 00:30:55,059
+The three women's clothes we just collected
+
+486
+00:30:55,059 --> 00:30:56,059
+Can be in the favorite contents
+
+487
+00:30:56,059 --> 00:30:57,059
+In the favorite contents
+
+488
+00:30:57,059 --> 00:30:59,059
+Make a browse
+
+489
+00:31:02,059 --> 00:31:03,059
+If we want to
+
+490
+00:31:03,059 --> 00:31:05,059
+To download one of them
+
+491
+00:31:05,059 --> 00:31:07,059
+We can put the mouse in the middle
+
+492
+00:31:07,059 --> 00:31:09,059
+Click on the download button in the middle
+
+493
+00:31:10,059 --> 00:31:12,059
+Just click
+
+494
+00:31:13,059 --> 00:31:14,059
+After it is downloaded
+
+495
+00:31:14,059 --> 00:31:16,059
+This clothing will be directly lit
+
+496
+00:31:16,059 --> 00:31:18,059
+The oil will turn dark
+
+497
+00:31:18,059 --> 00:31:20,059
+No, the oil will turn bright
+
+498
+00:31:21,059 --> 00:31:22,059
+If you want to choose at the same time
+
+499
+00:31:22,059 --> 00:31:24,059
+Reload multiple project files at the same time
+
+500
+00:31:24,059 --> 00:31:25,059
+You can choose
+
+501
+00:31:25,059 --> 00:31:26,059
+In the upper left corner
+
+502
+00:31:26,059 --> 00:31:27,059
+Click on the hook
+
+503
+00:31:27,059 --> 00:31:29,059
+Then click on the download button in the upper right corner
+
+504
+00:31:29,059 --> 00:31:33,059
+Just download these project files directly
+
+505
+00:31:38,059 --> 00:31:39,059
+After the download is complete
+
+506
+00:31:39,059 --> 00:31:41,059
+We can double-click one of the styles
+
+507
+00:31:42,059 --> 00:31:44,059
+Take it to the cloud software
+
+508
+00:31:45,059 --> 00:31:46,059
+In the cloud software
+
+509
+00:31:46,059 --> 00:31:47,059
+We do a survey of it
+
+510
+00:31:47,059 --> 00:31:48,059
+We do a survey of it
+
+511
+00:31:51,059 --> 00:31:53,059
+This is what we downloaded in the cloud site
+
+512
+00:31:53,059 --> 00:31:54,059
+The downloaded project file
+
+513
+00:31:54,059 --> 00:31:55,059
+In the cloud site
+
+514
+00:31:55,059 --> 00:31:56,059
+We downloaded the download file
+
+515
+00:31:56,059 --> 00:31:58,059
+And then we have the download file
+
+516
+00:31:58,059 --> 00:31:59,059
+All right
+
+517
+00:31:59,059 --> 00:32:01,059
+Then we're going to
+
+518
+00:32:01,059 --> 00:32:02,059
+Return to the cloud site
+
+519
+00:32:02,059 --> 00:32:03,059
+In the platform
+
+520
+00:32:03,059 --> 00:32:05,059
+If there is one of them
+
+521
+00:32:05,059 --> 00:32:06,059
+I want to cancel the collection of it
+
+522
+00:32:06,059 --> 00:32:08,059
+Pay attention
+
+523
+00:32:09,059 --> 00:32:11,059
+We must click refresh
+
+524
+00:32:11,059 --> 00:32:12,059
+Click refresh
+
+525
+00:32:12,059 --> 00:32:14,059
+Then come back to the favorite contents
+
+526
+00:32:14,059 --> 00:32:15,059
+You can see
+
+527
+00:32:15,059 --> 00:32:17,059
+Click
+
+528
+00:32:17,059 --> 00:32:18,059
+You can see
+
+529
+00:32:18,059 --> 00:32:20,059
+The one I just canceled
+
+530
+00:32:20,059 --> 00:32:21,059
+The collection of that style
+
+531
+00:32:21,059 --> 00:32:22,059
+Has not appeared in the browser
+
+532
+00:32:22,059 --> 00:32:23,059
+It has not appeared in the browser
+
+533
+00:32:23,059 --> 00:32:35,059
+If we want to know where our downloaded files are in the system, we can right-click and then click on the copy path.
+
+534
+00:32:35,059 --> 00:32:41,059
+Come to the system here and paste the copied path into the system address bar.
+
+535
+00:32:41,059 --> 00:32:43,059
+Enter.
+
+536
+00:32:43,059 --> 00:32:47,059
+So this is the project file we just downloaded.
+
+537
+00:32:47,059 --> 00:33:05,059
+If we want to delete the account we added, we can still right-click on the Closet account and click on the delete button.
+
+538
+00:33:05,059 --> 00:33:14,059
+This way, we can delete our account directly from the library window.
+
+539
+00:33:14,059 --> 00:33:16,059
+Thank you.
+
+540
+00:33:17,059 --> 00:33:24,059
+This is the Closet and the Closet account linked operation.
+
+541
+00:33:24,059 --> 00:33:27,059
+Then we come to the second part, the mode.
+
+542
+00:33:27,059 --> 00:33:29,059
+There are two modes in it.
+
+543
+00:33:29,059 --> 00:33:32,059
+One is the print and release mode.
+
+544
+00:33:32,059 --> 00:33:34,059
+The other is the check the code mode.
+
+545
+00:33:34,059 --> 00:33:40,059
+First, let's look at the print and release mode.
+
+546
+00:33:40,059 --> 00:33:42,059
+Let's go to the software interface.
+
+547
+00:33:42,059 --> 00:33:46,059
+Open the project file.
+
+548
+00:33:46,059 --> 00:33:47,059
+Open the project file.
+
+549
+00:33:47,059 --> 00:33:56,059
+Let's go to the print and release mode.
+
+550
+00:33:56,059 --> 00:34:02,059
+After opening the project file, we will switch the mode to print and release mode.
+
+551
+00:34:02,059 --> 00:34:05,059
+Then we come to the interface of print and release mode.
+
+552
+00:34:05,059 --> 00:34:10,059
+You can see that the interface of print and release mode has been completely updated.
+
+553
+00:34:10,059 --> 00:34:14,059
+And on the right side, it adds six tools.
+
+554
+00:34:14,059 --> 00:34:16,059
+These six tools are...
+
+555
+00:34:16,059 --> 00:34:18,059
+Replace.
+
+556
+00:34:18,059 --> 00:34:19,059
+Publish.
+
+557
+00:34:19,059 --> 00:34:25,059
+Stop publishing.
+
+558
+00:34:25,059 --> 00:34:27,059
+Also, Publish setting.
+
+559
+00:34:27,059 --> 00:34:28,059
+Reset.
+
+560
+00:34:28,059 --> 00:34:30,059
+Delete additional publishing pages.
+
+561
+00:34:30,059 --> 00:34:32,059
+Reset default arrangement and quick address.
+
+562
+00:34:32,059 --> 00:34:34,059
+These six tools.
+
+563
+00:34:35,059 --> 00:34:37,059
+Let's first look at the first one, Publish.
+
+564
+00:34:37,059 --> 00:34:41,059
+This tool is mainly to publish the version in the fabric in an effective way.
+
+565
+00:34:41,059 --> 00:34:42,059
+Let's click.
+
+566
+00:34:42,059 --> 00:34:44,059
+We can see that the progress bar of the print is up and down.
+
+567
+00:34:44,059 --> 00:34:48,059
+This is a demonstration of the progress.
+
+568
+00:34:48,059 --> 00:34:54,059
+In the process of arranging, we can click on any time point to stop the arrangement.
+
+569
+00:34:54,059 --> 00:34:58,059
+This tool allows us to wait for the arrangement to be completed.
+
+570
+00:34:58,059 --> 00:35:04,059
+We can stop the arrangement at any time point to save the arrangement time.
+
+571
+00:35:09,059 --> 00:35:11,059
+This is the function of this tool.
+
+572
+00:35:14,059 --> 00:35:18,059
+Next, let's look at the third one, Arrangement Settings.
+
+573
+00:35:18,059 --> 00:35:20,059
+Click on it.
+
+574
+00:35:22,059 --> 00:35:26,059
+After clicking on it, we can go directly to the property editor.
+
+575
+00:35:26,059 --> 00:35:31,059
+First, we can set the current number of arrangements.
+
+576
+00:35:35,059 --> 00:35:40,059
+For example, for large-scale production, you can enter the number of arrangements you want to arrange in the number column.
+
+577
+00:35:40,059 --> 00:35:43,059
+In addition, if your clothing has a QR code,
+
+578
+00:35:43,059 --> 00:35:48,059
+and you want to arrange all the sizes,
+
+579
+00:35:48,059 --> 00:35:50,059
+we can choose Grading.
+
+580
+00:35:50,059 --> 00:35:53,059
+Click on it.
+
+581
+00:35:55,059 --> 00:35:58,059
+Next, select all the sizes.
+
+582
+00:35:58,059 --> 00:36:01,059
+When you are arranging, you can arrange all the sizes.
+
+583
+00:36:01,059 --> 00:36:05,059
+Of course, we only choose the current settings for this kind of clothing.
+
+584
+00:36:05,059 --> 00:36:08,059
+Then, for the current clothing,
+
+585
+00:36:08,059 --> 00:36:11,059
+we can arrange three clothes.
+
+586
+00:36:13,059 --> 00:36:17,059
+So, I choose three clothes.
+
+587
+00:36:17,059 --> 00:36:19,059
+In addition, in the color section below,
+
+588
+00:36:19,059 --> 00:36:23,059
+you can arrange all the colors.
+
+589
+00:36:23,059 --> 00:36:25,059
+Here, we can also make a choice.
+
+590
+00:36:25,059 --> 00:36:27,059
+For example, all the colors.
+
+591
+00:36:27,059 --> 00:36:30,059
+Then, there is also the current style.
+
+592
+00:36:30,059 --> 00:36:33,059
+You can only arrange the current style.
+
+593
+00:36:33,059 --> 00:36:37,059
+In addition, I can also make a custom choice.
+
+594
+00:36:37,059 --> 00:36:41,059
+The custom choice is to click on the button on the right to select the color.
+
+595
+00:36:41,059 --> 00:36:42,059
+Click on it.
+
+596
+00:36:42,059 --> 00:36:45,059
+In the color selection window,
+
+597
+00:36:45,059 --> 00:36:52,059
+we can choose the color you want to arrange.
+
+598
+00:36:52,059 --> 00:36:58,059
+After selecting, we can click on OK.
+
+599
+00:36:58,059 --> 00:37:01,059
+Then, the next one is the direction of thinking.
+
+600
+00:37:01,059 --> 00:37:03,059
+Currently, there are two options.
+
+601
+00:37:03,059 --> 00:37:05,059
+There are one way and two way.
+
+602
+00:37:05,059 --> 00:37:07,059
+First, the first one way means
+
+603
+00:37:07,059 --> 00:37:10,059
+to arrange the clothes in the same direction along the original pattern.
+
+604
+00:37:10,059 --> 00:37:12,059
+And the second way means to arrange the clothes in the same direction along the original pattern.
+
+605
+00:37:12,059 --> 00:37:16,059
+For the third way means to change the pattern in the opposite direction.
+
+606
+00:37:16,059 --> 00:37:20,059
+You can arrange the clothes in the best state.
+
+607
+00:37:20,059 --> 00:37:22,059
+Let's choose.
+
+608
+00:37:22,059 --> 00:37:29,059
+In my case, I choose the second way.
+
+609
+00:37:29,059 --> 00:37:35,059
+I click on the button to choose the second way.
+
+610
+00:37:35,059 --> 00:37:37,059
+Next, we can choose the pattern between the clothes.
+
+611
+00:37:37,059 --> 00:37:38,059
+When you arrange,
+
+612
+00:37:38,059 --> 00:37:41,059
+and the distance between the panels.
+
+613
+00:37:41,059 --> 00:37:43,059
+I enter 0.2 here.
+
+614
+00:37:46,059 --> 00:37:48,059
+In the information column below,
+
+615
+00:37:48,059 --> 00:37:51,059
+we can make a choice according to our needs.
+
+616
+00:37:55,059 --> 00:37:58,059
+We can also check the width and height of the plant.
+
+617
+00:37:58,059 --> 00:38:01,059
+Here we can also check the material rate of our material.
+
+618
+00:38:01,059 --> 00:38:04,059
+Check the consumption and residual amount of the material.
+
+619
+00:38:04,059 --> 00:38:06,059
+In the area column,
+
+620
+00:38:06,059 --> 00:38:11,059
+it can display the area area of the panel and the remaining area area.
+
+621
+00:38:13,059 --> 00:38:15,059
+After we have set everything up,
+
+622
+00:38:15,059 --> 00:38:17,059
+we directly click on the panel layout.
+
+623
+00:38:17,059 --> 00:38:20,059
+This is a layout based on our settings.
+
+624
+00:38:25,059 --> 00:38:28,059
+Then you can see that the progress bar below is from bottom to top.
+
+625
+00:38:28,059 --> 00:38:29,059
+Pay attention at this time.
+
+626
+00:38:29,059 --> 00:38:32,059
+If the progress bar is one step ahead,
+
+627
+00:38:32,059 --> 00:38:34,059
+then the layout will be calculated at this time.
+
+628
+00:38:34,059 --> 00:38:36,059
+Everyone pay attention to this.
+
+629
+00:38:36,059 --> 00:38:38,059
+Of course, in the process of layout,
+
+630
+00:38:38,059 --> 00:38:40,059
+in order to save the layout time,
+
+631
+00:38:40,059 --> 00:38:43,059
+I can click here to redo the layout.
+
+632
+00:38:51,059 --> 00:38:52,059
+Then,
+
+633
+00:38:52,059 --> 00:38:55,059
+the layout of our three-piece clothing
+
+634
+00:38:55,059 --> 00:38:57,059
+will be generated.
+
+635
+00:38:58,059 --> 00:39:00,059
+Then we come to the water-based machine.
+
+636
+00:39:00,059 --> 00:39:03,059
+Here we can check the consumption and residual amount of the material
+
+637
+00:39:03,059 --> 00:39:05,059
+of our three-piece clothing.
+
+638
+00:39:06,059 --> 00:39:07,059
+Again,
+
+639
+00:39:07,059 --> 00:39:09,059
+I can move the formula to we see.
+
+640
+00:39:09,059 --> 00:39:10,059
+You can see one two three four.
+
+641
+00:39:10,059 --> 00:39:12,059
+Then we can check it over here.
+
+642
+00:39:12,059 --> 00:39:14,159
+Here we can see that we areisa
+
+643
+00:39:14,159 --> 00:39:15,679
+from the current point of view of our upgrade and
+
+644
+00:39:15,679 --> 00:39:17,059
+that the estimate costs in the omega-3
+
+645
+00:39:17,059 --> 00:39:18,059
+in this area,
+
+646
+00:39:18,059 --> 00:39:21,059
+but as a bonus for the upper-right alerativeber einmal,
+
+647
+00:39:21,059 --> 00:39:23,480
+we can move on here to the first high-tex area.
+
+648
+00:39:23,480 --> 00:39:24,320
+Let's click
+
+649
+00:39:31,099 --> 00:39:34,760
+You can see that we have already uploaded the version, right?
+
+650
+00:39:34,760 --> 00:39:38,900
+And then the next tool is called Rearrange default arrangement
+
+651
+00:39:38,900 --> 00:39:40,340
+Let's click
+
+652
+00:39:40,340 --> 00:39:46,880
+This tool is mainly to restore the original state of the version
+
+653
+00:39:53,480 --> 00:39:59,659
+If I want to save the current layout state, I can click on the last tool, quick photo
+
+654
+00:40:01,039 --> 00:40:03,719
+It will pop up a window with 2D quick photo
+
+655
+00:40:03,719 --> 00:40:07,099
+In the left column, we can set the size of the quick photo
+
+656
+00:40:07,099 --> 00:40:09,559
+And its unit and resolution, etc.
+
+657
+00:40:13,880 --> 00:40:18,719
+The option on the right is to make it display information
+
+658
+00:40:18,719 --> 00:40:20,840
+You can make a choice for display information
+
+659
+00:40:20,840 --> 00:40:22,579
+After choosing, just click Save
+
+660
+00:40:23,480 --> 00:40:27,199
+You can see that the app will show you a list of all the apps that you can use
+
+661
+00:40:27,199 --> 00:40:29,360
+You can also see the list of apps that you can use
+
+662
+00:40:29,360 --> 00:40:31,360
+You can also see the list of apps that you can use
+
+663
+00:40:31,360 --> 00:40:34,360
+This is the app that we use to display information
+
+664
+00:40:34,360 --> 00:40:37,760
+Next, let's look at the second mode, the check the size mode
+
+665
+00:40:37,760 --> 00:40:45,199
+The main function of this function is that it can compare the effects of different sizes of clothes on the same screen
+
+666
+00:40:45,199 --> 00:40:48,699
+Let's go to the software interface
+
+667
+00:40:48,699 --> 00:40:51,860
+Open a project file that contains the size of the item
+
+668
+00:40:53,480 --> 00:41:00,960
+In this project file, the size of the item is the size of the color of the clothing
+
+669
+00:41:00,960 --> 00:41:03,619
+Let's change the mode and simulate the model first
+
+670
+00:41:03,619 --> 00:41:11,699
+Let's change the mode and simulate the model first
+
+671
+00:41:11,699 --> 00:41:14,780
+This is a file that we still need to set the size
+
+672
+00:41:14,780 --> 00:41:21,240
+Then, in the number, you can see that it is a group of 3 sizes with a size of sml
+
+673
+00:41:21,240 --> 00:41:23,320
+Then we will
+
+674
+00:41:23,320 --> 00:41:30,320
+Let's change the mode to checkerboard.
+
+675
+00:41:30,320 --> 00:41:34,320
+Let's zoom in a little bit.
+
+676
+00:41:34,320 --> 00:41:43,320
+The new function is on the top right corner.
+
+677
+00:41:43,320 --> 00:41:47,320
+The first one is the display on the surface of the clothing.
+
+678
+00:41:47,320 --> 00:41:49,320
+The second one is the picture of Sichuan.
+
+679
+00:41:49,320 --> 00:41:52,320
+The third one is the virtual model.
+
+680
+00:41:52,320 --> 00:41:54,320
+Let's take a look at the first one separately.
+
+681
+00:41:54,320 --> 00:41:56,320
+First, let's look at the display on the surface of the clothing.
+
+682
+00:41:56,320 --> 00:42:01,320
+It includes the thick texture surface, black and white surface, semi-transparent surface and grid.
+
+683
+00:42:01,320 --> 00:42:03,320
+Let's click on the semi-transparent surface.
+
+684
+00:42:03,320 --> 00:42:06,320
+We can check the size of these three.
+
+685
+00:42:06,320 --> 00:42:20,320
+The size of these three is a gap between the clothing and virtual model.
+
+686
+00:42:20,320 --> 00:42:22,320
+Then change the texture to the thick texture.
+
+687
+00:42:22,320 --> 00:42:27,320
+Next, let's look at the second one, the picture of Sichuan.
+
+688
+00:42:27,320 --> 00:42:29,320
+There are two options here.
+
+689
+00:42:29,320 --> 00:42:32,320
+One is the pressure picture and the other is the hardness picture.
+
+690
+00:42:32,320 --> 00:42:36,320
+Let's click on the pressure picture first.
+
+691
+00:42:36,320 --> 00:42:44,320
+At this time, we can see a comparison of the pressure of the three clothes.
+
+692
+00:42:44,320 --> 00:42:45,320
+Click on the hardness picture.
+
+693
+00:42:45,320 --> 00:42:48,320
+We can see a comparison of the hardness of the three sizes.
+
+694
+00:42:48,320 --> 00:42:50,320
+Click on the hardness picture.
+
+695
+00:42:52,320 --> 00:42:55,320
+Click on the hardness picture.
+
+696
+00:42:55,320 --> 00:42:57,320
+Click on the hardness picture.
+
+697
+00:42:57,320 --> 00:42:59,320
+Click on the hardness picture.
+
+698
+00:42:59,320 --> 00:43:01,320
+Click on the hardness picture.
+
+699
+00:43:01,320 --> 00:43:03,320
+Then turn off the pressure picture.
+
+700
+00:43:03,320 --> 00:43:06,320
+Let's have a look at the third one, the display on the virtual model.
+
+701
+00:43:06,320 --> 00:43:08,320
+There are three options here.
+
+702
+00:43:08,320 --> 00:43:11,320
+Click on the left button to select.
+
+703
+00:43:11,320 --> 00:43:14,320
+There are the texture surface, black and white surface and grid.
+
+704
+00:43:14,320 --> 00:43:17,320
+For example, I choose black and white surface here.
+
+705
+00:43:17,320 --> 00:43:20,320
+You can see that the virtual model becomes this white display.
+
+706
+00:43:20,320 --> 00:43:24,320
+To restore the original, we can click on the text on the surface.
+
+707
+00:43:24,320 --> 00:43:29,320
+This is an application to check the code.
+
+708
+00:43:29,320 --> 00:43:33,320
+Next, we will come to the third part, material.
+
+709
+00:43:33,320 --> 00:43:35,320
+This part contains four functions.
+
+710
+00:43:35,320 --> 00:43:37,320
+The first one is the printing cloth.
+
+711
+00:43:37,320 --> 00:43:41,320
+The second one is the option to open the file information of the object.
+
+712
+00:43:41,320 --> 00:43:44,320
+And the skin to increase the reflection.
+
+713
+00:43:44,320 --> 00:43:49,320
+And the application of a function called Loggia.
+
+714
+00:43:49,320 --> 00:43:55,320
+Let's take a look at the first one, printing cloth.
+
+715
+00:43:55,320 --> 00:44:01,320
+This function is mainly to add three new options to the repeat type of the print image.
+
+716
+00:44:01,320 --> 00:44:03,320
+Let's go to the cloud software.
+
+717
+00:44:03,320 --> 00:44:06,320
+Open the corresponding project file.
+
+718
+00:44:15,320 --> 00:44:19,320
+We want to add print to the bottom of this orange.
+
+719
+00:44:19,320 --> 00:44:24,320
+Go directly to the object window.
+
+720
+00:44:24,320 --> 00:44:31,320
+Click on the add print on the right side.
+
+721
+00:44:31,320 --> 00:44:38,320
+Select the print image and open it.
+
+722
+00:44:38,320 --> 00:44:42,320
+In this way, our print image is added to our material.
+
+723
+00:44:42,320 --> 00:44:44,320
+Next, we will come to...
+
+724
+00:44:44,320 --> 00:44:48,320
+Note that the print is selected at this time.
+
+725
+00:44:48,320 --> 00:44:50,320
+Let's go directly to the printer.
+
+726
+00:44:50,320 --> 00:44:52,320
+Find the repeat type.
+
+727
+00:44:52,320 --> 00:44:55,320
+Let's click on it.
+
+728
+00:44:55,320 --> 00:44:57,320
+Based on the original,
+
+729
+00:44:57,320 --> 00:45:00,320
+We have newly added the X-axis overlap,
+
+730
+00:45:00,320 --> 00:45:02,320
+Y-axis overlap and user self-identification.
+
+731
+00:45:02,320 --> 00:45:08,320
+These three functions.
+
+732
+00:45:08,320 --> 00:45:09,320
+Let's take a look first.
+
+733
+00:45:09,320 --> 00:45:11,320
+Let's choose the shape error first.
+
+734
+00:45:11,320 --> 00:45:13,320
+You can see that at this time,
+
+735
+00:45:13,320 --> 00:45:17,320
+We have a repeat type of the pattern.
+
+736
+00:45:17,320 --> 00:45:19,320
+Then click on the small triangle on the left side of the repeat type.
+
+737
+00:45:19,320 --> 00:45:28,320
+You can see its interval value.
+
+738
+00:45:28,320 --> 00:45:30,320
+Let's choose the X-axis overlap.
+
+739
+00:45:30,320 --> 00:45:34,320
+You can see the overlap type of our print image at this time.
+
+740
+00:45:34,320 --> 00:45:37,320
+You can also check its interval value.
+
+741
+00:45:37,320 --> 00:45:45,320
+There is also a Y-axis overlap.
+
+742
+00:45:45,320 --> 00:45:52,320
+If we want to self-identify to set the overlap type of the print image,
+
+743
+00:45:52,320 --> 00:45:56,320
+We can directly enter the value in it.
+
+744
+00:45:56,320 --> 00:45:58,320
+For example, I enter the negative 10 in the X-axis.
+
+745
+00:45:58,320 --> 00:46:02,320
+I enter 40 in the Y-axis.
+
+746
+00:46:02,320 --> 00:46:08,320
+In addition, I can also enter the appropriate percentage value.
+
+747
+00:46:08,320 --> 00:46:11,320
+To enter a self-identification setting.
+
+748
+00:46:15,320 --> 00:46:20,320
+Then check the final effect.
+
+749
+00:46:20,320 --> 00:46:24,320
+This is the final effect of the self-identification setting.
+
+750
+00:46:24,320 --> 00:46:26,320
+This is an application of the printing department.
+
+751
+00:46:26,320 --> 00:46:29,320
+Next, let's look at the second function.
+
+752
+00:46:29,320 --> 00:46:33,320
+The second function is the option to open the property file information.
+
+753
+00:46:33,320 --> 00:46:42,320
+This function allows you to selectively open the property information of the property.
+
+754
+00:46:42,320 --> 00:46:44,320
+Let's go to the software interface.
+
+755
+00:46:44,320 --> 00:46:48,320
+Open the corresponding project file.
+
+756
+00:46:48,320 --> 00:47:01,320
+Double click to open.
+
+757
+00:47:01,320 --> 00:47:05,320
+We want to operate it on the body.
+
+758
+00:47:05,320 --> 00:47:06,320
+We come to the property window.
+
+759
+00:47:06,320 --> 00:47:09,320
+Select the fabric of its body.
+
+760
+00:47:09,320 --> 00:47:13,320
+Then right-click to find the open selection material.
+
+761
+00:47:13,320 --> 00:47:17,320
+Click on the fabric prepared in advance.
+
+762
+00:47:17,320 --> 00:47:18,320
+Select.
+
+763
+00:47:18,320 --> 00:47:21,320
+Then open.
+
+764
+00:47:21,320 --> 00:47:25,320
+At this time, it will pop up a window that opens the fabric.
+
+765
+00:47:25,320 --> 00:47:27,320
+Here, pay attention.
+
+766
+00:47:27,320 --> 00:47:30,320
+We can see that it is divided into front, back and side.
+
+767
+00:47:30,320 --> 00:47:35,320
+We can selectively open all three parts of it.
+
+768
+00:47:35,320 --> 00:47:39,320
+Let's use the front as an example.
+
+769
+00:47:39,320 --> 00:47:41,320
+If we want to select all its properties.
+
+770
+00:47:41,320 --> 00:47:42,320
+We can click directly.
+
+771
+00:47:42,320 --> 00:47:54,320
+If we only want to select a few of them, we can select a few of them.
+
+772
+00:47:54,320 --> 00:47:58,320
+For example, here I chose the color, texture and line drawing.
+
+773
+00:47:58,320 --> 00:48:00,320
+Next is the physical properties.
+
+774
+00:48:00,320 --> 00:48:06,320
+If you need its physical properties, you can click on it.
+
+775
+00:48:06,320 --> 00:48:08,320
+Then select and confirm.
+
+776
+00:48:08,320 --> 00:48:09,320
+You can see my fabric.
+
+777
+00:48:09,320 --> 00:48:11,320
+Is its texture, color and texture applied?
+
+778
+00:48:11,320 --> 00:48:13,320
+It applies to the properties I just selected.
+
+779
+00:48:13,320 --> 00:48:18,320
+Then we create a new fabric.
+
+780
+00:48:18,320 --> 00:48:23,320
+Is it equivalent to the physical properties of the original fabric plus the texture and color of the new fabric?
+
+781
+00:48:23,320 --> 00:48:26,320
+With its hair line, it becomes a new fabric.
+
+782
+00:48:26,320 --> 00:48:33,320
+Then we save it directly as one kind of fabric.
+
+783
+00:48:33,320 --> 00:48:35,320
+Give it a name.
+
+784
+00:48:35,320 --> 00:48:37,320
+Then we save it directly as one kind of fabric.
+
+785
+00:48:37,320 --> 00:48:39,320
+Give it a name.
+
+786
+00:48:39,320 --> 00:48:42,320
+Give it a name.
+
+787
+00:48:42,320 --> 00:48:46,320
+In this way, we create a new fabric.
+
+788
+00:48:46,320 --> 00:48:54,320
+In addition, this feature can be used to make color models.
+
+789
+00:48:54,320 --> 00:48:57,320
+If we go to the color mode.
+
+790
+00:48:57,320 --> 00:48:58,320
+Can you see it?
+
+791
+00:48:58,320 --> 00:49:02,320
+Our function can make such color models very easily.
+
+792
+00:49:04,320 --> 00:49:07,320
+We switch the mode back to the simulation.
+
+793
+00:49:07,320 --> 00:49:10,320
+In addition, this function also has a shortcut.
+
+794
+00:49:10,320 --> 00:49:12,320
+After we select the fabric,
+
+795
+00:49:12,320 --> 00:49:15,320
+we press the control button directly,
+
+796
+00:49:15,320 --> 00:49:18,320
+drag the fabric onto the master fabric,
+
+797
+00:49:18,320 --> 00:49:21,320
+and let go.
+
+798
+00:49:21,320 --> 00:49:23,320
+After letting go,
+
+799
+00:49:23,320 --> 00:49:29,320
+it will pop up the window that opens the fabric.
+
+800
+00:49:29,320 --> 00:49:32,320
+It is still the same operation as before,
+
+801
+00:49:32,320 --> 00:49:35,320
+select the fabric, and then confirm.
+
+802
+00:49:35,320 --> 00:49:39,320
+Now let's move on to the third function,
+
+803
+00:49:39,320 --> 00:49:43,320
+which is to increase the reflection of the fabric.
+
+804
+00:49:43,320 --> 00:49:47,320
+The function of this function is
+
+805
+00:49:47,320 --> 00:49:52,320
+when the brightness of the fur is increased by 0.
+
+806
+00:49:52,320 --> 00:49:54,320
+However, it still does not meet our requirements.
+
+807
+00:49:54,320 --> 00:49:59,320
+At this point, we need to adjust the reflection of the fur.
+
+808
+00:49:59,320 --> 00:50:02,320
+Let's go to the software interface,
+
+809
+00:50:02,320 --> 00:50:04,320
+and open the project file.
+
+810
+00:50:05,320 --> 00:50:11,320
+Since the fur can only be seen in the rendering window,
+
+811
+00:50:11,320 --> 00:50:14,320
+let's open the rendering window,
+
+812
+00:50:14,320 --> 00:50:17,320
+and click on synchronize rendering.
+
+813
+00:50:21,320 --> 00:50:23,320
+In the object window,
+
+814
+00:50:23,320 --> 00:50:26,320
+select the fur in the plant section,
+
+815
+00:50:26,320 --> 00:50:29,320
+and then go to the water purifier.
+
+816
+00:50:29,320 --> 00:50:32,320
+As you can see,
+
+817
+00:50:32,320 --> 00:50:33,320
+at this time,
+
+818
+00:50:33,320 --> 00:50:35,320
+the fur part of the fur,
+
+819
+00:50:35,320 --> 00:50:36,320
+the brightness of the fur,
+
+820
+00:50:36,320 --> 00:50:38,320
+has been adjusted to 0,
+
+821
+00:50:38,320 --> 00:50:40,320
+and the brightness of the fur has also been adjusted to 0.
+
+822
+00:50:40,320 --> 00:50:42,320
+I can only adjust it,
+
+823
+00:50:42,320 --> 00:50:44,320
+but it does not meet my requirements,
+
+824
+00:50:44,320 --> 00:50:48,320
+so I need to adjust the reflection properties on it.
+
+825
+00:50:48,320 --> 00:50:52,320
+The reflection properties include the surface opacity and the reflection intensity.
+
+826
+00:50:52,320 --> 00:50:54,320
+Let's adjust it.
+
+827
+00:50:54,320 --> 00:50:59,320
+When the reflection intensity is maintained at a fixed value,
+
+828
+00:50:59,320 --> 00:51:03,320
+I will adjust the surface opacity to 100,
+
+829
+00:51:03,320 --> 00:51:04,320
+and adjust it to large.
+
+830
+00:51:04,320 --> 00:51:06,320
+You can see the final effect.
+
+831
+00:51:09,320 --> 00:51:11,320
+It will be thicker than before.
+
+832
+00:51:16,320 --> 00:51:19,320
+Then I will adjust the surface opacity to 50.
+
+833
+00:51:20,320 --> 00:51:23,320
+Then I will adjust the reflection intensity to large.
+
+834
+00:51:25,320 --> 00:51:26,320
+At this time,
+
+835
+00:51:26,320 --> 00:51:29,320
+let's look at the final effect of the rendering window.
+
+836
+00:51:30,320 --> 00:51:32,320
+Does it look like the fur at this time
+
+837
+00:51:32,320 --> 00:51:34,320
+is a little thin?
+
+838
+00:51:34,320 --> 00:51:36,320
+It's a little thin.
+
+839
+00:51:37,320 --> 00:51:41,320
+This is an application of our surface opacity and reflection intensity.
+
+840
+00:51:48,320 --> 00:51:51,320
+Next, let's look at the final rendering image.
+
+841
+00:51:52,320 --> 00:51:54,320
+The first set of photos
+
+842
+00:51:54,320 --> 00:51:57,320
+is at a value of 50 on the surface opacity of the fur,
+
+843
+00:51:57,320 --> 00:52:00,320
+and the reflection intensity is 0 and 50.
+
+844
+00:52:00,320 --> 00:52:02,320
+You can see the contrast effect.
+
+845
+00:52:05,320 --> 00:52:08,320
+The following set of photos is the reflection intensity
+
+846
+00:52:08,320 --> 00:52:10,320
+maintained at the value of 15.
+
+847
+00:52:10,320 --> 00:52:14,320
+Then the fur and roughness are 50 and 100.
+
+848
+00:52:14,320 --> 00:52:16,320
+You can see the contrast effect.
+
+849
+00:52:16,320 --> 00:52:19,320
+I adjusted two variables like this
+
+850
+00:52:19,320 --> 00:52:22,320
+to show a different effect.
+
+851
+00:52:23,320 --> 00:52:26,320
+Next, let's look at the fourth function,
+
+852
+00:52:26,320 --> 00:52:28,320
+the function of the genealogy.
+
+853
+00:52:28,320 --> 00:52:30,320
+It mainly has two functions to update.
+
+854
+00:52:30,320 --> 00:52:31,320
+The first one is that
+
+855
+00:52:31,320 --> 00:52:34,320
+the fur can be prepared together with DASHEN
+
+856
+00:52:34,320 --> 00:52:36,320
+in the UV editing mode.
+
+857
+00:52:37,320 --> 00:52:38,320
+The second function is that
+
+858
+00:52:38,320 --> 00:52:41,320
+the texture editor can be directly imported into the gene file.
+
+859
+00:52:43,320 --> 00:52:45,320
+Let's go to the software.
+
+860
+00:52:46,320 --> 00:52:47,320
+Let's go to the interface.
+
+861
+00:52:48,320 --> 00:52:50,320
+Turn off our rendering first.
+
+862
+00:52:52,320 --> 00:52:55,320
+Open our corresponding project file.
+
+863
+00:52:55,320 --> 00:53:00,320
+First, let's open the first one.
+
+864
+00:53:02,320 --> 00:53:04,320
+This is a pair of jeans.
+
+865
+00:53:04,320 --> 00:53:06,320
+Let's enlarge it.
+
+866
+00:53:07,320 --> 00:53:08,320
+At this time,
+
+867
+00:53:08,320 --> 00:53:10,320
+you can see the edge of the pocket
+
+868
+00:53:10,320 --> 00:53:11,320
+and the side seam.
+
+869
+00:53:11,320 --> 00:53:13,320
+You can see the effect of the sewing wrinkle.
+
+870
+00:53:14,320 --> 00:53:17,320
+Let's go directly to the body window.
+
+871
+00:53:17,320 --> 00:53:19,320
+Open the sewing wrinkle.
+
+872
+00:53:19,320 --> 00:53:20,320
+You can see that
+
+873
+00:53:20,320 --> 00:53:22,320
+this is the sewing wrinkle used by this pair of jeans.
+
+874
+00:53:22,320 --> 00:53:24,320
+All the effects are presented.
+
+875
+00:53:24,320 --> 00:53:25,320
+All the effects are presented.
+
+876
+00:53:26,320 --> 00:53:30,320
+Let's change the mode to the UV editing mode.
+
+877
+00:53:32,320 --> 00:53:33,320
+Note that our sewing wrinkle
+
+878
+00:53:33,320 --> 00:53:38,320
+can directly click on the sewing pattern button.
+
+879
+00:53:38,320 --> 00:53:41,320
+It will be processed in the pattern form directly.
+
+880
+00:53:43,320 --> 00:53:45,320
+This is our first function.
+
+881
+00:53:48,320 --> 00:53:50,320
+Next, let's look at the second function.
+
+882
+00:53:50,320 --> 00:53:53,320
+The second function also needs to open another file.
+
+883
+00:53:54,320 --> 00:54:00,320
+This is the reverse side of this pair of jeans.
+
+884
+00:54:01,320 --> 00:54:05,320
+We need to add a water-based JN file here.
+
+885
+00:54:06,320 --> 00:54:08,320
+In the body window,
+
+886
+00:54:08,320 --> 00:54:09,320
+select the thick pants.
+
+887
+00:54:09,320 --> 00:54:10,320
+After the fabric,
+
+888
+00:54:10,320 --> 00:54:12,320
+go directly to the water-based editor.
+
+889
+00:54:12,320 --> 00:54:14,320
+Open the text editor.
+
+890
+00:54:18,320 --> 00:54:20,320
+Go to the text editor here.
+
+891
+00:54:21,320 --> 00:54:23,320
+Then click on increase.
+
+892
+00:54:24,320 --> 00:54:42,480
+We will see an index.
+
+893
+00:54:43,320 --> 00:54:47,320
+Now, if I try to increase or decrease in trend,
+
+894
+00:54:47,320 --> 00:54:49,320
+there is a little problem.
+
+895
+00:54:49,320 --> 00:54:51,320
+We see that it is fantastic!
+
+896
+00:54:51,320 --> 00:54:53,320
+To make it more realistic
+
+897
+00:54:56,320 --> 00:54:59,320
+Now let's do the same with the other pants
+
+898
+00:55:03,320 --> 00:55:04,320
+Do the same
+
+899
+00:55:06,320 --> 00:55:07,320
+Enlarge it
+
+900
+00:55:10,320 --> 00:55:11,320
+Rotate it
+
+901
+00:55:17,320 --> 00:55:20,320
+Don't forget to change its mixing mode to soft light
+
+902
+00:55:22,320 --> 00:55:26,320
+Now the mixing function is added
+
+903
+00:55:26,320 --> 00:55:28,320
+Click on the app and turn it off
+
+904
+00:55:31,320 --> 00:55:32,320
+Just click on it
+
+905
+00:55:35,320 --> 00:55:37,320
+Enlarge the pants
+
+906
+00:55:37,320 --> 00:55:40,320
+Now it's added
+
+907
+00:55:42,320 --> 00:55:45,320
+This is the second function
+
+908
+00:55:47,320 --> 00:55:48,320
+Next is the function optimization
+
+909
+00:55:48,320 --> 00:55:50,320
+My colleague Nicole will explain
+
+910
+00:55:51,320 --> 00:55:53,320
+How to optimize the function
+
+911
+00:55:59,320 --> 00:56:00,320
+Hello everyone
+
+912
+00:56:00,320 --> 00:56:02,320
+My name is Nicole
+
+913
+00:56:02,320 --> 00:56:05,320
+Next, I will introduce the function optimization
+
+914
+00:56:05,320 --> 00:56:10,320
+There are seven functions to optimize
+
+915
+00:56:10,320 --> 00:56:13,320
+The first is the virtual model of Jami
+
+916
+00:56:13,320 --> 00:56:18,320
+The second is to increase the prediction of YKK global color
+
+917
+00:56:18,320 --> 00:56:21,320
+And 2D function optimization and file optimization
+
+918
+00:56:21,320 --> 00:56:25,320
+Next, I will show you the editing mode and the URL interface
+
+919
+00:56:30,320 --> 00:56:32,320
+First of all, let's take a look at the virtual model
+
+920
+00:56:32,320 --> 00:56:34,320
+The virtual model of Jami
+
+921
+00:56:34,320 --> 00:56:36,320
+Can't be separated into other formats
+
+922
+00:56:36,320 --> 00:56:38,320
+Other formats here
+
+923
+00:56:38,320 --> 00:56:42,320
+Mainly refers to FBX format and OBG format
+
+924
+00:56:42,320 --> 00:56:45,320
+Here we load a virtual model
+
+925
+00:56:45,320 --> 00:56:47,320
+Then convert it to a virtual model
+
+926
+00:56:47,320 --> 00:56:50,320
+The virtual model format of this virtual model is selected as
+
+927
+00:56:50,320 --> 00:56:52,320
+The virtual model of Jami
+
+928
+00:56:52,320 --> 00:56:55,320
+That is, the format of AVTE
+
+929
+00:56:58,320 --> 00:57:00,320
+Then we keep it out
+
+930
+00:57:00,320 --> 00:57:03,320
+Then load it in
+
+931
+00:57:10,320 --> 00:57:11,320
+After loading
+
+932
+00:57:11,320 --> 00:57:15,320
+We need to convert it to FBX format
+
+933
+00:57:15,320 --> 00:57:17,320
+Or say OBG format
+
+934
+00:57:17,320 --> 00:57:20,320
+Here we directly put it in place
+
+935
+00:57:20,320 --> 00:57:23,320
+Convert it to FBX format
+
+936
+00:57:23,320 --> 00:57:27,320
+Then give it another name
+
+937
+00:57:27,320 --> 00:57:30,320
+Then we are here to be a virtual model
+
+938
+00:57:30,320 --> 00:57:32,320
+So you have to choose a virtual model
+
+939
+00:57:32,320 --> 00:57:34,320
+Then click to confirm
+
+940
+00:57:34,320 --> 00:57:37,320
+We will just export the FBX
+
+941
+00:57:37,320 --> 00:57:42,320
+Load it in
+
+942
+00:57:42,320 --> 00:57:44,320
+After loading
+
+943
+00:57:44,320 --> 00:57:46,320
+You can see that your interface is blank
+
+944
+00:57:46,320 --> 00:57:48,320
+So the virtual model of Jami
+
+945
+00:57:48,320 --> 00:57:51,320
+Can't be separated into other formats
+
+946
+00:57:51,320 --> 00:57:53,320
+And now we have added YKK
+
+947
+00:57:53,320 --> 00:57:55,320
+A preview of the global color
+
+948
+00:57:55,320 --> 00:57:56,320
+This is mainly used for
+
+949
+00:57:56,320 --> 00:57:59,320
+Pull-ups and pull-ups
+
+950
+00:57:59,320 --> 00:58:01,320
+That's the same
+
+951
+00:58:01,320 --> 00:58:03,320
+We add one more
+
+952
+00:58:03,320 --> 00:58:10,320
+Clothes in
+
+953
+00:58:10,320 --> 00:58:12,320
+Here I switch
+
+954
+00:58:12,320 --> 00:58:15,320
+Its density texture display
+
+955
+00:58:15,320 --> 00:58:16,320
+And then
+
+956
+00:58:16,320 --> 00:58:18,320
+I'm going to choose it here
+
+957
+00:58:18,320 --> 00:58:19,320
+Its pull-up and pull-up
+
+958
+00:58:19,320 --> 00:58:20,320
+You can take a look
+
+959
+00:58:20,320 --> 00:58:23,320
+Now the material type is metal
+
+960
+00:58:23,320 --> 00:58:24,320
+We choose color
+
+961
+00:58:24,320 --> 00:58:26,320
+If your color board
+
+962
+00:58:26,320 --> 00:58:28,320
+There is no YKK color board on it
+
+963
+00:58:28,320 --> 00:58:30,320
+You can go through the path above
+
+964
+00:58:30,320 --> 00:58:32,320
+Add it to it
+
+965
+00:58:34,320 --> 00:58:37,320
+There are so many YKK global colors here
+
+966
+00:58:37,320 --> 00:58:40,320
+You can choose a color according to your needs
+
+967
+00:58:40,320 --> 00:58:41,320
+Then
+
+968
+00:58:41,320 --> 00:58:43,320
+The rules of the YKK naming here
+
+969
+00:58:43,320 --> 00:58:45,320
+You can take a look
+
+970
+00:58:45,320 --> 00:58:48,320
+You can take a look at the final effect
+
+971
+00:58:52,320 --> 00:58:53,320
+In the 2D optimization here
+
+972
+00:58:53,320 --> 00:58:55,320
+We mainly did this
+
+973
+00:58:55,320 --> 00:58:56,320
+The optimization of these aspects
+
+974
+00:58:56,320 --> 00:58:57,320
+One is the name line
+
+975
+00:58:57,320 --> 00:58:58,320
+Can be solved by link editing
+
+976
+00:58:58,320 --> 00:59:00,320
+Edit the format of each size
+
+977
+00:59:00,320 --> 00:59:01,320
+The 2D measurement point
+
+978
+00:59:01,320 --> 00:59:03,320
+Can show the length of the format
+
+979
+00:59:03,320 --> 00:59:04,320
+The opening and the end can be set
+
+980
+00:59:04,320 --> 00:59:06,320
+A different width of the seam
+
+981
+00:59:06,320 --> 00:59:07,320
+Can be set separately
+
+982
+00:59:07,320 --> 00:59:09,320
+The bias value of the internal line
+
+983
+00:59:09,320 --> 00:59:10,320
+The extension board
+
+984
+00:59:10,320 --> 00:59:13,320
+Can keep the original curve of the board
+
+985
+00:59:15,320 --> 00:59:18,320
+First, let's take a look
+
+986
+00:59:18,320 --> 00:59:20,320
+The name line can be removed
+
+987
+00:59:20,320 --> 00:59:22,320
+Its link editing
+
+988
+00:59:26,320 --> 00:59:31,320
+If you want to delete the other half of the name line
+
+989
+00:59:31,320 --> 00:59:34,320
+Only by removing the link editing
+
+990
+00:59:34,320 --> 00:59:36,320
+If you don't remove the link editing
+
+991
+00:59:36,320 --> 00:59:38,320
+There is no way to delete it
+
+992
+00:59:38,320 --> 00:59:40,320
+Let me show you here
+
+993
+00:59:40,320 --> 00:59:42,320
+If you delete one directly
+
+994
+00:59:42,320 --> 00:59:44,320
+The whole will be deleted
+
+995
+00:59:44,320 --> 00:59:46,320
+Here we can select the name line
+
+996
+00:59:46,320 --> 00:59:48,320
+Then right-click to remove the link editing
+
+997
+00:59:48,320 --> 00:59:50,320
+Then you can delete it
+
+998
+00:59:50,320 --> 00:59:51,320
+Its other half
+
+999
+00:59:55,320 --> 00:59:57,320
+And the format here
+
+1000
+00:59:57,320 --> 00:59:59,320
+We also made such an update
+
+1001
+00:59:59,320 --> 01:00:01,320
+This is because
+
+1002
+01:00:01,320 --> 01:00:04,320
+Our 6.1 and 6.2 functions
+
+1003
+01:00:04,320 --> 01:00:06,320
+Format function
+
+1004
+01:00:06,320 --> 01:00:08,320
+Made an update
+
+1005
+01:00:08,320 --> 01:00:10,320
+Is the horse function
+
+1006
+01:00:10,320 --> 01:00:11,320
+Made an update here
+
+1007
+01:00:11,320 --> 01:00:13,320
+So there will be such a warm-hearted hint
+
+1008
+01:00:13,320 --> 01:00:24,320
+Here we can open its format
+
+1009
+01:00:24,320 --> 01:00:26,320
+We can edit
+
+1010
+01:00:26,320 --> 01:00:30,320
+A format of each size
+
+1011
+01:00:30,320 --> 01:00:31,320
+Then we can see
+
+1012
+01:00:31,320 --> 01:00:33,320
+Its one format information
+
+1013
+01:00:33,320 --> 01:00:34,320
+Then we add two functions
+
+1014
+01:00:34,320 --> 01:00:36,320
+One is to edit the format
+
+1015
+01:00:36,320 --> 01:00:37,320
+Single
+
+1016
+01:00:37,320 --> 01:00:39,320
+Then we can directly use the mouse
+
+1017
+01:00:39,320 --> 01:00:40,320
+Make such a move
+
+1018
+01:00:40,320 --> 01:00:42,320
+And the curve format
+
+1019
+01:00:42,320 --> 01:00:44,320
+We can also use the mouse
+
+1020
+01:00:44,320 --> 01:00:46,320
+Directly drag it
+
+1021
+01:00:46,320 --> 01:00:48,320
+Make such a format
+
+1022
+01:00:53,320 --> 01:00:56,320
+And use the 2D measurement point tool
+
+1023
+01:00:56,320 --> 01:00:57,320
+When measuring
+
+1024
+01:00:57,320 --> 01:00:58,320
+Before
+
+1025
+01:00:58,320 --> 01:00:59,320
+We can only show
+
+1026
+01:00:59,320 --> 01:01:00,320
+The length of a horse
+
+1027
+01:01:00,320 --> 01:01:02,320
+Now we can show
+
+1028
+01:01:02,320 --> 01:01:04,320
+The length of its horse
+
+1029
+01:01:09,320 --> 01:01:11,320
+This is the tool of Fengfeng
+
+1030
+01:01:11,320 --> 01:01:12,320
+Before
+
+1031
+01:01:12,320 --> 01:01:14,320
+We can't set the height of the opening and the end
+
+1032
+01:01:14,320 --> 01:01:16,320
+At a different length
+
+1033
+01:01:16,320 --> 01:01:17,320
+Here we can
+
+1034
+01:01:17,320 --> 01:01:19,320
+In the attribute editor window
+
+1035
+01:01:19,320 --> 01:01:20,320
+Change it to a point
+
+1036
+01:01:20,320 --> 01:01:22,320
+Then set the width at the beginning and the end
+
+1037
+01:01:22,320 --> 01:01:23,320
+Can show
+
+1038
+01:01:23,320 --> 01:01:26,320
+A different style
+
+1039
+01:01:29,320 --> 01:01:31,320
+Here is the internal line
+
+1040
+01:01:31,320 --> 01:01:33,320
+An optimization of the function
+
+1041
+01:01:33,320 --> 01:01:34,320
+Before
+
+1042
+01:01:34,320 --> 01:01:35,320
+Everyone's internal line
+
+1043
+01:01:35,320 --> 01:01:37,320
+May only be set to a unified distance
+
+1044
+01:01:37,320 --> 01:01:38,320
+Now
+
+1045
+01:01:38,320 --> 01:01:39,320
+We can set
+
+1046
+01:01:39,320 --> 01:01:41,320
+We can set a different one
+
+1047
+01:01:41,320 --> 01:01:42,320
+The value of the bias
+
+1048
+01:01:42,320 --> 01:01:43,320
+Here is the reference line
+
+1049
+01:01:43,320 --> 01:01:45,320
+You can choose the front line
+
+1050
+01:01:45,320 --> 01:01:46,320
+Or the line of choice
+
+1051
+01:01:46,320 --> 01:01:48,320
+Here for everyone to see
+
+1052
+01:01:48,320 --> 01:01:49,320
+A little bit
+
+1053
+01:01:49,320 --> 01:01:50,320
+I set its distance
+
+1054
+01:01:50,320 --> 01:01:51,320
+A little bit bigger
+
+1055
+01:01:51,320 --> 01:02:01,320
+You can take a look
+
+1056
+01:02:01,320 --> 01:02:03,320
+A difference between the front line and the line of choice
+
+1057
+01:02:03,320 --> 01:02:07,320
+A difference between the front line and the line of choice
+
+1058
+01:02:07,320 --> 01:02:09,320
+A little lower
+
+1059
+01:02:09,320 --> 01:02:10,320
+We can make a adjustment
+
+1060
+01:02:10,320 --> 01:02:11,320
+You can set the length
+
+1061
+01:02:11,320 --> 01:02:12,320
+We can set the width
+
+1062
+01:02:12,320 --> 01:02:13,320
+You can set the width
+
+1063
+01:02:13,320 --> 01:02:14,320
+Here
+
+1064
+01:02:14,320 --> 01:02:16,320
+It is a optimization of the extension plate
+
+1065
+01:02:16,320 --> 01:02:17,320
+The optimization is mainly
+
+1066
+01:02:17,320 --> 01:02:20,320
+This optimization in the extension plate
+
+1067
+01:02:20,320 --> 01:02:21,320
+Before
+
+1068
+01:02:21,320 --> 01:02:23,320
+If you use the extension plate
+
+1069
+01:02:23,320 --> 01:02:25,320
+Its curve
+
+1070
+01:02:25,320 --> 01:02:26,320
+Next
+
+1071
+01:02:26,320 --> 01:02:28,320
+Will perform an automatic optimization
+
+1072
+01:02:28,320 --> 01:02:31,320
+Then here
+
+1073
+01:02:31,320 --> 01:02:33,320
+If we want to
+
+1074
+01:02:33,320 --> 01:02:35,320
+After the extension plate
+
+1075
+01:02:35,320 --> 01:02:36,320
+What about its original curve
+
+1076
+01:02:36,320 --> 01:02:47,320
+If we want to keep the original curve like this, we can press the shortcut key D to keep its original curve.
+
+1077
+01:02:47,320 --> 01:02:51,320
+You can see the difference between these two.
+
+1078
+01:02:51,320 --> 01:02:53,320
+The following is the optimization of the file.
+
+1079
+01:02:53,320 --> 01:02:55,320
+One is the optimization of the FBX file.
+
+1080
+01:02:55,320 --> 01:03:01,320
+You can select whether it contains Google information and import it in the negative form.
+
+1081
+01:03:01,320 --> 01:03:05,320
+The other one is the optimization of the JLTF file.
+
+1082
+01:03:05,320 --> 01:03:09,320
+It can be used to export multiple files.
+
+1083
+01:03:09,320 --> 01:03:14,320
+First, let's take a look at the optimization of the FBX file.
+
+1084
+01:03:14,320 --> 01:03:22,320
+We also load a model into it.
+
+1085
+01:03:22,320 --> 01:03:29,320
+Then we export it to FBX.
+
+1086
+01:03:29,320 --> 01:03:32,320
+Here we can choose the model.
+
+1087
+01:03:32,320 --> 01:03:34,320
+There are two options in the back.
+
+1088
+01:03:34,320 --> 01:03:35,320
+One is to export it.
+
+1089
+01:03:35,320 --> 01:03:36,320
+One is to export it to Google.
+
+1090
+01:03:36,320 --> 01:03:39,320
+The other is to not export it to Google.
+
+1091
+01:03:39,320 --> 01:03:47,320
+Then we will import the file we just exported to it.
+
+1092
+01:03:47,320 --> 01:03:51,320
+Here we can show the joint point of its curve.
+
+1093
+01:03:51,320 --> 01:03:53,320
+That is, the joint point of the X-ray.
+
+1094
+01:03:53,320 --> 01:04:00,320
+You can see that your FBX has a curve joint.
+
+1095
+01:04:00,320 --> 01:04:04,320
+The other optimization is that the FBX file you used to have
+
+1096
+01:04:04,320 --> 01:04:07,320
+can only be imported with a virtual model.
+
+1097
+01:04:07,320 --> 01:04:13,320
+Now it can be imported in the negative form.
+
+1098
+01:04:13,320 --> 01:04:19,320
+Similarly, I will import an FBX file for it.
+
+1099
+01:04:19,320 --> 01:04:25,320
+Here we choose its negative format.
+
+1100
+01:04:25,320 --> 01:04:31,320
+Then we use the small glue tool to stick it to the fixed position.
+
+1101
+01:04:31,320 --> 01:04:33,320
+You can see the final effect.
+
+1102
+01:04:33,320 --> 01:04:46,320
+You can see the final effect.
+
+1103
+01:04:46,320 --> 01:04:49,320
+The other one is the optimization of the JLTF file.
+
+1104
+01:04:49,320 --> 01:04:54,320
+The other one is the optimization of the JLTF file.
+
+1105
+01:04:54,320 --> 01:04:58,320
+In the past, if you export a colorful file to the JLTF file format,
+
+1106
+01:04:58,320 --> 01:05:02,320
+In the past, if you export a colorful file to the JLTF file format,
+
+1107
+01:05:02,320 --> 01:05:04,320
+you can save it as a whole file.
+
+1108
+01:05:04,320 --> 01:05:09,320
+Now you can save it separately.
+
+1109
+01:05:09,320 --> 01:05:17,320
+Here we also give it a name and save it.
+
+1110
+01:05:17,320 --> 01:05:20,320
+In the file at the bottom,
+
+1111
+01:05:20,320 --> 01:05:23,320
+you can add an option to save its color.
+
+1112
+01:05:23,320 --> 01:05:27,320
+It is a multiple file.
+
+1113
+01:05:32,320 --> 01:05:55,320
+It is a multiple file.
+
+1114
+01:05:55,320 --> 01:05:59,320
+Here we can see that it has three such JLTF files.
+
+1115
+01:05:59,320 --> 01:06:01,320
+We can see its final effect.
+
+1116
+01:06:01,320 --> 01:06:15,320
+Here we can see the final result.
+
+1117
+01:06:15,320 --> 01:06:18,320
+For the bayonet, we also have an update.
+
+1118
+01:06:18,320 --> 01:06:20,320
+This is the same as before.
+
+1119
+01:06:20,320 --> 01:06:23,320
+Before, when we were it up to color,
+
+1120
+01:06:23,320 --> 01:06:25,320
+we could only bypass all the colors.
+
+1121
+01:06:25,320 --> 01:06:26,320
+Now you can select at your own taste
+
+1122
+01:06:26,320 --> 01:06:28,320
+for the colorthropy.
+
+1123
+01:06:28,320 --> 01:06:29,320
+In the UB�� Все.
+
+1124
+01:06:29,320 --> 01:06:30,320
+In the uBțe here.
+
+1125
+01:06:30,320 --> 01:06:37,320
+The main thing is to use the value to move the UV and distribute the UV arrangement.
+
+1126
+01:06:37,320 --> 01:06:42,320
+First, let's see how to use the value to move the UV.
+
+1127
+01:06:53,320 --> 01:06:58,320
+Here we switch it to UV editing mode.
+
+1128
+01:07:00,320 --> 01:07:08,320
+Then select the material and change its material type to Unified.
+
+1129
+01:07:08,320 --> 01:07:13,320
+If we want the film to move between pixels,
+
+1130
+01:07:13,320 --> 01:07:16,320
+if you simply move it with your mouse,
+
+1131
+01:07:16,320 --> 01:07:19,320
+then your texture will change.
+
+1132
+01:07:19,320 --> 01:07:23,320
+You can see that your texture will change.
+
+1133
+01:07:23,320 --> 01:07:27,320
+Here we can directly use the value to make such a move.
+
+1134
+01:07:27,320 --> 01:07:30,320
+Its texture will not change.
+
+1135
+01:07:30,320 --> 01:07:39,320
+Similarly, if the UV image below you is a mess like this,
+
+1136
+01:07:39,320 --> 01:07:42,320
+then you can distribute the arrangement here.
+
+1137
+01:07:47,320 --> 01:07:51,320
+The last one is an update of the UR interface.
+
+1138
+01:07:51,320 --> 01:07:55,320
+Previously, you can only use the simulation mode as its default mode.
+
+1139
+01:07:55,320 --> 01:07:59,320
+Now you can change its animation, color, module,
+
+1140
+01:07:59,320 --> 01:08:04,320
+UV, and BOM as its default mode.
+
+1141
+01:08:04,320 --> 01:08:08,320
+That's all for the new feature introduction of our 6.2.
+

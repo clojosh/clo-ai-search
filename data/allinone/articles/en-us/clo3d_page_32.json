@@ -1,0 +1,44 @@
+[
+    {
+        "article_id": "360001049328",
+        "url": "https://support.clo3d.com/hc/en-us/articles/360001049328",
+        "title": "CLO runs very slowly when I edit 3D Garment with Particle Distance 5. What should I do?",
+        "content": "**Question** CLO runs very slowly when I edit 3D Garment with Particle Distance 5. What should I do? **Answer** For all 3D garment simulation programs, its simulation speed varies depending on the number of meshes in a single file. More meshes there are, slower the speed is. On the other hand, less meshes there are, faster the speed is. When Patterns' Particle Distance is set to 5, the program naturally slows down due to increase of the number of meshes in a single file. Therefore, we STRONGLY insist you to increase the Particle Distance to 20 when editing 3D Garments and decrease it to 5 when the 3D Garment is fully completed. Then, simulate for about 1~2 minutes. Does CLO still run slowly though Patterns' Particle Distance is set to 20? * This may happen when a Pattern is huge (e.g. flare skirt patterns,) because regardless of the Particle Distance value, bigger Patterns contain more meshes. * Also, due to difference in their intrinsic character, the program speed may reduce when Patterns' mesh structure is set to Quadrangular. Please refer to [Quadrangular/Triangular Mesh](https://support.clo3d.com/hc/en-us/articles/115002727468-%EC%82%AC%EA%B0%81-%EB%A9%94%EC%8B%9C-%EC%82%BC%EA%B0%81-%EB%A9%94%EC%8B%9C) manual and configure mesh type as Quadrangular ONLY when needed. * Moreover, program speed is also influenced by hardware specification. Please check out suggested specification [here](https://support.clo3d.com/hc/en-us/articles/115000307168-%EA%B6%8C%EC%9E%A5%EC%82%AC%EC%96%91).",
+        "content_description": "This page provides guidance on optimizing CLO's performance when editing 3D garments by adjusting Particle Distance and understanding the impact of mesh quantity and hardware specifications.",
+        "source": "Zendesk",
+        "created_at": "2024-05-29T07:25:38Z",
+        "category_id": 24022165341209,
+        "category": "FAQ",
+        "section_id": 24022295837977,
+        "section": "Garments & Patterns",
+        "tokens": 394
+    },
+    {
+        "article_id": "115012787987",
+        "url": "https://support.clo3d.com/hc/en-us/articles/115012787987",
+        "title": "What is the Help Center and how can I use it?",
+        "content": "**Question** What is the Help Center and how can I use it? Can I get help from the CLO support team? **Answer** The [Help Center](https://support.clo3d.com/hc/en-us) is a place to search and find instant help regarding CLO software and online services. You can find articles about CLO feature manuals, Frequently asked questions and basic technical solutions. In addition, if you signed up to the CLO web, you can interact with other CLO users and experts by leaving comments and posting an article in the [Community](https://support.clo3d.com/hc/en-us/community/topics). However, if you prefer to get a response from the CLO support team, **please write your question using**[Contact Us](https://www.clo3d.com/support/contactus)**.**",
+        "content_description": "Discover how to effectively utilize the Help Center for instant support on CLO software, access feature manuals, engage with the community, and connect with the CLO support team for personalized assistance.",
+        "source": "Zendesk",
+        "created_at": "2024-05-29T07:25:38Z",
+        "category_id": 24022165341209,
+        "category": "FAQ",
+        "section_id": 24022317583257,
+        "section": "Others",
+        "tokens": 173
+    },
+    {
+        "article_id": "115000531948",
+        "url": "https://support.clo3d.com/hc/en-us/articles/115000531948",
+        "title": "3D File (COLLADA) Import",
+        "content": "**Objective** COLLADA is a commonly used 3D application format that can be exported from 3D tools such as 3DS Max, Maya, Poser, and DAZ Studio and used as CLO Avatar or Scene/Prop. For 3DS Max or Maya, install the “OpenCOLLADA” plugin (<http://www.opencollada.org/download.html>) and use it to export in COLLADA format, instead of using the default COLLADA exporter. COLLADA files contain Geometry and Material, in addition to Rigging, Skinning, and Animation data. Avatar Motion Data can be imported into CLO in COLLADA file format, then saved as a *.mtn file, which is CLO's proprietary format. ** Location** Main Menu ▶ File ▶ Import ▶ **OpenCOLLADA** ** Operation** 1. Follow the indicated guideline below: Main Menu ▶ File ▶ Import ▶ **OpenCOLLADA** → The Open File window appears. 2. Select the desired file and click **OK**. → The Import COLLADA window opens. 3. Select the settings as needed and click **OK**. **Object Type** | **Import as Avatar** | Morphs the original object into the object designated as the Morph Target. Enter the Transition Frame count into the **Morphing Frame Count**. The higher the frame count, the slower the morphing process. ---|---|--- **Import as Prop/Scene** | Import the object as Scene and Props type **Scale** | Adjusts the scale of the file being imported when a value is entered **Garment Position** | **Move Garment to Start Position** | Moves the Avatar and Garment to the location of the first frame (ver2.5.0). ** ** **※ Note:** * If the COLLADA file path includes # (symbols), the file may not load properly. * In case of using Network Drive, copy a COLLADA file to local PC to open & use.",
+        "content_description": "This page provides a comprehensive guide for importing COLLADA files into CLO, including installation instructions for the OpenCOLLADA plugin and detailed import settings for avatars and props.",
+        "source": "Zendesk",
+        "created_at": "2024-05-29T07:25:38Z",
+        "category_id": 115000064648,
+        "category": "Manual",
+        "section_id": 115000628387,
+        "section": "File Import/Export",
+        "tokens": 414
+    }
+]

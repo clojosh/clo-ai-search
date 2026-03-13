@@ -1,0 +1,2188 @@
+1
+00:00:00,000 --> 00:00:04,000
+Let's open the CLOAD interface, and we first enter the module drawing.
+
+2
+00:00:04,000 --> 00:00:08,000
+In the module drawing, we have newly added a folding shirt module.
+
+3
+00:00:08,000 --> 00:00:12,000
+In the past, the folding shirt would use a fixed front and a folded back.
+
+4
+00:00:12,000 --> 00:00:14,000
+This is more time-consuming.
+
+5
+00:00:14,000 --> 00:00:16,000
+Now we have added two types.
+
+6
+00:00:16,000 --> 00:00:19,000
+One is circular, and the other is triangular.
+
+7
+00:00:19,000 --> 00:00:21,000
+We use the circular as an example.
+
+8
+00:00:21,000 --> 00:00:23,000
+You can see that there are five shapes here.
+
+9
+00:00:23,000 --> 00:00:25,000
+And there are two types of front clothes.
+
+10
+00:00:25,000 --> 00:00:28,000
+The main difference between the front clothes and the back clothes is the fold.
+
+11
+00:00:28,000 --> 00:00:31,000
+The main difference between the sleeves is the number of folds.
+
+12
+00:00:31,000 --> 00:00:33,000
+And there are two types of sleeves.
+
+13
+00:00:33,000 --> 00:00:35,000
+One is circular, the other is rectangular.
+
+14
+00:00:35,000 --> 00:00:37,000
+And there is a collar.
+
+15
+00:00:37,000 --> 00:00:39,000
+First, let's load the collar.
+
+16
+00:00:39,000 --> 00:00:45,000
+Then, let's load the front clothes.
+
+17
+00:00:49,000 --> 00:00:52,000
+Next, let's load the back clothes.
+
+18
+00:00:52,000 --> 00:00:58,000
+The loading process is a bit slow.
+
+19
+00:00:58,000 --> 00:01:02,000
+And, let's add a sleeve.
+
+20
+00:01:06,000 --> 00:01:09,000
+And, let's add a sleeve cuff.
+
+21
+00:01:13,000 --> 00:01:17,000
+And, let's add a sleeve cuff.
+
+22
+00:01:22,000 --> 00:01:25,000
+Finally, let's add the pocket.
+
+23
+00:01:25,000 --> 00:01:28,000
+As for the tie, you can add what you need.
+
+24
+00:01:28,000 --> 00:01:31,000
+If you don't need it, you don't need to add it.
+
+25
+00:01:34,000 --> 00:01:38,000
+Now you can see that this shirt is folded.
+
+26
+00:01:38,000 --> 00:01:43,000
+Next, let's go to the physical window to see the fabric.
+
+27
+00:01:43,000 --> 00:01:46,000
+We can see that this fabric has no texture.
+
+28
+00:01:46,000 --> 00:01:51,000
+If you need texture, you can add the texture according to your needs.
+
+29
+00:01:51,000 --> 00:01:55,000
+Let's click on the details of the fabric.
+
+30
+00:01:55,000 --> 00:01:58,000
+The difference between the details and the previous one is that
+
+31
+00:01:58,000 --> 00:02:04,000
+it increases the bending strength and the deformation force on the corner line.
+
+32
+00:02:04,000 --> 00:02:07,000
+This is mainly an optimization of the fabric.
+
+33
+00:02:07,000 --> 00:02:09,000
+As you know, in the previous version,
+
+34
+00:02:09,000 --> 00:02:13,000
+Printed Out can only be done when the clothes have texture.
+
+35
+00:02:13,000 --> 00:02:16,000
+Now, although this shirt has no texture,
+
+36
+00:02:16,000 --> 00:02:20,000
+it can still be Printed Out.
+
+37
+00:02:20,000 --> 00:02:21,000
+We can see here that
+
+38
+00:02:21,000 --> 00:02:25,000
+we can change the different fabrics to see the simple material situation.
+
+39
+00:02:25,000 --> 00:02:27,000
+As I just mentioned,
+
+40
+00:02:27,000 --> 00:02:32,000
+our fabric has increased the bending strength of the corner line
+
+41
+00:02:32,000 --> 00:02:34,000
+and the deformation force of the corner line.
+
+42
+00:02:34,000 --> 00:02:36,000
+Let's open the fabric calculation mode.
+
+43
+00:02:36,000 --> 00:02:38,000
+As you can see, in the previous version,
+
+44
+00:02:38,000 --> 00:02:45,000
+we had to enter the data we measured according to the next step.
+
+45
+00:02:45,000 --> 00:02:50,000
+Now, we can enter all the data.
+
+46
+00:02:50,000 --> 00:02:52,000
+We can jump to this interface.
+
+47
+00:02:52,000 --> 00:02:58,000
+We can input the measured data into this interface at a time.
+
+48
+00:02:58,000 --> 00:03:03,000
+This is an optimization of the fabric calculation mode.
+
+49
+00:03:03,000 --> 00:03:06,000
+Now, let's go back to the simulation mode.
+
+50
+00:03:11,000 --> 00:03:14,000
+Let's take a look at the library window.
+
+51
+00:03:14,000 --> 00:03:16,000
+We can see that in the previous version,
+
+52
+00:03:16,000 --> 00:03:18,000
+in addition to Fibrous, there is a blue download button.
+
+53
+00:03:18,000 --> 00:03:21,000
+In Hardware and Trace, there is also a blue download button.
+
+54
+00:03:21,000 --> 00:03:23,000
+Now, in addition to these two,
+
+55
+00:03:23,000 --> 00:03:27,000
+there is also a blue download button on Apert and Fibrous.
+
+56
+00:03:27,000 --> 00:03:28,000
+In the previous version,
+
+57
+00:03:28,000 --> 00:03:32,000
+we had to click on the Fibrous download button to do one-click download.
+
+58
+00:03:32,000 --> 00:03:36,000
+Now, we can download one by one according to our own needs.
+
+59
+00:03:36,000 --> 00:03:39,000
+For example, we click here to Apert.
+
+60
+00:03:39,000 --> 00:03:42,000
+We can see that there is a single download button in Apert.
+
+61
+00:03:42,000 --> 00:03:45,000
+We can click here to download.
+
+62
+00:03:45,000 --> 00:03:47,000
+This download takes a little time.
+
+63
+00:03:47,000 --> 00:03:49,000
+Let's wait a little bit.
+
+64
+00:03:52,000 --> 00:03:54,000
+Now, the download is finished.
+
+65
+00:03:56,000 --> 00:03:58,000
+In other libraries, it is the same.
+
+66
+00:03:58,000 --> 00:04:02,000
+Each with a blue button has a new download content.
+
+67
+00:04:02,000 --> 00:04:04,000
+You can download it according to your needs.
+
+68
+00:04:04,000 --> 00:04:06,000
+In the model section,
+
+69
+00:04:06,000 --> 00:04:08,000
+the male and female models each added two.
+
+70
+00:04:08,000 --> 00:04:11,000
+Among them, the female model added Feifei and Grace.
+
+71
+00:04:17,000 --> 00:04:22,000
+Among them, the male model added Henry and Nate.
+
+72
+00:04:22,000 --> 00:04:28,000
+The male model added Henry and Nate.
+
+73
+00:04:28,000 --> 00:04:30,000
+In this model,
+
+74
+00:04:30,000 --> 00:04:33,000
+the female model added Andy and the male model added Henry.
+
+75
+00:04:33,000 --> 00:04:36,000
+The male model added Andy and the female model added Danny.
+
+76
+00:04:36,000 --> 00:04:37,000
+Now, open Feifei.
+
+77
+00:04:37,000 --> 00:04:38,000
+Open Feifei.
+
+78
+00:04:38,000 --> 00:04:41,000
+After opening Feifei,
+
+79
+00:04:41,000 --> 00:04:43,000
+we can see that there is a size folder in this.
+
+80
+00:04:43,000 --> 00:04:44,000
+This is different from the previous model.
+
+81
+00:04:44,000 --> 00:04:46,000
+In this size folder,
+
+82
+00:04:46,000 --> 00:04:52,399
+There are some data from the American Experimental Materials Association.
+
+83
+00:04:52,399 --> 00:04:54,399
+There are three main categories.
+
+84
+00:04:54,399 --> 00:04:55,600
+The first one is Miffy.
+
+85
+00:04:55,600 --> 00:04:58,800
+She is a female with a more delicate figure.
+
+86
+00:05:01,100 --> 00:05:05,399
+Potatoe is a female with a slightly shorter figure.
+
+87
+00:05:05,399 --> 00:05:08,600
+Whereas Glass is a female with a fatter figure.
+
+88
+00:05:08,600 --> 00:05:14,800
+The difference between Curvy and Stripe is that Curvy is more beautiful than Stripe.
+
+89
+00:05:14,800 --> 00:05:21,800
+In the class, we can see that the model is getting fatter by applying a single size.
+
+90
+00:05:24,800 --> 00:05:26,600
+The male model is also the same.
+
+91
+00:05:26,600 --> 00:05:30,600
+In the male model, there is an app called Modular Configurator.
+
+92
+00:05:30,600 --> 00:05:37,000
+It mainly covers the main models when modeling.
+
+93
+00:05:37,000 --> 00:05:41,800
+Because every time the version is updated, the model size will change.
+
+94
+00:05:41,800 --> 00:05:43,600
+It will affect the use of modeling.
+
+95
+00:05:43,600 --> 00:05:44,600
+So from 5.1,
+
+96
+00:05:44,600 --> 00:05:48,400
+we started to provide special models for the Modular Configurator.
+
+97
+00:05:48,400 --> 00:05:50,800
+These models can't change the size.
+
+98
+00:05:50,800 --> 00:05:54,000
+They can only use hair, shoes, posture, and movements.
+
+99
+00:05:54,000 --> 00:05:56,200
+Let's take a look at the first model.
+
+100
+00:05:56,200 --> 00:06:00,800
+You can see that the motion is back to the stage.
+
+101
+00:06:00,800 --> 00:06:03,800
+But this motion is only for Emma and Kelly.
+
+102
+00:06:03,800 --> 00:06:05,400
+In the male model, it's the same.
+
+103
+00:06:05,400 --> 00:06:08,200
+It's only for Daryl and Martin.
+
+104
+00:06:10,200 --> 00:06:13,200
+The male model has made a big change.
+
+105
+00:06:13,200 --> 00:06:14,400
+So when we were developing,
+
+106
+00:06:14,600 --> 00:06:17,600
+we only had two models for the Modular Configurator.
+
+107
+00:06:17,600 --> 00:06:19,200
+You may know that in the previous model,
+
+108
+00:06:19,200 --> 00:06:21,000
+there was no gender for the model.
+
+109
+00:06:21,000 --> 00:06:21,800
+But now,
+
+110
+00:06:21,800 --> 00:06:23,800
+there is no gender for the model that is over 7 years old.
+
+111
+00:06:23,800 --> 00:06:26,200
+There is no gender for the model that is below 7 years old.
+
+112
+00:06:26,200 --> 00:06:29,000
+Because our data library is for 8 to 16 years old,
+
+113
+00:06:29,000 --> 00:06:31,200
+when we were doing the Modular Configurator,
+
+114
+00:06:31,200 --> 00:06:33,000
+we recommended that everyone be 8 to 12 years old.
+
+115
+00:06:33,000 --> 00:06:34,200
+It's the most accurate.
+
+116
+00:06:34,200 --> 00:06:37,400
+Why is there a number here that is 7 to 20 years old?
+
+117
+00:06:37,400 --> 00:06:42,600
+This is mainly because we did an age extension on the basis of 8 to 16 years old.
+
+118
+00:06:42,600 --> 00:06:44,400
+But it's just a reference.
+
+119
+00:06:44,600 --> 00:06:48,600
+If your age is an unrecognized model,
+
+120
+00:06:48,600 --> 00:06:51,400
+but your body shape is an adult model,
+
+121
+00:06:51,400 --> 00:06:56,600
+then we still recommend that everyone use an adult model to convert.
+
+122
+00:06:56,600 --> 00:07:00,000
+Next, let's do an edit on the model in the computer editor.
+
+123
+00:07:00,000 --> 00:07:01,600
+Let's change its height a little higher.
+
+124
+00:07:01,600 --> 00:07:03,200
+You can see that when you change the height,
+
+125
+00:07:03,200 --> 00:07:06,400
+there is a height size mark in 3D.
+
+126
+00:07:06,400 --> 00:07:08,400
+It's the same when you change the height.
+
+127
+00:07:08,400 --> 00:07:12,200
+After that, we will make a change to the model.
+
+128
+00:07:12,200 --> 00:07:13,600
+In the past, when we changed the posture,
+
+129
+00:07:13,600 --> 00:07:15,600
+we couldn't do the absolute symmetry.
+
+130
+00:07:15,600 --> 00:07:17,600
+We all look at it with the naked eye.
+
+131
+00:07:17,600 --> 00:07:20,600
+Now, there is a small icon on the top of the locator.
+
+132
+00:07:20,600 --> 00:07:21,600
+Let's click on it.
+
+133
+00:07:21,600 --> 00:07:24,600
+Then we can do the symmetrical posture edit.
+
+134
+00:07:24,600 --> 00:07:30,600
+This is when we edit the model posture.
+
+135
+00:07:30,600 --> 00:07:35,600
+Next, let's take a look at some changes in the first one.
+
+136
+00:07:35,600 --> 00:07:39,600
+In the previous version, the first one is not divided into adult model and child model.
+
+137
+00:07:39,600 --> 00:07:41,600
+In the current version, it is divided into adult model and child model.
+
+138
+00:07:41,600 --> 00:07:45,600
+Adult model and child model are two different models.
+
+139
+00:07:45,600 --> 00:07:47,600
+In the fabric, we can see that
+
+140
+00:07:47,600 --> 00:07:50,600
+there are some hair fabrics added.
+
+141
+00:07:50,600 --> 00:07:52,600
+There are six types of hair fabrics added.
+
+142
+00:07:52,600 --> 00:07:57,600
+Including Anglaise wool, fox wool, water-coloured leather, fur-coloured wool, etc.
+
+143
+00:07:57,600 --> 00:08:03,600
+In addition, we can see some wool-coated fabrics.
+
+144
+00:08:03,600 --> 00:08:05,600
+The difference between the wool-coated fabrics here is that
+
+145
+00:08:05,600 --> 00:08:07,600
+they are different in weight.
+
+146
+00:08:07,600 --> 00:08:10,600
+We can see some changes in the right-hand view of the logo.
+
+147
+00:08:10,600 --> 00:08:14,600
+At the same time, we can see that some hair fabrics are added separately.
+
+148
+00:08:14,600 --> 00:08:17,600
+At this time, when you select the fabric in the preview,
+
+149
+00:08:17,600 --> 00:08:19,600
+if you don't want to use the automatically generated hair fabrics,
+
+150
+00:08:19,600 --> 00:08:22,600
+you can use the normal map to find the hair fabrics.
+
+151
+00:08:28,600 --> 00:08:30,600
+In the headwear and trims,
+
+152
+00:08:30,600 --> 00:08:34,600
+you can see that the washing texture has been moved to the headwear and trims.
+
+153
+00:08:34,600 --> 00:08:36,600
+In addition, in this ribbon, which is the fox's head,
+
+154
+00:08:36,600 --> 00:08:38,600
+there is an additional part.
+
+155
+00:08:38,600 --> 00:08:39,600
+In addition, in this ribbon, which is the fox's head, there is an additional part.
+
+156
+00:08:39,600 --> 00:08:41,600
+In addition, in this ribbon, which is the fox's head, there is an additional part.
+
+157
+00:08:41,600 --> 00:08:42,600
+In addition, in this ribbon, which is the fox's head, there is an additional part.
+
+158
+00:08:42,600 --> 00:08:43,600
+In addition, in this ribbon, which is the fox's head, there is an additional part.
+
+159
+00:08:43,600 --> 00:08:44,600
+In addition, in this ribbon, which is the fox's head, there is an additional part.
+
+160
+00:08:44,600 --> 00:08:45,600
+In addition, in this ribbon, which is the fox's head, there is an additional part.
+
+161
+00:08:45,600 --> 00:08:46,600
+In addition, in this ribbon, which is the fox's head, there is an additional part.
+
+162
+00:08:46,600 --> 00:08:47,600
+In addition, in this ribbon, which is the fox's head, there is an additional part.
+
+163
+00:08:47,600 --> 00:08:48,600
+In addition, in this ribbon, which is the fox's head, there is an additional part.
+
+164
+00:08:48,600 --> 00:08:49,600
+In addition, in this ribbon, which is the fox's head, there is an additional part.
+
+165
+00:08:49,600 --> 00:08:50,600
+In addition, in this ribbon, which is the fox's head, there is an additional part.
+
+166
+00:08:50,600 --> 00:08:55,600
+In the walkthrough process, we often need some stages to match.
+
+167
+00:08:55,600 --> 00:08:59,600
+As you can see, there are four different stage objects in this stage.
+
+168
+00:08:59,600 --> 00:09:01,600
+You can choose from them.
+
+169
+00:09:01,600 --> 00:09:07,600
+Next, we will introduce in detail what new features have been updated by making a new outfit.
+
+170
+00:09:07,600 --> 00:09:10,600
+First, we add a model.
+
+171
+00:09:10,600 --> 00:09:14,600
+Then we import the DXF file.
+
+172
+00:09:20,600 --> 00:09:25,600
+Now, we import the DXF file.
+
+173
+00:09:25,600 --> 00:09:28,600
+There is no decoding on the side of the model.
+
+174
+00:09:28,600 --> 00:09:31,600
+We can use the tool to compare the length of the panel.
+
+175
+00:09:31,600 --> 00:09:35,600
+We compare the distance between the two panels from the sleeve to the waistline.
+
+176
+00:09:35,600 --> 00:09:38,600
+When we reach the waistline, we can click the right button.
+
+177
+00:09:38,600 --> 00:09:40,600
+There are three types of options.
+
+178
+00:09:40,600 --> 00:09:42,600
+The first is the length of the panel.
+
+179
+00:09:42,600 --> 00:09:47,600
+The length of the panel means that the decoding is added on the back of the rolling panel.
+
+180
+00:09:47,600 --> 00:09:50,600
+The fixed panel is on the unmoved panel.
+
+181
+00:09:50,600 --> 00:09:52,600
+The fixed panel is on the front panel.
+
+182
+00:09:52,600 --> 00:09:55,600
+The two panels are on both panels.
+
+183
+00:09:55,600 --> 00:09:58,600
+We select two panels here.
+
+184
+00:09:58,600 --> 00:10:02,600
+After selecting, we click the return button to complete.
+
+185
+00:10:02,600 --> 00:10:07,600
+Now you can see that both the front panel and the back panel have been added to the decoding.
+
+186
+00:10:07,600 --> 00:10:09,600
+Now the panel is only half.
+
+187
+00:10:09,600 --> 00:10:11,600
+We want to match the other half.
+
+188
+00:10:11,600 --> 00:10:13,600
+Naturally, we can think of the symmetrical panel and the sewing line.
+
+189
+00:10:13,600 --> 00:10:18,600
+There is a new function similar to the symmetrical panel and the sewing line.
+
+190
+00:10:18,600 --> 00:10:19,600
+It is called symmetrical.
+
+191
+00:10:19,600 --> 00:10:21,600
+Open the sewing line.
+
+192
+00:10:21,600 --> 00:10:23,600
+We click the right button on the panel.
+
+193
+00:10:23,600 --> 00:10:26,600
+We can see that the panel has been opened.
+
+194
+00:10:26,600 --> 00:10:29,600
+And it also has a symmetrical effect.
+
+195
+00:10:29,600 --> 00:10:31,600
+Let's change the position of the sewing line.
+
+196
+00:10:31,600 --> 00:10:34,600
+We can see that the two sides are changed at the same time.
+
+197
+00:10:34,600 --> 00:10:38,600
+We can use the panel line expansion tool to change the length of the panel.
+
+198
+00:10:38,600 --> 00:10:40,600
+But we can only make it longer.
+
+199
+00:10:40,600 --> 00:10:45,600
+Now, in addition to making it longer, we can also shrink it inward.
+
+200
+00:10:45,600 --> 00:10:48,600
+For example, we shrink it in here by one centimeter.
+
+201
+00:10:49,600 --> 00:10:51,600
+And we can make it one centimeter longer.
+
+202
+00:10:51,600 --> 00:10:53,600
+We can make it one centimeter longer by one centimeter.
+
+203
+00:10:53,600 --> 00:10:55,600
+And we can make it one centimeter longer by one centimeter.
+
+204
+00:10:55,600 --> 00:11:01,600
+After changing the panel, we usually want to measure the size of the corresponding parts.
+
+205
+00:11:01,600 --> 00:11:03,600
+For example, how much is the chest and how much is the waist.
+
+206
+00:11:03,600 --> 00:11:07,600
+Here we can use the measurement tool.
+
+207
+00:11:07,600 --> 00:11:08,600
+It's not the same as before.
+
+208
+00:11:08,600 --> 00:11:10,600
+We can use the drawing tool to complete it.
+
+209
+00:11:10,600 --> 00:11:16,600
+We click the start button to end the double-click.
+
+210
+00:11:16,600 --> 00:11:17,600
+We can see the size.
+
+211
+00:11:17,600 --> 00:11:18,600
+We click the start button to end the double-click.
+
+212
+00:11:18,600 --> 00:11:20,600
+We click the start button to end the double-click.
+
+213
+00:11:20,600 --> 00:11:21,600
+Here we can see its size.
+
+214
+00:11:21,600 --> 00:11:22,600
+Let's take a look.
+
+215
+00:11:22,600 --> 00:11:23,600
+We enter its name from the windowiance box on the right side.
+
+216
+00:11:23,600 --> 00:11:26,600
+Although there is an empty space in the center,
+
+217
+00:11:26,600 --> 00:11:31,600
+The length of the panel is not dense.
+
+218
+00:11:31,600 --> 00:11:34,600
+Next, we measure the length of the waist.
+
+219
+00:11:34,600 --> 00:11:37,600
+pres02p nurses
+
+220
+00:11:37,600 --> 00:11:46,600
+pres02p nurses
+
+221
+00:11:46,600 --> 00:11:53,600
+After the measurement is done, we will make a simple arrangement for the board.
+
+222
+00:11:53,600 --> 00:11:59,600
+Arrange the back piece.
+
+223
+00:11:59,600 --> 00:12:09,600
+After the arrangement is done, we will seal it.
+
+224
+00:12:09,600 --> 00:12:17,600
+Since the board is symmetrical, we only need to do it once.
+
+225
+00:12:17,600 --> 00:12:21,600
+Select the free seam line.
+
+226
+00:12:21,600 --> 00:12:25,600
+As you can see, the seam line is very simple.
+
+227
+00:12:25,600 --> 00:12:28,600
+There is a blue point in the 2D seam line.
+
+228
+00:12:28,600 --> 00:12:34,600
+But now you can see that there is also a blue point in the 3D seam line.
+
+229
+00:12:34,600 --> 00:12:38,600
+After sewing, we will work on it.
+
+230
+00:12:39,600 --> 00:12:43,600
+Before the simulation, let's talk about the differences between these simulations.
+
+231
+00:12:43,600 --> 00:12:44,600
+This is not a new feature.
+
+232
+00:12:44,600 --> 00:12:46,600
+This needs to be emphasized.
+
+233
+00:12:46,600 --> 00:12:48,600
+Because in the process of doing technical support,
+
+234
+00:12:48,600 --> 00:12:50,600
+Everyone asked more about this.
+
+235
+00:12:50,600 --> 00:12:51,600
+You can see these four.
+
+236
+00:12:51,600 --> 00:12:53,600
+The first one is called GPU simulation.
+
+237
+00:12:53,600 --> 00:12:56,600
+GPU simulation is newly added in version 5.0 and 5.1.
+
+238
+00:12:56,600 --> 00:12:58,600
+If you download the new version,
+
+239
+00:12:58,600 --> 00:13:01,600
+This GPU simulation driver needs to be updated.
+
+240
+00:13:01,600 --> 00:13:03,600
+Although the GPU simulation is fast,
+
+241
+00:13:03,600 --> 00:13:07,600
+But relatively speaking, it is not very accurate to the simulation of the material.
+
+242
+00:13:07,600 --> 00:13:09,600
+Ordinary simulation is the one we use the most.
+
+243
+00:13:09,600 --> 00:13:12,600
+The next one is called completion simulation.
+
+244
+00:13:12,600 --> 00:13:15,600
+Completion simulation is used for sewing.
+
+245
+00:13:15,600 --> 00:13:18,600
+It can very accurately simulate the conflict between the fabric.
+
+246
+00:13:18,600 --> 00:13:22,600
+In this way, the material will not be penetrated during the sewing process.
+
+247
+00:13:22,600 --> 00:13:26,600
+Secret simulation can most accurately display the continuity of the fabric.
+
+248
+00:13:26,600 --> 00:13:28,600
+So when you make your own fabric,
+
+249
+00:13:28,600 --> 00:13:31,600
+After you finally improve the quality, you will have a secret simulation.
+
+250
+00:13:31,600 --> 00:13:35,600
+And when we switch to different simulations,
+
+251
+00:13:35,600 --> 00:13:38,600
+We can see that its simulation indicators are different.
+
+252
+00:13:38,600 --> 00:13:40,600
+We can see this secret simulation.
+
+253
+00:13:40,600 --> 00:13:42,600
+Its icon is red.
+
+254
+00:13:42,600 --> 00:13:44,600
+After simulation, it should be red.
+
+255
+00:13:44,600 --> 00:13:45,600
+It has a arrow at the bottom.
+
+256
+00:13:45,600 --> 00:13:47,600
+In completion simulation, it is red.
+
+257
+00:13:47,600 --> 00:13:48,600
+But there is no arrow.
+
+258
+00:13:48,600 --> 00:13:50,600
+Ordinary simulation is this ordinary blue.
+
+259
+00:13:50,600 --> 00:13:52,600
+GPU simulation is an empty simulation.
+
+260
+00:13:52,600 --> 00:13:54,600
+It is an arrow with an empty star.
+
+261
+00:13:54,600 --> 00:13:56,600
+Now we are using ordinary simulation.
+
+262
+00:13:56,600 --> 00:13:59,600
+Simulate this cloth.
+
+263
+00:13:59,600 --> 00:14:05,600
+After simulation, next.
+
+264
+00:14:05,600 --> 00:14:07,600
+After simulation, we will change the size of the virtual model.
+
+265
+00:14:08,600 --> 00:14:11,600
+Let's change the model a little bit higher.
+
+266
+00:14:11,600 --> 00:14:15,600
+Similarly, you can see that there is a height value in the menu.
+
+267
+00:14:15,600 --> 00:14:18,600
+And then it has a value.
+
+268
+00:14:18,600 --> 00:14:20,600
+You can see that the model is inflated.
+
+269
+00:14:20,600 --> 00:14:23,600
+Now there is a tool called the automatic numbering tool.
+
+270
+00:14:23,600 --> 00:14:29,600
+It can automatically number according to your model body shape.
+
+271
+00:14:29,600 --> 00:14:31,600
+It maintains the curve of the board.
+
+272
+00:14:31,600 --> 00:14:33,600
+That is, its curve does not change.
+
+273
+00:14:33,600 --> 00:14:35,600
+If there is a sticker on your board,
+
+274
+00:14:35,600 --> 00:14:37,600
+You can keep the sticker size.
+
+275
+00:14:37,600 --> 00:14:39,600
+When the board is numbering,
+
+276
+00:14:39,600 --> 00:14:41,600
+The sticker will not number.
+
+277
+00:14:41,600 --> 00:14:43,600
+If you don't number the board,
+
+278
+00:14:43,600 --> 00:14:45,600
+The sticker will also number.
+
+279
+00:14:45,600 --> 00:14:47,600
+Everyone knows that in cloud,
+
+280
+00:14:47,600 --> 00:14:49,600
+The lower the particle diameter, the slower the simulation.
+
+281
+00:14:49,600 --> 00:14:51,600
+It's the same when doing automatic numbering.
+
+282
+00:14:51,600 --> 00:14:53,600
+The lower your particle diameter,
+
+283
+00:14:53,600 --> 00:14:55,600
+The slower it numbers.
+
+284
+00:14:55,600 --> 00:14:58,600
+So I recommend everyone to change the particle diameter to 20.
+
+285
+00:14:58,600 --> 00:15:00,600
+It can number the fastest.
+
+286
+00:15:00,600 --> 00:15:02,600
+Click here to see its effect.
+
+287
+00:15:02,600 --> 00:15:04,600
+You can see that its numbering is now set.
+
+288
+00:15:04,600 --> 00:15:06,600
+In 2D, there is one.
+
+289
+00:15:06,600 --> 00:15:10,600
+There is a reference line in the previous version of the library.
+
+290
+00:15:10,600 --> 00:15:18,600
+Click here to see the reference line.
+
+291
+00:15:18,600 --> 00:15:21,600
+Now let's add a fabric for this cloth.
+
+292
+00:15:21,600 --> 00:15:23,600
+Click the Music Cartoon tab.
+
+293
+00:15:23,600 --> 00:15:26,600
+Click here to add the texture.
+
+294
+00:15:26,600 --> 00:15:28,600
+Click here to add the texture.
+
+295
+00:15:28,600 --> 00:15:31,600
+Click here to add the texture.
+
+296
+00:15:31,600 --> 00:15:33,600
+Click here to add the texture.
+
+297
+00:15:33,600 --> 00:15:34,600
+Click here to add the texture.
+
+298
+00:15:34,600 --> 00:15:38,600
+Let's separate the front pattern and choose a different pattern.
+
+299
+00:15:43,600 --> 00:15:48,600
+Normally, we usually have to hide the model in 3D to see the pattern on the back.
+
+300
+00:15:48,600 --> 00:15:54,600
+In the previous version, we couldn't see the pattern on the back of the costume on the second-party interface.
+
+301
+00:15:54,600 --> 00:15:58,600
+Now we can see the pattern on the back.
+
+302
+00:15:58,600 --> 00:16:03,600
+Let's change the color of the back.
+
+303
+00:16:04,600 --> 00:16:08,600
+We can see that there is a Palette Library.
+
+304
+00:16:08,600 --> 00:16:13,600
+This color is mainly used to add pantone colors.
+
+305
+00:16:13,600 --> 00:16:17,600
+In fact, there is a plus sign on the back of this 1.
+
+306
+00:16:17,600 --> 00:16:21,600
+But since the color of this plus sign is the same as the background color, we can't see it together.
+
+307
+00:16:21,600 --> 00:16:26,600
+Let's click here to see the pantone color library.
+
+308
+00:16:26,600 --> 00:16:32,600
+Because there are too many pantone colors, it divided the pantone colors into several colors.
+
+309
+00:16:32,600 --> 00:16:34,600
+Each color is divided into one.
+
+310
+00:16:34,600 --> 00:16:38,600
+We can choose the pantone color we need to import.
+
+311
+00:16:38,600 --> 00:16:41,600
+Let's change the color of the back.
+
+312
+00:16:41,600 --> 00:16:43,600
+Let's choose a pantone color.
+
+313
+00:16:48,600 --> 00:16:53,600
+In the 5.1 version, it only shows the normal map.
+
+314
+00:16:53,600 --> 00:16:57,600
+At this time, we choose the material in the preview.
+
+315
+00:16:57,600 --> 00:17:00,600
+We can add its normal map.
+
+316
+00:17:04,599 --> 00:17:12,599
+Let's save the material in the preview.
+
+317
+00:17:12,599 --> 00:17:15,599
+When saving the material, it will have a preview image.
+
+318
+00:17:15,599 --> 00:17:17,599
+You can use your added pattern.
+
+319
+00:17:17,599 --> 00:17:18,599
+You can also create your own image.
+
+320
+00:17:18,599 --> 00:17:20,599
+Here we choose the pattern.
+
+321
+00:17:20,599 --> 00:17:21,599
+Click to confirm.
+
+322
+00:17:21,599 --> 00:17:23,599
+Save it.
+
+323
+00:17:23,599 --> 00:17:26,599
+Save it.
+
+324
+00:17:26,599 --> 00:17:28,599
+After saving the material,
+
+325
+00:17:28,599 --> 00:17:31,599
+Because I put it in the 5.1 version,
+
+326
+00:17:31,599 --> 00:17:32,599
+Let's take a look.
+
+327
+00:17:32,599 --> 00:17:34,599
+Here, it looks different.
+
+328
+00:17:34,599 --> 00:17:38,599
+You can see the preview of the material here.
+
+329
+00:17:38,599 --> 00:17:40,599
+This is convenient for us to check the picture later.
+
+330
+00:17:53,599 --> 00:17:57,599
+Next, let's change the pose of the virtual model.
+
+331
+00:18:02,599 --> 00:18:04,599
+Next, we are going to make the rotation set.
+
+332
+00:18:04,599 --> 00:18:09,599
+You can see the rotation set.
+
+333
+00:18:09,599 --> 00:18:11,599
+It is controlled by this button.
+
+334
+00:18:11,599 --> 00:18:13,599
+Click to confirm.
+
+335
+00:18:13,599 --> 00:18:15,599
+After that, it will not be Что.
+
+336
+00:18:15,599 --> 00:18:16,599
+Next, click to confirm.
+
+337
+00:18:16,599 --> 00:18:17,599
+It will not be What.
+
+338
+00:18:17,599 --> 00:18:18,599
+Click to confirm.
+
+339
+00:18:18,599 --> 00:18:19,599
+It will not be What.
+
+340
+00:18:19,599 --> 00:18:22,599
+Next, we are going to update the 170.
+
+341
+00:18:22,599 --> 00:18:23,599
+There are some errors here.
+
+342
+00:18:23,599 --> 00:18:26,599
+Some details will appear when using the long version .
+
+343
+00:18:26,599 --> 00:18:29,599
+If you want to perform its details very well,
+
+344
+00:18:29,599 --> 00:18:31,599
+You need to lower the line setting of the version.
+
+345
+00:18:31,600 --> 00:18:38,600
+The lower the particle diameter of the board, the better its performance will be, but it has a disadvantage, which is that its simulation speed will be slower.
+
+346
+00:18:38,600 --> 00:18:43,600
+So for this part, we have added a new function called Selection.
+
+347
+00:18:43,600 --> 00:18:46,600
+We can reduce the number of particle diameters of the board.
+
+348
+00:18:46,600 --> 00:18:48,600
+We select the external line of the board and open Selection.
+
+349
+00:18:48,600 --> 00:18:51,600
+We can see that its particle diameter has become 1.
+
+350
+00:18:51,600 --> 00:18:54,600
+We switch to the web page to see and simulate.
+
+351
+00:18:54,600 --> 00:18:58,600
+We can see that its fold is formed, and we can change its height.
+
+352
+00:19:01,600 --> 00:19:09,600
+Next we add the foldable foldable axis on the side.
+
+353
+00:19:09,600 --> 00:19:13,600
+In the past, we could only add the line foldable axis and the foldable axis.
+
+354
+00:19:13,600 --> 00:19:16,600
+Now we can add the free foldable axis.
+
+355
+00:19:16,600 --> 00:19:21,600
+After adding the free foldable axis, we can see the effect of the foldable axis.
+
+356
+00:19:21,600 --> 00:19:30,600
+In addition to the foldable axis that is generated by itself, we can also choose the texture to represent its foldable axis.
+
+357
+00:19:30,600 --> 00:19:31,600
+We select this one.
+
+358
+00:19:31,600 --> 00:19:32,600
+We add a texture to it.
+
+359
+00:19:32,600 --> 00:19:35,600
+Then we change its width and color again.
+
+360
+00:19:35,600 --> 00:19:38,600
+In this way, the shape of the foldable axis on the side will change.
+
+361
+00:19:38,600 --> 00:19:42,600
+This function can be used to add different types of lines.
+
+362
+00:19:42,600 --> 00:19:44,600
+You can choose to add a texture.
+
+363
+00:19:44,600 --> 00:19:46,600
+Next, we add a sticker.
+
+364
+00:19:50,600 --> 00:20:00,600
+In the previous version, if you want to show a thick sticker, we recommend that you use the plate to increase its rendering thickness.
+
+365
+00:20:00,600 --> 00:20:06,600
+In the current version, we can use an illusion picture to show its thickness.
+
+366
+00:20:06,600 --> 00:20:11,600
+However, the effect of the illusion picture is that it cannot be seen in the 3D interface.
+
+367
+00:20:11,600 --> 00:20:13,600
+It must be seen in the rendering interface.
+
+368
+00:20:19,600 --> 00:20:21,600
+Let's open the rendering and take a look.
+
+369
+00:20:21,600 --> 00:20:29,600
+Since the illusion picture is a gray map, that is, the degree of bulge in the text is related to its grayness.
+
+370
+00:20:29,600 --> 00:20:31,600
+The whiter it is, the more obvious it is.
+
+371
+00:20:31,600 --> 00:20:34,600
+The darker it is, the less obvious it is.
+
+372
+00:20:34,600 --> 00:20:38,600
+We can see that its texture is not very smooth in the rendering interface.
+
+373
+00:20:38,600 --> 00:20:44,600
+This is mainly because we did not reduce its plate to 1.
+
+374
+00:20:44,600 --> 00:20:47,600
+Then let's talk about the properties of this illusion picture.
+
+375
+00:20:47,600 --> 00:20:49,600
+The first one is the degree.
+
+376
+00:20:49,600 --> 00:20:53,600
+The higher the degree, the more obvious the white bulge is.
+
+377
+00:20:53,600 --> 00:20:54,600
+Let's change it to 5.
+
+378
+00:20:54,600 --> 00:20:56,600
+We can see that the white bulge is more obvious.
+
+379
+00:20:56,600 --> 00:20:57,600
+Distance.
+
+380
+00:20:57,600 --> 00:20:58,600
+Distance.
+
+381
+00:20:58,600 --> 00:20:59,600
+Distance.
+
+382
+00:20:59,600 --> 00:21:02,600
+The more distance it is from the board, the farther it is.
+
+383
+00:21:02,600 --> 00:21:04,600
+That is, it is floating on the board.
+
+384
+00:21:04,600 --> 00:21:09,600
+The meaning of picking up is that it will not show any parts that are smaller than the value picked up above.
+
+385
+00:21:09,600 --> 00:21:10,600
+We input 2.
+
+386
+00:21:10,600 --> 00:21:14,600
+We can see that only white parts are displayed, and most of them are not displayed.
+
+387
+00:21:16,600 --> 00:21:19,600
+Maintain continuous is for OBJ files.
+
+388
+00:21:19,600 --> 00:21:24,600
+After opening continuous, it will delete a dividing line between OBJ components.
+
+389
+00:21:24,600 --> 00:21:26,600
+You know that in this case, it will be the drag function.
+
+390
+00:21:26,600 --> 00:21:31,600
+As you know, there are many different types of fabrics in CLO.
+
+391
+00:21:31,600 --> 00:21:34,600
+Every time we change the type of fabric,
+
+392
+00:21:34,600 --> 00:21:38,600
+we will pause and refresh the rendering interface.
+
+393
+00:21:38,600 --> 00:21:42,600
+Now, when we change the different fabric materials,
+
+394
+00:21:42,600 --> 00:21:46,600
+we can actually see the result of the rendering interface.
+
+395
+00:21:46,600 --> 00:21:48,600
+Let's switch to this one.
+
+396
+00:21:56,600 --> 00:22:04,600
+Then we switch to the other four types of materials.
+
+397
+00:22:04,600 --> 00:22:07,600
+We can also see the result of the rendering interface.
+
+398
+00:22:07,600 --> 00:22:11,600
+You can see that the difference between the current hair style and the previous hair style is that
+
+399
+00:22:11,600 --> 00:22:15,600
+the current hair style has added a preset hair attribute.
+
+400
+00:22:15,600 --> 00:22:18,600
+When we were doing hair styles in the past,
+
+401
+00:22:18,600 --> 00:22:22,600
+we were often asked what kind of hair style it was,
+
+402
+00:22:22,600 --> 00:22:24,600
+and how many parameters it should have.
+
+403
+00:22:24,600 --> 00:22:26,600
+For this question,
+
+404
+00:22:26,600 --> 00:22:29,600
+we added this preset hair attribute.
+
+405
+00:22:29,600 --> 00:22:32,600
+There are many different hair styles in this one,
+
+406
+00:22:32,600 --> 00:22:36,600
+including sea hair, angora yam hair, fox hair, water skin,
+
+407
+00:22:36,600 --> 00:22:39,600
+snake hair, dragon hair, rabbit hair, and so on.
+
+408
+00:22:39,600 --> 00:22:43,600
+We can switch to different hair styles to see its effect.
+
+409
+00:22:43,600 --> 00:22:46,600
+Now we switch to angora yam hair.
+
+410
+00:22:52,600 --> 00:22:54,600
+Then we switch to water skin.
+
+411
+00:22:56,600 --> 00:23:02,600
+When the current hair style has added a preset hair attribute,
+
+412
+00:23:02,600 --> 00:23:05,600
+you can see that the current hair style has added a preset hair attribute.
+
+413
+00:23:05,600 --> 00:23:07,600
+Let's switch back to the default hair style as well.
+
+414
+00:23:07,600 --> 00:23:09,600
+Here we can see that the current hair style has added a preset hair attribute,
+
+415
+00:23:09,600 --> 00:23:11,600
+and we have added the preset hair attribute here.
+
+416
+00:23:11,600 --> 00:23:15,600
+The new hair attribute for this set is called weight.
+
+417
+00:23:15,600 --> 00:23:17,600
+This way, it shows the direction of hair hair
+
+418
+00:23:17,600 --> 00:23:19,600
+in terms of the outside for the outside.
+
+419
+00:23:19,600 --> 00:23:21,600
+The bigger the pull force is,
+
+420
+00:23:21,600 --> 00:23:24,600
+the more smoothly it looks like in 4.3-mega-percent hair.
+
+421
+00:23:24,600 --> 00:23:30,600
+The x, y, z value means the larger the value, the more it is on the right side.
+
+422
+00:23:30,600 --> 00:23:35,600
+The x value of 10 is on the right side.
+
+423
+00:23:35,600 --> 00:23:39,600
+The y value of 10 is on the left side.
+
+424
+00:23:39,600 --> 00:23:45,600
+The z value of 10 is on the right side.
+
+425
+00:23:45,600 --> 00:23:52,600
+Next, let's take a look at the effects of different hairs.
+
+426
+00:23:52,600 --> 00:23:55,600
+This is Anglaise hair.
+
+427
+00:23:55,600 --> 00:23:59,600
+The next one is water-paint.
+
+428
+00:23:59,600 --> 00:24:04,600
+This is a woolen fabric.
+
+429
+00:24:04,600 --> 00:24:10,600
+The number of effects is large, so we will convert it to normal fabric.
+
+430
+00:24:15,600 --> 00:24:18,600
+Next, let's talk about other effects.
+
+431
+00:24:18,600 --> 00:24:21,600
+First, we convert it to the image video attribute.
+
+432
+00:24:21,600 --> 00:24:22,600
+Because 5.1 is the number of effects,
+
+433
+00:24:22,600 --> 00:24:24,600
+we added animation.
+
+434
+00:24:24,600 --> 00:24:26,600
+So in the image video attribute,
+
+435
+00:24:26,600 --> 00:24:28,600
+in addition to the image,
+
+436
+00:24:28,600 --> 00:24:30,600
+we also added an animation.
+
+437
+00:24:30,600 --> 00:24:32,600
+In other words, after you finish walking,
+
+438
+00:24:32,600 --> 00:24:33,600
+you can show the animation.
+
+439
+00:24:33,600 --> 00:24:34,600
+When saving the image,
+
+440
+00:24:34,600 --> 00:24:37,600
+we can choose whether to use the name of the project file
+
+441
+00:24:37,600 --> 00:24:40,600
+or use the user name.
+
+442
+00:24:40,600 --> 00:24:43,600
+Next, let's take a look at the lighting attribute.
+
+443
+00:24:43,600 --> 00:24:46,600
+In the lighting attribute,
+
+444
+00:24:46,600 --> 00:24:51,600
+the block to camera is mainly a light-locking lens.
+
+445
+00:24:51,600 --> 00:24:53,600
+In the previous version,
+
+446
+00:24:53,600 --> 00:24:55,600
+there was a blackout on the back side.
+
+447
+00:24:55,600 --> 00:24:57,600
+If we choose the block to camera,
+
+448
+00:24:57,600 --> 00:24:59,600
+this problem will disappear.
+
+449
+00:24:59,600 --> 00:25:01,600
+The next one is the display.
+
+450
+00:25:01,600 --> 00:25:03,600
+The display means that the HDR is displayed in the window.
+
+451
+00:25:03,600 --> 00:25:05,600
+In the previous version,
+
+452
+00:25:05,600 --> 00:25:07,600
+the intensity of lighting can be adjusted to 100.
+
+453
+00:25:07,600 --> 00:25:09,600
+Now it can be adjusted to 10,000.
+
+454
+00:25:09,600 --> 00:25:11,600
+Its exposure is very strong.
+
+455
+00:25:21,600 --> 00:25:24,600
+Next, let's take a look at the lens attribute.
+
+456
+00:25:24,600 --> 00:25:28,600
+We can zoom in and zoom out in the view.
+
+457
+00:25:28,600 --> 00:25:30,600
+Then there is a view direction,
+
+458
+00:25:30,600 --> 00:25:32,600
+spherical.
+
+459
+00:25:32,600 --> 00:25:34,600
+This is a three-dimensional direction.
+
+460
+00:25:34,600 --> 00:25:37,600
+The distance is its view.
+
+461
+00:25:37,600 --> 00:25:40,600
+Then the horizontal angle is rotated horizontally.
+
+462
+00:25:40,600 --> 00:25:43,600
+The vertical angle is rotated vertically.
+
+463
+00:25:47,600 --> 00:25:50,600
+There is an absolute between spherical and absolute.
+
+464
+00:25:50,600 --> 00:25:52,600
+This is the absolute direction.
+
+465
+00:25:52,600 --> 00:25:56,600
+It can only move in the horizontal direction of the water.
+
+466
+00:25:56,600 --> 00:25:58,600
+And the vertical direction of the water.
+
+467
+00:26:07,600 --> 00:26:09,600
+This is the distance between the two sides.
+
+468
+00:26:11,600 --> 00:26:15,600
+Next, let's take a look at the 5.1 of this dress.
+
+469
+00:26:15,600 --> 00:26:17,600
+It is a walk-through.
+
+470
+00:26:20,600 --> 00:26:23,600
+We can open this walk-through and take a look.
+
+471
+00:26:35,600 --> 00:26:37,600
+I mentioned earlier that in the rendering interface,
+
+472
+00:26:37,600 --> 00:26:40,600
+a new video attribute called animation has been added.
+
+473
+00:26:40,600 --> 00:26:45,600
+Let's take a look at the difference between rendering animation and a simple walk-through.
+
+474
+00:26:45,600 --> 00:26:48,600
+The first one is without a stage.
+
+475
+00:26:48,600 --> 00:26:49,600
+We can see that it is a
+
+476
+00:26:49,600 --> 00:26:51,600
+more high-definition walk-through.
+
+477
+00:27:01,600 --> 00:27:04,600
+The other one is a walk-through that adds a stage
+
+478
+00:27:04,600 --> 00:27:06,600
+and does not involve a model.
+
+479
+00:27:15,600 --> 00:27:17,600
+Now let's download another project file
+
+480
+00:27:17,600 --> 00:27:19,600
+to talk about some other functions.
+
+481
+00:27:28,600 --> 00:27:32,600
+This walk-through is made with a 3D walk-through tool.
+
+482
+00:27:32,600 --> 00:27:35,600
+You can see that it has some deformation at the end.
+
+483
+00:27:35,600 --> 00:27:39,600
+In the past, if the walk-through was deformed,
+
+484
+00:27:39,600 --> 00:27:42,600
+we would choose to do it with a version file.
+
+485
+00:27:42,600 --> 00:27:45,600
+Now we can edit the physical properties of the 3D walk-through.
+
+486
+00:27:45,600 --> 00:27:50,600
+We choose a more flat fabric for the 3D walk-through.
+
+487
+00:27:50,600 --> 00:27:56,600
+Then let's try some modeling.
+
+488
+00:27:56,600 --> 00:28:00,600
+Now you can see that it is not deformed and deformed.
+
+489
+00:28:00,600 --> 00:28:07,600
+In addition, we can see that there are two slides in this part.
+
+490
+00:28:07,600 --> 00:28:11,600
+If there is a hold-over in the slides,
+
+491
+00:28:11,600 --> 00:28:14,400
+You can choose the pattern by selecting the frame.
+
+492
+00:28:19,400 --> 00:28:22,200
+Next, let's take a look at the bottom of the zipper.
+
+493
+00:28:22,200 --> 00:28:24,600
+The bottom of the zipper is an OBJ link.
+
+494
+00:28:26,100 --> 00:28:28,600
+And this kind of clothing has a unique color mode.
+
+495
+00:28:28,600 --> 00:28:31,600
+The color is different under different modes.
+
+496
+00:28:41,600 --> 00:28:45,600
+Then we can see that this OBJ file has a pattern.
+
+497
+00:28:45,600 --> 00:28:49,600
+Then we select the file to export, export OBJ selected.
+
+498
+00:28:49,600 --> 00:28:52,600
+Then we put it in this folder.
+
+499
+00:28:52,600 --> 00:28:55,600
+We can see that when exporting this folder,
+
+500
+00:28:55,600 --> 00:28:59,600
+the first thing we can see here is called maintain single pattern coordinates.
+
+501
+00:28:59,600 --> 00:29:01,600
+Because this clothing has two colors,
+
+502
+00:29:01,600 --> 00:29:04,600
+we choose to maintain single pattern coordinates.
+
+503
+00:29:04,600 --> 00:29:08,600
+When it exports OBJ, it can export two patterns.
+
+504
+00:29:08,600 --> 00:29:10,600
+Then we can see that this clothing has two colors.
+
+505
+00:29:10,600 --> 00:29:12,600
+We export two OBJ files.
+
+506
+00:29:12,600 --> 00:29:15,600
+You save the absolute pattern in the file path.
+
+507
+00:29:15,600 --> 00:29:17,600
+Since this OBJ has a pattern,
+
+508
+00:29:17,600 --> 00:29:20,600
+if you delete the pattern in your original path,
+
+509
+00:29:20,600 --> 00:29:23,600
+then when you save it, its pattern will be lost.
+
+510
+00:29:23,600 --> 00:29:26,600
+If you don't delete it, its pattern will not be lost.
+
+511
+00:29:32,600 --> 00:29:34,600
+Let's take a look at this folder.
+
+512
+00:29:34,600 --> 00:29:37,600
+We can see that there are two OBJ files in it.
+
+513
+00:29:37,600 --> 00:29:39,600
+And there are three MTL files.
+
+514
+00:29:39,600 --> 00:29:40,600
+Just now,
+
+515
+00:29:40,600 --> 00:29:41,600
+when we export the OBJ,
+
+516
+00:29:41,600 --> 00:29:44,600
+there is another way to export the OBJ again.
+
+517
+00:29:55,600 --> 00:29:58,600
+The meaning of shared pattern coordinates is that
+
+518
+00:29:58,600 --> 00:30:00,600
+it only exports one OBJ file,
+
+519
+00:30:00,600 --> 00:30:03,600
+but it can export multiple MTL files.
+
+520
+00:30:06,600 --> 00:30:08,600
+Let's take a look.
+
+521
+00:30:10,600 --> 00:30:12,600
+You can see that it only has one OBJ file,
+
+522
+00:30:12,600 --> 00:30:14,600
+but it has multiple MTL files.
+
+523
+00:30:22,600 --> 00:30:25,600
+Next, let's talk about another function of the button.
+
+524
+00:30:25,600 --> 00:30:29,600
+If we want to increase the button on the front of this clothing,
+
+525
+00:30:29,600 --> 00:30:32,600
+but there is no button mark on this clothing,
+
+526
+00:30:32,600 --> 00:30:37,600
+now we can choose to create a button along the outline of the pattern.
+
+527
+00:30:37,600 --> 00:30:39,600
+We choose the outline of this pattern first,
+
+528
+00:30:39,600 --> 00:30:40,600
+and then select the button tool.
+
+529
+00:30:40,600 --> 00:30:42,600
+Press the right button on the outline.
+
+530
+00:30:42,600 --> 00:30:44,600
+We can see the button frame.
+
+531
+00:30:44,600 --> 00:30:47,600
+We can enter its value according to the need.
+
+532
+00:30:49,600 --> 00:30:51,600
+We can see that these three are already entered.
+
+533
+00:30:51,600 --> 00:30:56,600
+Here, I will teach you how to increase the button along the outline of the pattern.
+
+534
+00:31:09,600 --> 00:31:12,600
+Finally, we can see that in this 3D interface,
+
+535
+00:31:12,600 --> 00:31:13,600
+its hammer and hammer,
+
+536
+00:31:13,600 --> 00:31:15,600
+there is another display icon at the end.
+
+537
+00:31:15,600 --> 00:31:17,600
+Here, we can display the light controller,
+
+538
+00:31:17,600 --> 00:31:19,600
+display the wind controller,
+
+539
+00:31:19,600 --> 00:31:21,600
+and whether the model's shadow is displayed,
+
+540
+00:31:21,600 --> 00:31:23,600
+and whether the 3D grid is displayed.
+
+541
+00:31:32,600 --> 00:31:33,600
+That's all.
+
+542
+00:31:33,600 --> 00:31:36,600
+Today, I will show you the main new function of 5.1.
+
+543
+00:31:36,600 --> 00:31:37,600
+If you have any questions,
+
+544
+00:31:37,600 --> 00:31:41,600
+please go to our official website and search for the new function of 5.1.
+
+545
+00:31:41,600 --> 00:31:43,600
+If you want to know more details about 5.1,
+
+546
+00:31:43,600 --> 00:31:45,600
+please go to our official website and search for the new function of 5.1.
+
+547
+00:31:45,600 --> 00:31:49,600
+There are relevant videos and text explanations in it.
+

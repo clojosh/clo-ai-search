@@ -1,0 +1,1052 @@
+1
+00:00:00,000 --> 00:00:18,500
+Hello everyone, let's take a look at some of the problems that need to be avoided in the process of recording animation in software.
+
+2
+00:00:18,500 --> 00:00:22,000
+Here we import an OBJ to do morph target.
+
+3
+00:00:22,000 --> 00:00:27,000
+After opening it in the right position, we select open at the bottom.
+
+4
+00:00:27,000 --> 00:00:29,500
+Select morph target for the target type.
+
+5
+00:00:29,500 --> 00:00:33,000
+The morph target is the number of times we have overacted.
+
+6
+00:00:33,000 --> 00:00:37,000
+The smaller the number, the less the number of times we have overacted.
+
+7
+00:00:37,000 --> 00:00:39,000
+The faster we overact, the faster we overact.
+
+8
+00:00:39,000 --> 00:00:44,000
+So when we set the morph target, try to set it a little higher.
+
+9
+00:00:44,000 --> 00:00:49,000
+This can prevent some cross-interference problems caused by overacting too fast.
+
+10
+00:00:49,000 --> 00:00:53,000
+Also, in the process of morph target, if the movement is too different,
+
+11
+00:00:53,000 --> 00:00:56,000
+such as turning around, or some other problems,
+
+12
+00:00:56,000 --> 00:01:01,000
+it is best to turn your model in the software first,
+
+13
+00:01:01,000 --> 00:01:03,000
+then do the morph target.
+
+14
+00:01:03,000 --> 00:01:04,000
+Don't make too much of a difference.
+
+15
+00:01:04,000 --> 00:01:06,000
+Next, we can see that after we have finished the movement,
+
+16
+00:01:06,000 --> 00:01:10,000
+the model's right hand is more stable.
+
+17
+00:01:10,000 --> 00:01:14,000
+But if we turn to the left hand of the model,
+
+18
+00:01:14,000 --> 00:01:17,000
+we will find that it is a little unstable.
+
+19
+00:01:17,000 --> 00:01:22,000
+The reason why it is unstable is because of the cross-interference between the model's hand and chest.
+
+20
+00:01:22,000 --> 00:01:24,000
+When there is a cross-interference in the model,
+
+21
+00:01:24,000 --> 00:01:27,000
+there is also a cross-interference in the model's outer panel,
+
+22
+00:01:27,000 --> 00:01:30,000
+because the distance between them is very close.
+
+23
+00:01:30,000 --> 00:01:33,000
+The fabric itself is relatively thin, and the tight position may be fine,
+
+24
+00:01:33,000 --> 00:01:36,000
+but in places where there are more fabric piled up,
+
+25
+00:01:36,000 --> 00:01:39,000
+its instability will be more obvious,
+
+26
+00:01:39,000 --> 00:01:42,000
+because there are already a lot of grid here.
+
+27
+00:01:42,000 --> 00:01:45,000
+Plus, their collision distance now becomes very close,
+
+28
+00:01:45,000 --> 00:01:47,000
+and it is easy to cause instability.
+
+29
+00:01:47,000 --> 00:01:48,000
+In such a situation,
+
+30
+00:01:48,000 --> 00:01:51,000
+it may be easier to solve some more tight panels.
+
+31
+00:01:51,000 --> 00:01:53,000
+You can fix it directly through the fixing needle,
+
+32
+00:01:53,000 --> 00:01:55,000
+fix it on the virtual model,
+
+33
+00:01:55,000 --> 00:01:58,000
+and force it to be fixed in that position.
+
+34
+00:01:58,000 --> 00:02:00,000
+But if there is a lot of fabric,
+
+35
+00:02:00,000 --> 00:02:03,000
+there is no way to use the function of fixing it to the virtual model.
+
+36
+00:02:03,000 --> 00:02:10,000
+In general, we recommend that you try not to let the movement have some cross-interference.
+
+37
+00:02:10,000 --> 00:02:12,000
+Because once there is a cross-interference,
+
+38
+00:02:12,000 --> 00:02:15,000
+you separate the movement from the fabric itself.
+
+39
+00:02:15,000 --> 00:02:17,000
+It also has a calculation here.
+
+40
+00:02:17,000 --> 00:02:19,000
+So before the official recording starts,
+
+41
+00:02:19,000 --> 00:02:22,000
+make sure your model is in the process of animation recording.
+
+42
+00:02:22,000 --> 00:02:25,000
+Otherwise, there may be a cross-interference in the process of animation recording.
+
+43
+00:02:25,000 --> 00:02:27,000
+Next, let's look at the second case.
+
+44
+00:02:27,000 --> 00:02:29,000
+In this case,
+
+45
+00:02:29,000 --> 00:02:32,000
+we will see that after opening the animation editor,
+
+46
+00:02:32,000 --> 00:02:35,000
+when dragging the progress bar at the bottom,
+
+47
+00:02:35,000 --> 00:02:38,000
+this model will pass to the ground.
+
+48
+00:02:38,000 --> 00:02:40,000
+In our software,
+
+49
+00:02:40,000 --> 00:02:43,000
+there will be conflicts on the ground under default conditions.
+
+50
+00:02:43,000 --> 00:02:47,000
+It is to prevent the panel from falling to the ground below.
+
+51
+00:02:47,000 --> 00:02:49,000
+In this case,
+
+52
+00:02:49,000 --> 00:02:52,000
+if we continue to maintain the conflicts on the ground,
+
+53
+00:02:52,000 --> 00:02:56,000
+then the panel will definitely be forced above the ground.
+
+54
+00:02:56,000 --> 00:03:00,000
+Therefore, the clothing looks like there is a breakdown.
+
+55
+00:03:00,000 --> 00:03:03,000
+Then we need to set up the conflicts on the ground.
+
+56
+00:03:03,000 --> 00:03:05,000
+In the background of the 3D space,
+
+57
+00:03:05,000 --> 00:03:07,000
+right-click and select the model attribute.
+
+58
+00:03:07,000 --> 00:03:10,000
+Open the ground in the attribute editor.
+
+59
+00:03:10,000 --> 00:03:12,000
+The ground is randomly selected conflicts.
+
+60
+00:03:12,000 --> 00:03:14,000
+When you select a conflict,
+
+61
+00:03:14,000 --> 00:03:18,000
+we can set its overall ground height to negative.
+
+62
+00:03:18,000 --> 00:03:21,000
+Then we have the position of the conflict below the ground.
+
+63
+00:03:21,000 --> 00:03:23,000
+Then you can do a test in advance.
+
+64
+00:03:23,000 --> 00:03:25,000
+Use a piece of board to simulate
+
+65
+00:03:25,000 --> 00:03:27,000
+and see its final height.
+
+66
+00:03:27,000 --> 00:03:29,000
+Next, let's look at another case.
+
+67
+00:03:29,000 --> 00:03:31,000
+In this case,
+
+68
+00:03:31,000 --> 00:03:34,000
+I have done some details of the clothes in advance.
+
+69
+00:03:34,000 --> 00:03:36,000
+Including I used the name line.
+
+70
+00:03:36,000 --> 00:03:38,000
+But here you can see that
+
+71
+00:03:38,000 --> 00:03:41,000
+the name line I used is all sticked.
+
+72
+00:03:41,000 --> 00:03:44,000
+First, we can switch to the top stitch,
+
+73
+00:03:44,000 --> 00:03:46,000
+which is the window of the name line.
+
+74
+00:03:46,000 --> 00:03:48,000
+Click the title name here,
+
+75
+00:03:48,000 --> 00:03:50,000
+the bottom window, and switch to top stitch.
+
+76
+00:03:50,000 --> 00:03:52,000
+Then when we select a top stitch,
+
+77
+00:03:52,000 --> 00:03:54,000
+which is the type of the name line,
+
+78
+00:03:54,000 --> 00:03:56,000
+in the attribute editor,
+
+79
+00:03:56,000 --> 00:03:58,000
+there is a name line of this type.
+
+80
+00:03:58,000 --> 00:04:00,000
+Its attribute settings.
+
+81
+00:04:00,000 --> 00:04:03,000
+Here we will see that there is a type at the bottom.
+
+82
+00:04:03,000 --> 00:04:05,000
+There are two options for the type.
+
+83
+00:04:05,000 --> 00:04:07,000
+One is obj and the other is texture.
+
+84
+00:04:07,000 --> 00:04:10,000
+When we change the type to obj,
+
+85
+00:04:10,000 --> 00:04:12,000
+we can see that the details of the name line here
+
+86
+00:04:12,000 --> 00:04:14,000
+will be richer.
+
+87
+00:04:14,000 --> 00:04:16,000
+But this will lead to certain problems.
+
+88
+00:04:16,000 --> 00:04:18,000
+When we make a mirror,
+
+89
+00:04:18,000 --> 00:04:20,000
+the problem may occur.
+
+90
+00:04:20,000 --> 00:04:22,000
+Because the number of its grid is large,
+
+91
+00:04:22,000 --> 00:04:24,000
+it is just a little more.
+
+92
+00:04:24,000 --> 00:04:26,000
+But when you export the LAMBEC file,
+
+93
+00:04:26,000 --> 00:04:28,000
+these name line grids will be animated
+
+94
+00:04:28,000 --> 00:04:30,000
+along with the version.
+
+95
+00:04:30,000 --> 00:04:32,000
+Then after they have an animation,
+
+96
+00:04:32,000 --> 00:04:34,000
+the whole project file will become very large.
+
+97
+00:04:34,000 --> 00:04:36,000
+There may be some problems when exporting.
+
+98
+00:04:36,000 --> 00:04:38,000
+So please,
+
+99
+00:04:38,000 --> 00:04:40,000
+in the process of making some animations,
+
+100
+00:04:40,000 --> 00:04:42,000
+convert these name lines into texture.
+
+101
+00:04:42,000 --> 00:04:44,000
+Next, let's take a look at
+
+102
+00:04:44,000 --> 00:04:46,000
+the process of recording the animation.
+
+103
+00:04:46,000 --> 00:04:48,000
+Sometimes we may need to
+
+104
+00:04:48,000 --> 00:04:50,000
+make some changes to the costume.
+
+105
+00:04:50,000 --> 00:04:52,000
+In the process of making some changes,
+
+106
+00:04:52,000 --> 00:04:54,000
+you need to avoid some problems.
+
+107
+00:04:54,000 --> 00:04:56,000
+Sometimes, when we started recording the animation,
+
+108
+00:04:56,000 --> 00:04:58,000
+we didn't find any problems.
+
+109
+00:04:58,000 --> 00:05:00,000
+After we recorded the animation to a certain number of frames,
+
+110
+00:05:00,000 --> 00:05:02,000
+we found that there were some differences
+
+111
+00:05:02,000 --> 00:05:04,000
+or unstable places in the version.
+
+112
+00:05:04,000 --> 00:05:06,000
+Some friends may change it
+
+113
+00:05:06,000 --> 00:05:08,000
+under this number of frames.
+
+114
+00:05:08,000 --> 00:05:10,000
+You will find that if you add some
+
+115
+00:05:10,000 --> 00:05:12,000
+false frames or edit the version,
+
+116
+00:05:12,000 --> 00:05:14,000
+the animation recorded before
+
+117
+00:05:14,000 --> 00:05:16,000
+will be gone.
+
+118
+00:05:16,000 --> 00:05:18,000
+This is because our animation
+
+119
+00:05:18,000 --> 00:05:20,000
+is moving along the grid.
+
+120
+00:05:20,000 --> 00:05:22,000
+So in the process of recording the animation
+
+121
+00:05:22,000 --> 00:05:24,000
+to a certain number of frames,
+
+122
+00:05:24,000 --> 00:05:26,000
+if you change the costume,
+
+123
+00:05:26,000 --> 00:05:28,000
+due to the lack of the costume animation,
+
+124
+00:05:28,000 --> 00:05:30,000
+when we drag the progress bar
+
+125
+00:05:30,000 --> 00:05:32,000
+back to the first frame,
+
+126
+00:05:32,000 --> 00:05:34,000
+the previous action and clothes
+
+127
+00:05:34,000 --> 00:05:36,000
+will not match.
+
+128
+00:05:36,000 --> 00:05:38,000
+First, if you accidentally encounter
+
+129
+00:05:38,000 --> 00:05:40,000
+such a problem,
+
+130
+00:05:40,000 --> 00:05:42,000
+please pause the simulation
+
+131
+00:05:42,000 --> 00:05:44,000
+and then save the current action
+
+132
+00:05:44,000 --> 00:05:46,000
+of this OBJ model.
+
+133
+00:05:46,000 --> 00:05:48,000
+After the first frame,
+
+134
+00:05:48,000 --> 00:05:50,000
+you can start to edit your costume.
+
+135
+00:05:50,000 --> 00:05:52,000
+This means that we need to
+
+136
+00:05:52,000 --> 00:05:54,000
+start recording the animation again from the beginning.
+
+137
+00:05:54,000 --> 00:05:56,000
+In addition to the false frame
+
+138
+00:05:56,000 --> 00:05:58,000
+that will cause the animation recorded before to fail,
+
+139
+00:05:58,000 --> 00:06:00,000
+if you change the grid peak
+
+140
+00:06:00,000 --> 00:06:02,000
+and do some other operations,
+
+141
+00:06:02,000 --> 00:06:04,000
+there may be such an animation loss problem.
+
+142
+00:06:04,000 --> 00:06:06,000
+So in the process of recording the animation,
+
+143
+00:06:06,000 --> 00:06:08,000
+you must remember to go back to the initial frame
+
+144
+00:06:08,000 --> 00:06:10,000
+and continue to edit.
+
+145
+00:06:10,000 --> 00:06:12,000
+Next, let's take a look at
+
+146
+00:06:12,000 --> 00:06:14,000
+what common operations
+
+147
+00:06:14,000 --> 00:06:16,000
+can be done.
+
+148
+00:06:16,000 --> 00:06:18,000
+First of all, these functions
+
+149
+00:06:18,000 --> 00:06:20,000
+will usually cause the grid to reset,
+
+150
+00:06:20,000 --> 00:06:22,000
+including, but not least,
+
+151
+00:06:22,000 --> 00:06:24,000
+modifying the board,
+
+152
+00:06:24,000 --> 00:06:26,000
+modifying the line,
+
+153
+00:06:26,000 --> 00:06:28,000
+adjusting the particle diameter,
+
+154
+00:06:28,000 --> 00:06:30,000
+and increasing the false frame
+
+155
+00:06:30,000 --> 00:06:32,000
+and adjusting the rendering thickness.
+
+156
+00:06:32,000 --> 00:06:34,000
+Note that this is to adjust the rendering thickness
+
+157
+00:06:34,000 --> 00:06:36,000
+rather than the collision thickness,
+
+158
+00:06:36,000 --> 00:06:38,000
+because the collision thickness
+
+159
+00:06:38,000 --> 00:06:40,000
+is actually just the air wall setting,
+
+160
+00:06:40,000 --> 00:06:42,000
+but the rendering thickness
+
+161
+00:06:42,000 --> 00:06:44,000
+can be adjusted.
+
+162
+00:06:44,000 --> 00:06:46,000
+The next question
+
+163
+00:06:46,000 --> 00:06:48,000
+is about our layer settings.
+
+164
+00:06:48,000 --> 00:06:50,000
+First of all, before you record the animation,
+
+165
+00:06:50,000 --> 00:06:52,000
+you may use some layers,
+
+166
+00:06:52,000 --> 00:06:54,000
+such as adding a multiple layer to the top layer,
+
+167
+00:06:54,000 --> 00:06:56,000
+so that it can be received in the skirt.
+
+168
+00:06:56,000 --> 00:06:58,000
+These settings can be maintained
+
+169
+00:06:58,000 --> 00:07:00,000
+in a static state,
+
+170
+00:07:00,000 --> 00:07:02,000
+but there may be some problems
+
+171
+00:07:02,000 --> 00:07:04,000
+under the dynamic model.
+
+172
+00:07:04,000 --> 00:07:06,000
+You can see here
+
+173
+00:07:06,000 --> 00:07:08,000
+that in the process of
+
+174
+00:07:08,000 --> 00:07:10,000
+modifying to half,
+
+175
+00:07:10,000 --> 00:07:12,000
+there are already some conflict problems.
+
+176
+00:07:12,000 --> 00:07:14,000
+In this process,
+
+177
+00:07:14,000 --> 00:07:16,000
+you can see that
+
+178
+00:07:16,000 --> 00:07:18,000
+there are some problems
+
+179
+00:07:18,000 --> 00:07:20,000
+in our sleeves or belt.
+
+180
+00:07:20,000 --> 00:07:22,000
+This is because when the animation
+
+181
+00:07:22,000 --> 00:07:24,000
+is simulated to this action,
+
+182
+00:07:24,000 --> 00:07:26,000
+the sleeves and skirt collide,
+
+183
+00:07:26,000 --> 00:07:28,000
+and they begin to identify layers.
+
+184
+00:07:28,000 --> 00:07:30,000
+It's like this,
+
+185
+00:07:30,000 --> 00:07:32,000
+it won't touch each other in the early stages of the version,
+
+186
+00:07:32,000 --> 00:07:34,000
+but if there are some collisions
+
+187
+00:07:34,000 --> 00:07:36,000
+when it is simulated to the middle stage,
+
+188
+00:07:36,000 --> 00:07:38,000
+we can cancel the layer before it collides.
+
+189
+00:07:38,000 --> 00:07:40,000
+The layer tool
+
+190
+00:07:40,000 --> 00:07:42,000
+is that once you simulate stability,
+
+191
+00:07:42,000 --> 00:07:44,000
+there is no problem,
+
+192
+00:07:44,000 --> 00:07:46,000
+so we can pull the progress bar back a little
+
+193
+00:07:46,000 --> 00:07:48,000
+and set the layer to zero,
+
+194
+00:07:48,000 --> 00:07:50,000
+and then continue to record the animation.
+
+195
+00:07:50,000 --> 00:07:52,000
+Because the layer will not affect the grid arrangement,
+
+196
+00:07:52,000 --> 00:07:54,000
+so if we start recording the animation,
+
+197
+00:07:54,000 --> 00:07:56,000
+the animation will not disappear.
+
+198
+00:07:56,000 --> 00:07:58,000
+Here I have already recorded a section,
+
+199
+00:07:58,000 --> 00:08:00,000
+now let's show this section
+
+200
+00:08:00,000 --> 00:08:02,000
+to see if the layer is not applied,
+
+201
+00:08:02,000 --> 00:08:04,000
+what will happen if we start recording?
+
+202
+00:08:04,000 --> 00:08:06,000
+Here we can see
+
+203
+00:08:06,000 --> 00:08:08,000
+that if we do not set the layer,
+
+204
+00:08:08,000 --> 00:08:10,000
+it may be more stable.
+
+205
+00:08:10,000 --> 00:08:12,000
+So usually,
+
+206
+00:08:12,000 --> 00:08:14,000
+whether it is recording an animation
+
+207
+00:08:14,000 --> 00:08:16,000
+or doing a static model,
+
+208
+00:08:16,000 --> 00:08:18,000
+we can check
+
+209
+00:08:18,000 --> 00:08:20,000
+if the layer is set
+
+210
+00:08:20,000 --> 00:08:22,000
+to cause such a problem.
+
+211
+00:08:22,000 --> 00:08:24,000
+Of course, sometimes,
+
+212
+00:08:24,000 --> 00:08:26,000
+it doesn't matter if you use the layer,
+
+213
+00:08:26,000 --> 00:08:28,000
+it depends on whether
+
+214
+00:08:28,000 --> 00:08:30,000
+the second time and other versions
+
+215
+00:08:30,000 --> 00:08:32,000
+have collisions.
+
+216
+00:08:32,000 --> 00:08:34,000
+Then let's look at some settings
+
+217
+00:08:34,000 --> 00:08:36,000
+about the animation part.
+
+218
+00:08:36,000 --> 00:08:38,000
+First of all,
+
+219
+00:08:38,000 --> 00:08:40,000
+we can see that this animation bar
+
+220
+00:08:40,000 --> 00:08:42,000
+is only set to three,
+
+221
+00:08:42,000 --> 00:08:44,000
+but they will merge into a complete animation.
+
+222
+00:08:44,000 --> 00:08:46,000
+Then the parts that are covered
+
+223
+00:08:46,000 --> 00:08:48,000
+and recorded will not be retained,
+
+224
+00:08:48,000 --> 00:08:50,000
+it will only retain the part
+
+225
+00:08:50,000 --> 00:08:52,000
+that we replaced later.
+
+226
+00:08:52,000 --> 00:08:54,000
+Here we show you
+
+227
+00:08:54,000 --> 00:08:56,000
+that here we have just
+
+228
+00:08:56,000 --> 00:08:58,000
+modified the layer,
+
+229
+00:08:58,000 --> 00:09:00,000
+so we recorded a section
+
+230
+00:09:00,000 --> 00:09:02,000
+and covered the previous section.
+
+231
+00:09:02,000 --> 00:09:04,000
+After that,
+
+232
+00:09:04,000 --> 00:09:06,000
+we can see that
+
+233
+00:09:06,000 --> 00:09:08,000
+this animation bar
+
+234
+00:09:08,000 --> 00:09:10,000
+is set to a stable,
+
+235
+00:09:10,000 --> 00:09:12,000
+no layers section.
+
+236
+00:09:12,000 --> 00:09:14,000
+Even if we hide
+
+237
+00:09:14,000 --> 00:09:16,000
+these action bars
+
+238
+00:09:16,000 --> 00:09:18,000
+in the software,
+
+239
+00:09:18,000 --> 00:09:20,000
+as long as these animations are still there
+
+240
+00:09:20,000 --> 00:09:22,000
+and not deleted,
+
+241
+00:09:22,000 --> 00:09:24,000
+it will still be covered.
+
+242
+00:09:24,000 --> 00:09:26,000
+Of course,
+
+243
+00:09:26,000 --> 00:09:28,000
+the part that the animation
+
+244
+00:09:28,000 --> 00:09:30,000
+will be covered
+
+245
+00:09:30,000 --> 00:09:32,000
+is only the part
+
+246
+00:09:32,000 --> 00:09:34,000
+that is blocked by it.
+
+247
+00:09:34,000 --> 00:09:36,000
+If you don't want to keep
+
+248
+00:09:36,000 --> 00:09:38,000
+those animations recorded later,
+
+249
+00:09:38,000 --> 00:09:40,000
+you can delete them with the right-click.
+
+250
+00:09:40,000 --> 00:09:42,000
+In addition,
+
+251
+00:09:42,000 --> 00:09:44,000
+when some clothes are hidden
+
+252
+00:09:44,000 --> 00:09:46,000
+when they are leaked,
+
+253
+00:09:46,000 --> 00:09:48,000
+for example,
+
+254
+00:09:48,000 --> 00:09:50,000
+here I choose the skirt
+
+255
+00:09:50,000 --> 00:09:52,000
+and press Shift-Q to hide them.
+
+256
+00:09:52,000 --> 00:09:54,000
+At this time,
+
+257
+00:09:54,000 --> 00:09:56,000
+if I choose to leak the Olympic file,
+
+258
+00:09:56,000 --> 00:09:58,000
+the skirt part will not be leaked.
+
+259
+00:09:58,000 --> 00:10:00,000
+Here we can see that
+
+260
+00:10:00,000 --> 00:10:02,000
+only the animation above
+
+261
+00:10:02,000 --> 00:10:04,000
+has been leaked.
+
+262
+00:10:04,000 --> 00:10:06,000
+That's all about the animation.
+
+263
+00:10:06,000 --> 00:10:08,000
+Thank you for watching.
+

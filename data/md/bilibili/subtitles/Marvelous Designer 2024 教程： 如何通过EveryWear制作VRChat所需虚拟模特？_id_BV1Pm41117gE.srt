@@ -1,0 +1,2072 @@
+1
+00:00:00,000 --> 00:00:07,000
+Introduction and Purpose
+
+2
+00:00:07,000 --> 00:00:11,000
+Introduction and Purpose
+
+3
+00:00:11,000 --> 00:00:13,000
+Hello, everyone!
+
+4
+00:00:13,000 --> 00:00:17,000
+Do you want to play in VRChat wearing garments you've personally designed?
+
+5
+00:00:17,000 --> 00:00:21,000
+Create unique avatars with your own special designs.
+
+6
+00:00:21,000 --> 00:00:23,000
+It's easy with everywhere!
+
+7
+00:00:23,000 --> 00:00:31,000
+In this video, we will learn how to convert garments from Clo or Marvelous Designer into VRChat garments using Everywhere.
+
+8
+00:00:31,000 --> 00:00:42,000
+VRChat is a Metverse platform that allows users to create 3D avatars, interact with other users, and engage in various real-life experiences and games.
+
+9
+00:00:42,000 --> 00:00:51,000
+In this tutorial, we'll learn how to create VRChat garments using Everywhere, Vroid Studio, Blender, and Unity.
+
+10
+00:00:51,000 --> 00:00:53,000
+Before we dive into VRChat,
+
+11
+00:00:53,000 --> 00:00:58,000
+if you haven't gone through the basic tutorial of Everywhere,
+
+12
+00:00:58,000 --> 00:01:03,000
+we recommend you to learn the fundamentals first before proceeding with this tutorial.
+
+13
+00:01:03,000 --> 00:01:08,000
+Please refer to the link provided at the top or in the description.
+
+14
+00:01:08,000 --> 00:01:11,000
+VRChat Rule Guide
+
+15
+00:01:11,000 --> 00:01:16,000
+To create items in VRChat, there are certain rules you need to follow.
+
+16
+00:01:16,000 --> 00:01:22,000
+The production rules are separated based on PC and Android platforms.
+
+17
+00:01:22,000 --> 00:01:23,000
+For PC,
+
+18
+00:01:23,000 --> 00:01:29,000
+the mesh limit is 70,000, with a recommended mesh count of 32,000.
+
+19
+00:01:29,000 --> 00:01:34,000
+The maximum number of materials is 32, with a recommended count of 4.
+
+20
+00:01:34,000 --> 00:01:41,000
+In this tutorial, we will focus on creating avatars and garments based on the PC version.
+
+21
+00:01:41,000 --> 00:01:45,000
+You may find more detailed guidelines at the provided link.
+
+22
+00:01:45,000 --> 00:01:48,000
+Creating Avatar in Vroid Studio
+
+23
+00:01:48,000 --> 00:01:52,000
+Now, let's create an avatar for VRChat using Vroid Studio.
+
+24
+00:01:52,000 --> 00:01:59,000
+Vroid Studio is a free avatar creation tool provided by Pixiv,
+
+25
+00:01:59,000 --> 00:02:02,000
+allowing easy customization of Vroid avatars.
+
+26
+00:02:02,000 --> 00:02:08,000
+Please access the link provided at the top to download and install Vroid Studio.
+
+27
+00:02:08,000 --> 00:02:12,000
+Once installation is complete and Vroid Studio is opened,
+
+28
+00:02:12,000 --> 00:02:17,000
+click Create New and choose the desired gender for your avatar.
+
+29
+00:02:17,000 --> 00:02:20,000
+To dress your avatar in the created garments,
+
+30
+00:02:20,000 --> 00:02:22,000
+you'll need an avatar without clothes.
+
+31
+00:02:22,000 --> 00:02:24,000
+To remove default clothing,
+
+32
+00:02:24,000 --> 00:02:26,000
+click on the Outfit tab at the top,
+
+33
+00:02:26,000 --> 00:02:30,000
+and delete the clothing from the top and bottom menus.
+
+34
+00:02:36,000 --> 00:02:39,000
+If you wish to wear specific shoes and socks,
+
+35
+00:02:39,000 --> 00:02:42,000
+please select and equip them accordingly.
+
+36
+00:02:42,000 --> 00:02:48,000
+You can customize your avatar's face and hairstyle under the Face and Hairstyle tabs at the top.
+
+37
+00:02:48,000 --> 00:02:52,000
+Be cautious not to make your avatar excessively large or elaborate,
+
+38
+00:02:52,000 --> 00:02:55,000
+as it may increase the polygon count.
+
+39
+00:03:05,000 --> 00:03:09,000
+Save the created avatar for future use or modifications.
+
+40
+00:03:09,000 --> 00:03:12,000
+Click on the Menu button at the top right,
+
+41
+00:03:12,000 --> 00:03:16,000
+then click Save As to save the file in Vroid format.
+
+42
+00:03:16,000 --> 00:03:20,000
+Once your avatar is fully configured,
+
+43
+00:03:20,000 --> 00:03:21,000
+export it.
+
+44
+00:03:21,000 --> 00:03:23,000
+Click on the icon at the top right,
+
+45
+00:03:23,000 --> 00:03:26,000
+then select Export as VRM.
+
+46
+00:03:26,000 --> 00:03:29,000
+A window will open for setting export options.
+
+47
+00:03:29,000 --> 00:03:33,000
+Set Reduce Polygons for the body to 34
+
+48
+00:03:35,000 --> 00:03:39,000
+and Reduce Materials for Materials to 2.
+
+49
+00:03:42,000 --> 00:03:45,000
+Then, click the Export button.
+
+50
+00:03:45,000 --> 00:03:48,000
+When the VRM Settings window appears,
+
+51
+00:03:48,000 --> 00:03:50,000
+fill in the information,
+
+52
+00:03:50,000 --> 00:03:53,000
+select VRM 0.0,
+
+53
+00:03:53,000 --> 00:03:56,000
+enter the title and creator details,
+
+54
+00:03:59,000 --> 00:04:02,000
+and click the Export button at the bottom.
+
+55
+00:04:03,000 --> 00:04:07,000
+Please specify the saving path to save the VRM file.
+
+56
+00:04:10,000 --> 00:04:13,000
+Avatar Format Conversion in Blender
+
+57
+00:04:13,000 --> 00:04:14,000
+Blender Installation
+
+58
+00:04:14,000 --> 00:04:19,000
+Please download the file from the link above to install Blender.
+
+59
+00:04:19,000 --> 00:04:24,000
+For this tutorial, we will use Blender 3.0.1.
+
+60
+00:04:24,000 --> 00:04:26,000
+Installing the CATS plugin
+
+61
+00:04:26,000 --> 00:04:31,000
+To utilize Vroid avatars for 3D garments in Blender,
+
+62
+00:04:31,000 --> 00:04:33,000
+you need to convert the file format.
+
+63
+00:04:33,000 --> 00:04:35,000
+We'll utilize the CATS plugin,
+
+64
+00:04:35,000 --> 00:04:39,000
+as it's necessary for this format conversion process.
+
+65
+00:04:39,000 --> 00:04:43,000
+Please go to the link provided at the top to download the plugin
+
+66
+00:04:43,000 --> 00:04:46,000
+and follow the guide to install it in Blender.
+
+67
+00:04:50,000 --> 00:04:52,000
+Go to the top menu,
+
+68
+00:04:52,000 --> 00:04:53,000
+Edit,
+
+69
+00:04:53,000 --> 00:04:55,000
+Preferences,
+
+70
+00:04:55,000 --> 00:04:56,000
+Add-ons,
+
+71
+00:04:56,000 --> 00:04:58,000
+click the Install button
+
+72
+00:04:58,000 --> 00:05:00,000
+and open the downloaded file.
+
+73
+00:05:02,000 --> 00:05:06,000
+Check the installed CATS Blender plugin to activate its features.
+
+74
+00:05:09,000 --> 00:05:11,000
+VRM to FBX Conversion
+
+75
+00:05:11,000 --> 00:05:13,000
+Once the plugin is installed,
+
+76
+00:05:13,000 --> 00:05:17,000
+click on the newly added CATS tab on the right side.
+
+77
+00:05:17,000 --> 00:05:19,000
+Select Import Model, VRM
+
+78
+00:05:19,000 --> 00:05:24,000
+and choose the avatar file in VRM format that you want to import.
+
+79
+00:05:24,000 --> 00:05:27,000
+In the import window, select the option
+
+80
+00:05:27,000 --> 00:05:30,000
+Extract Texture Images into the Folder
+
+81
+00:05:30,000 --> 00:05:32,000
+on the right side to import.
+
+82
+00:05:32,000 --> 00:05:43,000
+Click on the icon next to Fix Model in the CATS add-on.
+
+83
+00:05:43,000 --> 00:05:46,000
+Select the same options as shown on the screen,
+
+84
+00:05:46,000 --> 00:05:49,000
+then click OK and Fix Model.
+
+85
+00:05:57,000 --> 00:05:59,000
+Once the fix model process is completed,
+
+86
+00:05:59,000 --> 00:06:01,000
+switch to pose mode to test
+
+87
+00:06:01,000 --> 00:06:05,000
+if the model has been corrected without any issues.
+
+88
+00:06:11,000 --> 00:06:13,000
+If everything looks fine,
+
+89
+00:06:13,000 --> 00:06:17,000
+exit the pose mode and click on Export Model.
+
+90
+00:06:17,000 --> 00:06:20,000
+Click Continue to export in the warning dialog
+
+91
+00:06:20,000 --> 00:06:22,000
+and save it as an FBX file.
+
+92
+00:06:22,000 --> 00:06:27,000
+We'll import this FBX file as an avatar into Marvelous Designer
+
+93
+00:06:27,000 --> 00:06:29,000
+and then dress the outfit on it.
+
+94
+00:06:29,000 --> 00:06:31,000
+Once you've finished creating the outfit,
+
+95
+00:06:31,000 --> 00:06:34,000
+you'll likely want to save the avatar file process
+
+96
+00:06:34,000 --> 00:06:36,000
+with Fix Model in Blender format.
+
+97
+00:06:36,000 --> 00:06:39,000
+This will be necessary for both the outfit
+
+98
+00:06:39,000 --> 00:06:42,000
+and avatar organization processes later on.
+
+99
+00:06:45,000 --> 00:06:48,000
+Garment Conversion in Everywhere
+
+100
+00:06:49,000 --> 00:06:52,000
+Now, let's create VRChat garments
+
+101
+00:06:52,000 --> 00:06:55,000
+using everywhere in the following order.
+
+102
+00:06:55,000 --> 00:06:56,000
+Auto-fitting,
+
+103
+00:06:56,000 --> 00:06:57,000
+Rigging,
+
+104
+00:06:57,000 --> 00:06:58,000
+UV Packing,
+
+105
+00:06:58,000 --> 00:06:59,000
+Texture Baking,
+
+106
+00:06:59,000 --> 00:07:00,000
+and Uplift.
+
+107
+00:07:01,000 --> 00:07:03,000
+Everywhere offers the same functionalities
+
+108
+00:07:03,000 --> 00:07:06,000
+within Clow and Marvelous Designer,
+
+109
+00:07:06,000 --> 00:07:09,000
+so it's recommended to use your preferred software.
+
+110
+00:07:09,000 --> 00:07:11,000
+Downloading Garments from Connect
+
+111
+00:07:11,000 --> 00:07:15,000
+The garments for the tutorial are available on Connect.
+
+112
+00:07:15,000 --> 00:07:18,000
+Click on the link at the top to access Connect.
+
+113
+00:07:18,000 --> 00:07:20,000
+Add the garments to your cart,
+
+114
+00:07:24,000 --> 00:07:26,000
+proceed with the purchase,
+
+115
+00:07:26,000 --> 00:07:36,000
+and then download the files.
+
+116
+00:07:36,000 --> 00:07:43,000
+Open the downloaded garment file in Marvelous Designer
+
+117
+00:07:43,000 --> 00:07:49,000
+and import the FBX avatar file from Blender.
+
+118
+00:07:49,000 --> 00:07:56,000
+Click on the link at the top to access the FBX avatar file.
+
+119
+00:07:56,000 --> 00:07:59,000
+Click on the link at the top to access the FBX avatar file.
+
+120
+00:07:59,000 --> 00:08:00,000
+Auto-fitting
+
+121
+00:08:00,000 --> 00:08:04,000
+If the avatar's size has been changed in Vroid Studio
+
+122
+00:08:04,000 --> 00:08:06,000
+and the garments no longer fit properly,
+
+123
+00:08:06,000 --> 00:08:09,000
+we recommend using the auto-fitting feature.
+
+124
+00:08:09,000 --> 00:08:12,000
+Auto-fitting automatically adjusts and fits patterns
+
+125
+00:08:12,000 --> 00:08:14,000
+to match the size of the avatar.
+
+126
+00:08:14,000 --> 00:08:17,000
+For a detailed tutorial on auto-fitting,
+
+127
+00:08:17,000 --> 00:08:19,000
+please refer to the link above.
+
+128
+00:08:19,000 --> 00:08:21,000
+The garments provided by Connect
+
+129
+00:08:21,000 --> 00:08:23,000
+are fitted to the default size,
+
+130
+00:08:23,000 --> 00:08:25,000
+so we will skip the auto-fitting process
+
+131
+00:08:25,000 --> 00:08:28,000
+and directly dress the outfit and avatar.
+
+132
+00:08:29,000 --> 00:08:30,000
+Rigging
+
+133
+00:08:30,000 --> 00:08:32,000
+Now, let's open Everywhere
+
+134
+00:08:32,000 --> 00:08:36,000
+and proceed with polygon optimization and rigging.
+
+135
+00:08:36,000 --> 00:08:38,000
+As the first step,
+
+136
+00:08:38,000 --> 00:08:40,000
+let's optimize the polygons
+
+137
+00:08:40,000 --> 00:08:43,000
+based on the polycount standards required by VRChat.
+
+138
+00:08:43,000 --> 00:08:46,000
+The polygon count for a single garment
+
+139
+00:08:46,000 --> 00:08:48,000
+including the avatar
+
+140
+00:08:48,000 --> 00:08:51,000
+should not exceed 70,000.
+
+141
+00:08:51,000 --> 00:08:53,000
+Please adjust the mesh count accordingly,
+
+142
+00:08:53,000 --> 00:08:56,000
+keeping some room for flexibility.
+
+143
+00:08:56,000 --> 00:08:59,000
+Enter the numbers and click Optimize.
+
+144
+00:08:59,000 --> 00:09:01,000
+Once optimization is done,
+
+145
+00:09:01,000 --> 00:09:03,000
+simulate the garment again.
+
+146
+00:09:05,000 --> 00:09:07,000
+Next, click on Apply
+
+147
+00:09:07,000 --> 00:09:10,000
+for rigging to start auto-rigging.
+
+148
+00:09:14,000 --> 00:09:16,000
+Once rigging is complete,
+
+149
+00:09:16,000 --> 00:09:19,000
+click on the brush icon to open the brush window.
+
+150
+00:09:19,000 --> 00:09:22,000
+Use the weight brush to make adjustments to the weights.
+
+151
+00:09:22,000 --> 00:09:25,000
+Before getting into weight modification,
+
+152
+00:09:25,000 --> 00:09:28,000
+change the pose and identify areas
+
+153
+00:09:28,000 --> 00:09:30,000
+where you need to adjust weights.
+
+154
+00:09:30,000 --> 00:09:33,000
+Adjust the blend mode and properties of the brush
+
+155
+00:09:33,000 --> 00:09:35,000
+while making modifications.
+
+156
+00:09:35,000 --> 00:09:38,000
+Use the sculpt brush to smooth out surfaces
+
+157
+00:09:38,000 --> 00:09:40,000
+or refine shapes.
+
+158
+00:09:46,000 --> 00:09:49,000
+Once rigging adjustments are done,
+
+159
+00:09:49,000 --> 00:09:52,000
+press the exit button to close the brush window.
+
+160
+00:09:52,000 --> 00:09:55,000
+UV Packing and Texture Baking
+
+161
+00:09:55,000 --> 00:09:57,000
+Now the rigging is complete,
+
+162
+00:09:57,000 --> 00:09:59,000
+let's switch to the Material tab
+
+163
+00:09:59,000 --> 00:10:02,000
+in the Everywhere window to work on the textures.
+
+164
+00:10:02,000 --> 00:10:04,000
+Before packing UVs,
+
+165
+00:10:04,000 --> 00:10:06,000
+you need to set the image size.
+
+166
+00:10:06,000 --> 00:10:09,000
+Choose your desired image size in the options.
+
+167
+00:10:09,000 --> 00:10:12,000
+Please avoid selecting too large sizes
+
+168
+00:10:12,000 --> 00:10:14,000
+due to texture size limitations.
+
+169
+00:10:14,000 --> 00:10:17,000
+Once image and seam size configurations are done,
+
+170
+00:10:17,000 --> 00:10:20,000
+click the Pack UVs button.
+
+171
+00:10:20,000 --> 00:10:22,000
+Set the packing ratio value,
+
+172
+00:10:22,000 --> 00:10:24,000
+choose other options if necessary,
+
+173
+00:10:24,000 --> 00:10:27,000
+and then press the Apply button to pack.
+
+174
+00:10:31,000 --> 00:10:33,000
+Once UV packing is complete,
+
+175
+00:10:33,000 --> 00:10:37,000
+click the Close button to return to the Material tab.
+
+176
+00:10:38,000 --> 00:10:40,000
+After checking the maps you want to generate
+
+177
+00:10:40,000 --> 00:10:41,000
+in Texture Baking,
+
+178
+00:10:41,000 --> 00:10:43,000
+press the Apply button.
+
+179
+00:10:43,000 --> 00:10:45,000
+We will keep the default settings.
+
+180
+00:10:49,000 --> 00:10:51,000
+Once baking is complete,
+
+181
+00:10:53,000 --> 00:10:56,000
+you can check the generated Normal map
+
+182
+00:10:56,000 --> 00:10:58,000
+and Ambient Occlusion map.
+
+183
+00:11:00,000 --> 00:11:02,000
+After texture baking is complete,
+
+184
+00:11:02,000 --> 00:11:04,000
+a corresponding number of materials
+
+185
+00:11:04,000 --> 00:11:07,000
+will be generated in the material list below
+
+186
+00:11:07,000 --> 00:11:10,000
+based on the number of UV tiles.
+
+187
+00:11:10,000 --> 00:11:12,000
+If you wish to have different materials
+
+188
+00:11:12,000 --> 00:11:14,000
+for each part in Unity,
+
+189
+00:11:14,000 --> 00:11:16,000
+please separate the materials.
+
+190
+00:11:16,000 --> 00:11:18,000
+However, for this tutorial,
+
+191
+00:11:18,000 --> 00:11:20,000
+we will not separate the material
+
+192
+00:11:20,000 --> 00:11:23,000
+and will proceed using one material.
+
+193
+00:11:27,000 --> 00:11:28,000
+Upload
+
+194
+00:11:28,000 --> 00:11:30,000
+When the garment creation is finished,
+
+195
+00:11:30,000 --> 00:11:32,000
+click the Upload button
+
+196
+00:11:32,000 --> 00:11:35,000
+to open the Export Options window.
+
+197
+00:11:35,000 --> 00:11:37,000
+Since we only need the garment,
+
+198
+00:11:37,000 --> 00:11:39,000
+please do not select the avatar.
+
+199
+00:11:39,000 --> 00:11:41,000
+Choose the necessary textures
+
+200
+00:11:41,000 --> 00:11:43,000
+from the options below.
+
+201
+00:11:43,000 --> 00:11:45,000
+Click OK to upload to connect.
+
+202
+00:11:45,000 --> 00:11:49,000
+Access Connect and download the FBX file.
+
+203
+00:11:59,000 --> 00:12:01,000
+When you open the zip file,
+
+204
+00:12:01,000 --> 00:12:03,000
+you will find the FBX file
+
+205
+00:12:03,000 --> 00:12:05,000
+along with the texture map files.
+
+206
+00:12:07,000 --> 00:12:09,000
+Organizing Custom Model in Blender
+
+207
+00:12:11,000 --> 00:12:13,000
+To upload items to VRChat,
+
+208
+00:12:13,000 --> 00:12:16,000
+integration of the avatar and garment,
+
+209
+00:12:16,000 --> 00:12:19,000
+deletion of hidden parts of the body mesh,
+
+210
+00:12:19,000 --> 00:12:21,000
+since Everywhere doesn't currently
+
+211
+00:12:21,000 --> 00:12:23,000
+provide these features,
+
+212
+00:12:23,000 --> 00:12:26,000
+we'll proceed with these tasks in Blender.
+
+213
+00:12:26,000 --> 00:12:29,000
+Import FBX and Fix Model
+
+214
+00:12:29,000 --> 00:12:31,000
+Open the Blender file of the avatar
+
+215
+00:12:31,000 --> 00:12:33,000
+that you saved in the previous
+
+216
+00:12:33,000 --> 00:12:35,000
+format conversion process.
+
+217
+00:12:35,000 --> 00:12:37,000
+In the top menu bar,
+
+218
+00:12:37,000 --> 00:12:39,000
+click File, Import,
+
+219
+00:12:39,000 --> 00:12:42,000
+FBX to open the garment FBX file
+
+220
+00:12:42,000 --> 00:12:44,000
+downloaded from Connect.
+
+221
+00:12:44,000 --> 00:12:46,000
+Keep the file settings on the right unchanged
+
+222
+00:12:46,000 --> 00:12:48,000
+and import it as is.
+
+223
+00:12:53,000 --> 00:12:55,000
+Delete the collection in the Scene Collection
+
+224
+00:12:55,000 --> 00:12:57,000
+on the top right.
+
+225
+00:12:57,000 --> 00:12:59,000
+On the top right in the Scene Collection,
+
+226
+00:12:59,000 --> 00:13:01,000
+you can see that the avatar
+
+227
+00:13:01,000 --> 00:13:03,000
+is imported as Armature
+
+228
+00:13:03,000 --> 00:13:07,000
+and the garment is imported as Armature.001.
+
+229
+00:13:07,000 --> 00:13:09,000
+Select the Armature.001
+
+230
+00:13:09,000 --> 00:13:11,000
+under Null and,
+
+231
+00:13:11,000 --> 00:13:13,000
+while holding down Shift,
+
+232
+00:13:13,000 --> 00:13:15,000
+drag it downward.
+
+233
+00:13:19,000 --> 00:13:22,000
+Since the transform of Armature.001
+
+234
+00:13:22,000 --> 00:13:23,000
+has changed,
+
+235
+00:13:23,000 --> 00:13:26,000
+select Armature.001,
+
+236
+00:13:26,000 --> 00:13:29,000
+then change the scale to 0.01
+
+237
+00:13:29,000 --> 00:13:31,000
+and rotation X to 0
+
+238
+00:13:31,000 --> 00:13:33,000
+in the transform on the bottom right.
+
+239
+00:13:34,000 --> 00:13:36,000
+Delete the unnecessary Null
+
+240
+00:13:36,000 --> 00:13:37,000
+at the bottom.
+
+241
+00:13:37,000 --> 00:13:39,000
+Select Armature.001
+
+242
+00:13:39,000 --> 00:13:41,000
+and rotation X to 0.01.
+
+243
+00:13:41,000 --> 00:13:43,000
+Set the options as shown in the image
+
+244
+00:13:43,000 --> 00:13:45,000
+and proceed with Fix Model.
+
+245
+00:13:49,000 --> 00:13:51,000
+Delete Body Mesh.
+
+246
+00:13:51,000 --> 00:13:53,000
+We'll remove the hidden body mesh
+
+247
+00:13:53,000 --> 00:13:55,000
+that is covered by the garment.
+
+248
+00:13:55,000 --> 00:13:57,000
+Select the body.
+
+249
+00:13:57,000 --> 00:13:59,000
+Switch to Edit Mode either
+
+250
+00:13:59,000 --> 00:14:01,000
+by clicking on Edit Mode in the top left
+
+251
+00:14:01,000 --> 00:14:03,000
+or pressing the Tab key.
+
+252
+00:14:03,000 --> 00:14:05,000
+If you want to select both sides at once,
+
+253
+00:14:05,000 --> 00:14:07,000
+press Alt plus Z
+
+254
+00:14:07,000 --> 00:14:09,000
+to switch to X-Ray mode.
+
+255
+00:14:09,000 --> 00:14:10,000
+Then,
+
+256
+00:14:10,000 --> 00:14:12,000
+drag to select the parts of the body
+
+257
+00:14:12,000 --> 00:14:13,000
+you want to delete.
+
+258
+00:14:13,000 --> 00:14:14,000
+Afterward,
+
+259
+00:14:14,000 --> 00:14:16,000
+choose Delete,
+
+260
+00:14:16,000 --> 00:14:18,000
+Vertices to remove the mesh.
+
+261
+00:14:18,000 --> 00:14:21,000
+Adjust the viewport mode if necessary.
+
+262
+00:14:37,000 --> 00:14:39,000
+Merge Avatar.
+
+263
+00:14:39,000 --> 00:14:41,000
+If deleting the hidden body mesh
+
+264
+00:14:41,000 --> 00:14:42,000
+is complete,
+
+265
+00:14:42,000 --> 00:14:44,000
+let's merge the Avatar
+
+266
+00:14:44,000 --> 00:14:46,000
+and Garment into one.
+
+267
+00:14:46,000 --> 00:14:48,000
+Select the Armature first
+
+268
+00:14:48,000 --> 00:14:51,000
+and Control-Select Armature.001.
+
+269
+00:14:51,000 --> 00:14:52,000
+Then,
+
+270
+00:14:52,000 --> 00:14:53,000
+in the CATS add-on,
+
+271
+00:14:53,000 --> 00:14:55,000
+Custom Model Creation,
+
+272
+00:14:55,000 --> 00:14:58,000
+choose the options as shown in the image
+
+273
+00:15:01,000 --> 00:15:03,000
+and click Merge Armature.
+
+274
+00:15:03,000 --> 00:15:05,000
+This will combine the two bones into one.
+
+275
+00:15:05,000 --> 00:15:08,000
+If the Avatar and Garment are merged,
+
+276
+00:15:08,000 --> 00:15:10,000
+let's check for any errors
+
+277
+00:15:10,000 --> 00:15:12,000
+by adjusting the pose.
+
+278
+00:15:12,000 --> 00:15:13,000
+Select the bone,
+
+279
+00:15:13,000 --> 00:15:15,000
+then change to Pose Mode
+
+280
+00:15:15,000 --> 00:15:16,000
+either by switching to it
+
+281
+00:15:16,000 --> 00:15:18,000
+in the upper right corner
+
+282
+00:15:18,000 --> 00:15:20,000
+or by pressing Control-Tab key.
+
+283
+00:15:20,000 --> 00:15:22,000
+Choose the bone you want to move
+
+284
+00:15:22,000 --> 00:15:24,000
+and check if both the Avatar
+
+285
+00:15:24,000 --> 00:15:26,000
+and Garment move smoothly when rotated.
+
+286
+00:15:35,000 --> 00:15:37,000
+Select the bone you want to move
+
+287
+00:15:37,000 --> 00:15:38,000
+and check if both the Avatar
+
+288
+00:15:38,000 --> 00:15:40,000
+and Garment move smoothly when rotated.
+
+289
+00:15:42,000 --> 00:15:44,000
+Eye Tracking and Lip Sync for the Avatar
+
+290
+00:15:44,000 --> 00:15:47,000
+can also be configured in the CATS add-on.
+
+291
+00:15:47,000 --> 00:15:49,000
+You can set up the Eye Tracking
+
+292
+00:15:49,000 --> 00:15:50,000
+in the Eye Tracking tab
+
+293
+00:15:50,000 --> 00:15:52,000
+and Lip Sync in the By Seams tab.
+
+294
+00:16:02,000 --> 00:16:04,000
+Export FBX.
+
+295
+00:16:04,000 --> 00:16:07,000
+When all the tasks are completed in Blender,
+
+296
+00:16:07,000 --> 00:16:10,000
+export it in FBX format.
+
+297
+00:16:10,000 --> 00:16:12,000
+Click on the Export Model
+
+298
+00:16:12,000 --> 00:16:14,000
+at the top of the CATS add-on.
+
+299
+00:16:14,000 --> 00:16:16,000
+Specify the file name and path,
+
+300
+00:16:16,000 --> 00:16:18,000
+change the path mode on the right to
+
+301
+00:16:18,000 --> 00:16:23,000
+Copy and click Export FBX to save.
+
+302
+00:16:23,000 --> 00:16:27,000
+Custom Model Setup in Unity
+
+303
+00:16:27,000 --> 00:16:30,000
+In Unity, we'll proceed with Avatar settings,
+
+304
+00:16:30,000 --> 00:16:32,000
+shader configurations,
+
+305
+00:16:32,000 --> 00:16:33,000
+format changes
+
+306
+00:16:33,000 --> 00:16:36,000
+and VRChat upload tasks.
+
+307
+00:16:36,000 --> 00:16:38,000
+Install
+
+308
+00:16:38,000 --> 00:16:39,000
+To install Unity,
+
+309
+00:16:39,000 --> 00:16:40,000
+please refer to the official
+
+310
+00:16:40,000 --> 00:16:42,000
+VRChat Guide link at the top
+
+311
+00:16:42,000 --> 00:16:44,000
+and install Unity Hub
+
+312
+00:16:44,000 --> 00:16:46,000
+along with the recommended version
+
+313
+00:16:46,000 --> 00:16:49,000
+2022.3.6
+
+314
+00:16:49,000 --> 00:16:52,000
+as of March 2024.
+
+315
+00:16:52,000 --> 00:16:54,000
+To set up VRChat Avatars in Unity,
+
+316
+00:16:54,000 --> 00:16:57,000
+you need to install the Creator Companion
+
+317
+00:16:57,000 --> 00:16:59,000
+provided by VRChat.
+
+318
+00:16:59,000 --> 00:17:01,000
+Please visit the link at the top,
+
+319
+00:17:01,000 --> 00:17:03,000
+download and install it.
+
+320
+00:17:03,000 --> 00:17:07,000
+Once the installation is complete,
+
+321
+00:17:07,000 --> 00:17:09,000
+choose Create New Project
+
+322
+00:17:09,000 --> 00:17:14,000
+and select Unity 2022 Avatar Project.
+
+323
+00:17:14,000 --> 00:17:17,000
+Set the project name and storage location,
+
+324
+00:17:17,000 --> 00:17:19,000
+then click the Create Project button
+
+325
+00:17:19,000 --> 00:17:21,000
+at the bottom.
+
+326
+00:17:21,000 --> 00:17:25,000
+In the next step,
+
+327
+00:17:25,000 --> 00:17:28,000
+click Open Project to open the project.
+
+328
+00:17:28,000 --> 00:17:30,000
+If the installation is successful,
+
+329
+00:17:30,000 --> 00:17:32,000
+you will see the VRChat SDK
+
+330
+00:17:32,000 --> 00:17:35,000
+tab in the top toolbar.
+
+331
+00:17:36,000 --> 00:17:38,000
+Importing and setting
+
+332
+00:17:38,000 --> 00:17:41,000
+Now, let's import the custom model file.
+
+333
+00:17:41,000 --> 00:17:43,000
+In the bottom asset window,
+
+334
+00:17:43,000 --> 00:17:44,000
+right-click,
+
+335
+00:17:44,000 --> 00:17:45,000
+Create,
+
+336
+00:17:45,000 --> 00:17:48,000
+Folder to create a model folder.
+
+337
+00:17:48,000 --> 00:17:51,000
+Drag and drop the FBX file exported from Blender
+
+338
+00:17:51,000 --> 00:17:54,000
+into the folder you just created.
+
+339
+00:17:54,000 --> 00:17:56,000
+If you drag and drop the FBX file
+
+340
+00:17:56,000 --> 00:17:59,000
+from the asset window to the hierarchy window
+
+341
+00:17:59,000 --> 00:18:00,000
+in the top left,
+
+342
+00:18:00,000 --> 00:18:03,000
+the avatar will appear in the scene.
+
+343
+00:18:03,000 --> 00:18:06,000
+If the avatar isn't visible in the scene,
+
+344
+00:18:06,000 --> 00:18:09,000
+press F to focus on the avatar
+
+345
+00:18:09,000 --> 00:18:11,000
+and adjust its visibility.
+
+346
+00:18:11,000 --> 00:18:14,000
+Select the model FBX in the asset window,
+
+347
+00:18:14,000 --> 00:18:16,000
+then click on the Rig tab
+
+348
+00:18:16,000 --> 00:18:18,000
+in the top right inspector window.
+
+349
+00:18:18,000 --> 00:18:21,000
+Change the animation type to Humanoid
+
+350
+00:18:21,000 --> 00:18:23,000
+and click the Apply button.
+
+351
+00:18:25,000 --> 00:18:27,000
+Click the Configure button to check
+
+352
+00:18:27,000 --> 00:18:29,000
+for any issues if it is activated,
+
+353
+00:18:29,000 --> 00:18:31,000
+then click Done.
+
+354
+00:18:32,000 --> 00:18:34,000
+Material and Shader
+
+355
+00:18:34,000 --> 00:18:37,000
+Now, let's proceed to set up the shader.
+
+356
+00:18:37,000 --> 00:18:39,000
+Select the model FBX file
+
+357
+00:18:39,000 --> 00:18:41,000
+in the bottom asset window,
+
+358
+00:18:41,000 --> 00:18:43,000
+then click on the Materials tab
+
+359
+00:18:43,000 --> 00:18:45,000
+in the top right inspector window.
+
+360
+00:18:45,000 --> 00:18:48,000
+Choose Extract Textures
+
+361
+00:18:48,000 --> 00:18:50,000
+and select the same folder
+
+362
+00:18:50,000 --> 00:18:51,000
+to load the textures.
+
+363
+00:18:51,000 --> 00:18:53,000
+If a notification appears,
+
+364
+00:18:53,000 --> 00:18:55,000
+click Fix Now.
+
+365
+00:18:55,000 --> 00:18:57,000
+Follow the same steps for
+
+366
+00:18:57,000 --> 00:18:59,000
+Extract Materials below.
+
+367
+00:18:59,000 --> 00:19:01,000
+This will generate materials
+
+368
+00:19:01,000 --> 00:19:03,000
+and they will automatically be applied
+
+369
+00:19:03,000 --> 00:19:04,000
+to the model.
+
+370
+00:19:04,000 --> 00:19:06,000
+Next, let's make adjustments
+
+371
+00:19:06,000 --> 00:19:08,000
+to the texture and material settings
+
+372
+00:19:08,000 --> 00:19:11,000
+for the transparent parts of the avatar.
+
+373
+00:19:11,000 --> 00:19:13,000
+Select the imported texture image,
+
+374
+00:19:13,000 --> 00:19:16,000
+activate Alpha is Transparency
+
+375
+00:19:16,000 --> 00:19:18,000
+in the right inspector window
+
+376
+00:19:18,000 --> 00:19:21,000
+and click Apply below.
+
+377
+00:19:21,000 --> 00:19:23,000
+Choose the generated materials,
+
+378
+00:19:23,000 --> 00:19:26,000
+then change the rendering mode to Cutout
+
+379
+00:19:26,000 --> 00:19:28,000
+in the right inspector window.
+
+380
+00:19:29,000 --> 00:19:32,000
+We will be using the Poyomi Tune Shader
+
+381
+00:19:32,000 --> 00:19:34,000
+as it is the preferred shader
+
+382
+00:19:34,000 --> 00:19:36,000
+among VRChat users.
+
+383
+00:19:36,000 --> 00:19:39,000
+Please download it from the provided link.
+
+384
+00:19:43,000 --> 00:19:45,000
+Once you've downloaded the file,
+
+385
+00:19:45,000 --> 00:19:47,000
+simply drag and drop it
+
+386
+00:19:47,000 --> 00:19:49,000
+into the asset folder.
+
+387
+00:19:53,000 --> 00:19:55,000
+Go back to the model folder,
+
+388
+00:19:55,000 --> 00:19:57,000
+select the material and
+
+389
+00:19:57,000 --> 00:19:58,000
+in the inspector window,
+
+390
+00:19:58,000 --> 00:20:02,000
+change the shader to the Poyomi Tune Shader.
+
+391
+00:20:06,000 --> 00:20:07,000
+After the change,
+
+392
+00:20:07,000 --> 00:20:09,000
+in the rendering menu,
+
+393
+00:20:09,000 --> 00:20:11,000
+set Cull to Off to enable
+
+394
+00:20:11,000 --> 00:20:14,000
+double-sided rendering of the garment.
+
+395
+00:20:14,000 --> 00:20:16,000
+You can adjust other detailed properties
+
+396
+00:20:16,000 --> 00:20:17,000
+in the inspector window
+
+397
+00:20:17,000 --> 00:20:20,000
+to create the desired material.
+
+398
+00:20:22,000 --> 00:20:24,000
+To upload an avatar to VRChat,
+
+399
+00:20:24,000 --> 00:20:26,000
+avatar descriptor configuration
+
+400
+00:20:26,000 --> 00:20:28,000
+is essential.
+
+401
+00:20:28,000 --> 00:20:30,000
+Select Model FBX
+
+402
+00:20:30,000 --> 00:20:32,000
+from the hierarchy on the top left,
+
+403
+00:20:32,000 --> 00:20:34,000
+then click Add Component
+
+404
+00:20:34,000 --> 00:20:36,000
+on the right to add
+
+405
+00:20:36,000 --> 00:20:38,000
+a VRC avatar descriptor.
+
+406
+00:20:44,000 --> 00:20:46,000
+Click Edit in the view
+
+407
+00:20:46,000 --> 00:20:48,000
+to adjust the viewpoint through the gizmo,
+
+408
+00:20:48,000 --> 00:20:50,000
+ensuring it fits between the eyes.
+
+409
+00:20:52,000 --> 00:20:54,000
+Once adjustments are complete,
+
+410
+00:20:54,000 --> 00:20:56,000
+click the Return button.
+
+411
+00:20:56,000 --> 00:20:58,000
+You can also set up lip sync
+
+412
+00:20:58,000 --> 00:21:00,000
+and iLook here.
+
+413
+00:21:00,000 --> 00:21:02,000
+If you select Auto Detect,
+
+414
+00:21:02,000 --> 00:21:04,000
+it will automatically recognize lip sync
+
+415
+00:21:04,000 --> 00:21:06,000
+and when lip sync is enabled,
+
+416
+00:21:06,000 --> 00:21:08,000
+the avatar's mouth will
+
+417
+00:21:08,000 --> 00:21:10,000
+synchronize with the user's speech
+
+418
+00:21:10,000 --> 00:21:12,000
+when using the microphone in the VRChat.
+
+419
+00:21:12,000 --> 00:21:14,000
+Enabling the iLook
+
+420
+00:21:14,000 --> 00:21:16,000
+allows users to blink their eyes
+
+421
+00:21:16,000 --> 00:21:18,000
+or move their pupils within VRChat.
+
+422
+00:21:18,000 --> 00:21:20,000
+To set up iLook,
+
+423
+00:21:20,000 --> 00:21:22,000
+click Enable and apply
+
+424
+00:21:22,000 --> 00:21:24,000
+the same values as shown in the image
+
+425
+00:21:24,000 --> 00:21:26,000
+for both eyes and eyelids.
+
+426
+00:21:26,000 --> 00:21:28,000
+To set up iLook,
+
+427
+00:21:28,000 --> 00:21:30,000
+click Enable and apply
+
+428
+00:21:30,000 --> 00:21:32,000
+the same values as shown in the image
+
+429
+00:21:32,000 --> 00:21:34,000
+for both eyes and eyelids.
+
+430
+00:21:36,000 --> 00:21:38,000
+Uploading and playing to VRChat
+
+431
+00:21:38,000 --> 00:21:40,000
+Uploading and playing to VRChat
+
+432
+00:21:40,000 --> 00:21:42,000
+VRChat Upload
+
+433
+00:21:42,000 --> 00:21:44,000
+Alright, we've completed
+
+434
+00:21:44,000 --> 00:21:46,000
+all the necessary setups in Unity.
+
+435
+00:21:46,000 --> 00:21:48,000
+Now, let's open the SDK window
+
+436
+00:21:48,000 --> 00:21:50,000
+to input avatar information
+
+437
+00:21:50,000 --> 00:21:52,000
+and run necessary validation checks
+
+438
+00:21:52,000 --> 00:21:54,000
+for uploading to VRChat.
+
+439
+00:21:54,000 --> 00:21:56,000
+Navigate to the VRChat SDK
+
+440
+00:21:56,000 --> 00:21:58,000
+tab at the top of the menu
+
+441
+00:21:58,000 --> 00:22:00,000
+and click on Show Control Panel.
+
+442
+00:22:00,000 --> 00:22:02,000
+Once the VRChat SDK
+
+443
+00:22:02,000 --> 00:22:04,000
+window appears, please
+
+444
+00:22:04,000 --> 00:22:06,000
+log in.
+
+445
+00:22:08,000 --> 00:22:10,000
+Confirm that the desired
+
+446
+00:22:10,000 --> 00:22:12,000
+avatar is properly
+
+447
+00:22:12,000 --> 00:22:14,000
+selected in the Selected Avatars
+
+448
+00:22:14,000 --> 00:22:16,000
+section. Enter the necessary
+
+449
+00:22:16,000 --> 00:22:18,000
+information in the Avatar Info
+
+450
+00:22:18,000 --> 00:22:20,000
+section.
+
+451
+00:22:20,000 --> 00:22:22,000
+You can set the visibility to
+
+452
+00:22:22,000 --> 00:22:24,000
+Private or Public under Visibility.
+
+453
+00:22:24,000 --> 00:22:26,000
+In the Thumbnail tab,
+
+454
+00:22:26,000 --> 00:22:28,000
+you can insert a custom thumbnail
+
+455
+00:22:28,000 --> 00:22:30,000
+you've created or capture
+
+456
+00:22:30,000 --> 00:22:32,000
+an image from Unity's scene.
+
+457
+00:22:32,000 --> 00:22:34,000
+Set it to your preferred thumbnail.
+
+458
+00:22:34,000 --> 00:22:36,000
+In the Validation section,
+
+459
+00:22:36,000 --> 00:22:38,000
+press the Auto Fix button to
+
+460
+00:22:38,000 --> 00:22:40,000
+address any issues automatically.
+
+461
+00:22:48,000 --> 00:22:50,000
+Once the configuration is complete,
+
+462
+00:22:50,000 --> 00:22:52,000
+go to the Build tab,
+
+463
+00:22:52,000 --> 00:22:54,000
+check the Online Publishing checkbox
+
+464
+00:22:54,000 --> 00:22:56,000
+and click Build and Publish.
+
+465
+00:22:56,000 --> 00:22:58,000
+Once the upload is finished,
+
+466
+00:22:58,000 --> 00:23:00,000
+click on the See it on the
+
+467
+00:23:00,000 --> 00:23:02,000
+VRChat website button
+
+468
+00:23:02,000 --> 00:23:04,000
+to verify if the upload
+
+469
+00:23:04,000 --> 00:23:06,000
+was successful on the
+
+470
+00:23:06,000 --> 00:23:08,000
+VRChat website.
+
+471
+00:23:08,000 --> 00:23:10,000
+If you encounter any difficulties
+
+472
+00:23:10,000 --> 00:23:12,000
+at this stage, please check
+
+473
+00:23:12,000 --> 00:23:14,000
+your VRChat account rating.
+
+474
+00:23:14,000 --> 00:23:16,000
+To register a new avatar
+
+475
+00:23:16,000 --> 00:23:18,000
+on VRChat, you must attain
+
+476
+00:23:18,000 --> 00:23:20,000
+at least the rank of New User.
+
+477
+00:23:20,000 --> 00:23:22,000
+Play in VRChat.
+
+478
+00:23:22,000 --> 00:23:24,000
+Alright, let's now check
+
+479
+00:23:24,000 --> 00:23:26,000
+if both the Avatar and the
+
+480
+00:23:26,000 --> 00:23:28,000
+Iron Man garments have been
+
+481
+00:23:28,000 --> 00:23:30,000
+successfully uploaded and functioned
+
+482
+00:23:30,000 --> 00:23:32,000
+correctly within VRChat.
+
+483
+00:23:32,000 --> 00:23:34,000
+To play on your desktop,
+
+484
+00:23:34,000 --> 00:23:36,000
+please open VRChat through Steam.
+
+485
+00:23:36,000 --> 00:23:38,000
+If you don't have Steam installed,
+
+486
+00:23:38,000 --> 00:23:40,000
+proceed to download and install
+
+487
+00:23:40,000 --> 00:23:42,000
+it from the link provided at the top.
+
+488
+00:23:42,000 --> 00:23:44,000
+After logging in,
+
+489
+00:23:44,000 --> 00:23:46,000
+navigate to the home that is
+
+490
+00:23:46,000 --> 00:23:48,000
+the default space in VRChat.
+
+491
+00:23:48,000 --> 00:23:50,000
+Use the WASD keys
+
+492
+00:23:50,000 --> 00:23:52,000
+to move towards the mirror.
+
+493
+00:23:52,000 --> 00:23:54,000
+Press the ESC key
+
+494
+00:23:54,000 --> 00:23:56,000
+to open the launch pad
+
+495
+00:23:56,000 --> 00:23:58,000
+then select the uploaded avatar
+
+496
+00:23:58,000 --> 00:24:00,000
+under Avatar, Uploaded.
+
+497
+00:24:00,000 --> 00:24:02,000
+Click the Change into Avatar
+
+498
+00:24:02,000 --> 00:24:04,000
+button to switch avatars.
+
+499
+00:24:04,000 --> 00:24:06,000
+Close the launch pad
+
+500
+00:24:06,000 --> 00:24:08,000
+by pressing ESC again
+
+501
+00:24:08,000 --> 00:24:10,000
+and move around in front of
+
+502
+00:24:10,000 --> 00:24:12,000
+the mirror to see everything
+
+503
+00:24:12,000 --> 00:24:14,000
+is functioning properly.
+
+504
+00:24:14,000 --> 00:24:16,000
+Press the spacebar to jump
+
+505
+00:24:16,000 --> 00:24:18,000
+and press C to crouch.
+
+506
+00:24:18,000 --> 00:24:20,000
+If there are any issues,
+
+507
+00:24:20,000 --> 00:24:22,000
+please return to the problematic areas
+
+508
+00:24:22,000 --> 00:24:24,000
+and
+
+509
+00:24:24,000 --> 00:24:26,000
+make the necessary corrections.
+
+510
+00:24:26,000 --> 00:24:28,000
+If everything is good to go,
+
+511
+00:24:28,000 --> 00:24:30,000
+enjoy playing with the avatar
+
+512
+00:24:30,000 --> 00:24:32,000
+you've created in VRChat.
+
+513
+00:24:32,000 --> 00:24:34,000
+So far, we have covered the process
+
+514
+00:24:34,000 --> 00:24:36,000
+of creating VRChat garments
+
+515
+00:24:36,000 --> 00:24:38,000
+using Everywhere in this tutorial.
+
+516
+00:24:38,000 --> 00:24:40,000
+Thank you for watching
+
+517
+00:24:40,000 --> 00:24:42,000
+and if you have any questions,
+
+518
+00:24:42,000 --> 00:24:44,000
+please let us know through the comments.
+

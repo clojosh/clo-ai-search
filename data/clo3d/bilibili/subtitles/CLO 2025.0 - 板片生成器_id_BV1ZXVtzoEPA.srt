@@ -1,0 +1,952 @@
+1
+00:00:00,000 --> 00:00:05,000
+In this video, I will introduce the version generator function for you.
+
+2
+00:00:05,000 --> 00:00:10,000
+The new version has optimized the parameterized version function, also known as the version generator.
+
+3
+00:00:10,000 --> 00:00:16,000
+This function allows users to enter accurate measurement values or generate parameterized versions based on the reference image of the required version.
+
+4
+00:00:16,000 --> 00:00:21,000
+Therefore, users can quickly and accurately make the necessary versions based on actual data.
+
+5
+00:00:21,000 --> 00:00:24,000
+Let's take a closer look at its working principle.
+
+6
+00:00:24,000 --> 00:00:32,000
+When using the version generator to create a version, the system will automatically arrange and seal it according to the incoming virtual model.
+
+7
+00:00:32,000 --> 00:00:36,000
+Therefore, we need to load the virtual model first.
+
+8
+00:00:36,000 --> 00:00:39,000
+Enter the image of a virtual model woman.
+
+9
+00:00:39,000 --> 00:00:42,000
+Then double-click on the virtual model to load it in.
+
+10
+00:00:42,000 --> 00:00:46,000
+Next, please go to the main menu 2D version generator.
+
+11
+00:00:46,000 --> 00:00:50,000
+Under default, the clothing category is set to T-shirt.
+
+12
+00:00:50,000 --> 00:00:53,000
+Currently, the version generator only supports creating T-shirts.
+
+13
+00:00:53,000 --> 00:00:54,000
+The plan is in the future.
+
+14
+00:00:54,000 --> 00:00:57,000
+We will develop more categories, such as pants and skirts.
+
+15
+00:00:57,000 --> 00:01:00,000
+Here you can choose the T-shirt sleeve type.
+
+16
+00:01:00,000 --> 00:01:03,000
+Currently, the following types can be selected.
+
+17
+00:01:03,000 --> 00:01:06,000
+Decoration, insert sleeve or drop sleeve.
+
+18
+00:01:06,000 --> 00:01:09,000
+Let's choose the decoration type first.
+
+19
+00:01:09,000 --> 00:01:14,000
+Then you will see a list of measurements required for a created version.
+
+20
+00:01:14,000 --> 00:01:18,000
+There is a pull-down menu on the top, in which the standard is selected.
+
+21
+00:01:18,000 --> 00:01:23,000
+A transparent frame version will appear in the window of the 2D version window on the right.
+
+22
+00:01:23,000 --> 00:01:26,000
+The frame is automatically loaded with default measurement data.
+
+23
+00:01:26,000 --> 00:01:31,000
+In the version generator, you can freely configure which measurements to enter to create a version.
+
+24
+00:01:31,000 --> 00:01:36,000
+The pull-down menu will display the data based on the version type selected in the upper layer.
+
+25
+00:01:41,000 --> 00:01:44,000
+Provides two preset options, simple and regular.
+
+26
+00:01:44,000 --> 00:01:47,000
+These presets are designed around the common measurement data of each type.
+
+27
+00:01:47,000 --> 00:01:50,000
+Regular preset includes more detailed measurement values.
+
+28
+00:01:50,000 --> 00:01:52,000
+It is suitable for when you have all the necessary dimensions.
+
+29
+00:01:52,000 --> 00:01:55,000
+So that you can enter more measurement values to create.
+
+30
+00:01:55,000 --> 00:01:58,000
+The version is better suited to your desired design.
+
+31
+00:01:58,000 --> 00:02:02,000
+Next, let's click on the pull-down menu and select the simple menu.
+
+32
+00:02:02,000 --> 00:02:05,000
+Simple preset provides a set of simplified measurement projects.
+
+33
+00:02:05,000 --> 00:02:08,000
+You only need a few basic values to create a version.
+
+34
+00:02:08,000 --> 00:02:10,000
+It is suitable for the first time to create a version.
+
+35
+00:02:10,000 --> 00:02:12,000
+Or if there is no detailed measurement data.
+
+36
+00:02:12,000 --> 00:02:15,000
+First, click on the one on the right side of the title.
+
+37
+00:02:15,000 --> 00:02:17,000
+Show all measurement charts.
+
+38
+00:02:17,000 --> 00:02:20,000
+Each of the measurement projects are grouped together.
+
+39
+00:02:20,000 --> 00:02:23,000
+This will show the complete list of measurements that can be used.
+
+40
+00:02:23,000 --> 00:02:25,000
+Including the default hidden measurement value.
+
+41
+00:02:25,000 --> 00:02:29,000
+You can click on the detailed information icon in the upper right corner.
+
+42
+00:02:29,000 --> 00:02:33,000
+To control which measurement projects are in the active state or stop state.
+
+43
+00:02:33,000 --> 00:02:36,000
+According to the way you activate or stop the measurement.
+
+44
+00:02:36,000 --> 00:02:39,000
+The way of generating versions will also change.
+
+45
+00:02:39,000 --> 00:02:42,000
+For active projects, users directly enter the value.
+
+46
+00:02:42,000 --> 00:02:44,000
+And create versions based on these values.
+
+47
+00:02:44,000 --> 00:02:47,000
+On the other hand, for stopped projects.
+
+48
+00:02:47,000 --> 00:02:49,000
+Calculate the appropriate value based on actual data.
+
+49
+00:02:50,000 --> 00:02:53,000
+There is no need to enter the value and automatically react in the version.
+
+50
+00:02:53,000 --> 00:02:56,000
+This means that even if you do not enter all the values.
+
+51
+00:02:56,000 --> 00:02:59,000
+You can still generate accurate versions with the least number of values.
+
+52
+00:02:59,000 --> 00:03:01,000
+For example, in the current simple option.
+
+53
+00:03:01,000 --> 00:03:03,000
+The back piece only activates the full length.
+
+54
+00:03:03,000 --> 00:03:07,000
+Click on the measurement value and adjust the value by moving the mouse wheel.
+
+55
+00:03:07,000 --> 00:03:11,000
+Then you can see that the 2D window will also display the length indicator line.
+
+56
+00:03:11,000 --> 00:03:14,000
+The front length value is applied according to the back length value.
+
+57
+00:03:14,000 --> 00:03:15,000
+Let's click again.
+
+58
+00:03:15,000 --> 00:03:19,000
+Set the detailed information icon and activate the full length of the front piece.
+
+59
+00:03:20,000 --> 00:03:25,000
+At this time, when you modify the front length.
+
+60
+00:03:25,000 --> 00:03:31,000
+The length of the back piece will remain unchanged.
+
+61
+00:03:31,000 --> 00:03:34,000
+You can also see that when you modify the full length of the front piece.
+
+62
+00:03:34,000 --> 00:03:44,000
+The relevant value of the back piece will also change according to the input value of the front piece.
+
+63
+00:03:44,000 --> 00:03:46,000
+This is also the case when modifying the width.
+
+64
+00:03:50,000 --> 00:03:53,000
+In addition, if you have modified the measurement project.
+
+65
+00:03:53,000 --> 00:03:56,000
+It is different from the simple and regular provided by default.
+
+66
+00:03:56,000 --> 00:03:59,000
+You can see the pull-down menu at the top.
+
+67
+00:03:59,000 --> 00:04:02,000
+The name has been changed to user self-determination.
+
+68
+00:04:02,000 --> 00:04:05,000
+The user self-determination mode is actually to support users.
+
+69
+00:04:05,000 --> 00:04:09,000
+By configuring the measurement project they want to create a version option.
+
+70
+00:04:09,000 --> 00:04:11,000
+Even if you run the software again.
+
+71
+00:04:11,000 --> 00:04:16,000
+In setting the detailed information, the final measurement project of selection and setting will remain unchanged.
+
+72
+00:04:16,000 --> 00:04:19,000
+So you can continue to use them in the future.
+
+73
+00:04:19,000 --> 00:04:23,000
+Next, let's use the T-model to create a round table.
+
+74
+00:04:23,000 --> 00:04:26,000
+First, let's choose a simple menu at the top.
+
+75
+00:04:26,000 --> 00:04:30,000
+If the board is activated, the eye icon in front will be blue.
+
+76
+00:04:30,000 --> 00:04:35,000
+And it will be transparent in the window of the 2D pattern window on the right.
+
+77
+00:04:35,000 --> 00:04:37,000
+When you cancel the single eye icon.
+
+78
+00:04:37,000 --> 00:04:40,000
+It will change to gray to hide all measurements of the board.
+
+79
+00:04:40,000 --> 00:04:43,000
+And the board will disappear from the 2D window.
+
+80
+00:04:43,000 --> 00:04:47,000
+Let's click the eye icon again to activate the front piece.
+
+81
+00:04:47,000 --> 00:04:49,000
+On the right side of the unit part of the board.
+
+82
+00:04:49,000 --> 00:04:52,000
+You will see the symmetry and the left and right symmetry options.
+
+83
+00:04:52,000 --> 00:04:55,000
+In the default situation, the left and right symmetry is in use.
+
+84
+00:04:55,000 --> 00:04:58,000
+Because it usually uses this setting to create the front and back pieces.
+
+85
+00:04:58,000 --> 00:05:01,000
+Therefore, the frame board in the 2D window.
+
+86
+00:05:01,000 --> 00:05:04,000
+It also shows the form of the left and right symmetry board.
+
+87
+00:05:04,000 --> 00:05:07,000
+If you choose the symmetry board, it will be displayed as two symmetrical boards.
+
+88
+00:05:07,000 --> 00:05:11,000
+If you cancel the selection of two options, only half of the board will be generated.
+
+89
+00:05:11,000 --> 00:05:14,000
+Now let's choose the left and right symmetry again.
+
+90
+00:05:14,000 --> 00:05:17,000
+First, let's enter the total length of the round table.
+
+91
+00:05:17,000 --> 00:05:19,000
+We enter the total length according to the total length of the back piece.
+
+92
+00:05:19,000 --> 00:05:21,000
+Select the height point measurement.
+
+93
+00:05:21,000 --> 00:05:24,000
+Then when you click the input frame of the measurement value.
+
+94
+00:05:24,000 --> 00:05:27,000
+On the transparent frame board in the 2D window.
+
+95
+00:05:27,000 --> 00:05:30,000
+The measurement position guide line corresponding to the display will be shown at the same time.
+
+96
+00:05:30,000 --> 00:05:33,000
+When entering the value, please click the input frame of the measurement item.
+
+97
+00:05:33,000 --> 00:05:35,000
+Enter 600.
+
+98
+00:05:35,000 --> 00:05:36,000
+If you want to reset.
+
+99
+00:05:36,000 --> 00:05:39,000
+You can click the reset button on the right side of the measurement item.
+
+100
+00:05:39,000 --> 00:05:42,000
+The reset button can not only be used to reset each measurement item.
+
+101
+00:05:42,000 --> 00:05:45,000
+It can also be used to reset the entire board such as the front piece, the back piece and the sleeve.
+
+102
+00:05:45,000 --> 00:05:47,000
+Then I will enter again.
+
+103
+00:05:47,000 --> 00:05:49,000
+The total length of the piece is 620.
+
+104
+00:05:51,000 --> 00:05:55,000
+The value related to the width needs to be entered in the corresponding board total width value.
+
+105
+00:05:55,000 --> 00:05:58,000
+And the total length value can be entered by pressing the total length option.
+
+106
+00:05:58,000 --> 00:06:00,000
+Let's enter the total total length value.
+
+107
+00:06:00,000 --> 00:06:03,000
+Let's enter the width 160 in order.
+
+108
+00:06:03,000 --> 00:06:05,000
+Width input 400.
+
+109
+00:06:05,000 --> 00:06:09,000
+We will first select the measurement standard as the sleeve to the sleeve.
+
+110
+00:06:09,000 --> 00:06:12,000
+And enter the total total length value instead of the front piece.
+
+111
+00:06:12,000 --> 00:06:14,000
+Click the total length icon on the right side.
+
+112
+00:06:15,000 --> 00:06:18,000
+Then in the 2D window.
+
+113
+00:06:18,000 --> 00:06:22,000
+There will be a guideline line with the front piece and the back piece of the chest wide.
+
+114
+00:06:22,000 --> 00:06:24,000
+You can identify the position of the total length value.
+
+115
+00:06:24,000 --> 00:06:26,000
+Enter 1000 as the chest.
+
+116
+00:06:26,000 --> 00:06:30,000
+Enter the total length of the bottom width as 960.
+
+117
+00:06:30,000 --> 00:06:33,000
+Then enter the measurement value of the sleeve board.
+
+118
+00:06:33,000 --> 00:06:35,000
+First, let's enter the sleeve length.
+
+119
+00:06:35,000 --> 00:06:38,000
+Enter 570 to change it to a long sleeve.
+
+120
+00:06:38,000 --> 00:06:42,000
+Enter the width of the sleeve mouth as 240.
+
+121
+00:06:42,000 --> 00:06:44,000
+In order to adjust the quality in this state.
+
+122
+00:06:45,000 --> 00:06:49,000
+Let's change the menu from the top simple to normal.
+
+123
+00:06:49,000 --> 00:06:53,000
+Then show the rest of the detailed measurement projects.
+
+124
+00:06:53,000 --> 00:06:57,000
+At the same time, it will maintain the value entered in the previous simple.
+
+125
+00:06:57,000 --> 00:07:01,000
+Here we will additionally adjust the neck and shoulder length.
+
+126
+00:07:01,000 --> 00:07:05,000
+To adjust the depth of the front and back neck and shoulder angle.
+
+127
+00:07:05,000 --> 00:07:08,000
+First, enter 60 as the front neck.
+
+128
+00:07:15,000 --> 00:07:23,000
+Then set the shoulder length to 37.8 mm.
+
+129
+00:07:23,000 --> 00:07:27,000
+Turn to the back piece and enter 25 as the back neck.
+
+130
+00:07:27,000 --> 00:07:37,000
+In order to make the shoulder length of the back piece the same as the size of the front piece.
+
+131
+00:07:37,000 --> 00:07:40,000
+Enter 42.8 mm.
+
+132
+00:07:40,000 --> 00:07:43,000
+Then the sleeve and sleeve board is completed.
+
+133
+00:07:43,000 --> 00:07:50,000
+Because we want to make the collar.
+
+134
+00:07:50,000 --> 00:07:53,000
+So we need the sleeve pattern and the lower pattern pattern.
+
+135
+00:07:53,000 --> 00:07:57,000
+The default settings of the front and lower and the lower pattern of the sleeve mouth are prohibited.
+
+136
+00:07:57,000 --> 00:08:01,000
+Let's activate it by pressing the eye icon in front of each part.
+
+137
+00:08:01,000 --> 00:08:06,000
+Then you can see that each pattern is activated and displayed in the 2D window.
+
+138
+00:08:06,000 --> 00:08:11,000
+Currently, the front and back of the sleeve can only be inserted at a height related length.
+
+139
+00:08:11,000 --> 00:08:13,000
+Click the upper right corner button.
+
+140
+00:08:13,000 --> 00:08:21,000
+Set the detailed information icon, roll down and select the upper and lower width in the upper and lower width from the sleeve opening and the lower and lower width.
+
+141
+00:08:21,000 --> 00:08:25,000
+Then click again to set the detailed information icon to exit the window.
+
+142
+00:08:25,000 --> 00:08:29,000
+Let's first enter the sleeve opening in order.
+
+143
+00:08:29,000 --> 00:08:33,000
+The upper width will be entered as 150.
+
+144
+00:08:33,000 --> 00:08:37,000
+Next, we will enter the lower and lower width before and after the input.
+
+145
+00:08:37,000 --> 00:08:40,000
+The lower and lower width of the two paper types are the same.
+
+146
+00:08:40,000 --> 00:08:45,000
+The seam line value is 60, and the slightly width value is 390.
+
+147
+00:08:48,000 --> 00:08:54,000
+By pressing the save button in the lower left corner, the value entered in this way can be saved as CSV file.
+
+148
+00:08:54,000 --> 00:09:00,000
+Then you can open the button on the right side of the single click to enter the previously saved CSV file,
+
+149
+00:09:00,000 --> 00:09:05,000
+and you do not need to manually enter the value again to easily modify the sheet in the generator.
+
+150
+00:09:08,000 --> 00:09:10,000
+Next, let's go through the instructions.
+
+151
+00:09:10,000 --> 00:09:20,000
+Click the Create button in the lower right corner to create a sheet.
+
+152
+00:09:20,000 --> 00:09:24,000
+In order to check whether the arrangement and sewing are automatically applied to the virtual model surroundings,
+
+153
+00:09:24,000 --> 00:09:28,000
+let's close the sheet generator window and check the 3D window.
+
+154
+00:09:28,000 --> 00:09:33,000
+You can see that the round collar is already arranged around the virtual model, and it has also been automatically sewn.
+
+155
+00:09:33,000 --> 00:09:38,000
+In order to prevent simulation conflicts, move the lower and lower white sheets slightly downwards and simulate.
+
+156
+00:09:38,000 --> 00:09:40,000
+Then we have created the round collar.
+
+157
+00:09:41,000 --> 00:09:44,000
+Next, let's based on the image of the AI creation sheet,
+
+158
+00:09:44,000 --> 00:09:47,000
+and create a sheet according to the image.
+
+159
+00:09:47,000 --> 00:09:50,000
+Let's delete the sheet you created and leave only the virtual model.
+
+160
+00:09:54,000 --> 00:09:58,000
+Click the AI generation sheet icon in the upper right corner of the sheet generator.
+
+161
+00:09:58,000 --> 00:10:01,000
+The AI generation sheet window will appear.
+
+162
+00:10:01,000 --> 00:10:06,000
+For the AI generation sheet, you can create a sheet through a prompt or a picture.
+
+163
+00:10:06,000 --> 00:10:08,000
+First, let's take a look at how to create a prompt.
+
+164
+00:10:08,000 --> 00:10:13,000
+First, select the type of version you want to create at the top.
+
+165
+00:10:13,000 --> 00:10:17,000
+Currently, the AI generation sheet can only create the version of T-shirt and other clothes.
+
+166
+00:10:17,000 --> 00:10:20,000
+In the future, we will develop various clothing types such as pants, skirts, etc.
+
+167
+00:10:20,000 --> 00:10:23,000
+Next, let's take a look at the text prompt window at the bottom.
+
+168
+00:10:23,000 --> 00:10:27,000
+In the text prompt window, you can enter the text prompt that describes the required version.
+
+169
+00:10:27,000 --> 00:10:30,000
+Click the key word suggestion on the first icon on the right.
+
+170
+00:10:30,000 --> 00:10:33,000
+You can choose to recommend key words for creating a version.
+
+171
+00:10:33,000 --> 00:10:36,000
+For example, clothes length, collar length, or sleeve length.
+
+172
+00:10:38,000 --> 00:10:43,000
+In the text prompt window, you can choose to recommend key words for creating a version.
+
+173
+00:10:43,000 --> 00:10:46,000
+Here, if you choose the desired key word,
+
+174
+00:10:46,000 --> 00:10:51,000
+you will see that these key words have been added to the text prompt window.
+
+175
+00:10:51,000 --> 00:10:56,000
+If you want to delete these key words again, you can click the X button.
+
+176
+00:10:56,000 --> 00:11:01,000
+Or, in the key word suggestion window, click the key word suggestion icon again.
+
+177
+00:11:01,000 --> 00:11:04,000
+To cancel the selection of key words,
+
+178
+00:11:08,000 --> 00:11:10,000
+click the start generation button.
+
+179
+00:11:10,000 --> 00:11:13,000
+The system will start generating the corresponding image according to the key word.
+
+180
+00:11:16,000 --> 00:11:18,000
+Even if there is a similar prompt,
+
+181
+00:11:18,000 --> 00:11:22,000
+the AI version generator will always create a new image.
+
+182
+00:11:23,000 --> 00:11:26,000
+However, at this time, if you activate this maintain prompt icon,
+
+183
+00:11:26,000 --> 00:11:29,000
+you can keep the existing results as much as possible,
+
+184
+00:11:29,000 --> 00:11:31,000
+add a prompt and update.
+
+185
+00:11:31,000 --> 00:11:35,000
+For example, you can keep the above options and click the maintain prompt icon.
+
+186
+00:11:35,000 --> 00:11:38,000
+Then, in the key word suggestion, click the U-shape.
+
+187
+00:11:38,000 --> 00:11:40,000
+After that, you can create the new image again.
+
+188
+00:11:40,000 --> 00:11:42,000
+Once again,
+
+189
+00:11:42,000 --> 00:11:45,000
+the new image is generated,
+
+190
+00:11:45,000 --> 00:11:48,000
+the prompt icon shows a major change.
+
+191
+00:11:50,000 --> 00:11:52,000
+There is a third code.
+
+192
+00:11:52,000 --> 00:11:55,000
+When you want to get inspiration, you can use it.
+
+193
+00:11:55,000 --> 00:11:58,000
+To change the prompt,
+
+194
+00:11:58,000 --> 00:12:02,000
+use the clear prompt word to close the prompt.
+
+195
+00:12:04,000 --> 00:12:06,000
+In the history window in the right-hand corner,
+
+196
+00:12:06,000 --> 00:12:08,000
+you can choose the name of the prompt.
+
+197
+00:12:08,000 --> 00:12:12,000
+Check the image list of the image created so far and the input prompt
+
+198
+00:12:12,000 --> 00:12:16,000
+And click the save button to save the desired result as an image file
+
+199
+00:12:22,000 --> 00:12:25,000
+Next, let's use the existing image file to create a sample
+
+200
+00:12:25,000 --> 00:12:27,000
+The category is still T-shape
+
+201
+00:12:27,000 --> 00:12:30,000
+Click the upload button to add the desired image
+
+202
+00:12:33,000 --> 00:12:36,000
+Then click on the bottom of the window to start creating
+
+203
+00:12:36,000 --> 00:12:38,000
+The generate button will convert it into a sample
+
+204
+00:12:38,000 --> 00:12:40,000
+Check the current sample window
+
+205
+00:12:40,000 --> 00:12:43,000
+You will find that the T-shape sample has been created according to the image
+
+206
+00:12:43,000 --> 00:12:45,000
+Click the close button to close the window
+
+207
+00:12:45,000 --> 00:12:49,000
+Then, according to the measurement value needed to modify the sample generated by AI
+
+208
+00:12:49,000 --> 00:12:52,000
+If you check the version of the generator window
+
+209
+00:12:52,000 --> 00:12:56,000
+You will find that the top category has been automatically identified and changed to T-shape
+
+210
+00:12:57,000 --> 00:12:59,000
+You can also see that it has been switched to the regular menu
+
+211
+00:12:59,000 --> 00:13:01,000
+And all relevant values ​​have been entered
+
+212
+00:13:01,000 --> 00:13:04,000
+In order to create the sample according to the most detailed measurement project
+
+213
+00:13:04,000 --> 00:13:06,000
+Now let's modify the sample
+
+214
+00:13:06,000 --> 00:13:08,000
+To create the T-shape and T-shape in the sample
+
+215
+00:13:08,000 --> 00:13:10,000
+First, change the T-shape to 600
+
+216
+00:13:13,000 --> 00:13:16,000
+At present, both the T-shape of the front and the T-shape of the back measurement project have been used
+
+217
+00:13:16,000 --> 00:13:18,000
+Therefore, they can be set separately
+
+218
+00:13:18,000 --> 00:13:22,000
+I now want the T-shape of the front to change according to the input of the back
+
+219
+00:13:22,000 --> 00:13:26,000
+Click on the Detailed Information icon to cancel the selection of the T-shape of the front
+
+220
+00:13:27,000 --> 00:13:30,000
+Then enter 600 as the T-shape of the back
+
+221
+00:13:32,000 --> 00:13:34,000
+As you can see
+
+222
+00:13:34,000 --> 00:13:37,000
+The front piece will be linked according to the total length of the back piece you input
+
+223
+00:13:37,000 --> 00:13:39,000
+The length will also be modified together
+
+224
+00:13:39,000 --> 00:13:42,000
+Then let's press the Create button to create the T-shape
+
+225
+00:13:42,000 --> 00:13:44,000
+In the T-shape of the T-shape
+
+226
+00:13:44,000 --> 00:13:48,000
+In order to measure the width and slope of the T-shape according to the HPS high and low points
+
+227
+00:13:48,000 --> 00:13:52,000
+The T-shape is shown separately as the front and back pieces along the gap of the T-shape
+
+228
+00:13:52,000 --> 00:13:54,000
+However, once the T-shape is created
+
+229
+00:13:54,000 --> 00:13:57,000
+The front and back T-shape will be merged according to the HPS
+
+230
+00:13:57,000 --> 00:14:00,000
+The corresponding gap will also be converted to the base line
+
+231
+00:14:00,000 --> 00:14:02,000
+Close the T-shape generator window
+
+232
+00:14:02,000 --> 00:14:05,000
+You can see that as long as the T-shape is automatically arranged and sealed according to the virtual model
+
+233
+00:14:05,000 --> 00:14:07,000
+Click on the Modify button and run the program
+
+234
+00:14:07,000 --> 00:14:10,000
+You can see the T-shape of the T-shape
+
+235
+00:14:10,000 --> 00:14:13,000
+It has become 3D clothing worn on the virtual model
+
+236
+00:14:13,000 --> 00:14:17,000
+The T-shape generator can not only be created according to the exact size of the T-shape
+
+237
+00:14:17,000 --> 00:14:20,000
+It can also be easily and accurately made in various styles through a single picture
+
+238
+00:14:20,000 --> 00:14:24,000
+So everyone can take advantage of this function when playing the board
+

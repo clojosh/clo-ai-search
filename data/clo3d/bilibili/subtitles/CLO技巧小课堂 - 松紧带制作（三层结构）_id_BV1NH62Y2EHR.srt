@@ -1,0 +1,280 @@
+1
+00:00:00,000 --> 00:00:29,980
+Hello everyone, today I will teach you how to make a three-layer structure elastic band, you can see that the embedded waist plate is a double-layer structure, first delete one of them, and then use the Cologne method to make it more convenient, we will now create the elastic band plate, if there is a process list, it can be created according to the data on the process list, if not, we can refer to the waist value of the model to create it, open the virtual model editor,
+
+2
+00:00:30,000 --> 00:00:44,980
+find the waist value, you can look at the lower dimension value by dragging the measurement line, find the position where the half skirt is naturally worn, you can see that the dimension is about 620 mm,
+
+3
+00:00:44,980 --> 00:00:58,379
+use the shape tool to create the elastic band plate, the width needs to be larger than the waist reference value just now, there are some loose amounts, the height is the same as the waist belt,
+
+4
+00:01:00,000 --> 00:01:13,140
+since there are two lines on the waist belt, it needs to be sewn, we also create two internal lines for the elastic band plate,
+
+5
+00:01:13,140 --> 00:01:20,060
+use the edit version tool to select the upper and lower two lines and then right-click to generate internal lines between the lines,
+
+6
+00:01:20,060 --> 00:01:27,920
+use the shortcut key to switch to the Cologne outline, select the base line, return to the Cologne as the internal line,
+
+7
+00:01:30,000 --> 00:01:35,079
+now let's arrange waist and elastic band templates,
+
+8
+00:01:37,159 --> 00:01:44,540
+use the shortcut key SHIFT F to open the adjustments point Uh, we need to pre-fold the two templates, swap to world coordinates to locate the ball ,
+
+9
+00:01:44,540 --> 00:01:47,500
+convenient in any perspective, move the template,
+
+10
+00:01:47,500 --> 00:01:55,420
+select two templates to align together at the arrangement points of the Medicare waist,
+
+11
+00:01:55,420 --> 00:01:57,879
+shaking our muscles can be held against the side to create uniformness,
+
+12
+00:01:57,879 --> 00:01:59,140
+this is exactly what the default scale adjustment project to find the area with the correct tres and the last set,
+
+13
+00:01:59,140 --> 00:02:14,139
+At this time, the back of the waist plate overlaps with the back of the waist plate, so adjust the shoulder strap in the attribute editor so that it does not overlap.
+
+14
+00:02:14,139 --> 00:02:19,139
+In the same way, the shoulder strap of the loose belt can be appropriately narrowed.
+
+15
+00:02:19,139 --> 00:02:26,139
+Adjust the height of the two plates appropriately.
+
+16
+00:02:26,140 --> 00:02:38,140
+Sew the plate.
+
+17
+00:02:38,140 --> 00:02:47,140
+Remember to change the lining of the overlapping plate to the lining of the outside of the plate.
+
+18
+00:02:47,140 --> 00:02:54,140
+You can use the shortcut key of the single引 code to change the lining.
+
+19
+00:02:56,140 --> 00:03:08,140
+In the 3D window, check the sewing line to confirm that there is no wrong sewing or missing sewing.
+
+20
+00:03:08,140 --> 00:03:13,140
+At this time, if you directly open the simulation, the waist of the skirt will fall down.
+
+21
+00:03:13,140 --> 00:03:15,140
+Ctrl plus Z to retract.
+
+22
+00:03:15,140 --> 00:03:22,140
+You need to apply the correct material to the loose belt plate before the simulation to add a new piece of fabric.
+
+23
+00:03:22,140 --> 00:03:25,140
+Apply a new fabric to the loose belt plate.
+
+24
+00:03:25,140 --> 00:03:27,140
+Find the material in the canvas window.
+
+25
+00:03:27,140 --> 00:03:29,140
+There is a loose belt file under the material category.
+
+26
+00:03:29,140 --> 00:03:32,140
+There are two pieces of loose belt material in it.
+
+27
+00:03:32,140 --> 00:03:34,140
+One needle, one shrink.
+
+28
+00:03:34,140 --> 00:03:37,140
+Here we choose to use the needle loose belt.
+
+29
+00:03:37,140 --> 00:03:40,140
+Drag it to this piece of fabric and replace it.
+
+30
+00:03:40,140 --> 00:03:51,140
+In the attribute editor below, you can check the physical attribute details of the loose belt.
+
+31
+00:03:51,140 --> 00:03:54,140
+After opening the simulation again, the skirt can be worn normally on the model.
+
+32
+00:03:55,140 --> 00:04:02,140
+At this time, the waist has no wrinkle details.
+
+33
+00:04:02,140 --> 00:04:08,140
+Select the middle plate and reduce the particle diameter of the two plates to 5.
+
+34
+00:04:08,140 --> 00:04:16,139
+Simulate again, you can see the wrinkle details.
+
+35
+00:04:25,139 --> 00:04:26,139
+Shift plus A to hide the model.
+
+36
+00:04:26,139 --> 00:04:31,139
+Next, make the waist plate of the inner layer.
+
+37
+00:04:31,139 --> 00:04:35,139
+Select the outer layer of the plate and right-click.
+
+38
+00:04:35,139 --> 00:04:39,139
+Ctrl to the inside of the layer.
+
+39
+00:04:39,139 --> 00:04:41,139
+Change the editing sewing line tool.
+
+40
+00:04:41,139 --> 00:04:47,139
+After selecting the frame, delete all the sewing lines of this plate.
+
+41
+00:04:47,139 --> 00:04:53,139
+Then change the sewing line to the sewing line of the loose belt plate in the middle.
+
+42
+00:04:55,139 --> 00:05:06,139
+Remember to sew the two ends of the plate.
+
+43
+00:05:06,139 --> 00:05:09,139
+Select the middle plate and right-click on the 3D window.
+
+44
+00:05:09,139 --> 00:05:13,139
+Add it to the inside.
+
+45
+00:05:13,139 --> 00:05:21,139
+Open the simulation.
+
+46
+00:05:21,139 --> 00:05:24,139
+Apply the corresponding fabric to the skirt.
+
+47
+00:05:26,139 --> 00:05:32,139
+Simulate again.
+
+48
+00:05:32,139 --> 00:05:36,139
+At this time, the white loose belt will show on the edge.
+
+49
+00:05:36,139 --> 00:05:42,139
+How should we hide this effect?
+
+50
+00:05:42,139 --> 00:05:48,139
+First, delete all the sewing lines on the edge of the plate.
+
+51
+00:05:48,139 --> 00:05:50,139
+Switch to the texture surface display.
+
+52
+00:05:50,139 --> 00:05:53,139
+You can see that the plate is upside down at this time.
+
+53
+00:05:53,139 --> 00:05:57,139
+Turn over the surface.
+
+54
+00:05:57,139 --> 00:06:02,139
+Then sew the edges of the two waist plates together.
+
+55
+00:06:02,139 --> 00:06:04,139
+At this time, you need to pay attention to the direction of the sewing.
+
+56
+00:06:04,139 --> 00:06:14,139
+You can also sew before turning over the surface.
+
+57
+00:06:14,139 --> 00:06:16,139
+Select these two sewing lines.
+
+58
+00:06:16,139 --> 00:06:18,139
+Change the folding angle to 0 degrees.
+
+59
+00:06:23,139 --> 00:06:25,139
+Open the simulation again.
+
+60
+00:06:25,139 --> 00:06:30,139
+At this time, you can see that because the two plates are sewn together directly,
+
+61
+00:06:30,139 --> 00:06:34,139
+you can hide the loose belt plate in the middle layer.
+
+62
+00:06:34,139 --> 00:06:38,139
+And because the two plates are facing each other,
+
+63
+00:06:38,139 --> 00:06:45,139
+you can change the folding angle of the sewing line to 0 degrees.
+
+64
+00:06:45,139 --> 00:06:51,139
+Finally, in order to make the fold more delicate,
+
+65
+00:06:51,139 --> 00:06:59,139
+you can select the edge line of the middle plate and draw it.
+
+66
+00:06:59,139 --> 00:07:01,139
+Simulate again to stabilize.
+
+67
+00:07:01,139 --> 00:07:07,139
+Then the three-layer structure of the loose belt is finished.
+
+68
+00:07:07,139 --> 00:07:18,139
+Finally, use a tool to improve the quality of clothing to optimize the clothing effect.
+
+69
+00:07:18,139 --> 00:07:20,139
+Thank you for watching.
+
+70
+00:07:21,139 --> 00:07:25,139
+See you in the next video.
+

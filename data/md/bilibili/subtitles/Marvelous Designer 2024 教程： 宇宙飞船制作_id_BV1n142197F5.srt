@@ -1,0 +1,596 @@
+1
+00:00:00,000 --> 00:00:10,000
+In this video, we will show you how to create the outer surface of a spaceship, and we will learn how to create the appropriate effect by combining hard surface models in Marvelous Designer.
+
+2
+00:00:10,000 --> 00:00:20,000
+First, when creating a spaceship, you need to determine a clear goal first, and what is the content you want to complete.
+
+3
+00:00:20,000 --> 00:00:30,000
+After having the initial concept, we need to create a basic model to carry out subsequent creation.
+
+4
+00:00:30,000 --> 00:00:36,000
+Now let's take a look at the final project file.
+
+5
+00:00:36,000 --> 00:00:40,000
+You can see that the spaceship is in the middle of the model.
+
+6
+00:00:40,000 --> 00:00:44,000
+The model is in the middle of the model.
+
+7
+00:00:44,000 --> 00:00:48,000
+The model is in the middle of the model.
+
+8
+00:00:48,000 --> 00:00:50,000
+The model is in the middle of the model.
+
+9
+00:00:50,000 --> 00:01:00,000
+As you can see, the primary body of this spaceship is frozen and the material structure on the outer surface of it is hepsified, so we only need to create a factory model, which is the engine.
+
+10
+00:01:00,000 --> 00:01:04,000
+The main body of the spaceship and the engine are made by the external software,
+
+11
+00:01:04,000 --> 00:01:10,000
+but we will use them to create this project in two different ways.
+
+12
+00:01:10,000 --> 00:01:16,000
+despite the difference between making the shape and making the object.
+
+13
+00:01:16,000 --> 00:01:18,000
+One兩種之是将OBJ導入为服裝,
+
+14
+00:01:18,000 --> 00:01:20,000
+the other is contributes FBX to make a virtual model,
+
+15
+00:01:20,000 --> 00:01:31,000
+Since we need to use this file as the base of the board in the 2D window to create the following content, we need to import OBJ, select clothing as the object type, and select the board in the UV map.
+
+16
+00:01:35,000 --> 00:01:39,000
+This way, we can create the external structure based on the selected board.
+
+17
+00:01:40,000 --> 00:01:48,000
+The imported object will maintain the shape when creating, which is very suitable for maintaining the overall curve, and can be created later through the 2D board.
+
+18
+00:01:51,000 --> 00:01:56,000
+Now let's create some internal lines to separate the areas where the ships are separated.
+
+19
+00:01:59,000 --> 00:02:07,000
+When designing a ship, you can create your own unique design. Of course, you can also follow the effect operation in our video.
+
+20
+00:02:20,000 --> 00:02:27,000
+In the end, my division design is as shown in the video, you can pause the video playback and draw out all the parts according to your needs.
+
+21
+00:02:28,000 --> 00:02:49,000
+Select the basic board and then select the outer of the colon layer, so that we can automatically create a layer of the same board as the original base and paste its outer layer.
+
+22
+00:02:51,000 --> 00:02:58,000
+The colon layer function will automatically create the corresponding sewing line on all the lines between the two layers of the board.
+
+23
+00:02:59,000 --> 00:03:03,000
+The fewer lines you manually sew, the fewer errors the project file will produce.
+
+24
+00:03:04,000 --> 00:03:14,000
+Then turn off the link. Now we need to cut the outer board. You can select the internal line that connects to the outer line of the board, and then select the cut in the right-click menu.
+
+25
+00:03:15,000 --> 00:03:18,000
+Repeat operation for the board we will not adjust and edit.
+
+26
+00:03:18,000 --> 00:03:23,000
+We can reverse-activate or freeze the edited boards to help the software run more smoothly.
+
+27
+00:03:25,000 --> 00:03:32,000
+Please remember that the cut line will automatically remove the previous sewing line, so you need to manually create the sewing line between them.
+
+28
+00:03:48,000 --> 00:03:56,000
+And cut it out so they will not be too straight.
+
+29
+00:03:57,000 --> 00:03:58,000
+Now we will turn off the button.
+
+30
+00:03:59,000 --> 00:04:02,340
+The
+
+31
+00:04:03,000 --> 00:04:04,000
+The
+
+32
+00:04:05,000 --> 00:04:06,000
+The
+
+33
+00:04:07,000 --> 00:04:08,000
+The
+
+34
+00:04:09,000 --> 00:04:10,000
+The
+
+35
+00:04:11,000 --> 00:04:12,000
+The
+
+36
+00:04:13,000 --> 00:04:14,000
+The
+
+37
+00:04:15,000 --> 00:04:16,000
+The
+
+38
+00:04:16,000 --> 00:04:19,759
+In the end, we will have a basic board and a set of cut boards.
+
+39
+00:04:19,759 --> 00:04:23,600
+After dealing with it here, we can anti-activate the tight board and the basic board,
+
+40
+00:04:23,600 --> 00:04:27,300
+so that it can continue to be controlled by the powder line and the shape of the powder board,
+
+41
+00:04:27,300 --> 00:04:30,000
+and it will not deform without modeling.
+
+42
+00:04:46,000 --> 00:04:51,000
+Place the board slices separately in the 2D window to make it easier to adjust later.
+
+43
+00:05:16,000 --> 00:05:19,399
+Now we are going to continue to design and separate each part of the editor.
+
+44
+00:05:19,399 --> 00:05:23,500
+In this case, we will make the size of some of the outer boards larger,
+
+45
+00:05:23,500 --> 00:05:26,199
+so that there will be a difference in size between the boards.
+
+46
+00:05:26,199 --> 00:05:28,699
+In addition, the powder line will be mixed with them again,
+
+47
+00:05:28,699 --> 00:05:31,000
+and some wrinkles will occur on the outer layer.
+
+48
+00:05:37,500 --> 00:05:41,500
+All boards that need wrinkles need to be adjusted to their size.
+
+49
+00:05:41,500 --> 00:05:43,500
+If the size is close to the basic board,
+
+50
+00:05:43,500 --> 00:05:46,000
+then the wrinkle effect will not be very obvious.
+
+51
+00:05:46,000 --> 00:05:48,000
+Although we only enlarged some boards,
+
+52
+00:05:48,000 --> 00:05:52,000
+you can also observe the changes that such changes bring to the wrinkle of the board.
+
+53
+00:06:05,000 --> 00:06:07,500
+Next, let's take a look at the other parts of the spaceship.
+
+54
+00:06:10,500 --> 00:06:13,000
+We will use some specific attributes for the front board,
+
+55
+00:06:13,000 --> 00:06:15,000
+so that it has a more special appearance effect.
+
+56
+00:06:15,000 --> 00:06:16,000
+At this point,
+
+57
+00:06:16,000 --> 00:06:19,000
+it is also important to increase the size of the outer board.
+
+58
+00:06:19,000 --> 00:06:22,000
+Now you can see that we have divided the grid at the front.
+
+59
+00:06:22,000 --> 00:06:25,000
+The lines of the grid are divided into three groups.
+
+60
+00:06:26,000 --> 00:06:31,000
+These lines are set to 30 fold strength and 225 fold angle.
+
+61
+00:06:32,000 --> 00:06:35,000
+A fold angle of more than 180 degrees can make the board
+
+62
+00:06:35,000 --> 00:06:37,000
+bend inward in the inner line,
+
+63
+00:06:37,000 --> 00:06:40,000
+and increase the fold strength to better maintain the fold effect.
+
+64
+00:06:41,000 --> 00:06:43,000
+This is the final effect.
+
+65
+00:06:43,000 --> 00:06:45,000
+I opened the high-quality rendering to see the effect more clearly.
+
+66
+00:06:45,000 --> 00:06:46,000
+I opened the high-quality rendering to see the effect more clearly.
+
+67
+00:07:00,000 --> 00:07:01,000
+For the side panel,
+
+68
+00:07:01,000 --> 00:07:03,000
+I want to get a lot of folds,
+
+69
+00:07:03,000 --> 00:07:05,000
+but at the same time have some inflow effect.
+
+70
+00:07:08,000 --> 00:07:11,000
+Increase the pressure of the board to 20 to get the expansion effect,
+
+71
+00:07:11,000 --> 00:07:13,000
+and set the frictional shrink rate to 80.
+
+72
+00:07:13,000 --> 00:07:15,000
+All the internal lines on the board are applied to the flexible,
+
+73
+00:07:15,000 --> 00:07:16,000
+the intensity is set to 10,
+
+74
+00:07:16,000 --> 00:07:17,000
+the proportion is set to 80.
+
+75
+00:07:17,000 --> 00:07:19,000
+The flexible will shrink the position of the inner line.
+
+76
+00:07:19,000 --> 00:07:21,000
+Since the board is enlarged,
+
+77
+00:07:21,000 --> 00:07:23,000
+but the right-angle line direction of this board is the gold line,
+
+78
+00:07:23,000 --> 00:07:24,000
+the gold line shrink rate is 80,
+
+79
+00:07:24,000 --> 00:07:27,000
+which means that it will be tightened in the right-angle line direction.
+
+80
+00:07:27,000 --> 00:07:28,000
+Therefore, after opening the simulation,
+
+81
+00:07:28,000 --> 00:07:30,000
+the folds are mainly created with the oblique.
+
+82
+00:07:30,000 --> 00:07:33,000
+You can see that the outer board is bigger than the base board.
+
+83
+00:07:38,000 --> 00:07:40,000
+This allows the cloth difference between the inner and outer layers
+
+84
+00:07:40,000 --> 00:07:42,000
+to allow the outer board to have more fold details.
+
+85
+00:07:43,000 --> 00:07:58,000
+Because we are going to have a mirror-shape board next, so we need to choose whether to align the board with the mirror or separate the two boards separately.
+
+86
+00:07:58,000 --> 00:08:05,000
+For example, this part does not need to align the board with the mirror-shape board.
+
+87
+00:08:05,000 --> 00:08:14,000
+Therefore, I directly chose to copy the mirror-stick.
+
+88
+00:08:14,000 --> 00:08:27,000
+Because this board is in a state of counter-activation before copying, so is the mirror-stick board, which will maintain its original shape and state.
+
+89
+00:08:27,000 --> 00:08:31,000
+For this part, I simply created some uniform internal lines along the board,
+
+90
+00:08:31,000 --> 00:08:34,000
+and then applied the intensity as 10 for them, and the ratio as 32.
+
+91
+00:08:34,000 --> 00:08:35,000
+Then I applied the intensity as 10 for them, and the ratio as 32.
+
+92
+00:08:35,000 --> 00:08:43,000
+For the whole spaceship, this part will be partially covered by the surface, so there is no need to align the points.
+
+93
+00:08:43,000 --> 00:08:46,000
+Next, let's look at the other parts.
+
+94
+00:08:46,000 --> 00:08:50,000
+We need to create a mirror-shape board along these boards.
+
+95
+00:09:05,000 --> 00:09:13,000
+If we directly use a copy and mirror-stick to deal with this board, the position in the center will be some unnatural.
+
+96
+00:09:18,000 --> 00:09:22,000
+And without a basic board, we cannot simulate this one to be too natural.
+
+97
+00:09:22,000 --> 00:09:24,000
+If we also!
+
+98
+00:09:24,000 --> 00:09:31,000
+We select the basic board and the outer board at the same time, and then we divide the whole into 10,
+
+99
+00:09:31,000 --> 00:09:33,000
+This level is 2L.
+
+100
+00:09:33,000 --> 00:09:34,000
+Then 1L is the total square, the outer plate is 165.
+
+101
+00:09:34,000 --> 00:09:37,240
+Select the outer layer and then select Create Diagonal Slot to separate the lines
+
+102
+00:10:04,000 --> 00:10:10,000
+After creating a symmetrical board, we can combine the boards on both sides along the middle position.
+
+103
+00:10:10,000 --> 00:10:16,000
+And now we also have the base board at the bottom, which can ensure that we can simulate it normally.
+
+104
+00:10:16,000 --> 00:10:39,000
+If your project file is also a large file like this, and there are many parts that will not collide and conflict with each other, then you can refer to this video to use the freeze-resist function.
+
+105
+00:10:39,000 --> 00:10:44,000
+Re-activate those boards that do not participate in the disassembly and do not need to conflict, and freeze those boards that need to collide and conflict.
+
+106
+00:10:44,000 --> 00:10:46,000
+Through these two functions, you can improve the performance.
+
+107
+00:10:46,000 --> 00:10:48,000
+Increase the simulation speed and maintain the original state.
+
+108
+00:10:48,000 --> 00:10:49,000
+Open the simulation.
+
+109
+00:11:11,000 --> 00:11:16,000
+Use the same operation method as the previous grid part to adjust other parts.
+
+110
+00:11:16,000 --> 00:11:18,000
+Step 3
+
+111
+00:11:18,000 --> 00:11:21,919
+By setting the folding angle of these internal lines, it can show some давager folding effects,
+
+112
+00:11:21,919 --> 00:11:26,039
+and there is no
+
+113
+00:11:35,000 --> 00:11:39,000
+We can also use the internal linedesc function to create many internal lines.
+
+114
+00:11:39,000 --> 00:11:45,000
+Then we can измен competitions with the fold angle of these two lines at an angle .
+
+115
+00:11:45,000 --> 00:11:49,000
+In order to achieve the folding effect, you can also adjust the folding angle of each internal line according to your needs.
+
+116
+00:11:55,000 --> 00:12:01,000
+You can see that this board is neat and circular, and it is very suitable for using square grid as a grid type.
+
+117
+00:12:08,000 --> 00:12:14,000
+Since the internal line diameter is smaller and the folding is more detailed, we need to reduce the particle diameter to 5, and then simulate.
+
+118
+00:12:14,000 --> 00:12:21,000
+By creating an inner line and setting the folding angle, you can make such a concave effect, and you can adjust it by number.
+
+119
+00:12:21,000 --> 00:12:28,000
+For example, if we want a relatively not very obvious folding effect, we will set a smaller folding angle with a difference of 180 degrees.
+
+120
+00:12:36,000 --> 00:12:42,000
+Here we will make the ring stand up from the flat surface through the setting of the folding angle.
+
+121
+00:12:44,000 --> 00:12:51,000
+Then we will make the ring stand up from the flat surface through the setting of the folding angle.
+
+122
+00:12:51,000 --> 00:12:55,000
+Let's freeze these finished parts and make the next part.
+
+123
+00:13:06,000 --> 00:13:09,000
+Next, let's look at the top board.
+
+124
+00:13:09,000 --> 00:13:12,000
+On this board, we randomly created some internal lines.
+
+125
+00:13:12,000 --> 00:13:14,000
+This also increases the folding angle.
+
+126
+00:13:14,000 --> 00:13:16,000
+We added pressure, which is similar to the previous one.
+
+127
+00:13:16,000 --> 00:13:19,000
+The pressure value is 32, and it is set to 80.
+
+128
+00:13:20,000 --> 00:13:25,000
+On these internal lines, we used elasticity to reduce the proportion of elasticity, so that there is a fold effect in these positions.
+
+129
+00:13:25,000 --> 00:13:29,000
+Randomly creating internal lines can have some irregular effects on the board.
+
+130
+00:13:34,000 --> 00:13:36,000
+Now our ship has been created.
+
+131
+00:13:36,000 --> 00:13:41,000
+Next, let's take a look at how to use the part of the ship as a virtual model and clothing together.
+
+132
+00:13:44,000 --> 00:13:59,000
+To create the engine cover, I will insert the engine into the FBX format as a virtual model, so that it can interact with the board and let the board wrap around it.
+
+133
+00:13:59,000 --> 00:14:04,000
+I will insert the part of the engine's segmented circulation and the part of the flying ship's back into the OBJ format as clothing.
+
+134
+00:14:04,000 --> 00:14:06,000
+This will make it easier for us to integrate the board.
+
+135
+00:14:06,000 --> 00:14:10,000
+Now let's show this white board in the 3D window.
+
+136
+00:14:10,000 --> 00:14:12,000
+You can see that it is integrated into these two at both ends.
+
+137
+00:14:12,000 --> 00:14:17,000
+The shorter side is integrated into the segmented board, and the longer side is integrated into the flying ship's back board.
+
+138
+00:14:17,000 --> 00:14:22,000
+Since it is inserted as a clothing, we can measure the length of them to complete the creation of the board.
+
+139
+00:14:23,000 --> 00:14:29,000
+These two frozen basic boards are not visible when they are rendered later, so you can delete them directly when you are satisfied with the adjustment.
+
+140
+00:14:30,000 --> 00:14:34,000
+I used negative pressure to achieve the effect of shrink-wrapping the board in this direction.
+
+141
+00:14:34,000 --> 00:14:36,000
+The pressure value is set to negative 27.
+
+142
+00:14:38,000 --> 00:14:40,000
+Now let's take a look at the control panel.
+
+143
+00:14:40,000 --> 00:14:48,000
+Then I save it as a project file and merge it with the previous production of the flying ship's body into one project file.
+
+144
+00:14:48,000 --> 00:14:55,000
+In order to make the materials convenient for subsequent production, we now need to apply the same fabric to the boards using the same materials.
+
+145
+00:14:55,000 --> 00:14:59,000
+After all is confirmed, please go to the UV editor to check the UV.
+
+146
+00:14:59,000 --> 00:15:05,000
+Finally, we need to export the FBX file and complete the subsequent shrink-wrapping according to your needs in other 3D software.
+
+147
+00:15:05,000 --> 00:15:07,000
+This is the final shrink-wrapping effect.
+
+148
+00:15:07,000 --> 00:15:09,000
+I hope this video can help you.
+
+149
+00:15:09,000 --> 00:15:11,000
+Thank you for your support and see you in the next video.
+

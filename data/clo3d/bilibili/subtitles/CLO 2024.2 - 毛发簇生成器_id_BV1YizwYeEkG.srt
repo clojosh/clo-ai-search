@@ -1,0 +1,576 @@
+1
+00:00:00,000 --> 00:00:14,000
+In order to make it easier for users to create hair loss results, we launched the hair loss vinegar generator in the 2024.2 version.
+
+2
+00:00:14,000 --> 00:00:19,000
+By using this function, users can self-define and generate multiple hair loss results.
+
+3
+00:00:19,000 --> 00:00:28,000
+In addition, in order to improve usability, we also provided 15 hair loss predictions in the Connect business city, so that users can directly use them.
+
+4
+00:00:28,000 --> 00:00:34,000
+In this video, I will introduce the hair loss vinegar generator in detail and how to apply the hair loss that it wants to generate.
+
+5
+00:00:34,000 --> 00:00:36,000
+First, open the project file.
+
+6
+00:00:36,000 --> 00:00:44,000
+The hair loss prediction adjusted from the Connect or pre-adjusted by yourself will be dragged to the object window and applied on the board.
+
+7
+00:00:44,000 --> 00:00:46,000
+Select the hair loss material.
+
+8
+00:00:46,000 --> 00:00:55,000
+In the property editor, before opening the hair loss generator, the basic parameters such as hair material, hair type, and so on have been set.
+
+9
+00:00:55,000 --> 00:00:57,000
+Then pull the scroll down.
+
+10
+00:00:57,000 --> 00:00:59,000
+Find the default image.
+
+11
+00:00:59,000 --> 00:01:02,000
+Click on the hair loss next to the default image.
+
+12
+00:01:02,000 --> 00:01:05,000
+Open the window of the hair loss generator.
+
+13
+00:01:05,000 --> 00:01:11,000
+In the hair loss generator, there are two default images, the long-distance image and the curved-direction image.
+
+14
+00:01:11,000 --> 00:01:18,000
+You can adjust the long-distance image and the curved-direction image to easily generate hair loss.
+
+15
+00:01:18,000 --> 00:01:25,000
+Click on the long-distance image and the curved-direction image with the mouse to see the long-distance image and the curved-direction image.
+
+16
+00:01:25,000 --> 00:01:28,000
+On the left is the corresponding default preview effect,
+
+17
+00:01:28,000 --> 00:01:31,000
+and on the right is the adjustable attribute.
+
+18
+00:01:31,000 --> 00:01:34,000
+These parameters can be adjusted in any way,
+
+19
+00:01:34,000 --> 00:01:38,000
+and can be previewed on the left to check the default effect generated.
+
+20
+00:01:38,000 --> 00:01:41,000
+First, let's come to the length chart.
+
+21
+00:01:41,000 --> 00:01:44,000
+Under the attributes on the right of the length chart,
+
+22
+00:01:44,000 --> 00:01:47,000
+there are two attributes, including the cutting chart and the editing effect.
+
+23
+00:01:47,000 --> 00:01:50,000
+If these two attributes are not displayed on the menu,
+
+24
+00:01:50,000 --> 00:01:53,000
+you can click on the small triangle on the left.
+
+25
+00:01:53,000 --> 00:01:56,000
+Cutting chart and editing effect, these two attributes,
+
+26
+00:01:56,000 --> 00:01:59,000
+are used to set the length effect of hair vinegar.
+
+27
+00:01:59,000 --> 00:02:02,000
+First, let's look at the cutting chart.
+
+28
+00:02:02,000 --> 00:02:06,000
+The cutting chart is mainly used to show different lengths of hair in the same texture pattern.
+
+29
+00:02:06,000 --> 00:02:09,000
+It contains the mode, image level,
+
+30
+00:02:09,000 --> 00:02:12,000
+low area length and high area length four parameters.
+
+31
+00:02:12,000 --> 00:02:15,000
+Currently, the four parameters are gray.
+
+32
+00:02:15,000 --> 00:02:18,000
+To make it adjustable,
+
+33
+00:02:18,000 --> 00:02:21,000
+the cutting chart must be added here.
+
+34
+00:02:21,000 --> 00:02:23,000
+Next, let's explain each parameter separately.
+
+35
+00:02:23,000 --> 00:02:26,000
+To better understand and apply.
+
+36
+00:02:26,000 --> 00:02:28,000
+First is the mode.
+
+37
+00:02:28,000 --> 00:02:31,000
+It includes RGB and alpha modes.
+
+38
+00:02:31,000 --> 00:02:33,000
+Select RGB10.
+
+39
+00:02:33,000 --> 00:02:36,000
+The length of the hair depends on the grayness of the cutting chart.
+
+40
+00:02:36,000 --> 00:02:39,000
+The cutting chart needs to use gray.
+
+41
+00:02:39,000 --> 00:02:42,000
+Among them, the black area indicates the lowest hair length.
+
+42
+00:02:42,000 --> 00:02:45,000
+The white area indicates the highest hair length.
+
+43
+00:02:45,000 --> 00:02:48,000
+If you choose the alpha mode,
+
+44
+00:02:48,000 --> 00:02:52,000
+the length of the hair depends on the transparency of the cutting chart.
+
+45
+00:02:52,000 --> 00:02:55,000
+The cutting chart needs to apply transparency.
+
+46
+00:02:55,000 --> 00:02:58,000
+The transparent area indicates the lowest hair length.
+
+47
+00:02:58,000 --> 00:03:01,000
+The non-transparent area indicates the highest hair length.
+
+48
+00:03:01,000 --> 00:03:04,000
+Next, let's look at the image level.
+
+49
+00:03:04,000 --> 00:03:07,000
+It can adjust the intensity of gray.
+
+50
+00:03:07,000 --> 00:03:10,000
+Increasing the value can make the cut effect more obvious.
+
+51
+00:03:10,000 --> 00:03:14,000
+Next is the length of the low area and the length of the high area.
+
+52
+00:03:14,000 --> 00:03:18,000
+These two parameters can adjust the shortest and longest hair length.
+
+53
+00:03:18,000 --> 00:03:21,000
+Next, let's look at the editing effect.
+
+54
+00:03:21,000 --> 00:03:24,000
+The editing effect includes intensity and randomness.
+
+55
+00:03:24,000 --> 00:03:26,000
+Let's look at the intensity first.
+
+56
+00:03:26,000 --> 00:03:28,000
+The higher the intensity value,
+
+57
+00:03:28,000 --> 00:03:31,000
+the greater the difference in hair length from the edge to the center.
+
+58
+00:03:31,000 --> 00:03:34,000
+This creates a sharper hair hair.
+
+59
+00:03:34,000 --> 00:03:36,000
+The intensity below is random.
+
+60
+00:03:36,000 --> 00:03:41,000
+It can adjust whether the length of the hair on the entire surface of the fabric is consistent or irregular.
+
+61
+00:03:41,000 --> 00:03:45,000
+The higher the value, the more inconsistent the length of the hair hair.
+
+62
+00:03:45,000 --> 00:03:48,000
+And the long and short hair hair distribution is also irregular.
+
+63
+00:03:48,000 --> 00:03:50,000
+Next, let's look at the curve distribution.
+
+64
+00:03:50,000 --> 00:03:52,000
+Let's look at the curve direction chart.
+
+65
+00:03:52,000 --> 00:03:56,000
+It includes two properties, hair loss and hair loss details.
+
+66
+00:03:56,000 --> 00:03:58,000
+First, click on hair loss.
+
+67
+00:03:58,000 --> 00:04:02,000
+Hair loss makes the hair show the effect of one hair.
+
+68
+00:04:02,000 --> 00:04:07,000
+It contains intensity, hair loss density, random direction, intensity, and random four parameters.
+
+69
+00:04:07,000 --> 00:04:11,000
+Next, let's explain the meaning of each parameter separately.
+
+70
+00:04:11,000 --> 00:04:13,000
+To better understand and apply.
+
+71
+00:04:13,000 --> 00:04:15,000
+First is the intensity.
+
+72
+00:04:15,000 --> 00:04:19,000
+The property can adjust the intensity of the hair on each direction of the curve.
+
+73
+00:04:19,000 --> 00:04:23,000
+The higher the intensity, the more obvious the hair loss, the stronger the three-dimensional effect.
+
+74
+00:04:23,000 --> 00:04:25,000
+Next is the density of hair loss.
+
+75
+00:04:25,000 --> 00:04:28,000
+It can adjust the density of hair loss.
+
+76
+00:04:28,000 --> 00:04:32,000
+The higher the value, the higher the density of hair loss.
+
+77
+00:04:32,000 --> 00:04:35,000
+The smaller the hair loss, the closer it is.
+
+78
+00:04:35,000 --> 00:04:39,000
+The smaller the value, the lower the density of hair loss.
+
+79
+00:04:39,000 --> 00:04:41,000
+The larger the hair loss, the more scattered it is.
+
+80
+00:04:41,000 --> 00:04:44,000
+About random direction and random intensity.
+
+81
+00:04:44,000 --> 00:04:48,000
+These two parameters can set the curve direction of hair loss adjustment.
+
+82
+00:04:48,000 --> 00:04:50,000
+It is consistent or irregular.
+
+83
+00:04:50,000 --> 00:04:53,000
+Next, let's click on hair loss details.
+
+84
+00:04:53,000 --> 00:04:58,000
+Hair loss details are used to adjust the detail effect of each hair loss.
+
+85
+00:04:58,000 --> 00:05:00,000
+It contains five parameters.
+
+86
+00:05:00,000 --> 00:05:04,000
+The function meaning of the first four parameters is similar to what is said above.
+
+87
+00:05:04,000 --> 00:05:07,000
+There is no more explanation.
+
+88
+00:05:07,000 --> 00:05:09,000
+Finally, the intensity of hair loss is increased.
+
+89
+00:05:09,000 --> 00:05:13,000
+It can adjust the concentration of each hair loss.
+
+90
+00:05:13,000 --> 00:05:16,000
+At the same time, the direction of each hair loss remains unchanged.
+
+91
+00:05:16,000 --> 00:05:17,000
+The intensity of hair loss is higher.
+
+92
+00:05:17,000 --> 00:05:19,000
+It is correct for hair loss.
+
+93
+00:05:19,000 --> 00:05:23,000
+With the highest density setting, it can be made the hair loss smooth and loose.
+
+94
+00:05:23,000 --> 00:05:25,000
+It's like being tidied up.
+
+95
+00:05:25,000 --> 00:05:29,000
+Next, we will follow the meaning of the attributes parameters as described in the previous video.
+
+96
+00:05:29,000 --> 00:05:32,000
+Let's adjust this hair loss.
+
+97
+00:05:32,000 --> 00:05:38,000
+First, let's see how to adjust this hair loss effect based on the preview.
+
+98
+00:05:38,000 --> 00:05:40,000
+Open the length chart.
+
+99
+00:05:40,000 --> 00:05:44,000
+Because this hair loss effect does not need to show hair loss of different lengths.
+
+100
+00:05:44,000 --> 00:05:46,000
+So there is no need to use the cutting chart.
+
+101
+00:05:46,000 --> 00:05:53,000
+This hair is a bit sharp on each side, so adjust the strength a little bigger, 0.3 is fine.
+
+102
+00:05:53,000 --> 00:05:56,000
+You can pull the slider or enter the value directly.
+
+103
+00:05:56,000 --> 00:05:59,000
+The length of each hair is called the rule.
+
+104
+00:05:59,000 --> 00:06:04,000
+So it's good to have the value here within the 0.1 range, the value of 0.08 is fine.
+
+105
+00:06:04,000 --> 00:06:09,000
+After adjusting the length picture, come to the bend direction picture.
+
+106
+00:06:09,000 --> 00:06:11,000
+Let's look at the hair vinegar first.
+
+107
+00:06:11,000 --> 00:06:18,000
+The hair vinegar shows a certain three-dimensional effect, so adjust the strength value to the appropriate value of 0.45.
+
+108
+00:06:18,000 --> 00:06:24,000
+The density of the hair vinegar is not very dense, so adjust the density of the vinegar to 0.2.
+
+109
+00:06:24,000 --> 00:06:32,000
+The bending direction and bending strength of the hair vinegar are all called rules, so keep it at 0 or enter 0.05 here.
+
+110
+00:06:32,000 --> 00:06:35,000
+Next, let's look at the hair vinegar details.
+
+111
+00:06:35,000 --> 00:06:40,000
+The previous four parameters can be set according to the direction of the hair vinegar.
+
+112
+00:06:40,000 --> 00:06:41,000
+Let's look at the hair vinegar.
+
+113
+00:06:41,000 --> 00:06:44,000
+First, adjust the detail effect of the single hair vinegar to adjust.
+
+114
+00:06:44,000 --> 00:06:48,000
+According to the effect, adjust the value to the appropriate value.
+
+115
+00:06:48,000 --> 00:06:50,000
+Finally, the looseness.
+
+116
+00:06:50,000 --> 00:06:57,000
+Since the hair in the single hair vinegar is slightly open, so here the value is adjusted to 0.45.
+
+117
+00:06:57,000 --> 00:07:03,000
+After adjusting the properties of each parameter, be sure to click on the application first and then click on close.
+
+118
+00:07:03,000 --> 00:07:07,000
+The property settings made earlier will be applied to the hair.
+
+119
+00:07:07,000 --> 00:07:10,000
+Finally, open the synchronization rendering of the rendering window to see the final effect.
+
+120
+00:07:10,000 --> 00:07:12,000
+If there is no problem, output the rendering image.
+
+121
+00:07:12,000 --> 00:07:22,000
+Next, I will show you the final hair rendering image.
+
+122
+00:07:22,000 --> 00:07:27,000
+Next, let's see how to set this hair hair effect that presents a partial flower shape.
+
+123
+00:07:27,000 --> 00:07:30,000
+Open the hair vinegar generator.
+
+124
+00:07:30,000 --> 00:07:32,000
+Come to the cut image under the length image.
+
+125
+00:07:32,000 --> 00:07:36,000
+Add the pre-made black and white flower-shaped image.
+
+126
+00:07:36,000 --> 00:07:39,000
+Note that the cut image is a gray image.
+
+127
+00:07:39,000 --> 00:07:42,000
+For example, the mode should choose RGB mode.
+
+128
+00:07:42,000 --> 00:07:48,000
+After adding, the following properties can be adjusted according to the effect you want.
+
+129
+00:07:48,000 --> 00:07:52,000
+For example, I want to make the hair vinegar in the flower-shaped area more clear and obvious.
+
+130
+00:07:52,000 --> 00:07:55,000
+You can adjust the image level to the appropriate size.
+
+131
+00:07:55,000 --> 00:07:57,000
+For example, adjust to 0.65.
+
+132
+00:07:57,000 --> 00:08:00,000
+I want to have a certain length of hair in the low area.
+
+133
+00:08:00,000 --> 00:08:03,000
+You can adjust the height of the low area to the appropriate size.
+
+134
+00:08:03,000 --> 00:08:05,000
+Adjust it to 0.2.
+
+135
+00:08:05,000 --> 00:08:07,000
+After adjusting the properties, click on the application and close.
+
+136
+00:08:07,000 --> 00:08:10,000
+Open the rendering window and run the synchronization rendering.
+
+137
+00:08:10,000 --> 00:08:12,000
+Check the final effect.
+
+138
+00:08:12,000 --> 00:08:14,000
+After no problem, output the rendering image.
+
+139
+00:08:14,000 --> 00:08:19,000
+Next, I will show you the final hair hair rendering image designed with a partial flower shape.
+
+140
+00:08:19,000 --> 00:08:27,000
+We believe that the application of the new hair hair preset and hair vinegar generator by Kinect will improve your design experience and expand your creativity.
+
+141
+00:08:27,000 --> 00:08:32,000
+We look forward to your use of the hair hair vinegar generator to play with hair.
+
+142
+00:08:32,000 --> 00:08:34,000
+Thank you for watching.
+
+143
+00:08:34,000 --> 00:08:36,000
+See you next time.
+
+144
+00:08:37,000 --> 00:08:42,000
+Thank you for watching.
+

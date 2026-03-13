@@ -1,0 +1,4628 @@
+1
+00:00:00,000 --> 00:00:02,000
+Hello everyone, welcome to my channel.
+
+2
+00:00:02,000 --> 00:00:12,000
+Today we are going to talk about how to build a real scene and render it in colo.
+
+3
+00:00:12,000 --> 00:00:18,000
+How to build a real scene and render it in colo.
+
+4
+00:00:18,000 --> 00:00:28,000
+How to build a real scene and render it in colo.
+
+5
+00:00:28,000 --> 00:00:36,000
+How to build a real scene and render it in colo.
+
+6
+00:00:36,000 --> 00:00:39,000
+built a real scene and render it in colo.
+
+7
+00:00:39,000 --> 00:00:43,000
+Let's go ahead and start Today's live streaming.
+
+8
+00:00:43,000 --> 00:00:47,000
+Today I will bring you a video of how to build a real scene and render it in Colo.
+
+9
+00:00:47,000 --> 00:00:48,000
+here we are.
+
+10
+00:00:48,000 --> 00:00:57,000
+Here are some previews that we gave you before.
+
+11
+00:00:57,000 --> 00:01:01,000
+We can take a look at the whole scene and the rendering.
+
+12
+00:01:01,000 --> 00:01:04,000
+It's all built and rendered in cloud.
+
+13
+00:01:04,000 --> 00:01:07,000
+We're going to use a lot of material during this time.
+
+14
+00:01:07,000 --> 00:01:10,000
+And these materials will also be in our live broadcast.
+
+15
+00:01:10,000 --> 00:01:13,000
+After the end, I'll share it with you on WeChat.
+
+16
+00:01:13,000 --> 00:01:18,000
+Remember to go to the WeChat public number and reply to the live material to get it.
+
+17
+00:01:22,000 --> 00:01:28,000
+Okay, first of all, we can take a look at the scene effect of the live broadcast tonight.
+
+18
+00:01:28,000 --> 00:01:34,000
+We can see that we will use a dress skirt and a virtual model here.
+
+19
+00:01:34,000 --> 00:01:37,000
+These are all in the latest version of our cloud.
+
+20
+00:01:37,000 --> 00:01:39,000
+There will be in the commercial city of Connec.
+
+21
+00:01:39,000 --> 00:01:42,000
+I will guide you to download and import.
+
+22
+00:01:43,000 --> 00:01:47,000
+First of all, we need to be in the cloud.
+
+23
+00:01:47,000 --> 00:01:52,000
+Before the live broadcast, let me introduce you to some of the materials we will use today.
+
+24
+00:01:52,000 --> 00:01:55,000
+Here I will share with you a folder like this.
+
+25
+00:01:55,000 --> 00:01:58,000
+There will be a scene 1 and scene 2 in it.
+
+26
+00:01:58,000 --> 00:02:01,000
+Each scene 1 and scene 2 will be covered by four folders.
+
+27
+00:02:01,000 --> 00:02:04,000
+We can see these four folders.
+
+28
+00:02:04,000 --> 00:02:06,000
+We can open and check.
+
+29
+00:02:06,000 --> 00:02:11,000
+In the first folder, it will be covered by some of these scene model folders.
+
+30
+00:02:11,000 --> 00:02:13,000
+In the second folder, it will be covered by some of these scene model folders.
+
+31
+00:02:13,000 --> 00:02:18,000
+In the third folder, it will be covered by some of these scene model folders.
+
+32
+00:02:18,000 --> 00:02:24,000
+The third one is our jdr environment sticker.
+
+33
+00:02:24,000 --> 00:02:27,000
+The fourth is some continuous pattern of the four sides.
+
+34
+00:02:27,000 --> 00:02:31,000
+It is convenient for us to do some scene ground and use.
+
+35
+00:02:31,000 --> 00:02:36,000
+These folders will also be shared to you.
+
+36
+00:02:39,000 --> 00:02:41,000
+Okay, first of all, before we make a scene.
+
+37
+00:02:41,000 --> 00:02:55,000
+Before that, you can load a virtual model, and the main purpose is that we need a virtual model to do a reference, and here we use Claude's new model, Yuna.
+
+38
+00:02:55,000 --> 00:03:00,000
+Next, let's make a larger board.
+
+39
+00:03:00,000 --> 00:03:08,000
+This large board can be drawn very large, and it can cover about one-fourth of our screen.
+
+40
+00:03:08,000 --> 00:03:12,000
+After drawing, the board will be a little bit short, but it doesn't matter.
+
+41
+00:03:12,000 --> 00:03:19,000
+We can choose this board and reduce its particle diameter.
+
+42
+00:03:19,000 --> 00:03:24,000
+We can see that the board has been drawn. It is a very large board.
+
+43
+00:03:24,000 --> 00:03:29,000
+This board can be used as the ground for our entire scene.
+
+44
+00:03:29,000 --> 00:03:37,000
+Next, we can choose our board and change its particle diameter to 700.
+
+45
+00:03:37,000 --> 00:03:38,000
+Why is that?
+
+46
+00:03:38,000 --> 00:03:41,000
+Because our 700 is the largest particle diameter.
+
+47
+00:03:41,000 --> 00:03:45,000
+Remember that the ground board must be changed to a large particle diameter.
+
+48
+00:03:45,000 --> 00:03:48,000
+Because it doesn't need to be included in our calculation.
+
+49
+00:03:48,000 --> 00:03:55,000
+We can rotate the whole board, and then right-click it in the 3D window and choose to move to the center of the ground.
+
+50
+00:03:55,000 --> 00:04:07,000
+In this way, we can see that the whole board is used as a ground for our scene.
+
+51
+00:04:07,000 --> 00:04:14,000
+Next, let's take a look at some of the materials in the folder that will be used next.
+
+52
+00:04:14,000 --> 00:04:18,000
+This is what I just showed you.
+
+53
+00:04:18,000 --> 00:04:22,000
+We have such a four-sided continuous file folder.
+
+54
+00:04:22,000 --> 00:04:25,000
+There will be some real leaves in the folder.
+
+55
+00:04:25,000 --> 00:04:28,000
+Let's paste this file first on this default material.
+
+56
+00:04:28,000 --> 00:04:31,000
+Then we can zoom in and see.
+
+57
+00:04:31,000 --> 00:04:36,000
+After zooming in, we can use the edit tool to make the whole picture larger.
+
+58
+00:04:36,000 --> 00:04:41,000
+Let's make it a little bit smaller.
+
+59
+00:04:41,000 --> 00:04:46,000
+For the live broadcast effect, let's delete the model's skin first.
+
+60
+00:04:46,000 --> 00:04:49,000
+In this way, we have created such a ground effect.
+
+61
+00:04:49,000 --> 00:04:50,000
+It's actually very simple.
+
+62
+00:04:50,000 --> 00:04:56,000
+Just draw a very large board.
+
+63
+00:04:56,000 --> 00:05:01,000
+Next, we can start to import some models for our scene.
+
+64
+00:05:01,000 --> 00:05:05,000
+Because our whole operation is done in the 3D window.
+
+65
+00:05:05,000 --> 00:05:07,000
+For example, we only need to display the 3D window.
+
+66
+00:05:07,000 --> 00:05:12,000
+Let's switch it.
+
+67
+00:05:12,000 --> 00:05:15,000
+Next, let's open this folder.
+
+68
+00:05:15,000 --> 00:05:18,000
+In the folder, there is a 3D title file.
+
+69
+00:05:18,000 --> 00:05:19,000
+Let's open it.
+
+70
+00:05:19,000 --> 00:05:22,000
+There will be a lot of such files in it.
+
+71
+00:05:22,000 --> 00:05:24,000
+There will be such a model in each file.
+
+72
+00:05:24,000 --> 00:05:26,000
+For example, let's open the first one.
+
+73
+00:05:26,000 --> 00:05:31,000
+We can see through the solid picture that it is such a tree-like model.
+
+74
+00:05:31,000 --> 00:05:33,000
+How do we import it?
+
+75
+00:05:33,000 --> 00:05:37,000
+In this folder, there is a file called .fbx.
+
+76
+00:05:37,000 --> 00:05:41,000
+We drag this file directly to our 3D window.
+
+77
+00:05:41,000 --> 00:05:43,000
+After dragging it in, we click on it.
+
+78
+00:05:43,000 --> 00:05:46,000
+Then select the type of loading as increase.
+
+79
+00:05:46,000 --> 00:05:49,000
+Then change its object type to copy.
+
+80
+00:05:49,000 --> 00:05:52,000
+This is a very important step.
+
+81
+00:05:52,000 --> 00:05:54,000
+We click OK.
+
+82
+00:05:54,000 --> 00:05:58,000
+The model that is imported can be seen in the center of our map.
+
+83
+00:05:58,000 --> 00:06:00,000
+It will be displayed.
+
+84
+00:06:00,000 --> 00:06:02,000
+We can see that this is a model like this.
+
+85
+00:06:02,000 --> 00:06:05,000
+If you look at it like this, the model is ugly.
+
+86
+00:06:05,000 --> 00:06:11,000
+Next, let's see how to make it look better.
+
+87
+00:06:11,000 --> 00:06:13,000
+We are still in the folder just now.
+
+88
+00:06:13,000 --> 00:06:18,000
+You can see my live broadcast here.
+
+89
+00:06:18,000 --> 00:06:20,000
+After we open this folder,
+
+90
+00:06:20,000 --> 00:06:24,000
+you will find that there are several such stickers in addition to this model.
+
+91
+00:06:24,000 --> 00:06:27,000
+The colored one is a texture picture.
+
+92
+00:06:27,000 --> 00:06:29,000
+The purple one is a hair line picture.
+
+93
+00:06:29,000 --> 00:06:31,000
+We can select the model.
+
+94
+00:06:31,000 --> 00:06:35,000
+In our case, we drag its texture picture directly to its object.
+
+95
+00:06:35,000 --> 00:06:40,000
+This is the texture of the attribute processor.
+
+96
+00:06:40,000 --> 00:06:42,000
+Then you can see that this texture is pasted in.
+
+97
+00:06:42,000 --> 00:06:50,000
+Then we select the hair line and paste the hair line picture in.
+
+98
+00:06:50,000 --> 00:06:51,000
+OK.
+
+99
+00:06:51,000 --> 00:06:53,000
+You can see that after this model is imported,
+
+100
+00:06:53,000 --> 00:06:54,000
+we add a sticker to it.
+
+101
+00:06:54,000 --> 00:06:57,000
+It will make the whole model particularly real.
+
+102
+00:06:57,000 --> 00:07:00,000
+Next, we can see that this model is slightly darker than the surrounding environment.
+
+103
+00:07:00,000 --> 00:07:03,000
+Because there are some FBX,
+
+104
+00:07:03,000 --> 00:07:06,000
+it may bring some gray after it is imported.
+
+105
+00:07:06,000 --> 00:07:09,000
+For example, it may be gray or black.
+
+106
+00:07:09,000 --> 00:07:15,000
+Then we can adjust the color of the model.
+
+107
+00:07:15,000 --> 00:07:18,000
+Then we can see that after the model is imported,
+
+108
+00:07:18,000 --> 00:07:22,000
+it can freely adjust its size in our 3D window.
+
+109
+00:07:22,000 --> 00:07:23,000
+How to adjust it?
+
+110
+00:07:23,000 --> 00:07:25,000
+We can see that after selecting the model,
+
+111
+00:07:25,000 --> 00:07:27,000
+there is a ratio in the attribute processor on the right.
+
+112
+00:07:27,000 --> 00:07:29,000
+On the ratio side, we can see that it has x and y.
+
+113
+00:07:29,000 --> 00:07:32,000
+There will be a fixed ratio below.
+
+114
+00:07:32,000 --> 00:07:34,000
+We only need to enter any size.
+
+115
+00:07:34,000 --> 00:07:38,000
+The three ratios will do the same.
+
+116
+00:07:38,000 --> 00:07:41,000
+Then we change its ratio to a size of 3500.
+
+117
+00:07:41,000 --> 00:07:44,000
+When we use our moving model,
+
+118
+00:07:44,000 --> 00:07:46,000
+we must use the world coordinate axis.
+
+119
+00:07:46,000 --> 00:07:52,000
+We can make a parallel to the model and a horizontal parallel to the top and bottom.
+
+120
+00:07:52,000 --> 00:07:53,000
+You can see that in this way,
+
+121
+00:07:53,000 --> 00:07:57,000
+we will place the model slightly above our board.
+
+122
+00:07:57,000 --> 00:07:59,000
+Let it have such a contact surface.
+
+123
+00:07:59,000 --> 00:08:01,000
+You can see that in this way,
+
+124
+00:08:01,000 --> 00:08:04,000
+it merges our model and our scene together.
+
+125
+00:08:04,000 --> 00:08:06,000
+At the same time, we can adjust the ratio on the right
+
+126
+00:08:06,000 --> 00:08:08,000
+to adjust the size of the model.
+
+127
+00:08:14,000 --> 00:08:16,000
+In addition to the attribute processor,
+
+128
+00:08:16,000 --> 00:08:18,000
+we can also select the model.
+
+129
+00:08:18,000 --> 00:08:21,000
+There is such a mark on the upper right corner of its locator.
+
+130
+00:08:21,000 --> 00:08:23,000
+After we click on this mark,
+
+131
+00:08:23,000 --> 00:08:25,000
+our model will look like this.
+
+132
+00:08:25,000 --> 00:08:27,000
+We can drag the three axes,
+
+133
+00:08:27,000 --> 00:08:29,000
+x, y and z,
+
+134
+00:08:29,000 --> 00:08:32,000
+to adjust the length and height ratio of the model.
+
+135
+00:08:32,000 --> 00:08:33,000
+In this way,
+
+136
+00:08:33,000 --> 00:08:36,000
+we can adjust the effect of the model at the 3D window.
+
+137
+00:08:36,000 --> 00:08:39,000
+Let's move its position again.
+
+138
+00:08:39,000 --> 00:08:42,000
+Let's rotate it and place it behind our model.
+
+139
+00:08:42,000 --> 00:08:43,000
+For example,
+
+140
+00:08:43,000 --> 00:08:45,000
+I have already inserted a model into G-Gang.
+
+141
+00:08:45,000 --> 00:08:47,000
+Can I copy it out?
+
+142
+00:08:47,000 --> 00:08:48,000
+It's actually very simple.
+
+143
+00:08:48,000 --> 00:08:52,000
+We just right-click on the model and select copy and paste.
+
+144
+00:08:52,000 --> 00:08:54,000
+This is why we just talked about
+
+145
+00:08:54,000 --> 00:08:55,000
+that when we insert,
+
+146
+00:08:55,000 --> 00:08:57,000
+we must select copy and paste
+
+147
+00:08:57,000 --> 00:09:00,000
+because the copy and paste can be copied and pasted directly.
+
+148
+00:09:00,000 --> 00:09:03,000
+This is very convenient for our building scene.
+
+149
+00:09:05,000 --> 00:09:07,000
+Let's use the positioning ball tool
+
+150
+00:09:07,000 --> 00:09:09,000
+to adjust its position
+
+151
+00:09:09,000 --> 00:09:11,000
+and make it connect to our ground.
+
+152
+00:09:15,000 --> 00:09:17,000
+When you move the model,
+
+153
+00:09:17,000 --> 00:09:19,000
+please press 2468 on our keyboard.
+
+154
+00:09:19,000 --> 00:09:20,000
+In this way,
+
+155
+00:09:20,000 --> 00:09:22,000
+we can move it in the right angle.
+
+156
+00:09:22,000 --> 00:09:23,000
+If the model is like this,
+
+157
+00:09:23,000 --> 00:09:25,000
+it will be easier to move it.
+
+158
+00:09:25,000 --> 00:09:27,000
+Let's adjust it.
+
+159
+00:09:27,000 --> 00:09:29,000
+We can use the same model
+
+160
+00:09:29,000 --> 00:09:30,000
+to rotate its angle
+
+161
+00:09:30,000 --> 00:09:31,000
+and adjust its size
+
+162
+00:09:31,000 --> 00:09:40,000
+to achieve a rhythm change in the whole scene.
+
+163
+00:09:40,000 --> 00:09:41,000
+OK.
+
+164
+00:09:41,000 --> 00:09:42,000
+Here,
+
+165
+00:09:42,000 --> 00:09:45,000
+I move the ground of our board a little bit down
+
+166
+00:09:45,000 --> 00:09:47,000
+because it may lead to
+
+167
+00:09:47,000 --> 00:09:50,000
+an uneven ground later.
+
+168
+00:09:50,000 --> 00:09:53,000
+Then let it go down a little bit.
+
+169
+00:09:55,000 --> 00:10:04,000
+OK.
+
+170
+00:10:04,000 --> 00:10:05,000
+Next,
+
+171
+00:10:05,000 --> 00:10:06,000
+let's open the folder
+
+172
+00:10:06,000 --> 00:10:08,000
+to see the second material package.
+
+173
+00:10:08,000 --> 00:10:11,000
+We also click the insert button
+
+174
+00:10:11,000 --> 00:10:12,000
+and select increase.
+
+175
+00:10:12,000 --> 00:10:14,000
+Then select the object type as copy.
+
+176
+00:10:14,000 --> 00:10:15,000
+Here,
+
+177
+00:10:15,000 --> 00:10:16,000
+you can pay attention to
+
+178
+00:10:16,000 --> 00:10:17,000
+the ratio I use here
+
+179
+00:10:17,000 --> 00:10:18,000
+is a centimeter.
+
+180
+00:10:18,000 --> 00:10:19,000
+Why?
+
+181
+00:10:19,000 --> 00:10:20,000
+Because of these models,
+
+182
+00:10:20,000 --> 00:10:21,000
+if your ratio here
+
+183
+00:10:21,000 --> 00:10:22,000
+uses millimeters,
+
+184
+00:10:22,000 --> 00:10:23,000
+the input will be very small.
+
+185
+00:10:23,000 --> 00:10:24,000
+It may only have
+
+186
+00:10:24,000 --> 00:10:26,000
+50 mm or 30 mm,
+
+187
+00:10:26,000 --> 00:10:27,000
+which is very small.
+
+188
+00:10:27,000 --> 00:10:29,000
+Then we can change its ratio
+
+189
+00:10:29,000 --> 00:10:30,000
+to centimeters first.
+
+190
+00:10:30,000 --> 00:10:31,000
+In this way,
+
+191
+00:10:31,000 --> 00:10:33,000
+the input will be a little bigger.
+
+192
+00:10:33,000 --> 00:10:37,000
+We click OK.
+
+193
+00:10:37,000 --> 00:10:38,000
+After the input is entered,
+
+194
+00:10:38,000 --> 00:10:39,000
+we can see that it is still
+
+195
+00:10:39,000 --> 00:10:41,000
+in the center of our world coordinate axis.
+
+196
+00:10:41,000 --> 00:10:42,000
+We also open it
+
+197
+00:10:42,000 --> 00:10:43,000
+in this folder.
+
+198
+00:10:43,000 --> 00:10:44,000
+After opening it,
+
+199
+00:10:44,000 --> 00:10:46,000
+we add its texture
+
+200
+00:10:46,000 --> 00:10:48,000
+and our發現 picture
+
+201
+00:10:48,000 --> 00:10:51,000
+to it.
+
+202
+00:10:51,000 --> 00:10:53,000
+Then let's adjust this.
+
+203
+00:10:53,000 --> 00:10:59,000
+This is the color of the model.
+
+204
+00:10:59,000 --> 00:11:00,000
+OK.
+
+205
+00:11:00,000 --> 00:11:01,000
+Here,
+
+206
+00:11:01,000 --> 00:11:02,000
+we can see that
+
+207
+00:11:02,000 --> 00:11:03,000
+our model is a little white
+
+208
+00:11:03,000 --> 00:11:05,000
+and the dark color of our ground
+
+209
+00:11:05,000 --> 00:11:06,000
+is a little different.
+
+210
+00:11:06,000 --> 00:11:07,000
+We can take the initiative
+
+211
+00:11:07,000 --> 00:11:09,000
+to add a color to this model
+
+212
+00:11:09,000 --> 00:11:11,000
+so that it has a positive and negative effect
+
+213
+00:11:11,000 --> 00:11:15,000
+and can be matched with our scene.
+
+214
+00:11:15,000 --> 00:11:16,000
+You can see that
+
+215
+00:11:16,000 --> 00:11:18,000
+I choose a different color here.
+
+216
+00:11:18,000 --> 00:11:19,000
+It will be stacked together
+
+217
+00:11:19,000 --> 00:11:21,000
+and more integrated with our scene.
+
+218
+00:11:23,000 --> 00:11:24,000
+OK.
+
+219
+00:11:24,000 --> 00:11:25,000
+Next,
+
+220
+00:11:25,000 --> 00:11:26,000
+I want to make this model
+
+221
+00:11:26,000 --> 00:11:27,000
+as a ground.
+
+222
+00:11:27,000 --> 00:11:28,000
+Our ground must not be so flat,
+
+223
+00:11:28,000 --> 00:11:29,000
+right?
+
+224
+00:11:29,000 --> 00:11:30,000
+It needs some high and low changes.
+
+225
+00:11:30,000 --> 00:11:31,000
+We can choose this model
+
+226
+00:11:31,000 --> 00:11:32,000
+and adjust its ratio to the maximum.
+
+227
+00:11:32,000 --> 00:11:33,000
+We give it a 5000 first
+
+228
+00:11:33,000 --> 00:11:34,000
+and then adjust it to the size of 8000.
+
+229
+00:11:34,000 --> 00:11:35,000
+You can see that
+
+230
+00:11:35,000 --> 00:11:36,000
+the whole model
+
+231
+00:11:36,000 --> 00:11:37,000
+will have a larger effect
+
+232
+00:11:37,000 --> 00:11:38,000
+on this side.
+
+233
+00:11:38,000 --> 00:11:39,000
+Of course,
+
+234
+00:11:39,000 --> 00:11:40,000
+we can see that
+
+235
+00:11:40,000 --> 00:11:41,000
+it has a high starting point.
+
+236
+00:11:41,000 --> 00:11:42,000
+We can choose our 3D
+
+237
+00:11:42,000 --> 00:11:43,000
+texture
+
+238
+00:11:43,000 --> 00:11:44,000
+and we can see that
+
+239
+00:11:44,000 --> 00:11:45,000
+it has a high starting point.
+
+240
+00:11:45,000 --> 00:11:46,000
+We can see that
+
+241
+00:11:46,000 --> 00:11:47,000
+it has a high starting point
+
+242
+00:11:47,000 --> 00:11:48,000
+and we can see that
+
+243
+00:11:48,000 --> 00:11:49,000
+it has a high starting point
+
+244
+00:11:49,000 --> 00:11:50,000
+and we can see that
+
+245
+00:11:50,000 --> 00:11:51,000
+it has a high starting point
+
+246
+00:11:51,000 --> 00:11:52,000
+and we can see that
+
+247
+00:11:52,000 --> 00:11:53,000
+the 3D adjustment axis
+
+248
+00:11:53,000 --> 00:11:54,000
+can adjust the whole plane
+
+249
+00:11:54,000 --> 00:11:55,000
+to a height
+
+250
+00:11:55,000 --> 00:11:56,000
+to a height
+
+251
+00:11:56,000 --> 00:11:57,000
+to a height
+
+252
+00:11:57,000 --> 00:11:59,000
+so that it doesn't have to be too rough
+
+253
+00:11:59,000 --> 00:12:00,000
+or too obvious.
+
+254
+00:12:00,000 --> 00:12:01,000
+Let's make it a little flat.
+
+255
+00:12:04,000 --> 00:12:05,000
+OK.
+
+256
+00:12:05,000 --> 00:12:06,000
+Next,
+
+257
+00:12:06,000 --> 00:12:08,000
+we can over- duplicate this shape
+
+258
+00:12:08,000 --> 00:12:10,000
+and put it on our board.
+
+259
+00:12:10,000 --> 00:12:11,000
+In this way,
+
+260
+00:12:11,000 --> 00:12:12,000
+we can make our whole scene
+
+261
+00:12:12,000 --> 00:12:14,000
+change from all angles
+
+262
+00:12:14,000 --> 00:12:15,000
+from all angles
+
+263
+00:12:15,000 --> 00:12:16,000
+from all angles
+
+264
+00:12:17,000 --> 00:12:18,000
+At the same time,
+
+265
+00:12:18,000 --> 00:12:19,000
+we can adjust the whole picture
+
+266
+00:12:19,000 --> 00:12:20,000
+by 3D adjusting axis
+
+267
+00:12:20,000 --> 00:12:21,000
+by 3D adjusting axis
+
+268
+00:12:21,000 --> 00:12:23,000
+to make the whole terrain higher and lower
+
+269
+00:12:23,000 --> 00:12:25,000
+to make it more changeable
+
+270
+00:12:33,000 --> 00:12:35,000
+Ok, turn it around
+
+271
+00:12:41,000 --> 00:12:45,000
+Then we copy this to the opposite position
+
+272
+00:12:51,000 --> 00:12:53,000
+Ok, we can simply adjust its position
+
+273
+00:12:53,000 --> 00:12:55,000
+Ok, we can simply adjust its position
+
+274
+00:12:55,000 --> 00:12:57,000
+Ok, we can simply adjust its position
+
+275
+00:12:57,000 --> 00:12:59,000
+to make it more natural to our scene
+
+276
+00:12:59,000 --> 00:13:01,000
+to make it more natural to our scene
+
+277
+00:13:01,000 --> 00:13:03,000
+to make it more natural to our scene
+
+278
+00:13:03,000 --> 00:13:05,000
+So when we build the scene
+
+279
+00:13:05,000 --> 00:13:07,000
+I just told you that
+
+280
+00:13:07,000 --> 00:13:09,000
+we have a curve line
+
+281
+00:13:09,000 --> 00:13:11,000
+in addition to the texture
+
+282
+00:13:11,000 --> 00:13:13,000
+Why do we need to import this curve line?
+
+283
+00:13:13,000 --> 00:13:15,000
+Because we can see that
+
+284
+00:13:15,000 --> 00:13:17,000
+if you delete the texture
+
+285
+00:13:17,000 --> 00:13:19,000
+due to the curve line
+
+286
+00:13:19,000 --> 00:13:21,000
+our terrain will be more obvious
+
+287
+00:13:21,000 --> 00:13:23,000
+due to the curve line
+
+288
+00:13:23,000 --> 00:13:45,279
+Let's go on a
+
+289
+00:13:45,279 --> 00:13:47,279
+Double click another image
+
+290
+00:13:47,279 --> 00:13:49,279
+to copy it and place it
+
+291
+00:13:49,279 --> 00:13:50,320
+in the front and right covered spots of the model
+
+292
+00:13:50,320 --> 00:13:51,000
+in the front and right covered spots of the model
+
+293
+00:13:51,000 --> 00:14:12,000
+OK, let's take a look at the whole scene, OK, we can see that I show you the grid on this side.
+
+294
+00:14:12,000 --> 00:14:16,000
+In fact, these models that I share with you are relatively low on the grid.
+
+295
+00:14:16,000 --> 00:14:22,000
+So we can add a lot of models and it won't take up a lot of grid space.
+
+296
+00:14:22,000 --> 00:14:32,000
+So you can see that these grid spaces are very small.
+
+297
+00:14:32,000 --> 00:14:35,000
+OK, let's import another model.
+
+298
+00:14:35,000 --> 00:14:37,000
+There is a tree-like model here.
+
+299
+00:14:37,000 --> 00:14:39,000
+Let's import this model directly.
+
+300
+00:14:39,000 --> 00:14:42,000
+If you don't know what model is in this folder,
+
+301
+00:14:42,000 --> 00:14:44,000
+there will be a sorting chart in each folder.
+
+302
+00:14:44,000 --> 00:14:46,000
+You can look at this sorting chart first.
+
+303
+00:14:46,000 --> 00:14:51,000
+You will know what this model is.
+
+304
+00:14:51,000 --> 00:14:56,000
+Then we still choose to add as a copy and then click OK.
+
+305
+00:14:56,000 --> 00:15:07,000
+OK, after we import it, we also paste the texture of our model and its hair line.
+
+306
+00:15:07,000 --> 00:15:10,000
+OK, increase its hair line value.
+
+307
+00:15:10,000 --> 00:15:14,000
+Since it is a tree, we can adjust its proportion a little bit.
+
+308
+00:15:14,000 --> 00:15:16,000
+Let's take a look at the whole scene.
+
+309
+00:15:16,000 --> 00:15:21,000
+Let's put the whole tree behind it.
+
+310
+00:15:21,000 --> 00:15:25,000
+The whole tree will also have some roots like this.
+
+311
+00:15:25,000 --> 00:15:26,000
+The range is below.
+
+312
+00:15:26,000 --> 00:15:29,000
+Then we can adjust its position.
+
+313
+00:15:29,000 --> 00:15:40,000
+Here, I still feel that I need to adjust its left and right.
+
+314
+00:15:40,000 --> 00:15:44,000
+When we are operating, we can press 246 more times to see its different angles.
+
+315
+00:15:44,000 --> 00:15:48,000
+Let's see if the position of the model placed in this angle is appropriate.
+
+316
+00:15:48,000 --> 00:15:51,000
+Or whether it matches our whole scene.
+
+317
+00:15:51,000 --> 00:16:07,000
+OK, and then here, we can see that there is a tree like this on this side.
+
+318
+00:16:07,000 --> 00:16:10,000
+Then we import the tree like this into it.
+
+319
+00:16:14,000 --> 00:16:29,000
+OK, after we import it, we can see that it is also in the center of the model.
+
+320
+00:16:29,000 --> 00:16:32,000
+First of all, let's adjust its texture.
+
+321
+00:16:32,000 --> 00:16:39,000
+Let me adjust the size first.
+
+322
+00:16:39,000 --> 00:16:42,000
+Then we find these texture pictures and paste them in.
+
+323
+00:16:42,000 --> 00:16:52,000
+Then we find these texture pictures and paste them in.
+
+324
+00:16:52,000 --> 00:16:55,000
+OK, and then we move this model to its...
+
+325
+00:16:55,000 --> 00:16:57,000
+First of all, add a color to it.
+
+326
+00:16:57,000 --> 00:16:59,000
+Because it's a little pale.
+
+327
+00:16:59,000 --> 00:17:01,000
+It's a little bit out of our environment.
+
+328
+00:17:01,000 --> 00:17:02,000
+Click OK.
+
+329
+00:17:02,000 --> 00:17:05,000
+Then we rotate this model.
+
+330
+00:17:05,000 --> 00:17:06,000
+Where to put it?
+
+331
+00:17:06,000 --> 00:17:08,000
+Put it in the back of its side.
+
+332
+00:17:08,000 --> 00:17:11,000
+In this case, I want to make a tree next to it.
+
+333
+00:17:11,000 --> 00:17:13,000
+So that the tree falls down like this.
+
+334
+00:17:13,000 --> 00:17:15,000
+And there are some effects of rotting in the ground.
+
+335
+00:17:15,000 --> 00:17:21,000
+We can move it and put it back as much as possible.
+
+336
+00:17:21,000 --> 00:17:22,000
+You can see that in this way.
+
+337
+00:17:22,000 --> 00:17:25,000
+The whole scene will be more natural when it is integrated.
+
+338
+00:17:25,000 --> 00:17:26,000
+We can adjust the size.
+
+339
+00:17:26,000 --> 00:17:28,000
+Make it a little bit bigger.
+
+340
+00:17:28,000 --> 00:17:29,000
+That tree is a little bit thin.
+
+341
+00:17:29,000 --> 00:17:32,000
+Let's make it a little bit thicker.
+
+342
+00:17:41,000 --> 00:17:48,000
+OK.
+
+343
+00:17:48,000 --> 00:17:51,000
+OK, let's adjust the position of its one.
+
+344
+00:17:51,000 --> 00:17:52,000
+OK, let's adjust the position of his one.
+
+345
+00:17:52,000 --> 00:17:55,000
+Then, we can take this model.
+
+346
+00:17:55,000 --> 00:18:00,000
+mechanic side nossos
+
+347
+00:18:00,000 --> 00:18:03,000
+Let's take a look at the file folder.
+
+348
+00:18:03,000 --> 00:18:05,000
+What other materials are there?
+
+349
+00:18:05,000 --> 00:18:06,000
+You can see that in the photos of previous episodes.
+
+350
+00:18:06,000 --> 00:18:07,000
+You can see that in the photos of previous episodes.
+
+351
+00:18:07,000 --> 00:18:08,000
+Let's go back and look at the last episodes.
+
+352
+00:18:08,000 --> 00:18:09,000
+Let's go back to last episodes.
+
+353
+00:18:09,000 --> 00:18:10,039
+Let's see.
+
+354
+00:18:11,000 --> 00:18:18,500
+There are some standing decorations on this side
+
+355
+00:18:18,500 --> 00:18:20,000
+Then we will import it again
+
+356
+00:18:20,000 --> 00:18:22,900
+When you are operating here
+
+357
+00:18:22,900 --> 00:18:23,900
+Be sure not to slide your hand
+
+358
+00:18:23,900 --> 00:18:24,900
+Don't click on open
+
+359
+00:18:24,900 --> 00:18:27,200
+If you open it, your current file will be covered
+
+360
+00:18:27,200 --> 00:18:28,200
+Be sure to choose to add
+
+361
+00:18:28,200 --> 00:18:30,200
+If you are worried about it
+
+362
+00:18:30,200 --> 00:18:32,900
+You can save your project files at any time
+
+363
+00:18:32,900 --> 00:18:34,900
+Don't keep operating without saving
+
+364
+00:18:34,900 --> 00:18:37,400
+After this model is imported
+
+365
+00:18:37,400 --> 00:18:39,099
+We still give it a sticker
+
+366
+00:18:39,100 --> 00:18:41,100
+Stick it in
+
+367
+00:18:43,100 --> 00:18:44,600
+First stick it on its texture
+
+368
+00:18:44,600 --> 00:18:47,600
+Then stick this sticker on the hair line
+
+369
+00:18:50,300 --> 00:18:52,500
+Ok, let's adjust the size of the whole costume
+
+370
+00:18:52,500 --> 00:18:54,700
+I will adjust it to 5000 first
+
+371
+00:18:54,700 --> 00:18:55,500
+What about the back
+
+372
+00:18:55,500 --> 00:18:56,500
+I want to do this
+
+373
+00:18:56,500 --> 00:18:58,400
+It feels like a forest behind it
+
+374
+00:18:58,400 --> 00:19:01,000
+So I will put a few more trees in the back
+
+375
+00:19:01,000 --> 00:19:02,200
+Make it big and small
+
+376
+00:19:02,200 --> 00:19:06,000
+There is such a change in the scene
+
+377
+00:19:06,000 --> 00:19:07,500
+This tree seems a bit thick
+
+378
+00:19:07,500 --> 00:19:08,300
+Let's adjust it
+
+379
+00:19:08,300 --> 00:19:09,000
+Make it a little thinner
+
+380
+00:19:09,000 --> 00:19:10,000
+I'll stretch it out first
+
+381
+00:19:10,000 --> 00:19:14,000
+Then adjust its proportion up and down through our axis
+
+382
+00:19:14,000 --> 00:19:17,000
+Put it back
+
+383
+00:19:17,000 --> 00:19:20,200
+It seems a bit big
+
+384
+00:19:20,200 --> 00:19:27,500
+We can copy this tree directly with Ctrl-C and Ctrl-V
+
+385
+00:19:27,500 --> 00:19:29,000
+Put it in the back right
+
+386
+00:19:29,000 --> 00:19:33,599
+Put it in this position
+
+387
+00:19:33,599 --> 00:19:37,000
+Ok, then I will put it in the back right
+
+388
+00:19:37,000 --> 00:19:38,200
+Ok, then I will put it in the back right
+
+389
+00:19:38,200 --> 00:19:40,200
+You can also copy a few more
+
+390
+00:19:40,200 --> 00:19:42,200
+And then put it on
+
+391
+00:19:42,200 --> 00:19:43,200
+Because we'll be rendering it later
+
+392
+00:19:43,200 --> 00:19:44,200
+Not only in one angle
+
+393
+00:19:44,200 --> 00:19:45,200
+There might be more angles to render
+
+394
+00:19:45,200 --> 00:19:47,200
+Then I can copy a few more out
+
+395
+00:19:47,200 --> 00:19:50,200
+Then this is what I was just emphasizing
+
+396
+00:19:50,200 --> 00:19:52,200
+When we import, we should import it as a duplicate
+
+397
+00:19:52,200 --> 00:19:53,200
+Because in this way
+
+398
+00:19:53,200 --> 00:19:55,200
+It will be more convenient if we copy and paste
+
+399
+00:19:58,200 --> 00:20:01,480
+Ok, in this way
+
+400
+00:20:01,480 --> 00:20:04,200
+There is a general form in our picture
+
+401
+00:20:04,200 --> 00:20:05,200
+It's a ground
+
+402
+00:20:05,200 --> 00:20:07,200
+It's this grassy forest feeling
+
+403
+00:20:07,200 --> 00:20:09,440
+There will be some corrupt trees behind
+
+404
+00:20:09,440 --> 00:20:12,600
+There are also fallen trees and trees that grow bigger and so on
+
+405
+00:20:12,600 --> 00:20:14,440
+Let's take a look at some of the documents
+
+406
+00:20:14,440 --> 00:20:16,200
+Is there a slightly smaller number
+
+407
+00:20:16,200 --> 00:20:17,460
+You can import it in and use it
+
+408
+00:20:21,600 --> 00:20:22,920
+Here, there is a tree like this
+
+409
+00:20:22,920 --> 00:20:24,420
+Let's import this tree first
+
+410
+00:20:25,799 --> 00:20:26,880
+When you import it
+
+411
+00:20:26,880 --> 00:20:28,819
+Is to select this FBX file
+
+412
+00:20:28,819 --> 00:20:29,519
+Don't choose the wrong one
+
+413
+00:20:32,700 --> 00:20:34,440
+Or we paste the picture on it
+
+414
+00:20:37,200 --> 00:20:42,660
+After you paste it, you can adjust its width and height with the mouse
+
+415
+00:20:42,660 --> 00:20:44,700
+Let's make it a little bigger first
+
+416
+00:20:44,700 --> 00:20:46,740
+And then put it back
+
+417
+00:20:46,740 --> 00:20:48,580
+We can see that this tree is a little too thick
+
+418
+00:20:48,580 --> 00:20:49,440
+It's clinging to the back
+
+419
+00:20:49,440 --> 00:20:52,140
+Let's use this axis to adjust it a little bit
+
+420
+00:20:54,960 --> 00:20:55,740
+Pull it back
+
+421
+00:21:05,960 --> 00:21:07,019
+Then copy it out
+
+422
+00:21:07,200 --> 00:21:09,660
+And then I'm going to put a few more of them
+
+423
+00:21:18,420 --> 00:21:19,080
+In this way
+
+424
+00:21:19,080 --> 00:21:19,980
+What about our trees
+
+425
+00:21:19,980 --> 00:21:22,380
+He has this kind of a little bit thicker
+
+426
+00:21:22,380 --> 00:21:23,519
+A little bit thinner
+
+427
+00:21:23,519 --> 00:21:24,720
+That is, there are big trees and small trees
+
+428
+00:21:24,720 --> 00:21:26,940
+It will form a comparison like this
+
+429
+00:21:26,940 --> 00:21:28,799
+If we are all the same size
+
+430
+00:21:28,799 --> 00:21:31,960
+The rhythm of the whole picture will not be very good
+
+431
+00:21:31,960 --> 00:21:35,460
+We can go through the size of the tree to adjust the effect of the picture
+
+432
+00:21:37,200 --> 00:21:43,500
+Then let's take a look at what kind of material there is in other documents
+
+433
+00:21:43,500 --> 00:21:45,840
+Here, there is a tree like this
+
+434
+00:21:45,840 --> 00:21:46,860
+It's relatively large
+
+435
+00:21:46,860 --> 00:21:48,299
+Then you can put it in first
+
+436
+00:21:48,299 --> 00:21:49,500
+See where to use it
+
+437
+00:21:54,840 --> 00:21:55,319
+And then?
+
+438
+00:21:55,319 --> 00:21:57,120
+Let's adjust its size first
+
+439
+00:21:57,120 --> 00:21:57,980
+Let's make it a little smaller
+
+440
+00:21:57,980 --> 00:21:59,340
+See if it looks good
+
+441
+00:22:07,200 --> 00:22:08,620
+There should be strong enough
+
+442
+00:22:08,620 --> 00:22:11,019
+Then let's change it to thicker
+
+443
+00:22:11,019 --> 00:22:25,940
+But it's not
+
+444
+00:22:25,980 --> 00:22:27,539
+You'll be able to invest it
+
+445
+00:22:30,440 --> 00:22:30,960
+Then
+
+446
+00:22:30,960 --> 00:22:32,019
+And then we lower the volume
+
+447
+00:22:32,019 --> 00:22:32,980
+Then we lower the volume
+
+448
+00:22:32,980 --> 00:22:33,860
+Then look at the versus
+
+449
+00:22:33,860 --> 00:22:34,200
+See r戎
+
+450
+00:22:34,200 --> 00:22:34,740
+See r戎
+
+451
+00:22:34,740 --> 00:22:35,220
+Have a wide view
+
+452
+00:22:35,220 --> 00:22:35,660
+See r戎
+
+453
+00:22:35,660 --> 00:22:36,200
+See r戎
+
+454
+00:22:36,200 --> 00:22:36,299
+See r戎
+
+455
+00:22:36,299 --> 00:22:36,500
+It's full of us
+
+456
+00:22:36,500 --> 00:22:36,840
+See r戎
+
+457
+00:22:36,840 --> 00:22:37,019
+Get in a wave
+
+458
+00:22:37,019 --> 00:22:39,019
+the effect will be better
+
+459
+00:22:39,019 --> 00:22:41,019
+not rich in the right angle
+
+460
+00:22:41,019 --> 00:22:43,019
+and when it reaches the side
+
+461
+00:22:43,019 --> 00:22:45,019
+or the other side
+
+462
+00:22:45,019 --> 00:22:47,019
+there will be no effect
+
+463
+00:22:53,019 --> 00:22:55,019
+then we copy the previous tree
+
+464
+00:22:55,019 --> 00:22:57,019
+and move its position
+
+465
+00:23:07,019 --> 00:23:09,019
+move into the ground
+
+466
+00:23:13,019 --> 00:23:15,019
+here we can see
+
+467
+00:23:15,019 --> 00:23:17,019
+the fallen trees
+
+468
+00:23:19,019 --> 00:23:21,019
+let's see
+
+469
+00:23:21,019 --> 00:23:23,019
+if we can use it
+
+470
+00:23:35,019 --> 00:23:36,819
+this kind of
+
+471
+00:23:36,819 --> 00:23:49,819
+If we want to see the effect of the line and the tree growing together, then we can put it back a little, put it to the side, put it together with the tree leading it, so that our picture will be richer.
+
+472
+00:24:06,819 --> 00:24:20,819
+Okay, I'm going to pull this model a little bit higher, a little bit higher, so that it's a little bit higher than the object next to it.
+
+473
+00:24:20,819 --> 00:24:29,819
+Our building scene is a process of slowly adjusting. You have to go slowly to think about its details.
+
+474
+00:24:29,819 --> 00:24:36,819
+Okay, and then we're going to do it again.
+
+475
+00:24:36,819 --> 00:24:39,819
+Let's take a look at the new scene, the new model.
+
+476
+00:24:39,819 --> 00:24:42,819
+Okay, let's take a look at this side.
+
+477
+00:24:42,819 --> 00:24:45,819
+Well, these are all trees.
+
+478
+00:24:45,819 --> 00:24:48,819
+There's a tree here.
+
+479
+00:24:48,819 --> 00:24:51,819
+And then there's some rock here.
+
+480
+00:24:51,819 --> 00:24:54,819
+Let's look for a rock.
+
+481
+00:25:06,819 --> 00:25:21,819
+Okay, this side, there's a piece of this.
+
+482
+00:25:21,819 --> 00:25:25,819
+The rock that grows green.
+
+483
+00:25:25,819 --> 00:25:26,819
+I'm going to pour it in.
+
+484
+00:25:26,819 --> 00:25:30,819
+Oh, when I just poured it in, this type was chosen wrong.
+
+485
+00:25:30,819 --> 00:25:31,819
+I chose a virtual model.
+
+486
+00:25:31,819 --> 00:25:34,819
+I'm going to delete this stone and pour it back in.
+
+487
+00:25:34,819 --> 00:25:37,819
+Because our virtual model, it's a lot of trouble to copy it.
+
+488
+00:25:37,819 --> 00:25:39,819
+So we're going to import it as a copy.
+
+489
+00:25:39,819 --> 00:25:42,819
+Okay, and then we're going to change the color of this model.
+
+490
+00:25:42,819 --> 00:25:49,819
+And then we're going to paste our picture in there.
+
+491
+00:25:49,819 --> 00:25:52,819
+Okay, we can see that there's a rock here.
+
+492
+00:25:52,819 --> 00:25:55,819
+It's a little bit of a match with our scene.
+
+493
+00:25:55,819 --> 00:25:58,819
+We can just put it in our whole scene.
+
+494
+00:25:58,819 --> 00:26:01,819
+It's a little bit richer than our scene.
+
+495
+00:26:01,819 --> 00:26:03,819
+Okay, let's go back to our scene.
+
+496
+00:26:03,819 --> 00:26:05,819
+Okay, we're going to look down.
+
+497
+00:26:05,819 --> 00:26:07,819
+Is there any other material?
+
+498
+00:26:07,819 --> 00:26:10,819
+And then there's a bridge here that looks like this.
+
+499
+00:26:10,819 --> 00:26:11,819
+And then this bridge.
+
+500
+00:26:11,819 --> 00:26:14,819
+We can put it in this forest.
+
+501
+00:26:14,819 --> 00:26:15,819
+And then this bridge.
+
+502
+00:26:15,819 --> 00:26:19,819
+We'll take it as a bridge that's a long time away.
+
+503
+00:26:19,819 --> 00:26:22,819
+And then the trees all grow out of the gaps in this bridge.
+
+504
+00:26:22,819 --> 00:26:23,819
+Let's put it back.
+
+505
+00:26:23,819 --> 00:26:28,819
+Let's take a look.
+
+506
+00:26:28,819 --> 00:26:31,819
+Let's adjust its size.
+
+507
+00:26:33,819 --> 00:26:56,819
+Then we put the model of the sticker to it to load into
+
+508
+00:26:56,819 --> 00:27:02,819
+After loading, we can see that the color of the bridge will be a little bit lighter
+
+509
+00:27:02,819 --> 00:27:08,819
+Our scene feels more like a forest
+
+510
+00:27:08,819 --> 00:27:11,819
+We can choose this bridge and add a little bit of color to it
+
+511
+00:27:11,819 --> 00:27:14,819
+Yellow so that it can be melted together with the picture
+
+512
+00:27:14,819 --> 00:27:19,819
+Click to choose different colors to take a look
+
+513
+00:27:19,819 --> 00:27:23,819
+If you can see this color, it is more compatible with our picture
+
+514
+00:27:23,819 --> 00:27:27,819
+Let's adjust it to this color
+
+515
+00:27:27,819 --> 00:27:31,819
+Then let's see if there are any other materials
+
+516
+00:27:31,819 --> 00:27:32,819
+OK
+
+517
+00:27:32,819 --> 00:27:34,819
+There are some stone lamps here
+
+518
+00:27:34,819 --> 00:27:36,819
+It's more compatible with our bridge
+
+519
+00:27:36,819 --> 00:27:42,819
+We can also import the stone lamp
+
+520
+00:27:42,819 --> 00:27:54,819
+Then put the sticker and its hair line on it
+
+521
+00:27:54,819 --> 00:27:57,819
+This lamp is a little big
+
+522
+00:27:57,819 --> 00:28:01,819
+Let's put it back and take a look
+
+523
+00:28:02,819 --> 00:28:08,819
+Let's adjust the proportion of the stone lamp
+
+524
+00:28:08,819 --> 00:28:09,819
+Let's make it a little bit smaller
+
+525
+00:28:09,819 --> 00:28:29,819
+You can see that when we build the scene
+
+526
+00:28:29,819 --> 00:28:31,819
+It's this kind of big and small
+
+527
+00:28:31,819 --> 00:28:34,819
+This is to create the bigger part of our whole picture
+
+528
+00:28:34,819 --> 00:28:36,819
+After setting the overall style
+
+529
+00:28:36,819 --> 00:28:37,819
+Go find some small elements
+
+530
+00:28:37,819 --> 00:28:38,819
+Go inside to insert
+
+531
+00:28:38,819 --> 00:28:43,819
+A picture that enriches the whole scene
+
+532
+00:28:43,819 --> 00:28:44,819
+OK
+
+533
+00:28:44,819 --> 00:28:45,819
+In this way
+
+534
+00:28:45,819 --> 00:28:47,819
+We put some of these models into it
+
+535
+00:28:47,819 --> 00:28:55,819
+Let's save it
+
+536
+00:28:55,819 --> 00:28:57,819
+We can zoom in and see the effect
+
+537
+00:28:57,819 --> 00:28:58,819
+OK
+
+538
+00:28:58,819 --> 00:29:06,819
+Next, we can build the main tree
+
+539
+00:29:06,819 --> 00:29:09,819
+The grass and the stone
+
+540
+00:29:09,819 --> 00:29:12,819
+We can insert some of these plants
+
+541
+00:29:12,819 --> 00:29:13,819
+Let's look at the second folder
+
+542
+00:29:13,819 --> 00:29:15,819
+There will be some of these plants
+
+543
+00:29:15,819 --> 00:29:16,819
+There will be some plastic pictures here
+
+544
+00:29:16,819 --> 00:29:19,819
+We open the folder directly
+
+545
+00:29:19,819 --> 00:29:21,819
+It will have many small folders
+
+546
+00:29:21,819 --> 00:29:23,819
+In these paper folders
+
+547
+00:29:23,819 --> 00:29:26,819
+Each paper folder will have one of these FBX files
+
+548
+00:29:26,819 --> 00:29:27,819
+We put this file into it
+
+549
+00:29:27,819 --> 00:29:29,819
+I choose to add it as a copy
+
+550
+00:29:29,819 --> 00:29:30,819
+Click to confirm
+
+551
+00:29:30,819 --> 00:29:35,819
+The second one in our file folder
+
+552
+00:29:35,819 --> 00:29:38,819
+It's mainly some plant materials
+
+553
+00:29:38,819 --> 00:29:40,819
+Let's take a look at these plants
+
+554
+00:29:40,819 --> 00:29:41,819
+This is what it looks like after being inserted
+
+555
+00:29:41,819 --> 00:29:56,819
+Wait a minute
+
+556
+00:29:56,819 --> 00:29:58,819
+OK
+
+557
+00:29:58,819 --> 00:30:00,819
+This is a leaf
+
+558
+00:30:00,819 --> 00:30:02,819
+Let's change another one
+
+559
+00:30:02,819 --> 00:30:03,819
+Change another material
+
+560
+00:30:03,819 --> 00:30:05,819
+Let's reinitialize one
+
+561
+00:30:05,819 --> 00:30:07,819
+Change a V1
+
+562
+00:30:07,819 --> 00:30:09,819
+Take a look
+
+563
+00:30:13,819 --> 00:30:15,819
+Sometimes when you are inserting a file
+
+564
+00:30:15,819 --> 00:30:16,819
+Just met your system
+
+565
+00:30:16,819 --> 00:30:17,819
+In auto-preservation
+
+566
+00:30:17,819 --> 00:30:18,819
+It will
+
+567
+00:30:18,819 --> 00:30:19,819
+It will
+
+568
+00:30:19,819 --> 00:30:20,819
+Lock in that place
+
+569
+00:30:20,819 --> 00:30:21,819
+This is very normal
+
+570
+00:30:21,819 --> 00:30:23,819
+Then we introduce it
+
+571
+00:30:23,819 --> 00:30:24,819
+After that, we can see
+
+572
+00:30:24,819 --> 00:30:25,819
+What is this
+
+573
+00:30:25,819 --> 00:30:38,819
+After we import it, we can see that it is such a grass, we can adjust the position of the grass, first of all, the color of this model is a little gray, we adjust it to white, and then we find the sticker and paste the sticker of this model into it.
+
+574
+00:30:38,819 --> 00:30:50,819
+Then the sticker in the 3D plant folder will not be on the surface, we need to find the texture folder in this folder, and then there will be our stickers in it.
+
+575
+00:30:50,819 --> 00:30:57,819
+The whole folder contains this one sticker, so we only need to open this one.
+
+576
+00:30:57,819 --> 00:31:04,819
+Of course, you can only use this plant to copy, because we can adjust its size.
+
+577
+00:31:04,819 --> 00:31:13,819
+First, pull this plant a little higher, and then adjust it a little higher, use this positioning tool, and then move it to its side.
+
+578
+00:31:13,819 --> 00:31:19,819
+The grass will definitely grow on such stones or tree trunks, then we can put it in these places.
+
+579
+00:31:19,819 --> 00:31:20,700
+Then we can put it in these places.
+
+580
+00:31:20,819 --> 00:31:23,819
+Just use Ctrl C and Ctrl V to copy and paste it.
+
+581
+00:31:23,819 --> 00:31:24,819
+It's very simple.
+
+582
+00:31:24,819 --> 00:31:29,819
+Then, if we want to make some comparisons, you can make some grass a little bigger and some grass a little smaller.
+
+583
+00:31:29,819 --> 00:31:35,819
+We can do the big one first, and then copy all the big ones.
+
+584
+00:31:35,819 --> 00:31:37,819
+Then adjust the proportion.
+
+585
+00:31:37,819 --> 00:31:45,819
+I make this one a little bigger, and then copy another one, and then adjust the position of this little grass.
+
+586
+00:31:45,819 --> 00:31:49,819
+Then make this little grass a little smaller.
+
+587
+00:31:49,819 --> 00:31:51,819
+Then adjust the size of this little grass, create such a comparison.
+
+588
+00:31:51,819 --> 00:31:56,819
+We can see that we are now basically adding some small plants, so that our picture is richer.
+
+589
+00:31:56,819 --> 00:31:59,819
+We move it back a little bit.
+
+590
+00:31:59,819 --> 00:32:05,819
+Because it's farther back, we can adjust it by adjusting its ratio.
+
+591
+00:32:05,819 --> 00:32:13,819
+Even if you see it at the front, But it doesn't emphasize the main effect of our front here.
+
+592
+00:32:13,819 --> 00:32:15,819
+We can see how far away it is.
+
+593
+00:32:15,819 --> 00:32:17,819
+Put it this way.
+
+594
+00:32:17,819 --> 00:32:23,419
+We can add some between the stone gap in the distance and between the canopies.
+
+595
+00:32:30,419 --> 00:32:32,220
+You can see that I made a very small one here.
+
+596
+00:32:32,220 --> 00:32:33,819
+I put it next to him.
+
+597
+00:32:33,819 --> 00:32:37,119
+Let him have a picture of not only the big one but also some small ones.
+
+598
+00:32:41,119 --> 00:32:44,319
+Okay, next time we're going to pour another plant.
+
+599
+00:32:44,319 --> 00:32:46,319
+We can find a flower like this.
+
+600
+00:32:47,819 --> 00:32:50,819
+Some of these flowers in this folder.
+
+601
+00:32:50,819 --> 00:32:54,220
+And then I'm going to give him this model and I'm going to find him a V1 and I'm going to pour it in.
+
+602
+00:33:02,519 --> 00:33:03,720
+Okay, click OK.
+
+603
+00:33:03,720 --> 00:33:07,119
+After you've done that, you'll also find that this flower is gray.
+
+604
+00:33:07,119 --> 00:33:08,319
+Because he brought his own color.
+
+605
+00:33:08,319 --> 00:33:10,119
+Let's change the color to white first.
+
+606
+00:33:11,819 --> 00:33:14,319
+And then we're going to paste our picture in there.
+
+607
+00:33:14,319 --> 00:33:15,619
+It's the same thing in this folder.
+
+608
+00:33:15,619 --> 00:33:17,720
+The text of this folder.
+
+609
+00:33:17,720 --> 00:33:20,519
+And then I'm going to paste it on our texture picture.
+
+610
+00:33:20,519 --> 00:33:22,519
+This one, then, is on the hair line picture.
+
+611
+00:33:25,920 --> 00:33:28,319
+Okay, where do we put this flower?
+
+612
+00:33:28,319 --> 00:33:30,220
+Put it between the grass.
+
+613
+00:33:30,220 --> 00:33:33,620
+He's not going to grow one under the model's foot, is he?
+
+614
+00:33:33,620 --> 00:33:35,319
+We can copy it and paste it directly.
+
+615
+00:33:35,319 --> 00:33:38,420
+Use the locator to adjust its position and rotate it.
+
+616
+00:33:42,120 --> 00:33:43,220
+Like this one in the back.
+
+617
+00:33:43,220 --> 00:33:44,819
+We can make it a little bigger.
+
+618
+00:33:47,720 --> 00:33:55,920
+This way, he can be seen in the back, but it doesn't have to emphasize the main body in front of it.
+
+619
+00:33:55,920 --> 00:34:04,319
+This flower is a little high, so you can put it back.
+
+620
+00:34:04,319 --> 00:34:05,920
+Just don't put it in the front.
+
+621
+00:34:05,920 --> 00:34:07,920
+The front is too eye-catching.
+
+622
+00:34:17,720 --> 00:34:25,920
+Then we choose another flower in the same file wall and then we import it.
+
+623
+00:34:25,920 --> 00:34:32,720
+The size of this model, the larger the file, the bigger the model, the smaller the model.
+
+624
+00:34:32,720 --> 00:34:36,920
+So we can change its color first.
+
+625
+00:34:36,920 --> 00:34:42,920
+And then stick this copy in there.
+
+626
+00:34:42,920 --> 00:34:43,920
+And then paste it in there.
+
+627
+00:34:43,920 --> 00:34:45,920
+Okay?
+
+628
+00:34:45,920 --> 00:34:55,920
+This is a multi-headed flower, let's put it back
+
+629
+00:34:55,920 --> 00:35:15,920
+You can see that I put this flower to the back
+
+630
+00:35:15,920 --> 00:35:20,920
+Because if you do this, even if we show it from other angles, it will show this flower without experience
+
+631
+00:35:20,920 --> 00:35:24,920
+In this way, it will not be too empty at the back
+
+632
+00:35:24,920 --> 00:35:25,920
+Because we only show this flower from the back
+
+633
+00:35:25,920 --> 00:35:31,920
+The plants are in front, let's put it back
+
+634
+00:35:31,920 --> 00:35:37,920
+We have to press 2 or 5 to zoom in and see the effect of the whole picture
+
+635
+00:35:37,920 --> 00:35:48,920
+Don't just look at one place
+
+636
+00:35:48,920 --> 00:35:54,920
+Let's put it in one place
+
+637
+00:35:54,920 --> 00:35:58,920
+Next, let's put these flowers in a random way
+
+638
+00:35:58,920 --> 00:36:04,920
+Let it grow randomly, such as in front, left, and side
+
+639
+00:36:04,920 --> 00:36:23,920
+Let it grow randomly, such as in front, left, and side
+
+640
+00:36:24,920 --> 00:36:25,920
+Doesn't burst
+
+641
+00:36:25,920 --> 00:36:30,920
+Don't put it in the wrong place
+
+642
+00:36:30,920 --> 00:36:35,920
+Let it grow randomly, such as in front, left, and side
+
+643
+00:36:35,920 --> 00:36:40,920
+Does not transform the combination
+
+644
+00:36:40,920 --> 00:36:42,920
+It doesn't answer to the previous water
+
+645
+00:36:42,920 --> 00:36:47,920
+OK, this is a pretty good place
+
+646
+00:36:47,920 --> 00:36:49,920
+OK let's save it
+
+647
+00:36:49,920 --> 00:36:53,920
+That's good
+
+648
+00:36:53,920 --> 00:36:58,760
+To optimize this scene, let's adjust the position and number of this grass
+
+649
+00:37:23,920 --> 00:37:48,920
+OK, then I have downloaded a file of a mushroom like this before, let's find out where the mushroom is
+
+650
+00:37:48,920 --> 00:37:50,920
+Let's see where it is
+
+651
+00:37:53,920 --> 00:38:00,920
+Yes, we can see that it is a group of small mushrooms like this, we drag the FBX of this mushroom directly into it
+
+652
+00:38:00,920 --> 00:38:07,920
+Then add it as a copy, click confirm
+
+653
+00:38:07,920 --> 00:38:13,920
+Then we can see that there are a lot of mushrooms, because it is a collection file, it has a lot of small mushrooms in it
+
+654
+00:38:13,920 --> 00:38:17,920
+Let's move this mushroom out one by one
+
+655
+00:38:22,920 --> 00:38:23,920
+OK
+
+656
+00:38:23,920 --> 00:38:33,920
+Today's material will be shared in the background of our public account, then you can go to the public account background, leave a message, live material, and you can get today's material file
+
+657
+00:38:33,920 --> 00:38:37,920
+If you don't pay attention to our public account, you can pay attention to the bottom left corner
+
+658
+00:38:37,920 --> 00:38:40,920
+Then we choose these mushrooms, first paste this sticker in
+
+659
+00:38:40,920 --> 00:38:48,920
+This is a typical Yunnan mushroom, it is red umbrella, white pole, very representative
+
+660
+00:38:48,920 --> 00:38:52,920
+Then let's adjust the size of these mushrooms first, then let's choose a few mushrooms to make them bigger
+
+661
+00:38:52,920 --> 00:38:57,920
+Then let's adjust the size of these mushrooms first, then let's choose a few mushrooms to make them bigger
+
+662
+00:38:57,920 --> 00:39:02,920
+Let's move it to the back, because the mushroom is a group, it will definitely grow around the tree
+
+663
+00:39:02,920 --> 00:39:06,920
+Then put these mushrooms next to the rotten tree
+
+664
+00:39:06,920 --> 00:39:14,920
+Then put these mushrooms next to the rotten tree
+
+665
+00:39:14,920 --> 00:39:16,920
+The little mushroom is very cute
+
+666
+00:39:16,920 --> 00:39:18,920
+The little mushroom is very cute
+
+667
+00:39:18,920 --> 00:39:20,920
+The little mushroom is very cute
+
+668
+00:39:20,920 --> 00:39:24,920
+Afterward, adjust the size of mushrooms
+
+669
+00:39:24,920 --> 00:39:26,920
+Afterward, adjust the size of mushrooms
+
+670
+00:39:28,920 --> 00:39:31,920
+This mushroom will just lie down
+
+671
+00:39:34,920 --> 00:39:43,920
+It is OK it will just be graded c and v
+
+672
+00:39:43,920 --> 00:39:44,920
+You can see it if you haven't looked for them yet
+
+673
+00:39:44,920 --> 00:39:47,920
+You don't have to look for them yet, just write and move them with your Braille
+
+674
+00:39:47,920 --> 00:39:48,920
+You don't have to look for them yet, just write and move them with your Braille
+
+675
+00:39:48,920 --> 00:39:49,920
+Because sometimes it will be graded below the ground
+
+676
+00:39:49,920 --> 00:39:51,599
+or be covered by other models
+
+677
+00:39:51,599 --> 00:39:53,200
+So you have to move it to have a look
+
+678
+00:40:02,800 --> 00:40:05,400
+Where is it usually covered by models
+
+679
+00:40:05,400 --> 00:40:06,880
+Because we have more models now
+
+680
+00:40:19,920 --> 00:40:24,200
+Ok, this mushroom is a little bit white
+
+681
+00:40:24,200 --> 00:40:26,760
+Let's make the color of this mushroom a little bit darker
+
+682
+00:40:27,480 --> 00:40:28,680
+It's the same as choosing a model
+
+683
+00:40:28,680 --> 00:40:30,000
+Just add color to it
+
+684
+00:40:30,960 --> 00:40:31,760
+This is very simple
+
+685
+00:40:40,599 --> 00:40:43,000
+Ok, let me see what else needs to be adjusted
+
+686
+00:40:43,000 --> 00:40:45,320
+Let's change the color of this mushroom
+
+687
+00:40:46,440 --> 00:40:48,280
+And then we choose this mushroom
+
+688
+00:40:48,280 --> 00:40:49,559
+See if we can copy it
+
+689
+00:40:49,559 --> 00:40:49,880
+An output
+
+690
+00:40:49,920 --> 00:40:53,039
+Let's adjust the angle
+
+691
+00:40:55,840 --> 00:40:57,680
+Copy one of them in this direction
+
+692
+00:41:16,880 --> 00:41:18,119
+Ok, so what about this
+
+693
+00:41:18,119 --> 00:41:19,559
+We can rotate and look at the whole
+
+694
+00:41:19,559 --> 00:41:20,880
+The whole environment
+
+695
+00:41:20,880 --> 00:41:23,799
+Is this environment ok around the model
+
+696
+00:41:23,799 --> 00:41:24,599
+So what happens next
+
+697
+00:41:24,599 --> 00:41:27,079
+You'll find that the whole scene of this model
+
+698
+00:41:27,079 --> 00:41:28,759
+It's a little bit empty on the left side of the model
+
+699
+00:41:28,759 --> 00:41:30,360
+Let's copy this model a little bit
+
+700
+00:41:42,279 --> 00:41:42,920
+In this way
+
+701
+00:41:42,920 --> 00:41:44,719
+We can look at it from other angles
+
+702
+00:41:44,719 --> 00:41:45,880
+For example, on the right side
+
+703
+00:41:45,880 --> 00:41:46,599
+On the right side
+
+704
+00:41:46,599 --> 00:41:47,400
+On the left side
+
+705
+00:41:47,400 --> 00:41:49,480
+It can make his picture not so empty as it should be
+
+706
+00:41:50,400 --> 00:41:52,320
+And then let's copy these little mushrooms
+
+707
+00:41:52,320 --> 00:41:53,380
+and the one will come out
+
+708
+00:42:13,400 --> 00:42:14,360
+Ok, this mushroom
+
+709
+00:42:14,360 --> 00:42:16,320
+It must be arranged around this tree
+
+710
+00:42:16,320 --> 00:42:19,159
+Don't put it back in place
+
+711
+00:42:19,159 --> 00:42:27,199
+on the stone bridge
+
+712
+00:42:27,199 --> 00:42:28,399
+when you create your own
+
+713
+00:42:28,399 --> 00:42:40,920
+to do some reasonable things
+
+714
+00:42:40,920 --> 00:42:45,440
+OK, let me save the project file
+
+715
+00:42:45,440 --> 00:42:46,319
+well, in this case
+
+716
+00:42:46,319 --> 00:42:47,559
+we put the whole scene
+
+717
+00:42:47,559 --> 00:42:48,920
+built almost
+
+718
+00:42:48,920 --> 00:42:51,559
+from the very beginning
+
+719
+00:42:51,559 --> 00:42:55,400
+we put some big tree, stone bridge
+
+720
+00:42:55,400 --> 00:42:58,000
+tree, tree, soil, stone, and so on
+
+721
+00:42:58,000 --> 00:42:59,840
+and then we put some small
+
+722
+00:42:59,840 --> 00:43:01,840
+for example, grass, flowers, mushrooms
+
+723
+00:43:01,840 --> 00:43:05,039
+to create the whole scene
+
+724
+00:43:05,039 --> 00:43:07,000
+then we can
+
+725
+00:43:07,000 --> 00:43:07,800
+in the software
+
+726
+00:43:07,800 --> 00:43:09,440
+directly in our library
+
+727
+00:43:09,440 --> 00:43:10,880
+you can see there are three buttons
+
+728
+00:43:10,880 --> 00:43:11,200
+right
+
+729
+00:43:11,200 --> 00:43:12,360
+our third button
+
+730
+00:43:12,360 --> 00:43:14,280
+is our Connect button
+
+731
+00:43:14,280 --> 00:43:16,440
+Connect is our business city
+
+732
+00:43:16,440 --> 00:43:18,360
+you can use your Closet account
+
+733
+00:43:18,360 --> 00:43:18,880
+to do business here
+
+734
+00:43:18,880 --> 00:43:19,720
+you can log in
+
+735
+00:43:19,720 --> 00:43:22,160
+whatever you upload on Connect
+
+736
+00:43:22,160 --> 00:43:23,559
+will be displayed here
+
+737
+00:43:23,559 --> 00:43:24,640
+then you can choose
+
+738
+00:43:24,640 --> 00:43:25,920
+my backpack folder
+
+739
+00:43:25,920 --> 00:43:26,680
+inside
+
+740
+00:43:26,680 --> 00:43:28,160
+there will be some files
+
+741
+00:43:28,160 --> 00:43:30,480
+that I saw in Connect or locally
+
+742
+00:43:30,480 --> 00:43:32,360
+you can download directly
+
+743
+00:43:32,360 --> 00:43:33,119
+here
+
+744
+00:43:33,119 --> 00:43:34,160
+we can see
+
+745
+00:43:34,160 --> 00:43:36,119
+all the ones that say Freight
+
+746
+00:43:36,119 --> 00:43:38,200
+can be downloaded directly to the local
+
+747
+00:43:38,200 --> 00:43:40,000
+it's convenient for us to use
+
+748
+00:43:40,000 --> 00:43:40,760
+here
+
+749
+00:43:40,760 --> 00:43:42,079
+because I'm just building a scene
+
+750
+00:43:42,079 --> 00:43:43,640
+so I don't make clothes
+
+751
+00:43:43,640 --> 00:43:45,160
+I just go to Connect
+
+752
+00:43:45,160 --> 00:43:46,280
+to download one
+
+753
+00:43:46,280 --> 00:43:48,000
+such a dress group
+
+754
+00:43:48,000 --> 00:43:48,559
+OK, let's see
+
+755
+00:43:48,559 --> 00:43:56,039
+OK, this is the one that we have downloaded before
+
+756
+00:43:56,039 --> 00:43:57,360
+I just click on it to add
+
+757
+00:43:57,360 --> 00:43:59,799
+it can be added to my scene
+
+758
+00:43:59,799 --> 00:44:00,880
+click OK
+
+759
+00:44:00,880 --> 00:44:03,400
+then I need to change the model
+
+760
+00:44:03,400 --> 00:44:04,320
+to it
+
+761
+00:44:04,320 --> 00:44:05,880
+because this is a white mother
+
+762
+00:44:05,880 --> 00:44:07,079
+our new model
+
+763
+00:44:07,079 --> 00:44:08,440
+is also on Connect
+
+764
+00:44:08,440 --> 00:44:10,199
+you can also download and use
+
+765
+00:44:10,199 --> 00:44:13,960
+in addition to the model and clothing
+
+766
+00:44:13,960 --> 00:44:14,679
+we have also updated
+
+767
+00:44:14,679 --> 00:44:16,000
+such as shoes
+
+768
+00:44:16,000 --> 00:44:18,159
+zipper movements and so on
+
+769
+00:44:18,159 --> 00:44:19,799
+a lot of materials will be in it
+
+770
+00:44:19,799 --> 00:44:21,359
+you can download and use
+
+771
+00:44:21,359 --> 00:44:22,239
+it
+
+772
+00:44:22,239 --> 00:44:26,039
+let me show you
+
+773
+00:44:26,039 --> 00:44:27,239
+what you need
+
+774
+00:44:27,239 --> 00:44:28,480
+I need to do next
+
+775
+00:44:28,480 --> 00:44:29,619
+to the clothing model
+
+776
+00:44:29,639 --> 00:44:30,079
+the action of
+
+777
+00:44:30,079 --> 00:44:31,159
+a change
+
+778
+00:44:31,159 --> 00:44:32,279
+I will first put the ground of the side of the
+
+779
+00:44:32,279 --> 00:44:33,199
+selection
+
+780
+00:44:33,199 --> 00:44:35,119
+for him to return fire
+
+781
+00:44:35,119 --> 00:44:36,319
+you ask him
+
+782
+00:44:36,319 --> 00:44:37,619
+you do not need to participate in the calculation
+
+783
+00:44:37,619 --> 00:44:42,940
+we click a few of the resources in this
+
+784
+00:44:42,940 --> 00:44:43,379
+Freight
+
+785
+00:44:43,379 --> 00:44:44,119
+you can Lord
+
+786
+00:44:44,119 --> 00:44:44,759
+Freight options
+
+787
+00:44:44,759 --> 00:44:45,920
+there is free
+
+788
+00:44:45,920 --> 00:44:47,239
+you can see in the library here
+
+789
+00:44:47,239 --> 00:44:47,960
+here is also a free one for free
+
+790
+00:44:48,159 --> 00:44:53,159
+Click on it and it will show you that it is free
+
+791
+00:44:53,159 --> 00:44:56,159
+It doesn't mean that everything is free if you click on it
+
+792
+00:45:02,159 --> 00:45:04,159
+I will turn this version back on
+
+793
+00:45:04,159 --> 00:45:06,159
+Then select the costume
+
+794
+00:45:06,159 --> 00:45:08,159
+I will lower its particle diameter a little bit
+
+795
+00:45:08,159 --> 00:45:09,159
+Increase it a little bit
+
+796
+00:45:09,159 --> 00:45:11,159
+Then I will simulate it will be slower
+
+797
+00:45:11,159 --> 00:45:13,159
+I will change it to a shoe like this
+
+798
+00:45:13,159 --> 00:45:15,159
+You can see that it is a tie shoe like this
+
+799
+00:45:15,159 --> 00:45:18,159
+I will change it to such a posture
+
+800
+00:45:18,159 --> 00:45:20,159
+I will change the color of the shoes first
+
+801
+00:45:20,159 --> 00:45:22,159
+It seems to be white
+
+802
+00:45:24,159 --> 00:45:27,159
+Change it to such a rose gold
+
+803
+00:45:27,159 --> 00:45:28,159
+Click OK
+
+804
+00:45:28,159 --> 00:45:31,159
+Then we are still on my connect
+
+805
+00:45:31,159 --> 00:45:33,159
+Find such a women's costume
+
+806
+00:45:34,159 --> 00:45:36,159
+Then you can see that I have some mouse
+
+807
+00:45:36,159 --> 00:45:37,159
+Put it on it will show download
+
+808
+00:45:37,159 --> 00:45:39,159
+It means you can download
+
+809
+00:45:41,159 --> 00:45:43,159
+Click double click
+
+810
+00:45:45,159 --> 00:45:46,159
+Let's see if there is anything below
+
+811
+00:45:46,159 --> 00:45:47,159
+Or this action
+
+812
+00:45:47,159 --> 00:45:49,159
+Double click on open to confirm
+
+813
+00:45:57,159 --> 00:45:58,159
+OK
+
+814
+00:45:58,159 --> 00:45:59,159
+Then let's take a look
+
+815
+00:45:59,159 --> 00:46:00,159
+I adjusted the costume
+
+816
+00:46:00,159 --> 00:46:02,159
+After that, I will raise its particle diameter
+
+817
+00:46:02,159 --> 00:46:03,159
+Raise its costume a little bit
+
+818
+00:46:03,159 --> 00:46:05,159
+It's too low
+
+819
+00:46:07,159 --> 00:46:09,159
+Adjust the particle diameter of the costume
+
+820
+00:46:09,159 --> 00:46:10,159
+Adjust it to 5
+
+821
+00:46:15,159 --> 00:46:17,159
+Then we will open the simulation again
+
+822
+00:46:26,159 --> 00:46:27,159
+OK
+
+823
+00:46:27,159 --> 00:46:28,159
+Then we remove the hardening of the costume
+
+824
+00:46:28,159 --> 00:46:29,159
+OK
+
+825
+00:46:29,159 --> 00:46:30,159
+In this case
+
+826
+00:46:30,159 --> 00:46:31,159
+We will put the model's clothes
+
+827
+00:46:31,159 --> 00:46:34,159
+Put the model's clothes and shoes into it
+
+828
+00:46:34,159 --> 00:46:35,159
+And give it an action
+
+829
+00:46:35,159 --> 00:46:36,159
+In this case
+
+830
+00:46:36,159 --> 00:46:38,159
+We can enter our one
+
+831
+00:46:38,159 --> 00:46:39,159
+Blending window
+
+832
+00:46:39,159 --> 00:46:40,159
+To check the overall effect
+
+833
+00:46:40,159 --> 00:46:43,159
+Let's hide it first
+
+834
+00:46:43,159 --> 00:46:44,159
+We click
+
+835
+00:46:44,159 --> 00:46:45,159
+Click
+
+836
+00:46:45,159 --> 00:46:46,159
+Let's set the size of a picture first
+
+837
+00:46:46,159 --> 00:46:48,159
+I use a 1 9 20 times 10 80 first
+
+838
+00:46:48,159 --> 00:46:57,159
+A horizontal deck
+
+839
+00:46:57,159 --> 00:47:03,159
+Click synchronization
+
+840
+00:47:03,159 --> 00:47:07,199
+Click agree
+
+841
+00:47:07,199 --> 00:47:10,159
+As soon as the mixing bottle hits the button
+
+842
+00:47:10,159 --> 00:47:11,319
+Okay
+
+843
+00:47:11,319 --> 00:47:13,159
+Then you have a process
+
+844
+00:47:13,159 --> 00:47:21,659
+OK, you can see that this scene has been rendered.
+
+845
+00:47:21,659 --> 00:47:28,960
+Next, let's talk about the second point, which is about the rendering and lighting techniques of our real scene.
+
+846
+00:47:28,960 --> 00:47:31,460
+First of all, we choose lighting settings.
+
+847
+00:47:31,460 --> 00:47:33,960
+There is a skylight on the side of lighting settings.
+
+848
+00:47:33,960 --> 00:47:35,960
+The first one below the skylight is the environment image.
+
+849
+00:47:35,960 --> 00:47:37,960
+We click on the plus sign on the environment image side.
+
+850
+00:47:37,960 --> 00:47:40,960
+Then we can load some of these photographic lighting.
+
+851
+00:47:40,960 --> 00:47:42,360
+It is an HDR image.
+
+852
+00:47:42,360 --> 00:47:46,360
+Here I have prepared some effects of HDR for you.
+
+853
+00:47:46,360 --> 00:47:47,159
+Let's take a look.
+
+854
+00:47:47,159 --> 00:47:50,260
+In our material file, there is a folder called HDR.
+
+855
+00:47:50,260 --> 00:47:51,360
+We double-click to open it.
+
+856
+00:47:51,360 --> 00:47:54,360
+There are three scenery stickers in it.
+
+857
+00:47:54,360 --> 00:47:57,960
+We can take a look.
+
+858
+00:47:57,960 --> 00:48:06,260
+OK, let's copy the path of this HDR folder.
+
+859
+00:48:06,260 --> 00:48:09,159
+After copying, we open the file and input it here.
+
+860
+00:48:09,159 --> 00:48:10,860
+Then we can directly choose an HDR image.
+
+861
+00:48:10,860 --> 00:48:12,860
+Let's open this HDR image.
+
+862
+00:48:12,860 --> 00:48:15,860
+What is the difference between this HDR image and the normal image?
+
+863
+00:48:15,860 --> 00:48:19,860
+It will cover some environmental information, including light and so on.
+
+864
+00:48:19,860 --> 00:48:32,860
+It can be rendered in your 3D window, in your rendering window.
+
+865
+00:48:32,860 --> 00:48:37,260
+OK, then we can see that this background is black and there is no scene.
+
+866
+00:48:37,260 --> 00:48:40,260
+That's because we need to open the display of the skylight here.
+
+867
+00:48:40,260 --> 00:48:42,260
+After opening the display of the skylight, it will appear.
+
+868
+00:48:42,260 --> 00:48:45,260
+Let's click the synchronization rendering.
+
+869
+00:48:45,260 --> 00:48:48,260
+This scene is a bit dark.
+
+870
+00:48:48,260 --> 00:48:50,260
+Let's change it.
+
+871
+00:48:50,260 --> 00:48:53,260
+Let's copy the path first.
+
+872
+00:48:53,260 --> 00:48:56,260
+After copying, let's take a look at the original file.
+
+873
+00:48:56,260 --> 00:49:00,260
+Let's choose a 65 light effect.
+
+874
+00:49:00,260 --> 00:49:03,260
+You can see that this picture will be brighter.
+
+875
+00:49:03,260 --> 00:49:09,260
+Then we can adjust the intensity of the light to adjust the entire ambient light.
+
+876
+00:49:09,260 --> 00:49:11,260
+Then it will be a little brighter.
+
+877
+00:49:11,260 --> 00:49:14,260
+You can see that in this way, we can integrate an HDR effect.
+
+878
+00:49:14,260 --> 00:49:17,260
+Even if we didn't make a lot of trees in the back,
+
+879
+00:49:17,260 --> 00:49:20,260
+it will also show a more dense forest effect in the back.
+
+880
+00:49:31,260 --> 00:49:33,260
+OK, let's take a look at it from a distance.
+
+881
+00:49:33,260 --> 00:49:35,260
+You can see that the ground is a little bright.
+
+882
+00:49:35,260 --> 00:49:38,260
+It's because our previous texture color is a little bit lighter.
+
+883
+00:49:38,260 --> 00:49:46,260
+Let's activate this plate first.
+
+884
+00:49:46,260 --> 00:49:52,260
+Let's adjust the color of this material first.
+
+885
+00:49:52,260 --> 00:49:53,260
+Let's stop the rendering first.
+
+886
+00:49:53,260 --> 00:49:56,260
+Let's activate this ground first.
+
+887
+00:49:56,260 --> 00:49:59,260
+After activating it, let's look directly at the 3D window and adjust it a little faster.
+
+888
+00:49:59,260 --> 00:50:01,260
+Let's choose the material directly.
+
+889
+00:50:01,260 --> 00:50:04,260
+Add a color to it.
+
+890
+00:50:08,260 --> 00:50:10,260
+Click Done.
+
+891
+00:50:10,260 --> 00:50:24,260
+OK, Now, the entire ground and the wouldn't be this tree and the ground are close to the surface.
+
+892
+00:50:24,260 --> 00:50:25,260
+Good.
+
+893
+00:50:25,260 --> 00:50:30,260
+Next we can adjust the whole photographic literary lens angle.
+
+894
+00:50:30,260 --> 00:50:33,260
+Because our HDR picture, it's a 360 degree full view picture like this,
+
+895
+00:50:33,260 --> 00:50:36,260
+you can smart it up to the worship lens angle to make it work like this.
+
+896
+00:50:36,260 --> 00:50:39,260
+to make it rotate like this
+
+897
+00:50:39,260 --> 00:50:42,260
+to see the effect under each lighting
+
+898
+00:50:42,260 --> 00:50:43,260
+and environment
+
+899
+00:50:46,260 --> 00:50:49,260
+We can see here that we need to add some light
+
+900
+00:50:49,260 --> 00:50:52,260
+I want to make the model's clothes more prominent
+
+901
+00:50:52,260 --> 00:50:54,260
+so I click on the square light
+
+902
+00:50:54,260 --> 00:50:56,260
+I choose the front of the model
+
+903
+00:50:56,260 --> 00:50:59,260
+and add a square light in front of it
+
+904
+00:50:59,260 --> 00:51:01,260
+I first rotate the light board
+
+905
+00:51:01,260 --> 00:51:04,260
+and put the light board in front of the model
+
+906
+00:51:04,260 --> 00:51:07,260
+In this way, we can give the model's clothes
+
+907
+00:51:07,260 --> 00:51:08,260
+a separate light
+
+908
+00:51:08,260 --> 00:51:11,260
+to make it more prominent during rendering
+
+909
+00:51:11,260 --> 00:51:14,260
+We change the width and height of the light to 2000
+
+910
+00:51:14,260 --> 00:51:15,260
+which is 2 meters
+
+911
+00:51:15,260 --> 00:51:18,260
+This is OK for us
+
+912
+00:51:18,260 --> 00:51:20,260
+It can block the whole clothes
+
+913
+00:51:20,260 --> 00:51:23,260
+We can increase the intensity of the light board
+
+914
+00:51:23,260 --> 00:51:25,260
+and turn off the display
+
+915
+00:51:25,260 --> 00:51:27,260
+In this way, let's click on the synchronization rendering again
+
+916
+00:51:27,260 --> 00:51:28,260
+to see the effect
+
+917
+00:51:34,260 --> 00:51:51,260
+OK. We can see that in this way
+
+918
+00:51:51,260 --> 00:51:54,260
+the model's position will be brighter
+
+919
+00:51:54,260 --> 00:51:59,260
+Let's see what kind of lights we can adjust
+
+920
+00:52:04,260 --> 00:52:18,260
+The lighting adjustment is a long process, we need to adjust it a little bit, and adjust it while rendering to achieve a more perfect state.
+
+921
+00:52:22,260 --> 00:52:24,260
+Let's adjust the lighting angle.
+
+922
+00:52:34,260 --> 00:52:48,260
+If you feel that the light in your environment does not have a main light, and you want it to have a main light effect, then we can add a square light.
+
+923
+00:52:48,260 --> 00:52:54,260
+The square light is a light that can hit a relatively large number in your 3D environment, which is a bit like the effect of sunlight.
+
+924
+00:52:54,260 --> 00:52:56,260
+Then we can choose a direction to hit the light.
+
+925
+00:52:58,260 --> 00:53:01,260
+For example, you can see it in the upper right corner of the model.
+
+926
+00:53:01,260 --> 00:53:03,260
+After adding a square light,
+
+927
+00:53:03,260 --> 00:53:06,260
+the effect of contrast between light and dark will be more obvious.
+
+928
+00:53:06,260 --> 00:53:09,260
+It will have a main light from its upper right to hit it.
+
+929
+00:53:09,260 --> 00:53:13,260
+So the square light on this side is a relatively large lighting effect.
+
+930
+00:53:23,260 --> 00:53:26,260
+Then we increase the intensity of the lighting a little bit.
+
+931
+00:53:26,260 --> 00:53:28,260
+Let's take a look again.
+
+932
+00:53:28,260 --> 00:53:34,260
+You can also give it some colors.
+
+933
+00:53:34,260 --> 00:53:39,260
+For example, I want it to have a light yellow warm light effect like the dim light in the early morning.
+
+934
+00:53:39,260 --> 00:53:41,260
+Then you can give it a light yellow color.
+
+935
+00:53:41,260 --> 00:53:43,260
+Let it have a light color.
+
+936
+00:53:43,260 --> 00:53:47,260
+Then you can see that even if we rotate the screen in the 3D window,
+
+937
+00:53:47,260 --> 00:53:51,260
+because the scene is three-dimensional, so we rotate to every angle,
+
+938
+00:53:51,260 --> 00:53:53,260
+it is a more real effect.
+
+939
+00:53:58,260 --> 00:54:14,260
+So you can adjust the light on this side.
+
+940
+00:54:14,260 --> 00:54:18,260
+Let's get a bluish light edge for this example.
+
+941
+00:54:18,260 --> 00:54:21,260
+The suitability of clay tasty and disturb the light on the screen,
+
+942
+00:54:21,260 --> 00:54:24,260
+but if we give a幾分魔物色,
+
+943
+00:54:24,260 --> 00:54:26,260
+I want to get a strong light look at this light.
+
+944
+00:54:26,260 --> 00:54:31,260
+Let's talk about a new point of knowledge
+
+945
+00:54:31,260 --> 00:54:36,260
+When we render the scene, if we want the whole picture to be more transparent
+
+946
+00:54:36,260 --> 00:54:41,260
+Then we can select the lens attribute in the background of the 3D window
+
+947
+00:54:41,260 --> 00:54:43,260
+Then we choose the default lens
+
+948
+00:54:43,260 --> 00:54:47,260
+Then at the end of the lens, it will play a view here in our monitor
+
+949
+00:54:47,260 --> 00:54:50,260
+The view is a default 15 camera lens
+
+950
+00:54:50,260 --> 00:54:54,260
+Then we can change it to 35, then change it to 40
+
+951
+00:54:54,260 --> 00:54:58,260
+You will find that when you change it to 40, your picture will be far away
+
+952
+00:54:58,260 --> 00:55:02,260
+When you zoom in, your 3D window will have a more obvious sense of transparency
+
+953
+00:55:08,260 --> 00:55:12,260
+This is of course based on your need to match the scene
+
+954
+00:55:12,260 --> 00:55:16,260
+To decide whether you want to adjust the size of the camera's vision
+
+955
+00:55:24,260 --> 00:55:32,260
+Let's move the ground up
+
+956
+00:55:40,260 --> 00:55:44,260
+Next, I want to add some star lights around it
+
+957
+00:55:44,260 --> 00:55:46,260
+Let's take a look
+
+958
+00:55:54,260 --> 00:55:57,260
+But the whole environment is relatively bright
+
+959
+00:55:57,260 --> 00:55:59,260
+Adding this star light is a bit out of place
+
+960
+00:55:59,260 --> 00:56:02,260
+Let's take a look at the light, for example, like this square light
+
+961
+00:56:02,260 --> 00:56:04,260
+Let's make it a little lighter
+
+962
+00:56:04,260 --> 00:56:08,260
+Then the light intensity of the whole skylight is also adjusted to a very low
+
+963
+00:56:08,260 --> 00:56:10,260
+Let the whole picture press down
+
+964
+00:56:10,260 --> 00:56:13,260
+Let the light of the ball be a little brighter
+
+965
+00:56:13,260 --> 00:56:17,260
+Create a sense of overall atmosphere like this
+
+966
+00:56:17,260 --> 00:56:20,260
+We can add a few more star lights like this
+
+967
+00:56:24,260 --> 00:56:31,260
+Then the 3D model can also be added
+
+968
+00:56:31,260 --> 00:56:40,260
+We can see that the 3D model is very beautiful
+
+969
+00:56:40,260 --> 00:56:46,260
+Let's see the blue color
+
+970
+00:56:46,260 --> 00:56:49,260
+Now we have the blue color
+
+971
+00:56:49,260 --> 00:56:52,260
+And the green color
+
+972
+00:56:52,260 --> 00:56:53,260
+This is the sun light
+
+973
+00:56:53,260 --> 00:56:55,060
+It's like a fish-eye lens
+
+974
+00:56:55,060 --> 00:56:57,100
+I'll give him a few more lights
+
+975
+00:56:57,100 --> 00:56:58,420
+The front and back are about a hundred
+
+976
+00:57:23,260 --> 00:57:26,980
+Okay, here's the synchronization
+
+977
+00:57:26,980 --> 00:57:27,580
+We can take a look
+
+978
+00:57:27,580 --> 00:57:28,660
+This is what I've added so far
+
+979
+00:57:28,660 --> 00:57:30,780
+The effect of a few lights
+
+980
+00:57:30,780 --> 00:57:32,020
+Okay, let's pause
+
+981
+00:57:33,820 --> 00:57:35,300
+I'll add one more to the right
+
+982
+00:57:35,300 --> 00:57:37,060
+Because of his picture
+
+983
+00:57:37,060 --> 00:57:38,980
+Add a little light to the left
+
+984
+00:57:38,980 --> 00:57:39,780
+Such a light bulb
+
+985
+00:57:41,460 --> 00:57:43,380
+You'll find that the light bulb I added
+
+986
+00:57:43,380 --> 00:57:44,700
+It's basically on the ground
+
+987
+00:57:44,700 --> 00:57:47,020
+He has a feeling of being raised from the ground
+
+988
+00:57:47,020 --> 00:57:48,220
+Like we're in the square
+
+989
+00:57:48,220 --> 00:57:50,220
+Or some of the decorations we've seen
+
+990
+00:57:53,260 --> 00:57:55,540
+You can adjust the radius of this ball
+
+991
+00:57:55,540 --> 00:57:56,300
+Even if it's far away
+
+992
+00:57:56,300 --> 00:57:57,060
+You can see him
+
+993
+00:58:11,220 --> 00:58:11,580
+ok
+
+994
+00:58:22,100 --> 00:58:22,900
+Let's see
+
+995
+00:58:22,900 --> 00:58:23,180
+How to
+
+996
+00:58:23,180 --> 00:58:23,200
+can
+
+997
+00:58:23,260 --> 00:58:24,460
+You can adjust it again
+
+998
+00:58:26,660 --> 00:58:28,180
+There are two such stone lamps in the back
+
+999
+00:58:28,180 --> 00:58:30,140
+We can put this stone lamp in the middle
+
+1000
+00:58:30,140 --> 00:58:32,140
+Give him some of these ball lights
+
+1001
+00:58:32,140 --> 00:58:33,380
+Let this stone light up
+
+1002
+00:58:36,660 --> 00:58:37,100
+It's very simple
+
+1003
+00:58:37,100 --> 00:58:38,100
+Let's add a ball
+
+1004
+00:58:38,100 --> 00:58:40,260
+Just move it into the stone lamp
+
+1005
+00:58:41,660 --> 00:58:43,500
+It's a little hard to get
+
+1006
+00:58:43,500 --> 00:58:45,660
+We can take a few more turns to take a look
+
+1007
+00:58:47,980 --> 00:58:48,300
+OK
+
+1008
+00:58:48,300 --> 00:58:49,140
+Once you're in
+
+1009
+00:58:49,140 --> 00:58:51,940
+We can change its color to yellow
+
+1010
+00:58:51,940 --> 00:58:53,180
+I want him to make a little bit of a twist
+
+1011
+00:58:53,180 --> 00:58:54,780
+This kind of candlelight effect
+
+1012
+00:58:54,780 --> 00:58:55,460
+This yellow
+
+1013
+00:58:55,460 --> 00:58:56,900
+Then add another one
+
+1014
+00:58:56,900 --> 00:58:58,820
+O
+
+1015
+00:58:58,820 --> 00:59:03,620
+O
+
+1016
+00:59:03,620 --> 00:59:17,780
+O
+
+1017
+00:59:17,780 --> 00:59:17,900
+O
+
+1018
+00:59:17,900 --> 00:59:18,020
+O
+
+1019
+00:59:18,020 --> 00:59:18,040
+O
+
+1020
+00:59:18,040 --> 00:59:18,100
+O
+
+1021
+00:59:18,100 --> 00:59:18,300
+O
+
+1022
+00:59:18,300 --> 00:59:18,680
+O
+
+1023
+00:59:18,680 --> 00:59:19,100
+O
+
+1024
+00:59:19,100 --> 00:59:19,660
+O
+
+1025
+00:59:19,660 --> 00:59:20,380
+O
+
+1026
+00:59:20,380 --> 00:59:20,580
+O
+
+1027
+00:59:20,580 --> 00:59:23,100
+O
+
+1028
+00:59:23,099 --> 00:59:28,099
+OK, let's click on the synchronization to see the effect.
+
+1029
+00:59:53,099 --> 01:00:23,079
+OK, let's click on synchronization.
+
+1030
+01:00:23,099 --> 01:00:53,079
+OK, let's click on synchronization to see the effect.
+
+1031
+01:00:53,099 --> 01:01:23,079
+OK, let's click on synchronization to see the effect.
+
+1032
+01:01:23,079 --> 01:01:53,059
+OK, let's click on synchronization to see the effect.
+
+1033
+01:01:53,059 --> 01:02:23,039
+OK, let's click on synchronization to see the effect.
+
+1034
+01:02:23,059 --> 01:02:53,039
+OK, let's click on synchronization to see the effect.
+
+1035
+01:02:53,059 --> 01:03:03,079
+OK, let's click on synchronization to see the effect.
+
+1036
+01:03:03,079 --> 01:03:17,079
+OK, let's click on synchronization to see the effect.
+
+1037
+01:03:17,079 --> 01:03:21,079
+OK, let's click on synchronization to see the effect.
+
+1038
+01:03:21,079 --> 01:03:21,159
+OK, let's click on synchronization to see the effect.
+
+1039
+01:03:21,159 --> 01:03:21,179
+OK, let's click on synchronization to see the effect.
+
+1040
+01:03:21,179 --> 01:03:21,219
+OK, let's click on synchronization to see the effect.
+
+1041
+01:03:21,219 --> 01:03:21,279
+OK, let's click on synchronization to see the effect.
+
+1042
+01:03:21,279 --> 01:03:21,320
+OK, let's click on synchronization to see the effect.
+
+1043
+01:03:21,320 --> 01:03:21,380
+OK, let's click on synchronization to see the effect.
+
+1044
+01:03:21,380 --> 01:03:21,440
+OK, let's click on synchronization to see the effect.
+
+1045
+01:03:21,440 --> 01:03:21,480
+OK, let's click on synchronization to see the effect.
+
+1046
+01:03:21,480 --> 01:03:21,539
+OK, let's click on synchronization to see the effect.
+
+1047
+01:03:21,539 --> 01:03:21,559
+OK, let's click on synchronization to see the effect.
+
+1048
+01:03:21,559 --> 01:03:21,619
+OK, let's click on synchronization to see the effect.
+
+1049
+01:03:21,619 --> 01:03:25,079
+based on our reference picture to build a scene effect of their own
+
+1050
+01:03:25,079 --> 01:03:26,059
+that the second scene
+
+1051
+01:03:26,059 --> 01:03:30,059
+I also want to talk about is that I used such a platform in it
+
+1052
+01:03:30,059 --> 01:03:31,259
+such a lighting effect
+
+1053
+01:03:31,259 --> 01:03:32,420
+that this is actually very simple
+
+1054
+01:03:32,420 --> 01:03:35,019
+you just need to draw a few more square panels
+
+1055
+01:03:35,019 --> 01:03:36,619
+and then the middle of the panel
+
+1056
+01:03:36,619 --> 01:03:38,519
+to set it to light effect
+
+1057
+01:03:38,519 --> 01:03:39,420
+we can do it
+
+1058
+01:03:39,420 --> 01:03:43,460
+we can set this side of this panel
+
+1059
+01:03:43,460 --> 01:03:46,420
+here to set it to a light attribute
+
+1060
+01:03:46,420 --> 01:03:48,559
+you can show some of this
+
+1061
+01:03:48,559 --> 01:03:50,319
+lighting such a scene
+
+1062
+01:03:50,320 --> 01:03:51,680
+this is our second scene
+
+1063
+01:03:51,680 --> 01:03:53,260
+you can practice
+
+1064
+01:03:53,260 --> 01:03:57,080
+you can send the final practice file to our WeChat public number
+
+1065
+01:03:57,080 --> 01:03:58,880
+and then you can reply to us
+
+1066
+01:03:58,880 --> 01:04:00,820
+and then let's see who does it better
+
+1067
+01:04:02,720 --> 01:04:03,019
+ok
+
+1068
+01:04:03,019 --> 01:04:05,920
+this is our live content today
+
+1069
+01:04:05,920 --> 01:04:07,519
+and then you have any questions
+
+1070
+01:04:20,320 --> 01:04:24,180
+you can leave a comment and we will try to answer some of your questions
+
+1071
+01:04:24,180 --> 01:04:25,180
+ok
+
+1072
+01:04:25,180 --> 01:04:31,720
+and then I see a lot of students are asking where our material is downloaded
+
+1073
+01:04:31,720 --> 01:04:33,059
+we can go and have a look at it
+
+1074
+01:04:33,059 --> 01:04:37,420
+we recommend a software called Bridge to everyone
+
+1075
+01:04:37,420 --> 01:04:38,460
+then this software
+
+1076
+01:04:38,460 --> 01:04:40,460
+you can search for it in Bilibili
+
+1077
+01:04:40,460 --> 01:04:43,920
+it has a lot of people sharing some download methods
+
+1078
+01:04:43,920 --> 01:04:47,820
+then here it can directly download some Chinese models like this
+
+1079
+01:04:47,820 --> 01:04:50,160
+you can see here it has a lot of models
+
+1080
+01:04:50,320 --> 01:04:51,519
+you can download it
+
+1081
+01:04:51,519 --> 01:04:53,260
+for example, there are buildings, food
+
+1082
+01:04:53,260 --> 01:04:55,180
+and some historical buildings and so on
+
+1083
+01:04:55,180 --> 01:04:57,180
+then this full name is called Quicks Bridge
+
+1084
+01:04:57,180 --> 01:04:58,120
+if you are interested
+
+1085
+01:04:58,120 --> 01:04:59,320
+you can go and find out
+
+1086
+01:04:59,320 --> 01:05:00,960
+if you don't have time to download it
+
+1087
+01:05:00,960 --> 01:05:03,460
+you can leave a comment in the background of our public number
+
+1088
+01:05:03,460 --> 01:05:06,120
+and then you can get a material file today
+
+1089
+01:05:06,120 --> 01:05:07,580
+to practice and use
+
+1090
+01:05:12,080 --> 01:05:12,380
+ok
+
+1091
+01:05:12,380 --> 01:05:14,220
+do you have any other questions
+
+1092
+01:05:14,220 --> 01:05:17,760
+our live broadcast will end in five minutes
+
+1093
+01:05:20,320 --> 01:05:24,420
+why 7.0 Chinese version will be a little strange
+
+1094
+01:05:24,420 --> 01:05:28,380
+shouldn't the 7.0 Chinese version make it easier for everyone to use it?
+
+1095
+01:05:28,380 --> 01:05:37,180
+yes, I also talked about the swimsuit before
+
+1096
+01:05:37,180 --> 01:05:41,780
+if you are more interested in the special effects
+
+1097
+01:05:41,780 --> 01:05:44,380
+you can also watch some of our special effects live broadcasts before
+
+1098
+01:05:50,320 --> 01:06:01,080
+네,不 어
+
+1099
+01:06:01,080 --> 01:06:02,280
+ok
+
+1100
+01:06:02,280 --> 01:06:04,660
+say hi to everyone wise
+
+1101
+01:06:04,660 --> 01:06:06,920
+Let me remind once again
+
+1102
+01:06:06,920 --> 01:06:08,580
+when we are saving your project document
+
+1103
+01:06:08,580 --> 01:06:10,680
+if you want to save these light sheets we made
+
+1104
+01:06:10,680 --> 01:06:14,460
+you can click the file
+
+1105
+01:06:14,460 --> 01:06:15,780
+then choose another to save
+
+1106
+01:06:15,780 --> 01:06:17,980
+there is an activity called rendering properties
+
+1107
+01:06:17,980 --> 01:06:19,080
+we can directly use these
+
+1108
+01:06:19,080 --> 01:06:19,420
+your rendering settings feel said light ah largeinis ah large blacks add Pokémon lights effect administration in the software program that expressing various properties homme can directly use close from front side may hold cooler arch so that it is not locked at the end of the case you see yeah there are so many changes, but will go outside every day, let me take the next three days
+
+1109
+01:06:20,320 --> 01:06:24,720
+and so on, you can pack it up and save it so that it's convenient for us to use it directly next time.
+
+1110
+01:06:50,320 --> 01:06:58,880
+OK, I see that some of the students are asking how to download the model.
+
+1111
+01:06:58,880 --> 01:07:02,620
+Also in our software, you can directly use Konec in this library, the Konec of this
+
+1112
+01:07:02,620 --> 01:07:04,820
+piece and then choose to pull him.
+
+1113
+01:07:04,820 --> 01:07:07,840
+You can click on the free selection and then you can see our new model yuna here.
+
+1114
+01:07:07,840 --> 01:07:10,940
+And our new model.
+
+1115
+01:07:10,940 --> 01:07:17,660
+This gold number, and then you can see their hair, including the posture, is here.
+
+1116
+01:07:17,660 --> 01:07:20,100
+You can directly download it and use it.
+
+1117
+01:07:20,100 --> 01:07:20,200
+There is also a new model here.
+
+1118
+01:07:20,200 --> 01:07:20,280
+And we will go to the consistence section, and then there is a new model here.
+
+1119
+01:07:20,280 --> 01:07:20,300
+then you can directly download and use it.
+
+1120
+01:07:20,300 --> 01:07:22,700
+There are a lot of this kind of posture preview
+
+1121
+01:07:22,700 --> 01:07:23,620
+There are some glasses
+
+1122
+01:07:24,620 --> 01:07:26,600
+The men's and women's clothes are all there
+
+1123
+01:07:28,120 --> 01:07:29,180
+And then you pull it down
+
+1124
+01:07:29,180 --> 01:07:30,620
+There are some shoes
+
+1125
+01:07:30,620 --> 01:07:33,560
+We recently updated a lot of shoes materials
+
+1126
+01:07:33,560 --> 01:07:34,940
+All kinds of styles
+
+1127
+01:07:34,940 --> 01:07:36,360
+Men's and women's shoes are available
+
+1128
+01:07:36,360 --> 01:07:38,320
+You can go and download it as soon as possible
+
+1129
+01:07:45,240 --> 01:07:46,080
+Where to download
+
+1130
+01:07:46,080 --> 01:07:48,200
+It's in the software
+
+1131
+01:07:48,200 --> 01:07:49,280
+It's your upper left corner
+
+1132
+01:07:49,280 --> 01:07:50,300
+Look at the library
+
+1133
+01:07:50,300 --> 01:07:51,960
+You must use the latest version
+
+1134
+01:07:51,960 --> 01:07:55,720
+Just use our latest version 7.0.358
+
+1135
+01:07:55,740 --> 01:07:57,580
+If you're using the old version
+
+1136
+01:07:57,600 --> 01:07:58,760
+Maybe not in the new version
+
+1137
+01:07:58,760 --> 01:08:01,460
+Isn't there three buttons in this library
+
+1138
+01:08:01,460 --> 01:08:02,840
+You choose the third one
+
+1139
+01:08:02,840 --> 01:08:03,980
+Connect this one
+
+1140
+01:08:03,980 --> 01:08:05,560
+There's an N color N
+
+1141
+01:08:05,580 --> 01:08:06,620
+You click in and you have it
+
+1142
+01:08:12,920 --> 01:08:14,180
+How to download the background
+
+1143
+01:08:14,180 --> 01:08:18,579
+Today we are going to give you an explanation of how to create a 3D background
+
+1144
+01:08:19,279 --> 01:08:22,639
+You can use it all the time after you build it yourself
+
+1145
+01:08:39,279 --> 01:08:41,239
+OK, then our live broadcast is about to end
+
+1146
+01:08:41,239 --> 01:08:42,559
+Do you have any questions
+
+1147
+01:08:42,559 --> 01:08:44,059
+If not, we're going to end
+
+1148
+01:08:47,659 --> 01:08:49,159
+And then look forward to your work!
+
+1149
+01:08:49,159 --> 01:08:51,659
+If you have a good new work
+
+1150
+01:08:51,659 --> 01:08:54,559
+You can upload it to our Kinect mall
+
+1151
+01:08:54,559 --> 01:08:57,199
+You can also share it with our WeChat public number background
+
+1152
+01:09:14,359 --> 01:09:16,579
+OK, well, our live broadcast is coming to an end
+
+1153
+01:09:16,579 --> 01:09:17,840
+And then if you have any questions
+
+1154
+01:09:17,840 --> 01:09:19,099
+You can leave a message in our public number.
+
+1155
+01:09:19,100 --> 01:09:21,100
+Thank you for watching!
+
+1156
+01:09:21,100 --> 01:09:23,100
+We hope you have a great day!
+
+1157
+01:09:23,100 --> 01:09:25,100
+See you in the next video!
+

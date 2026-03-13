@@ -1,0 +1,4524 @@
+1
+00:00:00,000 --> 00:00:04,000
+Hello everyone, I am Stella from Cloud Shanghai.
+
+2
+00:00:04,000 --> 00:00:11,000
+Today, I and my colleague Familia will introduce the new features of version 7.1.
+
+3
+00:00:17,000 --> 00:00:21,000
+This time, our new features are divided into 8 parts.
+
+4
+00:00:21,000 --> 00:00:31,000
+These are the main updates, 3D function, 2D function, virtual model, process details, rendering, text editor and other files.
+
+5
+00:00:38,000 --> 00:00:41,000
+Now let's take a look at the main update content.
+
+6
+00:00:42,000 --> 00:00:45,000
+The first update content is the seamless text editor.
+
+7
+00:00:45,000 --> 00:00:49,000
+This update has added the seamless text editor.
+
+8
+00:00:49,000 --> 00:00:54,000
+You can use the scanned image to generate continuous text in all directions.
+
+9
+00:00:54,000 --> 00:00:58,000
+You can also check the effect in the 3D window.
+
+10
+00:00:58,000 --> 00:01:02,000
+There are two modes, automatic mode and manual mode.
+
+11
+00:01:02,000 --> 00:01:06,000
+Next, let's learn how to use this function.
+
+12
+00:01:12,000 --> 00:01:14,000
+First, let's go to the object window.
+
+13
+00:01:14,000 --> 00:01:15,000
+Let's go to the object window.
+
+14
+00:01:15,000 --> 00:01:16,000
+Find the object.
+
+15
+00:01:16,000 --> 00:01:20,000
+On the right side, you can see that a plus button has been added.
+
+16
+00:01:20,000 --> 00:01:22,000
+We will stop the mouse on the top.
+
+17
+00:01:22,000 --> 00:01:25,000
+You can see that the seamless text editor is created.
+
+18
+00:01:25,000 --> 00:01:28,000
+Open the text editor.
+
+19
+00:01:28,000 --> 00:01:32,000
+The window of the text editor will appear in the 2D window.
+
+20
+00:01:33,000 --> 00:01:37,000
+Next, I will introduce the structure of the text editor window.
+
+21
+00:01:37,000 --> 00:01:39,000
+First, it is divided into two windows.
+
+22
+00:01:39,000 --> 00:01:43,000
+The upper part is the editing window of the object text area.
+
+23
+00:01:43,000 --> 00:01:47,000
+The lower part is the preview window of the result.
+
+24
+00:01:47,000 --> 00:01:52,000
+We will press the button at the bottom left to open the original text.
+
+25
+00:01:52,000 --> 00:01:57,000
+You can see the original text image in the top editing window.
+
+26
+00:01:59,000 --> 00:02:04,000
+The scroll wheel can be placed in the size of the text.
+
+27
+00:02:04,000 --> 00:02:07,000
+The scroll wheel can be placed in the size of the text.
+
+28
+00:02:07,000 --> 00:02:10,000
+The scroll wheel can be placed in the size of the text.
+
+29
+00:02:10,000 --> 00:02:15,000
+At the top, you can see the size and resolution of the sample.
+
+30
+00:02:15,000 --> 00:02:21,000
+The maximum size that can be supported at the moment is 9999 pixels multiplied by 9999 pixels.
+
+31
+00:02:21,000 --> 00:02:25,000
+If the original image is larger than this value, it will be automatically lowered to 9999.
+
+32
+00:02:25,000 --> 00:02:30,000
+So please make sure that the size of the original image is smaller than the upper limit value.
+
+33
+00:02:30,000 --> 00:02:41,000
+We can see the material ball on the upper left.
+
+34
+00:02:41,000 --> 00:02:44,000
+Click to switch to check.
+
+35
+00:02:44,000 --> 00:02:49,000
+Because this image has been created before loading,
+
+36
+00:02:49,000 --> 00:02:55,000
+the system will automatically detect the found image and import it.
+
+37
+00:02:55,000 --> 00:02:59,000
+This is the secret rule of the picture.
+
+38
+00:02:59,000 --> 00:03:04,000
+Pictures that need to be imported together must use the same name as the original text.
+
+39
+00:03:04,000 --> 00:03:11,000
+In addition, the system can detect these pictures only by using the English downward line and the corresponding backslash.
+
+40
+00:03:11,000 --> 00:03:17,000
+For example, the backslash of the found image is because of the downward line Normal or the downward line NRM.
+
+41
+00:03:17,000 --> 00:03:20,000
+The other material pictures are the same.
+
+42
+00:03:25,000 --> 00:03:28,000
+Next, let's introduce the automatic mode.
+
+43
+00:03:28,000 --> 00:03:29,000
+Let's introduce the automatic mode.
+
+44
+00:03:29,000 --> 00:03:32,000
+First, select the physical area.
+
+45
+00:03:32,000 --> 00:03:36,000
+We find the smallest area where the tree pattern repeats.
+
+46
+00:03:36,000 --> 00:03:39,000
+When choosing, it should be larger than this area.
+
+47
+00:03:39,000 --> 00:03:42,000
+Then press the left mouse button to drag and select.
+
+48
+00:03:42,000 --> 00:03:47,000
+The selected area is recommended to be larger than 200x200 pixels.
+
+49
+00:03:47,000 --> 00:03:52,000
+After the selection is complete, these small blue grid will appear within the frame selection range.
+
+50
+00:03:52,000 --> 00:03:56,000
+This is the single cycle range selected after automatic analysis.
+
+51
+00:04:00,000 --> 00:04:06,000
+In the window below, it will display the results of the automatic analysis of the selected area.
+
+52
+00:04:07,000 --> 00:04:11,000
+The scroll mouse wheel can enlarge and shrink the tree pattern.
+
+53
+00:04:13,000 --> 00:04:21,000
+When you open the grid button in the window, you can identify the original location of the area through the line.
+
+54
+00:04:22,000 --> 00:04:26,000
+You can check the clothing effect in the 3D window.
+
+55
+00:04:29,000 --> 00:04:34,000
+For example, if you want to adjust the area, you can drag and select again.
+
+56
+00:04:34,000 --> 00:04:37,000
+Or move to select the point of the area.
+
+57
+00:04:43,000 --> 00:04:49,000
+After adjustment, you will automatically analyze and generate the results in the selected area again.
+
+58
+00:04:53,000 --> 00:04:57,000
+In the lower right corner of the selected area, you can see the icon of the automatic mode.
+
+59
+00:04:57,000 --> 00:05:02,000
+You can see the automatic mode description on the top of the icon.
+
+60
+00:05:02,000 --> 00:05:05,000
+The selected area will automatically adjust to the best result.
+
+61
+00:05:05,000 --> 00:05:12,000
+In the automatic mode, you can set the right upper corner of the tree type and the average option.
+
+62
+00:05:12,000 --> 00:05:17,000
+Choosing the tree type is to get a more accurate analysis result.
+
+63
+00:05:19,000 --> 00:05:23,000
+And because the tree type is based on the line chart,
+
+64
+00:05:23,000 --> 00:05:25,000
+Therefore, it still needs to be in the line chart.
+
+65
+00:05:25,000 --> 00:05:29,000
+It needs to be in the line chart in order to generate the result.
+
+66
+00:05:33,000 --> 00:05:39,000
+You can see that the small triangle of the tree type has pure color, duplicate and random.
+
+67
+00:05:40,000 --> 00:05:44,000
+Pure color refers to the pure color of the tree without a pattern.
+
+68
+00:05:44,000 --> 00:05:47,000
+Duplicate refers to the tree pattern with a rule.
+
+69
+00:05:47,000 --> 00:05:50,000
+Random refers to the tree pattern without a rule.
+
+70
+00:05:50,000 --> 00:05:58,000
+Adjusting the average value can be used to average the difference in brightness caused by the fold marks caused by the tree.
+
+71
+00:05:58,000 --> 00:06:04,000
+The button on the far right is the smooth button.
+
+72
+00:06:04,000 --> 00:06:06,000
+If the original image is not scanned evenly,
+
+73
+00:06:06,000 --> 00:06:11,000
+Or the link part of the repeated image is not smooth due to the fold marks,
+
+74
+00:06:11,000 --> 00:06:14,000
+The automatic adjustment result may not be very good.
+
+75
+00:06:14,000 --> 00:06:18,000
+In this case, opening the smooth can evenly match the image.
+
+76
+00:06:18,000 --> 00:06:22,000
+You can see that the image we just drew has some uneven areas.
+
+77
+00:06:22,000 --> 00:06:26,000
+We open the smooth and the image is evenly matched.
+
+78
+00:06:26,000 --> 00:06:29,000
+After introducing the automatic mode,
+
+79
+00:06:29,000 --> 00:06:31,000
+Now let's introduce the manual mode.
+
+80
+00:06:31,000 --> 00:06:34,000
+I'm going to open a grid material now.
+
+81
+00:06:39,000 --> 00:06:43,000
+When the part of the repetition of the text is relatively clear,
+
+82
+00:06:43,000 --> 00:06:47,000
+You can also use the manual mode when choosing the text area.
+
+83
+00:06:48,000 --> 00:06:52,000
+This is the single-circle size of our frame selection.
+
+84
+00:06:52,000 --> 00:06:55,000
+It's similar to the peek-and-seek function in PS.
+
+85
+00:06:55,000 --> 00:07:01,000
+The left-click drags the frame to select the smallest circle of this pattern.
+
+86
+00:07:01,000 --> 00:07:04,000
+It is still in the automatic mode.
+
+87
+00:07:04,000 --> 00:07:10,000
+Because the automatic mode is the default mode.
+
+88
+00:07:10,000 --> 00:07:13,000
+You can click the button at the bottom right of the selected area.
+
+89
+00:07:13,000 --> 00:07:17,000
+Change the mode to manual mode to keep the selected area.
+
+90
+00:07:17,000 --> 00:07:21,000
+The manual mode is a small hand-shaped icon.
+
+91
+00:07:23,000 --> 00:07:25,000
+After switching to manual mode,
+
+92
+00:07:25,000 --> 00:07:28,000
+You need to re-adjust the selected area.
+
+93
+00:07:28,000 --> 00:07:32,000
+The preview window at the bottom will update the new selection range.
+
+94
+00:07:32,000 --> 00:07:35,000
+And generate four consecutive repetition effects.
+
+95
+00:07:37,000 --> 00:07:40,000
+If you look at the preview effect at the bottom,
+
+96
+00:07:40,000 --> 00:07:42,000
+It doesn't feel ideal.
+
+97
+00:07:42,000 --> 00:07:44,000
+You can continue to adjust the area.
+
+98
+00:07:44,000 --> 00:07:48,000
+Let's move to the selected area to adjust it closely.
+
+99
+00:07:48,000 --> 00:07:50,000
+After the selection is complete,
+
+100
+00:07:50,000 --> 00:07:54,000
+It also generates four consecutive repetition effects in the preview window.
+
+101
+00:07:56,000 --> 00:07:58,000
+After editing the text,
+
+102
+00:07:58,000 --> 00:08:02,000
+We can click the save button at the bottom to save.
+
+103
+00:08:02,000 --> 00:08:04,000
+If it matches the multiple text,
+
+104
+00:08:04,000 --> 00:08:06,000
+You can click on the selection in the preview window.
+
+105
+00:08:06,000 --> 00:08:08,000
+You can save multiple text at a time.
+
+106
+00:08:08,000 --> 00:08:10,000
+Then click OK.
+
+107
+00:08:10,000 --> 00:08:11,000
+After the selection is complete,
+
+108
+00:08:11,000 --> 00:08:13,000
+You can confirm it.
+
+109
+00:08:13,000 --> 00:08:16,000
+You can enter the name of the file.
+
+110
+00:08:16,000 --> 00:08:19,000
+Click save.
+
+111
+00:08:19,000 --> 00:08:22,000
+If you want to use the completed image for the object,
+
+112
+00:08:22,000 --> 00:08:24,000
+And use it immediately,
+
+113
+00:08:24,000 --> 00:08:27,000
+You can click on the application at the bottom and close it.
+
+114
+00:08:29,000 --> 00:08:33,000
+The texture will be applied to the object that was selected at the beginning.
+
+115
+00:08:33,000 --> 00:08:36,000
+And the texture generator will be turned off at the same time.
+
+116
+00:08:36,000 --> 00:08:38,000
+Before that,
+
+117
+00:08:38,000 --> 00:08:41,000
+We need to use other software to generate a seamless texture.
+
+118
+00:08:41,000 --> 00:08:45,000
+Now you can easily generate a seamless texture in Cloud.
+
+119
+00:08:55,000 --> 00:08:58,000
+Next, I will introduce another optimization for you.
+
+120
+00:08:59,000 --> 00:09:01,000
+In the new version of 7.1,
+
+121
+00:09:01,000 --> 00:09:03,000
+We added automatic 3D arrangement.
+
+122
+00:09:03,000 --> 00:09:07,000
+It can help us to arrange the panels around the model quickly.
+
+123
+00:09:08,000 --> 00:09:17,000
+First, we have already added a virtual model.
+
+124
+00:09:17,000 --> 00:09:20,000
+Now we will add a single size.
+
+125
+00:09:20,000 --> 00:09:23,000
+In order to arrange the accuracy of the calculation,
+
+126
+00:09:23,000 --> 00:09:27,000
+We need to set the panel to a symmetrical state.
+
+127
+00:09:29,000 --> 00:09:33,000
+Now we will set the panel to a symmetrical state.
+
+128
+00:09:38,000 --> 00:09:40,000
+After setting it up,
+
+129
+00:09:40,000 --> 00:09:42,000
+In the 3D window tool bar,
+
+130
+00:09:45,000 --> 00:09:47,000
+In the lower left corner,
+
+131
+00:09:47,000 --> 00:09:50,000
+We will find the automatic 3D arrangement button.
+
+132
+00:09:54,000 --> 00:09:55,000
+Click on it,
+
+133
+00:09:55,000 --> 00:09:57,000
+A dynamic frame will pop up.
+
+134
+00:09:57,000 --> 00:10:01,000
+The panel will be arranged in 3D according to the accuracy.
+
+135
+00:10:01,000 --> 00:10:05,000
+This function is based on the result of learning from a large number of panel data.
+
+136
+00:10:05,000 --> 00:10:07,000
+In addition to using the 3D tool,
+
+137
+00:10:07,000 --> 00:10:08,000
+In addition to using the 3D tool,
+
+138
+00:10:08,000 --> 00:10:10,000
+It can also be used to make the panel 3D.
+
+139
+00:10:10,000 --> 00:10:13,000
+It is useful for more accurate arrangement.
+
+140
+00:10:13,000 --> 00:10:15,000
+Let's click on the operation.
+
+141
+00:10:19,000 --> 00:10:22,000
+The panel will start to arrange automatically.
+
+142
+00:10:24,000 --> 00:10:26,000
+The panel arranged in each step
+
+143
+00:10:26,000 --> 00:10:28,000
+Is divided by color and transparency.
+
+144
+00:10:28,000 --> 00:10:31,000
+If you want to check the arrangement results of each step,
+
+145
+00:10:31,000 --> 00:10:34,000
+You can press the back and forth button
+
+146
+00:10:34,000 --> 00:10:36,000
+And the next step button.
+
+147
+00:10:37,000 --> 00:10:41,000
+Click to confirm the automatic arrangement.
+
+148
+00:10:45,000 --> 00:10:49,000
+Turn it over and see if the arrangement position is correct.
+
+149
+00:10:54,000 --> 00:10:55,000
+As you can see,
+
+150
+00:10:55,000 --> 00:10:59,000
+The arrangement position of the panel in the back of the arm is not correct.
+
+151
+00:10:59,000 --> 00:11:01,000
+So after the automatic arrangement is finished,
+
+152
+00:11:01,000 --> 00:11:03,000
+You can also manually arrange the panel.
+
+153
+00:11:03,000 --> 00:11:04,000
+Open the arrangement point
+
+154
+00:11:04,000 --> 00:11:06,000
+Arrange the panel at the appropriate position.
+
+155
+00:11:06,000 --> 00:11:08,000
+and arrange them in the right place.
+
+156
+00:11:13,000 --> 00:11:15,000
+Next, I will introduce the new function,
+
+157
+00:11:15,000 --> 00:11:18,000
+which is automatically converted to action.
+
+158
+00:11:18,000 --> 00:11:22,000
+This function can convert the action file on the external platform
+
+159
+00:11:22,000 --> 00:11:25,000
+to the action file of Cloud.
+
+160
+00:11:31,000 --> 00:11:35,000
+First, select the virtual model in the main menu on the top,
+
+161
+00:11:35,000 --> 00:11:37,000
+and select automatically convert to action.
+
+162
+00:11:39,000 --> 00:11:42,000
+Then, we will enter the animation mode.
+
+163
+00:11:42,000 --> 00:11:43,000
+In the window that pops out,
+
+164
+00:11:43,000 --> 00:11:46,000
+you can select the gender of the module that needs to be converted.
+
+165
+00:11:47,000 --> 00:11:50,000
+Then, click on the file folder button at the bottom,
+
+166
+00:11:50,000 --> 00:11:54,000
+and open the FBX file that has been downloaded.
+
+167
+00:11:54,000 --> 00:11:58,000
+Note that the path name must remain in full English.
+
+168
+00:12:01,000 --> 00:12:04,000
+Then click convert.
+
+169
+00:12:05,000 --> 00:12:07,000
+After the conversion is successful,
+
+170
+00:12:07,000 --> 00:12:09,000
+you will see this pop-up window.
+
+171
+00:12:09,000 --> 00:12:11,000
+You can click save at this time,
+
+172
+00:12:11,000 --> 00:12:13,000
+and you can also close it first.
+
+173
+00:12:15,000 --> 00:12:18,000
+First, play the preview in the animation mode.
+
+174
+00:12:27,000 --> 00:12:29,000
+After confirming that there is no error,
+
+175
+00:12:29,000 --> 00:12:33,000
+you can save the file as a link to the action.
+
+176
+00:12:34,000 --> 00:12:39,000
+The default saved path is under the virtual model file in the library.
+
+177
+00:12:41,000 --> 00:12:44,000
+The file format of the action file is mpn.
+
+178
+00:12:44,000 --> 00:12:47,000
+Name this file as work,
+
+179
+00:12:47,000 --> 00:12:49,000
+and then save.
+
+180
+00:12:52,000 --> 00:12:54,000
+Click confirm.
+
+181
+00:12:55,000 --> 00:12:57,000
+And in 7.1,
+
+182
+00:12:57,000 --> 00:13:02,000
+all the action and posture files can be integrated into all the Cloud models.
+
+183
+00:13:03,000 --> 00:13:06,000
+Now let's open a model.
+
+184
+00:13:06,000 --> 00:13:08,000
+Then double-click.
+
+185
+00:13:15,000 --> 00:13:20,000
+Double-click to select the action file in the mpn format that has just been saved.
+
+186
+00:13:20,000 --> 00:13:22,000
+Then click confirm.
+
+187
+00:13:23,000 --> 00:13:25,000
+Play the action effect.
+
+188
+00:13:25,000 --> 00:13:27,000
+Click confirm.
+
+189
+00:13:27,000 --> 00:13:34,000
+Double-click to select the action file in the mpn format that has just been saved.
+
+190
+00:13:34,000 --> 00:13:37,000
+Similarly, the posture file can also be integrated.
+
+191
+00:13:37,000 --> 00:13:40,000
+Now let's go back to the simulation mode.
+
+192
+00:13:40,000 --> 00:13:44,000
+First, open a model.
+
+193
+00:13:44,000 --> 00:13:49,000
+Then open the virtual model file in the library window.
+
+194
+00:13:49,000 --> 00:13:51,000
+Then open the virtual model file in the library window.
+
+195
+00:13:51,000 --> 00:13:53,000
+Then open the virtual model file in the library window.
+
+196
+00:13:53,000 --> 00:13:56,000
+Open the male model v2 file folder.
+
+197
+00:13:56,000 --> 00:13:58,000
+Open the posture.
+
+198
+00:13:58,000 --> 00:14:00,000
+Use this male model v207 pose as an example.
+
+199
+00:14:00,000 --> 00:14:03,000
+The male model posture can be integrated into the female model.
+
+200
+00:14:03,000 --> 00:14:05,000
+Click confirm.
+
+201
+00:14:08,000 --> 00:14:12,000
+The virtual model editor has also improved significantly this time.
+
+202
+00:14:12,000 --> 00:14:15,000
+Now we have opened a virtual model.
+
+203
+00:14:16,000 --> 00:14:20,000
+Then click the virtual model editor in the upper left corner of the menu bar.
+
+204
+00:14:20,000 --> 00:14:22,000
+The virtual model editor.
+
+205
+00:14:23,000 --> 00:14:30,000
+You can see that the window of the virtual model editor is now in the position of the 2D window.
+
+206
+00:14:30,000 --> 00:14:33,000
+It can be conveniently switched to the 2D window.
+
+207
+00:14:33,000 --> 00:14:37,000
+The improved interface can also be more convenient to adjust the model's body shape.
+
+208
+00:14:37,000 --> 00:14:41,000
+It will be more friendly in operation.
+
+209
+00:14:42,000 --> 00:14:45,000
+There are now three versions of the model editor.
+
+210
+00:14:45,000 --> 00:14:47,000
+Full body.
+
+211
+00:14:47,000 --> 00:14:49,000
+Body shape and details.
+
+212
+00:14:49,000 --> 00:14:52,000
+Compared to the previous version, the body shape version has been added.
+
+213
+00:14:53,000 --> 00:14:59,000
+And optimized the UI interface of the detail panel.
+
+214
+00:14:59,000 --> 00:15:01,000
+Compared to the previous interface.
+
+215
+00:15:01,000 --> 00:15:03,000
+The upper body.
+
+216
+00:15:06,000 --> 00:15:08,000
+The lower body.
+
+217
+00:15:08,000 --> 00:15:10,000
+And other data are categorized.
+
+218
+00:15:10,000 --> 00:15:12,000
+These data are more intuitive.
+
+219
+00:15:12,000 --> 00:15:13,000
+Clear and clear.
+
+220
+00:15:13,000 --> 00:15:15,000
+Easy to edit and operate.
+
+221
+00:15:17,000 --> 00:15:19,000
+At the top.
+
+222
+00:15:19,000 --> 00:15:22,000
+You can change the preset size of different standards.
+
+223
+00:15:23,000 --> 00:15:26,000
+The right side.
+
+224
+00:15:34,000 --> 00:15:35,000
+At the top.
+
+225
+00:15:35,000 --> 00:15:37,000
+You can change the preset size of different standards.
+
+226
+00:15:41,000 --> 00:15:42,000
+The document here.
+
+227
+00:15:42,000 --> 00:15:47,000
+It is the size document of the virtual model in our virtual window.
+
+228
+00:15:48,000 --> 00:15:52,000
+Now you can go directly to this side to make a change and look.
+
+229
+00:15:53,000 --> 00:16:03,000
+The three buttons at the back are reset, open, and save.
+
+230
+00:16:03,000 --> 00:16:09,000
+Click the reset button to return to default size.
+
+231
+00:16:09,000 --> 00:16:21,000
+In the full body section, this update increases the weight option in the width column.
+
+232
+00:16:21,000 --> 00:16:27,000
+By entering the model's weight data, we can see the model's body shape change very objectively.
+
+233
+00:16:27,000 --> 00:16:35,000
+For example, we will change 50 kg to 60 kg.
+
+234
+00:16:35,000 --> 00:16:41,000
+After entering the weight, you can choose different body shapes at the bottom to adjust the different body shapes.
+
+235
+00:16:41,000 --> 00:16:45,000
+The male and female models can be changed here.
+
+236
+00:16:45,000 --> 00:16:49,000
+The male model cannot be changed.
+
+237
+00:16:49,000 --> 00:16:54,000
+This weight and body shape update is more suitable for such use scenarios.
+
+238
+00:16:54,000 --> 00:16:59,000
+When you don't know the exact body shape data, you only know the height and weight.
+
+239
+00:16:59,000 --> 00:17:06,000
+Knowing the approximate body shape, using this mode can quickly create a virtual model that is closer to the real human body.
+
+240
+00:17:10,000 --> 00:17:16,000
+In the details section, in addition to the original basic and advanced options,
+
+241
+00:17:16,000 --> 00:17:19,000
+we added the simple option.
+
+242
+00:17:19,000 --> 00:17:24,000
+When we select the weight in the width column,
+
+243
+00:17:24,000 --> 00:17:27,000
+it will automatically switch to the simple option.
+
+244
+00:17:27,000 --> 00:17:31,000
+If you know the model's three-dimensional data, you can also enter it here.
+
+245
+00:17:31,000 --> 00:17:35,000
+Other data that has not been entered can be automatically calculated.
+
+246
+00:17:35,000 --> 00:17:43,000
+It should be noted that the simple mode is a combination of the width and the weight.
+
+247
+00:17:43,000 --> 00:17:48,000
+And only when choosing the simple option can you choose the model's body shape.
+
+248
+00:17:48,000 --> 00:17:56,000
+The human body data below the change body shape will change accordingly.
+
+249
+00:17:56,000 --> 00:18:04,000
+Click on the button on the right to see all the size data.
+
+250
+00:18:04,000 --> 00:18:10,000
+Gray data cannot be edited in the current details box.
+
+251
+00:18:18,000 --> 00:18:22,000
+In order to see the model more conveniently,
+
+252
+00:18:22,000 --> 00:18:25,000
+we will start from the 7.1 version.
+
+253
+00:18:25,000 --> 00:18:29,000
+The model will be changed from the mode to the editor window.
+
+254
+00:18:29,000 --> 00:18:31,000
+No need to change the mode.
+
+255
+00:18:31,000 --> 00:18:33,000
+You can easily see it.
+
+256
+00:18:37,000 --> 00:18:42,000
+Before we see the model, we need to simulate the clothing of each size.
+
+257
+00:18:42,000 --> 00:18:47,000
+The original 7.1,
+
+258
+00:18:48,000 --> 00:18:56,000
+the model is in the model mode in the upper right corner.
+
+259
+00:18:56,000 --> 00:18:59,000
+After opening it, it will occupy the window of the whole picture.
+
+260
+00:18:59,000 --> 00:19:03,000
+Now it is located in the main menu column editor to see the model.
+
+261
+00:19:03,000 --> 00:19:08,000
+Click on the window where the model editor will appear.
+
+262
+00:19:08,000 --> 00:19:13,000
+You can compare the clothing of different sizes in the same picture.
+
+263
+00:19:13,000 --> 00:19:15,000
+With the window parallel to the 2D window,
+
+264
+00:19:15,000 --> 00:19:16,000
+you can see more directly.
+
+265
+00:19:16,000 --> 00:19:17,000
+Adjust the image of the version.
+
+266
+00:19:17,000 --> 00:19:19,000
+In the lower left corner,
+
+267
+00:19:19,000 --> 00:19:24,000
+you can switch to the 3D window.
+
+268
+00:19:24,000 --> 00:19:27,000
+The tool bar is horizontal.
+
+269
+00:19:27,000 --> 00:19:32,000
+Now the tool bar is vertical.
+
+270
+00:19:32,000 --> 00:19:34,000
+If we adjust the information of the version,
+
+271
+00:19:34,000 --> 00:19:37,000
+for example, adjust the total size,
+
+272
+00:19:37,000 --> 00:19:40,000
+increase to 100 mm.
+
+273
+00:19:40,000 --> 00:19:45,000
+Click on the update button in the upper left corner of the small window.
+
+274
+00:19:45,000 --> 00:19:52,000
+You can see the effect of the actual update of the number of numbers.
+
+275
+00:19:52,000 --> 00:19:57,000
+If you want to update all the numbers at once,
+
+276
+00:19:57,000 --> 00:20:02,000
+you can click on the big update button in the tool bar on the left.
+
+277
+00:20:02,000 --> 00:20:09,000
+It is more convenient to see the actual change of the clothing of all the numbers.
+
+278
+00:20:09,000 --> 00:20:13,000
+If you want three numbers to stand in a row,
+
+279
+00:20:13,000 --> 00:20:20,000
+we can make the 3D window a little bigger.
+
+280
+00:20:20,000 --> 00:20:25,000
+Because the default system is the automatic layout.
+
+281
+00:20:25,000 --> 00:20:27,000
+Due to the limitation of the window size,
+
+282
+00:20:27,000 --> 00:20:32,000
+Elma will automatically switch to the second row.
+
+283
+00:20:32,000 --> 00:20:34,000
+When saving the picture,
+
+284
+00:20:34,000 --> 00:20:37,000
+if you need the effect of a row,
+
+285
+00:20:37,000 --> 00:20:38,000
+remember to make the window larger,
+
+286
+00:20:38,000 --> 00:20:41,000
+and let the model line up into a row.
+
+287
+00:20:41,000 --> 00:20:46,000
+Or choose the row level and then save.
+
+288
+00:20:46,000 --> 00:20:50,000
+Because this picture is saved in the state displayed by the current window.
+
+289
+00:21:02,000 --> 00:21:06,000
+Next, I will introduce you to the improvement of the zipper.
+
+290
+00:21:06,000 --> 00:21:10,000
+In order to show a more realistic zipper,
+
+291
+00:21:10,000 --> 00:21:14,000
+this update has added the OBJ zipper function.
+
+292
+00:21:19,000 --> 00:21:22,000
+First of all, we have now opened a clothing file.
+
+293
+00:21:22,000 --> 00:21:25,000
+Here we have the 3D zipper that we added in advance.
+
+294
+00:21:25,000 --> 00:21:27,000
+After selecting the zipper,
+
+295
+00:21:27,000 --> 00:21:32,000
+you can see that the zipper type has been increased.
+
+296
+00:21:34,000 --> 00:21:36,000
+The default type is fabric.
+
+297
+00:21:36,000 --> 00:21:39,000
+Click on the triangle to select the OBJ type.
+
+298
+00:21:39,000 --> 00:21:47,000
+We will convert the zipper to OBJ zipper.
+
+299
+00:21:47,000 --> 00:21:51,000
+There are also six types of preset types.
+
+300
+00:21:51,000 --> 00:21:55,000
+There are paper, metal, nylon, and invisible zipper.
+
+301
+00:21:55,000 --> 00:21:57,000
+We can now switch to different types
+
+302
+00:21:57,000 --> 00:22:02,000
+to see the effect of OBJ zipper.
+
+303
+00:22:02,000 --> 00:22:06,000
+Finally, let's choose a metal.
+
+304
+00:22:06,000 --> 00:22:08,000
+Then in the material type of zipper,
+
+305
+00:22:08,000 --> 00:22:10,000
+select metal,
+
+306
+00:22:10,000 --> 00:22:13,000
+and modify its metal preset.
+
+307
+00:22:19,000 --> 00:22:24,000
+Now the OBJ zipper can be applied to different materials.
+
+308
+00:22:24,000 --> 00:22:26,000
+Let's take this zipper as an example.
+
+309
+00:22:26,000 --> 00:22:29,000
+This is the OBJ zipper that I added in advance.
+
+310
+00:22:29,000 --> 00:22:32,000
+We select the zipper in the 3D window.
+
+311
+00:22:32,000 --> 00:22:44,000
+At this time, we have the same zipper and also the top and bottomize.
+
+312
+00:22:44,000 --> 00:22:46,000
+We can see that the top and top are also highlighted in yellow.
+
+313
+00:22:46,000 --> 00:22:48,000
+We need to click here to see it.
+
+314
+00:22:48,000 --> 00:22:53,000
+At this time, we selected the zipper.
+
+315
+00:22:53,000 --> 00:22:56,000
+Click here to see it again.
+
+316
+00:22:56,000 --> 00:22:59,000
+We now select the bottom of the zipper.
+
+317
+00:22:59,000 --> 00:23:01,000
+The bottom of the zipper has been selected.
+
+318
+00:23:01,000 --> 00:23:05,000
+We will modify the material into a quantity in the attribute editor.
+
+319
+00:23:07,000 --> 00:23:09,000
+We can also modify its color.
+
+320
+00:23:14,000 --> 00:23:18,000
+We will use the same operation to select the upper part of the pull chain.
+
+321
+00:23:19,000 --> 00:23:23,000
+In the attribute editor, we will modify the material into metal.
+
+322
+00:23:23,000 --> 00:23:34,000
+We can also read the original OBJ's text, information and color information.
+
+323
+00:23:47,000 --> 00:23:50,000
+To make it easier to manage the components,
+
+324
+00:23:50,000 --> 00:23:52,000
+7.1 added a component column in the object window.
+
+325
+00:23:53,000 --> 00:23:56,000
+We will use the built-in pattern to explain the component column.
+
+326
+00:23:58,000 --> 00:24:02,000
+Let's use this built-in pattern as an example to explain the component column.
+
+327
+00:24:04,000 --> 00:24:07,000
+First, let's go to the object window.
+
+328
+00:24:08,000 --> 00:24:11,000
+You can see a small butterfly icon.
+
+329
+00:24:11,000 --> 00:24:14,000
+Click on the small butterfly icon.
+
+330
+00:24:17,000 --> 00:24:20,000
+You can see the component added to this built-in pattern.
+
+331
+00:24:20,000 --> 00:24:23,000
+You can see the component added to this built-in pattern.
+
+332
+00:24:24,000 --> 00:24:27,000
+This component is the eight-word button and the ring button.
+
+333
+00:24:30,000 --> 00:24:33,000
+You can also see the component in the previous scene column.
+
+334
+00:24:37,000 --> 00:24:39,000
+Let's click on the scene.
+
+335
+00:24:40,000 --> 00:24:42,000
+Now that we have made the component column separately,
+
+336
+00:24:42,000 --> 00:24:45,000
+we can manage this type of component.
+
+337
+00:24:46,000 --> 00:24:49,000
+You can see four components in the scene.
+
+338
+00:24:49,000 --> 00:24:52,000
+But in fact, it is a two-type component.
+
+339
+00:24:52,000 --> 00:24:54,000
+The eight-word button and the ring button.
+
+340
+00:24:54,000 --> 00:24:58,000
+So there are two components in one type.
+
+341
+00:24:58,000 --> 00:25:02,000
+Now the separate component column can better manage the components.
+
+342
+00:25:04,000 --> 00:25:06,000
+Let's go back to the component column.
+
+343
+00:25:06,000 --> 00:25:11,000
+For example, we have added a lot of similar components to the clothing.
+
+344
+00:25:11,000 --> 00:25:14,000
+If you want to modify the color and material,
+
+345
+00:25:14,000 --> 00:25:17,000
+you can only modify them one by one.
+
+346
+00:25:17,000 --> 00:25:19,000
+Now that there is a component,
+
+347
+00:25:19,000 --> 00:25:25,000
+you can directly select the component in the component column and modify it one by one.
+
+348
+00:25:28,000 --> 00:25:37,000
+And we can see the structure and component information of this component in the attribute editor.
+
+349
+00:25:38,000 --> 00:25:40,000
+You can edit it and enter it.
+
+350
+00:25:48,000 --> 00:25:50,000
+In the material list editor,
+
+351
+00:25:50,000 --> 00:25:53,000
+the component is also added.
+
+352
+00:25:55,000 --> 00:25:58,000
+Here you can calculate its material cost.
+
+353
+00:25:59,000 --> 00:26:03,000
+It is more convenient to manage the cost of clothing.
+
+354
+00:26:10,000 --> 00:26:12,000
+In this update,
+
+355
+00:26:12,000 --> 00:26:14,000
+the clothing roll function is added.
+
+356
+00:26:15,000 --> 00:26:16,000
+It is convenient to help us.
+
+357
+00:26:16,000 --> 00:26:18,000
+It helps us to make some clothes,
+
+358
+00:26:18,000 --> 00:26:19,000
+sleeves,
+
+359
+00:26:19,000 --> 00:26:20,000
+collar,
+
+360
+00:26:20,000 --> 00:26:21,000
+collar,
+
+361
+00:26:21,000 --> 00:26:23,000
+and other clothing parts.
+
+362
+00:26:29,000 --> 00:26:31,000
+When you see this clothing document,
+
+363
+00:26:31,000 --> 00:26:32,000
+for example,
+
+364
+00:26:32,000 --> 00:26:34,000
+we want to roll up this sleeve.
+
+365
+00:26:35,000 --> 00:26:36,000
+Before that,
+
+366
+00:26:36,000 --> 00:26:39,000
+we usually use the addition of the internal line.
+
+367
+00:26:39,000 --> 00:26:42,000
+Then use the folding arrangement tool to operate.
+
+368
+00:26:42,000 --> 00:26:45,000
+And it is difficult to make the effect of rolling two to three times.
+
+369
+00:26:46,000 --> 00:26:49,000
+Now we have this folding function.
+
+370
+00:26:49,000 --> 00:26:52,000
+We can quickly make the effect of rolling we want.
+
+371
+00:26:54,000 --> 00:27:03,000
+Let's take a look at the thickness and thickness of the chest of the sleeve and the thickness of the chest of the sleeve.
+
+372
+00:27:04,000 --> 00:27:05,000
+In the attribute editor,
+
+373
+00:27:05,000 --> 00:27:09,000
+you can see that it is default 20 and 2.5.
+
+374
+00:27:13,000 --> 00:27:15,000
+Then use the edit sheet tool.
+
+375
+00:27:16,000 --> 00:27:19,000
+Click on the outside line of the roll,
+
+376
+00:27:19,000 --> 00:27:20,000
+and then right-click.
+
+377
+00:27:20,000 --> 00:27:24,000
+If the position of the roll is made up of multiple sheets,
+
+378
+00:27:24,000 --> 00:27:26,000
+press the Shift key to select multiple edges,
+
+379
+00:27:26,000 --> 00:27:28,000
+and then right-click.
+
+380
+00:27:29,000 --> 00:27:32,000
+Select the roll in the menu bar.
+
+381
+00:27:32,000 --> 00:27:35,000
+Enter the number and distance of the roll you want to roll.
+
+382
+00:27:36,000 --> 00:27:38,000
+Set the number to 2 times.
+
+383
+00:27:39,000 --> 00:27:41,000
+Here the maximum roll number is 3 times.
+
+384
+00:27:42,000 --> 00:27:44,000
+We set the distance to 35 mm,
+
+385
+00:27:44,000 --> 00:27:45,000
+and then click OK.
+
+386
+00:27:46,000 --> 00:27:53,000
+You can see that the sleeve of the roll in the 3D window has been rolled up.
+
+387
+00:27:55,000 --> 00:27:58,000
+At this time,
+
+388
+00:27:58,000 --> 00:28:03,000
+the thickness of the chest of the sleeve and the thickness of the chest of the chest of the chest of the sleeve has become 10 and 4.
+
+389
+00:28:06,000 --> 00:28:11,000
+This change is to be able to simulate the effect of rolling more firmly and steadily.
+
+390
+00:28:12,000 --> 00:28:15,000
+We can continue to reduce these two values according to the effect.
+
+391
+00:28:16,000 --> 00:28:17,000
+Let's move on to the next step.
+
+392
+00:28:17,000 --> 00:28:19,000
+Roll the sleeve and adjust the surface of the sleeve!
+
+393
+00:28:24,000 --> 00:28:26,000
+After they are rolled up,
+
+394
+00:28:27,000 --> 00:28:30,000
+we'll delete the other side of the sleeve.
+
+395
+00:28:31,000 --> 00:28:34,000
+Just copy and match it directly,
+
+396
+00:28:40,000 --> 00:28:42,000
+then simulate again.
+
+397
+00:28:46,000 --> 00:28:53,000
+The above are the main functions of the explanation.
+
+398
+00:28:53,000 --> 00:28:56,000
+Next, I will introduce the updates of the 3D function.
+
+399
+00:28:56,000 --> 00:29:00,000
+The first one is the optimization of the 3D shape line tool.
+
+400
+00:29:00,000 --> 00:29:03,000
+You can edit by size.
+
+401
+00:29:03,000 --> 00:29:07,000
+The second one is the optimization of the performance of the 3D sewing line.
+
+402
+00:29:07,000 --> 00:29:11,000
+First, let's take a look at the shape line.
+
+403
+00:29:11,000 --> 00:29:13,000
+Press the size to edit.
+
+404
+00:29:13,000 --> 00:29:17,000
+Previously, when using the 3D shape line tool,
+
+405
+00:29:17,000 --> 00:29:20,000
+we can only modify the version by feeling.
+
+406
+00:29:20,000 --> 00:29:25,000
+But now we can directly enter the value by right-clicking,
+
+407
+00:29:25,000 --> 00:29:27,000
+and make the correct changes.
+
+408
+00:29:27,000 --> 00:29:30,000
+For example, let's use this style as an example.
+
+409
+00:29:30,000 --> 00:29:33,000
+First, we choose the tool to edit the shape line.
+
+410
+00:29:38,000 --> 00:29:42,000
+Then click on the tool to activate the costume.
+
+411
+00:29:43,000 --> 00:29:50,000
+For example, we want this princess line to move 15 mm outward.
+
+412
+00:29:50,000 --> 00:29:53,000
+Select this point and drag it to the right.
+
+413
+00:29:53,000 --> 00:29:55,000
+At the same time as dragging,
+
+414
+00:29:55,000 --> 00:29:58,000
+a spring will appear when you right-click.
+
+415
+00:29:58,000 --> 00:30:02,000
+You can see the value of the movement at this time.
+
+416
+00:30:02,000 --> 00:30:05,000
+Then enter the distance you want to move.
+
+417
+00:30:06,000 --> 00:30:08,000
+Click OK.
+
+418
+00:30:08,000 --> 00:30:15,000
+In the same way, it is also possible to place and move the shape line.
+
+419
+00:30:25,000 --> 00:30:29,000
+For example, we want to lengthen this skirt.
+
+420
+00:30:29,000 --> 00:30:32,000
+We choose the move shape line tool.
+
+421
+00:30:32,000 --> 00:30:35,000
+Select the edge of the skirt and drag it down.
+
+422
+00:30:35,000 --> 00:30:37,000
+At the same time, click on the right button.
+
+423
+00:30:37,000 --> 00:30:39,000
+Enter the value.
+
+424
+00:30:39,000 --> 00:30:42,000
+Then modify it.
+
+425
+00:30:48,000 --> 00:30:51,000
+In the same way, at the time of shortening,
+
+426
+00:30:51,000 --> 00:30:54,000
+we put the skirt up and then right-click.
+
+427
+00:30:54,000 --> 00:30:57,000
+At this time, you can see that the value in the window is negative.
+
+428
+00:30:57,000 --> 00:31:00,000
+Because at this time this plate is shortening,
+
+429
+00:31:00,000 --> 00:31:02,000
+so the value is negative.
+
+430
+00:31:02,000 --> 00:31:06,000
+Then we also have to enter the value when entering.
+
+431
+00:31:06,000 --> 00:31:09,000
+We use this negative to shorten this plate.
+
+432
+00:31:17,000 --> 00:31:21,000
+Finally, we use the move shape line tool.
+
+433
+00:31:24,000 --> 00:31:28,000
+This tool also needs to pay attention to the number when entering the value.
+
+434
+00:31:28,000 --> 00:31:30,000
+But the difference is that even if we look at it,
+
+435
+00:31:30,000 --> 00:31:32,000
+we are shrinking this plate.
+
+436
+00:31:32,000 --> 00:31:34,000
+But its number shows the correct value.
+
+437
+00:31:34,000 --> 00:31:36,000
+So when entering the value,
+
+438
+00:31:36,000 --> 00:31:38,000
+we must pay attention.
+
+439
+00:31:38,000 --> 00:31:40,000
+When shrinking the plate, enter the negative value.
+
+440
+00:31:40,000 --> 00:31:44,000
+When enlarging the plate, enter the correct value.
+
+441
+00:32:00,000 --> 00:32:03,000
+Next is the improvement of 3D sewing line.
+
+442
+00:32:04,000 --> 00:32:09,000
+In the appearance of some thick-fitting clothing-style sewing lines,
+
+443
+00:32:09,000 --> 00:32:13,000
+due to the different direction of the direction of the underlying sewing volume,
+
+444
+00:32:13,000 --> 00:32:16,000
+it will lead to the effect of the clothing on the sewing line
+
+445
+00:32:16,000 --> 00:32:19,000
+showing different thickness on both sides.
+
+446
+00:32:19,000 --> 00:32:22,000
+Then we can use this optimization function
+
+447
+00:32:22,000 --> 00:32:24,000
+to show it.
+
+448
+00:32:24,000 --> 00:32:28,000
+Using the sewing line effect of this V-shape on the sleeve,
+
+449
+00:32:28,000 --> 00:32:31,000
+we use the editing sewing line tool
+
+450
+00:32:31,000 --> 00:32:33,000
+to select the sewing line of this circle.
+
+451
+00:32:33,000 --> 00:32:36,000
+In the element weapon,
+
+452
+00:32:36,000 --> 00:32:39,000
+we find the 3D sewing line.
+
+453
+00:32:39,000 --> 00:32:42,000
+The default is the seam.
+
+454
+00:32:42,000 --> 00:32:45,000
+The seam effect cannot reflect the thickness of the two sides.
+
+455
+00:32:45,000 --> 00:32:47,000
+The thickness is different.
+
+456
+00:32:47,000 --> 00:32:53,000
+So we need to change the seam to the seam.
+
+457
+00:32:53,000 --> 00:32:56,000
+The seam is the seam of the sleeve.
+
+458
+00:32:56,000 --> 00:32:58,000
+The seam is the seam of the sleeve.
+
+459
+00:32:58,000 --> 00:33:00,000
+The seam is the seam of the sleeve.
+
+460
+00:33:00,000 --> 00:33:03,000
+The seam is the seam of the sleeve.
+
+461
+00:33:03,000 --> 00:33:05,000
+After the change,
+
+462
+00:33:05,000 --> 00:33:07,000
+you can see that the effect of this sewing line
+
+463
+00:33:07,000 --> 00:33:10,000
+is displayed on this side.
+
+464
+00:33:10,000 --> 00:33:12,000
+You can see that the default is the effect of the sewing line
+
+465
+00:33:12,000 --> 00:33:14,000
+displayed on seam A.
+
+466
+00:33:14,000 --> 00:33:17,000
+If you switch to seam B,
+
+467
+00:33:17,000 --> 00:33:21,000
+that is the effect of the sewing line displayed on this side.
+
+468
+00:33:22,000 --> 00:33:25,000
+Now you can see the difference in thickness clearly.
+
+469
+00:33:25,000 --> 00:33:28,000
+In fact, this is all through the effect of the sewing line.
+
+470
+00:33:28,000 --> 00:33:31,000
+The effect of the sewing line can be displayed.
+
+471
+00:33:31,000 --> 00:33:34,000
+We can enter different strength and thickness
+
+472
+00:33:34,000 --> 00:33:36,000
+to show different effects.
+
+473
+00:33:36,000 --> 00:33:41,000
+And this effect is also symmetrical.
+
+474
+00:33:41,000 --> 00:33:43,000
+I need to explain that
+
+475
+00:33:43,000 --> 00:33:45,000
+seam A is the seam of the sewing line
+
+476
+00:33:45,000 --> 00:33:48,000
+added for the first time when sewing the sewing line.
+
+477
+00:33:48,000 --> 00:33:50,000
+Seam B is the second seam.
+
+478
+00:33:58,000 --> 00:34:01,000
+If you correct the seam like this,
+
+479
+00:34:01,000 --> 00:34:02,700
+you can end up with the inner seam
+
+480
+00:34:02,700 --> 00:34:05,000
+and seam B on the outer seam.
+
+481
+00:34:05,000 --> 00:34:07,000
+If you correct the seam like this,
+
+482
+00:34:07,000 --> 00:34:09,000
+seam A will not have a seam as before.
+
+483
+00:34:09,000 --> 00:34:11,000
+You will have a seam as before.
+
+484
+00:34:12,000 --> 00:34:14,000
+You must also fix this seam on your part.
+
+485
+00:34:14,000 --> 00:34:17,000
+And this way,
+
+486
+00:34:17,000 --> 00:34:19,000
+you will have the seam.
+
+487
+00:34:19,000 --> 00:34:21,000
+The next thing that I will explain
+
+488
+00:34:21,000 --> 00:34:23,000
+are side seam.
+
+489
+00:34:23,000 --> 00:34:30,000
+Select the editor, and click on Sample Board.
+
+490
+00:34:30,000 --> 00:34:36,000
+You can see that the lower right corner of the window can be switched to a 3D window,
+
+491
+00:34:36,000 --> 00:34:41,000
+and the three windows can be displayed at the same time.
+
+492
+00:34:41,000 --> 00:34:45,000
+Let's show it at the same time.
+
+493
+00:34:45,000 --> 00:34:53,000
+In 7.1, when we modify the parameters in 7.1,
+
+494
+00:34:53,000 --> 00:34:58,000
+we can make a real-time preview of the version in the 2D window.
+
+495
+00:34:58,000 --> 00:35:02,000
+This is a new function that we have added.
+
+496
+00:35:02,000 --> 00:35:06,000
+Now I will modify the width of the front panel to 180 mm.
+
+497
+00:35:06,000 --> 00:35:12,000
+In the 2D window, you can see a real-time change in the width of the front panel.
+
+498
+00:35:12,000 --> 00:35:15,000
+Then modify the width of the whole shoulder.
+
+499
+00:35:15,000 --> 00:35:18,000
+And the width of the front panel.
+
+500
+00:35:18,000 --> 00:35:22,000
+Then modify the width of the back panel.
+
+501
+00:35:22,000 --> 00:35:24,000
+Then click on Create.
+
+502
+00:35:24,000 --> 00:35:29,000
+In the 2D window, left-click to create a new version.
+
+503
+00:35:35,000 --> 00:35:38,000
+In the 3D window, you can see that
+
+504
+00:35:41,000 --> 00:35:44,000
+the parameterized version we just created
+
+505
+00:35:44,000 --> 00:35:48,000
+is automatically arranged on the model.
+
+506
+00:35:48,000 --> 00:35:51,000
+And it has been automatically modified.
+
+507
+00:35:51,000 --> 00:35:56,000
+This is also a new function that we have added in 7.1.
+
+508
+00:35:56,000 --> 00:35:59,000
+And you can see that in the upper right corner of the window,
+
+509
+00:35:59,000 --> 00:36:02,000
+we have added the Save and Load buttons,
+
+510
+00:36:02,000 --> 00:36:06,000
+and we have added the function to import and export parameters.
+
+511
+00:36:06,000 --> 00:36:09,000
+Let's click Save.
+
+512
+00:36:09,000 --> 00:36:12,000
+Select the Save path.
+
+513
+00:36:14,000 --> 00:36:18,000
+Then enter the file name.
+
+514
+00:36:18,000 --> 00:36:22,000
+You can save the data file in CSV format.
+
+515
+00:36:22,000 --> 00:36:27,000
+You can open and edit it using Excel.
+
+516
+00:36:27,000 --> 00:36:31,000
+Here you can modify the data.
+
+517
+00:36:31,000 --> 00:36:36,000
+For example, we will modify the length of the front panel to 75 mm.
+
+518
+00:36:36,000 --> 00:36:44,000
+After saving, click on the Load button.
+
+519
+00:36:48,000 --> 00:36:51,000
+You can load the data in.
+
+520
+00:36:54,000 --> 00:36:57,000
+You can see a change in our data.
+
+521
+00:37:06,000 --> 00:37:12,000
+Next, I will explain the optimization of the code.
+
+522
+00:37:12,000 --> 00:37:15,000
+There are three optimization points in total.
+
+523
+00:37:15,000 --> 00:37:18,000
+The first one is to increase the size of the virtual model,
+
+524
+00:37:18,000 --> 00:37:20,000
+AVS.
+
+525
+00:37:20,000 --> 00:37:24,000
+The second one is to display the code information of the file in the attribute editor.
+
+526
+00:37:24,000 --> 00:37:26,000
+The third one is to edit the code.
+
+527
+00:37:26,000 --> 00:37:29,000
+There are three tools, you can choose which one to edit.
+
+528
+00:37:31,000 --> 00:37:33,000
+First, let's take a look at the first optimization.
+
+529
+00:37:33,000 --> 00:37:35,000
+Increase the size of the virtual model,
+
+530
+00:37:35,000 --> 00:37:37,000
+AVS.
+
+531
+00:37:38,000 --> 00:37:39,000
+In the previous version,
+
+532
+00:37:39,000 --> 00:37:41,000
+if you want to load the code of the virtual model,
+
+533
+00:37:41,000 --> 00:37:43,000
+we need to save the code of the virtual model
+
+534
+00:37:43,000 --> 00:37:45,000
+into an AVT file,
+
+535
+00:37:45,000 --> 00:37:47,000
+and then import it.
+
+536
+00:37:47,000 --> 00:37:49,000
+The current new functions can be more convenient
+
+537
+00:37:49,000 --> 00:37:51,000
+to modify the size of the virtual model.
+
+538
+00:37:51,000 --> 00:37:53,000
+First, let's go to the object window.
+
+539
+00:37:53,000 --> 00:37:55,000
+Click on the code.
+
+540
+00:37:55,000 --> 00:37:58,000
+Then click on Match Virtual Model.
+
+541
+00:38:01,000 --> 00:38:03,000
+Click on Update.
+
+542
+00:38:05,000 --> 00:38:07,000
+You can see that
+
+543
+00:38:07,000 --> 00:38:11,000
+it is not yet in the state of matching the code of the virtual model.
+
+544
+00:38:11,000 --> 00:38:15,000
+We will now switch the costume code number to M.
+
+545
+00:38:17,000 --> 00:38:20,000
+Then click on the Match 3D model button on the right.
+
+546
+00:38:20,000 --> 00:38:23,000
+Choose to increase the size of the virtual model.
+
+547
+00:38:24,000 --> 00:38:26,000
+We need to go to the library window
+
+548
+00:38:26,000 --> 00:38:28,000
+to copy the path of the code.
+
+549
+00:38:28,000 --> 00:38:30,000
+Let's close the window first.
+
+550
+00:38:30,000 --> 00:38:33,000
+Open the code in the library window.
+
+551
+00:38:33,000 --> 00:38:37,000
+Copy the path of the code.
+
+552
+00:38:37,000 --> 00:38:41,000
+Then repeat the same steps.
+
+553
+00:38:45,000 --> 00:38:48,000
+Copy the path of the code.
+
+554
+00:38:49,000 --> 00:38:52,000
+Select the AVS file of the code you need.
+
+555
+00:38:52,000 --> 00:38:55,000
+We match a virtual model to M.
+
+556
+00:38:55,000 --> 00:38:57,000
+Click on Open.
+
+557
+00:39:00,000 --> 00:39:02,000
+You can change the size of the model.
+
+558
+00:39:02,000 --> 00:39:03,000
+Click on OK.
+
+559
+00:39:03,000 --> 00:39:05,000
+Then click on Automatic wearing.
+
+560
+00:39:10,000 --> 00:39:12,000
+The costume of M is wearing
+
+561
+00:39:12,000 --> 00:39:14,000
+the model of M.
+
+562
+00:39:14,000 --> 00:39:17,000
+The L code is also the same operation.
+
+563
+00:39:20,000 --> 00:39:22,000
+Click on Match 3D model.
+
+564
+00:39:24,000 --> 00:39:26,000
+Click on Increase virtual model size.
+
+565
+00:39:27,000 --> 00:39:30,000
+We match a 14-digit model to the L code.
+
+566
+00:39:34,000 --> 00:39:37,000
+We also choose to change the size of the model.
+
+567
+00:39:43,000 --> 00:39:47,000
+Now our model M is matched to the model of M.
+
+568
+00:39:51,000 --> 00:39:55,000
+Let me talk about the second function of this code.
+
+569
+00:39:55,000 --> 00:39:57,000
+When we select the code,
+
+570
+00:39:57,000 --> 00:40:01,000
+We can see the code information of the code in the folder.
+
+571
+00:40:01,000 --> 00:40:04,000
+This is the name of the code group.
+
+572
+00:40:04,000 --> 00:40:09,000
+Click on the triangle to switch the code.
+
+573
+00:40:09,000 --> 00:40:20,000
+We can switch the different code.
+
+574
+00:40:20,000 --> 00:40:24,000
+Next, let's talk about the third application.
+
+575
+00:40:24,000 --> 00:40:28,000
+We use the editor to code one tool.
+
+576
+00:40:28,000 --> 00:40:33,000
+In the original application, we can only choose one number to edit.
+
+577
+00:40:33,000 --> 00:40:55,000
+Now we can click on the Shift key to edit multiple numbers at the same time.
+
+578
+00:40:55,000 --> 00:40:57,000
+Next, I will explain the third application.
+
+579
+00:40:57,000 --> 00:40:58,000
+Let's talk about the third application.
+
+580
+00:40:58,000 --> 00:41:01,000
+We can use the editor to edit multiple numbers at the same time.
+
+581
+00:41:01,000 --> 00:41:03,000
+Next, we can use the editor to edit multiple numbers at the same time.
+
+582
+00:41:03,000 --> 00:41:09,000
+In order to make the code easier, we will use the edit tool.
+
+583
+00:41:09,000 --> 00:41:13,000
+One is the edit tool.
+
+584
+00:41:13,000 --> 00:41:23,000
+The other is the edit tool which can edit the outline of the page.
+
+585
+00:41:23,000 --> 00:41:27,000
+Now, let's add a new code.
+
+586
+00:41:27,000 --> 00:41:39,000
+Since the POM algorithm has been optimized, the POM measurement line is no longer displayed in the new version, so there will be a double hint like this.
+
+587
+00:41:39,000 --> 00:41:42,000
+We click OK.
+
+588
+00:41:42,000 --> 00:41:47,000
+Let's go to the object window.
+
+589
+00:41:47,000 --> 00:41:53,000
+You can see that the previous POM will still have a name, but the data is gone.
+
+590
+00:41:53,000 --> 00:41:56,000
+The clothing is also blank.
+
+591
+00:41:56,000 --> 00:42:01,000
+Now let's re-measure the clothing length.
+
+592
+00:42:01,000 --> 00:42:07,000
+We select the measurement point in the object window and select the front length.
+
+593
+00:42:07,000 --> 00:42:18,000
+Then use the measurement tool to measure it.
+
+594
+00:42:18,000 --> 00:42:20,000
+After the measurement is complete,
+
+595
+00:42:20,000 --> 00:42:23,000
+you can see the measurement line in the object window.
+
+596
+00:42:23,000 --> 00:42:28,000
+You can see the measurement data in the object window.
+
+597
+00:42:28,000 --> 00:42:33,000
+Since the measurement point has been optimized and the measurement of the hole has been eliminated,
+
+598
+00:42:33,000 --> 00:42:52,000
+you can directly cross the gap in the middle of the plate when you select the measurement point.
+
+599
+00:42:52,000 --> 00:42:56,000
+Now let's measure the waist of this POM.
+
+600
+00:42:56,000 --> 00:43:00,000
+You can see that this POM has a waist.
+
+601
+00:43:00,000 --> 00:43:05,000
+We use the measurement point tool to measure the waist of the clothing circle.
+
+602
+00:43:17,000 --> 00:43:20,000
+The distance of the throat is automatically eliminated.
+
+603
+00:43:22,000 --> 00:43:24,000
+Then we can measure the waist.
+
+604
+00:43:24,000 --> 00:43:27,000
+In this way, the aging part of the clothing circle will be increased.
+
+605
+00:43:27,000 --> 00:43:32,000
+Next step is the improvement measurement of POM.
+
+606
+00:43:32,000 --> 00:43:36,000
+We use the measurement tool to measure the measurement line.
+
+607
+00:43:36,000 --> 00:43:39,000
+To check out the measurement line,
+
+608
+00:43:39,000 --> 00:43:42,000
+we need to check out the measurement line.
+
+609
+00:43:42,000 --> 00:43:44,000
+If you use the on-screen button,
+
+610
+00:43:44,000 --> 00:43:47,000
+you can check out the measurement line.
+
+611
+00:43:47,000 --> 00:43:59,480
+When we edit the outline, the measured line will also change along this line section,
+
+612
+00:43:59,480 --> 00:44:09,920
+and you can click the Shift key to do more selection.
+
+613
+00:44:09,920 --> 00:44:16,920
+Now let's select the outline, and right-click to select it as the measured point.
+
+614
+00:44:16,920 --> 00:44:33,920
+In addition to using the edit tool to directly select it as the measured point,
+
+615
+00:44:33,920 --> 00:44:36,920
+we can also use the measured point tool itself.
+
+616
+00:44:36,920 --> 00:44:39,920
+Now let's switch to the measured point tool.
+
+617
+00:44:39,920 --> 00:44:45,920
+Let's measure the length of the outline.
+
+618
+00:44:45,920 --> 00:44:51,920
+We click to select its starting point and end point.
+
+619
+00:44:51,920 --> 00:44:55,920
+Currently, it is a straight line.
+
+620
+00:44:55,920 --> 00:45:00,920
+Then use the edit measurement tool.
+
+621
+00:45:00,920 --> 00:45:05,920
+Right-click to select the type of outline length.
+
+622
+00:45:05,920 --> 00:45:09,920
+The outline will be displayed in yellow.
+
+623
+00:45:09,920 --> 00:45:13,920
+If you want to reverse the selection, right-click to select the effect.
+
+624
+00:45:13,920 --> 00:45:15,920
+Then click the opposite line section.
+
+625
+00:45:15,920 --> 00:45:19,920
+This is for the measurement of the outline of our outline.
+
+626
+00:45:19,920 --> 00:45:26,920
+You can also choose the measurement point to the X-axis or Y-axis.
+
+627
+00:45:27,920 --> 00:45:33,920
+Right-click to select the length of the X-axis or the length of the outline.
+
+628
+00:45:33,920 --> 00:45:35,920
+Let's look at the 2D model.
+
+629
+00:45:35,920 --> 00:45:44,920
+In the 2D function section, there are a few updates that have been optimized.
+
+630
+00:45:44,920 --> 00:45:47,920
+The first is the split curve function.
+
+631
+00:45:47,920 --> 00:45:52,920
+This function allows you to more accurately edit the location of the curve.
+
+632
+00:45:52,920 --> 00:45:56,920
+It has optimized the way to increase the curve point.
+
+633
+00:45:56,920 --> 00:45:59,920
+In the past, you could only add it to any position.
+
+634
+00:45:59,920 --> 00:46:04,920
+Now you can add the curve point according to the selected option in the entire section.
+
+635
+00:46:04,920 --> 00:46:08,920
+Let's use the edit curve tool.
+
+636
+00:46:08,920 --> 00:46:11,920
+For example, we use this ruler.
+
+637
+00:46:11,920 --> 00:46:16,920
+Press the right button to divide the line section.
+
+638
+00:46:16,920 --> 00:46:20,920
+The split curve option is the same as the plus point division option.
+
+639
+00:46:20,920 --> 00:46:24,920
+We choose the average section.
+
+640
+00:46:24,920 --> 00:46:26,920
+The number is 3.
+
+641
+00:46:26,920 --> 00:46:29,920
+Click OK.
+
+642
+00:46:29,920 --> 00:46:33,920
+We will add the first curve point.
+
+643
+00:46:33,920 --> 00:46:45,920
+The line is 2mm down.
+
+644
+00:46:45,920 --> 00:46:55,920
+This makes the curve of the ruler more natural.
+
+645
+00:46:55,920 --> 00:46:58,920
+I will introduce the optimization of the cross-border line.
+
+646
+00:46:58,920 --> 00:47:01,920
+This function is convenient for us to use in CLOUD.
+
+647
+00:47:01,920 --> 00:47:02,920
+Click OK.
+
+648
+00:47:02,920 --> 00:47:06,920
+to use the inner line in the cloud to make modifications and separations.
+
+649
+00:47:06,920 --> 00:47:11,920
+For example, I want to make a use of the scene of drawing a pocket.
+
+650
+00:47:16,920 --> 00:47:21,920
+For example, I want to make a separation design on the skirt.
+
+651
+00:47:21,920 --> 00:47:24,920
+This is an inner line I drew in advance.
+
+652
+00:47:24,920 --> 00:47:28,920
+In the previous version, if you want to make a similar separation,
+
+653
+00:47:28,920 --> 00:47:32,920
+you need to copy the inner line to the back.
+
+654
+00:47:32,920 --> 00:47:35,920
+And it is difficult to ensure accuracy.
+
+655
+00:47:35,920 --> 00:47:42,920
+Now you can directly separate the inner pattern across the seam line.
+
+656
+00:47:42,920 --> 00:47:47,920
+We now use the adjustment panel tool.
+
+657
+00:47:47,920 --> 00:47:52,920
+Right-click and select the seam line separation.
+
+658
+00:47:52,920 --> 00:47:54,920
+Separate the inner line.
+
+659
+00:47:54,920 --> 00:47:59,920
+The inner line on the other side will appear in the back according to the seam relationship.
+
+660
+00:48:02,920 --> 00:48:07,920
+Next, right-click and select the seam line separation.
+
+661
+00:48:07,920 --> 00:48:10,920
+Then, apply the fabric to the inner line.
+
+662
+00:48:10,920 --> 00:48:15,920
+This separation design is done very quickly.
+
+663
+00:48:17,920 --> 00:48:21,920
+Next, I will show you another advantage.
+
+664
+00:48:22,920 --> 00:48:26,920
+Change the length and edit the continuous multiple lines.
+
+665
+00:48:28,920 --> 00:48:31,920
+Let's use the pop-up sleeve of this dress.
+
+666
+00:48:32,920 --> 00:48:36,920
+In the previous version, you can only choose one line.
+
+667
+00:48:36,920 --> 00:48:39,920
+Right-click to change the length.
+
+668
+00:48:39,920 --> 00:48:42,920
+Now you can press the Shift key.
+
+669
+00:48:42,920 --> 00:48:44,920
+Select the continuous multiple lines.
+
+670
+00:48:44,920 --> 00:48:47,920
+Right-click to change the length.
+
+671
+00:48:47,920 --> 00:48:52,920
+Now we will change the length of the sleeve to 400 mm.
+
+672
+00:48:52,920 --> 00:48:56,920
+And you can choose the direction to change the length.
+
+673
+00:48:56,920 --> 00:48:58,240
+You can select the length divider type.
+
+674
+00:48:58,240 --> 00:49:00,240
+Then, press the Shift key.
+
+675
+00:49:00,240 --> 00:49:23,340
+With that, your cut of this
+
+676
+00:49:23,340 --> 00:49:24,920
+texture is complete.
+
+677
+00:49:24,920 --> 00:49:25,920
+Next, you can change the width.
+
+678
+00:49:25,920 --> 00:49:30,920
+Next, my colleague Amelia will introduce the content of the second half.
+
+679
+00:49:55,920 --> 00:49:57,920
+Hello, everyone.
+
+680
+00:49:57,920 --> 00:50:01,920
+Next, I will introduce the content of the second half.
+
+681
+00:50:03,920 --> 00:50:07,920
+The main updates related to virtual models.
+
+682
+00:50:13,920 --> 00:50:17,920
+This update includes editing virtual model measurements,
+
+683
+00:50:17,920 --> 00:50:21,920
+moving the measurement line by dragging the measurement point,
+
+684
+00:50:21,920 --> 00:50:25,920
+adding model configuration types, earrings and glasses,
+
+685
+00:50:25,920 --> 00:50:28,920
+and the model's hand position can be used separately.
+
+686
+00:50:35,920 --> 00:50:38,920
+Using the editing measurement virtual model tool in the 3D window,
+
+687
+00:50:38,920 --> 00:50:42,920
+you can see that there is a measurement line between the model's waist.
+
+688
+00:50:42,920 --> 00:50:45,920
+This line is horizontal, but in actual wear,
+
+689
+00:50:45,920 --> 00:50:48,920
+the back waist of the pants will be slightly higher than the front waist.
+
+690
+00:50:48,920 --> 00:50:51,920
+We can raise the measurement point of the back waist.
+
+691
+00:50:51,920 --> 00:50:55,920
+The mouse and the circle stop at the point in the back.
+
+692
+00:50:55,920 --> 00:50:58,920
+The left arrow drags it to move the measurement line.
+
+693
+00:51:01,920 --> 00:51:05,920
+Note that the measurement line will disappear after editing.
+
+694
+00:51:05,920 --> 00:51:10,920
+Switch the tool to the virtual model measurement.
+
+695
+00:51:10,920 --> 00:51:12,920
+Add the attachment.
+
+696
+00:51:15,920 --> 00:51:17,920
+Modify it again.
+
+697
+00:51:21,920 --> 00:51:26,920
+Next, I will teach you step by step how to add self-defined glasses and earrings.
+
+698
+00:51:31,920 --> 00:51:34,920
+Let's open the earring file first.
+
+699
+00:51:34,920 --> 00:51:37,920
+Here, the earring position is adjusted.
+
+700
+00:51:37,920 --> 00:51:42,920
+In the FBX file,
+
+701
+00:51:42,920 --> 00:51:45,920
+name the file as earring.
+
+702
+00:51:46,920 --> 00:51:49,920
+There are several options to pay attention to.
+
+703
+00:51:49,920 --> 00:51:51,920
+Choose a single target.
+
+704
+00:51:52,920 --> 00:51:53,920
+Hold.
+
+705
+00:51:55,920 --> 00:51:57,920
+The ratio is centimeters.
+
+706
+00:51:59,920 --> 00:52:01,920
+For the text, choose to sign in the media.
+
+707
+00:52:02,920 --> 00:52:05,920
+For other options, just follow the selection here.
+
+708
+00:52:05,920 --> 00:52:06,920
+Click OK.
+
+709
+00:52:08,920 --> 00:52:10,920
+Open a new project.
+
+710
+00:52:14,920 --> 00:52:17,920
+Open the FBX file saved just now
+
+711
+00:52:17,920 --> 00:52:19,920
+as a virtual model.
+
+712
+00:52:19,920 --> 00:52:21,920
+The unit number is still centimeters.
+
+713
+00:52:21,920 --> 00:52:24,920
+Just follow the selection here.
+
+714
+00:52:26,920 --> 00:52:27,920
+After opening it,
+
+715
+00:52:27,920 --> 00:52:31,920
+we find Merge here at the object window.
+
+716
+00:52:31,920 --> 00:52:34,920
+The last line of Merge is the object name.
+
+717
+00:52:34,920 --> 00:52:37,920
+Change the object name to earring.
+
+718
+00:52:39,920 --> 00:52:43,920
+After editing, save it.
+
+719
+00:52:43,920 --> 00:52:44,920
+It's still FBX.
+
+720
+00:52:44,920 --> 00:52:47,920
+Then, cover the original file.
+
+721
+00:52:49,920 --> 00:52:51,920
+Click OK.
+
+722
+00:52:51,920 --> 00:52:54,920
+Here, we need to look at the option settings.
+
+723
+00:52:54,920 --> 00:52:55,920
+In the first line here,
+
+724
+00:52:55,920 --> 00:52:58,920
+we need to choose to remove the skeleton.
+
+725
+00:52:58,920 --> 00:53:01,920
+Then, select a single target to merge.
+
+726
+00:53:01,920 --> 00:53:04,920
+The following unit is still centimeters.
+
+727
+00:53:04,920 --> 00:53:06,920
+The ratio is still 100% unchanged.
+
+728
+00:53:06,920 --> 00:53:08,920
+For the text, choose to sign in the media.
+
+729
+00:53:08,920 --> 00:53:09,920
+For other options,
+
+730
+00:53:09,920 --> 00:53:11,920
+just follow the selection here.
+
+731
+00:53:14,920 --> 00:53:17,920
+After the FBX file of the earring is processed,
+
+732
+00:53:17,920 --> 00:53:20,920
+the next step is to register it on the model.
+
+733
+00:53:20,920 --> 00:53:22,920
+Let's open the model first.
+
+734
+00:53:27,920 --> 00:53:29,920
+In the menu bar,
+
+735
+00:53:29,920 --> 00:53:31,920
+in the virtual model,
+
+736
+00:53:31,920 --> 00:53:33,920
+make a custom configuration.
+
+737
+00:53:33,920 --> 00:53:35,920
+Select the earring.
+
+738
+00:53:35,920 --> 00:53:37,920
+Enter the file of the earring.
+
+739
+00:53:39,920 --> 00:53:42,920
+The custom image must be prepared in advance.
+
+740
+00:53:42,920 --> 00:53:44,920
+Make it as a virtual image.
+
+741
+00:53:44,920 --> 00:53:46,920
+Select to generate.
+
+742
+00:53:47,920 --> 00:53:49,920
+The file is also named earring.
+
+743
+00:54:03,920 --> 00:54:06,920
+Because the FBX file cannot save the material type,
+
+744
+00:54:06,920 --> 00:54:10,920
+so the earring file we saved is still white.
+
+745
+00:54:10,920 --> 00:54:11,920
+After opening it,
+
+746
+00:54:11,920 --> 00:54:13,920
+we select it.
+
+747
+00:54:13,920 --> 00:54:16,920
+Then, change the material type to metal.
+
+748
+00:54:17,920 --> 00:54:19,920
+Then, save it again.
+
+749
+00:54:19,920 --> 00:54:21,920
+Cover the original file.
+
+750
+00:54:22,920 --> 00:54:24,920
+Here, select the earring.
+
+751
+00:54:24,920 --> 00:54:26,920
+Then, add the custom image.
+
+752
+00:54:29,920 --> 00:54:32,920
+Here, we delete the original configuration.
+
+753
+00:54:32,920 --> 00:54:35,920
+Then, open the new earring.
+
+754
+00:54:35,920 --> 00:54:36,920
+Let's see the effect.
+
+755
+00:54:40,920 --> 00:54:43,920
+The eyes and the earring are the same.
+
+756
+00:54:43,920 --> 00:54:45,920
+Here, we will demonstrate
+
+757
+00:54:45,920 --> 00:54:48,920
+how to modify the material name of the glasses.
+
+758
+00:54:48,920 --> 00:54:50,920
+Open a new project.
+
+759
+00:54:50,920 --> 00:54:54,920
+Then, open the material name of the glasses.
+
+760
+00:54:54,920 --> 00:54:56,920
+As a virtual model, open it.
+
+761
+00:54:57,920 --> 00:55:00,920
+Also, use the limit unit.
+
+762
+00:55:00,920 --> 00:55:03,920
+Then, in the material window,
+
+763
+00:55:03,920 --> 00:55:06,920
+we find the previous line of Merge.
+
+764
+00:55:06,920 --> 00:55:09,920
+Change its material name to Glasses.
+
+765
+00:55:10,920 --> 00:55:12,920
+Then, save it.
+
+766
+00:55:12,920 --> 00:55:14,920
+Here, we can see that
+
+767
+00:55:14,920 --> 00:55:19,920
+the process of making the earring and the glasses
+
+768
+00:55:19,920 --> 00:55:21,920
+has been summarized.
+
+769
+00:55:22,920 --> 00:55:24,920
+In the previous process,
+
+770
+00:55:24,920 --> 00:55:26,920
+there are more options to open and close.
+
+771
+00:55:26,920 --> 00:55:30,920
+But in fact, the whole process is divided into three steps.
+
+772
+00:55:30,920 --> 00:55:31,920
+First of all,
+
+773
+00:55:31,920 --> 00:55:35,920
+export the configuration file to the FBX file.
+
+774
+00:55:35,920 --> 00:55:38,920
+Then, open the FBX file.
+
+775
+00:55:38,920 --> 00:55:41,920
+Then, modify its material name.
+
+776
+00:55:41,920 --> 00:55:43,920
+Then, save it.
+
+777
+00:55:43,920 --> 00:55:45,920
+Then, open the model.
+
+778
+00:55:45,920 --> 00:55:47,920
+Make a custom configuration.
+
+779
+00:55:48,920 --> 00:55:51,920
+There are only three steps to make the glasses.
+
+780
+00:55:51,920 --> 00:55:53,920
+Then, when making the earring,
+
+781
+00:55:53,920 --> 00:55:55,920
+we made one more step.
+
+782
+00:55:55,920 --> 00:55:57,920
+We need to modify its material type.
+
+783
+00:56:07,920 --> 00:56:08,920
+In the new version,
+
+784
+00:56:08,920 --> 00:56:11,920
+you can use the virtual model's guard position separately.
+
+785
+00:56:11,920 --> 00:56:12,920
+For example,
+
+786
+00:56:12,920 --> 00:56:14,920
+we can use the virtual model to match the bag.
+
+787
+00:56:14,920 --> 00:56:16,920
+Change the position of the bag.
+
+788
+00:56:16,920 --> 00:56:20,920
+You can see the picture of POS1 and POS2 in the folder.
+
+789
+00:56:20,920 --> 00:56:23,920
+We can change the model to the position of POS2.
+
+790
+00:56:23,920 --> 00:56:27,920
+But the model's left hand uses the position of POS1.
+
+791
+00:56:33,920 --> 00:56:34,920
+Go back to the software.
+
+792
+00:56:34,920 --> 00:56:38,920
+We import the position of POS2 into it.
+
+793
+00:56:38,920 --> 00:56:40,920
+In some positions,
+
+794
+00:56:40,920 --> 00:56:41,920
+open it.
+
+795
+00:56:41,920 --> 00:56:43,920
+You can see the image of the whole body,
+
+796
+00:56:43,920 --> 00:56:46,920
+hands, left hand and right hand.
+
+797
+00:56:46,920 --> 00:56:48,920
+Here, we choose the whole body.
+
+798
+00:56:54,920 --> 00:56:56,920
+After changing the position,
+
+799
+00:56:56,920 --> 00:56:58,920
+we still need to modify it.
+
+800
+00:57:04,920 --> 00:57:07,920
+Then, import the position of POS1.
+
+801
+00:57:07,920 --> 00:57:09,920
+Use the left hand separately.
+
+802
+00:57:10,920 --> 00:57:11,920
+In this way,
+
+803
+00:57:11,920 --> 00:57:13,920
+the model's position will be modified.
+
+804
+00:57:13,920 --> 00:57:14,920
+Finally,
+
+805
+00:57:14,920 --> 00:57:16,920
+we add the bag.
+
+806
+00:57:18,920 --> 00:57:22,920
+Choose to keep the current size and position.
+
+807
+00:57:24,920 --> 00:57:25,920
+In addition,
+
+808
+00:57:25,920 --> 00:57:28,920
+the guard position can be stored separately.
+
+809
+00:57:28,920 --> 00:57:29,920
+In the other place,
+
+810
+00:57:29,920 --> 00:57:31,920
+choose the guard position.
+
+811
+00:57:31,920 --> 00:57:34,920
+Keep both hands in this file.
+
+812
+00:57:34,920 --> 00:57:35,920
+In this way,
+
+813
+00:57:35,920 --> 00:57:38,920
+you can save both hands in this file.
+
+814
+00:57:38,920 --> 00:57:39,920
+In this way,
+
+815
+00:57:39,920 --> 00:57:40,920
+you can save both hands in this file.
+
+816
+00:57:40,920 --> 00:57:44,920
+The hand position file can be applied to other positions.
+
+817
+00:57:44,920 --> 00:57:45,920
+You can choose both hands,
+
+818
+00:57:45,920 --> 00:57:47,920
+left hand or right hand.
+
+819
+00:57:53,920 --> 00:57:55,920
+And the window of the drawing room.
+
+820
+00:57:55,920 --> 00:57:58,920
+Here, the virtual model.
+
+821
+00:57:58,920 --> 00:58:00,920
+In the virtual model file,
+
+822
+00:58:00,920 --> 00:58:03,920
+an hand pose file is added.
+
+823
+00:58:03,920 --> 00:58:05,920
+There are four hand positions.
+
+824
+00:58:05,920 --> 00:58:06,920
+There are four hand positions.
+
+825
+00:58:06,920 --> 00:58:07,920
+There are four hand positions.
+
+826
+00:58:07,920 --> 00:58:08,920
+There are four hand positions.
+
+827
+00:58:08,920 --> 00:58:11,920
+When showing some style,
+
+828
+00:58:11,920 --> 00:58:14,920
+for example, a vest will remove the arm of the platform.
+
+829
+00:58:14,920 --> 00:58:15,920
+In the new version,
+
+830
+00:58:15,920 --> 00:58:17,920
+we can counter-activate a part of the model,
+
+831
+00:58:17,920 --> 00:58:19,920
+such as the arm of the counter-activating model.
+
+832
+00:58:19,920 --> 00:58:23,920
+Use the move tool to choose a move in the 3D window.
+
+833
+00:58:23,920 --> 00:58:28,920
+Right-click the counter-activate virtual model on the model's arm.
+
+834
+00:58:28,920 --> 00:58:32,920
+You can see the model's arm has turned into a blue semi-transparent state.
+
+835
+00:58:32,920 --> 00:58:34,920
+It must have been counter-activated.
+
+836
+00:58:34,920 --> 00:58:35,920
+To pull it out.
+
+837
+00:58:38,920 --> 00:58:42,920
+Right-click to hide the anti-election.
+
+838
+00:58:42,920 --> 00:58:47,920
+This is a part of the model that can be hidden by the anti-election.
+
+839
+00:58:47,920 --> 00:58:52,920
+Next, we will hide the model and simulate it.
+
+840
+00:58:52,920 --> 00:58:56,920
+You can see that the suit sleeves are naturally pulled down.
+
+841
+00:59:00,920 --> 00:59:03,920
+Because the anti-election operation of the model is different from the previous one,
+
+842
+00:59:03,920 --> 00:59:05,920
+I will demonstrate it to you.
+
+843
+00:59:05,920 --> 00:59:08,920
+Let's display the model first.
+
+844
+00:59:08,920 --> 00:59:13,920
+Then right-click on the model.
+
+845
+00:59:13,920 --> 00:59:16,920
+Select all surfaces.
+
+846
+00:59:16,920 --> 00:59:18,920
+Select the entire model.
+
+847
+00:59:18,920 --> 00:59:21,920
+Right-click again.
+
+848
+00:59:21,920 --> 00:59:24,920
+Select the anti-election virtual model.
+
+849
+00:59:30,920 --> 00:59:34,920
+The entire model is now anti-election.
+
+850
+00:59:35,920 --> 00:59:39,920
+Next, I will introduce the functional updates in the process.
+
+851
+00:59:44,920 --> 00:59:51,920
+In the new version, the sticker version made using the sticker tool can also participate in the material calculation.
+
+852
+00:59:53,920 --> 00:59:55,920
+Use the sticker tool.
+
+853
+00:59:55,920 --> 00:59:57,920
+Select all surfaces.
+
+854
+00:59:57,920 --> 01:00:01,920
+You can see that this style adds stickers to the position of the sleeves and the skirt.
+
+855
+01:00:01,920 --> 01:00:04,920
+Enter the print and print mode.
+
+856
+01:00:05,920 --> 01:00:07,920
+Change to the corresponding fabric.
+
+857
+01:00:07,920 --> 01:00:11,920
+You can see that three stickers are automatically generated here.
+
+858
+01:00:11,920 --> 01:00:15,920
+Here I arrange them in advance on the layout step.
+
+859
+01:00:17,920 --> 01:00:21,920
+The default sticker version is 45 degrees oblique.
+
+860
+01:00:21,920 --> 01:00:25,920
+If you need to change the direction of the stripping of the sticker version,
+
+861
+01:00:25,920 --> 01:00:29,920
+you can rotate the version directly.
+
+862
+01:00:29,920 --> 01:00:31,920
+You can rotate the version directly to modify it.
+
+863
+01:00:31,920 --> 01:00:33,920
+You can rotate the version directly to modify it.
+
+864
+01:00:33,920 --> 01:00:35,920
+You can rotate the version directly to modify it.
+
+865
+01:00:35,920 --> 01:00:41,920
+You can rotate the version directly to modify it.
+
+866
+01:00:41,920 --> 01:00:46,920
+Or you can switch to the simulation mode.
+
+867
+01:00:46,920 --> 01:00:49,920
+After adding the sticker version,
+
+868
+01:00:49,920 --> 01:00:53,920
+In the attribute editor,
+
+869
+01:00:53,920 --> 01:00:56,920
+you can modify the direction of the stripping line.
+
+870
+01:00:56,920 --> 01:00:59,920
+For example, change the direction to the tail stripping.
+
+871
+01:00:59,920 --> 01:01:01,920
+After changing, enter the print mode.
+
+872
+01:01:01,920 --> 01:01:03,920
+After changing, enter the print mode.
+
+873
+01:01:03,920 --> 01:01:10,920
+You can see that the direction of the board has changed, and it is rearranged again.
+
+874
+01:01:10,920 --> 01:01:20,920
+Next, use another file to show the optimization of other functions in the process.
+
+875
+01:01:20,920 --> 01:01:29,920
+In the new version, in addition to the original shrinkage of the sewing line,
+
+876
+01:01:29,920 --> 01:01:33,920
+the stretch of the sewing line is also added.
+
+877
+01:01:33,920 --> 01:01:38,920
+For example, the only one here is the length and short side of the sewing box.
+
+878
+01:01:38,920 --> 01:01:42,920
+Here, it should be the short side based on the long side to add stretch.
+
+879
+01:01:42,920 --> 01:01:47,920
+Use the edit sewing line tool to select the sewing line.
+
+880
+01:01:47,920 --> 01:01:51,920
+Open the stretch and select stretch.
+
+881
+01:01:51,920 --> 01:01:55,920
+The strength default is 0.1, and the proportion default is 100%.
+
+882
+01:01:55,920 --> 01:01:58,920
+The strength, according to the material and style,
+
+883
+01:01:58,920 --> 01:02:00,920
+should be adjusted accordingly.
+
+884
+01:02:00,920 --> 01:02:04,920
+The greater the strength, the closer it will be to the predicted proportion.
+
+885
+01:02:04,920 --> 01:02:12,920
+Here we can adjust it to 1.
+
+886
+01:02:12,920 --> 01:02:15,920
+As for the proportion, when selecting stretch,
+
+887
+01:02:15,920 --> 01:02:18,920
+this 100% is the length of the long side.
+
+888
+01:02:18,920 --> 01:02:25,920
+When selecting shrinkage, it is 100% of the length of the short side.
+
+889
+01:02:25,920 --> 01:02:27,920
+In short,
+
+890
+01:02:27,920 --> 01:02:30,920
+when selecting the length of the long side and the short side of the long side,
+
+891
+01:02:30,920 --> 01:02:33,920
+the shrinkage fabric is selected to shrink,
+
+892
+01:02:33,920 --> 01:02:37,920
+and the stitch fabric is selected to stretch.
+
+893
+01:02:37,920 --> 01:02:41,920
+Let's go back to the software and simulate it.
+
+894
+01:02:41,920 --> 01:02:43,920
+Let's take a look at the results.
+
+895
+01:02:43,920 --> 01:02:45,920
+You can see that the gap is a little wider,
+
+896
+01:02:45,920 --> 01:02:48,920
+which is closer to the real sewing box effect.
+
+897
+01:02:57,920 --> 01:03:06,920
+Let's take a look at the results.
+
+898
+01:03:06,920 --> 01:03:09,920
+The new feature has optimized the performance of the sewing line on the sewing line.
+
+899
+01:03:09,920 --> 01:03:11,920
+You can see the sewing line of the pants here.
+
+900
+01:03:11,920 --> 01:03:13,920
+Because the width is relatively large,
+
+901
+01:03:13,920 --> 01:03:15,920
+there are cracks in the place where the sewing line is attached.
+
+902
+01:03:15,920 --> 01:03:17,920
+Using the edit sewing line tool,
+
+903
+01:03:17,920 --> 01:03:19,920
+we select this sewing line.
+
+904
+01:03:19,920 --> 01:03:21,920
+Then here in the mouse editor,
+
+905
+01:03:21,920 --> 01:03:24,920
+open the flattening function.
+
+906
+01:03:24,920 --> 01:03:25,920
+It can be optimized.
+
+907
+01:03:25,920 --> 01:03:28,920
+It can improve this problem.
+
+908
+01:03:28,920 --> 01:03:32,920
+In order to make a more three-dimensional and diversified sewing line effect,
+
+909
+01:03:32,920 --> 01:03:36,920
+we can now make a self-defined OBJ sewing line.
+
+910
+01:03:36,920 --> 01:03:41,920
+We can use this function to add a letter-sculpting effect
+
+911
+01:03:41,920 --> 01:03:44,920
+to the front chest position of this style.
+
+912
+01:03:46,920 --> 01:03:48,920
+See the front chest here.
+
+913
+01:03:50,920 --> 01:03:52,920
+In the object window page,
+
+914
+01:03:52,920 --> 01:03:54,920
+we add a new sewing line.
+
+915
+01:03:55,920 --> 01:03:57,920
+The sewing line will be added.
+
+916
+01:04:00,920 --> 01:04:02,920
+In the middle of the sewing line,
+
+917
+01:04:02,920 --> 01:04:04,920
+there is a plus button on the right side of the type.
+
+918
+01:04:04,920 --> 01:04:06,920
+If you click it,
+
+919
+01:04:06,920 --> 01:04:08,920
+a new OBJ sewing line will appear.
+
+920
+01:04:09,920 --> 01:04:13,920
+Here I will introduce you the settings for the sewing line.
+
+921
+01:04:13,920 --> 01:04:15,920
+The left side is the parameter settings.
+
+922
+01:04:15,920 --> 01:04:18,920
+The right side is the window of the effect preview.
+
+923
+01:04:18,920 --> 01:04:20,920
+First, look at the information on the left.
+
+924
+01:04:20,920 --> 01:04:22,920
+The default unit is mm.
+
+925
+01:04:22,920 --> 01:04:24,920
+It is also customized according to the size of the OBJ.
+
+926
+01:04:24,920 --> 01:04:27,159
+to modify the size of the OBJ file.
+
+927
+01:04:27,159 --> 01:04:30,480
+If you need to change the direction of the OBJ file,
+
+928
+01:04:30,480 --> 01:04:34,059
+just select this change in the appropriate position.
+
+929
+01:04:34,059 --> 01:04:39,019
+The bottom shows the length and width of the OBJ model.
+
+930
+01:04:39,019 --> 01:04:43,559
+When we import this OBJ file,
+
+931
+01:04:43,559 --> 01:04:47,680
+the length and width will automatically be displayed.
+
+932
+01:04:47,680 --> 01:04:51,079
+The center refers to the distance between OBJs.
+
+933
+01:04:51,079 --> 01:04:53,820
+At the same time, the obvious effects that we set
+
+934
+01:04:53,820 --> 01:04:56,380
+can be previewed in the window on the right.
+
+935
+01:04:56,380 --> 01:04:58,460
+Use the wheel to slide it down.
+
+936
+01:05:02,460 --> 01:05:06,820
+Here, we import the OBJ file into the OBJ name line.
+
+937
+01:05:06,820 --> 01:05:09,260
+Use the default millimeter.
+
+938
+01:05:09,260 --> 01:05:11,420
+The diameter does not need to be modified.
+
+939
+01:05:14,620 --> 01:05:15,820
+Click Confirm.
+
+940
+01:05:18,720 --> 01:05:20,920
+Add the name line to the internal line.
+
+941
+01:05:20,920 --> 01:05:22,880
+Here, we can use the free name line.
+
+942
+01:05:22,880 --> 01:05:23,820
+Here, we can use the free name line.
+
+943
+01:05:23,820 --> 01:05:25,280
+Here, we can use the free name line.
+
+944
+01:05:28,920 --> 01:05:32,820
+Once the entire inner line of the frame is selected,
+
+945
+01:05:32,820 --> 01:05:35,160
+add the self-defined name line.
+
+946
+01:05:38,360 --> 01:05:45,620
+We can open the 3D window to display the inner line.
+
+947
+01:05:45,620 --> 01:05:48,420
+To confirm the effect of the name line.
+
+948
+01:05:48,420 --> 01:05:51,660
+The double rowing star here will do a good job.
+
+949
+01:05:51,660 --> 01:05:53,180
+Select that line at the window on the object,
+
+950
+01:05:53,180 --> 01:06:09,180
+First, change the diameter to 1 1⁸ and then scroll down to find the number of lines.
+
+951
+01:06:09,180 --> 01:06:14,180
+Change the number of lines to 2 and change the diameter to 1⁴.
+
+952
+01:06:14,180 --> 01:06:18,180
+This effect is better.
+
+953
+01:06:18,180 --> 01:06:27,180
+Change the material type of OBJ to gemstone.
+
+954
+01:06:27,180 --> 01:06:37,180
+You can choose a color you like. I choose white here.
+
+955
+01:06:37,180 --> 01:06:46,180
+Open the rendering window.
+
+956
+01:06:46,180 --> 01:06:48,180
+Open the rendering window.
+
+957
+01:06:48,180 --> 01:06:53,180
+You can see the effect of the calculation.
+
+958
+01:06:53,180 --> 01:07:02,180
+When we use the sticker function to show the hardening effect such as heat transfer, digital spray, and ink ink,
+
+959
+01:07:02,180 --> 01:07:05,180
+in order to show the sharpness of the original lower layer of the plant,
+
+960
+01:07:05,180 --> 01:07:08,180
+it will give the sticker plus the發現 picture of the plant,
+
+961
+01:07:08,180 --> 01:07:11,180
+but the previous version could not adjust the size of the發現 picture.
+
+962
+01:07:11,180 --> 01:07:14,180
+You can adjust it in the new version.
+
+963
+01:07:14,180 --> 01:07:16,180
+We choose this sticker.
+
+964
+01:07:16,180 --> 01:07:18,180
+You can see that it is already added here.
+
+965
+01:07:18,180 --> 01:07:21,180
+This is the發現 picture.
+
+966
+01:07:21,180 --> 01:07:26,180
+This sticker is at the back of the V1.
+
+967
+01:07:26,180 --> 01:07:34,180
+We can see the 8-angle.
+
+968
+01:07:34,180 --> 01:07:37,180
+The sticker also adds the發現 picture of the plant.
+
+969
+01:07:37,180 --> 01:07:42,180
+We can see that the ratio of the發現 picture of the sticker to the發現 picture of the plant is not small.
+
+970
+01:07:42,180 --> 01:07:46,180
+The ratio of the發現 picture of the sticker is 100%.
+
+971
+01:07:46,180 --> 01:07:49,180
+The ratio of the發現 picture of the sticker to the發現 picture of the plant is 300%.
+
+972
+01:07:49,180 --> 01:07:54,180
+Let's take a look at the發現 picture of the large-bonded plant.
+
+973
+01:07:54,180 --> 01:07:58,180
+Its ratio is 50%.
+
+974
+01:07:58,180 --> 01:08:03,180
+We can change the proportion of the sticking picture to the發現 picture to 50%.
+
+975
+01:08:09,180 --> 01:08:13,180
+After the change, we see the 3D window.
+
+976
+01:08:13,180 --> 01:08:16,180
+to match the size of the discovery map of the plant.
+
+977
+01:08:31,980 --> 01:08:35,480
+The 7.1 version has updated some rendering settings.
+
+978
+01:08:35,480 --> 01:08:44,480
+Let's go to the rendering window.
+
+979
+01:08:44,480 --> 01:08:48,480
+The update this time focuses on the light attribute.
+
+980
+01:08:48,480 --> 01:08:53,480
+In the attribute editor, we can see the new preview of the light.
+
+981
+01:08:53,480 --> 01:08:57,480
+Scroll down to the list.
+
+982
+01:08:57,480 --> 01:09:00,480
+There are several light previews to choose from.
+
+983
+01:09:00,480 --> 01:09:03,480
+Stop the mouse.
+
+984
+01:09:03,480 --> 01:09:05,480
+A preview will appear on the option.
+
+985
+01:09:05,480 --> 01:09:08,480
+Click on the light setting you want.
+
+986
+01:09:08,480 --> 01:09:12,480
+You can see that the corresponding light appears in the editor.
+
+987
+01:09:17,480 --> 01:09:21,480
+On the left side of the light, the corresponding light icon will now be displayed.
+
+988
+01:09:21,480 --> 01:09:25,480
+You can show the type of light more clearly.
+
+989
+01:09:28,480 --> 01:09:32,480
+On the right side of the light, three small buttons have been added.
+
+990
+01:09:32,480 --> 01:09:34,480
+The first is to activate and close the light.
+
+991
+01:09:34,480 --> 01:09:35,480
+The second is to turn off the light.
+
+992
+01:09:36,480 --> 01:09:47,480
+ную
+
+993
+01:09:51,440 --> 01:09:53,480
+The third one is shown in rendering.
+
+994
+01:09:53,480 --> 01:09:58,480
+In this way, you can separate and set the lighting to be displayed and hidden in the 3D window and the rendering window.
+
+995
+01:10:00,480 --> 01:10:02,480
+It's good for us to run this in the rendering window.
+
+996
+01:10:02,480 --> 01:10:06,480
+Finally, if you want to go back to the default lighting settings,
+
+997
+01:10:06,480 --> 01:10:10,480
+just click Reset in the upper right corner.
+
+998
+01:10:10,480 --> 01:10:14,480
+You can switch back to the default lighting.
+
+999
+01:10:24,480 --> 01:10:28,480
+The function of the text editor has also been optimized and updated.
+
+1000
+01:10:32,480 --> 01:10:36,480
+Next, let's look at the fabric of the skirt.
+
+1001
+01:10:40,480 --> 01:10:44,480
+Go to the object window and select the fabric of the skirt.
+
+1002
+01:10:44,480 --> 01:10:48,480
+In the text editor, open the text editor page.
+
+1003
+01:10:50,480 --> 01:10:54,480
+Then click the Add button on the left.
+
+1004
+01:10:54,480 --> 01:10:58,480
+Enter the AR file of the draft.
+
+1005
+01:10:58,480 --> 01:11:00,480
+This draft has a total of three layers.
+
+1006
+01:11:00,480 --> 01:11:02,480
+Select the layer to be entered.
+
+1007
+01:11:02,480 --> 01:11:04,480
+You can enter these three layers separately.
+
+1008
+01:11:04,480 --> 01:11:08,480
+We select all three layers.
+
+1009
+01:11:08,480 --> 01:11:10,480
+Select the drawing board.
+
+1010
+01:11:10,480 --> 01:11:14,480
+This is to merge these three layers together as a complete picture.
+
+1011
+01:11:14,480 --> 01:11:16,480
+Enter.
+
+1012
+01:11:16,480 --> 01:11:18,480
+Here we select the layer to be entered.
+
+1013
+01:11:18,480 --> 01:11:20,480
+Click OK.
+
+1014
+01:11:20,480 --> 01:11:26,480
+After entering, you can see that there are four layers in the lower left corner.
+
+1015
+01:11:26,480 --> 01:11:28,480
+The lowest layer is the original plant texture.
+
+1016
+01:11:30,480 --> 01:11:32,480
+Select any flower pattern.
+
+1017
+01:11:32,480 --> 01:11:34,480
+The size of the line frame is the size of the picture.
+
+1018
+01:11:34,480 --> 01:11:36,480
+These three flower patterns are the same size.
+
+1019
+01:11:36,480 --> 01:11:42,480
+The yellow high-light line frame is the size of the fabric,
+
+1020
+01:11:42,480 --> 01:11:44,480
+that is, the size of a circle.
+
+1021
+01:11:44,480 --> 01:11:48,480
+Now we want to use the size of the flower pattern to make a circle.
+
+1022
+01:11:50,480 --> 01:11:52,480
+Select any flower pattern.
+
+1023
+01:11:52,480 --> 01:11:54,480
+Right click.
+
+1024
+01:11:54,480 --> 01:11:56,480
+Make the size of the fabric suitable for the selected image.
+
+1025
+01:11:56,480 --> 01:11:58,480
+Select any picture.
+
+1026
+01:11:58,480 --> 01:12:00,480
+Select any picture.
+
+1027
+01:12:00,480 --> 01:12:02,480
+Now it's being circled by the size of the flower pattern.
+
+1028
+01:12:02,480 --> 01:12:04,480
+Select any picture.
+
+1029
+01:12:04,480 --> 01:12:06,480
+Select any picture.
+
+1030
+01:12:06,480 --> 01:12:08,480
+Make the size of the flower pattern form a circle.
+
+1031
+01:12:08,480 --> 01:12:14,480
+Let's zoom in to see the details.
+
+1032
+01:12:14,480 --> 01:12:16,480
+After hiding the three-layer flower pattern,
+
+1033
+01:12:16,480 --> 01:12:18,480
+you will find that the bottom layer is too small.
+
+1034
+01:12:18,480 --> 01:12:20,480
+To hide the bottom layer,
+
+1035
+01:12:20,480 --> 01:12:22,480
+you need to open the flat plate at the bottom of the repeat.
+
+1036
+01:12:22,480 --> 01:12:24,480
+You need to open the flat plate at the bottom of the repeat.
+
+1037
+01:12:24,480 --> 01:12:28,480
+As you can see, we can select multiple layers at once.
+
+1038
+01:12:28,480 --> 01:12:31,480
+Press Ctrl and select the three-layer flower pattern.
+
+1039
+01:12:31,480 --> 01:12:33,480
+Change it to a flat bottom.
+
+1040
+01:12:33,480 --> 01:12:36,480
+This will show the texture of the food.
+
+1041
+01:12:36,480 --> 01:12:43,480
+Open the layer and change the mixture to a flat bottom.
+
+1042
+01:12:48,480 --> 01:12:50,480
+Check the effect.
+
+1043
+01:12:54,480 --> 01:12:58,480
+Next, I'll show you some other new features.
+
+1044
+01:13:03,480 --> 01:13:08,480
+The new group function can be used to group plants.
+
+1045
+01:13:08,480 --> 01:13:10,480
+There are more plants in this model.
+
+1046
+01:13:10,480 --> 01:13:14,480
+We can group plants in the same way as clothes.
+
+1047
+01:13:14,480 --> 01:13:17,480
+On the top left corner, click on the Create a new file folder button.
+
+1048
+01:13:17,480 --> 01:13:20,480
+Click on Create a new file folder.
+
+1049
+01:13:20,480 --> 01:13:23,480
+Name it as下装.
+
+1050
+01:13:24,480 --> 01:13:27,480
+On the left side of the original group, there is a small pen.
+
+1051
+01:13:27,480 --> 01:13:30,480
+Click on the name as上装.
+
+1052
+01:13:30,480 --> 01:13:38,480
+We can drag the plant used for the pants to the next group.
+
+1053
+01:13:38,480 --> 01:13:43,480
+You can also press Shift to select more plants and drag them at once.
+
+1054
+01:13:43,480 --> 01:13:47,480
+Drag is a moving plant.
+
+1055
+01:13:47,480 --> 01:13:52,480
+On any plant, right-click and you can see that drag is used to move.
+
+1056
+01:13:52,480 --> 01:13:53,480
+You can also click on it.
+
+1057
+01:13:53,480 --> 01:13:55,480
+Click on Drag to copy.
+
+1058
+01:13:55,480 --> 01:13:57,480
+If you change to Drag to copy,
+
+1059
+01:13:57,480 --> 01:14:00,480
+Drag will copy the plant to another group.
+
+1060
+01:14:00,480 --> 01:14:02,480
+For example, this yellow plant.
+
+1061
+01:14:02,480 --> 01:14:05,480
+You can drag it to the next group.
+
+1062
+01:14:05,480 --> 01:14:07,480
+When we drag it to the next group,
+
+1063
+01:14:07,480 --> 01:14:09,480
+the plant will be copied.
+
+1064
+01:14:09,480 --> 01:14:12,480
+The plant here is copied to the next group.
+
+1065
+01:14:12,480 --> 01:14:16,480
+In fact, the two plants are still in the same fabric.
+
+1066
+01:14:16,480 --> 01:14:19,480
+On the right side of the group,
+
+1067
+01:14:19,480 --> 01:14:21,480
+we can drag the plant to the next group.
+
+1068
+01:14:21,480 --> 01:14:26,780
+On the right, we have the button to add and open the material.
+
+1069
+01:14:26,920 --> 01:14:30,420
+These two buttons can be used to load the material.
+
+1070
+01:14:30,540 --> 01:14:36,740
+On the right, we have the button to delete the folder.
+
+1071
+01:14:43,780 --> 01:14:46,080
+In the new version,
+
+1072
+01:14:46,220 --> 01:14:49,140
+to make it easier for users to change the color of various materials,
+
+1073
+01:14:49,140 --> 01:14:51,840
+we have updated the color window as well.
+
+1074
+01:14:51,980 --> 01:14:55,340
+Let's open the color window.
+
+1075
+01:14:59,740 --> 01:15:03,039
+Under the window, we can see that the original confirmation cancel
+
+1076
+01:15:03,180 --> 01:15:06,100
+has now become the complete application cancel.
+
+1077
+01:15:06,240 --> 01:15:10,340
+After selecting a color, we click on the application in the middle
+
+1078
+01:15:10,480 --> 01:15:12,680
+to use the color.
+
+1079
+01:15:12,800 --> 01:15:16,280
+At this point, we can directly select another material,
+
+1080
+01:15:16,400 --> 01:15:19,100
+then select another color and apply it.
+
+1081
+01:15:19,240 --> 01:15:22,579
+In other words, the color window can be opened all the time.
+
+1082
+01:15:22,700 --> 01:15:26,140
+When the window is opened, we can try to control it.
+
+1083
+01:15:26,280 --> 01:15:28,840
+After changing all the colors,
+
+1084
+01:15:28,980 --> 01:15:34,140
+we click on the window to complete it.
+
+1085
+01:15:34,280 --> 01:15:36,539
+We can now turn off the color window.
+
+1086
+01:15:38,780 --> 01:15:41,940
+The color window has also been updated.
+
+1087
+01:15:44,900 --> 01:15:47,780
+There are more material for this type of material.
+
+1088
+01:15:47,900 --> 01:15:48,900
+If you want to change the color of the drawstring,
+
+1089
+01:15:49,000 --> 01:15:52,000
+you need to scroll down to find the color window.
+
+1090
+01:15:54,960 --> 01:15:58,800
+We see that there is a small arrow on the left side of the material.
+
+1091
+01:15:58,940 --> 01:16:01,760
+Click on it to close the material group.
+
+1092
+01:16:01,900 --> 01:16:04,400
+It only shows the first material.
+
+1093
+01:16:04,540 --> 01:16:06,200
+The small arrow will go down.
+
+1094
+01:16:06,340 --> 01:16:08,340
+Click again to open it.
+
+1095
+01:16:08,460 --> 01:16:12,200
+In addition to the material name line, you can also close it.
+
+1096
+01:16:12,340 --> 01:16:14,740
+There is also a pull-up at the bottom.
+
+1097
+01:16:14,860 --> 01:16:18,500
+After closing all of these, you can see the attached information directly.
+
+1098
+01:16:18,900 --> 01:16:21,200
+Click on it to close it.
+
+1099
+01:16:21,340 --> 01:16:24,940
+After opening the display version name in the 2D window,
+
+1100
+01:16:25,060 --> 01:16:29,640
+the version with the button will no longer display the name of the button.
+
+1101
+01:16:29,760 --> 01:16:32,760
+You can see the name of the version more clearly.
+
+1102
+01:16:32,860 --> 01:16:35,440
+Click on the button to close the window.
+
+1103
+01:16:35,560 --> 01:16:37,360
+Click on the button to close the window.
+
+1104
+01:16:37,500 --> 01:16:40,060
+Finally, we see the update of the animation mode.
+
+1105
+01:16:40,200 --> 01:16:43,800
+The left side is version 7.0 and the right side is version 7.1.
+
+1106
+01:16:43,900 --> 01:16:46,800
+Click on the button to close the window.
+
+1107
+01:16:46,900 --> 01:16:48,860
+Click on the button to close the window.
+
+1108
+01:16:48,920 --> 01:16:51,819
+The text in the text box has disappeared.
+
+1109
+01:16:51,920 --> 01:16:53,819
+There is more space for operation.
+
+1110
+01:16:53,920 --> 01:16:56,819
+The bottom has new settings for the number of frames.
+
+1111
+01:16:56,920 --> 01:16:59,819
+Let's zoom in on the 7.1 interface.
+
+1112
+01:17:03,920 --> 01:17:10,920
+The number of frames can be from minus 10,000 to the maximum of 10,000.
+
+1113
+01:17:11,059 --> 01:17:12,920
+Click on the button to close the window.
+
+1114
+01:17:13,059 --> 01:17:14,920
+Click on the button to close the window.
+
+1115
+01:17:15,059 --> 01:17:17,199
+Click on the button to close the window.
+
+1116
+01:17:17,299 --> 01:17:18,299
+Click on the button to close the window.
+
+1117
+01:17:18,299 --> 01:17:18,799
+Click on the button to close the window.
+
+1118
+01:17:18,860 --> 01:17:23,739
+copying the column with the frame several times.
+
+1119
+01:17:23,860 --> 01:17:25,960
+Click on the button to close the window.
+
+1120
+01:17:26,100 --> 01:17:27,900
+Click on the button to close the window.
+
+1121
+01:17:28,039 --> 01:17:30,180
+Click on the button to close the window.
+
+1122
+01:17:30,300 --> 01:17:32,880
+Click on the button to close the window.
+
+1123
+01:17:33,020 --> 01:17:35,039
+side maison200
+
+1124
+01:17:35,180 --> 01:17:41,260
+Japan's reward modules can be slower than the others.
+
+1125
+01:17:41,400 --> 01:17:44,440
+The number of frames can be changed depending on the armas.
+
+1126
+01:17:44,560 --> 01:17:47,940
+eleven to twelve
+
+1127
+01:17:47,940 --> 01:17:49,940
+and the button to the next frame
+
+1128
+01:17:49,940 --> 01:17:52,940
+can be easily moved around
+
+1129
+01:17:52,940 --> 01:17:55,940
+and can be easily edited into the animation.
+
+1130
+01:18:09,940 --> 01:18:13,940
+That's all for the new features of version 7.1.
+
+1131
+01:18:13,940 --> 01:18:15,940
+Thank you.
+

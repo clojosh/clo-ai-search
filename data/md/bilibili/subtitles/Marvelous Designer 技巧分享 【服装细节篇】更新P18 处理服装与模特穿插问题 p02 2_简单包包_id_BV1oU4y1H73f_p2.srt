@@ -1,0 +1,224 @@
+1
+00:00:00,000 --> 00:00:17,000
+Select the rectangle tool and draw a plate in the 2D window as the base plate of the bag.
+
+2
+00:00:17,000 --> 00:00:23,000
+Use the internal line tool to draw an internal line.
+
+3
+00:00:23,000 --> 00:00:26,000
+Create a sewing line on this line.
+
+4
+00:00:26,000 --> 00:00:32,000
+Adjust the position of the internal line, because later the top will be sewed into a thread channel.
+
+5
+00:00:32,000 --> 00:00:41,000
+When the plate is relatively large, you can loosen the plate to reach the required size.
+
+6
+00:00:41,000 --> 00:00:52,000
+Copy the plate and cut it to keep a thread channel plate.
+
+7
+00:00:52,000 --> 00:00:55,000
+Use the positioning ball to adjust this plate.
+
+8
+00:00:55,000 --> 00:01:02,000
+Place it on the inner side of the outer plate.
+
+9
+00:01:02,000 --> 00:01:05,000
+Create a sewing line.
+
+10
+00:01:05,000 --> 00:01:09,000
+Freeze the outer plate and let the thread channel be sewed together.
+
+11
+00:01:09,000 --> 00:01:16,000
+The size of the plate is relatively small here, so directly reduce the particle diameter to 8 to get the original curve.
+
+12
+00:01:16,000 --> 00:01:20,000
+And reduce the conflict thickness to make the plate tight.
+
+13
+00:01:20,000 --> 00:01:23,000
+Copy a set of plates and turn them over.
+
+14
+00:01:23,000 --> 00:01:31,000
+Make sure that the holes are facing the front.
+
+15
+00:01:31,000 --> 00:01:35,000
+Since there is no break point on the side, you can't sew directly using the thread section.
+
+16
+00:01:35,000 --> 00:01:41,000
+If you use free sewing, there is no way to absorb the internal line that has not been made.
+
+17
+00:01:41,000 --> 00:01:46,000
+So choose to align the inner line to the inner line of the plate and add points.
+
+18
+00:01:46,000 --> 00:01:50,000
+Then you can use the sewing line tool to sew.
+
+19
+00:01:53,000 --> 00:02:05,000
+Unlock the front and open the simulation.
+
+20
+00:02:05,000 --> 00:02:11,000
+Then unlock all plates and simulate briefly.
+
+21
+00:02:11,000 --> 00:02:18,000
+Then choose all the plates and place the bag on the ground to adjust later.
+
+22
+00:02:18,000 --> 00:02:21,000
+When the particle diameter is relatively high,
+
+23
+00:02:21,000 --> 00:02:25,199
+When the particle diameter is higher, the outer line of the plate will not be smooth enough
+
+24
+00:02:28,599 --> 00:02:31,599
+Reducing the particle diameter can get a smoother curve
+
+25
+00:02:43,900 --> 00:02:48,500
+At present, the seam of the bag is not round enough, it looks like there is an obvious fold
+
+26
+00:02:48,500 --> 00:02:52,500
+After hardening, you can see that it is smoother
+
+27
+00:02:54,099 --> 00:02:58,900
+Due to the hardening, a part of the fold effect will be erased, so choose to change the physical properties
+
+28
+00:03:03,400 --> 00:03:07,099
+By increasing the bending strength, you can make it smoother
+
+29
+00:03:11,099 --> 00:03:14,300
+Next, we need to make the drawstring effect of the bag
+
+30
+00:03:16,599 --> 00:03:18,000
+First, add a fixing needle
+
+31
+00:03:18,000 --> 00:03:18,500
+Fixing needle
+
+32
+00:03:18,500 --> 00:03:20,099
+Next, we need to attach the other parts
+
+33
+00:03:29,400 --> 00:03:33,300
+For the effect of tightening the force of the tail end of the plate
+
+34
+00:03:44,400 --> 00:03:47,400
+This is to add a fixing needle to the top and sides of both sides
+
+35
+00:03:47,400 --> 00:03:49,400
+and tighten the area.
+
+36
+00:03:53,400 --> 00:03:57,400
+Then delete the fixed pin and return the shrink to 100.
+
+37
+00:04:04,400 --> 00:04:10,400
+As the shrink returns, you can see that there is a fold in the previously fixed area.
+
+38
+00:04:10,400 --> 00:04:15,400
+You can see that there is a fold in the previously fixed area.
+
+39
+00:04:16,399 --> 00:04:19,399
+Then try to make the part of the middle string.
+
+40
+00:04:22,399 --> 00:04:27,399
+First, freeze all the boards except the top board.
+
+41
+00:04:29,399 --> 00:04:33,399
+Then use the positioning ball tool to pull the board away from the other boards a little.
+
+42
+00:04:33,399 --> 00:04:36,399
+Also leave a gap to pass the rope through.
+
+43
+00:04:36,399 --> 00:04:39,399
+Make a very thin board and use it as a rope.
+
+44
+00:04:40,400 --> 00:04:45,400
+Use the positioning ball tool to quickly position a board near another board.
+
+45
+00:04:45,400 --> 00:04:48,400
+Press the Shift key to place it evenly.
+
+46
+00:04:53,400 --> 00:04:58,400
+Use the positioning ball tool again to place it in the right place.
+
+47
+00:05:10,400 --> 00:05:16,400
+Then, to prevent instability, freeze the rope board and simulate it.
+
+48
+00:05:16,400 --> 00:05:21,400
+To prevent instability, freeze the rope board and simulate it.
+
+49
+00:05:29,400 --> 00:05:34,400
+To reduce the strength of the rope board particles and add a fixing pin to fix both ends.
+
+50
+00:05:35,400 --> 00:05:38,400
+Since all the other boards are in a frozen state,
+
+51
+00:05:38,400 --> 00:05:40,400
+you can simulate it again.
+
+52
+00:05:40,400 --> 00:05:42,400
+The curse still exists.
+
+53
+00:05:43,400 --> 00:05:47,400
+Then you can adjust the position of the rope through the fixing pin.
+
+54
+00:05:48,400 --> 00:05:49,400
+This lesson is over.
+
+55
+00:05:49,400 --> 00:05:50,400
+See you next time.
+
+56
+00:05:50,400 --> 00:05:51,400
+Bye.
+

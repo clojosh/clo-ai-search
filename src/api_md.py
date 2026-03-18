@@ -3,6 +3,7 @@ import json
 import multiprocessing
 import os
 import re
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 
 import questionary
@@ -109,7 +110,7 @@ class APICLO:
                     "title": "".join([t.text for t in title]).replace("def", "").replace("\uf0c1", "").strip(),
                     "content": cleaned_markdown_content,
                     "content_description": content_description.replace("@brief ", "").replace("\uf0c1", "").strip(),
-                    "source": "MD API",
+                    "source": "API",
                     "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                     "youtube_links": [],
                 }
@@ -146,7 +147,7 @@ class APICLO:
                 "content": cleaned_markdown_content,
                 "content_description": "Initialization of API Option Types",
                 "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-                "source": "MD API",
+                "source": "API",
                 "youtube_links": [],
             }
         )
@@ -168,7 +169,7 @@ class APICLO:
                     "content": cleaned_markdown_content,
                     "content_description": "List of API Option Types",
                     "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-                    "source": "MD API",
+                    "source": "API",
                     "youtube_links": [],
                 }
             )
@@ -196,7 +197,7 @@ class APICLO:
                 "title": "Python API",  # Title of the article
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
-                "source": "MD API",  # Source of the article
+                "source": "API",  # Source of the article
                 "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
                 "youtube_links": [],  # List of YouTube links associated with the article
             }
@@ -229,7 +230,7 @@ class APICLO:
                 "title": "Plugin Management",  # Title of the article
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
-                "source": "MD API",  # Source of the article
+                "source": "API",  # Source of the article
                 "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
                 "youtube_links": [],  # List of YouTube links associated with the article
             }
@@ -264,7 +265,7 @@ class APICLO:
                     "title": title.replace("\uf0c1", "").strip(),
                     "content": cleaned_markdown_content,
                     "content_description": "Script for " + title.replace("\uf0c1", "").strip(),
-                    "source": "MD API",
+                    "source": "API",
                     "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                     "youtube_links": [],
                 }
@@ -277,31 +278,12 @@ class APICLO:
                 indent=4,
             )
 
-    @staticmethod
-    def upload_document(stage: str, brand: str, api_dir_path: str, file: str, position: int = 0):
-        azure = Azure(stage, brand)
+    def upload_document(self, document: dict):
+        document["@search.action"] = "mergeOrUpload"
+        document["title_vector"] = self.azure.openai_helper.generate_embeddings(text=document["title"])
+        document["content_vector"] = self.azure.openai_helper.generate_embeddings(text=document["content"])
 
-        with open(os.path.join(api_dir_path, file), "r", encoding="utf-8") as f:
-            documents = json.load(f)
-
-            for i, document in enumerate(tqdm(documents, desc=f"Uploading {os.path.basename(file)}", colour="green", position=position, leave=True)):
-                documents[i]["@search.action"] = "mergeOrUpload"
-                documents[i]["title_vector"] = azure.openai_helper.generate_embeddings(text=document["title"])
-                documents[i]["content_vector"] = azure.openai_helper.generate_embeddings(text=document["content"])
-
-            azure.search_client.upload_documents(documents)
-
-    def mp_upload_documents(self):
-        upload_params = []
-        for i, file in enumerate(os.listdir(self.api_path)):
-            upload_params.append((self.azure.stage, self.azure.brand, self.api_path, file, i))
-
-        with multiprocessing.Pool(10) as p:
-            p.starmap_async(
-                APICLO.upload_document,
-                upload_params,
-                error_callback=lambda e: print(e),
-            )
+        self.azure.search_client.upload_documents([document])
 
     def delete_document(self, api_dir_path: str):
         with open(api_dir_path, "r", encoding="utf-8") as f:
@@ -332,7 +314,9 @@ if __name__ == "__main__":
         ],
     ).ask()
 
-    md_api = APICLO(Azure(stage, "mdapi"))
+    azure = Azure(stage, "md")
+    md_api = APICLO(azure)
+    ai_search = AISearch(azure)
 
     if task == "Parse All API Documentation":
         print("--- Parsing API List ---")
@@ -364,10 +348,20 @@ if __name__ == "__main__":
 
     elif task == "Upload Document":
         api_document = questionary.select("Which API document?", choices=os.listdir(os.path.join(md_api.api_path))).ask()
-        md_api.upload_document(stage, "mdapi", md_api.api_path, api_document)
+        md_api.upload_document(os.path.join(md_api.api_path, api_document))
 
     elif task == "Upload All Documents":
-        md_api.mp_upload_documents()
+        file_list = [f for f in os.listdir(md_api.api_path) if f.endswith(".json")]
+
+        for i, file_name in enumerate(file_list):
+            file_path = os.path.join(md_api.api_path, file_name)
+
+            with open(file_path, "r") as f:
+                data = json.load(f)  # Assuming the file contains a list of items
+
+            # Use 10 workers for the items inside THIS file
+            with ThreadPoolExecutor(max_workers=10) as executor:
+                results = list(tqdm(executor.map(md_api.upload_document, data), total=len(data), desc=f"Uploading {file_name}", colour="green", position=i + 1, leave=True))
 
     elif task == "Delete Document":
         api_document = questionary.select("Which API document?", choices=os.listdir(os.path.join(md_api.api_path))).ask()
@@ -383,7 +377,7 @@ if __name__ == "__main__":
         search_field = questionary.select("Search field?", choices=search_fields_options).ask()
         search_text = questionary.text("Search value?").ask()
 
-        documents = AISearch(Azure(stage, "md")).ai_search.find_all_ai_search_documents(search_fields=[search_field], search_text=search_text)
+        documents = ai_search.find_all_ai_search_documents(search_fields=[search_field], search_text=search_text)
 
         for document in documents:
             print(document["article_id"] + "\n" + document["url"], "\n")
@@ -392,4 +386,4 @@ if __name__ == "__main__":
 
         if questionary.confirm("Do you want to delete these documents?").ask():
             for document in documents:
-                AISearch(Azure(stage, "md")).ai_search.delete_ai_search_document(document["article_id"])
+                ai_search.delete_ai_search_document(document["article_id"])

@@ -1,9 +1,8 @@
 import asyncio
 import json
-import multiprocessing
 import os
 import re
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 
 import questionary
@@ -93,7 +92,7 @@ class APICLO:
                 "title": "Environment Setup & Build",  # Title of the article
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
-                "source": "CLO API",
+                "source": "API",
                 "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
             }
         ]
@@ -118,7 +117,7 @@ class APICLO:
                 "title": "Plugin Management",  # Title of the article
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
-                "source": "CLO API",  # Source of the article
+                "source": "API",  # Source of the article
                 "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
             }
         ]
@@ -149,7 +148,7 @@ class APICLO:
                 {
                     "article_id": shortuuid.uuid(),
                     "url": url + "#" + tag_id,
-                    "source": "CLO API",
+                    "source": "API",
                     "title": title.replace("\uf0c1", "").strip(),
                     "content": cleaned_markdown_content,
                     "content_description": "Script for " + title.replace("\uf0c1", "").strip(),
@@ -187,7 +186,7 @@ class APICLO:
                 {
                     "article_id": shortuuid.uuid(),
                     "url": url + "#" + tag_id,
-                    "source": "CLO API",
+                    "source": "API",
                     "title": title.replace("\uf0c1", "").strip(),
                     "content": cleaned_markdown_content,
                     "content_description": "List of API Option Types",
@@ -228,7 +227,7 @@ class APICLO:
                 {
                     "article_id": shortuuid.uuid(),
                     "url": url + "#" + tag_id,
-                    "source": "CLO API",
+                    "source": "API",
                     "title": "".join([t.text for t in title]).replace("def", "").replace("\uf0c1", "").strip(),
                     "content": cleaned_markdown_content,
                     "content_description": content_description.replace("@brief ", "").replace("\uf0c1", "").strip(),
@@ -256,7 +255,7 @@ class APICLO:
             {
                 "article_id": shortuuid.uuid(),  # Generate a unique identifier
                 "url": self.base_url + "register.html",  # URL of the original source
-                "source": "CLO API",  # Source of the article
+                "source": "API",  # Source of the article
                 "title": "Python API",  # Title of the article
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
@@ -281,7 +280,7 @@ class APICLO:
             {
                 "article_id": shortuuid.uuid(),  # Generate a unique identifier
                 "url": url,  # URL of the original source
-                "source": "CLO API",  # Source of the article
+                "source": "API",  # Source of the article
                 "title": "Library Window API",  # Title of the article
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
@@ -306,7 +305,7 @@ class APICLO:
             {
                 "article_id": shortuuid.uuid(),  # Generate a unique identifier
                 "url": url,  # URL of the original source
-                "source": "CLO API",  # Source of the article
+                "source": "API",  # Source of the article
                 "title": "SDK",  # Title of the article
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
@@ -331,7 +330,7 @@ class APICLO:
             {
                 "article_id": shortuuid.uuid(),  # Generate a unique identifier
                 "url": url,  # URL of the original source
-                "source": "CLO API",  # Source of the article
+                "source": "API",  # Source of the article
                 "title": "CLO Event Plugin",  # Title of the article
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
@@ -356,7 +355,7 @@ class APICLO:
             {
                 "article_id": shortuuid.uuid(),  # Generate a unique identifier
                 "url": url,  # URL of the original source
-                "source": "CLO API",  # Source of the article
+                "source": "API",  # Source of the article
                 "title": "Plugin Placement Startup",  # Title of the article
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
@@ -368,16 +367,12 @@ class APICLO:
         with open(os.path.join(self.api_path, "plugin_placement_startup.json"), "w+", encoding="utf-8") as f:
             json.dump(plugin_placement_startup, f, indent=4)
 
-    def upload_document(self, file_path: str, position: int = 0):
-        with open(file_path, "r", encoding="utf-8") as f:
-            documents = json.load(f)
+    def upload_document(self, document: dict):
+        document["@search.action"] = "mergeOrUpload"
+        document["title_vector"] = self.azure.openai_helper.generate_embeddings(text=document["title"])
+        document["content_vector"] = self.azure.openai_helper.generate_embeddings(text=document["content"])
 
-            for i, document in enumerate(tqdm(documents, desc=f"Uploading {os.path.basename(file_path)}", colour="green", position=position, leave=True)):
-                documents[i]["@search.action"] = "mergeOrUpload"
-                documents[i]["title_vector"] = self.azure.openai_helper.generate_embeddings(text=document["title"])
-                documents[i]["content_vector"] = self.azure.openai_helper.generate_embeddings(text=document["content"])
-
-            self.azure.search_client.upload_documents(documents)
+        self.azure.search_client.upload_documents([document])
 
     def delete_document(self, api_dir_path: str):
         with open(api_dir_path, "r", encoding="utf-8") as f:
@@ -412,8 +407,9 @@ if __name__ == "__main__":
         ],
     ).ask()
 
-    clo_api = APICLO(Azure(stage, "clo3dapi"))
-    ai_search = AISearch(Azure(stage, "clo3d"))
+    azure = Azure(stage, "clo3d")
+    clo_api = APICLO(azure)
+    ai_search = AISearch(azure)
 
     if task == "Parse All API Documentation":
         print("--- Parsing Environment Setup & Build ---")
@@ -472,11 +468,17 @@ if __name__ == "__main__":
         clo_api.upload_document(os.path.join(clo_api.api_path, api_document))
 
     elif task == "Upload All Documents":
-        with ThreadPoolExecutor(max_workers=10) as executor:
-            futures = [executor.submit(clo_api.upload_document, os.path.join(clo_api.get_article_path(), file), i + 1) for i, file in enumerate(os.listdir(clo_api.api_path))]
+        file_list = [f for f in os.listdir(clo_api.api_path) if f.endswith(".json")]
 
-            for _ in tqdm(asyncio.as_completed(futures), total=len(os.listdir(clo_api.api_path)), desc="Overall Progress", position=0):
-                pass
+        for i, file_name in enumerate(file_list):
+            file_path = os.path.join(clo_api.api_path, file_name)
+
+            with open(file_path, "r") as f:
+                data = json.load(f)  # Assuming the file contains a list of items
+
+            # Use 10 workers for the items inside THIS file
+            with ThreadPoolExecutor(max_workers=10) as executor:
+                results = list(tqdm(executor.map(clo_api.upload_document, data), total=len(data), desc=f"Uploading {file_name}", colour="green", position=i + 1, leave=True))
 
     elif task == "Delete Document":
         api_document = questionary.select("Which API document?", choices=os.listdir(os.path.join(clo_api.api_path))).ask()

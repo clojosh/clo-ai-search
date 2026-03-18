@@ -408,7 +408,7 @@ class YouTube:
         # Using /videos ensures we start on the main uploads tab
         CHANNEL_URL = "https://www.youtube.com/@CLO3D/videos"
         OUTPUT_DIR = os.path.join(self.youtube_channel_dir_path, "videos")
-        NUM_RECENT_VIDEOS = 250
+        NUM_RECENT_VIDEOS = 148
 
         if not os.path.exists(OUTPUT_DIR):
             os.makedirs(OUTPUT_DIR)
@@ -435,7 +435,7 @@ class YouTube:
         ydl_opts = {
             "format": "bestvideo[height<=480]+bestaudio/best[height<=480]",
             "http_headers": {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"},
-            "playlist_items": f"88-{NUM_RECENT_VIDEOS}",
+            "playlist_items": f"138-{NUM_RECENT_VIDEOS}",
             "outtmpl": os.path.join(OUTPUT_DIR, "%(title)s [%(id)s]", "%(title)s.%(ext)s"),
             "match_filter": published_videos_only,
             "restrictfilenames": True,
@@ -565,6 +565,41 @@ class YouTube:
         with open(file_path, "w", encoding="utf-8") as file:
             json.dump(transcripts, file, ensure_ascii=False, indent=4)
 
+    def upload_transcript(self, transcript: dict):
+        """
+        Uploads a single transcript to Azure Search
+
+        Args:
+            transcript (dict): The transcript to upload
+
+        Returns:
+            None
+        """
+        if transcript["transcript"] == "":
+            return
+
+        if "summary" in transcript:
+            if transcript["summary"] == "" or len(transcript["summary"]) < 150:
+                return
+
+        if transcript["video_id"].startswith("_"):
+            transcript["video_id"] = "YT" + transcript["video_id"]
+
+        self.azure.search_client.upload_documents(
+            {
+                "@search.action": "mergeOrUpload",
+                "article_id": transcript["video_id"],
+                "url": transcript["url"],
+                "title": transcript["title"],
+                "content": transcript["summary"] if "summary" in transcript else transcript["transcript"],
+                "content_description": transcript["description"],
+                "source": "YouTube",
+                "created_at": transcript["published_at"],
+                "title_vector": self.azure.openai_helper.generate_embeddings(text=transcript["title"]),
+                "content_vector": self.azure.openai_helper.generate_embeddings(text=transcript["summary"]),
+            }
+        )
+
     def upload_transcripts(self, file_path: str):
         """
         Uploads the transcripts in a file to Azure Search
@@ -578,34 +613,8 @@ class YouTube:
         with open(file_path, "r", encoding="utf-8") as f:
             transcripts = json.load(f)
 
-        upload_transcripts = []
         for transcript in transcripts:
-            if transcript["transcript"] == "":
-                continue
-
-            if "summary" in transcript:
-                if transcript["summary"] == "" or len(transcript["summary"]) < 150:
-                    continue
-
-            if transcript["video_id"].startswith("_"):
-                transcript["video_id"] = "YT" + transcript["video_id"]
-
-            upload_transcripts.append(
-                {
-                    "@search.action": "mergeOrUpload",
-                    "article_id": transcript["video_id"],
-                    "url": transcript["url"],
-                    "title": transcript["title"],
-                    "content": transcript["summary"] if "summary" in transcript else transcript["transcript"],
-                    "content_description": transcript["description"],
-                    "source": "YouTube",
-                    "created_at": transcript["published_at"],
-                    "title_vector": self.azure.openai_helper.generate_embeddings(text=transcript["title"]),
-                    "content_vector": self.azure.openai_helper.generate_embeddings(text=transcript["summary"]),
-                }
-            )
-
-        self.azure.search_client.upload_documents(upload_transcripts)
+            self.upload_transcript(transcript)
 
 
 if __name__ == "__main__":
@@ -773,7 +782,7 @@ if __name__ == "__main__":
 
                 # Assuming the JSON is a list of items; adjust if it's a dict
                 work_items = data if isinstance(data, list) else [data]
-                process_func = yt.upload_single_transcript_item  # You'd need a method for single items
+                process_func = yt.upload_transcript
                 description = "Uploading Items from Single File"
             else:
                 # Multi-file mode: Process each file path

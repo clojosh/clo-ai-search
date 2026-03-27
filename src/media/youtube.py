@@ -1,19 +1,21 @@
 import json
-import multiprocessing
 import os
 import re
 import shutil
 import subprocess
 import sys
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime
+from datetime import datetime, timedelta
+from pathlib import Path
 from typing import List, TypedDict, Union
 
 import questionary
 import requests  # type: ignore
 import shortuuid
+import torch
 import yt_dlp
 from dateutil.relativedelta import relativedelta
+from faster_whisper import WhisperModel
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from tqdm import tqdm
@@ -38,6 +40,62 @@ YoutubeAPIType = TypedDict(
         "items": List[dict],
     },
 )
+
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+model = WhisperModel(
+    "large-v3",
+    device=DEVICE,
+    compute_type="float16",  # or "int8_float16" if VRAM constrained
+)
+
+EXCLUDED_LANGS_AND_WORDS = {
+    "Arabic",
+    "Bangla",
+    "BahasaBulgarian",
+    "BengaluruCantonese",
+    "Chinese",
+    "Croatian",
+    "Czech",
+    "Danish",
+    "Dutch",
+    "Estonian",
+    "Finnish",
+    "Francais",
+    "French",
+    "German",
+    "Greek",
+    "Hindi",
+    "Ho_Chi_Minh",
+    "Hong_Kong",
+    "Hungarian",
+    "Indonesia",
+    "Italian",
+    "Japanese",
+    "Korean",
+    "Latvian",
+    "Lithuanian",
+    "Maris",
+    "Munich",
+    "Norwegian",
+    "Paris",
+    "Polish",
+    "Portuguese",
+    "Romanian",
+    "Russian",
+    "Saigon",
+    "Seoul",
+    "Serbian",
+    "Shanghai",
+    "Slovak",
+    "Slovenian",
+    "Spanish",
+    "Swedish",
+    "Thai",
+    "Ti_ng_Vi_t",
+    "Turkce",
+    "Turkish",
+    "Vietnamese",
+}
 
 
 class YouTube:
@@ -83,6 +141,56 @@ class YouTube:
             "description": response["items"][0]["snippet"]["description"],
             "published_at": response["items"][0]["snippet"]["publishedAt"],
         }
+
+    def extract_srt_text(self, srt_file_path: str):
+        """
+        This function takes an SRT file path as input and returns the raw text lines
+        extracted from the file. It does this by reading the file line by line, skipping
+        blank lines, timestamp lines, and lines containing only sequence numbers.
+
+        Args:
+            srt_file_path (str): The path to the SRT file to parse.
+
+        Returns:
+            str: The raw text lines extracted from the SRT file, joined by spaces.
+        """
+        raw_text = []
+        # Regex to identify timestamp lines (e.g., 00:00:01,000 --> 00:00:04,000)
+        timestamp_pattern = re.compile(r"\d{2}:\d{2}:\d{2},\d{3} --> \d{2}:\d{2}:\d{2},\d{3}")
+
+        try:
+            with open(srt_file_path, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+
+                    # Skip blank lines
+                    if not line:
+                        # We don't want to include blank lines in our output
+                        continue
+
+                    # Skip sequence numbers (lines containing only digits)
+                    if line.isdigit():
+                        # We don't want to include sequence numbers in our output
+                        continue
+
+                    # Skip timestamp lines
+                    if timestamp_pattern.match(line):
+                        # We don't want to include timestamp lines in our output
+                        continue
+
+                    # If the line contains actual text, append it.
+                    raw_text.append(line)
+
+            return " ".join(raw_text)
+
+        except FileNotFoundError:
+            print(f"\nError: Subtitle file not found at {srt_file_path}", file=sys.stderr)
+            # If the file doesn't exist, return None
+            return None
+        except Exception as e:
+            print(f"\nError reading or parsing file {srt_file_path}: {e}", file=sys.stderr)
+            # If there's an error reading or parsing the file, return None
+            return None
 
     def get_videos_by_age(self, channel_id: str, video_age_in_years: int = 0, video_age_in_months: int = 0, video_age_in_weeks: int = 0, video_age_in_days: int = 0):
         """
@@ -243,6 +351,18 @@ class YouTube:
             print(f"An unexpected error occurred: {e}")
             return []
 
+    # Works on MacOS
+    def download_srt_yt_dlp(self, video_id: str):
+        ydl_opts = {
+            "writeautomaticsub": True,
+            "subtitleslangs": ["en"],
+            "subtitlesformat": "srt",
+            "skip_download": True,
+            "outtmpl": f"{self.youtube_channel_dir_path}/subtitles/%(title)s.%(ext)s",
+        }
+        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+            ydl.download([f"https://www.youtube.com/watch?v={video_id}"])
+
     def download_srt_yt_dlp_subprocess(self, video_id: str):
         """
         Executes the yt-dlp command using subprocess.run() to download subtitles.
@@ -305,69 +425,7 @@ class YouTube:
             # Catch any other unexpected exceptions
             print(f"\n--- An unexpected error occurred: {e} ---", file=sys.stderr)
 
-    # Works on MacOS
-    def download_srt_yt_dlp(self, video_id: str):
-        ydl_opts = {
-            "writeautomaticsub": True,
-            "subtitleslangs": ["en"],
-            "subtitlesformat": "srt",
-            "skip_download": True,
-            "outtmpl": f"{self.youtube_channel_dir_path}/subtitles/%(title)s.%(ext)s",
-        }
-        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-            ydl.download([f"https://www.youtube.com/watch?v={video_id}"])
-
-    def extract_srt_text(self, srt_file_path: str):
-        """
-        This function takes an SRT file path as input and returns the raw text lines
-        extracted from the file. It does this by reading the file line by line, skipping
-        blank lines, timestamp lines, and lines containing only sequence numbers.
-
-        Args:
-            srt_file_path (str): The path to the SRT file to parse.
-
-        Returns:
-            str: The raw text lines extracted from the SRT file, joined by spaces.
-        """
-        raw_text = []
-        # Regex to identify timestamp lines (e.g., 00:00:01,000 --> 00:00:04,000)
-        timestamp_pattern = re.compile(r"\d{2}:\d{2}:\d{2},\d{3} --> \d{2}:\d{2}:\d{2},\d{3}")
-
-        try:
-            with open(srt_file_path, "r", encoding="utf-8") as f:
-                for line in f:
-                    line = line.strip()
-
-                    # Skip blank lines
-                    if not line:
-                        # We don't want to include blank lines in our output
-                        continue
-
-                    # Skip sequence numbers (lines containing only digits)
-                    if line.isdigit():
-                        # We don't want to include sequence numbers in our output
-                        continue
-
-                    # Skip timestamp lines
-                    if timestamp_pattern.match(line):
-                        # We don't want to include timestamp lines in our output
-                        continue
-
-                    # If the line contains actual text, append it.
-                    raw_text.append(line)
-
-            return " ".join(raw_text)
-
-        except FileNotFoundError:
-            print(f"Error: Subtitle file not found at {srt_file_path}", file=sys.stderr)
-            # If the file doesn't exist, return None
-            return None
-        except Exception as e:
-            print(f"Error reading or parsing file {srt_file_path}: {e}", file=sys.stderr)
-            # If there's an error reading or parsing the file, return None
-            return None
-
-    def download_transcripts_youtube_transcript_api(self, video_id: str):
+    def download_transcripts_yt_transcript_api(self, video_id: str):
         try:
             ytt_api = YouTubeTranscriptApi(
                 proxy_config=WebshareProxyConfig(
@@ -408,7 +466,7 @@ class YouTube:
         # Using /videos ensures we start on the main uploads tab
         CHANNEL_URL = "https://www.youtube.com/@CLO3D/videos"
         OUTPUT_DIR = os.path.join(self.youtube_channel_dir_path, "videos")
-        NUM_RECENT_VIDEOS = 148
+        NUM_RECENT_VIDEOS = 215
 
         if not os.path.exists(OUTPUT_DIR):
             os.makedirs(OUTPUT_DIR)
@@ -435,7 +493,7 @@ class YouTube:
         ydl_opts = {
             "format": "bestvideo[height<=480]+bestaudio/best[height<=480]",
             "http_headers": {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"},
-            "playlist_items": f"138-{NUM_RECENT_VIDEOS}",
+            "playlist_items": f"195-{NUM_RECENT_VIDEOS}",
             "outtmpl": os.path.join(OUTPUT_DIR, "%(title)s [%(id)s]", "%(title)s.%(ext)s"),
             "match_filter": published_videos_only,
             "restrictfilenames": True,
@@ -484,7 +542,7 @@ class YouTube:
                 #     os.path.join(self.youtube_channel_dir_path, "subtitles", video["title"] + ".en.srt")
                 # ).replace("  ", " ")
 
-                transcript = self.download_transcripts_youtube_transcript_api(video["id"])
+                transcript = self.download_transcripts_yt_transcript_api(video["id"])
 
             except Exception:
                 continue
@@ -534,6 +592,79 @@ class YouTube:
                 json.dump(buffer, f, ensure_ascii=False, indent=4)
 
         return playlist_title
+
+    def generate_subtitle(self, video_path: str, output_srt_path: str):
+        """
+        Generate subtitle for a single video using faster-whisper.
+        """
+
+        def format_srt_time(seconds: float) -> str:
+            td = timedelta(seconds=seconds)
+            total_seconds = int(td.total_seconds())
+            hours = total_seconds // 3600
+            minutes = (total_seconds % 3600) // 60
+            secs = total_seconds % 60
+            millis = int((seconds - int(seconds)) * 1000)
+            return f"{hours:02}:{minutes:02}:{secs:02},{millis:03}"
+
+        file_path = Path(video_path)
+        print(f"\nGenerating subtitles for {file_path.stem}")
+
+        segments, info = model.transcribe(
+            os.path.join(video_path),
+            language="en",
+            task="translate",
+            beam_size=5,
+            # vad_filter=True,  # Skip silence
+            # vad_parameters=dict(min_silence_duration_ms=500),
+            log_progress=True,  # safer in batch runs
+        )
+
+        srt_content = []
+        for i, seg in enumerate(segments, start=1):
+            start = format_srt_time(seg.start)
+            end = format_srt_time(seg.end)
+            text = seg.text.strip()
+
+            srt_content.append(f"{i}\n{start} --> {end}\n{text}\n\n")
+
+        with open(output_srt_path, "w", encoding="utf-8") as f:
+            f.write("".join(srt_content))
+
+    def prepare_transcripts_from_dl_videos(self, video_dir_path: str):
+        """
+        Prepare the transcripts from the downloaded videos by extracting the descriptions and generating the transcripts using faster-whisper.
+        """
+
+        video_dir_path = Path(video_dir_path)
+
+        print(f"\nPreparing transcript for {video_dir_path.stem}")
+
+        for file in os.listdir(video_dir_path):
+            if any(lang.lower() in file.lower() for lang in EXCLUDED_LANGS_AND_WORDS):
+                continue
+
+            if file.endswith(".info.json"):
+                with open(os.path.join(video_dir_path, file), "r", encoding="utf-8") as f:
+                    description_data = json.load(f)
+
+                description = description_data.get("description", "")
+                transcript = self.extract_srt_text(os.path.join(video_dir_path, file.replace(".info.json", ".srt")))
+
+                upload_date = description_data.get("upload_date")
+                formatted_date = datetime.strptime(upload_date, "%Y%m%d").strftime("%Y-%m-%dT%H:%M:%SZ") if upload_date else ""
+
+                doc = {
+                    "video_id": description_data.get("id", shortuuid.uuid()),
+                    "url": f"https://www.youtube.com/watch?v={description_data.get('id', '')}",
+                    "title": description_data.get("title", "").title().replace("&#39;", "'").replace("&quot;", '"').replace("&amp;", "&"),
+                    "description": description,
+                    "transcript": transcript,
+                    "published_at": formatted_date,
+                }
+
+                with open(os.path.join(self.youtube_channel_dir_path, "transcripts", file.replace(".info.json", ".json")), "w+", encoding="utf-8") as f:
+                    json.dump(doc, f, ensure_ascii=False, indent=4)
 
     def summarize_transcripts(self, file_path: str):
         """
@@ -600,22 +731,6 @@ class YouTube:
             }
         )
 
-    def upload_transcripts(self, file_path: str):
-        """
-        Uploads the transcripts in a file to Azure Search
-
-        Args:
-            file_path (str): The path to the file containing the transcripts to upload
-
-        Returns:
-            None
-        """
-        with open(file_path, "r", encoding="utf-8") as f:
-            transcripts = json.load(f)
-
-        for transcript in transcripts:
-            self.upload_transcript(transcript)
-
 
 if __name__ == "__main__":
     stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
@@ -627,6 +742,8 @@ if __name__ == "__main__":
             "Get All Transcripts By Age",
             "Get All Transcripts By Date",
             "Download All Videos",
+            "Generate All Subtitles",
+            "Prepare Transcripts from Downloaded Videos",
             "Summarize All Transcripts",
             "Upload All Transcripts",
             "Get Transcript",
@@ -668,32 +785,6 @@ if __name__ == "__main__":
         with open(os.path.join(yt.youtube_channel_dir_path, "youtube_links.txt"), "w+", encoding="utf-8") as f:
             f.write("\n".join(youtube_links))
 
-    elif task == "Get Transcript":
-        video_id = questionary.text("Video ID:").ask()
-
-        video_details = yt.video_details(video_id)
-
-        yt.download_srt_yt_dlp(video_id)
-
-        file = f"{video_details['title']}.en.srt"
-        srt_text = yt.extract_srt_text(os.path.join(yt.youtube_channel_dir_path, "subtitles", file))
-
-        file_name = sanitize_directory_file_name(file.split(".")[0])
-        with open(os.path.join(yt.youtube_channel_dir_path, f"{file_name}.json"), "w+", encoding="utf-8") as f:
-            json.dump(
-                {
-                    "video_id": video_details["video_id"],
-                    "url": video_details["url"],
-                    "title": video_details["title"],
-                    "description": video_details["description"],
-                    "transcript": srt_text,
-                    "published_at": video_details["published_at"],
-                },
-                f,
-                ensure_ascii=False,
-                indent=4,
-            )
-
     elif task == "Get All Transcripts By Age":
         video_age = questionary.select("Video Age", choices=["Years", "Months", "Weeks", "Days"]).ask()
         video_age_number = questionary.text(f"Number of {video_age}:").ask()
@@ -729,6 +820,116 @@ if __name__ == "__main__":
     elif task == "Download All Videos":
         yt.download_videos_yt_dlp()
 
+    elif task == "Generate All Subtitles":
+        video_dir = os.path.join(yt.youtube_channel_dir_path, "videos")
+
+        for folder in os.listdir(video_dir):
+            folder_path = os.path.join(video_dir, folder)
+            if os.path.isdir(folder_path):
+                if any(lang.lower() in folder.lower() for lang in EXCLUDED_LANGS_AND_WORDS):
+                    continue
+
+                for video_file in os.listdir(folder_path):
+                    # Check if srt file already exists
+                    srt_file = os.path.join(folder_path, f"{os.path.splitext(video_file)[0]}.srt")
+                    if os.path.exists(srt_file):
+                        continue
+
+                    if video_file.endswith((".mp4", ".mkv", ".avi")):
+                        video_path = os.path.join(folder_path, video_file)
+                        output_srt_path = os.path.join(folder_path, f"{os.path.splitext(video_file)[0]}.srt")
+
+                        yt.generate_subtitle(video_path, output_srt_path)
+
+    elif task == "Prepare Transcripts from Downloaded Videos":
+        video_dir = os.path.join(yt.youtube_channel_dir_path, "videos")
+
+        for folder in os.listdir(video_dir):
+            folder_path = os.path.join(video_dir, folder)
+            if os.path.isdir(folder_path):
+                yt.prepare_transcripts_from_dl_videos(folder_path)
+
+    elif task == "Summarize All Transcripts":
+        transcript_dir = os.path.join(yt.youtube_channel_dir_path, "transcripts")
+        files = [os.path.join(transcript_dir, f) for f in os.listdir(transcript_dir) if f.endswith(".json")]
+
+        with ThreadPoolExecutor(max_workers=5) as executor:
+            # We map the instance method 'yt.summarize_transcripts' directly to the list of file paths.
+            # Python automatically passes 'yt' as 'self'.
+            list(tqdm(executor.map(yt.summarize_transcripts, files), total=len(files), desc="Summarizing Transcripts", position=0))
+
+    elif task == "Upload All Transcripts":
+        if brand == "allinone":
+            for folder in os.listdir(os.path.join(os.getcwd(), "data")):
+                if folder == "clo3d" or folder == "md":
+                    for file in os.listdir(os.path.join(os.getcwd(), "data", folder, "youtube", "channel")):
+                        shutil.copy(
+                            os.path.join(os.getcwd(), "data", folder, "youtube", "channel", file),
+                            os.path.join(yt.youtube_channel_dir_path, f"{folder}_{file}"),
+                        )
+
+        transcript_dir = os.path.join(yt.youtube_channel_dir_path, "transcripts")
+        files = [os.path.join(transcript_dir, f) for f in os.listdir(transcript_dir) if f.endswith(".json")]
+
+        # 1. Determine the target list (files vs. internal items)
+        if len(files) == 1:
+            # Single file mode: Process items inside the JSON
+            with open(files[0], "r", encoding="utf-8") as f:
+                data = json.load(f)
+
+            # Assuming the JSON is a list of items; adjust if it's a dict
+            work_items = data if isinstance(data, list) else [data]
+            process_func = yt.upload_transcript
+            description = "Uploading Items from Single File"
+        else:
+            # Multi-file mode: Process each file path
+            work_items = files
+
+            def upload_transcripts(file_path: str):
+                with open(file_path, "r", encoding="utf-8") as f:
+                    transcripts = json.load(f)
+
+                for transcript in transcripts:
+                    yt.upload_transcript(transcript)
+
+            process_func = upload_transcripts
+            description = "Uploading Transcript Files"
+
+        # 2. Execute based on the determined context
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            list(tqdm(executor.map(process_func, work_items), total=len(work_items), desc=description, position=0))
+
+    elif task == "Get Transcript":
+        video_id = questionary.text("Video ID:").ask()
+
+        video_details = yt.video_details(video_id)
+
+        yt.download_srt_yt_dlp(video_id)
+
+        file = f"{video_details['title']}.en.srt"
+        srt_text = yt.extract_srt_text(os.path.join(yt.youtube_channel_dir_path, "subtitles", file))
+
+        file_name = sanitize_directory_file_name(file.split(".")[0])
+        with open(os.path.join(yt.youtube_channel_dir_path, f"{file_name}.json"), "w+", encoding="utf-8") as f:
+            json.dump(
+                {
+                    "video_id": video_details["video_id"],
+                    "url": video_details["url"],
+                    "title": video_details["title"],
+                    "description": video_details["description"],
+                    "transcript": srt_text,
+                    "published_at": video_details["published_at"],
+                },
+                f,
+                ensure_ascii=False,
+                indent=4,
+            )
+
+    elif task == "Summarize Transcript":
+        youtube_channel_pages = sorted(os.listdir(os.path.join(yt.youtube_channel_dir_path, "transcripts")), key=lambda x: int(x.split("_")[1].split(".")[0]))
+        page = questionary.select("Which page?", choices=youtube_channel_pages).ask()
+        yt.summarize_transcripts(stage, brand, os.path.join(yt.youtube_channel_dir_path, "transcripts", page), 0)
+
     elif task == "Find & Delete AI Search Documents":
         search_fields_options = ["article_id", "url", "title", "content", "content_description"]
 
@@ -745,51 +946,3 @@ if __name__ == "__main__":
         if questionary.confirm("Do you want to delete these documents?").ask():
             for document in documents:
                 ai_search.delete_ai_search_document(document["article_id"])
-
-    else:
-        if task == "Summarize Transcript":
-            youtube_channel_pages = sorted(os.listdir(os.path.join(yt.youtube_channel_dir_path, "transcripts")), key=lambda x: int(x.split("_")[1].split(".")[0]))
-            page = questionary.select("Which page?", choices=youtube_channel_pages).ask()
-            yt.summarize_transcripts(stage, brand, os.path.join(yt.youtube_channel_dir_path, "transcripts", page), 0)
-
-        elif task == "Summarize All Transcripts":
-            transcript_dir = os.path.join(yt.youtube_channel_dir_path, "transcripts")
-            files = [os.path.join(transcript_dir, f) for f in os.listdir(transcript_dir) if f.endswith(".json")]
-
-            with ThreadPoolExecutor(max_workers=5) as executor:
-                # We map the instance method 'yt.summarize_transcripts' directly to the list of file paths.
-                # Python automatically passes 'yt' as 'self'.
-                list(tqdm(executor.map(yt.summarize_transcripts, files), total=len(files), desc="Summarizing Transcripts", position=0))
-
-        elif task == "Upload All Transcripts":
-            if brand == "allinone":
-                for folder in os.listdir(os.path.join(os.getcwd(), "data")):
-                    if folder == "clo3d" or folder == "md":
-                        for file in os.listdir(os.path.join(os.getcwd(), "data", folder, "youtube", "channel")):
-                            shutil.copy(
-                                os.path.join(os.getcwd(), "data", folder, "youtube", "channel", file),
-                                os.path.join(yt.youtube_channel_dir_path, f"{folder}_{file}"),
-                            )
-
-            transcript_dir = os.path.join(yt.youtube_channel_dir_path, "transcripts")
-            files = [os.path.join(transcript_dir, f) for f in os.listdir(transcript_dir) if f.endswith(".json")]
-
-            # 1. Determine the target list (files vs. internal items)
-            if len(files) == 1:
-                # Single file mode: Process items inside the JSON
-                with open(files[0], "r", encoding="utf-8") as f:
-                    data = json.load(f)
-
-                # Assuming the JSON is a list of items; adjust if it's a dict
-                work_items = data if isinstance(data, list) else [data]
-                process_func = yt.upload_transcript
-                description = "Uploading Items from Single File"
-            else:
-                # Multi-file mode: Process each file path
-                work_items = files
-                process_func = yt.upload_transcripts
-                description = "Uploading Transcript Files"
-
-            # 2. Execute based on the determined context
-            with ThreadPoolExecutor(max_workers=10) as executor:
-                list(tqdm(executor.map(process_func, work_items), total=len(work_items), desc=description, position=0))

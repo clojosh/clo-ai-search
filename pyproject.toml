@@ -5,3 +5,7 @@ description = "Tools for searching, retrieving, and uploading documents to AI Se
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = []
+
+[tool.ruff.lint]
+# Never enforce `E402` (import violations)
+ignore = ["E402"]

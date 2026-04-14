@@ -1,38 +1,38 @@
 [
   {
-    "article_id": "nGbcHo3tmA9RZUZXCKVoXq",
+    "article_id": "Hv8ZA7bG9uzDwDxnKxs4Qg",
     "url": "https://developer.marvelousdesigner.com/scenario.html#animation",
     "title": "Animation",
     "content": "## Animation\uf0c1\n``` \nimport import_api\nimport utility_api\nimport fabric_api\nimport pattern_api\nimport export_api\nimport ApiTypes\n\n# ----------------------------------------------------------\n# Initialize a new project session\n# ----------------------------------------------------------\nutility_api.NewProject()\n\n# ----------------------------------------------------------\n# 1) Import the garment (ZPRJ) file\n# ----------------------------------------------------------\n# NOTE:\n# - Update the file path below according to your local directory structure.\n# - The example path assumes macOS. Use the full absolute path on your system.\n#   Example (Windows): \"C:/Users/Public/Documents/CLO/Projects/Animation/cat.zprj\"\n#   Example (macOS):   \"/Users/username/Documents/Animation/cat.zprj\"\n# ----------------------------------------------------------\nimport_api.ImportFile(\"/Users/alex/Documents/Animation/cat.zprj\")  # <-- modify this path as needed\n\n# ----------------------------------------------------------\n# 2) Define animation\n# ----------------------------------------------------------\nSTART_FRAME = 0        # Animation start frame index\nEND_FRAME = 209        # Animation end frame index\n\n# ----------------------------------------------------------\n# 3) Configure animation settings\n# ----------------------------------------------------------\n# - Sets the animation frame range\n# - Enables animation recording mode\n# ----------------------------------------------------------\nutility_api.SetStartAnimationFrame(START_FRAME)\nutility_api.SetEndAnimationFrame(END_FRAME)\nutility_api.SetAnimationRecording(True)\n\n# ----------------------------------------------------------\n# (Next steps)\n# - Run simulation if needed\n# - Export Alembic, turntable, or rendered animation output\n# - Save final project or results\n# ----------------------------------------------------------\n\n```\n\nCopy to clipboard\n\n![_images/catanimation.gif](https://developer.marvelousdesigner.com/_images/catanimation.gif)",
     "content_description": "Script for Animation",
     "source": "API",
-    "created_at": "2026-03-12T17:04:29Z"
+    "created_at": "2026-04-13T16:33:05Z"
   },
   {
-    "article_id": "kGYNcMsQHR7FS2JdkJ5KM9",
+    "article_id": "8QDuNb8PPTi7jHPvgwUetk",
     "url": "https://developer.marvelousdesigner.com/scenario.html#simulation",
     "title": "Simulation",
     "content": "## Simulation\uf0c1\n``` \nimport utility_api\nimport ApiTypes\n\nprint(\"API Test Scenario - Simulation\")\n\n# Create a new empty project\nutility_api.NewProject()\n\n# Set local asset paths (adjust these to match your environment)\nAssetFolderPath = \"/Users/alex/Documents/md/Assets/Avatar/Avatar/\"\nGarmentFolderPath = \"/Users/alex/Documents/md/Assets/Garment/\"\n\n# Initialize import/export options\nop = ApiTypes.ImportExportOption()\n\n# Import Avatar (.avt)\navatarFilePath = AssetFolderPath + \"Female_V2/FV2_Mia.avt\"\nimport_api.ImportAvatar(avatarFilePath, op)\n\n# Import Garment (.zpac)\ngarmentFilePath = GarmentFolderPath + \"Tshirt.zpac\"\nimport_api.ImportZpac(garmentFilePath, op)\n\n# Run simulation for 100 frames\nutility_api.Simulate(100)\n\n```\n\nCopy to clipboard\n\n![_images/simulation.gif](https://developer.marvelousdesigner.com/_images/simulation.gif)",
     "content_description": "Script for Simulation",
     "source": "API",
-    "created_at": "2026-03-12T17:04:29Z"
+    "created_at": "2026-04-13T16:33:05Z"
   },
   {
-    "article_id": "FwMSWyGQ3EBswiXvsB8wet",
+    "article_id": "LdPZGFktEcp3Gtkw8ATvFp",
     "url": "https://developer.marvelousdesigner.com/scenario.html#pattern",
     "title": "Pattern",
     "content": "## Pattern\uf0c1\n``` \nimport pattern_api\nimport math\n\n# SCALE FACTOR\nscale = 3.0\n\n# SPACING between shapes\nspacing = 100.0\n\n# --- SQUARE (0,0) to (300,300)\nsquare_points = [\n    (0.0, 0.0, 0),\n    (0.0, 100.0 * scale, 0),\n    (100.0 * scale, 100.0 * scale, 0),\n    (100.0 * scale, 0.0, 0)\n]\npattern_api.CreatePatternWithPoints(square_points)\n\n# --- TRIANGLE placed 100 units to the right of square\ntriangle_offset_x = 100.0 * scale + spacing\ntriangle_points = [\n    (triangle_offset_x, 0.0, 0),\n    (triangle_offset_x + 50.0 * scale, 100.0 * scale, 0),\n    (triangle_offset_x + 100.0 * scale, 0.0, 0)\n]\npattern_api.CreatePatternWithPoints(triangle_points)\n\n# --- CIRCLE approximation with 16 segments, 3x size, placed 100 units to the right of triangle\ncircle_offset_x = triangle_offset_x + 100.0 * scale + spacing\ncircle_center_x = circle_offset_x + 50.0 * scale\ncircle_center_y = 50.0 * scale\nradius = 50.0 * scale\nsegments = 16\n\ncircle_points = []\nfor i in range(segments):\n    angle = 2 * math.pi * i / segments\n    x = circle_center_x + radius * math.cos(angle)\n    y = circle_center_y + radius * math.sin(angle)\n    circle_points.append((x, y, 0))\n\npattern_api.CreatePatternWithPoints(circle_points)\n\n```\n\nCopy to clipboard\n\n![automatic](https://developer.marvelousdesigner.com/_images/pattern.gif)",
     "content_description": "Script for Pattern",
     "source": "API",
-    "created_at": "2026-03-12T17:04:29Z"
+    "created_at": "2026-04-13T16:33:05Z"
   },
   {
-    "article_id": "ai9uDKAyvhqsfBdbiKkDyx",
+    "article_id": "guKcRuMCMvpjBX84uoo9Zq",
     "url": "https://developer.marvelousdesigner.com/scenario.html#substance",
     "title": "Substance",
     "content": "## Substance\uf0c1\n``` \nimport import_api\nimport utility_api\nimport fabric_api\n\nprint(\"API Test Scenario - Substance\")\nfolderPath = '/Users/vishal.panchal/Documents/Test/'  # <-- modify this path as needed\n\n# Import Cloth File(zpac)\nzpacfilePath = folderPath + '/Female_T-Shirt.zpac'\nimport_api.ImportFile(zpacfilePath)\n\n# Import Substance\nlastFabricIndex = fabric_api.GetFabricCount(True) - 1\nsbsarFilePath = folderPath + \"/denim_fabric.sbsar\"\nfabric_api.ImportSubstanceFileAsFaceType(lastFabricIndex, sbsarFilePath, \"Front\") # FaceType: Front, Back, Side\n\n```\n\nCopy to clipboard\n\n![automatic](https://developer.marvelousdesigner.com/_images/substance.gif)",
     "content_description": "Script for Substance",
     "source": "API",
-    "created_at": "2026-03-12T17:04:29Z"
+    "created_at": "2026-04-13T16:33:05Z"
   }
 ]

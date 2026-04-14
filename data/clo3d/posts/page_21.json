@@ -1,233 +1,274 @@
 [
-  {
-    "id": "e5bbd03d041b4b328dae9d60ceccb91b",
-    "url": "https://connect.clo-set.com/community/post/e5bbd03d041b4b328dae9d60ceccb91b",
-    "title": "Clipping MetaHuman",
-    "content": "Hello,   \nI followed the CLO Manual with all instructions and still I have clipping issues.  \nI am exporting my Metahuman animation via LiveSync from Unreal to CLO and send it back. During simulating the garment in CLO I already see the clipping is happening. In Unreal it turns worse. I dont get it, is it a bug or do I something wrong?  \nI am actually using Unreal 5.6.1 and CLO 2025.0 (2025.1 is not sending the Metahuman to CLO)  \nThanks for your help!  \n![a8e8b5e2c7194f71843f65f6248c2241](https://storagefiles.clo-set.com/public/community/202508/e5bbd03d041b4b328dae9d60ceccb91b/images/a8e8b5e2c7194f71843f65f6248c2241Screenshot%202025-08-28%20071349.png)![18d744d3ffb34e1fa7fb0cb8047808c7](https://storagefiles.clo-set.com/public/community/202508/e5bbd03d041b4b328dae9d60ceccb91b/images/18d744d3ffb34e1fa7fb0cb8047808c7Screenshot%202025-08-28%20071331.png)\n\n\n### Community Post Comments:\nComment 1: Hi aschno,Clipping can occur due to several reasons, including:- The source MetaHuman animation moves too fast at a low frame rate, causing CLO’s simulation to fall behind the jagged movement.- Arms positioned too close to the torso or legs too close to each other. If garments are baggy, limited space between limbs can lead to clipping.- The Skeletal Mesh is sent to CLO instead of a Geometry Cache. Geometry Cache accounts for blend shapes, ensuring that MetaHuman deformation in UE and CLO is identical. For more details, please check out the relevant section, \"3. Create Linked Animation Sequence and prepare it for export\" in the documentation: https://connect.clo-set.com/community/post/e5bbd03d041b4b328dae9d60ceccb91b you check the pointers above and let me know if any of them help resolve the clipping issue? Thank you! 🙂\nReply 1: Hi Bryan,Sorry for the late reply.I was exactly following the steps from the CLO manual. I even made a YT tutorial about it. But it seems like sometimes working, sometimes not. It´s very confusing.When I follow the stepts it´s also often happens that the avatar glitches, especialy at the hands.Thanks, Annahttps://connect.clo-set.com/community/post/e5bbd03d041b4b328dae9d60ceccb91b",
-    "content_description": "This webpage aims to provide troubleshooting guidance for users experiencing garment clipping issues when exporting Metahuman animations from Unreal Engine to CLO software.",
-    "source": "Connect Community",
-    "created_at": "2025-08-28T05:16:19.007Z",
-    "category": 250,
-    "tags": ["CLO", "LiveSync", "UnrealEngine"]
-  },
-  {
-    "id": "96a2407d5c704d349f479b77b25ee056",
-    "url": "https://connect.clo-set.com/community/post/96a2407d5c704d349f479b77b25ee056",
-    "title": "Creating Rainwater Animation with Clo2025 #fashion",
-    "content": "![](https://storagefiles.clo-set.com/public/community/202508/96a2407d5c704d349f479b77b25ee056/images/b813c821996a422291805f0de77a807b%E9%9B%A8%E6%B0%B4_0.png)\n",
-    "content_description": "\"Discover a vibrant collection of contemporary art that inspires creativity and celebrates diverse artistic expressions.\"",
-    "source": "Connect Community",
-    "created_at": "2025-08-28T03:40:50.063Z",
-    "category": 240,
-    "tags": ["CLO", "Animation", "Rendering"]
-  },
-  {
-    "id": "00e2aa36ac654381a3ac188608828a7e",
-    "url": "https://connect.clo-set.com/community/post/00e2aa36ac654381a3ac188608828a7e",
-    "title": "Interview with K-POP Mirror Contest Winner, Joyce",
-    "content": "## **_\"Eagerness to experiment, willingness to fail (A LOT) in the process, and resilience” — this is how Joyce shapes her creativity._**\n\n![400ab30edd2e44e3be489a695217f43f](https://storagefiles.clo-set.com/public/community/202508/00e2aa36ac654381a3ac188608828a7e/images/400ab30edd2e44e3be489a695217f43f01.png)  \n\n\nWe interviewed [**Joyce**](https://connect.clo-set.com/portfolio/364032/collection/collections), who is [the winner of the K-pop Mirror contest](https://connect.clo-set.com/contest/k-popmirror), and through the process, we gained many insights into the challenges and creative approaches involved in contest work, useful workflow tips, and smart ways to utilize CONNECT.  \n  \nWe’re excited to share her experiences and know-how with you—enjoy the read and watch!\n\n✨ Watch Joyce’s interview video [[Link]](https://www.instagram.com/reel/DN3pHv0vZAc/?utm_source=ig_web_copy_link&igsh=ZHViNWxscjNwNmRj)\n\n* * *\n\n# [Part 1. Introduction & Participation]\n\n**Q1. Please briefly introduce yourself.**\n\nI’m Joyce @ Miu Vermillion Studio, a freelance 3D artist with a non-creative day job. 3D art used to be no more than a creative outlet, but it all changed during the COVID lockdown in early 2020. Several independent designers noticed my photorealistic 3D renders and asked me to collaborate with them to create advertising campaigns and lookbooks for their brand because organizing fully styled professional photo shoots during lockdown was not the easiest thing to do, and some of the brands wanted to create surreal-looking imagery. Also, 3D virtual humans were kind of on the rise back then before AI influencers changed the scene merely 3 years later. \n\nSince then, I’ve decided to explore the usage of 3D art for storytelling and video game development. Currently, I’m working on independently created Fortnite Islands that will hopefully be playable on all Fortnite-supported platforms. I’m also in the early process of creating a short film, music video, and an Unreal Engine based adventure game.\n\n  \n![9c4755c35fdd4f858ebe0b049af37bf9](https://storagefiles.clo-set.com/public/community/202508/00e2aa36ac654381a3ac188608828a7e/images/9c4755c35fdd4f858ebe0b049af37bf9%EC%8B%9C%ED%80%80%EC%8A%A4%2001.00_00_11_16.%EC%8A%A4%ED%8B%B8%20016.png)\n\n![edc4489146994ef1adee13594a16f1bf](https://storagefiles.clo-set.com/public/community/202508/00e2aa36ac654381a3ac188608828a7e/images/edc4489146994ef1adee13594a16f1bf%EC%8B%9C%ED%80%80%EC%8A%A4%2001.00_00_15_25.%EC%8A%A4%ED%8B%B8%20017.png)\n\n  \n\n\n**Q2. How did you come to participate in this contest?**\n\nI found out about this contest on CLO’s Instagram story. This contest is different from other contests I’ve seen on the CONNECT website in the past. The contest’s brief is to recreate and not to design something. Though I’ve worked with designers to create digital representations of their works in the past, the level of complexity and style of KOWGI’s design is unlike any piece I’ve made in the past. So, from the get-go, I knew that this contest was going to challenge, help, and push me to expand my skills; and these are always my primary reasons for joining a competition.\n\n# [Part 2. Creative Process & Production Insights]\n\n**Q3. What made you choose this particular look?  **\n\nThe moment I saw the contest announcement, I knew I had to recreate this particular look from the Nxde music video by (G)I-DLE (now known as i-dle), the first K-POP music video that leaves a lasting impression on me beyond the production value and visual quality. Soyeon, the group’s leader, wrote and produced the song. She had to convince her record label to allow her to produce this unconventional/daring song and music video. It amuses me to know that the song's title pushes down inappropriate keywords and makes them harder to find online in Korea (details available on Wikipedia). I find the way she directed the members in the recording room and showed them how to achieve specific sounds impressive as well. \n\nAside from that, I’ve also been a huge fan of the outfit ever since I saw it on KOWGI’s social media feed many months before I saw it in the music video. It’s one of the most extraordinary graduate collections I’ve seen so far. \n\nAs I was recreating the design in a digital format , I discovered more and more details I didn’t notice when I casually glanced at it on social media, and this has made me appreciate this outfit even more.\n\n  \n![28c693664cfe4efdbaea1aa1c69319d2](https://storagefiles.clo-set.com/public/community/202508/00e2aa36ac654381a3ac188608828a7e/images/28c693664cfe4efdbaea1aa1c69319d2image.png)  \n\n\n**Q4. What was the very first thing you did when starting this project?**\n\nI started the project by gathering as many photos and videos of the outfit as possible so I could figure out how it looks from every angle. Then, I enlarged the clearest photos and marked the locations of all the beads and other details to make it easier to get their placement right on the digital version. The outfit has more details than it seems at first, and some of these details look a bit blurry in the photographs and videos. So, there was a little bit of guessworking involved as well.\n\n**Q5. When designing the idol outfit, what did you focus on the most?**\n\nI always start by getting the overall silhouette correctly, then fill in the details.\n\n**Q6. How did you approach the overall creation process?  **\n\nI created most of the elements of the look (not just the clothes but also the nail art, front hair, metal trims, face gems, and necklace) in Marvelous Designer; and what I couldn’t do in Marvelous Designer, I did in Blender. I still use an older version of Photoshop to create the texture maps because it still does the trick (and very well at that).\n\n![86ae491f6c864b81b03c0a3cd83ebd26](https://storagefiles.clo-set.com/public/community/202508/00e2aa36ac654381a3ac188608828a7e/images/86ae491f6c864b81b03c0a3cd83ebd26image.png)  \n\n\n**Q7. Which part of your final piece are you most proud of?**\n\nThe fact that I could push myself to find new ways to use Marvelous Designer and optimize my workflow.\n\n  \n\n\n**Q8. Do you have any tips you think other creators should know?**\n\nAdjusting the camera settings (especially the field of view) can help a lot when we are working on the small details. It was especially helpful when I was working on the nail art.\n\nIt’s a good idea to register some trims as buttons because they follow the garments and we can turn off the collision during simulation then turn it back on later to speed the process up and make sure the garment doesn’t break apart during simulation.\n\nAlso, I didn’t know that we can hide the freeze, solidify, strengthen, and layer colors by right-clicking an empty space in the 3D window. \n\n# [Part 3. Experience with CONNECT]\n\n**Q9. What impressed you the most during your experience with this contest?**\n\nI am impressed by other participants’ works. There are so many great entries. As always, I had a great time trying to predict which pieces might win which prizes.\n\n**Q10. Did you gain any insights or inspiration from seeing other creators’ works on CONNECT?**\n\nSeeing high-quality works by other creators always pushes me to hone my skills further. When I was a newbie, I used to download free 3D garments from CONNECT to study the pattern pieces and fabric settings.\n\n**Q11. What features or aspects of CONNECT did you find most useful?  **\n\nThe abundance of resources we can use to jumpstart our projects and the opportunities to collaborate with companies/brands through contest participation.\n\n# [Part 4. Award Reflections & What’s Next]\n\n**Q12. How did you feel when you found out you had won?**\n\nIt was a surreal moment. It took me a few seconds to take it in.\n\n**Q13. Lastly, is there a value or mindset that’s especially important to you these days as a creator?**\n\nEagerness to experiment, willingness to fail (A LOT) in the process, and resilience.\n\n* * *\n\n✨ Watch Joyce’s interview video [[Link]](https://www.instagram.com/reel/DN3pHv0vZAc/?utm_source=ig_web_copy_link&igsh=ZHViNWxscjNwNmRj)\n\nSee? **CONNECT gives anyone the stage to turn ideas into reality.**  \nAnd the next spotlight could be **yours!** ✨\n\n# **👉 Join the ongoing contest now**[**[Link]**](https://connect.clo-set.com/contest?pageNo=1)\n\n  \n  \n\n",
-    "content_description": "Explore Joyce's creative journey as she shares her insights on experimentation, resilience, and the art of 3D design through her award-winning work in the K-pop Mirror contest.",
-    "source": "Connect Community",
-    "created_at": "2025-08-28T01:00:04.073Z",
-    "category": 110,
-    "tags": ["MarvelousDesigner", "CONNECT", "CLO", "Blender", "Contest", "Pattern", "Rendering"]
-  },
-  {
-    "id": "eea0b0542196426fbd9ace5b597a5c55",
-    "url": "https://connect.clo-set.com/community/post/eea0b0542196426fbd9ace5b597a5c55",
-    "title": "Creating Emoji Animation with Clo2025+",
-    "content": "![](https://storagefiles.clo-set.com/public/community/202508/eea0b0542196426fbd9ace5b597a5c55/images/f43c50b771d049eda50e9915b345fe0aUntitled_14.gif)\n\n\n### Community Post Comments:\nComment 1: 😭👏\n\nComment 2: brilliant!😍",
-    "content_description": "This web page serves to showcase a dynamic visual representation of community engagement and creativity through animated imagery.",
-    "source": "Connect Community",
-    "created_at": "2025-08-26T10:49:36.89Z",
-    "category": 240,
-    "tags": ["CLO", "CONNECT", "Animation"]
-  },
-  {
-    "id": "9207737c8f10409aa6de1c530386478d",
-    "url": "https://connect.clo-set.com/community/post/9207737c8f10409aa6de1c530386478d",
-    "title": "Creating a Necklace with Topstitches in CLO 3D",
-    "content": "* * *\n\nIn this tutorial, you’ll learn step by step how to create a simple necklace in CLO 3D [CLO Virtual Fashion](https://www.linkedin.com/company/clovirtualfashion/). The process is shown visually, making it easy to follow along. You’ll also discover useful details such as how to edit stitches and apply small tricks for a cleaner result. This is a clear and practical guide, especially designed as best practice for fashion students. \n\n[#createwithclo](https://www.linkedin.com/search/results/all/?keywords=%23createwithclo&origin=HASH_TAG_FROM_FEED)\n\n![a8098d920f1e4409ab1d4751796380ae](https://storagefiles.clo-set.com/public/community/202508/9207737c8f10409aa6de1c530386478d/images/a8098d920f1e4409ab1d4751796380aeScreenshot%202025-08-25%20at%2015.18.45.png)\n\n* * *\n",
-    "content_description": "Discover a step-by-step tutorial on creating a simple necklace in CLO 3D, complete with visual guidance and expert tips tailored for fashion students.",
-    "source": "Connect Community",
-    "created_at": "2025-08-25T13:27:15.543Z",
-    "category": 240,
-    "tags": ["CLO", "CLO-SET", "CONNECT", "Topstitch", "Material"]
-  },
-  {
-    "id": "d9309a57081e470ea9d53b2e059b629b",
-    "url": "https://connect.clo-set.com/community/post/d9309a57081e470ea9d53b2e059b629b",
-    "title": "A striking study in monochrome geometry, this dress features a bold black-and-white graphic arranged in crisp chevrons and diamonds that converge towa",
-    "content": "![23a7a2240b804bb1b47feec005277e4d](https://storagefiles.clo-set.com/public/community/202508/d9309a57081e470ea9d53b2e059b629b/images/23a7a2240b804bb1b47feec005277e4d0017.png)\n",
-    "content_description": "Discover innovative solutions and insights to enhance your community engagement and collaboration.",
-    "source": "Connect Community",
-    "created_at": "2025-08-25T12:46:32.75Z",
-    "category": 210,
-    "tags": ["CLO", "CLO-SET", "CONNECT", "Texture", "Rendering", "Pattern", "HIGHMELTBONDING"]
-  },
-  {
-    "id": "25e47cae75194e73a03ada783f293898",
-    "url": "https://connect.clo-set.com/community/post/25e47cae75194e73a03ada783f293898",
-    "title": "How to model a Cyberpunk Outfit (JACKIE WELLES) in CLO3D",
-    "content": "How to model a Cyberpunk Outfit (JACKIE WELLES)in CLO3D or Marvelous Designer! This easy-to-follow tutorial will have you creating your own 3D Men's outfit in no time. Ready to level up your virtual fashion game? Let's get designing!✨  \n\n\n* * *\n\n _We would be glad to hear your opinion._\n\n_To download this outfit, you can visit the link:_\n\n<https://connect.clo-set.com/detail/c5fc895233fe4c6d84ad22e1729605de>\n\n![9bad1db2aa4447ac834e809a929f174c](https://storagefiles.clo-set.com/public/community/202508/25e47cae75194e73a03ada783f293898/images/9bad1db2aa4447ac834e809a929f174cJackie_Custom_View_2.png)\n",
-    "content_description": "Discover how to easily create a stunning Cyberpunk outfit inspired by Jackie Welles in CLO3D or Marvelous Designer with this comprehensive tutorial!",
-    "source": "Connect Community",
-    "created_at": "2025-08-25T07:40:29.98Z",
-    "category": 240,
-    "tags": ["CLO", "CLO-SET", "CONNECT", "Photoshop", "Avatar", "Import_Export", "Material", "Pattern", "Simulation", "Texture"]
-  },
-  {
-    "id": "445d5e8b455e4618adb837eff297a3da",
-    "url": "https://connect.clo-set.com/community/post/445d5e8b455e4618adb837eff297a3da",
-    "title": "When Less is More",
-    "content": "This week I wanted to step into a softer universe. 🌿✨  \nThree designs that prove minimalism doesn’t mean boring — it means clarity, balance and grace. From voluminous sleeves to bold bows and delicate layers, each piece reflects the beauty of restraint. A reminder that sometimes, the most powerful looks are also the quietest. 💭\n\n### 🌿 Green Elegance\n\nVoluminous sleeves and a soft drape turn this gown into a sculpture of serenity. The textured fabric adds depth while keeping the silhouette minimal and timeless.\n\n### ❤️ Crimson Drama\n\nA bold red statement with oversized bows and shimmering fabric. Romantic yet playful, it mixes drama with softness in perfect balance.\n\n### 💙 Blue Motion\n\nLayers and fluid textures create the feeling of a dress caught mid-dance. Light, airy, and sculptural — movement frozen in fabric.\n\n![dfbf2fdb15404ccebad239ff0192882f](https://storagefiles.clo-set.com/public/community/202508/445d5e8b455e4618adb837eff297a3da/images/dfbf2fdb15404ccebad239ff0192882f20567.png)![8e7ff565d06e432f931d6c0092454e43](https://storagefiles.clo-set.com/public/community/202508/445d5e8b455e4618adb837eff297a3da/images/8e7ff565d06e432f931d6c0092454e4310592.png)![2bfb0531735140d3b425c3575b0a6d50](https://storagefiles.clo-set.com/public/community/202508/445d5e8b455e4618adb837eff297a3da/images/2bfb0531735140d3b425c3575b0a6d500218.png)![27c11cc56a26449d91960a2b8921d3c8](https://storagefiles.clo-set.com/public/community/202508/445d5e8b455e4618adb837eff297a3da/images/27c11cc56a26449d91960a2b8921d3c8Vestido_maxi_volante0004.png)![7c36d061fef84281bafaf10636879953](https://storagefiles.clo-set.com/public/community/202508/445d5e8b455e4618adb837eff297a3da/images/7c36d061fef84281bafaf10636879953Vestido_maxi_volante20338.png)![5d6f9fd7ef024db0a0cadd1a4084c707](https://storagefiles.clo-set.com/public/community/202508/445d5e8b455e4618adb837eff297a3da/images/5d6f9fd7ef024db0a0cadd1a4084c7070006.png)![217cbf20a02042639517ede9ab2e3292](https://storagefiles.clo-set.com/public/community/202508/445d5e8b455e4618adb837eff297a3da/images/217cbf20a02042639517ede9ab2e329230027.png)\n",
-    "content_description": "Explore a serene collection of minimalist designs that embody elegance and grace, showcasing the beauty of restraint through voluminous silhouettes, bold accents, and delicate layers.",
-    "source": "Connect Community",
-    "created_at": "2025-08-25T07:13:57.717Z",
-    "category": 210,
-    "tags": ["CLO", "CONNECT", "CLO-SET", "Blender", "UnrealEngine", "Animation", "Avatar", "Rendering", "Pattern", "Material"]
-  },
-  {
-    "id": "f7532da65c8441bfaff86b7aea217d2e",
-    "url": "https://connect.clo-set.com/community/post/f7532da65c8441bfaff86b7aea217d2e",
-    "title": "Out Sole - Connect stores",
-    "content": "The outsole design currently exists only for the left side. Kindly provide the correct procedure or method to mirror it for the right side\n\n\n### Community Post Comments:\nComment 1: Hi, you only need one side because upon registering the shoes as accessories, you can choose to create an additional mirrored side. If you need any of the outsoles on the offícial CONNECT account for other purposes, it is possible to mirror paste the trim files:\nReply 1: Thanks, I need to mirror the Sole (not as trim)\nReply 2: I developed sneakers using the \"MV2 Workboots Round\" avatar and used its sole as the base for the shoe.While registering the sneakers as an accessory, a pop-up window appeared asking me to select an avatar. I selected \"MV2_Jinho\" and proceeded with the Mirror option. The right shoe was created successfully, but the sole from the 'MV2 Workboots Round' avatar disappeared.I repeated the same workflow, this time selecting \"MV_Workboots_Round\" in the pop-up window. However, a message appeared stating that only ZACS files are compatible with CLO avatars, and I was unable to proceed.Could you please advise if there is an alternative workflow to achieve the desired result, or if your guidance is required?See attached images\nReply 3: Hey Gupta, looks like initially you have the shoe added to the scene as an avatar, is that right? Let me know if you: register the shoe, then delete the avatar (Shoe), and import the shoe, this time as an accessory, for the avatar. Then, apply mirror. Let us know so we can follow your steps.",
-    "content_description": "The purpose of this web page is to provide a step-by-step guide for mirroring the existing left outsole design to create a corresponding right outsole.",
-    "source": "Connect Community",
-    "created_at": "2025-08-25T06:16:30.357Z",
-    "category": 210,
-    "tags": ["CLO", "MarvelousDesigner"]
-  },
-  {
-    "id": "cf3fa8e1cea340f6a881c28f046c92a9",
-    "url": "https://connect.clo-set.com/community/post/cf3fa8e1cea340f6a881c28f046c92a9",
-    "title": "FV2 Motion_breast bounce",
-    "content": "suited to FV2 avatar （high heels）  \nIf you need the flat shoe version, please leave a comment in the comment section\n\nstrong <https://connect.clo-set.com/detail/316fa86869574d65bc19bd25b221987e>\n\nmild <https://connect.clo-set.com/detail/009130f98494456aaf5a20e9ed88666f>\n\n![e5f835cde28c4b7fb2967e4bac921b9d](https://storagefiles.clo-set.com/public/community/202508/cf3fa8e1cea340f6a881c28f046c92a9/images/e5f835cde28c4b7fb2967e4bac921b9ddance_741_4.webp)![5965305a511a45e4ab8aee0de3a002bd](https://storagefiles.clo-set.com/public/community/202508/cf3fa8e1cea340f6a881c28f046c92a9/images/5965305a511a45e4ab8aee0de3a002bddance_741_1.webp)\n",
-    "content_description": "Discover stylish high heels suited for the FV2 avatar, and request flat shoe options in the comments!",
-    "source": "Connect Community",
-    "created_at": "2025-08-25T03:33:06.967Z",
-    "category": 210,
-    "tags": ["CLO", "Animation", "Avatar", "Bikini", "underwear", "Bras"]
-  },
-  {
-    "id": "df69af6bed3d447abbbe2546c2f153c3",
-    "url": "https://connect.clo-set.com/community/post/df69af6bed3d447abbbe2546c2f153c3",
-    "title": "Does Non-Grade Point work with Auto Grading?",
-    "content": "Hi!\n\nI’ve been waiting for the Non-Grade Point feature to be released in 2025.1, which I believe should lock grading points. However, it seems that Auto Grading doesn’t currently support this feature. I’m curious to understand why we need these points for manual grading only. Is there something I’m doing incorrectly, or will Non-Grade Point work with Auto Grading in the next release?\n\n\n### Community Post Comments:\nComment 1: Auto Grading was renamed to Auto Fit as this tool does not actually grade a pattern, but instead fit it from one avatar to another\nReply 1: Is there a solution to lock the point on Auto Fit? Because here it’s much more required than on Auto Grading.\nReply 2: Not currently. Auto fit will adjust everything. If you are looking to Grade we would recommend using the Grade Tools. They are more manual, but give you the most control",
-    "content_description": "The purpose of this web page is to seek clarification on the compatibility of the Non-Grade Point feature with Auto Grading in the upcoming 2025.1 release and to understand its necessity for manual grading.",
-    "source": "Connect Community",
-    "created_at": "2025-08-24T16:22:45.26Z",
-    "category": 220,
-    "tags": ["CLO", "AutoFitting", "Avatar", "Pattern"]
-  },
-  {
-    "id": "85eeb88a6f2a4d5197dccf9e96f21e68",
-    "url": "https://connect.clo-set.com/community/post/85eeb88a6f2a4d5197dccf9e96f21e68",
-    "title": "FEATURE REQUEST: Bring back Image to Face (AI)",
-    "content": "Please bring back this amazing feature we were able to beta test at Clo. This is the most amazing AI feature you had. It made creating customized characters that work within Clo a breeze.\n\n  \nI have created such beautiful characters with this.\n\n  \nReferences/other existing products: ChatAvatar by Hyper3D, Character Creator Headshot Plugin by Reallusion (best Quality so far)\n\n![14b1d4a04fbe43bfb350020af6225b41](https://storagefiles.clo-set.com/public/community/202508/85eeb88a6f2a4d5197dccf9e96f21e68/images/14b1d4a04fbe43bfb350020af6225b41MidjourneyHeads.png)Heads I created with Midjourney\n\n![6e6cf24f2d8d4d878b24a1cd8dd4dd27](https://storagefiles.clo-set.com/public/community/202508/85eeb88a6f2a4d5197dccf9e96f21e68/images/6e6cf24f2d8d4d878b24a1cd8dd4dd27CLOFaceImportHeads.png)Heads I imported with the CLO Beta Feature\n\n![7c7b4a8612e84a7a9793a7b49d717f46](https://storagefiles.clo-set.com/public/community/202508/85eeb88a6f2a4d5197dccf9e96f21e68/images/7c7b4a8612e84a7a9793a7b49d717f46CC4HeadshotV2.png)Head I Imported with CC4 Headshot V2 Plugin\n\n![a8c9c956db63499d857f19b8424e81ff](https://storagefiles.clo-set.com/public/community/202508/85eeb88a6f2a4d5197dccf9e96f21e68/images/a8c9c956db63499d857f19b8424e81ffCC4HeadshotV2UI.png)CC4 Headshot V2 UI (you can use the Morph Feature and Image Matching Feature together to map the image perfectly to the face after the initially work of the tool and you can fine tune nose, mouth, chin etc to make it perfect in texture and 3D form)\n\n\n### Community Post Comments:\nComment 1: Thanks for your explanation, I dont give up hope that its coming back in some way or another 🙏🏻🙂 I think it would be a gamechanger as working with haute couture it would be a breeze to just use a bodyscan of the client plus a photo of the client to generate a virtual bust for him/her and tailor the fashion piece with perfect fit.I would have even offered my programming work for free, if I had the time, just to get this back in ;)\nReply 1: Plus It was working better for me than the replacement after render which is currently used to customize looks.\n\nComment 3: For a Closeup look of what I already was able to produce with just the CLO beta version of the tool. If you can enhance the tool, like it is working with CC4, we would be able to create perfect results. I know this is massive work (morph feature only is already a big thing), but investing the time in that would make an amazing feature.",
-    "content_description": "\"Revive the incredible AI character creation feature in Clo that simplifies the design process and enhances customization, allowing users to craft stunning, personalized characters effortlessly.\"",
-    "source": "Connect Community",
-    "created_at": "2025-08-24T11:17:50.92Z",
-    "category": 250,
-    "tags": ["CLO", "AI", "Avatar", "Texture", "AutoConvert", "ImageToFace", "Face", "Convert", "Customize"]
-  },
-  {
-    "id": "b4b87119ab6d41f2ae2d9ec27429a737",
-    "url": "https://connect.clo-set.com/community/post/b4b87119ab6d41f2ae2d9ec27429a737",
-    "title": "How to create High styles 3d fashion",
-    "content": "\n",
-    "content_description": "Sure! Please provide the content you'd like me to use for generating the purpose of the web page.",
-    "source": "Connect Community",
-    "created_at": "2025-08-24T10:01:26.233Z",
-    "category": 240,
-    "tags": ["CLO", "AI", "CLO-SET", "CONNECT"]
-  },
-  {
-    "id": "1b9d03941a3f4f3f88d77ce29a2008ae",
-    "url": "https://connect.clo-set.com/community/post/1b9d03941a3f4f3f88d77ce29a2008ae",
-    "title": "3D pen tool",
-    "content": "* * *\n\n![](https://storagefiles.clo-set.com/public/community/202508/1b9d03941a3f4f3f88d77ce29a2008ae/images/5e77eacedba344d597abbc0c85207484PROFILE_DETAILS_1_optimized_650.png)\n\n\n### Community Post Comments:\nComment 1: ❤️",
-    "content_description": "The purpose of this web page is to showcase detailed profile information and highlights for community members.",
-    "source": "Connect Community",
-    "created_at": "2025-08-24T09:58:42.37Z",
-    "category": 210,
-    "tags": ["CLO", "MarvelousDesigner", "CLO-SET", "CONNECT"]
-  },
-  {
-    "id": "e546b10dc2014a6a90f859511ac527ee",
-    "url": "https://connect.clo-set.com/community/post/e546b10dc2014a6a90f859511ac527ee",
-    "title": "Seamless Blocking",
-    "content": "I have tested the new Seamless Blocking feature.\n\nI would like to use it to create a subsection defined by a complex curve in the interior of the parent shape that is overlapped with another shape underneath--the shape that is curved. \n\nUnlike internal lines and pattern outlines, I cannot use the Copy/Replace line option to exactly replicate the complex curve, nor can I select that exact shape line and offset as a Seamless Blocking line (if offset is zero) nor can I convert an internal line to a Seamless Blocking line to retain that complex curve. \n\nI can imperfectly replicate the curve in a few ways but this manual and inexact workaround is not efficient. \n\nIf you have some insight into how I may accomplish this, please share. Thank you, friends!\n\nP.S. One of my pattern piece perimeters was not the same in Print Layout. There is a glitch with that for sure. \n\n\n### Community Post Comments:\nComment 1: Hi there, would it be possible to share screenshots of your CLO window with the pattern pieces visible? Maybe the curved shape is not intersecting with the pattern outline which would result in it not working.",
-    "content_description": "Explore solutions for effectively utilizing the Seamless Blocking feature to replicate complex curves within overlapping shapes, while addressing challenges with precision and layout glitches.",
-    "source": "Connect Community",
-    "created_at": "2025-08-23T13:26:09.133Z",
-    "category": 220,
-    "tags": ["CLO", "Pattern"]
-  },
-  {
-    "id": "2de66b3a702f413d81a74ec7c4940197",
-    "url": "https://connect.clo-set.com/community/post/2de66b3a702f413d81a74ec7c4940197",
-    "title": "Rendered Videos Unplayable",
-    "content": "![901f24b3cbf749dc9035e82d29317cc5](https://storagefiles.clo-set.com/public/community/202508/2de66b3a702f413d81a74ec7c4940197/images/901f24b3cbf749dc9035e82d29317cc5Screenshot%202025-08-20%20133235.png)I have updated to the latest version of clo3d and when I render an animation to mp4 or avi it is corrupted and I cannot play the video.  \n  \nI have tried with different projects, avatars, animation settings and get the same result \n\n\n### Community Post Comments:\nComment 1: Hi there, I just tested and have the same issue 😭 I will report and get back to you.\nReply 1: Update: Our developers are on it! Will let you know when I have news.\nReply 2: 🙏🏻 thank you!",
-    "content_description": "This web page aims to provide troubleshooting solutions for users experiencing corrupted video playback issues when rendering animations in the latest version of Clo3D.",
-    "source": "Connect Community",
-    "created_at": "2025-08-22T18:58:59.373Z",
-    "category": 250,
-    "tags": ["CLO", "Rendering"]
-  },
-  {
-    "id": "d5da6c4d9b7746839a00a31abb2b13b3",
-    "url": "https://connect.clo-set.com/community/post/d5da6c4d9b7746839a00a31abb2b13b3",
-    "title": "CLO 2025.1.126 snapshots cannot be exported",
-    "content": "CLO 2025.1.126 snapshots cannot be exported，Has anyone encountered this kind of problem，Is it my personal issue or a product bug![bc6f8f370c9e48249ed65fec18a954b0](https://storagefiles.clo-set.com/public/community/202508/d5da6c4d9b7746839a00a31abb2b13b3/images/bc6f8f370c9e48249ed65fec18a954b0%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-22%20150215.png)\n\n\n### Community Post Comments:\nComment 1: Hi, are you on Mac or Windows?Also, we could not find an active subscription on your account. Do you have another one?\n\nComment 2: Hi there, it's working on my side, can you try to refresh the thumbnails? Also, are you on Mac or Windows?\nReply 1: Even when the Update button is clicked on windows11, no image is displayed",
-    "content_description": "This web page aims to address issues related to the inability to export CLO 2025.1.126 snapshots, inviting users to share their experiences and identify whether it's a personal issue or a product bug.",
-    "source": "Connect Community",
-    "created_at": "2025-08-22T07:05:56.27Z",
-    "category": 250,
-    "tags": ["CLO"]
-  },
-  {
-    "id": "a254a0c1a8ab4da485de19bcd943079e",
-    "url": "https://connect.clo-set.com/community/post/a254a0c1a8ab4da485de19bcd943079e",
-    "title": "[Challenge] My Digital Closet Challenge Season4 #NarutoRun",
-    "content": "Hello, Creators!  \n  \nIt’s finally back!  \nCONNECT’s **mydigital closet** Challenge Season 4   \n— this time with 3D artist **Minstin**! ✨\n\n# The theme? **Naruto Run!** 🌀\n\nYou know the iconic pose — arms stretched straight back, sprinting at full speed!  \nNow, take on the Naruto Run with our adorable CONNECT Kids Avatar!\n\n![b113058597a94d0a93348b4e29d25f10](https://storagefiles.clo-set.com/public/community/202508/a254a0c1a8ab4da485de19bcd943079e/images/b113058597a94d0a93348b4e29d25f10CONNECT_thumbnail%20long.webp)\n\n* * *\n\nAll challenge assets are available for **free download** on CONNECT.  \nCheck the challenge details below and join in!  \n\n\n* * *\n\n  \nAfter uploading to SNS, leave a comment on this post with the URL to your content. We’ll check the comments and feature your work on our Instagram!**😊**\n\nYou can also **show off your challenge video or link**  \n**in the CONNECT community!  \n** Set the post topic to Challenge and share your work with others!**🚀✨**\n\n  \n\n\n* * *\n\n# **📌Challenge Details**  \n\n\n  * Title : **MyDigitalCloset_Naruto Run**  \n  \n\n\n  * Concept: Open Theme\n\n    * **There are no concept restrictions. Outfits with various concepts are welcome!**\n\n    * Feel free to showcase any 3D outfits you’d like to introduce.\n\n    * Previously released outfits are also welcome.\n\n\n\n  * Participation Period: Ongoing  \n  \n\n\n  * Participation Requirements\n\n    * Use the motion file and avatars provided by CONNECT.\n\n    * Collaboration is encouraged—multiple creators can work together to create a collaborative piece.\n\n    * Upload your completed work to Instagram Reels, YouTube Shorts, or Tiktok using the relevant hashtags.\n\n      * #mydigitalcloset #lookbook #challenge #digitalfashion #connectofficial #clo3d #marvelousdesigner #challengebyCONNECT  \n  \n\n\n\n\n  * **Participation Process  \n** 1\\. Download Motion and Avatar: Download the motion file and the avatar provided by CONNECT.\n\n    * Motion : [**_KV1.1_NarutoRun_**](https://connect.clo-set.com/detail/3b179edda10443b0852c780f580ce6ed)\n\n    * Avatar : [**_KV1.1_River_24M_  \n  \n**](https://connect.clo-set.com/detail/da6bd21345d7445b87f13e5865841103)\n\n\n\n\n2\\. Creating Garment Animation: Apply the motion to each outfit project file and press the record button in animation mode to create the outfit animation.\n\n  * **TIPS**\n\n    * Running motion is highly dynamic and can be unstable, please refer to the tips below when creating your simulation.\n\n      * **Increase Scene Time Warp (recommend 2~3)**\n\n      * **Increase Simulation Quality**\n\n    * The wind effect used in the challenge video is included in the motion download link, so feel free to use it with your garment simulation.\n\n\n\n\n**  \n**\n\n3\\. Rendering: Render the completed animation file.\n\n  * We recommend an image size of 1080px * 1920px.\n\n  * TIP : Use the CONNECT official [**_Scene_**](https://connect.clo-set.com/portfolio/208988/collection/collections/2312DD1c848deff0094e4991a906bfc52dae0e) and [**_Prop_**](https://connect.clo-set.com/portfolio/208988/collection/collections/2312DD5b079406e1b74752893f4f72b525ee8c) file _  \n  \n_\n\n\n\n\n4\\. Editing: Edit the rendered video using an editing program.\n\n  * You can refer to[ **_this video_**](https://www.instagram.com/reel/C_zgG9Qv37o/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==) for the editing process.\n\n  * Feel free to use other programs if you prefer.\n\n  * Background Music : Free choice  \n  \n\n\n\n\n\n5\\. Upload to SNS: Upload your finished work to Instagram Reels, YouTube Shorts, or TikTok.\n\n  * Include the following hashtags\n\n    * #mydigitalcloset #lookbook #challenge #digitalfashion #connectofficial #clo3d #marvelousdesigner #challengebyCONNECT  \n  \n\n\n\n\n\n6\\. Complete Participation\n\n  * Once uploaded to SNS, leave a comment on **this post** with your email address and the URL to your content.\n\n    * Example : Participation Complete / www.example.com\n\n  * You can also **show off your challenge video or link in the CONNECT community!**\n\n    * Set the post topic to Challenge and share your work with others!\n\n\n\n\n* * *\n\nChallenge Enquiry\n\n1\\. Direct message on [**_Instagram_  \n**](https://www.instagram.com/letsconnect3d/)2\\. Comments on **this page**  \n\n\n* * *\n\n![c1ed4816d0464a9da48e6fa312bfa791](https://storagefiles.clo-set.com/public/community/202508/a254a0c1a8ab4da485de19bcd943079e/images/c1ed4816d0464a9da48e6fa312bfa791Banner_Final.jpg)\n\n** _It’s your turn to show off your Naruto speed! ⚡💛_**\n\n  \n![](https://storagefiles.clo-set.com/public/community/202508/a254a0c1a8ab4da485de19bcd943079e/images/d113602cbaef44799b2e0994351f81caCommunity%20%20thumbnail.png)![](https://storagefiles.clo-set.com/public/community/202508/a254a0c1a8ab4da485de19bcd943079e/images/6293682b487f4910a19e214cfb9c097aCommunity%20%20thumbnail.png)\n",
-    "content_description": "Join the **MyDigitalCloset Challenge Season 4** and unleash your creativity by showcasing your 3D outfits in a dynamic **Naruto Run** animation with our CONNECT Kids Avatar!",
-    "source": "Connect Community",
-    "created_at": "2025-08-22T01:37:43.227Z",
-    "category": 100,
-    "tags": ["CLO", "MarvelousDesigner", "CONNECT", "Animation", "Challenge", "Narutorun", "mydigitalcloset"]
-  },
-  {
-    "id": "4a34981ac23f48509dd38470aa64c675",
-    "url": "https://connect.clo-set.com/community/post/4a34981ac23f48509dd38470aa64c675",
-    "title": "Live Sync is not exporting Avatar Clo 2025.1  Unreal Engine",
-    "content": "I just updated CLO today and it was not possible to export my Metahuman to Clo as skeletal Mesh nor Geometry Cache.   \n  \nAlso for past versions the Metahuman does not longer export with Skeleton, so I cannot save the pose or joint motion in CLO. In past that was not a problem and I could easy make a transition from Base Pose to animation and back.  \n  \nDid the workflow changed or did I miss anything or might it even a bug?  \n  \nI´ve tried using Unreal Engine 5.6.1 with CLO 2025.1\n\nMany thanks in advance!\n\n\n### Community Post Comments:\nComment 1: Im trying to work with ue 5.6 and clo 2025.1.126 and the livesync plugin isnt working, they reported me this error. I dont know how is going, Thank you.\n\nComment 2: Good news - LiveSync 2.1.0 has been publisehd on Fab! Please update it via Epic Games Launcher and it should be working now. Thank you! 🙂\nReply 1: Hey Brian, that´s great and super fast! I will test it soon. Many thanks for your support!\n\nComment 3: Hi aschno,I can confirm that LiveSync is not functional with CLO 2025.1 and Unreal Engine 5.6.1. We are currently preparing a new version for LiveSync and will include a bug fix to address this issue as soon as possible. Apologies for the inconvenience.Best regards,Bryan\nReply 1: Hey Brian, Unfortunately it´s still not working. I wanted to send over a Metahuman to CLO and nothing is happening 😭\nReply 2: Hi aschno,I just tested it with CLO 2025.1.126, UE 5.6, and LiveSync 2.1.0 - the MetaHuman workflow from UE to CLO works on my end. Could you submit a Zendesk support ticket and attach some images/videos to the ticket if possible? 🙂 You can mention my name in the description so that it is assigned to me.",
-    "content_description": "This web page aims to discuss issues related to exporting Metahuman characters to CLO, addressing potential workflow changes or bugs that may have affected the ability to save poses and joint motion.",
-    "source": "Connect Community",
-    "created_at": "2025-08-21T13:50:30.177Z",
-    "category": 250,
-    "tags": ["CLO", "UnrealEngine", "Animation", "LiveSync"]
-  },
-  {
-    "id": "357d1e35c6c6419285dcce8a1a3ca6ed",
-    "url": "https://connect.clo-set.com/community/post/357d1e35c6c6419285dcce8a1a3ca6ed",
-    "title": "NEW ANIMATION BUG",
-    "content": "![cee62b02004146ed96c1c349ed386969](https://storagefiles.clo-set.com/public/community/202508/357d1e35c6c6419285dcce8a1a3ca6ed/images/cee62b02004146ed96c1c349ed386969DASGF.PNG)Whenever I play a fabric animation in the animation editor, it is initially set to 'Fitting', but it automatically switches to 'Normal'. Also, the trims are not animating along with the fabric after this update\n\n\n### Community Post Comments:\nComment 1: Hi there, could you please share a screenshot of your trim's properties so we can try replicating the issue?",
-    "content_description": "This web page aims to address issues with fabric animation settings and trim synchronization in the animation editor following a recent update.",
-    "source": "Connect Community",
-    "created_at": "2025-08-21T06:58:48.823Z",
-    "category": 220,
-    "tags": ["CLO", "MarvelousDesigner", "CLO-SET", "CONNECT", "Blender", "Simulation", "Import_Export", "EveryWear", "Contest", "Avatar"]
-  },
-  {
-    "id": "532b44e625734577be70b8183a98b1db",
-    "url": "https://connect.clo-set.com/community/post/532b44e625734577be70b8183a98b1db",
-    "title": "🌊 Floating Dreams 🌊",
-    "content": "Like petals carried by the tide, these garments float freely over the water, catching the last golden rays of the sunset. Each piece drifts as if it has its own rhythm, a delicate dance between fabric and sea. This moment celebrates the ephemerality of beauty — fashion becoming part of nature, dissolving into light, water, and movement. A serene ode to freedom, flow, and timeless elegance.\n\n  \n🌊 Fabrics adrift, golden light on water, and a sunset that turns fashion into poetry ✨🌅\n\n![5723c3087a17444184df924fa5fa168b](https://storagefiles.clo-set.com/public/community/202508/532b44e625734577be70b8183a98b1db/images/5723c3087a17444184df924fa5fa168bfrontal20006.png)![f6af6b687d1a40ee8a480304e95a47a0](https://storagefiles.clo-set.com/public/community/202508/532b44e625734577be70b8183a98b1db/images/f6af6b687d1a40ee8a480304e95a47a0lateral0036.png)![bd5a2138d7c84dbe830c9dc836a53534](https://storagefiles.clo-set.com/public/community/202508/532b44e625734577be70b8183a98b1db/images/bd5a2138d7c84dbe830c9dc836a53534lateral0291.png)![c3c793c19a9f46dc861b695bb45366d0](https://storagefiles.clo-set.com/public/community/202508/532b44e625734577be70b8183a98b1db/images/c3c793c19a9f46dc861b695bb45366d0zoom0597.png)![136696265db74828a819f16f439bad72](https://storagefiles.clo-set.com/public/community/202508/532b44e625734577be70b8183a98b1db/images/136696265db74828a819f16f439bad72zoom0065.png)\n",
-    "content_description": "\"Experience the serene beauty of fashion as it harmonizes with nature, capturing the fleeting elegance of garments adrift in golden sunsets and tranquil waters.\"",
-    "source": "Connect Community",
-    "created_at": "2025-08-21T06:56:23.747Z",
-    "category": 210,
-    "tags": ["CLO", "Blender", "UnrealEngine", "CLO-SET", "CONNECT", "Animation", "Simulation", "Rendering", "Material", "Pattern"]
-  }
+    {
+        "id": "874c22e8fa6940bfa0fa0dea3185b5b9",
+        "url": "https://connect.clo-set.com/community/post/874c22e8fa6940bfa0fa0dea3185b5b9",
+        "title": "How to Attach an Object to Fabric and Use Glue in CLO3D",
+        "content": "Hi everyone,\n\nI’m working on a shoe design in CLO3D and I’m having some trouble. I want to attach tennis balls to the sole, but I’m not sure how to make the object stick properly to the fabric. I’ve heard about using the “Glue” feature, but I don’t fully understand how to apply it.\n\n  1. What should I pay attention to when attaching an object to fabric?\n\n  2. How exactly should I use the Glue feature step by step?\n\n  3. If I need to slightly embed the object and use “Superimpose,” how can I do this correctly?\n\n\n\n\nAny advice or tips from your experience would be greatly appreciated.\n\nThanks!",
+        "content_description": "This web page serves as a collaborative space for users to seek and share advice on using CLO3D's features, specifically for attaching objects like tennis balls to fabric in shoe design.",
+        "source": "Connect Community",
+        "created_at": "2025-10-02T09:51:37.823Z",
+        "category": 220,
+        "tags": [
+            "CLO",
+            "CLO-SET",
+            "CONNECT"
+        ]
+    },
+    {
+        "id": "1b549d383608474f8da30c2e528e90f9",
+        "url": "https://connect.clo-set.com/community/post/1b549d383608474f8da30c2e528e90f9",
+        "title": "From a Single Piece to a Full Collection: Lane's Journey with Vane Studios",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202510/1b549d383608474f8da30c2e528e90f9/images/d3489ff92af94c129480a4fe9e9bad56ss25..pres18210-2%20%281%29.png)\n\nYouTube Video: https://www.youtube.com/watch?v=c0-qOFW6r7w?start=0\n\n### **Welcome back, Lane! It's great to have you again. Last time, we discussed a single, iconic piece that made it to the Met. Now, you're here to talk about a full collection for your own brand,**[**_Vane Studios_**](https://www.vanestudios.com/)**. To start, could you introduce the core identity of Vane Studios and the story you wanted to tell with this new Summer Collection?**\n\nAt its core Vane Studios is a brand steeped in americana, focused on inventive craftsmanship, and anchored by telling a story of multifaceted professionals in today's global world. Drawing inspiration from the past and reinterpreting those references for a modern and even futuristic take, we’ve coined the term “evolving heritage” - our US identity and history is important to us but we also believe in the open mindedness to allow new experiences to adjust our ways of thinking - that often results in us gaining inspiration from from sources outside the US and often leads us to aim for connections between our western experience and those from the rest of the world. \n\nThis Summer Collection was really an exploration of the mundane. I started with the classic ‘beater’ tank as inspiration for our cut-and-sew knits, and paired that with summer traditions like BBQs, afternoons in the park, and time spent with loved ones. From there, we wanted to reimagine some classic codes of dressing into hybrid, multifunctional pieces—like combining a tailored jacket with a camp shirt, or adjusting a women’s suit jacket to have an A-line hem sweep. It’s about taking what feels ordinary and reshaping it into something quietly inventive.\n\n![459b40a1251c4bd9b8286a24232862f8](https://storagefiles.clo-set.com/public/community/202510/1b549d383608474f8da30c2e528e90f9/images/459b40a1251c4bd9b8286a24232862f8vane%20ss25.%20a%20vane%20summer4%20%281%29.png)\n\n**What specific stories or character archetypes inspired this Summer Collection? How did you translate those abstract concepts into tangible design elements like silhouettes, fabrics, and color palettes?**\n\nOur mantra at Vane is distinguished clothing for the multi-faceted professional. For one of the men’s looks, I imagined an accountant who moonlights as a drummer. The professionalism comes through in the matching pants and jacket fabric—like any good suit should—but the drummer side brings in movement. Instead of a fitted top or straight-leg trousers, you get these larger, billowing silhouettes that nod to the zoot suit.\n\nThe fabric choices were practical for summer, while the color palette was an intentional inversion of my last collection, which leaned very dark navy. This time I wanted lightness, but I kept a cobalt blue running through the pieces as an ode to jazz, blues, and African American music history. From James Baldwin’s Sonny’s Blues to Jaymes Samuel’s blue dancer in The Harder They Fall, that crisp royal blue has always symbolized vintage Black American music to me, particularly Jazz.\n\nRight now, I’m in my jazz era as a designer.\n\n  \n![7064e38179a640bab969c059a3f2a0ad](https://storagefiles.clo-set.com/public/community/202510/1b549d383608474f8da30c2e528e90f9/images/7064e38179a640bab969c059a3f2a0advane%20ss25.%20a%20vane%20summer%20process%20page%20%281%29.png)\n\n### **Designing a full collection is a different challenge than creating a single accessory. Could you walk us through your creative workflow in CLO for this project? How did you manage the process from the initial mood board to the final, cohesive set of garments?**\n\nTo be honest, the mood board actually came together after the collection was built—it was more of a way to contextualize everything once I started thinking about presentation. The process itself started with iterating on some of my previous styles. The first piece I developed was the K-top, which uses a back/sleeve yoke I had patterned in an earlier collection. I’ve been experimenting with reintroducing that yoke across different garments.\n\n![2e3764298c7c4a2ca92fa2261e621724](https://storagefiles.clo-set.com/public/community/202510/1b549d383608474f8da30c2e528e90f9/images/2e3764298c7c4a2ca92fa2261e621724vane%20K-top.png)\n\nThe real spark came from a photo from my girlfriend at the time wearing one of our crewnecks tied at the waist. I wanted to deconstruct that crewneck into a more femme top. So I jumped into CLO, draped the crewneck onto a female avatar, and started cutting and experimenting with pattern manipulations until I found a solution I loved.\n\nFrom there, it was about expanding the rest of the wardrobe to match. \n\nThe woven styles came from silhouettes I had already developed, but I re-cut them in new fabrics, adjusted their lengths and construction, and added new trims to give them a new life. That combination of reworking existing elements and experimenting digitally in CLO is what helped the collection come together as a cohesive whole.  \n\n\n![e92605d951b94b26bea8be99cbc8c086](https://storagefiles.clo-set.com/public/community/202510/1b549d383608474f8da30c2e528e90f9/images/e92605d951b94b26bea8be99cbc8c086H%26S%20summer%20jacket.png)\n\n### **Summer collections often feature lighter, more fluid fabrics like linen or silk. How did you utilize CLO's fabric properties and simulation tools to perfect the drape, movement, and feel of these specific materials? Were there any particular settings or techniques that were key to achieving a realistic summer look?**\n\nThis was actually my first time using the VMOD Library to scan the physical fabrics I had chosen and bring them into CLO. I know CLO also has its own digitizing technology now, which I think is hugely important for the development of CLO’s use within the industry, so that is really great!\n\nHaving them digitally recreated made a huge difference. As I toggled between high-res and low-res rendering, I started noticing small kinks in my patterns that I might have missed otherwise. On the men’s KJ trousers, for example, there was a curve at the inseam—coupled with the inseam dart—that created an awkward point around the knee. When I cut that style in a heavier fabric before, it never showed up—but in the lighter linen it was really obvious. The high-res drape in CLO let me catch and fix that issue before we cut the final garments.\n\nAnother big advantage was that VMOD provides digitized fabrics with substance texture files. That was key for me, because I wanted to use 3D renders for our website instead of doing a traditional studio e-comm shoot. The depth and realism in those textures really brought the digital garments to life on screen, and made them feel much closer to how they look in person.\n\n![7282e61fcb2e48e1aa11a79540fa63c8](https://storagefiles.clo-set.com/public/community/202510/1b549d383608474f8da30c2e528e90f9/images/7282e61fcb2e48e1aa11a79540fa63c8vane%20studios%20a%20making%20of%203.PNG)\n\n**Did this collection push you to use any CLO features you hadn't relied on as heavily before? For instance, did tools like the Modular Configurator, Print Layout mode, or specific avatar functionalities play a bigger role in designing a multi-piece collection?**\n\nI’ve always used the avatar editor in CLO to test different sizing, but this collection really pushed me to lean into it more. One of the key pieces, the K-top, has an open side seam that drapes down from the shoulder. It lays across a woman’s chest, but it’s not necessarily anchored in place. CLO’s ability to adjust the female avatar’s cup size was a new tool for me, and it came in really handy here.\n\nBeing able to see how the top would fall across different cup sizes influenced a few subtle decisions in the cut of the garment. It also gave me more confidence when talking to friends or customers about how the piece might perform on their body type. For me, that’s where CLO is becoming really valuable—not just for development, but for fit communication and customer service as I continue to grow the brand.\n\n**Is the Vane Studios Summer Collection intended to be a purely digital showcase, a direct blueprint for physical production, or a hybrid of both? What is your strategy for how this collection will meet its audience?**\n\nThis Summer Collection is really a hybrid of both digital and physical—like most of the developments I do in CLO. We’ve actually sampled and produced the pieces made-to-order here in New York City, and we’ve already shot a campaign with photos and video. We actually just presented the physical collection to close friends of the studio.\n\nFor me, CLO is always a direct blueprint for physical production, but I’m also excited to push further into purely digital showcases. That’s something I definitely see myself exploring more in the next drop.\n\n  \n![efeb82210f7948128b05bd8ffb7e8b3b](https://storagefiles.clo-set.com/public/community/202510/1b549d383608474f8da30c2e528e90f9/images/efeb82210f7948128b05bd8ffb7e8b3bvane%20studios%20a%20making%20of%209.PNG)\n\n### **What steps did you take within CLO to ensure that these digital garments are not just beautiful renders, but are also practical and production-ready patterns?**\n\nIn CLO, I really focused on making sure the patterns were production-ready. That meant marking all my sewing notches, double-checking that seam lines matched exactly, and ensuring each style had the proper balance. Those details are what make a pattern ready to run smoothly on a sewing machine.\n\nOf course, the process is never just digital—it’s always a dialogue between CLO samples and physical prototypes. For example, the linen silhouettes in this collection are styles I’ve been refining over a couple of years through multiple iterations, both digital and physical. That back-and-forth is what gives me confidence that the garments aren’t just beautiful renders, but patterns that truly work in production.\n\n![9f477434f6c643509e35b93581127813](https://storagefiles.clo-set.com/public/community/202510/1b549d383608474f8da30c2e528e90f9/images/9f477434f6c643509e35b93581127813H%26S..summer..jacket..solo_0-web1620x1080U100.jpg)\n\n### **What was the biggest new challenge you faced when creating this collection? Perhaps it was maintaining a consistent vision across multiple pieces, or a technical hurdle you had to overcome. How did you solve it?**\n\nThe biggest challenge in this collection was the H&S summer jacket. It’s a pretty complex construction, and not very traditional. Originally, I patterned the full-length lapel as a fold line with a large dart running down the center front. It worked fine in CLO, and I was even able to sew a first iteration myself, but when I sent the new linen version to my factory partner, they really struggled to sew it symmetrically. Even after trying different fusible, they told me the pattern just wasn’t very operator-friendly on the machine.\n\nSo I took a step back and reworked the design, breaking the lapel into cut lines and seam lines at the collar and center front. That adjustment simplified the construction significantly—and as a bonus, it actually made the fitting process smoother too.\n\n### **Finally, for the many designers using CLO to build their own brands, what is one key piece of advice you’d give them about moving from single portfolio pieces to designing and presenting a full, cohesive collection?**\n\nMy biggest piece of advice is: don’t try to reinvent the wheel with every collection. One of the best lessons I’ve received is that new collections should be about 80% continuation from your last one, with 20% newness. When you’re working on single portfolio pieces, think about building them from base patterns that you can use in multiple ways. Save those clean base patterns before you add all the bells and whistles. Over time, you’ll build up a repository of patterns that fit your aesthetic and your model well—and as a one-person design team, that’s what allows you to iterate and bring new ideas to life quickly.\n\nThat’s exactly how I approached this Summer Collection. It was an exploration of the mundane, starting with the classic ‘beater’ tank and summer traditions like BBQs and time in the park. From there, I consolidated those familiar codes of dressing into hybrid, multifunctional pieces like combining a tailored jacket with a camp shirt, or merging a women’s suit jacket with an A-line skirt sweep. It’s about using what you already know, then pushing it just far enough to feel new.",
+        "content_description": "Explore the innovative Summer Collection from Vane Studios, where americana aesthetics meet modern craftsmanship, celebrating the beauty of the mundane through multifunctional designs inspired by everyday life.",
+        "source": "Connect Community",
+        "created_at": "2025-10-01T20:38:52.823Z",
+        "category": 110,
+        "tags": [
+            "CLO",
+            "Import_Export",
+            "Material",
+            "Pattern",
+            "Rendering",
+            "Simulation",
+            "Texture",
+            "Trim"
+        ]
+    },
+    {
+        "id": "93492da1ad554f308406ffd6394832ce",
+        "url": "https://connect.clo-set.com/community/post/93492da1ad554f308406ffd6394832ce",
+        "title": "\"Handcrafted Leather Bag with Ethnic Touch\"theis design combines natural leather texture with traditional woven strap details.",
+        "content": "Amix of elegance and cultural sprit-perfect for everyday style.\n\nwhat do you think about mixing modern fashion with cultural heritage?![509e9f42e4b141738ed2f845033ebb4d](https://storagefiles.clo-set.com/public/community/202510/93492da1ad554f308406ffd6394832ce/images/509e9f42e4b141738ed2f845033ebb4dbag2.1photo.png)\n\n### Community Post Comments:\nComment 1: The textures look so real. It’s awesome that culture is reflected in fashion.❤️\nReply 1: Thank you so much! 🥹🙂",
+        "content_description": "\"Discover the perfect blend of elegance and cultural spirit, ideal for enhancing your everyday style with modern fashion infused with heritage.\"",
+        "source": "Connect Community",
+        "created_at": "2025-10-01T15:35:07.41Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "CLO-SET",
+            "CONNECT",
+            "Photoshop",
+            "AI",
+            "EveryWear"
+        ]
+    },
+    {
+        "id": "16295b4f51ad458d9e1ae3c174d0837e",
+        "url": "https://connect.clo-set.com/community/post/16295b4f51ad458d9e1ae3c174d0837e",
+        "title": "Drak Skull Leather Jacket",
+        "content": "![5103d52afc1342018c7e2f1fae2b0ffd](https://storagefiles.clo-set.com/public/community/202510/16295b4f51ad458d9e1ae3c174d0837e/images/5103d52afc1342018c7e2f1fae2b0ffdcoat%20men5.photo.1.png)\n\n### Community Post Comments:\nComment 1: The jacket’s back graphic is really cool!!!! If you make the belt area on the pants a little thicker, it will look more realistic👍🏻\nReply 1: Thank you for the feedback! I’ll make the belt area thicker to improve the realism❤️🙂",
+        "content_description": "Discover the perfect blend of style and functionality with our curated collection of men's coats.",
+        "source": "Connect Community",
+        "created_at": "2025-10-01T15:22:02.773Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "CLO-SET",
+            "AI",
+            "Rendering",
+            "Photoshop",
+            "CONNECT"
+        ]
+    },
+    {
+        "id": "dd0109e4af174b86af936ddf8bf7ed88",
+        "url": "https://connect.clo-set.com/community/post/dd0109e4af174b86af936ddf8bf7ed88",
+        "title": "Autumn Trench Magic 🍂✨",
+        "content": "This collection is inspired by the essence of autumn: warm tones, layered silhouettes, and timeless trench coats reimagined with bold details. From oversized plaid shirts paired with long trench layers, to striking contrasts of red-black tartan, and soft neutral looks with voluminous sleeves — each design celebrates the textures and spirit of the season.  \nIt’s not just fashion, it’s the magic of fall translated into digital couture.\n\n![3adbff030e6245269c7cc368bca5e6a7](https://storagefiles.clo-set.com/public/community/202509/dd0109e4af174b86af936ddf8bf7ed88/images/3adbff030e6245269c7cc368bca5e6a7Frontal0002.png)![406f455427f446deacb2efe23ea51f7b](https://storagefiles.clo-set.com/public/community/202509/dd0109e4af174b86af936ddf8bf7ed88/images/406f455427f446deacb2efe23ea51f7bLateral0051.png)![2a7570b9f90a4ae7b19484301b536f28](https://storagefiles.clo-set.com/public/community/202509/dd0109e4af174b86af936ddf8bf7ed88/images/2a7570b9f90a4ae7b19484301b536f28Frontal0360.png)![36a20e836bc84eecabb51dc933eca649](https://storagefiles.clo-set.com/public/community/202509/dd0109e4af174b86af936ddf8bf7ed88/images/36a20e836bc84eecabb51dc933eca649Frontal0677.png)![7731e116c22c42619c4bca9b303c3aa2](https://storagefiles.clo-set.com/public/community/202509/dd0109e4af174b86af936ddf8bf7ed88/images/7731e116c22c42619c4bca9b303c3aa2Frontal0090.png)![159bde94050a4551a0354aeb2718fd52](https://storagefiles.clo-set.com/public/community/202509/dd0109e4af174b86af936ddf8bf7ed88/images/159bde94050a4551a0354aeb2718fd52lateral0040.png)\n\n### Community Post Comments:\nComment 1: Wowwww! such great details 😍😍\n\nComment 2: ❤️",
+        "content_description": "Explore our autumn-inspired collection, where warm tones and layered silhouettes meet timeless trench coats, celebrating the season's textures and spirit through bold and captivating designs.",
+        "source": "Connect Community",
+        "created_at": "2025-09-29T07:32:23.287Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "CLO-SET",
+            "CONNECT",
+            "Blender",
+            "Mixamo",
+            "UnrealEngine",
+            "Animation",
+            "Avatar",
+            "Rendering",
+            "Pattern"
+        ]
+    },
+    {
+        "id": "4992bff089ad422aa431b952aa323376",
+        "url": "https://connect.clo-set.com/community/post/4992bff089ad422aa431b952aa323376",
+        "title": "How to Quickly Generate Makeup for CLO 3D Characters with AI",
+        "content": "![a463fbcb89424821a84b3c3a3e06e879](https://storagefiles.clo-set.com/public/community/202509/4992bff089ad422aa431b952aa323376/images/a463fbcb89424821a84b3c3a3e06e879%E6%9C%AA%E6%A0%87%E9%A2%98-81.png)\n\nYouTube Video: https://www.youtube.com/watch?v=fUVRd5SCGW0\n\n### Community Post Comments:\nComment 1: 👍🏻\n\nComment 2: Super helpful!\n\nComment 3: Great👍🏻",
+        "content_description": "The purpose of this web page is to provide an engaging overview of a YouTube video that explores innovative ideas and insights in a visually appealing format.",
+        "source": "Connect Community",
+        "created_at": "2025-09-27T17:30:22.6Z",
+        "category": 240,
+        "tags": [
+            "CLO",
+            "Blender",
+            "stablediffusion",
+            "AI",
+            "Avatar",
+            "Makeup"
+        ]
+    },
+    {
+        "id": "2e2d24d10bfe4c78825acbcc7b437031",
+        "url": "https://connect.clo-set.com/community/post/2e2d24d10bfe4c78825acbcc7b437031",
+        "title": "New version",
+        "content": "How to find mouse settings on new version. I has differents toolbars, no even help toolbar\n\n### Community Post Comments:\nComment 1: Can you share a screenshot of your whole screen?\n\nComment 2: Hi, are you on Mac on Windows?The User Settings should be at the top of your CLO window.\nReply 1: I am using window",
+        "content_description": "\"Discover how to easily access and adjust mouse settings in the latest version, despite changes in the toolbars and the absence of a help toolbar.\"",
+        "source": "Connect Community",
+        "created_at": "2025-09-26T10:28:00.893Z",
+        "category": 220,
+        "tags": [
+            "CLO"
+        ]
+    },
+    {
+        "id": "7b274c9940544336951829103977056a",
+        "url": "https://connect.clo-set.com/community/post/7b274c9940544336951829103977056a",
+        "title": "CLO3D Course",
+        "content": "Hello! I am a fashion designer from Tbilisi, Georgia - Tamta Kartvelishvili. Brand - TamaraK. I would love to learn CLO3D to make patterns online which is way more easier. I need your advice and help, I don't have a software for now but I will buy it its not a problem, but I need an actual course, when somebody explains you what to do and how and etc.. or you think its easier to watch on YouTube and learn by yourself? Please help me. Thanks!",
+        "content_description": "This webpage serves as a platform for fashion designer Tamta Kartvelishvili to seek guidance and resources for learning CLO3D software to enhance her design process.",
+        "source": "Connect Community",
+        "created_at": "2025-09-25T08:48:57.933Z",
+        "category": 210,
+        "tags": [
+            "CLO"
+        ]
+    },
+    {
+        "id": "844633934555427f823389db776b264e",
+        "url": "https://connect.clo-set.com/community/post/844633934555427f823389db776b264e",
+        "title": "Display settings suggestion CLO3D",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202509/844633934555427f823389db776b264e/images/5fca568b14e04cc6bf4ea862deb43289Screenshot%202025-09-25%20at%2010.41.17.png)Is it possible to add a button in the display settings that lets you save your preferred display preset for when you open a project?\n\nYou already added the amazing feature where display properties are saved directly in the project file. However, when I want to take snapshots, I need to enable or disable multiple settings, and then reset them afterward for a better workflow. If someone sends me their project, or if I open an older CLO3D project without saved display properties, I again have to manually reconfigure several options.\n\nAdding a button to save preferred display selections on the 3D window’s display settings would save a lot of time toggling display properties. It would also be great if we could save these presets externally and import them later, but this isn’t strictly necessary. I don’t think it would take a lot of effort to add a simple on/off preset function.\n\n### Community Post Comments:\nComment 1: Hi, thank you for your suggestion, we will pass it on to development as a request 👍🏻",
+        "content_description": "This web page aims to advocate for the addition of a user-friendly button in display settings that allows users to save their preferred display presets, enhancing workflow efficiency in CLO3D projects.",
+        "source": "Connect Community",
+        "created_at": "2025-09-25T07:42:50.76Z",
+        "category": 250,
+        "tags": [
+            "CLO",
+            "UI"
+        ]
+    },
+    {
+        "id": "14902765fe8d42e9b849f1d07e2dfea2",
+        "url": "https://connect.clo-set.com/community/post/14902765fe8d42e9b849f1d07e2dfea2",
+        "title": "Why does this software still have a hard time with cuffss and waistbands?",
+        "content": "Every single project I do in clo still runs into the issue of not being able to save the folding arrangement of a waistband or cuff or a lapel. I need the simulation to reflect the garment in real life, otherwise it is pointless.  \n  \nEvery time I want to simulate I have to manually fold the collar or fold the waistband or fold the cuffs then painstakingly try to stop itself from colliding on each other.\n\nThe answers to this solution is to \"Fake\" or simulate the cuffs, waistband etc but that defeats the purpose of the software to be a production ready solution as it was and is advertised. Why am I creating two patterns for simulation and production? Why cant it just work?\n\nWhen I'm making denim, the fly, the layers, etc there are many folded parts, why isnt there a way to actually keep the folded arrangement as they are? The fold settings on internal lines rarely work as sewing lines pull on each other and fold inside out despite these lines. This would be easier solved if pressing \"reset 3d arrangement\" simply remembers how the garment was folded.\n\n### Community Post Comments:\nComment 1: Hi There. Doing cuffs and waistbands can definitely be tricky at first, but with the right workflow they can be managed quite smoothly. That said, it looks like you may not be using an official CLO license. Unfortunately, we’re unable to provide support when unofficial or cracked software is involved.We encourage you to subscribe to CLO with an official license. Once you do, please feel free to share clear screenshots of the issue you’re experiencing, and our team will be glad to help you move forward.\n\nComment 2: Hi, it is hard to give tips without seeing an example with screenshots. If you could share a case with us, that would be helpful, as what is being described is not usual behavior as soon as a garment is stable. What is the version you are using, as there is no current license associated with this account? Thank you :)",
+        "content_description": "The purpose of this web page is to address the critical issue of saving and accurately simulating folded garment features in CLO software, ensuring that users can achieve realistic representations of their designs without the need for tedious manual adjustments.",
+        "source": "Connect Community",
+        "created_at": "2025-09-24T01:44:32.147Z",
+        "category": 250,
+        "tags": [
+            "CLO"
+        ]
+    },
+    {
+        "id": "2168443df68e48d3b6ee391a62960c16",
+        "url": "https://connect.clo-set.com/community/post/2168443df68e48d3b6ee391a62960c16",
+        "title": "A glossy leather jacket designed with intricate details and precise craftsmanship. Every stitch and texture tells a story.",
+        "content": "![fe065cb4e8a24e02a32d11c46831ca3d](https://storagefiles.clo-set.com/public/community/202509/2168443df68e48d3b6ee391a62960c16/images/fe065cb4e8a24e02a32d11c46831ca3d0.png)",
+        "content_description": "This web page aims to provide a vibrant community platform where individuals can share their creative works, connect with like-minded people, and inspire each other through art and expression.",
+        "source": "Connect Community",
+        "created_at": "2025-09-22T19:09:15.34Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "CLO-SET",
+            "MarvelousDesigner",
+            "Texture",
+            "Trim",
+            "Rendering",
+            "Pattern",
+            "Material"
+        ]
+    },
+    {
+        "id": "fd5566ab75d34b6986085dc5f421ebbb",
+        "url": "https://connect.clo-set.com/community/post/fd5566ab75d34b6986085dc5f421ebbb",
+        "title": "Empress of Autumn ✨🍂",
+        "content": "The arrival of autumn brings a symphony of colors — and this design embodies it all. A flowing silhouette in deep crimson, adorned with cascading leaves, captures the essence of change, warmth, and timeless elegance. Every fold of fabric becomes a branch of poetry, every golden accent a whisper of falling foliage. 🍂✨ This gown is not just fashion, but a celebration of the season’s magic.\n\n![bea54607de7b4ce7a3f475a6dd2bd75e](https://storagefiles.clo-set.com/public/community/202509/fd5566ab75d34b6986085dc5f421ebbb/images/bea54607de7b4ce7a3f475a6dd2bd75eFrontal0263.png)![664a83ba04c741b09c5bda766e9d5403](https://storagefiles.clo-set.com/public/community/202509/fd5566ab75d34b6986085dc5f421ebbb/images/664a83ba04c741b09c5bda766e9d5403far0005.png)![766abd1691dd48ef947f4e0fde527fa5](https://storagefiles.clo-set.com/public/community/202509/fd5566ab75d34b6986085dc5f421ebbb/images/766abd1691dd48ef947f4e0fde527fa5far0369.png)![e82fc21fde37488ea111b0f1c516089c](https://storagefiles.clo-set.com/public/community/202509/fd5566ab75d34b6986085dc5f421ebbb/images/e82fc21fde37488ea111b0f1c516089cZOOM0088.png)![5f229da0d36c4dacb99b60c1de521f80](https://storagefiles.clo-set.com/public/community/202509/fd5566ab75d34b6986085dc5f421ebbb/images/5f229da0d36c4dacb99b60c1de521f80ZOOM0328.png)\n\n### Community Post Comments:\nComment 1: Hiii, I really liked yout design. I was wondering how do you added the tree branches? Im on my finals and I really want to add that detail on one of my looks",
+        "content_description": "Discover a stunning gown that captures the enchanting essence of autumn, celebrating the season's vibrant colors and timeless elegance.",
+        "source": "Connect Community",
+        "created_at": "2025-09-22T05:22:10.76Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "CLO-SET",
+            "CONNECT",
+            "Blender",
+            "UnrealEngine",
+            "Animation",
+            "Avatar",
+            "Material",
+            "Pattern",
+            "Simulation"
+        ]
+    },
+    {
+        "id": "7fd75725e0454f5e8377a3dee77891e1",
+        "url": "https://connect.clo-set.com/community/post/7fd75725e0454f5e8377a3dee77891e1",
+        "title": "Colourway issue",
+        "content": "Hi Clo team,\n\nI kind of kept encountering glitches these days. I wonder, is it bc the avatar i use? The client asked us to use a new avatar which they made it on their own. I never had any problems like these before with the old one. They seemingly began to happen since the updated patch and the changed avatar. idk, just a thought.  \n  \nAnyway, aside from the previous colour map issue, I found that some of the thread colour of buttonholes is at sync regardless of colourways. I noticed and i added a new one and deleted the old one. Making sure there are no yellow highlights on the thread colour of buttonholes. Which suggests that they arent at sync. However, after i saved the file then re-opened it, it's still the same as if i've never revised anything. I rly have no idea why this could be happening. Pls help me out if there's anything I missed out on.![c102f85495e24841a33d0cfc32ed2765](https://storagefiles.clo-set.com/public/community/202509/7fd75725e0454f5e8377a3dee77891e1/images/c102f85495e24841a33d0cfc32ed2765scrnshot%203.jpg)![ef38220b1f124265a8873c762359920a](https://storagefiles.clo-set.com/public/community/202509/7fd75725e0454f5e8377a3dee77891e1/images/ef38220b1f124265a8873c762359920ascrnshot%204.jpg)",
+        "content_description": "\"Request assistance troubleshooting recent glitches and synchronization issues with avatar and buttonhole thread colors in the Clo design software.\"",
+        "source": "Connect Community",
+        "created_at": "2025-09-22T03:05:05.137Z",
+        "category": 250,
+        "tags": [
+            "CLO",
+            "CLO-SET",
+            "Avatar",
+            "Colorway"
+        ]
+    },
+    {
+        "id": "d8f3a1ef0105458d871bd4b6ab4b6477",
+        "url": "https://connect.clo-set.com/community/post/d8f3a1ef0105458d871bd4b6ab4b6477",
+        "title": "Rendering a Single Garment Piece (e.g., Collar) with its Shadow on a Transparent Background",
+        "content": "Hello everyone,\n\nI'm working on a project that requires me to render individual garment parts—specifically a collar and cuffs—so they can be used as composites in a web-based product configurator.\n\nMy goal is to render just the collar, with its own self-cast shadow, on a transparent background. When i hide the folded base/body of the shirt and render the collar, it does not render with any shadow. \n\nIs there a specific setting or a different workflow in CLO3D that I need to follow to get the collar and its shadow to render together on a transparent PNG?\n\nI've attached a screenshot to my post to show my current results. Any advice would be greatly appreciated!\n\nThank you!![b00df32e0c7a465285a166fc2e389979](https://storagefiles.clo-set.com/public/community/202509/d8f3a1ef0105458d871bd4b6ab4b6477/images/b00df32e0c7a465285a166fc2e389979Question.jpg)",
+        "content_description": "This web page aims to provide guidance on rendering garment parts, specifically collars and cuffs, with self-cast shadows on a transparent background using CLO3D for use in a web-based product configurator.",
+        "source": "Connect Community",
+        "created_at": "2025-09-21T22:33:29.843Z",
+        "category": 220,
+        "tags": [
+            "CLO",
+            "Rendering",
+            "Pattern"
+        ]
+    },
+    {
+        "id": "e8ae4f39a2c743828a55bc999bd96818",
+        "url": "https://connect.clo-set.com/community/post/e8ae4f39a2c743828a55bc999bd96818",
+        "title": "Stitching?",
+        "content": "I'm pretty new but how do I show details like this stitching on my garment? ![f16177c375dc42c5ba841ea735f25c6f](https://storagefiles.clo-set.com/public/community/202509/e8ae4f39a2c743828a55bc999bd96818/images/f16177c375dc42c5ba841ea735f25c6fSewing-Jeans-Topstitching-Tutorial-1.webp)![dbf8de798c1a4a218970b2f6e6abf4fb](https://storagefiles.clo-set.com/public/community/202509/e8ae4f39a2c743828a55bc999bd96818/images/dbf8de798c1a4a218970b2f6e6abf4fbScreenshot%202025-09-19%20182010.png)\n\n### Community Post Comments:\n\n\nComment 2: Hi,it seems you didnot applied the stiching. please apply stiching through object browzersee at screenshot. You can change stiching whatever you want as in panel.Reagads,Neeraj",
+        "content_description": "Discover tips and techniques for showcasing intricate stitching details on your garments effectively.",
+        "source": "Connect Community",
+        "created_at": "2025-09-19T23:21:55.617Z",
+        "category": 220,
+        "tags": [
+            "CLO"
+        ]
+    },
+    {
+        "id": "05a0af317cdf4819a836a658982fc304",
+        "url": "https://connect.clo-set.com/community/post/05a0af317cdf4819a836a658982fc304",
+        "title": "Glamorous ramp dress",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202509/05a0af317cdf4819a836a658982fc304/images/f346b77ecb594d0a98a1f0cb57e0ceba11.png)Does anyone know how to make realistic feathers without using fur render? i want to add a bunch of feathers to the cape of this dress![84cde23cd3614842be03cf11c1f5b373](https://storagefiles.clo-set.com/public/community/202509/05a0af317cdf4819a836a658982fc304/images/84cde23cd3614842be03cf11c1f5b373fashion%20show%20gown_0.png)![2c5bd3c14cb04897bf2b4733b21a9d16](https://storagefiles.clo-set.com/public/community/202509/05a0af317cdf4819a836a658982fc304/images/2c5bd3c14cb04897bf2b4733b21a9d16fashion%20show%20gown_31.png)\n\n### Community Post Comments:\nComment 1: I'm creating bunch more of these Feathers\nReply 1: Thanks a lot 😄😄😄\n\nComment 2: Hey,See if this helps :)https://connect.clo-set.com/community/post/05a0af317cdf4819a836a658982fc304 Gown by the way 😍👍🏻\nReply 1: Thanks a lot for your efforts 😄😄😄",
+        "content_description": "This web page serves as a collaborative forum for sharing techniques and tips on creating realistic feather effects for fashion design, specifically for enhancing dress capes.",
+        "source": "Connect Community",
+        "created_at": "2025-09-19T13:22:35.5Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "CLO-SET",
+            "CONNECT",
+            "Avatar",
+            "Colorway",
+            "Texture",
+            "Material",
+            "Pattern",
+            "Rendering"
+        ]
+    }
 ]

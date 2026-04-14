@@ -2,6 +2,7 @@ import asyncio
 import json
 import os
 import re
+import sys
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -16,7 +17,11 @@ from faster_whisper import WhisperModel
 from rich.console import Console
 from tqdm import tqdm
 
-from ai_search import AISearch
+_src_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if _src_root not in sys.path:
+    sys.path.insert(0, _src_root)
+
+from search.ai_search import AISearch
 from tools.azure import Azure
 
 # Initialize Rich console for pretty logging

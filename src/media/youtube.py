@@ -23,7 +23,12 @@ from youtube_transcript_api import YouTubeTranscriptApi
 from youtube_transcript_api.formatters import TextFormatter
 from youtube_transcript_api.proxies import WebshareProxyConfig
 
-from ai_search import AISearch
+# Running as `python media/youtube.py` puts `media/` on sys.path, not `src/` — add src root for imports.
+_src_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if _src_root not in sys.path:
+    sys.path.insert(0, _src_root)
+
+from search.ai_search import AISearch
 from tools.azure import Azure
 from tools.misc import check_create_directory, sanitize_directory_file_name
 
@@ -464,9 +469,9 @@ class YouTube:
         """Downloads only standard published videos (no Shorts, no Live)."""
 
         # Using /videos ensures we start on the main uploads tab
-        CHANNEL_URL = "https://www.youtube.com/@CLO3D/videos"
+        CHANNEL_URL = "https://www.youtube.com/@CLO3D/videos" if self.azure.brand == "clo3d" else "https://www.youtube.com/@MarvelousDesigner/videos"
         OUTPUT_DIR = os.path.join(self.youtube_channel_dir_path, "videos")
-        NUM_RECENT_VIDEOS = 215
+        NUM_RECENT_VIDEOS = 100
 
         if not os.path.exists(OUTPUT_DIR):
             os.makedirs(OUTPUT_DIR)
@@ -493,7 +498,7 @@ class YouTube:
         ydl_opts = {
             "format": "bestvideo[height<=480]+bestaudio/best[height<=480]",
             "http_headers": {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"},
-            "playlist_items": f"195-{NUM_RECENT_VIDEOS}",
+            "playlist_items": f"4-{NUM_RECENT_VIDEOS}",
             "outtmpl": os.path.join(OUTPUT_DIR, "%(title)s [%(id)s]", "%(title)s.%(ext)s"),
             "match_filter": published_videos_only,
             "restrictfilenames": True,
@@ -676,22 +681,37 @@ class YouTube:
         Returns:
             None
         """
-        print("\n" + os.path.split(file_path)[1].strip())
-
         # Read the transcripts from the file
         with open(file_path, "r", encoding="utf-8") as file:
             transcripts = json.load(file)
 
-        # Summarize each transcript
-        for trans in transcripts:
+        if isinstance(transcripts, dict):
+            if transcripts["transcript"] is None:
+                return
+
             try:
-                if trans["transcript"] == "" or len(trans["transcript"]) < 150:
-                    trans["summary"] = ""
+                if transcripts["transcript"] == "" or len(transcripts["transcript"]) < 150:
+                    transcripts["summary"] = ""
                 else:
-                    summary = self.azure.openai_helper.generate_structured_transcript(trans["title"], trans["transcript"])
-                    trans["summary"] = summary
+                    summary = self.azure.openai_helper.generate_structured_transcript(transcripts["title"], transcripts["transcript"])
+                    transcripts["summary"] = summary
             except Exception as e:
+                print(f"\nError summarizing transcript for {file_path}:")
                 raise e
+        else:
+            # Summarize each transcript
+            for trans in transcripts:
+                if transcripts["transcript"] is None:
+                    return
+
+                try:
+                    if trans["transcript"] == "" or len(trans["transcript"]) < 150:
+                        trans["summary"] = ""
+                    else:
+                        summary = self.azure.openai_helper.generate_structured_transcript(trans["title"], trans["transcript"])
+                        trans["summary"] = summary
+                except Exception as e:
+                    raise e
 
         with open(file_path, "w", encoding="utf-8") as file:
             json.dump(transcripts, file, ensure_ascii=False, indent=4)
@@ -945,4 +965,6 @@ if __name__ == "__main__":
 
         if questionary.confirm("Do you want to delete these documents?").ask():
             for document in documents:
+                ai_search.delete_ai_search_document(document["article_id"])
+                ai_search.delete_ai_search_document(document["article_id"])
                 ai_search.delete_ai_search_document(document["article_id"])

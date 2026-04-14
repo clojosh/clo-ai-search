@@ -11,7 +11,11 @@ import requests  # type: ignore
 from rich import print
 from tqdm import tqdm
 
-from ai_search import AISearch
+_src_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if _src_root not in sys.path:
+    sys.path.insert(0, _src_root)
+
+from search.ai_search import AISearch
 from tools.azure import Azure
 from tools.misc import check_image_exists, get_section_and_category, html_to_markdown_converter, num_tokens_from_string, remove_unwanted_markdown_images, trim_tokens
 

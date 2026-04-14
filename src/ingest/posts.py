@@ -1,8 +1,8 @@
 import json
-import multiprocessing
 import os
 import re
 import shutil
+import sys
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 from math import ceil
@@ -12,7 +12,11 @@ import requests  # type: ignore
 from rich import print
 from tqdm import tqdm
 
-from ai_search import AISearch
+_src_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if _src_root not in sys.path:
+    sys.path.insert(0, _src_root)
+
+from search.ai_search import AISearch
 from tools.azure import Azure
 from tools.misc import html_to_markdown_converter, remove_html_tags, remove_unwanted_markdown_images, trim_tokens
 

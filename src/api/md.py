@@ -1,8 +1,8 @@
 import asyncio
 import json
-import multiprocessing
 import os
 import re
+import sys
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 
@@ -13,7 +13,11 @@ from bs4 import BeautifulSoup
 from playwright.async_api import async_playwright
 from tqdm import tqdm
 
-from ai_search import AISearch
+_src_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if _src_root not in sys.path:
+    sys.path.insert(0, _src_root)
+
+from search.ai_search import AISearch
 from tools.azure import Azure
 from tools.misc import html_to_markdown_converter
 
@@ -112,7 +116,6 @@ class APICLO:
                     "content_description": content_description.replace("@brief ", "").replace("\uf0c1", "").strip(),
                     "source": "API",
                     "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-                    "youtube_links": [],
                 }
             )
 
@@ -148,7 +151,6 @@ class APICLO:
                 "content_description": "Initialization of API Option Types",
                 "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                 "source": "API",
-                "youtube_links": [],
             }
         )
 
@@ -170,7 +172,6 @@ class APICLO:
                     "content_description": "List of API Option Types",
                     "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                     "source": "API",
-                    "youtube_links": [],
                 }
             )
 
@@ -199,7 +200,6 @@ class APICLO:
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
                 "source": "API",  # Source of the article
                 "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
-                "youtube_links": [],  # List of YouTube links associated with the article
             }
         ]
 
@@ -232,7 +232,6 @@ class APICLO:
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
                 "source": "API",  # Source of the article
                 "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
-                "youtube_links": [],  # List of YouTube links associated with the article
             }
         ]
 
@@ -267,7 +266,6 @@ class APICLO:
                     "content_description": "Script for " + title.replace("\uf0c1", "").strip(),
                     "source": "API",
                     "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-                    "youtube_links": [],
                 }
             )
 

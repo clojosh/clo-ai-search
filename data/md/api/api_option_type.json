@@ -1,110 +1,110 @@
 [
   {
-    "article_id": "gt9FN8Ndvk9FYJBbyGftqb",
+    "article_id": "aeSMdm8USRbQtYxavwhQLu",
     "url": "https://developer.marvelousdesigner.com/optiontype.html",
     "title": "Initialization of API Option Types",
     "content": "```\nimport ApiTypes\n\n# Create ImportExportOption instance\noption = ApiTypes.ImportExportOption()\n\n# Enable garment export\noption.bExportGarment = True\n\n# Enable unified texture baking\noption.bCreateUnifiedTexture = True\n\n# Export as a single object\noption.bSingleObject = True\n\n# Adjust scale\noption.scale = 1.0\n\n# Example: apply the option when exporting\nimport export_api\nexport_api.ExportOBJ(\"C:/output/file.obj\", option)\n\n```\n\nCopy to clipboard",
     "content_description": "Initialization of API Option Types",
-    "created_at": "2026-03-12T17:04:21Z",
+    "created_at": "2026-04-13T16:32:57Z",
     "source": "API"
   },
   {
-    "article_id": "GLHcoxUdAahSsQsxvfbdUX",
+    "article_id": "XaSqXrSVCWscTrZwZifHHP",
     "url": "https://developer.marvelousdesigner.com/optiontype.html#importexportoption",
     "title": "ImportExportOption",
     "content": "#### ImportExportOption\uf0c1\n``` \nbExportGarment:bool\nbExportAvatar:bool\nbSingleObject:bool\nbThin:bool\nbUnifiedUVCoordinates:bool\nbCreateUnifiedTexture:bool\nunifiedTextureSize:float\nunifiedTextureFillSeamSize:int\nbUseInifinteSeams:bool\nunifiedTextureBakeMargin:float\nunifiedTextureBakeRelateive:bool\nbUnifiedDiffuseMap:bool\nbUnifiedNormalMap:bool\nbUnifiedMetalnessMap:bool\nbUnifiedRoughnessMap:bool\nbUnifiedOpacityMap:bool\nbUnifiedDisplacementMap:bool\nbIncludeHiddenObject:bool\nbIncludeInnerShape:bool\nscale:float\naxisX:int\naxisY:int\naxisZ:int\nbInvertX:bool\nbInvertY:bool\nbInvertZ:bool\nbSaveColorWays:bool\nbSaveInZip:bool\nbDiffuseColorCombined:bool\nbExcludeAmbient:bool\nbOpacityMap:bool\nbMetaData:bool\nbEmbedded:bool\nbExportLight:bool\nbExportFabric:bool\nbExportAnimation:bool\nbSaveColorWaysSingleFile:bool\nm_AuthenticationKeyForAPI:str\nImportObjectType:int\nbAutoTranslate:bool\nbCreateCamera:bool\nbCreateAnimation:bool\nbCreateCacheAnimation:bool\nbMoveGarment:bool\nbAddArrangementPoints:bool\nbAutoCreateFittingSuit:bool\nbAdd:bool\ntranslationValueX:float\ntranslationValueY:float\ntranslationValueZ:float\nbTrace2DPatternsUVMap:bool\nbCreateMetallicRoughnessMap:bool\n\n```\n\nCopy to clipboard",
     "content_description": "List of API Option Types",
-    "created_at": "2026-03-12T17:04:21Z",
+    "created_at": "2026-04-13T16:32:57Z",
     "source": "API"
   },
   {
-    "article_id": "ZsqB5PEcaEBJ9RnWTNdPCh",
+    "article_id": "fMzDv45yFZtkqX6vH5Hqii",
     "url": "https://developer.marvelousdesigner.com/optiontype.html#importzprjoption",
     "title": "ImportZPRJOption",
     "content": "#### ImportZPRJOption\uf0c1\n``` \nbAppend:bool\nbLoadGarment:bool\nbLoadAvatar:bool\ntranslationValueX:float\ntranslationValueY:float\ntranslationValueZ:float\nbLoadSceneAndProps:bool\nbLoadRenderProperties:bool\nbLoadCustomView:bool\n\n```\n\nCopy to clipboard",
     "content_description": "List of API Option Types",
-    "created_at": "2026-03-12T17:04:21Z",
+    "created_at": "2026-04-13T16:32:57Z",
     "source": "API"
   },
   {
-    "article_id": "LUi8f5Ny5UefBJuiVks2dX",
+    "article_id": "U8Z4ePKzq6MGoc44Xz4Eu9",
     "url": "https://developer.marvelousdesigner.com/optiontype.html#importusdoption",
     "title": "ImportUSDOption",
     "content": "#### ImportUSDOption\uf0c1\n``` \nm_upAxis:int\nm_metersPerUnit:double\nm_bAssignShape:bool\nm_shapePrimPath:str\nm_bAssignMaterial:bool\nm_materialPrimPath:str\nm_bExportSimulationData:bool\n\n```\n\nCopy to clipboard",
     "content_description": "List of API Option Types",
-    "created_at": "2026-03-12T17:04:21Z",
+    "created_at": "2026-04-13T16:32:57Z",
     "source": "API"
   },
   {
-    "article_id": "mesfLjjvxeUbNxzXZmAGbo",
+    "article_id": "XfbAzhnz2Cr4XwuL8EWMNd",
     "url": "https://developer.marvelousdesigner.com/optiontype.html#importalembicoption",
     "title": "ImportAlembicOption",
     "content": "#### ImportAlembicOption\uf0c1\n``` \naLoadType:bool\naScale:float\nboolAddArrangementPoints:bool\nboolAutoCreateFittingSuit:bool\nmorphingFrameCount:int\nboolMoveGarmentToStartPosition:bool\nboolTrace2DPatternsFromUVMap:bool\nboolAlignBottonToGround:bool\ntranslationValueX:float\ntranslationValueY:float\ntranslationValueZ:float\n\n```\n\nCopy to clipboard",
     "content_description": "List of API Option Types",
-    "created_at": "2026-03-12T17:04:21Z",
+    "created_at": "2026-04-13T16:32:57Z",
     "source": "API"
   },
   {
-    "article_id": "BZbxWJZ384m6Qy37DVpUWU",
+    "article_id": "XNEF4ZLyX3LkMSafGUXgho",
     "url": "https://developer.marvelousdesigner.com/optiontype.html#apirgb",
     "title": "ApiRgb",
     "content": "#### ApiRgb\uf0c1\n``` \nR:int\nG:int\nB:int\n\n```\n\nCopy to clipboard",
     "content_description": "List of API Option Types",
-    "created_at": "2026-03-12T17:04:21Z",
+    "created_at": "2026-04-13T16:32:57Z",
     "source": "API"
   },
   {
-    "article_id": "bnJAV4oQEtt3uYTNG9bVAr",
+    "article_id": "SmJ6Vs3UbkD6r4QSwm6nFT",
     "url": "https://developer.marvelousdesigner.com/optiontype.html#apirgba",
     "title": "ApiRgba",
     "content": "#### ApiRgba\uf0c1\n``` \nR:int\nG:int\nB:int\nA:int\n\n```\n\nCopy to clipboard",
     "content_description": "List of API Option Types",
-    "created_at": "2026-03-12T17:04:21Z",
+    "created_at": "2026-04-13T16:32:57Z",
     "source": "API"
   },
   {
-    "article_id": "kU6wH9gcFH6bsMRHjuW9D2",
+    "article_id": "3r8FH2VMMQMD5NSzHDC88T",
     "url": "https://developer.marvelousdesigner.com/optiontype.html#attachfileinfo",
     "title": "AttachFileInfo",
     "content": "#### AttachFileInfo\uf0c1\n``` \nfileName:str\nfilePath:str\n\n```\n\nCopy to clipboard",
     "content_description": "List of API Option Types",
-    "created_at": "2026-03-12T17:04:21Z",
+    "created_at": "2026-04-13T16:32:57Z",
     "source": "API"
   },
   {
-    "article_id": "hGQn4f4kvuhz5Mktx7nHGj",
+    "article_id": "4826jfJq5eViNFPeSNPc9z",
     "url": "https://developer.marvelousdesigner.com/optiontype.html#mimedata",
     "title": "MimeData",
     "content": "#### MimeData\uf0c1\n``` \nmimeType:str\nmimeNmae:str\nmimeValue:str\n\n```\n\nCopy to clipboard",
     "content_description": "List of API Option Types",
-    "created_at": "2026-03-12T17:04:21Z",
+    "created_at": "2026-04-13T16:32:57Z",
     "source": "API"
   },
   {
-    "article_id": "M4iG22PDZ3NoGTUniGUmpM",
+    "article_id": "Vvw4uBCioEunFsWZVwPeNL",
     "url": "https://developer.marvelousdesigner.com/optiontype.html#apirestrequest",
     "title": "ApiRestRequest",
     "content": "#### ApiRestRequest\uf0c1\n``` \nheader:list[std::pair[str, str]]\nmethod:HttpMethodType\npayload:str\nurl:str\nattachements:list[AttachFileInfo]\nformData:list[MimeData]\n\n```\n\nCopy to clipboard",
     "content_description": "List of API Option Types",
-    "created_at": "2026-03-12T17:04:21Z",
+    "created_at": "2026-04-13T16:32:57Z",
     "source": "API"
   },
   {
-    "article_id": "XYw4itRtfpZXkXzaZLERea",
+    "article_id": "i5aLEiv5htwXWxLZqyU76Y",
     "url": "https://developer.marvelousdesigner.com/optiontype.html#apirestresponse",
     "title": "ApiRestResponse",
     "content": "#### ApiRestResponse\uf0c1\n``` \nheader:str\nbuffer:str\nresponseCode:int\n\n```\n\nCopy to clipboard",
     "content_description": "List of API Option Types",
-    "created_at": "2026-03-12T17:04:21Z",
+    "created_at": "2026-04-13T16:32:57Z",
     "source": "API"
   },
   {
-    "article_id": "WbjfekU5StXjHEWjecK5Lt",
+    "article_id": "mYgdnuzYfj7wquYiCLTihy",
     "url": "https://developer.marvelousdesigner.com/optiontype.html#apigraphicdimensions",
     "title": "ApiGraphicDimensions",
     "content": "#### ApiGraphicDimensions\uf0c1\n``` \nwidth:float\nheight:float\n\n```\n\nCopy to clipboard",
     "content_description": "List of API Option Types",
-    "created_at": "2026-03-12T17:04:21Z",
+    "created_at": "2026-04-13T16:32:57Z",
     "source": "API"
   }
 ]

@@ -2,7 +2,8 @@ import asyncio
 import json
 import os
 import re
-from concurrent.futures import ThreadPoolExecutor, as_completed
+import sys
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 
 import questionary
@@ -12,7 +13,11 @@ from bs4 import BeautifulSoup
 from playwright.async_api import async_playwright
 from tqdm import tqdm
 
-from ai_search import AISearch
+_src_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if _src_root not in sys.path:
+    sys.path.insert(0, _src_root)
+
+from search.ai_search import AISearch
 from tools.azure import Azure
 from tools.misc import html_to_markdown_converter
 

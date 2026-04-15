@@ -59,7 +59,7 @@ def main():
     transcript_extractor = TranscriptExtractor(azure, youtube_channel_dir_path)
     video_manager = VideoManager(azure, youtube_channel_dir_path)
     subtitle_manager = SubtitleManager(azure, youtube_channel_dir_path)
-    ai_search = AISearch(azure, youtube_channel_dir_path)
+    ai_search = AISearch(azure)
 
     channel_id = MD_CHANNEL_ID if brand == "md" else CLO3D_CHANNEL_ID
 
@@ -68,16 +68,20 @@ def main():
         video_age_number = questionary.text(f"Number of {video_age}:").ask()
 
         if video_age == "Years":
-            video_ids = youtube_api.get_videos_by_age(channel_id=channel_id, video_age_in_years=video_age_number)
+            videos = youtube_api.get_videos_by_age(channel_id=channel_id, video_age_in_years=video_age_number)
+            file_name = f"videos_within_{video_age_number}_{video_age.lower()}.txt"
         elif video_age == "Months":
-            video_ids = youtube_api.get_videos_by_age(channel_id=channel_id, video_age_in_months=video_age_number)
+            videos = youtube_api.get_videos_by_age(channel_id=channel_id, video_age_in_months=video_age_number)
+            file_name = f"videos_within_{video_age_number}_{video_age.lower()}.txt"
         elif video_age == "Weeks":
-            video_ids = youtube_api.get_videos_by_age(channel_id=channel_id, video_age_in_weeks=video_age_number)
+            videos = youtube_api.get_videos_by_age(channel_id=channel_id, video_age_in_weeks=video_age_number)
+            file_name = f"videos_within_{video_age_number}_{video_age.lower()}.txt"
         elif video_age == "Days":
-            video_ids = youtube_api.get_videos_by_age(channel_id=channel_id, video_age_in_days=video_age_number)
+            videos = youtube_api.get_videos_by_age(channel_id=channel_id, video_age_in_days=video_age_number)
+            file_name = f"videos_within_{video_age_number}_{video_age.lower()}.txt"
 
         youtube_links = []
-        for page in video_ids:
+        for page in videos:
             if "items" not in page:
                 continue
 
@@ -87,7 +91,7 @@ def main():
 
                 youtube_links.append(f"https://www.youtube.com/watch?v={item['id']['videoId']}")
 
-        with open(os.path.join(youtube_channel_dir_path, "youtube_links.txt"), "w+", encoding="utf-8") as f:
+        with open(os.path.join(youtube_channel_dir_path, file_name), "w+", encoding="utf-8") as f:
             f.write("\n".join(youtube_links))
 
     elif task == "Get All Transcripts By Age":

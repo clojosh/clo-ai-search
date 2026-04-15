@@ -159,7 +159,8 @@ class TranscriptExtractor:
         Returns:
             None
         """
-        if transcript["transcript"] == "":
+        if transcript["transcript"] == "" or transcript["transcript"] is None:
+            print(f"\nTranscript: {transcript.get('title', '')} is missing transcript. Skipping upload.")
             return
 
         if "summary" in transcript:
@@ -167,7 +168,7 @@ class TranscriptExtractor:
                 return
 
         if transcript["video_id"].startswith("_"):
-            transcript["video_id"] = "YT" + transcript["video_id"]
+            transcript["video_id"] = transcript["video_id"][1:]
 
         self.azure.search_client.upload_documents(
             {

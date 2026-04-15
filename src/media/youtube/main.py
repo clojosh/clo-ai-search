@@ -162,11 +162,17 @@ def main():
         transcript_dir = os.path.join(youtube_channel_dir_path, "transcripts")
         files = [os.path.join(transcript_dir, f) for f in os.listdir(transcript_dir) if f.endswith(".json")]
 
-        with ThreadPoolExecutor(max_workers=5) as executor:
+        with ThreadPoolExecutor(max_workers=10) as executor:
             # We map the instance method to the list of file paths.
             list(tqdm(executor.map(transcript_extractor.summarize_transcripts, files), total=len(files), desc="Summarizing Transcripts", position=0))
 
     elif task == "Upload All Transcripts":
+        start_date_str = questionary.text("Start Date (YYYY-MM-DD):").ask()
+        start_date = datetime.strptime(start_date_str, "%Y-%m-%d").date()
+
+        end_date_str = questionary.text("End Date (YYYY-MM-DD):", default=datetime.now().strftime("%Y-%m-%d")).ask()
+        end_date = datetime.strptime(end_date_str, "%Y-%m-%d").date()
+
         if brand == "allinone":
             for folder in os.listdir(os.path.join(os.getcwd(), "data")):
                 if folder == "clo3d" or folder == "md":
@@ -177,7 +183,26 @@ def main():
                         )
 
         transcript_dir = os.path.join(youtube_channel_dir_path, "transcripts")
-        files = [os.path.join(transcript_dir, f) for f in os.listdir(transcript_dir) if f.endswith(".json")]
+
+        files = []
+        for file_name in os.listdir(transcript_dir):
+            if file_name.endswith(".json"):
+                file_path = os.path.join(transcript_dir, file_name)
+
+                with open(file_path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+
+                    # 2. Extract and convert the publish_date from the JSON content
+                    # Assuming the JSON has a key named "publish_date"
+                    raw_publish_date = data.get("published_at")
+
+                    if raw_publish_date:
+                        # Convert string from JSON to date object
+                        publish_date = datetime.strptime(raw_publish_date.split("T")[0], "%Y-%m-%d").date()
+
+                        # 3. Perform the comparison
+                        if start_date <= publish_date <= end_date:
+                            files.append(file_path)
 
         # 1. Determine the target list (files vs. internal items)
         if len(files) == 1:
@@ -197,8 +222,7 @@ def main():
                 with open(file_path, "r", encoding="utf-8") as f:
                     transcripts = json.load(f)
 
-                for transcript in transcripts:
-                    transcript_extractor.upload_transcript(transcript)
+                transcript_extractor.upload_transcript(transcripts)
 
             process_func = upload_transcripts
             description = "Uploading Transcript Files"

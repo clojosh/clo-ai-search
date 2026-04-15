@@ -1,12 +1,18 @@
 import json
 import os
+import sys
 from datetime import datetime
 from pathlib import Path
 
 import shortuuid
 import yt_dlp
 
-from .constants import EXCLUDED_LANGS_AND_WORDS
+_src_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+if _src_root not in sys.path:
+    sys.path.insert(0, _src_root)
+
+from src.media.youtube.api import YouTubeAPI
+from src.media.youtube.constants import EXCLUDED_LANGS_AND_WORDS
 
 
 class VideoManager:
@@ -20,6 +26,7 @@ class VideoManager:
         # Using /videos ensures we start on the main uploads tab
         CHANNEL_URL = "https://www.youtube.com/@CLO3D/videos" if self.azure.brand == "clo3d" else "https://www.youtube.com/@MarvelousDesigner/videos"
         OUTPUT_DIR = os.path.join(self.youtube_channel_dir_path, "videos")
+        STARTING_VIDEO_INDEX = 101  # Start from the 101st video to skip the most recent ones
         NUM_RECENT_VIDEOS = 100
 
         if not os.path.exists(OUTPUT_DIR):
@@ -47,7 +54,7 @@ class VideoManager:
         ydl_opts = {
             "format": "bestvideo[height<=480]+bestaudio/best[height<=480]",
             "http_headers": {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"},
-            "playlist_items": f"4-{NUM_RECENT_VIDEOS}",
+            "playlist_items": f"{STARTING_VIDEO_INDEX}-{STARTING_VIDEO_INDEX + NUM_RECENT_VIDEOS - 1}",
             "outtmpl": os.path.join(OUTPUT_DIR, "%(title)s [%(id)s]", "%(title)s.%(ext)s"),
             "match_filter": published_videos_only,
             "restrictfilenames": True,
@@ -86,7 +93,9 @@ class VideoManager:
                     description_data = json.load(f)
 
                 description = description_data.get("description", "")
-                transcript = self.extract_srt_text(os.path.join(video_dir_path, file.replace(".info.json", ".srt")))
+
+                youtube_api = YouTubeAPI(self.azure, self.youtube_channel_dir_path)
+                transcript = youtube_api.extract_srt_text(os.path.join(video_dir_path, file.replace(".info.json", ".srt")))
 
                 upload_date = description_data.get("upload_date")
                 formatted_date = datetime.strptime(upload_date, "%Y%m%d").strftime("%Y-%m-%dT%H:%M:%SZ") if upload_date else ""

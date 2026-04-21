@@ -318,7 +318,7 @@ class AISearch:
 
 if __name__ == "__main__":
     stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
-    brand = questionary.select("Which brand?", choices=["clo3d", "clo3dapi", "closet", "connect", "md", "allinone"]).ask()
+    brand = questionary.select("Which brand?", choices=["clo3d", "cloapi", "closet", "connect", "md", "allinone"]).ask()
     task = questionary.select(
         "What task?",
         choices=[
@@ -331,7 +331,8 @@ if __name__ == "__main__":
         ],
     ).ask()
 
-    ai_search = AISearch(Azure(stage, brand))
+    azure = Azure(stage, brand)
+    ai_search = AISearch(azure)
 
     if task == "Create Search Index":
         index_name = questionary.text("Index Name?").ask()

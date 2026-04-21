@@ -20,14 +20,12 @@ class VideoManager:
         self.azure = azure
         self.youtube_channel_dir_path = youtube_channel_dir_path
 
-    def download_videos_yt_dlp(self):
+    def download_videos_yt_dlp(self, starting_video_index: int = 0, num_recent_videos: int = 10):
         """Downloads only standard published videos (no Shorts, no Live)."""
 
         # Using /videos ensures we start on the main uploads tab
         CHANNEL_URL = "https://www.youtube.com/@CLO3D/videos" if self.azure.brand == "clo3d" else "https://www.youtube.com/@MarvelousDesigner/videos"
         OUTPUT_DIR = os.path.join(self.youtube_channel_dir_path, "videos")
-        STARTING_VIDEO_INDEX = 101  # Start from the 101st video to skip the most recent ones
-        NUM_RECENT_VIDEOS = 100
 
         if not os.path.exists(OUTPUT_DIR):
             os.makedirs(OUTPUT_DIR)
@@ -54,7 +52,7 @@ class VideoManager:
         ydl_opts = {
             "format": "bestvideo[height<=480]+bestaudio/best[height<=480]",
             "http_headers": {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"},
-            "playlist_items": f"{STARTING_VIDEO_INDEX}-{STARTING_VIDEO_INDEX + NUM_RECENT_VIDEOS - 1}",
+            "playlist_items": f"{starting_video_index}-{starting_video_index + num_recent_videos - 1}",
             "outtmpl": os.path.join(OUTPUT_DIR, "%(title)s [%(id)s]", "%(title)s.%(ext)s"),
             "match_filter": published_videos_only,
             "restrictfilenames": True,
@@ -66,7 +64,7 @@ class VideoManager:
             "quiet": False,
         }
 
-        print(f"Searching for {NUM_RECENT_VIDEOS} videos...")
+        print(f"Searching for {num_recent_videos} videos...")
 
         try:
             with yt_dlp.YoutubeDL(ydl_opts) as ydl:

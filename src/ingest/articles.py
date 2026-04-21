@@ -24,6 +24,14 @@ class Article:
     def __init__(self, azure: Azure):
         self.azure = azure
 
+    @staticmethod
+    def _raise_if_index_failed(results) -> None:
+        """Raise RuntimeError if any Azure Search ``IndexingResult`` has ``succeeded`` false."""
+        failed = [r for r in results if not r.succeeded]
+        if failed:
+            details = "; ".join(f"{r.key}: {r.error_message}" for r in failed)
+            raise RuntimeError(f"Azure Search indexing failed ({len(failed)} document(s)): {details}")
+
     def delete_documents(self, article_id: str | list):
         print(f"\nDeleting {article_id}")
 
@@ -222,10 +230,19 @@ class Article:
             print(f"Error on page {page}: {e}")
 
     def upload_document(self, file_path: str, pos: int = 0):
+        """Load article JSON and merge-or-upload each document to Azure AI Search with embeddings.
+
+        Args:
+            file_path: Path to a JSON file produced by article extraction (list of document dicts).
+            pos: Unused; kept for compatibility with threaded callers that pass an index.
+
+        Side effects:
+            Calls Azure OpenAI for embeddings and writes documents via ``SearchClient.upload_documents``.
+        """
         with open(file_path, "r", encoding="utf-8") as f:
             documents = json.load(f)
 
-        for i, document in enumerate(tqdm(documents, desc=f"File: {os.path.basename(file_path)}", position=pos, leave=False)):
+        for i, document in enumerate(documents):
             if document["content"] == "":
                 document["content"] = document["title"]
 
@@ -239,17 +256,17 @@ class Article:
             del documents[i]["category_id"]
             del documents[i]["category"]
 
-        if brand == "clovf":
+        if self.azure.brand == "clovf":
             # Upload clovf articles to both clo3d and clo-set
-            Azure(stage, "clo3d").search_client.upload_documents(documents)
-            Azure(stage, "closet").search_client.upload_documents(documents)
+            self._raise_if_index_failed(Azure(self.azure.stage, "clo3d", self.azure.language).search_client.upload_documents(documents))
+            self._raise_if_index_failed(Azure(self.azure.stage, "closet", self.azure.language).search_client.upload_documents(documents))
         else:
-            self.azure.search_client.upload_documents(documents)
+            self._raise_if_index_failed(self.azure.search_client.upload_documents(documents))
 
 
 if __name__ == "__main__":
     stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
-    brand = questionary.select("Which brand?", choices=["clo3d", "closet", "connect", "clovf", "md", "allinone"]).ask()
+    brand = questionary.select("Which brand?", choices=["clo3d", "cloapi", "closet", "connect", "clovf", "md", "allinone"]).ask()
     language = questionary.select("Which language?", choices=["English", "Korean"]).ask()
     task = questionary.select(
         "What task?",
@@ -282,9 +299,9 @@ if __name__ == "__main__":
             # 1. Map the futures to a list
             futures = [executor.submit(article.get_zendesk_articles, article_path, None, str(page)) for page in range(1, page_count + 1)]
 
-            # 2. Wrap as_completed with tqdm to track progress as tasks finish
-            for _ in tqdm(as_completed(futures), total=len(futures), desc="Downloading Articles"):
-                pass
+            # 2. Wrap as_completed with tqdm; call result() so worker exceptions are not swallowed.
+            for fut in tqdm(as_completed(futures), total=len(futures), desc="Downloading Articles"):
+                fut.result()
 
     elif task == "Find All Articles with Bad Images":
         article.mt_find_articles_invalid_images()
@@ -316,8 +333,8 @@ if __name__ == "__main__":
         with ThreadPoolExecutor(max_workers=10) as executor:
             futures = [executor.submit(article.upload_document, os.path.join(azure.get_article_path(), file), i + 1) for i, file in enumerate(files)]
 
-            for _ in tqdm(as_completed(futures), total=len(files), desc="Overall Progress", position=0):
-                pass
+            for fut in tqdm(as_completed(futures), total=len(files), desc="Overall Progress", position=0):
+                fut.result()
 
     elif task == "Delete Article":
         article_id = questionary.text("Article ID").ask()
@@ -340,5 +357,7 @@ if __name__ == "__main__":
         print(f"\nTotal documents found: {len(documents)}\n")
 
         if questionary.confirm("Do you want to delete these documents?").ask():
+            for document in documents:
+                ai_search.delete_ai_search_document(document["article_id"])
             for document in documents:
                 ai_search.delete_ai_search_document(document["article_id"])

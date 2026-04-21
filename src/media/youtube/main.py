@@ -127,7 +127,9 @@ def main():
         transcript_extractor.extract_youtube_transcripts(videos)
 
     elif task == "Download All Videos":
-        video_manager.download_videos_yt_dlp()
+        starting_video_index = questionary.text("Starting video index (0 for most recent video):", default="0").ask()
+        num_recent_videos = questionary.text("Number of recent videos to download:", default="10").ask()
+        video_manager.download_videos_yt_dlp(int(starting_video_index), int(num_recent_videos))
 
     elif task == "Generate All Subtitles":
         video_dir = os.path.join(youtube_channel_dir_path, "videos")

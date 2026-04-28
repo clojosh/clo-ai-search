@@ -1,0 +1,273 @@
+[
+    {
+        "id": "73f0b2a777e64854a42eaf795713632a",
+        "url": "https://connect.clo-set.com/community/post/73f0b2a777e64854a42eaf795713632a",
+        "title": "AI generator is not working",
+        "content": "Hello, i have some issue with the AI generator. When i do a prompt or using an image and I do generate it says downloading but nothing happen, do you have an idea of how to fix that? I have the same issue when i do it for fabrics!\n\n![](https://storagefiles.clo-set.com/public/community/202502/73f0b2a777e64854a42eaf795713632a/images/254041ca18d849f98944d4b8deb3c7ecScreenshot%202025-02-25%20101832.png)\n\n### Community Post Comments:\nComment 1: Hi Benoît, is this still occuring for you? Both of the features have to feedback to our servers for AI computing, so I suspect a temporary connection issue (wifi, firewall...). They just worked for me.",
+        "content_description": "\"Get help troubleshooting issues with the AI generator for prompts and image downloads, especially for fabric designs.\"",
+        "source": "Connect Community",
+        "created_at": "2025-02-25T09:31:51.31Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "AI"
+        ]
+    },
+    {
+        "id": "1653acfd9cb74b23b2754fae6a92f84e",
+        "url": "https://connect.clo-set.com/community/post/1653acfd9cb74b23b2754fae6a92f84e",
+        "title": "Graphic issue with printed Surface..",
+        "content": "Hi,  \nI'm trying to add a graphic on a printed surface.. But the graphic appears underneath the print.. I even try to bring the graphic to front.. But still it is underneath the print.. Can you please clarify why this is happeing and how to resolve this issue..   \nI've attached an image from which you can better understand what I'm actually meaning...  \n  \nThank You!..  \n\n\n![](https://storagefiles.clo-set.com/public/community/202502/1653acfd9cb74b23b2754fae6a92f84e/images/4532e26564d742f2b9f06159bc3c4250Screenshot_1.png)\n\n### Community Post Comments:\nComment 1: Hi Mahesh, is this happening in every project or only this project? I cannot replicate the issue. A graphic for me comes out on top of a print.\nReply 1: Thank You for your time... I'm not sure in every project.. I never used that print option before available in Fabric section.. I always try to add the print as a texture or may be as a Graphic.. I just tried this option and stuck with this.. That's why I added the issue over here.. :)\nReply 2: There is no need to uninstall and reinstall CLO as suggested below. First, we should determine if the issue is file-specific or not. If it's only happening for you on this file and you cannot replicate the problem on another, we can have a look at it. If it is all files, we must investigate with tech support.\nReply 3: Hi melody!I just tried this with a different file, But the issue presist.. The graphic \"PINK\" is still under the Leapord print.. But the solution I found is just to increase the z-offset value of the graphic to make it on front.. But I don't think it is a good technique to make it visible on upfront.. Bcz May be in render it will be floating in the air.. But this is the only solution I've in my mind right now..\nReply 4: Hi, could you share one of your files here (upload it to wetransfer and add the link into your message) and note you are coming from the community and it is for Melody? Thank you! https://connect.clo-set.com/community/post/1653acfd9cb74b23b2754fae6a92f84e\n\nComment 2: I understood the pink is letter graphic.I got the problem! \"the print of fabric\" shows at the top of everything!If you add the pink graphic on the fabric, you should add leopard as texture of fabric.I'm sorry about I couldn't understand well, and as Im a Korean, my English explain is not well.Good luck!\nReply 1: I am confused. I just tested it and graphics are not behind prints for me. On an additional note, it's also not affected by changing the Z-Offset.\nReply 2: When I checked the simulation on the wide view, the graphic seen blured.. ㅠㅠ I think the graphic's size make it blur. If you find the solution, plz make me know\nReply 3: Hi Claude, sorry I do not understand what you mean. If you could make a separate thread for the issue so you can add a screenshot, that would be great!\nReply 4: First I'm sorry about making confusion. There are mistake in my studying. The print is just on the top of fabric texture, not the graphic.Second maybe I found the reason why the letter \"pink\" is appeared. You can see another letter \"pink\" on the middle left. I think the letters exist on the leopard picture. Is it right?\nReply 5: Claude Evelyn you are right the leapord print itself has pink letter in it.. But if you see at the wasitband bottom there is a \"PINK\" letter seprately which I tried to add as a Graphic not as a print.. And it appears on the bottom of the print.. This is the actual issue which I want to raise.. :) I actually always add print as a texture I just tried that add print option first time.. I got stuck.. Lol.. :)\nReply 6: Looking at print1 in the fabric properties window, it looks like the black leopard pattern was insert as a print without a background. How about adding some color(brown) to the leopard print background and layering it with fabric texture? .But It's still weird how the pink text appears due to the print insertion. lolOne solution might be to completely delete the program and download it again. GOOD LUCK!\n\nComment 3: I don't know how you add the graphic.Use the \"graphic (2D pattern)\"and move the graphic, using the \"graphic switch(변환)\" which is above the first one.If your question mean is the graphic is appear on the background, click the graphic with \"graphic switch(변환)\" and check property -&gt; arrangement -&gt; surface.\nReply 1: HI,, Thank You for your response.. I actually mean.. the graphic \"PINK\" is under the leopard like print.. if you see the image.. I tried to Select the graphic in 2D window.. and Order 2D&gt; Bring to Front but it still under the print..\nReply 2: The red box on the right show that your \"pink\" graphic is added as \"print of fabric\". As I know, showing as unified can't move.. Graphic should show on the \"pixelate icon\" next to the fabric icon. https://connect.clo-set.com/community/post/1653acfd9cb74b23b2754fae6a92f84e\nReply 3: Actually the Leapord print is added as a \"print of Fabric\".. And \"PINK\" Graphic is added as a Graphic tool.. which one is behind the print of Fabric.. I want that \"Pink\" Graphic to be on front.. As you see leapord print is on front which is wrong...\nReply 4: isn't it the \"pink\" the red box on the right?click the link in my last comment.\nReply 5: Sorry.. May be I'm not able to explain it properly.. But I think you misunderstood the \"PINK\" with the color.. But \"PINK\" is not a color actually it is a Graphic Typo which is named as \"PINK\" if you see in the 3D Window.. \"PINK\" TEXT is under the Leapord pirnt just where the waistband ends.. I want that \"PINK\" Text in front.. May be this explain you better what I'm actually looking for.. Thank YOu!",
+        "content_description": "This web page aims to provide guidance on resolving issues related to layering graphics on printed surfaces, ensuring that users can successfully position their designs without interference from existing print elements.",
+        "source": "Connect Community",
+        "created_at": "2025-02-25T05:22:26.87Z",
+        "category": 220,
+        "tags": [
+            "CLO",
+            "CONNECT",
+            "Material",
+            "Texture",
+            "Rendering"
+        ]
+    },
+    {
+        "id": "4effa21bb4854039bf3b1224af59736e",
+        "url": "https://connect.clo-set.com/community/post/4effa21bb4854039bf3b1224af59736e",
+        "title": "[PT/EN] Transformando Inspiração em Design: A Jornada Criativa do Estúdio Murph com CLO",
+        "content": "## _Conheça Carol, uma designer brasileira que fundou o Murph Studio, onde ela une criatividade com tecnologia de ponta. Nesta entrevista, ela compartilha detalhes sobre sua arte inspirada na marca JW PEI, explorando como o design 3D desempenha um papel fundamental em sua abordagem inovadora à moda._\n\n(English version follows)\n\n* * *\n\n  \n**Por favor, apresente-se e compartilhe um pouco sobre sua formação.**\n\nOlá, meu nome é Carol, sou designer 3D e criadora da Murph Studio. Formada em moda pela FAAP, atuei em grandes e pequenas empresas, onde aprofundei minha experiência em desenvolvimento de produto e design. Depois de anos no mercado tradicional, encontrei no universo digital uma nova perspectiva criativa. Criar a Murph foi como reencontrar propósito na moda, com inovação, sustentabilidade e visibilidade. \n\n![](https://storagefiles.clo-set.com/public/community/202502/4effa21bb4854039bf3b1224af59736e/images/0c9f99b2b6384cdc94873c21877d9988OP%C3%87%C3%83O%20C%2002_%20TRATADA.png)\n\n**Qual é o objetivo do Murph Studio ao explorar o uso do 3D na visualização de produtos?**\n\nAcredito que o potencial do 3D para a visualização de produtos é um tema que vale muito a pena ser explorado, já que esse é o grande foco do Murph. Nosso objetivo é facilitar a forma como as marcas apresentam suas criações, trazendo mais agilidade, criatividade e impacto visual. Esse projeto é um exemplo claro disso e mostra como o 3D pode transformar o design de produtos e as campanhas visuais.\n\n**Visão Geral da Arte:**\n\nA bolsa foi inspirada na marca JW PEI e surgiu como parte de um estudo e experimentação de desenvolvimento de bolsas em 3D. Fiquei apaixonada pelo design dela, especialmente pelas dobras e os detalhes de construção. Como alguém que vem da área de desenvolvimento de produto, logo comecei a pensar na modelagem e confecção dessa peça. Não deu outra — resolvi criar minha própria versão dela no 3D rs.\n\nPara o cenário, quis trazer um ar urbano e moderno, e foi aí que pensei: _O que é mais urbano que elevadores?_. Assim, o elevador acabou virando o cenário perfeito para apresentar a peça.\n\n![](https://storagefiles.clo-set.com/public/community/202502/4effa21bb4854039bf3b1224af59736e/images/3ce068eed581466baa0636cfeea0d821image%20%28121%29.png)\n\n**Descreva como e quando você usou a CLO durante a criação desta peça.**\n\nUsei o CLO do início ao fim para desenvolver a bolsa no 3D. Fui observando as imagens de referência e ia traduzindo isso para o 3D, combinando com meus conhecimentos de modelagem e confecção. Foi um processo bem intuitivo, mas também técnico, já que precisei pensar em detalhes de costura e estrutura enquanto construía a peça. O CLO me permitiu testar formas e ajustes em tempo real, o que foi essencial para chegar no melhor resultado final, além de permitir um processo muito mais dinâmico!\n\n![](https://storagefiles.clo-set.com/public/community/202502/4effa21bb4854039bf3b1224af59736e/images/9179aaadc3bd4122847c165137f56c66Captura%20de%20tela%202025-01-14%20073121.png)\n\n**Qual foi sua parte favorita da criação desta peça?**\n\nMinha parte favorita foi, sem dúvida, a alça e as cores! Modelar a alça foi super divertido, lembro que fiquei testando para ver o quão enrugada e quão sobreposto o tecido conseguia ficar (rs). Era quase como brincar com as possibilidades de volume e textura!Outra parte que amei foi definir as cores. Fiquei completamente indecisa porque todas as combinações me encantavam (rs). Para sair do impasse, pedi a opinião de pessoas próximas, mas a indecisão só aumentou porque todo mundo gostou de cores diferentes. Então, resolvi perguntar para os meus seguidores quais cores eles preferiam — e foi uma experiência super legal de interação e feedback também!\n\n  \n**Você pode compartilhar um desafio específico que enfrentou durante o processo de design e como o superou?**\n\nAh, sim, a modelagem das pences foi um grande desafio! Percebi que elas não seguiam um único padrão — nem todas eram para o mesmo lado e o tamanho diminuía gradualmente. Fiquei um tempo tentando resolver só no digital, mas por um momento pensei: preciso ver isso fora da tela.\n\nPeguei uma folha de papel, dobrei várias vezes até encontrar o resultado que queria e, com isso, consegui entender como replicar no CLO. Foi um momento de experimentação prática que me ajudou a transformar a lógica das dobras na bolsa digital que eu queria.\n\nEsse processo reforçou que combinar técnicas é super válido e pode trazer ótimos resultados! Às vezes, recorrer ao básico, como dobrar um papel, pode ser a chave para destravar soluções no 3D. \n\n![](https://storagefiles.clo-set.com/public/community/202502/4effa21bb4854039bf3b1224af59736e/images/e74e217b78a847329e44882e7ec51411Captura%20de%20tela%202025-01-14%20073042.png)\n\n**Você tem alguma dica para outros usuários do CLO que desejam aprimorar seus designs?**\n\nMinha principal dica é simples: procure pela lógica. Se uma modelagem parecer confusa, faça testes no básico, procure informações sobre a base (de modelagem por exemplo). Experimente e veja como a lógica do design funciona no físico, que é a base do 3D, e como você pode trazer esse resultado final no digital. Isso ajuda a entender as estruturas e proporções de maneira muito mais intuitiva.\n\nCom essa clareza, é só transferir a ideia para o CLO e deixar a mágica do 3D acontecer. Ah, e experimente sempre! O CLO é uma ferramenta tão rica que, às vezes, descobrimos novas possibilidades só testando, sem medo de errar. \n\n**Quais são seus projetos futuros e como você vê a evolução do seu trabalho no cenário da moda digital?**\n\nO futuro da Murph está cheio de novidades!\n\nTemos alguns projetos finalizados que em breve serão lançados, e mal posso esperar para compartilhar. \n\nNosso foco é continuar explorando e aprofundando na moda digital, conectando com criatividade, tecnologia e funcionalidade.\n\nAlém disso, queremos fortalecer nossas parcerias estratégicas no mercado, conectando-nos a marcas e plataformas que conversem com o posicionamento e o propósito da Murph.\n\nTambém queremos ampliar e representar o impacto do 3D no mercado, trazendo soluções de inovação da área com nossos parceiros.\n\nE, claro, um dos nossos objetivos é me tornar uma CLO Creator, representando a parceria com a marca enquanto exploramos juntos as infinitas possibilidades do 3D.\n\nA evolução da Murph é algo que vejo nitidamente a cada ano. Com cada projeto, enfrentamos novos desafios que nos levam a explorar ferramentas e estratégias mais eficientes. Isso não apenas aprimora nosso domínio técnico no 3D, mas também nos torna mais ágeis e criativos na resolução de problemas.\n\nO CLO 3D tem sido essencial nessa jornada. A cada update, sinto que evoluímos juntos — as novas ferramentas e funcionalidades tornam o processo mais dinâmico e realista, e isso reflete diretamente nos resultados finais. Para mim, essa relação entre a Murph e o CLO é mais do que um uso de ferramenta; é uma parceria criativa que quero levar ainda mais longe no futuro.\n\n* * *\n\nEnglish Version:\n\n> # **_Turning Inspiration into Design: Murph Studio's Creative Journey with CLO_**\n\n##  _Meet Carol, a Brazilian designer who founded Murph Studio, where she merges creativity with cutting-edge technology. In this interview, she shares details about her_[ _artwork inspired by the JW PEI brand_](https://www.instagram.com/p/C9h4zWfAVWe/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==) _, exploring how 3D design plays a key role in her innovative approach to fashion._  \n\n\n* * *\n\n**Please introduce yourself and share a bit about your background**\n\nHi, I'm Carol, a 3D designer and creator of Murph Studio.\n\nI have a degree in fashion from FAAP, and I've worked in both large and small companies, where I've deepened my experience in product development and design. After years in the traditional market, I found a new creative perspective in the digital universe. Creating Murph was like finding my purpose in fashion again, with innovation, sustainability, and visibility.\n\n![](https://storagefiles.clo-set.com/public/community/202502/4effa21bb4854039bf3b1224af59736e/images/f390cd1059d7486491d874803367bd1cOP%C3%87%C3%83O%20C%2002_%20TRATADA.png)\n\n**What is Murph's Studio goal in exploring the use of 3D in product visualization?**\n\nI believe that the potential of 3D for product visualization is a topic worth exploring, as it is Murph's main focus. Our goal is to facilitate the way brands present their creations, bringing more agility, creativity, and visual impact. This project is a clear example of that and shows how 3D can transform product design and visual campaigns.\n\n**Artwork Overview:**\n\nThe bag was inspired by the JW PEI brand and was created as part of a study and experimentation in the development of 3D bags. I fell in love with its design, especially the folds and construction details. As someone with a background in product development, I soon began thinking about the modeling and manufacturing of this piece. It was no surprise — I decided to create my own version of it in 3D, lol.\n\nFor the setting, I wanted to bring an urban and modern feel, and that's when I thought: What's more urban than elevators? So, the elevator ended up becoming the perfect setting to present the piece.\n\n![](https://storagefiles.clo-set.com/public/community/202502/4effa21bb4854039bf3b1224af59736e/images/8054b11d445f4bd0a2bd11d4a7dd64dfimage%20%28121%29.png)\n\n  \n**Please tell us about the CLO features that were particularly useful when creating this artwork.**\n\nI used CLO from start to finish to develop the bag in 3D. I looked at the reference images and translated them into 3D, combining them with my knowledge of modeling and manufacturing. It was a very intuitive process, but also technical, as I had to consider sewing and structural details while building the piece. CLO allowed me to test shapes and adjustments in real time, which was essential to achieving the best final result, while also making the process much more dynamic!\n\n![](https://storagefiles.clo-set.com/public/community/202502/4effa21bb4854039bf3b1224af59736e/images/2072de9b2d584ae1854e3f43bb672dbcCaptura%20de%20tela%202025-01-14%20073121.png)\n\n**What was your favorite part of creating this piece?**\n\nMy favorite part was, without a doubt, the strap and the colors! Modeling the strap was super fun; I remember testing it to see how wrinkled and how overlapping the fabric could be (lol). It was almost like playing with the possibilities of volume and texture!\n\nAnother part that I loved was choosing the colors. I was completely undecided because I loved all the combinations (lol). To get out of the impasse, I asked for the opinions of people close to me, but the indecision only increased because everyone liked different colors. So, I decided to ask my followers which colors they preferred — and it turned out to be a really cool experience of interaction and feedback too!\n\n  \n**Can you share a specific challenge you faced during the design process and how you overcame it?**\n\nOh, yes, modeling the darts was a huge challenge! I realized that they didn’t follow a single pattern — they weren’t all facing the same way, and their size gradually decreased. I spent some time trying to solve it digitally, but at one point, I thought: I need to see this off-screen.\n\nI took a sheet of paper, folded it several times until I found the result I wanted, and with that, I was able to understand how to replicate it in CLO. It was a moment of practical experimentation that helped me transform the logic of the folds into the digital bag I envisioned.\n\nThis process reinforced that combining techniques is super valuable and can yield great results! Sometimes, resorting to the basics, like folding a piece of paper, can be the key to unlocking solutions in 3D.\n\n![](https://storagefiles.clo-set.com/public/community/202502/4effa21bb4854039bf3b1224af59736e/images/71e1560e70e842c187ddeafdbc1178e5Captura%20de%20tela%202025-01-14%20073042.png)\n\n**Do you have any tips for other CLO users looking to improve their designs?**\n\nMy main tip is simple: look for logic. If a pattern seems confusing, test it out using the basics, and look for information about the fundamentals (like patternmaking, for example). Experiment and see how the design logic works in the physical world, which is the foundation of 3D, and how you can bring that final result into the digital space. This helps you understand structures and proportions in a much more intuitive way.\n\nWith this clarity, just transfer the idea to CLO and let the magic of 3D happen. Oh, and always experiment! CLO is such a rich tool that sometimes we discover new possibilities just by testing, without fear of making mistakes.\n\n**What are your future projects and how do you see your work evolving in the digital fashion scene?**\n\nMurph’s future is full of exciting things!\n\nWe have several projects in the works that will be released soon, and I can’t wait to share them.\n\nOur focus is to continue exploring and delving deeper into digital fashion, connecting creativity, technology, and functionality.\n\nIn addition, we aim to strengthen our strategic partnerships in the market, connecting with brands and platforms that align with Murph’s positioning and purpose.\n\nWe also want to expand the impact of 3D in the market, bringing innovative solutions in the area alongside our partners.\n\nAnd, of course, one of our goals is to become a CLO Creator, representing our partnership with the brand as we explore the infinite possibilities of 3D together.\n\nMurph’s evolution is something I see clearly every year. With each project, we face new challenges that push us to explore more efficient tools and strategies. This not only improves our technical mastery in 3D but also makes us more agile and creative in problem-solving.\n\nCLO 3D has been essential on this journey. With each update, I feel like we’re evolving together — new tools and features make the process more dynamic and realistic, and that directly reflects in the end results. For me, this relationship between Murph and CLO is more than just a tool; it’s a creative partnership that I want to take even further in the future.\n\n### Community Post Comments:\nComment 1: Sooo happy to see Murph here! Thank you, CLO! Sharing the 3D journey with CLO community is amazing! ✨🤍✨\nReply 1: Your 3D journey is truly inspiring, and we're thrilled to have you share it with the CLO community! ✨ Keep creating amazing work!\n\nComment 2: A carol da Murph é sensacional 💜",
+        "content_description": "\"Discover the innovative journey of Carol, a Brazilian designer and founder of Murph Studio, as she blends creativity and cutting-edge technology in 3D fashion design inspired by the JW PEI brand.\"",
+        "source": "Connect Community",
+        "created_at": "2025-02-25T04:37:28.147Z",
+        "category": 110,
+        "tags": [
+            "CLO",
+            "Colorway",
+            "Material",
+            "Pattern",
+            "Rendering",
+            "Simulation",
+            "Texture"
+        ]
+    },
+    {
+        "id": "e2e20d7431824713b78357efcc137f2c",
+        "url": "https://connect.clo-set.com/community/post/e2e20d7431824713b78357efcc137f2c",
+        "title": "[Design Contest] K-Pop Mirror: Recreate Your Favorite Styles!",
+        "content": "# **_Interested in K-pop? Here's your chance! 🥳_**\n\n![](https://storagefiles.clo-set.com/public/community/202502/e2e20d7431824713b78357efcc137f2c/images/a08dcd7c17934d4587b635cf7934510aCONNECT_News%20Letter.png)\n\nJoin our **\"K-pop Mirror: Recreate Your Favorite Styles!\"** contest and recreate the outfit of your favorite K-pop stars exactly as it is!  \nIt’s the perfect opportunity to challenge yourself by perfectly recreating an iconic idol outfit. 💃🕺\n\n## ** _The Stage is Yours, Join Now!_**\n\n# **📌 Contest Details**\n\n  * 👗 Theme: Choose your favorite K-Pop stars and recreate their outfits with precision.\n\n  * 🎨 Who Can Join: Anyone!\n\n  * 📅 Submission Period: February 25 – April 07, 2025\n\n  * 🏆 Winner Announcement: April 22, 2025\n\n  * ❓ Want to know more? Just follow this [**[LINK]**](https://connect.clo-set.com/contest/k-popmirror)**!**\n\n\n\n\n# **🎁 Prizes (You don’t want to miss this!)**\n\n![](https://storagefiles.clo-set.com/public/community/202502/e2e20d7431824713b78357efcc137f2c/images/cf30de30cc114d469173fcf8a7618a0f20250205_172143.png)\n\n🏅 When the total number of submissions goes over 300, all winners' rewards will be doubled! The more contestants, the more rewards you'll get!\n\n# **🧵 How to Enter (Super Easy!)**\n\n  1. Create a **perfect replica** of the idol outfit.\n\n  2. Click the **[SUBMIT]** button on the contest page to upload your file and then submit the image you used as a reference for your creation as an additional image. \n\n  3. Wait excitedly for the results! (This might be the hardest part! 😉)\n\n\n\n\n  \n\n\n# **📌 For more details & to enter, visit **[**[HERE]**](https://connect.clo-set.com/contest/k-popmirror)**!**\n\nIf you have any questions, feel free to ask in the comments, on the Q&A board, or through our [Instagram](https://www.instagram.com/closet_connect_official/).\n\n**With passion** 🔥**,**  \n**The CONNECT Team**\n\n![](https://storagefiles.clo-set.com/public/community/202502/e2e20d7431824713b78357efcc137f2c/images/2446234f9c0847968862b4dfcf97fb78CONNECT_News%20Letter.png)![](https://storagefiles.clo-set.com/public/community/202502/e2e20d7431824713b78357efcc137f2c/images/76e0105c22b44fcca6fa581c01a56b5fsquare.png)![](https://storagefiles.clo-set.com/public/community/202502/e2e20d7431824713b78357efcc137f2c/images/8f9d8c02e0434693a40a58451c732f29square.png)\n\n### Community Post Comments:\nComment 1: Hi🙂Can I use 3ds max software for material/texture and rendering?&nbsp;I mean, use clo3d only for create 3d modeling.\nReply 1: Hello, As mentioned in the participation guidelines, you are free to use other tools, but please make sure to use CLO3D or Marvelous Designer for outfit creation.🙏🏻For more details, please check the page below and attached image.Link: https://connect.clo-set.com/community/post/e2e20d7431824713b78357efcc137f2c\n\nComment 2: Hi Team, Does the reference image need to be recreated exactly the same? I mean, not just the outfit but also the pose? Will this be a factor in the evaluation? Or is the focus more on the execution of the outfit? Thanks! 🙏🏻\nReply 1: While it's ideal if the pose matches the reference image, the main evaluation criteria focus on how accurately the outfit is recreated exactly. So, while the pose can enhance the overall presentation, the primary factor in judging will be the execution of the outfit itself.Hope this helps! Let me know if you have any other questions. Looking forward to seeing your work!❤️\n\nComment 3: I live in Mexico. Can I participate in the contest? 😊✨\nReply 1: Of course! This contest is open worldwide!✨\n\nComment 4: Multiple entries allowed, maximum of ten (10) submissions per contestant.is that mean you can submit 10 different looks ?\nReply 1: Thank you for your interest.😊 Yes, you can submit a minimum of 1 and a maximum of 10 different outfits.\n\nComment 5: Hi, do I understand correctly that the selected garment needs to be recreated in 3D as accurately as possible?\nReply 1: Yes, that's correct! Please try to replicate it as closely as possible to the real thing! 😊",
+        "content_description": "Join the \"K-pop Mirror: Recreate Your Favorite Styles!\" contest to showcase your creativity by perfectly replicating the iconic outfits of your favorite K-pop stars!",
+        "source": "Connect Community",
+        "created_at": "2025-02-25T02:30:57.03Z",
+        "category": 100,
+        "tags": [
+            "k-popmirror",
+            "CLO",
+            "MarvelousDesigner",
+            "CONNECT",
+            "Contest",
+            "designcontest",
+            "prize",
+            "k-pop",
+            "i-dol"
+        ]
+    },
+    {
+        "id": "feed7d39bec84595821586e7ce8569fa",
+        "url": "https://connect.clo-set.com/community/post/feed7d39bec84595821586e7ce8569fa",
+        "title": "Motion Capture",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202502/feed7d39bec84595821586e7ce8569fa/images/6c356fbe021c40c1bf24f68186f929e5photoshoot.png)![](https://storagefiles.clo-set.com/public/community/202502/feed7d39bec84595821586e7ce8569fa/images/e5ca88769df84aef888f70cbfe6cf45cFront.png)![](https://storagefiles.clo-set.com/public/community/202502/feed7d39bec84595821586e7ce8569fa/images/f8b4a8af326345cea01e812e3a3b4282Back.png)\n\n![](https://storagefiles.clo-set.com/public/community/202502/feed7d39bec84595821586e7ce8569fa/images/682288d1340e408cbb72335b8f082be6detail%201.png)\n\n![](https://storagefiles.clo-set.com/public/community/202502/feed7d39bec84595821586e7ce8569fa/images/dca628331b724e06952dac36b46d3d5bdetail%202.png)\n\n### Community Post Comments:\nComment 1: your rendering is amazing!i want to know how you show the background and lightening rendering",
+        "content_description": "Explore our latest fashion lookbook, showcasing stunning photography and detailed views of our newest clothing collection.",
+        "source": "Connect Community",
+        "created_at": "2025-02-24T12:56:42.88Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "CONNECT",
+            "CLO-SET",
+            "Avatar",
+            "Rendering"
+        ]
+    },
+    {
+        "id": "c00d36ae9fa6422e952c542915cb86eb",
+        "url": "https://connect.clo-set.com/community/post/c00d36ae9fa6422e952c542915cb86eb",
+        "title": "Denim corset bustier top & Shorts",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202502/c00d36ae9fa6422e952c542915cb86eb/images/bfd82689040540bfaf7fd8805d9eecdfDenim%20corset%20bustier%20top%20%26%20Shorts_0.png)\n\n* * *\n\n* * *",
+        "content_description": "Discover the perfect blend of style and comfort with our chic denim corset bustier top and shorts collection.",
+        "source": "Connect Community",
+        "created_at": "2025-02-24T04:55:35.633Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "CLO-SET",
+            "CONNECT",
+            "Photoshop",
+            "Avatar",
+            "Colorway",
+            "Pattern",
+            "Rendering",
+            "Material"
+        ]
+    },
+    {
+        "id": "c92849d619f74d8793c666ea9a645ae2",
+        "url": "https://connect.clo-set.com/community/post/c92849d619f74d8793c666ea9a645ae2",
+        "title": "2025 CONNECT Creative All-Stars Invites! 🏆",
+        "content": "The ultimate contest for top digital fashion creators is here!  \nCompete against the best, earn exclusive sponsor benefits, cash prizes, and the prestigious Champions title.\n\n# **How to Qualify**\n\n  * **Winners of any CONNECT contest held in 2025** will automatically receive an invitation to the **Creative All-Stars**.\n\n\n\n\n# **Why Join the Creative All-Stars?**\n\n  * Earn the title of a top digital fashion creator\n\n  * Cash prizes & special rewards\n\n  * Official CONNECT promotion & interview features\n\n\n\n\nStart competing in CONNECT contests now to secure your spot in the **Creative All-Stars**! More details coming soon—stay tuned!",
+        "content_description": "Join the Creative All-Stars contest to showcase your digital fashion skills, compete for cash prizes, and earn the prestigious title of top creator!",
+        "source": "Connect Community",
+        "created_at": "2025-02-24T01:27:14.953Z",
+        "category": 100,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "CONNECT",
+            "Contest"
+        ]
+    },
+    {
+        "id": "0af041f8296245cf8f77a8b6a7a9af1b",
+        "url": "https://connect.clo-set.com/community/post/0af041f8296245cf8f77a8b6a7a9af1b",
+        "title": "Details by maroosheh.3d",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202502/0af041f8296245cf8f77a8b6a7a9af1b/images/dfa0e74829bb44fcb9a164eaa5c5b17411.png)\n\n## maroosheh.3d\n\n* * *\n\nleather jaket",
+        "content_description": "Discover stylish and high-quality leather jackets at maroosheh.3d.",
+        "source": "Connect Community",
+        "created_at": "2025-02-23T14:17:47.26Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "Photoshop",
+            "Animation",
+            "Material",
+            "Pattern",
+            "Rendering",
+            "Simulation",
+            "Texture"
+        ]
+    },
+    {
+        "id": "c188cb8ca5794245a2134eae8db061ad",
+        "url": "https://connect.clo-set.com/community/post/c188cb8ca5794245a2134eae8db061ad",
+        "title": "plz share your best 3d flower",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202502/c188cb8ca5794245a2134eae8db061ad/images/705eebed57a64e62bd64d077d9d4b79bUntitled-2.png)",
+        "content_description": "This web page aims to provide a comprehensive overview of our community's events and initiatives, fostering engagement and participation among members.",
+        "source": "Connect Community",
+        "created_at": "2025-02-23T14:14:30.157Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "CLO-SET",
+            "CONNECT",
+            "Material",
+            "Pattern",
+            "Rendering",
+            "Simulation",
+            "Trim"
+        ]
+    },
+    {
+        "id": "4b68150f500a4936a15e756432e048d6",
+        "url": "https://connect.clo-set.com/community/post/4b68150f500a4936a15e756432e048d6",
+        "title": "Print Layout",
+        "content": "Needs improvment, in order of priority.\n\n  1. Snapshot export to PDF/DXF, in **true vector reduced file format**.\n\n  2. Better pattern name and size auto positioning, or editable.\n\n  3. Header information does not appear during export, even when selected.\n\n### Community Post Comments:\nComment 1: Hi Melody! Yes, nested header information, as well file name (SKU) inside pattern name.When we cut the pattern, would be nice to have SKU/pattern/size, ie DR101/sleeve right/size S.Sorry for the undetailed feature request, and thanks for your support!The work you guys are doing is great! CLO is a game changer :)\n\nComment 2: Hi there, some of these are feature requests already, but to pass everything on to our developers correctly, with \"header information\" you mean \"nested header information\", or something else? Thank you :)",
+        "content_description": "This web page aims to outline necessary improvements for enhancing the functionality and usability of the snapshot export feature, focusing on true vector file formats, improved pattern management, and accurate header information display.",
+        "source": "Connect Community",
+        "created_at": "2025-02-23T12:21:17.787Z",
+        "category": 250,
+        "tags": [
+            "CLO",
+            "Import_Export",
+            "Pattern",
+            "UI"
+        ]
+    },
+    {
+        "id": "b227b0c1ae054bbbaba28f586d9ebad6",
+        "url": "https://connect.clo-set.com/community/post/b227b0c1ae054bbbaba28f586d9ebad6",
+        "title": "Error message \"incompatible with the current avatar\" when using Morph Target",
+        "content": "I'm trying to morph an .OBJ from an exploded view into a sewn view, but keep getting the error message \"incompatible with the current avatar\". Any ideas what I'm doing wrong?\n\n![](https://storagefiles.clo-set.com/public/community/202502/b227b0c1ae054bbbaba28f586d9ebad6/images/f715a238f8234556ab13f8ce56a5c6b6Screenshot%202025-02-23%20182232.png)![](https://storagefiles.clo-set.com/public/community/202502/b227b0c1ae054bbbaba28f586d9ebad6/images/4aeeb9d6d13a4c1a873e2d14accfcc0cScreenshot%202025-02-23%20182202.png)\n\n![](https://storagefiles.clo-set.com/public/community/202502/b227b0c1ae054bbbaba28f586d9ebad6/images/d98b7ceee7434fc0ad612486d9e75435Screenshot%202025-02-23%20182258.png)\n\n### Community Post Comments:\nComment 1: If am having the same issue since the last update. I previously did this process with no issues. Now I get this same error that you are reporting.\n\nComment 2: When applying morph targets in CLO3D, you need to ensure that the OBJ file you're trying to morph is compatible with the current avatar. Make sure that the avatar you're using is the correct one that matches the OBJ file you are trying to morph. When loading the OBJ, ensure that you select \"Load as Morph Target\" for the Load Type.\nReply 1: Any chance you could expand on this? The exact same avatar was used when saving out both .OBJ files. I've tried re-saving it with basic, standard avatars, or no avatars. Still no luck. What exactly is a \"compatible avatar\"?",
+        "content_description": "\"Discover troubleshooting tips and solutions for resolving the 'incompatible with the current avatar' error while morphing .OBJ files from exploded to sewn views.\"",
+        "source": "Connect Community",
+        "created_at": "2025-02-23T07:26:43.367Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "Animation",
+            "Avatar"
+        ]
+    },
+    {
+        "id": "84acd8c330c54313bd07f142f507b0c0",
+        "url": "https://connect.clo-set.com/community/post/84acd8c330c54313bd07f142f507b0c0",
+        "title": "[FR] CLO et le flow : L'art des volants avec Greta Staude",
+        "content": "## _Rencontrez Greta Staude, développeuse de produits 3D chez Marc Cain, qui transforme la manière de voir la mode avec son étonnante série \"Ruffle\" (Volant) ! Rejoignez-nous pour partager son parcours créatif, ses inspirations et comment elle donne vie à ses créations grâce à CLO. Laissez-vous surprendre par son talent !_\n\n* * *\n\n**Brève présentation :**\n\nJe m'appelle Greta Staude, j'ai 27 ans et je viens d'Allemagne. J'ai commencé mon parcours dans l'industrie de la mode en étudiant dans une école de mode, ce qui a permis de développer ma passion. J'ai ensuite obtenu un diplôme de technologie du textile et de l'habillement, et c'est dans ce cadre que j'ai découvert CLO. Convaincue par les possibilités offertes par le logiciel, j'ai consacré tout mon temps libre à le maîtriser grâce à des tutoriels et à des travaux pratiques. Depuis deux ans et demi, je travaille comme développeur de produits 3D chez Marc Cain, contribuant à la mise en place de méthodes de travail numériques innovantes qui transforment l'industrie de la mode.\n\n![](https://storagefiles.clo-set.com/public/community/202502/84acd8c330c54313bd07f142f507b0c0/images/5e7c9426e6d6413a933f7e9e65507047image0.png)\n\n**Vos dernières créations comportent des volants vaporeux et fluides. Pouvez-vous nous raconter l'histoire ou les inspirations qui vous ont guidé dans leur réalisation ?**\n\nJ'aime beaucoup créer des vêtements féminins ornés de volants vaporeux, car ils apportent un sentiment d'élégance et de mouvement à mon travail. J'ai puisé mon inspiration dans l'observation de diverses formes dans le vent, de leur danse, de leur comportement et de leur tombée. Ce mouvement dynamique a profondément influencé mon approche de la création de volants complexes, à la fois naturels et expressifs, permettant à la personne qui les porte d'éprouver un sentiment de liberté. J'ai cherché à transmettre un sentiment de légèreté et de liberté à travers la série Ruffle, estimant que les formes fluides et douces et les couleurs soigneusement choisies résument parfaitement ce sentiment.\n\n**Quelles techniques ou méthodes avez-vous utilisé dans CLO pour créer les volants de cette série ? Avez-vous rencontré des difficultés particulières au cours de la création ?**\n\nPour réaliser les patrons des volants, j'ai utilisé l'outil Ellipse. En ajustant soigneusement les paramètres de rétrécissement pour la trame et la chaîne, j'ai obtenu le résultat souhaité sans avoir à apporter d'autres modifications au patron. Grâce à ces réglages précis, j'ai pu me concentrer sur la partie créative de mon design.\n\n![](https://storagefiles.clo-set.com/public/community/202502/84acd8c330c54313bd07f142f507b0c0/images/bbebde50b2e04477ae2a3cbe308f3020image%20-%202024-12-23T141838.870.png)![](https://storagefiles.clo-set.com/public/community/202502/84acd8c330c54313bd07f142f507b0c0/images/16e0ed2a3e964cbf96cf1cd1920e54ccimage%20%28100%29.png)\n\n**Pouvez-vous décrire votre approche de la planification et de la préparation d'un nouveau projet ? Nous serions ravis de connaître votre façon de procéder.**\n\nJe commence généralement par une idée générale de l'ambiance que je veux transmettre ou des émotions que je veux évoquer. Au lieu de faire des croquis, je me plonge directement dans CLO avec des formes simples, en m'efforçant de donner vie à ma vision directement en 3D. La beauté du travail dans CLO réside dans la possibilité de concrétiser immédiatement les idées, d'affiner les détails et de voir comment tout s'assemble de manière transparente, ce qui rend le processus créatif fluide et passionnant.\n\n**Comment choisissez-vous les matériaux ? Avez-vous en tête un tissu ou une texture particulière qui met en valeur la fluidité et le mouvement des volants ?**\n\nDès le départ, j'ai su que je voulais incorporer de la transparence dans les volants pour renforcer l'impression de légèreté. Les couleurs ont été choisies intuitivement, guidées par les émotions et les inspirations que j'ai ressenties au moment où j'ai créé les formes. Cette approche permet aux matériaux de jouer un rôle crucial dans l'esthétique globale.  \n\n\n![](https://storagefiles.clo-set.com/public/community/202502/84acd8c330c54313bd07f142f507b0c0/images/b30684f5f5444420b588bb3a203d10dfMergedImages%20%281%29.png)\n\n  \n**Qu'avez-vous préféré lors de la création de ces projets dans CLO ?**\n\nCe que j'ai préféré, c'est de voir les volants prendre vie grâce à la simulation. Voir comment un simple patron en forme de cercle se transforme en une forme 3D avec les bonnes propriétés physiques est vraiment magique. Le moment où j'appuie sur le bouton de simulation et où je vois le dessin évoluer de la 2D à la 3D est toujours excitant et gratifiant, car j'ai l'impression que ma vision se matérialise sous mes yeux.\n\n**Quelle fonction de CLO vous a été la plus utile ?**\n\nLa fonctionnalité la plus utile a été la possibilité d'ajuster les matériaux et les formes en temps réel, ce qui m'a permis de voir les résultats instantanément. Ce retour d'information immédiat est toujours fascinant. En outre, les outils de texture de CLO, en particulier le générateur de cartes, sont incroyablement utiles pour ajouter des détails réalistes à mes créations. Je m'en sers beaucoup pour texturer mes créations, car cela améliore l'impact visuel global.\n\n![](https://storagefiles.clo-set.com/public/community/202502/84acd8c330c54313bd07f142f507b0c0/images/918f46a316874817a6aba7d69a2a6e15Ruffle1.1.png)\n\n**En termes de fonctionnalité, comment CLO améliore-t-il votre capacité à créer les volants complexes de cette série ? Y a-t-il des caractéristiques spécifiques que vous jugez indispensables pour concrétiser votre vision ?**\n\nCLO a considérablement amélioré ma capacité à créer ces volants en fournissant des outils puissants qui optimisent le processus de conception. L'outil de création de patrons Ellipse a été particulièrement important, et la possibilité d'expérimenter divers paramètres en temps réel m'a permis d'obtenir la forme et le mouvement souhaités, ce qui a rendu le travail à la fois efficace et agréable.\n\n**Comment votre série Ruffle a-t-elle évolué depuis sa création ? Y a-t-il de nouvelles idées ou orientations que vous envisagez pour les pièces à venir ?**\n\nDepuis, j'ai commencé à incorporer des volants dans plusieurs de mes œuvres. Ma nouvelle collection inspirée de Nike, qui est généralement très oversize et décontractée, comporte également de petits volants. Cet ajout apporte une touche unique et rend la collection encore plus spéciale. Pour mon prochain projet, j'ai l'intention d'expérimenter davantage avec les formes, peut-être en incorporant des plis et en explorant la manipulation des patrons en général. Je suis impatiente de voir comment ces nouveaux éléments interagiront avec mes créations existantes, alors ne manquez pas mes prochaines réalisations !\n\n![](https://storagefiles.clo-set.com/public/community/202502/84acd8c330c54313bd07f142f507b0c0/images/bca6ee5fe4d14ff9850a16b625f88c72imgonline-com-ua-twotoone-B3KlQqEWKOYG.png)\n\n  \n**Quels autres logiciels avez-vous utilisés ? Veuillez expliquer en détail comment chaque logiciel a contribué à la réalisation de l'œuvre finale.**\n\nEn plus de CLO, j'ai utilisé Blender pour créer un environnement et effectuer le rendu de l'animation finale. Blender m'a permis d'ajouter de la profondeur et du relief à mes créations, d'améliorer la présentation générale et de faire ressortir encore plus les volants.\n\n**Quels conseils donneriez-vous aux futurs designers de mode numérique qui souhaitent suivre la même voie que vous ?**\n\nMon conseil aux débutants qui utilisent CLO est de commencer simplement et de ne pas trop réfléchir. La phase d'apprentissage peut sembler un peu difficile au début, mais avec une pratique régulière, vous serez étonné de la rapidité avec laquelle vous aurez assimilé l'outil. N'ayez pas peur de faire des erreurs : cela fait partie du processus. N'oubliez pas que chaque projet sur lequel vous travaillez vous apprend quelque chose de nouveau. Et surtout, n'abandonnez pas ! CLO est un logiciel tellement amusant et gratifiant qu'au fur et à mesure que vous progresserez, vous verrez à quel point il ouvre la voie à votre créativité. Bon courage !\n\n### Community Post Comments:\nComment 1: ✨🤍✨\n\nComment 2: Merci pour le partage et ce beau témoignage créatif,Normand",
+        "content_description": "Découvrez le parcours créatif de Greta Staude, développeuse de produits 3D chez Marc Cain, qui révolutionne la mode avec sa série \"Ruffle\" et son expertise dans l'utilisation de CLO pour donner vie à des créations élégantes et",
+        "source": "Connect Community",
+        "created_at": "2025-02-23T03:33:42.78Z",
+        "category": 110,
+        "tags": [
+            "CLO",
+            "Blender",
+            "Avatar",
+            "Material",
+            "Pattern",
+            "Rendering",
+            "Simulation",
+            "Texture"
+        ]
+    },
+    {
+        "id": "f10eb24a17834d49826321ca473aea88",
+        "url": "https://connect.clo-set.com/community/post/f10eb24a17834d49826321ca473aea88",
+        "title": "\"Sculptural Elegance: Ribbed Dress Concept Designed in CLO3D\"",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202502/f10eb24a17834d49826321ca473aea88/images/d39c89b42d684eb0a0dfcc58672c5b7e10.139.png)![](https://storagefiles.clo-set.com/public/community/202502/f10eb24a17834d49826321ca473aea88/images/4c9ff6feb4e54edda11bdc79e2910d1110.138.png)\n\n![](https://storagefiles.clo-set.com/public/community/202502/f10eb24a17834d49826321ca473aea88/images/6f77ec2d08454d7f82caafb31b95f7ba10.137.png)\n\n### Community Post Comments:\nComment 1: looks like dragon dancing!! feels powerful yet elegant\nReply 1: thanks",
+        "content_description": "Discover a vibrant collection of stylish fashion pieces that elevate your wardrobe and express your unique personality.",
+        "source": "Connect Community",
+        "created_at": "2025-02-22T23:47:24.663Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "CLO-SET",
+            "CONNECT",
+            "Photoshop",
+            "Substance",
+            "AI"
+        ]
+    },
+    {
+        "id": "945ccdd76b6046348c8db417d3ecabcc",
+        "url": "https://connect.clo-set.com/community/post/945ccdd76b6046348c8db417d3ecabcc",
+        "title": "\"Digital Couture: Algorithmic Elegance in CLO3D\"",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202502/945ccdd76b6046348c8db417d3ecabcc/images/377fe8b52974405783f4a0f9b075d76c05%20dressex%20iris.147.png)\n\n![](https://storagefiles.clo-set.com/public/community/202502/945ccdd76b6046348c8db417d3ecabcc/images/30114fc6a7524a7fa8042ab5f71f066a05%20dressex%20iris.148.png)\n\n![](https://storagefiles.clo-set.com/public/community/202502/945ccdd76b6046348c8db417d3ecabcc/images/d10c1108662d40c6b0e091c069c20e5a05%20dressex%20iris.146.png)",
+        "content_description": "Discover a curated collection of stylish and unique dresses designed to elevate your wardrobe for any occasion.",
+        "source": "Connect Community",
+        "created_at": "2025-02-22T20:49:41.43Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "CONNECT",
+            "AI"
+        ]
+    },
+    {
+        "id": "61193088ce084e6380e5405d666fb154",
+        "url": "https://connect.clo-set.com/community/post/61193088ce084e6380e5405d666fb154",
+        "title": "Question about Custom Puller",
+        "content": "Hello everyone! I am trying to import a custom puller but it seems that the slider is attached in a wrong place on the puller and I dont know how to fix it!\n\n![](https://storagefiles.clo-set.com/public/community/202502/61193088ce084e6380e5405d666fb154/images/ee967d9fee9f4b3098e65cff98d4c36e%CE%A3%CF%84%CE%B9%CE%B3%CE%BC%CE%B9%CF%8C%CF%84%CF%85%CF%80%CE%BF%20%CE%BF%CE%B8%CF%8C%CE%BD%CE%B7%CF%82%202025-02-21%20120805.png)\n\nI just want it to be placed a bit further down. \n\nAny tips? Thank you so much for your help\n\n### Community Post Comments:\nComment 1: Hi, is this a registered zipper and puller or an OBJ? Are the puller and slider two separate parts? If they are registered as a custom zipper, you should be able to click on the puller twice (first selection selects both puller and slider, second the puller only) and adjust it with the gizmo.",
+        "content_description": "This webpage seeks to gather advice on adjusting the slider placement for a custom puller import issue.",
+        "source": "Connect Community",
+        "created_at": "2025-02-21T10:10:01.4Z",
+        "category": 220,
+        "tags": [
+            "custom",
+            "zipper",
+            "puller",
+            "CLO",
+            "Trim"
+        ]
+    }
+]

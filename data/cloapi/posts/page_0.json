@@ -1,0 +1,211 @@
+[
+    {
+        "id": "9ff2e6aa364446a496cc6ee0fbb69515",
+        "url": "https://connect.clo-set.com/community/post/9ff2e6aa364446a496cc6ee0fbb69515",
+        "title": "Unable to select multiple items or points using shift key",
+        "content": "I'm unable to select multiple items using the shift key. I have tried changing the axis constraint key with no luck. I can select by dragging a box but thats the only way. Would love some help. Thanks",
+        "content_description": "\"Find solutions and troubleshooting tips for multi-item selection issues when using the shift key.\"",
+        "source": "Connect Community",
+        "created_at": "2026-04-13T02:08:17.261Z",
+        "category": 210,
+        "tags": [
+            "CLO"
+        ]
+    },
+    {
+        "id": "2f57df5d5ecd4ed7ab70711ae6bc1fd3",
+        "url": "https://connect.clo-set.com/community/post/2f57df5d5ecd4ed7ab70711ae6bc1fd3",
+        "title": "Input fields not working",
+        "content": "For > 6 months now, I've been having an issue where some of the input fields to not actually save the value I entered. This happens particularly often in the \"Print Layout\" configuration fields. Sometimes it fixes itself eventually – although I'm not sure what exactly helps.   \n  \nBelow is a screen recording of my problem. I'm trying to set the width of the \"Duoplex\" fabric to 35cm, but the change is not being saved/applied. I'm pressing enter, clicking into/out of the field to no effect. Switching to a different fabric and back reveals that the change did not save.\n\nI'm using the latest version of Clo3d (2025.2.368 r54927).\n\nYouTube Video: https://www.youtube.com/watch?v=Vw0g8nUexS4",
+        "content_description": "This webpage aims to document and troubleshoot a persistent issue with input fields not saving values in the \"Print Layout\" configuration of Clo3D version 2025.2.368.",
+        "source": "Connect Community",
+        "created_at": "2026-04-12T09:44:25.005Z",
+        "category": 250,
+        "tags": [
+            "CLO"
+        ]
+    },
+    {
+        "id": "b5cbab1b49c140d2994a440d0aba50e2",
+        "url": "https://connect.clo-set.com/community/post/b5cbab1b49c140d2994a440d0aba50e2",
+        "title": "You can make tent styles according to the tent supports.",
+        "content": "Come and take a look at the styles of the outdoor tents I made.\n\nOf course, you can also take part and make an outdoor tent.\n\nI think it's really interesting.\n\n* * *\n\n![29eb439b54ed4e32a1ccbd04f8c53557](https://storagefiles.clo-set.com/public/community/202604/b5cbab1b49c140d2994a440d0aba50e2/images/29eb439b54ed4e32a1ccbd04f8c53557%E6%88%B7%E5%A4%96%E5%B8%90%E7%AF%B7%20%282%29.png)![3a258a389ea44bb8b97ed13e4005b10c](https://storagefiles.clo-set.com/public/community/202604/b5cbab1b49c140d2994a440d0aba50e2/images/3a258a389ea44bb8b97ed13e4005b10c%E6%88%B7%E5%A4%96%E5%B8%90%E7%AF%B7%20%285%29.png)![1ccfdd90183f46bfa48a5dfbf8c0ea4f](https://storagefiles.clo-set.com/public/community/202604/b5cbab1b49c140d2994a440d0aba50e2/images/1ccfdd90183f46bfa48a5dfbf8c0ea4f%E6%88%B7%E5%A4%96%E5%B8%90%E7%AF%B7%20%284%29.png)\n\n![a192b4e3619047efaf467c2964fd2862](https://storagefiles.clo-set.com/public/community/202604/b5cbab1b49c140d2994a440d0aba50e2/images/a192b4e3619047efaf467c2964fd2862%E6%88%B7%E5%A4%96%E5%B8%90%E7%AF%B7%20%283%29.png)\n\n![226eb2ed00a0485298cf7da7b5c3c315](https://storagefiles.clo-set.com/public/community/202604/b5cbab1b49c140d2994a440d0aba50e2/images/226eb2ed00a0485298cf7da7b5c3c315%E6%88%B7%E5%A4%96%E5%B8%90%E7%AF%B7%20%281%29.png)\n\n* * *\n\nlink to the product - page of tent supports：\n\n<https://connect.clo-set.com/zh/detail/19c5b4a96c084ef2a8d6419d589d4be6?ref_id=108936>",
+        "content_description": "Explore a variety of unique outdoor tent styles and learn how you can create your own!",
+        "source": "Connect Community",
+        "created_at": "2026-04-10T06:53:05.553Z",
+        "category": 215,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "CLO-SET",
+            "AI",
+            "Rendering"
+        ]
+    },
+    {
+        "id": "f304775e730144ef827a984eb0834d7c",
+        "url": "https://connect.clo-set.com/community/post/f304775e730144ef827a984eb0834d7c",
+        "title": "Notice: a recent issue with CLO/MD LiveSync 2.2.2",
+        "content": "Hi everyone!\n\nThis was a mistake on our end. CLO/MD LiveSync version 2.2.2 was published on Fab prematurely; it is a newer version meant for CLO / Marvelous Designer 2026.0, which has not been released yet.   \n  \nIf you are encountering an issue where a garment fails to send to Unreal Engine and the progress bar is stuck at 50%, please roll back to version 2.2.1 by following these steps.  \n  \n1\\. .Go to our LiveSync version archive and download version 2.2.1 for UE 5.7. <https://support-connect.clo-set.com/hc/en-us/articles/45304267645593-LiveSync-2-version-archive>\n\n  \n2\\. Next, navigate to the UE 5.7 installation directory (e.g., C:\\Program Files\\Epic Games\\UE_5.7\\Engine\\Plugins\\Marketplace).  \n  \n3\\. Then, Delete version 2.2.2, then unzip the downloaded 2.2.1 package and place the entire 'CLOLiveSync' folder into that directory.  \n  \nOnce CLO / Marvelous Designer 2026.0 is released, please make sure to remove version 2.2.1 and download version 2.2.2 directly from the Epic Games Launcher. 🙂\n\nIf you are experiencing any other issues with LiveSync or your CLO / Marvelous Designer to Unreal Engine workflows, we're here to help!\n\nCheers,\n\nBryan",
+        "content_description": "This webpage provides important instructions for rolling back to LiveSync version 2.2.1 due to a premature release of version 2.2.2, ensuring users can resolve issues with garment transfers to Unreal Engine while awaiting the official release of CLO",
+        "source": "Connect Community",
+        "created_at": "2026-04-09T20:15:42.612Z",
+        "category": 100,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "UnrealEngine",
+            "LiveSync"
+        ]
+    },
+    {
+        "id": "8f05a87a2d3c4e43bbe339cb0e02bf94",
+        "url": "https://connect.clo-set.com/community/post/8f05a87a2d3c4e43bbe339cb0e02bf94",
+        "title": "I helped a classmate optimize the style effect.",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202604/8f05a87a2d3c4e43bbe339cb0e02bf94/images/cf33c0414c4344df8afcdc35c480bbee%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-04-09%20131116.png)I reset a dress form for wearing, further adjusted and optimized the sewing relationships and the clothing's shape, and readjusted the fur on the hood. You can take a look and learn from it. In the renderings, I'll provide links to the fabric and dress form materials below. If you're interested, you can click the links to download and study!\n\n![2d456c7b33c14804a8f9cb5a7cb6d609](https://storagefiles.clo-set.com/public/community/202604/8f05a87a2d3c4e43bbe339cb0e02bf94/images/2d456c7b33c14804a8f9cb5a7cb6d609%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-04-09%201311161.png)![e7435afbef684d22bf71e18643f9e2d9](https://storagefiles.clo-set.com/public/community/202604/8f05a87a2d3c4e43bbe339cb0e02bf94/images/e7435afbef684d22bf71e18643f9e2d9%E5%AF%B9%E6%AF%94.png)Initial effect\n\n![f6bd9a72e4fc461cb9385b39f9ff88c3](https://storagefiles.clo-set.com/public/community/202604/8f05a87a2d3c4e43bbe339cb0e02bf94/images/f6bd9a72e4fc461cb9385b39f9ff88c373800ACT_Colorway%20PANTONE%2012-1207%20TCX-Blush.png)Effect after adjustment:<https://connect.clo-set.com/zh/detail/79316dec773e4e05a877812a88e45185?ref_id=108936>\n\n![91722f284f744cf9851807849cede9bf](https://storagefiles.clo-set.com/public/community/202604/8f05a87a2d3c4e43bbe339cb0e02bf94/images/91722f284f744cf9851807849cede9bf%E7%B2%89%E8%89%B2PU%E7%9A%AE%E7%BE%BD%E7%BB%92%E5%A4%96%E5%A5%97_Colorway%20PANTONE%2012-1209%20TCX_F.png)Hood fur fabric：<https://connect.clo-set.com/zh/detail/5408127f8225447c80015ca2cf427f98?ref_id=108936>\n\nInner collar fabric:<https://connect.clo-set.com/zh/detail/ed97f31c3cf84e339a2369bc8ef3fc9d?ref_id=108936>\n\nAvatar:<https://connect.clo-set.com/zh/detail/68d0508f42e346eebcdb6bb867d7f399?ref_id=108936>",
+        "content_description": "Explore detailed adjustments and optimization techniques for a dress form, complete with visual renderings and links to materials for further learning and study.",
+        "source": "Connect Community",
+        "created_at": "2026-04-09T05:54:25.186Z",
+        "category": 240,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "Photoshop",
+            "Rendering"
+        ]
+    },
+    {
+        "id": "6547e45b7b434cedaa9d77e0e93b0840",
+        "url": "https://connect.clo-set.com/community/post/6547e45b7b434cedaa9d77e0e93b0840",
+        "title": "Hole around the zipper",
+        "content": "Does anyone know why the hole in the attached image appears on the garment? It does not show when the particle distance is higher, but once it is reduced, it becomes obvious.  \n![3b7a71d563094b2e892471e0f5ae95e2](https://storagefiles.clo-set.com/public/community/202604/6547e45b7b434cedaa9d77e0e93b0840/images/3b7a71d563094b2e892471e0f5ae95e2Screenshot%202026-04-07%20213136.png)\n\n### Community Post Comments:\nComment 1: Hi There. This gap can be sewn closed in the 3D window.With simulation on pull and make a gap like you have above and stop simulation.Then use the Segment sewing tool in the 3D window to sew the gap closed on both halved of the zipper 🙂",
+        "content_description": "This web page seeks to gather insights and explanations from the community regarding the appearance of a hole in a garment when particle distance settings are adjusted.",
+        "source": "Connect Community",
+        "created_at": "2026-04-07T20:36:49.932Z",
+        "category": 220,
+        "tags": [
+            "CLO",
+            "Contest",
+            "Pattern",
+            "Simulation",
+            "Trim"
+        ]
+    },
+    {
+        "id": "c85e4b61b7d24a1bbdcdae98fe6eacce",
+        "url": "https://connect.clo-set.com/community/post/c85e4b61b7d24a1bbdcdae98fe6eacce",
+        "title": "Como faço para disponibilizar a versão final em 3D da peça ao cliente? | How do I make the final 3D version of the part available to the client?",
+        "content": "Version in English: Would it be possible to display this 3D version on my company website for the client?\n\nVersão em Português: Seria possível exibir essa versão 3D no site da minha empresa para o cliente?\n\n### Community Post Comments:\nComment 1: Yes, this is possible. But you will need to make sure a 3D viewer with the correct code is on your website. --- You would need a WebGL enabled browser and the file would need to be GLB or GLTFBut we can only help with the CLO part here. For the rest you may need help out side, but a quick google search of \"how to add a 3d viewer to a website\" has a lot of resources 🙂",
+        "content_description": "The purpose of this web page is to explore the feasibility of showcasing a 3D version of our product on our company website for client viewing.",
+        "source": "Connect Community",
+        "created_at": "2026-04-07T18:01:59.462Z",
+        "category": 220,
+        "tags": [
+            "CLO",
+            "UI"
+        ]
+    },
+    {
+        "id": "ce210a2025bc4b98b4f42a0232c39fa7",
+        "url": "https://connect.clo-set.com/community/post/ce210a2025bc4b98b4f42a0232c39fa7",
+        "title": "CLO×Burtonのロゴダウンロードができない",
+        "content": "コンテスト要項にある、公式バートンロゴのダウンロードリンクが開けない（リンクされていない）状態なのですが、ほかの参加者さんはみんなできていますか？\n\nボードのデータもテクスチャが貼られていないのですが、こちらはみなさん一緒ですかね？（スノーボードシューズにはテクスチャがあったのでお聞きしたいです）\n\n### Community Post Comments:\nComment 1: Hi! Happy to help, but please know I can only reply in EnglishFor the Burton Logo. When you click on the Link it will go to the official Burton site and then you will need to click on logos button in the side bar. I am attaching an image below for reference.. Once on that Logos page you can scroll down to choose the logo you want to useFor the Burton Snowboard and Boots those will be a plain white color, with no texture at all. You can then color and texture them however you wish toWe hope this helps 🙂\nReply 1: Thank you so much for your kind assistance!Thanks to your advice, I was able to solve the problem!🙂\nReply 2: You are very welcome! We cannot wait to see your entry🙂",
+        "content_description": "このページは、コンテスト参加者が公式バートンロゴのダウンロードリンクやボードデータのテクスチャに関する問題を共有し、情報交換するための場です。",
+        "source": "Connect Community",
+        "created_at": "2026-04-07T16:46:32.439Z",
+        "category": 220,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner"
+        ]
+    },
+    {
+        "id": "6b73065e057b4ddda3c485857eb8aaf6",
+        "url": "https://connect.clo-set.com/community/post/6b73065e057b4ddda3c485857eb8aaf6",
+        "title": "RUFFLE LEHANGA SAREE ",
+        "content": "![463212f9688443f7b9ee86ce5fbe866c](https://storagefiles.clo-set.com/public/community/202604/6b73065e057b4ddda3c485857eb8aaf6/images/463212f9688443f7b9ee86ce5fbe866cRUFFELE%20SAREE.png)![67556d79868d4114a53ca4c23d5acb39](https://storagefiles.clo-set.com/public/community/202604/6b73065e057b4ddda3c485857eb8aaf6/images/67556d79868d4114a53ca4c23d5acb39RUFFELE%20SAREE%203.png)![3bdd30ab17774d8cb820c84310aa7a3e](https://storagefiles.clo-set.com/public/community/202604/6b73065e057b4ddda3c485857eb8aaf6/images/3bdd30ab17774d8cb820c84310aa7a3eRUFFELE%20SAREE%202.png)![ece2d8fb14d04de3a44052b7f028ba92](https://storagefiles.clo-set.com/public/community/202604/6b73065e057b4ddda3c485857eb8aaf6/images/ece2d8fb14d04de3a44052b7f028ba92RUFFELE%20SAREE%201.png)",
+        "content_description": "Discover the elegance and artistry of RUFFELE Sarees, showcasing exquisite designs and vibrant colors perfect for any occasion.",
+        "source": "Connect Community",
+        "created_at": "2026-04-06T13:18:26.987Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "CLO-SET",
+            "INDIAN",
+            "LEHANGA",
+            "Rendering",
+            "Simulation"
+        ]
+    },
+    {
+        "id": "0709c500485b49fba7f898e525cb337c",
+        "url": "https://connect.clo-set.com/community/post/0709c500485b49fba7f898e525cb337c",
+        "title": "CLO doesn't register shoes in new 2025.02 version",
+        "content": "Hey everyone! I made these shoes in Nomad 3d sculpting app and imported it into CLO as FBX. When I import it- everything is good, position is in place, size is great, everything imports well (as in the first photo), but when I try to register it as an accessory (specifically as shoes) it shows as blank, even though it's the same file that worked before. How can i fix this? I looked through what feels like every single tutorial and nothing has worked... ![6624ab7fe717426c9e2aac9cc1d17297](https://storagefiles.clo-set.com/public/community/202604/0709c500485b49fba7f898e525cb337c/images/6624ab7fe717426c9e2aac9cc1d17297imported%20fbx.png)![a7358f28d6ae4fa0ae826365d5f09acc](https://storagefiles.clo-set.com/public/community/202604/0709c500485b49fba7f898e525cb337c/images/a7358f28d6ae4fa0ae826365d5f09accimported%20to%20register.png)\n\n### Community Post Comments:\nComment 1: Hi There. We tete both registering both OBJ and FBX as a shoe and have had no issues on our end using the most recent release of 2025.2.368We see that there is no current license under this account can you please let us know what account you are using CLO with? Is it possibly your schools account? Please also let us know what version of CLO (bottom left corner of CLO).Thank you🙂",
+        "content_description": "\"Seek solutions for troubleshooting the registration of 3D shoes in CLO after successful FBX import from Nomad.\"",
+        "source": "Connect Community",
+        "created_at": "2026-04-06T10:26:41.885Z",
+        "category": 220,
+        "tags": [
+            "error",
+            "issue",
+            "problem",
+            "accessories",
+            "CLO",
+            "SHOES",
+            "Import_Export",
+            "registering",
+            "nomad"
+        ]
+    },
+    {
+        "id": "fac0d5f2cf8f43b6be7bd006089fb249",
+        "url": "https://connect.clo-set.com/community/post/fac0d5f2cf8f43b6be7bd006089fb249",
+        "title": "From Rio's Streets to the Grand Prize: How Nay Dassi Brought Carnival to Life in CLO",
+        "content": "## ![](https://storagefiles.clo-set.com/public/community/202604/fac0d5f2cf8f43b6be7bd006089fb249/images/846a753d29e3436188ef0965cd49d5a1Banner%20Nay%201.png)_This year, our community celebrated creativity and cultural expression through the Carnival Design Contest. Designers were invited to capture the vibrant spirit of Carnival and bring their ideas to life using CLO. The contest received inspiring submissions that showcased not only technical skill but also the imagination and unique perspectives of creators from our community._\n\n## _We spoke with the grand winner, Nay Dassi (_[_WarpAtelie_](https://connect.clo-set.com/portfolio/490999/collection/collections) _), to learn more about his journey, the inspiration behind his winning design, and the creative process that turned his vision into a Carnival look full of personality._\n\n* * *\n\n![b145017d6629415b97d6ce7e76ccd7a1](https://storagefiles.clo-set.com/public/community/202604/fac0d5f2cf8f43b6be7bd006089fb249/images/b145017d6629415b97d6ce7e76ccd7a1Nay.png)\n\n  \n**Can you introduce yourself and share a bit about your journey as a designer?  \n** My name is Nayson Dassi, and I’ve been a fashion designer for almost 12 years. Today, I work with prints and digital fashion, serving brands across different niches. This May will mark one year since I started creating directly for the end consumer at Warp. All pieces are designed in 3D and sewn by me, turning Warp into a phygital atelier. With digital fashion, I can deliver truly original pieces with well-crafted finishes and techniques.\n\n**What inspired your Carnival design? What story or energy did you want to capture?**  \nI’ve always experienced Carnival from a distance. I’m not into street parties or samba, but I’ve always found it magical and beautiful. I’m from Rio Grande do Sul, but I lived in Rio de Janeiro and experienced the city beyond its tourist side. That’s when I saw a _Bate-Bola_ for the first time, and it amazed me. It stood out in the middle of a street parade passing my house, and I instantly fell in love.\n\n![563e52360bea4ee4920e36b6d3207631](https://storagefiles.clo-set.com/public/community/202604/fac0d5f2cf8f43b6be7bd006089fb249/images/563e52360bea4ee4920e36b6d3207631IMG_8026.jpg)![4c58ce4da80648d3b45fe4449a86b56d](https://storagefiles.clo-set.com/public/community/202604/fac0d5f2cf8f43b6be7bd006089fb249/images/4c58ce4da80648d3b45fe4449a86b56dMoodboard%20%281%29.png)\n\n* * *\n\n**What was the first element you developed, and how did the design evolve?  \n** From the start, I knew I wanted to create a _Bate-Bola_ costume. I sketched out rough ideas and immediately started modeling everything in CLO. I like to work by putting ideas into practice quickly. I visualize the concept in my head, then start thinking about patterns and structure. I work organically, experimenting and adjusting along the way until the piece feels right.\n\n**Did you face any creative challenges during the process? How did you overcome them?  \n** At first, I considered a costume with lots of fringes, but the process and result didn’t work. That led me to focus more on prints and textures. When I hit a block in development, I move to another stage and return later to see if the problem really needs attention or if it works in context. I’m flexible—I don’t believe in perfect work; sometimes you have to let go of certain details.\n\n![e3c7f6ddb876444f858a805620627364](https://storagefiles.clo-set.com/public/community/202604/fac0d5f2cf8f43b6be7bd006089fb249/images/e3c7f6ddb876444f858a805620627364Captura%20de%20tela%202026-03-20%20012444.png)\n\n![22c5dae7453d43df950b6c9952eda73f](https://storagefiles.clo-set.com/public/community/202604/fac0d5f2cf8f43b6be7bd006089fb249/images/22c5dae7453d43df950b6c9952eda73fCaptura%20de%20tela%202026-03-20%20012522.png)\n\n**Was there a moment when CLO allowed you to do something that would have been impossible physically?  \n** The entire project. A _Bate-Bola_ costume is structurally complex and can take months to create, often passed down generation to generation. Today, I can’t imagine creating without testing first in 3D. I only go physical if I’ve done something similar before. For new designs, CLO gives me confidence—I can test, experiment, and see how it works before making it physically.\n\n**Carnival pieces are known for their detail, color, and volume. What was the biggest challenge translating this into CLO?  \n** I’ve built a solid foundation in CLO and always try to keep files light for smooth simulation. I rely on visual shortcuts to convey realism while keeping the file manageable. For this project, I used the “strengthen” function to give structure to almost the entire costume,\n\n**Which CLO tools or features were most important for bringing your vision to life?  \n** The “strengthen” function was key for structure, along with interfacings and carefully marked topstitching for realism. These also allowed me to experiment with prints directly in CLO, sometimes even adjusting colors on the fly.\n\n![bc4c5771da69433fae4685211c12bdbd](https://storagefiles.clo-set.com/public/community/202604/fac0d5f2cf8f43b6be7bd006089fb249/images/bc4c5771da69433fae4685211c12bdbdCaptura%20de%20tela%202026-03-20%20012614.png)\n\n**Which part of the design are you most proud of technically, and why?  \n** Every detail excites me—the stripes, fixed fringes, and the weave that reveals the avatar underneath. One hand holds a ball, the other a themed umbrella. I designed every print, from elaborate motifs to polka dots and stripes. I loved being able to include all the ideas in my head, even transforming my atelier’s logo into a giant headpiece layered with another headpiece underneath. It was pure fun and creativity.\n\n* * *\n\n![2082f6a547fa46beaae4774e63807bc2](https://storagefiles.clo-set.com/public/community/202604/fac0d5f2cf8f43b6be7bd006089fb249/images/2082f6a547fa46beaae4774e63807bc2MACAC%C3%83O%20BASE%20-%20Copia%20-%20Copia_1.png)\n\n**What advice would you give designers hesitant to start with 3D or enter contests like this?  \n** You only learn by doing. CLO gave me the autonomy and confidence to model in ways I never had before. Today, I only take on projects for brands that embrace CLO or 3D. The market is moving fast—those who adapt thrive; those who don’t, fall behind. Just start, however you can. I began designing prints on my phone and gradually built my atelier with every opportunity the market gave me. It’s not easy, but it’s far more rewarding than just wishing.\n\n**What’s next? Are there projects you’re excited about?  \n** I’m launching Warp’s winter collection with pieces modeled and rendered in CLO, using AI 3D avatars. The designs are wide, bold, and feature exclusive prints I created. This time, they have more visibility than last year, and I hope to produce even more. I’m thrilled to release these new pieces and sew the upcoming orders.",
+        "content_description": "Explore the vibrant creativity of our community through the Carnival Design Contest, featuring insights from grand winner Nay Dassi on his artistic journey and the innovative process behind his award-winning design.",
+        "source": "Connect Community",
+        "created_at": "2026-04-06T07:28:07.244Z",
+        "category": 110,
+        "tags": [
+            "CLO",
+            "Avatar",
+            "Colorway",
+            "Contest",
+            "Material",
+            "Pattern",
+            "Rendering",
+            "Simulation",
+            "Texture",
+            "Trim"
+        ]
+    },
+    {
+        "id": "0fad0cec88f04cc9a63905982bed6164",
+        "url": "https://connect.clo-set.com/community/post/0fad0cec88f04cc9a63905982bed6164",
+        "title": "AI fashion film with endless expressions using CLO3D",
+        "content": "![c74c312324a447318878b89ff77a3db3](https://storagefiles.clo-set.com/public/community/202604/0fad0cec88f04cc9a63905982bed6164/images/c74c312324a447318878b89ff77a3db3%EB%91%90_%EB%AA%A8%EB%8D%B8%EC%9D%B4_%EB%93%B1%EC%9D%84_202604060511%20%281%29.png)Hello, this time at the university, I will give a special lecture on making fashion film videos using CLO3D and AI.  \n  \nSo I'm making a sample video, and I want to feel this feeling with others how comfortable it is to make a fashion film video with CLO3D.  \n  \nSince AI is developing very rapidly and many people are using it, there may be many people who already know what we are going to talk about now. But if you're new to it, I think this can be helpful.  \n![3a0d8720e1d2401da64e75f425a9fe48](https://storagefiles.clo-set.com/public/community/202604/0fad0cec88f04cc9a63905982bed6164/images/3a0d8720e1d2401da64e75f425a9fe48%EB%91%90_%EB%AA%A8%EB%8D%B8%EC%9D%B4_%EB%93%B1%EC%9D%84_202604060511.png)\n\n  \nUntil now, I mainly used AI after rendering the front photo.  \nHowever, AI finds that it understands much better when images rendered from multiple angles are mixed in one image.\n\n![3f0ccda8489643038904e068d626dd01](https://storagefiles.clo-set.com/public/community/202604/0fad0cec88f04cc9a63905982bed6164/images/3f0ccda8489643038904e068d626dd01Model2.jpg)The above picture is an image that is rendered at each angle in CLO3D and then replaced with each model, and is woven into a single image file in Photoshop.  \n  \nWhen I inserted an image made of one image into Asset, it was so convenient to make a complete video that did not deteriorate.  \n  \nThere's one more thing I need to tell you: your pose doesn't have to be upright.  \n![238fac5b606341d292bf6ba76846e854](https://storagefiles.clo-set.com/public/community/202604/0fad0cec88f04cc9a63905982bed6164/images/238fac5b606341d292bf6ba76846e854Harf%20Suit.png)The first image I rendered was standing with my legs placed close by like this.  \n  \nBut AI recognized this as a skirt, and I changed it to a leg-open pose to make it clear that it was a pair of pants, so I made a new rendered.  \n  \nThis image is an asset for utilizing the design of the costume and the face of the model, so it doesn't matter if you use a deformed pose.  \n  \nHowever, if it's an avatar pose where the design of the costume can be clearly seen.  \n  \nIf you're a video creator with AI, make sure to check this out. It's a simple and wonderful way for AI to prevent errors in damaging and transforming your work.  \n  \n\n\nYouTube Video: https://www.youtube.com/watch?v=Ks8RtYZD4i0\n\n### Community Post Comments:\nComment 1: Hello! It looks very realistic. Could you please tell me what program you used to make the video?\nReply 1: Of course! The video's scene production was made using Flow AI Platform's Veo. For editing, Premiere pro was used.\n\nComment 2: These AI tips are going to be so helpful! I usually get frustrated and give up because the results never turn out the way I want, but I’ll definitely try your method!\nReply 1: Awesome! I'm listing the caveats as I prepare for the special lecture, and the content is more than I thought. I'll keep organizing the things that would be nice to share.",
+        "content_description": "Discover how to effortlessly create stunning fashion film videos using CLO3D and AI, with tips and techniques to enhance your creative process.",
+        "source": "Connect Community",
+        "created_at": "2026-04-05T20:25:43.675Z",
+        "category": 240,
+        "tags": [
+            "CLO",
+            "AI",
+            "Animation"
+        ]
+    },
+    {
+        "id": "32ffd9f807364aeda01a612847219a54",
+        "url": "https://connect.clo-set.com/community/post/32ffd9f807364aeda01a612847219a54",
+        "title": "want to master clo3d ",
+        "content": "anyone herein this community that teaches clo3d?\n\n### Community Post Comments:\n\n\nComment 2: i teach clo3d. How may i help you? Is there something specific you are struggling with?",
+        "content_description": "This web page serves as a platform for connecting individuals in the community who teach CLO 3D, fostering collaboration and knowledge sharing.",
+        "source": "Connect Community",
+        "created_at": "2026-04-01T22:52:16.512Z",
+        "category": 210,
+        "tags": [
+            "CLO"
+        ]
+    }
+]

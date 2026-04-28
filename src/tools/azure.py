@@ -18,22 +18,24 @@ zendesk_article_attachment_api_endpoint = "https://support.{0}.com/api/v2/help_c
 
 
 class Azure:
-    def __init__(self, stage="dev", brand="", language="English"):
-        self.stage = stage
+    def __init__(self, app="", brand="", stage="dev", language="English"):
+        self.app = app
 
         if brand == "marvelousdesigner":
             self.brand = "md"
         else:
             self.brand = brand
 
+        self.stage = stage
         self.language = language
 
-        if brand == "cloapi":
+        if app == "CLO API":
             load_dotenv(os.path.join(parent_dir_path, ".env.api.dev"))
-        # elif stage == "prod":
-        #     load_dotenv(os.path.join(parent_dir_path, ".env.prod"))
-        # else:
-        #     load_dotenv(os.path.join(parent_dir_path, ".env.dev"))
+        else:
+            if stage == "prod":
+                load_dotenv(os.path.join(parent_dir_path, ".env.prod"))
+            else:
+                load_dotenv(os.path.join(parent_dir_path, ".env.dev"))
 
         self.ZENDESK_USERNAME = os.environ.get("ZENDESK_USERNAME", "")
         self.ZENDESK_PASSWORD = os.environ.get("ZENDESK_PASSWORD", "")

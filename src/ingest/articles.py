@@ -265,8 +265,9 @@ class Article:
 
 
 if __name__ == "__main__":
+    app = questionary.select("What do you want to do?", choices=["Chat Bot", "CLO API"]).ask()
     stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
-    brand = questionary.select("Which brand?", choices=["clo3d", "cloapi", "closet", "connect", "clovf", "md", "allinone"]).ask()
+    brand = questionary.select("Which brand?", choices=["clo3d", "closet", "connect", "md", "allinone"]).ask()
     language = questionary.select("Which language?", choices=["English", "Korean"]).ask()
     task = questionary.select(
         "What task?",
@@ -282,7 +283,7 @@ if __name__ == "__main__":
         ],
     ).ask()
 
-    azure = Azure(stage, brand, language)
+    azure = Azure(app, brand, stage, language)
     article = Article(azure)
     ai_search = AISearch(azure)
 

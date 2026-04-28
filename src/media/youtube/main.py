@@ -31,8 +31,9 @@ from src.tools.misc import sanitize_directory_file_name
 
 
 def main():
+    app = questionary.select("What do you want to do?", choices=["Chat Bot", "CLO API"]).ask()
     stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
-    brand = questionary.select("Which brand?", choices=["clo3d", "md", "allinone"]).ask()
+    brand = questionary.select("Which brand?", choices=["clo3d", "closet", "connect", "md", "allinone"]).ask()
     task = questionary.select(
         "What task?",
         choices=[
@@ -50,7 +51,7 @@ def main():
         ],
     ).ask()
 
-    azure = Azure(stage, brand)
+    azure = Azure(app, brand, stage)
 
     youtube_channel_dir_path = os.path.join(os.getcwd(), "data", azure.brand, "youtube", "channel")
 

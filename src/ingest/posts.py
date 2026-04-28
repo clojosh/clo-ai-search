@@ -353,18 +353,19 @@ class Posts:
 
 
 if __name__ == "__main__":
+    app = questionary.select("What do you want to do?", choices=["Chat Bot", "CLO API"]).ask()
     stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
     brand = questionary.select("Which brand?", choices=["clo3d", "closet", "connect", "md", "allinone"]).ask()
     task = questionary.select("What task?", choices=["Get Post", "Get All Posts", "Upload All Posts", "Find & Delete AI Search Documents"]).ask()
 
-    azure = Azure(stage, brand)
+    azure = Azure(app, brand, stage)
     post = Posts(azure)
     ai_search = AISearch(Azure(stage, brand))
 
     if task == "Get Post":
         post_id = questionary.text("Post ID:").ask()
 
-        print(post.get_post(stage, "clo3d", post_id=post_id))
+        print(post.get_post(stage, brand, post_id=post_id))
 
     elif task == "Get All Posts":
         post.mt_get_posts()

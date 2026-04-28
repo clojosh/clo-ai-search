@@ -333,8 +333,9 @@ if __name__ == "__main__":
     CLO3D_TARGET_CHANNEL = "https://space.bilibili.com/477753185/upload/video"
     MD_TARGET_CHANNEL = "https://space.bilibili.com/431424487/upload/video"
 
+    app = questionary.select("What do you want to do?", choices=["Chat Bot", "CLO API"]).ask()
     stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
-    brand = questionary.select("Which brand?", choices=["clo3d", "md", "allinone"]).ask()
+    brand = questionary.select("Which brand?", choices=["clo3d", "closet", "connect", "md", "allinone"]).ask()
     task = questionary.select(
         "What task?",
         choices=[
@@ -351,7 +352,7 @@ if __name__ == "__main__":
         ],
     ).ask()
 
-    azure = Azure(stage, brand)
+    azure = Azure(app, brand, stage)
     downloader = Bilibili(azure)
     ai_search = AISearch(azure)
 

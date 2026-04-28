@@ -1,0 +1,260 @@
+[
+    {
+        "id": "3e7aba2f5d8c4fe68e8bb1e3c9315398",
+        "url": "https://connect.clo-set.com/community/post/3e7aba2f5d8c4fe68e8bb1e3c9315398",
+        "title": "Press buttons",
+        "content": "Hi there, how can press buttons be represented, or is there now a function for this? Does anyone have a tip? Many thanks & Regards, Tina\n\n### Community Post Comments:\nComment 1: Hi Melody,many thanks 🙂 I’ve made these adjustments; you’ll find the screenshots attached. I removed the normal map according to the material in the Object Browser. What do you mean by “delete normal map from seamline”? Many Thanks and regards, Tina\n\nComment 2: Hi Melody, I was able to work very well with your description—thank you again for that. I managed to create the snap fastener that way. I then sewed the snap fastener onto the button placket, and as a result the shape changed. How can I prevent this from happening? I’ve added pictures; I hope this makes it clear. Many thanks in advance and best regards, Tina\nReply 1: Hi Tina, What is Add'l Thickness Collision of the snap? If it is the standard 2,5, it might \"bulge\" up a bit compared to the example (I think I set it to 0,5). You also have to delete the normal map of the seamline, otherwise the shadow will make it look weird (and might be causing parts of the rounded effect by tricking the eye).\n\nComment 3: Hi Tina, this is a bit more of an advanced topic and I'll note it as a topic for a future tutorial because there currently isn't one on the YouTube channel. Thanks for bringing it up!I've uploaded a reference file here: https://connect.clo-set.com/community/post/3e7aba2f5d8c4fe68e8bb1e3c9315398 It contains an example of different snap button solutions.For any of them to look nice, set the Add'l Thickness Collision for the pattern pieces in play down to at least 1. For the small pieces used here incl. the button placket I have chosen 0.5.From top to bottom the first one is faked with pattern pieces. This one can be \"closed\" by sewing the internal lines onto which the faux buttons are attached together. If you create buttons this way, keep the following in mind: Image 1) You will receive a nicer round shape if you create a large circle first that you shrink to the desired small size. (This has nothing to do with PD but is a separate issue of how shapes are calculated/formed which cannot be avoided.) / Image 2) Delete the normal map of the seamlines to achieve a realistic look, otherwise the button parts will have strange shadows on them. / Image 3) The circled part shows an sharp shadow where there is a segment point on the circular shape. You will see that the rest of the outline looks smooth. One segment point has to be left standing in any line, but to get the smoothest possible outcome, convert as many segment points as possible to curve points (convert only, not maintain curve - might cause an error message in small shapes). / Lowest possible PD is 0.8 and desirable here. / Add Add'l Thickness - Rendering and slide the Curved Side Geometry down to get the look you are going for, at 100 everything is very plump and rounded around the edges. / EDIT: I've assigned the firmest possible physical properties to the button fabric, you can save that out and reuse. (It's my custom made fabric and firmer than Trim_Hardware.)The second and third are button presets form the library: They are part of the 31 that already come in CLO without having to download any extra assets from CONNECT. You have to use separate \"buttons\" as components for the outside front, inside front, inside back and outside back (image 4). If you want to close such a button, you have to add a seamline to fake the closure (also delete the seamline normal map here) or add a tack in between the layers after deleting the inside components of the buttons. Unfortunately, a fully snappable button that functions with the button to buttonhole closure of the button tools does not exist yet. You can find more snap button components here: https://connect.clo-set.com/community/post/3e7aba2f5d8c4fe68e8bb1e3c9315398\nReply 1: Hi Melody, thank you very much for your detailed explanation 😍 this is very helpful. I will give that a try. I have a potential client from the apparel industry whose models make extensive use of snap buttons. Is a tool similar to the zipper planned? BR Tina\nReply 2: Hi Tina, glad it is of help! Snap buttons are something that has been noted, but we cannot say more than that right now or give a development outline, sorry!",
+        "content_description": "The purpose of this web page is to seek advice and share tips on representing press buttons in design or functionality.",
+        "source": "Connect Community",
+        "created_at": "2026-01-26T12:30:32.377Z",
+        "category": 240,
+        "tags": [
+            "CLO",
+            "Animation",
+            "Trim"
+        ]
+    },
+    {
+        "id": "afc9191f128743348e4cd460ed1bbc31",
+        "url": "https://connect.clo-set.com/community/post/afc9191f128743348e4cd460ed1bbc31",
+        "title": "Slanted Circumference Measurement Does Not Lock to a Straight Line While Holding SHIFT",
+        "content": "**Slanted Circumference Measurement Does Not Lock to a Straight Line While Holding SHIFT**\n\n**Step 1)** 3D Panel → Basic Tape Measure (Avatar) → **Hold** → Surface Circumference Measure (Avatar) Tool\n\n**Step 2)** Select the first point on the avatar.\n\n**Step 3)** Select the second point on the avatar.\n\n**Step 4)** Press **Enter**.\n\n**Step 5???)** At this point, holding **SHIFT** does not lock the measurement line to a straight axis.\n\nIs this meant to be done manually by eye?\n\n![7300edacf05d4222b4278c0b8eb59101](https://storagefiles.clo-set.com/public/community/202601/afc9191f128743348e4cd460ed1bbc31/images/7300edacf05d4222b4278c0b8eb59101Screenshot%202026-01-26%20at%2013.21.07.png)\n\n### Community Post Comments:\nComment 1: Hi there, to get a straight line, you already have to hold shift as/before you define the second point. So just try again and play with / get a feel of the tools.\nReply 1: Holding SHIFT just before adding second node (final node) assure the line’s angle 0.The line is already straight whether or not you hold SHIFT.But when you add the second node and enterHold + SHIFT does NOT make It straight line.So I assume you make the line straight by eye by dragging the line and click one last time for finalizing the line.\nReply 2: There is no pressing Enter at all. For any circumference measurement there are a total of 3 click. Click 1 to start (places first point). After that you should hold shift for both remaining points if you want the circles to be perfectly flat and have no pitch.Example for waist. I would click to add the first point on one side of the avatars belly button, then Hold shift and go to the opposite side of the belly button for the second point. For the third and final point you would keep holding shift and then place that point at the avatars Center Back.---Note that for most bottoms you actually want a slight amount of pitch or tilt so the third dot at the center back is often slightly higher than the two front points\nReply 3: Step 1) At Avatar Front ViewI click one side of the waistStep 2) Hold SHIFT and click th eother side of the waistStep 3) Hit the key 8 Avatar Back ViewStep 4) Release the SHIFT and click a little bit higher of the center back waist.Back waistline looks like a little bit heart shaped as you see on the image I shared???(Rather than curved line.)\nReply 4: it is following the curvature of the avatar. You are likely using surface circumference. If you do not want that use basic circumfrencehttps://connect.clo-set.com/community/post/afc9191f128743348e4cd460ed1bbc31 are the links to the articles. All tools also have Links in CLO to go direct to the articles. We HIGHLY Recommend you start also looking at these\nReply 5: Which one do you suggest for measuring the waistline for this purpose?\nReply 6: Which one do you suggest for measuring the waistline for this purpose?\nReply 7: As waist bands of standard pants do not creep into every crevice of the bodily form, if regular pants is what you want to use the measure for, then I suggest the basic and not surface tools.",
+        "content_description": "This webpage provides guidance on using the Surface Circumference Measure tool in a 3D environment, highlighting that holding SHIFT does not constrain the measurement line to a straight axis.",
+        "source": "Connect Community",
+        "created_at": "2026-01-26T10:24:11.21Z",
+        "category": 220,
+        "tags": [
+            "CLO",
+            "Avatar"
+        ]
+    },
+    {
+        "id": "76bf4f1aad654575be9d7a5a080763b3",
+        "url": "https://connect.clo-set.com/community/post/76bf4f1aad654575be9d7a5a080763b3",
+        "title": "Seam Allowance And Notches In Different Colors",
+        "content": "Can I make\n\nA) Seam Allowances\n\nB) Notches\n\nin different color.\n\nQuestion 1) on Clo3D\n\nQuestion 2) Exporting.\n\nI want to see them in different colors in Affinity Designer (Adobe Illustrator etc.)\n\nHow?\n\n### Community Post Comments:\nComment 1: Ok. Thank you very much.\n\nComment 2: Hi, this is a running request but unfortunately, not possible yet!",
+        "content_description": "This web page provides guidance on how to create and export seam allowances and notches in different colors using Clo3D for enhanced visibility in design software like Affinity Designer or Adobe Illustrator.",
+        "source": "Connect Community",
+        "created_at": "2026-01-26T09:16:25.067Z",
+        "category": 220,
+        "tags": [
+            "CLO",
+            "Pattern",
+            "UI"
+        ]
+    },
+    {
+        "id": "e00b05929a5342feb888d1c79995c79c",
+        "url": "https://connect.clo-set.com/community/post/e00b05929a5342feb888d1c79995c79c",
+        "title": "Notches Are Not Visible When Exported",
+        "content": "As you see There are notches on the Back Trousers pattern.\n\n\\+ Exported as DXF-ASTM\n\n\\+ Checked the option “Duplicate Notch On Seam Allowance”\n\n[https://www.dropbox.com/scl/fi/d45cwfvkvqijra3qhy9ly/Notches-Are-Not-Visible.dxf?rlkey=yea1p8qvpsl7glf19u1pc1rla&st=7mw80mf7&dl=0](https://www.dropbox.com/scl/fi/d45cwfvkvqijra3qhy9ly/Notches-Are-Not-Visible.dxf?rlkey=yea1p8qvpsl7glf19u1pc1rla&st=7mw80mf7&dl=0)\n\n![72526f96c9274beca93baaf39c8a7499](https://storagefiles.clo-set.com/public/community/202601/e00b05929a5342feb888d1c79995c79c/images/72526f96c9274beca93baaf39c8a74992026.01.25%20Example%203.png)\n\n### Community Post Comments:\nComment 1: I've been having this issue for years, whenever I export it to my laser cutting software the dxf doesnt show notches and for some reason as points? I can't see that and its inaccurate, it should be a physical line. What's more frustrating is that I can't hack it. I want to draw a line in clo3d in the 2d window at the seam allowance to imitate a notch so that the laser software can recognize it as just a normal line, but you can't do that in clo. You can't draw baselines outside of pattern pieces, it just sucksA lot of the software finds real pattern making as an after thought. I don't understand why it was marketed as pattern making software when its hardly usable in the industry to begin with. There are just small issues like this rife throughout. And I've been checking on this problem for years, with no update. It took them years to figure out how to put notches duplicating on the seam allowance. Before that it was completely unusable as pattern making software. Now i have my own internal hacks as to how to make it work when clo3d fails at basic pattern making things optitex or accumark has.\nReply 1: Thank you very much for sharing your experience. How to add notches to my pattern? What do you suggest?Internal Polygons? etc.\nReply 2: Hi there, we understand the dismay, and it is a hasslesome solution, but here's a way for having seam allowance and notches made out of baselines outside a pattern piece, from scratch. The reason any lines have to be started \"on\" the pattern piece is so the program knows which piece they are connected to. Example: Lines that are dragged and dropped from one pattern piece onto another and not copied and pasted onto that piece will not respond as functioning seamlines when sewn onto, are not recognized as quilting lines when creating filled items, etc. pp. because they are not recognized as parts of the pieces in question. However, the point is that it is possible to create lines and move them outside of the piece. I'm attaching an example that I just created on a raglan sleeve. It is quite a few steps but it is a hack. Select the pattern outlines with the Trace tool, right-click, Trace as Internal Line. Edit Pattern tool: Select the created internal lines and offset on every edge by the amount of the desired seam allowance. (The same amount all around requires only doing this once, if it is different offsets, lines have to be lengthened or shortened and connected after to come together - Extend/Trim can be used for this, afterwards marquee the points, right-click, Join Overlapping Points.) Notch tool: Right-click, add point to notch. Edit Pattern tool: right-click, Add Perpendicular Internal Line &gt; Local &gt; I chose length 5mm. As you drag these internal-line-notches outwards, hold CTRL on your keyboard to receive a smart guide that is 90° angled to the pattern outline, right-click without releasing the left click and in the precision window that appears, input the distance of the seam allowance from the pattern outline. Right-click into the empty space, Lock All Pattern Outlines, so selecting the internal lines around the pattern pieces with Edit Pattern is easier, then right click on them and select Convert to Baseline.\n\nComment 2: I'm in the learning process right now. So First time I use notches.I'm trying to import It to Affinity Designer. (Canva)Question 1) Can you tried importing my file into Adobe Illustrator or Affinity Designer?So are the notches visible in your PC?Question 2) Can you share a file which you are sure the notches are visible on Adobe Illustrator (Affinity Designer)?So I can try that. ???\nReply 1: Make sure to also check your notch settings in User Settings. Making sure they are not being exported very tinyNotch thickness/length can be checked in User Settings &gt; User Interface\nReply 2: There is no Notch \"Thickness\" Setting at \"Settings - User Settings - 2D - Notch\"Display Type Default Notch Length (cm)Default Notch Type ???\nReply 3: That is not where notch info is. I put the path in my first reply. User Settings &gt; User InterfacePlease slow down and read our replies carefully.Also do not be afraid to poke around in CLO (you may just find what you are looking for naturally) or actually search on CLO articles on clo3d.com where there is also a chat bot too\n\nComment 3: Hi! Where are you importing the DXF into? Do all your files show without notches in the same program?\nReply 1: At“Settings - User Settings - User Interface - Appearance - Notch (Pixels) - 1.5 (Default) “I make It 3 pt then 8 pt.and imported these Vectorel Drawing and CAD apps.+ Affinity By Canva Desktop (Affinity Designer)+ Online CAD Viewer : sharecad.orgNotches are not visible!!!!Have you tried exporting the file “ANY!” of the CAD or Vectorel Drawing App? and check If the notches of my file is visible or not.and tell me what’s wrong please?",
+        "content_description": "This web page provides access to the DXF-ASTM file of the Back Trousers pattern, highlighting the placement of notches for accurate seam alignment.",
+        "source": "Connect Community",
+        "created_at": "2026-01-26T09:11:40.387Z",
+        "category": 220,
+        "tags": [
+            "CLO",
+            "Pattern",
+            "Import_Export"
+        ]
+    },
+    {
+        "id": "11cd0b5b53a6448bb0a4f785a2daf8fa",
+        "url": "https://connect.clo-set.com/community/post/11cd0b5b53a6448bb0a4f785a2daf8fa",
+        "title": "Adding A Notch In A Particular Distance From A Point Which Is Exceeding The Segment",
+        "content": "As you see there are two segments from the waist point.\n\nLet’s say I want to add 17 cm from the waist point.\n\nStep 1) By Notch Tool I hover the line starting from the waist point.\n\nThen right click. The menu comes up.\n\nStep 2) I’m trying to enter the value 15 cm to the part “Split Into Two Lines - Line 1”\n\nbut Clo3D does not allow me to enter. I can not type.\n\nMaybe the measure exceeds the first segment and this is a problem. I don’t know.\n\nHow can I do this?\n\n???\n\n[https://www.dropbox.com/scl/fi/25cb3vjl68vkod1wy1u7x/WORKING-ON.zprj?rlkey=1k74yla9r12ynjqyehd0kob94&st=bqxsuul8&dl=0](https://www.dropbox.com/scl/fi/25cb3vjl68vkod1wy1u7x/WORKING-ON.zprj?rlkey=1k74yla9r12ynjqyehd0kob94&st=bqxsuul8&dl=0)\n\n![fb0aed29abfe4ca489a9db1912b4b674](https://storagefiles.clo-set.com/public/community/202601/11cd0b5b53a6448bb0a4f785a2daf8fa/images/fb0aed29abfe4ca489a9db1912b4b6742026.01.25%20Example%202.png)\n\n### Community Post Comments:\nComment 1: Hi! Preselect both lines with Edit Pattern (Z), then switch to Add Point / Split Line (X) and right-click on the lines. It will now take into account the entire combined measurement and be able to \"jump\" over the segment point.",
+        "content_description": "\"Find step-by-step guidance for adjusting waist segment measurements in Clo3D, including troubleshooting tips for input issues.\"",
+        "source": "Connect Community",
+        "created_at": "2026-01-26T09:09:41.59Z",
+        "category": 220,
+        "tags": [
+            "CLO",
+            "Pattern"
+        ]
+    },
+    {
+        "id": "e4a9a0865c2149dcac66b40dc2c0b395",
+        "url": "https://connect.clo-set.com/community/post/e4a9a0865c2149dcac66b40dc2c0b395",
+        "title": "I Can Not Remove These Lines",
+        "content": "There are some lines which are look like Seam Allowance. But they are not.\n\nThey are not Internal Polygon either.\n\nWhat are they?\n\nHow can I remove them?\n\n[https://www.dropbox.com/scl/fi/25cb3vjl68vkod1wy1u7x/WORKING-ON.zprj?rlkey=1k74yla9r12ynjqyehd0kob94&st=8gqir77b&dl=0](https://www.dropbox.com/scl/fi/25cb3vjl68vkod1wy1u7x/WORKING-ON.zprj?rlkey=1k74yla9r12ynjqyehd0kob94&st=8gqir77b&dl=0)\n\n![b06bbbc5c1ea46fcacc91918489a527a](https://storagefiles.clo-set.com/public/community/202601/e4a9a0865c2149dcac66b40dc2c0b395/images/b06bbbc5c1ea46fcacc91918489a527a2026.01.25%20Example%201.png)\n\n### Community Post Comments:\n\n\nComment 2: I've just opened the 'working on' file and I see that they are Baseline. To delete, you can use 'Trace' tool -&gt; click on the lines then delete.Actually, Baseline doesn't affect the garment simulation so you don't need to remove it completely. If you don't want to see them, simply uncheck 'Show Baseline' in the Garment Display section..\n\nComment 3: Hi, I think they are Binding lines, probably used to reinforce the stiffness of the edge seams. You can click the 'Select Binding' icon, if it is indeed a binding line, when you hover your mouse over that edge, the color will light up. You can then hit Delete to remove it.Hope this can help!\nReply 1: Select Binding Tool does NOT work. What are they? How can I delete them?Can you try the tools you suggest before posting please?",
+        "content_description": "This web page aims to clarify the nature of certain misleading lines in design software that resemble seam allowances but are neither seam allowances nor internal polygons, and to provide guidance on how to effectively remove them.",
+        "source": "Connect Community",
+        "created_at": "2026-01-26T09:07:45.473Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "Pattern"
+        ]
+    },
+    {
+        "id": "ce997b3e01604e9aae8c9330be46b30b",
+        "url": "https://connect.clo-set.com/community/post/ce997b3e01604e9aae8c9330be46b30b",
+        "title": "Free download boys polo shirt 3d clothing",
+        "content": "Boys polo shirt 3d clothing. he model is optimized with a low polycount, making it suitable for real-time applications. Key Features: Low polycount 3d Clothing – Optimized for fast rendering and game engines Realistic wash-effect textures – Includes exotic surface details. Normal maps – For enhanced depth and realism 2D CAD Pattern included – Perfect for actual garment production. Printable sewing pattern – Based on production standards.\n\nMade with Clo Standalone.![4bd436e9580847d28dede46da202e681](https://storagefiles.clo-set.com/public/community/202601/ce997b3e01604e9aae8c9330be46b30b/images/4bd436e9580847d28dede46da202e681boys%20denim%20shorts_Custom_View_3.jpg)![dbb4fefd085040b3811aad67417d6144](https://storagefiles.clo-set.com/public/community/202601/ce997b3e01604e9aae8c9330be46b30b/images/dbb4fefd085040b3811aad67417d6144boys%20denim%20shorts_Custom_View_2.jpg)![0d3aec96a93e4c65bf638ce3ac3c6edd](https://storagefiles.clo-set.com/public/community/202601/ce997b3e01604e9aae8c9330be46b30b/images/0d3aec96a93e4c65bf638ce3ac3c6eddboys%20denim%20shorts_Custom_View_1.jpg)",
+        "content_description": "Discover our optimized low polycount 3D boys polo shirt model, designed for real-time applications with realistic textures, detailed normal maps, and a complete CAD pattern for seamless garment production.",
+        "source": "Connect Community",
+        "created_at": "2026-01-25T17:05:17.147Z",
+        "category": 210,
+        "tags": [
+            "polo",
+            "CLO",
+            "MarvelousDesigner",
+            "CLO-SET",
+            "CONNECT",
+            "Blender",
+            "Avatar",
+            "Import_Export",
+            "Pattern",
+            "Rendering"
+        ]
+    },
+    {
+        "id": "17d638d2eb7042d7b87c8e21a535974c",
+        "url": "https://connect.clo-set.com/community/post/17d638d2eb7042d7b87c8e21a535974c",
+        "title": "Mens Blazer 3d clothing",
+        "content": "![64a957ee646949fab78b6aba6f367f40](https://storagefiles.clo-set.com/public/community/202601/17d638d2eb7042d7b87c8e21a535974c/images/64a957ee646949fab78b6aba6f367f40Mens%20Blazer%203d%20clothing-01.jpg)",
+        "content_description": "Discover stylish and versatile men's blazers that elevate any outfit for both casual and formal occasions.",
+        "source": "Connect Community",
+        "created_at": "2026-01-25T09:48:04.663Z",
+        "category": 210,
+        "tags": [
+            "Blazer",
+            "CLO",
+            "MarvelousDesigner"
+        ]
+    },
+    {
+        "id": "d0e9e8c933364fcc9caa863cc6214476",
+        "url": "https://connect.clo-set.com/community/post/d0e9e8c933364fcc9caa863cc6214476",
+        "title": "2D pattern printing workflow",
+        "content": "Hello CLO3D Team,\n\nI would like to share some feedback and a small wishlist regarding the 2D pattern printing workflow in CLO3D.\n\nI develop all my patterns directly in 3D, and CLO3D is my main tool. While the necessary 2D functions already exist, I find them a bit difficult to use for real production needs, so I often have to export patterns to another program just to prepare them for printing.\n\nA few things that would make a big difference for me:\n\nText labels on pattern pieces:  \nit would be great to have a normal, non-bold font and the ability to scale text proportionally to the size of each piece, so I can place several lines of information (name, size, notes) in a clean way.\n\nNotches:  \nalthough I can place them in CLO3D, they unfortunately do not appear when I export patterns to PDF or PLT.\n\nPrintable layout:  \nI can arrange pieces in a layout, but I am not able to export this layout to a proper PDF for printing.\n\nGrainline:  \nfor printing patterns, it would be very helpful if the grainline always stayed exactly as defined during pattern development, regardless of how the piece is rotated in the layout.\n\nIn an ideal workflow, I would love to be able to label pieces, place them into a print layout, and export everything to PDF with all text, notches, and grainlines displayed correctly — without needing external software.\n\nThank you very much for your great work on CLO3D and for considering this feedback.\n\nKind regards,  \nNatalia",
+        "content_description": "This webpage aims to provide valuable feedback and suggestions for improving the 2D pattern printing workflow in CLO3D, enhancing usability and efficiency for users who develop patterns directly in 3D.",
+        "source": "Connect Community",
+        "created_at": "2026-01-23T11:27:15.9Z",
+        "category": 250,
+        "tags": [
+            "CLO",
+            "Pattern"
+        ]
+    },
+    {
+        "id": "98f6aa8b7b0c4cb78df3673c3bf865b4",
+        "url": "https://connect.clo-set.com/community/post/98f6aa8b7b0c4cb78df3673c3bf865b4",
+        "title": "2D pattern printing workflow",
+        "content": "Hello CLO3D Team,\n\nI would like to share some feedback and a small wishlist regarding the 2D pattern printing workflow in CLO3D.\n\nI develop all my patterns directly in 3D, and CLO3D is my main tool. While the necessary 2D functions already exist, I find them a bit difficult to use for real production needs, so I often have to export patterns to another program just to prepare them for printing.\n\nA few things that would make a big difference for me:\n\n  * Text labels on pattern pieces:  \nit would be great to have a normal, non-bold font and the ability to scale text proportionally to the size of each piece, so I can place several lines of information (name, size, notes) in a clean way.\n\n  * Notches:  \nalthough I can place them in CLO3D, they unfortunately do not appear when I export patterns to PDF or PLT.\n\n  * Printable layout:  \nI can arrange pieces in a layout, but I am not able to export this layout to a proper PDF for printing.\n\n  * Grainline:  \nfor printing patterns, it would be very helpful if the grainline always stayed exactly as defined during pattern development, regardless of how the piece is rotated in the layout.\n\n\n\n\nIn an ideal workflow, I would love to be able to label pieces, place them into a print layout, and export everything to PDF with all text, notches, and grainlines displayed correctly — without needing external software.\n\nThank you very much for your great work on CLO3D and for considering this feedback.\n\nKind regards,  \nNatasha",
+        "content_description": "This page aims to convey feedback and suggestions for enhancing the 2D pattern printing workflow in CLO3D to better meet production needs.",
+        "source": "Connect Community",
+        "created_at": "2026-01-23T06:03:02.417Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "Pattern",
+            "Import_Export"
+        ]
+    },
+    {
+        "id": "acc1dd43721544b48c2ab7f69838fdcf",
+        "url": "https://connect.clo-set.com/community/post/acc1dd43721544b48c2ab7f69838fdcf",
+        "title": "Our reality ",
+        "content": "I’m from Iran —\n\nwith limited internet access,\n\nwhere many efforts go unseen,\n\nbut we’re still here. Still trying🍃🕊",
+        "content_description": "This webpage aims to amplify the voices and stories from Iran, showcasing resilience and hope despite limited internet access and unseen struggles.",
+        "source": "Connect Community",
+        "created_at": "2026-01-23T06:00:40.75Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "CONNECT",
+            "CLO-SET"
+        ]
+    },
+    {
+        "id": "0843269556ab46a0a0e302d76cec6fdd",
+        "url": "https://connect.clo-set.com/community/post/0843269556ab46a0a0e302d76cec6fdd",
+        "title": "Exporting and Importing Without Distorting Measurements",
+        "content": "I want to export CLO3D project files (.zprj) so that I can add pattern information in **Affinity Designer** (a vector drawing app), and then import them back into **CLO3D**.\n\nQuestion 1) Which export format should I use to work in Affinity Designer?\n\nAfter adding the pattern information in Affinity Designer, which format should I use to import the files back into CLO3D? (Maybe I continue to edit the patterns here)\n\nMy main concern is **preserving the original measurements** during the conversion process.\n\n**Question 2)**\n\nIf the **User Settings → Unit System** is set to **centimeters** , but the **export unit** is set to **millimeters** , will the measurements remain accurate without any distortion?\n\nQuestion 3) If I follow the method you recommend, will the measurements remain accurate during export and import (without distortion or scaling issues)?\n\n### Community Post Comments:\nComment 1: \"If the User Settings → Unit System is set to centimeters, but the export unit is set to millimeters, will the measurements remain accurate without any distortion?\" This will nto affect the measurements, they will remain accurate. For the question about the 3rd party program which is not our expertise, you will have to check which file types you can export out of CLO that is compatible with it (e.g. PDF for the pattern) and just try it out and see how it goes.\nReply 1: Thank you very much.",
+        "content_description": "This web page aims to provide guidance on exporting and importing CLO3D project files for pattern editing in Affinity Designer while ensuring the preservation of original measurements throughout the process.",
+        "source": "Connect Community",
+        "created_at": "2026-01-22T14:40:17.727Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "Pattern",
+            "Import_Export"
+        ]
+    },
+    {
+        "id": "9d9edfda60b447669c595282786ff97a",
+        "url": "https://connect.clo-set.com/community/post/9d9edfda60b447669c595282786ff97a",
+        "title": "Announcement: CLO Wins Copyright Infringement Lawsuit vs. Style3D",
+        "content": "![83ea984745db4e6a8a256a6d051c1e65](https://storagefiles.clo-set.com/public/community/202601/9d9edfda60b447669c595282786ff97a/images/83ea984745db4e6a8a256a6d051c1e65Lyocell%20Announcement%20v2.png)\n\nHello everyone! Last week, we made an important announcement regarding our copyright infringement lawsuit victory against Style3D. If you missed it, you can read more about it here: <https://clo3d.com/en/resources/notices/1318>\n\n### Community Post Comments:\nComment 1: looks good\n\nComment 2: put so much effort into it, great job!👍🏻",
+        "content_description": "Stay informed about our recent copyright infringement lawsuit victory against Style3D and find more details in our official announcement.",
+        "source": "Connect Community",
+        "created_at": "2026-01-22T06:03:45.68Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "CLO-SET",
+            "CONNECT",
+            "JINNY"
+        ]
+    },
+    {
+        "id": "33d485b52cc546859117a3a630da8886",
+        "url": "https://connect.clo-set.com/community/post/33d485b52cc546859117a3a630da8886",
+        "title": "CLO Seamline Render Issue",
+        "content": "Hi there, I am having trouble with my seamlines now showing at all when I render with a graphic that is all over. My graphic has a z-offset of 2mm on it as I find that without this the graphic doesn't render properly (all patchy). Any ideas how I can make the seams visible? Thanks.![28379551a5ad4276b4ad413d25d316ec](https://storagefiles.clo-set.com/public/community/202601/33d485b52cc546859117a3a630da8886/images/28379551a5ad4276b4ad413d25d316ecCLO-seamsettings-render.PNG)![6a05564a38d44360b36eca92696fb89c](https://storagefiles.clo-set.com/public/community/202601/33d485b52cc546859117a3a630da8886/images/6a05564a38d44360b36eca92696fb89cCLO-seamsettings.PNG)\n\n### Community Post Comments:\nComment 1: Is it not possible to apply the image as a print or base color map instead, which would solve the issue?",
+        "content_description": "Get expert advice on how to make seamlines visible in your rendering while using a graphic with a z-offset.",
+        "source": "Connect Community",
+        "created_at": "2026-01-22T02:31:14.12Z",
+        "category": 220,
+        "tags": [
+            "CLO",
+            "Rendering"
+        ]
+    },
+    {
+        "id": "9b37de7fdfe14ce59cd31bd64d6040de",
+        "url": "https://connect.clo-set.com/community/post/9b37de7fdfe14ce59cd31bd64d6040de",
+        "title": "Create a split window in a pattern.",
+        "content": "H Clo users , could some pleas assist or advise how do i create a split window on a shirt pattern to create an open neckline as per the image attached, Thanks Stevie![9e840bba5950458c871bf43f029d7c18](https://storagefiles.clo-set.com/public/community/202601/9b37de7fdfe14ce59cd31bd64d6040de/images/9e840bba5950458c871bf43f029d7c18Split%20Window.jpg)\n\n### Community Post Comments:\nComment 1: Thanks Ariel, i have just managed to get the fold to simulated with one interval line. I also added a second layer under, this seemed to have settled it down. Thanks again.",
+        "content_description": "\"Seek assistance and advice from the H Clo community on creating a split window for an open neckline in shirt patterns.\"",
+        "source": "Connect Community",
+        "created_at": "2026-01-21T20:56:15.453Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "Pattern",
+            "Simulation"
+        ]
+    },
+    {
+        "id": "ff9f3ffe0af34d92af5867c4be5e10e9",
+        "url": "https://connect.clo-set.com/community/post/ff9f3ffe0af34d92af5867c4be5e10e9",
+        "title": "sleeve is not correctly dress.",
+        "content": "![bba0c893761e4dcf874d8ca1888899e7](https://storagefiles.clo-set.com/public/community/202601/ff9f3ffe0af34d92af5867c4be5e10e9/images/bba0c893761e4dcf874d8ca1888899e7Screenshot%202026-01-21%20at%204.57.14%20PM.png)Hi all, sleeve is not correct side dress. please help to solve this. thank you.",
+        "content_description": "The purpose of this webpage is to seek assistance from the community in resolving an issue with the incorrect side dress of a sleeve.",
+        "source": "Connect Community",
+        "created_at": "2026-01-21T11:40:55.587Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "CLO-SET",
+            "CONNECT"
+        ]
+    },
+    {
+        "id": "08fde18c80684622a739a4ae900eba39",
+        "url": "https://connect.clo-set.com/community/post/08fde18c80684622a739a4ae900eba39",
+        "title": "hello. more slowly in my 3D window working. please help to me",
+        "content": "![82df85d2edd34e8f9ddc34c3338bc301](https://storagefiles.clo-set.com/public/community/202601/08fde18c80684622a739a4ae900eba39/images/82df85d2edd34e8f9ddc34c3338bc301Screenshot%202026-01-21%20at%201.40.51%20PM.png)\n\n### Community Post Comments:\nComment 1: Hi, besides your computer's configuration, I think you should also try turning off \"Quality Render (3D Window)\" if it's not needed. I see in the attached image that \"Quality Render\" is currently enabled, which also slows down the 3D simulation process a bit.\n\nComment 2: The speed that CLO can work in will be determined by your computers processing power. You can find the CLO recommended specs in the link below. But if your computer has lower secs than CLO may not be able to work at a faster speedhttps://connect.clo-set.com/community/post/08fde18c80684622a739a4ae900eba39",
+        "content_description": "The purpose of this web page is to provide users with an engaging and intuitive platform for exploring and sharing creative design inspirations and ideas.",
+        "source": "Connect Community",
+        "created_at": "2026-01-21T11:22:51.72Z",
+        "category": 220,
+        "tags": [
+            "CLO",
+            "CLO-SET"
+        ]
+    }
+]

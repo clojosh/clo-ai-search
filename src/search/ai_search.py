@@ -268,7 +268,7 @@ class AISearch:
 
         documents = []
         for r in results:
-            documents.append({"article_id": r["article_id"], "source": r["source"]})
+            documents.append({"article_id": r["article_id"], "url": r["url"]})
 
         return documents
 

@@ -1,73 +1,35 @@
 [
     {
-        "id": "55490cbfb1df4a83b8ca6588b300248e",
-        "url": "https://connect.clo-set.com/community/post/55490cbfb1df4a83b8ca6588b300248e",
-        "title": "LiveSycn UNreal - CLO3d",
-        "content": "LiveSycn Unreal - CLO3d I am currently using the free trial of clo3d and wanted to try the livesync of clo3d with unreal, but my connection status is never tunring green is this due to the free trial ? can someone help me ? Thanks a lot!![05bba3b0de7b42ba9a3bd1896bb5c1b3](https://storagefiles.clo-set.com/public/community/202506/55490cbfb1df4a83b8ca6588b300248e/images/05bba3b0de7b42ba9a3bd1896bb5c1b3clounreal.png)\n\n### Community Post Comments:\nComment 1: thank you!! but i don't have the animation and livesync tab\n\nComment 2: Unreal 5.5.4CLO 2025.0.252\nReply 1: I was not able to replicate the issue, however, the connection issue should be addressed in the upcoming CLO patch release. You would just need to enable LiveSync in User Settings. This particular setting will be available after the patch release.\n\nComment 3: Hi yanick.horat,Thank you for trying out CLO and CLO LiveSync! I'm thinking that it could be a version compatibility issue but I want to be sure - could you let me know which version of CLO you are using? 🙂 The version number at the bottom left of the screenshot is not legible.Best regards,Bryan",
-        "content_description": "\"Get assistance with troubleshooting live sync issues between CLO3D and Unreal during your free trial.\"",
+        "id": "21a1b0a7fabf480197fe09787b228bb0",
+        "url": "https://connect.clo-set.com/community/post/21a1b0a7fabf480197fe09787b228bb0",
+        "title": "Issue after the last update ",
+        "content": "i updated my clo app to the latest version and then i had an issue that CLO 3D is open but stuck on a blank (black) interface — no workspace, avatar, or panels are showing properly. Can anyone help me solve this problem?![23693d7e0302450ea79a0a97795c59f6](https://storagefiles.clo-set.com/public/community/202506/21a1b0a7fabf480197fe09787b228bb0/images/23693d7e0302450ea79a0a97795c59f6Screenshot%201446-12-26%20at%2012.37.54%E2%80%AFPM.png)\n\n### Community Post Comments:\nComment 1: Hi! I had a similar issue after an update — here’s what helped:Try resetting the workspace: Main Menu &gt; Display &gt; Reset to Default Layout.Update your GPU driver — sometimes black screen happens because of driver conflicts.You can also try launching CLO in OpenGL mode instead of DirectX (or the other way around).Hope this fixes it! Let me know if it works. 😊\n\nComment 2: Hi There. First thing is to try the reset layout option. Bottom Right corner of the CLO screen.If the issue persists you will need to completely uninstall and reinstall CLO1) Please refer to the web document below to completely delete CLO and the files that make up CLO from your computer.https://connect.clo-set.com/community/post/21a1b0a7fabf480197fe09787b228bb0 Download the latest installer from the CLO website and install it with administrator privileges. You can download the latest Installer here:https://connect.clo-set.com/community/post/21a1b0a7fabf480197fe09787b228bb0\nReply 1: I've tried everything and avatars still aren't showing up for me. My menus aren't working properly no matter how many times I refresh my menu and I've reinstalled three times.\nReply 2: Hi again. We can make 2 additioinal suggestions1) Please check that you have given CLO full access. Article here - https://connect.clo-set.com/community/post/21a1b0a7fabf480197fe09787b228bb0 Update CLO. According to our records you are on 2025.0.148. But CLO has been updated several times. We recommend doing a fully uninstall as linked above and then installing a Newer Version of CLO. Newest version 2025.1.240If you are still having this same issue months later we would recommend reaching out directly to our Tech Support which we see you have done and we will let them know you have also posted here as well 🙂",
+        "content_description": "This page aims to provide troubleshooting solutions for resolving the issue of CLO 3D opening to a blank black interface with missing workspace, avatar, and panels after an update.",
         "source": "Connect Community",
-        "created_at": "2025-06-07T11:42:06.687Z",
-        "category": 210,
-        "tags": [
-            "CLO-SET",
-            "CONNECT",
-            "UnrealEngine",
-            "CLO",
-            "LiveSync",
-            "Import_Export"
-        ]
-    },
-    {
-        "id": "6369190026d5481f97e5f250e6489ccf",
-        "url": "https://connect.clo-set.com/community/post/6369190026d5481f97e5f250e6489ccf",
-        "title": "Skin without Underwear",
-        "content": "I want to create underwear and need to use an avatar without underwear texture to use it for my presentation. I'm not able to change the skin in the newest CLO version. How can I solve this problem? In addition the question: is it possible that the avatars like Feifei can be added back to the default garment avatars? I was always using FeiFei and like to continue using her.\n\nHope we can find a solution.\n\nSophie\n\nPS.: In my opinion the new way of reaching the library is not an improvement.\n\n### Community Post Comments:\nComment 1: Hi There. For the newer Avatars the undergarments can be set to nude, this has been a feature in CLO for several versions now. You can click on the avatar and the go to the Property Editor &gt; Body Styling &gt; Click on the blue head icon to the right on Skin Style &gt; a pop up will open &gt; Change underwear from Covered to NudeAs for older Avatars these will not be added back to to CLO library. But if you wish to continue using FeiFei you can open an old CLO project where you used FeiFei and then go to File &gt; Save As Avatar. You can save FeiFei, just make sure to save to your local computer/sharedirve and not to the CLO program folders as those can be replaced when CLO is updated in the future.Also, keep in mind that FeiFei and older avatars will not have some of the newer features like bust adjustment, soft body, or the above mentioned Skin Style options",
-        "content_description": "This webpage aims to provide solutions for creating a custom underwear presentation using an avatar without texture and to discuss the reintroduction of popular avatars like Feifei in the latest CLO version.",
-        "source": "Connect Community",
-        "created_at": "2025-06-04T09:23:49.39Z",
+        "created_at": "2025-06-22T11:57:25.493Z",
         "category": 250,
         "tags": [
             "CLO",
             "CLO-SET",
-            "Avatar",
-            "Texture",
-            "UI",
-            "Simulation"
+            "Pattern"
         ]
     },
     {
-        "id": "41f12dea3ab3482195d14b4861a76479",
-        "url": "https://connect.clo-set.com/community/post/41f12dea3ab3482195d14b4861a76479",
-        "title": "Connect Store pending issue",
-        "content": "Hi, I'm new here and trying to upload my design to the Connect Store—how long does \"Pending\" usually take? Mine seems stuck.\n\n### Community Post Comments:\nComment 1: I think the long \"pending\" is caused by a problem with the item being uploaded, usually there will be a notification sent from the website for details of the problem.\n\nComment 2: Hi. From Friday to Sunday, the checking and uploading of designs will not be carried out by the site. Evaluations will resume starting from Monday",
-        "content_description": "This page aims to provide guidance and support for users experiencing delays in the design upload process to the Connect Store.",
+        "id": "ad24327810c546b48268ccae2c4a9f37",
+        "url": "https://connect.clo-set.com/community/post/ad24327810c546b48268ccae2c4a9f37",
+        "title": "Crochet Effect in CLO 🧶",
+        "content": "Want to recreate this cozy crochet flower texture in CLO? Here's how I did it using the **Knitwear material settings**!  \n👇 These are the parameters I used:\n\n🧵 **Stitching** : Stockinette  \n🧶 **Yarn Thickness** : 7.00  \n📏 **Gauge** : 2.20  \n📍 **Generate Seams** : ON  \n🔁 **Length** : 100 mm  \n🌙 **Curvature** : 0.5  \n✨ **Reflection Roughness** : 50\n\nI also played with **Yarn Variance** and a soft **melange effect** to give it depth and realism. Perfect for playful and soft designs like this floral dress! \n\nLet me know if you try it! \n\n![ea367a04031f4b91ba8ed9a431481490](https://storagefiles.clo-set.com/public/community/202506/ad24327810c546b48268ccae2c4a9f37/images/ea367a04031f4b91ba8ed9a431481490Captura%20de%20pantalla%202025-06-15%20113905.png)![8b3600c97db14bc9a4ab86604d7260ef](https://storagefiles.clo-set.com/public/community/202506/ad24327810c546b48268ccae2c4a9f37/images/8b3600c97db14bc9a4ab86604d7260efCaptura%20de%20pantalla%202025-06-15%20113945.png)![479d1dbe1da24cba91a9cfc373e5c329](https://storagefiles.clo-set.com/public/community/202506/ad24327810c546b48268ccae2c4a9f37/images/479d1dbe1da24cba91a9cfc373e5c329Captura%20de%20pantalla%202025-06-15%20113958.png)![d339cdbe19074d82a5f4ff4c9790d222](https://storagefiles.clo-set.com/public/community/202506/ad24327810c546b48268ccae2c4a9f37/images/d339cdbe19074d82a5f4ff4c9790d222Captura%20de%20pantalla%202025-06-15%20114014.png)\n\n### Community Post Comments:\nComment 1: Thank you for sharing this 🙏🏻\n\nComment 2: my computer always crashes with the knit mode.",
+        "content_description": "Learn how to recreate a cozy crochet flower texture in CLO using detailed knitwear material settings for realistic and soft fabric designs.",
         "source": "Connect Community",
-        "created_at": "2025-06-01T20:26:04.42Z",
-        "category": 210,
-        "tags": [
-            "CONNECT",
-            "CLO-SET",
-            "CLO",
-            "Import_Export"
-        ]
-    },
-    {
-        "id": "2162a1956bb04d698867c59480a94bc5",
-        "url": "https://connect.clo-set.com/community/post/2162a1956bb04d698867c59480a94bc5",
-        "title": "yalda",
-        "content": "![bbcbaee05caf442184c849c242d68a45](https://storagefiles.clo-set.com/public/community/202505/2162a1956bb04d698867c59480a94bc5/images/bbcbaee05caf442184c849c242d68a4527.1.jpg)\n\n### Community Post Comments:\nComment 1: Beautiful work!",
-        "content_description": "Discover the latest trends and insights in fashion through curated collections and expert advice on our stylish web page.",
-        "source": "Connect Community",
-        "created_at": "2025-05-30T21:09:58.35Z",
-        "category": 210,
+        "created_at": "2025-06-15T09:43:58.657Z",
+        "category": 240,
         "tags": [
             "CLO",
             "CLO-SET",
             "CONNECT",
-            "EveryWear",
-            "Avatar",
+            "Animation",
             "Texture",
-            "Rendering",
+            "Simulation",
             "Material"
         ]
     }

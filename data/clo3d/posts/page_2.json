@@ -1,251 +1,192 @@
 [
     {
-        "id": "7ab0443ddf2449d68a4150f5bebcb052",
-        "url": "https://connect.clo-set.com/community/post/7ab0443ddf2449d68a4150f5bebcb052",
-        "title": "Sign in not working",
-        "content": "I already have a CLO account and subscription, I know my password, and also just reset it to the same thing and I get an error that email and password don't match. I want to see the new features that appeared on the CLO3D program screen and then get asked to sign in again. I'm already signed in on the program and CLO-SET. Like other users have asked: Why is this so complicated? [https://support.clo3d.com/auth/v3/signin?brand_id=3197847&locale=en-us](https://support.clo3d.com/auth/v3/signin?brand_id=3197847&locale=en-us)\n\n### Community Post Comments:\nComment 1: Hi robin.wag,Sorry to hear about your difficulty signing in to CLO.This issue is typically caused by cached browser data conflicting with your integrated CLO-SET account. To resolve this, please log out of the software and all CLO websites, clear your browser cache, and restart the program. When prompted, select the \"Sign in with CLO-SET\" option rather than entering your credentials manually.If the issue continues, please submit a ticket at www.clo3d.com/en/support/contactus for further investigation.",
-        "content_description": "This webpage aims to address common login issues and provide solutions for users experiencing difficulties accessing their CLO3D accounts and new features.",
+        "id": "b5558f3d9590442297b738888923d233",
+        "url": "https://connect.clo-set.com/community/post/b5558f3d9590442297b738888923d233",
+        "title": "3D Scan help",
+        "content": "3d Scan help needed: I am using Polycam on iPhone 13 Pro Max to scan a human body. Then I try to take that scan in obj format to blender for mesh cleaning. So far I haven't been successful.\n\nMy question: has someone been successful walking the path. If yes can you share the tips and trick. If not are there other viable methods which are less expensive and require minimal processing?\n\n### Community Post Comments:\nComment 1: Hi, you might be more successful getting answers on this on a Blender forum or subreddit 🙂",
+        "content_description": "This web page seeks advice and tips for successfully importing and cleaning 3D human body scans from Polycam on iPhone 13 Pro Max into Blender, or alternative cost-effective scanning methods with minimal processing.",
         "source": "Connect Community",
-        "created_at": "2026-03-17T21:49:15.642Z",
-        "category": 220,
+        "created_at": "2026-04-15T05:59:41.605Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "Blender",
+            "Avatar",
+            "Retopology"
+        ]
+    },
+    {
+        "id": "722db7f7671345c29e1b7b44a8c8755c",
+        "url": "https://connect.clo-set.com/community/post/722db7f7671345c29e1b7b44a8c8755c",
+        "title": "Animation",
+        "content": "Dear Melody,  \nI have a problem with the animation: I selected a stage from the CLO Library and used the motion “Walking in place.” I paid attention to the following points:\n\n> \\- Simulation mode is set to Animation (Stable).\n> \n> \\- All layers are set to 0.\n> \n> \\- PD ist set to 7-10.\n> \n> \\- Additional Thickness Collision may remain around 2-2.5.\n\n> \\- Delete all pattern pieces that will not be visible during the final animation (e.g. pocket bags.)\n> \n> \\- No pattern pieces on Freeze/Deactivate/Strengthen.\n\nBut the pants still tear apart in the lower area. The sleeves of the shirt also stretch out. What could be causing this?\n\nAttached a video. \n\nMerci beacoup & Best, Tina\n\nYouTube Video: https://www.youtube.com/watch?v=AAscdZ6Vsk4?start=0\n\n### Community Post Comments:\nComment 1: It is correct to open the project file directly, but the problem you can see in the video seems to be that the pants are moving, and the two pants patterns on both legs cannot distinguish between inside and outside, resulting in a mix of positions.The sleeve of the shirt also collides with the body's pattern, and the same phenomenon occurs.First of all, I recommend separating the layers.Pants leg one pattern: 0The rest of the pants pattern: 1Red Body: 2Sky Blue Sleeve: 3Red Sleeve: 4It is safe to lower the collision thickness to 1.0 in an environment where the location of the fabric can overlap due to the large pattern area.If you have time to spare, you can choose Hi-Res Garment to greatly increase the stability of the simulation during the animation render.The particle spacing can be reversed even after Hi-Res Garment activation, so consider it.\nReply 1: @fadyboo - Thank you so much! @Tina - The oversize of the garments in the animation can require the workarounds that fadyboo has described. The animation rendering process will take longer then, but if it is the only way, then it is the way. Please get back to this thread in case the issues aren't solved after following the tips above.\nReply 2: Many thanks 🙏🏻",
+        "content_description": "A troubleshooting guide to resolving garment tearing and stretching issues during animation in CLO software.",
+        "source": "Connect Community",
+        "created_at": "2026-04-14T10:26:56.902Z",
+        "category": 240,
+        "tags": [
+            "CLO",
+            "CONNECT",
+            "Animation"
+        ]
+    },
+    {
+        "id": "9ff2e6aa364446a496cc6ee0fbb69515",
+        "url": "https://connect.clo-set.com/community/post/9ff2e6aa364446a496cc6ee0fbb69515",
+        "title": "Unable to select multiple items or points using shift key",
+        "content": "I'm unable to select multiple items using the shift key. I have tried changing the axis constraint key with no luck. I can select by dragging a box but thats the only way. Would love some help. Thanks",
+        "content_description": "Provide users with troubleshooting guidance and solutions for enabling multi-item selection using the shift key.",
+        "source": "Connect Community",
+        "created_at": "2026-04-13T02:08:17.261Z",
+        "category": 210,
         "tags": [
             "CLO"
         ]
     },
     {
-        "id": "e53750502b674a94a09412ea375f6619",
-        "url": "https://connect.clo-set.com/community/post/e53750502b674a94a09412ea375f6619",
-        "title": "DXF AAMA export loses annotations",
-        "content": "I'm trying to export in DXF format for use in Gerber and if I export a graded pattern, it grades on the sewing lines instead of the seam allowance. I can export individually (what a pain) but the annotations do not stay connected to the patterns. They are off in space. Now I'm stuck with a lot of patterns made for a client which I can't make in a format they can use, help.\n\n### Community Post Comments:\nComment 1: Is your client using the Gerber Data Exchange Utility and selecting the \"Grade on Sew Line\" option during import? Since CLO anchors grading to the sewing line, this setting is required for Gerber to correctly read the nest and maintain the seam allowances, which are preserved as distinct coordinate data within the DXF-AAMA file.If this doesn't resolve the issue, please upload the file to our technical support portal for a deeper look: https://connect.clo-set.com/community/post/e53750502b674a94a09412ea375f6619\n\nComment 2: So, this is all in the CLO zpri file. It also doesn't show the seam allowance graded here, but when I switch sizes it shows the correct seam allowance so I know the data is there.\n\nComment 3: Hi carfritsch,Happy to help! Could you attach screenshots of your export settings, and the 2d window showing the patterns with seam allowance with grading on and off?",
-        "content_description": "\"Seeking assistance to resolve DXF export issues for graded patterns in Gerber, ensuring accurate seam allowances and proper annotation alignment.\"",
+        "id": "2f57df5d5ecd4ed7ab70711ae6bc1fd3",
+        "url": "https://connect.clo-set.com/community/post/2f57df5d5ecd4ed7ab70711ae6bc1fd3",
+        "title": "Input fields not working",
+        "content": "For > 6 months now, I've been having an issue where some of the input fields to not actually save the value I entered. This happens particularly often in the \"Print Layout\" configuration fields. Sometimes it fixes itself eventually – although I'm not sure what exactly helps.   \n  \nBelow is a screen recording of my problem. I'm trying to set the width of the \"Duoplex\" fabric to 35cm, but the change is not being saved/applied. I'm pressing enter, clicking into/out of the field to no effect. Switching to a different fabric and back reveals that the change did not save.\n\nI'm using the latest version of Clo3d (2025.2.368 r54927).\n\nYouTube Video: https://www.youtube.com/watch?v=Vw0g8nUexS4",
+        "content_description": "This page documents a persistent issue with input fields not saving values in Clo3d's Print Layout settings, illustrated by a screen recording and user observations.",
         "source": "Connect Community",
-        "created_at": "2026-03-17T12:27:37.253Z",
+        "created_at": "2026-04-12T09:44:25.005Z",
         "category": 250,
         "tags": [
-            "CLO",
-            "Import_Export",
-            "Pattern"
+            "CLO"
         ]
     },
     {
-        "id": "2980be980dbc4716b1818a5e092d7b56",
-        "url": "https://connect.clo-set.com/community/post/2980be980dbc4716b1818a5e092d7b56",
-        "title": "CLO Render Mesh",
-        "content": "Hi there, I am trying to render a garment made of a mesh fabric and the images are coming out as below with a blurred effect. The front and back of the garment also appear a difference shade/ colour despite the same render settings. Any tips as to how to improve this? Many thanks!\n\n![5ae354385420410c8878f82626f1e3fa](https://storagefiles.clo-set.com/public/community/202603/2980be980dbc4716b1818a5e092d7b56/images/5ae354385420410c8878f82626f1e3faimage.png)",
-        "content_description": "\"Get expert tips and solutions for improving the rendering quality of mesh fabric garments and achieving consistent color results.\"",
+        "id": "b5cbab1b49c140d2994a440d0aba50e2",
+        "url": "https://connect.clo-set.com/community/post/b5cbab1b49c140d2994a440d0aba50e2",
+        "title": "You can make tent styles according to the tent supports.",
+        "content": "Come and take a look at the styles of the outdoor tents I made.\n\nOf course, you can also take part and make an outdoor tent.\n\nI think it's really interesting.\n\n* * *\n\n![29eb439b54ed4e32a1ccbd04f8c53557](https://storagefiles.clo-set.com/public/community/202604/b5cbab1b49c140d2994a440d0aba50e2/images/29eb439b54ed4e32a1ccbd04f8c53557%E6%88%B7%E5%A4%96%E5%B8%90%E7%AF%B7%20%282%29.png)![3a258a389ea44bb8b97ed13e4005b10c](https://storagefiles.clo-set.com/public/community/202604/b5cbab1b49c140d2994a440d0aba50e2/images/3a258a389ea44bb8b97ed13e4005b10c%E6%88%B7%E5%A4%96%E5%B8%90%E7%AF%B7%20%285%29.png)![1ccfdd90183f46bfa48a5dfbf8c0ea4f](https://storagefiles.clo-set.com/public/community/202604/b5cbab1b49c140d2994a440d0aba50e2/images/1ccfdd90183f46bfa48a5dfbf8c0ea4f%E6%88%B7%E5%A4%96%E5%B8%90%E7%AF%B7%20%284%29.png)\n\n![a192b4e3619047efaf467c2964fd2862](https://storagefiles.clo-set.com/public/community/202604/b5cbab1b49c140d2994a440d0aba50e2/images/a192b4e3619047efaf467c2964fd2862%E6%88%B7%E5%A4%96%E5%B8%90%E7%AF%B7%20%283%29.png)\n\n![226eb2ed00a0485298cf7da7b5c3c315](https://storagefiles.clo-set.com/public/community/202604/b5cbab1b49c140d2994a440d0aba50e2/images/226eb2ed00a0485298cf7da7b5c3c315%E6%88%B7%E5%A4%96%E5%B8%90%E7%AF%B7%20%281%29.png)\n\n* * *\n\nlink to the product - page of tent supports：\n\n<https://connect.clo-set.com/zh/detail/19c5b4a96c084ef2a8d6419d589d4be6?ref_id=108936>",
+        "content_description": "Explore unique outdoor tent designs I've created and join in to craft your own adventurous shelter.",
         "source": "Connect Community",
-        "created_at": "2026-03-17T05:18:11.625Z",
-        "category": 220,
-        "tags": [
-            "CLO",
-            "Rendering"
-        ]
-    },
-    {
-        "id": "ef8045d51bd7422bb5d6a4186b66b082",
-        "url": "https://connect.clo-set.com/community/post/ef8045d51bd7422bb5d6a4186b66b082",
-        "title": "Micro gathering",
-        "content": "Hi All,\n\nAny tips on achieving these micro wrinkles and gathering near the waist band with realism?![5567becd69d24395a447cda8f1675b10](https://storagefiles.clo-set.com/public/community/202603/ef8045d51bd7422bb5d6a4186b66b082/images/5567becd69d24395a447cda8f1675b10image.png)",
-        "content_description": "\"Explore expert tips and techniques for creating realistic micro wrinkles and gathering effects near the waistband in your designs.\"",
-        "source": "Connect Community",
-        "created_at": "2026-03-16T14:22:17.248Z",
-        "category": 220,
-        "tags": [
-            "CLO",
-            "Rendering",
-            "Material",
-            "Simulation",
-            "Texture"
-        ]
-    },
-    {
-        "id": "a134284c3e064f41b169c1c1dece5a9a",
-        "url": "https://connect.clo-set.com/community/post/a134284c3e064f41b169c1c1dece5a9a",
-        "title": "Game Inspired Character Outfit — Recreated in Marvelous Designer",
-        "content": "## ![](https://storagefiles.clo-set.com/public/community/202603/a134284c3e064f41b169c1c1dece5a9a/images/69f213cd187f4c0284ba3e11354e4c07INVISIB_19.png)![](https://storagefiles.clo-set.com/public/community/202603/a134284c3e064f41b169c1c1dece5a9a/images/23f5f0319f4b4022bb76e1f0681a751bINVISIB_19.png)Invisible Women Inspired Outfit — Marvelous Designer Project\n\nWhile playing a game, I came across a character skin that immediately caught my attention because of its **bold colors, retro style, and strong character personality**. The design felt unique and stylish, and I wanted to challenge myself by recreating a similar outfit using **Marvelous Designer**.\n\nThis project became an opportunity to explore how a **game-inspired costume** could be translated into a garment created entirely through digital pattern making and cloth simulation.\n\n![7fb2b8776aac4e388b6a4f5364ff9f15](https://storagefiles.clo-set.com/public/community/202603/a134284c3e064f41b169c1c1dece5a9a/images/7fb2b8776aac4e388b6a4f5364ff9f15Screenshot%20%28505%29.png)\n\n* * *\n\n### Reference and Inspiration\n\nThe main inspiration for this outfit came from Marvel Rivals **game character skin**. What stood out to me the most was the combination of:\n\n  * Bright pink color palette\n\n  * Retro fashion elements\n\n  * Futuristic character styling\n\n\n\n\nThe design balances **playful fashion with a confident hero-like presence** , which made it an interesting challenge to recreate.\n\n### Building the Outfit in Marvelous Designer\n\nThe outfit was constructed step by step inside Marvelous Designer using pattern-based garment creation.\n\nThe process started with the **base pants and top** , carefully fitted to the avatar to establish a clean silhouette. Once the foundation was working correctly, additional pieces were layered to build the final look.\n\nKey garment pieces include:\n\n  * A **structured corset-style top** with panel segmentation\n\n  * **High-waisted pants** with curved seam lines\n\n  * A **short cropped jacket** to add structure and contrast\n\n  * A **scarf accessory** to introduce movement to the design\n\n\n\n\nEach piece was simulated and adjusted to maintain a natural garment flow.\n\n![64ee918a73394cb6afdda3267fefd00b](https://storagefiles.clo-set.com/public/community/202603/a134284c3e064f41b169c1c1dece5a9a/images/64ee918a73394cb6afdda3267fefd00bScreenshot%20%28534%29.png)\n\n### Details and Character Elements\n\nTo capture the personality of the original inspiration, several stylistic elements were incorporated:\n\n  * A decorative **belt with circular details and emblem**\n\n  * Retro-inspired **sunglasses**\n\n  * Flowing lower pant sections that soften the silhouette\n\n\n\n\nThese elements help create a design that feels **stylish, playful, and character-driven**.\n\n![f5f69c5af6474e519f90fba738533238](https://storagefiles.clo-set.com/public/community/202603/a134284c3e064f41b169c1c1dece5a9a/images/f5f69c5af6474e519f90fba738533238INVISIB_19.png)\n\n![606c628ae36340e886989db582082cca](https://storagefiles.clo-set.com/public/community/202603/a134284c3e064f41b169c1c1dece5a9a/images/606c628ae36340e886989db582082ccaINVISIB_21.png)\n\n### Final Thoughts\n\nThis project was mainly a **practice and exploration piece** , inspired by a game skin that I enjoyed while playing. Recreating it in Marvelous Designer helped me better understand **pattern construction, garment layering, and digital clothing simulation**.\n\nIt was a fun challenge to translate a **stylized game costume into a simulated garment** , and it allowed me to experiment with both **fashion design and character outfit creation**.\n\n### Community Post Comments:\nComment 1: This is awesome! I want to jump into The Sims right now and put this on my Sim.\nReply 1: That’s such a compliment, thanks😍",
-        "content_description": "Explore the creative journey of translating a bold, game-inspired character outfit into a stylish digital garment using Marvelous Designer, showcasing innovative pattern construction and cloth simulation techniques.",
-        "source": "Connect Community",
-        "created_at": "2026-03-15T15:24:01.306Z",
+        "created_at": "2026-04-10T06:53:05.553Z",
         "category": 215,
         "tags": [
             "CLO",
             "MarvelousDesigner",
-            "Rendering",
-            "Material",
-            "Texture",
-            "Colorway"
+            "CLO-SET",
+            "AI",
+            "Rendering"
         ]
     },
     {
-        "id": "91194e8d345c486e9837403b913341e3",
-        "url": "https://connect.clo-set.com/community/post/91194e8d345c486e9837403b913341e3",
-        "title": "Notches Visible in Print Layout but Missing After PDF Export (CLO)",
-        "content": "Previously, when I exported my graded patterns as a PDF and opened them in Adobe Illustrator, I could only see the base pattern. Now, with the updated version of CLO, when I export the PDF using **Snapshot** from the **Print Layout** section and open it in Adobe Illustrator, I can see the graded version. However, the notches from the base pattern are not transferred to the graded sizes, even though they appear in the Print Layout view. Does anyone know how to solve this?\n\n### Community Post Comments:\nComment 1: Hi, I am having the same issue - no notches no matter what format I export in - can anyone help ASAP?\nReply 1: Hi, sorry, this message slipped us. Please check the replies below for the latest status. It is a bug that will be fixed. If this is a critical feature for your workflow, please downgrade to 2025.2.330 for now.\n\nComment 2: Hi, there's been a few reports of this type of issue since the last patch release and I don't know more yet, but if you know for sure it worked before updating, please downgrade back to 2025.2.330 for now: https://connect.clo-set.com/community/post/91194e8d345c486e9837403b913341e3\nReply 1: Update: The bug has been found and is being worked on for future patches 🙂\n\nComment 3: I'm experiencing the exact same problem! I've been trying all day to export my patterns but can't find my notches anymore... I've tried everything... It was working perfectly before. Hope someone will be able to help you 🙏🏻",
-        "content_description": "This web page aims to seek solutions for transferring notches from base patterns to graded sizes when exporting PDFs from CLO to Adobe Illustrator.",
+        "id": "f304775e730144ef827a984eb0834d7c",
+        "url": "https://connect.clo-set.com/community/post/f304775e730144ef827a984eb0834d7c",
+        "title": "Notice: a recent issue with CLO/MD LiveSync 2.2.2",
+        "content": "Hi everyone!\n\nThis was a mistake on our end. CLO/MD LiveSync version 2.2.2 was published on Fab prematurely; it is a newer version meant for CLO / Marvelous Designer 2026.0, which has not been released yet.   \n  \nIf you are encountering an issue where a garment fails to send to Unreal Engine and the progress bar is stuck at 50%, please roll back to version 2.2.1 by following these steps.  \n  \n1\\. .Go to our LiveSync version archive and download version 2.2.1 for UE 5.7. <https://support-connect.clo-set.com/hc/en-us/articles/45304267645593-LiveSync-2-version-archive>\n\n  \n2\\. Next, navigate to the UE 5.7 installation directory (e.g., C:\\Program Files\\Epic Games\\UE_5.7\\Engine\\Plugins\\Marketplace).  \n  \n3\\. Then, Delete version 2.2.2, then unzip the downloaded 2.2.1 package and place the entire 'CLOLiveSync' folder into that directory.  \n  \nOnce CLO / Marvelous Designer 2026.0 is released, please make sure to remove version 2.2.1 and download version 2.2.2 directly from the Epic Games Launcher. 🙂\n\nIf you are experiencing any other issues with LiveSync or your CLO / Marvelous Designer to Unreal Engine workflows, we're here to help!\n\nCheers,\n\nBryan",
+        "content_description": "This page provides instructions for rolling back to LiveSync version 2.2.1 to resolve compatibility issues with Unreal Engine 5.7 caused by the premature release of version 2.2.2.",
         "source": "Connect Community",
-        "created_at": "2026-03-14T06:34:05.031Z",
-        "category": 220,
-        "tags": [
-            "Pattern",
-            "Import_Export",
-            "CLO"
-        ]
-    },
-    {
-        "id": "e4ebb6798cab40ab84fa0cf3e147dc47",
-        "url": "https://connect.clo-set.com/community/post/e4ebb6798cab40ab84fa0cf3e147dc47",
-        "title": "Feedback Needed on My Wrestling Singlet Design",
-        "content": "Hi everyone! 👋\n\nrecently designed this wrestling singlet. I’d really appreciate your honest feedback on the design, fit, and overall look. Any suggestions or improvements are welcome. Thanks a lot!![a5523a4ba8a6434cbe3461f81335d978](https://storagefiles.clo-set.com/public/community/202603/e4ebb6798cab40ab84fa0cf3e147dc47/images/a5523a4ba8a6434cbe3461f81335d9781.2.jpg)![fe7581d0c56d4334aca4c5d8482b3558](https://storagefiles.clo-set.com/public/community/202603/e4ebb6798cab40ab84fa0cf3e147dc47/images/fe7581d0c56d4334aca4c5d8482b35581.1.jpg)\n\n### Community Post Comments:\nComment 1: awesome work!\n\nComment 2: Great work! I'm not familiar with singlet fit &amp; construction, but your materials and coverstitches look excellent!",
-        "content_description": "Share your thoughts and suggestions on my newly designed wrestling singlet to help improve its design and fit!",
-        "source": "Connect Community",
-        "created_at": "2026-03-13T05:55:11.443Z",
-        "category": 210,
+        "created_at": "2026-04-09T20:15:42.612Z",
+        "category": 100,
         "tags": [
             "CLO",
-            "CLO-SET",
-            "CONNECT",
             "MarvelousDesigner",
-            "Material",
-            "Pattern",
-            "Rendering",
-            "Simulation",
-            "Texture"
+            "UnrealEngine",
+            "LiveSync"
         ]
     },
     {
-        "id": "ff3f05a530b64f5696806fa4dc48808b",
-        "url": "https://connect.clo-set.com/community/post/ff3f05a530b64f5696806fa4dc48808b",
-        "title": "Avatar with no buttocks ",
-        "content": "Hi,\n\nI am trying to customize my avatar with my measurements. However, the volume is consistently added to the lower belly instead of the buttocks which is a big problem for pants and skirt pattern fitting. Does anybody knows how to deal with it. The avatar is completely off from the side.\n\nThanks for your help!\n\n![32b4911fc0fe4c81b97f2a7239485fa7](https://storagefiles.clo-set.com/public/community/202603/ff3f05a530b64f5696806fa4dc48808b/images/32b4911fc0fe4c81b97f2a7239485fa7Screenshot%202026-03-13%20at%201.01.14%E2%80%AFAM.png)![05bbf53a98dd4a45a1e2c0c56e08f4a5](https://storagefiles.clo-set.com/public/community/202603/ff3f05a530b64f5696806fa4dc48808b/images/05bbf53a98dd4a45a1e2c0c56e08f4a5Screenshot%202026-03-13%20at%201.01.45%E2%80%AFAM.png)![bee6e68455194114a75e200ad256c9cc](https://storagefiles.clo-set.com/public/community/202603/ff3f05a530b64f5696806fa4dc48808b/images/bee6e68455194114a75e200ad256c9ccScreenshot%202026-03-13%20at%201.01.26%E2%80%AFAM.png)\n\n### Community Post Comments:\nComment 1: Hi! We can see there is an open support ticket on the question. A French colleague will answer asap. 🙏🏻\nReply 1: Thank you 🙏🏻",
-        "content_description": "\"Get expert advice on customizing your avatar's measurements for accurate fitting in pants and skirts, addressing common volume issues.\"",
+        "id": "8f05a87a2d3c4e43bbe339cb0e02bf94",
+        "url": "https://connect.clo-set.com/community/post/8f05a87a2d3c4e43bbe339cb0e02bf94",
+        "title": "I helped a classmate optimize the style effect.",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202604/8f05a87a2d3c4e43bbe339cb0e02bf94/images/cf33c0414c4344df8afcdc35c480bbee%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-04-09%20131116.png)I reset a dress form for wearing, further adjusted and optimized the sewing relationships and the clothing's shape, and readjusted the fur on the hood. You can take a look and learn from it. In the renderings, I'll provide links to the fabric and dress form materials below. If you're interested, you can click the links to download and study!\n\n![2d456c7b33c14804a8f9cb5a7cb6d609](https://storagefiles.clo-set.com/public/community/202604/8f05a87a2d3c4e43bbe339cb0e02bf94/images/2d456c7b33c14804a8f9cb5a7cb6d609%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-04-09%201311161.png)![e7435afbef684d22bf71e18643f9e2d9](https://storagefiles.clo-set.com/public/community/202604/8f05a87a2d3c4e43bbe339cb0e02bf94/images/e7435afbef684d22bf71e18643f9e2d9%E5%AF%B9%E6%AF%94.png)Initial effect\n\n![f6bd9a72e4fc461cb9385b39f9ff88c3](https://storagefiles.clo-set.com/public/community/202604/8f05a87a2d3c4e43bbe339cb0e02bf94/images/f6bd9a72e4fc461cb9385b39f9ff88c373800ACT_Colorway%20PANTONE%2012-1207%20TCX-Blush.png)Effect after adjustment:<https://connect.clo-set.com/zh/detail/79316dec773e4e05a877812a88e45185?ref_id=108936>\n\n![91722f284f744cf9851807849cede9bf](https://storagefiles.clo-set.com/public/community/202604/8f05a87a2d3c4e43bbe339cb0e02bf94/images/91722f284f744cf9851807849cede9bf%E7%B2%89%E8%89%B2PU%E7%9A%AE%E7%BE%BD%E7%BB%92%E5%A4%96%E5%A5%97_Colorway%20PANTONE%2012-1209%20TCX_F.png)Hood fur fabric：<https://connect.clo-set.com/zh/detail/5408127f8225447c80015ca2cf427f98?ref_id=108936>\n\nInner collar fabric:<https://connect.clo-set.com/zh/detail/ed97f31c3cf84e339a2369bc8ef3fc9d?ref_id=108936>\n\nAvatar:<https://connect.clo-set.com/zh/detail/68d0508f42e346eebcdb6bb867d7f399?ref_id=108936>\n\n### Community Post Comments:\nComment 1: It's such a pretty outfit.❤️The design is so cool, and I think you're so good at making costumes\nReply 1: ❤️❤️❤️Thank you",
+        "content_description": "This page showcases the process of refining a dress form and garment design with detailed adjustments, providing downloadable fabric and dress form materials for learning and study.",
         "source": "Connect Community",
-        "created_at": "2026-03-13T00:03:34.859Z",
+        "created_at": "2026-04-09T05:54:25.186Z",
+        "category": 240,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "Photoshop",
+            "Rendering"
+        ]
+    },
+    {
+        "id": "6547e45b7b434cedaa9d77e0e93b0840",
+        "url": "https://connect.clo-set.com/community/post/6547e45b7b434cedaa9d77e0e93b0840",
+        "title": "Hole around the zipper",
+        "content": "Does anyone know why the hole in the attached image appears on the garment? It does not show when the particle distance is higher, but once it is reduced, it becomes obvious.  \n![3b7a71d563094b2e892471e0f5ae95e2](https://storagefiles.clo-set.com/public/community/202604/6547e45b7b434cedaa9d77e0e93b0840/images/3b7a71d563094b2e892471e0f5ae95e2Screenshot%202026-04-07%20213136.png)\n\n### Community Post Comments:\nComment 1: Hi There. This gap can be sewn closed in the 3D window.With simulation on pull and make a gap like you have above and stop simulation.Then use the Segment sewing tool in the 3D window to sew the gap closed on both halved of the zipper 🙂",
+        "content_description": "To investigate and explain the cause of the hole appearing in the garment when particle distance is reduced in 3D garment simulation.",
+        "source": "Connect Community",
+        "created_at": "2026-04-07T20:36:49.932Z",
         "category": 220,
         "tags": [
             "CLO",
-            "avatar",
-            "butt",
-            "buttock",
-            "fitting",
-            "measurements",
-            "avatarshape"
-        ]
-    },
-    {
-        "id": "4384c7768e734ac2b1fb16b1f418143e",
-        "url": "https://connect.clo-set.com/community/post/4384c7768e734ac2b1fb16b1f418143e",
-        "title": "Casualwear Collection | 3D Apparel Presentation",
-        "content": "![](https://storagefiles.clo-set.com/public/community/202603/4384c7768e734ac2b1fb16b1f418143e/images/835610bf981c4b20b80a2b0e0b0dc0f4digital_apparel_BC.jpg)![93e463767fbb47779f59f99199cf3aa8](https://storagefiles.clo-set.com/public/community/202603/4384c7768e734ac2b1fb16b1f418143e/images/93e463767fbb47779f59f99199cf3aa8digital_apparel_BC.jpg)  \nHello CLO community!!\n\nI’d like to share **digital apparel showcase developed using 3D garment design tools**. The collection includes various casualwear pieces such as **hoodies, striped polo's, sweatshirts & activewear**, all created entirely in a 3D environment.\n\nAs many of you already experience, **3D apparel design is transforming the fashion development process**. Brands today need faster product cycles, clearer visualization, and fewer physical samples. With accurate digital garments, teams can review designs, adjust fit, and finalize styles much earlier in the development stage.\n\n### Why 3D Apparel Development Is Important Today  \n✔ Reduced physical sampling and development cost  \n✔ Faster product approvals and decision making  \n✔ Better communication between design, merchandising & production  \n✔ Creation of assets for marketing, e-commerce, and digital showrooms\n\nThese garments were developed as part of ongoing **3D apparel exploration and workflow practice** , focusing on realistic materials, garment construction and digital presentation.\n\nI’d love to hear feedback from the community and also learn how others are integrating **3D workflows into their apparel development process**.\n\nAlways happy to connect with fellow **CLO designers, 3D artists, and digital fashion creators** here.\n\nThank you!",
-        "content_description": "Explore our innovative digital apparel showcase, featuring 3D-designed casualwear that highlights the transformative potential of 3D garment design in the fashion development process.",
-        "source": "Connect Community",
-        "created_at": "2026-03-12T14:44:23.408Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "CLO-SET",
-            "CONNECT",
-            "Material",
+            "Contest",
             "Pattern",
-            "Texture",
-            "Binarycloth"
+            "Simulation",
+            "Trim"
         ]
     },
     {
-        "id": "0ee3d6a1063a4f53bc188e5f89901da9",
-        "url": "https://connect.clo-set.com/community/post/0ee3d6a1063a4f53bc188e5f89901da9",
-        "title": "Customized accessories lack flexibility",
-        "content": "![](https://storagefiles.clo-set.com/public/community/202603/0ee3d6a1063a4f53bc188e5f89901da9/images/a77c6986632c41d184c1a7bb131d6e83%E7%AC%AC%E4%BA%8C%E7%89%88_6.png)I've replicated a leg adornment from a look four years ago and created two versions. Mainly, the customization options for accessories in CLO are rather limited. It can't generate bindings flexibly according to the corresponding parts of the model. That's why I made one version with high - heeled shoes and another without shoes. If you like them, you can check them out on my profile page. Thanks for your attention.\n\nProduct link：<https://connect.clo-set.com/zh/detail/6fee4eabfc0f42dcbe9daf80af6d77c5?ref_id=108936>\n\n![47c1f077139f431aaf3f3dbf27eb8208](https://storagefiles.clo-set.com/public/community/202603/0ee3d6a1063a4f53bc188e5f89901da9/images/47c1f077139f431aaf3f3dbf27eb8208%E7%AC%AC%E4%BA%8C%E7%89%88_5.png)\n\n![925b54864c83461cbb019144ea0bd873](https://storagefiles.clo-set.com/public/community/202603/0ee3d6a1063a4f53bc188e5f89901da9/images/925b54864c83461cbb019144ea0bd873%E7%AC%AC%E4%BA%8C%E7%89%88_7.png)Click to view the case：\n\n<https://connect.clo-set.com/zh/detail/29ce01c155154fe4846bff14a337706e?ref_id=108936>",
-        "content_description": "Explore my custom leg adornments inspired by past designs, featuring two versatile versions for different styles, and discover more on my profile page!",
+        "id": "c85e4b61b7d24a1bbdcdae98fe6eacce",
+        "url": "https://connect.clo-set.com/community/post/c85e4b61b7d24a1bbdcdae98fe6eacce",
+        "title": "Como faço para disponibilizar a versão final em 3D da peça ao cliente? | How do I make the final 3D version of the part available to the client?",
+        "content": "Version in English: Would it be possible to display this 3D version on my company website for the client?\n\nVersão em Português: Seria possível exibir essa versão 3D no site da minha empresa para o cliente?\n\n### Community Post Comments:\nComment 1: Yes, this is possible. But you will need to make sure a 3D viewer with the correct code is on your website. --- You would need a WebGL enabled browser and the file would need to be GLB or GLTFBut we can only help with the CLO part here. For the rest you may need help out side, but a quick google search of \"how to add a 3d viewer to a website\" has a lot of resources 🙂",
+        "content_description": "This web page aims to provide information on embedding a 3D version of a product or model on a company website for client presentation.",
         "source": "Connect Community",
-        "created_at": "2026-03-12T01:10:51.705Z",
-        "category": 250,
+        "created_at": "2026-04-07T18:01:59.462Z",
+        "category": 220,
         "tags": [
             "CLO",
-            "CLO-SET",
-            "Avatar",
-            "Blender"
+            "UI"
         ]
     },
     {
-        "id": "3d2d1fb0b02348aa8f21740c1bed4acb",
-        "url": "https://connect.clo-set.com/community/post/3d2d1fb0b02348aa8f21740c1bed4acb",
-        "title": "sports accessories",
-        "content": "![](https://storagefiles.clo-set.com/public/community/202603/3d2d1fb0b02348aa8f21740c1bed4acb/images/6f870825b2d741969791db49a66a6f7d%E7%AC%AC%E4%BA%8C%E7%89%88_9.png)![0f5292ad6cb2484a99059aad1742a206](https://storagefiles.clo-set.com/public/community/202603/3d2d1fb0b02348aa8f21740c1bed4acb/images/0f5292ad6cb2484a99059aad1742a206%E7%AC%AC%E4%BA%8C%E7%89%88.png)![ff129ef094a04e52868d07e12e1b277c](https://storagefiles.clo-set.com/public/community/202603/3d2d1fb0b02348aa8f21740c1bed4acb/images/ff129ef094a04e52868d07e12e1b277c%E7%AC%AC%E4%BA%8C%E7%89%88_1.png)I've shared two helmets and some cycling glasses here for everyone. You can check them out on my profile page.\n\nProduct link：\n\n<https://connect.clo-set.com/zh/detail/1976f122777745dfba80140a4f61778d?ref_id=108936>\n\n<https://connect.clo-set.com/zh/detail/73b9cfa24a3942ab802ceaba6c79941d?ref_id=108936>\n\n![980c2a68f1f74f9a8606b4ba8e0ae7e6](https://storagefiles.clo-set.com/public/community/202603/3d2d1fb0b02348aa8f21740c1bed4acb/images/980c2a68f1f74f9a8606b4ba8e0ae7e6%E7%AC%AC%E4%BA%8C%E7%89%88_3.png)![8573fb0fa5534e7c8e9a8885de43a6c5](https://storagefiles.clo-set.com/public/community/202603/3d2d1fb0b02348aa8f21740c1bed4acb/images/8573fb0fa5534e7c8e9a8885de43a6c5%E7%AC%AC%E4%BA%8C%E7%89%88_4.png)Product link：\n\n<https://connect.clo-set.com/zh/detail/06dd5632e0d44d4ab27668bd11dffc28?ref_id=108936>\n\n<https://connect.clo-set.com/zh/detail/de0c63a5e5db46f2a84f7eb65c3843b1?ref_id=108936>\n\n### Community Post Comments:\nComment 1: Hello Elio!I previously wrote about the issue with adding the women’s helmet to the workspace. I am using the latest version of the program. As you can see in the screenshot, the helmet appears as a long vertical stripe, and I don’t know how to fix it. I would appreciate it if you could help me with this 🙏🏻\nReply 1: Based on the situation you've reported, I think this is a common bug in CLO. Here are some solutions you can try, which should fully resolve the issue: 1.&nbsp;Reload the avatar and then put on the helmet.2.&nbsp;If you've adjusted the size of your avatar, you can first save the adjusted avatar size, then reload the latest avatar, put on the helmet, and then apply the saved size to the new avatar. If the problem is resolved, please let me know as I need your feedback. If not, you can add me on WeChat and I'll help you fix it remotely. Also, please follow me so you won't miss updates.\n\nComment 2: I like the glasses!\nReply 1: ❤️❤️❤️",
-        "content_description": "Explore a curated selection of stylish helmets and cycling glasses available for purchase on my profile page.",
+        "id": "ce210a2025bc4b98b4f42a0232c39fa7",
+        "url": "https://connect.clo-set.com/community/post/ce210a2025bc4b98b4f42a0232c39fa7",
+        "title": "CLO×Burtonのロゴダウンロードができない",
+        "content": "コンテスト要項にある、公式バートンロゴのダウンロードリンクが開けない（リンクされていない）状態なのですが、ほかの参加者さんはみんなできていますか？\n\nボードのデータもテクスチャが貼られていないのですが、こちらはみなさん一緒ですかね？（スノーボードシューズにはテクスチャがあったのでお聞きしたいです）\n\n### Community Post Comments:\nComment 1: Hi! Happy to help, but please know I can only reply in EnglishFor the Burton Logo. When you click on the Link it will go to the official Burton site and then you will need to click on logos button in the side bar. I am attaching an image below for reference.. Once on that Logos page you can scroll down to choose the logo you want to useFor the Burton Snowboard and Boots those will be a plain white color, with no texture at all. You can then color and texture them however you wish toWe hope this helps 🙂\nReply 1: Thank you so much for your kind assistance!Thanks to your advice, I was able to solve the problem!🙂\nReply 2: You are very welcome! We cannot wait to see your entry🙂\nReply 3: I was able to successfully submit my artwork!Thank you!🙂\nReply 4: Wonderful!❤️",
+        "content_description": "コンテスト参加者向けに公式ロゴのダウンロードリンクやボードデータのテクスチャ状況について情報共有と確認を行うページ。",
         "source": "Connect Community",
-        "created_at": "2026-03-12T01:01:52.095Z",
+        "created_at": "2026-04-07T16:46:32.439Z",
+        "category": 220,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner"
+        ]
+    },
+    {
+        "id": "6b73065e057b4ddda3c485857eb8aaf6",
+        "url": "https://connect.clo-set.com/community/post/6b73065e057b4ddda3c485857eb8aaf6",
+        "title": "RUFFLE LEHANGA SAREE ",
+        "content": "![463212f9688443f7b9ee86ce5fbe866c](https://storagefiles.clo-set.com/public/community/202604/6b73065e057b4ddda3c485857eb8aaf6/images/463212f9688443f7b9ee86ce5fbe866cRUFFELE%20SAREE.png)![67556d79868d4114a53ca4c23d5acb39](https://storagefiles.clo-set.com/public/community/202604/6b73065e057b4ddda3c485857eb8aaf6/images/67556d79868d4114a53ca4c23d5acb39RUFFELE%20SAREE%203.png)![3bdd30ab17774d8cb820c84310aa7a3e](https://storagefiles.clo-set.com/public/community/202604/6b73065e057b4ddda3c485857eb8aaf6/images/3bdd30ab17774d8cb820c84310aa7a3eRUFFELE%20SAREE%202.png)![ece2d8fb14d04de3a44052b7f028ba92](https://storagefiles.clo-set.com/public/community/202604/6b73065e057b4ddda3c485857eb8aaf6/images/ece2d8fb14d04de3a44052b7f028ba92RUFFELE%20SAREE%201.png)",
+        "content_description": "Showcasing the elegant and intricately designed Ruffele sarees that blend traditional craftsmanship with contemporary style.",
+        "source": "Connect Community",
+        "created_at": "2026-04-06T13:18:26.987Z",
         "category": 210,
         "tags": [
             "CLO",
+            "CLO-SET",
+            "INDIAN",
+            "LEHANGA",
             "Rendering",
-            "Avatar",
-            "CLO-SET",
-            "Blender",
-            "AI"
+            "Simulation"
         ]
     },
     {
-        "id": "0e9416cd35894620944b04a55f00315d",
-        "url": "https://connect.clo-set.com/community/post/0e9416cd35894620944b04a55f00315d",
-        "title": "DXF And PDF Files Imported To Clo3D Do Not Work",
-        "content": "DXF And PDF Files Imported To Clo3D Do Not Work\n\nI exported those file from Affinity Designer (Vector Drawing App)\n\nthen imported into Clo3D with these methods with default settings.\n\nFile - Import - Adobe\n\nFile - Import - DXF (It does not open this file at all. It is greyed out.)\n\nOriginal file looks like this.\n\n![5cbcd3b011174f7186ccbc87d9e53407](https://storagefiles.clo-set.com/public/community/202603/0e9416cd35894620944b04a55f00315d/images/5cbcd3b011174f7186ccbc87d9e53407Screenshot%202026-03-11%20at%2019.11.21.png)\n\nand when I import them into Clo3D looks like these.\n\n![dc3fdee1bfdb42e7a5e76e7e56787f0c](https://storagefiles.clo-set.com/public/community/202603/0e9416cd35894620944b04a55f00315d/images/dc3fdee1bfdb42e7a5e76e7e56787f0cScreenshot%202026-03-11%20at%2019.15.09.png)\n\nSo It definitely does not work at all.\n\nHow can I do these?\n\nAffinity Designer File\n\n[https://www.dropbox.com/scl/fi/mnx9a4es4kknidja8cjmt/Affinity-Designer-File-For-Clo3D-Importing.af?rlkey=c7kckskc5nolvhwzz6mbhnu7r&st=jpkcesam&dl=0](https://www.dropbox.com/scl/fi/mnx9a4es4kknidja8cjmt/Affinity-Designer-File-For-Clo3D-Importing.af?rlkey=c7kckskc5nolvhwzz6mbhnu7r&st=jpkcesam&dl=0)\n\nExported PDF File\n\n[https://www.dropbox.com/scl/fi/xkunqtxr8tffijjksunqi/Exported-PDF-File-For-Clo3D-Importing.pdf?rlkey=nbhy8dbl57u0bpjhsi5vreqx1&st=blrq81ba&dl=0](https://www.dropbox.com/scl/fi/xkunqtxr8tffijjksunqi/Exported-PDF-File-For-Clo3D-Importing.pdf?rlkey=nbhy8dbl57u0bpjhsi5vreqx1&st=blrq81ba&dl=0)\n\nExported DXF File\n\n[https://www.dropbox.com/scl/fi/f5olc7l2455fxq89gquit/Exported-DXF-File-For-Clo3D-Importing?rlkey=0p10csccn04gh0yjukopyxwcg&st=50gjue8x&dl=0](https://www.dropbox.com/scl/fi/f5olc7l2455fxq89gquit/Exported-DXF-File-For-Clo3D-Importing?rlkey=0p10csccn04gh0yjukopyxwcg&st=50gjue8x&dl=0)\n\n### Community Post Comments:\nComment 1: Why DXF is Greyed Out:The file is missing the .dxf extension in your folder. Manually rename the file to include .dxf at the end. CLO 3D won't let you select it otherwise.Not seeing patterns (Join Points):CLO is struggling to interpret your file because your pant outlines are broken segments. In Affinity, select all lines forming the pant perimeter and use Layer &gt; Geometry &gt; Merge (or Join Curves) to create one continuous, closed loop.Clean the File:Delete all text and numbers (1, 5, 23, \"ÖN\", etc.) before exporting. CLO tries to turn every single digit into a separate pattern piece, which causes the \"mess\" and circles you see.If Affinity DXF still doesn't work:Affinity cannot export apparel-standard DXFs (AAMA/ASTM). If you have trouble importing Affinity's standard DXF, you are probably better off exporting as PDF (Digital - High Quality) from Affinity.\nReply 1: It works now. Thank you very much.",
-        "content_description": "This webpage aims to address the challenges of importing DXF and PDF files from Affinity Designer into Clo3D, highlighting the issues encountered and seeking solutions for successful file integration.",
+        "id": "0709c500485b49fba7f898e525cb337c",
+        "url": "https://connect.clo-set.com/community/post/0709c500485b49fba7f898e525cb337c",
+        "title": "CLO doesn't register shoes in new 2025.02 version",
+        "content": "Hey everyone! I made these shoes in Nomad 3d sculpting app and imported it into CLO as FBX. When I import it- everything is good, position is in place, size is great, everything imports well (as in the first photo), but when I try to register it as an accessory (specifically as shoes) it shows as blank, even though it's the same file that worked before. How can i fix this? I looked through what feels like every single tutorial and nothing has worked... ![6624ab7fe717426c9e2aac9cc1d17297](https://storagefiles.clo-set.com/public/community/202604/0709c500485b49fba7f898e525cb337c/images/6624ab7fe717426c9e2aac9cc1d17297imported%20fbx.png)![a7358f28d6ae4fa0ae826365d5f09acc](https://storagefiles.clo-set.com/public/community/202604/0709c500485b49fba7f898e525cb337c/images/a7358f28d6ae4fa0ae826365d5f09accimported%20to%20register.png)\n\n### Community Post Comments:\nComment 1: Hi There. We tete both registering both OBJ and FBX as a shoe and have had no issues on our end using the most recent release of 2025.2.368We see that there is no current license under this account can you please let us know what account you are using CLO with? Is it possibly your schools account? Please also let us know what version of CLO (bottom left corner of CLO).Thank you🙂",
+        "content_description": "This page seeks solutions for troubleshooting the issue of 3D shoe models importing correctly into CLO but appearing blank when registered as accessories.",
         "source": "Connect Community",
-        "created_at": "2026-03-11T16:20:27.004Z",
-        "category": 210,
+        "created_at": "2026-04-06T10:26:41.885Z",
+        "category": 220,
         "tags": [
+            "error",
+            "issue",
+            "problem",
+            "accessories",
             "CLO",
-            "Import_Export"
-        ]
-    },
-    {
-        "id": "7e373dc5176a446291e9eb9b589a1123",
-        "url": "https://connect.clo-set.com/community/post/7e373dc5176a446291e9eb9b589a1123",
-        "title": "In What Format Do You Suggest To Export From A Vector Drawing App?",
-        "content": "In What Format Do You Suggest To Export From A Vector Drawing App?\n\n(Affinity Designer, Adobe Illustrator etc.)\n\n(Later to be imported into Clo3D)\n\nA) SVG\n\nB) DXF\n\nC) PDF\n\nD) AI\n\nWhat do people use the most?\n\n### Community Post Comments:\nComment 1: The most used format is DXF - it is the industry standard for maintaining precise 2D pattern measurements and CAD compatibility in CLO3D. Unlike AI or SVG, DXF ensures your pattern data remains accurate across different garment construction systems.\nReply 1: Thank you very much.",
-        "content_description": "This web page aims to guide users on the best export formats from vector drawing apps for optimal import into Clo3D, focusing on popular options like SVG, DXF, PDF, and AI.",
-        "source": "Connect Community",
-        "created_at": "2026-03-11T13:57:13.715Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "Pattern"
-        ]
-    },
-    {
-        "id": "2ba5af30584242b58c68bf670c5d99f3",
-        "url": "https://connect.clo-set.com/community/post/2ba5af30584242b58c68bf670c5d99f3",
-        "title": "Orchid Resort Collection – Digital Fashion Show created with CLO",
-        "content": "![](https://storagefiles.clo-set.com/public/community/202603/2ba5af30584242b58c68bf670c5d99f3/images/daf8050ee83c490ebebd9d87650d3dad%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202026-03-10%20183842.png)![68d74f221df64eb0b6c89b2e829b3775](https://storagefiles.clo-set.com/public/community/202603/2ba5af30584242b58c68bf670c5d99f3/images/68d74f221df64eb0b6c89b2e829b3775J1atelier_Orchid%20resort%20collection%206%20looks%20together%2001b.jpg)\n\nHello everyone,\n\nI would like to share a recent digital fashion project I created called **Orchid Resort Collection**.\n\nThe entire collection and runway presentation were developed using **CLO 3D** , and I wanted to share the final runway show with the CLO community.\n\nThis collection was inspired by the movement of nature —  \nflowers swaying gently in the wind, butterflies drifting through warm air, and the soft whisper of the breeze as if it were speaking quietly by your ear.\n\nIt also draws from the way sunlight catches the surface of the sea, where small waves shimmer and sparkle like scattered stars.\n\nThe runway environment reflects the sunset coast of the **Canary Islands** , capturing a quiet and romantic moment shared with someone special — a fleeting feeling of warmth, excitement, and anticipation carried by the evening wind.\n\n* * *\n\nIf you would like to experience the full runway presentation, you can watch it here:\n\nYouTube – Full Digital Fashion Show  \n\n\nYouTube Video: https://www.youtube.com/watch?v=L768QLSguNM?si=qeT4m4KRwuwwpgkD\n\nRunway atmosphere \n\n<https://youtu.be/vl3E2-yFkFc?si=lYFjpv_UVdCedDy9>\n\nThere is also a 360° VR runway video available on the channel, allowing you to experience the runway space in 360°.\n\n<https://youtu.be/w7e34kRi698?si=O59Hhs-nWZRcBQUJ>\n\nFor the best viewing experience, it is recommended to watch in 4K resolution.   \nThe VR video can be viewed on both desktop and mobile devices.\n\nYou can also see additional renders, runway clips, and project updates on Instagram:\n\n<https://www.instagram.com/j1Atelier>\n\n* * *\n\nI would truly love to hear your thoughts about the collection, the materials, or the runway atmosphere.\n\nCommunication and feedback are always welcome — please feel free to share your thoughts anytime.\n\nWhich look is your favorite?\n\nThank you for watching and for being such an inspiring community.",
-        "content_description": "Discover the beauty of the **Orchid Resort Collection**, a digital fashion project inspired by nature, featuring a stunning runway presentation created in CLO 3D, and immerse yourself in the enchanting atmosphere of the Canary Islands.",
-        "source": "Connect Community",
-        "created_at": "2026-03-10T17:40:55.028Z",
-        "category": 210,
-        "tags": [
-            "J1atelier",
-            "Digitalfashionshow",
-            "Virtualcouture",
-            "CLO",
-            "Blender",
-            "Mixamo"
-        ]
-    },
-    {
-        "id": "8b4a8ed3ec4b4525858450bd474d25b6",
-        "url": "https://connect.clo-set.com/community/post/8b4a8ed3ec4b4525858450bd474d25b6",
-        "title": "Warning for Designers Selling Digital Files on CONNECT",
-        "content": "Recently, I was contacted by someone claiming they want to purchase my digital artwork as NFTs after checking out my profile on connect.clo-set site. The buyer offers a high price ( 2 Ethereum cryptocurrency per art work) and then sends a link to an unfamiliar NFT marketplace. I was hesitant and decided to do some research online and found out there were many similar scams with the similar email format.\n\nThe scam usually works like this: the buyer asks you to create an account on the marketplace website they provide and upload your artwork. Then the platform requires you to pay a **“minting fee”** , typically between **$100–$500** , in order to list the NFT.\n\nAfter the fee is paid, the buyer disappears and you never hear from them again. The marketplace is often newly created, has little or no reputation, and exists only to collect these fees.\n\nPlease be cautious if someone contacts you offering to buy your files for NFTs and directs you to an unknown marketplace. Legitimate buyers usually use established NFT platforms and do not require artists to pay upfront fees.\n\nIf something feels suspicious, take time to research the website and ask questions before proceeding. Sharing this warning may help protect other designers in the community.\n\n### Community Post Comments:\nComment 1: I received the same email. Thank you for this!\n\nComment 2: Hi @Kev-in-design thank you so much for bringing this to our attention.If possible please share this user with our team here on on our Contact Us page - https://connect.clo-set.com/community/post/8b4a8ed3ec4b4525858450bd474d25b6\n\nComment 3: I received the same email.\n\nComment 4: I recently received an email with the same offer. luckily i saw your post few days ago. Thank you!\n\nComment 5: Thanks for sharing this warning!🙏🏻🙂\n\nComment 6: Thanks for sharing, I’m more like a buyer than seller, but good to know👍🏻\n\nComment 7: Thanks for sharing this warning!\n\nComment 8: Thank you for bringing this to everyone's attention! Sharing these details is incredibly helpful for keeping the community secure.\n\nComment 9: Thank you for the information Kevin🙏🏻",
-        "content_description": "This web page aims to educate artists about potential NFT scams, highlighting red flags and encouraging caution when approached by unfamiliar buyers and marketplaces.",
-        "source": "Connect Community",
-        "created_at": "2026-03-09T22:14:13.828Z",
-        "category": 210,
-        "tags": [
-            "CLO-SET",
-            "CONNECT",
-            "CLO",
-            "designer",
-            "render",
-            "artwork"
+            "SHOES",
+            "Import_Export",
+            "registering",
+            "nomad"
         ]
     }
 ]

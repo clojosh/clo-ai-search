@@ -1,156 +1,102 @@
 [
     {
-        "id": "437c5b82dc1f441e92b834a21f2e29de",
-        "url": "https://connect.clo-set.com/community/post/437c5b82dc1f441e92b834a21f2e29de",
-        "title": "Hello (안녕하세요) . Request Seamline intensity, Thickness normal map( 심라인을 강조하기 위한 노말맵 jpg를 요구합니다.)",
-        "content": "![](https://storagefiles.clo-set.com/public/community/202502/437c5b82dc1f441e92b834a21f2e29de/images/ad3d2c60086545648ce4f4caf1f99e6d%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202025-02-20%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%209.11.15.png)\n\nI want to emphasis Seamline using Normal map. ( 100 intensity, 3.0 thickness)  \nBut, i don't know how can compose normal map.  \nplease let me know solution or give me thickness 3 , intensity 100 normal map jpg. Thank you for reading.  \n\n\n안녕하세요 현재 CLO 를 사용하고 있는 한국 유저입니다. 제가 심라인을 강조하기 위해서 Normal map 을 통해 intensity와 thickness을 조절하고싶은데 쉽지가 않습니다.\n\nCLO에서 기본값으로 구성을 해야하는 상황이기에 manual하게 조정하는것 외에 normal map을 직접 기본 파일에 구성한뒤에 사용하고자 합니다.\n\n혹시 해당 질문에 대한 normal map을 만드는 방법을 아시거나, jpg 업로드를 통한 도움을 주신다면 진심으로 감사하겠습니다.\n\n### Community Post Comments:\nComment 1: 안녕하세요! 우선, 첨부 해주신 이미지상에서 봤을 땐 노멀맵이미지가 아닌 검은색이미지가 사용 되고 있습니다. 따라서 노멀냅 jpg 파일을 사용 해주셔야 하는데, CLO 우측의 라이브러리 창에서 Hardware and Trims -&gt; Seamline 경로로 들어가시면 CLO에서 기본 제공하는 Seamline normal map이 첨부되어 있습니다. 해당 이미지 파일들을 드래그 해서 Property Editor창의 3D seamline - Normal map에 드롭 해서 사용 해주시면 됩니다. 만약, Hardware and Trims -&gt; Seamline 경로에 해당 노멀맵 이미지가 없다면 라이브러리 창 우상단 토글키 중 Download를 눌러주시면 해당 이미지가 다운로드 됩니다!\nReply 1: 안녕하세요! 답변해주셔서 진심으로 감사드립니다 혹시 제가 노말맵을 구성하는것에 대한 기본 지식이없어서 thickness와 intensity의값을 지정하는 노말맵을 만드는방법이 어떤건지 여쭤봐도 될까요?\nReply 2: 안녕하세요. 노말맵은 3D 그래픽에서 물체의 표면 디테일을 표현하는 데 사용 되는 특수한 텍스처 이며, 물체의 표면에 있는 질감의 표현을 실제 지오메트리(메쉬의 변형 등)를 편집하지 않고도 표현이 가능하게 해줍니다. 노말맵은 보통 푸른색 계열의 색상으로 이루어진 이미지 파일이며, 질감의 빛 반사 각도(음각, 양각, 옆면 등)에 따라 푸른색의 정도가 바뀌거나 빨강, 초록 등의 색상이 추가 됩니다. CLO에서 Seamline Normalmap의 Thickness 값은 노말맵 이미지 적용 후 Seamline의 너비를 늘려주는 기능이며, Intensity 값은 Seamline의 깊이 정도를 조절 해주는 기능이라고 생각주시면 좋을 것 같습니다. 먼저 드린 답변의 경로에서 Seamline에 대한 CLO의 기본 노멀맵을 확인 하실 수 있으며, CLO가 아닌 다른 이미지 편집툴을 통해 제작된 노말맵 또한 CLO로 가져와서 사용 하실 수 있습니다. 노멀맵은 다양한 이미지 편집툴을 이용해서 제작이 가능하며, 주로 포토샵 프로그램을 이용해서 제작 하는 것이 가장 일반적인 방법으로 알려져 있습니다. (Seamline normalmap의 경우는 CLO 기본 제공 이미지를 사용 하시는 것을 가장 추천 드립니다.)\nReply 3: 바쁘실텐데 성심성의껏 답변해주셔서 진심으로 감사드립니다! 좋은 주말 보내셔요 !! :)",
-        "content_description": "This web page aims to provide guidance and resources for creating a normal map to emphasize seamlines in CLO, specifically focusing on achieving a 100 intensity and 3.0 thickness.",
+        "id": "833e879ecdde47b186024115b16b90c8",
+        "url": "https://connect.clo-set.com/community/post/833e879ecdde47b186024115b16b90c8",
+        "title": "AVATAR SIZING",
+        "content": "hi everyone ! i have a question regarding avatar sizing ,each time i try to manually put the measurement from my pattern making book or custom made of costumer the avatar look so weird or distorted \n\nanother thing ; is there anyway to get the european standard measurement for the avatar directly ?\n\n### Community Post Comments:\nComment 1: Hi There. currently we do not have EU sizing. But hope to add in the future.For creating a custom avatar we recommend applying the closest ASTM size to your spec sheet and then adjust from there. Please also make sure that you are following best practices outlines on our Guide - https://connect.clo-set.com/community/post/833e879ecdde47b186024115b16b90c8\nReply 1: thanks alot ❤️",
+        "content_description": "This page provides guidance on accurately sizing avatars using pattern measurements and information on obtaining European standard avatar dimensions.",
         "source": "Connect Community",
-        "created_at": "2025-02-20T12:18:01.443Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "MarvelousDesigner",
-            "seamline",
-            "stitch",
-            "thickness",
-            "intensity",
-            "Garment",
-            "normalmap",
-            "edge"
-        ]
-    },
-    {
-        "id": "403e71fa0f57448a998c342871f5221d",
-        "url": "https://connect.clo-set.com/community/post/403e71fa0f57448a998c342871f5221d",
-        "title": "「制服リボン」 / How to create \"Uniform ribbons\" ",
-        "content": "YouTube Video: https://www.youtube.com/watch?v=n_bBOK2BSQc?start=0\n\nMarvelous Designerで制服リボンを作るTips6選をまとめたショート動画が公開されました。🎀✨ \n\nプリーツツールやピンツールを使った、3D制服リボンの効率的な作り方をご紹介！折り目を作るコツなど、実践的なTipsをまとめました。 \n\n**✅ 作業のポイント**\n\n・プリーツツールで基本形状 \n\n・ピンツールを使用し作業効率アップ \n\n# 是非ご覧ください！\n\n* * *\n\nA short video featuring 6 tips for creating uniform ribbons with Marvelous Designer has been released. 🎀✨ \n\nLearn efficient ways to create 3D uniform ribbons using the pleats tool and pin tool! We've compiled practical tips, including how to make folds.\n\n**✅ Key Points:**\n\n  * Basic shapes with the pleats tool\n\n  * Improved efficiency with the pin tool\n\n\n\n\n## **Be sure to check it out!**",
-        "content_description": "Discover six essential tips for efficiently creating 3D uniform ribbons with Marvelous Designer in this informative short video! 🎀✨",
-        "source": "Connect Community",
-        "created_at": "2025-02-20T06:12:35.657Z",
-        "category": 240,
-        "tags": [
-            "MarvelousDesigner",
-            "CLO",
-            "Pattern",
-            "contest",
-            "tipsandtricks"
-        ]
-    },
-    {
-        "id": "78ddd0d14eb1474c813b4df30bc4413d",
-        "url": "https://connect.clo-set.com/community/post/78ddd0d14eb1474c813b4df30bc4413d",
-        "title": "Sharee",
-        "content": "![](https://storagefiles.clo-set.com/public/community/202502/78ddd0d14eb1474c813b4df30bc4413d/images/92616bbe15864722922e664e1bd47b29Saari_0.png)",
-        "content_description": "This web page serves to showcase the innovative design and functionality of our latest product, highlighting its features and benefits for potential customers.",
-        "source": "Connect Community",
-        "created_at": "2025-02-19T06:57:10.127Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "MarvelousDesigner",
-            "CLO-SET",
-            "CONNECT",
-            "JINNY",
-            "Photoshop",
-            "Animation",
-            "Avatar",
-            "Colorway",
-            "Pattern"
-        ]
-    },
-    {
-        "id": "f05cffa1a4184c408276571b5d0a479d",
-        "url": "https://connect.clo-set.com/community/post/f05cffa1a4184c408276571b5d0a479d",
-        "title": "Mahna Mahna now in CLO :😆",
-        "content": "Mahna Mahna doo doo doo doo… Mahna Mahna doo doo doo doo! 🎶\n\nSometimes, work gets so serious and intense that it feels like there’s no room for fun and creativity. But why? Why not use the same professional tools we work with every day to create moments of joy?\n\nThis project was a reminder to myself that fun can always be found, even in the most serious tasks! Using CLO 3D to bring this funny character to life was an amazing experience—proof that even the most professional software can be a playground for creativity and laughter. 😆\n\nI hope this post brings a smile to your face and reminds you that even when work feels too serious, you can always add a bit of fun! \n\nHow do you bring fun and creativity into your work?\n\n#Creativity #FunAtWork #CLO3D #DigitalFashion #SeriousButFun\n\n* * *\n\n![](https://storagefiles.clo-set.com/public/community/202502/f05cffa1a4184c408276571b5d0a479d/images/701ed7ff30ac42c3a71ff72d103db6baScreenshot%202025-02-17%20at%2013.36.10.png)\n\n* * *\n\nYouTube Video: https://www.youtube.com/watch?v=H_6gZ6EXu5Y\n\n### Community Post Comments:\nComment 1: That's a fun one😆 and like you, I sometimes make cute things.🧸\nReply 1: keep smiling and shine",
-        "content_description": "\"Discover how to infuse creativity and joy into your work with CLO 3D, proving that even the most serious tasks can be a playful adventure!\"",
-        "source": "Connect Community",
-        "created_at": "2025-02-17T16:48:44.537Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "CLO-SET",
-            "Rendering",
-            "Texture",
-            "MarvelousDesigner"
-        ]
-    },
-    {
-        "id": "f467ab5669db457d81238d24efc0affc",
-        "url": "https://connect.clo-set.com/community/post/f467ab5669db457d81238d24efc0affc",
-        "title": "Churider",
-        "content": "![](https://storagefiles.clo-set.com/public/community/202502/f467ab5669db457d81238d24efc0affc/images/2a0d2b40f79643b19fc610434ff25847WhatsApp%20Image%202025-02-16%20at%2000.56.55_aa6a70ce.jpg)",
-        "content_description": "This web page serves to showcase a vibrant community event, highlighting its activities and fostering engagement among attendees.",
-        "source": "Connect Community",
-        "created_at": "2025-02-16T13:24:07.14Z",
-        "category": 210,
-        "tags": [
-            "MarvelousDesigner",
-            "CONNECT",
-            "Texture",
-            "Simulation",
-            "Churidar",
-            "Formal",
-            "marvelousdesigncontest"
-        ]
-    },
-    {
-        "id": "e0a7e741a0414538b2b04fb4b9b3acc9",
-        "url": "https://connect.clo-set.com/community/post/e0a7e741a0414538b2b04fb4b9b3acc9",
-        "title": "Marvelous Designer to UE 5.5 Import Issue with USD",
-        "content": "I've been trying to import from MV to UE5 and I'm getting an issue where parts of the clothing can see through to other parts of the clothing. I'm not sure what the issue is. I've played with the thickness values and export settings and have made sure the UV's are correct, but something about the material is not clicking together.  \n  \nMy clothing mesh looks fine when I take off the material, or even when i use a basic material, but when I add it back on I can see through it again. Something tells me it's something to do with this USDImportTransluscentMaterial Material Parent, but I'm really not one to say  \n  \nI saw others having this issue too, and posts saying that it happens to some people and not others.  \n  \nI've also tried switching between directx 11 & 12, scaleable and maximum project settings, and also did the Enable Order Independent Transparency, but nothing really had any effect.  \n  \n\n\n![](https://storagefiles.clo-set.com/public/community/202502/e0a7e741a0414538b2b04fb4b9b3acc9/images/2dc990b6032349cbaec853e0d34868751.png)![](https://storagefiles.clo-set.com/public/community/202502/e0a7e741a0414538b2b04fb4b9b3acc9/images/ce791ea6f7cd4071b1cc7c385163af982.png)![](https://storagefiles.clo-set.com/public/community/202502/e0a7e741a0414538b2b04fb4b9b3acc9/images/7d45e9767a984767b69f6ba508f25c663.png)![](https://storagefiles.clo-set.com/public/community/202502/e0a7e741a0414538b2b04fb4b9b3acc9/images/95eaab779a0c4ba2adc9ba0e6958cbe14.png)![](https://storagefiles.clo-set.com/public/community/202502/e0a7e741a0414538b2b04fb4b9b3acc9/images/3814a95300774cbc9120f0b467c4c1e35.png)![](https://storagefiles.clo-set.com/public/community/202502/e0a7e741a0414538b2b04fb4b9b3acc9/images/1de7378c5acb44fc9e7e5dea7014895a6.png)![](https://storagefiles.clo-set.com/public/community/202502/e0a7e741a0414538b2b04fb4b9b3acc9/images/11d8766e74124b9fb36d7c5ad23e24467.png)![](https://storagefiles.clo-set.com/public/community/202502/e0a7e741a0414538b2b04fb4b9b3acc9/images/8a717d6913b4475c81ecd12b838b69c08.png)![](https://storagefiles.clo-set.com/public/community/202502/e0a7e741a0414538b2b04fb4b9b3acc9/images/aed16ab077254baa88df9ea0a2f152d59.png)![](https://storagefiles.clo-set.com/public/community/202502/e0a7e741a0414538b2b04fb4b9b3acc9/images/75aad8d10664447fadbd0245ebb8b53b10.jpeg)\n\n### Community Post Comments:\nComment 1: hello . i am having the same issue in U.E 5.7 too! where you able to find a solution?\n\nComment 2: When working with Marvelous Designer, if you don't insert the Map Material, and only changed the color, Unreal Engine displays it as translucent as above. Try inserting the Material that contains the Image Map.You can solve this problem by using only the color as ConstantVector3 in the Blueprint of the Unreal Engine.",
-        "content_description": "This webpage aims to troubleshoot and provide solutions for issues related to clothing transparency when importing assets from Marvelous Designer to Unreal Engine 5.",
-        "source": "Connect Community",
-        "created_at": "2025-02-15T16:43:31.86Z",
+        "created_at": "2025-03-04T17:20:41.14Z",
         "category": 220,
         "tags": [
+            "CLO",
             "MarvelousDesigner",
-            "UnrealEngine",
-            "CLO-SET",
-            "CONNECT",
-            "Import_Export",
-            "Material"
+            "Pattern",
+            "Avatar"
         ]
     },
     {
-        "id": "4e75242f795e4719af824818a6b3dcf2",
-        "url": "https://connect.clo-set.com/community/post/4e75242f795e4719af824818a6b3dcf2",
-        "title": "For Valentine's Day",
-        "content": "![](https://storagefiles.clo-set.com/public/community/202502/4e75242f795e4719af824818a6b3dcf2/images/7c51b06e81624a5ab184f2a7dd94dc9462_Custom_View_2.png)\n\n![](https://storagefiles.clo-set.com/public/community/202502/4e75242f795e4719af824818a6b3dcf2/images/ab348f7df5ca4b158780dda0a769dfbe64.png)",
-        "content_description": "\"Discover a vibrant community and explore curated collections of unique fashion pieces tailored to individual styles.\"",
+        "id": "ef8c8b77afef4044b3d710e7796b7b3a",
+        "url": "https://connect.clo-set.com/community/post/ef8c8b77afef4044b3d710e7796b7b3a",
+        "title": "Cyber Cat",
+        "content": "## _Neon lights, high-tech fashion, and a bold cyberpunk attitude—Zhihao's \"Cyber Cat\" is the perfect blend of style and sci-fi. In this interview, he takes us behind the scenes, sharing his experience with Marvelous Designer and how he tackled the challenges of bringing a futuristic character to life. Whether you’re a seasoned artist or just getting started, his insights are sure to spark inspiration!_\n\n* * *\n\n![](https://storagefiles.clo-set.com/public/community/202503/ef8c8b77afef4044b3d710e7796b7b3a/images/1d5d0c7d6bc84892987c15ac05155438cybercatwebp-ezgif.com-video-to-webp-converter.webp)\n\n# **Interview with**[**Zhihao**](https://www.artstation.com/zhihaowang927)**| Cyber Cat (赛博猫猫) | 3D Character Artist**\n\n* * *\n\n# **Please introduce yourself to the Marvelous Designer community.**\n\nHello, everyone! My name is Zhihao, and I am a 3D character artist from China. My journey into the world of 3D began with my lifelong passion for gaming and my love for creating whatever I envision.\n\n![](https://storagefiles.clo-set.com/public/community/202503/ef8c8b77afef4044b3d710e7796b7b3a/images/fc6491eab6374b40851db9b073ac3fa3JZ_Half01_LV.0000.jpg)\n\n# **_Cyber Cat_ has a strong cyberpunk vibe and a futuristic look. What inspired this character design, and is there a story behind it?**\n\nI got the idea for _Cyber Cat_ after playing _Cyberpunk 2077_. The game’s cyberpunk world really captivated me, especially the way it blends humans with technology—it was unforgettable. Later, while browsing Pinterest, I stumbled upon an illustration by 박재우 that I absolutely loved. I thought it would look amazing if I brought it to life in 3D!\n\n![](https://storagefiles.clo-set.com/public/community/202503/ef8c8b77afef4044b3d710e7796b7b3a/images/91fdd164b68b4441a179f5cf5d7545a8%E1%84%87%E1%85%A1%E1%86%A8%E1%84%8C%E1%85%A2%E1%84%8B%E1%85%AE%20cyberpunk.jpg)\n\nArtwork by 박재우\n\n![](https://storagefiles.clo-set.com/public/community/202503/ef8c8b77afef4044b3d710e7796b7b3a/images/ed0dba72181342b49ebdd3ca2362e207JZ_Full.0001.jpg)\n\n# **Your characters always leave a strong impression! With Cyber Cat, for example, the pink hair and futuristic cat ears really stand out. How do you think costume design helps express a character’s personality?**\n\nClothing is a powerful tool for shaping a character’s identity. First, colors play a big role—they can communicate emotions and personality traits. Choosing the right colors helps bring out the essence of the character.\n\nNext, the style of the outfit matters. It should complement the character’s body type and personality, enhancing their best features while balancing the overall look.\n\nFinally, incorporating cultural elements makes the design more meaningful and unique. Just like _Cyber Cat’s_ jacket—adding sci-fi details like LED strips strengthens the futuristic vibe and makes the outfit feel more immersive.\n\n![](https://storagefiles.clo-set.com/public/community/202503/ef8c8b77afef4044b3d710e7796b7b3a/images/fdfe76df5a7a42918addb3d0c7dfc741HDR2_Half_LV.0000.jpg)\n\n# **How does Marvelous Designer fit into your workflow? What makes it such a valuable tool for improving efficiency or achieving creative designs?**\n\nI usually start by creating the base garment patterns in ZBrush and then bring them into Marvelous Designer. For lapel-style clothing, I first select the collar pattern’s edges and use the **_Offset Pattern Outline_** function to generate an extra piece that helps hold the collar in place. I freeze this piece to keep the garment from falling apart while I work on other sections.\n\nFor sleeves, I make both an outer and inner layer. Adding an inner sleeve layer helps Marvelous Designer calculate thicker, more realistic fabric folds.\n\n![](https://storagefiles.clo-set.com/public/community/202503/ef8c8b77afef4044b3d710e7796b7b3a/images/17c024142d874df6b9e0382a59ff753fQQ20250108-144431.png)\n\nWhen designing sci-fi outfits, I often use Marvelous Designer’s **_Nylon Matte_ **material because it creates a more rigid, structured look that works great for futuristic clothing.\n\nOne of the biggest advantages of Marvelous Designer is its ability to simulate different fabric types, making it easier to compare how different materials behave. Adjusting fold angles on internal lines also adds extra texture and depth, making the final design feel even more detailed and realistic.\n\n![](https://storagefiles.clo-set.com/public/community/202503/ef8c8b77afef4044b3d710e7796b7b3a/images/3e5f9224384a47c5a240b87d10bfd0eeHDR3_Face01_LV.0000.jpg)\n\n# **What challenges did you encounter while using Marvelous Designer, and how did you solve them?**\n\nThe hardest part of using Marvelous Designer was making sure the outfit looked as close as possible to the original design. To overcome this, I spent a lot of time researching cyberpunk fashion—analyzing references from movies, games, and concept art. I kept tweaking and refining the details and layering until I got the look just right. It took a lot of careful adjustments, but in the end, I was able to bring the design to life.\n\n![](https://storagefiles.clo-set.com/public/community/202503/ef8c8b77afef4044b3d710e7796b7b3a/images/a78ec19c2f00483a8fe87574240a92c5JZ_Face.0000%20%E6%8B%B7%E8%B4%9D.jpg)![](https://storagefiles.clo-set.com/public/community/202503/ef8c8b77afef4044b3d710e7796b7b3a/images/86ea40110cdf454ba29414fa46ec5463HDR_Half.jpg)\n\n# **Could you briefly introduce the tools and software you used in this project? How well does Marvelous Designer integrate into your workflow?**\n\nAt the start, I mainly used ZBrush and Marvelous Designer to create the base models and patterns. Then, I moved to Maya for retopology. For texturing, I worked with Substance Painter for the clothing and equipment, and Mari for detailed skin textures. Finally, I rendered everything in Unreal Engine 5.\n\nMarvelous Designer works really well within the workflow—it’s quick and easy to export assets to other software, and I didn’t run into any issues when transferring files between different programs. Everything fits together pretty smoothly.\n\n![](https://storagefiles.clo-set.com/public/community/202503/ef8c8b77afef4044b3d710e7796b7b3a/images/30a57400f3af4666813c0f2a4fcd912eHDR_Face1.jpg)![](https://storagefiles.clo-set.com/public/community/202503/ef8c8b77afef4044b3d710e7796b7b3a/images/23d9dab818e2412ea45331cca1b329f5HDR_Face2.jpg)\n\n# **What advice or insights would you share with other artists looking to create cyberpunk-style designs using Marvelous Designer?**\n\nSince this was my first time working on a cyberpunk project, I know how tricky it can be to find good references. If you're struggling with that, I highly recommend browsing Huifeng Huang’s ArtStation page [(https://www.artstation.com/wilsonhuang)](https://www.artstation.com/wilsonhuang). His work is a fantastic source of inspiration and a great reference for capturing that cyberpunk aesthetic.\n\n![](https://storagefiles.clo-set.com/public/community/202503/ef8c8b77afef4044b3d710e7796b7b3a/images/82f6eb05dca549648d66eca8b0269183BG1_Half_LV.0000.jpg)\n\n# **What’s your overall experience with Marvelous Designer?**\n\nMarvelous Designer keeps getting better with each update! The UI has become more intuitive and beginner-friendly, so whether you're new to Marvelous Designer or an experienced user, it's easy to pick up and work efficiently. The latest updates have also boosted GPU simulation and added improved quad remeshing, which makes the workflow much smoother. I think these improvements will make the software even more enjoyable for character artists in the future.\n\n* * *\n\n[**Artstation**](https://www.artstation.com/zhihaowang927)\n\n[**RedNote**](https://www.xiaohongshu.com/user/profile/664c1b6e0000000007006999?xsec_token=ABCoeGZWxrJT0ocsq4pbEGspWGU74G3UdCXaBeQ064dXk=&xsec_source=pc_search)",
+        "content_description": "Explore Zhihao's creative process and expert tips on using Marvelous Designer to bring the futuristic cyberpunk character \"Cyber Cat\" to life with stylish, high-tech fashion.",
         "source": "Connect Community",
-        "created_at": "2025-02-15T14:56:17.743Z",
+        "created_at": "2025-03-04T08:54:10.787Z",
+        "category": 110,
+        "tags": [
+            "MarvelousDesigner",
+            "Maya",
+            "UnrealEngine",
+            "ZBrush",
+            "Substance",
+            "Cyberpunk",
+            "Cat",
+            "Retopology",
+            "CharacterArt",
+            "mari"
+        ]
+    },
+    {
+        "id": "d10e8ee2460f4706b9dcbb45217865b4",
+        "url": "https://connect.clo-set.com/community/post/d10e8ee2460f4706b9dcbb45217865b4",
+        "title": "[Challenge] My Digital Closet Challenge Season3 #APT",
+        "content": "Hello, Creators!  \n  \nWe are thrilled to introduce the **3rd My Digital Closet Challenge** on CONNECT, all thanks to your enthusiastic participation! 🔥🎉\n\n  \nThis challenge is all about completing your stunning 3D outfit with CONNECT’s free dancing motion, turning it into an amazing lookbook animation.\n\n* * *\n\nFor this round, we’re bringing the famous**APT Challenge** , inspired by Blackpink’s Rose and Bruno Mars!💃🕺\n\n![](https://storagefiles.clo-set.com/public/community/202503/d10e8ee2460f4706b9dcbb45217865b4/images/e1caa06bdafb470ea6534333a0bc12e5Thumbnail_Rose_375x500_low2.gif)\n\n**Don’t miss this chance to show off your style and take on this exciting dance lookbook challenge with CONNECT!**  \n\n\nCheck out the participation details below.😊\n\n* * *\n\nAfter uploading to SNS, leave a comment on this post with the URL to your content. We’ll check the comments and feature your work on our Instagram!**😊🎉**\n\nYou can also **show off your challenge video or link in the CONNECT community!**  \nSet the post topic to Challenge and share your work with others!**🚀✨**\n\n* * *\n\n# **📌Challenge Details**  \n\n\n  * Title : MyDigitalCloset\n\n  * Concept: Open Theme\n\n    * **There are no concept restrictions. Outfits with various concepts are welcome!**\n\n    * Feel free to showcase any 3D outfits you’d like to introduce.\n\n    * Previously released outfits are also welcome.\n\n\n\n  * Participation Period: Ongoing\n\n  * Participation Requirements\n\n    * Use the motion file and avatars provided by CONNECT.\n\n    * Collaboration is encouraged—multiple creators can work together to create a collaborative piece.\n\n    * Upload your completed work to Instagram Reels, YouTube Shorts, or Tiktok using the relevant hashtags.\n\n      * #mydigitalcloset #lookbook #challenge #digitalfashion #connectofficial #clo3d #marvelousdesigner #challengebyCONNECT\n\n\n\n  * **Participation Process**\n\n1\\. Download Motion and Avatar: Download the motion file and the avatar provided by CONNECT.\n\n    * Motion\n\n      * [**FV2_Dancing_APT**](https://connect.clo-set.com/detail/a1595e432258425aaa9d4e19d0dd049d)\n\n      * [**MV2_Dancing_APT**](https://connect.clo-set.com/detail/d71bd2c6924e4818be9e60bbdad30474)\n\n    * Avatar\n\n      * [**Female**](https://connect.clo-set.com/portfolio/208988/collection/collections/220711153359e22cfc41449280e4e7245de728)\n\n      * [**Male**](https://connect.clo-set.com/portfolio/208988/collection/collections/230420c9160bed61d945e6b5e3ebbe55fb03f6)\n\n      * [**Mannequin**](https://connect.clo-set.com/portfolio/208988/collection/collections/2301100492be6460c740868ddf57abc64946e9)\n\n2\\. Creating Garment Animation: Apply the motion to each outfit project file and press the record button in animation mode to create the outfit animation.\n\n    * TIP: Customize your avatar using ZACS!\n\n3\\. Rendering: Render the completed animation file.\n\n    * We recommend an image size of 1080px * 1920px.\n\n    * TIP : Use the [**CONNECT official Scene file**](https://connect.clo-set.com/portfolio/208988/collection/collections/2312DD1c848deff0094e4991a906bfc52dae0e)\n\n4\\. Editing: Edit the rendered video using an editing program.\n\n    * You can refer to [**this video**](https://www.instagram.com/reel/C_zgG9Qv37o/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==) for the editing process.\n\n    * Feel free to use other programs if you prefer.\n\n    * Background Music :****[**APT by Rose**](https://youtu.be/ekr2nIex040?si=IcN-y5xcN8OBLUf6)\n\n5\\. Upload to SNS: Upload your finished work to Instagram Reels, YouTube Shorts, or TikTok.\n\n    * Include the following hashtags\n\n      * #mydigitalcloset #lookbook #challenge #digitalfashion #connectofficial #clo3d #marvelousdesigner #challengebyCONNECT\n\n6\\. Complete Participation\n\n    * Once uploaded to SNS, leave a comment on **this post** with your email address and the URL to your content.\n\n      * Example : Participation Complete / [www.example.com](http://www.example.com)\n\n    * You can also **show off your challenge video or link in the CONNECT community!**\n\n      * Set the post topic to Challenge and share your work with others!\n\n\n\n\n* * *\n\n  \nChallenge Enquiry\n\n1\\. Direct message on [**Instagram**](https://www.instagram.com/closet_connect_official/)  \n2\\. Comments on **this page**\n\n* * *\n\n![](https://storagefiles.clo-set.com/public/community/202503/d10e8ee2460f4706b9dcbb45217865b4/images/a720c3d52af9406a8a828b70c9e6bbdbMotion_Challenge_FHD.00_00_21_12.%EC%8A%A4%ED%8B%B8%20003.png)\n\n** _Now it’s time to showcase your_**  \n** _amazing digital wardrobe to the world!_ 🚀✨**\n\n![](https://storagefiles.clo-set.com/public/community/202503/d10e8ee2460f4706b9dcbb45217865b4/images/a18e4e0aa35e4086a5313958a57e27deReels%20thumbnail_Final.png)![](https://storagefiles.clo-set.com/public/community/202503/d10e8ee2460f4706b9dcbb45217865b4/images/a2d187637eee458e8cf3efc3367e05d0community%20thumbnail.png)",
+        "content_description": "Join the 3rd My Digital Closet Challenge on CONNECT to create and share stunning 3D outfit animations using free dance motions inspired by Blackpink’s Rose and Bruno Mars, and showcase your digital fashion style worldwide!",
+        "source": "Connect Community",
+        "created_at": "2025-03-03T11:07:30.207Z",
+        "category": 100,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "Animation",
+            "Challenge",
+            "APT",
+            "k-pop",
+            "dancechallenge",
+            "mydigitalcloset"
+        ]
+    },
+    {
+        "id": "654f8eebb30c4e22bf75250a030740d6",
+        "url": "https://connect.clo-set.com/community/post/654f8eebb30c4e22bf75250a030740d6",
+        "title": "out fit for men",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202503/654f8eebb30c4e22bf75250a030740d6/images/6814fd56f3a54fbdbb35c30ce8a88b46Untitled-6.png)",
+        "content_description": "This web page provides a comprehensive overview of a wine's characteristics, including its taste profile, pairing suggestions, and detailed tasting notes.",
+        "source": "Connect Community",
+        "created_at": "2025-03-01T17:14:20.503Z",
         "category": 210,
         "tags": [
             "CLO",
             "MarvelousDesigner",
             "CLO-SET",
-            "CONNECT",
-            "Rendering",
+            "Animation",
             "Pattern",
+            "Rendering",
+            "Simulation",
             "Texture"
         ]
     },
     {
-        "id": "fd3ec162f9a94c7283e12ef7711b21e3",
-        "url": "https://connect.clo-set.com/community/post/fd3ec162f9a94c7283e12ef7711b21e3",
-        "title": "3d corset",
-        "content": "![](https://storagefiles.clo-set.com/public/community/202502/fd3ec162f9a94c7283e12ef7711b21e3/images/41b2f38cd4334834a6fdf2f03654e1e7Untitled-7.png)",
-        "content_description": "This web page is designed to showcase a vibrant collection of community-driven art and creative expressions.",
+        "id": "3454c9d9b87942adb265f01f622a6438",
+        "url": "https://connect.clo-set.com/community/post/3454c9d9b87942adb265f01f622a6438",
+        "title": "Street style & edgy",
+        "content": "Street style & edgy – I don’t walk in the street, it walks with me \n\n![🤸](https://static.xx.fbcdn.net/images/emoji.php/v9/t76/1/16/1f938.png)\n\n![](https://storagefiles.clo-set.com/public/community/202502/3454c9d9b87942adb265f01f622a6438/images/e644e29eb2024ca3b0a431dde8807f15enhanced-image%20%2821%29.png)\n\n### Community Post Comments:\nComment 1: I love your style!!🙌\nReply 1: thanks !!",
+        "content_description": "Showcasing bold street style fashion that empowers you to own the urban vibe with confidence and edge.",
         "source": "Connect Community",
-        "created_at": "2025-02-15T14:54:29.73Z",
+        "created_at": "2025-02-28T01:29:18.297Z",
         "category": 210,
         "tags": [
-            "corset",
             "CLO",
             "MarvelousDesigner",
-            "CONNECT",
             "CLO-SET",
-            "Simulation",
-            "Rendering",
             "Material",
-            "Pattern"
+            "Texture",
+            "Substance",
+            "Blender",
+            "UnrealEngine",
+            "Pattern",
+            "Photoshop"
         ]
     }
 ]

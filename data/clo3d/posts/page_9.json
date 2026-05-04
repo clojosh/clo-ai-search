@@ -1,81 +1,96 @@
 [
     {
-        "id": "5d0dee24ec86494a83eaa92fc6626900",
-        "url": "https://connect.clo-set.com/community/post/5d0dee24ec86494a83eaa92fc6626900",
-        "title": "Issues with Export/Import to DXF for Lectra Modaris and Gerber",
-        "content": "TL/DR: Suppliers can't open my DXF exports from the most recent CLO versions, the last version that works is ver. 2024.2.328 (February 26, 2025). That version also has various problems in the exports detailed below. Has anyone had success exporting DXFs for use in Lectra Modaris and Gerber? Please let me know if there are any import/export settings that I or my suppliers are missing that will help us. Thank you!\n\nFull Post: I have been having issues with exporting to dxf, both AAMA and ASTM, for use in Gerber Accumark, Optitex, and Lectra Modaris programs with suppliers. These issues are present in the DXF exports from the most recent versions of CLO:\n\n  * Gerber cannot open files exported from the latest CLO versions at all: issue with piece perimeter missing (screenshot below)\n\n  * ![106187d2b19d4493b563e7c12eca7253](https://storagefiles.clo-set.com/public/community/202601/5d0dee24ec86494a83eaa92fc6626900/images/106187d2b19d4493b563e7c12eca7253Gerber_CLO_Import_Issue.jpg)\n\n  * Optitex cannot open files exported from the latest CLO versions: issue with incorrect scale.\n\n  * Lectra Modaris does not maintain pattern arrangement/marker from CLO file-- the pattern pieces are scattered around the user interface and not in the positions I placed them. \n\n  * Lectra Modaris shows all lines (cut lines, internal lines, baselines) as cut lines. \n\n\n\n\nThe most recent previous version of CLO that I found that exported something these programs could open was ver. 2024.2.328 (February 26, 2025). The following issues are present in dxf exports from that version:\n\n  * Missing, undersized, or duplicate Notches (not all notches in a file, seemingly at random).\n\n  * Duplicate internal/baselines in DXF exports-- these duplicate both the existing internal lines, AND there are additional internal/baselines copying the cut lines on all shapes. The files I am using are not meant to have seam allowance or grading, just cut lines and internal lines, and sometimes some baselines. \n\n  * Lectra Modaris does not maintain pattern arrangement/marker from CLO file-- the pattern pieces are scattered around the user interface and not in the positions I placed them. \n\n  * Lectra Modaris shows all lines (cut lines, internal lines, baselines) as cut lines. \n\n\n\n\nPlease let me know if there is anything I can do on my end when exporting or anything my suppliers could easily do on their end for importing that would mitigate some of these issues. Thank you all!\n\n### Community Post Comments:\nComment 1: Hi there, we're sorry about the inconvenience! Please share an affected DXF to tech support so they can determine the cause: https://connect.clo-set.com/community/post/5d0dee24ec86494a83eaa92fc6626900 I can find no current reports of this extent so it it doesn't appear to be a systemic issue.",
-        "content_description": "This webpage serves as a resource for troubleshooting DXF export issues from CLO for use in Gerber, Optitex, and Lectra Modaris, seeking community insights on effective export/import settings and solutions.",
+        "id": "0c867f36836d4781bc4ad2293592f70e",
+        "url": "https://connect.clo-set.com/community/post/0c867f36836d4781bc4ad2293592f70e",
+        "title": "“Bold combinations aren’t mistakes — they’re statements.”",
+        "content": "![0d2f33c2fef545b382a89c4cff57afb4](https://storagefiles.clo-set.com/public/community/202602/0c867f36836d4781bc4ad2293592f70e/images/0d2f33c2fef545b382a89c4cff57afb4ChatGPT%20Image%205%20%D9%81%D8%A8%D8%B1%D8%A7%D9%8A%D8%B1%202026%D8%8C%2001_59_00%20%D9%85.png)![b183344055634ccca2f8f65ba683a506](https://storagefiles.clo-set.com/public/community/202602/0c867f36836d4781bc4ad2293592f70e/images/b183344055634ccca2f8f65ba683a506ChatGPT%20Image%205%20%D9%81%D8%A8%D8%B1%D8%A7%D9%8A%D8%B1%202026%D8%8C%2002_03_11%20%D9%85.png)",
+        "content_description": "This web page provides detailed information and updates about the 2026 FIFA World Cup, including venues, schedules, and key events.",
         "source": "Connect Community",
-        "created_at": "2026-01-20T17:52:37.553Z",
-        "category": 250,
-        "tags": [
-            "troubleshooting",
-            "support",
-            "feedback",
-            "CLO",
-            "Lectra",
-            "Modaris",
-            "Gerber",
-            "Import_Export",
-            "DXF"
-        ]
-    },
-    {
-        "id": "04f8df2949884b3d884dac8dabb317f2",
-        "url": "https://connect.clo-set.com/community/post/04f8df2949884b3d884dac8dabb317f2",
-        "title": "How To Place Property Editor Below The Object Browser",
-        "content": "Currently Property Editor is placed “under” the object browser.\n\nWhen I double click this icon Property Editor becomes visible but this time Object Browser is not visible.\n\nHow To Place Property Editor Below The Object Browser?\n\n![86de34138ed04597906d74dd7d830bab](https://storagefiles.clo-set.com/public/community/202601/04f8df2949884b3d884dac8dabb317f2/images/86de34138ed04597906d74dd7d830babScreenshot%202026-01-20%20at%2018.26.10.png)\n\n### Community Post Comments:\nComment 1: Use the Reset Layout Button. Lower Right corner...\nReply 1: Thank you very much.",
-        "content_description": "Learn how to reposition the Property Editor below the Object Browser for a more efficient workspace layout.",
-        "source": "Connect Community",
-        "created_at": "2026-01-20T16:05:05.807Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "UI"
-        ]
-    },
-    {
-        "id": "90d16aaac83c4e5e837bce7a592384c9",
-        "url": "https://connect.clo-set.com/community/post/90d16aaac83c4e5e837bce7a592384c9",
-        "title": " inspired by Fontaines D.C. band, Irish culture, and landscapes",
-        "content": "![23775693c64c49ebb17d8b4fd0a01f86](https://storagefiles.clo-set.com/public/community/202601/90d16aaac83c4e5e837bce7a592384c9/images/23775693c64c49ebb17d8b4fd0a01f86Cover_01.png)![8a7c6b10c17d4eb2830cd34571c86622](https://storagefiles.clo-set.com/public/community/202601/90d16aaac83c4e5e837bce7a592384c9/images/8a7c6b10c17d4eb2830cd34571c86622Skirt_vest_pose_3.png)![a2697f38bd0548ec9a3f256576cf2355](https://storagefiles.clo-set.com/public/community/202601/90d16aaac83c4e5e837bce7a592384c9/images/a2697f38bd0548ec9a3f256576cf2355Skirt_vest_pose_4.png)![122e334243da4e3b9c6efed1de7a94d9](https://storagefiles.clo-set.com/public/community/202601/90d16aaac83c4e5e837bce7a592384c9/images/122e334243da4e3b9c6efed1de7a94d9Skirt_vest_pose_5.png)",
-        "content_description": "Showcasing a unique collection of stylish outfits that blend contemporary fashion with timeless elegance.",
-        "source": "Connect Community",
-        "created_at": "2026-01-20T12:46:45.247Z",
+        "created_at": "2026-02-05T11:01:41.547Z",
         "category": 210,
         "tags": [
             "CLO",
             "MarvelousDesigner",
             "CLO-SET",
-            "CONNECT",
-            "Blender",
-            "Rendering",
-            "Trim",
-            "Texture"
+            "AI"
         ]
     },
     {
-        "id": "44af90f1a9ca4585a44c3ffadd71be3e",
-        "url": "https://connect.clo-set.com/community/post/44af90f1a9ca4585a44c3ffadd71be3e",
-        "title": "specific measurement box not appearing",
-        "content": "Hi there,  \nI'm new to Clo3D and I'm learning how to use it with all the youtube videos.  \nI am having a problem with features that no longer seem to be up to date in version 2025.2. All the tutorials explain that you can enter precise measurements with the polygon tools by right-clicking. A box is supposed to open to enter the precise measurements you want, but when I do this, I only get a drop-down menu. Can anyone explain how I am supposed to find this measurement box?![d1fb58f0111b4e60954d77aaaf8b591e](https://storagefiles.clo-set.com/public/community/202601/44af90f1a9ca4585a44c3ffadd71be3e/images/d1fb58f0111b4e60954d77aaaf8b591eCapture%20d%E2%80%99e%CC%81cran%202026-01-20%20a%CC%80%2010.08.15.png)this is on the tutorial  \n![0bd16c4329994d97bb84a896c4ef9d46](https://storagefiles.clo-set.com/public/community/202601/44af90f1a9ca4585a44c3ffadd71be3e/images/0bd16c4329994d97bb84a896c4ef9d46Capture%20d%E2%80%99e%CC%81cran%202026-01-20%20a%CC%80%2009.56.55.png)and this is what i Get when right clicking\n\n### Community Post Comments:\nComment 1: Dear Marie, sorry for the confusion caused! Could you please share where you heard about the right click? It's been a single LEFT click to get the precision box for these tools since I started using CLO (Nov 2018). A right click to input precise values only works for anything that is being dragged with the left mouse button pressed, and not those tools except the Internal Polygon/Line when inputting a line length.",
-        "content_description": "This web page serves as a support forum for Clo3D users seeking assistance with discrepancies in tutorial instructions and software features, specifically related to entering precise measurements in version 2025.2.",
+        "id": "5a927e9d9e0f4cf09a9b046b7a8e7801",
+        "url": "https://connect.clo-set.com/community/post/5a927e9d9e0f4cf09a9b046b7a8e7801",
+        "title": "Where are silk fabrics in clo 3d?",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202602/5a927e9d9e0f4cf09a9b046b7a8e7801/images/b71b102974824f038bca6284751a2727Screenshot%202026-02-05%20134139.jpg)![](https://storagefiles.clo-set.com/public/community/202602/5a927e9d9e0f4cf09a9b046b7a8e7801/images/9866312778cb48e7b8583a64727d6238Screenshot%202026-02-05%20134139.jpg)Hi, I am new to the software and following a tutorial where I have been unable to find all kinds of silk fabrics in my library.\n\n### Community Post Comments:\nComment 1: Hi, none of the fabrics have \"silk\" in the name, however, you can find a few crêpe de chines under the search term \"crepe\". It might be that the tutorial still has older fabrics that included \"silk\" in the name.",
+        "content_description": "This web page provides a curated library of various silk fabric textures to assist users in enhancing their design projects.",
         "source": "Connect Community",
-        "created_at": "2026-01-20T09:10:18.773Z",
-        "category": 210,
+        "created_at": "2026-02-05T08:13:14.963Z",
+        "category": 215,
+        "tags": [
+            "CLO"
+        ]
+    },
+    {
+        "id": "ddbd6aae767f4ba096fa4a54e07c3fee",
+        "url": "https://connect.clo-set.com/community/post/ddbd6aae767f4ba096fa4a54e07c3fee",
+        "title": "zprj opening issue.",
+        "content": "![fee9621390c547c5a1566aa6cb4af17a](https://storagefiles.clo-set.com/public/community/202602/ddbd6aae767f4ba096fa4a54e07c3fee/images/fee9621390c547c5a1566aa6cb4af17aimage.png)after working a full day and saving the file properly, the next day i find this. what should i do now. please advise.\n\n### Community Post Comments:\nComment 1: Hi there! There is no active CLO license under this account, are you an enterprise user? If yes, please contact your CLO representative directly. They can give you instructions on whether and how the file might still be salvageable. (In short, if the file is not at least around 20mb containing an avatar, it might be corrupted beyond repair. If it is of adequate size, there might just be a corrupted image/map in it that has to be removed.)",
+        "content_description": "This web page provides guidance and solutions for recovering unsaved or lost work after encountering file corruption or unexpected file changes.",
+        "source": "Connect Community",
+        "created_at": "2026-02-05T03:23:20.123Z",
+        "category": 220,
+        "tags": [
+            "CLO"
+        ]
+    },
+    {
+        "id": "d7d22f3474784f79b41a06c0675632af",
+        "url": "https://connect.clo-set.com/community/post/d7d22f3474784f79b41a06c0675632af",
+        "title": "How to create an offset line with exactly the same curve length as the original pattern",
+        "content": "Hello, I would like to ask about creating offset lines in CLO.\n\nMy goal is to create an offset line that keeps **exactly the same curve shape and curve length** as the original pattern curve. However, when I use the Offset Pattern or Offset as Internal Line function, the offset curve slightly changes its shape and length, especially on curved segments.\n\nI would like the offset line to be a true parallel curve, maintaining the same curvature and geometry as the original pattern edge.\n\nCould you please advise:\n\n  * Is there a way in CLO to generate an offset line that preserves the exact curve shape and length?\n\n  * Or is this a current limitation of the offset algorithm in CLO?\n\n  * Are there any recommended workflows or tools to achieve a precise offset for curved pattern lines?\n\n\n\n\nThank you very much for your help.\n\n![75ef675dc7b2442498c14974c4393110](https://storagefiles.clo-set.com/public/community/202602/d7d22f3474784f79b41a06c0675632af/images/75ef675dc7b2442498c14974c4393110Screenshot%202026-02-04%20114851.png)\n\n### Community Post Comments:\nComment 1: If you want precisely the same line, you can use the Trace tool (shortcut i), right-click on the line in question and trace as an internal line, then drag that line into the desired position. I don't know what you're trying to achieve but here you can see an example of the exact same line not actually giving a \"parallel\" result due to the curving involved. Purple-marked is with the offset function by 50mm and green with when traced as an internal line and then moved upwards by 50mm.",
+        "content_description": "This web page seeks expert guidance on creating precise offset lines in CLO that maintain the exact curve shape and length of original pattern edges.",
+        "source": "Connect Community",
+        "created_at": "2026-02-04T04:51:39.83Z",
+        "category": 220,
         "tags": [
             "CLO",
             "Pattern"
         ]
     },
     {
-        "id": "6e201722202f4efaacd7aa7a76becb96",
-        "url": "https://connect.clo-set.com/community/post/6e201722202f4efaacd7aa7a76becb96",
-        "title": "Clo Binding Render Issue",
-        "content": "Hi there, I am having issues getting my \"both\" sided binding to show up properly. I have tried to play with the \"Add'l Thickness - Collision\" and increasing that to 2.5mm with particle distance of 4mm but this is the effect. Any tips? Thank you.![bd36c538e8de4ab3ace86c88176b8eee](https://storagefiles.clo-set.com/public/community/202601/6e201722202f4efaacd7aa7a76becb96/images/bd36c538e8de4ab3ace86c88176b8eeeBinding_swimsuit.PNG)![95662c651e4a4094bdbc3e13a254ca56](https://storagefiles.clo-set.com/public/community/202601/6e201722202f4efaacd7aa7a76becb96/images/95662c651e4a4094bdbc3e13a254ca56Binding_swimsuit_settings.PNG)\n\n### Community Post Comments:\nComment 1: Hi there, it might be a partial flip that is occuring for the front and back sides of the fabric. Unfortunately, the binding tool can be a bit fidgety and sometimes we do recommend to fake the binding with separate pattern pieces for better control. However, could you please confirm that your fabric view in the 3D window is set to \"THICK textured surface\"?\nReply 1: Hi Melody, yes, I did have \"thick textured surface\" on. I can try the other way of faking the binding if that's the only option.",
-        "content_description": "Get expert tips and troubleshooting advice for fixing issues with \"both\" sided binding in your designs.",
+        "id": "7c26a9ebb3df4d1c987341aefd4f1cdb",
+        "url": "https://connect.clo-set.com/community/post/7c26a9ebb3df4d1c987341aefd4f1cdb",
+        "title": "Seam Tension",
+        "content": "![b62a248cbb914b7abd885bfe90a99855](https://storagefiles.clo-set.com/public/community/202602/7c26a9ebb3df4d1c987341aefd4f1cdb/images/b62a248cbb914b7abd885bfe90a99855Screenshot%202026-02-04%20at%201.43.41%E2%80%AFpm.png)Hiya, real newby here! I am following the tutorial '**Beginner's Guide to CLO Part 2 Editing: Flattening (Lesson 4)'.** Everything seems to be fine when I simulate the body pattern. However, when I try adding the arm, I seem to get a lot of tension around the shoulder and underarm area. I can't figure out how to reduce the strain in the seam, hoping someone has some tips and tricks I can try :) Thank you!!\n\n### Community Post Comments:\nComment 1: I think the tension might be because of your patterns' shape. Could you share a screenshot?Otherwise, you can modify the seam tension with the Edit Sewing tool.",
+        "content_description": "A community forum page for beginners to seek advice and share tips on resolving garment fitting issues like tension around seams in CLO software.",
         "source": "Connect Community",
-        "created_at": "2026-01-20T03:22:01.57Z",
+        "created_at": "2026-02-04T02:49:17.77Z",
+        "category": 220,
+        "tags": [
+            "CLO",
+            "Simulation"
+        ]
+    },
+    {
+        "id": "54092888f12b4bfd935e7bf6744d36c9",
+        "url": "https://connect.clo-set.com/community/post/54092888f12b4bfd935e7bf6744d36c9",
+        "title": "Screen whites out when switching fabric color",
+        "content": "![8413803314394cbc838765c43fef565a](https://storagefiles.clo-set.com/public/community/202602/54092888f12b4bfd935e7bf6744d36c9/images/8413803314394cbc838765c43fef565aclo%20problem.png)Hi all! Brand new to Clo and was following along with the intro guides on YouTube when this happened! It's when I click the \"Switch\" button for Base Color and I've yet to figure out how to undo it without restarting the program completely.\n\nIs this simply a product of my computer not meeting requirements? Is there any way to try and work around it or do I just need to upgrade?\n\nThanks!\n\n### Community Post Comments:\nComment 1: Hi. This issue is most commonly seen when there is an issue with the computers Graphics Card. We would recommend checking and updating your card to the latest driversyou can also check this article here - https://connect.clo-set.com/community/post/54092888f12b4bfd935e7bf6744d36c9 would also recommend checking your computers specs against the CLO recommend specshttps://connect.clo-set.com/community/post/54092888f12b4bfd935e7bf6744d36c9",
+        "content_description": "A community support page for troubleshooting and resolving issues with the \"Switch\" button in Clo software, including performance concerns and potential workarounds.",
+        "source": "Connect Community",
+        "created_at": "2026-02-03T15:45:32.89Z",
+        "category": 220,
+        "tags": [
+            "CLO",
+            "color"
+        ]
+    },
+    {
+        "id": "797d30dcef334c6891e016c24955c6dd",
+        "url": "https://connect.clo-set.com/community/post/797d30dcef334c6891e016c24955c6dd",
+        "title": "CLO Render Fabric Issue",
+        "content": "Hi there, I am having an issue when rendering my fabric where I am getting some distortion on the wrinkles as show below. The particle distance of the fabric is already 4mm. Is there anything else that could improve this? Thank you!![d5eb97001ccd458e9b2e737da64c7a34](https://storagefiles.clo-set.com/public/community/202602/797d30dcef334c6891e016c24955c6dd/images/d5eb97001ccd458e9b2e737da64c7a34image.png)\n\n### Community Post Comments:\nComment 1: Does the clothing have any transparency?\nReply 1: Hi there, no, it's got no transparency. Thanks.\nReply 2: @missmaylin: Since there is no transparency involved, does the unwanted effect still disappear when the texture is removed? If yes, is the texture a PNG file? It might not have transparency but contain an Alpha channel anyway. If it is the case, can you resave as a JPG and try again?",
+        "content_description": "Provide troubleshooting advice and solutions to improve fabric wrinkle rendering quality in 3D modeling.",
+        "source": "Connect Community",
+        "created_at": "2026-02-03T03:42:26.01Z",
         "category": 220,
         "tags": [
             "CLO",
@@ -83,196 +98,96 @@
         ]
     },
     {
-        "id": "05917a893ba64f49b11d21c8eb1df077",
-        "url": "https://connect.clo-set.com/community/post/05917a893ba64f49b11d21c8eb1df077",
-        "title": "Aligning And Saving Annotation Presets",
-        "content": "Aligning And Saving Annotation Presets\n\nQuestion 1) How to align the annotation in the quickest way?\n\nLike In the middle of the selected pattern. (Both vertical and horizontal.)\n\nCan we do this automatically?\n\nQuestion 2) How to add my brands icon onto the Annotation?\n\nQuestion 3) I want to create a Annotation Preset in a particular Font, Font Size, Color and including my brands icon to use It on the every pattern I created.\n\nHow can I do this?  \nWhich file format etc.?\n\nHow can I import It on the project I work on?\n\n### Community Post Comments:\nComment 1: Hi, it is only possible to change color, font size and angle, as well as dragging and dropping to another position. But we can add a feature request for font type and measured positioning such as centering, etc. If you want to add your brand's icon, you can do this with an image file by placing it as a graphic (the official CONNECT store also has a logo on the patterns). There are no presets that can be saved and reused for annotating.\nReply 1: Understood. Thank you very much.",
-        "content_description": "This web page aims to provide users with step-by-step guidance on aligning annotations, adding brand icons, and creating customizable annotation presets for consistent use across their projects.",
+        "id": "a565ab53b9144dbf827fd76d9aaf0905",
+        "url": "https://connect.clo-set.com/community/post/a565ab53b9144dbf827fd76d9aaf0905",
+        "title": "CURL(35) SSL connect error ",
+        "content": "I can't log in to the program. I followed all the recommendations to fix the problem, but I still can't log in to the program. I have home internet.\n\nThe SSL connection setup has encountered an error. Please check your firewall or proxy server settings. For Allow-listing CLO Endpoints information, refer to the provided link. Click Here.\n\nCURL(35) SSL connect error \n\n* * *\n\n### Community Post Comments:\nComment 1: Hi. Here are a few things to check on your computer as this error is due to your computers connectionCheck Firewall and Antivirus: The most common cause is security software blocking CLO3D. Temporarily disable your firewall or antivirus to see if that resolves the issue. If it does, add CLO.exe to your exception list.Verify System Date/Time: Incorrect date and time settings on your computer can prevent SSL certificates from validating.Company Proxy/Network: If using a corporate network, the firewall may be blocking the connection. Contact your IT department to allow connections to CLO3D servers.Update Software: Ensure you are using the latest version of CLO3D, as older versions may use outdated security protocols.Clear Browser Cache: If logging in via the web browser, clearing cache/cookies can resolve authentication issues.&nbsp;For further help with this you will need to reach out to our CLO Tec Support directly - https://connect.clo-set.com/community/post/a565ab53b9144dbf827fd76d9aaf0905",
+        "content_description": "This web page provides troubleshooting steps and resources to resolve SSL connection errors preventing users from logging into the program.",
         "source": "Connect Community",
-        "created_at": "2026-01-19T16:18:13.55Z",
+        "created_at": "2026-02-02T13:50:12.55Z",
         "category": 220,
         "tags": [
-            "CLO",
-            "Pattern"
-        ]
-    },
-    {
-        "id": "f9a5d8d813a64b7db1bb3d5a3f1a177e",
-        "url": "https://connect.clo-set.com/community/post/f9a5d8d813a64b7db1bb3d5a3f1a177e",
-        "title": "Rendering",
-        "content": "Hi there, \n\nI rendered a style and made various settings beforehand. The rendering went well, but I would like the parting seams to be more clearly visible. Is there a setting for this? Many thanks in advance & best regards Tina![7fbb48009b8a405784adb9bf17fc4bff](https://storagefiles.clo-set.com/public/community/202601/f9a5d8d813a64b7db1bb3d5a3f1a177e/images/7fbb48009b8a405784adb9bf17fc4bffRendering.png)\n\n* * *\n\n* * *\n\n### Community Post Comments:\nComment 1: Hi Tina, two possible solutions: (1) Select the seamlines in questions and make their Normal Map \"shadow\" wider and/or more intense. (2) In the render window, select the render properties and edit the Global Map for seam puckering to be more intense. This will affect all seamlines.",
-        "content_description": "This webpage aims to assist users in enhancing the visibility of parting seams in their rendered images by providing guidance on relevant settings and techniques.",
-        "source": "Connect Community",
-        "created_at": "2026-01-19T16:00:52.87Z",
-        "category": 220,
-        "tags": [
-            "Rendering",
             "CLO"
         ]
     },
     {
-        "id": "7ebf43bfb75943b297bade9b89fc1dd4",
-        "url": "https://connect.clo-set.com/community/post/7ebf43bfb75943b297bade9b89fc1dd4",
-        "title": "Drawing A Curved Waistband With A Fullness Line Tool",
-        "content": "[_https://www.youtube.com/watch?v=P5fDeJgh-K0 &list=PLEyPZuPxPt-ojcC_vDvgvgld6CWV7i75_&index=15_](https://www.youtube.com/watch?v=P5fDeJgh-K0&list=PLEyPZuPxPt-ojcC_vDvgvgld6CWV7i75_&index=15)\n\n**The Image 1**\n\n![d304589cd0ff4719a69c4100572832f8](https://storagefiles.clo-set.com/public/community/202601/7ebf43bfb75943b297bade9b89fc1dd4/images/d304589cd0ff4719a69c4100572832f8Image%201.png)\n\n**The Image 2**\n\n![5a9ce21915c2443ea5e9000ffc4057fd](https://storagefiles.clo-set.com/public/community/202601/7ebf43bfb75943b297bade9b89fc1dd4/images/5a9ce21915c2443ea5e9000ffc4057fdImage%202.png)\n\nWhen the waistband is drawn and placed on the avatar It can be seen It’s not fitted perfectly on the waistline. There are gaps here and there.\n\nSee the Image 1\n\nOn the video she modifies the waistband making It curvy rather than straight with the Fullness Line Tool\n\nI have some questions about the Fullness Line Tool applied for this purpose.\n\nStep 1) She measured the straight waistband and the waistline of the avatar.\n\nShe got the results on the Image 2. (Ease which is divided by 4. She works on the quarter pattern.)\n\nThe Ease of the waistband is 1/8 inch.\n\nSee the Image 2.\n\nStep 2) She traced the quarter waistband (for the front skirt pattern) with the Fullness Line Tool\n\nA) traced the bottom line starting from the center front.\n\nB) traced the upper line starting from the center front.\n\n(the Fullness Line Tool screen is opened)\n\nShe entered the value of -0.125 (1/8 inch ease)\n\nthen the straight waistband became curvy.\n\n**Question 1)** I don’t understand the table on the Image 2\n\nBottom Waistband : 28 1/2”\n\nWaist Of Avatar At Top Of Waistband : 28”\n\nDifferenece : 1/2”\n\nDivided By 4 : 1/8”\n\nOn the table she says “Bottom Waistband”\n\nbut “Waist Of Avatar At Top Of WB”\n\nDoesn’t she have to say Waist Of Avatar At “The Bottom” Of WB. for “Bottom Waistband)???\n\nor Waist Of Avatar At Top Of WB for “Upper Waistband” this time???\n\nWhat would you do on this point?\n\n**Question 2)** So here Fullness Line Tool both decreases the measure of the waistband 1/8” on the quarter of the skirt and make It curvy.\n\nRight?\n\n### Community Post Comments:\nComment 1: Hi there, please ask specific questions about the technique to the content creator because it's not an official CLO tutorial, so we cannot comment on its contents.",
-        "content_description": "This web page aims to clarify the use of the Fullness Line Tool in adjusting waistband fit for digital avatars in fashion design, addressing common questions and misconceptions about the measurement process.",
+        "id": "69c1d7711cc74a31b7e6d35d309eec19",
+        "url": "https://connect.clo-set.com/community/post/69c1d7711cc74a31b7e6d35d309eec19",
+        "title": "Graded PDF issue",
+        "content": "I am trying to export my graded patterns from CLO 3D to Adobe Illustrator to add final text and markings. However, I am facing two major issues:\n\n  1. When I export a graded PDF, only the **base size** is visible when I open it in Illustrator.\n\n  2. If I use the **'Print Layout'** method to bring all graded sizes into Illustrator, only the **base size** has its notches. The notches for all other sizes are missing or not transferred from CLO.\n\n\n\n\nI have spent a week trying every possible setting and method, but I cannot get all sizes with their respective notches into Illustrator. I urgently need help to resolve this.\n\nThank you in advance\n\n### Community Post Comments:\nComment 1: We understand your frustration. This is a highly requested feature and it is currently on our roadmap. While I don't have a specific timeline to share yet, please stay tuned for future updates.\n\nComment 2: Hi there,Currently, we don't support exporting all grading sizes into a single PDF. To ensure you have the full information for each size, please export them individually, one by one.\nReply 1: Hi,Thank you for your response. However, I must express that exporting each size individually is an extremely time-consuming and labor-intensive workaround, especially when working with a high number of grading sizes. This manual process significantly increases the risk of human error and slows down our production workflow.As a professional user, I believe a \"Single PDF Export for all grading sizes\" (either as nested lines or layered PDF) is a fundamental requirement for a modern 3D fashion design software.Could you please provide information on the following:Is there a plan to include a \"Nested PDF Export\" or \"Multi-size PDF\" feature in the upcoming 2026 updates?Is this feature currently on your development roadmap (R&amp;D stage)?This improvement would save us hours of repetitive work. Looking forward to your updates.",
+        "content_description": "This web page aims to provide solutions for exporting all graded pattern sizes with complete notches from CLO 3D to Adobe Illustrator for final editing.",
         "source": "Connect Community",
-        "created_at": "2026-01-19T15:49:10.517Z",
-        "category": 220,
+        "created_at": "2026-02-01T16:29:12.377Z",
+        "category": 215,
         "tags": [
-            "CLO",
-            "Pattern"
-        ]
-    },
-    {
-        "id": "15c014faef94469c93dde357b5fc4cb2",
-        "url": "https://connect.clo-set.com/community/post/15c014faef94469c93dde357b5fc4cb2",
-        "title": "Zipper",
-        "content": "The zippers that come with CLO3D always seem a bit underwhelming, and their size often appears too small to me. When used on the clothes, they can undermine the overall quality of the garments. That's why I've specifically crafted #5 - sized zippers. There are two types, and each type has two closure methods. All the attributes and adjustment methods of these zippers are fully compatible with the software. I typically apply them to the making of down jackets and padded jackets, which endows the clothing with an overall sense of luxury. I've set up UV grid layouts for both the zippers and their pulls, enabling the customization of LOGOs, just as shown in my illustrations. The UV grids are directly incorporated into the normal map of each zipper file, and the file format is.PSD. After downloading, you can click to make modifications. I'm still in the process of continuous exploration, hoping to offer more convenient methods to enthusiasts!![2430ead84cb140e68e6af7a5a9630abd](https://storagefiles.clo-set.com/public/community/202601/15c014faef94469c93dde357b5fc4cb2/images/2430ead84cb140e68e6af7a5a9630abd%E7%AC%AC%E4%BA%8C%E7%89%88.png)",
-        "content_description": "Discover custom #5-sized zippers designed to elevate your CLO3D garments with a luxurious touch, complete with UV grid layouts for personalized logo integration.",
-        "source": "Connect Community",
-        "created_at": "2026-01-19T07:09:39.533Z",
-        "category": 240,
-        "tags": [
-            "CLO",
-            "Avatar",
-            "MarvelousDesigner",
-            "CLO-SET"
-        ]
-    },
-    {
-        "id": "1c50fc9910ee482a86f98bfe29116dc1",
-        "url": "https://connect.clo-set.com/community/post/1c50fc9910ee482a86f98bfe29116dc1",
-        "title": "Industrial Hi-Vis Safety Jacket – Medium Pattern",
-        "content": "![292f5d2a8c944991b55044c63a791c45](https://storagefiles.clo-set.com/public/community/202601/1c50fc9910ee482a86f98bfe29116dc1/images/292f5d2a8c944991b55044c63a791c45ChatGPT%20Image%2019%20%D9%8A%D9%86%D8%A7%D9%8A%D8%B1%202026%D8%8C%2008_50_47%20%D8%B5.png)file in store>>>",
-        "content_description": "Discover and shop our exclusive collection of stylish and innovative clothing designed for modern lifestyles.",
-        "source": "Connect Community",
-        "created_at": "2026-01-19T06:36:20.743Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "MarvelousDesigner",
             "CLO-SET",
-            "CONNECT",
-            "JINNY",
-            "3dsMax",
-            "Blender",
-            "AI"
-        ]
-    },
-    {
-        "id": "c624b9ec2bbf462ca6b85b1d89a4a450",
-        "url": "https://connect.clo-set.com/community/post/c624b9ec2bbf462ca6b85b1d89a4a450",
-        "title": "four-part snap fastene（Side A Football Pattern De）",
-        "content": "![](https://storagefiles.clo-set.com/public/community/202601/c624b9ec2bbf462ca6b85b1d89a4a450/images/d90efe46d181421294091ea63628f4b3%E5%9B%9B%E5%90%88%E6%89%A3_Custom_View_1.webp)![3D four-part snap fastene（Side A Football Pattern De） Model](https://storagefiles.clo-set.com/public/marketplace/202601/38a7ffae3afc4c6d85c30bd4b95d174d/thumbnail/%E5%9B%9B%E5%90%88%E6%89%A3_Custom_View_2.png?resize=1&f=webp&w=960&fit=scale-down)four-part snap fastene\n\nI made this file because I found it a bit cumbersome to download snap fastener components individually in CLO. During the production process, I thought this integrated version would be much more convenient for everyone to use. That’s why I specially created this snap fastener file with Side A, Side B, Side C, and Side D for your convenience.\n\nHope you can use this material to create works that you’re satisfied with! If you find it useful, feel free to follow me—it will encourage me to share more resources like this in the future.",
-        "content_description": "This web page provides an integrated four-part snap fastener file for CLO users, designed to simplify the design process and enhance convenience in creating your projects.",
-        "source": "Connect Community",
-        "created_at": "2026-01-19T02:52:24.577Z",
-        "category": 210,
-        "tags": [
-            "CLO"
-        ]
-    },
-    {
-        "id": "7a5f8218e9ff466b9423503f88d5fb64",
-        "url": "https://connect.clo-set.com/community/post/7a5f8218e9ff466b9423503f88d5fb64",
-        "title": "Garment shape on avatar",
-        "content": "![](https://storagefiles.clo-set.com/public/community/202601/7a5f8218e9ff466b9423503f88d5fb64/images/c503949564dc4323bca2d54a59b303daSwimsuit%20back.png)Hi there, I am not happy with how my swimsuit looks on the backside of my 3D render (it looks to really go up the wearer's backside!). Is there anyway I can make this peak look flatter so it's not giving the effect of going up the gap? Many thanks. ![9edf1f44dda649c0b5571875bab7a83b](https://storagefiles.clo-set.com/public/community/202601/7a5f8218e9ff466b9423503f88d5fb64/images/9edf1f44dda649c0b5571875bab7a83bSwimsuit%20back.png)\n\n### Community Post Comments:\nComment 1: If you just want a different visual while keeping the pattern intact, you can use the steaming tool to \"stretch\" out that part and see if you like the 3D result better: https://connect.clo-set.com/community/post/7a5f8218e9ff466b9423503f88d5fb64\nReply 1: Thanks for the suggestion. It didn't really work - just made it bubbly in that area.\nReply 2: :( I see, another approach then. Set the crotch of the avatar to 100% and then spread the legs. My before screenshot already has the crotch at 100% which allows for more room, but doesn't let this amount of fabric come in \"flat\". But the spread legs allow for even more room. Your pattern has more surface than the panties here, but it's worth a try.",
-        "content_description": "\"Seek advice and tips on how to adjust the design of your swimsuit's backside in 3D renders for a more flattering fit.\"",
-        "source": "Connect Community",
-        "created_at": "2026-01-19T02:04:34.35Z",
-        "category": 220,
-        "tags": [
-            "CLO"
-        ]
-    },
-    {
-        "id": "3c8d8179fadc44a6a664fc910abec18e",
-        "url": "https://connect.clo-set.com/community/post/3c8d8179fadc44a6a664fc910abec18e",
-        "title": " leather materials ,  physical",
-        "content": "## ![f70b637dafc64ebbb5a64d47be0cd3c9](https://storagefiles.clo-set.com/public/community/202601/3c8d8179fadc44a6a664fc910abec18e/images/f70b637dafc64ebbb5a64d47be0cd3c9Shell%20Cordovan%20Leather%202.png)I’ve been focusing a lot on **leather materials in Marvelous Designer** , not just visually but also on **physical behavior** , especially **edge stiffness, thickness, and how the back side of leather reacts in folds and tension**.\n\nI’m curious — are there sellers or creators who really care about these details, or is most leather content still treated more like stiff fabric presets?\n\nWould love to hear different approaches.\n\n* * *",
-        "content_description": "This webpage serves as a discussion forum for creators and sellers to share their insights and approaches to utilizing leather materials in Marvelous Designer, focusing on the intricacies of physical behavior and realism.",
-        "source": "Connect Community",
-        "created_at": "2026-01-18T06:25:29.357Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "MarvelousDesigner",
-            "CLO-SET",
-            "AI"
-        ]
-    },
-    {
-        "id": "a9bd1b15b2ef40f0911dae573f8c76b0",
-        "url": "https://connect.clo-set.com/community/post/a9bd1b15b2ef40f0911dae573f8c76b0",
-        "title": "The Way I Use AI with CLO",
-        "content": "**The Way I Use AI with CLO**\n\n  1. Design a garment by writing down the image you envision as a prompt.\n\n  2. Use AI to convert the prompt into a 2D image.\n\n  3. Apply the result to CLO.\n\n\n\n\n* * *\n\n![7020e41845ba4654afb121d14cfe2e58](https://storagefiles.clo-set.com/public/community/202601/a9bd1b15b2ef40f0911dae573f8c76b0/images/7020e41845ba4654afb121d14cfe2e580006.png)![f161984dc0a241fa818cb4a6827c9750](https://storagefiles.clo-set.com/public/community/202601/a9bd1b15b2ef40f0911dae573f8c76b0/images/f161984dc0a241fa818cb4a6827c9750Generated%20Image%20January%2012%2C%202026%20-%202_07AM.png)",
-        "content_description": "Discover how to seamlessly integrate AI into your garment design process with CLO by transforming your creative prompts into stunning 2D visuals.",
-        "source": "Connect Community",
-        "created_at": "2026-01-17T16:25:40.867Z",
-        "category": 240,
-        "tags": [
-            "CLO",
-            "AI"
-        ]
-    },
-    {
-        "id": "713286cc4ce54331b4fbc526389d6af1",
-        "url": "https://connect.clo-set.com/community/post/713286cc4ce54331b4fbc526389d6af1",
-        "title": "Entering Pattern Information Onto All Patterns In All Sizes In The Quickest Way Possible",
-        "content": "Let’s say I have patterns in these sizes\n\nS, M, L, XL, XXL\n\nI want to enter pattern information onto all the patterns (Arms, Body, Collar etc.) in all those sizes.\n\nPattern Information Like\n\n  \nBrand Name\n\nGarment Model Name\n\nPattern Name\n\nSize\n\netc.\n\nIf I do It on Adobe Illustrator I guess I have to open a pattern in a particular size paste the information onto all the patterns (Arm, Collar, Body etc.)\n\nthen do It again and again for all other sizes.\n\nQuestion 1) How can I do It in the quickest and practical way possible?\n\nQuestion 2) Other suggestions etc.?\n\n### Community Post Comments:\nComment 1: Hello - how about naming each piece of pattern by selecting it in the Property Editor ( name is on the very top)For the garment and brand maybe Annotation works best\nReply 1: Nice trick. Thank you very much for sharing. I'll try.\n\nComment 2: How about using the Pattern Annotation in CLO?",
-        "content_description": "This web page aims to provide efficient strategies and tools for entering and managing pattern information across multiple garment sizes in Adobe Illustrator, streamlining the design process for brands.",
-        "source": "Connect Community",
-        "created_at": "2026-01-17T12:56:08.757Z",
-        "category": 220,
-        "tags": [
             "CLO",
             "Pattern",
             "Import_Export"
         ]
     },
     {
-        "id": "caa21e06026b4a26ab88fedf375689b3",
-        "url": "https://connect.clo-set.com/community/post/caa21e06026b4a26ab88fedf375689b3",
-        "title": "How To Remove The Dart On The Trousers Waistline",
-        "content": "Tutorial Vidoes show how to draw or shift the dart but they don’t show how to remove the dart.\n\nCan you explain how can I do these pelase?\n\nStep 1) measure the dart base (Let’s say the dart 2 cm)\n\nHow to measure the “dart gap” “dart base”?\n\nStep 2) Remove the dart\n\nStep 3) Add 1 cm to each side of the waist line on the Back Trousers Pattern.\n\nIs “Edit Pattern Tool - Offset Pattern Outline” right for this purpose?\n\n![223c5885cc8c4a87830d3a5385f57fbe](https://storagefiles.clo-set.com/public/community/202601/caa21e06026b4a26ab88fedf375689b3/images/223c5885cc8c4a87830d3a5385f57fbeScreenshot%202026-01-16%20at%2018.46.23.png)\n\n### Community Post Comments:\nComment 1: Just try out the different ideas you have, if it doesn't work you can just revert the last step :) In this case, \"Offset Pattern Outline\" will affect the entire segment in a parallel way. If you wish to keep a nice curve instead, on suggestion would be to try moving the outer corners via the Edit Pattern tool by dragging. You can open a precision window for measurements by right-clicking at the same time as you are dragging and holding down the left mouse button. Another way would be to right-click on the segment and choose \"Change Length\", then putting in the desired measurement.\nReply 1: What about Step 2) How do I remove the dart? I could not do this.\nReply 2: Delete the corner point of the dart inside the pattern piece, then smooth out the waistline (two segment points will remain on it, you can covert them to curve points and go from there).",
-        "content_description": "Learn how to effectively remove a dart from your pattern by measuring the dart base and adjusting the waistline accordingly.",
+        "id": "fb4de342369a475186390fa950badb12",
+        "url": "https://connect.clo-set.com/community/post/fb4de342369a475186390fa950badb12",
+        "title": "Interesting embroidery",
+        "content": "![50c4ab9374b7416baf4b9490088a240c](https://storagefiles.clo-set.com/public/community/202602/fb4de342369a475186390fa950badb12/images/50c4ab9374b7416baf4b9490088a240cimage.png)![373178a683e941688a2356a1be14431c](https://storagefiles.clo-set.com/public/community/202602/fb4de342369a475186390fa950badb12/images/373178a683e941688a2356a1be14431cimage.png)I added small horse - head embroidery to the diamond - shaped quilting patterns to enhance the texture. If you're interested, you can visit my homepage for more details!\n\n![704bf18bdfdf4d8bb9f10d55d9d2e08a](https://storagefiles.clo-set.com/public/community/202602/fb4de342369a475186390fa950badb12/images/704bf18bdfdf4d8bb9f10d55d9d2e08aimage.png)\n\n### Community Post Comments:\nComment 1: Yeah. I love your matching series😍\nReply 1: ❤️❤️❤️\n\nComment 2: I love the cute horse embroidery😍\nReply 1: Haha, yeah, if you're interested, you really should check out my homepage. There are still quite a few details I haven't shown, and I guarantee they'll make your eyes light up~❤️",
+        "content_description": "Showcasing unique quilt designs featuring intricate horse-head embroidery within diamond-shaped patterns, with more details available on the homepage.",
         "source": "Connect Community",
-        "created_at": "2026-01-16T15:47:16.02Z",
+        "created_at": "2026-02-01T15:37:44.217Z",
+        "category": 240,
+        "tags": [
+            "CLO",
+            "Rendering",
+            "Photoshop",
+            "CLO-SET",
+            "CONNECT",
+            "AI"
+        ]
+    },
+    {
+        "id": "91e54843675e44049fd31d8ce89a20f1",
+        "url": "https://connect.clo-set.com/community/post/91e54843675e44049fd31d8ce89a20f1",
+        "title": "CLO Avatar Poses",
+        "content": "Hi there, how can I get other CLO defaut assest for avatar poses? I only have these and I am sure there should be more available right? Thanks for any help you can provide.\n\n![21714b425ec446318a9f9cee4948f640](https://storagefiles.clo-set.com/public/community/202601/91e54843675e44049fd31d8ce89a20f1/images/21714b425ec446318a9f9cee4948f640image.png)\n\n### Community Post Comments:\nComment 1: Hi Both of you. Our team has said if the assets are not there Close CLO with the \"X\" in the upper right corner and then relaunch CLO. This should fix it.But if it does not please reach out to our Tech Support directly - https://connect.clo-set.com/community/post/91e54843675e44049fd31d8ce89a20f1\n\nComment 2: I have the same problem. Yesterday I had a lot of different poses, but today they are gone. The same with some of the default avatars and the default garments.",
+        "content_description": "This web page provides information and support for accessing additional default CLO assets for avatar poses.",
+        "source": "Connect Community",
+        "created_at": "2026-01-29T04:07:23.213Z",
         "category": 220,
         "tags": [
-            "CLO",
-            "Pattern"
+            "CLO"
         ]
     },
     {
-        "id": "dd024be01ff848b8bdfe0b21f18a7b2b",
-        "url": "https://connect.clo-set.com/community/post/dd024be01ff848b8bdfe0b21f18a7b2b",
-        "title": "How To Measure Dart Gap With The POM Tool",
-        "content": "In Segment Mode when I click on the dart leg points It measures the whole dart. (Measurement of the 2 Dart legs)\n\nBut I want to measure the distance between those dart legs. (the gap between them on the waist curve)\n\nOn the screenshot It is presented as “here”\n\nHow can I do this?\n\n![800b92aaf752445782f9ee3f69b05e07](https://storagefiles.clo-set.com/public/community/202601/dd024be01ff848b8bdfe0b21f18a7b2b/images/800b92aaf752445782f9ee3f69b05e07Screenshot%202026-01-15%20at%2014.54.38.png)\n\n### Community Post Comments:\nComment 1: Hi there, the POM tool skips empty space as you have noted, but there is a way to trick it into measuring a gap. (1) First, create a random POM on the pattern piece. (2) With the Edit POM tool, grab one end and drag and drop it to one side of the gap - the point will be magnetic and snap to it. (3) Do the same with the other end. The gap is now being measured.\nReply 1: https://connect.clo-set.com/community/post/dd024be01ff848b8bdfe0b21f18a7b2b some reason the other end of the POM line does not snap to the other edge of the gap.As you see on the screenshot video;???\nReply 2: You still have the entire line selected, not just the point you wish to move. Click in the empty space once to lose the selection, then drag and drop only the point to be moved and it will work :)\nReply 3: Understood. Thank you very much.",
-        "content_description": "This webpage provides guidance on measuring the gap between dart leg points on a waist curve in Segment Mode.",
+        "id": "ca6d44441bcc41c49690f9916a0c9436",
+        "url": "https://connect.clo-set.com/community/post/ca6d44441bcc41c49690f9916a0c9436",
+        "title": "New Tool: CLO → Professional Fashion Photography",
+        "content": "Now in Beta Testing stage. Enquire for free trial.\n\n[humanoid.ooo](https://humanoid.ooo)\n\n![501e4faf8e014af0a548b14c10a8efd1](https://storagefiles.clo-set.com/public/community/202601/ca6d44441bcc41c49690f9916a0c9436/images/501e4faf8e014af0a548b14c10a8efd1redruffle-example.jpg)![1e18fe0a05cf4f43bccb0ba2ef500624](https://storagefiles.clo-set.com/public/community/202601/ca6d44441bcc41c49690f9916a0c9436/images/1e18fe0a05cf4f43bccb0ba2ef500624sunskirt-example.jpg)![86653b603b7b4534b4c195fb5adb22bb](https://storagefiles.clo-set.com/public/community/202601/ca6d44441bcc41c49690f9916a0c9436/images/86653b603b7b4534b4c195fb5adb22bbflowerpower-example.jpg)![8111803d571d4cc5af08e1c0b609a9b2](https://storagefiles.clo-set.com/public/community/202601/ca6d44441bcc41c49690f9916a0c9436/images/8111803d571d4cc5af08e1c0b609a9b2tancoat-example.jpg)![94adc710fdc9448899dfa70e67eaf308](https://storagefiles.clo-set.com/public/community/202601/ca6d44441bcc41c49690f9916a0c9436/images/94adc710fdc9448899dfa70e67eaf308pearldress-example.jpg)![4295b30f529347f588e7645e6afa684d](https://storagefiles.clo-set.com/public/community/202601/ca6d44441bcc41c49690f9916a0c9436/images/4295b30f529347f588e7645e6afa684dnightwear-example.jpg)![758e5ae677864d359e06e9a248d21956](https://storagefiles.clo-set.com/public/community/202601/ca6d44441bcc41c49690f9916a0c9436/images/758e5ae677864d359e06e9a248d21956cowboyshorts-example.jpg)![d46368af5e7f4fc988b6babe97ae6d04](https://storagefiles.clo-set.com/public/community/202601/ca6d44441bcc41c49690f9916a0c9436/images/d46368af5e7f4fc988b6babe97ae6d04metallicpink-example.jpg)![60265b15d7ee433ab08512489c0d50de](https://storagefiles.clo-set.com/public/community/202601/ca6d44441bcc41c49690f9916a0c9436/images/60265b15d7ee433ab08512489c0d50detweedcoat-example.jpg)![9af66a47dde3479f8fb3a92d69eef918](https://storagefiles.clo-set.com/public/community/202601/ca6d44441bcc41c49690f9916a0c9436/images/9af66a47dde3479f8fb3a92d69eef918fabricant-example.jpg)![8fb264a8fb384eabb1ef97ecf54a0d9f](https://storagefiles.clo-set.com/public/community/202601/ca6d44441bcc41c49690f9916a0c9436/images/8fb264a8fb384eabb1ef97ecf54a0d9fbrownleather-example.jpg)![663a5616cc3941ab8199444e79cfe124](https://storagefiles.clo-set.com/public/community/202601/ca6d44441bcc41c49690f9916a0c9436/images/663a5616cc3941ab8199444e79cfe124knitdress-example.jpg)\n\n### Community Post Comments:\nComment 1: So cool~!!👍🏻",
+        "content_description": "Discover and explore humanoid.ooo’s innovative fashion designs in beta, and enquire now for a free trial.",
         "source": "Connect Community",
-        "created_at": "2026-01-15T11:58:49.533Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "Pattern"
-        ]
-    },
-    {
-        "id": "53f61684e79a40819967df19c134e621",
-        "url": "https://connect.clo-set.com/community/post/53f61684e79a40819967df19c134e621",
-        "title": "free file in store >>>",
-        "content": "![42fe8c0f911c44f68341d6970a0dd39e](https://storagefiles.clo-set.com/public/community/202601/53f61684e79a40819967df19c134e621/images/42fe8c0f911c44f68341d6970a0dd39eChatGPT%20Image%2015%20%D9%8A%D9%86%D8%A7%D9%8A%D8%B1%202026%D8%8C%2010_00_29%20%D8%B5.png)\n\n### Community Post Comments:\nComment 1: Your creativity is truly amazing 😍\nReply 1: thanks ❤️",
-        "content_description": "This web page aims to provide a comprehensive overview of community events and resources to foster engagement and connectivity among local residents.",
-        "source": "Connect Community",
-        "created_at": "2026-01-15T07:14:45.087Z",
-        "category": 210,
+        "created_at": "2026-01-28T12:25:14.85Z",
+        "category": 240,
         "tags": [
             "CLO",
             "MarvelousDesigner",
-            "CLO-SET",
+            "CONNECT",
             "AI"
+        ]
+    },
+    {
+        "id": "a0d32c53c28d4b05b5b407c137d8e233",
+        "url": "https://connect.clo-set.com/community/post/a0d32c53c28d4b05b5b407c137d8e233",
+        "title": "안감 패딩 작업을 위한 Pressure 팁 3가지 (by. Bler)",
+        "content": "안녕하세요, 실무 중심 프리미엄 러닝 플랫폼 블러Bler입니다.  \n  \nCLO로 패딩 작업을 하다 보면 의외로 손이 많이 가고, 공들인 것에 비해 실물 느낌이 안 나서 고민될 때가 많죠. 실무에서 패딩의 완성도를 높이고 작업 시간은 단축하기 위해 습관적으로 사용하는 한 끗 차이 팁을 공유합니다.  \n  \n**1️⃣ 누빔선 트레이스 한 번에 끝내는 락(Lock)의 활용**  \n패딩 퀼팅 라인이 많을 때 하나하나 클릭하는 건 너무 고된 작업이죠. 이럴 때 [Lock All Pattern Outlines]를 활용해 아주 빠르게 베이스 라인을 추출합니다.  \n  \n**실무 Tip:** 빈 바탕 우클릭으로 외곽선을 잠근 뒤 전체 드래그를 해보세요. 클릭 몇 번 없이도 내부 라인만 깔끔하게 선택됩니다. 그 상태에서 바로 인터널 라인(Internal Line)으로 변환하면 누빔 준비 끝! 작은 습관이지만 작업 텐션이 확 올라갑니다.![0046f7de61384b21ace211feddaa6feb](https://storagefiles.clo-set.com/public/community/202601/a0d32c53c28d4b05b5b407c137d8e233/images/0046f7de61384b21ace211feddaa6feb01-1.webp)  \n**2️⃣ 자연스러운 볼륨감을 위한 프레셔(Pressure) 세트 세팅**  \n패딩의 빵빵함은 프레셔 값에서 오지만, 무작정 높인다고 예쁘게 나오진 않더라고요. 안감과 겉감에 **상반된 힘** 을 주어 균형을 잡는 방식이 더 선호됩니다.  \n  \n**실무 Tip:** 겉감에는 **플러스(+)** , 안감에는 **마이너스(-)** 값을 세트로 줘보세요. 겉은 부풀고 안은 몸에 착 붙으면서 실물 패딩 특유의 구조가 잡힙니다. 저는 보통 **5/-5** 나 **10/-10** 정도로 시작해서 눈으로 확인하며 미세 조정을 합니다. 핵심은 양쪽 수치를 세트로 맞춰야 옷의 밸런스가 무너지지 않는다는 점이에요!![3ed8ba6eda9840989ac90440a61fc35b](https://storagefiles.clo-set.com/public/community/202601/a0d32c53c28d4b05b5b407c137d8e233/images/3ed8ba6eda9840989ac90440a61fc35b02-1.webp)  \n**3️⃣ 엘라스틱(Elastic) 97%로 만드는 리얼한 잔주름**  \n시뮬레이션 후 결과물이 너무 매끈해서 컴퓨터 그래픽 느낌이 강하다면 **엘라스틱** 을 써보세요.  \n  \n**실무 Tip:** 퀼팅 라인을 선택하고 엘라스틱을 **97% 정도** 로 살짝만 줘보세요. 누빔 부위가 아주 미세하게 수축하면서 원단에 생동감 있는 잔주름이 생깁니다. 100%일 때보다 훨씬 '옷 같은' 느낌이 나죠. 특히 나일론 소재를 쓸 때 이 3%의 차이가 결과물의 급을 바꿔놓곤 합니다.![979ca44926034456b8a7427bd9859988](https://storagefiles.clo-set.com/public/community/202601/a0d32c53c28d4b05b5b407c137d8e233/images/979ca44926034456b8a7427bd985998803-1.webp)  \n더 다양한 아이템에 적용할 수 있는 디테일링 기법이나 실무 CLO 유저의 워크플로우가 궁금하시다면, CLO 커뮤니티 유저분들에게만 공개하는 [CLO 응용 클래스] 무료 공개 강의 링크를 확인해 주세요!  \n  \n[▶ 블러Bler의 CLO + AI 응용 클래스 14강 무료 맛보기](https://youtu.be/Go9NC8_EfEM?utm_source=youtube&utm_medium=organic&utm_campaign=pid_70&utm_content=connect_nohsoohyun_01)",
+        "content_description": "실무 중심의 CLO 패딩 작업 효율과 완성도를 높이는 핵심 팁과 무료 응용 강의를 제공하는 프리미엄 러닝 플랫폼 블러Bler입니다.",
+        "source": "Connect Community",
+        "created_at": "2026-01-28T09:29:52.767Z",
+        "category": 240,
+        "tags": [
+            "CLO",
+            "CONNECT",
+            "Simulation",
+            "Pattern",
+            "Material"
         ]
     }
 ]

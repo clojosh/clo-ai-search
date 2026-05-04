@@ -2,16 +2,15 @@ import json
 import logging
 import os
 import re
-from pathlib import Path
 from urllib.parse import urljoin
 
 import html2text
 import requests  # type: ignore
 import shortuuid
 import tiktoken
-from bs4 import BeautifulSoup, Tag
+from bs4 import BeautifulSoup
+from lingua import Language, LanguageDetectorBuilder
 from rich import print
-from tqdm import tqdm
 
 
 def logger(title: str = "", text: str = "") -> None:
@@ -407,6 +406,32 @@ def get_version_info_by_article_id(article_id, json_data):
                     return {"version": version_num, "year": year}
 
     return None
+
+
+def lingua_language_detector(text, print_output: bool = True):
+    """
+    Detects the language in the given text and returns the language name and code i.e Language.ENGLISH, en-us
+
+    Args:
+        text (str): The text string to detect the language from.
+        print_output (bool, optional): Whether to print the detected language and confidence values. Defaults to True.
+
+    Returns:
+        Tuple[str, str]: The detected language name and code (e.g. English, en-us)
+    """
+    # List of supported languages
+    languages = [Language.ENGLISH, Language.KOREAN, Language.CHINESE, Language.JAPANESE, Language.SPANISH, Language.PORTUGUESE, Language.FRENCH]
+
+    # Build the language detector
+    detector = LanguageDetectorBuilder.from_languages(*languages).build()
+
+    # Detect the language
+    language_detected = detector.detect_language_of(text)
+    if language_detected is None:
+        return None, None
+
+    # Return the detected language name and code
+    return language_detected.name.title(), language_detected.iso_code_639_1.name.lower()
 
 
 if __name__ == "__main__":

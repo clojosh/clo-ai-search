@@ -1,3 +1,4 @@
+import asyncio
 import json
 import os
 import re
@@ -18,7 +19,7 @@ if _src_root not in sys.path:
 
 from search.ai_search import AISearch
 from tools.azure import Azure
-from tools.misc import html_to_markdown_converter, remove_html_tags, remove_unwanted_markdown_images, trim_tokens
+from tools.misc import html_to_markdown_converter, lingua_language_detector, remove_html_tags, remove_unwanted_markdown_images, trim_tokens
 
 POSTS_ENDPOINT = "https://connect.clo-set.com/api/community/post/search?tags={tags}&category={category}&pageSize={page_size}"
 POST_DETAIL = "https://connect.clo-set.com/api/community/post/{post_id}"
@@ -254,7 +255,11 @@ class Posts:
                 },
             )
 
-            posts = json.loads(posts_response.text)
+            try:
+                posts = json.loads(posts_response.text)
+            except json.JSONDecodeError as e:
+                print(f"Error decoding JSON: {e}")
+                continue
 
         with ThreadPoolExecutor(max_workers=10) as executor:
             list(tqdm(executor.map(lambda p: self.get_posts(*p), tasks), total=len(tasks), desc="Processing Posts", colour="blue"))
@@ -267,6 +272,10 @@ class Posts:
                 upload_documents = []
                 for document in documents:
                     if document["content"] == "":
+                        continue
+
+                    language, code = lingua_language_detector(document["content"])
+                    if language != "English":
                         continue
 
                     if document["category"] == 100:
@@ -297,11 +306,15 @@ class Posts:
                             "source": document["source"],
                             "created_at": document["created_at"],
                             "title_vector": self.azure.openai_helper.generate_embeddings(text=document["title"]),
-                            "content_vector": self.azure.openai_helper.generate_embeddings(text=document["content"] if document["content"] != "" else document["post_title"]),
+                            "content_vector": self.azure.openai_helper.generate_embeddings(text=document["content"] if document["content"] != "" else document["title"]),
                         }
                     )
 
-                self.azure.search_client.upload_documents(upload_documents)
+                if upload_documents:
+                    try:
+                        self.azure.search_client.upload_documents(upload_documents)
+                    except Exception as e:
+                        print(f"Azure Upload Error: {e}")
 
             except Exception as e:
                 print(e)
@@ -364,8 +377,10 @@ if __name__ == "__main__":
 
     if task == "Get Post":
         post_id = questionary.text("Post ID:").ask()
+        post = post.get_post(post_id)
 
-        print(post.get_post(stage, brand, post_id=post_id))
+        language, code = asyncio.run(lingua_language_detector(post["content"]))
+        print(language)
 
     elif task == "Get All Posts":
         post.mt_get_posts()
@@ -390,7 +405,7 @@ if __name__ == "__main__":
             list(tqdm(executor.map(lambda p: post.upload(*p), upload_posts_params), total=len(upload_posts_params), desc="Uploading Posts", colour="magenta"))
 
     elif task == "Find & Delete AI Search Documents":
-        search_fields_options = ["article_id", "source", "title", "content", "content_description"]
+        search_fields_options = ["article_id", "url", "title", "content", "source", "content_description"]
 
         search_field = questionary.select("Search field?", choices=search_fields_options).ask()
         search_text = questionary.text("Search value?").ask()
@@ -398,7 +413,7 @@ if __name__ == "__main__":
         documents = ai_search.find_all_ai_search_documents(search_fields=[search_field], search_text=search_text)
 
         for document in documents:
-            print(document["article_id"] + "\n" + document["source"], "\n")
+            print(document["article_id"] + "\n" + document["url"], "\n")
 
         print(f"\nTotal documents found: {len(documents)}\n")
 

@@ -1,301 +1,214 @@
 [
     {
-        "id": "4b259cb209804d18a54a6e1873df0ba5",
-        "url": "https://connect.clo-set.com/community/post/4b259cb209804d18a54a6e1873df0ba5",
-        "title": "Lacing Tool",
-        "content": "I keep seeing references to a Lacing Tool. It sounds like something I need, but I can't find it in the latest 2025.2.330 version.\n\n### Community Post Comments:\nComment 1: Hi, where did you see these references? The tool is not in the latest version but something you can anticipate for the future.",
-        "content_description": "This webpage aims to provide information and guidance on locating and utilizing the Lacing Tool in the latest version of the software.",
+        "id": "6e1aae71331a445cb843c47228033990",
+        "url": "https://connect.clo-set.com/community/post/6e1aae71331a445cb843c47228033990",
+        "title": "Grading is not like before",
+        "content": "I'm trying to grade a project, but the system seems to have changed. I can't input in the offset part on all sizes 0.63cm, it shows 0.06cm. Also, when I try to input different numbers for some sizes, it deletes/substracts the amount from the previous box. Not sure what's going on or if it's a glitch. I tried on other projects and the problem persist.\n\n### Community Post Comments:\nComment 1: Hi, this is a known bug for CLO 2025.2.238. It will be fixed on the upcoming update (CLO 2026). Thank you for you patience!",
+        "content_description": "This page provides guidance and troubleshooting for grading projects when encountering input errors and unexpected behavior in the offset measurement system.",
         "source": "Connect Community",
-        "created_at": "2026-02-26T16:08:46.875Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "Trim"
-        ]
-    },
-    {
-        "id": "0a2654fa4a144754b8c528e1acef965e",
-        "url": "https://connect.clo-set.com/community/post/0a2654fa4a144754b8c528e1acef965e",
-        "title": "Internal Polygon And Nodes Which Can Not Be Deleted",
-        "content": "[https://www.dropbox.com/scl/fi/8p35j0lo6hp189b653d2z/Internal-Polygon-And-Nodes-Which-Cannot-Be-Deleted.zprj?rlkey=476qmnxgtasoaefgtd3lqd26a&st=f565k5nm&dl=0](https://www.dropbox.com/scl/fi/8p35j0lo6hp189b653d2z/Internal-Polygon-And-Nodes-Which-Cannot-Be-Deleted.zprj?rlkey=476qmnxgtasoaefgtd3lqd26a&st=f565k5nm&dl=0)\n\nQuestion 1) I can not delete the Internal Polygon and the Nodes on It which is shown with the Red Arrow.\n\n“Edit Pattern Tool - Right Click - Delete”\n\nThere is no error or prompt.\n\nQuestion 2) I can not put Node on the Internal Polygon which is shown with a Green Arrow from the right side to the left side.\n\nChoose Add Node Split Line Tool - Choose the right node. - Hover from the right to the left. - Right Click - Enter the measruement 25.4\n\nIt still adds the node by measuring “From Left to Right” rather than “Right To Left”\n\n???\n\n![6867eafafd9c41399d0f99eb02bbe314](https://storagefiles.clo-set.com/public/community/202602/0a2654fa4a144754b8c528e1acef965e/images/6867eafafd9c41399d0f99eb02bbe314Screenshot%202026-02-26%20at%2016.38.14.png)\n\n### Community Post Comments:\nComment 1: Hi, I don't know what is up with that line (aside from having a lot of curve points despite being a striaght line - and they also cannot be deleted with the Curve Point tool). I cannot delete anything about that line with Edit Pattern either, however, I was able to delete it with Transform Pattern. Since it is causing issues, I suggest to delete the line thus and add a new internal line in its stead. About Add Point / Split Line: It's working fine for me.\nReply 1: https://connect.clo-set.com/community/post/0a2654fa4a144754b8c528e1acef965e do I do wrong with using Add Node Split Line Tool?\nReply 2: Hi there, I'm sorry but I don't know what is the case here - the logic is that if you click more on the right half of the line, the yellow measurement should be from there, and vice versa. However, you can simply type in the 25.4 as the blue measurement here and use the preview as guidance. Doesn't matter how you get there as long as the outcome is correct!",
-        "content_description": "This web page aims to provide troubleshooting guidance for issues related to deleting internal polygons and adding nodes in a specific design software.",
-        "source": "Connect Community",
-        "created_at": "2026-02-26T13:46:20.793Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "Pattern"
-        ]
-    },
-    {
-        "id": "b6ce4218209c4837b122aa0a2e5cff52",
-        "url": "https://connect.clo-set.com/community/post/b6ce4218209c4837b122aa0a2e5cff52",
-        "title": "About CLO software hardward requestment",
-        "content": "Hi, \n\nRefer [CLO system requirements (July 2025) – How can we help you?, ](https://support.clo3d.com/hc/en-us/articles/115000307168-CLO-system-requirements-July-2025)\n\nit need internet connection required, what does it mean? Do it access which website? Thanks.\n\n### Community Post Comments:\nComment 1: Yes, you log in to CLO through the website which is why you need an internet connection",
-        "content_description": "This web page aims to clarify the internet connection requirements for the CLO system and explain the specific websites it accesses for functionality.",
-        "source": "Connect Community",
-        "created_at": "2026-02-26T12:07:40.668Z",
+        "created_at": "2026-03-18T18:47:27.613Z",
         "category": 210,
         "tags": [
             "CLO"
         ]
     },
     {
-        "id": "eaf89ac7ccc64cf1b4871ae063cadb5e",
-        "url": "https://connect.clo-set.com/community/post/eaf89ac7ccc64cf1b4871ae063cadb5e",
-        "title": "Elastic Waistband",
-        "content": "Dear Dears, I have the problem that the pant legs seem to “fly up.” They end up folding over the waistband. When I try to position the pant legs correctly during the simulation, they keep slipping back over the waistband. Does anyone have a tip on what I can do? Many thanks :)![91a1a38aa36b4ee78f019950532e882f](https://storagefiles.clo-set.com/public/community/202602/eaf89ac7ccc64cf1b4871ae063cadb5e/images/91a1a38aa36b4ee78f019950532e882fSimulation%202.png)![ce6121c9d0b0400aaf59dbc43b7306d9](https://storagefiles.clo-set.com/public/community/202602/eaf89ac7ccc64cf1b4871ae063cadb5e/images/ce6121c9d0b0400aaf59dbc43b7306d9Simulation.png)![b057e997df684102930d97dd85637ac1](https://storagefiles.clo-set.com/public/community/202602/eaf89ac7ccc64cf1b4871ae063cadb5e/images/b057e997df684102930d97dd85637ac1Simulation%203.png)\n\nYouTube Video: https://www.youtube.com/watch?v=-Pn1Xat-X8Y\n\n### Community Post Comments:\nComment 1: Hi Tina, would it be possible to share the file so we can have a look? Please open a ticket here https://connect.clo-set.com/community/post/eaf89ac7ccc64cf1b4871ae063cadb5e and note it is for Melody and you come from the forums - you can add a wetransfer link to the message.",
-        "content_description": "Get expert tips and solutions for fixing pant legs that keep slipping over the waistband during simulations.",
+        "id": "7ab0443ddf2449d68a4150f5bebcb052",
+        "url": "https://connect.clo-set.com/community/post/7ab0443ddf2449d68a4150f5bebcb052",
+        "title": "Sign in not working",
+        "content": "I already have a CLO account and subscription, I know my password, and also just reset it to the same thing and I get an error that email and password don't match. I want to see the new features that appeared on the CLO3D program screen and then get asked to sign in again. I'm already signed in on the program and CLO-SET. Like other users have asked: Why is this so complicated? [https://support.clo3d.com/auth/v3/signin?brand_id=3197847&locale=en-us](https://support.clo3d.com/auth/v3/signin?brand_id=3197847&locale=en-us)\n\n### Community Post Comments:\nComment 1: Hi robin.wag,Sorry to hear about your difficulty signing in to CLO.This issue is typically caused by cached browser data conflicting with your integrated CLO-SET account. To resolve this, please log out of the software and all CLO websites, clear your browser cache, and restart the program. When prompted, select the \"Sign in with CLO-SET\" option rather than entering your credentials manually.If the issue continues, please submit a ticket at www.clo3d.com/en/support/contactus for further investigation.",
+        "content_description": "This page helps existing CLO3D users troubleshoot sign-in issues and learn about new program features.",
         "source": "Connect Community",
-        "created_at": "2026-02-26T07:52:12.2Z",
-        "category": 240,
-        "tags": [
-            "CLO",
-            "Simulation",
-            "Texture",
-            "Trim"
-        ]
-    },
-    {
-        "id": "812d685ab7284b86b57014cf2b90ec5d",
-        "url": "https://connect.clo-set.com/community/post/812d685ab7284b86b57014cf2b90ec5d",
-        "title": "pattern design expands in 3d window ",
-        "content": "![c1d87dff144444fda615bffe56bd1a96](https://storagefiles.clo-set.com/public/community/202602/812d685ab7284b86b57014cf2b90ec5d/images/c1d87dff144444fda615bffe56bd1a96image.png)hi,\n\nCan anyone help on this my pattern design expands in 3d window while in 2d window it looks perfect.\n\nRegards.\n\nNk\n\n### Community Post Comments:\nComment 1: i got the answer , it is all about shrinkage weft.👍🏻\n\nComment 2: hard to tell from such a close up in 3D, but it just looks like the angle you are viewing it from and how the garment is draping",
-        "content_description": "The purpose of this web page is to seek assistance from the community in resolving an issue with a pattern design that appears distorted in a 3D view while maintaining its integrity in a 2D view.",
-        "source": "Connect Community",
-        "created_at": "2026-02-25T13:04:51.312Z",
-        "category": 220,
-        "tags": [
-            "CLO",
-            "CLO-SET",
-            "CONNECT"
-        ]
-    },
-    {
-        "id": "0eb7ebe626814122823904e5870b69fd",
-        "url": "https://connect.clo-set.com/community/post/0eb7ebe626814122823904e5870b69fd",
-        "title": "Custom Views File Type",
-        "content": "Dear Dears, I want to save the images created in Custom Views, but I can’t open the file type ZCMR. Can I change the settings? Can it be saved as a PNG? Many thanks in advance. :)![0ee9b10da1ef4e9fb8eacff8ddd6c2b9](https://storagefiles.clo-set.com/public/community/202602/0eb7ebe626814122823904e5870b69fd/images/0ee9b10da1ef4e9fb8eacff8ddd6c2b9cUSTOM%20vIEW.png)![7a42d5a6952340b483d9731273bed5e8](https://storagefiles.clo-set.com/public/community/202602/0eb7ebe626814122823904e5870b69fd/images/7a42d5a6952340b483d9731273bed5e8file%20name.png)",
-        "content_description": "This webpage aims to provide guidance on saving images from Custom Views in a compatible format, specifically addressing the conversion of ZCMR files to PNG.",
-        "source": "Connect Community",
-        "created_at": "2026-02-25T09:42:31.454Z",
+        "created_at": "2026-03-17T21:49:15.642Z",
         "category": 220,
         "tags": [
             "CLO"
         ]
     },
     {
-        "id": "4dc82b5412ca4ff0bef9df9e1a5f5b75",
-        "url": "https://connect.clo-set.com/community/post/4dc82b5412ca4ff0bef9df9e1a5f5b75",
-        "title": "AIi Pose Generator",
-        "content": "Dear dears, the AI Pose Generartor won`t open for me. What am I doing wrong? Many thanks in advance for help :)![9dae693c454a47a0992fda601bffec8d](https://storagefiles.clo-set.com/public/community/202602/4dc82b5412ca4ff0bef9df9e1a5f5b75/images/9dae693c454a47a0992fda601bffec8dAI%20Pose%20Generator.png)",
-        "content_description": "This webpage aims to provide troubleshooting support for users experiencing issues with the AI Pose Generator.",
+        "id": "e53750502b674a94a09412ea375f6619",
+        "url": "https://connect.clo-set.com/community/post/e53750502b674a94a09412ea375f6619",
+        "title": "DXF AAMA export loses annotations",
+        "content": "I'm trying to export in DXF format for use in Gerber and if I export a graded pattern, it grades on the sewing lines instead of the seam allowance. I can export individually (what a pain) but the annotations do not stay connected to the patterns. They are off in space. Now I'm stuck with a lot of patterns made for a client which I can't make in a format they can use, help.\n\n### Community Post Comments:\nComment 1: Is your client using the Gerber Data Exchange Utility and selecting the \"Grade on Sew Line\" option during import? Since CLO anchors grading to the sewing line, this setting is required for Gerber to correctly read the nest and maintain the seam allowances, which are preserved as distinct coordinate data within the DXF-AAMA file.If this doesn't resolve the issue, please upload the file to our technical support portal for a deeper look: https://connect.clo-set.com/community/post/e53750502b674a94a09412ea375f6619\n\nComment 2: So, this is all in the CLO zpri file. It also doesn't show the seam allowance graded here, but when I switch sizes it shows the correct seam allowance so I know the data is there.\n\nComment 3: Hi carfritsch,Happy to help! Could you attach screenshots of your export settings, and the 2d window showing the patterns with seam allowance with grading on and off?",
+        "content_description": "This page provides solutions for exporting graded sewing patterns in DXF format with correct seam allowance grading and properly attached annotations for use in Gerber systems.",
         "source": "Connect Community",
-        "created_at": "2026-02-25T09:21:47.496Z",
-        "category": 220,
-        "tags": [
-            "CLO",
-            "AI",
-            "Avatar"
-        ]
-    },
-    {
-        "id": "2181f8b1e6a3444c8a0af5bbd5e60aff",
-        "url": "https://connect.clo-set.com/community/post/2181f8b1e6a3444c8a0af5bbd5e60aff",
-        "title": "How To Revert The Match Up Function",
-        "content": "Not via Undo CMD + Z please!\n\nQuestion 1) Here since the side seams are tilted not straight matching up to the side seams do not work.\n\nQuestion 2) how to rotate the pattern in the way one segment is parallel to the other segment\n\nFor example\n\nI want to rotate the back pattern here\n\nin the way that Hemming Line Of the Back Pattern becomes parallel to the Hemming Line Of The Front Pattern?\n\n![c95b751f7e8241f9bb7ddced19c467eb](https://storagefiles.clo-set.com/public/community/202602/2181f8b1e6a3444c8a0af5bbd5e60aff/images/c95b751f7e8241f9bb7ddced19c467ebScreenshot%202026-02-24%20at%2017.31.37.png)\n\n### Community Post Comments:\nComment 1: Just use your Transform pattern tool..You can R-Click on it and select Rotate from the drop down menu and then select which rotate optionAgain here is an entire Article readily available on our website. https://connect.clo-set.com/community/post/2181f8b1e6a3444c8a0af5bbd5e60aff can alsways be easily found with a quick search\nReply 1: Yesterday Rotate With Hold SHIFT did not work for some reason. Sorry. Now It works.",
-        "content_description": "\"Learn how to properly rotate your sewing patterns to align seams and hems for a flawless fit!\"",
-        "source": "Connect Community",
-        "created_at": "2026-02-24T14:38:08.391Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "Pattern"
-        ]
-    },
-    {
-        "id": "82e45f53a2eb44c0a1c3e6c488cbb84c",
-        "url": "https://connect.clo-set.com/community/post/82e45f53a2eb44c0a1c3e6c488cbb84c",
-        "title": "Unreal engine Cliping issue ",
-        "content": "After simulating in Clo3D when i am going to import my garments to unreal its showing cliping with metahuman please advise how can i fix this issue ? thanks \n\nNote . I have used unreal engine 5.7.3\n\n### Community Post Comments:\nComment 1: Hi Again. We noticed that there is no active MD or CLO license under your account. Can you please make sure to post from the account that has an active license for further assistance",
-        "content_description": "\"Get expert advice on resolving garment clipping issues in Unreal Engine 5.7.3 when importing from Clo3D to Metahuman.\"",
-        "source": "Connect Community",
-        "created_at": "2026-02-24T13:49:06.604Z",
-        "category": 220,
-        "tags": [
-            "UnrealEngine",
-            "CLO",
-            "MarvelousDesigner",
-            "Simulation"
-        ]
-    },
-    {
-        "id": "1c9b4454fb49429d81f27cca08ab5608",
-        "url": "https://connect.clo-set.com/community/post/1c9b4454fb49429d81f27cca08ab5608",
-        "title": "unable to drag and drop fabric from CLO Library",
-        "content": "I’m unable to drag and drop fabric from the CLO Library ((.zfab files)) into the Texture Editor as shown in the tutorial. Each time I try, an information window appears stating “File type not supported”.\n\nCould you please advise on how to resolve these issues? Thanks in advance\n\n![bc4c6d4a88f34e64ba16fe9610771570](https://storagefiles.clo-set.com/public/community/202602/1c9b4454fb49429d81f27cca08ab5608/images/bc4c6d4a88f34e64ba16fe9610771570unable%20to%20add%20fabric%20by%20drag%20.png)\n\n### Community Post Comments:\nComment 1: Hi There. Thank you for reposting. I just want to add here that in future there are multiple moderators on CONNECT so please make sure to add all information to the post here . Like linking the Tutorial video. Not all moderators may have knows about your other questions on youtubeFor adding Textures if you watch the tutorials carefully you can see that the narratoris adding pngs and jpegs from their personal linked folders. They are NOT adding zfab files to the Texture EditorWhen using the texture editor you need to add images and not fabric files. Fabric Files can only be added in the Fabric Tab in the Object Browser",
-        "content_description": "\"Get expert advice on resolving issues with importing .zfab files from the CLO Library into the Texture Editor.\"",
-        "source": "Connect Community",
-        "created_at": "2026-02-24T11:49:35.351Z",
+        "created_at": "2026-03-17T12:27:37.253Z",
         "category": 250,
         "tags": [
             "CLO",
-            "TextureEditor"
+            "Import_Export",
+            "Pattern"
         ]
     },
     {
-        "id": "975acc2d173d45468d70d08e4ad4694d",
-        "url": "https://connect.clo-set.com/community/post/975acc2d173d45468d70d08e4ad4694d",
-        "title": "Flatten Tool Does Not Work",
-        "content": "[https://www.dropbox.com/scl/fi/313j4p8tw3bjr5kn33lci/Flatten-Does-Not-Work.zprj?rlkey=bupe9i0q6y2h0oog2h1grb75l&st=i281o1lx&dl=0](https://www.dropbox.com/scl/fi/313j4p8tw3bjr5kn33lci/Flatten-Does-Not-Work.zprj?rlkey=bupe9i0q6y2h0oog2h1grb75l&st=i281o1lx&dl=0)\n\nIt does not work.\n\nThere always must be a opened shape.\n\nThis is the 3rd time I started over to draw with 3D pen on the Avatar.\n\nIt still does not work.\n\nI inspect with the Edit 3D Pen Tool.\n\nI could not find a opened line.\n\nAny suggestions?\n\n### Community Post Comments:\nComment 1: \"\"\"\"So this may be that your computers hardware is not able to do this as flattening can be very complex and heavy on hardware\"\"\"\"Then It looks like Official Clo3D System Requirements are clearly misleading.It can not run simple tools even on a single avatar with a single garment even without a lining etc.It has some other chronic problems with other simple tools like Edit Pattern Tool which I mentioned on my other post.\"Edit Pattern Tool - CMD + Drag + Right Click Locks The Macbook\"I mean It does not even work on MacBook M4 Pro with M4 Pro chip with 24 GB RAM.I hope these are just bugs and developers are willing to fix these on further updates. and soon.Because I already invested on MacBook and can't afford another PC currently.",
-        "content_description": "This web page aims to provide troubleshooting tips and suggestions for users experiencing issues with creating open shapes while using a 3D pen.",
+        "id": "2980be980dbc4716b1818a5e092d7b56",
+        "url": "https://connect.clo-set.com/community/post/2980be980dbc4716b1818a5e092d7b56",
+        "title": "CLO Render Mesh",
+        "content": "Hi there, I am trying to render a garment made of a mesh fabric and the images are coming out as below with a blurred effect. The front and back of the garment also appear a difference shade/ colour despite the same render settings. Any tips as to how to improve this? Many thanks!\n\n![5ae354385420410c8878f82626f1e3fa](https://storagefiles.clo-set.com/public/community/202603/2980be980dbc4716b1818a5e092d7b56/images/5ae354385420410c8878f82626f1e3faimage.png)",
+        "content_description": "A community forum page for seeking advice on improving mesh fabric garment renders and resolving color inconsistencies.",
         "source": "Connect Community",
-        "created_at": "2026-02-24T10:45:23.494Z",
-        "category": 210,
+        "created_at": "2026-03-17T05:18:11.625Z",
+        "category": 220,
         "tags": [
             "CLO",
-            "Avatar"
+            "Rendering"
         ]
     },
     {
-        "id": "b98a010b58ef4ee5b8305e0303faa80f",
-        "url": "https://connect.clo-set.com/community/post/b98a010b58ef4ee5b8305e0303faa80f",
-        "title": "INTRO TO CLO - Basic Apparel Design",
-        "content": "![](https://storagefiles.clo-set.com/public/community/202602/b98a010b58ef4ee5b8305e0303faa80f/images/e7debd10daa449c3825341dccb41ca1e%E1%83%97%E1%83%90%E1%83%9B%E1%83%97%E1%83%90%20%E1%83%A5%E1%83%90%E1%83%A0%E1%83%97%E1%83%95%E1%83%94%E1%83%9A%E1%83%98%E1%83%A8%E1%83%95%E1%83%98%E1%83%9A%E1%83%98.jpg)Guys Hello,\n\nI recently finished the course on online CLO Academy - Intro to CLO. I've gone through each topic, written all the quizzes, including the final one yesterday and I got 95,26% as a mark but I still can't see my certificate to download. Should I worry or just wait cause it needs time? Can anyone help? Thanks!\n\n### Community Post Comments:\nComment 1: You must reach out the CLO academy directly. One of the instructors can help you there\nReply 1: Thank you!",
-        "content_description": "This web page aims to provide guidance and assistance for users experiencing issues with downloading their certificates after completing online courses at CLO Academy.",
+        "id": "ef8045d51bd7422bb5d6a4186b66b082",
+        "url": "https://connect.clo-set.com/community/post/ef8045d51bd7422bb5d6a4186b66b082",
+        "title": "Micro gathering",
+        "content": "Hi All,\n\nAny tips on achieving these micro wrinkles and gathering near the waist band with realism?![5567becd69d24395a447cda8f1675b10](https://storagefiles.clo-set.com/public/community/202603/ef8045d51bd7422bb5d6a4186b66b082/images/5567becd69d24395a447cda8f1675b10image.png)",
+        "content_description": "A community forum page for sharing tips and techniques on creating realistic micro wrinkles and fabric gathering near waistbands in digital clothing design.",
         "source": "Connect Community",
-        "created_at": "2026-02-24T07:25:04.503Z",
-        "category": 210,
+        "created_at": "2026-03-16T14:22:17.248Z",
+        "category": 220,
         "tags": [
+            "CLO",
+            "Rendering",
+            "Material",
+            "Simulation",
+            "Texture"
+        ]
+    },
+    {
+        "id": "a134284c3e064f41b169c1c1dece5a9a",
+        "url": "https://connect.clo-set.com/community/post/a134284c3e064f41b169c1c1dece5a9a",
+        "title": "Game Inspired Character Outfit — Recreated in Marvelous Designer",
+        "content": "## ![](https://storagefiles.clo-set.com/public/community/202603/a134284c3e064f41b169c1c1dece5a9a/images/69f213cd187f4c0284ba3e11354e4c07INVISIB_19.png)![](https://storagefiles.clo-set.com/public/community/202603/a134284c3e064f41b169c1c1dece5a9a/images/23f5f0319f4b4022bb76e1f0681a751bINVISIB_19.png)Invisible Women Inspired Outfit — Marvelous Designer Project\n\nWhile playing a game, I came across a character skin that immediately caught my attention because of its **bold colors, retro style, and strong character personality**. The design felt unique and stylish, and I wanted to challenge myself by recreating a similar outfit using **Marvelous Designer**.\n\nThis project became an opportunity to explore how a **game-inspired costume** could be translated into a garment created entirely through digital pattern making and cloth simulation.\n\n![7fb2b8776aac4e388b6a4f5364ff9f15](https://storagefiles.clo-set.com/public/community/202603/a134284c3e064f41b169c1c1dece5a9a/images/7fb2b8776aac4e388b6a4f5364ff9f15Screenshot%20%28505%29.png)\n\n* * *\n\n### Reference and Inspiration\n\nThe main inspiration for this outfit came from Marvel Rivals **game character skin**. What stood out to me the most was the combination of:\n\n  * Bright pink color palette\n\n  * Retro fashion elements\n\n  * Futuristic character styling\n\n\n\n\nThe design balances **playful fashion with a confident hero-like presence** , which made it an interesting challenge to recreate.\n\n### Building the Outfit in Marvelous Designer\n\nThe outfit was constructed step by step inside Marvelous Designer using pattern-based garment creation.\n\nThe process started with the **base pants and top** , carefully fitted to the avatar to establish a clean silhouette. Once the foundation was working correctly, additional pieces were layered to build the final look.\n\nKey garment pieces include:\n\n  * A **structured corset-style top** with panel segmentation\n\n  * **High-waisted pants** with curved seam lines\n\n  * A **short cropped jacket** to add structure and contrast\n\n  * A **scarf accessory** to introduce movement to the design\n\n\n\n\nEach piece was simulated and adjusted to maintain a natural garment flow.\n\n![64ee918a73394cb6afdda3267fefd00b](https://storagefiles.clo-set.com/public/community/202603/a134284c3e064f41b169c1c1dece5a9a/images/64ee918a73394cb6afdda3267fefd00bScreenshot%20%28534%29.png)\n\n### Details and Character Elements\n\nTo capture the personality of the original inspiration, several stylistic elements were incorporated:\n\n  * A decorative **belt with circular details and emblem**\n\n  * Retro-inspired **sunglasses**\n\n  * Flowing lower pant sections that soften the silhouette\n\n\n\n\nThese elements help create a design that feels **stylish, playful, and character-driven**.\n\n![f5f69c5af6474e519f90fba738533238](https://storagefiles.clo-set.com/public/community/202603/a134284c3e064f41b169c1c1dece5a9a/images/f5f69c5af6474e519f90fba738533238INVISIB_19.png)\n\n![606c628ae36340e886989db582082cca](https://storagefiles.clo-set.com/public/community/202603/a134284c3e064f41b169c1c1dece5a9a/images/606c628ae36340e886989db582082ccaINVISIB_21.png)\n\n### Final Thoughts\n\nThis project was mainly a **practice and exploration piece** , inspired by a game skin that I enjoyed while playing. Recreating it in Marvelous Designer helped me better understand **pattern construction, garment layering, and digital clothing simulation**.\n\nIt was a fun challenge to translate a **stylized game costume into a simulated garment** , and it allowed me to experiment with both **fashion design and character outfit creation**.\n\n### Community Post Comments:\nComment 1: This is awesome! I want to jump into The Sims right now and put this on my Sim.\nReply 1: That’s such a compliment, thanks😍",
+        "content_description": "Showcasing the digital recreation of a bold, retro-inspired game character outfit crafted step-by-step using Marvelous Designer for pattern making and cloth simulation.",
+        "source": "Connect Community",
+        "created_at": "2026-03-15T15:24:01.306Z",
+        "category": 215,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "Rendering",
+            "Material",
+            "Texture",
+            "Colorway"
+        ]
+    },
+    {
+        "id": "91194e8d345c486e9837403b913341e3",
+        "url": "https://connect.clo-set.com/community/post/91194e8d345c486e9837403b913341e3",
+        "title": "Notches Visible in Print Layout but Missing After PDF Export (CLO)",
+        "content": "Previously, when I exported my graded patterns as a PDF and opened them in Adobe Illustrator, I could only see the base pattern. Now, with the updated version of CLO, when I export the PDF using **Snapshot** from the **Print Layout** section and open it in Adobe Illustrator, I can see the graded version. However, the notches from the base pattern are not transferred to the graded sizes, even though they appear in the Print Layout view. Does anyone know how to solve this?\n\n### Community Post Comments:\nComment 1: Hi, I am having the same issue - no notches no matter what format I export in - can anyone help ASAP?\nReply 1: Hi, sorry, this message slipped us. Please check the replies below for the latest status. It is a bug that will be fixed. If this is a critical feature for your workflow, please downgrade to 2025.2.330 for now.\n\nComment 2: Hi, there's been a few reports of this type of issue since the last patch release and I don't know more yet, but if you know for sure it worked before updating, please downgrade back to 2025.2.330 for now: https://connect.clo-set.com/community/post/91194e8d345c486e9837403b913341e3\nReply 1: Update: The bug has been found and is being worked on for future patches 🙂\n\nComment 3: I'm experiencing the exact same problem! I've been trying all day to export my patterns but can't find my notches anymore... I've tried everything... It was working perfectly before. Hope someone will be able to help you 🙏🏻",
+        "content_description": "This page seeks solutions for missing notches on graded pattern PDFs exported from CLO's Print Layout Snapshot when opened in Adobe Illustrator.",
+        "source": "Connect Community",
+        "created_at": "2026-03-14T06:34:05.031Z",
+        "category": 220,
+        "tags": [
+            "Pattern",
+            "Import_Export",
             "CLO"
         ]
     },
     {
-        "id": "cd9cef3be4d84498b3937abc971fdbe3",
-        "url": "https://connect.clo-set.com/community/post/cd9cef3be4d84498b3937abc971fdbe3",
-        "title": "AI Motion Test",
-        "content": "## ![](https://storagefiles.clo-set.com/public/community/202602/cd9cef3be4d84498b3937abc971fdbe3/images/d3a0e7b89b3248cf909bcfe95c789c95diff%20growth-03.jpg)![](https://storagefiles.clo-set.com/public/community/202602/cd9cef3be4d84498b3937abc971fdbe3/images/ec6ac273f5974ec094f8cf0da61872eediff%20growth-03.jpg)**_✨From 7 Still Images to Animated Fashion Piece (Kling AI)✨_**\n\n**For this experiment, I started with a garment created in CLO3D, rendered the final look in KeyShot, and then generated motion using Kling AI from 7 still frames:**\n\n<https://connect.clo-set.com/detail/adfa298ac9484299ac63cbbbc1181e89>\n\n## _CLO3D → KeyShot → 7 Renders → Kling AI → Video Generation_\n\n![77ad2f15fc174369904f357dd3406000](https://storagefiles.clo-set.com/public/community/202602/cd9cef3be4d84498b3937abc971fdbe3/images/77ad2f15fc174369904f357dd3406000kling_20260222_VIDEO_Image3_Ima_835_0-ezgif.com-video-to-webp-converter.webp)\n\n## [ _app.klingai.com/global_](https://app.klingai.com/global)\n\n* * *\n\n**Pipeline:**\n\n  1. Garment development in CLO3D\n\n  2. High-quality rendering in KeyShot (controlled lighting + consistent camera angle)\n\n  3. Exported 7 sequential still images\n\n  4. Motion generation & interpolation in Kling AI\n\n\n\n\n![7bcb8f096a454d74b06a391d50fb753f](https://storagefiles.clo-set.com/public/community/202602/cd9cef3be4d84498b3937abc971fdbe3/images/7bcb8f096a454d74b06a391d50fb753fScreenshot%20%281132%29.png) ![d1eb6c1e3be64ad0bf0c36a42f486a70](https://storagefiles.clo-set.com/public/community/202602/cd9cef3be4d84498b3937abc971fdbe3/images/d1eb6c1e3be64ad0bf0c36a42f486a70gandr-collage%20%2845%29.jpg)\n\n![c86f30bcb6dd4b4c91bd683cb979d1af](https://storagefiles.clo-set.com/public/community/202602/cd9cef3be4d84498b3937abc971fdbe3/images/c86f30bcb6dd4b4c91bd683cb979d1afScreenshot%20%281133%29.png)\n\nMy goal was to test how AI interprets:\n\n  * Fabric weight and drape\n\n  * Surface details and ornamentation\n\n  * Layered silhouettes\n\n  * Continuity of body posture\n\n\n\n\nUsing rendered frames instead of raw CLO viewport output helped maintain material realism and lighting consistency during AI interpolation.\n\nThis workflow could be useful for:\n\n  * Quick fashion motion previews\n\n  * Concept animation without full simulation\n\n  * Social media content production\n\n  * Early-stage visual storytelling\n\n\n\n\nI’m curious — would you integrate AI motion tools into your CLO workflow, or keep simulation and AI pipelines separate?\n\n### Community Post Comments:\nComment 1: wow thanks for sharing the pipeline! I'm just keep using the simulation in Marvelous Designer and use AI pipelines after it. But the tech changes really fast these days. So I'm trying to adjust myself to AI environment more than I'm doing it now.",
-        "content_description": "This web page showcases an innovative workflow for transforming still images of fashion garments into animated pieces using AI, highlighting the integration of CLO3D, KeyShot, and Kling AI to enhance visual storytelling and content production in the fashion industry.",
+        "id": "e4ebb6798cab40ab84fa0cf3e147dc47",
+        "url": "https://connect.clo-set.com/community/post/e4ebb6798cab40ab84fa0cf3e147dc47",
+        "title": "Feedback Needed on My Wrestling Singlet Design",
+        "content": "Hi everyone! 👋\n\nrecently designed this wrestling singlet. I’d really appreciate your honest feedback on the design, fit, and overall look. Any suggestions or improvements are welcome. Thanks a lot!![a5523a4ba8a6434cbe3461f81335d978](https://storagefiles.clo-set.com/public/community/202603/e4ebb6798cab40ab84fa0cf3e147dc47/images/a5523a4ba8a6434cbe3461f81335d9781.2.jpg)![fe7581d0c56d4334aca4c5d8482b3558](https://storagefiles.clo-set.com/public/community/202603/e4ebb6798cab40ab84fa0cf3e147dc47/images/fe7581d0c56d4334aca4c5d8482b35581.1.jpg)\n\n### Community Post Comments:\nComment 1: awesome work!\n\nComment 2: Great work! I'm not familiar with singlet fit &amp; construction, but your materials and coverstitches look excellent!",
+        "content_description": "A page to showcase a newly designed wrestling singlet and gather honest feedback on its design, fit, and appearance.",
         "source": "Connect Community",
-        "created_at": "2026-02-24T05:45:14.997Z",
-        "category": 240,
+        "created_at": "2026-03-13T05:55:11.443Z",
+        "category": 210,
         "tags": [
-            "KeyShot",
-            "Kling",
-            "AI",
-            "Video",
-            "Generation",
             "CLO",
-            "FashionTech",
-            "DigitalFashion"
+            "CLO-SET",
+            "CONNECT",
+            "MarvelousDesigner",
+            "Material",
+            "Pattern",
+            "Rendering",
+            "Simulation",
+            "Texture"
         ]
     },
     {
-        "id": "16b56a1ea840446fb81a1e308d0be257",
-        "url": "https://connect.clo-set.com/community/post/16b56a1ea840446fb81a1e308d0be257",
-        "title": "CLO - STL File for Measurements",
-        "content": "Hi there,\n\nI have an STL file of body measurements / position that I want to import in to CLO. I can't see an option to import this type of file though, is this possible?Should I try to convert to another file type? Many thanks, Maylin\n\n### Community Post Comments:\nComment 1: That type is not compatible with CLO. You can see file types that are compatible on our websitehttps://connect.clo-set.com/community/post/16b56a1ea840446fb81a1e308d0be257",
-        "content_description": "This webpage aims to provide guidance on importing STL files into CLO and offer potential conversion options for compatibility.",
+        "id": "ff3f05a530b64f5696806fa4dc48808b",
+        "url": "https://connect.clo-set.com/community/post/ff3f05a530b64f5696806fa4dc48808b",
+        "title": "Avatar with no buttocks ",
+        "content": "Hi,\n\nI am trying to customize my avatar with my measurements. However, the volume is consistently added to the lower belly instead of the buttocks which is a big problem for pants and skirt pattern fitting. Does anybody knows how to deal with it. The avatar is completely off from the side.\n\nThanks for your help!\n\n![32b4911fc0fe4c81b97f2a7239485fa7](https://storagefiles.clo-set.com/public/community/202603/ff3f05a530b64f5696806fa4dc48808b/images/32b4911fc0fe4c81b97f2a7239485fa7Screenshot%202026-03-13%20at%201.01.14%E2%80%AFAM.png)![05bbf53a98dd4a45a1e2c0c56e08f4a5](https://storagefiles.clo-set.com/public/community/202603/ff3f05a530b64f5696806fa4dc48808b/images/05bbf53a98dd4a45a1e2c0c56e08f4a5Screenshot%202026-03-13%20at%201.01.45%E2%80%AFAM.png)![bee6e68455194114a75e200ad256c9cc](https://storagefiles.clo-set.com/public/community/202603/ff3f05a530b64f5696806fa4dc48808b/images/bee6e68455194114a75e200ad256c9ccScreenshot%202026-03-13%20at%201.01.26%E2%80%AFAM.png)\n\n### Community Post Comments:\nComment 1: Hi! We can see there is an open support ticket on the question. A French colleague will answer asap. 🙏🏻\nReply 1: Thank you 🙏🏻",
+        "content_description": "This page seeks solutions for accurately customizing avatar body measurements to improve garment fitting, specifically addressing volume placement issues in virtual pattern design.",
         "source": "Connect Community",
-        "created_at": "2026-02-24T00:37:43.207Z",
+        "created_at": "2026-03-13T00:03:34.859Z",
         "category": 220,
         "tags": [
             "CLO",
-            "Avatar"
+            "avatar",
+            "butt",
+            "buttock",
+            "fitting",
+            "measurements",
+            "avatarshape"
         ]
     },
     {
-        "id": "72d56b39cfc44b92900a6910b78b9151",
-        "url": "https://connect.clo-set.com/community/post/72d56b39cfc44b92900a6910b78b9151",
-        "title": "Resetting Avatar Does Not Work ",
-        "content": "[https://www.dropbox.com/scl/fi/fvxx8llzr1d4tgp6nkkvr/Screen-Recording-2026-02-23-at-18.58.07.mov?rlkey=fv7la089jqp1prfq2isnkva1c&st=7vlky3ts&dl=0](https://www.dropbox.com/scl/fi/fvxx8llzr1d4tgp6nkkvr/Screen-Recording-2026-02-23-at-18.58.07.mov?rlkey=fv7la089jqp1prfq2isnkva1c&st=7vlky3ts&dl=0)\n\nHere is the screenshot video while I’m trying to reset the avatar’s position.\n\n(with Move to the center, move to the ground commands)\n\nWhy doesn’t It work?\n\nThe avatar is still\n\nA) Off Centered\n\nB) Off The Ground\n\nC) Is Not Straight\n\n????\n\n### Community Post Comments:\nComment 1: Because You likely tilted the avatar. Just apply a New Apose or any other pose to the avatar or turn on Joints and grab the center of the avatar and rotate with the gizmo.\nReply 1: So avatar can not be completely reset.I mean tilt position can not be reset. I have to do this manually. And If the position is tilted. A) move to the centerB) move to the groundcommands do not work either.\nReply 2: as the other moderator already told you Apply the Default CLO A pose (or any other pose!) file from the Avatar Pose folder. This will move the avatar back to the ground with no tilt.If you you do are move to center or move to ground will just move the avatar as is till a point gets to center or to ground.Or while doing this you could have just did ctrl+z (undo) right away and undid the weird tilt.Please always try what people are telling you they are all giving you answers to very simple basic questions.\nReply 3: Thank you very much.",
-        "content_description": "This web page aims to troubleshoot issues related to resetting an avatar's position in a virtual environment, addressing problems of misalignment and incorrect placement.",
+        "id": "4384c7768e734ac2b1fb16b1f418143e",
+        "url": "https://connect.clo-set.com/community/post/4384c7768e734ac2b1fb16b1f418143e",
+        "title": "Casualwear Collection | 3D Apparel Presentation",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202603/4384c7768e734ac2b1fb16b1f418143e/images/835610bf981c4b20b80a2b0e0b0dc0f4digital_apparel_BC.jpg)![93e463767fbb47779f59f99199cf3aa8](https://storagefiles.clo-set.com/public/community/202603/4384c7768e734ac2b1fb16b1f418143e/images/93e463767fbb47779f59f99199cf3aa8digital_apparel_BC.jpg)  \nHello CLO community!!\n\nI’d like to share **digital apparel showcase developed using 3D garment design tools**. The collection includes various casualwear pieces such as **hoodies, striped polo's, sweatshirts & activewear**, all created entirely in a 3D environment.\n\nAs many of you already experience, **3D apparel design is transforming the fashion development process**. Brands today need faster product cycles, clearer visualization, and fewer physical samples. With accurate digital garments, teams can review designs, adjust fit, and finalize styles much earlier in the development stage.\n\n### Why 3D Apparel Development Is Important Today  \n✔ Reduced physical sampling and development cost  \n✔ Faster product approvals and decision making  \n✔ Better communication between design, merchandising & production  \n✔ Creation of assets for marketing, e-commerce, and digital showrooms\n\nThese garments were developed as part of ongoing **3D apparel exploration and workflow practice** , focusing on realistic materials, garment construction and digital presentation.\n\nI’d love to hear feedback from the community and also learn how others are integrating **3D workflows into their apparel development process**.\n\nAlways happy to connect with fellow **CLO designers, 3D artists, and digital fashion creators** here.\n\nThank you!\n\n### Community Post Comments:\nComment 1: 👍🏻",
+        "content_description": "Showcasing innovative 3D-designed casual apparel to highlight how digital garment development accelerates fashion workflows and enhances collaboration within the CLO community.",
         "source": "Connect Community",
-        "created_at": "2026-02-23T16:03:17.927Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "Avatar"
-        ]
-    },
-    {
-        "id": "cf61b35a41aa4a3ab2796f124d5c719f",
-        "url": "https://connect.clo-set.com/community/post/cf61b35a41aa4a3ab2796f124d5c719f",
-        "title": "Where Is The Flatten Tool On The 3D Toolbar ",
-        "content": "![4f2c3928711948c3962d7b112f30ccd3](https://storagefiles.clo-set.com/public/community/202602/cf61b35a41aa4a3ab2796f124d5c719f/images/4f2c3928711948c3962d7b112f30ccd3Screenshot%202026-02-23%20at%2018.55.12.png)\n\nI looking for 5-10 mins and I could not find It.\n\n### Community Post Comments:\nComment 1: This triangle Always means that there is a collapsed tool. It is under there..👏👏👏\nReply 1: Thank you very much",
-        "content_description": "\"Discover essential tips and resources for quickly locating the information you need online.\"",
-        "source": "Connect Community",
-        "created_at": "2026-02-23T15:57:02.798Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "UI"
-        ]
-    },
-    {
-        "id": "71c7bc4efa0a4e8ea5a9a774292ed38f",
-        "url": "https://connect.clo-set.com/community/post/71c7bc4efa0a4e8ea5a9a774292ed38f",
-        "title": "How To Rotate The Avatar While Using 3D Pen",
-        "content": "Like she did at 3:00\n\n<https://www.youtube.com/watch?v=6nKllTXUtP0>\n\nYou can not leave the 3D Pen Tool on and go to the Select / Move Tool and back to the 3D Pen Tool either.\n\nThen your incomplete line gets lost.\n\nSo how to rotate the avatar?\n\n### Community Post Comments:\nComment 1: You rotate as normal. Right click and hold to rotate after setting a point. No need to complete as you can rotate while working",
-        "content_description": "This web page provides tips on effectively using the 3D Pen Tool and rotating the avatar in your design projects to avoid losing progress.",
-        "source": "Connect Community",
-        "created_at": "2026-02-23T15:11:48.519Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "Avatar"
-        ]
-    },
-    {
-        "id": "9bef38ea47c5428e958a58244fa52ebd",
-        "url": "https://connect.clo-set.com/community/post/9bef38ea47c5428e958a58244fa52ebd",
-        "title": "Wrestling singlet",
-        "content": "* * *\n\n* * *\n\n![3fa7222cdab1432c90686e63f3568665](https://storagefiles.clo-set.com/public/community/202602/9bef38ea47c5428e958a58244fa52ebd/images/3fa7222cdab1432c90686e63f35686651.4.jpg)![0608dde15883498f9a9e2d5c19ea5e61](https://storagefiles.clo-set.com/public/community/202602/9bef38ea47c5428e958a58244fa52ebd/images/0608dde15883498f9a9e2d5c19ea5e611.2.jpg)![1f73a942697c4699a7bc0d53016e33cd](https://storagefiles.clo-set.com/public/community/202602/9bef38ea47c5428e958a58244fa52ebd/images/1f73a942697c4699a7bc0d53016e33cd1.3.jpg)![286f2e1bd59a4abe888c16fadf060e56](https://storagefiles.clo-set.com/public/community/202602/9bef38ea47c5428e958a58244fa52ebd/images/286f2e1bd59a4abe888c16fadf060e561.1.jpg)",
-        "content_description": "Discover a curated collection of stylish and unique fashion pieces that elevate your wardrobe.",
-        "source": "Connect Community",
-        "created_at": "2026-02-23T10:19:59.886Z",
+        "created_at": "2026-03-12T14:44:23.408Z",
         "category": 210,
         "tags": [
             "CLO",
             "CLO-SET",
             "CONNECT",
-            "EveryWear"
-        ]
-    },
-    {
-        "id": "cd5c70f32cf545528b7c58f07bd49bbf",
-        "url": "https://connect.clo-set.com/community/post/cd5c70f32cf545528b7c58f07bd49bbf",
-        "title": "Poor Posture Problem Of The Avatar",
-        "content": "I use the default Clo3D avatar.\n\n“MV2.1_Thomas.avt”\n\nThen I customized some measurement\n\nQuestion 1) My avatar has Posture Problem (Postural Disorder)\n\n**Forward head posture with the shoulders pulled back**\n\n**Shoulders and ears are not in line. So It is poor posture look.**\n\n**How can I fix this?**\n\n**Question 2) My avatar has low shoulders.**\n\n**How can i make them positioned high. (Like in the position of the red lines)**\n\n**Image For Question 1**\n\n![a0ea7a4291dd4468a3379fe3d7a9c879](https://storagefiles.clo-set.com/public/community/202602/cd5c70f32cf545528b7c58f07bd49bbf/images/a0ea7a4291dd4468a3379fe3d7a9c879Screenshot%202026-02-22%20at%2022.29.53.png)\n\nImage For Question 2\n\n![e48dd5a24cd147bc8086df595c5bdf30](https://storagefiles.clo-set.com/public/community/202602/cd5c70f32cf545528b7c58f07bd49bbf/images/e48dd5a24cd147bc8086df595c5bdf30Screenshot%202026-02-22%20at%2022.34.38.png)",
-        "content_description": "\"Discover effective solutions to correct posture issues in your customized Clo3D avatar, including forward head posture and low shoulder positioning.\"",
-        "source": "Connect Community",
-        "created_at": "2026-02-22T19:51:38.551Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "Avatar"
-        ]
-    },
-    {
-        "id": "ec8a2af4704c431eb264b8fcac5d03b1",
-        "url": "https://connect.clo-set.com/community/post/ec8a2af4704c431eb264b8fcac5d03b1",
-        "title": "✨ Effortless Elegance Meets Modern Minimalism ✨",
-        "content": "This look brings a fresh twist to classic pleats – soft, flowy, and timeless. From the structured crop top with button-back detailing to the dreamy pleated skirt, it’s all about balance, grace, and sophistication. 🌿👒\n\n[https://www.instagram.com/reel/DODpuXZjbqf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==](https://www.instagram.com/reel/DODpuXZjbqf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)![b3614b08a06246eb88969aad8de10b66](https://storagefiles.clo-set.com/public/community/202602/ec8a2af4704c431eb264b8fcac5d03b1/images/b3614b08a06246eb88969aad8de10b66square%2Bpleated%20c.png)\n\n![15ea64acc10445ce9a542405e8c2f143](https://storagefiles.clo-set.com/public/community/202602/ec8a2af4704c431eb264b8fcac5d03b1/images/15ea64acc10445ce9a542405e8c2f143square%2Bpleated%20s%201.png)![d5a3d0bc389d433e832824d4fa5947e4](https://storagefiles.clo-set.com/public/community/202602/ec8a2af4704c431eb264b8fcac5d03b1/images/d5a3d0bc389d433e832824d4fa5947e4square%2Bpleated%20b.png)![5d33a7b3d9f041bd914099426a730956](https://storagefiles.clo-set.com/public/community/202602/ec8a2af4704c431eb264b8fcac5d03b1/images/5d33a7b3d9f041bd914099426a730956square%2Bpleated%20f.png)[#3dfashion](https://www.instagram.com/explore/tags/3dfashion/) [#clo3d](https://www.instagram.com/explore/tags/clo3d/) [#digitalfashion](https://www.instagram.com/explore/tags/digitalfashion/) [#pleatedskirt](https://www.instagram.com/explore/tags/pleatedskirt/) [#virtualstyle](https://www.instagram.com/explore/tags/virtualstyle/) [#minimalchic](https://www.instagram.com/explore/tags/minimalchic/) [#3dfashiondesign](https://www.instagram.com/explore/tags/3dfashiondesign/) [#digitalfashion](https://www.instagram.com/explore/tags/digitalfashion/) [#virtualfashion](https://www.instagram.com/explore/tags/virtualfashion/) [#fashionillustration](https://www.instagram.com/explore/tags/fashionillustration/) [#luxuryfashion](https://www.instagram.com/explore/tags/luxuryfashion/) [#chicandbold](https://www.instagram.com/explore/tags/chicandbold/) [#timelesselegance](https://www.instagram.com/explore/tags/timelesselegance/) [#techinfashion](https://www.instagram.com/explore/tags/techinfashion/) [#luxurystyle](https://www.instagram.com/explore/tags/luxurystyle/) [#ootdin3d](https://www.instagram.com/explore/tags/ootdin3d/) [#fashionstyle](https://www.instagram.com/explore/tags/fashionstyle/) [#fashion](https://www.instagram.com/explore/tags/fashion/) [#dress](https://www.instagram.com/explore/tags/dress/) [#digitalfashion](https://www.instagram.com/explore/tags/digitalfashion/) [#digitalfashiondesign](https://www.instagram.com/explore/tags/digitalfashiondesign/) [#clo3d](https://www.instagram.com/explore/tags/clo3d/) [#clo3dfashion](https://www.instagram.com/explore/tags/clo3dfashion/) [#clo3dartist](https://www.instagram.com/explore/tags/clo3dartist/) [#3ddesign](https://www.instagram.com/explore/tags/3ddesign/) [#3d](https://www.instagram.com/explore/tags/3d/) [#digitalfashion](https://www.instagram.com/explore/tags/digitalfashion/) [#clocreator](https://www.instagram.com/explore/tags/clocreator/) [#clo2025](https://www.instagram.com/explore/tags/clo2025/) [#outfitstyles](https://www.instagram.com/explore/tags/outfitstyles/) [#whattoweartoday](https://www.instagram.com/explore/tags/whattoweartoday/) [#outfitlookbook](https://www.instagram.com/explore/tags/outfitlookbook/) [#fashionluxe](https://www.instagram.com/explore/tags/fashionluxe/) [#pinterestaesthetic](https://www.instagram.com/explore/tags/pinterestaesthetic/) [#dress](https://www.instagram.com/explore/tags/dress/)",
-        "content_description": "Discover a sophisticated blend of timeless elegance and modern flair with our fresh take on classic pleats, featuring a structured crop top and a dreamy pleated skirt that embody balance and grace.",
-        "source": "Connect Community",
-        "created_at": "2026-02-21T13:59:52.778Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "CLO-SET",
-            "CONNECT",
-            "Animation",
-            "Avatar",
+            "Material",
             "Pattern",
-            "Rendering",
             "Texture",
-            "Trim",
+            "Binarycloth"
+        ]
+    },
+    {
+        "id": "0ee3d6a1063a4f53bc188e5f89901da9",
+        "url": "https://connect.clo-set.com/community/post/0ee3d6a1063a4f53bc188e5f89901da9",
+        "title": "Customized accessories lack flexibility",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202603/0ee3d6a1063a4f53bc188e5f89901da9/images/a77c6986632c41d184c1a7bb131d6e83%E7%AC%AC%E4%BA%8C%E7%89%88_6.png)I've replicated a leg adornment from a look four years ago and created two versions. Mainly, the customization options for accessories in CLO are rather limited. It can't generate bindings flexibly according to the corresponding parts of the model. That's why I made one version with high - heeled shoes and another without shoes. If you like them, you can check them out on my profile page. Thanks for your attention.\n\nProduct link：<https://connect.clo-set.com/zh/detail/6fee4eabfc0f42dcbe9daf80af6d77c5?ref_id=108936>\n\n![47c1f077139f431aaf3f3dbf27eb8208](https://storagefiles.clo-set.com/public/community/202603/0ee3d6a1063a4f53bc188e5f89901da9/images/47c1f077139f431aaf3f3dbf27eb8208%E7%AC%AC%E4%BA%8C%E7%89%88_5.png)\n\n![925b54864c83461cbb019144ea0bd873](https://storagefiles.clo-set.com/public/community/202603/0ee3d6a1063a4f53bc188e5f89901da9/images/925b54864c83461cbb019144ea0bd873%E7%AC%AC%E4%BA%8C%E7%89%88_7.png)Click to view the case：\n\n<https://connect.clo-set.com/zh/detail/29ce01c155154fe4846bff14a337706e?ref_id=108936>",
+        "content_description": "Showcasing custom-designed leg adornments with versatile shoe options to enhance CLO accessory customization beyond default limitations.",
+        "source": "Connect Community",
+        "created_at": "2026-03-12T01:10:51.705Z",
+        "category": 250,
+        "tags": [
+            "CLO",
+            "CLO-SET",
+            "Avatar",
+            "Blender"
+        ]
+    },
+    {
+        "id": "3d2d1fb0b02348aa8f21740c1bed4acb",
+        "url": "https://connect.clo-set.com/community/post/3d2d1fb0b02348aa8f21740c1bed4acb",
+        "title": "sports accessories",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202603/3d2d1fb0b02348aa8f21740c1bed4acb/images/6f870825b2d741969791db49a66a6f7d%E7%AC%AC%E4%BA%8C%E7%89%88_9.png)![0f5292ad6cb2484a99059aad1742a206](https://storagefiles.clo-set.com/public/community/202603/3d2d1fb0b02348aa8f21740c1bed4acb/images/0f5292ad6cb2484a99059aad1742a206%E7%AC%AC%E4%BA%8C%E7%89%88.png)![ff129ef094a04e52868d07e12e1b277c](https://storagefiles.clo-set.com/public/community/202603/3d2d1fb0b02348aa8f21740c1bed4acb/images/ff129ef094a04e52868d07e12e1b277c%E7%AC%AC%E4%BA%8C%E7%89%88_1.png)I've shared two helmets and some cycling glasses here for everyone. You can check them out on my profile page.\n\nProduct link：\n\n<https://connect.clo-set.com/zh/detail/1976f122777745dfba80140a4f61778d?ref_id=108936>\n\n<https://connect.clo-set.com/zh/detail/73b9cfa24a3942ab802ceaba6c79941d?ref_id=108936>\n\n![980c2a68f1f74f9a8606b4ba8e0ae7e6](https://storagefiles.clo-set.com/public/community/202603/3d2d1fb0b02348aa8f21740c1bed4acb/images/980c2a68f1f74f9a8606b4ba8e0ae7e6%E7%AC%AC%E4%BA%8C%E7%89%88_3.png)![8573fb0fa5534e7c8e9a8885de43a6c5](https://storagefiles.clo-set.com/public/community/202603/3d2d1fb0b02348aa8f21740c1bed4acb/images/8573fb0fa5534e7c8e9a8885de43a6c5%E7%AC%AC%E4%BA%8C%E7%89%88_4.png)Product link：\n\n<https://connect.clo-set.com/zh/detail/06dd5632e0d44d4ab27668bd11dffc28?ref_id=108936>\n\n<https://connect.clo-set.com/zh/detail/de0c63a5e5db46f2a84f7eb65c3843b1?ref_id=108936>\n\n### Community Post Comments:\nComment 1: Hello Elio!I previously wrote about the issue with adding the women’s helmet to the workspace. I am using the latest version of the program. As you can see in the screenshot, the helmet appears as a long vertical stripe, and I don’t know how to fix it. I would appreciate it if you could help me with this 🙏🏻\nReply 1: Based on the situation you've reported, I think this is a common bug in CLO. Here are some solutions you can try, which should fully resolve the issue: 1.&nbsp;Reload the avatar and then put on the helmet.2.&nbsp;If you've adjusted the size of your avatar, you can first save the adjusted avatar size, then reload the latest avatar, put on the helmet, and then apply the saved size to the new avatar. If the problem is resolved, please let me know as I need your feedback. If not, you can add me on WeChat and I'll help you fix it remotely. Also, please follow me so you won't miss updates.\n\nComment 2: I like the glasses!\nReply 1: ❤️❤️❤️",
+        "content_description": "Discover and explore high-quality cycling helmets and glasses shared for enthusiasts, with detailed product links available on the profile page.",
+        "source": "Connect Community",
+        "created_at": "2026-03-12T01:01:52.095Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "Rendering",
+            "Avatar",
+            "CLO-SET",
+            "Blender",
             "AI"
+        ]
+    },
+    {
+        "id": "0e9416cd35894620944b04a55f00315d",
+        "url": "https://connect.clo-set.com/community/post/0e9416cd35894620944b04a55f00315d",
+        "title": "DXF And PDF Files Imported To Clo3D Do Not Work",
+        "content": "DXF And PDF Files Imported To Clo3D Do Not Work\n\nI exported those file from Affinity Designer (Vector Drawing App)\n\nthen imported into Clo3D with these methods with default settings.\n\nFile - Import - Adobe\n\nFile - Import - DXF (It does not open this file at all. It is greyed out.)\n\nOriginal file looks like this.\n\n![5cbcd3b011174f7186ccbc87d9e53407](https://storagefiles.clo-set.com/public/community/202603/0e9416cd35894620944b04a55f00315d/images/5cbcd3b011174f7186ccbc87d9e53407Screenshot%202026-03-11%20at%2019.11.21.png)\n\nand when I import them into Clo3D looks like these.\n\n![dc3fdee1bfdb42e7a5e76e7e56787f0c](https://storagefiles.clo-set.com/public/community/202603/0e9416cd35894620944b04a55f00315d/images/dc3fdee1bfdb42e7a5e76e7e56787f0cScreenshot%202026-03-11%20at%2019.15.09.png)\n\nSo It definitely does not work at all.\n\nHow can I do these?\n\nAffinity Designer File\n\n[https://www.dropbox.com/scl/fi/mnx9a4es4kknidja8cjmt/Affinity-Designer-File-For-Clo3D-Importing.af?rlkey=c7kckskc5nolvhwzz6mbhnu7r&st=jpkcesam&dl=0](https://www.dropbox.com/scl/fi/mnx9a4es4kknidja8cjmt/Affinity-Designer-File-For-Clo3D-Importing.af?rlkey=c7kckskc5nolvhwzz6mbhnu7r&st=jpkcesam&dl=0)\n\nExported PDF File\n\n[https://www.dropbox.com/scl/fi/xkunqtxr8tffijjksunqi/Exported-PDF-File-For-Clo3D-Importing.pdf?rlkey=nbhy8dbl57u0bpjhsi5vreqx1&st=blrq81ba&dl=0](https://www.dropbox.com/scl/fi/xkunqtxr8tffijjksunqi/Exported-PDF-File-For-Clo3D-Importing.pdf?rlkey=nbhy8dbl57u0bpjhsi5vreqx1&st=blrq81ba&dl=0)\n\nExported DXF File\n\n[https://www.dropbox.com/scl/fi/f5olc7l2455fxq89gquit/Exported-DXF-File-For-Clo3D-Importing?rlkey=0p10csccn04gh0yjukopyxwcg&st=50gjue8x&dl=0](https://www.dropbox.com/scl/fi/f5olc7l2455fxq89gquit/Exported-DXF-File-For-Clo3D-Importing?rlkey=0p10csccn04gh0yjukopyxwcg&st=50gjue8x&dl=0)\n\n### Community Post Comments:\nComment 1: Why DXF is Greyed Out:The file is missing the .dxf extension in your folder. Manually rename the file to include .dxf at the end. CLO 3D won't let you select it otherwise.Not seeing patterns (Join Points):CLO is struggling to interpret your file because your pant outlines are broken segments. In Affinity, select all lines forming the pant perimeter and use Layer &gt; Geometry &gt; Merge (or Join Curves) to create one continuous, closed loop.Clean the File:Delete all text and numbers (1, 5, 23, \"ÖN\", etc.) before exporting. CLO tries to turn every single digit into a separate pattern piece, which causes the \"mess\" and circles you see.If Affinity DXF still doesn't work:Affinity cannot export apparel-standard DXFs (AAMA/ASTM). If you have trouble importing Affinity's standard DXF, you are probably better off exporting as PDF (Digital - High Quality) from Affinity.\nReply 1: It works now. Thank you very much.",
+        "content_description": "This page aims to identify and resolve issues with importing DXF and PDF files exported from Affinity Designer into Clo3D, ensuring proper file compatibility and workflow.",
+        "source": "Connect Community",
+        "created_at": "2026-03-11T16:20:27.004Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "Import_Export"
         ]
     }
 ]

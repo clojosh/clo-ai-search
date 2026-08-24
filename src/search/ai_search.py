@@ -6,6 +6,9 @@ from pathlib import Path
 from typing import List
 
 import questionary
+from azure.core.credentials import AzureKeyCredential
+from azure.search.documents import SearchClient
+from azure.search.documents.indexes import SearchIndexClient
 from azure.search.documents.indexes.models import (
     ComplexField,
     ExhaustiveKnnAlgorithmConfiguration,
@@ -227,6 +230,92 @@ class AISearch:
         result = self.search_index_client.create_or_update_index(index)
         print(f" {result.name} created")
 
+    def copy_index(
+        self,
+        source_service: str,
+        source_key: str,
+        source_index: str,
+        target_service: str,
+        target_key: str,
+        target_index: str,
+        create_target_index: bool = True,
+        batch_size: int = 1000,
+    ):
+        """
+        Copies all documents from a source Azure AI Search index (on a source service)
+        to a target Azure AI Search index (on a target service, which may be the same
+        or a different Azure Search service).
+
+        Args:
+            source_service (str): Source Azure Search service name (without the full URL).
+            source_key (str): Admin/query key for the source service.
+            source_index (str): Name of the index to copy from.
+            target_service (str): Target Azure Search service name (without the full URL).
+            target_key (str): Admin key for the target service.
+            target_index (str): Name of the index to copy to. Created if it doesn't exist.
+            create_target_index (bool, optional): If True, creates the target index using
+                this class's schema (via create_search_index) when it doesn't already exist.
+                Defaults to True.
+            batch_size (int, optional): Number of documents to upload per batch. Defaults to 1000.
+        """
+        source_credential = AzureKeyCredential(source_key)
+        target_credential = AzureKeyCredential(target_key)
+
+        source_search_client = SearchClient(
+            endpoint=f"https://{source_service}.search.windows.net",
+            index_name=source_index,
+            credential=source_credential,
+        )
+        target_search_index_client = SearchIndexClient(
+            endpoint=f"https://{target_service}.search.windows.net",
+            credential=target_credential,
+        )
+        target_search_client = SearchClient(
+            endpoint=f"https://{target_service}.search.windows.net",
+            index_name=target_index,
+            credential=target_credential,
+        )
+
+        existing_indexes = [index.name for index in target_search_index_client.list_indexes()]
+        if target_index not in existing_indexes:
+            if create_target_index:
+                print(f"Target index '{target_index}' not found on '{target_service}', creating it")
+                original_index_client = self.search_index_client
+                self.search_index_client = target_search_index_client
+                try:
+                    self.create_search_index(target_index)
+                finally:
+                    self.search_index_client = original_index_client
+            else:
+                raise ValueError(f"Target index '{target_index}' does not exist on service '{target_service}'")
+
+        results = source_search_client.search(search_text="*", include_total_count=True)
+        total_count = results.get_count()
+        print(f"Copying {total_count} documents from '{source_index}' ({source_service}) to '{target_index}' ({target_service})")
+
+        batch = []
+        copied = 0
+        pbar = tqdm(total=total_count, position=0, leave=True, colour="green")
+        for document in results:
+            document.pop("@search.score", None)
+            document.pop("@search.highlights", None)
+            document.pop("@search.reranker_score", None)
+            batch.append(document)
+
+            if len(batch) >= batch_size:
+                target_search_client.merge_or_upload_documents(batch)
+                copied += len(batch)
+                pbar.update(len(batch))
+                batch = []
+
+        if batch:
+            target_search_client.merge_or_upload_documents(batch)
+            copied += len(batch)
+            pbar.update(len(batch))
+
+        pbar.close()
+        print(f"Copied {copied} documents to '{target_index}' on '{target_service}'")
+
     def drop_search_index(self):
         self.search_index_client.delete_index(self.azure.INDEX_NAME)
         print(f"{self.azure.INDEX_NAME} deleted")
@@ -329,6 +418,7 @@ if __name__ == "__main__":
             "Search Documents (Hybrid, Text, or Vector)",
             "Find Documents",
             "Delete Documents",
+            "Copy Index",
         ],
     ).ask()
 
@@ -372,6 +462,31 @@ if __name__ == "__main__":
             )
         elif task == "Find Documents":
             ai_search.find_documents(search_fields=search_fields, search_text=search_text, select=select, log_results=True)
+
+    elif task == "Copy Index":
+        source_service = questionary.text(
+            "Source Azure Search service name?", default=os.environ.get("SOURCE_AZURE_SEARCH_SERVICE", "")
+        ).ask()
+        source_key = questionary.password(
+            "Source Azure Search admin/query key?", default=os.environ.get("SOURCE_AZURE_SEARCH_KEY", "")
+        ).ask()
+        source_index = questionary.text("Source index name?").ask()
+        target_service = questionary.text(
+            "Target Azure Search service name?", default=os.environ.get("TARGET_AZURE_SEARCH_SERVICE", "")
+        ).ask()
+        target_key = questionary.password(
+            "Target Azure Search admin key?", default=os.environ.get("TARGET_AZURE_SEARCH_KEY", "")
+        ).ask()
+        target_index = questionary.text("Target index name?").ask()
+
+        ai_search.copy_index(
+            source_service=source_service,
+            source_key=source_key,
+            source_index=source_index,
+            target_service=target_service,
+            target_key=target_key,
+            target_index=target_index,
+        )
 
     elif task == "Search Documents":
         search_type = questionary.select("Search Type?", choices=["Hybrid", "Text", "Vector"]).ask()

@@ -1,10 +1,9 @@
-import asyncio
 import json
 import os
 import re
 import sys
-from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timedelta
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from posixpath import basename, splitext
 from typing import Any, Dict, List
@@ -27,6 +26,8 @@ from tools.azure import Azure
 # Initialize Rich console for pretty logging
 console = Console()
 
+BILIBILI_BLOCKED_MESSAGE = "Bilibili blocked the request with HTTP 412. Wait before retrying, and refresh data/<brand>/bilibili/bilibili_cookies.txt from a logged-in browser session if it continues."
+
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 model = WhisperModel(
     "large-v3",
@@ -35,11 +36,49 @@ model = WhisperModel(
 )
 
 
+def prompt_for_date_range() -> tuple[date, date]:
+    today = datetime.now().date()
+    date_range = questionary.select(
+        "Upload date range:",
+        choices=[
+            "Last 7 days",
+            "Last 30 days",
+            "Last 90 days",
+            "Custom date range",
+        ],
+    ).ask()
+
+    if date_range == "Last 7 days":
+        return today - timedelta(days=7), today
+    if date_range == "Last 30 days":
+        return today - timedelta(days=30), today
+    if date_range == "Last 90 days":
+        return today - timedelta(days=90), today
+
+    while True:
+        start_date_str = questionary.text("Start date (YYYY-MM-DD):").ask()
+        end_date_str = questionary.text("End date (YYYY-MM-DD):", default=today.strftime("%Y-%m-%d")).ask()
+
+        try:
+            start_date = datetime.strptime(start_date_str, "%Y-%m-%d").date()
+            end_date = datetime.strptime(end_date_str, "%Y-%m-%d").date()
+        except (TypeError, ValueError):
+            print("Please enter dates in YYYY-MM-DD format.")
+            continue
+
+        if start_date > end_date:
+            print("Start date must be on or before end date.")
+            continue
+
+        return start_date, end_date
+
+
 class Bilibili:
     def __init__(self, azure: Azure):
         self.azure = azure
         self.base_dir = Path(f"data/{azure.brand}/bilibili")
         self.cookie_path = os.path.join(os.getcwd(), self.base_dir, "bilibili_cookies.txt")
+        self.alternate_cookie_path = os.path.join(os.getcwd(), self.base_dir, "bilibili.com_cookies.txt")
         self.video_dir = self.base_dir / "videos"
         self.subtitle_dir = self.base_dir / "subtitles"
         self.transcript_dir = self.base_dir / "transcripts"
@@ -62,6 +101,9 @@ class Bilibili:
         """Removes illegal characters from filenames."""
         return re.sub(r'[\\/*?:"<>|]', "", name)
 
+    def _sanitize_search_key(self, value: str) -> str:
+        return re.sub(r"[^A-Za-z0-9_=-]", "_", value)
+
     def clean_srt_to_txt(self, content: str) -> str:
         """Strips SRT formatting to return raw text transcript."""
         # Remove timestamps
@@ -76,11 +118,203 @@ class Bilibili:
 
     def _get_common_opts(self) -> Dict[str, Any]:
         """Returns base yt-dlp configuration."""
+        cookie_path = self._get_cookie_path()
         return {
-            "cookiefile": self.cookie_path,
+            "cookiefile": cookie_path,
+            "extractor_retries": 3,
+            "fragment_retries": 3,
+            "retries": 3,
+            "sleep_interval": 2,
             "quiet": True,
             "no_warnings": True,
         }
+
+    def _get_cookie_path(self) -> str:
+        if os.path.exists(self.alternate_cookie_path) and os.path.getsize(self.alternate_cookie_path) > 1000:
+            return self.alternate_cookie_path
+
+        if os.path.exists(self.cookie_path) and os.path.getsize(self.cookie_path) <= 500:
+            console.print("[yellow]Bilibili cookie file looks like an anonymous yt-dlp cookie jar. Refresh it from a logged-in browser session if requests are blocked.[/yellow]")
+
+        return self.cookie_path
+
+    def _is_bilibili_block(self, error: Exception) -> bool:
+        return "412" in str(error) and "Bilibili" in str(error)
+
+    def _video_id_from_filename(self, video_file: str) -> str | None:
+        match = re.search(r"_id_([^_]+)(?:_p\d+)?$", Path(video_file).stem)
+        return match.group(1) if match else None
+
+    def get_existing_transcript_keys(self) -> set[str]:
+        keys = set()
+
+        for transcript_file in self.transcript_dir.glob("*.json"):
+            keys.add(transcript_file.stem)
+
+            try:
+                with open(transcript_file, "r", encoding="utf-8") as f:
+                    transcript = json.load(f)
+            except (OSError, json.JSONDecodeError):
+                continue
+
+            video_id = transcript.get("video_id")
+            if video_id:
+                keys.add(video_id)
+
+        return keys
+
+    def has_existing_transcript_for_video(self, video_file: str, transcript_keys: set[str]) -> bool:
+        video_stem = Path(video_file).stem
+        video_id = self._video_id_from_filename(video_file)
+
+        return video_stem in transcript_keys or bool(video_id and video_id in transcript_keys)
+
+    def _split_markdown_sections(self, text: str) -> list[str]:
+        sections = []
+        current_section = []
+
+        for line in text.splitlines():
+            if re.match(r"^#{1,6}\s+", line) and current_section:
+                sections.append("\n".join(current_section).strip())
+                current_section = []
+
+            current_section.append(line)
+
+        if current_section:
+            sections.append("\n".join(current_section).strip())
+
+        return [section for section in sections if section]
+
+    def _split_long_text(self, text: str, max_words: int = 500, overlap_words: int = 75) -> list[str]:
+        if len(text.split()) <= max_words:
+            return [text.strip()] if text.strip() else []
+
+        sentences = self._split_sentences(text)
+        if len(sentences) <= 1:
+            return self._split_long_sentence(text, max_words=max_words, overlap_words=overlap_words)
+
+        chunks = []
+        current_sentences = []
+        current_word_count = 0
+
+        for sentence in sentences:
+            sentence_word_count = len(sentence.split())
+
+            if sentence_word_count > max_words:
+                if current_sentences:
+                    chunks.append(" ".join(current_sentences).strip())
+                    current_sentences = self._sentence_overlap(current_sentences, overlap_words)
+                    current_word_count = sum(len(overlap_sentence.split()) for overlap_sentence in current_sentences)
+
+                chunks.extend(self._split_long_sentence(sentence, max_words=max_words, overlap_words=overlap_words))
+                current_sentences = []
+                current_word_count = 0
+                continue
+
+            if current_sentences and current_word_count + sentence_word_count > max_words:
+                chunks.append(" ".join(current_sentences).strip())
+                current_sentences = self._sentence_overlap(current_sentences, overlap_words)
+                current_word_count = sum(len(overlap_sentence.split()) for overlap_sentence in current_sentences)
+
+            current_sentences.append(sentence)
+            current_word_count += sentence_word_count
+
+        if current_sentences:
+            chunks.append(" ".join(current_sentences).strip())
+
+        return chunks
+
+    def _split_sentences(self, text: str) -> list[str]:
+        sentences = re.split(r"(?<=[.!?。！？])\s+(?=[A-Z0-9#*\-\"'(\[])|(?<=[。！？])", text.strip())
+        return [sentence.strip() for sentence in sentences if sentence.strip()]
+
+    def _sentence_overlap(self, sentences: list[str], overlap_words: int) -> list[str]:
+        if overlap_words <= 0:
+            return []
+
+        overlap = []
+        word_count = 0
+        for sentence in reversed(sentences):
+            overlap.insert(0, sentence)
+            word_count += len(sentence.split())
+            if word_count >= overlap_words:
+                break
+
+        return overlap
+
+    def _split_long_sentence(self, text: str, max_words: int = 500, overlap_words: int = 75) -> list[str]:
+        words = text.split()
+        chunks = []
+        start = 0
+
+        while start < len(words):
+            end = min(start + max_words, len(words))
+            chunks.append(" ".join(words[start:end]).strip())
+
+            if end == len(words):
+                break
+
+            start = max(end - overlap_words, start + 1)
+
+        return chunks
+
+    def chunk_markdown_content(self, text: str, max_words: int = 500, overlap_words: int = 75) -> list[str]:
+        chunks = []
+        pending_section = ""
+
+        for section in self._split_markdown_sections(text):
+            section_words = section.split()
+            pending_words = pending_section.split()
+
+            if pending_section and len(pending_words) + len(section_words) <= max_words:
+                pending_section = f"{pending_section}\n\n{section}"
+                continue
+
+            if pending_section:
+                chunks.extend(self._split_long_text(pending_section, max_words=max_words, overlap_words=overlap_words))
+
+            pending_section = section
+
+        if pending_section:
+            chunks.extend(self._split_long_text(pending_section, max_words=max_words, overlap_words=overlap_words))
+
+        return chunks
+
+    def build_chunked_documents(self, transcript: dict, max_words: int = 500, overlap_words: int = 75) -> list[dict]:
+        if transcript["transcript"] == "" or transcript["transcript"] is None:
+            print(f"\nTranscript: {transcript.get('title', '')} is missing transcript. Skipping chunking.")
+            return []
+
+        markdown_content = transcript.get("markdown_content")
+        if markdown_content is None or markdown_content == "" or len(markdown_content) < 150:
+            return []
+
+        video_id = transcript["video_id"]
+        if video_id.startswith("_"):
+            video_id = "YT" + video_id
+
+        chunks = self.chunk_markdown_content(markdown_content, max_words=max_words, overlap_words=overlap_words)
+        if not chunks:
+            return []
+
+        documents = []
+        for i, chunk in enumerate(chunks, start=1):
+            documents.append(
+                {
+                    "article_id": f"{video_id}#chunk-{i}",
+                    "parent_id": video_id,
+                    "chunk_index": i,
+                    "chunk_count": len(chunks),
+                    "url": transcript["url"],
+                    "title": transcript["title"],
+                    "content": chunk,
+                    "content_description": transcript["description"],
+                    "source": "Bilibili",
+                    "created_at": transcript["published_at"],
+                }
+            )
+
+        return documents
 
     def retrieve_video_metadata(self, video_url: str):
         """Fetches and saves metadata for a single video."""
@@ -109,13 +343,12 @@ class Bilibili:
     # Method 1
     def download_channel_videos(self, channel_url: str):
         ydl_opts = {
+            **self._get_common_opts(),
             # Limit video height to 480p and merge with best audio
             "format": "bv*[height<=480]+ba/b[height<=480] / best[height<=480]",
-            "cookiefile": self.cookie_path,
             "merge_output_format": "mp4",  # Forces the final file into MP4 container
             "noplaylist": False,  # Ensure it downloads the whole channel/playlist
             "ignoreerrors": True,
-            "sleep_interval": 2,  # Prevent IP flagging
             "outtmpl": str(self.video_dir / "%(title)s_id_%(id)s.%(ext)s"),
             # "playlistend": 5,
         }
@@ -124,15 +357,25 @@ class Bilibili:
             with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 info = ydl.extract_info(channel_url, download=True)
 
-                for entry in info["entries"]:
+                if not info:
+                    console.print(f"[bold red]{BILIBILI_BLOCKED_MESSAGE}[/bold red]")
+                    return
+
+                for entry in info.get("entries", []):
+                    if not entry:
+                        continue
+
                     # Handle both single videos and playlists (multi-part)
                     sub_entries = entry.get("entries", [entry])
 
                     for sub_entry in sub_entries:
-                        title = self.sanitize_filename(sub_entry.get("title"))
+                        if not sub_entry:
+                            continue
+
+                        title = self.sanitize_filename(sub_entry.get("title") or sub_entry.get("id") or "untitled")
                         print(f"Saving metadata for {title}")
 
-                        raw_date = sub_entry.get("upload_date", "19700101")
+                        raw_date = sub_entry.get("upload_date") or "19700101"
                         formatted_date = datetime.strptime(raw_date, "%Y%m%d").strftime("%Y-%m-%dT00:00:00Z")
 
                         doc = {
@@ -149,7 +392,10 @@ class Bilibili:
                             json.dump(doc, f, ensure_ascii=False, indent=4)
 
         except Exception as e:
-            print(e)
+            if self._is_bilibili_block(e):
+                console.print(f"[bold red]{BILIBILI_BLOCKED_MESSAGE}[/bold red]")
+            else:
+                console.print(f"[bold red]Error downloading channel videos:[/bold red] {e}")
 
     def generate_subtitle(self, video_path: str, output_srt_path: str):
         """
@@ -200,7 +446,18 @@ class Bilibili:
 
         with yt_dlp.YoutubeDL(opts) as ydl:
             console.print(f"[bold blue]Fetching channel info:[/bold blue] {channel_url}")
-            info = ydl.extract_info(channel_url, download=False)
+            try:
+                info = ydl.extract_info(channel_url, download=False)
+            except Exception as e:
+                if self._is_bilibili_block(e):
+                    console.print(f"[bold red]{BILIBILI_BLOCKED_MESSAGE}[/bold red]")
+                    return []
+                raise
+
+            if not info:
+                console.print(f"[bold red]{BILIBILI_BLOCKED_MESSAGE}[/bold red]")
+                return []
+
             return info.get("entries", [])
 
     def process_video(self, video_id: str):
@@ -266,7 +523,7 @@ class Bilibili:
 
     def prepare_transcripts(self, file_path: str):
         """
-        Prepares transcripts by translating and summarizing them.
+        Prepares transcripts by translating their metadata and transcript text.
 
         Args:
             file_path (str): The path to the transcript file.
@@ -276,56 +533,173 @@ class Bilibili:
         """
         # Read the transcripts from the file
         with open(file_path, "r", encoding="utf-8") as file:
-            transcript = json.load(file)
+            transcripts = json.load(file)
 
-        # Prepare each transcript
+        def describe_transcript(transcript: dict) -> str:
+            title = transcript.get("title") or "Untitled transcript"
+            video_id = transcript.get("video_id")
+            if video_id:
+                return f"{title} ({video_id}) in {file_path}"
+            return f"{title} in {file_path}"
 
-        try:
-            if transcript["transcript"] == "" or len(transcript["transcript"]) < 150:
-                transcript["summary"] = ""
-            else:
-                title = self.azure.openai_helper.generate_translation(transcript["title"], target_language="English")
-                transcript["title"] = title.replace('"', "")
-
-                summary = self.azure.openai_helper.generate_structured_transcript(title, transcript["transcript"])
-                transcript["summary"] = summary
-
-                description = self.azure.openai_helper.generate_translation(transcript["description"], target_language="English")
-                transcript["description"] = description
-        except Exception as e:
-            raise e
-
-        with open(file_path, "w", encoding="utf-8") as file:
-            json.dump(transcript, file, ensure_ascii=False, indent=4)
-
-    def upload_transcripts(self, file_path: str):
-        with open(file_path, "r", encoding="utf-8") as f:
-            transcript = json.load(f)
-
-            if transcript["transcript"] == "":
+        def translate_transcript(transcript: dict) -> None:
+            transcript_text = transcript.get("transcript")
+            if not transcript_text or len(transcript_text) < 150:
                 return
 
-            if "summary" in transcript:
-                if transcript["summary"] == "" or len(transcript["summary"]) < 150:
+            title = transcript.get("title")
+            if title:
+                translated_title = self.azure.openai_helper.generate_translation(title, target_language="English")
+                transcript["title"] = translated_title.replace('"', "")
+
+            description = transcript.get("description")
+            if description:
+                transcript["description"] = self.azure.openai_helper.generate_translation(description, target_language="English")
+
+            transcript["transcript"] = self.azure.openai_helper.generate_translation(transcript_text, target_language="English")
+
+        transcript_items = transcripts if isinstance(transcripts, list) else [transcripts]
+
+        for transcript in transcript_items:
+            if not isinstance(transcript, dict):
+                console.print(f"[yellow]Skipping non-object transcript in {file_path}[/yellow]")
+                continue
+
+            try:
+                translate_transcript(transcript)
+            except Exception as e:
+                console.print(f"\n[yellow]Skipping translation for {describe_transcript(transcript)}:[/yellow]")
+                console.print(str(e))
+                continue
+
+        with open(file_path, "w", encoding="utf-8") as file:
+            json.dump(transcripts, file, ensure_ascii=False, indent=4)
+
+    def generate_markdown_content(self, file_path: str):
+        """
+        Generate markdown content for all transcripts in a file.
+
+        Args:
+            file_path (str): The path to the file containing transcripts.
+
+        Returns:
+            None
+        """
+        # Read the transcripts from the file
+        with open(file_path, "r", encoding="utf-8") as file:
+            transcripts = json.load(file)
+
+        if isinstance(transcripts, dict):
+            if transcripts["transcript"] is None:
+                return
+
+            try:
+                if transcripts["transcript"] == "" or len(transcripts["transcript"]) < 150:
+                    transcripts["markdown_content"] = ""
+                else:
+                    markdown_content = self.azure.openai_helper.generate_structured_transcript(transcripts["title"], transcripts["transcript"])
+                    transcripts["markdown_content"] = markdown_content
+            except Exception as e:
+                print(f"\nError generating markdown content for {file_path}:")
+                raise e
+        else:
+            # Generate markdown content for each transcript.
+            for trans in transcripts:
+                if trans["transcript"] is None:
                     return
 
-            if transcript["video_id"].startswith("_"):
-                transcript["video_id"] = "YT" + transcript["video_id"]
+                try:
+                    if trans["transcript"] == "" or len(trans["transcript"]) < 150:
+                        trans["markdown_content"] = ""
+                    else:
+                        markdown_content = self.azure.openai_helper.generate_structured_transcript(trans["title"], trans["transcript"])
+                        trans["markdown_content"] = markdown_content
+                except Exception as e:
+                    raise e
 
-            self.azure.search_client.upload_documents(
+        with open(file_path, "w", encoding="utf-8") as file:
+            json.dump(transcripts, file, ensure_ascii=False, indent=4)
+
+    def upload_transcript(self, transcript: dict):
+        if transcript["transcript"] == "" or transcript["transcript"] is None:
+            print(f"\nTranscript: {transcript.get('title', '')} is missing transcript. Skipping upload.")
+            return
+
+        video_id = transcript["video_id"]
+        if video_id.startswith("_"):
+            video_id = "YT" + video_id
+
+        chunks = transcript.get("chunks") or []
+        if chunks:
+            documents = []
+            for chunk in chunks:
+                content = chunk.get("content") or chunk.get("markdown_content")
+                if not content:
+                    continue
+
+                documents.append(
+                    {
+                        "@search.action": "mergeOrUpload",
+                        "article_id": self._sanitize_search_key(
+                            chunk.get("article_id") or f"{video_id}_chunk-{chunk.get('chunk_index', len(documents) + 1)}"
+                        ),
+                        "url": chunk.get("url") or transcript["url"],
+                        "title": chunk.get("title") or transcript["title"],
+                        "content": content,
+                        "content_description": chunk.get("content_description") or transcript["description"],
+                        "source": chunk.get("source") or "Bilibili",
+                        "created_at": chunk.get("created_at") or transcript["published_at"],
+                        "title_vector": self.azure.openai_helper.generate_embeddings(text=chunk.get("title") or transcript["title"]),
+                        "content_vector": self.azure.openai_helper.generate_embeddings(text=content),
+                    }
+                )
+
+            if documents:
+                self.azure.search_client.upload_documents(documents)
+            return
+
+        markdown_content = transcript.get("markdown_content")
+        if markdown_content is not None:
+            if markdown_content == "" or len(markdown_content) < 150:
+                return
+
+        content = markdown_content if markdown_content is not None else transcript["transcript"]
+        self.azure.search_client.upload_documents(
+            [
                 {
                     "@search.action": "mergeOrUpload",
-                    "article_id": transcript["video_id"],
+                    "article_id": self._sanitize_search_key(video_id),
                     "url": transcript["url"],
                     "title": transcript["title"],
-                    "content": transcript["summary"] if "summary" in transcript else transcript["transcript"],
+                    "content": content,
                     "content_description": transcript["description"],
                     "source": "Bilibili",
                     "created_at": transcript["published_at"],
                     "title_vector": self.azure.openai_helper.generate_embeddings(text=transcript["title"]),
-                    "content_vector": self.azure.openai_helper.generate_embeddings(text=transcript["summary"]),
+                    "content_vector": self.azure.openai_helper.generate_embeddings(text=content),
                 }
-            )
+            ]
+        )
+
+    def upload_transcripts(self, file_path: str, start_date: date | None = None, end_date: date | None = None):
+        with open(file_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        transcripts = data if isinstance(data, list) else [data]
+        for transcript in transcripts:
+            if not isinstance(transcript, dict):
+                console.print(f"[yellow]Skipping non-object transcript in {file_path}[/yellow]")
+                continue
+            raw_publish_date = transcript.get("published_at")
+            if start_date is not None and end_date is not None:
+                if not raw_publish_date:
+                    continue
+
+                publish_date = datetime.strptime(raw_publish_date.split("T")[0], "%Y-%m-%d").date()
+                if not start_date <= publish_date <= end_date:
+                    continue
+
+            self.upload_transcript(transcript)
 
 
 if __name__ == "__main__":
@@ -342,11 +716,15 @@ if __name__ == "__main__":
             "Download All Videos (Method 1)",
             "Generate All Subtitles (Method 1)",
             "Correlate Subtitles with Metadata (Method 1)",
-            "Get All Transcripts (Method 2)",
-            "Prepare All Transcripts",
+            "Get All Transcripts (Alternative to Method 1)",
+            "Translate All Transcripts",
+            "Generate All Markdown Content",
+            "Chunk All Documents",
             "Upload All Transcripts",
-            "Retrieve Video Metadata (Method 1)",
+            "Chunk Documents",
+            "Retrieve Video Metadata",
             "Prepare Transcript",
+            "Generate Markdown Content",
             "Upload Transcript",
             "Find & Delete AI Search Documents",
         ],
@@ -360,7 +738,13 @@ if __name__ == "__main__":
         downloader.download_channel_videos(CLO3D_TARGET_CHANNEL if brand in ["clo3d"] else MD_TARGET_CHANNEL)
 
     elif task == "Generate All Subtitles (Method 1)":
+        transcript_keys = downloader.get_existing_transcript_keys()
+
         for video_file in os.listdir(downloader.video_dir):
+            if downloader.has_existing_transcript_for_video(video_file, transcript_keys):
+                console.print(f"[yellow]Transcript exists, skipping:[/yellow] {video_file}")
+                continue
+
             video_path = os.path.join(downloader.video_dir, video_file)
 
             output_srt_path = os.path.join(downloader.subtitle_dir, os.path.splitext(video_file)[0] + ".srt")
@@ -406,27 +790,89 @@ if __name__ == "__main__":
         videos = downloader.fetch_channel_videos(CLO3D_TARGET_CHANNEL if brand in ["clo3d"] else MD_TARGET_CHANNEL)
 
         for video in videos:
-            asyncio.run(downloader.process_video(video["id"]))
+            downloader.process_video(video["id"])
 
-    elif task == "Prepare All Transcripts":
-        files = [os.path.join(downloader.transcript_dir, f) for f in os.listdir(downloader.transcript_dir)]
+    elif task == "Translate All Transcripts":
+        files = [os.path.join(downloader.transcript_dir, f) for f in os.listdir(downloader.transcript_dir) if f.endswith(".json")]
 
         with ThreadPoolExecutor(max_workers=10) as executor:
-            # executor.map maintains order; for unordered with tqdm, we use list comprehension or submit
-            list(tqdm(executor.map(downloader.prepare_transcripts, files), total=len(files), desc="Overall Progress"))
+            futures = {executor.submit(downloader.prepare_transcripts, file_path): file_path for file_path in files}
+            for future in tqdm(as_completed(futures), total=len(futures), desc="Translating Transcripts", position=0):
+                file_path = futures[future]
+                try:
+                    future.result()
+                except Exception as e:
+                    console.print(f"\n[yellow]Skipping transcript file {file_path}:[/yellow]")
+                    console.print(str(e))
+
+    elif task == "Generate All Markdown Content":
+        files = [os.path.join(downloader.transcript_dir, f) for f in os.listdir(downloader.transcript_dir) if f.endswith(".json")]
+
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            list(tqdm(executor.map(downloader.generate_markdown_content, files), total=len(files), desc="Generating Markdown Content", position=0))
+
+    elif task == "Generate Markdown Content":
+        transcript_files = sorted([file_name for file_name in os.listdir(downloader.transcript_dir) if file_name.endswith(".json")])
+        pages = questionary.checkbox("Which pages?", choices=transcript_files).ask()
+        for page in pages:
+            downloader.generate_markdown_content(os.path.join(downloader.transcript_dir, page))
+
+    elif task in ["Chunk Documents", "Chunk All Documents"]:
+        max_words = int(questionary.text("Max words per chunk:", default="500").ask())
+        overlap_words = int(questionary.text("Overlap words:", default="75").ask())
+
+        transcript_file_names = sorted([file_name for file_name in os.listdir(downloader.transcript_dir) if file_name.endswith(".json")])
+
+        if task == "Chunk Documents":
+            selected_file_names = questionary.checkbox("Which transcript files?", choices=transcript_file_names).ask()
+        else:
+            selected_file_names = transcript_file_names
+
+        files = [os.path.join(downloader.transcript_dir, file_name) for file_name in selected_file_names]
+
+        def chunk_transcript_file(file_path: str):
+            with open(file_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+
+            chunked_count = 0
+            transcripts = data if isinstance(data, list) else [data]
+            for transcript in transcripts:
+                chunks = downloader.build_chunked_documents(
+                    transcript,
+                    max_words=max_words,
+                    overlap_words=overlap_words,
+                )
+                transcript["chunks"] = chunks
+                chunked_count += len(chunks)
+
+            if chunked_count == 0:
+                return
+
+            with open(file_path, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=4)
+
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            list(tqdm(executor.map(chunk_transcript_file, files), total=len(files), desc="Chunking Documents", position=0))
+
+        print(f"Chunks saved in {len(files)} transcript file(s) under: {downloader.transcript_dir}")
 
     elif task == "Upload All Transcripts":
-        file_paths = [os.path.join(downloader.transcript_dir, f) for f in os.listdir(downloader.transcript_dir)]
-        with ThreadPoolExecutor(max_workers=10) as executor:
-            list(tqdm(executor.map(downloader.upload_transcripts, file_paths), total=len(file_paths), desc="Uploading"))
+        start_date, end_date = prompt_for_date_range()
+        file_paths = [os.path.join(downloader.transcript_dir, f) for f in os.listdir(downloader.transcript_dir) if f.endswith(".json")]
 
-    elif task == "Retrieve Video Metadata (Method 1)":
+        def upload_transcripts(file_path: str):
+            downloader.upload_transcripts(file_path, start_date=start_date, end_date=end_date)
+
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            list(tqdm(executor.map(upload_transcripts, file_paths), total=len(file_paths), desc="Uploading"))
+
+    elif task == "Retrieve Video Metadata":
         video_url = questionary.text("Enter the video URL:").ask()
         downloader.retrieve_video_metadata(video_url)
 
-    elif task == "Prepare Transcript (Method 1)":
+    elif task == "Prepare Transcript":
         file = questionary.select("Which transcript file?", choices=os.listdir(downloader.transcript_dir)).ask()
-        downloader.prepare_transcripts((stage, brand, os.path.join(downloader.transcript_dir, file), 0))
+        downloader.prepare_transcripts(os.path.join(downloader.transcript_dir, file))
 
     elif task == "Find & Delete AI Search Documents":
         search_fields_options = ["article_id", "url", "title", "content", "content_description"]

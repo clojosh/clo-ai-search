@@ -1,0 +1,396 @@
+1
+00:00:00,000 --> 00:00:18,000
+In the 2026.0 version, it is optimized that when you open the ZFAB file, you can choose the functions of different materials and attributes, and you can change the material in the correct way.
+
+2
+00:00:18,000 --> 00:00:27,000
+In the previous version, press the Ctrl key to drag the fabric to the object window, and you can choose to load different materials and attributes.
+
+3
+00:00:27,000 --> 00:00:31,000
+In the 2026.0 version, we optimized this function experience.
+
+4
+00:00:31,000 --> 00:00:34,000
+First, select the fabric in the object window.
+
+5
+00:00:34,000 --> 00:00:38,000
+In the property editor, click the button to open the fabric.
+
+6
+00:00:38,000 --> 00:00:41,000
+In the tab, select Open, select Material.
+
+7
+00:00:41,000 --> 00:00:45,000
+In the folder, select the fabric file and click Open.
+
+8
+00:00:45,000 --> 00:00:52,000
+In the window where the fabric is opened, you can give the front, back, and side of the fabric.
+
+9
+00:00:52,000 --> 00:00:55,000
+Choose whether to open the selected material or physical attribute.
+
+10
+00:00:55,000 --> 00:01:00,000
+You can choose to only increase the front fabric and cancel the selection of the reverse fabric.
+
+11
+00:01:00,000 --> 00:01:02,000
+Click OK.
+
+12
+00:01:02,000 --> 00:01:05,000
+You can see the effect of the 3D window.
+
+13
+00:01:05,000 --> 00:01:07,000
+The front and side fabrics have been updated.
+
+14
+00:01:07,000 --> 00:01:11,000
+The reverse fabric maintains the original fabric settings.
+
+15
+00:01:11,000 --> 00:01:15,000
+Open the simulation to check the physical properties of the material.
+
+16
+00:01:15,000 --> 00:01:20,000
+In the property editor, the fabric is in the right side of the right side of the side-switch label.
+
+17
+00:01:20,000 --> 00:01:23,000
+A new exchange is added to the back material button.
+
+18
+00:01:23,000 --> 00:01:24,000
+Press the left button.
+
+19
+00:01:24,000 --> 00:01:29,000
+In the 3D window, you can see that the front and back fabric of the fabric match each other.
+
+20
+00:01:29,000 --> 00:01:33,000
+Switch to the reverse if the hook is used with the same material on the front.
+
+21
+00:01:33,000 --> 00:01:37,000
+At this time, the button to switch between the front and the back material will disappear.
+
+22
+00:01:37,000 --> 00:01:40,000
+The cancel hook option will appear again.
+
+23
+00:01:40,000 --> 00:01:44,000
+Through this update, when opening the GFAB file,
+
+24
+00:01:44,000 --> 00:01:52,000
+users can quickly open the required part and one-click to switch to the front and back material.
+
+25
+00:01:52,000 --> 00:01:55,000
+In the 2026.0 version,
+
+26
+00:01:55,000 --> 00:01:59,000
+we optimized the user interface and size adjustment behavior of the GFAB editor,
+
+27
+00:01:59,000 --> 00:02:03,000
+which provides a more concise user page and a more convenient workflow.
+
+28
+00:02:03,000 --> 00:02:08,000
+Let's take a look at the interface after the update and the editing process after the update.
+
+29
+00:02:08,000 --> 00:02:10,000
+In the previous version,
+
+30
+00:02:10,000 --> 00:02:12,000
+when processing a custom GFAB,
+
+31
+00:02:12,000 --> 00:02:21,000
+the properties such as the rough line thickness, the number of rows per inch, the number of rows per inch and the thickness of the fabric will be displayed directly in the property editor and can be directly edited.
+
+32
+00:02:22,000 --> 00:02:24,000
+In the latest update,
+
+33
+00:02:24,000 --> 00:02:27,000
+these specific options have been removed from the property editor.
+
+34
+00:02:27,000 --> 00:02:29,000
+If we want to modify these values,
+
+35
+00:02:29,000 --> 00:02:32,000
+we need to enter the GFAB editor.
+
+36
+00:02:32,000 --> 00:02:34,000
+After removing these parameters,
+
+37
+00:02:34,000 --> 00:02:38,000
+the property editor's current property list is more concise,
+
+38
+00:02:38,000 --> 00:02:44,000
+and the detailed needle parameters are managed specifically in a specific GFAB editor.
+
+39
+00:02:44,000 --> 00:02:47,000
+If you want to adjust the size of the GFAB,
+
+40
+00:02:47,000 --> 00:02:51,000
+you can use the GFAB loop on the upper right corner of the GFAB editor.
+
+41
+00:02:51,000 --> 00:02:54,000
+You can also adjust the GFAB loop function.
+
+42
+00:02:54,000 --> 00:02:57,000
+After adjusting the number of rows and horizontal lines,
+
+43
+00:02:57,000 --> 00:03:02,000
+you can click the button to adjust the size of the GFAB loop.
+
+44
+00:03:02,000 --> 00:03:03,000
+More importantly,
+
+45
+00:03:03,000 --> 00:03:04,000
+in this process,
+
+46
+00:03:04,000 --> 00:03:08,000
+your existing needle design will be completely preserved.
+
+47
+00:03:08,000 --> 00:03:09,000
+In addition,
+
+48
+00:03:09,000 --> 00:03:11,000
+if you need to completely reset the design content,
+
+49
+00:03:11,000 --> 00:03:15,000
+the window in the lower left corner has been added a reset status button.
+
+50
+00:03:15,000 --> 00:03:20,000
+Clicking this button will immediately reset all the needles in the window as default needles,
+
+51
+00:03:20,000 --> 00:03:22,000
+and you can start designing again.
+
+52
+00:03:22,000 --> 00:03:26,000
+The update of the GFAB editor in the 2026.0 version
+
+53
+00:03:26,000 --> 00:03:31,000
+provides you with a more concentrated and efficient environment in the needle design process.
+
+54
+00:03:35,000 --> 00:03:36,000
+In addition,
+
+55
+00:03:36,000 --> 00:03:39,000
+the GFAB editor also received another update.
+
+56
+00:03:39,000 --> 00:03:41,000
+In the 2026.0 version,
+
+57
+00:03:41,000 --> 00:03:45,000
+we expanded the reset and recovery functions to the GFAB editor,
+
+58
+00:03:45,000 --> 00:03:49,000
+and thus realized a more flexible and efficient editing process.
+
+59
+00:03:50,000 --> 00:03:52,000
+You can use the main menu,
+
+60
+00:03:52,000 --> 00:03:53,000
+navigation to edit,
+
+61
+00:03:53,000 --> 00:03:54,000
+cancel,
+
+62
+00:03:54,000 --> 00:03:57,000
+and restore to use these commands.
+
+63
+00:03:57,000 --> 00:03:59,000
+For a more efficient work process,
+
+64
+00:03:59,000 --> 00:04:04,000
+these commands can now also be used directly in the operation of the GFAB editor.
+
+65
+00:04:04,000 --> 00:04:07,000
+Press Ctrl plus Z to cancel.
+
+66
+00:04:07,000 --> 00:04:11,000
+Press Ctrl plus Y to restore.
+
+67
+00:04:11,000 --> 00:04:14,000
+After editing the needle design or parameters,
+
+68
+00:04:14,000 --> 00:04:19,000
+you can use the shortcut key to immediately return to the previous state or restore and change.
+
+69
+00:04:19,000 --> 00:04:22,000
+This new function makes the design process more convenient,
+
+70
+00:04:22,000 --> 00:04:25,000
+allowing you to easily try different needle structures,
+
+71
+00:04:25,000 --> 00:04:27,000
+and quickly modify any changes.
+
+72
+00:04:32,000 --> 00:04:34,000
+In the 2026.0 version,
+
+73
+00:04:34,000 --> 00:04:37,000
+the 3D zipper supports custom zipper.
+
+74
+00:04:38,000 --> 00:04:44,000
+First, we need to adjust the custom zipper OBJ file to the appropriate size and position.
+
+75
+00:04:44,000 --> 00:04:47,000
+The zipper size is adjusted according to the actual zipper size.
+
+76
+00:04:47,000 --> 00:04:50,000
+The zipper position needs to be ensured on both sides.
+
+77
+00:04:50,000 --> 00:04:53,000
+The zipper overlap position is located at the coordinate point.
+
+78
+00:04:53,000 --> 00:04:55,000
+We can copy it,
+
+79
+00:04:55,000 --> 00:04:56,000
+paste it,
+
+80
+00:04:56,000 --> 00:04:59,000
+and put the zipper overlap on both sides.
+
+81
+00:04:59,000 --> 00:05:02,000
+Then delete the zipper on one side.
+
+82
+00:05:02,000 --> 00:05:06,000
+Delete a zipper that can be used to define the OBJ.
+
+83
+00:05:06,000 --> 00:05:09,000
+Select the file to delete OBJ.
+
+84
+00:05:09,000 --> 00:05:13,000
+After deleting the OBJ dialogue frame,
+
+85
+00:05:13,000 --> 00:05:16,000
+click OK.
+
+86
+00:05:16,000 --> 00:05:18,000
+In the main menu bar,
+
+87
+00:05:18,000 --> 00:05:22,000
+find the material, UV, zipper, custom OBJ,
+
+88
+00:05:22,000 --> 00:05:25,000
+to open the custom zipper window.
+
+89
+00:05:25,000 --> 00:05:29,000
+You can also click on the zipper in the object window,
+
+90
+00:05:29,000 --> 00:05:32,000
+find the zipper in the property editor below,
+
+91
+00:05:32,000 --> 00:05:36,000
+and click the plus sign on the right to customize the zipper operation.
+
+92
+00:05:36,000 --> 00:05:38,000
+In the dialogue frame that is displayed,
+
+93
+00:05:38,000 --> 00:05:40,000
+change the name of the zipper.
+
+94
+00:05:40,000 --> 00:05:42,000
+Increase the zipper OBJ file,
+
+95
+00:05:42,000 --> 00:05:45,000
+you can view the effect in the window view in the browser.
+
+96
+00:05:46,000 --> 00:06:02,980
+Adjust the
+
+97
+00:06:03,000 --> 00:06:05,000
+zipper direction appropriately.
+
+98
+00:06:05,000 --> 00:06:08,000
+Click to confirm the customized zipper is completed.
+
+99
+00:06:08,000 --> 00:06:10,000
+This new function can help you customize various zippers.
+

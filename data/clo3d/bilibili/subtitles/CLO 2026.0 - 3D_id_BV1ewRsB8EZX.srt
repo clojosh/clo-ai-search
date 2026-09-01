@@ -1,0 +1,396 @@
+1
+00:00:00,000 --> 00:00:15,000
+In the 2026.0 version, you can now directly look at the mass frequency curve NURBS in CLO and convert them to 3D pen lines.
+
+2
+00:00:15,000 --> 00:00:25,000
+This video will take you to understand the entire workflow, from creating a curve in the mass frequency modeling software to editing and generating panels in CLO.
+
+3
+00:00:25,000 --> 00:00:28,000
+Let's see how it works.
+
+4
+00:00:28,000 --> 00:00:33,000
+First, create a curve for the object in the NURBS software.
+
+5
+00:00:33,000 --> 00:00:40,000
+After creating the curve, export the object and import it into CLO.
+
+6
+00:00:40,000 --> 00:00:45,000
+Open the virtual model information display and display the NURBS curve to view the curve.
+
+7
+00:00:45,000 --> 00:00:51,000
+You can see that the curve is imported with the object.
+
+8
+00:00:51,000 --> 00:00:57,000
+On the curve, right-click and select the 3D pen virtual model option.
+
+9
+00:00:57,000 --> 00:01:02,000
+Click on the option and you can convert the curve into a 3D pen curve.
+
+10
+00:01:02,000 --> 00:01:10,000
+When the virtual model is turned on, the generated 3D pen will be displayed as a green line.
+
+11
+00:01:10,000 --> 00:01:21,000
+Next, use the same method to convert the remaining curves into 3D pen lines.
+
+12
+00:01:21,000 --> 00:01:25,000
+Use the 3D pen virtual model tool to drag the curve short.
+
+13
+00:01:25,000 --> 00:01:26,000
+Use the 3D pen virtual model tool to drag the curve short.
+
+14
+00:01:27,000 --> 00:01:33,000
+The curve points will not be automatically connected, so you need to manually merge them.
+
+15
+00:01:33,000 --> 00:01:35,000
+Move the curve points.
+
+16
+00:01:35,000 --> 00:01:41,000
+When the distance between the points is close enough, they will automatically merge.
+
+17
+00:01:41,000 --> 00:01:46,000
+Merge the remaining points.
+
+18
+00:01:46,000 --> 00:01:52,000
+For the 3D pen with a larger curve angle, right-click and select to duplicate to the edge of the grid.
+
+19
+00:01:52,000 --> 00:01:55,000
+Make it fit the edge of the grid.
+
+20
+00:01:55,000 --> 00:01:57,000
+Now all points have been merged.
+
+21
+00:01:57,000 --> 00:02:03,000
+Let's do the flat-screen operation.
+
+22
+00:02:03,000 --> 00:02:08,000
+After the flat-screen is completed, you can see that the curve line is created.
+
+23
+00:02:08,000 --> 00:02:11,000
+In addition, the flat-screen after the flat-screen will automatically merge together.
+
+24
+00:02:11,000 --> 00:02:17,000
+If necessary, you can manually adjust the merge line.
+
+25
+00:02:17,000 --> 00:02:23,000
+Using this function, you can more accurately and efficiently create a flat-screen from a mass and smooth modeling object.
+
+26
+00:02:23,000 --> 00:02:27,000
+In addition, you can more accurately and efficiently create a flat-screen from a mass and smooth modeling object.
+
+27
+00:02:27,000 --> 00:02:29,000
+Under here, we can literally count it as being a flat line.
+
+28
+00:02:29,000 --> 00:02:46,400
+Product
+
+29
+00:02:46,400 --> 00:02:52,400
+Let's take a look at how the function helps you to simplify the design process.
+
+30
+00:02:52,400 --> 00:02:56,400
+First, use the adjustment panel tool to select the clothes you want to store.
+
+31
+00:02:56,400 --> 00:03:03,400
+Drag the storage handle to the inside or outside of the storage handle in the upper right corner, and store the selected panels in the same proportion.
+
+32
+00:03:03,400 --> 00:03:09,400
+When the mouse is released, you can see the 2D panel changes, and the 3D window is also updated at the same time.
+
+33
+00:03:09,400 --> 00:03:15,400
+And the 3D clothing after storage still maintains its original simulation form and proportion.
+
+34
+00:03:15,400 --> 00:03:25,400
+What you need to pay attention to is that it will trigger 3D position optimization to maintain the overall shape of the 3D model only when the multiple panels are stored at the same time.
+
+35
+00:03:25,400 --> 00:03:34,400
+When storing a single panel or doing non-standard proportionally stored only to adjust the width or height, it will still maintain the original conventional processing method.
+
+36
+00:03:34,400 --> 00:03:40,400
+For the 3D model with clothes, the function can smartly process the clothes stored.
+
+37
+00:03:40,400 --> 00:03:43,400
+The point-shaped clothes, such as buttons, will remain the original size,
+
+38
+00:03:43,400 --> 00:03:45,400
+and automatically move to the 3D model.
+
+39
+00:03:45,400 --> 00:03:55,400
+The 3D model will be stored in the correct position after storage, and the 3D model will be stored in the same length to match the new panel size.
+
+40
+00:03:55,400 --> 00:04:02,400
+If you are processing a full set of multiple layers, you can choose the whole set of clothes.
+
+41
+00:04:02,400 --> 00:04:11,400
+Even after significant changes in size, the relative position and spiral shape of each layer can still be maintained, and there will be no conflict or collision.
+
+42
+00:04:11,400 --> 00:04:13,400
+2026.0 version push
+
+43
+00:04:13,400 --> 00:04:15,400
+2026.0 version push
+
+44
+00:04:15,400 --> 00:04:18,399
+The 3D model 1 key is equivalent to the search function.
+
+45
+00:04:18,399 --> 00:04:25,399
+While adjusting the size of the 2D panel, it does not need to be remodeled to perfectly maintain the 3D shape.
+
+46
+00:04:25,399 --> 00:04:33,399
+The function not only automatically adapts the size and position of the clothes, but also can completely retain the original 3D spiral effect and overall shape,
+
+47
+00:04:33,399 --> 00:04:37,399
+thereby helping you to efficiently generate multiple size documents of the same model.
+
+48
+00:04:37,399 --> 00:04:38,399
+2026.0 version push
+
+49
+00:04:38,399 --> 00:04:39,399
+2026.0 version push
+
+50
+00:04:39,399 --> 00:04:41,399
+2026.0 version push
+
+51
+00:04:41,400 --> 00:04:45,400
+In the 2026.0 edition, the 3D window vertical menu azul Shepherd additional separation selection function.
+
+52
+00:04:45,400 --> 00:04:48,400
+2026.0 version push
+
+53
+00:04:48,400 --> 00:04:57,400
+This function can hide all the wrong content in the 3D window, so that you can clearly see the particular pattern materials or model components.
+
+54
+00:04:57,400 --> 00:05:01,400
+This is very useful when looking at complex designers with multiple layers.
+
+55
+00:05:01,400 --> 00:05:04,400
+Let's take a look at the applications of this tool.
+
+56
+00:05:04,400 --> 00:05:08,400
+Editing multiple layers of clothing has become easier now.
+
+57
+00:05:08,400 --> 00:05:12,400
+For example, if you want to edit the vest under this lady's shirt,
+
+58
+00:05:12,400 --> 00:05:15,400
+you do not need to manually choose to hide the outer layer of clothing,
+
+59
+00:05:15,400 --> 00:05:19,400
+you only need to select the vest version in the 2D or 3D window,
+
+60
+00:05:19,400 --> 00:05:24,400
+then click the isolation selection icon at the bottom of the 3D vertical menu bar,
+
+61
+00:05:24,400 --> 00:05:27,400
+or directly press the Shift and I shortcut keys.
+
+62
+00:05:27,400 --> 00:05:30,400
+The 3D window will only display the content you selected,
+
+63
+00:05:30,400 --> 00:05:34,400
+so that you can fully focus on the inner layer of clothing without being disturbed by any visual interference.
+
+64
+00:05:34,400 --> 00:05:39,400
+This way, you can quickly and intuitively adjust the inner layer of clothing,
+
+65
+00:05:39,400 --> 00:05:43,400
+for example, you can check more clearly and change the print type on the vest.
+
+66
+00:05:43,400 --> 00:05:49,400
+Please note that the isolation display is only activated when capturing and displaying the content selected at the moment.
+
+67
+00:05:49,400 --> 00:05:54,400
+If you click on other content, the isolation display content will not update at any time.
+
+68
+00:05:54,400 --> 00:05:56,400
+To restore all the content displayed,
+
+69
+00:05:56,400 --> 00:06:00,400
+just click the isolation selection icon again or press Shift and I,
+
+70
+00:06:00,400 --> 00:06:03,400
+the tool only affects the display of the 3D window,
+
+71
+00:06:03,400 --> 00:06:07,400
+and will not change the final image rendering effect.
+
+72
+00:06:07,400 --> 00:06:11,400
+The isolation selection is also suitable for clothing,
+
+73
+00:06:11,400 --> 00:06:15,400
+select the button and activate the isolation selection tool,
+
+74
+00:06:15,400 --> 00:06:21,400
+so that you can adjust it to your liking without being disturbed.
+
+75
+00:06:21,400 --> 00:06:28,400
+In the 2026.0 version, you no longer need to manually hide or display single items in order to see the operation clearly,
+
+76
+00:06:28,400 --> 00:06:30,400
+use the isolation selection to remove the blockage, focus on the design,
+
+77
+00:06:30,400 --> 00:06:32,400
+and the most important details.
+
+78
+00:06:37,400 --> 00:06:39,400
+In the previous version,
+
+79
+00:06:39,400 --> 00:06:43,400
+the collision calculation of the button and the chain are completely handled by the CPU,
+
+80
+00:06:43,400 --> 00:06:45,400
+as the number of buttons increases,
+
+81
+00:06:45,400 --> 00:06:48,400
+sometimes the simulation speed will slow down.
+
+82
+00:06:48,400 --> 00:06:50,400
+From the 2026.0 version,
+
+83
+00:06:50,400 --> 00:06:53,400
+the buttons also support GPU simulation,
+
+84
+00:06:53,400 --> 00:06:56,400
+which will significantly improve the overall work efficiency.
+
+85
+00:06:56,400 --> 00:06:59,400
+Let's take a look at this function together.
+
+86
+00:06:59,400 --> 00:07:01,400
+First, long-press the 2-second simulation tool,
+
+87
+00:07:01,400 --> 00:07:04,400
+to ensure that the GPU simulation has been set,
+
+88
+00:07:04,400 --> 00:07:08,400
+then turn on the simulation.
+
+89
+00:07:08,400 --> 00:07:12,400
+You can see that even if there is a belt decoration and multiple metal items,
+
+90
+00:07:12,400 --> 00:07:16,400
+the dynamic simulation process of the skirt is still running smoothly,
+
+91
+00:07:16,400 --> 00:07:19,400
+without any lagging.
+
+92
+00:07:19,400 --> 00:07:22,400
+The simulation quality is exactly the same as that of the CPU,
+
+93
+00:07:22,400 --> 00:07:25,400
+with the same high level of accuracy.
+
+94
+00:07:25,400 --> 00:07:28,400
+Currently, the GPU simulation only supports Windows system,
+
+95
+00:07:29,400 --> 00:07:31,400
+but the GPU simulation is still running smoothly.
+
+96
+00:07:31,400 --> 00:07:33,400
+Using the GPU simulation,
+
+97
+00:07:33,400 --> 00:07:35,400
+you can now complete it more quickly,
+
+98
+00:07:35,400 --> 00:07:37,400
+with a complex configuration design.
+
+99
+00:07:37,400 --> 00:07:40,400
+I hope this update can help you in the creation process.
+

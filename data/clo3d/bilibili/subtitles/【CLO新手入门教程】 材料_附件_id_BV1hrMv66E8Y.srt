@@ -1,0 +1,352 @@
+1
+00:00:00,000 --> 00:00:07,000
+Next, add a copy of the D-circle to the back of the model.
+
+2
+00:00:07,000 --> 00:00:13,000
+Open the copy of Connect, select the hardware, and select Rings.
+
+3
+00:00:13,000 --> 00:00:15,000
+Find the D-circle.
+
+4
+00:00:15,000 --> 00:00:18,000
+Double-click to add to the object window.
+
+5
+00:00:18,000 --> 00:00:22,000
+Drag the D-circle from the object window to the 3D window.
+
+6
+00:00:22,000 --> 00:00:27,000
+In the open copy window, you can choose the location of the D-circle,
+
+7
+00:00:27,000 --> 00:00:30,000
+the original location or the location of the coordinate 0, 0.
+
+8
+00:00:30,000 --> 00:00:34,000
+Here, select the original location and the location when the D-circle is stored.
+
+9
+00:00:34,000 --> 00:00:38,000
+Use the move tool to select the D-circle.
+
+10
+00:00:38,000 --> 00:00:40,000
+There are three tools in the upper right corner.
+
+11
+00:00:40,000 --> 00:00:43,000
+Next, we will apply these three tools.
+
+12
+00:00:43,000 --> 00:00:47,000
+First, single-click to start the first quick arrangement tool.
+
+13
+00:00:47,000 --> 00:00:49,000
+When the mouse moves on the costume,
+
+14
+00:00:49,000 --> 00:00:53,000
+you can see the gray shadow of the D-circle moving with the mouse,
+
+15
+00:00:53,000 --> 00:00:56,000
+and it is in the position where the D-circle moves.
+
+16
+00:00:57,000 --> 00:01:00,000
+When you come to the location near the target,
+
+17
+00:01:00,000 --> 00:01:08,000
+you can easily and quickly place the D-circle near the target location.
+
+18
+00:01:08,000 --> 00:01:13,000
+Again, single-click to start the third glue tool.
+
+19
+00:01:13,000 --> 00:01:15,000
+In the appropriate position,
+
+20
+00:01:15,000 --> 00:01:19,000
+single-click to move the D-circle to this position.
+
+21
+00:01:19,000 --> 00:01:23,000
+You can use the positioning ball to slightly move the D-circle.
+
+22
+00:01:23,000 --> 00:01:27,000
+In the object window, select the D-circle component,
+
+23
+00:01:27,000 --> 00:01:29,000
+and in the property editor,
+
+24
+00:01:29,000 --> 00:01:31,000
+select its specification property.
+
+25
+00:01:31,000 --> 00:01:34,000
+First, you can enter the name of the component,
+
+26
+00:01:34,000 --> 00:01:36,000
+product number, and other information.
+
+27
+00:01:36,000 --> 00:01:38,000
+The proportion in the specification can be adjusted
+
+28
+00:01:38,000 --> 00:01:42,000
+to the size of the component in the X, Y, and Z axis.
+
+29
+00:01:42,000 --> 00:01:44,000
+The default fixed proportion is used.
+
+30
+00:01:44,000 --> 00:01:47,000
+You can adjust the size according to the proportion.
+
+31
+00:01:47,000 --> 00:01:50,000
+In the weight column, set the weight of the component.
+
+32
+00:01:50,000 --> 00:01:54,000
+The input weight value will be reflected in the simulation.
+
+33
+00:01:54,000 --> 00:01:56,000
+Under the material, you can set the material type of the component.
+
+34
+00:01:56,000 --> 00:01:59,000
+In addition, there is another way to adjust the size of the component.
+
+35
+00:01:59,000 --> 00:02:02,000
+After selecting the component with the move tool,
+
+36
+00:02:02,000 --> 00:02:05,000
+single-click on this square icon.
+
+37
+00:02:05,000 --> 00:02:08,000
+The coordinates are changed to the shrink adjustment coordinates.
+
+38
+00:02:08,000 --> 00:02:11,000
+The mouse is placed on the red, green, blue coordinate axis separately.
+
+39
+00:02:11,000 --> 00:02:14,000
+When the left key is pressed and the mouse is moved,
+
+40
+00:02:14,000 --> 00:02:17,000
+the size of the corresponding direction of the component can be changed.
+
+41
+00:02:17,000 --> 00:02:20,000
+If you want to increase or decrease the proportion,
+
+42
+00:02:20,000 --> 00:02:23,000
+put the mouse on the left mouse button.
+
+43
+00:02:23,000 --> 00:02:24,000
+In this way,
+
+44
+00:02:24,000 --> 00:02:28,000
+the mouse is placed on the gray, three-dimensional square in the middle.
+
+45
+00:02:28,000 --> 00:02:31,000
+The mouse is changed to a diagonal arrowhead.
+
+46
+00:02:31,000 --> 00:02:33,000
+The left key is pressed and moved,
+
+47
+00:02:33,000 --> 00:02:35,000
+and the proportion can be reduced according to the size of the component.
+
+48
+00:02:35,000 --> 00:02:37,000
+After adjusting the size,
+
+49
+00:02:37,000 --> 00:02:40,000
+single-click on the icon to close this coordinate.
+
+50
+00:02:40,000 --> 00:02:43,000
+The terrain ring is in the selected state.
+
+51
+00:02:43,000 --> 00:02:47,000
+The property editor can edit its conflict thickness and rigidity.
+
+52
+00:02:47,000 --> 00:02:49,000
+The component simulation is carried out below.
+
+53
+00:02:49,000 --> 00:02:52,000
+The component simulation can carry out the movement of the B pin,
+
+54
+00:02:52,000 --> 00:02:55,000
+and interact stably with the 3D clothing.
+
+55
+00:02:55,000 --> 00:02:56,000
+Before simulation,
+
+56
+00:02:56,000 --> 00:02:59,000
+right-click on the component first,
+
+57
+00:02:59,000 --> 00:03:01,000
+to ensure that the activation is activated.
+
+58
+00:03:01,000 --> 00:03:02,000
+Then,
+
+59
+00:03:02,000 --> 00:03:03,000
+click to simulate.
+
+60
+00:03:03,000 --> 00:03:09,000
+You can see the terrain ring collides and simulate between the panels naturally.
+
+61
+00:03:09,000 --> 00:03:10,000
+After stabilization,
+
+62
+00:03:10,000 --> 00:03:11,000
+close the simulation.
+
+63
+00:03:11,000 --> 00:03:13,000
+The terrain ring is added and completed.
+
+64
+00:03:13,000 --> 00:03:17,000
+Right-click on the terrain ring again.
+
+65
+00:03:17,000 --> 00:03:19,000
+The simulation column is removed from the activation.
+
+66
+00:03:19,000 --> 00:03:21,000
+There are two other options.
+
+67
+00:03:21,000 --> 00:03:24,000
+Freeze and Reactivate.
+
+68
+00:03:24,000 --> 00:03:25,000
+For the component,
+
+69
+00:03:25,000 --> 00:03:28,000
+if you only want it to collide with the panel,
+
+70
+00:03:28,000 --> 00:03:30,000
+and not move,
+
+71
+00:03:30,000 --> 00:03:31,000
+select Freeze.
+
+72
+00:03:31,000 --> 00:03:34,000
+If you want to stop the collision and simulate at the same time,
+
+73
+00:03:34,000 --> 00:03:36,000
+select Reactivate.
+
+74
+00:03:36,000 --> 00:03:39,000
+Finally, the completed component will be saved.
+
+75
+00:03:39,000 --> 00:03:41,000
+Select it in the object window.
+
+76
+00:03:41,000 --> 00:03:42,000
+In the property editor,
+
+77
+00:03:42,000 --> 00:03:44,000
+click Save.
+
+78
+00:03:44,000 --> 00:03:47,000
+Save the component in the .trm file format,
+
+79
+00:03:47,000 --> 00:03:49,000
+so that it can be used later.
+
+80
+00:03:51,000 --> 00:03:58,000
+Now,
+
+81
+00:03:58,000 --> 00:04:03,000
+model a state of the area .
+
+82
+00:04:03,000 --> 00:04:06,000
+Select this state.
+
+83
+00:04:06,000 --> 00:04:08,000
+Go back to the model .
+
+84
+00:04:08,000 --> 00:04:12,000
+Select the .trm function.
+
+85
+00:04:12,000 --> 00:04:14,000
+Select the .trm object from the .trm tutorial.
+
+86
+00:04:14,000 --> 00:04:18,000
+Select .
+
+87
+00:04:18,000 --> 00:04:19,000
+Select .trm .
+
+88
+00:04:19,000 --> 00:04:20,000
+Click .
+

@@ -13,12 +13,28 @@ if _src_root not in sys.path:
 
 from src.media.youtube.api import YouTubeAPI
 from src.media.youtube.constants import EXCLUDED_LANGS_AND_WORDS
+from src.media.youtube.yt_dlp_options import print_youtube_block_hint, youtube_yt_dlp_options
 
 
 class VideoManager:
     def __init__(self, azure, youtube_channel_dir_path):
         self.azure = azure
         self.youtube_channel_dir_path = youtube_channel_dir_path
+
+    def _should_skip_existing_transcript(self, transcript_path: str) -> bool:
+        if not os.path.exists(transcript_path):
+            return False
+
+        try:
+            with open(transcript_path, "r", encoding="utf-8") as f:
+                transcript_data = json.load(f)
+        except (OSError, json.JSONDecodeError):
+            return False
+
+        if not isinstance(transcript_data, dict):
+            return False
+
+        return transcript_data.get("transcript") is not None
 
     def download_videos_yt_dlp(self, starting_video_index: int = 0, num_recent_videos: int = 10):
         """Downloads only standard published videos (no Shorts, no Live)."""
@@ -50,8 +66,8 @@ class VideoManager:
             return None
 
         ydl_opts = {
+            **youtube_yt_dlp_options(),
             "format": "bestvideo[height<=480]+bestaudio/best[height<=480]",
-            "http_headers": {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"},
             "playlist_items": f"{starting_video_index}-{starting_video_index + num_recent_videos - 1}",
             "outtmpl": os.path.join(OUTPUT_DIR, "%(title)s [%(id)s]", "%(title)s.%(ext)s"),
             "match_filter": published_videos_only,
@@ -69,9 +85,9 @@ class VideoManager:
         try:
             with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 ydl.download([CHANNEL_URL])
-            print("\n✅ Download process complete!")
+            print("\nDownload process complete!")
         except Exception as e:
-            print(f"\n❌ Error: {e}")
+            print_youtube_block_hint(e)
 
     def prepare_transcripts_from_dl_videos(self, video_dir_path: str):
         """
@@ -87,6 +103,10 @@ class VideoManager:
                 continue
 
             if file.endswith(".info.json"):
+                transcript_path = os.path.join(self.youtube_channel_dir_path, "transcripts", file.replace(".info.json", ".json"))
+                if self._should_skip_existing_transcript(transcript_path):
+                    continue
+
                 with open(os.path.join(video_dir_path, file), "r", encoding="utf-8") as f:
                     description_data = json.load(f)
 
@@ -107,5 +127,5 @@ class VideoManager:
                     "published_at": formatted_date,
                 }
 
-                with open(os.path.join(self.youtube_channel_dir_path, "transcripts", file.replace(".info.json", ".json")), "w+", encoding="utf-8") as f:
+                with open(transcript_path, "w+", encoding="utf-8") as f:
                     json.dump(doc, f, ensure_ascii=False, indent=4)

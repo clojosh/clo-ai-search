@@ -1,5 +1,6 @@
 import json
 import os
+import re
 
 import shortuuid
 from youtube_transcript_api import YouTubeTranscriptApi
@@ -11,6 +12,156 @@ class TranscriptExtractor:
     def __init__(self, azure, youtube_channel_dir_path):
         self.azure = azure
         self.youtube_channel_dir_path = youtube_channel_dir_path
+
+    def _sanitize_search_key(self, value: str) -> str:
+        return re.sub(r"[^A-Za-z0-9_=-]", "_", value)
+
+    def _split_markdown_sections(self, text: str) -> list[str]:
+        sections = []
+        current_section = []
+
+        for line in text.splitlines():
+            if re.match(r"^#{1,6}\s+", line) and current_section:
+                sections.append("\n".join(current_section).strip())
+                current_section = []
+
+            current_section.append(line)
+
+        if current_section:
+            sections.append("\n".join(current_section).strip())
+
+        return [section for section in sections if section]
+
+    def _split_long_text(self, text: str, max_words: int = 500, overlap_words: int = 75) -> list[str]:
+        if len(text.split()) <= max_words:
+            return [text.strip()] if text.strip() else []
+
+        sentences = self._split_sentences(text)
+        if len(sentences) <= 1:
+            return self._split_long_sentence(text, max_words=max_words, overlap_words=overlap_words)
+
+        chunks = []
+        current_sentences = []
+        current_word_count = 0
+
+        for sentence in sentences:
+            sentence_word_count = len(sentence.split())
+
+            if sentence_word_count > max_words:
+                if current_sentences:
+                    chunks.append(" ".join(current_sentences).strip())
+                    current_sentences = self._sentence_overlap(current_sentences, overlap_words)
+                    current_word_count = sum(len(overlap_sentence.split()) for overlap_sentence in current_sentences)
+
+                chunks.extend(self._split_long_sentence(sentence, max_words=max_words, overlap_words=overlap_words))
+                current_sentences = []
+                current_word_count = 0
+                continue
+
+            if current_sentences and current_word_count + sentence_word_count > max_words:
+                chunks.append(" ".join(current_sentences).strip())
+                current_sentences = self._sentence_overlap(current_sentences, overlap_words)
+                current_word_count = sum(len(overlap_sentence.split()) for overlap_sentence in current_sentences)
+
+            current_sentences.append(sentence)
+            current_word_count += sentence_word_count
+
+        if current_sentences:
+            chunks.append(" ".join(current_sentences).strip())
+
+        return chunks
+
+    def _split_sentences(self, text: str) -> list[str]:
+        sentences = re.split(r"(?<=[.!?。！？])\s+(?=[A-Z0-9#*\-\"'(\[])|(?<=[。！？])", text.strip())
+        return [sentence.strip() for sentence in sentences if sentence.strip()]
+
+    def _sentence_overlap(self, sentences: list[str], overlap_words: int) -> list[str]:
+        if overlap_words <= 0:
+            return []
+
+        overlap = []
+        word_count = 0
+        for sentence in reversed(sentences):
+            overlap.insert(0, sentence)
+            word_count += len(sentence.split())
+            if word_count >= overlap_words:
+                break
+
+        return overlap
+
+    def _split_long_sentence(self, text: str, max_words: int = 500, overlap_words: int = 75) -> list[str]:
+        words = text.split()
+        chunks = []
+        start = 0
+
+        while start < len(words):
+            end = min(start + max_words, len(words))
+            chunks.append(" ".join(words[start:end]).strip())
+
+            if end == len(words):
+                break
+
+            start = max(end - overlap_words, start + 1)
+
+        return chunks
+
+    def chunk_markdown_content(self, text: str, max_words: int = 500, overlap_words: int = 75) -> list[str]:
+        chunks = []
+        pending_section = ""
+
+        for section in self._split_markdown_sections(text):
+            section_words = section.split()
+            pending_words = pending_section.split()
+
+            if pending_section and len(pending_words) + len(section_words) <= max_words:
+                pending_section = f"{pending_section}\n\n{section}"
+                continue
+
+            if pending_section:
+                chunks.extend(self._split_long_text(pending_section, max_words=max_words, overlap_words=overlap_words))
+
+            pending_section = section
+
+        if pending_section:
+            chunks.extend(self._split_long_text(pending_section, max_words=max_words, overlap_words=overlap_words))
+
+        return chunks
+
+    def build_chunked_documents(self, transcript: dict, max_words: int = 500, overlap_words: int = 75) -> list[dict]:
+        if transcript["transcript"] == "" or transcript["transcript"] is None:
+            print(f"\nTranscript: {transcript.get('title', '')} is missing transcript. Skipping chunking.")
+            return []
+
+        markdown_content = transcript.get("markdown_content") or transcript.get("summary") or transcript["transcript"]
+        if markdown_content == "" or len(markdown_content) < 150:
+            return []
+
+        video_id = transcript["video_id"]
+        if video_id.startswith("_"):
+            video_id = video_id[1:]
+
+        chunks = self.chunk_markdown_content(markdown_content, max_words=max_words, overlap_words=overlap_words)
+        if not chunks:
+            return []
+
+        documents = []
+        for i, chunk in enumerate(chunks, start=1):
+            documents.append(
+                {
+                    "article_id": f"{video_id}#chunk-{i}",
+                    "parent_id": video_id,
+                    "chunk_index": i,
+                    "chunk_count": len(chunks),
+                    "url": transcript["url"],
+                    "title": transcript["title"],
+                    "content": chunk,
+                    "content_description": transcript["description"],
+                    "source": "YouTube",
+                    "created_at": transcript["published_at"],
+                }
+            )
+
+        return documents
 
     def download_transcripts_yt_transcript_api(self, video_id: str):
         try:
@@ -104,12 +255,12 @@ class TranscriptExtractor:
         # This would be implemented in the main module
         pass
 
-    def summarize_transcripts(self, file_path: str):
+    def generate_markdown_content(self, file_path: str):
         """
-        Summarize all the transcripts in a file
+        Generate markdown content for all transcripts in a file.
 
         Args:
-            file_path (str): The path to the file containing the transcripts to summarize.
+            file_path (str): The path to the file containing transcripts.
 
         Returns:
             None
@@ -118,33 +269,46 @@ class TranscriptExtractor:
         with open(file_path, "r", encoding="utf-8") as file:
             transcripts = json.load(file)
 
+        updated = False
+
         if isinstance(transcripts, dict):
+            if transcripts.get("markdown_content") is not None:
+                return
+
             if transcripts["transcript"] is None:
                 return
 
             try:
                 if transcripts["transcript"] == "" or len(transcripts["transcript"]) < 150:
-                    transcripts["summary"] = ""
+                    transcripts["markdown_content"] = ""
                 else:
-                    summary = self.azure.openai_helper.generate_structured_transcript(transcripts["title"], transcripts["transcript"])
-                    transcripts["summary"] = summary
+                    markdown_content = self.azure.openai_helper.generate_structured_transcript(transcripts["title"], transcripts["transcript"])
+                    transcripts["markdown_content"] = markdown_content
+                updated = True
             except Exception as e:
-                print(f"\nError summarizing transcript for {file_path}:")
+                print(f"\nError generating markdown content for {file_path}:")
                 raise e
         else:
-            # Summarize each transcript
+            # Generate markdown content for each transcript.
             for trans in transcripts:
-                if transcripts["transcript"] is None:
-                    return
+                if trans.get("markdown_content") is not None:
+                    continue
+
+                if trans["transcript"] is None:
+                    continue
 
                 try:
                     if trans["transcript"] == "" or len(trans["transcript"]) < 150:
-                        trans["summary"] = ""
+                        trans["markdown_content"] = ""
                     else:
-                        summary = self.azure.openai_helper.generate_structured_transcript(trans["title"], trans["transcript"])
-                        trans["summary"] = summary
+                        markdown_content = self.azure.openai_helper.generate_structured_transcript(trans["title"], trans["transcript"])
+                        trans["markdown_content"] = markdown_content
+                    updated = True
                 except Exception as e:
                     raise e
+
+        if not updated:
+            return
 
         with open(file_path, "w", encoding="utf-8") as file:
             json.dump(transcripts, file, ensure_ascii=False, indent=4)
@@ -163,24 +327,58 @@ class TranscriptExtractor:
             print(f"\nTranscript: {transcript.get('title', '')} is missing transcript. Skipping upload.")
             return
 
-        if "summary" in transcript:
-            if transcript["summary"] == "" or len(transcript["summary"]) < 150:
+        video_id = transcript["video_id"]
+        if video_id.startswith("_"):
+            video_id = video_id[1:]
+
+        chunks = transcript.get("chunks") or []
+        if chunks:
+            documents = []
+            for chunk in chunks:
+                content = chunk.get("content")
+                if not content:
+                    continue
+
+                documents.append(
+                    {
+                        "@search.action": "mergeOrUpload",
+                        "article_id": self._sanitize_search_key(
+                            chunk.get("article_id") or f"{video_id}_chunk-{chunk.get('chunk_index', len(documents) + 1)}"
+                        ),
+                        "url": chunk.get("url") or transcript["url"],
+                        "title": chunk.get("title") or transcript["title"],
+                        "content": content,
+                        "content_description": chunk.get("content_description") or transcript["description"],
+                        "source": chunk.get("source") or "YouTube",
+                        "created_at": chunk.get("created_at") or transcript["published_at"],
+                        "title_vector": self.azure.openai_helper.generate_embeddings(text=chunk.get("title") or transcript["title"]),
+                        "content_vector": self.azure.openai_helper.generate_embeddings(text=content),
+                    }
+                )
+
+            if documents:
+                self.azure.search_client.upload_documents(documents)
+            return
+
+        markdown_content = transcript.get("markdown_content") or transcript.get("summary")
+        if markdown_content is not None:
+            if markdown_content == "" or len(markdown_content) < 150:
                 return
 
-        if transcript["video_id"].startswith("_"):
-            transcript["video_id"] = transcript["video_id"][1:]
-
+        content = markdown_content if markdown_content is not None else transcript["transcript"]
         self.azure.search_client.upload_documents(
-            {
-                "@search.action": "mergeOrUpload",
-                "article_id": transcript["video_id"],
-                "url": transcript["url"],
-                "title": transcript["title"],
-                "content": transcript["summary"] if "summary" in transcript else transcript["transcript"],
-                "content_description": transcript["description"],
-                "source": "YouTube",
-                "created_at": transcript["published_at"],
-                "title_vector": self.azure.openai_helper.generate_embeddings(text=transcript["title"]),
-                "content_vector": self.azure.openai_helper.generate_embeddings(text=transcript["summary"]),
-            }
+            [
+                {
+                    "@search.action": "mergeOrUpload",
+                    "article_id": video_id,
+                    "url": transcript["url"],
+                    "title": transcript["title"],
+                    "content": content,
+                    "content_description": transcript["description"],
+                    "source": "YouTube",
+                    "created_at": transcript["published_at"],
+                    "title_vector": self.azure.openai_helper.generate_embeddings(text=transcript["title"]),
+                    "content_vector": self.azure.openai_helper.generate_embeddings(text=content),
+                }
+            ]
         )

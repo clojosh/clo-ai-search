@@ -1,0 +1,6300 @@
+1
+00:00:00,000 --> 00:00:05,600
+Hey, everybody.
+
+2
+00:00:05,600 --> 00:00:09,839
+I am super excited, and we're super excited to be having this live stream.
+
+3
+00:00:09,839 --> 00:00:10,839
+Just a quick thing.
+
+4
+00:00:10,839 --> 00:00:14,679
+First, oh, my God, I'm just too excited and too nervous.
+
+5
+00:00:14,679 --> 00:00:19,640
+So first of all, thank you, everyone who is tuning in today for the Tailoring for MetaHumans
+
+6
+00:00:19,640 --> 00:00:21,539
+webinar.
+
+7
+00:00:21,539 --> 00:00:22,539
+Just a quick thing.
+
+8
+00:00:22,539 --> 00:00:27,179
+This is the first ever webinar with both Chlo and Unreal, so really excited for all of us
+
+9
+00:00:27,179 --> 00:00:31,320
+to be here, to be doing this together, and actually, like, having somebody in the same
+
+10
+00:00:31,320 --> 00:00:34,200
+room as me, which is really great.
+
+11
+00:00:34,200 --> 00:00:38,280
+Just a quick thing for all of our viewers in the chat, don't forget the chat is there
+
+12
+00:00:38,280 --> 00:00:43,140
+for you guys to use, and we would love to know a little bit more about our people in
+
+13
+00:00:43,140 --> 00:00:48,120
+the chat, in the view, a little bit about yourselves, where you guys are in the world,
+
+14
+00:00:48,120 --> 00:00:52,179
+maybe what do you guys use, which programs, or what do you do, so we know a little bit
+
+15
+00:00:52,179 --> 00:00:56,820
+more about you, because you're going to get to know a whole lot about us.
+
+16
+00:00:57,179 --> 00:01:01,219
+And so today, we're going to be taking you guys through some of the videos and live discussions
+
+17
+00:01:01,219 --> 00:01:07,920
+detailing the processes of creating a MetaHuman, creating an outfit, and then animating and
+
+18
+00:01:07,920 --> 00:01:11,760
+rendering all of that in Unreal, so we're really excited to be bringing that to you
+
+19
+00:01:11,760 --> 00:01:12,799
+guys.
+
+20
+00:01:12,799 --> 00:01:15,079
+But let's kick it off with just some quick introductions.
+
+21
+00:01:15,079 --> 00:01:16,079
+My name is Ariel.
+
+22
+00:01:16,079 --> 00:01:22,260
+I work here at Chlo as a 3D designer, 3D apparel designer.
+
+23
+00:01:22,260 --> 00:01:27,000
+And just something kind of fun, facts about myself, the first video game I ever played
+
+24
+00:01:27,180 --> 00:01:28,960
+was the Zork text version.
+
+25
+00:01:28,960 --> 00:01:31,960
+If anybody got that, I'm going to be so impressed.
+
+26
+00:01:31,960 --> 00:01:36,700
+But for everybody else, a little bit about myself, I did design a dress that Taylor Swift
+
+27
+00:01:36,700 --> 00:01:40,500
+wore years ago, so that was kind of a really cool highlight of my career.
+
+28
+00:01:40,500 --> 00:01:42,800
+And then from there, I'm going to kick it off, Billy.
+
+29
+00:01:42,800 --> 00:01:44,420
+Hello.
+
+30
+00:01:44,420 --> 00:01:50,300
+My name is Billy, and I am a 3D artist working for Marvelous Designer.
+
+31
+00:01:50,300 --> 00:01:55,360
+And my fun fact is I used to work in architecture.
+
+32
+00:01:55,360 --> 00:01:56,800
+And that also brings up the question.
+
+33
+00:01:56,799 --> 00:02:00,640
+Like, how does that relate to cloth simulation?
+
+34
+00:02:00,640 --> 00:02:02,039
+But that's a question for another time.
+
+35
+00:02:02,039 --> 00:02:03,979
+So I will hand it off to Kami.
+
+36
+00:02:03,979 --> 00:02:04,979
+Thanks, Billy.
+
+37
+00:02:04,979 --> 00:02:05,979
+Hi.
+
+38
+00:02:05,979 --> 00:02:06,979
+I'm Kami.
+
+39
+00:02:06,979 --> 00:02:08,979
+I'm a senior technical artist here at Epic.
+
+40
+00:02:08,979 --> 00:02:13,800
+I've been in the film and gaming industry for about 20 years, focusing on metahumans
+
+41
+00:02:13,800 --> 00:02:16,740
+and character creation, lighting, and look dev.
+
+42
+00:02:16,740 --> 00:02:19,139
+So I'm excited to be here with this team.
+
+43
+00:02:19,139 --> 00:02:23,419
+Fun fact about me is when I'm not behind the desk, I actually like to get out and go hiking
+
+44
+00:02:23,419 --> 00:02:26,000
+and had the opportunity to go hike up to Everest Base Camp.
+
+45
+00:02:26,000 --> 00:02:26,500
+Wow.
+
+46
+00:02:26,800 --> 00:02:29,320
+All fundraising, actually, for cancer and leukemia.
+
+47
+00:02:29,320 --> 00:02:31,240
+So it's kind of a twofer there.
+
+48
+00:02:31,240 --> 00:02:32,240
+But yeah.
+
+49
+00:02:32,240 --> 00:02:34,560
+I'll hand it on back to Kami.
+
+50
+00:02:34,560 --> 00:02:37,960
+Show off, Kami.
+
+51
+00:02:37,960 --> 00:02:40,800
+I'm Kami, lead clothing artist at Epic Games.
+
+52
+00:02:40,800 --> 00:02:43,180
+I've been at Epic for about five years.
+
+53
+00:02:43,180 --> 00:02:47,480
+Before that, I was in feature animation, and before that, I was a designer in the fashion
+
+54
+00:02:47,480 --> 00:02:48,480
+industry.
+
+55
+00:02:48,480 --> 00:02:51,120
+I guess I have to do a fun fact, too.
+
+56
+00:02:51,120 --> 00:02:55,680
+When I was a kid, I was on a game show that you've probably never heard of.
+
+57
+00:02:55,680 --> 00:02:56,680
+Great.
+
+58
+00:02:56,800 --> 00:02:59,320
+I'm going to have to ask you what that game was later.
+
+59
+00:02:59,320 --> 00:03:00,320
+All right, guys.
+
+60
+00:03:00,320 --> 00:03:02,560
+So just reminder, we do have the chat that's active.
+
+61
+00:03:02,560 --> 00:03:07,680
+And if you want to put any questions that you guys think of during this whole series,
+
+62
+00:03:07,680 --> 00:03:09,100
+please feel free to put them in the chat.
+
+63
+00:03:09,100 --> 00:03:12,760
+We are going to try to answer as many as we possibly can at the end of today.
+
+64
+00:03:12,760 --> 00:03:13,760
+So fun.
+
+65
+00:03:13,760 --> 00:03:14,760
+We'll have a Q&A at the end.
+
+66
+00:03:14,760 --> 00:03:16,360
+Everybody loves that.
+
+67
+00:03:16,360 --> 00:03:17,720
+And then a little other something.
+
+68
+00:03:17,720 --> 00:03:22,840
+So during today's presentations, definitely pay attention because we have a really exciting
+
+69
+00:03:22,840 --> 00:03:24,760
+contest that's going to be coming up soon.
+
+70
+00:03:24,760 --> 00:03:25,760
+Not announced yet.
+
+71
+00:03:25,760 --> 00:03:26,760
+But you guys are getting a little preview.
+
+72
+00:03:26,759 --> 00:03:30,259
+And a lot of what we're going to be talking about today is going to be super useful in
+
+73
+00:03:30,259 --> 00:03:33,000
+the upcoming competition.
+
+74
+00:03:33,000 --> 00:03:37,519
+But let's before we get into all of these videos and demos that we're going to be doing,
+
+75
+00:03:37,519 --> 00:03:42,239
+let's start and show off some of our artwork that creators have used on Unreal.
+
+76
+00:03:42,239 --> 00:03:43,239
+They've used Clo.
+
+77
+00:03:43,239 --> 00:03:49,039
+Maybe they've used Marvelous Designer and MetaHuman to create this really cool art.
+
+78
+00:03:49,039 --> 00:03:54,280
+So Dan, if you would be so kind, our man behind the curtain, to kick off some of these images.
+
+79
+00:03:56,759 --> 00:03:58,019
+All right.
+
+80
+00:03:58,019 --> 00:04:01,239
+So our very first thing up, I thought this was really cool.
+
+81
+00:04:01,239 --> 00:04:04,479
+If anybody isn't familiar with these holo boxes, they're super cool.
+
+82
+00:04:04,479 --> 00:04:05,979
+They're life size.
+
+83
+00:04:05,979 --> 00:04:13,639
+And this was hosted at a combined Unreal, Epic, and Clo event held in London earlier
+
+84
+00:04:13,639 --> 00:04:14,639
+this year.
+
+85
+00:04:14,639 --> 00:04:17,379
+I wish I got to go, but I'm going to actually let Kim talk a little bit about this because
+
+86
+00:04:17,379 --> 00:04:18,379
+she actually was there.
+
+87
+00:04:18,379 --> 00:04:19,379
+And I'm kind of jealous.
+
+88
+00:04:19,379 --> 00:04:21,599
+Yeah, I actually got to go.
+
+89
+00:04:21,599 --> 00:04:22,599
+It was very cool.
+
+90
+00:04:22,599 --> 00:04:24,759
+I mean, the holo boxes themselves.
+
+91
+00:04:24,759 --> 00:04:26,000
+They're basically human sized.
+
+92
+00:04:26,000 --> 00:04:32,800
+And so being able to experience some of these assets moving in a way that's just human sized
+
+93
+00:04:32,800 --> 00:04:33,800
+is really, really cool.
+
+94
+00:04:33,800 --> 00:04:38,199
+As you can see in here, the event itself was really great.
+
+95
+00:04:38,199 --> 00:04:42,120
+Also sort of, yeah, the energy was really great.
+
+96
+00:04:42,120 --> 00:04:43,120
+Everyone was really excited.
+
+97
+00:04:43,120 --> 00:04:46,600
+They showed a lot of really cool stuff, some of which you're going to get to see here today.
+
+98
+00:04:46,600 --> 00:04:50,879
+But yeah, it was a really good time.
+
+99
+00:04:50,879 --> 00:04:55,560
+But then we have actually just some focus features of some of the artists.
+
+100
+00:04:55,560 --> 00:04:58,360
+If we could scroll to our next one, Dan.
+
+101
+00:04:58,360 --> 00:05:04,439
+So Ashno, I just want to say something I think is really cool about this is that these have
+
+102
+00:05:04,439 --> 00:05:10,060
+such unique avatars or, well, they're Unreal humans, basically.
+
+103
+00:05:10,060 --> 00:05:14,139
+And how really creative you can get with these because they're not, you know, your traditional,
+
+104
+00:05:14,139 --> 00:05:17,100
+you think of, I'm going to just make an avatar and I'm going to make them look like a normal
+
+105
+00:05:17,100 --> 00:05:18,100
+person.
+
+106
+00:05:18,100 --> 00:05:20,360
+These are really, really completely unique.
+
+107
+00:05:20,360 --> 00:05:22,000
+Yeah, they really push them.
+
+108
+00:05:22,000 --> 00:05:25,360
+There's a lot of personality there, which is cool.
+
+109
+00:05:25,560 --> 00:05:29,800
+It's just really cool to see such a unique style in the 3D environment like this just
+
+110
+00:05:29,800 --> 00:05:37,319
+really shows the creative side that you can actually put into working in the 3D environment.
+
+111
+00:05:37,319 --> 00:05:41,459
+Yeah, storytelling is really good in these examples.
+
+112
+00:05:41,459 --> 00:05:48,319
+Like I feel like I can tell what type of people these, well, yeah, what these people are.
+
+113
+00:05:48,319 --> 00:05:52,360
+Who these people are, where they're from, who knows.
+
+114
+00:05:52,360 --> 00:05:55,360
+Hey, Dan, can we have our second artist, please?
+
+115
+00:05:55,560 --> 00:06:02,800
+This one I think is kind of my personal favorite, mostly because of the amount of insane movement
+
+116
+00:06:02,800 --> 00:06:06,800
+you're getting in this with the flow and the dress and the beads and the shine on the head
+
+117
+00:06:06,800 --> 00:06:07,800
+dress.
+
+118
+00:06:07,800 --> 00:06:10,840
+And I don't know if anybody thinks back to like old video games where like everybody
+
+119
+00:06:10,840 --> 00:06:15,220
+basically wore a square, you know, square with outfit painted on top.
+
+120
+00:06:15,220 --> 00:06:19,360
+So just to see how far it's come from when I was a kid to honestly how far it's come
+
+121
+00:06:19,360 --> 00:06:24,180
+in the past, like five, six years is insane because these video games bring so much more
+
+122
+00:06:24,180 --> 00:06:25,560
+life in the outfit.
+
+123
+00:06:25,560 --> 00:06:27,319
+It brings so much more life to the game.
+
+124
+00:06:27,319 --> 00:06:28,319
+Yeah.
+
+125
+00:06:28,319 --> 00:06:32,680
+Anyone who's ever worked in cloth simulation can just look at all those like beads flying
+
+126
+00:06:32,680 --> 00:06:38,800
+out and just be extremely impressed because it looks really cool and that's very complicated.
+
+127
+00:06:38,800 --> 00:06:39,800
+Yeah.
+
+128
+00:06:39,800 --> 00:06:44,060
+I mean, the level of detail that Unreal is able to capture in these renders is just,
+
+129
+00:06:44,060 --> 00:06:45,060
+it's awesome.
+
+130
+00:06:45,060 --> 00:06:50,800
+I really want to know how they made the jewelry and the beads.
+
+131
+00:06:50,800 --> 00:06:54,899
+I'm not going to lie, I'm with you on that, Billy.
+
+132
+00:06:55,560 --> 00:06:56,560
+You should ask.
+
+133
+00:06:56,560 --> 00:06:57,560
+I know.
+
+134
+00:06:57,560 --> 00:06:58,560
+We should.
+
+135
+00:06:58,560 --> 00:06:59,560
+We should get them on a tutorial on how to do that.
+
+136
+00:06:59,560 --> 00:07:00,560
+All right.
+
+137
+00:07:00,560 --> 00:07:01,560
+Third person, please, Dan.
+
+138
+00:07:01,560 --> 00:07:02,560
+Oh, yeah.
+
+139
+00:07:02,560 --> 00:07:03,560
+There we go.
+
+140
+00:07:03,560 --> 00:07:04,560
+All right.
+
+141
+00:07:04,560 --> 00:07:11,800
+I'm going to promise I've tried so hard to try to say her name right or Kidea.
+
+142
+00:07:11,800 --> 00:07:13,800
+I think I got it right.
+
+143
+00:07:13,800 --> 00:07:18,720
+Oh, she makes some of the most beautiful and absolutely ethereal things I've ever seen.
+
+144
+00:07:18,720 --> 00:07:22,840
+So like the clothes that are coming out of Clow, but then going using a MetaHuman and
+
+145
+00:07:22,840 --> 00:07:25,120
+then being rendered in Unreal.
+
+146
+00:07:25,560 --> 00:07:30,560
+I'm quite literally blown away because I want to step into this scene with this character.
+
+147
+00:07:30,560 --> 00:07:36,439
+It really shows the power, you know, of bringing your clothes and your avatar into something
+
+148
+00:07:36,439 --> 00:07:41,439
+like Unreal, you know, where you can, you know, set up like so much atmosphere and rent,
+
+149
+00:07:41,439 --> 00:07:46,319
+you know, like it looks, it really kicks it up like several notches, which looks really
+
+150
+00:07:46,319 --> 00:07:47,319
+cool.
+
+151
+00:07:47,319 --> 00:07:48,319
+Yeah.
+
+152
+00:07:48,319 --> 00:07:53,819
+I mean, I also want to make sure the next image I believe we have also, you can just
+
+153
+00:07:53,819 --> 00:07:54,560
+really see the atmosphere.
+
+154
+00:07:54,560 --> 00:07:59,680
+The lighting, how it accentuates the clothing and really just makes it pop, especially the
+
+155
+00:07:59,680 --> 00:08:04,120
+complimentary colors here and just the mood and raking across the front of the actual
+
+156
+00:08:04,120 --> 00:08:05,120
+clothing.
+
+157
+00:08:05,120 --> 00:08:07,000
+You can see every movement, every ripple.
+
+158
+00:08:07,000 --> 00:08:10,060
+It's almost like it's moving, even though it's a still.
+
+159
+00:08:10,060 --> 00:08:13,959
+You might have seen, but this was the artist who created the feature artwork for this live
+
+160
+00:08:13,959 --> 00:08:16,240
+session and also she was in the holobox.
+
+161
+00:08:16,240 --> 00:08:21,319
+So absolutely bonkers like talented artist here.
+
+162
+00:08:21,319 --> 00:08:24,319
+And we have one more.
+
+163
+00:08:24,319 --> 00:08:25,319
+One more person.
+
+164
+00:08:25,319 --> 00:08:31,279
+So last but not least blocky and something I kind of want to say about this, which I
+
+165
+00:08:31,279 --> 00:08:33,899
+think is really cool is a lot of times when we're thinking, we're thinking club, we're
+
+166
+00:08:33,899 --> 00:08:37,100
+thinking unreal, we're thinking medic human and we're thinking marvelous designer, we're
+
+167
+00:08:37,100 --> 00:08:38,100
+thinking digital.
+
+168
+00:08:38,100 --> 00:08:44,439
+And while this artist did use stuff to make all these digital artwork, the movement, the
+
+169
+00:08:44,439 --> 00:08:46,679
+animations that are up on these massive screens.
+
+170
+00:08:46,679 --> 00:08:52,879
+So like super high quality also used clothes for the merchant design that was physically
+
+171
+00:08:52,879 --> 00:08:53,879
+sold.
+
+172
+00:08:54,320 --> 00:08:57,200
+So it's really showing how all of that can come really full circle and have all of these
+
+173
+00:08:57,200 --> 00:09:05,920
+different elements and all of these different use cases, which I just think is kind of amazing.
+
+174
+00:09:05,920 --> 00:09:06,920
+What a cool workflow.
+
+175
+00:09:06,920 --> 00:09:07,920
+Okay.
+
+176
+00:09:07,920 --> 00:09:08,920
+I need a breakdown.
+
+177
+00:09:08,920 --> 00:09:13,760
+I mean, it really just shows you the power of the cinematics and actually bringing your
+
+178
+00:09:13,760 --> 00:09:17,400
+clothing to life, to movement, not just the stills that you can create there.
+
+179
+00:09:17,400 --> 00:09:18,920
+It really just kind of gives that connection.
+
+180
+00:09:18,920 --> 00:09:22,320
+And then to be seen on live screen, like big screen like that, and it holds up.
+
+181
+00:09:22,320 --> 00:09:23,320
+That's pretty rad.
+
+182
+00:09:23,320 --> 00:09:24,320
+Yeah.
+
+183
+00:09:24,320 --> 00:09:29,879
+It always blows my mind when I see stuff on the like Times Square sized billboards.
+
+184
+00:09:29,879 --> 00:09:34,120
+You're like, whoa, whoa, hold on a second.
+
+185
+00:09:34,120 --> 00:09:37,960
+So I think looking at all these artists, and if you guys have questions about the artists,
+
+186
+00:09:37,960 --> 00:09:43,000
+feel free to put them in the chat or go definitely check them out on it.
+
+187
+00:09:43,000 --> 00:09:47,420
+And just last but not least, I almost forgot some still images, but like, this is really
+
+188
+00:09:47,420 --> 00:09:52,880
+cool because you get so much motion, cinematography kind of action, everything feels very lively
+
+189
+00:09:52,880 --> 00:09:53,880
+in these shots.
+
+190
+00:09:53,879 --> 00:09:54,879
+Yeah.
+
+191
+00:09:54,879 --> 00:10:02,299
+And I mean, I really love this one because it really showcases the metahuman, like that
+
+192
+00:10:02,299 --> 00:10:06,279
+face is, you know, right up in the center, you know, super realistic.
+
+193
+00:10:06,279 --> 00:10:08,200
+It looks really great.
+
+194
+00:10:08,200 --> 00:10:11,720
+It really sells the realism and, you know, character.
+
+195
+00:10:11,720 --> 00:10:14,539
+Like it's not just, you know, a generic face.
+
+196
+00:10:14,539 --> 00:10:18,440
+It's a really interesting face with a lot of character, which I think is really cool.
+
+197
+00:10:18,440 --> 00:10:19,440
+We're good.
+
+198
+00:10:19,440 --> 00:10:20,440
+We're good.
+
+199
+00:10:20,440 --> 00:10:21,440
+We're good.
+
+200
+00:10:21,440 --> 00:10:22,440
+We're good.
+
+201
+00:10:22,440 --> 00:10:23,440
+We're good.
+
+202
+00:10:23,440 --> 00:10:24,440
+We're good.
+
+203
+00:10:24,440 --> 00:10:25,440
+We're good.
+
+204
+00:10:25,440 --> 00:10:26,440
+We're good on these guys.
+
+205
+00:10:26,440 --> 00:10:27,440
+I hope you guys enjoyed seeing some of these artists.
+
+206
+00:10:27,440 --> 00:10:32,260
+I definitely recommend checking them out on their websites, their social media, because
+
+207
+00:10:32,260 --> 00:10:37,380
+we've literally showed you the smallest snippet of what these guys are all like.
+
+208
+00:10:37,380 --> 00:10:41,600
+Their capabilities are, which I just think is absolutely insane.
+
+209
+00:10:41,600 --> 00:10:45,840
+But without further ado, we're kind of really here to see some demos of these different
+
+210
+00:10:45,840 --> 00:10:48,900
+softwares in action and kick it off.
+
+211
+00:10:48,900 --> 00:10:52,440
+We are going to have Kim presenting some absolutely amazing.
+
+212
+00:10:52,440 --> 00:10:53,440
+Yeah.
+
+213
+00:10:53,440 --> 00:11:01,820
+So this first video is just going to be showing you how to create a Meta human and trying
+
+214
+00:11:01,820 --> 00:11:06,000
+to go a little bit beyond the basics in some cases and just show you some stuff that you
+
+215
+00:11:06,000 --> 00:11:09,820
+may want to know, especially as someone who's going to be used that Meta human to bring
+
+216
+00:11:09,820 --> 00:11:13,060
+it into Clo to create clothing around it.
+
+217
+00:11:13,060 --> 00:11:15,440
+So take it away.
+
+218
+00:11:15,440 --> 00:11:17,060
+Hey everyone.
+
+219
+00:11:17,060 --> 00:11:20,440
+So hi, I'm Kim from Epic games.
+
+220
+00:11:20,440 --> 00:11:22,440
+I'm going to show you how to create a Meta human.
+
+221
+00:11:22,440 --> 00:11:26,940
+But first I'm going to briefly talk about why you would want to use a Meta human.
+
+222
+00:11:26,940 --> 00:11:32,160
+First off, they're easy to create highly customizable and super high quality avatars, which is probably
+
+223
+00:11:32,160 --> 00:11:36,620
+why you're interested in them, but they also have a lot of other benefits that you might
+
+224
+00:11:36,620 --> 00:11:38,460
+want to be aware of.
+
+225
+00:11:38,460 --> 00:11:43,000
+They live natively in unreal engine, no friction, no bridging plugins, animation tools like
+
+226
+00:11:43,000 --> 00:11:47,320
+Meta human animator and real time webcam animations are right there.
+
+227
+00:11:47,320 --> 00:11:51,440
+They connect to the DCCs you're already using like Clo, Marvelous, Maya, Houdini, and fast,
+
+228
+00:11:51,440 --> 00:11:56,440
+Epic's marketplace has a growing ecosystem of assets built around them.
+
+229
+00:11:56,440 --> 00:12:00,980
+So now the first thing that we're going to do is we're going to make a Meta human.
+
+230
+00:12:00,980 --> 00:12:07,400
+So I'm going to make a Meta human folder in here.
+
+231
+00:12:07,400 --> 00:12:08,400
+Probably not necessary.
+
+232
+00:12:08,400 --> 00:12:15,560
+And I'm going to right click and go to here, Meta human, Meta human character, name it
+
+233
+00:12:15,560 --> 00:12:18,440
+whatever you want.
+
+234
+00:12:18,440 --> 00:12:21,440
+I'm going to double click on that, which will open up.
+
+235
+00:12:21,440 --> 00:12:24,080
+The Meta human creator.
+
+236
+00:12:24,080 --> 00:12:26,440
+So this is Meta human creator.
+
+237
+00:12:26,440 --> 00:12:30,080
+It gives us this generic looking character.
+
+238
+00:12:30,080 --> 00:12:37,120
+We can have a look at it.
+
+239
+00:12:37,120 --> 00:12:39,780
+There's a couple of things I'm just going to point out really quickly.
+
+240
+00:12:39,780 --> 00:12:51,280
+We can swap from topology to skin, clay, you know, just different texturing.
+
+241
+00:12:51,279 --> 00:12:58,279
+There's also different lighting scenarios, you can switch to the LODs and quality, et
+
+242
+00:12:58,279 --> 00:12:59,279
+cetera.
+
+243
+00:12:59,279 --> 00:13:03,279
+I'm going to switch this back to skin.
+
+244
+00:13:03,279 --> 00:13:08,919
+And then we're going to briefly look at some of the head stuff.
+
+245
+00:13:08,919 --> 00:13:12,000
+So there's a number of different modes.
+
+246
+00:13:12,000 --> 00:13:18,919
+There's blend where you can stretch faces and these are all the presets that it comes
+
+247
+00:13:18,919 --> 00:13:19,919
+with.
+
+248
+00:13:19,920 --> 00:13:28,740
+I'm going to go into layer, I'm going to choose three of these presets.
+
+249
+00:13:28,740 --> 00:13:34,900
+And then as you can see in the face, there's all these little dots.
+
+250
+00:13:34,900 --> 00:13:44,780
+When you click on a dot, depending on the positioning here of the three characters.
+
+251
+00:13:44,780 --> 00:13:47,920
+So let's see, Lorenzo looks like you've got kind of a bigger nose.
+
+252
+00:13:47,920 --> 00:13:48,920
+So if I zoom in a little bit.
+
+253
+00:13:48,920 --> 00:13:49,920
+Okay.
+
+254
+00:13:49,920 --> 00:13:52,920
+If I bring the position closer to Lorenzo, I'll get Lorenzo's nose.
+
+255
+00:13:52,920 --> 00:13:58,480
+If I go in between Lorenzo and Era, I'll get some sort of a mixture.
+
+256
+00:13:58,480 --> 00:14:04,640
+And so that's how blending works, except it's transformed.
+
+257
+00:14:04,640 --> 00:14:10,680
+And sort of similar except, you know, in terms of it, it uses all of the various dots, but
+
+258
+00:14:10,680 --> 00:14:18,740
+instead of blending in between them, you can just select a dot and actually move it around.
+
+259
+00:14:19,920 --> 00:14:26,920
+So right now we have symmetric on, you can turn it off if you want some kind of asymmetry.
+
+260
+00:14:26,920 --> 00:14:40,920
+You've got teeth and eyelashes, and this is where you can edit things like teeth.
+
+261
+00:14:40,920 --> 00:14:47,920
+You know, there's some sliders, you can change the length of the teeth, the variation.
+
+262
+00:14:49,920 --> 00:14:56,920
+Now you can see how it looks like with the mouth open and the mouth closed.
+
+263
+00:14:56,920 --> 00:15:01,920
+And eyelashes, which I guess is pretty self-explanatory.
+
+264
+00:15:01,920 --> 00:15:06,920
+In form, we will come back to.
+
+265
+00:15:06,920 --> 00:15:09,920
+And here's sculpt.
+
+266
+00:15:09,920 --> 00:15:15,920
+So sculpt, again, you can grab any particular point and you can sculpt the character.
+
+267
+00:15:15,920 --> 00:15:18,920
+Again, you can have symmetry on or off.
+
+268
+00:15:18,920 --> 00:15:19,920
+Okay.
+
+269
+00:15:19,920 --> 00:15:24,920
+And so this gives you some of these really fine tuned controls if you want to really
+
+270
+00:15:24,920 --> 00:15:27,920
+tweak how your character looks.
+
+271
+00:15:27,920 --> 00:15:38,920
+And here's a really cool thing is if you hold control, you can create a new point.
+
+272
+00:15:38,920 --> 00:15:44,920
+One last thing to note that you may find very important is the head scale.
+
+273
+00:15:44,920 --> 00:15:48,920
+And so this controls how big or small the head is.
+
+274
+00:15:48,920 --> 00:15:52,920
+In relation to the body.
+
+275
+00:15:52,920 --> 00:16:00,920
+And here, of course, is the reset button where you can reset everything to the default.
+
+276
+00:16:00,920 --> 00:16:05,920
+Now, if you don't really feel like sculpting your own face, you can absolutely feel free
+
+277
+00:16:05,920 --> 00:16:09,920
+to take advantage of our presets.
+
+278
+00:16:09,920 --> 00:16:12,920
+And so these all ship with MetaHuman Creator.
+
+279
+00:16:12,920 --> 00:16:17,920
+You can go through them and decide if there's any face in here that you like.
+
+280
+00:16:17,920 --> 00:16:23,920
+And of course, you can choose a face that you like.
+
+281
+00:16:23,920 --> 00:16:27,920
+And you just double click on it to select it.
+
+282
+00:16:27,920 --> 00:16:32,920
+Or you can choose the face that you like and then start making changes.
+
+283
+00:16:32,920 --> 00:16:34,920
+And again, here you go.
+
+284
+00:16:34,920 --> 00:16:40,920
+You can reset if you don't like what you did.
+
+285
+00:16:40,920 --> 00:16:44,920
+So once you have your face, you might want to have some hair.
+
+286
+00:16:44,920 --> 00:16:46,920
+So you can click on this hair and clothing.
+
+287
+00:16:46,920 --> 00:16:51,920
+And up here on the top is all the head hair.
+
+288
+00:16:51,920 --> 00:16:53,920
+Here's eyebrows.
+
+289
+00:16:53,920 --> 00:16:55,920
+Scroll down over here.
+
+290
+00:16:55,920 --> 00:16:59,920
+You can have eyelashes, facial hair, etc.
+
+291
+00:16:59,920 --> 00:17:01,920
+And you can choose any of these.
+
+292
+00:17:01,920 --> 00:17:04,920
+These all come with MetaHuman Creator.
+
+293
+00:17:04,920 --> 00:17:08,920
+It's as simple as double clicking to select them.
+
+294
+00:17:08,920 --> 00:17:13,920
+And now you have that hairstyle.
+
+295
+00:17:16,920 --> 00:17:24,920
+I also have a couple of grooms that I downloaded off of Zap.
+
+296
+00:17:24,920 --> 00:17:29,920
+These are a couple of the free downloads available.
+
+297
+00:17:29,920 --> 00:17:32,920
+Made by Epic.
+
+298
+00:17:32,920 --> 00:17:38,920
+I'll drag them in right now.
+
+299
+00:17:38,920 --> 00:17:44,920
+And now those two styles have been added and I can choose.
+
+300
+00:17:46,920 --> 00:17:54,920
+And I can select them.
+
+301
+00:17:54,920 --> 00:17:59,920
+In addition to face controls, there's also materials that you want to play with.
+
+302
+00:17:59,920 --> 00:18:01,920
+You can play with skin tone.
+
+303
+00:18:01,920 --> 00:18:05,920
+You can change the skin tone.
+
+304
+00:18:05,920 --> 00:18:14,920
+You can change the body texture, the face texture, freckles, all kinds of stuff.
+
+305
+00:18:14,920 --> 00:18:16,920
+You can change eye color.
+
+306
+00:18:16,920 --> 00:18:19,920
+Makeup, etc.
+
+307
+00:18:19,920 --> 00:18:22,920
+There's teeth and eyelashes again.
+
+308
+00:18:22,920 --> 00:18:26,920
+So it's all a bunch of stuff that you can absolutely play around with.
+
+309
+00:18:26,920 --> 00:18:29,920
+A lot of fun there.
+
+310
+00:18:29,920 --> 00:18:34,920
+Now that we've looked at the face, let's check out the body.
+
+311
+00:18:34,920 --> 00:18:41,920
+Now, the way that we edit the body is actually kind of similar in a lot of ways to the way that we edit the face.
+
+312
+00:18:41,920 --> 00:18:45,920
+In the same way, we have different bodies that we can...
+
+313
+00:18:45,920 --> 00:18:51,920
+We can blend between in blend mode.
+
+314
+00:18:51,920 --> 00:18:59,920
+In the same way that you can double-click any preset to get the whole body, you can do that.
+
+315
+00:18:59,920 --> 00:19:02,920
+Or to the whole face, you can do that also with the body.
+
+316
+00:19:02,920 --> 00:19:14,920
+So if there's a body in here that you want your character to have or that you feel is a good spot in place, you can go ahead and double-click that.
+
+317
+00:19:14,920 --> 00:19:20,920
+You can also download bodies from Fab or you can distribute them amongst each other.
+
+318
+00:19:20,920 --> 00:19:27,920
+Basically, any MetaHuman file can essentially be used as a preset.
+
+319
+00:19:27,920 --> 00:19:29,920
+And so you can load them right into here.
+
+320
+00:19:29,920 --> 00:19:33,920
+Just drag MetaHuman right into here and you can use it as a preset.
+
+321
+00:19:33,920 --> 00:19:38,920
+It's a great way to distribute bodies amongst each other.
+
+322
+00:19:38,920 --> 00:19:42,920
+And then we have model.
+
+323
+00:19:42,920 --> 00:19:52,920
+The way that MetaHuman works in very simple terms is that a lot of bodies and faces have been scanned and put into a database.
+
+324
+00:19:52,920 --> 00:19:58,920
+And the database draws from those shapes to create bodies and faces.
+
+325
+00:19:58,920 --> 00:20:07,920
+And what our body model tries to do is to create the most plausible body given whatever parameters you choose.
+
+326
+00:20:07,920 --> 00:20:11,920
+So here's our list of parameters that you can control for the body.
+
+327
+00:20:12,920 --> 00:20:15,920
+They're sort of broken up into two sections.
+
+328
+00:20:15,920 --> 00:20:22,920
+And so there's these global parameters, which include masculine, feminine, muscularity, fat, and height.
+
+329
+00:20:22,920 --> 00:20:25,920
+And then there's individual measurements.
+
+330
+00:20:25,920 --> 00:20:29,920
+So we're going to go over the global parameters first.
+
+331
+00:20:29,920 --> 00:20:35,920
+And so masculine and feminine, relatively self-explanatory.
+
+332
+00:20:35,920 --> 00:20:42,920
+And so as you can see when I'm changing this, all of the other sliders are changing underneath.
+
+333
+00:20:42,920 --> 00:20:50,920
+And also you can see that when I change this, this little pushpin icon turns white.
+
+334
+00:20:50,920 --> 00:20:54,920
+And what that means is that this parameter is now locked because I've chosen it.
+
+335
+00:20:54,920 --> 00:21:03,920
+So when I change another parameter, let's say muscularity, as you can see, this setting of masculine or feminine is locked.
+
+336
+00:21:03,920 --> 00:21:06,920
+And now that I've changed this one, this is locked as well.
+
+337
+00:21:06,920 --> 00:21:09,920
+And you can always unlock it.
+
+338
+00:21:09,920 --> 00:21:11,920
+And it'll pop back to what it again feels like.
+
+339
+00:21:11,920 --> 00:21:15,920
+It's the most plausible choice.
+
+340
+00:21:15,920 --> 00:21:19,920
+And now let's look at all of these measurement ones.
+
+341
+00:21:19,920 --> 00:21:21,920
+So these you can click here.
+
+342
+00:21:21,920 --> 00:21:22,920
+They're all in centimeters.
+
+343
+00:21:22,920 --> 00:21:26,920
+And type in whatever your value is.
+
+344
+00:21:26,920 --> 00:21:37,920
+A lot of these are sort of generally fashion-related measurements that you might take in a body.
+
+345
+00:21:37,920 --> 00:21:40,920
+And so, you know.
+
+346
+00:21:40,920 --> 00:21:45,920
+You can control specific shapes and sizes of bodies.
+
+347
+00:21:45,920 --> 00:21:51,920
+And as you select them, this line will come up.
+
+348
+00:21:51,920 --> 00:22:02,920
+You can also start from a preset.
+
+349
+00:22:02,920 --> 00:22:07,920
+If it's pretty close to what you want.
+
+350
+00:22:10,920 --> 00:22:14,920
+And then switch over.
+
+351
+00:22:14,920 --> 00:22:25,920
+And then you can fine-tune it if you're interested in doing that.
+
+352
+00:22:25,920 --> 00:22:32,920
+If you want a really specific body, you can use the one that we've been missing, which is the conform.
+
+353
+00:22:32,920 --> 00:22:34,920
+And this also goes for the face.
+
+354
+00:22:34,920 --> 00:22:39,920
+What you would do with conform is you would download a...
+
+355
+00:22:39,920 --> 00:22:42,920
+Download the medicament topology.
+
+356
+00:22:42,920 --> 00:22:45,920
+Because the topology does have to match.
+
+357
+00:22:45,920 --> 00:22:49,920
+And inside an external VCC, you would take your body.
+
+358
+00:22:49,920 --> 00:22:56,920
+And you would make that body have our topology.
+
+359
+00:22:56,920 --> 00:22:59,920
+There's a lot of tutorials on this.
+
+360
+00:22:59,920 --> 00:23:05,920
+And then you would bring that body, which has your shape and our topology in.
+
+361
+00:23:05,920 --> 00:23:08,920
+And so you drag both a head and a body SVX.
+
+362
+00:23:08,920 --> 00:23:16,920
+And now we have the body static mesh and the head static mesh.
+
+363
+00:23:16,920 --> 00:23:23,920
+And so we go to from template.
+
+364
+00:23:23,920 --> 00:23:25,920
+We're looking for the body mesh here.
+
+365
+00:23:25,920 --> 00:23:26,920
+We click body.
+
+366
+00:23:26,920 --> 00:23:33,920
+And we're looking for the head mesh.
+
+367
+00:23:33,920 --> 00:23:35,920
+Here.
+
+368
+00:23:35,920 --> 00:23:37,920
+And now we're going to conform it.
+
+369
+00:23:37,920 --> 00:23:44,920
+And what we should get when we click conform is we should get the sort of generic medicament.
+
+370
+00:23:44,920 --> 00:23:49,920
+Because that's the SVX that I brought in here.
+
+371
+00:23:49,920 --> 00:23:54,920
+Now I have to go to head to conform.
+
+372
+00:23:54,920 --> 00:24:01,920
+I want to open template.
+
+373
+00:24:01,920 --> 00:24:04,920
+If I want to conform to that.
+
+374
+00:24:04,920 --> 00:24:05,920
+So you can see there's other options.
+
+375
+00:24:05,920 --> 00:24:06,920
+But I'm just conforming with the whole head.
+
+376
+00:24:06,920 --> 00:24:10,920
+And we should get the generic head back.
+
+377
+00:24:10,920 --> 00:24:14,920
+So now that we've explored a lot of the creation options.
+
+378
+00:24:14,920 --> 00:24:18,920
+I'm just going to show you a few last things that are useful.
+
+379
+00:24:18,920 --> 00:24:20,920
+We've talked about presets a lot.
+
+380
+00:24:20,920 --> 00:24:22,920
+But we didn't click on this preset tab.
+
+381
+00:24:22,920 --> 00:24:26,920
+And so this preset has the same presets that we've been looking for.
+
+382
+00:24:26,920 --> 00:24:29,920
+But they are more full presets.
+
+383
+00:24:29,920 --> 00:24:32,920
+Including skin tone, grooms.
+
+384
+00:24:32,920 --> 00:24:35,920
+And they have what is called the default garments.
+
+385
+00:24:35,920 --> 00:24:39,920
+Which is just a t-shirt and shorts.
+
+386
+00:24:39,920 --> 00:24:43,920
+So we're going to click on one.
+
+387
+00:24:43,920 --> 00:24:48,920
+Etta is the one that we are going to be using.
+
+388
+00:24:48,920 --> 00:24:50,920
+So here's Etta.
+
+389
+00:24:50,920 --> 00:24:58,920
+So I'm going to go and I'm going to turn the garment off.
+
+390
+00:24:58,920 --> 00:25:03,920
+And we're going to get ready to export this medicament.
+
+391
+00:25:03,920 --> 00:25:08,920
+This metahuman for glow.
+
+392
+00:25:08,920 --> 00:25:11,920
+And so the first thing that we're going to do is.
+
+393
+00:25:11,920 --> 00:25:16,920
+We're going to download texture sources.
+
+394
+00:25:16,920 --> 00:25:20,920
+And we're going to create the full rig.
+
+395
+00:25:20,920 --> 00:25:22,920
+So this is going to take a little bit.
+
+396
+00:25:22,920 --> 00:25:28,920
+So now that we've downloaded the texture sources and created a rig.
+
+397
+00:25:28,920 --> 00:25:30,920
+We can go to assemble.
+
+398
+00:25:30,920 --> 00:25:32,920
+But quickly first I just want to show you that.
+
+399
+00:25:33,920 --> 00:25:34,920
+Now that you have a rig in.
+
+400
+00:25:34,920 --> 00:25:36,920
+You can watch your character move.
+
+401
+00:25:38,920 --> 00:25:40,920
+And now that we've got the rig in textures.
+
+402
+00:25:40,920 --> 00:25:42,920
+We can assemble.
+
+403
+00:25:42,920 --> 00:25:44,920
+So there's a few assembly options here.
+
+404
+00:25:44,920 --> 00:25:46,920
+It starts out on Cine.
+
+405
+00:25:46,920 --> 00:25:47,920
+Which is a high quality.
+
+406
+00:25:47,920 --> 00:25:48,920
+And there's other ones.
+
+407
+00:25:48,920 --> 00:25:51,920
+The one that we want is DCC export.
+
+408
+00:25:51,920 --> 00:25:54,920
+And all we're going to want to do is just click here.
+
+409
+00:25:54,920 --> 00:25:56,920
+And select a location to save it.
+
+410
+00:25:56,920 --> 00:25:57,920
+Type it in.
+
+411
+00:25:57,920 --> 00:25:59,920
+And hit assemble.
+
+412
+00:25:59,920 --> 00:26:01,920
+And that's it.
+
+413
+00:26:01,920 --> 00:26:02,920
+It will create DNA.
+
+414
+00:26:02,920 --> 00:26:04,920
+For you to bring into Clo.
+
+415
+00:26:04,920 --> 00:26:10,920
+I don't know about all of everybody else.
+
+416
+00:26:10,920 --> 00:26:12,920
+And all of our viewers.
+
+417
+00:26:12,920 --> 00:26:18,920
+But I kind of feel super inspired to like go ahead and build my own metahuman right about now.
+
+418
+00:26:18,920 --> 00:26:20,920
+I don't know if it will try to make it look like me.
+
+419
+00:26:20,920 --> 00:26:21,920
+That might be terrifying.
+
+420
+00:26:21,920 --> 00:26:23,920
+But maybe make it look like somebody really cool.
+
+421
+00:26:23,920 --> 00:26:25,920
+That I can start to use in my Clo projects.
+
+422
+00:26:25,920 --> 00:26:28,920
+But can I say the coolest thing I thought I saw.
+
+423
+00:26:28,920 --> 00:26:29,920
+I'm like I can look here.
+
+424
+00:26:29,920 --> 00:26:30,920
+I can actually look at you in person.
+
+425
+00:26:30,920 --> 00:26:31,920
+But it was the blog.
+
+426
+00:26:31,920 --> 00:26:33,920
+But it was the blending.
+
+427
+00:26:33,920 --> 00:26:34,920
+Because having you.
+
+428
+00:26:34,920 --> 00:26:35,920
+I always thought it was so cool.
+
+429
+00:26:35,920 --> 00:26:36,920
+I was like okay.
+
+430
+00:26:36,920 --> 00:26:37,920
+I can take this person's nose.
+
+431
+00:26:37,920 --> 00:26:38,920
+And these person's eyes.
+
+432
+00:26:38,920 --> 00:26:39,920
+And some cheekbones from here.
+
+433
+00:26:39,920 --> 00:26:41,920
+And like blend it into like the person that I want it to be.
+
+434
+00:26:41,920 --> 00:26:44,920
+So and I've checked out metahuman personally before.
+
+435
+00:26:44,920 --> 00:26:46,920
+But I did not know that feature was there.
+
+436
+00:26:46,920 --> 00:26:47,920
+And I was like okay.
+
+437
+00:26:47,920 --> 00:26:49,920
+Well that just kind of blew me out of the water.
+
+438
+00:26:49,920 --> 00:26:51,920
+So that was really cool personally.
+
+439
+00:26:51,920 --> 00:26:53,920
+For me to see happening live.
+
+440
+00:26:53,920 --> 00:26:55,920
+Also just how like seamless that happened.
+
+441
+00:26:55,920 --> 00:26:59,920
+You can also do that with something that you with a metahuman you created yourself.
+
+442
+00:26:59,920 --> 00:27:00,920
+Like that you.
+
+443
+00:27:00,920 --> 00:27:01,920
+So this is.
+
+444
+00:27:01,920 --> 00:27:02,920
+Or anything.
+
+445
+00:27:02,920 --> 00:27:04,920
+So you can blend your own models as well.
+
+446
+00:27:04,920 --> 00:27:05,920
+Okay.
+
+447
+00:27:05,920 --> 00:27:06,920
+So I'm going to go deep down that rabbit hole.
+
+448
+00:27:06,920 --> 00:27:07,920
+Oh my god.
+
+449
+00:27:07,920 --> 00:27:08,920
+Great.
+
+450
+00:27:08,920 --> 00:27:09,920
+Perfect for me.
+
+451
+00:27:09,920 --> 00:27:13,920
+I mean the best thing that I think came out recently with is the parametric body system.
+
+452
+00:27:13,920 --> 00:27:14,920
+Right.
+
+453
+00:27:14,920 --> 00:27:16,920
+Finally being able to customize and fit to what you want.
+
+454
+00:27:16,920 --> 00:27:17,920
+What you look like.
+
+455
+00:27:17,920 --> 00:27:20,920
+And then the fact that the clothing will now conform and go along with that.
+
+456
+00:27:20,920 --> 00:27:21,920
+Right.
+
+457
+00:27:21,920 --> 00:27:25,920
+So it took it from our standard presets to just really being able to customize.
+
+458
+00:27:25,920 --> 00:27:28,920
+And I don't think a lot of people get a chance to play with that.
+
+459
+00:27:28,920 --> 00:27:29,920
+And realize how much the clothing.
+
+460
+00:27:29,920 --> 00:27:31,920
+Can actually adjust and move.
+
+461
+00:27:31,920 --> 00:27:34,920
+Which I think in the long run helps you guys with designing.
+
+462
+00:27:34,920 --> 00:27:35,920
+Right.
+
+463
+00:27:35,920 --> 00:27:38,920
+How is a person as somebody who's really tall going to wear this short.
+
+464
+00:27:38,920 --> 00:27:43,920
+You know it gives you really that kind of system without having to redesign and recut every time.
+
+465
+00:27:43,920 --> 00:27:45,920
+You literally just hit the nail on the head there.
+
+466
+00:27:45,920 --> 00:27:47,920
+Because there's so many body types.
+
+467
+00:27:47,920 --> 00:27:52,920
+It's like as much as we want to say like okay we've got you know a dozen presets.
+
+468
+00:27:52,920 --> 00:27:54,920
+You've got a thousand body types though.
+
+469
+00:27:54,920 --> 00:27:58,920
+So it is really cool to see how customizable that is.
+
+470
+00:27:58,920 --> 00:27:59,920
+Yeah.
+
+471
+00:27:59,920 --> 00:28:00,920
+Right.
+
+472
+00:28:00,920 --> 00:28:05,920
+It's I always thought that all these games that come out and they have your create your
+
+473
+00:28:05,920 --> 00:28:06,920
+own character.
+
+474
+00:28:06,920 --> 00:28:08,920
+Now you can do it all in Unreal.
+
+475
+00:28:08,920 --> 00:28:12,920
+And for this demo like super inspiring.
+
+476
+00:28:12,920 --> 00:28:15,920
+And I kind of want to make myself too.
+
+477
+00:28:15,920 --> 00:28:16,920
+All right.
+
+478
+00:28:16,920 --> 00:28:17,920
+Billy meet you.
+
+479
+00:28:17,920 --> 00:28:18,920
+Internal company challenge.
+
+480
+00:28:18,920 --> 00:28:19,920
+Here we go.
+
+481
+00:28:19,920 --> 00:28:20,920
+Okay.
+
+482
+00:28:20,920 --> 00:28:26,920
+Well I first of all I was just absolutely blown away and inspired by that.
+
+483
+00:28:26,920 --> 00:28:27,920
+So yes.
+
+484
+00:28:27,920 --> 00:28:31,920
+This is going to be a MetaHuman in my Clo future project files probably.
+
+485
+00:28:31,920 --> 00:28:34,920
+But our next one is a demo tutorial by me.
+
+486
+00:28:34,920 --> 00:28:38,920
+It is going to be all things about Clo.
+
+487
+00:28:38,920 --> 00:28:42,920
+And kind of really showing you how easy it is to get started.
+
+488
+00:28:42,920 --> 00:28:45,920
+Whether you are someone who has years of pattern making experience.
+
+489
+00:28:45,920 --> 00:28:49,920
+Or maybe somebody who has absolutely never made a garment in their entire life.
+
+490
+00:28:49,920 --> 00:28:51,920
+That is completely okay.
+
+491
+00:28:51,920 --> 00:28:54,920
+So Dan can you kick off my video please.
+
+492
+00:28:54,920 --> 00:28:55,920
+Hey everyone.
+
+493
+00:28:55,920 --> 00:28:59,920
+So we are going to jump right in with Clo 3D here.
+
+494
+00:28:59,920 --> 00:29:03,920
+Just a little bit about Clo 3D and what we are going to be doing today.
+
+495
+00:29:03,920 --> 00:29:08,920
+Everything that I am doing in Clo can also be done in our other program Marvelous Designer.
+
+496
+00:29:08,920 --> 00:29:11,920
+So when we think of Clo versus Marvelous Designer.
+
+497
+00:29:11,920 --> 00:29:14,920
+Clo is based for fashion and production in the real world.
+
+498
+00:29:14,920 --> 00:29:22,920
+Marvelous Designer is more of your 3D pipeline for gaming, VFX, special effects and animation.
+
+499
+00:29:22,920 --> 00:29:24,920
+And we are ready to start filling our space.
+
+500
+00:29:24,920 --> 00:29:28,920
+And we are going to be adding in from Unreal Engine our MetaHuman.
+
+501
+00:29:28,920 --> 00:29:30,920
+Which is going to be really easy and fast.
+
+502
+00:29:30,920 --> 00:29:33,920
+And if you have ever worked in Clo it is going to work really similar to that.
+
+503
+00:29:33,920 --> 00:29:36,920
+So when we are ready to bring in our avatar.
+
+504
+00:29:36,920 --> 00:29:40,920
+Which would have already been made in Unreal Engine's MetaHuman.
+
+505
+00:29:40,920 --> 00:29:43,920
+We are going to open up our Clo library.
+
+506
+00:29:45,920 --> 00:29:47,920
+Once we are in our Clo library.
+
+507
+00:29:47,920 --> 00:29:52,920
+This is going to be really similar to if we have ever opened up one of our Clo avatars.
+
+508
+00:29:52,920 --> 00:29:54,920
+For again Clo has a ton of different avatars.
+
+509
+00:29:54,920 --> 00:29:57,920
+I have a little folder handily ready for me.
+
+510
+00:29:57,920 --> 00:30:00,920
+Going to be bringing in Eta.
+
+511
+00:30:00,920 --> 00:30:03,920
+And I am going to go into my Eta folder.
+
+512
+00:30:03,920 --> 00:30:07,920
+And I am going to see I have again here is her little PNG.
+
+513
+00:30:07,920 --> 00:30:10,920
+And I need to bring in her body DNA.
+
+514
+00:30:10,920 --> 00:30:13,920
+Easy as a drag and drop.
+
+515
+00:30:13,920 --> 00:30:16,920
+From there I am going to also link in her head data.
+
+516
+00:30:16,920 --> 00:30:18,920
+As we you know kind of might want her head.
+
+517
+00:30:18,920 --> 00:30:21,920
+Give Clo a second. There we go.
+
+518
+00:30:21,920 --> 00:30:23,920
+And click OK.
+
+519
+00:30:24,920 --> 00:30:26,920
+Once that is done.
+
+520
+00:30:26,920 --> 00:30:29,920
+Clo is going to we can actually already see her added in behind.
+
+521
+00:30:29,920 --> 00:30:31,920
+Clo is just loading her in.
+
+522
+00:30:31,920 --> 00:30:33,920
+And once Eta is loaded in.
+
+523
+00:30:33,920 --> 00:30:34,920
+If I close my library.
+
+524
+00:30:34,920 --> 00:30:37,920
+There she is and I am ready to start dressing her.
+
+525
+00:30:37,920 --> 00:30:40,920
+Now that we have Eta our MetaHuman.
+
+526
+00:30:40,920 --> 00:30:42,920
+I am going to go back into our Clo library.
+
+527
+00:30:42,920 --> 00:30:45,920
+But this time instead of going into a folder I have already linked.
+
+528
+00:30:45,920 --> 00:30:48,920
+I am going to go into our Connect library.
+
+529
+00:30:48,920 --> 00:30:52,920
+So this guys this Connect store is you know maybe you are not a garment designer.
+
+530
+00:30:52,920 --> 00:30:53,920
+Maybe you have never made a real dress.
+
+531
+00:30:53,920 --> 00:30:55,920
+Before in your life.
+
+532
+00:30:55,920 --> 00:30:58,920
+This is a store full of tons of garments that you can use.
+
+533
+00:30:58,920 --> 00:31:00,920
+So I am going to go into our garment section.
+
+534
+00:31:00,920 --> 00:31:02,920
+And one extra thing.
+
+535
+00:31:02,920 --> 00:31:04,920
+I am going to turn on one of our filters.
+
+536
+00:31:04,920 --> 00:31:06,920
+And within our filters.
+
+537
+00:31:06,920 --> 00:31:10,920
+I am going to make sure I am going to be using some Connect official items.
+
+538
+00:31:10,920 --> 00:31:12,920
+So these are professionally made patterns.
+
+539
+00:31:12,920 --> 00:31:14,920
+And best part they are free.
+
+540
+00:31:14,920 --> 00:31:16,920
+I am going to head into our search box.
+
+541
+00:31:16,920 --> 00:31:19,920
+And I am going to type in for a running outfit.
+
+542
+00:31:19,920 --> 00:31:21,920
+And you can see once I type in running.
+
+543
+00:31:21,920 --> 00:31:23,920
+I get a ton of different outfits.
+
+544
+00:31:23,920 --> 00:31:26,920
+Or garments that are ready for me to use.
+
+545
+00:31:26,920 --> 00:31:28,920
+I can scroll through here as much as I want.
+
+546
+00:31:28,920 --> 00:31:30,920
+To see maybe what I would like to bring.
+
+547
+00:31:30,920 --> 00:31:32,920
+Bring into Clo.
+
+548
+00:31:32,920 --> 00:31:34,920
+And this running top is looking pretty cool for me.
+
+549
+00:31:34,920 --> 00:31:36,920
+So I am going to simply.
+
+550
+00:31:36,920 --> 00:31:38,920
+Actually I don't even need to right click guys.
+
+551
+00:31:38,920 --> 00:31:40,920
+All I need to do is double click.
+
+552
+00:31:40,920 --> 00:31:42,920
+And once I double click.
+
+553
+00:31:42,920 --> 00:31:45,920
+Clo is going to bring that garment in for me.
+
+554
+00:31:45,920 --> 00:31:48,920
+Making sure to add it.
+
+555
+00:31:48,920 --> 00:31:51,920
+Because I already have my avatar ready for me.
+
+556
+00:31:53,920 --> 00:31:55,920
+And I have the garment.
+
+557
+00:31:55,920 --> 00:31:57,920
+I can see the patterns in the 2D side.
+
+558
+00:31:57,920 --> 00:31:59,920
+I can see the garment in the 3D side.
+
+559
+00:31:59,920 --> 00:32:01,920
+Although seeing a little issue.
+
+560
+00:32:01,920 --> 00:32:03,920
+It is not quite fitting her.
+
+561
+00:32:03,920 --> 00:32:05,920
+This is where I can use the auto fit tool.
+
+562
+00:32:05,920 --> 00:32:07,920
+This is absolutely amazing.
+
+563
+00:32:07,920 --> 00:32:09,920
+I am going to use auto fit.
+
+564
+00:32:09,920 --> 00:32:11,920
+Using the default settings.
+
+565
+00:32:11,920 --> 00:32:13,920
+And pretty quick.
+
+566
+00:32:13,920 --> 00:32:15,920
+Clo is going to adjust the pattern.
+
+567
+00:32:15,920 --> 00:32:17,920
+Not only its sizing to fit the avatar.
+
+568
+00:32:17,920 --> 00:32:19,920
+But how she is positioned.
+
+569
+00:32:19,920 --> 00:32:21,920
+And it literally took two seconds.
+
+570
+00:32:21,920 --> 00:32:22,920
+Great.
+
+571
+00:32:22,920 --> 00:32:24,920
+I am going to bring in a pair of maybe some shorts.
+
+572
+00:32:24,920 --> 00:32:26,920
+For her to use.
+
+573
+00:32:26,920 --> 00:32:28,920
+Let me scroll through again.
+
+574
+00:32:28,920 --> 00:32:30,920
+And find a pair of shorts that I maybe want to use.
+
+575
+00:32:30,920 --> 00:32:32,920
+And here we go.
+
+576
+00:32:32,920 --> 00:32:34,920
+Here are some cute little shorts.
+
+577
+00:32:34,920 --> 00:32:36,920
+These look pretty good.
+
+578
+00:32:36,920 --> 00:32:38,920
+Double click to add.
+
+579
+00:32:38,920 --> 00:32:40,920
+Again I am not saving it as I am working.
+
+580
+00:32:40,920 --> 00:32:42,920
+Turning on the things I want to in the settings.
+
+581
+00:32:42,920 --> 00:32:44,920
+Clo is going to load those items in for me.
+
+582
+00:32:44,920 --> 00:32:46,920
+We have got some shorts.
+
+583
+00:32:46,920 --> 00:32:48,920
+Now again.
+
+584
+00:32:48,920 --> 00:32:50,920
+This time hey.
+
+585
+00:32:50,920 --> 00:32:52,920
+They didn't really end up right on her.
+
+586
+00:32:52,920 --> 00:32:54,920
+So I am going to use my little gizmo.
+
+587
+00:32:54,920 --> 00:32:56,920
+To move the shorts patterns around.
+
+588
+00:32:56,920 --> 00:32:58,920
+And also what is nice.
+
+589
+00:32:58,920 --> 00:33:00,920
+Is that I can jump over into my property editor.
+
+590
+00:33:00,920 --> 00:33:02,920
+And tell Clo that these shorts need to end up.
+
+591
+00:33:02,920 --> 00:33:04,920
+Underneath my existing shirt.
+
+592
+00:33:04,920 --> 00:33:06,920
+And I can turn on simulation.
+
+593
+00:33:06,920 --> 00:33:08,920
+And get these into position.
+
+594
+00:33:08,920 --> 00:33:10,920
+So that they are ready for me.
+
+595
+00:33:10,920 --> 00:33:12,920
+To start working.
+
+596
+00:33:14,920 --> 00:33:16,920
+Ah yes.
+
+597
+00:33:16,920 --> 00:33:18,920
+That worked much better.
+
+598
+00:33:18,920 --> 00:33:20,920
+And now I can put all of my garments back to layer zero.
+
+599
+00:33:20,920 --> 00:33:22,920
+So they aren't this neon green.
+
+600
+00:33:22,920 --> 00:33:24,920
+We can start to make any edits.
+
+601
+00:33:24,920 --> 00:33:26,920
+That we need to.
+
+602
+00:33:26,920 --> 00:33:28,920
+Looking at the pattern.
+
+603
+00:33:28,920 --> 00:33:30,920
+Well she has got some shorts.
+
+604
+00:33:30,920 --> 00:33:32,920
+And I am not really feeling the sleeves.
+
+605
+00:33:32,920 --> 00:33:34,920
+For this overall athletic outfit.
+
+606
+00:33:34,920 --> 00:33:36,920
+So I am going to simply select the sleeves.
+
+607
+00:33:36,920 --> 00:33:38,920
+And delete them.
+
+608
+00:33:38,920 --> 00:33:40,920
+They are gone.
+
+609
+00:33:40,920 --> 00:33:42,920
+Great.
+
+610
+00:33:42,920 --> 00:33:44,920
+And I think it might look cool.
+
+611
+00:33:44,920 --> 00:33:46,920
+If she has a little kangaroo pocket.
+
+612
+00:33:46,920 --> 00:33:48,920
+At the front of her shirt.
+
+613
+00:33:48,920 --> 00:33:50,920
+So I am going to go ahead.
+
+614
+00:33:50,920 --> 00:33:52,920
+And make some adjustments.
+
+615
+00:33:52,920 --> 00:33:54,920
+If you have ever worked in anything like.
+
+616
+00:33:54,920 --> 00:33:56,920
+Illustrator or anything.
+
+617
+00:33:56,920 --> 00:33:58,920
+The polygon tool is going to work.
+
+618
+00:33:58,920 --> 00:34:00,920
+Super similar to that.
+
+619
+00:34:00,920 --> 00:34:02,920
+And I can draw any type of shape.
+
+620
+00:34:02,920 --> 00:34:04,920
+That I might need to create.
+
+621
+00:34:04,920 --> 00:34:06,920
+Now that we have half of her pocket.
+
+622
+00:34:06,920 --> 00:34:08,920
+I can make any adjustments.
+
+623
+00:34:08,920 --> 00:34:10,920
+Maybe to the shape.
+
+624
+00:34:10,920 --> 00:34:12,920
+Make the opening maybe a little longer.
+
+625
+00:34:12,920 --> 00:34:14,920
+And make this maybe a little less wide.
+
+626
+00:34:14,920 --> 00:34:16,920
+Again I have only done half.
+
+627
+00:34:16,920 --> 00:34:18,920
+It is very easy to then just unfold it.
+
+628
+00:34:18,920 --> 00:34:20,920
+To create the full pocket shape.
+
+629
+00:34:20,920 --> 00:34:22,920
+And then trace this.
+
+630
+00:34:22,920 --> 00:34:24,920
+As an internal line.
+
+631
+00:34:24,920 --> 00:34:26,920
+Or internal shape.
+
+632
+00:34:26,920 --> 00:34:28,920
+Then be put.
+
+633
+00:34:28,920 --> 00:34:30,920
+Right onto the main pattern piece.
+
+634
+00:34:30,920 --> 00:34:32,920
+From there I am actually ready.
+
+635
+00:34:32,920 --> 00:34:34,920
+To sew everything into position.
+
+636
+00:34:34,920 --> 00:34:36,920
+Onto my garment.
+
+637
+00:34:36,920 --> 00:34:38,920
+Almost like in real life.
+
+638
+00:34:38,920 --> 00:34:40,920
+I am going to tell Chloe what to sew to what.
+
+639
+00:34:40,920 --> 00:34:42,920
+And in 3D.
+
+640
+00:34:42,920 --> 00:34:44,920
+We see those sewing lines up here.
+
+641
+00:34:44,920 --> 00:34:46,920
+And that pocket bag.
+
+642
+00:34:46,920 --> 00:34:48,920
+Snap into place.
+
+643
+00:34:48,920 --> 00:34:50,920
+And what I always think is really cool.
+
+644
+00:34:50,920 --> 00:34:52,920
+Is that we have a fully functioning pocket.
+
+645
+00:34:52,920 --> 00:34:54,920
+And I could put some stuff into it.
+
+646
+00:34:54,920 --> 00:34:56,920
+For later if I needed to.
+
+647
+00:34:58,920 --> 00:35:00,920
+Now that she has her pocket.
+
+648
+00:35:00,920 --> 00:35:02,920
+Maybe I want to make some further adjustments.
+
+649
+00:35:02,920 --> 00:35:04,920
+If I want to.
+
+650
+00:35:04,920 --> 00:35:06,920
+There is some really cool style line tools here.
+
+651
+00:35:06,920 --> 00:35:08,920
+That are actually let me make those adjustments.
+
+652
+00:35:08,920 --> 00:35:10,920
+In our 3D window.
+
+653
+00:35:10,920 --> 00:35:12,920
+I am going to go to my draw style line tool.
+
+654
+00:35:12,920 --> 00:35:14,920
+Select the garment that I want to make the adjustments to.
+
+655
+00:35:14,920 --> 00:35:16,920
+In this case her top.
+
+656
+00:35:16,920 --> 00:35:18,920
+And I want to draw.
+
+657
+00:35:18,920 --> 00:35:20,920
+New style line.
+
+658
+00:35:20,920 --> 00:35:22,920
+On the side panel.
+
+659
+00:35:22,920 --> 00:35:24,920
+Coming down the edge of her shirt.
+
+660
+00:35:24,920 --> 00:35:26,920
+What is really cool.
+
+661
+00:35:26,920 --> 00:35:28,920
+Is the moment I draw this line in the 3D window.
+
+662
+00:35:28,920 --> 00:35:30,920
+In the 2D window.
+
+663
+00:35:30,920 --> 00:35:32,920
+Chloe will actually cut apart.
+
+664
+00:35:32,920 --> 00:35:34,920
+And make a new pattern piece.
+
+665
+00:35:34,920 --> 00:35:36,920
+For that panel that I have just drawn.
+
+666
+00:35:36,920 --> 00:35:38,920
+Besides that I can even shorten and lengthen.
+
+667
+00:35:38,920 --> 00:35:40,920
+Different parts of the garment.
+
+668
+00:35:40,920 --> 00:35:42,920
+By using the move style line function.
+
+669
+00:35:42,920 --> 00:35:44,920
+Selecting let's say her collar.
+
+670
+00:35:44,920 --> 00:35:46,920
+And bringing that downward.
+
+671
+00:35:46,920 --> 00:35:48,920
+That is actually going to shorten.
+
+672
+00:35:48,920 --> 00:35:50,920
+Or reduce the overall height of her collar.
+
+673
+00:35:50,920 --> 00:35:52,920
+In just a click.
+
+674
+00:35:52,920 --> 00:35:54,920
+Now that I have shortened her collar.
+
+675
+00:35:54,920 --> 00:35:56,920
+I think for the rest of this athletic outfit.
+
+676
+00:35:56,920 --> 00:35:58,920
+She really could use.
+
+677
+00:35:58,920 --> 00:36:00,920
+Maybe a little zipper to the front.
+
+678
+00:36:00,920 --> 00:36:02,920
+The first thing though I need.
+
+679
+00:36:02,920 --> 00:36:04,920
+Is an area or portion of the pattern.
+
+680
+00:36:04,920 --> 00:36:06,920
+Where the zipper could actually go.
+
+681
+00:36:06,920 --> 00:36:08,920
+At the center front of her neck.
+
+682
+00:36:08,920 --> 00:36:10,920
+And for that a little bit of editing.
+
+683
+00:36:10,920 --> 00:36:12,920
+In our 2D window is needed.
+
+684
+00:36:12,920 --> 00:36:14,920
+I am going to add in a few extra points.
+
+685
+00:36:14,920 --> 00:36:16,920
+And that is going to let me start to drag down.
+
+686
+00:36:16,920 --> 00:36:18,920
+Areas of my pattern.
+
+687
+00:36:18,920 --> 00:36:20,920
+Let's zoom in a little more.
+
+688
+00:36:20,920 --> 00:36:22,920
+To create an overall area.
+
+689
+00:36:22,920 --> 00:36:24,920
+Where the zipper can go.
+
+690
+00:36:24,920 --> 00:36:26,920
+And what is nice is I can again look in the 3D window.
+
+691
+00:36:26,920 --> 00:36:28,920
+And in the 2D window at the exact same time.
+
+692
+00:36:28,920 --> 00:36:30,920
+That doesn't look quite big enough.
+
+693
+00:36:30,920 --> 00:36:32,920
+Or long enough.
+
+694
+00:36:32,920 --> 00:36:34,920
+That is looking a little better.
+
+695
+00:36:34,920 --> 00:36:36,920
+And using some alignment tools.
+
+696
+00:36:36,920 --> 00:36:38,920
+To make a nicer shaping for our zipper.
+
+697
+00:36:38,920 --> 00:36:40,920
+So I am going to align those.
+
+698
+00:36:40,920 --> 00:36:42,920
+To be nice and straight.
+
+699
+00:36:42,920 --> 00:36:44,920
+And same at the bottom.
+
+700
+00:36:44,920 --> 00:36:46,920
+I am going to align those points as well.
+
+701
+00:36:46,920 --> 00:36:48,920
+With the points being aligned.
+
+702
+00:36:48,920 --> 00:36:50,920
+So I now have a nice area.
+
+703
+00:36:50,920 --> 00:36:52,920
+To actually put in the zipper.
+
+704
+00:36:52,920 --> 00:36:56,920
+Taking my literally named zipper tool.
+
+705
+00:36:58,920 --> 00:37:00,920
+Adding a zipper to one side of my opening.
+
+706
+00:37:00,920 --> 00:37:02,920
+And then adding that exact same.
+
+707
+00:37:02,920 --> 00:37:04,920
+Link to the other side.
+
+708
+00:37:04,920 --> 00:37:06,920
+That is going to add in a zipper.
+
+709
+00:37:06,920 --> 00:37:08,920
+Into my paneling.
+
+710
+00:37:08,920 --> 00:37:10,920
+And Chloe is going to generate a zipper.
+
+711
+00:37:10,920 --> 00:37:12,920
+And once I turn simulation on.
+
+712
+00:37:12,920 --> 00:37:14,920
+Chloe is going to snap that zipper shut.
+
+713
+00:37:14,920 --> 00:37:16,920
+And we now have a zipper.
+
+714
+00:37:16,920 --> 00:37:18,920
+To the front of her jacket.
+
+715
+00:37:18,920 --> 00:37:20,920
+And I am excited as well.
+
+716
+00:37:20,920 --> 00:37:22,920
+I would like to actually go ahead.
+
+717
+00:37:22,920 --> 00:37:24,920
+And open up her zipper.
+
+718
+00:37:24,920 --> 00:37:26,920
+I can drag that zipper downwards in the 3D window.
+
+719
+00:37:26,920 --> 00:37:28,920
+Turning on simulation.
+
+720
+00:37:28,920 --> 00:37:30,920
+And we have now an unzipped zipper.
+
+721
+00:37:30,920 --> 00:37:32,920
+With her top done.
+
+722
+00:37:32,920 --> 00:37:34,920
+I want to start looking at maybe some of the things.
+
+723
+00:37:34,920 --> 00:37:36,920
+I could update on her shorts.
+
+724
+00:37:36,920 --> 00:37:38,920
+And I think like a cool contrast edge.
+
+725
+00:37:38,920 --> 00:37:40,920
+Of the bottom of the shorts.
+
+726
+00:37:40,920 --> 00:37:42,920
+Might look kind of fun.
+
+727
+00:37:42,920 --> 00:37:44,920
+Again jumping back over to my 2D side.
+
+728
+00:37:44,920 --> 00:37:46,920
+I can use my editing pattern tool.
+
+729
+00:37:46,920 --> 00:37:48,920
+And offset an internal line.
+
+730
+00:37:48,920 --> 00:37:50,920
+Of these pattern pieces.
+
+731
+00:37:50,920 --> 00:37:52,920
+For how wide I want my kind of.
+
+732
+00:37:52,920 --> 00:37:54,920
+Contrast piping to be.
+
+733
+00:37:54,920 --> 00:37:56,920
+Quarter of an inch I think is going to be pretty good.
+
+734
+00:38:00,920 --> 00:38:02,920
+Those internal lines.
+
+735
+00:38:02,920 --> 00:38:04,920
+Are going to automatically be selected.
+
+736
+00:38:04,920 --> 00:38:06,920
+And what is nice is.
+
+737
+00:38:06,920 --> 00:38:08,920
+With those internal lines selected.
+
+738
+00:38:08,920 --> 00:38:10,920
+I am going to cut and sew.
+
+739
+00:38:10,920 --> 00:38:12,920
+At the exact same time.
+
+740
+00:38:12,920 --> 00:38:14,920
+Cutting those away.
+
+741
+00:38:14,920 --> 00:38:16,920
+That contrast seam.
+
+742
+00:38:16,920 --> 00:38:18,920
+And eventually.
+
+743
+00:38:18,920 --> 00:38:20,920
+Contrast fabric.
+
+744
+00:38:20,920 --> 00:38:22,920
+The other thing I can do.
+
+745
+00:38:22,920 --> 00:38:24,920
+Is to add some additional thickness.
+
+746
+00:38:24,920 --> 00:38:26,920
+To these pattern pieces.
+
+747
+00:38:26,920 --> 00:38:28,920
+Either in the 2D or in the 3D window.
+
+748
+00:38:28,920 --> 00:38:30,920
+I have selected all four.
+
+749
+00:38:30,920 --> 00:38:32,920
+Of these little edge pieces.
+
+750
+00:38:32,920 --> 00:38:34,920
+And in my property editor.
+
+751
+00:38:34,920 --> 00:38:36,920
+I am going to come down to the additional thickness rendering.
+
+752
+00:38:36,920 --> 00:38:38,920
+And make that a little bit thicker.
+
+753
+00:38:38,920 --> 00:38:40,920
+So now it actually looks like.
+
+754
+00:38:40,920 --> 00:38:42,920
+Multiple layers of fabric.
+
+755
+00:38:42,920 --> 00:38:44,920
+Sewn together on our avatar.
+
+756
+00:38:44,920 --> 00:38:46,920
+It looks like our shirt is pretty good.
+
+757
+00:38:46,920 --> 00:38:48,920
+It looks like our shorts again are pretty good.
+
+758
+00:38:48,920 --> 00:38:50,920
+Now how about some fabrics.
+
+759
+00:38:50,920 --> 00:38:52,920
+Right now we are just using default fabric.
+
+760
+00:38:52,920 --> 00:38:54,920
+I am going to jump right back into my Clo library.
+
+761
+00:38:54,920 --> 00:38:56,920
+I am going to go into the default library.
+
+762
+00:38:56,920 --> 00:38:58,920
+The library comes with hundreds.
+
+763
+00:38:58,920 --> 00:39:00,920
+And hundreds of different fabrics.
+
+764
+00:39:00,920 --> 00:39:02,920
+For us to choose from.
+
+765
+00:39:02,920 --> 00:39:04,920
+And the best part is.
+
+766
+00:39:04,920 --> 00:39:06,920
+These are really easy to experiment and try out.
+
+767
+00:39:06,920 --> 00:39:08,920
+Pretty quick and easy.
+
+768
+00:39:08,920 --> 00:39:10,920
+I am just again going to start by.
+
+769
+00:39:10,920 --> 00:39:12,920
+Searching maybe a different fabric.
+
+770
+00:39:12,920 --> 00:39:14,920
+I am curious what would this look like.
+
+771
+00:39:14,920 --> 00:39:16,920
+If I did a leather.
+
+772
+00:39:16,920 --> 00:39:18,920
+So I am going to come in here.
+
+773
+00:39:18,920 --> 00:39:20,920
+And grab this animal alternative vegan leather.
+
+774
+00:39:20,920 --> 00:39:22,920
+Drag and drop it.
+
+775
+00:39:22,920 --> 00:39:24,920
+And completely start to replace.
+
+776
+00:39:24,920 --> 00:39:26,920
+Some of my different garments.
+
+777
+00:39:26,920 --> 00:39:28,920
+Again turning on simulation.
+
+778
+00:39:28,920 --> 00:39:30,920
+I can see how this is going to drape.
+
+779
+00:39:30,920 --> 00:39:32,920
+And be shaped differently.
+
+780
+00:39:32,920 --> 00:39:34,920
+Than it was in the default fabric.
+
+781
+00:39:34,920 --> 00:39:36,920
+So visually it is different.
+
+782
+00:39:36,920 --> 00:39:38,920
+And physically it is also different.
+
+783
+00:39:38,920 --> 00:39:40,920
+That is kind of an interesting choice.
+
+784
+00:39:40,920 --> 00:39:42,920
+Let's try something different.
+
+785
+00:39:42,920 --> 00:39:44,920
+Let's go with a chiffon.
+
+786
+00:39:44,920 --> 00:39:46,920
+I am going to actually experiment.
+
+787
+00:39:46,920 --> 00:39:48,920
+With these different fabrics.
+
+788
+00:39:48,920 --> 00:39:50,920
+So if I try these ones.
+
+789
+00:39:50,920 --> 00:39:52,920
+The garment is now.
+
+790
+00:39:52,920 --> 00:39:54,920
+It is a much lighter fabric.
+
+791
+00:39:54,920 --> 00:39:56,920
+But it is also completely see through.
+
+792
+00:39:56,920 --> 00:39:58,920
+Probably not the best for her running outfit.
+
+793
+00:39:58,920 --> 00:40:00,920
+Let's try something more likely being used.
+
+794
+00:40:00,920 --> 00:40:02,920
+Jersey.
+
+795
+00:40:02,920 --> 00:40:04,920
+Great I see a bunch of different jerseys.
+
+796
+00:40:04,920 --> 00:40:06,920
+That are available for me to use.
+
+797
+00:40:06,920 --> 00:40:08,920
+And I am going to again drag.
+
+798
+00:40:08,920 --> 00:40:10,920
+Drop and replace.
+
+799
+00:40:10,920 --> 00:40:12,920
+These different materials.
+
+800
+00:40:12,920 --> 00:40:14,920
+And again because simulation is turned on.
+
+801
+00:40:14,920 --> 00:40:16,920
+Those different changes being applied.
+
+802
+00:40:16,920 --> 00:40:18,920
+Perfect.
+
+803
+00:40:18,920 --> 00:40:20,920
+I think overall.
+
+804
+00:40:20,920 --> 00:40:22,920
+The jersey is looking pretty good.
+
+805
+00:40:22,920 --> 00:40:24,920
+Last shorts.
+
+806
+00:40:24,920 --> 00:40:26,920
+Alright I am thinking some sort of kind of like.
+
+807
+00:40:26,920 --> 00:40:28,920
+Swishy material.
+
+808
+00:40:28,920 --> 00:40:30,920
+So maybe I will go with a rip stop.
+
+809
+00:40:30,920 --> 00:40:32,920
+This time.
+
+810
+00:40:32,920 --> 00:40:34,920
+Got a couple of different rip stops.
+
+811
+00:40:34,920 --> 00:40:36,920
+Available to me.
+
+812
+00:40:36,920 --> 00:40:38,920
+I am going to go with a regular woven rip stop.
+
+813
+00:40:38,920 --> 00:40:40,920
+And instantly again.
+
+814
+00:40:40,920 --> 00:40:42,920
+Those shorts have changed their properties.
+
+815
+00:40:42,920 --> 00:40:44,920
+Their fit. They are already a bodycon short.
+
+816
+00:40:44,920 --> 00:40:46,920
+Not much of a difference.
+
+817
+00:40:46,920 --> 00:40:48,920
+But we can see here how these are starting to change.
+
+818
+00:40:48,920 --> 00:40:50,920
+How they visually look.
+
+819
+00:40:50,920 --> 00:40:52,920
+And then we can actually start to jump into color.
+
+820
+00:40:52,920 --> 00:40:54,920
+And how they are going to appear.
+
+821
+00:40:54,920 --> 00:40:56,920
+Because overall I am not loving the current color combo.
+
+822
+00:40:56,920 --> 00:40:58,920
+Let's just start with a completely white.
+
+823
+00:40:58,920 --> 00:41:00,920
+Outfit.
+
+824
+00:41:00,920 --> 00:41:02,920
+Way easier to work with something that is completely white.
+
+825
+00:41:02,920 --> 00:41:04,920
+Almost like a blank slate.
+
+826
+00:41:04,920 --> 00:41:06,920
+I have removed all of the colors.
+
+827
+00:41:06,920 --> 00:41:08,920
+From my different garments.
+
+828
+00:41:08,920 --> 00:41:10,920
+And now I can jump into my fabrics.
+
+829
+00:41:10,920 --> 00:41:12,920
+Let's go in to our shirt.
+
+830
+00:41:12,920 --> 00:41:14,920
+And I am going to go with.
+
+831
+00:41:14,920 --> 00:41:16,920
+Short first.
+
+832
+00:41:16,920 --> 00:41:18,920
+I am going to just go ahead and type in sky blue color.
+
+833
+00:41:18,920 --> 00:41:20,920
+Let's say.
+
+834
+00:41:20,920 --> 00:41:22,920
+And best part.
+
+835
+00:41:22,920 --> 00:41:24,920
+Quick and easy.
+
+836
+00:41:24,920 --> 00:41:26,920
+I can instantly see the change in the 2D and the 3D window.
+
+837
+00:41:26,920 --> 00:41:28,920
+This looks like a nice bright.
+
+838
+00:41:28,920 --> 00:41:30,920
+Happy blue.
+
+839
+00:41:30,920 --> 00:41:32,920
+Apply and close.
+
+840
+00:41:32,920 --> 00:41:34,920
+I am thinking maybe for the shorts.
+
+841
+00:41:34,920 --> 00:41:36,920
+We will keep the same overall color.
+
+842
+00:41:36,920 --> 00:41:38,920
+So again selecting the shorts material.
+
+843
+00:41:38,920 --> 00:41:40,920
+Luckily it leaves me right on that past.
+
+844
+00:41:40,920 --> 00:41:42,920
+Apply and close.
+
+845
+00:41:42,920 --> 00:41:44,920
+So I have got her overall.
+
+846
+00:41:44,920 --> 00:41:46,920
+Blue outfit.
+
+847
+00:41:46,920 --> 00:41:48,920
+I am thinking could use some maybe a little bit more fun.
+
+848
+00:41:48,920 --> 00:41:50,920
+Contrast colors.
+
+849
+00:41:50,920 --> 00:41:52,920
+Like that piping on the edge of her shorts.
+
+850
+00:41:52,920 --> 00:41:54,920
+Selecting the short.
+
+851
+00:41:54,920 --> 00:41:56,920
+Making a copy of the fabric with one click.
+
+852
+00:41:56,920 --> 00:41:58,920
+Changing that.
+
+853
+00:41:58,920 --> 00:42:00,920
+To what will be our combo color.
+
+854
+00:42:00,920 --> 00:42:02,920
+If we went with sky for the blue.
+
+855
+00:42:02,920 --> 00:42:04,920
+Maybe cloud.
+
+856
+00:42:04,920 --> 00:42:06,920
+For the contrast.
+
+857
+00:42:06,920 --> 00:42:08,920
+I now have a cloud version.
+
+858
+00:42:08,920 --> 00:42:10,920
+Of the same fabric.
+
+859
+00:42:10,920 --> 00:42:12,920
+And I will select my little edge pattern pieces.
+
+860
+00:42:12,920 --> 00:42:14,920
+And reassign it.
+
+861
+00:42:14,920 --> 00:42:16,920
+To the cloud combo rip stop.
+
+862
+00:42:16,920 --> 00:42:18,920
+Same with my top.
+
+863
+00:42:18,920 --> 00:42:20,920
+Maybe if I want to change a few of these upper areas.
+
+864
+00:42:20,920 --> 00:42:22,920
+As well.
+
+865
+00:42:22,920 --> 00:42:24,920
+I can select my jersey.
+
+866
+00:42:24,920 --> 00:42:26,920
+Create a copy of my jersey.
+
+867
+00:42:26,920 --> 00:42:28,920
+Change that color also to my now cloud color.
+
+868
+00:42:28,920 --> 00:42:30,920
+Select the pattern pieces.
+
+869
+00:42:30,920 --> 00:42:32,920
+That I want to be changed.
+
+870
+00:42:32,920 --> 00:42:34,920
+And simply reassign them.
+
+871
+00:42:34,920 --> 00:42:36,920
+I now have a newly color blocked outfit.
+
+872
+00:42:36,920 --> 00:42:38,920
+Ready to go.
+
+873
+00:42:38,920 --> 00:42:40,920
+So I am going to go ahead.
+
+874
+00:42:40,920 --> 00:42:42,920
+And I am going to go ahead.
+
+875
+00:42:42,920 --> 00:42:44,920
+And I am going to go ahead.
+
+876
+00:42:44,920 --> 00:42:46,920
+And create a new material for my avatar.
+
+877
+00:42:46,920 --> 00:42:48,920
+Last but not least.
+
+878
+00:42:48,920 --> 00:42:50,920
+Maybe as well.
+
+879
+00:42:50,920 --> 00:42:52,920
+Adding in a graphic.
+
+880
+00:42:52,920 --> 00:42:54,920
+To add in a graphic.
+
+881
+00:42:54,920 --> 00:42:56,920
+You can add in png's or jpeg's.
+
+882
+00:42:56,920 --> 00:42:58,920
+Like a lot of other programs.
+
+883
+00:42:58,920 --> 00:43:00,920
+I have one ready for me to use here.
+
+884
+00:43:00,920 --> 00:43:02,920
+Just going to add in this cute little abstract sunset.
+
+885
+00:43:02,920 --> 00:43:04,920
+Add the graphic.
+
+886
+00:43:06,920 --> 00:43:08,920
+And click to place it.
+
+887
+00:43:08,920 --> 00:43:10,920
+Maybe adjust the size overall.
+
+888
+00:43:10,920 --> 00:43:12,920
+And now I can see.
+
+889
+00:43:12,920 --> 00:43:14,920
+Right on the back of my avatar.
+
+890
+00:43:14,920 --> 00:43:19,940
+graphic. Overall, I think we're done. Our MetaHuman is ready to be optimized before
+
+891
+00:43:19,940 --> 00:43:24,240
+getting sent back to Unreal. Thanks so much!
+
+892
+00:43:24,240 --> 00:43:29,400
+When preparing this outfit for Unreal, there are a few steps that you can do for optimization.
+
+893
+00:43:29,400 --> 00:43:35,659
+First, we can open the UV editor and adjust the UV shells for the patterns. What's nice
+
+894
+00:43:35,659 --> 00:43:42,159
+about Glow is that the UV shells are the exact same garment shapes created in the 2D layout,
+
+895
+00:43:42,159 --> 00:43:47,599
+so there's no need to manually cut UV seams or perform any unwrapping.
+
+896
+00:43:47,599 --> 00:43:53,779
+We can use the UV Packing dropdown and press Apply to pack all the UV shells we selected
+
+897
+00:43:53,779 --> 00:43:57,399
+into the 0 to 1 space.
+
+898
+00:43:57,399 --> 00:44:03,199
+To give our garment an extra detail pass, we can utilize the Everywhere tool to bake
+
+899
+00:44:03,199 --> 00:44:09,159
+a normal and ambient occlusion map. We can then send these texture maps over to Unreal
+
+900
+00:44:09,159 --> 00:44:11,519
+and add them to a material.
+
+901
+00:44:12,159 --> 00:44:14,119
+September 12 werd
+
+902
+00:44:14,119 --> 00:44:18,259
+Next.
+
+903
+00:44:18,259 --> 00:44:26,719
+Now we can export a garment as a USB. Go to File ExportUSD.
+
+904
+00:44:26,719 --> 00:44:36,139
+Make sure when exporting to select the Thick option and include Jiang Sun's garment simulation
+
+905
+00:44:36,139 --> 00:44:38,719
+data.
+
+906
+00:44:38,719 --> 00:44:41,679
+Mexico
+
+907
+00:44:41,679 --> 00:44:42,019
+Chicago
+
+908
+00:44:42,019 --> 00:44:48,420
+import the usd into unreal where unreal will import the skeleton and static meshes we need
+
+909
+00:44:55,780 --> 00:45:00,820
+hey and we're back and then so thank you also billy for adding to my video with your
+
+910
+00:45:00,820 --> 00:45:08,019
+definitely digital pipeline knowledge uh which i always appreciate yeah knowledge as well
+
+911
+00:45:08,019 --> 00:45:17,059
+yeah i i mean i've been a uh mostly marvelous user for a super long time and i'm always being
+
+912
+00:45:17,059 --> 00:45:21,860
+surprised by things that you can do uh because they're adding new features all the time and so
+
+913
+00:45:21,860 --> 00:45:26,980
+it was cool to see the style line tool that was it yeah so much like yeah super cool went bonkers
+
+914
+00:45:26,980 --> 00:45:30,980
+in my mind when i saw it for the first time and fun fact for the style line it was actually
+
+915
+00:45:30,980 --> 00:45:34,980
+designed our our founder of clow his name is jade and he actually designed it for his daughter who
+
+916
+00:45:34,980 --> 00:45:37,940
+didn't know how to make clothes so it's really cool to see like how
+
+917
+00:45:38,019 --> 00:45:42,019
+that tool evolved from like oh so my kid can make clothes now oh so people who maybe don't
+
+918
+00:45:42,019 --> 00:45:47,139
+do a lot of pattern making can make clothes super cool yeah i mean really seeing all these tools
+
+919
+00:45:47,139 --> 00:45:52,099
+where artists can just be artists right we don't have to go through like the long lengthy process
+
+920
+00:45:52,099 --> 00:45:56,820
+of getting there we can just dive right in um i just i'm amazed every time i see these tools advance
+
+921
+00:46:00,900 --> 00:46:06,420
+so finally our last video of the day today and this is kind of going to be like the piece
+
+922
+00:46:06,420 --> 00:46:07,940
+de resistance at the end of what we're going to be talking about today so we're going to be talking
+
+923
+00:46:07,940 --> 00:46:08,000
+about how that tool evolved from like oh so my kid can make clothes now oh so people who maybe don't
+
+924
+00:46:08,000 --> 00:46:13,119
+where you can actually put everything all together and this is going to be both kim and kami's
+
+925
+00:46:14,239 --> 00:46:20,400
+let's take clow let's take metahuman let's put them all into unreal so kim yeah the first part of this
+
+926
+00:46:20,400 --> 00:46:25,599
+video is going to be me showing you how to take the clothes back into unreal and make a resizable
+
+927
+00:46:25,599 --> 00:46:33,280
+outfit asset which is the thing that resizes with your metahuman um and then kami so i'm going to
+
+928
+00:46:33,280 --> 00:46:37,280
+actually then take you through what we've just launched on fab which is our metahuman fashion kit
+
+929
+00:46:37,280 --> 00:46:42,960
+which allows you to go ahead and bring your asset in put them into animation pre-created lighting
+
+930
+00:46:42,960 --> 00:46:46,080
+and actually go ahead and render it out so we kind of took those steps out
+
+931
+00:46:46,080 --> 00:46:50,560
+so you can actually just dive in like i said be an artist so um yeah let's take a look at it
+
+932
+00:46:51,920 --> 00:46:55,680
+so we're back in unreal after having made our garment and there's one last thing we
+
+933
+00:46:55,680 --> 00:47:02,160
+have to do before we create an outfit asset uh we're gonna go to metahuman character uh
+
+934
+00:47:02,160 --> 00:47:07,200
+export outfit body scale mesh and then we're gonna save that in our project and
+
+935
+00:47:07,200 --> 00:47:11,120
+what that's going to do is that's going to create a combined head and body mesh
+
+936
+00:47:12,080 --> 00:47:18,320
+for use with outfit assets and cloth assets and that's something we definitely need for an outfit
+
+937
+00:47:18,320 --> 00:47:22,160
+asset but the first thing that we have to do is we have to create something to put in there and
+
+938
+00:47:22,160 --> 00:47:27,680
+so we're going to create a cloth asset i'm going to right click in my content browser
+
+939
+00:47:27,680 --> 00:47:36,960
+and i'm going to go to physics cloth asset so that's going to create a new cloth asset for me so
+
+940
+00:47:37,200 --> 00:47:42,960
+at the time of this um usually you just double click but right now you should right click on
+
+941
+00:47:42,960 --> 00:47:51,120
+your cloth and go to open in data flow editor and you will get this which looks like a big old mess
+
+942
+00:47:51,680 --> 00:48:00,240
+um the good news is we basically don't want almost any of this so we can delete most of it only notes
+
+943
+00:48:00,240 --> 00:48:05,680
+that we really want to keep our usd import and transfer skin weights and the terraform though
+
+944
+00:48:06,560 --> 00:48:07,120
+so okay
+
+945
+00:48:07,200 --> 00:48:11,680
+to click over here and there's three dots in the usd file in the usd import node
+
+946
+00:48:12,320 --> 00:48:14,560
+and i'm going to select my usd
+
+947
+00:48:18,800 --> 00:48:25,600
+and look at that it brings in my garment now you're going to say that doesn't look quite right
+
+948
+00:48:25,600 --> 00:48:30,960
+um so we've got a couple of different views so if we look at render that should be what it is
+
+949
+00:48:30,960 --> 00:48:36,960
+that you're expecting uh right here on the top of the construction viewport um so there's
+
+950
+00:48:37,200 --> 00:48:44,240
+the render 3d sim 2d sim which shows you the pattern pieces that are all laid out
+
+951
+00:48:44,240 --> 00:48:50,080
+um and so that's how you import a ust
+
+952
+00:48:52,320 --> 00:48:58,640
+so back here inside of our cloth asset we're going to hook these nodes together so uh click
+
+953
+00:48:58,640 --> 00:49:05,360
+in here where this little dot is next to collection click and drag and drop it over here to collection
+
+954
+00:49:07,200 --> 00:49:13,760
+and now we're going to click on this transfer skin weights and so um when you click on a node
+
+955
+00:49:14,320 --> 00:49:19,360
+the properties show up over here and the thing that we're going to have to do is we're going
+
+956
+00:49:19,360 --> 00:49:24,880
+to have to if you remember we made that um combined skeletal mesh before so we have to click
+
+957
+00:49:24,880 --> 00:49:31,040
+in here to associate the body with the garment so now you can see it kind of shows up in this
+
+958
+00:49:31,040 --> 00:49:36,960
+closely fashion uh so now those two things are connected so uh and then
+
+959
+00:49:37,200 --> 00:49:41,040
+the last thing that we have to do is we have to connect this to the terminal node and this
+
+960
+00:49:41,040 --> 00:49:47,360
+is basically the most basic version of the clock asset that you need for the outfit asset
+
+961
+00:49:48,480 --> 00:49:52,240
+there's other things that you can do but you should definitely have these three nodes and
+
+962
+00:49:52,240 --> 00:49:56,560
+refer it to work properly and if you don't have any lots you can right click on here
+
+963
+00:49:56,560 --> 00:50:02,160
+and you can say remove option pin twice so now with these three nodes uh
+
+964
+00:50:02,880 --> 00:50:07,120
+including the body inside the transfer skin weights node we have what's the most
+
+965
+00:50:07,200 --> 00:50:14,400
+basic building blocks for an outside asset. So we can save it and we can move on to the outside asset.
+
+966
+00:50:15,680 --> 00:50:19,200
+There are a couple more sort of complex things like skinning maps
+
+967
+00:50:19,200 --> 00:50:23,360
+and logs that you can check out our documentation for.
+
+968
+00:50:25,280 --> 00:50:29,280
+Okay so here I have my cloth asset. I'm going to go up a directory
+
+969
+00:50:29,280 --> 00:50:38,400
+and I'm going to click in here, go to physics again, and this time I'm going to go to outside asset.
+
+970
+00:50:41,040 --> 00:50:46,240
+And this dialog box comes up and I want to choose resizable outfit. That's what we're
+
+971
+00:50:46,240 --> 00:50:53,519
+going to be using. Okay so now that I've selected that I can double click on my sporty outfit
+
+972
+00:50:54,320 --> 00:50:58,640
+and this comes up again. Looks kind of familiar. There's all this stuff in here
+
+973
+00:50:59,280 --> 00:51:05,440
+but we don't need to mess with any of that and all we need to do is over here on the side we
+
+974
+00:51:06,720 --> 00:51:09,840
+scroll down variable overrides and click a sized outfit source.
+
+975
+00:51:11,040 --> 00:51:16,640
+And this plus of how many sizes we have. Right now we only have the one size that we've created.
+
+976
+00:51:17,280 --> 00:51:22,800
+Sized meaning a garment that's made for a particular body. So if you made multiple
+
+977
+00:51:22,800 --> 00:51:28,080
+versions of the same garment associated with multiple bodies then you could put them in there.
+
+978
+00:51:29,280 --> 00:51:34,240
+And it's sort of resizing might be more accurate but as of right now we only have the one.
+
+979
+00:51:34,240 --> 00:51:39,760
+And so that's what we're putting in there. So this source asset is going to be my cloth asset.
+
+980
+00:51:39,760 --> 00:51:43,200
+So I'm going to click in there. There we go. I'm going to name it
+
+981
+00:51:45,680 --> 00:51:52,000
+size one. Doesn't really matter since we only have one size. Now I'm going to twirl this down and
+
+982
+00:51:52,000 --> 00:51:57,760
+over here is where I put in the body and this is going to be the same body that I put into my
+
+983
+00:51:57,760 --> 00:51:59,040
+transfer skin weights node. So I'm going to put in the body and this is going to be the same body that I put into my transfer skin weights node.
+
+984
+00:51:59,920 --> 00:52:03,519
+So I'm going to add that in and this is going to take a little while because right now
+
+985
+00:52:03,519 --> 00:52:08,800
+it's um it's cooking. It's pre-caching a whole bunch of stuff so it can be a lot
+
+986
+00:52:08,800 --> 00:52:11,600
+faster when it resizes. So I'm going to pause here.
+
+987
+00:52:14,160 --> 00:52:19,040
+Okay so I've made a new metahuman for us to test this new outfit asset on.
+
+988
+00:52:19,040 --> 00:52:22,080
+So I'm going to click over the hair and cloths that go down all the way to the
+
+989
+00:52:22,080 --> 00:52:28,800
+bottom to this area called outfit clothing. And so now I'm gonna find my outfit.
+
+990
+00:52:29,519 --> 00:52:34,560
+Uh the OA sporty outfit and I'm going to drag it right in here. That's going to create the wardrobe
+
+991
+00:52:34,560 --> 00:52:40,960
+item asset or WI and associated with your garment. The wardrobe item is an asset that travels alongside
+
+992
+00:52:40,960 --> 00:52:47,200
+your garment and can contain a lot of information that can be useful. So here's the wardrobe item.
+
+993
+00:52:47,200 --> 00:52:53,360
+I just double clicked on it um and here it is. So now it's already associated with the sporty outfit
+
+994
+00:52:53,360 --> 00:52:58,000
+since it got graded when I dragged it in. And I want to change this to metahuman. Metahuman.
+
+995
+00:52:59,280 --> 00:53:07,040
+Outfit pipeline. And so I'm going to twirl down pipeline and I'm going to change this right here
+
+996
+00:53:07,040 --> 00:53:14,240
+from editor pipeline to metahuman outfit editor pipeline. And if you don't want to do anything else
+
+997
+00:53:15,519 --> 00:53:19,600
+that's all of all you need to do. But there are a couple other things that you might find
+
+998
+00:53:19,600 --> 00:53:29,040
+interesting in the wardrobe item. So one of the really valuable things to show you is um I'm going to twirl the editor pipeline outfit.
+
+999
+00:53:29,280 --> 00:53:35,519
+And body hidden face map texture. And so here you can create a texture. And so I'm going to just
+
+1000
+00:53:35,519 --> 00:53:41,200
+briefly show you what I've made. And so this is the texture that's based on the UVs of the body.
+
+1001
+00:53:41,920 --> 00:53:48,240
+White says keep and black says remove. And so it removes all of the faces
+
+1002
+00:53:49,120 --> 00:53:52,480
+underneath the garment that you paint out that you can designate.
+
+1003
+00:53:52,480 --> 00:53:57,440
+And what that does is that not only makes your metahuman lighter but it also can
+
+1004
+00:53:59,280 --> 00:54:03,360
+eliminate some of the issues with clipping that sometimes happens both with resizing and with
+
+1005
+00:54:03,360 --> 00:54:10,720
+deformation when your character starts moving. So I'm just going to minimize this. And I'm going to
+
+1006
+00:54:10,720 --> 00:54:16,400
+see in my sporty asset I'm going to drag in that file. So that's just like a ping file.
+
+1007
+00:54:17,200 --> 00:54:24,880
+Um it'll get imported as a texture. And it's called sporty clothes body mask. And so now
+
+1008
+00:54:24,880 --> 00:54:28,640
+when I go back to my wardrobe item I can put that in there.
+
+1009
+00:54:29,280 --> 00:54:32,960
+Sporty clothes body mask.
+
+1010
+00:54:36,080 --> 00:54:39,760
+And so now what that's going to do is that is going to
+
+1011
+00:54:39,760 --> 00:54:44,560
+remove all of the faces that I decided I didn't want to show. So I'm going to save this.
+
+1012
+00:54:45,440 --> 00:54:51,440
+And then now I'm going to go back to my test character. And now I can put the clothing on the
+
+1013
+00:54:51,440 --> 00:54:58,240
+character. And so this is just the default shape. And it's going to resize from Etta's shape to
+
+1014
+00:54:59,280 --> 00:55:06,240
+the shape of this body. And so if we go into body. And we you know let's see let's just play
+
+1015
+00:55:06,240 --> 00:55:11,760
+around with some sliders. The garment will resize to the character.
+
+1016
+00:55:17,680 --> 00:55:22,880
+So now that I've tested my garment and I feel satisfied with how it's working I'm going to
+
+1017
+00:55:24,000 --> 00:55:28,960
+publish it. And so I go to here window metahuman manager.
+
+1018
+00:55:29,280 --> 00:55:36,080
+Which brings up metahuman manager which can detect all of the outfit assets that I have in my
+
+1019
+00:55:36,080 --> 00:55:44,160
+project. And so I'm going to verify. It's going to tell me that I have a couple warnings but
+
+1020
+00:55:44,160 --> 00:55:50,080
+nothing read so it passes. And so the verification tests are just a bunch of tests um that make sure
+
+1021
+00:55:50,080 --> 00:55:54,640
+that your garment is going to work properly when you send it along to you know so everyone can be
+
+1022
+00:55:55,280 --> 00:55:59,200
+sure that things are going to work properly. So then I'm going to click package.
+
+1023
+00:56:00,240 --> 00:56:05,360
+That's just going to bring up a dialog box that's going to have me type in the file name and choose
+
+1024
+00:56:05,360 --> 00:56:16,400
+where it goes. And then it will package it up into a mh package m-h-e-k-g. If you package up
+
+1025
+00:56:16,400 --> 00:56:22,000
+your asset in this way uh it will if you upload it to fab it will go on to the metahuman channel
+
+1026
+00:56:22,000 --> 00:56:29,040
+which is a channel that has um all metahuman assets that have been verified just like yours
+
+1027
+00:56:29,280 --> 00:56:35,120
+mh packages are also a great way to share your asset with your friends and colleagues.
+
+1028
+00:56:35,120 --> 00:56:38,400
+I'm going to send mine to Kami right now and she's going to take over.
+
+1029
+00:56:39,440 --> 00:56:44,000
+Hi I hope you're enjoying the demo. My name is Kami and I'm here to show you how to
+
+1030
+00:56:44,000 --> 00:56:47,920
+take the clothing back into unreal and metahuman creator and add it to your project.
+
+1031
+00:56:48,880 --> 00:56:52,720
+From there we'll go ahead and replace your character in this scene
+
+1032
+00:56:53,360 --> 00:56:58,960
+that's already set up. This is actually a project that is available now on fab. It's the metahuman
+
+1033
+00:56:59,280 --> 00:57:05,360
+kit. It comes with several different animations for you to use and lighting setups, sequencer setups,
+
+1034
+00:57:06,240 --> 00:57:10,880
+just you know all around to get you going really fast to see what your new clothing looks like.
+
+1035
+00:57:12,240 --> 00:57:17,360
+All right let's get started. So I've gone ahead and already created a clothing directory.
+
+1036
+00:57:17,360 --> 00:57:22,720
+I'm just going to drag and drop the package that Kim and Chloe gave to me. Otherwise you can also
+
+1037
+00:57:22,720 --> 00:57:28,240
+hit import here if you'd like to but it pretty much just does the exact same thing. It's just
+
+1038
+00:57:28,240 --> 00:57:28,640
+bringing it in running it and then you can just drag and drop the package and it's ready to go.
+
+1039
+00:57:28,640 --> 00:57:29,260
+So I'm going to go ahead and create a new clothing directory. I'm going to go ahead and
+
+1040
+00:57:29,260 --> 00:57:35,180
+get through a process to see if it meets validation and pretty soon a window is going to
+
+1041
+00:57:35,180 --> 00:57:41,980
+pop up and let us know if the clothing worked. There it is right on cue. Once the clothing comes
+
+1042
+00:57:41,980 --> 00:57:50,620
+in you can go ahead and reopen metahuman creator and from there we're just going to go and like Kim
+
+1043
+00:57:50,620 --> 00:57:58,220
+showed for the hair and clothing section and we're going to go down and grab the metahuman wardrobe item.
+
+1044
+00:57:58,220 --> 00:58:05,740
+And drop it right in. You need to click on it and then go ahead and hit where and it will apply it to
+
+1045
+00:58:06,460 --> 00:58:13,020
+your character. It usually doesn't take too long to get on there and boom there we go.
+
+1046
+00:58:14,060 --> 00:58:17,100
+All right from there you just need to go ahead and hit assemble
+
+1047
+00:58:17,820 --> 00:58:22,780
+and basically one thing to remember is you don't actually have to create the rig again.
+
+1048
+00:58:22,780 --> 00:58:27,100
+It's already gone through that process and the clothing is attached and it just comes with it for
+
+1049
+00:58:27,100 --> 00:58:27,600
+free.
+
+1050
+00:58:28,220 --> 00:58:32,940
+In here the other thing to look at is exactly what type you want, the highest quality,
+
+1051
+00:58:32,940 --> 00:58:39,580
+you can put this in, and then the naming. Whatever this name is here is what it will be in your
+
+1052
+00:58:39,580 --> 00:58:45,420
+editor and if you already have an asset named that it will write over that. You can just change the
+
+1053
+00:58:45,420 --> 00:58:51,660
+name here to write out as a different asset. Once you've done that you just go ahead and hit
+
+1054
+00:58:51,660 --> 00:58:56,380
+assemble and then from there you should be good to take a look at the character.
+
+1055
+00:58:56,380 --> 00:59:07,019
+As you can see though in here I do have a pre-assembled character. I wanted to go ahead
+
+1056
+00:59:07,019 --> 00:59:11,740
+and do this so I can show you a feature of MetaHuman Creator which is that you can preview
+
+1057
+00:59:11,740 --> 00:59:19,019
+your animation in your outfit. I'm going to move it to the body realm. I'm going to actually hit play
+
+1058
+00:59:19,019 --> 00:59:23,500
+and there we go. It's now moving around which is really great to like kind of see how your clothes
+
+1059
+00:59:23,500 --> 00:59:26,360
+can form and move with the character and all of that. I'm going to hit save and then I'm going to
+
+1060
+00:59:26,360 --> 00:59:29,400
+go ahead and add a new background with a background. I don't know how to do this on a
+
+1061
+00:59:29,400 --> 00:59:34,920
+video but this would be really cool. I'm just going to skip all the
+
+1062
+00:59:35,480 --> 00:59:41,160
+regular ways that it does. You can also so you know add a specific animation. If you have
+
+1063
+00:59:41,160 --> 00:59:45,800
+something already ready to go, you can put it in there and give that a try.
+
+1064
+00:59:49,720 --> 00:59:56,120
+I'm going to close this. Okay so now let's go ahead and come back to our sequencer and add our
+
+1065
+00:59:56,120 --> 00:59:56,280
+character in. Let's go to the front camera. I'll show you how to change that. This is our sequencer
+
+1066
+00:59:56,280 --> 00:59:56,360
+and because you're going to have to go ahead and set up the camera for the show. I'm going to show
+
+1067
+00:59:56,360 --> 01:00:00,340
+sequencer and you can actually change between cameras by right-clicking and
+
+1068
+01:00:00,340 --> 01:00:04,640
+selecting another one that is existing in your level sequence so we're gonna go
+
+1069
+01:00:04,640 --> 01:00:09,320
+to the front camera and let's go ahead and add our character the one with
+
+1070
+01:00:09,320 --> 01:00:14,860
+clothing on it and you just drop it in kind of whenever or wherever I usually
+
+1071
+01:00:14,860 --> 01:00:21,019
+like to go and immediately set the LOD sync to zero so that I it always stays
+
+1072
+01:00:21,019 --> 01:00:30,199
+at the highest fidelity and there just go back to sequencer right click assign
+
+1073
+01:00:30,199 --> 01:00:33,739
+actor and switch it to your other character and boom they've switched
+
+1074
+01:00:33,739 --> 01:00:38,000
+spots so you're the characters still there you can delete them or you can
+
+1075
+01:00:38,000 --> 01:00:44,659
+come over into the outliner and type in hidden in game and they will just go
+
+1076
+01:00:44,659 --> 01:00:50,239
+ahead and hide so this is our kit what you're looking at right now is one of
+
+1077
+01:00:50,239 --> 01:00:51,000
+our catwalk and
+
+1078
+01:00:51,000 --> 01:00:54,920
+animations and there are several other level sequences already ready to go
+
+1079
+01:00:54,920 --> 01:01:00,900
+idle and a walk and just some poses and yeah it can pretty much just cycle
+
+1080
+01:01:00,900 --> 01:01:06,179
+through that I'm gonna go ahead and pause it here I'm going to show you that
+
+1081
+01:01:06,179 --> 01:01:11,400
+you can also switch up lighting it's just muting and unmuting right here and
+
+1082
+01:01:11,400 --> 01:01:18,539
+it gives you just a different look work with all right so that is basically how
+
+1083
+01:01:18,539 --> 01:01:20,940
+you switch it into one of our current sequences
+
+1084
+01:01:20,940 --> 01:01:20,980
+you can go ahead and add your character and switch it into one of our current sequences
+
+1085
+01:01:20,980 --> 01:01:27,579
+that we provide let's go ahead and take a look at switching it out or and
+
+1086
+01:01:27,579 --> 01:01:33,519
+putting it into a new sequence and a new level I'm just gonna go to the content
+
+1087
+01:01:33,519 --> 01:01:42,139
+browser I'm just gonna select levels we'll do it here file new level let's
+
+1088
+01:01:42,139 --> 01:01:45,840
+just go ahead and do an empty one because we're gonna use a lighting
+
+1089
+01:01:45,840 --> 01:01:50,679
+sequence that's already available to us I'm not gonna save that for right now I'm gonna save that for right now
+
+1090
+01:01:50,980 --> 01:02:01,440
+let's go ahead and create a level sequence okay let's open up the studio
+
+1091
+01:02:01,440 --> 01:02:06,039
+let's right click add a sub sequence track I'm here we're gonna go ahead and
+
+1092
+01:02:06,039 --> 01:02:10,579
+select I knew I wanted to put in my studio lighting there are three presets
+
+1093
+01:02:10,579 --> 01:02:15,440
+in here that you can grab let's just do that one
+
+1094
+01:02:15,440 --> 01:02:20,920
+right there and there you go as you can see it's kind of set up a dome with some
+
+1095
+01:02:20,920 --> 01:02:24,760
+lighting in it. It's going to give us a good studio setup. Let's go ahead and add
+
+1096
+01:02:24,760 --> 01:02:37,420
+our metahuman in there. Drag and drop. Do the things. Quality sync to 0. And then let's go back up here and
+
+1097
+01:02:37,420 --> 01:02:43,579
+zero it out. Hit G to hide everything and just kind of go take, you know, a look at the
+
+1098
+01:02:43,579 --> 01:02:54,900
+character. All right, let's line this up here. Let's focus on it. There we go. Okay, so let's go ahead and
+
+1099
+01:02:54,900 --> 01:03:01,900
+put some animation on this character. I'm going to take it from here, drop it into the sequencer. The
+
+1100
+01:03:01,900 --> 01:03:06,739
+animation tabs are going to open up with a control rig. We are not going to use that for this demo.
+
+1101
+01:03:06,739 --> 01:03:11,860
+Let's go ahead and delete those. If you do not delete them and you add animation, you will not see your
+
+1102
+01:03:11,860 --> 01:03:13,559
+animation. All right, we'll
+
+1103
+01:03:13,559 --> 01:03:20,559
+click on body, the plus sign, animation. I know I want to use idle for the body. And then there's also
+
+1104
+01:03:20,559 --> 01:03:31,579
+the face. Animation, face, and when you look at that and hover over, you'll see it's 649 frames. There you
+
+1105
+01:03:31,579 --> 01:03:39,659
+need to go and adjust your timeline to be 649. Anything that you want to be persistent throughout the
+
+1106
+01:03:39,659 --> 01:03:43,460
+whole timeline, go ahead and adjust those to be 649 as well.
+
+1107
+01:03:43,559 --> 01:03:49,559
+And then also, I know this lighting, we're going to go ahead and want to loop so that it'll just stay on the whole time.
+
+1108
+01:03:49,559 --> 01:04:00,559
+And there we go. We now have a level sequence with some anim. All we're missing is camera. Let's go ahead and set that up.
+
+1109
+01:04:00,559 --> 01:04:07,559
+I'm liking this positioning here, so I'm going to go ahead and hit the camera button. It moves in a little bit, but as you can see, I'm piloting it.
+
+1110
+01:04:07,559 --> 01:04:10,559
+So I'm just going to zoom out a little.
+
+1111
+01:04:10,559 --> 01:04:12,559
+And there we go.
+
+1112
+01:04:13,559 --> 01:04:14,559
+I think I like that.
+
+1113
+01:04:14,559 --> 01:04:23,559
+I'm going to go ahead and adjust the details on it for the focus, because the focus likes to set itself to manual and some things will be out.
+
+1114
+01:04:23,559 --> 01:04:25,559
+I'm going to disable that for now.
+
+1115
+01:04:25,559 --> 01:04:26,559
+All right.
+
+1116
+01:04:26,559 --> 01:04:31,559
+And we now have cameras.
+
+1117
+01:04:31,559 --> 01:04:32,559
+There we go.
+
+1118
+01:04:32,559 --> 01:04:34,559
+I was going to say I picked up the wrong one.
+
+1119
+01:04:34,559 --> 01:04:35,559
+There we go.
+
+1120
+01:04:35,559 --> 01:04:37,559
+We are good to go for camera.
+
+1121
+01:04:37,559 --> 01:04:43,559
+And yeah, that is pretty much how you can set up your character and get it ready to go.
+
+1122
+01:04:43,559 --> 01:04:47,559
+If you wanted to at this point, you could go ahead and render.
+
+1123
+01:04:47,559 --> 01:04:48,559
+We're in the sequence.
+
+1124
+01:04:48,559 --> 01:04:50,559
+You're going to hit Movie Render Queue.
+
+1125
+01:04:50,559 --> 01:05:00,559
+And from here, in this particular project, I have two presets from Movie Render Graph that will go ahead and give you either JPEGs or an MP4.
+
+1126
+01:05:00,559 --> 01:05:02,559
+There's also the defaults, and you can create your own.
+
+1127
+01:05:02,559 --> 01:05:04,559
+Just click on that.
+
+1128
+01:05:04,559 --> 01:05:06,559
+And from there, you would hit Render.
+
+1129
+01:05:06,559 --> 01:05:09,559
+I'm not going to do that right now because it would take a couple minutes.
+
+1130
+01:05:09,559 --> 01:05:12,559
+But yeah, have a look and give it a try.
+
+1131
+01:05:12,559 --> 01:05:14,559
+All right.
+
+1132
+01:05:14,559 --> 01:05:17,559
+I'm going to close that.
+
+1133
+01:05:17,559 --> 01:05:18,559
+Okay.
+
+1134
+01:05:18,559 --> 01:05:22,559
+Let's go ahead and see one next thing I think I want to do.
+
+1135
+01:05:22,559 --> 01:05:26,559
+Let's go ahead and I'm going to delete the animation from here.
+
+1136
+01:05:26,559 --> 01:05:30,559
+I am going to stop highlighting my camera.
+
+1137
+01:05:30,559 --> 01:05:35,559
+I'm going to zoom in on the face here.
+
+1138
+01:05:35,559 --> 01:05:39,559
+I want to add a light and a highlight to the eyes.
+
+1139
+01:05:39,559 --> 01:05:42,559
+I think will really help set her up.
+
+1140
+01:05:42,559 --> 01:05:44,559
+Really nicely.
+
+1141
+01:05:44,559 --> 01:05:45,559
+Okay.
+
+1142
+01:05:45,559 --> 01:05:46,559
+So I've done that.
+
+1143
+01:05:46,559 --> 01:05:48,559
+I'm going to actually create another camera.
+
+1144
+01:05:48,559 --> 01:05:52,559
+And like I said, I went ahead and did the focus.
+
+1145
+01:05:52,559 --> 01:05:55,559
+So we're going to go ahead and change that back to disable.
+
+1146
+01:05:55,559 --> 01:05:56,559
+All right.
+
+1147
+01:05:56,559 --> 01:06:00,559
+And then I'm going to go ahead and I think we're good here.
+
+1148
+01:06:00,559 --> 01:06:04,559
+But I want to go ahead and, like I said, get a highlight in her eyes.
+
+1149
+01:06:04,559 --> 01:06:08,559
+So to do so, I'm going to go and put it into a double window.
+
+1150
+01:06:08,559 --> 01:06:11,559
+I'm going to click on the asset on the left side and hit Focus.
+
+1151
+01:06:11,559 --> 01:06:12,559
+I'm close to her.
+
+1152
+01:06:12,559 --> 01:06:17,559
+I'm back over here to clear out the extra gameplay stuff.
+
+1153
+01:06:17,559 --> 01:06:20,559
+So this is my camera that we were just looking in.
+
+1154
+01:06:20,559 --> 01:06:25,559
+And now what I'm going to go ahead and do is drop a light in.
+
+1155
+01:06:25,559 --> 01:06:31,559
+Let's do this spotlight.
+
+1156
+01:06:31,559 --> 01:06:32,559
+Oh, there it is.
+
+1157
+01:06:32,559 --> 01:06:33,559
+It went ahead.
+
+1158
+01:06:33,559 --> 01:06:38,559
+Let's just put it at neutral and click on it again.
+
+1159
+01:06:38,559 --> 01:06:40,559
+And I'm going to hit Control Shift P.
+
+1160
+01:06:40,559 --> 01:06:43,559
+And I'm now piloting the light.
+
+1161
+01:06:43,559 --> 01:06:51,559
+So the reason I want to do this is it allows me to easily move the light around and get it into...
+
+1162
+01:06:51,559 --> 01:06:54,559
+Nice.
+
+1163
+01:06:54,559 --> 01:06:56,559
+So as you can see, I'm getting really close.
+
+1164
+01:06:56,559 --> 01:06:59,559
+But that's because I just really want to see what's going on.
+
+1165
+01:06:59,559 --> 01:07:00,559
+Now I'm going to back out.
+
+1166
+01:07:00,559 --> 01:07:07,559
+I'm going to go a little to the left and down a little and back out a little bit more.
+
+1167
+01:07:07,559 --> 01:07:08,559
+All right.
+
+1168
+01:07:08,559 --> 01:07:09,559
+Now I'm going to come over.
+
+1169
+01:07:09,559 --> 01:07:10,559
+Let's see.
+
+1170
+01:07:10,559 --> 01:07:12,559
+I'm going to turn a little bit more.
+
+1171
+01:07:12,559 --> 01:07:13,559
+Okay.
+
+1172
+01:07:13,559 --> 01:07:16,559
+If I come over here, I can now see this really tiny glint.
+
+1173
+01:07:16,559 --> 01:07:18,559
+And also her face is kind of lit up too much.
+
+1174
+01:07:18,559 --> 01:07:20,559
+So I'm going to drop the light down.
+
+1175
+01:07:20,559 --> 01:07:23,559
+Now the glint has gotten kind of small and gone away.
+
+1176
+01:07:23,559 --> 01:07:26,559
+So we need to go ahead and kick up the radius.
+
+1177
+01:07:26,559 --> 01:07:28,559
+And now you see.
+
+1178
+01:07:28,559 --> 01:07:30,559
+Kind of coming back in.
+
+1179
+01:07:30,559 --> 01:07:35,559
+We've now got this nice highlight in her eyes that wasn't there before.
+
+1180
+01:07:35,559 --> 01:07:37,559
+Really, really subtle.
+
+1181
+01:07:37,559 --> 01:07:39,559
+But it just kind of pulls her in.
+
+1182
+01:07:39,559 --> 01:07:44,559
+And, you know, makes her look good and like she's really sitting in the scene.
+
+1183
+01:07:44,559 --> 01:07:55,559
+And that is pretty much it for setting up lighting and animation in the project.
+
+1184
+01:07:55,559 --> 01:07:56,559
+All right.
+
+1185
+01:07:56,559 --> 01:07:57,559
+Now it's time to have some fun.
+
+1186
+01:07:57,559 --> 01:07:59,559
+Let's bring your MetaHuman to life.
+
+1187
+01:07:59,559 --> 01:08:02,559
+So click over to the Live Link tab.
+
+1188
+01:08:02,559 --> 01:08:07,559
+We're going to go ahead and add our camera.
+
+1189
+01:08:07,559 --> 01:08:11,559
+We're going to choose Logitech Brio because it runs at a higher FPS.
+
+1190
+01:08:11,559 --> 01:08:14,559
+The higher the FPS, the better.
+
+1191
+01:08:14,559 --> 01:08:17,559
+So from here, we're going to go ahead and type the subject name in.
+
+1192
+01:08:17,559 --> 01:08:18,559
+It can really be whatever you want.
+
+1193
+01:08:18,559 --> 01:08:21,559
+You just have to connect it to your asset.
+
+1194
+01:08:21,559 --> 01:08:23,559
+So there we go.
+
+1195
+01:08:23,559 --> 01:08:27,559
+And click on that.
+
+1196
+01:08:27,559 --> 01:08:29,559
+Let's get rid of the fuzz.
+
+1197
+01:08:29,559 --> 01:08:35,559
+And...
+
+1198
+01:08:35,559 --> 01:08:36,559
+Hi.
+
+1199
+01:08:36,560 --> 01:08:37,560
+You're live.
+
+1200
+01:08:37,560 --> 01:08:44,560
+What?
+
+1201
+01:08:44,560 --> 01:08:45,560
+Okay.
+
+1202
+01:08:45,560 --> 01:08:48,560
+Let's make one last adjustment.
+
+1203
+01:08:48,560 --> 01:08:50,560
+Look forward.
+
+1204
+01:08:50,560 --> 01:08:52,560
+Right above the top of your camera.
+
+1205
+01:08:52,560 --> 01:08:56,560
+Neutral face.
+
+1206
+01:08:56,560 --> 01:08:57,560
+There we go.
+
+1207
+01:08:57,560 --> 01:08:59,560
+My lips.
+
+1208
+01:08:59,560 --> 01:09:01,560
+Eyes.
+
+1209
+01:09:01,560 --> 01:09:05,560
+And head move a lot more accurately with mine.
+
+1210
+01:09:05,560 --> 01:09:06,560
+So does my body.
+
+1211
+01:09:06,560 --> 01:09:07,560
+Fun, right?
+
+1212
+01:09:07,560 --> 01:09:08,560
+Now your turn.
+
+1213
+01:09:08,560 --> 01:09:09,560
+Go play.
+
+1214
+01:09:09,560 --> 01:09:10,560
+Thanks.
+
+1215
+01:09:10,560 --> 01:09:11,560
+Bye.
+
+1216
+01:09:11,560 --> 01:09:12,560
+Oh.
+
+1217
+01:09:12,560 --> 01:09:13,560
+Are you still here?
+
+1218
+01:09:13,560 --> 01:09:14,560
+Okay.
+
+1219
+01:09:14,560 --> 01:09:15,560
+I'll come see you in a minute.
+
+1220
+01:09:15,560 --> 01:09:16,560
+Bye.
+
+1221
+01:09:16,560 --> 01:09:17,560
+Bye.
+
+1222
+01:09:17,560 --> 01:09:18,560
+Bye.
+
+1223
+01:09:18,560 --> 01:09:19,560
+Bye.
+
+1224
+01:09:19,560 --> 01:09:20,560
+Bye.
+
+1225
+01:09:20,560 --> 01:09:21,560
+Bye.
+
+1226
+01:09:21,560 --> 01:09:22,560
+Bye.
+
+1227
+01:09:22,560 --> 01:09:23,560
+Bye.
+
+1228
+01:09:23,560 --> 01:09:24,560
+Bye.
+
+1229
+01:09:24,560 --> 01:09:25,560
+Bye.
+
+1230
+01:09:25,560 --> 01:09:26,560
+Bye.
+
+1231
+01:09:26,560 --> 01:09:27,560
+Bye.
+
+1232
+01:09:27,560 --> 01:09:28,560
+Bye.
+
+1233
+01:09:28,560 --> 01:09:29,560
+Bye.
+
+1234
+01:09:29,560 --> 01:09:30,560
+Bye.
+
+1235
+01:09:30,560 --> 01:09:31,560
+Bye.
+
+1236
+01:09:31,560 --> 01:09:32,560
+Bye.
+
+1237
+01:09:32,560 --> 01:09:33,560
+Bye.
+
+1238
+01:09:33,560 --> 01:09:34,560
+Bye.
+
+1239
+01:09:34,560 --> 01:09:35,560
+Bye.
+
+1240
+01:09:35,560 --> 01:09:36,560
+Bye.
+
+1241
+01:09:36,560 --> 01:09:37,560
+Bye.
+
+1242
+01:09:37,560 --> 01:09:38,560
+Bye.
+
+1243
+01:09:38,560 --> 01:09:39,560
+Bye.
+
+1244
+01:09:39,560 --> 01:09:40,560
+Bye.
+
+1245
+01:09:40,560 --> 01:09:41,560
+Bye.
+
+1246
+01:09:41,560 --> 01:09:42,560
+Bye.
+
+1247
+01:09:42,560 --> 01:09:43,560
+Please stop.
+
+1248
+01:09:43,560 --> 01:09:44,560
+I thank you.
+
+1249
+01:09:44,560 --> 01:09:45,520
+Bye.
+
+1250
+01:09:45,520 --> 01:09:46,560
+Bye.
+
+1251
+01:09:46,560 --> 01:09:47,560
+Bye.
+
+1252
+01:09:47,560 --> 01:09:48,560
+Bye.
+
+1253
+01:09:48,560 --> 01:09:49,560
+Bye.
+
+1254
+01:09:49,560 --> 01:09:50,560
+Bye.
+
+1255
+01:09:50,560 --> 01:09:51,560
+Love this game so much.
+
+1256
+01:09:51,560 --> 01:09:52,560
+Have fun playing Mimei.
+
+1257
+01:09:52,560 --> 01:09:53,560
+Bye.
+
+1258
+01:09:53,560 --> 01:09:54,560
+Bye.
+
+1259
+01:09:54,560 --> 01:09:55,560
+Bye.
+
+1260
+01:09:55,560 --> 01:09:56,560
+Bye.
+
+1261
+01:09:56,560 --> 01:09:57,560
+Bye.
+
+1262
+01:09:57,560 --> 01:09:58,560
+Bye.
+
+1263
+01:09:58,560 --> 01:09:59,560
+Bye.
+
+1264
+01:09:59,560 --> 01:10:00,560
+Bye.
+
+1265
+01:10:00,560 --> 01:10:01,560
+Bye.
+
+1266
+01:10:01,560 --> 01:10:02,560
+Bye.
+
+1267
+01:10:02,560 --> 01:10:03,560
+Bye.
+
+1268
+01:10:03,560 --> 01:10:04,560
+Bye.
+
+1269
+01:10:04,560 --> 01:10:10,240
+cool i forgot we were talking to a metahuman i thought like i thought i was a real person at
+
+1270
+01:10:10,240 --> 01:10:16,420
+the end you know if you told me i mean i totally should come back is that right yeah 100% we're
+
+1271
+01:10:16,420 --> 01:10:20,440
+talking about that it was i'll come back as metahuman versions of ourselves and then we're
+
+1272
+01:10:20,440 --> 01:10:25,860
+good right you like the ultimate turing test can can you tell that we switched ourselves out
+
+1273
+01:10:25,860 --> 01:10:29,680
+can you tell guys can you tell or i probably like give myself bright pink hair or something
+
+1274
+01:10:29,680 --> 01:10:33,600
+you know what's actually really interesting is you can tell all the little inflections when you
+
+1275
+01:10:33,600 --> 01:10:38,220
+switch people it's just the little subtleties that make them them just come through um especially
+
+1276
+01:10:38,220 --> 01:10:43,240
+being able to do it real time just from a web camera like yeah i couldn't you'd see your face
+
+1277
+01:10:43,240 --> 01:10:48,600
+driving mine which would be really weird it's just that that would be a fun game almost like
+
+1278
+01:10:48,600 --> 01:10:54,560
+guess who is the person behind the metahuman exactly exactly okay that would actually be
+
+1279
+01:10:54,560 --> 01:11:01,180
+absolutely so okay game game night guys we're gonna do this we can try on different clothing
+
+1280
+01:11:01,180 --> 01:11:03,500
+we can dance through it you know
+
+1281
+01:11:03,500 --> 01:11:03,579
+you
+
+1282
+01:11:03,600 --> 01:11:11,300
+got this who's the imposter you know oh oh god okay there we go i mean hey why not i'd love to
+
+1283
+01:11:11,300 --> 01:11:17,579
+see if people actually play this we could start a new trend all right guys so first i hope everybody
+
+1284
+01:11:17,579 --> 01:11:22,940
+enjoyed all of these different videos i know i really love watching them personally actually so
+
+1285
+01:11:22,940 --> 01:11:25,940
+that i always think that's really cool because i know i just learned a whole bunch of stuff that i
+
+1286
+01:11:25,940 --> 01:11:31,579
+did not know beforehand um but it is time to open up our q a and keep in mind the chat is open so
+
+1287
+01:11:31,579 --> 01:11:32,880
+if you thought of any questions
+
+1288
+01:11:33,840 --> 01:11:37,579
+don't just type them in we've got people watching the chat which is always really cool
+
+1289
+01:11:37,579 --> 01:11:42,079
+and i'm going to just kind of kick it off with one of our first ones and someone asked which
+
+1290
+01:11:42,079 --> 01:11:46,960
+program is better to learn marvelous designer or clout and honestly that's a question that's it's
+
+1291
+01:11:46,960 --> 01:11:52,000
+a great question and i could almost say both it really depends on what your actual output
+
+1292
+01:11:52,000 --> 01:11:57,200
+is are you looking to print your patterns and make a dress in real life for a shirt or a
+
+1293
+01:11:57,200 --> 01:12:02,960
+suit i mean the world is your oyster you can make a handbag a backpack so many things but if you want
+
+1294
+01:12:02,960 --> 01:12:09,039
+to make it in the real world, I would definitely recommend Clo. But if your output is going to be
+
+1295
+01:12:09,039 --> 01:12:16,640
+more about a digital pipeline, dressing characters, creating animations, video games, special effects,
+
+1296
+01:12:16,640 --> 01:12:22,399
+then that is going to be Marvelous Designer and using that. So it is really cool to see that. But
+
+1297
+01:12:22,399 --> 01:12:26,960
+the nice thing is the programs are very similar. The interfaces look very similar. In fact,
+
+1298
+01:12:26,960 --> 01:12:32,319
+you could probably jump from one to the other and back again. There's just a few tools that
+
+1299
+01:12:32,319 --> 01:12:36,639
+are different. You're going to have things like seam allowance in Clo, because you kind of need
+
+1300
+01:12:36,639 --> 01:12:44,159
+seam allowance to sew things together. You have the render engine in Clo to render, because mostly
+
+1301
+01:12:44,159 --> 01:12:49,279
+in Marvelous Designer, people are often taking it into the next step, the next program. Billy,
+
+1302
+01:12:49,279 --> 01:12:53,439
+are there any other fun things you can add or that might be differences of Clo and MD?
+
+1303
+01:12:54,559 --> 01:13:02,239
+Well, I was just going to add that we are probably 75% the same framework, but it's that additional
+
+1304
+01:13:02,239 --> 01:13:02,279
+work that we're working on right now. So it's going to be a little bit different, but it's going to
+
+1305
+01:13:02,279 --> 01:13:02,299
+be a little bit different, but it's going to be a little bit different, but it's going to be a little
+
+1306
+01:13:02,300 --> 01:13:06,920
+bit different. So we have a little 25% that leans towards fashion-based tools, right? And then we
+
+1307
+01:13:06,920 --> 01:13:16,039
+have the other 25% for Marvelous, which is more VFX and game-oriented tools. So we have like the,
+
+1308
+01:13:17,039 --> 01:13:24,760
+I would say what sets us apart is like everywhere. We have different Kinect store assets as well.
+
+1309
+01:13:25,840 --> 01:13:32,260
+So yeah. I mean, I've been using Marvelous for years and literally just this week, I
+
+1310
+01:13:32,260 --> 01:13:38,960
+hopped into Clo to try and mess around and make something and found it pretty much fine. You know,
+
+1311
+01:13:39,000 --> 01:13:42,619
+things are in a slightly different place, but if you know how to use one, it feels like you know
+
+1312
+01:13:42,619 --> 01:13:46,600
+pretty well how to use the other. I'm excited. Kim's going to be joining us for a workshop and
+
+1313
+01:13:46,600 --> 01:13:50,119
+it's going to be really cool to see her jump from Marvelous Designer into Clo. I'm kind of excited.
+
+1314
+01:13:51,000 --> 01:13:57,860
+All right. So our next question, why does my MetaHuman have only two slots for clothing? Well,
+
+1315
+01:13:57,860 --> 01:14:02,159
+almost all the YouTube tutorials have four. I can only change the whole body,
+
+1316
+01:14:02,260 --> 01:14:08,820
+mesh or the face, no shirt, pants, or shoes. So the answer to this is that there are no specific
+
+1317
+01:14:08,820 --> 01:14:14,579
+slots as of right now for clothing. You can put on as many pieces of clothing as you want,
+
+1318
+01:14:14,579 --> 01:14:19,340
+but there are no specific slots. So we kind of left it open to keep it sort of infinite just
+
+1319
+01:14:19,340 --> 01:14:24,760
+because it's really hard to define a lot of those, you know, slots and figuring out all of the rules
+
+1320
+01:14:24,760 --> 01:14:29,760
+and stuff. But if you want to put on shirt and pants and shoes, like just put them on, just,
+
+1321
+01:14:29,880 --> 01:14:32,239
+you can double click on them to take, to put them on.
+
+1322
+01:14:32,260 --> 01:14:36,820
+Double click on it to take them off and put on as many things as you want. Like you can be like
+
+1323
+01:14:36,820 --> 01:14:43,220
+Joey from Friends if you want. So like the reference, I mean, come on layer, put it all on,
+
+1324
+01:14:43,220 --> 01:14:51,940
+put it all on all of it. I mean, did you have anything to add or. No, I mean, it's just one
+
+1325
+01:14:51,940 --> 01:14:55,699
+of those things, you know, playing with the tool. You can't actually do exactly that layer close up
+
+1326
+01:14:55,699 --> 01:14:59,699
+as I was testing it out. I realized that I kept putting things on to wear and then I had to go
+
+1327
+01:14:59,699 --> 01:15:02,100
+back through and I was like, oh, you can just click on it and tell it to.
+
+1328
+01:15:02,260 --> 01:15:06,659
+To not, it's really actually pretty easy to use. And yeah, like I said, Joey's a good reference.
+
+1329
+01:15:08,340 --> 01:15:11,699
+Not going to get that image out of my head for a while now. Yeah. I mean, it's a little different
+
+1330
+01:15:11,699 --> 01:15:16,260
+because everything else, if you click on, if you apply something like a groom, for instance,
+
+1331
+01:15:16,260 --> 01:15:19,619
+then the other one will turn off automatically. And with clothing, it doesn't work with that
+
+1332
+01:15:19,619 --> 01:15:24,820
+because we want to enable you to put on as many things as you want to. So it doesn't switch. You
+
+1333
+01:15:24,820 --> 01:15:31,860
+have to take things off if you want to take them off as much as you want. All right, next. Can you
+
+1334
+01:15:31,859 --> 01:15:38,500
+customize the hair too, or is it just those options? So I'm not exactly sure what those
+
+1335
+01:15:38,500 --> 01:15:46,899
+options are. I'm guessing it's the stuff that I showed from Fab. You can customize that. I mean,
+
+1336
+01:15:46,899 --> 01:15:52,099
+so you can download grooms off of Fab. You know, we have some from Epic. There's also like a ton
+
+1337
+01:15:52,099 --> 01:15:56,979
+of user created ones. You can also create them and there's actually a bunch of, I mean, there's
+
+1338
+01:15:56,980 --> 01:16:02,740
+like a few, I forget the exact name of them, but like groom starter kits, I think they're called on
+
+1339
+01:16:02,740 --> 01:16:07,220
+there. And they, there's a bunch of tools and stuff that Epic has made to make it easier for
+
+1340
+01:16:07,220 --> 01:16:12,020
+you to create your own grooms, which are really cool. We're not going to discuss them here, but
+
+1341
+01:16:12,020 --> 01:16:16,900
+you should definitely look into it because they are very cool. And then you can just put them
+
+1342
+01:16:16,900 --> 01:16:21,300
+right onto your MetaHuman once you're done. Yeah. I mean, the main one is the Maya to
+
+1343
+01:16:21,300 --> 01:16:26,420
+Houdini plugin that works really well for designing it. There's a lot of great tutorials that recently
+
+1344
+01:16:26,980 --> 01:16:31,060
+came out from, I believe we launched it last Unreal Fest and, you know, a lot of people have
+
+1345
+01:16:31,060 --> 01:16:34,660
+been able to really just kind of dive in. So definitely check out online. You'll be able to
+
+1346
+01:16:34,660 --> 01:16:40,340
+find the tutorials you need to get you through this. I want to jump to another hair related
+
+1347
+01:16:40,340 --> 01:16:46,260
+question. So we keep those together, but can you bring the hair into Clo3D that you picked
+
+1348
+01:16:46,260 --> 01:16:52,020
+for your MetaHuman? And currently not yet, but as many things say, the key word there is yet,
+
+1349
+01:16:52,020 --> 01:16:54,500
+because you never know what's coming down the pipeline.
+
+1350
+01:16:56,180 --> 01:16:56,820
+And then.
+
+1351
+01:16:56,980 --> 01:17:04,740
+Next question. Can we use this auto size adjusting thing with every piece of clothing
+
+1352
+01:17:04,740 --> 01:17:10,180
+and every avatar? Why did she not use it to fit the pants? Why did I? So auto fit.
+
+1353
+01:17:10,820 --> 01:17:16,500
+Key really with that right now is that it works with one garment at a time. So if I had had the
+
+1354
+01:17:16,500 --> 01:17:21,380
+top or had no top and just the pants, I could have fit that one at the same time. It's really
+
+1355
+01:17:21,380 --> 01:17:26,900
+just knowing which one. So I would, you know, if I wanted to do both, I do the top, save that garment,
+
+1356
+01:17:26,980 --> 01:17:32,820
+do the pants, save that garment, and then bring them together into one file. So for now it's just
+
+1357
+01:17:32,820 --> 01:17:39,620
+the one. But in the future, again, not yet, but this tool got is getting better and better and
+
+1358
+01:17:39,620 --> 01:17:45,540
+better. In fact, the way that it just hopped onto how the unreal or the MetaHuman's arms were
+
+1359
+01:17:45,540 --> 01:17:50,340
+absolutely blew me away because if you tested this tool years ago, it wouldn't have worked
+
+1360
+01:17:50,340 --> 01:17:55,380
+as flawlessly. And now it was like, perfect done. Whoa, blew me away. And the other thing is,
+
+1361
+01:17:55,380 --> 01:17:56,820
+can you use this on other avatars? Can you use this on other avatars? Can you use this on other avatars?
+
+1362
+01:17:56,980 --> 01:18:01,220
+100%. There is a funny video, I believe it's somewhere on our YouTube, and it has it
+
+1363
+01:18:02,340 --> 01:18:06,100
+addressed. It starts on an avatar, a clo avatar, then it goes on to a little kid avatar,
+
+1364
+01:18:06,820 --> 01:18:11,620
+and then it goes on to, I think, Sting from Spider-Man, and then it goes on to a horse.
+
+1365
+01:18:11,620 --> 01:18:15,700
+So yes, it can go on to a lot of different characters. So, you know, I never thought I'd
+
+1366
+01:18:15,700 --> 01:18:19,140
+see a horse in clo, but yes, you can dress a horse in clo and you can put a dress on it.
+
+1367
+01:18:19,140 --> 01:18:23,300
+That was previously on a normal avatar. So it's kind of fun to see that you can definitely
+
+1368
+01:18:24,100 --> 01:18:26,740
+expand on those options. Yeah. And it's
+
+1369
+01:18:26,739 --> 01:18:30,979
+actually a thing to point out. We didn't really go into it with the outfit asset,
+
+1370
+01:18:30,979 --> 01:18:36,659
+but the outfit asset can accept sort of multiple size sources. And so auto-fitting is like a really,
+
+1371
+01:18:36,659 --> 01:18:42,659
+really easy way to make multiple sizes. And then when you bring the outfit asset in,
+
+1372
+01:18:42,659 --> 01:18:49,939
+it sort of makes the resizing more accurate if you have more sources. So it's a cool thing to know.
+
+1373
+01:18:50,739 --> 01:18:54,260
+Lily, just totally curious, have you ever put a garment onto a not human avatar?
+
+1374
+01:18:56,739 --> 01:19:05,059
+Like I did this like toon kind of creature, like goblin recently.
+
+1375
+01:19:06,500 --> 01:19:11,779
+It was, but like, luckily it was pretty humanoid, but it is definitely interesting
+
+1376
+01:19:11,779 --> 01:19:18,739
+because we have examples, like you said, of the horse. And also something that we have that
+
+1377
+01:19:18,739 --> 01:19:26,099
+people may not know is that we have baby avatars in both softwares. So you can do like really,
+
+1378
+01:19:26,739 --> 01:19:32,899
+like tiny outfits and with the auto scaling tool, you can put that outfit onto a larger person as
+
+1379
+01:19:32,899 --> 01:19:33,659
+well.
+
+1380
+01:19:33,659 --> 01:19:42,500
+Just to point out, there are no babies in metahuman or kids. But yeah.
+
+1381
+01:19:42,500 --> 01:19:47,300
+Yeah. I think one of our baby names is baby juju. And with the labubu craze last year,
+
+1382
+01:19:47,300 --> 01:19:53,219
+I dressed up baby juju like a labubu. Yeah. So, you know, the, the imagination,
+
+1383
+01:19:53,219 --> 01:19:56,500
+you're only limited by your own imagination. You can do all sorts of crazy stuff.
+
+1384
+01:19:56,739 --> 01:19:58,979
+All right, this next question did kind of get answered,
+
+1385
+01:19:58,979 --> 01:20:00,399
+but I'll bring it up in case they want to speak
+
+1386
+01:20:00,399 --> 01:20:02,199
+a little bit more about it, is can you
+
+1387
+01:20:02,199 --> 01:20:07,039
+export your MetaHuman in Clo back to Unreal Engine
+
+1388
+01:20:07,039 --> 01:20:08,679
+to make an animation there?
+
+1389
+01:20:08,679 --> 01:20:09,639
+In Clothes?
+
+1390
+01:20:09,639 --> 01:20:12,500
+In Clo, I think they meant Clo.
+
+1391
+01:20:12,500 --> 01:20:13,719
+You guys, you were.
+
+1392
+01:20:13,719 --> 01:20:16,699
+I mean, so I think Kami pretty much answered this question
+
+1393
+01:20:16,699 --> 01:20:18,619
+with her video.
+
+1394
+01:20:18,619 --> 01:20:19,800
+Yes.
+
+1395
+01:20:19,800 --> 01:20:20,479
+Yes, you can.
+
+1396
+01:20:20,479 --> 01:20:22,599
+Yeah, but I also love that sometimes people ask questions
+
+1397
+01:20:22,599 --> 01:20:24,300
+and you're like, clearly we're moving in the right direction
+
+1398
+01:20:24,300 --> 01:20:25,099
+because we're about to answer it.
+
+1399
+01:20:25,099 --> 01:20:26,420
+We're about to answer it, yeah.
+
+1400
+01:20:26,420 --> 01:20:31,020
+Yeah, and I think we put a link in the stream about where
+
+1401
+01:20:31,020 --> 01:20:31,980
+the fashion kit is.
+
+1402
+01:20:31,980 --> 01:20:34,140
+So if you want, you can go ahead and use the example
+
+1403
+01:20:34,140 --> 01:20:38,460
+that we just showed you today and create your own.
+
+1404
+01:20:38,460 --> 01:20:40,840
+All right, our next question.
+
+1405
+01:20:40,840 --> 01:20:44,819
+Is the USD to Unreal Engine still the optimal workflow
+
+1406
+01:20:44,819 --> 01:20:48,380
+that exports thin and thick version clothing for Unreal
+
+1407
+01:20:48,380 --> 01:20:49,800
+Engine to simulate?
+
+1408
+01:20:49,800 --> 01:20:53,880
+And does the new Marvelous Designer optimized quad topology
+
+1409
+01:20:53,880 --> 01:20:56,220
+support this workflow?
+
+1410
+01:20:56,220 --> 01:20:58,960
+So I'm going to answer the first part of this question.
+
+1411
+01:20:58,960 --> 01:21:00,500
+Yeah, yes, it is.
+
+1412
+01:21:00,500 --> 01:21:03,400
+I mean, if you want both the sim mesh and the render mesh,
+
+1413
+01:21:03,400 --> 01:21:06,300
+which is the thin and the thick, you definitely
+
+1414
+01:21:06,300 --> 01:21:08,800
+want to use a USD because that just brings them both in.
+
+1415
+01:21:08,800 --> 01:21:11,780
+That brings in a lot of really cool information.
+
+1416
+01:21:11,780 --> 01:21:16,020
+Like, it has the flattened pattern pieces.
+
+1417
+01:21:16,020 --> 01:21:18,900
+It has the 3D representation, both in the sim mesh,
+
+1418
+01:21:18,900 --> 01:21:20,740
+the thin and the thick.
+
+1419
+01:21:20,740 --> 01:21:23,579
+So yeah, you get a ton of really great information, sewing
+
+1420
+01:21:23,579 --> 01:21:26,020
+information, et cetera, with the USD import.
+
+1421
+01:21:26,220 --> 01:21:29,699
+But I'm going to assume it supports the optimized
+
+1422
+01:21:29,699 --> 01:21:30,619
+the quad topology.
+
+1423
+01:21:30,619 --> 01:21:33,220
+I don't know, Billy or Ariel?
+
+1424
+01:21:33,220 --> 01:21:36,180
+Yeah, so it definitely does.
+
+1425
+01:21:36,180 --> 01:21:39,760
+And my recommendation for why switching to quads
+
+1426
+01:21:39,760 --> 01:21:42,760
+is just because if you're going to animate that clothing later
+
+1427
+01:21:42,760 --> 01:21:44,680
+on, you should be able you should
+
+1428
+01:21:44,680 --> 01:21:48,560
+be getting more predictable results based with the quad
+
+1429
+01:21:48,560 --> 01:21:51,820
+mesh rather than triangles.
+
+1430
+01:21:51,820 --> 01:21:54,800
+It is good to point out that once it comes into UE,
+
+1431
+01:21:54,800 --> 01:21:55,760
+it will get triangulated.
+
+1432
+01:21:55,760 --> 01:22:00,079
+Anyway, but it still might be more predictable topology.
+
+1433
+01:22:00,079 --> 01:22:02,280
+So always good.
+
+1434
+01:22:05,000 --> 01:22:06,380
+All right, our next question, is it
+
+1435
+01:22:06,380 --> 01:22:10,400
+possible to add chaos cloth dynamics to parametric outfit?
+
+1436
+01:22:10,400 --> 01:22:13,739
+It seems as a very logical pipeline to have.
+
+1437
+01:22:13,739 --> 01:22:14,520
+I agree.
+
+1438
+01:22:14,520 --> 01:22:17,640
+That does seem like a very logical pipeline to have.
+
+1439
+01:22:17,640 --> 01:22:21,720
+And it's something that we are very interested in doing.
+
+1440
+01:22:21,720 --> 01:22:24,360
+But like Ariel was saying before, not yet.
+
+1441
+01:22:25,760 --> 01:22:28,840
+I don't know if that's a favorite word.
+
+1442
+01:22:28,840 --> 01:22:30,360
+Yeah, yes, I agree.
+
+1443
+01:22:30,360 --> 01:22:32,140
+It would be really awesome.
+
+1444
+01:22:32,140 --> 01:22:33,800
+All right, so our next question.
+
+1445
+01:22:33,800 --> 01:22:38,140
+For game devs who already have lots of assets with clothing,
+
+1446
+01:22:38,140 --> 01:22:43,039
+is there a workflow to import regular mesh clothes
+
+1447
+01:22:43,039 --> 01:22:45,940
+and turn them into metahuman clothing?
+
+1448
+01:22:49,180 --> 01:22:51,539
+I'm not exactly sure.
+
+1449
+01:22:51,539 --> 01:22:55,119
+I'm not sure when you're saying lots of assets with clothing,
+
+1450
+01:22:55,119 --> 01:22:55,680
+is there a workflow?
+
+1451
+01:22:55,680 --> 01:22:58,500
+Is there a workflow to import regular mesh clothes
+
+1452
+01:22:58,500 --> 01:23:00,960
+and turn them into metahuman clothing?
+
+1453
+01:23:00,960 --> 01:23:03,420
+I mean, there's definitely the workflow that we just showed
+
+1454
+01:23:03,420 --> 01:23:05,920
+is the workflow to import regular mesh clothes
+
+1455
+01:23:05,920 --> 01:23:09,159
+and turn them into, I'm assuming you're
+
+1456
+01:23:09,159 --> 01:23:12,860
+talking about an outfit asset.
+
+1457
+01:23:12,860 --> 01:23:13,740
+Yeah, I'm sorry.
+
+1458
+01:23:13,740 --> 01:23:16,780
+This question is a little unclear.
+
+1459
+01:23:16,780 --> 01:23:20,560
+But yeah, if you already have existing metahuman skeletal
+
+1460
+01:23:20,560 --> 01:23:25,680
+assets, then that you can definitely do to turn into,
+
+1461
+01:23:25,680 --> 01:23:28,680
+an outfit asset, if maybe that's what you're asking.
+
+1462
+01:23:28,680 --> 01:23:32,159
+And you just basically would take those meshes out
+
+1463
+01:23:32,159 --> 01:23:37,300
+of your skeletal asset and sort of use them as static meshes
+
+1464
+01:23:37,300 --> 01:23:41,820
+and then just do the pipeline that I showed as normal.
+
+1465
+01:23:41,820 --> 01:23:47,100
+And then those will turn into resizable outfit assets.
+
+1466
+01:23:47,100 --> 01:23:51,360
+I always keep on remembering both Chloe and Epic
+
+1467
+01:23:51,360 --> 01:23:53,960
+have forums to definitely ask lots and lots of your questions
+
+1468
+01:23:53,960 --> 01:23:55,560
+because we might not be able to answer all of them.
+
+1469
+01:23:55,560 --> 01:23:55,659
+Yeah.
+
+1470
+01:23:55,680 --> 01:23:56,520
+But we'll get to them today.
+
+1471
+01:23:56,520 --> 01:23:57,180
+Yeah.
+
+1472
+01:23:57,180 --> 01:23:57,680
+All right.
+
+1473
+01:23:57,680 --> 01:24:00,720
+Our next one, how do we deal with LODs
+
+1474
+01:24:00,720 --> 01:24:03,960
+when it comes to clothing for the metahuman?
+
+1475
+01:24:03,960 --> 01:24:04,460
+OK.
+
+1476
+01:24:04,460 --> 01:24:07,680
+So there is a workflow.
+
+1477
+01:24:07,680 --> 01:24:09,780
+I just didn't have time to show it.
+
+1478
+01:24:09,780 --> 01:24:15,600
+You can create LODs in your original, in your cloth asset.
+
+1479
+01:24:15,600 --> 01:24:18,840
+There's just a couple of nodes that you would add.
+
+1480
+01:24:18,840 --> 01:24:22,020
+I can't really show it right now.
+
+1481
+01:24:22,020 --> 01:24:24,659
+And I'm blanking on the name of the node right now.
+
+1482
+01:24:24,659 --> 01:24:25,560
+But it basically.
+
+1483
+01:24:25,560 --> 01:24:26,940
+It really remeshes your clothing.
+
+1484
+01:24:26,940 --> 01:24:29,400
+And you just choose, essentially, a percentage
+
+1485
+01:24:29,400 --> 01:24:31,560
+of how many faces you want it to do.
+
+1486
+01:24:31,560 --> 01:24:34,740
+And it will just automatically LOD them for you,
+
+1487
+01:24:34,740 --> 01:24:35,820
+which is super cool.
+
+1488
+01:24:38,880 --> 01:24:42,120
+And last, I think, or I think this might be our last question.
+
+1489
+01:24:42,120 --> 01:24:44,760
+But so if you have any last minute ones,
+
+1490
+01:24:44,760 --> 01:24:46,020
+make sure you put them in the chat.
+
+1491
+01:24:46,020 --> 01:24:50,440
+But can parametric outfits have chaos cloth dynamics?
+
+1492
+01:24:50,440 --> 01:24:52,720
+Oh, we answered this question.
+
+1493
+01:24:52,720 --> 01:24:53,580
+Oh, I literally, wow.
+
+1494
+01:24:53,580 --> 01:24:54,960
+I read it and then I read it again.
+
+1495
+01:24:54,960 --> 01:24:55,440
+Wow.
+
+1496
+01:24:55,440 --> 01:25:00,800
+Next one, how to stop, this is what
+
+1497
+01:25:00,800 --> 01:25:02,320
+happens when you do things live, guys.
+
+1498
+01:25:02,320 --> 01:25:02,820
+It's live.
+
+1499
+01:25:02,820 --> 01:25:04,620
+It's really, we are right here.
+
+1500
+01:25:04,620 --> 01:25:10,020
+So how to stop clipping of complex clothing like jackets.
+
+1501
+01:25:10,020 --> 01:25:12,660
+OK, so I guess that you're asking about how
+
+1502
+01:25:12,660 --> 01:25:14,760
+to stop the clipping in between, let's say,
+
+1503
+01:25:14,760 --> 01:25:17,880
+a shirt and a jacket, or a jacket and a pant or a skirt,
+
+1504
+01:25:17,880 --> 01:25:19,220
+anything like that.
+
+1505
+01:25:19,220 --> 01:25:23,580
+Currently, right now, we don't have ways to sort of move
+
+1506
+01:25:23,580 --> 01:25:24,760
+things out, move things in.
+
+1507
+01:25:24,760 --> 01:25:25,260
+Tuck them.
+
+1508
+01:25:25,260 --> 01:25:26,420
+Tuck them, et cetera.
+
+1509
+01:25:26,420 --> 01:25:29,380
+Right now, it just is kind of you get what you get.
+
+1510
+01:25:29,380 --> 01:25:30,900
+And so the way that you would do this
+
+1511
+01:25:30,900 --> 01:25:34,800
+is you would create assets that go together.
+
+1512
+01:25:34,800 --> 01:25:36,480
+Obviously, in the future, it's something
+
+1513
+01:25:36,480 --> 01:25:38,100
+we'd love to also address.
+
+1514
+01:25:38,100 --> 01:25:39,640
+But right now, that's just what you do.
+
+1515
+01:25:39,640 --> 01:25:42,320
+And in resizing, obviously, and in allotting,
+
+1516
+01:25:42,320 --> 01:25:45,460
+certainly, if you go down to a lower resolution,
+
+1517
+01:25:45,460 --> 01:25:49,039
+sometimes clipping can appear where there might not
+
+1518
+01:25:49,039 --> 01:25:51,000
+have been clipping.
+
+1519
+01:25:51,000 --> 01:25:52,619
+One of the settings, I don't remember
+
+1520
+01:25:52,619 --> 01:25:55,260
+if I addressed this or not, in Outfit Asset,
+
+1521
+01:25:55,260 --> 01:26:01,320
+sort of the last setting is a number of something points,
+
+1522
+01:26:01,320 --> 01:26:02,579
+interpolation points.
+
+1523
+01:26:02,579 --> 01:26:05,940
+And if you turn that up in your Outfit Asset,
+
+1524
+01:26:05,940 --> 01:26:10,980
+you'll get a more, like, sort of more fidelity in the resizing.
+
+1525
+01:26:10,980 --> 01:26:12,659
+And it'll really stick to the body more,
+
+1526
+01:26:12,659 --> 01:26:14,579
+which can be both good or bad.
+
+1527
+01:26:14,579 --> 01:26:15,900
+But that's something you might want
+
+1528
+01:26:15,900 --> 01:26:18,640
+to play with if everything looks fine,
+
+1529
+01:26:18,640 --> 01:26:21,119
+and then when you resize it, it doesn't look fine.
+
+1530
+01:26:21,119 --> 01:26:25,100
+But in general, right now, the big answer there is, just,
+
+1531
+01:26:25,100 --> 01:26:29,780
+create assets that work together, and find us in the future.
+
+1532
+01:26:32,600 --> 01:26:33,160
+Oh, my god, guys.
+
+1533
+01:26:33,160 --> 01:26:35,280
+So I think we had a lot of really great questions.
+
+1534
+01:26:35,280 --> 01:26:35,980
+I appreciate them.
+
+1535
+01:26:35,980 --> 01:26:39,780
+Keep in mind Epic, Clo, Marvelous Designer.
+
+1536
+01:26:39,780 --> 01:26:41,500
+We've got forums, great places.
+
+1537
+01:26:41,500 --> 01:26:43,260
+We've got Discord channels, guys.
+
+1538
+01:26:43,260 --> 01:26:46,260
+We've got places that you can go to ask your questions
+
+1539
+01:26:46,260 --> 01:26:50,100
+for more, longer, in-depth answers, and possibly,
+
+1540
+01:26:50,100 --> 01:26:52,920
+you know, step-by-step instructions.
+
+1541
+01:26:52,920 --> 01:26:54,920
+So it was super exciting to have you
+
+1542
+01:26:54,920 --> 01:26:56,239
+guys all here.
+
+1543
+01:26:56,239 --> 01:26:57,260
+I am so excited.
+
+1544
+01:26:57,260 --> 01:26:58,980
+I hope we get the chance to do something like this again
+
+1545
+01:26:58,980 --> 01:26:59,800
+in the future.
+
+1546
+01:26:59,800 --> 01:27:02,079
+It's been an absolute treat for myself.
+
+1547
+01:27:02,079 --> 01:27:04,460
+I'll let anyone else have any last minute things they want to say,
+
+1548
+01:27:04,460 --> 01:27:05,800
+or just a quick thank you.
+
+1549
+01:27:05,800 --> 01:27:06,539
+No?
+
+1550
+01:27:06,539 --> 01:27:07,819
+Thanks, everyone.
+
+1551
+01:27:07,819 --> 01:27:08,319
+Yeah.
+
+1552
+01:27:08,319 --> 01:27:10,020
+All right, guys.
+
+1553
+01:27:10,020 --> 01:27:10,640
+Yeah, guys.
+
+1554
+01:27:10,640 --> 01:27:12,779
+So again, thank you all so much.
+
+1555
+01:27:12,779 --> 01:27:13,720
+I hope you enjoyed this.
+
+1556
+01:27:13,720 --> 01:27:15,980
+Don't keep in mind, there will be a blog post later
+
+1557
+01:27:15,980 --> 01:27:19,039
+from Epic, Clo, and Marvelous Designer that you will,
+
+1558
+01:27:19,039 --> 01:27:21,159
+there will be lots of links with resources,
+
+1559
+01:27:21,159 --> 01:27:23,239
+and as well as this stream.
+
+1560
+01:27:23,239 --> 01:27:24,440
+So you will be able to watch it later, if you like.
+
+1561
+01:27:24,440 --> 01:27:24,460
+Yeah.
+
+1562
+01:27:24,460 --> 01:27:24,579
+Yeah.
+
+1563
+01:27:24,579 --> 01:27:24,680
+Yeah.
+
+1564
+01:27:24,680 --> 01:27:24,779
+Yeah.
+
+1565
+01:27:24,779 --> 01:27:24,880
+Yeah.
+
+1566
+01:27:24,920 --> 01:27:25,819
+If you're like, oh my god, I really
+
+1567
+01:27:25,819 --> 01:27:27,619
+want to go back and watch that one part again,
+
+1568
+01:27:27,619 --> 01:27:29,380
+you'll be able to do that.
+
+1569
+01:27:29,380 --> 01:27:30,819
+And we will see you later.
+
+1570
+01:27:30,819 --> 01:27:32,319
+Thank you guys so much.
+
+1571
+01:27:32,319 --> 01:27:32,819
+Bye.
+
+1572
+01:27:32,819 --> 01:27:33,319
+Bye.
+
+1573
+01:27:33,319 --> 01:27:33,819
+Bye.
+
+1574
+01:27:33,819 --> 01:27:34,319
+Bye.
+
+1575
+01:27:34,319 --> 01:27:34,819
+Bye.
+

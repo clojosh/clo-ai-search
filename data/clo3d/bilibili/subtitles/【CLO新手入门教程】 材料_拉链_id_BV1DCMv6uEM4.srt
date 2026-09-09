@@ -1,0 +1,460 @@
+1
+00:00:00,000 --> 00:00:07,000
+Open the project file .
+
+2
+00:00:07,000 --> 00:00:10,000
+In the 3D tool bar, select the 3D pull tool.
+
+3
+00:00:10,000 --> 00:00:13,000
+The position of the virtual line can be added to the pull chain.
+
+4
+00:00:13,000 --> 00:00:15,000
+The mouse is suspended in the pull chain position.
+
+5
+00:00:15,000 --> 00:00:19,000
+The blue dot shows that a pull chain can be added here.
+
+6
+00:00:19,000 --> 00:00:23,000
+Click .
+
+7
+00:00:23,000 --> 00:00:25,000
+Click .
+
+8
+00:00:25,000 --> 00:00:27,000
+The pull chain on this side is added and completed.
+
+9
+00:00:27,000 --> 00:00:31,000
+It can also be operated in the same way in the 2D window.
+
+10
+00:00:31,000 --> 00:00:34,000
+Click .
+
+11
+00:00:34,000 --> 00:00:36,000
+Click .
+
+12
+00:00:36,000 --> 00:00:38,000
+Add the pull chain.
+
+13
+00:00:38,000 --> 00:00:41,000
+Between the two sides of the pull chain, the black box line is displayed.
+
+14
+00:00:41,000 --> 00:00:45,000
+When modeling, the pull chain will be boxed according to the black box line.
+
+15
+00:00:45,000 --> 00:00:47,000
+Switch to .
+
+16
+00:00:47,000 --> 00:00:53,000
+The left arrow can drag the pull head to the appropriate position.
+
+17
+00:00:53,000 --> 00:00:56,000
+Before modeling, in order to prevent the inner layer of the panel from penetrating,
+
+18
+00:00:56,000 --> 00:00:57,000
+it is possible to change the position of the pull chain.
+
+19
+00:00:57,000 --> 00:00:59,000
+Set its layer to .
+
+20
+00:00:59,000 --> 00:01:02,000
+.
+
+21
+00:01:02,000 --> 00:01:05,000
+After the simulation is stable, turn off the simulation.
+
+22
+00:01:05,000 --> 00:01:09,000
+Restore its layer to .
+
+23
+00:01:09,000 --> 00:01:11,000
+Add the pull chain and complete.
+
+24
+00:01:11,000 --> 00:01:13,000
+Zoom in to see the pull chain.
+
+25
+00:01:13,000 --> 00:01:15,000
+Find the pull head facing inwards.
+
+26
+00:01:15,000 --> 00:01:17,000
+Switch to the texture surface.
+
+27
+00:01:17,000 --> 00:01:19,000
+You can see that half of the pull chain is gray.
+
+28
+00:01:19,000 --> 00:01:22,000
+It means that this side of the pull chain is in the opposite direction.
+
+29
+00:01:22,000 --> 00:01:25,000
+Select this side with the move tool.
+
+30
+00:01:25,000 --> 00:01:26,000
+Click .
+
+31
+00:01:26,000 --> 00:01:30,000
+Select .
+
+32
+00:01:30,000 --> 00:01:33,000
+The pull chain is in the correct direction.
+
+33
+00:01:33,000 --> 00:01:38,000
+Again, stabilize and close the simulation.
+
+34
+00:01:38,000 --> 00:01:43,000
+After adding the pull chain, you can also drag the pull head with the left arrow.
+
+35
+00:01:43,000 --> 00:01:46,000
+Adjust the closed position of the pull chain again and simulate.
+
+36
+00:01:46,000 --> 00:01:49,000
+Updating the 3D effect.
+
+37
+00:01:49,000 --> 00:01:52,000
+Click .
+
+38
+00:01:52,000 --> 00:01:54,000
+You can delete the entire pull chain.
+
+39
+00:01:54,000 --> 00:01:58,000
+Next, I will briefly introduce the meaning of other options.
+
+40
+00:01:58,000 --> 00:02:02,000
+When the pull chain is added, the two sides are reversed.
+
+41
+00:02:02,000 --> 00:02:05,000
+You can click it to switch to the same direction.
+
+42
+00:02:05,000 --> 00:02:08,000
+The pull chain can also be re-activated and frozen.
+
+43
+00:02:08,000 --> 00:02:11,000
+Control the display and hiding of the component.
+
+44
+00:02:11,000 --> 00:02:14,000
+Click on the pull head to see the pull chain.
+
+45
+00:02:14,000 --> 00:02:15,000
+Click to delete.
+
+46
+00:02:15,000 --> 00:02:17,000
+It will delete the entire pull chain.
+
+47
+00:02:17,000 --> 00:02:20,000
+The surface rotation is the same as this function of the panel.
+
+48
+00:02:20,000 --> 00:02:23,000
+The rotation can be applied to an asymmetrical pull head.
+
+49
+00:02:23,000 --> 00:02:25,000
+In the case of an asymmetrical pull head,
+
+50
+00:02:25,000 --> 00:02:28,000
+Turn it over to change the left and right states.
+
+51
+00:02:28,000 --> 00:02:31,000
+Move a pull head with a certain distance.
+
+52
+00:02:31,000 --> 00:02:35,000
+You can reset the pull head position and restore the original position.
+
+53
+00:02:35,000 --> 00:02:38,000
+The other options are the same as the pull chain.
+
+54
+00:02:38,000 --> 00:02:41,000
+The added pull chain is the default style.
+
+55
+00:02:41,000 --> 00:02:46,000
+Next, you need to modify the pull chain style and specifications according to your needs.
+
+56
+00:02:46,000 --> 00:02:49,000
+Select the pull chain in the object window.
+
+57
+00:02:49,000 --> 00:02:52,000
+In the property editor, the information can display the name of the pull chain.
+
+58
+00:02:52,000 --> 00:02:54,000
+And rename it.
+
+59
+00:02:54,000 --> 00:02:59,000
+Enter the product number, supplier and other information below.
+
+60
+00:02:59,000 --> 00:03:03,000
+The function can set the pull chain as a single or double.
+
+61
+00:03:03,000 --> 00:03:06,000
+After selecting the double, you can select the pull head direction in the direction.
+
+62
+00:03:06,000 --> 00:03:09,000
+It is double or double.
+
+63
+00:03:09,000 --> 00:03:12,000
+The type of pull chain is set as a single.
+
+64
+00:03:12,000 --> 00:03:15,000
+Click on the triangle on the right of the type.
+
+65
+00:03:15,000 --> 00:03:18,000
+The type of pull chain can be set as a vertical pull chain.
+
+66
+00:03:18,000 --> 00:03:21,000
+Metal pull chain, nylon pull chain or invisible pull chain.
+
+67
+00:03:21,000 --> 00:03:24,000
+Here, select the metal pull chain.
+
+68
+00:03:24,000 --> 00:03:28,000
+The type of pull chain can be set as a pull ruler, pull head and pull piece.
+
+69
+00:03:28,000 --> 00:03:31,000
+The type of the index can be set as an open or closed tail.
+
+70
+00:03:31,000 --> 00:03:34,000
+And set the type of upper and lower part.
+
+71
+00:03:34,000 --> 00:03:36,000
+The specifications can be selected.
+
+72
+00:03:36,000 --> 00:03:38,000
+You can also customize it.
+
+73
+00:03:38,000 --> 00:03:43,000
+Set the width, weight and thickness of the pull chain.
+
+74
+00:03:43,000 --> 00:03:46,000
+Next, start editing the material pattern of the pull chain.
+
+75
+00:03:46,000 --> 00:03:49,000
+In the 3D window, select the moving tool.
+
+76
+00:03:49,000 --> 00:03:52,000
+Select the length or length of the pull.
+
+77
+00:03:52,000 --> 00:03:57,000
+In the property editor, you can check and edit the length of the pull chain.
+
+78
+00:03:57,000 --> 00:04:00,000
+Open the pull chain.
+
+79
+00:04:00,000 --> 00:04:05,000
+After closing, simulate the pull chain to open.
+
+80
+00:04:05,000 --> 00:04:09,000
+Ctrl plus Z to restore the original state.
+
+81
+00:04:09,000 --> 00:04:12,000
+The pull chain can be maintained in the open state.
+
+82
+00:04:12,000 --> 00:04:16,000
+The following two options can be selected in the direction of the pull chain.
+
+83
+00:04:16,000 --> 00:04:18,000
+And select the pull chain to open.
+
+84
+00:04:18,000 --> 00:04:22,000
+Which side of the pull chain is the pull head?
+
+85
+00:04:22,000 --> 00:04:27,000
+The particle diameter can adjust the particle distance of the pull chain.
+
+86
+00:04:27,000 --> 00:04:33,000
+Folding is used to adjust the folding strength and angle between the pull chain and the plate.
+
+87
+00:04:33,000 --> 00:04:36,000
+Below, the material is divided into the pull ruler and the pull band.
+
+88
+00:04:36,000 --> 00:04:40,000
+They can be edited separately.
+
+89
+00:04:40,000 --> 00:04:43,000
+The type of the pull ruler, select metal.
+
+90
+00:04:43,000 --> 00:04:46,000
+Below, select the metal preset as gold.
+
+91
+00:04:46,000 --> 00:04:50,000
+The color is similar to the color of the fabric.
+
+92
+00:04:50,000 --> 00:04:52,000
+Switch to the fabric.
+
+93
+00:04:52,000 --> 00:04:54,000
+Set its color to be the same as the fabric.
+
+94
+00:04:54,000 --> 00:04:56,000
+Single pull head or pull piece.
+
+95
+00:04:56,000 --> 00:05:01,000
+Pull head, pull piece and finger will be selected together.
+
+96
+00:05:01,000 --> 00:05:05,000
+In the property editor, you can modify its material properties.
+
+97
+00:05:05,000 --> 00:05:10,000
+Adjust to gold metal that is the same as the pull chain.
+
+98
+00:05:10,000 --> 00:05:15,000
+If you want to adjust each component separately, you need to use the option to select the moving tool.
+
+99
+00:05:15,000 --> 00:05:18,000
+Click on one of the components again.
+
+100
+00:05:18,000 --> 00:05:20,000
+Just select the component.
+
+101
+00:05:20,000 --> 00:05:31,000
+By doing this, you can edit the size and material properties of the single or overall pull head component.
+
+102
+00:05:31,000 --> 00:05:35,000
+After the pull chain is completed, select the pull chain in the object window.
+
+103
+00:05:35,000 --> 00:05:39,000
+Go to the property editor, right upper corner, click Save.
+
+104
+00:05:39,000 --> 00:05:41,000
+Save it as ZPS format.
+
+105
+00:05:41,000 --> 00:05:44,000
+Drag it to the object window when applied.
+
+106
+00:05:44,000 --> 00:05:48,000
+Or select the default pull chain in the object window.
+
+107
+00:05:48,000 --> 00:05:50,000
+Open in the single property editor.
+
+108
+00:05:50,000 --> 00:05:52,000
+Select this pull chain and open it.
+
+109
+00:05:52,000 --> 00:06:01,000
+The same as ZPS format.
+
+110
+00:06:01,000 --> 00:06:03,000
+The same as ZPS format.
+
+111
+00:06:03,000 --> 00:06:04,000
+Have the same as ZPS format.
+
+112
+00:06:04,000 --> 00:06:05,000
+The same as ZPS format.
+
+113
+00:06:05,000 --> 00:06:07,000
+Select ZPS format.
+
+114
+00:06:07,000 --> 00:06:09,120
+If you go to the property editor, you will see the same as ZPS format.
+
+115
+00:06:09,120 --> 00:06:11,000
+On the left side of the screen, there is a bar.
+

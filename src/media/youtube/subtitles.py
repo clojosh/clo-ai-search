@@ -8,6 +8,14 @@ import torch
 import yt_dlp
 from faster_whisper import WhisperModel
 
+from src.media.youtube.yt_dlp_options import (
+    YOUTUBE_HTTP_HEADERS,
+    get_youtube_cookie_path,
+    print_youtube_block_hint,
+    supported_js_runtimes,
+    youtube_yt_dlp_options,
+)
+
 # Global model initialization
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 model = WhisperModel(
@@ -24,14 +32,18 @@ class SubtitleManager:
 
     def download_srt_yt_dlp(self, video_id: str):
         ydl_opts = {
+            **youtube_yt_dlp_options(),
             "writeautomaticsub": True,
             "subtitleslangs": ["en"],
             "subtitlesformat": "srt",
             "skip_download": True,
             "outtmpl": f"{self.youtube_channel_dir_path}/subtitles/%(title)s.%(ext)s",
         }
-        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-            ydl.download([f"https://www.youtube.com/watch?v={video_id}"])
+        try:
+            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                ydl.download([f"https://www.youtube.com/watch?v={video_id}"])
+        except Exception as e:
+            print_youtube_block_hint(e)
 
     def download_srt_yt_dlp_subprocess(self, video_id: str):
         """
@@ -39,7 +51,9 @@ class SubtitleManager:
         """
 
         YT_DLP_COMMAND = [
-            "yt-dlp",
+            sys.executable,
+            "-m",
+            "yt_dlp",
             "--write-subs",  # Write a subtitle file
             "--write-auto-subs",  # Write automatically generated subtitles (if available)
             "--sub-langs",
@@ -47,10 +61,30 @@ class SubtitleManager:
             "--skip-download",  # Skip downloading the video file
             "--sub-format",
             "srt",  # Convert the subtitle format to SRT
+            "--retries",
+            "3",
+            "--fragment-retries",
+            "3",
+            "--sleep-interval",
+            "2",
+            "--user-agent",
+            YOUTUBE_HTTP_HEADERS["User-Agent"],
+            "--extractor-args",
+            "youtube:player_client=web,web_safari,web_embedded",
             "-o",
             f"{self.youtube_channel_dir_path}/subtitles/%(title)s.%(ext)s",
             f"https://www.youtube.com/watch?v={video_id}",  # The target YouTube URL
         ]
+
+        cookie_path = get_youtube_cookie_path()
+        if cookie_path:
+            YT_DLP_COMMAND[3:3] = ["--cookies", cookie_path]
+
+        js_runtimes = supported_js_runtimes()
+        for runtime in reversed(js_runtimes):
+            YT_DLP_COMMAND[3:3] = ["--js-runtimes", runtime]
+        if js_runtimes:
+            YT_DLP_COMMAND[3:3] = ["--remote-components", "ejs:npm"]
 
         print("\n--- Running yt-dlp Command ---")
         # Print the command being run for transparency

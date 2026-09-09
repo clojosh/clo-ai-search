@@ -1,0 +1,764 @@
+1
+00:00:00,000 --> 00:00:20,000
+In the Kolo 2026.0 version, we have made several major updates to the depth of field part, including the hardware picture based on the fabric attribute, the depth pressure picture display effect switch, and the depth of field attribute will be stored in the project file, and so on.
+
+2
+00:00:20,000 --> 00:00:30,000
+The following will be carefully introduced to you. First is the hardware picture based on the fabric attribute. In the past, some users may feel that there is a difference between the visual information displayed on the hardware picture and the actual results.
+
+3
+00:00:30,000 --> 00:00:38,000
+Now we have improved this. By considering the physical characteristics of each type of fabric, it is easier and more intuitive to check the stretch of the fabric.
+
+4
+00:00:38,000 --> 00:00:48,000
+I will provide a detailed explanation of this through a visual document. Two types of fabrics were applied in the visual document. The middle panel was applied with a single cloth, and the side was applied with a needle fabric.
+
+5
+00:00:48,000 --> 00:00:50,000
+Now let's activate the hardware picture.
+
+6
+00:00:50,000 --> 00:00:58,000
+In the vertical menu bar of the 3D window, you will see a depth chart icon. You can see the hardware picture, hardware picture, cloth picture, and depth pressure picture.
+
+7
+00:00:58,000 --> 00:01:06,000
+We click on the hardware picture icon to activate it. After activating the hardware picture, you will see the hardware picture window at the top of the 2D window.
+
+8
+00:01:06,000 --> 00:01:12,000
+Before adjusting the detailed properties of the hardware picture, you need to set the first option to activate it in the depth attribute.
+
+9
+00:01:12,000 --> 00:01:18,000
+But in this version, the window will immediately display after activating the hardware picture. It is more convenient to adjust.
+
+10
+00:01:18,000 --> 00:01:20,000
+You can also check the new features in the hardware picture.
+
+11
+00:01:20,000 --> 00:01:24,000
+Now I will explain the difference between the two modes.
+
+12
+00:01:24,000 --> 00:01:26,000
+First, let's look at the general mode.
+
+13
+00:01:26,000 --> 00:01:30,000
+As before, the standard value of all fabrics is absolutely the same.
+
+14
+00:01:30,000 --> 00:01:34,000
+The general mode is used to objectively check the physical deformation of the fabric itself.
+
+15
+00:01:34,000 --> 00:01:36,000
+There is no need to consider the characteristics of the fabric itself.
+
+16
+00:01:36,000 --> 00:01:42,000
+The standard value of the fixed fabric can be adjusted freely and can be verified by dividing it into 8 segments.
+
+17
+00:01:42,000 --> 00:01:48,000
+When the user inputs the largest value, the system will automatically calculate the middle value between the largest and the smallest value, and divide it into 8 segment applications.
+
+18
+00:01:48,000 --> 00:01:56,000
+Therefore, if the maximum value is set to 120, all fabrics that are more than the point of deformation will be displayed as red.
+
+19
+00:01:56,000 --> 00:02:00,000
+Click on any position on the clothing to check the specific hardware value of the point.
+
+20
+00:02:00,000 --> 00:02:06,000
+Therefore, the general mode is based on the set ratio operation without considering the specific physical properties of the fabric.
+
+21
+00:02:06,000 --> 00:02:12,000
+At this time, I will manually change the maximum hardware value to 150% and simulate it.
+
+22
+00:02:12,000 --> 00:02:16,000
+You can see that the color will automatically change according to the new range.
+
+23
+00:02:16,000 --> 00:02:20,000
+Since the upper limit value has increased, the range of red has significantly decreased.
+
+24
+00:02:20,000 --> 00:02:24,000
+Change back to 120% again and simulate the same step.
+
+25
+00:02:24,000 --> 00:02:32,000
+In this mode, when the elastic fabric stretches more than 120%, there will be no problem of tightness when wearing.
+
+26
+00:02:32,000 --> 00:02:40,000
+But because its stretch value is above the set standard value, the system will often unconditionally display it as red.
+
+27
+00:02:40,000 --> 00:02:44,000
+As a result, we cannot judge its difference based on the maximum stretch strength of the fabric.
+
+28
+00:02:44,000 --> 00:02:46,000
+On the contrary, in the fabric mode, the stretch strength of the fabric is higher.
+
+29
+00:02:46,000 --> 00:02:48,000
+The standard mode shows the maximum stretch strength of the fabric.
+
+30
+00:02:48,000 --> 00:02:56,000
+Based on the stretch strength calculated by the fabric, it represents the stretch strength of the fabric that cannot continue to stretch when the outer force is increased.
+
+31
+00:02:56,000 --> 00:03:02,000
+In this way, you can check the unity of the fabric according to the maximum stretch strength of each fabric itself to ensure that the characteristics of the fabric are accurately reflected.
+
+32
+00:03:02,000 --> 00:03:04,000
+The state of the body is also clearer.
+
+33
+00:03:04,000 --> 00:03:06,000
+Now let's choose the fabric mode.
+
+34
+00:03:06,000 --> 00:03:14,000
+Similar to the general mode, the range of visualization is to divide the space between the 100% standard value and the stretch limit of each fabric into 8 segments.
+
+35
+00:03:14,000 --> 00:03:20,000
+The core difference between the 8 segments and the general mode is that there is a stretch limit area.
+
+36
+00:03:20,000 --> 00:03:28,000
+Here, the system will automatically calculate and apply the limit range according to the unique stretch characteristics of each fabric.
+
+37
+00:03:28,000 --> 00:03:30,000
+This stretch limit represents a zero-sum value.
+
+38
+00:03:30,000 --> 00:03:38,000
+In other words, you can understand it as a turning point that is not determined as too tight in the actual wear.
+
+39
+00:03:40,000 --> 00:03:42,000
+For example, as you can see,
+
+40
+00:03:42,000 --> 00:03:52,000
+the stretch limit value of the fabric is 138% in the front, 148% in the back, 146% and 157% in the front.
+
+41
+00:03:52,000 --> 00:04:00,000
+The stretch limit value of the denim fabric is 103% in the front, 102% in the back, and 112% in the back.
+
+42
+00:04:00,000 --> 00:04:04,000
+Since the stretch value of each fabric is different, the simulation results are also different from the general standard.
+
+43
+00:04:04,000 --> 00:04:08,000
+Let's run the simulation and check the results.
+
+44
+00:04:08,000 --> 00:04:10,000
+Now you can see that it is different from the general mode.
+
+45
+00:04:10,000 --> 00:04:12,000
+Now you can see that it is different from the general mode.
+
+46
+00:04:12,000 --> 00:04:14,000
+The simulation results are different from the general mode.
+
+47
+00:04:14,000 --> 00:04:18,000
+The elasticity of the denim fabric used in the chest area is less, and it has stretched to the limit.
+
+48
+00:04:18,000 --> 00:04:22,000
+Therefore, the area will display a tight state with a straight red bar.
+
+49
+00:04:22,000 --> 00:04:26,000
+In contrast, the fabric of high elasticity needle needs to be stretched more to reach its limit.
+
+50
+00:04:26,000 --> 00:04:32,000
+Therefore, in the clothes, it has not stretched to the limit, which shows a straight blue bar that means that it is in a state where it is loose and not tight.
+
+51
+00:04:32,000 --> 00:04:38,000
+But if you modify its physical properties after fabric application, the hardware photo will not apply these modifications in real time.
+
+52
+00:04:38,000 --> 00:04:40,000
+Therefore, it must be refreshed once.
+
+53
+00:04:40,000 --> 00:04:44,800
+For example, if you replace the fabric with a different fabric or adjust its physical properties,
+
+54
+00:04:44,800 --> 00:04:52,600
+you can press the refresh button on the top right corner of the fabric to update it with the stretch value of the changed fabric.
+
+55
+00:04:52,600 --> 00:04:55,600
+After opening the simulation, check the hard change of the new fabric,
+
+56
+00:04:55,600 --> 00:05:03,899
+because the stretch and limit value of this fabric are larger, so most areas are displayed as blue.
+
+57
+00:05:03,899 --> 00:05:07,899
+You can also manually change the stretch limit.
+
+58
+00:05:10,000 --> 00:05:17,000
+Press this button to restore the original value.
+
+59
+00:05:17,000 --> 00:05:22,000
+To refresh the stretch value of all fabrics, please press the refresh button at the top.
+
+60
+00:05:22,000 --> 00:05:24,000
+Below is the display type modifier.
+
+61
+00:05:24,000 --> 00:05:28,000
+Allow you to set the hard change distribution state to the style you like.
+
+62
+00:05:28,000 --> 00:05:31,000
+It is roughly divided into gradient and area.
+
+63
+00:05:31,000 --> 00:05:37,000
+If you need to clearly distinguish the distribution of each area, you can switch to the area type for inspection.
+
+64
+00:05:37,000 --> 00:05:40,000
+There are three ways to display each type.
+
+65
+00:05:40,000 --> 00:05:42,000
+For example, grid surface and peak.
+
+66
+00:05:42,000 --> 00:05:50,000
+Therefore, you can freely choose to check the type of hard change distribution.
+
+67
+00:05:50,000 --> 00:05:54,000
+Next, let's take a look at the hard change information function.
+
+68
+00:05:54,000 --> 00:06:01,000
+This function allows you to immediately check the detailed values ​​in the 3D window.
+
+69
+00:06:01,000 --> 00:06:05,000
+Let's click on a specific point in 3D clothing.
+
+70
+00:06:05,000 --> 00:06:09,000
+You will see a hard change information window appear along the mouse cursor.
+
+71
+00:06:09,000 --> 00:06:10,000
+I will explain it carefully.
+
+72
+00:06:10,000 --> 00:06:12,000
+The first is the leading direction.
+
+73
+00:06:12,000 --> 00:06:16,000
+It shows the closest to the largest hard change direction on the selected point.
+
+74
+00:06:16,000 --> 00:06:19,000
+This is a indicator used to tell you about the effect of the fabric.
+
+75
+00:06:19,000 --> 00:06:21,000
+The limit value of the tail or shoes.
+
+76
+00:06:21,000 --> 00:06:23,000
+Which direction is the largest stretch?
+
+77
+00:06:23,000 --> 00:06:27,000
+The actual stretch rate below it is an absolute value.
+
+78
+00:06:27,000 --> 00:06:30,000
+It shows the extent of the actual stretch in the leading direction of the fabric.
+
+79
+00:06:30,000 --> 00:06:31,000
+And the stretch rate.
+
+80
+00:06:31,000 --> 00:06:35,000
+In the current market, the stretch rate of the fabric on the tail is the largest.
+
+81
+00:06:35,000 --> 00:06:37,000
+And the direction is the largest stretch.
+
+82
+00:06:37,000 --> 00:06:41,000
+We can confirm that the stretch rate is about 111%.
+
+83
+00:06:41,000 --> 00:06:42,000
+Next is the strength.
+
+84
+00:06:42,000 --> 00:06:45,000
+The value indicates the size of the force at which the point is used.
+
+85
+00:06:45,000 --> 00:06:50,000
+By percentage, it means that in this force, the maximum stretch rate of the fabric at the tail is 130%.
+
+86
+00:06:50,000 --> 00:06:53,000
+This means that 23% of the force is added.
+
+87
+00:06:53,000 --> 00:06:59,000
+The maximum stretch rate is 130% of the fabric stretched to 111%.
+
+88
+00:06:59,000 --> 00:07:03,000
+Click on other positions to see the corresponding hard change information.
+
+89
+00:07:07,000 --> 00:07:11,000
+Switch back to the normal mode.
+
+90
+00:07:11,000 --> 00:07:13,000
+You can use any mode according to the situation.
+
+91
+00:07:13,000 --> 00:07:16,000
+But remember to re-model after switching to the mode.
+
+92
+00:07:16,000 --> 00:07:19,000
+In addition, this function is currently only used for VR fabric.
+
+93
+00:07:19,000 --> 00:07:24,000
+The relevant content of VR fabric has been introduced in the previous 7.3 version of the new function.
+
+94
+00:07:24,000 --> 00:07:27,000
+The second half of the fabric generator function explanation is introduced.
+
+95
+00:07:27,000 --> 00:07:30,000
+Therefore, referring to this video may be of help to you.
+
+96
+00:07:30,000 --> 00:07:33,000
+We will attach the video link in the comment section.
+
+97
+00:07:33,000 --> 00:07:36,000
+Use the fabric mode of the hard change after improvement.
+
+98
+00:07:36,000 --> 00:07:39,000
+To be able to clearly reflect the simulation effect of each fabric characteristic.
+
+99
+00:07:39,000 --> 00:07:43,000
+Please try to use this function in the new version to check the body effect.
+
+100
+00:07:48,000 --> 00:07:53,000
+In the 2026.0 version, a smooth display function has been added.
+
+101
+00:07:53,000 --> 00:07:56,000
+This function can more clearly show the clothes and models.
+
+102
+00:07:56,000 --> 00:07:58,000
+Or, for example, between the seats.
+
+103
+00:07:58,000 --> 00:08:00,000
+In the state of close contact.
+
+104
+00:08:00,000 --> 00:08:03,000
+Let's see how it works.
+
+105
+00:08:03,000 --> 00:08:05,000
+First of all, find the clothes.
+
+106
+00:08:05,000 --> 00:08:08,000
+This is the depth attribute setting.
+
+107
+00:08:08,000 --> 00:08:11,000
+See the depth pressure option.
+
+108
+00:08:11,000 --> 00:08:15,000
+You can see that a smooth selection has been added here.
+
+109
+00:08:15,000 --> 00:08:17,000
+In the previous version.
+
+110
+00:08:17,000 --> 00:08:19,000
+This function is not considered to be always open.
+
+111
+00:08:19,000 --> 00:08:22,000
+But in the 2026.0 version.
+
+112
+00:08:22,000 --> 00:08:26,000
+You can manually open or close it according to your needs.
+
+113
+00:08:26,000 --> 00:08:27,000
+As shown in the picture.
+
+114
+00:08:27,000 --> 00:08:29,000
+When the smooth function is turned on.
+
+115
+00:08:29,000 --> 00:08:33,000
+The points and the surrounding points will be displayed in gradient colors.
+
+116
+00:08:33,000 --> 00:08:34,000
+This means.
+
+117
+00:08:34,000 --> 00:08:37,000
+Even if the value of some points is not within the range of the setting.
+
+118
+00:08:37,000 --> 00:08:39,000
+It may also be displayed in color.
+
+119
+00:08:39,000 --> 00:08:43,000
+Can help you more objectively determine the trend of matching clothes and models.
+
+120
+00:08:43,000 --> 00:08:45,000
+If the smoothness is not turned on.
+
+121
+00:08:45,000 --> 00:08:48,000
+The points that are not in the defined range will not display color.
+
+122
+00:08:48,000 --> 00:08:52,000
+That is, only points that are in line with the value will be colored.
+
+123
+00:08:52,000 --> 00:08:54,000
+You can quickly lock the source of the problem.
+
+124
+00:08:54,000 --> 00:08:58,000
+It can also determine the range of space between clothes and models.
+
+125
+00:08:58,000 --> 00:09:02,000
+Now let's go through the adjustment settings to learn more about this function.
+
+126
+00:09:02,000 --> 00:09:04,000
+First, turn off the smooth option.
+
+127
+00:09:04,000 --> 00:09:09,000
+At this time, the mid-range value is set to 0.1000p.
+
+128
+00:09:09,000 --> 00:09:11,000
+Open the simulation.
+
+129
+00:09:11,000 --> 00:09:14,000
+It can be observed that only the pressure value reaches 0.1000p.
+
+130
+00:09:14,000 --> 00:09:17,000
+The points of contact above the level will show color.
+
+131
+00:09:17,000 --> 00:09:23,000
+The middle area does not show color because the clothes and models have no contact with the gap.
+
+132
+00:09:23,000 --> 00:09:26,000
+Open the smooth.
+
+133
+00:09:26,000 --> 00:09:28,000
+You will find that it is not only the target point.
+
+134
+00:09:28,000 --> 00:09:32,000
+Even the surrounding points will be displayed in gradient colors.
+
+135
+00:09:32,000 --> 00:09:34,000
+It simulates the expansion of physical pressure.
+
+136
+00:09:34,000 --> 00:09:39,000
+Make the trend of affected areas more clear and intuitive.
+
+137
+00:09:39,000 --> 00:09:41,000
+In the 2026.0 version.
+
+138
+00:09:41,000 --> 00:09:43,000
+Users can combine the needs.
+
+139
+00:09:43,000 --> 00:09:46,000
+Flexible control of the open and close of the smooth function.
+
+140
+00:09:46,000 --> 00:09:49,000
+More objectively inspect the gap between models and clothes.
+
+141
+00:09:49,000 --> 00:09:57,000
+The establishment of the situation and the possibility of existence.
+
+142
+00:09:57,000 --> 00:09:59,000
+In the 2026.0 version.
+
+143
+00:09:59,000 --> 00:10:05,000
+The hard drawing, hard change drawing and the deep drawing are both shown directly on the 2D version.
+
+144
+00:10:05,000 --> 00:10:08,000
+Let's use an example to understand this function.
+
+145
+00:10:08,000 --> 00:10:13,000
+First, go to the vertical menu bar on the left side of the 3D window.
+
+146
+00:10:13,000 --> 00:10:16,000
+Open the deep drawing option and select the hard drawing.
+
+147
+00:10:16,000 --> 00:10:21,000
+After activation, the 3D clothing will be strong and weak in terms of the pressure of the fabric.
+
+148
+00:10:21,000 --> 00:10:24,000
+Show different color distribution.
+
+149
+00:10:24,000 --> 00:10:26,000
+At the same time, you will observe.
+
+150
+00:10:26,000 --> 00:10:28,000
+These pressure data are also reflected in the same way.
+
+151
+00:10:28,000 --> 00:10:32,000
+It is also reflected on the 2D window version.
+
+152
+00:10:32,000 --> 00:10:35,000
+When you switch to the hard drawing or test drawing.
+
+153
+00:10:35,000 --> 00:10:39,000
+The data in the 2D and 3D windows will be updated at the same time.
+
+154
+00:10:39,000 --> 00:10:41,000
+This can help you on the 2D version.
+
+155
+00:10:41,000 --> 00:10:46,000
+Quickly and accurately lock hard drawing larger or pressure concentrated areas.
+
+156
+00:10:46,000 --> 00:10:48,000
+Through this method.
+
+157
+00:10:48,000 --> 00:10:50,000
+You can judge the version more objectively.
+
+158
+00:10:50,000 --> 00:10:52,000
+Where exactly needs to be adjusted.
+
+159
+00:10:52,000 --> 00:10:55,000
+This update really breaks the boundary of space and dimension.
+
+160
+00:10:55,000 --> 00:10:57,000
+Ensure that your 3D body analysis results.
+
+161
+00:10:57,000 --> 00:11:02,000
+Can be directly and accurately converted to the 2D sample modification basis.
+
+162
+00:11:07,000 --> 00:11:10,000
+In the 2026.0 version.
+
+163
+00:11:10,000 --> 00:11:14,000
+You can now save the depth property directly in the ZPRJ file.
+
+164
+00:11:14,000 --> 00:11:18,000
+This means that your feature is that the depth setting will be tied to the clothing.
+
+165
+00:11:18,000 --> 00:11:21,000
+Ensure that the team members are cooperating.
+
+166
+00:11:21,000 --> 00:11:24,000
+Can be checked based on completely unified visual standards.
+
+167
+00:11:24,000 --> 00:11:26,000
+First go to the 3D window.
+
+168
+00:11:26,000 --> 00:11:29,000
+The vertical menu bar on the left side.
+
+169
+00:11:29,000 --> 00:11:33,000
+Open the depth option and select hard drawing.
+
+170
+00:11:33,000 --> 00:11:36,000
+Although this update is suitable for all depth.
+
+171
+00:11:36,000 --> 00:11:37,000
+But in this demonstration.
+
+172
+00:11:37,000 --> 00:11:40,000
+We use hard drawing as an example.
+
+173
+00:11:40,000 --> 00:11:42,000
+In the window settings.
+
+174
+00:11:42,000 --> 00:11:49,000
+We will adjust the range from 120% to 140%.
+
+175
+00:11:49,000 --> 00:11:51,000
+Open the simulation.
+
+176
+00:11:51,000 --> 00:11:54,000
+You will see the color in the 3D window.
+
+177
+00:11:54,000 --> 00:11:55,000
+Immediately update.
+
+178
+00:11:55,000 --> 00:12:00,000
+To reflect your default value.
+
+179
+00:12:00,000 --> 00:12:03,000
+Now just click on the file to save as a project.
+
+180
+00:12:03,000 --> 00:12:08,000
+The default standard has also been directly stored in the file.
+
+181
+00:12:08,000 --> 00:12:11,000
+Open the project file again.
+
+182
+00:12:11,000 --> 00:12:14,000
+The hard drawing will display the state you saved last time.
+
+183
+00:12:14,000 --> 00:12:18,000
+No need to adjust it twice.
+
+184
+00:12:18,000 --> 00:12:21,000
+Our platform Closet also supports the check hard drawing.
+
+185
+00:12:21,000 --> 00:12:23,000
+These data can be perfectly synchronized with Closet.
+
+186
+00:12:23,000 --> 00:12:25,000
+Once you upload the file.
+
+187
+00:12:25,000 --> 00:12:29,000
+The test drawing settings on the platform will automatically match your custom settings.
+
+188
+00:12:29,000 --> 00:12:32,000
+Through the 2026.0 version.
+
+189
+00:12:32,000 --> 00:12:36,000
+You can experience the seamless synchronization of the data in the project file.
+
+190
+00:12:36,000 --> 00:12:39,000
+And ensure that the visual consistency is maintained on Closet.
+
+191
+00:12:39,000 --> 00:12:43,000
+This is a more intelligent way of managing and sharing the standard of the test drawing.
+

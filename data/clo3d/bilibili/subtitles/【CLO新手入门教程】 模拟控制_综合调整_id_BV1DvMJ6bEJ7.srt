@@ -1,0 +1,644 @@
+1
+00:00:00,000 --> 00:00:04,000
+In this section, we are doing a comprehensive practice.
+
+2
+00:00:04,000 --> 00:00:10,000
+Open and adjust the leisure package file.
+
+3
+00:00:10,000 --> 00:00:15,000
+There are currently many simulation problems on this leisure package.
+
+4
+00:00:15,000 --> 00:00:17,000
+Let's pay attention to the solution.
+
+5
+00:00:17,000 --> 00:00:22,000
+Before we do specific operations, let's first reduce the quality of the clothing.
+
+6
+00:00:22,000 --> 00:00:24,000
+Select one of the panels.
+
+7
+00:00:24,000 --> 00:00:28,000
+You can see that the particle diameter of the panel is now 5 mm.
+
+8
+00:00:28,000 --> 00:00:32,000
+We can control plus a to select all panels.
+
+9
+00:00:32,000 --> 00:00:36,000
+Change the particle diameter of the panel to 12 mm.
+
+10
+00:00:36,000 --> 00:00:41,000
+To increase the simulation speed, you can choose to manually modify the particle diameter.
+
+11
+00:00:41,000 --> 00:00:47,000
+You can also use the reduce quality tool to reduce the quality.
+
+12
+00:00:47,000 --> 00:00:50,000
+Long press the increase quality tool.
+
+13
+00:00:50,000 --> 00:00:53,000
+You can switch to the reduce quality tool.
+
+14
+00:00:53,000 --> 00:00:57,000
+The reduce quality tool will default to reduce the particle diameter of all panels.
+
+15
+00:00:57,000 --> 00:00:58,000
+Reduce the quality tool.
+
+16
+00:00:58,000 --> 00:01:00,000
+Reduce to 20 mm.
+
+17
+00:01:00,000 --> 00:01:02,000
+Reduce the conflict thickness to 2.5 mm.
+
+18
+00:01:02,000 --> 00:01:05,000
+The model surface is changed to 3 mm.
+
+19
+00:01:05,000 --> 00:01:10,000
+The reduced specific value can also be manually modified.
+
+20
+00:01:10,000 --> 00:01:14,000
+First, let's deal with the most obvious sleeve wear problem.
+
+21
+00:01:14,000 --> 00:01:17,000
+On the left side, find the selection grid tool.
+
+22
+00:01:17,000 --> 00:01:22,000
+First, locate the part of the frame selection arm wear in the 3D window.
+
+23
+00:01:22,000 --> 00:01:25,000
+Find the target grid area that is blocked.
+
+24
+00:01:25,000 --> 00:01:27,000
+Do the frame selection.
+
+25
+00:01:27,000 --> 00:01:30,000
+Press ctrl plus shift to select.
+
+26
+00:01:30,000 --> 00:01:33,000
+Press ctrl to select.
+
+27
+00:01:33,000 --> 00:01:34,000
+After selecting,
+
+28
+00:01:34,000 --> 00:01:36,000
+In the 3D window,
+
+29
+00:01:36,000 --> 00:01:37,000
+In the green grid area,
+
+30
+00:01:37,000 --> 00:01:39,000
+Press the left button.
+
+31
+00:01:39,000 --> 00:01:40,000
+Remove the positioning ball.
+
+32
+00:01:40,000 --> 00:01:41,000
+Turn to the right angle.
+
+33
+00:01:41,000 --> 00:01:43,000
+Use the axis of the positioning ball.
+
+34
+00:01:43,000 --> 00:01:46,000
+Push this part of the grid out.
+
+35
+00:01:46,000 --> 00:01:48,000
+Let it wrap its arm again.
+
+36
+00:01:48,000 --> 00:01:51,000
+Then press the control button to simulate.
+
+37
+00:01:51,000 --> 00:01:54,000
+The wear part is repaired.
+
+38
+00:01:54,000 --> 00:01:55,000
+Next,
+
+39
+00:01:55,000 --> 00:01:57,000
+Look at the bottom of the left front piece.
+
+40
+00:01:57,000 --> 00:01:59,000
+This is a folding structure.
+
+41
+00:01:59,000 --> 00:02:05,000
+Now the folding part on the inside should have come out.
+
+42
+00:02:05,000 --> 00:02:08,000
+We also use the selection grid tool.
+
+43
+00:02:08,000 --> 00:02:11,000
+Select the grid on the bottom right side.
+
+44
+00:02:11,000 --> 00:02:13,000
+Push a little in.
+
+45
+00:02:13,000 --> 00:02:15,000
+Note that there are pants below.
+
+46
+00:02:15,000 --> 00:02:17,000
+Don't push too much.
+
+47
+00:02:17,000 --> 00:02:19,000
+Or reverse the frame selection.
+
+48
+00:02:19,000 --> 00:02:21,000
+It should be on the outer grid.
+
+49
+00:02:21,000 --> 00:02:23,000
+Pull it out.
+
+50
+00:02:25,000 --> 00:02:28,000
+The back side is also treated.
+
+51
+00:02:28,000 --> 00:02:29,000
+The back side is also treated.
+
+52
+00:02:29,000 --> 00:02:32,000
+The back side is also treated.
+
+53
+00:02:32,000 --> 00:02:35,000
+The back side is also treated.
+
+54
+00:02:35,000 --> 00:02:37,000
+The back side is also treated.
+
+55
+00:02:38,000 --> 00:02:40,000
+After the volume and sleeve are adjusted,
+
+56
+00:02:40,000 --> 00:02:42,000
+You can see the hat below.
+
+57
+00:02:42,000 --> 00:02:45,000
+The hat has an obvious shake when simulated.
+
+58
+00:02:45,000 --> 00:02:48,000
+This means that there may be a wear condition here.
+
+59
+00:02:48,000 --> 00:02:50,000
+You can check it by selecting the plate.
+
+60
+00:02:50,000 --> 00:02:54,000
+You can find that the side part of the wear is outside.
+
+61
+00:02:54,000 --> 00:02:57,000
+Then the glueing edges of these three pieces are problematic.
+
+62
+00:02:57,000 --> 00:03:11,000
+We can choose all the glue edges from the 2D window and add them to the 3D version.
+
+63
+00:03:11,000 --> 00:03:13,000
+Then, in simulation mode,
+
+64
+00:03:13,000 --> 00:03:18,000
+Pull the hat down with your small hand.
+
+65
+00:03:18,000 --> 00:03:20,000
+Use the hand to hold the hat down.
+
+66
+00:03:20,000 --> 00:03:22,000
+Use the hand to hold the hat down.
+
+67
+00:03:22,000 --> 00:03:29,000
+If you pass the film again during the process, you can redo the operation of adding the right-click to the inside.
+
+68
+00:03:33,000 --> 00:03:40,000
+There is a small plate at the entrance, which should normally be hooked to the other side, but now there is no fixation.
+
+69
+00:03:40,000 --> 00:03:47,000
+We can use the fake sewing tool to fix it directly to the corresponding plate with a dot.
+
+70
+00:03:47,000 --> 00:03:59,000
+If the position of the click in the 3D window is not accurate enough, you can use the editor's fake sewing tool to adjust the point at the 2D window to make the simulation effect more natural.
+
+71
+00:04:02,000 --> 00:04:10,000
+Then we check again whether the clothes are correct, such as whether the gap between the collar and the side is even, and whether the shoulder line is high or low on both sides.
+
+72
+00:04:10,000 --> 00:04:15,000
+Now we find that the whole top is a little slanted to the left and right.
+
+73
+00:04:16,000 --> 00:04:17,000
+You can double-click to select.
+
+74
+00:04:18,000 --> 00:04:23,000
+Under the front view, use the circle of the positioning ball to rotate the whole.
+
+75
+00:04:24,000 --> 00:04:29,000
+After rotating, in order to avoid the simulation, the clothes and pants are not stable.
+
+76
+00:04:29,000 --> 00:04:31,000
+We can select the top one.
+
+77
+00:04:32,000 --> 00:04:36,000
+On the right side, the layer in the attribute editor is changed from 0 to 1.
+
+78
+00:04:37,000 --> 00:04:45,000
+For the first time, there will be a pop-up prompt to indicate that all non-0-layer panels will display the light and light ratio to identify.
+
+79
+00:04:45,000 --> 00:04:47,000
+It can be set without a prompt.
+
+80
+00:04:47,000 --> 00:04:49,000
+Just click Yes.
+
+81
+00:04:50,000 --> 00:04:54,000
+Under default status, all the layers of the panels are 0.
+
+82
+00:04:54,000 --> 00:04:59,000
+Now the layer of the top 1 panel is 1, which is the outer layer of the pants.
+
+83
+00:05:00,000 --> 00:05:03,000
+After modifying the layer, press the control button to simulate.
+
+84
+00:05:05,000 --> 00:05:14,000
+If it is still left and right slanted, you can double-click again to select the whole piece of clothing, rotate it, and then simulate until the clothes are correct.
+
+85
+00:05:16,000 --> 00:05:21,000
+Then press the shortcut keys 4 or 6 to cut to the side view.
+
+86
+00:05:22,000 --> 00:05:23,000
+Find that the whole is slanted backwards.
+
+87
+00:05:24,000 --> 00:05:26,000
+The front and back of the bottom are off.
+
+88
+00:05:27,000 --> 00:05:29,000
+Similarly, double-click to select the whole piece of clothing.
+
+89
+00:05:30,000 --> 00:05:34,000
+Under the side view, use the positioning ball to rotate it forward.
+
+90
+00:05:35,000 --> 00:05:38,000
+After rotating to a certain angle, open the simulation.
+
+91
+00:05:42,000 --> 00:05:44,000
+You can rotate it again until it is adjusted.
+
+92
+00:05:44,000 --> 00:05:57,000
+If you find that the button on the pants has come out, you can select the button and push it in.
+
+93
+00:05:58,000 --> 00:06:06,000
+Or to prevent the button and pants from wearing out, you can select two front pieces and push them out to cover the button.
+
+94
+00:06:07,000 --> 00:06:09,000
+Then simulate.
+
+95
+00:06:10,000 --> 00:06:16,000
+After adjusting the balance of the clothes, double-click again to select the whole piece of clothing, rotate the layer back to 0.
+
+96
+00:06:17,000 --> 00:06:22,000
+In addition, for the left and right parallel panels, you can align them.
+
+97
+00:06:23,000 --> 00:06:24,000
+For example, the sleeves.
+
+98
+00:06:25,000 --> 00:06:27,000
+Assuming that the sleeves on the right side simulate better,
+
+99
+00:06:28,000 --> 00:06:36,000
+you can directly select the parallel panel pattern on the left panel and copy the good pattern on the right side to the other side.
+
+100
+00:06:36,000 --> 00:06:46,000
+This technique is also applicable when we first adjust the sleeves to deal with the partial wear and tear of the symmetrical panel.
+
+101
+00:06:47,000 --> 00:06:49,000
+Finally, for the top.
+
+102
+00:06:50,000 --> 00:06:53,000
+Since the fabric of this top is a different color on the front and back,
+
+103
+00:06:54,000 --> 00:06:57,000
+then for the hat side, we can select all the sides.
+
+104
+00:06:58,000 --> 00:07:01,000
+On 3D, right-click to select the surface to rotate.
+
+105
+00:07:02,000 --> 00:07:04,000
+Switch the front and back of the fabric.
+
+106
+00:07:06,000 --> 00:07:08,000
+Then select the top and bottom.
+
+107
+00:07:09,000 --> 00:07:10,000
+Then select the top and bottom.
+
+108
+00:07:11,000 --> 00:07:12,000
+Then select the top and bottom.
+
+109
+00:07:13,000 --> 00:07:15,000
+After the top is adjusted,
+
+110
+00:07:16,000 --> 00:07:20,000
+double-click to select the pants, and click the selection tool on the left.
+
+111
+00:07:21,000 --> 00:07:25,000
+In this way, the picture only shows this pants, which is convenient for us to check the problem.
+
+112
+00:07:26,000 --> 00:07:28,000
+Since the color of this pants is darker,
+
+113
+00:07:29,000 --> 00:07:32,000
+we can switch the clothing dye type to black and white surface,
+
+114
+00:07:33,000 --> 00:07:34,000
+which can be seen more clearly.
+
+115
+00:07:34,000 --> 00:07:38,000
+And we can distinguish the front and back of the fabric.
+
+116
+00:07:39,000 --> 00:07:42,000
+First, we found that the sewing direction on the pants is reversed.
+
+117
+00:07:43,000 --> 00:07:45,000
+We need to use the edit sewing line tool.
+
+118
+00:07:46,000 --> 00:07:48,000
+Select the short purple sewing line above.
+
+119
+00:07:49,000 --> 00:07:51,000
+Right-click to select the change sewing line.
+
+120
+00:07:52,000 --> 00:07:54,000
+Then switch back to the select the move tool.
+
+121
+00:07:55,000 --> 00:07:58,000
+On the panel of the pants, right-click to add to the outside.
+
+122
+00:08:00,000 --> 00:08:02,000
+Re-model.
+
+123
+00:08:04,000 --> 00:08:05,000
+Next, we see the hem.
+
+124
+00:08:06,000 --> 00:08:07,000
+Select the hem.
+
+125
+00:08:08,000 --> 00:08:10,000
+We will find that the hem of the hem is outside.
+
+126
+00:08:11,000 --> 00:08:13,000
+We can use the setting layer tool.
+
+127
+00:08:14,000 --> 00:08:15,000
+Select the outer pants first.
+
+128
+00:08:16,000 --> 00:08:18,000
+Then select the hem of the hem inside.
+
+129
+00:08:19,000 --> 00:08:20,000
+After setting the layer,
+
+130
+00:08:21,000 --> 00:08:22,000
+press the control button to simulate,
+
+131
+00:08:23,000 --> 00:08:24,000
+it will go back to the inside.
+
+132
+00:08:25,000 --> 00:08:28,000
+If there is still a little bit of wear or unevenness inside,
+
+133
+00:08:29,000 --> 00:08:30,000
+you can select the pants.
+
+134
+00:08:31,000 --> 00:08:33,000
+Right-click to hide the 3D pattern.
+
+135
+00:08:33,000 --> 00:08:35,000
+Press the shift key to shift plus q.
+
+136
+00:08:36,000 --> 00:08:38,000
+You can use the hardening tool.
+
+137
+00:08:39,000 --> 00:08:40,000
+When modeling,
+
+138
+00:08:41,000 --> 00:08:44,000
+pull the small hem pattern straight.
+
+139
+00:08:46,000 --> 00:08:47,000
+After adjustment,
+
+140
+00:08:48,000 --> 00:08:49,000
+remove the hardening of the hem pattern.
+
+141
+00:08:51,000 --> 00:08:53,000
+Then press shift plus w
+
+142
+00:08:54,000 --> 00:08:55,000
+to display all the patterns.
+
+143
+00:09:00,000 --> 00:09:02,000
+So this pants is also adjusted.
+
+144
+00:09:04,000 --> 00:09:05,000
+After adjustment,
+
+145
+00:09:05,000 --> 00:09:07,000
+the pants will be restored to a dense pattern surface display.
+
+146
+00:09:08,000 --> 00:09:10,000
+Finally, click again to isolate the selection,
+
+147
+00:09:10,000 --> 00:09:12,000
+display all the clothes and models,
+
+148
+00:09:13,000 --> 00:09:14,000
+and conduct a general inspection.
+
+149
+00:09:15,000 --> 00:09:16,000
+After confirming the adjustment,
+
+150
+00:09:17,000 --> 00:09:18,000
+use the increase quality tool to increase the quality,
+
+151
+00:09:19,000 --> 00:09:20,000
+and simulate again.
+
+152
+00:09:21,000 --> 00:09:23,000
+The tools used by 2D are switched back and forth.
+
+153
+00:09:24,000 --> 00:09:25,000
+After the adjustment is completed,
+
+154
+00:09:26,000 --> 00:09:28,000
+use the increase quality tool to increase the quality,
+
+155
+00:09:29,000 --> 00:09:30,000
+and simulate again.
+
+156
+00:09:30,000 --> 00:09:34,000
+The tools used by 2D are switched back and forth to adjust the pattern.
+
+157
+00:09:35,000 --> 00:09:36,000
+Finally,
+
+158
+00:09:36,000 --> 00:09:37,000
+under the increase quality,
+
+159
+00:09:37,000 --> 00:09:39,000
+you can optimize the adjustment details.
+
+160
+00:09:41,000 --> 00:09:42,000
+So,
+
+161
+00:09:42,000 --> 00:09:45,000
+the comprehensive adjustment of this leisure suit is completed.
+

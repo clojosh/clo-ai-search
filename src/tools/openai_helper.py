@@ -35,24 +35,85 @@ class OpenAIHelper:
         self.AZURE_OPENAI_EMB_DEPLOYMENT = AZURE_OPENAI_EMB_DEPLOYMENT
         self.language = language
 
+    def _create_chat_completion(self, *, max_tokens: int, **kwargs):
+        return self.openai_client.chat.completions.create(
+            **kwargs,
+            max_completion_tokens=max_tokens,
+        )
+
     def get_transcript_prompt(self, title: str, transcript: str) -> str:
         return f"""
-### ROLE
-You are an expert Content Engineer specializing in NLP and RAG (Retrieval-Augmented Generation) data preparation.
+    ### ROLE
 
-### TASK
-Transform the provided raw YouTube transcript into a high-quality, structured Markdown document optimized for semantic search and vector embeddings.
+    You are an expert Content Engineer specializing in NLP and RAG
+    (Retrieval-Augmented Generation) data preparation.
 
-### VIDEO CONTEXT
-Title: {title}
+    ### TASK
 
-### INSTRUCTIONS
-1. CLEAN & PUNCTUATE: Correct obvious transcription errors, add proper punctuation, and capitalize where necessary. Do not summarize; keep the original intent and voice.
-2. SEMANTIC CHUNKING: Break the text into logical sections using Markdown headers (##, ###). Each section should represent a single cohesive idea or topic. 
-3. Preserve Technical Terms: Ensure all industry-specific jargon, brand names, and technical specs are spelled correctly for accurate keyword matching.
+    Transform the provided raw YouTube transcript into a concise, structured
+    Markdown knowledge document optimized for semantic search and vector embeddings.
 
-### Transcript:
-{transcript}"""
+    ### VIDEO CONTEXT
+
+    Title: {title}
+
+    ### INSTRUCTIONS
+
+    1. CLEAN & PUNCTUATE
+    Correct obvious transcription errors, punctuation, capitalization, and grammar.
+
+    2. LIGHTLY COMPRESS
+    Remove filler words, repeated statements, unnecessary conversational language,
+    off-topic tangents, introductions, outros, calls to action, and sponsor segments.
+
+    Condense repetitive explanations while preserving all meaningful information.
+
+    Do NOT reduce the transcript to a high-level summary.
+
+    3. PRESERVE INFORMATION
+    Retain:
+    - Important facts and claims
+    - Technical explanations
+    - Examples
+    - Procedures and instructions
+    - Numbers, measurements, dates, and specifications
+    - Product, company, and technology names
+    - Important warnings, caveats, and limitations
+
+    4. SEMANTIC CHUNKING
+    Break the content into logical sections using descriptive Markdown headers
+    (## and ###).
+
+    Each section should focus on one cohesive topic and should be understandable
+    without requiring excessive context from previous sections.
+
+    Prefer sections of approximately 200-500 words when practical.
+
+    5. SECTION SUMMARIES
+    Begin each major section with a concise 1-2 sentence explanation of what the
+    section covers. This should contain the important terminology someone might
+    use when searching for this information.
+
+    6. PRESERVE TECHNICAL TERMS
+    Ensure industry-specific terminology, brand names, software names, commands,
+    technical specifications, and acronyms are spelled correctly.
+
+    7. REMOVE TRANSCRIPT ARTIFACTS
+    Remove timestamps, false starts, verbal fillers, repeated phrases, and
+    transcription artifacts unless they contain meaningful information.
+
+    ### OUTPUT REQUIREMENTS
+
+    Return only the cleaned and structured Markdown document.
+
+    Do not mention these instructions.
+
+    Do not use the word "markdown" anywhere in the returned document.
+
+    ### TRANSCRIPT
+
+    {transcript}
+    """
 
     def get_translation_prompt(self, text: str, target_language: str) -> str:
         return f"""### ROLE
@@ -119,7 +180,7 @@ Translate the provided text into {target_language} while preserving the original
         ]
 
         # Use the OpenAI API to generate the questions
-        chat_completion = self.openai_client.chat.completions.create(
+        chat_completion = self._create_chat_completion(
             model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT,
             messages=messages,
             temperature=0.7,
@@ -143,14 +204,14 @@ Translate the provided text into {target_language} while preserving the original
     @retry(wait=wait_random_exponential(min=1, max=20), stop=stop_after_attempt(6))
     def generate_structured_transcript(self, title: str, transcript: str) -> str:
         """
-        Summarize a transcript
+        Generate structured content from a transcript.
 
         Args:
             title (str): The title of the video
-            transcript (str): The text of the transcript to summarize
+            transcript (str): The text of the transcript
 
         Returns:
-            str: A summary of the transcript
+            str: Structured content from the transcript
         """
 
         # If the transcript is too long, trim it to a length that OpenAI can handle
@@ -167,18 +228,19 @@ Translate the provided text into {target_language} while preserving the original
             }
         ]
 
-        # Ask the AI to generate a summary
-        chat_completion = self.openai_client.chat.completions.create(model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0.7, max_tokens=2000, n=1)
+        # Ask the AI to generate structured content.
+        chat_completion = self._create_chat_completion(model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0.7, max_tokens=2000, n=1)
 
-        # Extract the summary from the response
-        summary = chat_completion.choices[0].message.content
-        if not summary:
+        # Extract the structured content from the response.
+        structured_content = chat_completion.choices[0].message.content
+        if not structured_content:
             return ""
 
-        summary = re.sub(r"\n+", " ", summary)
-        summary = re.sub(r"\s+", " ", summary)
+        structured_content = re.sub(r"\bmarkdown\b", "", structured_content, flags=re.IGNORECASE)
+        structured_content = re.sub(r"\n+", " ", structured_content)
+        structured_content = re.sub(r"\s+", " ", structured_content)
 
-        return summary
+        return structured_content
 
     @retry(wait=wait_random_exponential(min=1, max=20), stop=stop_after_attempt(6))
     def generate_translation(self, text: str, target_language: str) -> str:
@@ -208,7 +270,7 @@ Translate the provided text into {target_language} while preserving the original
         ]
 
         # Use the OpenAI API to generate the translation
-        chat_completion = self.openai_client.chat.completions.create(
+        chat_completion = self._create_chat_completion(
             model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT,
             messages=messages,
             temperature=0.7,
@@ -249,7 +311,7 @@ Translate the provided text into {target_language} while preserving the original
         ]
 
         # Ask the AI to generate a summary
-        chat_completion = self.openai_client.chat.completions.create(model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0.7, max_tokens=1000, n=1)
+        chat_completion = self._create_chat_completion(model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0.7, max_tokens=1000, n=1)
 
         # Extract the summary from the response
         summary = chat_completion.choices[0].message.content
@@ -294,7 +356,7 @@ Translate the provided text into {target_language} while preserving the original
             ]
 
             # Ask the AI to generate an outline
-            chat_completion = self.openai_client.chat.completions.create(model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0, max_tokens=1500, n=1)
+            chat_completion = self._create_chat_completion(model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0, max_tokens=1500, n=1)
 
             # Extract the outline from the response
             outline = chat_completion.choices[0].message.content
@@ -328,7 +390,7 @@ Translate the provided text into {target_language} while preserving the original
                 }
             ]
 
-            chat_completion = self.openai_client.chat.completions.create(model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0, max_tokens=1500, n=1)
+            chat_completion = self._create_chat_completion(model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0, max_tokens=1500, n=1)
 
             scraped_content = chat_completion.choices[0].message.content
             scraped_content = re.sub(r"\[https.*\]", "", scraped_content)
@@ -358,7 +420,7 @@ Translate the provided text into {target_language} while preserving the original
 
         messages = [{"role": "user", "content": f"Generate a concise and short title for a web page based on the following content: {content}"}]
 
-        chat_completion = self.openai_client.chat.completions.create(model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0.7, max_tokens=50, n=1)
+        chat_completion = self._create_chat_completion(model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0.7, max_tokens=50, n=1)
 
         outline = chat_completion.choices[0].message.content
         # outline = re.sub(r"\n+", " ", outline)
@@ -385,7 +447,7 @@ Translate the provided text into {target_language} while preserving the original
 
         messages = [{"role": "user", "content": f"Generate a short, one sentence purpose for a web page based on the following content: {content}"}]
 
-        chat_completion = self.openai_client.chat.completions.create(model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0.7, max_tokens=50, n=1)
+        chat_completion = self._create_chat_completion(model=self.AZURE_OPENAI_CHATGPT_DEPLOYMENT, messages=messages, temperature=0.7, max_tokens=50, n=1)
 
         outline = chat_completion.choices[0].message.content
         # outline = re.sub(r"\n+", " ", outline)

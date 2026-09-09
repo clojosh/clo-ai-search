@@ -1,0 +1,312 @@
+1
+00:00:00,000 --> 00:00:14,000
+Hello everyone, in the 2026.0 version, when applying hair loss or hair material, it can maintain the effect of the gap line and the sticker can be seen.
+
+2
+00:00:14,000 --> 00:00:17,000
+In the past, these details were often blocked by hair.
+
+3
+00:00:17,000 --> 00:00:23,000
+This update ensures that the craft structure is still visible and the sticker can be perfectly displayed on the surface of the hair,
+
+4
+00:00:23,000 --> 00:00:28,000
+thereby improving the visual quality and authenticity of hair-dyeing clothing, hair-dyeing toys, and home-made fabric.
+
+5
+00:00:28,000 --> 00:00:30,000
+Let's take a look at how it works.
+
+6
+00:00:30,000 --> 00:00:39,000
+When you use the editor's sewing line tool to select a fabric type and set it as a single or multiple sewing lines of a hair-dyeing or hair-dyeing only dyeing clothing,
+
+7
+00:00:39,000 --> 00:00:43,000
+a new hair-dyeing reduction option will appear in the property editor.
+
+8
+00:00:43,000 --> 00:00:48,000
+In this thickness section, you can adjust the width from 0 mm to 100 mm.
+
+9
+00:00:48,000 --> 00:00:53,000
+The unit will be set based on the unit of the user, which is used to adjust the area where the hair will be removed.
+
+10
+00:00:53,000 --> 00:00:55,000
+The higher the value, the larger the hair-free area.
+
+11
+00:00:55,000 --> 00:00:58,000
+In this example, I will set this value to 2 mm.
+
+12
+00:00:58,000 --> 00:01:07,000
+By using the gradient setting under the neckline, you can adjust the distance between the hair-dyeing area and the hair-dyeing area to a range of 0 to 100.
+
+13
+00:01:07,000 --> 00:01:13,000
+Since the material type of this fabric is hair-dyeing, the result will be visible immediately in the 3D window,
+
+14
+00:01:13,000 --> 00:01:18,000
+but you can also check the final result in the rendering window to get a higher sense of reality.
+
+15
+00:01:18,000 --> 00:01:23,000
+In the previous CLO version, the sticker will be applied to hair-dyeing or hair-dyeing materials.
+
+16
+00:01:23,000 --> 00:01:28,000
+Usually, it will cause the hair to overlap and block the sticker, making it invisible in the rendering window.
+
+17
+00:01:28,000 --> 00:01:34,000
+For example, after applying the hair-dyeing material, although the 2D window shows a embroidery sticker,
+
+18
+00:01:34,000 --> 00:01:36,000
+it will not appear in the 3D window.
+
+19
+00:01:36,000 --> 00:01:40,000
+If it is a hair-dyeing material, it is also invisible in the 3D window.
+
+20
+00:01:40,000 --> 00:01:44,000
+In the new version, if you use the adjustment sticker tool to select the sticker,
+
+21
+00:01:44,000 --> 00:01:48,000
+you will notice that the hair-dyeing reduction option has been added to the property editor.
+
+22
+00:01:48,000 --> 00:01:51,000
+When the sticker is applied to the hair-dyeing clothing, this option will be defaulted.
+
+23
+00:01:51,000 --> 00:01:52,000
+You can click on the button.
+
+24
+00:01:52,000 --> 00:01:55,000
+Here, you can activate or stop this option by clicking on the box.
+
+25
+00:01:55,000 --> 00:02:00,000
+When the hair-dyeing is used, it seems that the hair-dyeing has been trimmed in the sticker area,
+
+26
+00:02:00,000 --> 00:02:05,000
+so that the sticker is completely visible in the 3D window and rendering window.
+
+27
+00:02:05,000 --> 00:02:08,000
+Please note that according to the shape and parameters of the hair,
+
+28
+00:02:08,000 --> 00:02:13,000
+such as length and curve, the hair-dyeing may still cover the sticker in some areas.
+
+29
+00:02:13,000 --> 00:02:17,000
+Please note this when using long hair-dyeing or long hair-dyeing materials.
+
+30
+00:02:17,000 --> 00:02:20,000
+If necessary, please consider adjusting the parameters.
+
+31
+00:02:22,000 --> 00:02:29,000
+In addition, if your pattern has non-transparent information, the hair will be visible in transparent areas.
+
+32
+00:02:29,000 --> 00:02:35,000
+For example, this sticker center is completely transparent, so the hair will be visible in the specific area.
+
+33
+00:02:35,000 --> 00:02:42,000
+With the introduction of this function in the 2026.0 version, you can better control the design of hair-dyeing materials.
+
+34
+00:02:42,000 --> 00:02:46,000
+Whether it is a clothing accessory, a hair-dyeing toy, or a home-made imitation,
+
+35
+00:02:46,000 --> 00:02:50,000
+while maintaining the seam line and the sticker are perfectly visible on the surface of the hair,
+
+36
+00:02:50,000 --> 00:02:52,000
+you can completely control the length and change of the hair,
+
+37
+00:02:52,000 --> 00:02:55,000
+thereby improving the quality and accuracy of the design.
+
+38
+00:02:59,000 --> 00:03:04,000
+In the 2026.0 version, in addition to displaying or hiding specific measurement values,
+
+39
+00:03:04,000 --> 00:03:08,000
+it also increases the possibility of displaying measurement points in the style picture rendering.
+
+40
+00:03:08,000 --> 00:03:11,000
+The goal is to obtain more technical and information-based style picture rendering,
+
+41
+00:03:11,000 --> 00:03:13,000
+and accurately display the measurement value of the clothing.
+
+42
+00:03:13,000 --> 00:03:15,000
+Let's take a look at it through an example.
+
+43
+00:03:15,000 --> 00:03:18,000
+Some measurement points have already been added to this file,
+
+44
+00:03:18,000 --> 00:03:21,000
+which are used to determine the measurement size and position of the clothing.
+
+45
+00:03:21,000 --> 00:03:26,000
+After the fire style picture is rendered, the line contains the 2D measurement size option.
+
+46
+00:03:26,000 --> 00:03:31,000
+By clicking the eye icon, you can switch the display or hide of the 2D measurement size.
+
+47
+00:03:31,000 --> 00:03:35,000
+You will notice that the measurement size of the corresponding measurement point will be displayed with it.
+
+48
+00:03:35,000 --> 00:03:39,000
+If necessary, you can change the line color and its opacity.
+
+49
+00:03:39,000 --> 00:03:43,000
+This option will apply to the visualization of all measurement points in the project.
+
+50
+00:03:43,000 --> 00:03:47,000
+However, if you need to hide any of them, you can use the measurement point table.
+
+51
+00:03:47,000 --> 00:03:50,000
+You can find the same eye icon next to each measurement point.
+
+52
+00:03:50,000 --> 00:03:56,000
+All you have to do is click the measurement point you want to hide to get a clearer and more reasonable style picture rendering.
+
+53
+00:03:56,000 --> 00:04:03,000
+By using the 2026.0 version, your style picture rendering is more accurate and reasonable than ever before.
+
+54
+00:04:03,000 --> 00:04:08,000
+Now let's start to completely control your measurement point visibility and simplify your technical package.
+
+55
+00:04:12,000 --> 00:04:15,000
+In the previous CLO version, when the rendering has a reflective material,
+
+56
+00:04:15,000 --> 00:04:17,000
+for example, the image of metal and glass,
+
+57
+00:04:17,000 --> 00:04:23,000
+the use of the ground shadow option will lead to the environment of the ground shadow appearing in the reflection of the object.
+
+58
+00:04:23,000 --> 00:04:28,000
+In the 2026.0 version, you can now remove these shadows from the reflection,
+
+59
+00:04:28,000 --> 00:04:30,000
+while still maintaining the shadow on the ground,
+
+60
+00:04:30,000 --> 00:04:33,000
+allowing us to see an improvement in this image.
+
+61
+00:04:33,000 --> 00:04:36,000
+As you can see, this virtual model is made of glass,
+
+62
+00:04:36,000 --> 00:04:40,000
+and has a mirroring effect that forms a reflective light on a layer of metal.
+
+63
+00:04:40,000 --> 00:04:44,000
+In addition, the attached metal material on the case will also reflect light.
+
+64
+00:04:44,000 --> 00:04:46,000
+In the light attribute of the window rendering,
+
+65
+00:04:46,000 --> 00:04:50,000
+the use of the ground shadow option will apply the shadow on the floor.
+
+66
+00:04:50,000 --> 00:04:54,000
+However, because this shadow has a reflection of the environment on the surface,
+
+67
+00:04:54,000 --> 00:04:58,000
+this will lead to the image being visible in the reflection of the virtual model and the object.
+
+68
+00:04:58,000 --> 00:05:00,000
+From the beginning of this version,
+
+69
+00:05:00,000 --> 00:05:03,000
+the bottom of the ground shadow added a non-reflective option.
+
+70
+00:05:03,000 --> 00:05:06,000
+When you activate this option by selecting the frame,
+
+71
+00:05:06,000 --> 00:05:09,000
+you need to press the synchronize rendering button to apply this change.
+
+72
+00:05:09,000 --> 00:05:12,000
+You will notice that the environment of the ground shadow is no longer in the glass and metal material,
+
+73
+00:05:12,000 --> 00:05:15,000
+and the reflection is no longer in the glass and metal material.
+
+74
+00:05:15,000 --> 00:05:18,000
+Now, by using the new function of Claw2026.0,
+
+75
+00:05:18,000 --> 00:05:21,000
+which does not participate in the reflection of the ground shadow,
+
+76
+00:05:21,000 --> 00:05:23,000
+you can achieve a surprising and clear reflection,
+
+77
+00:05:23,000 --> 00:05:25,000
+and no needless shadows,
+
+78
+00:05:25,000 --> 00:05:28,000
+and thus further enhance your rendering experience.
+

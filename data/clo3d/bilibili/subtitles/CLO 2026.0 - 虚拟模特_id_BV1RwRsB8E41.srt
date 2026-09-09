@@ -1,0 +1,424 @@
+1
+00:00:00,000 --> 00:00:19,000
+In this update of the 2026.0 version, the functions related to virtual models have been improved, making it easier and more convenient to modify and create virtual models, including the new hybrid transformation function. Let's take a closer look at these functions.
+
+2
+00:00:19,000 --> 00:00:28,000
+First of all, the hybrid transformation function allows you to freely adjust the body and facial expressions of virtual models with hybrid transformation data in the shell.
+
+3
+00:00:28,000 --> 00:00:36,000
+Hybrid transformation refers to the data created in the external 3D tool, which includes various body shapes and facial transformation values other than the default form.
+
+4
+00:00:36,000 --> 00:00:42,000
+From this version, when you import the data into the shell, you only need to move the slider to see the changes in real time.
+
+5
+00:00:42,000 --> 00:00:46,000
+Currently, we support GLBGLTF and VRM format.
+
+6
+00:00:46,000 --> 00:00:49,000
+The future plan is to expand the support to more formats.
+
+7
+00:00:49,000 --> 00:00:54,000
+Let me show you the hybrid transformation function and how to change the body shape of the virtual image.
+
+8
+00:00:54,000 --> 00:00:59,000
+I have added a virtual model containing various body data and put it on.
+
+9
+00:00:59,000 --> 00:01:06,000
+In the main menu, select the virtual model and open the virtual model editor.
+
+10
+00:01:06,000 --> 00:01:09,000
+And select the hybrid transformation from the label bar.
+
+11
+00:01:09,000 --> 00:01:15,000
+In the variable parameter list, you will see the adjustable shape keys.
+
+12
+00:01:15,000 --> 00:01:19,000
+If you move the slider, you can see the virtual model's body shape changes in real time.
+
+13
+00:01:19,000 --> 00:01:21,000
+Open the simulation.
+
+14
+00:01:21,000 --> 00:01:25,000
+The clothing will also shrink at the same time as the model body shape changes.
+
+15
+00:01:34,000 --> 00:01:37,000
+The hybrid transformation function supports a variety of modifications.
+
+16
+00:01:37,000 --> 00:01:40,000
+Specifically, it depends on the data type contained in the basic virtual model.
+
+17
+00:01:40,000 --> 00:01:45,000
+This time, let's add a virtual model file containing facial expression data.
+
+18
+00:01:45,000 --> 00:01:48,000
+Select import from the main menu, then select GLTF.
+
+19
+00:01:49,000 --> 00:01:52,000
+Select the file to save as a virtual model.
+
+20
+00:01:52,000 --> 00:01:54,000
+Select the file to save as a virtual model.
+
+21
+00:01:54,000 --> 00:01:59,000
+Select the file to save as a virtual model.
+
+22
+00:01:59,000 --> 00:02:02,000
+Select the file to save as a virtual model.
+
+23
+00:02:02,000 --> 00:02:04,000
+Check the variable parameter list.
+
+24
+00:02:04,000 --> 00:02:09,000
+You will find that this virtual model includes more hybrid transformations than the previous model.
+
+25
+00:02:09,000 --> 00:02:11,000
+And it has many different adjustable parts.
+
+26
+00:02:11,000 --> 00:02:16,000
+You can hide the data fold of each different area.
+
+27
+00:02:16,000 --> 00:02:21,159
+because the facial expression data is pre-made in the external tool.
+
+28
+00:02:21,159 --> 00:02:23,560
+You can adjust the slider
+
+29
+00:02:23,560 --> 00:02:27,659
+to observe extremely subtle changes in the virtual model expression.
+
+30
+00:02:27,659 --> 00:02:30,240
+Click on the star icon.
+
+31
+00:02:30,240 --> 00:02:32,900
+You can set the usual items as collections.
+
+32
+00:02:32,900 --> 00:02:35,560
+By turning on the high-resolution collection in the upper right corner,
+
+33
+00:02:35,560 --> 00:02:45,099
+you can focus more on adjusting the required items.
+
+34
+00:02:45,099 --> 00:02:47,960
+Click on all items again.
+
+35
+00:02:47,960 --> 00:02:51,400
+If you want to restore all values to the original state at once,
+
+36
+00:02:51,400 --> 00:02:58,159
+just click on the reset button.
+
+37
+00:02:58,159 --> 00:03:01,500
+Next, let's take a look at the customized configuration process after the improvement.
+
+38
+00:03:01,500 --> 00:03:04,659
+Now you can store external documents containing binding information
+
+39
+00:03:04,659 --> 00:03:09,799
+as ZACS documents with virtual models.
+
+40
+00:03:09,799 --> 00:03:12,500
+The key is that the name of the joint set in the configuration
+
+41
+00:03:12,500 --> 00:03:14,159
+must be the same as the name of the virtual model
+
+42
+00:03:14,159 --> 00:03:15,039
+that needs to be merged with the virtual model.
+
+43
+00:03:15,039 --> 00:03:15,060
+The key is that the name of the joint set in the configuration must be the same as the virtual model.
+
+44
+00:03:15,060 --> 00:03:16,400
+The key is that the name of the joint set in the configuration must be the same as the virtual model.
+
+45
+00:03:16,400 --> 00:03:22,759
+Check the name of the virtual model joint point.
+
+46
+00:03:22,759 --> 00:03:25,819
+Select the virtual model in the main menu.
+
+47
+00:03:25,819 --> 00:03:28,900
+Select the customized configuration and open the window.
+
+48
+00:03:28,900 --> 00:03:32,199
+I will add a hair file here.
+
+49
+00:03:32,199 --> 00:03:34,000
+Add the prepared file.
+
+50
+00:03:34,000 --> 00:03:36,400
+You will find that the name of the joint of the configuration hair
+
+51
+00:03:36,400 --> 00:03:38,659
+matches the name of the virtual model joint.
+
+52
+00:03:38,659 --> 00:03:43,199
+Therefore, no additional steps are required to immediately merge with the virtual model.
+
+53
+00:03:43,199 --> 00:03:45,000
+Select to bind in the basic part.
+
+54
+00:03:45,000 --> 00:03:47,000
+In the customized configuration window,
+
+55
+00:03:47,000 --> 00:03:50,599
+set the ratio and shrink chart as automatic.
+
+56
+00:03:50,599 --> 00:03:55,240
+Then you can store it directly as a virtual model configuration file.
+
+57
+00:03:55,240 --> 00:03:59,099
+The stored file will be created in the ZACS file format.
+
+58
+00:03:59,099 --> 00:04:02,159
+This is the custom configuration format for CLO.
+
+59
+00:04:02,159 --> 00:04:04,199
+You can easily use this method
+
+60
+00:04:04,199 --> 00:04:08,039
+to customize the external virtual model and CLO virtual model.
+
+61
+00:04:15,000 --> 00:04:22,939
+We have also added a kind of cartoon effect type that can make your clothes and virtual models look like 2D cartoon effects.
+
+62
+00:04:22,939 --> 00:04:25,240
+Double-click the virtual model to select it.
+
+63
+00:04:25,240 --> 00:04:29,000
+Then in the material options card of the property editor,
+
+64
+00:04:29,000 --> 00:04:35,000
+change the type to cartoon effect only 3D.
+
+65
+00:04:35,000 --> 00:04:40,339
+The selected virtual model and configuration will be converted to 2D cartoon style.
+
+66
+00:04:40,339 --> 00:04:43,000
+Once the cartoon material type is switched,
+
+67
+00:04:43,000 --> 00:04:45,439
+a detailed option of the effect will appear at the bottom.
+
+68
+00:04:45,439 --> 00:04:47,040
+Let's take a quick look.
+
+69
+00:04:47,040 --> 00:04:55,000
+In the shadow part, you can choose the shadow color.
+
+70
+00:04:55,000 --> 00:04:57,939
+Increasing the strength will make the edge of the shadow sharper,
+
+71
+00:04:57,939 --> 00:05:02,399
+and adjusting the flatness can change the range of the shadow.
+
+72
+00:05:02,399 --> 00:05:05,000
+Let's adjust the parameters to check the effect.
+
+73
+00:05:13,000 --> 00:05:16,839
+Finally, select a mode in the contour line part,
+
+74
+00:05:16,839 --> 00:05:19,000
+and adjust the width value.
+
+75
+00:05:19,000 --> 00:05:21,240
+You can create a contour line,
+
+76
+00:05:21,240 --> 00:05:24,399
+and create a high-quality cartoon texture.
+
+77
+00:05:24,399 --> 00:05:27,699
+For more detailed options on the cartoon effect material type,
+
+78
+00:05:27,699 --> 00:05:34,660
+please visit the CLO official website.
+
+79
+00:05:34,660 --> 00:05:36,439
+Finally, from this version,
+
+80
+00:05:36,439 --> 00:05:40,939
+we support UV editing for CLO virtual models and external virtual models.
+
+81
+00:05:40,939 --> 00:05:42,480
+From the main menu, start UV editor,
+
+82
+00:05:42,480 --> 00:05:42,879
+and then select the UV editor.
+
+83
+00:05:42,879 --> 00:05:42,980
+Then, from the main menu, start UV editor,
+
+84
+00:05:43,000 --> 00:05:48,879
+and then select the UV editor.
+
+85
+00:05:48,879 --> 00:05:50,160
+In the vertical menu bar,
+
+86
+00:05:50,160 --> 00:05:52,000
+you can add UV display objects.
+
+87
+00:05:52,000 --> 00:05:53,439
+You can selectively check the UV stickers
+
+88
+00:05:53,439 --> 00:05:56,060
+or the UV stickers of the virtual model
+
+89
+00:05:56,060 --> 00:05:57,740
+or costume in the 3D window at the moment,
+
+90
+00:05:57,740 --> 00:05:59,759
+and UV display.
+
+91
+00:05:59,759 --> 00:06:01,839
+Open the virtual model display.
+
+92
+00:06:01,839 --> 00:06:03,480
+You can see all the UV stickers
+
+93
+00:06:03,480 --> 00:06:12,879
+of the virtual model in the interface.
+
+94
+00:06:12,879 --> 00:06:20,659
+If you just want to check the sticker of the selected object,
+
+95
+00:06:20,659 --> 00:06:23,120
+select the UV display object in the display object,
+
+96
+00:06:23,120 --> 00:06:24,659
+and only display this sticker in the interface.
+
+97
+00:06:24,659 --> 00:06:27,519
+In this way, even if the screen content is very complex,
+
+98
+00:06:27,519 --> 00:06:29,759
+you can only select and place the required elements,
+
+99
+00:06:29,759 --> 00:06:31,560
+thereby greatly simplifying the workflow.
+
+100
+00:06:31,560 --> 00:06:33,719
+The above covers the various improvements of virtual models in CLO,
+
+101
+00:06:33,719 --> 00:06:35,560
+from mixed transformation to the fun-filled cartoon effect material.
+
+102
+00:06:35,560 --> 00:06:37,000
+We hope these new features will make your work easier and more pleasant.
+
+103
+00:06:37,000 --> 00:06:37,800
+We hope these new features will make your work easier and more pleasant.
+
+104
+00:06:37,800 --> 00:06:38,800
+We hope these new features will make your work easier and more pleasant.
+
+105
+00:06:38,800 --> 00:06:39,800
+We hope these new features will make your work easier and more pleasant.
+
+106
+00:06:42,879 --> 00:06:44,879
+Thank you for watching.
+

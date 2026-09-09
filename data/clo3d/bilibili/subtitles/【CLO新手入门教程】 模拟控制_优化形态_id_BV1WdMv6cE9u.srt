@@ -1,0 +1,1016 @@
+1
+00:00:00,000 --> 00:00:07,000
+Hello everyone, let's learn about a series of tools to optimize the shape.
+
+2
+00:00:07,000 --> 00:00:12,000
+First, let's open the practice file of the fixed needle and the sewing machine.
+
+3
+00:00:12,000 --> 00:00:17,000
+In this case, we will use the fixed needle and the sewing machine.
+
+4
+00:00:17,000 --> 00:00:22,000
+Simulate this scarf and wear it on the model.
+
+5
+00:00:22,000 --> 00:00:29,000
+First, to improve the simulation speed, we can freeze or reactivate the following clothes.
+
+6
+00:00:29,000 --> 00:00:35,000
+For pieces that have contact with the scarf,
+
+7
+00:00:35,000 --> 00:00:38,000
+which are the collar and front and back pieces,
+
+8
+00:00:38,000 --> 00:00:42,000
+you can choose to freeze it with the right button.
+
+9
+00:00:42,000 --> 00:00:48,000
+Then you can choose the opposite direction with the right button on the piece that has been selected.
+
+10
+00:00:48,000 --> 00:00:53,000
+The shortcut key is Ctrl-Shift-I.
+
+11
+00:00:53,000 --> 00:00:57,000
+Then press the Shift key to select the scarf.
+
+12
+00:00:57,000 --> 00:00:59,000
+For other pieces,
+
+13
+00:00:59,000 --> 00:01:03,000
+you can choose to set the anti-aggression plate and sewing line.
+
+14
+00:01:03,000 --> 00:01:10,000
+This will further reduce the calculation and speed up the simulation.
+
+15
+00:01:10,000 --> 00:01:15,000
+After the preparation is complete, we will deal with the scarf plate.
+
+16
+00:01:15,000 --> 00:01:18,000
+In order to prevent the scarf from falling directly when simulated,
+
+17
+00:01:18,000 --> 00:01:21,000
+we need to add a fixed needle to it.
+
+18
+00:01:21,000 --> 00:01:25,000
+In the first row of the third tool in the left toolbar,
+
+19
+00:01:25,000 --> 00:01:27,000
+long press to find the fixed needle tool.
+
+20
+00:01:27,000 --> 00:01:29,000
+Long press to find the fixed needle tool.
+
+21
+00:01:29,000 --> 00:01:35,000
+You can see that there is a fixed needle case and a fixed needle set tool at the bottom of the grid tool selection.
+
+22
+00:01:35,000 --> 00:01:38,000
+They are just different ways of selection.
+
+23
+00:01:38,000 --> 00:01:42,000
+Here we choose the fixed needle case tool.
+
+24
+00:01:42,000 --> 00:01:47,000
+At this time, the 2D and 3D panels will show a pink grid.
+
+25
+00:01:47,000 --> 00:01:52,000
+The method of adding a fixed needle is similar to the method of selecting a grid tool.
+
+26
+00:01:52,000 --> 00:01:55,000
+Just select the frame on the panel.
+
+27
+00:01:55,000 --> 00:01:59,000
+After the frame selection, there will be a red dot at the top of the grid.
+
+28
+00:01:59,000 --> 00:02:02,000
+This means that a fixed needle has been added.
+
+29
+00:02:02,000 --> 00:02:07,000
+At the same time, you can see that the fixed needle selected in the 3D window is orange.
+
+30
+00:02:07,000 --> 00:02:10,000
+The unselected fixed needle is red.
+
+31
+00:02:10,000 --> 00:02:15,000
+Now the two sets of fixed needles are selected separately and can be moved separately.
+
+32
+00:02:15,000 --> 00:02:19,000
+So if you want to add a fixed needle multiple times in a set,
+
+33
+00:02:19,000 --> 00:02:22,000
+after adding a part of the fixed needle in the frame selection,
+
+34
+00:02:22,000 --> 00:02:25,000
+you can press Ctrl and Shift to add a selection.
+
+35
+00:02:25,000 --> 00:02:33,000
+Then the fixed needle selected now is a whole that can be selected and moved together.
+
+36
+00:02:33,000 --> 00:02:39,000
+Note that the blank area is not possible to cancel the fixed needle selection.
+
+37
+00:02:39,000 --> 00:02:42,000
+This is different from selecting a grid tool.
+
+38
+00:02:42,000 --> 00:02:48,000
+If you want to delete the fixed needle, you can select it by pressing Ctrl at the 2D window.
+
+39
+00:02:48,000 --> 00:02:53,000
+Or on the 3D panel, right-click on the fixed needle and select Delete.
+
+40
+00:02:55,000 --> 00:02:59,000
+There is a little trick here.
+
+41
+00:02:59,000 --> 00:03:03,000
+We can add a fixed needle on the line where we need to add a fixed needle.
+
+42
+00:03:03,000 --> 00:03:07,000
+Just double-click, you can quickly create a row of fixed needles along the line.
+
+43
+00:03:07,000 --> 00:03:13,000
+We add two rows of fixed needles on the edges of the scarf.
+
+44
+00:03:13,000 --> 00:03:18,000
+Then in the middle of the scarf, the position of the model in front of you.
+
+45
+00:03:18,000 --> 00:03:21,000
+Add two rows of fixed needles.
+
+46
+00:03:21,000 --> 00:03:24,000
+You can refer to the position in the video.
+
+47
+00:03:25,000 --> 00:03:29,000
+If you accidentally misselect the scarf grid at the back,
+
+48
+00:03:29,000 --> 00:03:35,000
+you can press Ctrl and select the fixed needle that does not need to be selected.
+
+49
+00:03:35,000 --> 00:03:37,000
+After adding the fixed needle,
+
+50
+00:03:37,000 --> 00:03:43,000
+switch the tool to the move tool and turn on the simulation.
+
+51
+00:03:43,000 --> 00:03:49,000
+Now the goal is to put the two ends of the scarf into the ring on the outside of it.
+
+52
+00:03:49,000 --> 00:03:53,000
+We can first press the Shift key in the 3D window.
+
+53
+00:03:53,000 --> 00:03:57,000
+Click on the two rows of fixed needles in front of the model.
+
+54
+00:03:57,000 --> 00:03:59,000
+Then adjust the position of the ball.
+
+55
+00:03:59,000 --> 00:04:01,000
+Turn to the side view.
+
+56
+00:04:01,000 --> 00:04:04,000
+Move them a little bit to the front of the model.
+
+57
+00:04:04,000 --> 00:04:06,000
+Leave a space for operation.
+
+58
+00:04:06,000 --> 00:04:07,000
+Pay attention here.
+
+59
+00:04:07,000 --> 00:04:11,000
+When you move the fixed needle, if you stop the simulation,
+
+60
+00:04:11,000 --> 00:04:16,000
+then only the part of the grid selected by the fixed needle will move with it.
+
+61
+00:04:16,000 --> 00:04:19,000
+If you move the fixed needle in the simulation state,
+
+62
+00:04:19,000 --> 00:04:21,000
+then the selected grid will take other grids on the board.
+
+63
+00:04:21,000 --> 00:04:24,000
+Then select the fixed needle on the right edge.
+
+64
+00:04:24,000 --> 00:04:26,000
+Draw the position of the ball.
+
+65
+00:04:26,000 --> 00:04:29,000
+Press the shortcut key 2 to the front of the model.
+
+66
+00:04:29,000 --> 00:04:33,000
+Use the position of the ball to move the fixed needle up and move it to the left.
+
+67
+00:04:33,000 --> 00:04:38,000
+Place it in the top position of the scarf that can pass through the scarf.
+
+68
+00:04:38,000 --> 00:04:42,000
+Make a trend from top to bottom.
+
+69
+00:04:42,000 --> 00:04:44,000
+Then right-click to rotate the view.
+
+70
+00:04:44,000 --> 00:04:47,000
+You can press the Shift key to rotate the view.
+
+71
+00:04:47,000 --> 00:04:49,000
+Then press the Shift key to rotate the view.
+
+72
+00:04:49,000 --> 00:04:50,000
+Press the Shift key to rotate the view.
+
+73
+00:04:50,000 --> 00:04:52,000
+Then press the Shift key to rotate the view.
+
+74
+00:04:52,000 --> 00:04:58,000
+You can feel the obvious stop at the 90-degree rotation angle.
+
+75
+00:04:58,000 --> 00:04:59,000
+Turn to the side.
+
+76
+00:04:59,000 --> 00:05:02,000
+If you find that the fixed needle is a little bit too thick,
+
+77
+00:05:02,000 --> 00:05:06,000
+then we can use the positioning ball to move it forward a little bit
+
+78
+00:05:06,000 --> 00:05:09,000
+so that it can pass through the scarf smoothly.
+
+79
+00:05:09,000 --> 00:05:11,000
+This way, we can ensure that
+
+80
+00:05:11,000 --> 00:05:13,000
+whether it is on the front or on the side,
+
+81
+00:05:13,000 --> 00:05:18,000
+the fixed needle is in the inner top of the circle of the scarf,
+
+82
+00:05:18,000 --> 00:05:24,000
+and then use the positioning ball to move the whole thing downward to pass through the scarf.
+
+83
+00:05:24,000 --> 00:05:27,000
+Be careful not to pull it too tight.
+
+84
+00:05:27,000 --> 00:05:30,000
+The left side is also operated in the same way.
+
+85
+00:05:30,000 --> 00:05:33,000
+Because the left side itself is on the inside,
+
+86
+00:05:33,000 --> 00:05:36,000
+it needs to be rotated from the bottom to the outside,
+
+87
+00:05:36,000 --> 00:05:39,000
+and then to the circle and to the inside once.
+
+88
+00:05:39,000 --> 00:05:41,000
+The same can be combined with the view.
+
+89
+00:05:41,000 --> 00:05:45,000
+Move the fixed needle to the inside of the scarf in the front,
+
+90
+00:05:45,000 --> 00:05:46,000
+where it can pass through,
+
+91
+00:05:46,000 --> 00:05:54,000
+and make sure that the side is also in the angle and position where it can pass through smoothly.
+
+92
+00:05:54,000 --> 00:05:57,000
+After the fixed needle passes through this side,
+
+93
+00:05:57,000 --> 00:06:02,000
+it needs to be turned to the front and rotated to the outside.
+
+94
+00:06:02,000 --> 00:06:11,000
+Repeat the process of going inside again.
+
+95
+00:06:11,000 --> 00:06:13,000
+Here is a small suggestion.
+
+96
+00:06:13,000 --> 00:06:15,000
+When using the fixed needle adjustment,
+
+97
+00:06:15,000 --> 00:06:17,000
+it is recommended that you pause frequently.
+
+98
+00:06:17,000 --> 00:06:19,000
+Then turn on the simulation pause.
+
+99
+00:06:19,000 --> 00:06:21,000
+You can record the current form,
+
+100
+00:06:21,000 --> 00:06:28,000
+and avoid going back to the initial simulation state when canceling.
+
+101
+00:06:28,000 --> 00:06:30,000
+After both sides are worn,
+
+102
+00:06:30,000 --> 00:06:32,000
+the scarf is now loose.
+
+103
+00:06:32,000 --> 00:06:36,000
+We can bring the fixed needle reserved in the front closer to the model
+
+104
+00:06:36,000 --> 00:06:39,000
+to tighten the scarf.
+
+105
+00:06:39,000 --> 00:06:44,000
+You can press the Shift key to select the fixed needle on both ends of the scarf.
+
+106
+00:06:44,000 --> 00:06:49,000
+Use the positioning ball to move down together.
+
+107
+00:06:49,000 --> 00:06:51,000
+After adjusting to the satisfied position,
+
+108
+00:06:51,000 --> 00:07:01,000
+right-click to delete this part of the fixed needle,
+
+109
+00:07:01,000 --> 00:07:09,000
+or press the Ctrl and W keys to delete all fixed needles.
+
+110
+00:07:09,000 --> 00:07:12,000
+In order to make the simulation effect of the scarf more natural and real,
+
+111
+00:07:12,000 --> 00:07:17,000
+we can reduce the particle diameter of the scarf to 10 mm,
+
+112
+00:07:17,000 --> 00:07:20,000
+and change the thickness of the scarf to 1 mm,
+
+113
+00:07:20,000 --> 00:07:33,000
+and then simulate again.
+
+114
+00:07:33,000 --> 00:07:36,000
+In addition to the way of adding a fixed needle in the frame selection,
+
+115
+00:07:36,000 --> 00:07:41,000
+we can also add a single-point fixed needle in 3D.
+
+116
+00:07:41,000 --> 00:07:43,000
+While pressing the W key,
+
+117
+00:07:43,000 --> 00:07:47,000
+we want to add the position of the fixed needle on the 3D costume.
+
+118
+00:07:47,000 --> 00:07:49,000
+Right-click on it,
+
+119
+00:07:49,000 --> 00:07:53,000
+and add a single-point fixed needle.
+
+120
+00:07:53,000 --> 00:07:56,000
+The position of the fixed needle can also be moved,
+
+121
+00:07:56,000 --> 00:07:58,000
+and we can start the simulation.
+
+122
+00:07:58,000 --> 00:08:06,000
+Drag the point of the fixed needle directly to adjust the overall shape.
+
+123
+00:08:06,000 --> 00:08:08,000
+If you want to delete the fixed needle,
+
+124
+00:08:08,000 --> 00:08:10,000
+right-click to delete,
+
+125
+00:08:10,000 --> 00:08:12,000
+or press the W key,
+
+126
+00:08:12,000 --> 00:08:20,000
+right-click again to delete the fixed needle.
+
+127
+00:08:20,000 --> 00:08:22,000
+Next, I will introduce the sewing tool.
+
+128
+00:08:22,000 --> 00:08:26,000
+You can use the sewing tool to adjust the shape of the scarf.
+
+129
+00:08:26,000 --> 00:08:29,000
+Select the sewing tool.
+
+130
+00:08:29,000 --> 00:08:32,000
+Click on two points on the board.
+
+131
+00:08:32,000 --> 00:08:38,000
+You can use either 3D or 2D.
+
+132
+00:08:38,000 --> 00:08:40,000
+These two selected points
+
+133
+00:08:40,000 --> 00:08:44,000
+will be connected by a blue curve.
+
+134
+00:08:44,000 --> 00:08:49,000
+You can switch to the edit sewing tool to check.
+
+135
+00:08:49,000 --> 00:08:52,000
+You can use the edit sewing tool
+
+136
+00:08:52,000 --> 00:08:56,000
+to move these two points again.
+
+137
+00:08:56,000 --> 00:08:58,000
+After opening the simulation,
+
+138
+00:08:58,000 --> 00:09:05,000
+these two points will be connected and fixed together.
+
+139
+00:09:05,000 --> 00:09:06,000
+We can use this tool,
+
+140
+00:09:06,000 --> 00:09:09,000
+to adjust the shape of the scarf,
+
+141
+00:09:09,000 --> 00:09:10,000
+for example,
+
+142
+00:09:10,000 --> 00:09:13,000
+adjust the shape of the scarf on the right side.
+
+143
+00:09:13,000 --> 00:09:15,000
+For adding a good sewing,
+
+144
+00:09:15,000 --> 00:09:18,000
+you can adjust the position of the two ends of the line,
+
+145
+00:09:18,000 --> 00:09:29,000
+and then turn on the simulation to adjust the shape.
+
+146
+00:09:29,000 --> 00:09:34,000
+The sewing tool can also be used to pull the distance of the scarf on both sides.
+
+147
+00:09:36,000 --> 00:09:38,000
+You can adjust the length of the line.
+
+148
+00:09:38,000 --> 00:09:39,000
+You can adjust the length of the line.
+
+149
+00:09:39,000 --> 00:09:40,000
+You can adjust the length of the line.
+
+150
+00:09:40,000 --> 00:09:41,000
+You can also adjust the length of the line.
+
+151
+00:09:41,000 --> 00:09:42,000
+You can adjust the length of the line.
+
+152
+00:09:42,000 --> 00:09:44,000
+The default distance of the two points of the sewing is 0 mm.
+
+153
+00:09:44,000 --> 00:09:48,000
+Select the curve connected by this line.
+
+154
+00:09:48,000 --> 00:09:51,000
+In the right-hand attribute editor,
+
+155
+00:09:51,000 --> 00:09:54,000
+change the length of the line to the appropriate value,
+
+156
+00:09:54,000 --> 00:09:56,000
+such as 30 to 50 mm.
+
+157
+00:09:56,000 --> 00:09:58,000
+According to the effect adjustment,
+
+158
+00:10:06,000 --> 00:10:31,000
+you can add 1 to 2 sets of this type of push.
+
+159
+00:10:31,000 --> 00:10:35,000
+You can further reduce the diameter of the scarf to 5 mm,
+
+160
+00:10:35,000 --> 00:10:42,000
+and turn on the simulation.
+
+161
+00:10:42,000 --> 00:10:45,000
+Finally, double-click to select all the sweater sheets.
+
+162
+00:10:45,000 --> 00:10:49,000
+Press the Shift key and select all the skirt sheets.
+
+163
+00:10:49,000 --> 00:10:53,000
+Right-click to select Activate.
+
+164
+00:10:53,000 --> 00:10:56,000
+Then press the Control key to simulate again,
+
+165
+00:10:56,000 --> 00:11:02,000
+making the scarf and clothes fit more naturally.
+
+166
+00:11:02,000 --> 00:11:04,000
+The completed file can be saved by itself.
+
+167
+00:11:05,000 --> 00:11:08,000
+Next, I will introduce the range drag tool.
+
+168
+00:11:08,000 --> 00:11:12,000
+Open the practice file.
+
+169
+00:11:12,000 --> 00:11:15,000
+Usually, when we simulate dragging clothes,
+
+170
+00:11:15,000 --> 00:11:17,000
+we use the point drag.
+
+171
+00:11:17,000 --> 00:11:21,000
+Sometimes, it can also be switched to the range drag according to the need.
+
+172
+00:11:21,000 --> 00:11:23,000
+For example, this one has a twisted strap.
+
+173
+00:11:23,000 --> 00:11:25,000
+Now the left-hand panel
+
+174
+00:11:25,000 --> 00:11:27,000
+is connected to the bottom of the right-hand panel.
+
+175
+00:11:27,000 --> 00:11:29,000
+We need to pull it out
+
+176
+00:11:29,000 --> 00:11:32,000
+to form an intersectional twist.
+
+177
+00:11:32,000 --> 00:11:34,000
+One idea is to use the selection grid tool.
+
+178
+00:11:34,000 --> 00:11:38,000
+Pull out the grid that is connected to the bottom.
+
+179
+00:11:38,000 --> 00:11:41,000
+There is also a more convenient way,
+
+180
+00:11:41,000 --> 00:11:44,000
+which is to use the range drag.
+
+181
+00:11:44,000 --> 00:11:46,000
+First, turn on the simulation.
+
+182
+00:11:46,000 --> 00:11:57,000
+Move the grid of the fixed needle on the left side of the screen out.
+
+183
+00:11:57,000 --> 00:12:02,000
+Now we only need to move the grid of the lower part of the left panel to the outside.
+
+184
+00:12:02,000 --> 00:12:04,000
+In the simulation,
+
+185
+00:12:04,000 --> 00:12:07,000
+select the move tool as a small grab.
+
+186
+00:12:07,000 --> 00:12:13,000
+Long press the icon to switch to the range drag.
+
+187
+00:12:13,000 --> 00:12:17,000
+At this time, the mouse will become two same-center circles.
+
+188
+00:12:17,000 --> 00:12:19,000
+The inner circle is the core selection area.
+
+189
+00:12:19,000 --> 00:12:22,000
+The outer circle is the reduction range.
+
+190
+00:12:22,000 --> 00:12:25,000
+In the set panel that is displayed on the right side,
+
+191
+00:12:25,000 --> 00:12:28,000
+we can first select the display weight.
+
+192
+00:12:28,000 --> 00:12:31,000
+It is convenient for us to check the selected area.
+
+193
+00:12:32,000 --> 00:12:33,000
+In the 3D window,
+
+194
+00:12:33,000 --> 00:12:35,000
+left-click to drag.
+
+195
+00:12:35,000 --> 00:12:41,000
+You can move the entire area of the selected green highlight.
+
+196
+00:12:41,000 --> 00:12:43,000
+Because this area is smaller,
+
+197
+00:12:43,000 --> 00:12:50,000
+we make the range of the soft selection smaller.
+
+198
+00:12:50,000 --> 00:12:55,000
+The degree of reduction determines the degree of drag force.
+
+199
+00:12:55,000 --> 00:12:57,000
+In the surface mode,
+
+200
+00:12:57,000 --> 00:13:00,000
+the drag effect is only applied to the specified range.
+
+201
+00:13:00,000 --> 00:13:02,000
+The surface of each selected layer,
+
+202
+00:13:02,000 --> 00:13:04,000
+the drag effect is only applied to the specified range.
+
+203
+00:13:04,000 --> 00:13:06,000
+In the straight line mode,
+
+204
+00:13:06,000 --> 00:13:10,000
+you can choose all panels within a certain range of 10 points.
+
+205
+00:13:10,000 --> 00:13:15,000
+Whether the selected panel and the other layers of the panel are together,
+
+206
+00:13:15,000 --> 00:13:19,000
+the measurement method is to change back to the surface.
+
+207
+00:13:19,000 --> 00:13:21,000
+Turn to the side view,
+
+208
+00:13:21,000 --> 00:13:24,000
+left-click to press the mouse to move outward,
+
+209
+00:13:24,000 --> 00:13:29,000
+you can easily move the lower part of the panel out.
+
+210
+00:13:29,000 --> 00:13:30,000
+After dragging out,
+
+211
+00:13:30,000 --> 00:13:33,000
+remove the fixed pin and simulate again.
+
+212
+00:13:33,000 --> 00:13:38,000
+The twist is done.
+
+213
+00:13:38,000 --> 00:13:41,000
+Press and hold again to select the moving tool.
+
+214
+00:13:41,000 --> 00:13:53,000
+You can switch back to the way of clicking and dragging.
+
+215
+00:13:53,000 --> 00:13:57,000
+Finally, let's look at the difference between hardening and shape solidification.
+
+216
+00:13:57,000 --> 00:13:59,000
+Open the practice file,
+
+217
+00:14:00,000 --> 00:14:03,000
+here are two T-shirts on the ground.
+
+218
+00:14:03,000 --> 00:14:06,000
+Now the shape is the same.
+
+219
+00:14:06,000 --> 00:14:13,000
+You can switch to only display the 3D window.
+
+220
+00:14:13,000 --> 00:14:15,000
+We are on this dress on the left side.
+
+221
+00:14:15,000 --> 00:14:17,000
+After double-clicking,
+
+222
+00:14:17,000 --> 00:14:19,000
+right-click to select hardening,
+
+223
+00:14:19,000 --> 00:14:20,000
+press the shortcut key,
+
+224
+00:14:20,000 --> 00:14:23,000
+Ctrl plus H.
+
+225
+00:14:23,000 --> 00:14:24,000
+At this time,
+
+226
+00:14:24,000 --> 00:14:26,000
+this dress will turn orange.
+
+227
+00:14:26,000 --> 00:14:27,000
+After opening the simulation,
+
+228
+00:14:27,000 --> 00:14:29,000
+you can see that the original wrinkles are gone.
+
+229
+00:14:29,000 --> 00:14:31,000
+All wrinkles have been opened.
+
+230
+00:14:31,000 --> 00:14:34,000
+Its material will temporarily become like rubber,
+
+231
+00:14:34,000 --> 00:14:37,000
+very hard.
+
+232
+00:14:37,000 --> 00:14:39,000
+Hardening is often used to flatten the fabric
+
+233
+00:14:39,000 --> 00:14:44,000
+or deal with severe curls.
+
+234
+00:14:44,000 --> 00:14:48,000
+Right-click again to choose to remove hardening.
+
+235
+00:14:48,000 --> 00:14:51,000
+It will restore the original soft attribute.
+
+236
+00:14:51,000 --> 00:14:55,000
+Now look at the dress on the right side.
+
+237
+00:14:55,000 --> 00:14:57,000
+Double-click to select this T-shirt,
+
+238
+00:14:57,000 --> 00:15:02,000
+and then right-click to select shape solidification.
+
+239
+00:15:02,000 --> 00:15:03,000
+Press the shortcut key,
+
+240
+00:15:03,000 --> 00:15:04,000
+Ctrl plus E.
+
+241
+00:15:04,000 --> 00:15:06,000
+After opening the simulation,
+
+242
+00:15:06,000 --> 00:15:10,000
+you will find that its wrinkle form has not changed at all.
+
+243
+00:15:10,000 --> 00:15:13,000
+When we drag it in the simulation state,
+
+244
+00:15:13,000 --> 00:15:16,000
+it is moving as a whole.
+
+245
+00:15:16,000 --> 00:15:20,000
+The original wrinkles and shape are firmly fixed,
+
+246
+00:15:20,000 --> 00:15:23,000
+and it is not easy to change.
+
+247
+00:15:23,000 --> 00:15:26,000
+You can drag the T-shirt on the left side without solidification to compare.
+
+248
+00:15:27,000 --> 00:15:30,000
+The solidified clothes are still physically simulated
+
+249
+00:15:30,000 --> 00:15:32,000
+and can also be moved,
+
+250
+00:15:32,000 --> 00:15:35,000
+but it always maintains the shape of the solidification at that moment.
+
+251
+00:15:35,000 --> 00:15:37,000
+Solidification and shape solidification
+
+252
+00:15:37,000 --> 00:15:41,000
+are used to adjust the needs of various clothing styles.
+
+253
+00:15:41,000 --> 00:15:43,000
+If you need to check the 3D sample clothes,
+
+254
+00:15:43,000 --> 00:15:45,000
+you need to use it reasonably.
+

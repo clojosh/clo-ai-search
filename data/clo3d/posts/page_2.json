@@ -1,192 +1,296 @@
 [
     {
-        "id": "b5558f3d9590442297b738888923d233",
-        "url": "https://connect.clo-set.com/community/post/b5558f3d9590442297b738888923d233",
-        "title": "3D Scan help",
-        "content": "3d Scan help needed: I am using Polycam on iPhone 13 Pro Max to scan a human body. Then I try to take that scan in obj format to blender for mesh cleaning. So far I haven't been successful.\n\nMy question: has someone been successful walking the path. If yes can you share the tips and trick. If not are there other viable methods which are less expensive and require minimal processing?\n\n### Community Post Comments:\nComment 1: Hi, you might be more successful getting answers on this on a Blender forum or subreddit 🙂",
-        "content_description": "This web page seeks advice and tips for successfully importing and cleaning 3D human body scans from Polycam on iPhone 13 Pro Max into Blender, or alternative cost-effective scanning methods with minimal processing.",
+        "id": "65d28e8c790047b6a1f0ebe8e1f180ea",
+        "url": "https://connect.clo-set.com/community/post/65d28e8c790047b6a1f0ebe8e1f180ea",
+        "title": "Lacing Problems",
+        "content": "I'm having trouble with lacing. When I simulate, the lacing keeps slipping out of the holes. I've adjusted the material to leather and decreased the particle distance in both the lacing and the material it is attached to. The lacing is in the holes before simulation as can be seen in the attached pics. \n\nHope you can help me.![7a55659632ba4b00a46502017912c2a3](https://storagefiles.clo-set.com/public/community/202608/65d28e8c790047b6a1f0ebe8e1f180ea/images/7a55659632ba4b00a46502017912c2a3Screenshot%202026-08-16%20112154.png)![163b5773bdc94674a6105ee7483de662](https://storagefiles.clo-set.com/public/community/202608/65d28e8c790047b6a1f0ebe8e1f180ea/images/163b5773bdc94674a6105ee7483de662Screenshot%202026-08-16%20112243.png)\n\n### Community Post Comments:\nComment 1: Hi There! For lacing if there is too much pressure the laces will often pop out. We recommend adding a row of pins down the Center back of the Corset in either side for now to maintain stability\nReply 1: Thank you for responding. I will try that!",
+        "content_description": "Troubleshoot and resolve issues with lacing slipping out during simulation by adjusting material properties and particle settings in your 3D garment design.",
         "source": "Connect Community",
-        "created_at": "2026-04-15T05:59:41.605Z",
+        "article_created_at": "2026-08-16T15:27:19.129Z",
+        "article_updated_at": "2026-08-16T15:27:19.129Z",
         "category": 210,
         "tags": [
             "CLO",
-            "Blender",
-            "Avatar",
-            "Retopology"
+            "Animation",
+            "Trim",
+            "Material"
         ]
     },
     {
-        "id": "722db7f7671345c29e1b7b44a8c8755c",
-        "url": "https://connect.clo-set.com/community/post/722db7f7671345c29e1b7b44a8c8755c",
-        "title": "Animation",
-        "content": "Dear Melody,  \nI have a problem with the animation: I selected a stage from the CLO Library and used the motion “Walking in place.” I paid attention to the following points:\n\n> \\- Simulation mode is set to Animation (Stable).\n> \n> \\- All layers are set to 0.\n> \n> \\- PD ist set to 7-10.\n> \n> \\- Additional Thickness Collision may remain around 2-2.5.\n\n> \\- Delete all pattern pieces that will not be visible during the final animation (e.g. pocket bags.)\n> \n> \\- No pattern pieces on Freeze/Deactivate/Strengthen.\n\nBut the pants still tear apart in the lower area. The sleeves of the shirt also stretch out. What could be causing this?\n\nAttached a video. \n\nMerci beacoup & Best, Tina\n\nYouTube Video: https://www.youtube.com/watch?v=AAscdZ6Vsk4?start=0\n\n### Community Post Comments:\nComment 1: It is correct to open the project file directly, but the problem you can see in the video seems to be that the pants are moving, and the two pants patterns on both legs cannot distinguish between inside and outside, resulting in a mix of positions.The sleeve of the shirt also collides with the body's pattern, and the same phenomenon occurs.First of all, I recommend separating the layers.Pants leg one pattern: 0The rest of the pants pattern: 1Red Body: 2Sky Blue Sleeve: 3Red Sleeve: 4It is safe to lower the collision thickness to 1.0 in an environment where the location of the fabric can overlap due to the large pattern area.If you have time to spare, you can choose Hi-Res Garment to greatly increase the stability of the simulation during the animation render.The particle spacing can be reversed even after Hi-Res Garment activation, so consider it.\nReply 1: @fadyboo - Thank you so much! @Tina - The oversize of the garments in the animation can require the workarounds that fadyboo has described. The animation rendering process will take longer then, but if it is the only way, then it is the way. Please get back to this thread in case the issues aren't solved after following the tips above.\nReply 2: Many thanks 🙏🏻",
-        "content_description": "A troubleshooting guide to resolving garment tearing and stretching issues during animation in CLO software.",
+        "id": "38602b6476464d4288d3fc32d5e3f904",
+        "url": "https://connect.clo-set.com/community/post/38602b6476464d4288d3fc32d5e3f904",
+        "title": "MoonBoot process",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202608/38602b6476464d4288d3fc32d5e3f904/images/70618960fe794f7cb6460757a168f378MOONBOOT_thumbnail.png)![](https://storagefiles.clo-set.com/public/community/202608/38602b6476464d4288d3fc32d5e3f904/images/1fe25ed2fde44d7987b2888004378ec1MOONBOOT_thumbnail.png)\n\n* * *\n\n**Creating the MOON Boot**\n\nI created the MOON Boot completely from scratch in CLO3D, using references and photographs as a guide. The process took some time, as not everything worked perfectly on the first try.\n\nAt the time I was working on this project, the Lacing Tool had not yet been updated, so I created the laces in Houdini using splines.\n\nOnce the model was finished, I prepared the UVs and exported it as an FBX file to 3ds Max. There, I did some additional optimization and reworked the UV layout to make the model more convenient to texture later in Substance Painter.\n\nI textured the model entirely in Substance Painter. Once the textures were finished and I was happy with the result, I started building the rendering scene in Houdini using Karma.\n\nFor the lighting setup, I use an HDRI with a Dome Light, combined with several Area Lights to create the specific atmosphere and mood I want. Then, I set up the materials using the textures I created in Substance Painter.\n\nFinally, I set up the camera and created a turntable render.![71263221ab104ac2a45f01dc05ba23e8](https://storagefiles.clo-set.com/public/community/202608/38602b6476464d4288d3fc32d5e3f904/images/71263221ab104ac2a45f01dc05ba23e8MOONBOOT_thumbnail.png)![0dcd9a76ece14d509f235883c50b129c](https://storagefiles.clo-set.com/public/community/202608/38602b6476464d4288d3fc32d5e3f904/images/0dcd9a76ece14d509f235883c50b129cMOONBOOT_thumbnail_2.png)![dfe082bf260c4165b0333d2f6ff1b407](https://storagefiles.clo-set.com/public/community/202608/38602b6476464d4288d3fc32d5e3f904/images/dfe082bf260c4165b0333d2f6ff1b40711111.png)![90817afe4cd44a89be78f15ab1a39e71](https://storagefiles.clo-set.com/public/community/202608/38602b6476464d4288d3fc32d5e3f904/images/90817afe4cd44a89be78f15ab1a39e71MOONBOOT_thumbnail.jpg)\n\n### Community Post Comments:\nComment 1: they look like Christmas gifts! love it!\nReply 1: Thank you so much❤️\n\nComment 2: VERY COOL !!! 😍👍🏻\nReply 1: ❤️Thank you Nataly❤️\n\nComment 3: All from scratch in CLO? This is amazing 😍 Love the vid! ❤️\nReply 1: ❤️Thanks! Yes. I made the moonboot model in Clo from scratch) In a while i will post one more video-process of creating a pair of shoes that i made in clo)",
+        "content_description": "Showcasing the step-by-step creation and rendering process of a detailed MOON Boot 3D model using CLO3D, Houdini, 3ds Max, and Substance Painter.",
         "source": "Connect Community",
-        "created_at": "2026-04-14T10:26:56.902Z",
-        "category": 240,
-        "tags": [
-            "CLO",
-            "CONNECT",
-            "Animation"
-        ]
-    },
-    {
-        "id": "9ff2e6aa364446a496cc6ee0fbb69515",
-        "url": "https://connect.clo-set.com/community/post/9ff2e6aa364446a496cc6ee0fbb69515",
-        "title": "Unable to select multiple items or points using shift key",
-        "content": "I'm unable to select multiple items using the shift key. I have tried changing the axis constraint key with no luck. I can select by dragging a box but thats the only way. Would love some help. Thanks",
-        "content_description": "Provide users with troubleshooting guidance and solutions for enabling multi-item selection using the shift key.",
-        "source": "Connect Community",
-        "created_at": "2026-04-13T02:08:17.261Z",
+        "article_created_at": "2026-08-16T09:04:08.171Z",
+        "article_updated_at": "2026-08-16T09:04:08.171Z",
         "category": 210,
         "tags": [
-            "CLO"
+            "CLO",
+            "Houdini",
+            "Substance"
         ]
     },
     {
-        "id": "2f57df5d5ecd4ed7ab70711ae6bc1fd3",
-        "url": "https://connect.clo-set.com/community/post/2f57df5d5ecd4ed7ab70711ae6bc1fd3",
-        "title": "Input fields not working",
-        "content": "For > 6 months now, I've been having an issue where some of the input fields to not actually save the value I entered. This happens particularly often in the \"Print Layout\" configuration fields. Sometimes it fixes itself eventually – although I'm not sure what exactly helps.   \n  \nBelow is a screen recording of my problem. I'm trying to set the width of the \"Duoplex\" fabric to 35cm, but the change is not being saved/applied. I'm pressing enter, clicking into/out of the field to no effect. Switching to a different fabric and back reveals that the change did not save.\n\nI'm using the latest version of Clo3d (2025.2.368 r54927).\n\nYouTube Video: https://www.youtube.com/watch?v=Vw0g8nUexS4",
-        "content_description": "This page documents a persistent issue with input fields not saving values in Clo3d's Print Layout settings, illustrated by a screen recording and user observations.",
+        "id": "9279fee9558248c09bb5a2aab956be8f",
+        "url": "https://connect.clo-set.com/community/post/9279fee9558248c09bb5a2aab956be8f",
+        "title": "excelsior uniforms team",
+        "content": "### I’d Really Appreciate Honest Feedback on My CLO-SET Store\n\nHi everyone,\n\nI’ve been creating and selling CLO3D / Marvelous Designer files on CLO-SET for a while, and I’ve built up quite a large collection of products.\n\nHowever, I feel that my sales are much lower than I expected considering the quality and amount of content I’m producing.\n\nI’d really appreciate **honest and critical feedback** from experienced creators and buyers here.\n\nI’d like to know:\n\n  * Is there anything wrong or missing in the quality of my files?\n\n  * Are my product thumbnails good enough?\n\n  * Are my titles, tags, and descriptions effective?\n\n  * Are my products actually useful/desirable for buyers?\n\n  * Is my pricing reasonable?\n\n  * Do you see any problem with the way I present my products?\n\n  * If you were a buyer, what would stop you from purchasing my files?\n\n  * Is there anything you would change in my store or product strategy?\n\n\n\n\nI’m not looking for compliments — **I genuinely want to know what I’m doing wrong and what I should improve.**\n\nI’ll share a few examples of my products below.\n\nAny honest feedback would be greatly appreciated. Thank you!",
+        "content_description": "This page seeks honest and constructive feedback from experienced creators and buyers to improve the quality, presentation, and sales of CLO3D/Marvelous Designer files in the CLO-SET store.",
         "source": "Connect Community",
-        "created_at": "2026-04-12T09:44:25.005Z",
-        "category": 250,
-        "tags": [
-            "CLO"
-        ]
-    },
-    {
-        "id": "b5cbab1b49c140d2994a440d0aba50e2",
-        "url": "https://connect.clo-set.com/community/post/b5cbab1b49c140d2994a440d0aba50e2",
-        "title": "You can make tent styles according to the tent supports.",
-        "content": "Come and take a look at the styles of the outdoor tents I made.\n\nOf course, you can also take part and make an outdoor tent.\n\nI think it's really interesting.\n\n* * *\n\n![29eb439b54ed4e32a1ccbd04f8c53557](https://storagefiles.clo-set.com/public/community/202604/b5cbab1b49c140d2994a440d0aba50e2/images/29eb439b54ed4e32a1ccbd04f8c53557%E6%88%B7%E5%A4%96%E5%B8%90%E7%AF%B7%20%282%29.png)![3a258a389ea44bb8b97ed13e4005b10c](https://storagefiles.clo-set.com/public/community/202604/b5cbab1b49c140d2994a440d0aba50e2/images/3a258a389ea44bb8b97ed13e4005b10c%E6%88%B7%E5%A4%96%E5%B8%90%E7%AF%B7%20%285%29.png)![1ccfdd90183f46bfa48a5dfbf8c0ea4f](https://storagefiles.clo-set.com/public/community/202604/b5cbab1b49c140d2994a440d0aba50e2/images/1ccfdd90183f46bfa48a5dfbf8c0ea4f%E6%88%B7%E5%A4%96%E5%B8%90%E7%AF%B7%20%284%29.png)\n\n![a192b4e3619047efaf467c2964fd2862](https://storagefiles.clo-set.com/public/community/202604/b5cbab1b49c140d2994a440d0aba50e2/images/a192b4e3619047efaf467c2964fd2862%E6%88%B7%E5%A4%96%E5%B8%90%E7%AF%B7%20%283%29.png)\n\n![226eb2ed00a0485298cf7da7b5c3c315](https://storagefiles.clo-set.com/public/community/202604/b5cbab1b49c140d2994a440d0aba50e2/images/226eb2ed00a0485298cf7da7b5c3c315%E6%88%B7%E5%A4%96%E5%B8%90%E7%AF%B7%20%281%29.png)\n\n* * *\n\nlink to the product - page of tent supports：\n\n<https://connect.clo-set.com/zh/detail/19c5b4a96c084ef2a8d6419d589d4be6?ref_id=108936>",
-        "content_description": "Explore unique outdoor tent designs I've created and join in to craft your own adventurous shelter.",
-        "source": "Connect Community",
-        "created_at": "2026-04-10T06:53:05.553Z",
-        "category": 215,
+        "article_created_at": "2026-08-16T06:02:07.446Z",
+        "article_updated_at": "2026-08-16T06:02:07.446Z",
+        "category": 210,
         "tags": [
             "CLO",
             "MarvelousDesigner",
             "CLO-SET",
-            "AI",
-            "Rendering"
+            "AI"
         ]
     },
     {
-        "id": "f304775e730144ef827a984eb0834d7c",
-        "url": "https://connect.clo-set.com/community/post/f304775e730144ef827a984eb0834d7c",
-        "title": "Notice: a recent issue with CLO/MD LiveSync 2.2.2",
-        "content": "Hi everyone!\n\nThis was a mistake on our end. CLO/MD LiveSync version 2.2.2 was published on Fab prematurely; it is a newer version meant for CLO / Marvelous Designer 2026.0, which has not been released yet.   \n  \nIf you are encountering an issue where a garment fails to send to Unreal Engine and the progress bar is stuck at 50%, please roll back to version 2.2.1 by following these steps.  \n  \n1\\. .Go to our LiveSync version archive and download version 2.2.1 for UE 5.7. <https://support-connect.clo-set.com/hc/en-us/articles/45304267645593-LiveSync-2-version-archive>\n\n  \n2\\. Next, navigate to the UE 5.7 installation directory (e.g., C:\\Program Files\\Epic Games\\UE_5.7\\Engine\\Plugins\\Marketplace).  \n  \n3\\. Then, Delete version 2.2.2, then unzip the downloaded 2.2.1 package and place the entire 'CLOLiveSync' folder into that directory.  \n  \nOnce CLO / Marvelous Designer 2026.0 is released, please make sure to remove version 2.2.1 and download version 2.2.2 directly from the Epic Games Launcher. 🙂\n\nIf you are experiencing any other issues with LiveSync or your CLO / Marvelous Designer to Unreal Engine workflows, we're here to help!\n\nCheers,\n\nBryan",
-        "content_description": "This page provides instructions for rolling back to LiveSync version 2.2.1 to resolve compatibility issues with Unreal Engine 5.7 caused by the premature release of version 2.2.2.",
+        "id": "ff73daae294c46519621819a08065860",
+        "url": "https://connect.clo-set.com/community/post/ff73daae294c46519621819a08065860",
+        "title": "Save as Accessory freezes CLO3D",
+        "content": "Hi.  \n  \nEvery time I save an accessory through File > Save as > Accessory, the program freezes and I have to restart it. I add a custom image for every accessory. It displays ok in the library, but the program become unresponsible.\n\n### Community Post Comments:\nComment 1: Hi, which version are you using so we can test?",
+        "content_description": "This web page aims to report and seek solutions for a program freezing issue when saving accessories with custom images.",
         "source": "Connect Community",
-        "created_at": "2026-04-09T20:15:42.612Z",
-        "category": 100,
+        "article_created_at": "2026-08-15T10:49:06.652Z",
+        "article_updated_at": "2026-08-15T10:49:06.652Z",
+        "category": 250,
         "tags": [
             "CLO",
-            "MarvelousDesigner",
-            "UnrealEngine",
-            "LiveSync"
+            "Accessory"
         ]
     },
     {
-        "id": "8f05a87a2d3c4e43bbe339cb0e02bf94",
-        "url": "https://connect.clo-set.com/community/post/8f05a87a2d3c4e43bbe339cb0e02bf94",
-        "title": "I helped a classmate optimize the style effect.",
-        "content": "![](https://storagefiles.clo-set.com/public/community/202604/8f05a87a2d3c4e43bbe339cb0e02bf94/images/cf33c0414c4344df8afcdc35c480bbee%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-04-09%20131116.png)I reset a dress form for wearing, further adjusted and optimized the sewing relationships and the clothing's shape, and readjusted the fur on the hood. You can take a look and learn from it. In the renderings, I'll provide links to the fabric and dress form materials below. If you're interested, you can click the links to download and study!\n\n![2d456c7b33c14804a8f9cb5a7cb6d609](https://storagefiles.clo-set.com/public/community/202604/8f05a87a2d3c4e43bbe339cb0e02bf94/images/2d456c7b33c14804a8f9cb5a7cb6d609%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-04-09%201311161.png)![e7435afbef684d22bf71e18643f9e2d9](https://storagefiles.clo-set.com/public/community/202604/8f05a87a2d3c4e43bbe339cb0e02bf94/images/e7435afbef684d22bf71e18643f9e2d9%E5%AF%B9%E6%AF%94.png)Initial effect\n\n![f6bd9a72e4fc461cb9385b39f9ff88c3](https://storagefiles.clo-set.com/public/community/202604/8f05a87a2d3c4e43bbe339cb0e02bf94/images/f6bd9a72e4fc461cb9385b39f9ff88c373800ACT_Colorway%20PANTONE%2012-1207%20TCX-Blush.png)Effect after adjustment:<https://connect.clo-set.com/zh/detail/79316dec773e4e05a877812a88e45185?ref_id=108936>\n\n![91722f284f744cf9851807849cede9bf](https://storagefiles.clo-set.com/public/community/202604/8f05a87a2d3c4e43bbe339cb0e02bf94/images/91722f284f744cf9851807849cede9bf%E7%B2%89%E8%89%B2PU%E7%9A%AE%E7%BE%BD%E7%BB%92%E5%A4%96%E5%A5%97_Colorway%20PANTONE%2012-1209%20TCX_F.png)Hood fur fabric：<https://connect.clo-set.com/zh/detail/5408127f8225447c80015ca2cf427f98?ref_id=108936>\n\nInner collar fabric:<https://connect.clo-set.com/zh/detail/ed97f31c3cf84e339a2369bc8ef3fc9d?ref_id=108936>\n\nAvatar:<https://connect.clo-set.com/zh/detail/68d0508f42e346eebcdb6bb867d7f399?ref_id=108936>\n\n### Community Post Comments:\nComment 1: It's such a pretty outfit.❤️The design is so cool, and I think you're so good at making costumes\nReply 1: ❤️❤️❤️Thank you",
-        "content_description": "This page showcases the process of refining a dress form and garment design with detailed adjustments, providing downloadable fabric and dress form materials for learning and study.",
+        "id": "ced7db5d266242cca8bcc77d8fb171c5",
+        "url": "https://connect.clo-set.com/community/post/ced7db5d266242cca8bcc77d8fb171c5",
+        "title": "Ripping effect is not showing....",
+        "content": "![411336cdd07e43978c6390ee986252f2](https://storagefiles.clo-set.com/public/community/202608/ced7db5d266242cca8bcc77d8fb171c5/images/411336cdd07e43978c6390ee986252f2Screenshot%202026-08-13%20at%209.05.59%E2%80%AFAM.png)I just downloaded the new clo3d 2026.1.188 version. I followed the clo3d YouTube video using the same denim fabric with same rip resistance setting. After simulation, it didn't show the ripping effect at all. I have tried using different fabrics and changed different rip resistance...still didn't change anything. is there any setting I need to correct to be able to see the ripping effect?\n\n### Community Post Comments:\nComment 1: Donc autre question que je me suis posée, peut-être que que j'ai mal installé le logiciel, donc j'ai tout désinstallé tout nettoyé résidus total, j'ai tout réinstallé. Ben vous ne devinez pas ce qui s'est passé pas de module en tout cas je n'ai que la moitié pas de paramètres. Dernière question que je me suis posé, est-ce que CLO le fait exprès parce que c'est pas la première fois que ça m'arrive, j'ai même eu une fois une installation qui m'a carrément supprimé la bibliothèque de boutons.......\nReply 1: Hi There, As noted in the response to Kev in Design directly below this. The Rip/Tear feature is visually ONLY available on a PV. We hope Macs will be added in a future update\n\nComment 2: Alors j'ai demandé à l'une de mes élèves qui est sur PC si elle avait le module et elle l'a donc je me suis posé la question est-ce que c'est les Mac qui sont privés d'une partie du module déchirure et pourquoi ?\n\nComment 3: J'ai le même problème que Kev-in-DESIGN j'ai fait exactement les mêmes tests que lui et effectivement moi je suis sur Mac dernière version OS et ça ne fonctionne pas, je ne vois pas apparaître les déchirures après la simulation et moi c'est encore pire j'ai même pas le module qui permet dans les propriétés de régler donc pour moi, le module déchirure est bon à foutre à la poubelle 😭😭😭😭😭😭😭😭\n\nComment 4: Hi There! If you are currently on a MAC you will not see the rip/tear fibers. Currently, you can only see them in the 3D window if you are using a PC\nReply 1: yes..I am using Mac and that's why it's not showing. Thank you!",
+        "content_description": "This page provides troubleshooting guidance and user support for enabling and visualizing ripping effects in CLO3D simulations.",
         "source": "Connect Community",
-        "created_at": "2026-04-09T05:54:25.186Z",
-        "category": 240,
+        "article_created_at": "2026-08-13T16:13:59.745Z",
+        "article_updated_at": "2026-08-13T16:13:59.745Z",
+        "category": 220,
+        "tags": [
+            "ripping",
+            "CLO"
+        ]
+    },
+    {
+        "id": "7923ca1d4a8f4319b2f767d90cbc4e7c",
+        "url": "https://connect.clo-set.com/community/post/7923ca1d4a8f4319b2f767d90cbc4e7c",
+        "title": "Issues with armhole render",
+        "content": "Hello. I am having issues getting the armhole of this top to display properly. The back piece is symmetrical (with sewing) and there is a facing piece on the inside of the arm/neck hole to apply overstitching. I am trying to simulate a turnback on these seams with coverstitching. For some reason I am getting an indented type line on the right side. Any ideas how to resolve this?![5a41d6039fd54b55b2e876001fee35d3](https://storagefiles.clo-set.com/public/community/202608/7923ca1d4a8f4319b2f767d90cbc4e7c/images/5a41d6039fd54b55b2e876001fee35d3armhole2.JPG)\n\nAnd then for some reason the underarm seems to have a wider bit on it but the pattern is even the whole way around. Any tips as to what could be causing this puffiness at the underarm point? Thanks.\n\n![23260cc1615d49898d7805ef2a00bdc6](https://storagefiles.clo-set.com/public/community/202608/7923ca1d4a8f4319b2f767d90cbc4e7c/images/23260cc1615d49898d7805ef2a00bdc6armhole.JPG)![d05651ef279b4bc0b2c89284033c3ee7](https://storagefiles.clo-set.com/public/community/202608/7923ca1d4a8f4319b2f767d90cbc4e7c/images/d05651ef279b4bc0b2c89284033c3ee7pattern.JPG)\n\n### Community Post Comments:\nComment 1: For small facings like that it can be easier to use the binding tool instead sometimes. So you can just assign to the armhole and edit it in the Property Editor.But if you want to keep with the pattern pieces you already have made make sure to check that your Sewing is Turned. It is likely currently not Turned which is what is causing the pufyyness",
+        "content_description": "A forum page for discussing and troubleshooting armhole fitting issues and seam finishing techniques in garment sewing and pattern making.",
+        "source": "Connect Community",
+        "article_created_at": "2026-08-13T04:27:40.112Z",
+        "article_updated_at": "2026-08-13T04:27:40.112Z",
+        "category": 220,
+        "tags": [
+            "Rendering",
+            "CLO"
+        ]
+    },
+    {
+        "id": "ca2aa0673e1e44bebcc568e49dab624d",
+        "url": "https://connect.clo-set.com/community/post/ca2aa0673e1e44bebcc568e49dab624d",
+        "title": "Two different stories. One competition! ",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202608/ca2aa0673e1e44bebcc568e49dab624d/images/acc2340fd13449d987a2945c91a627cbe10%20copy%201.jpg)![44747355de6f46d497960eda381521f7](https://storagefiles.clo-set.com/public/community/202608/ca2aa0673e1e44bebcc568e49dab624d/images/44747355de6f46d497960eda381521f7La%20Diez%20by%20Tinu%20Jose%20%283%29.png)  \n🔟 **LA DIEZ — The Number 10**  \nInspired by Argentina’s iconic football heritage and the legendary **No. 10** , _La Diez_ explores how football identity can be translated into contemporary fashion. The design combines Argentina’s signature sky-blue palette with a sporty, feminine silhouette and details inspired by the visual language of football jerseys.  \n  \n![db71da2dd7dc4e29b209267c6c66f10c](https://storagefiles.clo-set.com/public/community/202608/ca2aa0673e1e44bebcc568e49dab624d/images/db71da2dd7dc4e29b209267c6c66f10c10%20copy.jpg)  \n🌊 **LA MAREA — The Tide**  \nInspired by Portugal’s deep connection with the Atlantic Ocean, _La Marea_ translates the rhythm and movement of ocean tides into a contemporary football lifestyle jersey. The flowing print, wave-like details, and deep burgundy palette are designed to capture the energy of the sea while keeping the design rooted in football culture.  \n  \n**LA MAREA — The Tide:** <https://connect.clo-set.com/detail/dc3551c95db1457f9064aaa92ccd2ea3>  \n**LA DIEZ — The Number 10:**<https://connect.clo-set.com/detail/3395307d69a54886808af29047c17a07>  \n  \nBoth projects were created in **CLO 3D** , with the aim of blending football culture, fashion, storytelling, and digital garment design.\n\nWould love to hear what you think!  \n**Which one speaks to you more — LA MAREA or LA DIEZ?**\n\n### Community Post Comments:\nComment 1: LA DIEZ👍🏻\nReply 1: Glad it caught your eye!❤️",
+        "content_description": "Showcasing innovative digital fashion designs that blend football culture and storytelling through the inspired collections LA DIEZ and LA MAREA.",
+        "source": "Connect Community",
+        "article_created_at": "2026-08-11T03:40:25.586Z",
+        "article_updated_at": "2026-08-11T03:40:25.586Z",
+        "category": 210,
         "tags": [
             "CLO",
-            "MarvelousDesigner",
-            "Photoshop",
-            "Rendering"
+            "CLO-SET",
+            "CONNECT",
+            "Contest",
+            "Championshipthread",
+            "footballfashion",
+            "digitalfashion",
+            "3ddesign"
         ]
     },
     {
-        "id": "6547e45b7b434cedaa9d77e0e93b0840",
-        "url": "https://connect.clo-set.com/community/post/6547e45b7b434cedaa9d77e0e93b0840",
-        "title": "Hole around the zipper",
-        "content": "Does anyone know why the hole in the attached image appears on the garment? It does not show when the particle distance is higher, but once it is reduced, it becomes obvious.  \n![3b7a71d563094b2e892471e0f5ae95e2](https://storagefiles.clo-set.com/public/community/202604/6547e45b7b434cedaa9d77e0e93b0840/images/3b7a71d563094b2e892471e0f5ae95e2Screenshot%202026-04-07%20213136.png)\n\n### Community Post Comments:\nComment 1: Hi There. This gap can be sewn closed in the 3D window.With simulation on pull and make a gap like you have above and stop simulation.Then use the Segment sewing tool in the 3D window to sew the gap closed on both halved of the zipper 🙂",
-        "content_description": "To investigate and explain the cause of the hole appearing in the garment when particle distance is reduced in 3D garment simulation.",
+        "id": "fe4036a6eb0f4e0c99177d53d2461142",
+        "url": "https://connect.clo-set.com/community/post/fe4036a6eb0f4e0c99177d53d2461142",
+        "title": "Problem with Glasses Registration",
+        "content": "Hi, I need your help.\n\nI created these glasses, as you can see in the first image.\n\nI registered them, but the lenses appear black in the render even though they use the same material. Does anyone know how I can fix this issue?![30c923ff47c64468ac7ca2a452948ebd](https://storagefiles.clo-set.com/public/community/202608/fe4036a6eb0f4e0c99177d53d2461142/images/30c923ff47c64468ac7ca2a452948ebdScreenshot%202026-08-09%20110609.jpg)![cfdeaf5f900d418a82ad28d97a716abf](https://storagefiles.clo-set.com/public/community/202608/fe4036a6eb0f4e0c99177d53d2461142/images/cfdeaf5f900d418a82ad28d97a716abfScreenshot%202026-08-09%20110428.jpg)\n\n### Community Post Comments:\nComment 1: Thank you for following up and for your guidance. I’ll give it a try and let you know how it goes.\n\nComment 2: Hi, I just tested this on several pattern pieces and glasses, with various results. So it is not clear to me what is causing the issue. At first, I suspected the difference in Absorption for both examples, but I have also produced an opaque pattern piece with the standard settings, so now I am confused. The only thing I can detemrine so far is that it appears to be connected to the color, all my examples work on #FFFFFF, but also NOT all of the ones on #D3B673 turn out opaque. I will investigate further and get back to you! (Unless one of my colleagues here has another idea?)\nReply 1: So far, I've determined that in order to display colored glass properly, Thick Textured Surface has to be toggled on. However, this should not affect your glasses. Are the glasses transparent when the color is set to white/none? (#ffffff)",
+        "content_description": "Seeking help to resolve a rendering issue where registered glasses lenses appear black despite using the correct material.",
         "source": "Connect Community",
-        "created_at": "2026-04-07T20:36:49.932Z",
+        "article_created_at": "2026-08-09T08:24:03.486Z",
+        "article_updated_at": "2026-08-09T08:24:03.486Z",
         "category": 220,
         "tags": [
             "CLO",
-            "Contest",
+            "MarvelousDesigner",
+            "CLO-SET",
+            "CONNECT",
+            "Material",
+            "Rendering",
+            "Texture"
+        ]
+    },
+    {
+        "id": "1ba9ea22b7da4a95a90eee42c310a827",
+        "url": "https://connect.clo-set.com/community/post/1ba9ea22b7da4a95a90eee42c310a827",
+        "title": "My Design for : Championship Thread Contest",
+        "content": "![d35aa068b5424834b6d5942190e62c13](https://storagefiles.clo-set.com/public/community/202608/1ba9ea22b7da4a95a90eee42c310a827/images/d35aa068b5424834b6d5942190e62c13piece333.jpg)![8f6b2cb8042f4f52952ea9a277d3d5d2](https://storagefiles.clo-set.com/public/community/202608/1ba9ea22b7da4a95a90eee42c310a827/images/8f6b2cb8042f4f52952ea9a277d3d5d2moodboard%20-finnal.jpg)![d7beafc9097044ceb18a4fcdd90288c6](https://storagefiles.clo-set.com/public/community/202608/1ba9ea22b7da4a95a90eee42c310a827/images/d7beafc9097044ceb18a4fcdd90288c6final%20thumbnail%20jpn.jpg)![ec887fe363e54fe9880e16d61fe43370](https://storagefiles.clo-set.com/public/community/202608/1ba9ea22b7da4a95a90eee42c310a827/images/ec887fe363e54fe9880e16d61fe43370detaile22.jpg)![b6b09346e7a5423c84e7f6d320d1b4d1](https://storagefiles.clo-set.com/public/community/202608/1ba9ea22b7da4a95a90eee42c310a827/images/b6b09346e7a5423c84e7f6d320d1b4d12ndd.jpg)**Hey everyone! Hope you're all doing well 👋**\n\nI’m excited to finally share my latest concept for the **CLO & Marvelous Designer Challenge: Championship Threads**. 🇯🇵⚽\n\nFor this project, I wanted to imagine what a **Japanese football captain from the future** might look like, while keeping a strong connection to Japanese craftsmanship and identity.\n\nI took inspiration from **Samurai armor, Sashiko craftsmanship, Origami geometry, and contemporary Japanese design** , then translated these elements into a futuristic, transformable football uniform.\n\nThe main idea was to create something that feels **ceremonial before the match, but engineered for performance once the game begins.**\n\nI’d really love to hear what you guys think.  \n**Which detail catches your eye the most? 👀🇯🇵**\n\nHope you enjoy it, and good luck to everyone participating! 🫶⚽  \n<https://connect.clo-set.com/detail/0b9b5f2f3dc342b0b3ae6ce33d3ca5b5>\n\n### Community Post Comments:\nComment 1: You deserved to win!👍🏻\nReply 1: Thank you, I tried my best🙏🏻\n\nComment 2: This is SO GOOD 🔥🔥 You absolutely killed it!\nReply 1: Many thanks baran❤️",
+        "content_description": "Showcasing a futuristic Japanese football captain uniform concept that blends traditional craftsmanship with innovative design for ceremonial and performance excellence.",
+        "source": "Connect Community",
+        "article_created_at": "2026-08-08T12:37:42.083Z",
+        "article_updated_at": "2026-08-08T12:37:42.083Z",
+        "category": 210,
+        "tags": [
+            "futuristicfootball",
+            "footballarmor",
+            "japanease",
+            "highdetailed",
+            "contest",
+            "2026worldcup",
+            "CLO",
+            "Blender",
+            "Photoshop",
+            "Material"
+        ]
+    },
+    {
+        "id": "75a6c2bf9fa1498b96fc10380edc5b40",
+        "url": "https://connect.clo-set.com/community/post/75a6c2bf9fa1498b96fc10380edc5b40",
+        "title": "Women's  Leather Jacket ",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202608/75a6c2bf9fa1498b96fc10380edc5b40/images/28ffb4f8ceaf4794a89ac16403f4a14201.jpg)This women's leather jacket was created entirely in CLO3D with a clean Quad Mesh and professional topology. All decorative details, including buttons, studs, and emblems, are crafted entirely from fabric, with no separate hardware or external 3D objects used. The garment is fully editable and is ideal for digital fashion, high-quality rendering, character design, animation, and game development\n\nQuad mesh + UV\n\nEmail: [fariba.designer.m@gmail.com](mailto:fariba.designer.m@gmail.com)\n\n![ca1574178bfb4af68dd38234c35c8a31](https://storagefiles.clo-set.com/public/community/202608/75a6c2bf9fa1498b96fc10380edc5b40/images/ca1574178bfb4af68dd38234c35c8a31bANNER2.jpg)![d46bc3d671b44ac9b73448950815feed](https://storagefiles.clo-set.com/public/community/202608/75a6c2bf9fa1498b96fc10380edc5b40/images/d46bc3d671b44ac9b73448950815feedBANNER1.jpg)![fd2d54673dc848208855aac89631352a](https://storagefiles.clo-set.com/public/community/202608/75a6c2bf9fa1498b96fc10380edc5b40/images/fd2d54673dc848208855aac89631352a9.jpg)![145861e92cbc4926a182430f4854c3a6](https://storagefiles.clo-set.com/public/community/202608/75a6c2bf9fa1498b96fc10380edc5b40/images/145861e92cbc4926a182430f4854c3a67.jpg)![ec863a25866043ecac04e856da5eacb6](https://storagefiles.clo-set.com/public/community/202608/75a6c2bf9fa1498b96fc10380edc5b40/images/ec863a25866043ecac04e856da5eacb64.jpg)![df58ff7c3b1d4262803b40423565b4db](https://storagefiles.clo-set.com/public/community/202608/75a6c2bf9fa1498b96fc10380edc5b40/images/df58ff7c3b1d4262803b40423565b4db3.jpg)![2bd60a5d2a09411a94c3f407469a9cc7](https://storagefiles.clo-set.com/public/community/202608/75a6c2bf9fa1498b96fc10380edc5b40/images/2bd60a5d2a09411a94c3f407469a9cc70.jpg)\n\n### Community Post Comments:\nComment 1: This is SO GOOD 🔥🔥 You absolutely killed it!\nReply 1: Thank you so much!🔥🤍 This means so much to me! So glad you loved it! ✨\n\nComment 2: ❤️❤️\nReply 1: 😍😍",
+        "content_description": "Showcasing a fully editable, high-quality women's leather jacket designed in CLO3D with clean quad mesh topology and detailed fabric-based embellishments, ideal for digital fashion, animation, and game development.",
+        "source": "Connect Community",
+        "article_created_at": "2026-08-08T12:35:06.223Z",
+        "article_updated_at": "2026-08-08T12:35:06.223Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "LeatherJacket",
+            "WomensJacket",
+            "QuadMesh",
+            "GameReady",
+            "CharacterClothing",
+            "VirtualFashion",
+            "female",
+            "garment"
+        ]
+    },
+    {
+        "id": "fe213d0288b646a9803894c2f9194ccf",
+        "url": "https://connect.clo-set.com/community/post/fe213d0288b646a9803894c2f9194ccf",
+        "title": "Flamed_Elegance",
+        "content": "A delicate lace silhouette adorned with bold red floral appliqués, capturing the harmony of softness and confidence in a striking modern form.![1d3058959e8d4f9fb6cafb5d6738b508](https://storagefiles.clo-set.com/public/community/202608/fe213d0288b646a9803894c2f9194ccf/images/1d3058959e8d4f9fb6cafb5d6738b5081.jpg)![87af2b9ed17d4f0baf6bb773c4ee7778](https://storagefiles.clo-set.com/public/community/202608/fe213d0288b646a9803894c2f9194ccf/images/87af2b9ed17d4f0baf6bb773c4ee77784.jpg)![cbe4235207bd4e9c98f038c3772c7c4e](https://storagefiles.clo-set.com/public/community/202608/fe213d0288b646a9803894c2f9194ccf/images/cbe4235207bd4e9c98f038c3772c7c4e5.jpg)\n\n* * *\n\ncontact me : zahrakarimzadeh.zk@gmail.com",
+        "content_description": "Showcasing a delicate lace silhouette enhanced with bold red floral appliqués that blend softness and confidence in a contemporary design.",
+        "source": "Connect Community",
+        "article_created_at": "2026-08-08T08:39:14.271Z",
+        "article_updated_at": "2026-08-08T08:39:14.271Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "CLO-SET",
+            "MarvelousDesigner",
+            "CONNECT",
+            "Photoshop",
+            "UnrealEngine",
+            "Colorway",
+            "Texture",
+            "lace",
+            "floral"
+        ]
+    },
+    {
+        "id": "41d2a07d27b3423b9ecf8f58699f6975",
+        "url": "https://connect.clo-set.com/community/post/41d2a07d27b3423b9ecf8f58699f6975",
+        "title": "2D CLO patterns - nesting - DXF - cutter",
+        "content": "Hi everyone,\n\nIs there anyone here who sends their created and graded patterns from CLO3D in DXF format directly to a cutter after nesting?\n\n### Community Post Comments:\nComment 1: For production use, I’d first make sure the exported DXF preserves the correct scale, grading, notches, seam information, and pattern-piece labels before sending it to the cutter.It’s also a good idea to open the DXF in the receiving nesting or cutting software and verify a few known measurements against the original CLO pattern. That can help catch scaling or export-setting issues before fabric is cut.For graded patterns, I’d also confirm that every size is included correctly and that the nesting system recognizes all pattern outlines as expected.",
+        "content_description": "This page serves to connect CLO3D users seeking advice on sending nested, graded DXF patterns directly to cutters.",
+        "source": "Connect Community",
+        "article_created_at": "2026-08-06T13:46:47.309Z",
+        "article_updated_at": "2026-08-06T13:46:47.309Z",
+        "category": 220,
+        "tags": [
+            "CLO",
+            "Import_Export",
+            "Pattern"
+        ]
+    },
+    {
+        "id": "8a9d32c9ff184b5a8466837640b610c7",
+        "url": "https://connect.clo-set.com/community/post/8a9d32c9ff184b5a8466837640b610c7",
+        "title": "Pit Stop to Pattern Pieces: How an Indian Fashion Student Brought F1 to the Digital Runway",
+        "content": "## _Most F1 fans stop at the merch store. Sanjivani Rana went further, translating the engineering-driven aesthetics of six Formula 1 teams into a 12-look CLO collection built on color theory, garment ergonomics, and modular construction. We sat down with her to find out how a fashion student turns racewear technology into something you'd actually want to wear._\n\n* * *\n\n![6ccc6a6f40c84960ad83990f34f177e1](https://storagefiles.clo-set.com/public/community/202607/8a9d32c9ff184b5a8466837640b610c7/images/6ccc6a6f40c84960ad83990f34f177e1%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202026-07-30%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.01.49.png)![44b856e160684a2c874ed7c086546f0c](https://storagefiles.clo-set.com/public/community/202607/8a9d32c9ff184b5a8466837640b610c7/images/44b856e160684a2c874ed7c086546f0c%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202026-07-30%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.02.15.png)\n\n**Q: Could you briefly introduce yourself and share a little bit about your background?**\n\nHi, I'm Sanjivani Rana, a fashion design student based in India who recently completed her bachelor's degree. I thrive on creative exploration and hands-on experimentation. I don't confine myself to a single style or medium. I'm a proud jack of all trades, constantly learning, evolving, and discovering new ways to express ideas. Lately, I've been deep into digital design, especially CLO, where I get to merge fashion-forward concepts with technology.\n\n**Q: What sparked your interest in 3D fashion, and how did you transition from traditional to digital design?**\n\nSemester 7 was the turning point. I was introduced to 3D design through one of my modules, and it completely changed how I thought about fashion. The transition from traditional to digital wasn't overnight. It started with basic garment sketches, but once I got comfortable with CLO, I realized I could visualize designs faster, adjust patterns in real time, and experiment without waste. That shift gave me so much more freedom to iterate. It also made me see how digital fashion could break boundaries, not just in design but in production and sustainability too.\n\n**Q: Where does your passion for Formula 1 come from, and how does it influence your creative work?**\n\nIt started with Netflix's \"Drive to Survive.\" I was completely hooked from the first episode and binge-watched everything. The more I followed the sport, the more I became captivated by the precision, speed, and dedication behind each team. How a single turn can define a team's entire season. So when I got an assignment to create a collection of 12 pieces, Formula 1 was the only answer. I crafted two outfits for each of six teams: Ferrari, Red Bull, McLaren, Mercedes AMG Petronas, Williams Racing, and Aston Martin, letting their distinct identities and aesthetics come to life through the designs.\n\n![e4a5cf832e734897bfbf514067e84e29](https://storagefiles.clo-set.com/public/community/202608/8a9d32c9ff184b5a8466837640b610c7/images/e4a5cf832e734897bfbf514067e84e29%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202026-08-06%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%209.38.08.png)![6b185eb747cb43d39d97a3219018240c](https://storagefiles.clo-set.com/public/community/202608/8a9d32c9ff184b5a8466837640b610c7/images/6b185eb747cb43d39d97a3219018240cimage.png)![a273ab1657704a0a9a5dda521b071454](https://storagefiles.clo-set.com/public/community/202608/8a9d32c9ff184b5a8466837640b610c7/images/a273ab1657704a0a9a5dda521b071454image.png)\n\n**Q: Your F1 Runway project feels like engineering brought into fashion. What inspired this concept?**\n\nAfter getting into F1, I started noticing how much merchandise was out there, and it was almost always just oversized jerseys or basic vests. That gap sparked something in me. If I was going to use F1 as a theme, I had to push further. I wanted pieces that actually embodied the energy, precision, and innovation of the sport. Fashion-forward, not just fan pieces.\n\n**Q: How did you approach turning the mechanical aesthetics of race cars into wearable designs while staying true to each team's identity?**\n\nI started by dissecting what makes each team visually distinct: the aerodynamic lines, modular structures, color systems. Then I translated those elements into silhouettes and tailoring. The designs aren't overly technical, but each look is built so that at a glance, you know exactly which team it belongs to. Color choices, graphic details, the overall energy. I wanted the team identity to be unmistakable even without needing to read a label.\n\n![af9066f2d3a34846a58c6464cf064482](https://storagefiles.clo-set.com/public/community/202607/8a9d32c9ff184b5a8466837640b610c7/images/af9066f2d3a34846a58c6464cf0644821.png)![abf7eafbc92744ff9315ab881d973180](https://storagefiles.clo-set.com/public/community/202607/8a9d32c9ff184b5a8466837640b610c7/images/abf7eafbc92744ff9315ab881d9731802.png)\n\n**Q: You've spoken about how digital fashion can outpace traditional methods. How did that show up in your CLO workflow?**\n\nThe biggest difference was not needing physical samples. I could iterate on fits, adjust patterns, and fine-tune details digitally without any material waste. CLO's simulation also let me see exactly how the fabric would drape and move on the body before committing to anything. That level of realism meant I could move faster without guessing. Every seam, every drape was exactly as I envisioned it.\n\n**Q: You mentioned your mentor was like a \"pit crew\" during this process. How did their guidance help?**\n\nJust like a driver needs a pit crew to get back on track after a rough patch, she was there at every step. Whenever I hit a creative wall or needed a fresh perspective, her guidance was steady. She wasn't just a mentor. She was a real partner in the process: always kind, always present, always helping me fine-tune the details. Like a pit crew pushing a driver toward their best lap.\n\n**Q: Young GenZ designers in India are moving beyond traditional styles and experimenting with global concepts like sportswear or gaming-inspired designs. Have you seen that shift?**\n\nDefinitely. The silhouettes coming out of young designers in India right now are bold, dramatic, almost futuristic. Sculptural, daring, avatar-like. It doesn't feel like fashion following a trend anymore. It feels like a whole new era taking shape. And I think we're just at the beginning of it.  \n\n\n![f1953a57e21d4692bb7338ec50e1535d](https://storagefiles.clo-set.com/public/community/202607/8a9d32c9ff184b5a8466837640b610c7/images/f1953a57e21d4692bb7338ec50e1535d%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202026-07-30%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.22.12.png)\n\n**Q: Looking ahead, what direction do you see your career in digital fashion taking? And what would you say to students just starting out with CLO?**\n\nI want to keep moving toward more immersive, concept-driven work where fashion and technology genuinely coexist. I'm especially drawn to collections that feel emotionally impactful and still functional. CLO is a big part of that vision.\n\nFor students starting out: the technical side is less scary than it looks. The more you experiment, the more the software becomes a natural part of how you think. Treat it as a tool for your imagination, not a wall between you and your ideas. Be patient, stay curious, and let the mistakes teach you. Digital fashion is moving fast, and this is a genuinely exciting time to be in it.\n\n### Community Post Comments:\nComment 1: Great interview and an inspiring project. I really like the focus on using CLO3D to iterate quickly while maintaining strong design intent. Translating technical inspiration like Formula 1 into wearable fashion takes both creativity and a solid understanding of garment construction. Wishing Sanjivani all the best in her digital fashion journey!",
+        "content_description": "Showcasing how fashion student Sanjivani Rana transforms Formula 1 team aesthetics into innovative, digitally designed garments that blend engineering precision with wearable style through 3D fashion technology.",
+        "source": "Connect Community",
+        "article_created_at": "2026-07-30T08:34:24.262Z",
+        "article_updated_at": "2026-07-30T08:34:24.262Z",
+        "category": 110,
+        "tags": [
+            "CLO",
+            "Avatar",
+            "Colorway",
+            "Material",
             "Pattern",
+            "Rendering",
             "Simulation",
+            "Texture",
             "Trim"
         ]
     },
     {
-        "id": "c85e4b61b7d24a1bbdcdae98fe6eacce",
-        "url": "https://connect.clo-set.com/community/post/c85e4b61b7d24a1bbdcdae98fe6eacce",
-        "title": "Como faço para disponibilizar a versão final em 3D da peça ao cliente? | How do I make the final 3D version of the part available to the client?",
-        "content": "Version in English: Would it be possible to display this 3D version on my company website for the client?\n\nVersão em Português: Seria possível exibir essa versão 3D no site da minha empresa para o cliente?\n\n### Community Post Comments:\nComment 1: Yes, this is possible. But you will need to make sure a 3D viewer with the correct code is on your website. --- You would need a WebGL enabled browser and the file would need to be GLB or GLTFBut we can only help with the CLO part here. For the rest you may need help out side, but a quick google search of \"how to add a 3d viewer to a website\" has a lot of resources 🙂",
-        "content_description": "This web page aims to provide information on embedding a 3D version of a product or model on a company website for client presentation.",
+        "id": "5a35e3b2f21c42c8a884cec213b51b4d",
+        "url": "https://connect.clo-set.com/community/post/5a35e3b2f21c42c8a884cec213b51b4d",
+        "title": "Erreur Export VRM",
+        "content": "Bonjour j'essai de créé des vêtement personnalisé pour des VRM que je crée et que j'import sur clo3D nu, une fois le vêtement réalisé, lorsque j'exporte mon fichier VRM, le fichier est corrompu il ne s'ouvre dans auccun logiciel qui acceptent des fichier VRM même quand je teste mon fichier vrm issu de clo3d sur ce site [https://vrm-viewer.ownverse.world/ ](https://vrm-viewer.ownverse.world/) il y a quand même l'erreur. Je ne comprends pas pourquoi je ne peux pas simplement importer / habiller et Exporter mon VRM avec Clo3D et Utiliser après mon fichier VRM ailleurs. Quelqu'un a rencontré ce type de problème ? peut-être que je m'y prends mal ? je n'ai pas envie de convertir mon VRM pour VRchat, je veux l'utiliser tel quel, même si le fichier comporte une Erreur en l'ouvrant dans un logiciel qui acceptent les fichier VRM, si j'ouvre mon fichier Vrm problématique dans Blender, on peut voir le personnage + le vêtement créé, mais moi je n'ai aucune idée de comment utiliser Blender dans ce cas. D'ailleurs pourquoi si j'ai un logiciel fort comme clo3D je suis obligé d'avoir constament blender pour X tache ?\n\n### Community Post Comments:\nComment 1: Hello, n'hésite pas également à contacter le support technique en joignant ton fichier https://connect.clo-set.com/community/post/5a35e3b2f21c42c8a884cec213b51b4d - Comme c'est un logiciel externe, il est possible qu'on mette un peu de temps à te répondre. Note aussi que la réponse sera en anglais car l'équipe support ne parle pas français. :)\nReply 1: d'accord je vais envoyé un compte rendu sur les défaut rencontré avec l'export vrm simple et celui de everywear pour vrchat, dans l'ensemble j'ai pu régler le problème avec l'export VRM dans Everywear de Vrchat : mes UV pour l'avatar était supperposé aux UV du vêtement, et oui il faut passer par Blender pour corriger le VRM (les couleurs même si y a l'ajout dans clo3d du toon shader ça ne fonctionne pas bien, les cartes UV exporté avec l'export VRM de EveryWear ne sont pas bon non plus, j'ai du faire un export des UV Map (Avatar et Vêtement) depuis l'éditeur UV dans clo3d pour avoir les bon rendu dans blender grace à l'add on VRM). Le bon point sur l'export VRM pour VRCHAT depuis Everywear c'est que le vêtement reste attaché sur l'avatar contrairement à l'export VRM simple ou le vêtement reste figé alors que l'avatar bouge... j'espère que ça pourra aider les autres qui rencontre le même problème, Bonne journée chez-vous 🙂❤️\n\nComment 2: Je pense que le problème vient du fait que CLO3D n'est pas un éditeur VRM complet. Bien qu'il permette d'importer et d'exporter des maillages, il ne conserve pas toujours toutes les données spécifiques au format VRM (métadonnées, *spring bones*, expressions, paramètres du squelette humanoïde, etc.) ; il peut en résulter un fichier VRM qui s'ouvre dans Blender mais échoue à la validation dans les visionneuses VRM.Une méthode plus fiable consiste à utiliser CLO3D pour créer le vêtement, à l'exporter au format FBX ou OBJ, puis à l'intégrer à votre VRM d'origine dans Blender à l'aide de l'add-on VRM. De cette façon, vous préservez l'intégrité des données VRM initiales tout en remplaçant ou en ajoutant uniquement le vêtement.Par curiosité, quelle version de CLO3D utilisez-vous ? Je sais que la prise en charge du format VRM a évolué au fil des versions.\nReply 1: coucou merci pour ta réponse, j'utilise la dernière version de clo3D celle conçu justement pour l'import export vrm... je vais suivre tes conseils en exportant uniquement le modèle en fbx, j'ai vu hier également que l'export fbx du modèle et de l'avatar fonctionnais si j'utilisais everywear (export général pas vrchat) j\"utiliserai blender et l'add on VRM pour convertir mon fbx en VRM, j'espère que dans le future clo3d améliora cette fonctionnalité, Bonne journée Poshyi 🙂",
+        "content_description": "Cette page vise à partager et résoudre les problèmes liés à l'importation, la personnalisation et l'exportation de fichiers VRM avec Clo3D, en particulier concernant les erreurs de corruption empêchant leur utilisation dans d'autres logiciels sans conversion.",
         "source": "Connect Community",
-        "created_at": "2026-04-07T18:01:59.462Z",
+        "article_created_at": "2026-08-04T15:34:33.851Z",
+        "article_updated_at": "2026-08-04T15:34:33.851Z",
         "category": 220,
         "tags": [
+            "VRM",
+            "CLO3d",
+            "Erreur",
+            "Export",
             "CLO",
-            "UI"
+            "Import_Export"
         ]
     },
     {
-        "id": "ce210a2025bc4b98b4f42a0232c39fa7",
-        "url": "https://connect.clo-set.com/community/post/ce210a2025bc4b98b4f42a0232c39fa7",
-        "title": "CLO×Burtonのロゴダウンロードができない",
-        "content": "コンテスト要項にある、公式バートンロゴのダウンロードリンクが開けない（リンクされていない）状態なのですが、ほかの参加者さんはみんなできていますか？\n\nボードのデータもテクスチャが貼られていないのですが、こちらはみなさん一緒ですかね？（スノーボードシューズにはテクスチャがあったのでお聞きしたいです）\n\n### Community Post Comments:\nComment 1: Hi! Happy to help, but please know I can only reply in EnglishFor the Burton Logo. When you click on the Link it will go to the official Burton site and then you will need to click on logos button in the side bar. I am attaching an image below for reference.. Once on that Logos page you can scroll down to choose the logo you want to useFor the Burton Snowboard and Boots those will be a plain white color, with no texture at all. You can then color and texture them however you wish toWe hope this helps 🙂\nReply 1: Thank you so much for your kind assistance!Thanks to your advice, I was able to solve the problem!🙂\nReply 2: You are very welcome! We cannot wait to see your entry🙂\nReply 3: I was able to successfully submit my artwork!Thank you!🙂\nReply 4: Wonderful!❤️",
-        "content_description": "コンテスト参加者向けに公式ロゴのダウンロードリンクやボードデータのテクスチャ状況について情報共有と確認を行うページ。",
+        "id": "337371464a86493ab3a611aee3eed5d8",
+        "url": "https://connect.clo-set.com/community/post/337371464a86493ab3a611aee3eed5d8",
+        "title": "Topstitching Render Issue",
+        "content": "Hi team, I am using a twin needle topstitch on an elastic waistband. For some reason when I render, the top line of the stitching is rendering differently to the bottom line. Any suggestions as to what could be effecting this? Thanks.\n\n![fdc19f9da4b1407581b35320f8d99372](https://storagefiles.clo-set.com/public/community/202608/337371464a86493ab3a611aee3eed5d8/images/fdc19f9da4b1407581b35320f8d99372image.png)\n\n### Community Post Comments:\nComment 1: Hi, does one of the topstitch lines sit exactly on top of an internal line? If yes, can you try offsetting the topstitch by 0.1-0.3mm and check the look again?",
+        "content_description": "A web page purpose could be: \"To seek troubleshooting advice for inconsistent rendering of twin needle topstitching on an elastic waistband in sewing software.\"",
         "source": "Connect Community",
-        "created_at": "2026-04-07T16:46:32.439Z",
+        "article_created_at": "2026-08-04T04:30:49.434Z",
+        "article_updated_at": "2026-08-04T04:30:49.434Z",
         "category": 220,
         "tags": [
             "CLO",
-            "MarvelousDesigner"
+            "Rendering"
         ]
     },
     {
-        "id": "6b73065e057b4ddda3c485857eb8aaf6",
-        "url": "https://connect.clo-set.com/community/post/6b73065e057b4ddda3c485857eb8aaf6",
-        "title": "RUFFLE LEHANGA SAREE ",
-        "content": "![463212f9688443f7b9ee86ce5fbe866c](https://storagefiles.clo-set.com/public/community/202604/6b73065e057b4ddda3c485857eb8aaf6/images/463212f9688443f7b9ee86ce5fbe866cRUFFELE%20SAREE.png)![67556d79868d4114a53ca4c23d5acb39](https://storagefiles.clo-set.com/public/community/202604/6b73065e057b4ddda3c485857eb8aaf6/images/67556d79868d4114a53ca4c23d5acb39RUFFELE%20SAREE%203.png)![3bdd30ab17774d8cb820c84310aa7a3e](https://storagefiles.clo-set.com/public/community/202604/6b73065e057b4ddda3c485857eb8aaf6/images/3bdd30ab17774d8cb820c84310aa7a3eRUFFELE%20SAREE%202.png)![ece2d8fb14d04de3a44052b7f028ba92](https://storagefiles.clo-set.com/public/community/202604/6b73065e057b4ddda3c485857eb8aaf6/images/ece2d8fb14d04de3a44052b7f028ba92RUFFELE%20SAREE%201.png)",
-        "content_description": "Showcasing the elegant and intricately designed Ruffele sarees that blend traditional craftsmanship with contemporary style.",
+        "id": "f475cb7a12ce40d5952747fe591be371",
+        "url": "https://connect.clo-set.com/community/post/f475cb7a12ce40d5952747fe591be371",
+        "title": "Pattern with All-Over Graphic Rendering as Transparent?",
+        "content": "![c5bdc56d9a5b457fbd463e246195b829](https://storagefiles.clo-set.com/public/community/202608/f475cb7a12ce40d5952747fe591be371/images/c5bdc56d9a5b457fbd463e246195b829Outfit1Posed_Custom_View_1_1.png)![92f280f312994c04b675abba13e92642](https://storagefiles.clo-set.com/public/community/202608/f475cb7a12ce40d5952747fe591be371/images/92f280f312994c04b675abba13e92642Screenshot%202026-08-03%20at%204.35.13%E2%80%AFPM.png)\n\nHi! I'm using CLO version 2026.0.374 to try to render this skirt I created. The front right panel has an all-over graphic on it, while the front left panel has graphics on the bottom.\n\nBoth sets of graphics look fine in the 3D window, but when I render it, the graphics look transparent and pixelly.\n\nBoth sets of graphics are transparent PNGs that are at 100% opacity, and are set to blend with the base fabric.\n\nI've already tried toggling the render shadow per other community posts running into the same issue, but to no avail. I wanted to see if there was a workaround for this that doesn't involve installing an older version of CLO. Any ideas?\n\n### Community Post Comments:\nComment 1: I forgot to add: This seems to only be happening in the final render. The skirt and graphics look perfectly fine in the interactive render.\nReply 1: Hi, can you check the Z-Offset of all graphics involved and see if they are overlapping with something? Is there a Displacement Map on the fabrics that could be overlaying with them?\nReply 2: Hi, sorry for the late response but doubling the z-offset of each graphic definitely helped! Thank you so much!\nReply 3: Hi, great to hear that was the fix! ❤️",
+        "content_description": "A community support page seeking solutions for rendering transparent PNG graphics correctly on skirt panels in CLO 2026 without reverting to older software versions.",
         "source": "Connect Community",
-        "created_at": "2026-04-06T13:18:26.987Z",
-        "category": 210,
+        "article_created_at": "2026-08-03T23:54:36.089Z",
+        "article_updated_at": "2026-08-03T23:54:36.089Z",
+        "category": 220,
         "tags": [
             "CLO",
-            "CLO-SET",
-            "INDIAN",
-            "LEHANGA",
             "Rendering",
-            "Simulation"
-        ]
-    },
-    {
-        "id": "0709c500485b49fba7f898e525cb337c",
-        "url": "https://connect.clo-set.com/community/post/0709c500485b49fba7f898e525cb337c",
-        "title": "CLO doesn't register shoes in new 2025.02 version",
-        "content": "Hey everyone! I made these shoes in Nomad 3d sculpting app and imported it into CLO as FBX. When I import it- everything is good, position is in place, size is great, everything imports well (as in the first photo), but when I try to register it as an accessory (specifically as shoes) it shows as blank, even though it's the same file that worked before. How can i fix this? I looked through what feels like every single tutorial and nothing has worked... ![6624ab7fe717426c9e2aac9cc1d17297](https://storagefiles.clo-set.com/public/community/202604/0709c500485b49fba7f898e525cb337c/images/6624ab7fe717426c9e2aac9cc1d17297imported%20fbx.png)![a7358f28d6ae4fa0ae826365d5f09acc](https://storagefiles.clo-set.com/public/community/202604/0709c500485b49fba7f898e525cb337c/images/a7358f28d6ae4fa0ae826365d5f09accimported%20to%20register.png)\n\n### Community Post Comments:\nComment 1: Hi There. We tete both registering both OBJ and FBX as a shoe and have had no issues on our end using the most recent release of 2025.2.368We see that there is no current license under this account can you please let us know what account you are using CLO with? Is it possibly your schools account? Please also let us know what version of CLO (bottom left corner of CLO).Thank you🙂",
-        "content_description": "This page seeks solutions for troubleshooting the issue of 3D shoe models importing correctly into CLO but appearing blank when registered as accessories.",
-        "source": "Connect Community",
-        "created_at": "2026-04-06T10:26:41.885Z",
-        "category": 220,
-        "tags": [
-            "error",
-            "issue",
-            "problem",
-            "accessories",
-            "CLO",
-            "SHOES",
-            "Import_Export",
-            "registering",
-            "nomad"
+            "Material",
+            "Texture"
         ]
     }
 ]

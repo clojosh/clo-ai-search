@@ -98,7 +98,8 @@ class APICLO:
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
                 "source": "API",
-                "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
+                "article_created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
+                "article_updated_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
             }
         ]
 
@@ -123,7 +124,8 @@ class APICLO:
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
                 "source": "API",  # Source of the article
-                "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
+                "article_created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
+                "article_updated_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
             }
         ]
 
@@ -157,7 +159,8 @@ class APICLO:
                     "title": title.replace("\uf0c1", "").strip(),
                     "content": cleaned_markdown_content,
                     "content_description": "Script for " + title.replace("\uf0c1", "").strip(),
-                    "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                    "article_created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                    "article_updated_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                 }
             )
 
@@ -195,7 +198,8 @@ class APICLO:
                     "title": title.replace("\uf0c1", "").strip(),
                     "content": cleaned_markdown_content,
                     "content_description": "List of API Option Types",
-                    "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                    "article_created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                    "article_updated_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                 }
             )
 
@@ -236,7 +240,8 @@ class APICLO:
                     "title": "".join([t.text for t in title]).replace("def", "").replace("\uf0c1", "").strip(),
                     "content": cleaned_markdown_content,
                     "content_description": content_description.replace("@brief ", "").replace("\uf0c1", "").strip(),
-                    "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                    "article_created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                    "article_updated_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                 }
             )
 
@@ -264,7 +269,8 @@ class APICLO:
                 "title": "Python API",  # Title of the article
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
-                "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
+                "article_created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
+                "article_updated_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
             }
         ]
 
@@ -289,7 +295,8 @@ class APICLO:
                 "title": "Library Window API",  # Title of the article
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
-                "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
+                "article_created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
+                "article_updated_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
             }
         ]
 
@@ -314,7 +321,8 @@ class APICLO:
                 "title": "SDK",  # Title of the article
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
-                "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
+                "article_created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
+                "article_updated_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
             }
         ]
 
@@ -339,7 +347,8 @@ class APICLO:
                 "title": "CLO Event Plugin",  # Title of the article
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
-                "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
+                "article_created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
+                "article_updated_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
             }
         ]
 
@@ -364,7 +373,8 @@ class APICLO:
                 "title": "Plugin Placement Startup",  # Title of the article
                 "content": content,  # Content of the article
                 "content_description": self.azure.openai_helper.create_webpage_description(content),  # Description of the content
-                "created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
+                "article_created_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
+                "article_updated_at": datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),  # Current timestamp
             }
         ]
 
@@ -373,7 +383,19 @@ class APICLO:
             json.dump(plugin_placement_startup, f, indent=4)
 
     def upload_document(self, document: dict):
+        now = datetime.now(tz=timezone.utc).isoformat()
+
+        # created_at is set once (kept from the existing indexed document if present);
+        # updated_at is refreshed on every upload.
+        try:
+            existing = self.azure.search_client.get_document(key=document["article_id"])
+            created_at = existing.get("created_at") or now
+        except Exception:
+            created_at = now
+
         document["@search.action"] = "mergeOrUpload"
+        document["created_at"] = created_at
+        document["updated_at"] = now
         document["title_vector"] = self.azure.openai_helper.generate_embeddings(text=document["title"])
         document["content_vector"] = self.azure.openai_helper.generate_embeddings(text=document["content"])
 
@@ -496,7 +518,17 @@ if __name__ == "__main__":
             clo_api.delete_document(os.path.join(clo_api.api_path, files))
 
     elif task == "Find & Delete AI Search Documents":
-        search_fields_options = ["article_id", "url", "title", "content", "content_description"]
+        search_fields_options = [
+            "article_id",
+            "url",
+            "title",
+            "content",
+            "content_description",
+            "article_created_at",
+            "article_updated_at",
+            "created_at",
+            "updated_at",
+        ]
 
         search_field = questionary.select("Search field?", choices=search_fields_options).ask()
         search_text = questionary.text("Search value?").ask()

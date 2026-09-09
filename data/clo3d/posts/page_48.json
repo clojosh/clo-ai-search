@@ -1,220 +1,134 @@
 [
     {
-        "id": "833e879ecdde47b186024115b16b90c8",
-        "url": "https://connect.clo-set.com/community/post/833e879ecdde47b186024115b16b90c8",
-        "title": "AVATAR SIZING",
-        "content": "hi everyone ! i have a question regarding avatar sizing ,each time i try to manually put the measurement from my pattern making book or custom made of costumer the avatar look so weird or distorted \n\nanother thing ; is there anyway to get the european standard measurement for the avatar directly ?\n\n### Community Post Comments:\nComment 1: Hi There. currently we do not have EU sizing. But hope to add in the future.For creating a custom avatar we recommend applying the closest ASTM size to your spec sheet and then adjust from there. Please also make sure that you are following best practices outlines on our Guide - https://connect.clo-set.com/community/post/833e879ecdde47b186024115b16b90c8\nReply 1: thanks alot ❤️",
-        "content_description": "This page provides guidance on accurately sizing avatars using pattern measurements and information on obtaining European standard avatar dimensions.",
+        "id": "8790e80e4bb44c2aadeb3abb4b99e4c6",
+        "url": "https://connect.clo-set.com/community/post/8790e80e4bb44c2aadeb3abb4b99e4c6",
+        "title": "Custom Avatars Auto Grading not working",
+        "content": "If you are using custom avatars and have made a fit suit but you are getting \"It only works for a simulated garment\" message make sure GPU sim is turned off.\n\nI haven't seen this mentioned before in regard to resolving the issue so I'm leaving it here.\n\n### Community Post Comments:\nComment 1: Hi There. 🙂 Auto Grading has been renamed to Auto Fit. The tool should work in both CPU and GPU. on both CLO and Custom avatarsIf you are having issue with this we would recommend reaching out through the Contact Us page and including a file with a garment and registered custom avatar for our team to look closer at 🙂",
+        "content_description": "This page provides a helpful tip to resolve the \"It only works for a simulated garment\" error when using custom avatars with fit suits by ensuring GPU simulation is turned off.",
         "source": "Connect Community",
-        "created_at": "2025-03-04T17:20:41.14Z",
+        "article_created_at": "2025-06-17T17:49:49.243Z",
+        "article_updated_at": "2025-06-17T17:49:49.243Z",
+        "category": 250,
+        "tags": [
+            "CLO",
+            "Pattern",
+            "Simulation",
+            "AutoFitting"
+        ]
+    },
+    {
+        "id": "c0a502024c594200ac0002f3d6e7348e",
+        "url": "https://connect.clo-set.com/community/post/c0a502024c594200ac0002f3d6e7348e",
+        "title": "How can I fix the pattern in the air?",
+        "content": "![72a62ed4b15c43d69a8b8333727756e0](https://storagefiles.clo-set.com/public/community/202506/c0a502024c594200ac0002f3d6e7348e/images/72a62ed4b15c43d69a8b8333727756e0%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202025-06-16%20201849.png)\n\nI’m studying CLO through YouTube. In the 2D window on the right, I saw that there are red dots above the rectangular pattern. It seems like those red dots are used to fix the pattern in the air. I'm curious—how can I add those red dots?  \n  \nThe YouTube link is [초급04강 네크라인셔링블라우스 (0) 심지접착 & 본딩 (CLO7.1) / CLO Basic 04 Neckline Shirring Blouse (0) Bonding - YouTube](https://www.youtube.com/watch?v=0OXSLTDGsMc&t=14s)\n\n![4027c362197747288e628dcfe37b876f](https://storagefiles.clo-set.com/public/community/202506/c0a502024c594200ac0002f3d6e7348e/images/4027c362197747288e628dcfe37b876fimage.png)\n\nEven after running the simulation, the pattern stays floating in the air. It's so fascinating!\n\n### Community Post Comments:\nComment 1: Hi. This is called Pin Tool, you can find it in 3D window. And then in 2D or 3D just draw a box over the area, that need to be fixed. To delete it just right mouse click and choose remove selected pin or Ctrl+W to remove all pins. Pin Tool is very useful, it saves a lot, so I recommend checking on YT videos about this tool.\nReply 1: Thank you so much! I've been struggling with this for days, but now that I understand it, I'm so happy.❤️🙂😍😭👍🏻🙏🏻👏",
+        "content_description": "This webpage provides guidance on how to add and use red fixing points in CLO 3D to suspend patterns in the air during simulation.",
+        "source": "Connect Community",
+        "article_created_at": "2025-06-16T11:27:31.753Z",
+        "article_updated_at": "2025-06-16T11:27:31.753Z",
         "category": 220,
         "tags": [
             "CLO",
-            "MarvelousDesigner",
+            "Pattern",
+            "Simulation"
+        ]
+    },
+    {
+        "id": "c01b5ee67fff4bdbabc1b046596afd60",
+        "url": "https://connect.clo-set.com/community/post/c01b5ee67fff4bdbabc1b046596afd60",
+        "title": "Add Material on a pin",
+        "content": "Hello every one ! \n\nI'm currently working on my clothe who got a metal pin and I need to add a material to my pin ![f1bffe01a7d84fbf8e0a38a80b4b69cd](https://storagefiles.clo-set.com/public/community/202506/c01b5ee67fff4bdbabc1b046596afd60/images/f1bffe01a7d84fbf8e0a38a80b4b69cdCapture%20d%27%C3%A9cran%202025-06-15%20214112.png) because when i import the garment on UE5, i can only change the only 2 \"Primary materials\" ![55672ba10df6409e85eccd209a9a874a](https://storagefiles.clo-set.com/public/community/202506/c01b5ee67fff4bdbabc1b046596afd60/images/55672ba10df6409e85eccd209a9a874aCapture%20d%27%C3%A9cran%202025-06-15%20214144.png)Have you any idea of what i can do because i've put a material (in Clo) on it but it don't showed up into UE5 \n\n![80b483e063f24bdf8e3c8ad18179c423](https://storagefiles.clo-set.com/public/community/202506/c01b5ee67fff4bdbabc1b046596afd60/images/80b483e063f24bdf8e3c8ad18179c423Capture%20d%27%C3%A9cran%202025-06-15%20214243.png)\n\nHope some one have an idea haha\n\n### Community Post Comments:\nComment 1: Yeah of course but idk how to make a ticket 😭\n\nComment 2: Those are what are my trim (the pin with the \"M\" logo), and when i import to UE5 with the plug in i only have the \"Primary material\" cause i don't have material for those \"M\" and i don't know how to add a \"primary material\" to them in CLO or maybe i didn't check something in the plug in section ?\n\nComment 3: Hi machiavhell.3d,Is the pin a trim, or just a texture on the Denim_Raw fabric?\nReply 1: It's a trim yeah, the texture \"Denim_Raw\" is for the part of the clothe\nReply 2: Trims should be exported to Unreal Engine with LiveSync (both the mesh and material) - could you share a screenshot of how it looks in Unreal Engine?\nReply 3: Yes sorry for the days between the answer, it look like this in UE5.6\nReply 4: Are you still here Bryan ? 🙏🏻\nReply 5: Could you submit a support ticket with the CLO project file if possible? (you can mention my name in the ticket) Then I will be able to take a closer look at the issue with developers.",
+        "content_description": "A community forum page seeking advice on how to properly apply and export additional materials for a metal pin on a garment from Clo3D to Unreal Engine 5.",
+        "source": "Connect Community",
+        "article_created_at": "2025-06-16T03:34:57.34Z",
+        "article_updated_at": "2025-06-16T03:34:57.34Z",
+        "category": 220,
+        "tags": [
+            "CLO",
+            "UnrealEngine",
+            "Import_Export",
+            "LiveSync",
+            "Material",
+            "Texture"
+        ]
+    },
+    {
+        "id": "ad24327810c546b48268ccae2c4a9f37",
+        "url": "https://connect.clo-set.com/community/post/ad24327810c546b48268ccae2c4a9f37",
+        "title": "Crochet Effect in CLO 🧶",
+        "content": "Want to recreate this cozy crochet flower texture in CLO? Here's how I did it using the **Knitwear material settings**!  \n👇 These are the parameters I used:\n\n🧵 **Stitching** : Stockinette  \n🧶 **Yarn Thickness** : 7.00  \n📏 **Gauge** : 2.20  \n📍 **Generate Seams** : ON  \n🔁 **Length** : 100 mm  \n🌙 **Curvature** : 0.5  \n✨ **Reflection Roughness** : 50\n\nI also played with **Yarn Variance** and a soft **melange effect** to give it depth and realism. Perfect for playful and soft designs like this floral dress! \n\nLet me know if you try it! \n\n![ea367a04031f4b91ba8ed9a431481490](https://storagefiles.clo-set.com/public/community/202506/ad24327810c546b48268ccae2c4a9f37/images/ea367a04031f4b91ba8ed9a431481490Captura%20de%20pantalla%202025-06-15%20113905.png)![8b3600c97db14bc9a4ab86604d7260ef](https://storagefiles.clo-set.com/public/community/202506/ad24327810c546b48268ccae2c4a9f37/images/8b3600c97db14bc9a4ab86604d7260efCaptura%20de%20pantalla%202025-06-15%20113945.png)![479d1dbe1da24cba91a9cfc373e5c329](https://storagefiles.clo-set.com/public/community/202506/ad24327810c546b48268ccae2c4a9f37/images/479d1dbe1da24cba91a9cfc373e5c329Captura%20de%20pantalla%202025-06-15%20113958.png)![d339cdbe19074d82a5f4ff4c9790d222](https://storagefiles.clo-set.com/public/community/202506/ad24327810c546b48268ccae2c4a9f37/images/d339cdbe19074d82a5f4ff4c9790d222Captura%20de%20pantalla%202025-06-15%20114014.png)\n\n### Community Post Comments:\nComment 1: Thank you for sharing this 🙏🏻\n\nComment 2: my computer always crashes with the knit mode.",
+        "content_description": "Learn how to recreate a cozy crochet flower texture in CLO using detailed knitwear material settings for realistic and soft fabric designs.",
+        "source": "Connect Community",
+        "article_created_at": "2025-06-15T09:43:58.657Z",
+        "article_updated_at": "2025-06-15T09:43:58.657Z",
+        "category": 240,
+        "tags": [
+            "CLO",
+            "CLO-SET",
+            "CONNECT",
+            "Animation",
+            "Texture",
+            "Simulation",
+            "Material"
+        ]
+    },
+    {
+        "id": "79cf00f9356c4381aecef5d3e13b7fee",
+        "url": "https://connect.clo-set.com/community/post/79cf00f9356c4381aecef5d3e13b7fee",
+        "title": "Closing The Front Of The Kimono",
+        "content": "Question 1) Closing The Front Of The Kimono\n\nI want to see how It’s gonna look when the front is closed on a kimono.\n\nHow to to this?\n\nMaybe pin the front to make It stay like that to look It carefully.\n\nOriginal design is a regular kimono with belt tied. No pin etc.\n\nQuestion 2) Closing The Front Of The Kimono With A Belt\n\nI want to see how It’s gonna look when the front is closed on a kimono with a belt.\n\nBelt pattern is available of course.\n\nHow to do this?\n\n### Community Post Comments:\nComment 1: Hi There. It would be helpful if you add images so we can see what you have already done so far.You are correct that adding Pins or tacks are a good option to close the front.Pins : https://connect.clo-set.com/community/post/79cf00f9356c4381aecef5d3e13b7fee : https://connect.clo-set.com/community/post/79cf00f9356c4381aecef5d3e13b7fee also looks like you may be a newer CLO users. We would recommend checking out our Beginner Series HERE on YouTube which is free and goes over all of the basics in CLO. &nbsp;Or you can also sign up for our newer CLO Academy.&nbsp;\n\nComment 2: Any answers?",
+        "content_description": "This webpage demonstrates how to style and visualize a kimono with its front closed, both pinned and secured with a belt, to explore different looks.",
+        "source": "Connect Community",
+        "article_created_at": "2025-06-14T17:31:03.01Z",
+        "article_updated_at": "2025-06-14T17:31:03.01Z",
+        "category": 220,
+        "tags": [
+            "CLO",
             "Pattern",
             "Avatar"
         ]
     },
     {
-        "id": "1e4fa91dae764086a945fb178ad6d0c4",
-        "url": "https://connect.clo-set.com/community/post/1e4fa91dae764086a945fb178ad6d0c4",
-        "title": "My modular library is empty",
-        "content": "Hi,   \nI don't know why but my modular library is empty.   \nHow can I access the different categories and files ?   \nThanks :)\n\n### Community Post Comments:\nComment 1: Hi Laura, can you check if the files are present on your computer? On Windows, the path for me is: C:\\Users\\Public\\Documents\\CLO\\Assets\\StylePresets Are you on Windows or Mac?\nReply 1: On mac. yes i just found the files on my computer, when i change on the setting i have the folders in my moudlar library but without files inside.\nReply 2: Do you see them if you switch from icon to list mode? (Asking because a colleague had a similar issue and it was caused by the display resolution of CLO.) Otherwise: Have you tried relinking the group? Are the files visible then?",
-        "content_description": "This page provides guidance on accessing and organizing categories and files within a modular library.",
+        "id": "3e91655a12004edb98d517d84c73a2de",
+        "url": "https://connect.clo-set.com/community/post/3e91655a12004edb98d517d84c73a2de",
+        "title": "Adding a project changes the current project save path",
+        "content": "Hello,  \nWhen I work in \"Style-A\" and use the function   \nFile / ADD / Project / \"Style-B\"  \nthe selected file will be added to Style A.\n\n  \nWhen I then hit Control + S, I would expect Style A to be saved in the folder where I started the project. Instead the project will be saved in the folder where Style B is.  \n  \nIs it possible that the 'add' file function is operated like the 'open' file function so that the current path changes?",
+        "content_description": "This webpage aims to clarify and address the issue of unexpected folder path changes when adding a project file from a different style in the software.",
         "source": "Connect Community",
-        "created_at": "2025-03-04T08:45:20.44Z",
-        "category": 220,
+        "article_created_at": "2025-06-14T09:36:07.907Z",
+        "article_updated_at": "2025-06-14T09:36:07.907Z",
+        "category": 250,
         "tags": [
             "CLO"
         ]
     },
     {
-        "id": "fb960747c32b45b3b525a5e26fdfc4d5",
-        "url": "https://connect.clo-set.com/community/post/fb960747c32b45b3b525a5e26fdfc4d5",
-        "title": "Render not showing same as 3D",
-        "content": "Hi Everyone,\n\nWhy my Render window not showing same as my 3D window?\n\nI try and retry to render and nothing changes...Never happen before.\n\nThanks,\n\nNormand\n\n![](https://storagefiles.clo-set.com/public/community/202503/fb960747c32b45b3b525a5e26fdfc4d5/images/80c381043fdf40cca58685a6c561cceeimage.png)\n\n### Community Post Comments:\nComment 1: Dear Melody,You're so right...and also the best! :)Normand\nReply 1: Very sweet Normand, thank you! 🙏🏻\n\nComment 2: There is a displacement map on the pullover that is poking through. If you want to keep the map, you have to add thickness collision to the jacket to make up for the needed air buffer.",
-        "content_description": "Provide troubleshooting guidance for resolving discrepancies between the Render window and 3D viewport display in rendering software.",
+        "id": "4f74d309b1d24ff195e0f7643ba89676",
+        "url": "https://connect.clo-set.com/community/post/4f74d309b1d24ff195e0f7643ba89676",
+        "title": "Problem with Clo Sync 5.5 and 5.6",
+        "content": "Hello guys, i'm working on a garment on CLO, I want to use it in UE5.5 or 5.6 but in each version I got the right Live sync for each version :   \n\n\n  * For UE 5.5 I got this one : CLO LiveSync 2.0.0![8fb5ac0500aa4e0bb95143e378671f56](https://storagefiles.clo-set.com/public/community/202506/4f74d309b1d24ff195e0f7643ba89676/images/8fb5ac0500aa4e0bb95143e378671f56Capture%20d%27%C3%A9cran%202025-06-13%20213857.png)\n\n\n\n  * and for UE 5.6 I installed the Fab plug in : ![5068078f7f0f4f309bb5e35489c2c37e](https://storagefiles.clo-set.com/public/community/202506/4f74d309b1d24ff195e0f7643ba89676/images/5068078f7f0f4f309bb5e35489c2c37eimage.png)\n\n  * I'm using this version of CLO 3D ![e48ffad753ef4f64af573a11251f96df](https://storagefiles.clo-set.com/public/community/202506/4f74d309b1d24ff195e0f7643ba89676/images/e48ffad753ef4f64af573a11251f96dfCapture%20d%27%C3%A9cran%202025-06-13%20212715.png)\n\n  * Finally, i'm doing every steps like check the plug-in in my UE project but i still have no windows idk why ![b6f891c3c09745b68c4fa499f50287fd](https://storagefiles.clo-set.com/public/community/202506/4f74d309b1d24ff195e0f7643ba89676/images/b6f891c3c09745b68c4fa499f50287fdCapture%20d%27%C3%A9cran%202025-06-13%20211635.png)\n\nCan anyone help me please ?\n\n### Community Post Comments:\nComment 1: Hi machiavhell.3d,the LiveSync Editor has been removed, and a new LiveSync Mode has been added in CLO LiveSync 2.0.0, allowing users to work directly in the scene instead of opening a separate editor. For more information, please check out the documentation about using LiveSync Mode! https://connect.clo-set.com/community/post/4f74d309b1d24ff195e0f7643ba89676 use CLO LiveSync with UE 5.6, you need the newest version, CLO LiveSync 2.0.1. It can be found on Fab and you can install it to the engine directly in Epic Games Launcher. It is explained in this announcement: https://connect.clo-set.com/community/post/4f74d309b1d24ff195e0f7643ba89676 regards,Bryan\nReply 1: Hey Bryan, thanks for your answer, I found the section of Clo3D Sync, everything work perfectly thanks &lt;3333",
+        "content_description": "A support page seeking assistance with troubleshooting CLO 3D LiveSync integration issues in Unreal Engine versions 5.5 and 5.6.",
         "source": "Connect Community",
-        "created_at": "2025-03-03T15:05:50.287Z",
-        "category": 220,
-        "tags": [
-            "CLO",
-            "Rendering"
-        ]
-    },
-    {
-        "id": "d10e8ee2460f4706b9dcbb45217865b4",
-        "url": "https://connect.clo-set.com/community/post/d10e8ee2460f4706b9dcbb45217865b4",
-        "title": "[Challenge] My Digital Closet Challenge Season3 #APT",
-        "content": "Hello, Creators!  \n  \nWe are thrilled to introduce the **3rd My Digital Closet Challenge** on CONNECT, all thanks to your enthusiastic participation! 🔥🎉\n\n  \nThis challenge is all about completing your stunning 3D outfit with CONNECT’s free dancing motion, turning it into an amazing lookbook animation.\n\n* * *\n\nFor this round, we’re bringing the famous**APT Challenge** , inspired by Blackpink’s Rose and Bruno Mars!💃🕺\n\n![](https://storagefiles.clo-set.com/public/community/202503/d10e8ee2460f4706b9dcbb45217865b4/images/e1caa06bdafb470ea6534333a0bc12e5Thumbnail_Rose_375x500_low2.gif)\n\n**Don’t miss this chance to show off your style and take on this exciting dance lookbook challenge with CONNECT!**  \n\n\nCheck out the participation details below.😊\n\n* * *\n\nAfter uploading to SNS, leave a comment on this post with the URL to your content. We’ll check the comments and feature your work on our Instagram!**😊🎉**\n\nYou can also **show off your challenge video or link in the CONNECT community!**  \nSet the post topic to Challenge and share your work with others!**🚀✨**\n\n* * *\n\n# **📌Challenge Details**  \n\n\n  * Title : MyDigitalCloset\n\n  * Concept: Open Theme\n\n    * **There are no concept restrictions. Outfits with various concepts are welcome!**\n\n    * Feel free to showcase any 3D outfits you’d like to introduce.\n\n    * Previously released outfits are also welcome.\n\n\n\n  * Participation Period: Ongoing\n\n  * Participation Requirements\n\n    * Use the motion file and avatars provided by CONNECT.\n\n    * Collaboration is encouraged—multiple creators can work together to create a collaborative piece.\n\n    * Upload your completed work to Instagram Reels, YouTube Shorts, or Tiktok using the relevant hashtags.\n\n      * #mydigitalcloset #lookbook #challenge #digitalfashion #connectofficial #clo3d #marvelousdesigner #challengebyCONNECT\n\n\n\n  * **Participation Process**\n\n1\\. Download Motion and Avatar: Download the motion file and the avatar provided by CONNECT.\n\n    * Motion\n\n      * [**FV2_Dancing_APT**](https://connect.clo-set.com/detail/a1595e432258425aaa9d4e19d0dd049d)\n\n      * [**MV2_Dancing_APT**](https://connect.clo-set.com/detail/d71bd2c6924e4818be9e60bbdad30474)\n\n    * Avatar\n\n      * [**Female**](https://connect.clo-set.com/portfolio/208988/collection/collections/220711153359e22cfc41449280e4e7245de728)\n\n      * [**Male**](https://connect.clo-set.com/portfolio/208988/collection/collections/230420c9160bed61d945e6b5e3ebbe55fb03f6)\n\n      * [**Mannequin**](https://connect.clo-set.com/portfolio/208988/collection/collections/2301100492be6460c740868ddf57abc64946e9)\n\n2\\. Creating Garment Animation: Apply the motion to each outfit project file and press the record button in animation mode to create the outfit animation.\n\n    * TIP: Customize your avatar using ZACS!\n\n3\\. Rendering: Render the completed animation file.\n\n    * We recommend an image size of 1080px * 1920px.\n\n    * TIP : Use the [**CONNECT official Scene file**](https://connect.clo-set.com/portfolio/208988/collection/collections/2312DD1c848deff0094e4991a906bfc52dae0e)\n\n4\\. Editing: Edit the rendered video using an editing program.\n\n    * You can refer to [**this video**](https://www.instagram.com/reel/C_zgG9Qv37o/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==) for the editing process.\n\n    * Feel free to use other programs if you prefer.\n\n    * Background Music :****[**APT by Rose**](https://youtu.be/ekr2nIex040?si=IcN-y5xcN8OBLUf6)\n\n5\\. Upload to SNS: Upload your finished work to Instagram Reels, YouTube Shorts, or TikTok.\n\n    * Include the following hashtags\n\n      * #mydigitalcloset #lookbook #challenge #digitalfashion #connectofficial #clo3d #marvelousdesigner #challengebyCONNECT\n\n6\\. Complete Participation\n\n    * Once uploaded to SNS, leave a comment on **this post** with your email address and the URL to your content.\n\n      * Example : Participation Complete / [www.example.com](http://www.example.com)\n\n    * You can also **show off your challenge video or link in the CONNECT community!**\n\n      * Set the post topic to Challenge and share your work with others!\n\n\n\n\n* * *\n\n  \nChallenge Enquiry\n\n1\\. Direct message on [**Instagram**](https://www.instagram.com/closet_connect_official/)  \n2\\. Comments on **this page**\n\n* * *\n\n![](https://storagefiles.clo-set.com/public/community/202503/d10e8ee2460f4706b9dcbb45217865b4/images/a720c3d52af9406a8a828b70c9e6bbdbMotion_Challenge_FHD.00_00_21_12.%EC%8A%A4%ED%8B%B8%20003.png)\n\n** _Now it’s time to showcase your_**  \n** _amazing digital wardrobe to the world!_ 🚀✨**\n\n![](https://storagefiles.clo-set.com/public/community/202503/d10e8ee2460f4706b9dcbb45217865b4/images/a18e4e0aa35e4086a5313958a57e27deReels%20thumbnail_Final.png)![](https://storagefiles.clo-set.com/public/community/202503/d10e8ee2460f4706b9dcbb45217865b4/images/a2d187637eee458e8cf3efc3367e05d0community%20thumbnail.png)",
-        "content_description": "Join the 3rd My Digital Closet Challenge on CONNECT to create and share stunning 3D outfit animations using free dance motions inspired by Blackpink’s Rose and Bruno Mars, and showcase your digital fashion style worldwide!",
-        "source": "Connect Community",
-        "created_at": "2025-03-03T11:07:30.207Z",
-        "category": 100,
-        "tags": [
-            "CLO",
-            "MarvelousDesigner",
-            "Animation",
-            "Challenge",
-            "APT",
-            "k-pop",
-            "dancechallenge",
-            "mydigitalcloset"
-        ]
-    },
-    {
-        "id": "a2d28c1b70a54ceeb43021652a0d3677",
-        "url": "https://connect.clo-set.com/community/post/a2d28c1b70a54ceeb43021652a0d3677",
-        "title": "Partial Pleat [Need Help]",
-        "content": "I need a simple demonstration on how to make a 1\" pleat for my sleeve from the cuff for a basic button down shirt. I've followed YouTube tutorials and have used the Clo AI tool but I still can't seem to figure it out.\n\n### Community Post Comments:\nComment 1: Hi, could you please add screenshots of the roadblocks to your original post (unfortunately, they cannot be added into comments), so we know the specific questions to answer? Is the issue the construction, the sewing, the arrangement...? Thank you :)",
-        "content_description": "This page provides a clear, step-by-step demonstration on how to create a 1\" sleeve pleat from the cuff for a basic button-down shirt.",
-        "source": "Connect Community",
-        "created_at": "2025-03-03T07:31:36.52Z",
-        "category": 220,
-        "tags": [
-            "Pattern",
-            "CLO"
-        ]
-    },
-    {
-        "id": "654f8eebb30c4e22bf75250a030740d6",
-        "url": "https://connect.clo-set.com/community/post/654f8eebb30c4e22bf75250a030740d6",
-        "title": "out fit for men",
-        "content": "![](https://storagefiles.clo-set.com/public/community/202503/654f8eebb30c4e22bf75250a030740d6/images/6814fd56f3a54fbdbb35c30ce8a88b46Untitled-6.png)",
-        "content_description": "This web page provides a comprehensive overview of a wine's characteristics, including its taste profile, pairing suggestions, and detailed tasting notes.",
-        "source": "Connect Community",
-        "created_at": "2025-03-01T17:14:20.503Z",
+        "article_created_at": "2025-06-13T19:44:40.723Z",
+        "article_updated_at": "2025-06-13T19:44:40.723Z",
         "category": 210,
         "tags": [
             "CLO",
-            "MarvelousDesigner",
-            "CLO-SET",
-            "Animation",
-            "Pattern",
-            "Rendering",
-            "Simulation",
-            "Texture"
-        ]
-    },
-    {
-        "id": "244c9c0744364f479af60070674814a3",
-        "url": "https://connect.clo-set.com/community/post/244c9c0744364f479af60070674814a3",
-        "title": "Happy Ramadan! ✨ New Ramadan design, just like every year! 📿🌙",
-        "content": "![](https://storagefiles.clo-set.com/public/community/202503/244c9c0744364f479af60070674814a3/images/ed7a9003601c4ef5817a7d53ca47a3ab480711472_10226828997491759_732483275551125593_n.jpg)",
-        "content_description": "Showcasing a cozy and stylish living space designed for comfort and modern aesthetics.",
-        "source": "Connect Community",
-        "created_at": "2025-03-01T03:44:59.65Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "CLO-SET",
-            "UnrealEngine",
-            "Substance",
-            "Blender",
-            "Texture",
-            "Pattern",
-            "Material",
-            "Avatar",
-            "AI"
-        ]
-    },
-    {
-        "id": "17249d97d69040a8a3c93c03c8470beb",
-        "url": "https://connect.clo-set.com/community/post/17249d97d69040a8a3c93c03c8470beb",
-        "title": "Getting unreal meta human into CLO error",
-        "content": "Im having trouble getting my Metahuman in Unreal 5.5.3 into CLO using LiveSync. This is the error I get:  \nAnyone knows how to fix this?\n\n![](https://storagefiles.clo-set.com/public/community/202502/17249d97d69040a8a3c93c03c8470beb/images/08aca7b8dc3d47d7b96effe1d01398d1image_2025-02-28_130049229.png)\n\n### Community Post Comments:\nComment 1: Hi Revelesci,Thank you for sharing the issue with us. Could you do the following and see if the issue is resolved? 1. Navigate to 'Preview Scene Setting' panel on the right (it's next to 'Details' panel).2. Locate the 'Additional Meshes' section and expand the section by clicking the triangle in front of it.3. Locate the 'Skeletal Meshes' section and expand it. See if there is a corersponding MetaHuman Skeletal Mesh assigned to it. For example, something like 'f_med_unw_body_preview' should be there. Otherwise, you can simply select a desired body type and assign it yourself, but please note that the name of the Skeletal Mesh may differ depending on the body type of your MetaHuman.4. Make sure to have LiveSyncEditor launched, and send the animated MetaHuman body to CLO.Please let me know if this works. :)- Bryan\nReply 1: Hi Bryan, thankyou for the response! adding the additional meshes did work. However, a new problem occured. When I add any fabric material to a t shirt in CLO, and then try to sync in in Unreal, it crashes, giving the following error:LoginId:a6d37ec643c8cdf0d4cd13b83411ef40 EpicAccountId:28d268814b594deebb72977ca7b3d629 Assertion failed: MipView.GammaSpace == LayerData.SourceGammaSpace [File:D:\\build++UE5\\Sync\\Engine\\Source\\Runtime\\Engine\\Private\\TextureDerivedDataTask.cpp] [Line: 410] UnrealEditor_Engine UnrealEditor_Engine UnrealEditor_Engine UnrealEditor_Engine UnrealEditor_Engine UnrealEditor_Core UnrealEditor_Engine UnrealEditor UnrealEditor UnrealEditor_Core UnrealEditor_Core UnrealEditor_Core UnrealEditor_Core UnrealEditor_Core UnrealEditor_Core UnrealEditor_Core kernel32When i dont add any material, it works. Do you might have any idea how to fix this?\nReply 2: Yes, the crash issue occurs in CLO LiveSync 1.1.5 due to an incorrect way of processing material information when CLO material data is received in Unreal Engine. We have fixed it and released CLO LiveSync 1.1.6, so please download the latest CLO LiveSync. https://connect.clo-set.com/community/post/17249d97d69040a8a3c93c03c8470beb",
-        "content_description": "This web page aims to help users troubleshoot and resolve errors encountered when importing Metahuman characters from Unreal Engine 5.5.3 into CLO via LiveSync.",
-        "source": "Connect Community",
-        "created_at": "2025-02-28T11:58:55.16Z",
-        "category": 220,
-        "tags": [
-            "CLO",
-            "UnrealEngine",
-            "Import_Export",
-            "LiveSync"
-        ]
-    },
-    {
-        "id": "353d3028e31140f698e3239d2e3053cf",
-        "url": "https://connect.clo-set.com/community/post/353d3028e31140f698e3239d2e3053cf",
-        "title": "Clothes phasing in and out of avatar",
-        "content": "Hi there, I'm currently working on an external project for a client that requires me to create animations for traditional garments for a traditional dance animation. There's about 21 separate animations in total and most of them simulate without an issue with their respective animations, however for a handful of them I've encountered issues with the avatar where the garments start phasing and clipping into the avatar after the simulation ends. It's quite alarming and I am unsure how to fix this. The avatar and rigged animation was provided by my client through FBX format. I've already tried playing with increasing skin offset as well as subdividing the avatar's mesh but to no avail. Assistance would be really appreciated\n\nYouTube Video: https://www.youtube.com/watch?v=1MIVmB7uzRs\n\n![](https://storagefiles.clo-set.com/public/community/202502/353d3028e31140f698e3239d2e3053cf/images/a8f586487b9c487985572200cfa80b35Screenshot%202025-02-28%20172055.png)\n\n### Community Post Comments:\nComment 1: Please update to the latest patch (2024.2.328). I know it might sound silly, but have you tried rerecording the affected animations, do they turn out the same upon a second attempt?\nReply 1: My Clo program is up to date. I have tried rerecording and also restarting clo but doesn't seem to help unfortunately\nReply 2: Hi, the recording shows version 2024.2.284, this is why I suggested - could you share an example file with us here? https://connect.clo-set.com/community/post/353d3028e31140f698e3239d2e3053cf\nReply 3: I am unable to share an example file as it only can save with only the garment animation, if the file is saved with the avatar fbx with its animation it will save as a corrupted file. the version shows an outdated one because it wasn't updated when i recorded it and since the issue persisted after i updated, i felt like i did not have to update it\nReply 4: Hi, could you share an original FBX then so tech support can run a test on their own? And do the animations that are working fine also save corrupted or only the ones with issues?",
-        "content_description": "Seeking expert advice to resolve garment clipping and phasing issues in traditional dance animations using client-provided FBX avatars.",
-        "source": "Connect Community",
-        "created_at": "2025-02-28T09:21:38.623Z",
-        "category": 220,
-        "tags": [
-            "CLO",
-            "Animation",
-            "Avatar",
-            "Import_Export",
-            "Simulation",
-            "Rendering"
-        ]
-    },
-    {
-        "id": "3454c9d9b87942adb265f01f622a6438",
-        "url": "https://connect.clo-set.com/community/post/3454c9d9b87942adb265f01f622a6438",
-        "title": "Street style & edgy",
-        "content": "Street style & edgy – I don’t walk in the street, it walks with me \n\n![🤸](https://static.xx.fbcdn.net/images/emoji.php/v9/t76/1/16/1f938.png)\n\n![](https://storagefiles.clo-set.com/public/community/202502/3454c9d9b87942adb265f01f622a6438/images/e644e29eb2024ca3b0a431dde8807f15enhanced-image%20%2821%29.png)\n\n### Community Post Comments:\nComment 1: I love your style!!🙌\nReply 1: thanks !!",
-        "content_description": "Showcasing bold street style fashion that empowers you to own the urban vibe with confidence and edge.",
-        "source": "Connect Community",
-        "created_at": "2025-02-28T01:29:18.297Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "MarvelousDesigner",
-            "CLO-SET",
-            "Material",
-            "Texture",
-            "Substance",
-            "Blender",
-            "UnrealEngine",
-            "Pattern",
-            "Photoshop"
-        ]
-    },
-    {
-        "id": "e3e9311a12bd4daa8b0d3a6c9015a446",
-        "url": "https://connect.clo-set.com/community/post/e3e9311a12bd4daa8b0d3a6c9015a446",
-        "title": "Abstract print",
-        "content": "<https://connect.clo-set.com/detail/0f48ea95b1094edfb28612ae95134ec3>\n\n![](https://storagefiles.clo-set.com/public/community/202502/e3e9311a12bd4daa8b0d3a6c9015a446/images/4efc249334cf4c49b4c34c6b4a6d48daSRFD25-16-POSE.png)",
-        "content_description": "Showcasing detailed 3D fashion design and garment simulation created with CLO 3D software.",
-        "source": "Connect Community",
-        "created_at": "2025-02-28T01:14:51.16Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "CLO-SET",
             "CONNECT",
-            "Texture",
-            "Trim"
+            "UnrealEngine",
+            "Animation",
+            "LiveSync",
+            "Import_Export"
         ]
     },
     {
-        "id": "d435dafe989c4197935e77c4ee04655c",
-        "url": "https://connect.clo-set.com/community/post/d435dafe989c4197935e77c4ee04655c",
-        "title": "How to make a swan hook?",
-        "content": "New to CLO, making a silk bralette that has these swan hooks just not sure ho to make these. Haven't seemed to find anything online on making these\n\n![](https://storagefiles.clo-set.com/public/community/202502/d435dafe989c4197935e77c4ee04655c/images/6c06ea25709d469e97f47e80445a4618Screenshot%202025-02-28%20at%209.52.47%E2%80%AFam.png)\n\n### Community Post Comments:\nComment 1: search as \"how to make a button in clo\" It's same way to make obj.\nReply 1: Exactly, you can also see how to trace a shape out and export an OBJ here: https://connect.clo-set.com/community/post/d435dafe989c4197935e77c4ee04655c",
-        "content_description": "This web page provides guidance and tutorials for creating swan hook closures on silk bralettes using CLO software for beginners.",
+        "id": "13225de372334f44955d9290183f6b02",
+        "url": "https://connect.clo-set.com/community/post/13225de372334f44955d9290183f6b02",
+        "title": "Showing 2D Measurements on the Pattern and Modifying Them with Specific Values",
+        "content": "**Question 1)** I exported a pattern from Seamly2D in DXF format and imported it into CLO3D.\n\nIs there a way to display the pattern measurements on the 2D window? Something like in AutoCAD?\n\nFor example, if the shoulder line is 13 cm, I want to see that measurement so I can decide to change it to 12 cm.\n\nI want to work with exact values.\n\n**Question 2)** After exporting the DXF from Seamly2D and importing it into CLO3D, I find the shoulder line a bit too long.\n\nHow can I reduce its length?\n\nI want to enter an exact value, like 12 cm, instead of dragging it manually.\n\n### Community Post Comments:\nComment 1: Answer to Question 1. In floating menu in 2D choose Line length or use Shift+Z shortcut.\n\nComment 2: Hi. Answer to Question 2. With edit pattern choose the shoulder line - right mouse click - Change length. There you tip the exact value you want, just check in which direction is pointing the arow, this indicates from where it will be shortened. You can adjust it with \"Direction\": start, end or both.",
+        "content_description": "This page provides guidance on displaying precise pattern measurements and editing exact dimensions in CLO3D after importing DXF files from Seamly2D.",
         "source": "Connect Community",
-        "created_at": "2025-02-27T22:54:55.17Z",
-        "category": 220,
-        "tags": [
-            "CLO",
-            "CLO-SET",
-            "Pattern",
-            "Material"
-        ]
-    },
-    {
-        "id": "2a8d33cf3ab84c21b0eb7633b4ded511",
-        "url": "https://connect.clo-set.com/community/post/2a8d33cf3ab84c21b0eb7633b4ded511",
-        "title": "\"click and drag both end points of the zipper to edit the length\"",
-        "content": "Clicking both endpoints of the zipper does nothing.\n\n### Community Post Comments:\nComment 1: Without any image or video, it is hard to tell what might be happening. I just tried and it works fine for me. Is it happening for all zippers or only a specific one? I've encountered one file where one side wouldn't go with.",
-        "content_description": "This page explains why clicking both endpoints of the zipper has no effect.",
-        "source": "Connect Community",
-        "created_at": "2025-02-26T21:34:28.4Z",
+        "article_created_at": "2025-06-13T19:02:46.82Z",
+        "article_updated_at": "2025-06-13T19:02:46.82Z",
         "category": 220,
         "tags": [
             "CLO",
@@ -222,18 +136,97 @@
         ]
     },
     {
-        "id": "4aa49f0168374d9b81db0c4d34fa3f10",
-        "url": "https://connect.clo-set.com/community/post/4aa49f0168374d9b81db0c4d34fa3f10",
-        "title": "I can't auto Generate PBR maps ",
-        "content": "Hi everyone,\n\nI'm trying to add a normal and displacement map to a project, but the auto generate PBR maps doesn't seem to be showing. I added a texture map before trying to add the rest.\n\nImage 1: tutorial showing the auto Generate PBR maps icon I should click.\n\n![](https://storagefiles.clo-set.com/public/community/202502/4aa49f0168374d9b81db0c4d34fa3f10/images/0ee7cd86d270476d8b1510413321ab4bScreenshot%202025-02-26%20at%2017.41.02.png)\n\nImage 2: I can't seem to see the Generate PBR maps icon, despite having inserted a texture map beforehand. I'm working on 2024.0.174 version.\n\n![](https://storagefiles.clo-set.com/public/community/202502/4aa49f0168374d9b81db0c4d34fa3f10/images/82c4f0c2a4a24ee3a14c00521b8d38beScreenshot%202025-02-26%20at%2017.41.09.png)\n\nApology for the poor quality of the picture. Did anyone had a similar issue? Any advice? Thank you so much!\n\n### Community Post Comments:\nComment 1: You have to update to 2024.2 to access the feature.",
-        "content_description": "A community support page for troubleshooting the missing auto-generate PBR maps icon when adding normal and displacement maps in version 2024.0.174.",
+        "id": "df24b4cbe3ec4a499e03acf8ef408efb",
+        "url": "https://connect.clo-set.com/community/post/df24b4cbe3ec4a499e03acf8ef408efb",
+        "title": "Assets saved in 2024 not being copied over to 2025",
+        "content": "If you have custom poses or fabrics/whatever you saved into the documents clo asset folder, for example I save poses in the avatar pose folder. You have to manually copy them back over to the new CLO Asset folder for 2025.\n\nIf you switch from the new library to the old one you have to manually add the folder back as well.",
+        "content_description": "This page provides instructions for manually transferring and managing custom poses and assets when updating or switching between CLO asset libraries.",
         "source": "Connect Community",
-        "created_at": "2025-02-26T17:46:55.73Z",
+        "article_created_at": "2025-06-13T18:56:50.137Z",
+        "article_updated_at": "2025-06-13T18:56:50.137Z",
+        "category": 250,
+        "tags": [
+            "CLO"
+        ]
+    },
+    {
+        "id": "58d534157f8c4ac3adc0c3359d0eb7a8",
+        "url": "https://connect.clo-set.com/community/post/58d534157f8c4ac3adc0c3359d0eb7a8",
+        "title": "Measuring On Avatar With Feedback Line",
+        "content": "**Question 1:**\n\nI want to take measurements on the avatar with the following options:\n\nA) **Surface Distance:** Curved measurement that follows the contours of the body surface.\n\nB) **Straight Line Distance:** Straight (air) measurement between two points.\n\n**Question 2:**\n\nWhile taking these measurements, I want a measurement line to appear.\n\nEven better, I want this line to stay visible (a feedback line) so I can clearly see exactly where the measurement was taken.\n\n**Question 3:**\n\nIf there is a measurement list, I want the measurements to be saved there.\n\n**How can I do all this?**\n\n### Community Post Comments:\nComment 1: Hi! You can do this with the Avatar Tape Measure Tool.👉 For surface distance (curved):Go to Avatar &gt; Measure &gt; Add Tape Measure (On Avatar) and click two points on the body — it follows the surface.👉 For straight (air) distance:Same tool — just select two points, and it will draw a straight line between them.The line should stay visible until you manually hide or delete it. You can control its visibility under Avatar Display &gt; Tape Measure.And yes — the measurements are saved automatically in the Avatar Tape Measure List (check the Object Browser &gt; Avatar &gt; Tape Measure). You can rename, hide, or export them if you need.Hope this helps! 😊",
+        "content_description": "This web page provides guidance on implementing avatar measurement tools that include surface and straight-line distances, persistent measurement lines for visual feedback, and a saved measurement list.",
+        "source": "Connect Community",
+        "article_created_at": "2025-06-13T18:52:44.71Z",
+        "article_updated_at": "2025-06-13T18:52:44.71Z",
         "category": 220,
         "tags": [
             "CLO",
-            "brpmaps",
-            "maps"
+            "Avatar"
+        ]
+    },
+    {
+        "id": "d253267b379848f9a003f1cdd162f1a4",
+        "url": "https://connect.clo-set.com/community/post/d253267b379848f9a003f1cdd162f1a4",
+        "title": "How Can I Assign Keyboard Shorcuts Or Change For Panning?",
+        "content": "How Can I Assign Keyboard Shorcuts Or Change For Panning?\n\nor zooming\n\nCan I make a keyboard shortcut like these\n\nPanning : CTRL + Arrow Keys\n\nRotate : ALT + Arrow Keys\n\netc.\n\n### Community Post Comments:\nComment 1: Hi! You can change the control setting in Settings - User Settings - View Controls. But there are only the mouse buttons + Ctrl/Alt/Shift etc. Usually in 3D you always navigate with mouse+key or only mouse, haven't seen yet cases with arrows (only in gaming).\nReply 1: Ok. Thank you very much.",
+        "content_description": "This page explains how to assign or customize keyboard shortcuts for panning, zooming, and rotation functions.",
+        "source": "Connect Community",
+        "article_created_at": "2025-06-12T22:34:09.243Z",
+        "article_updated_at": "2025-06-12T22:34:09.243Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "Pattern",
+            "Avatar"
+        ]
+    },
+    {
+        "id": "9cd22298b90e41179ad23fd5826a329c",
+        "url": "https://connect.clo-set.com/community/post/9cd22298b90e41179ad23fd5826a329c",
+        "title": "How To Make The Pattern Transparent?",
+        "content": "While drawing I want to make the pattern transparent.\n\nI did not sew them yet. \n\nI could not find a setting on the property editor. \n\nHow can I do this?\n\n### Community Post Comments:\nComment 1: Just changing the opacity of the fabric doesn't work in 2D. Also you can change transparency in the side menus of 3D or 2D window. Translucent (3D) fabric or transparent surface (2D). If you want all fabrics to be transparent while you are working.\n\nComment 2: You can change the opacity of the fabric attached to a pattern piece1) Click the fabric in the sidebar that's assigned to the piece you want transparent2) Change the opacity of the fabric in the sidebar\nReply 1: I could do It veronica’s methods. And It works.But also I want to do It with fabric settings. As well.I click on the fabric on the sidebar. Where is opacity settings there.???",
+        "content_description": "This page provides guidance on making patterns transparent during the drawing process before sewing, addressing the absence of a direct setting in the property editor.",
+        "source": "Connect Community",
+        "article_created_at": "2025-06-12T15:38:51.813Z",
+        "article_updated_at": "2025-06-12T15:38:51.813Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "Pattern"
+        ]
+    },
+    {
+        "id": "84c01235dae145079aa73ff34ddb3ff0",
+        "url": "https://connect.clo-set.com/community/post/84c01235dae145079aa73ff34ddb3ff0",
+        "title": "🎉 New Achievement Badge Released on CONNECT!",
+        "content": "We’re excited to introduce a brand-new badge on CONNECT — created to recognize your journey and active engagement as a CONNECT user!\n\n* * *\n\n![b0335f68ed0a49a3b0554d26db94934d](https://storagefiles.clo-set.com/public/community/202506/84c01235dae145079aa73ff34ddb3ff0/images/b0335f68ed0a49a3b0554d26db94934dRow%20%285%29.png)![e8b8148609134c87919b4165812b64af](https://storagefiles.clo-set.com/public/community/202506/84c01235dae145079aa73ff34ddb3ff0/images/e8b8148609134c87919b4165812b64afRow%20%284%29.png)![ffab3a207ede4d739db963ee87c8e6ab](https://storagefiles.clo-set.com/public/community/202506/84c01235dae145079aa73ff34ddb3ff0/images/ffab3a207ede4d739db963ee87c8e6abRow%20%283%29.png)![e95b5333ddf8421a848342ebf76bedd5](https://storagefiles.clo-set.com/public/community/202506/84c01235dae145079aa73ff34ddb3ff0/images/e95b5333ddf8421a848342ebf76bedd5Row%20%282%29.png)\n\n* * *\n\n**✨Why badges?**\n\nBadges are our way of celebrating your growth, encouraging ongoing activity, and strengthening our community. They reflect your milestones and contributions on the platform.\n\n**🔍Where to find it?**\n\nYour badge is now visible on your Portfolio Page. Go check it out — and see what you’ve unlocked!\n\n**Let’s create, share, and CONNECT!** ![](https://storagefiles.clo-set.com/public/community/202506/84c01235dae145079aa73ff34ddb3ff0/images/d08bf26471a542c08fde606eaebe1e0eType%3DGetReady%2C%20Status%3DDefault.png)![](https://storagefiles.clo-set.com/public/community/202506/84c01235dae145079aa73ff34ddb3ff0/images/fb64e9e18e5f4b288527e2723b808908Type%3DGetReady%2C%20Status%3DDefault.png)\n\n### Community Post Comments:\nComment 1: hi\n\nComment 2: Hi 🙂\n\nComment 3: hi❤️\n\nComment 4: 😍",
+        "content_description": "This page introduces the new CONNECT badge designed to celebrate and showcase your active engagement and achievements within the community.",
+        "source": "Connect Community",
+        "article_created_at": "2025-06-12T01:08:33.673Z",
+        "article_updated_at": "2025-06-12T01:08:33.673Z",
+        "category": 100,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "CLO-SET",
+            "CONNECT",
+            "JINNY"
+        ]
+    },
+    {
+        "id": "357be6d77b1347dcb82950849f425466",
+        "url": "https://connect.clo-set.com/community/post/357be6d77b1347dcb82950849f425466",
+        "title": "I Can Not Select The Garment Pattern And The Avatar Together",
+        "content": "How can I do this?\n\nBoth\n\nSHIFT + Click\n\nCTRL + A\n\nDoes not work\n\n?\n\n### Community Post Comments:\nComment 1: Thank you for the added video. The issue here is the pattern pieces are not actually draping on the avatar or close enough to the avatar. This function is meant to be used once a garment is arranged and simulated on the avatar.It may be easier to start with the avatar already facing forward and then use the Arrangement Points to arrange your pattern around the avatar.\n\nComment 2: HiSee comments in this link, it has a picture about this:https://connect.clo-set.com/community/post/357be6d77b1347dcb82950849f425466 click on the avatar and select \"select avatar and garment\"\nReply 1: Select the avatar then right click choose select avatar and garment does not work.https://connect.clo-set.com/community/post/357be6d77b1347dcb82950849f425466",
+        "content_description": "This web page explains why common keyboard shortcuts like SHIFT + Click and CTRL + A do not work and how to perform the desired actions.",
+        "source": "Connect Community",
+        "article_created_at": "2025-06-11T18:08:14.423Z",
+        "article_updated_at": "2025-06-11T18:08:14.423Z",
+        "category": 220,
+        "tags": [
+            "CLO",
+            "Avatar",
+            "Pattern"
         ]
     }
 ]

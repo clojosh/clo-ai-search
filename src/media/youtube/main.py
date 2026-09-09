@@ -266,7 +266,17 @@ def main():
         transcript_extractor.summarize_transcripts(os.path.join(youtube_channel_dir_path, "transcripts", page))
 
     elif task == "Find & Delete AI Search Documents":
-        search_fields_options = ["article_id", "url", "title", "content", "content_description"]
+        search_fields_options = [
+            "article_id",
+            "url",
+            "title",
+            "content",
+            "content_description",
+            "article_created_at",
+            "article_updated_at",
+            "created_at",
+            "updated_at",
+        ]
 
         search_field = questionary.select("Search field?", choices=search_fields_options).ask()
         search_text = questionary.text("Search value?").ask()

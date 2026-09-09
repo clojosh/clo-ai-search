@@ -1,5 +1,6 @@
 import json
 import os
+from datetime import datetime, timezone
 
 import shortuuid
 from youtube_transcript_api import YouTubeTranscriptApi
@@ -170,6 +171,16 @@ class TranscriptExtractor:
         if transcript["video_id"].startswith("_"):
             transcript["video_id"] = transcript["video_id"][1:]
 
+        now = datetime.now(timezone.utc).isoformat()
+
+        # created_at is set once (kept from the existing indexed document if present);
+        # updated_at is refreshed on every upload.
+        try:
+            existing = self.azure.search_client.get_document(key=transcript["video_id"])
+            created_at = existing.get("created_at") or now
+        except Exception:
+            created_at = now
+
         self.azure.search_client.upload_documents(
             {
                 "@search.action": "mergeOrUpload",
@@ -179,7 +190,10 @@ class TranscriptExtractor:
                 "content": transcript["summary"] if "summary" in transcript else transcript["transcript"],
                 "content_description": transcript["description"],
                 "source": "YouTube",
-                "created_at": transcript["published_at"],
+                "article_created_at": transcript["published_at"],
+                "article_updated_at": transcript["published_at"],
+                "created_at": created_at,
+                "updated_at": now,
                 "title_vector": self.azure.openai_helper.generate_embeddings(text=transcript["title"]),
                 "content_vector": self.azure.openai_helper.generate_embeddings(text=transcript["summary"]),
             }

@@ -1,89 +1,41 @@
 [
     {
-        "id": "8bec5cde7f554fa7974057db6f635952",
-        "url": "https://connect.clo-set.com/community/post/8bec5cde7f554fa7974057db6f635952",
-        "title": "Rendering issue help",
-        "content": "![a15a68209adb4ce1b128e42565177a45](https://storagefiles.clo-set.com/public/community/202601/8bec5cde7f554fa7974057db6f635952/images/a15a68209adb4ce1b128e42565177a45Screenshot%202026-01-07%20221510.png)![a7ba4690dc684f7a963b10fb88003721](https://storagefiles.clo-set.com/public/community/202601/8bec5cde7f554fa7974057db6f635952/images/a7ba4690dc684f7a963b10fb88003721Screenshot%202026-01-07%20221955.png)![adb36c492ed0403c8233e4e7449a2cde](https://storagefiles.clo-set.com/public/community/202601/8bec5cde7f554fa7974057db6f635952/images/adb36c492ed0403c8233e4e7449a2cdeScreenshot%202026-01-07%20222023.png)Dear All,\n\nHope you're doing great. \n\nI have an issue with render, when I click Render, the pop-up showing \"V-ray cant run, because of the required V-ray library could not located in current environment\". so any one could help me to fix this? Thanks in advance.\n\n### Community Post Comments:\nComment 1: Hi again! I wrote to the support and got a solution that worked for me, so for anybody else bumping into this issue in the future:Uninstall CLO software and reinstall CLO with admin rights. Right-click the CLO installer, select \"Run as administrator,\" and follow the on-screen instructions.\nReply 1: Thank you\n\nComment 2: Hi, I also have this issue and have tried all steps provided in this thread and in the link provided in the error-message. I've also updated drivers for my gpu and I'm well above the recomended specs. Is there a solution to this problem?\n\nComment 3: Hi Ariel, Thank you for the details shared, and please note I have tried in multiple ways, even I clicked in render view, nothing works and I have attached images which property editor details are shown. Kindly look into this suggest to fix this issue. Thanks ~ Govind\n\nComment 4: Hi There. For the Interactive Render to be turned on you do need to either click into the Render window or the Turn on Interactive Render. Circled in the attached screenshotIf the Render engine does not activate after turning on Interactive Render. Please see below articles as you may need to Update your computers Graphics Card or grant CLO disc access-https://connect.clo-set.com/community/post/8bec5cde7f554fa7974057db6f635952 also check that you computer does meet the specs required to run CLO-https://connect.clo-set.com/community/post/8bec5cde7f554fa7974057db6f635952 future we do recommend posting to just here first. Your support ticket went to our account support, which would not be able to answer you. If needed we would tell you to instead send to tech support if we cannot help here",
-        "content_description": "This web page serves to provide a platform for users to seek help and troubleshooting advice regarding V-Ray rendering errors related to missing libraries.",
+        "id": "7431294821744d41aa8478421fb63d94",
+        "url": "https://connect.clo-set.com/community/post/7431294821744d41aa8478421fb63d94",
+        "title": "hard hat zprj file ",
+        "content": "![0e1c248ec3844971a6103374f5029c33](https://storagefiles.clo-set.com/public/community/202604/7431294821744d41aa8478421fb63d94/images/0e1c248ec3844971a6103374f5029c33hard%20hat%20photo.png)**To view the file, please visit the following link:**\n\n<https://connect.clo-set.com/detail/2b11c204c9874cac8015ceefc9f34164?ref_id=1043751>",
+        "content_description": "This web page provides detailed information and resources related to construction safety and hard hat usage.",
         "source": "Connect Community",
-        "created_at": "2026-01-07T18:40:08.43Z",
-        "category": 240,
-        "tags": [
-            "Rendering",
-            "CLO",
-            "CLO-SET",
-            "CONNECT"
-        ]
-    },
-    {
-        "id": "33311431979443b4960cdecf27ffd6af",
-        "url": "https://connect.clo-set.com/community/post/33311431979443b4960cdecf27ffd6af",
-        "title": "Notches do not appear when exporting the pattern in PLT",
-        "content": "Download the latest version of CLO3D 2025.2.256 When I create a pattern and add notches, they appear in the pattern, but when I export the pattern in PLT format and open it in Illustrator, the pattern appears without the notches I had added (this never happened with previous versions). I don't know how to make the notches appear when I export the file. \n\nThank you in advance.![7da95f9c9ac5465b96700f8bfaa10094](https://storagefiles.clo-set.com/public/community/202601/33311431979443b4960cdecf27ffd6af/images/7da95f9c9ac5465b96700f8bfaa10094Captura%20de%20pantalla%202026-01-02%20210643.png)![7be47f919c3241da87a4114890708b29](https://storagefiles.clo-set.com/public/community/202601/33311431979443b4960cdecf27ffd6af/images/7be47f919c3241da87a4114890708b29Captura%20de%20pantalla%202026-01-02%20210301.png)![be5f8d472a0e4eff8d4dc9b80b89b555](https://storagefiles.clo-set.com/public/community/202601/33311431979443b4960cdecf27ffd6af/images/be5f8d472a0e4eff8d4dc9b80b89b555Captura%20de%20pantalla%202026-01-02%20210312.png)![c15a74e74d2549d5ad8697086ed72903](https://storagefiles.clo-set.com/public/community/202601/33311431979443b4960cdecf27ffd6af/images/c15a74e74d2549d5ad8697086ed72903Captura%20de%20pantalla%202026-01-02%20210543.png)![a4396d7056794e99871de5abc0090762](https://storagefiles.clo-set.com/public/community/202601/33311431979443b4960cdecf27ffd6af/images/a4396d7056794e99871de5abc0090762Captura%20de%20pantalla%202026-01-02%20210535.png)\n\n### Community Post Comments:\nComment 1: Hi, when you exported as a PLT, did you tick on \"Notches\" in \"Line options\" ?",
-        "content_description": "Provide troubleshooting guidance for resolving missing notches in PLT exports from CLO3D 2025.2.256 when opened in Illustrator.",
-        "source": "Connect Community",
-        "created_at": "2026-01-03T02:07:21.71Z",
-        "category": 250,
-        "tags": [
-            "CLO",
-            "CONNECT",
-            "PLT",
-            "DXF",
-            "ILLUSTRATOR",
-            "AI",
-            "Pattern",
-            "Import_Export",
-            "NOTCHES"
-        ]
-    },
-    {
-        "id": "e061b9582f7740e283a0a672b28df2ae",
-        "url": "https://connect.clo-set.com/community/post/e061b9582f7740e283a0a672b28df2ae",
-        "title": "🎿 WINTER HOLIDAY CONTEST ❄️",
-        "content": "![1c8560f74e4a4430a2497f83f7a71ecf](https://storagefiles.clo-set.com/public/community/202601/e061b9582f7740e283a0a672b28df2ae/images/1c8560f74e4a4430a2497f83f7a71ecfCLO_CONTEST_xmasjumper_EDITO-01.png)![9619191c223e47cc96c56320e0dc5b95](https://storagefiles.clo-set.com/public/community/202601/e061b9582f7740e283a0a672b28df2ae/images/9619191c223e47cc96c56320e0dc5b95CLO_CONTEST_xmasjumper_EDITO-02.png)![95d23d5d24d74321b530a7875bad5122](https://storagefiles.clo-set.com/public/community/202601/e061b9582f7740e283a0a672b28df2ae/images/95d23d5d24d74321b530a7875bad5122CLO_CONTEST_xmasjumper_EDITO-03.png)Warm comfyness, winter-sports days, hot chocolate breaks  \nand a hint of festive chaos❄️**✨**\n\n#CLO HOLIDAY CONTEST\n\n### Community Post Comments:\nComment 1: 👏👏👏 cool!",
-        "content_description": "Celebrate the cozy spirit of winter and join the CLO Holiday Contest for festive fun and stylish inspiration.",
-        "source": "Connect Community",
-        "created_at": "2026-01-02T14:26:27.357Z",
-        "category": 215,
-        "tags": [
-            "CLO",
-            "CONNECT",
-            "Contest",
-            "winter",
-            "cable",
-            "jumper",
-            "xmas"
-        ]
-    },
-    {
-        "id": "e56fcb1309324fde9a9d3f92e6563283",
-        "url": "https://connect.clo-set.com/community/post/e56fcb1309324fde9a9d3f92e6563283",
-        "title": "New Outfit + AI try ON",
-        "content": "![a7b0b051e87e46b281135921fb9947cc](https://storagefiles.clo-set.com/public/community/202601/e56fcb1309324fde9a9d3f92e6563283/images/a7b0b051e87e46b281135921fb9947ccFull_outfit_2.png)![0d2c49e5c29042d2b2315083eb6d6532](https://storagefiles.clo-set.com/public/community/202601/e56fcb1309324fde9a9d3f92e6563283/images/0d2c49e5c29042d2b2315083eb6d6532Full_outfit_3.png)![86654bb164454b23a75ee9427b9e53fb](https://storagefiles.clo-set.com/public/community/202601/e56fcb1309324fde9a9d3f92e6563283/images/86654bb164454b23a75ee9427b9e53fbFull_outfit_1.png)![89df866ee07149e9bae67e6ba54111ad](https://storagefiles.clo-set.com/public/community/202601/e56fcb1309324fde9a9d3f92e6563283/images/89df866ee07149e9bae67e6ba54111adAI_TRY_ON.png)",
-        "content_description": "Showcasing stylish and modern outfit designs created with virtual try-on technology for fashion inspiration and digital wardrobe planning.",
-        "source": "Connect Community",
-        "created_at": "2026-01-02T12:07:52.24Z",
+        "article_created_at": "2026-04-28T08:35:45.702Z",
+        "article_updated_at": "2026-04-28T08:35:45.702Z",
         "category": 210,
         "tags": [
             "CLO",
+            "MarvelousDesigner",
             "CLO-SET",
             "CONNECT",
-            "AI",
-            "TRYON"
+            "AI"
         ]
     },
     {
-        "id": "e9f31cd59cbc4dc29ec79cfce6462f02",
-        "url": "https://connect.clo-set.com/community/post/e9f31cd59cbc4dc29ec79cfce6462f02",
-        "title": "My first CLO3D for my PJ project finally I can make it 😭😭😭 ",
-        "content": "YouTube Video: https://www.youtube.com/watch?v=QrR1v8zS2zk?start=0",
-        "content_description": "Sorry, I can't access the content of the YouTube video directly. Could you please provide a brief description or key points from the video? That way, I can help generate a purpose statement for your web page.",
+        "id": "f0906accc5544c4e979afb8575734f14",
+        "url": "https://connect.clo-set.com/community/post/f0906accc5544c4e979afb8575734f14",
+        "title": "hard hat zprj file ",
+        "content": "![602f592b00b24696a7309f83a1e528ab](https://storagefiles.clo-set.com/public/community/202604/f0906accc5544c4e979afb8575734f14/images/602f592b00b24696a7309f83a1e528abhard%20hat%206.png)![28af14bc6a214c059e457a038211fbef](https://storagefiles.clo-set.com/public/community/202604/f0906accc5544c4e979afb8575734f14/images/28af14bc6a214c059e457a038211fbefhard%20hat%205.png)![7d339f570bc8486dbef7101889b8078b](https://storagefiles.clo-set.com/public/community/202604/f0906accc5544c4e979afb8575734f14/images/7d339f570bc8486dbef7101889b8078bhard%20hat%204.png)",
+        "content_description": "Showcasing a variety of durable and stylish hard hats designed for safety and comfort in construction and industrial work environments.",
         "source": "Connect Community",
-        "created_at": "2026-01-02T02:49:33.04Z",
+        "article_created_at": "2026-04-25T09:45:59.53Z",
+        "article_updated_at": "2026-04-25T09:45:59.53Z",
         "category": 210,
         "tags": [
             "CLO",
-            "CONNECT"
+            "MarvelousDesigner",
+            "CLO-SET",
+            "CONNECT",
+            "JINNY",
+            "3dsMax",
+            "Blender",
+            "AI"
         ]
     }
 ]

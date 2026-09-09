@@ -5,7 +5,7 @@ import re
 import shutil
 import sys
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime
+from datetime import datetime, timezone
 from math import ceil
 
 import questionary
@@ -191,7 +191,8 @@ class Posts:
             "content": content + comment_content,
             "content_description": self.azure.openai_helper.create_webpage_description(content) if content else "",
             "source": "Connect Community",
-            "created_at": post["registeredDate"],
+            "article_created_at": post["registeredDate"],
+            "article_updated_at": post.get("modifiedDate") or post["registeredDate"],
             "category": post["category"],
             "tags": post["tags"],
         }
@@ -295,6 +296,16 @@ class Posts:
                     elif document["category"] == 250:
                         document["category"] = "User Feedback"
 
+                    now = datetime.now(timezone.utc).isoformat()
+
+                    # created_at is set once (kept from the existing indexed document if present);
+                    # updated_at is refreshed on every upload.
+                    try:
+                        existing = self.azure.search_client.get_document(key=document["id"])
+                        created_at = existing.get("created_at") or now
+                    except Exception:
+                        created_at = now
+
                     upload_documents.append(
                         {
                             "@search.action": "mergeOrUpload",
@@ -304,7 +315,10 @@ class Posts:
                             "content": document["content"],
                             "content_description": document["content_description"],
                             "source": document["source"],
-                            "created_at": document["created_at"],
+                            "article_created_at": document["article_created_at"],
+                            "article_updated_at": document["article_updated_at"],
+                            "created_at": created_at,
+                            "updated_at": now,
                             "title_vector": self.azure.openai_helper.generate_embeddings(text=document["title"]),
                             "content_vector": self.azure.openai_helper.generate_embeddings(text=document["content"] if document["content"] != "" else document["title"]),
                         }
@@ -405,7 +419,18 @@ if __name__ == "__main__":
             list(tqdm(executor.map(lambda p: post.upload(*p), upload_posts_params), total=len(upload_posts_params), desc="Uploading Posts", colour="magenta"))
 
     elif task == "Find & Delete AI Search Documents":
-        search_fields_options = ["article_id", "url", "title", "content", "source", "content_description"]
+        search_fields_options = [
+            "article_id",
+            "url",
+            "title",
+            "content",
+            "source",
+            "content_description",
+            "article_created_at",
+            "article_updated_at",
+            "created_at",
+            "updated_at",
+        ]
 
         search_field = questionary.select("Search field?", choices=search_fields_options).ask()
         search_text = questionary.text("Search value?").ask()

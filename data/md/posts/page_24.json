@@ -1,170 +1,168 @@
 [
     {
-        "id": "6936e1cc896f4cb99884a9c87f283a34",
-        "url": "https://connect.clo-set.com/community/post/6936e1cc896f4cb99884a9c87f283a34",
-        "title": "Textures mapping For Front and Back side",
-        "content": "I want to apply two different texture maps to a single geometry surface: a lace texture (PNG with transparency) on the front face, and a different texture (PNG/jpeg) on the back face. This ensures that when viewing the object, the front renders the lace pattern with see-through effect, while the back renders independently with its own texture, eliminating the need for duplicated geometry or additional overlay patterns.\n\nSo that the front face provides the “see-through” lace effect, while the back face displays an independent texture map.\n\nNote: I applied different texture maps to the fabric in the fabric property editor. \n\nFull transparency from the front view and not backside view\n\nYour help will help others CLO Users also\n\n![607bed3ff83f44a389885d46662be338](https://storagefiles.clo-set.com/public/community/202509/6936e1cc896f4cb99884a9c87f283a34/images/607bed3ff83f44a389885d46662be338clo%20community.JPG)\n\n### Community Post Comments:\nComment 1: When it comes to creating Lace with a background that's visible due to transparency, the key is knowing in which direction the normals of those faces are reflected.When you use the first technique described, creating a copy of the Front Pattern to place behind it, the normals are in the same direction, so you can see what's behind the first layer.Now, when you apply Thickness to the Fabric, you can apply individual materials for the Front, Back, and Sides. The normals in this case are facing outward, so even if you apply a different material, the transparency won't be reflected on the back side.Currently, for what you're looking for, you must work with sublayers to achieve the desired result.",
-        "content_description": "This page demonstrates how to apply separate front and back texture maps on a single geometry surface in CLO to achieve a transparent lace effect on the front while displaying an independent texture on the back without duplicating geometry.",
+        "id": "15c014faef94469c93dde357b5fc4cb2",
+        "url": "https://connect.clo-set.com/community/post/15c014faef94469c93dde357b5fc4cb2",
+        "title": "Zipper",
+        "content": "The zippers that come with CLO3D always seem a bit underwhelming, and their size often appears too small to me. When used on the clothes, they can undermine the overall quality of the garments. That's why I've specifically crafted #5 - sized zippers. There are two types, and each type has two closure methods. All the attributes and adjustment methods of these zippers are fully compatible with the software. I typically apply them to the making of down jackets and padded jackets, which endows the clothing with an overall sense of luxury. I've set up UV grid layouts for both the zippers and their pulls, enabling the customization of LOGOs, just as shown in my illustrations. The UV grids are directly incorporated into the normal map of each zipper file, and the file format is.PSD. After downloading, you can click to make modifications. I'm still in the process of continuous exploration, hoping to offer more convenient methods to enthusiasts!![2430ead84cb140e68e6af7a5a9630abd](https://storagefiles.clo-set.com/public/community/202601/15c014faef94469c93dde357b5fc4cb2/images/2430ead84cb140e68e6af7a5a9630abd%E7%AC%AC%E4%BA%8C%E7%89%88.png)",
+        "content_description": "This page offers customizable #5-sized zipper assets designed for CLO3D to enhance garment quality and luxury, complete with editable UV grid layouts for personalized logos.",
         "source": "Connect Community",
-        "created_at": "2025-09-20T14:26:55.647Z",
-        "category": 210,
+        "article_created_at": "2026-01-19T07:09:39.533Z",
+        "article_updated_at": "2026-01-19T07:09:39.533Z",
+        "category": 240,
         "tags": [
-            "MarvelousDesigner"
+            "CLO",
+            "Avatar",
+            "MarvelousDesigner",
+            "CLO-SET"
         ]
     },
     {
-        "id": "05a0af317cdf4819a836a658982fc304",
-        "url": "https://connect.clo-set.com/community/post/05a0af317cdf4819a836a658982fc304",
-        "title": "Glamorous ramp dress",
-        "content": "![](https://storagefiles.clo-set.com/public/community/202509/05a0af317cdf4819a836a658982fc304/images/f346b77ecb594d0a98a1f0cb57e0ceba11.png)Does anyone know how to make realistic feathers without using fur render? i want to add a bunch of feathers to the cape of this dress![84cde23cd3614842be03cf11c1f5b373](https://storagefiles.clo-set.com/public/community/202509/05a0af317cdf4819a836a658982fc304/images/84cde23cd3614842be03cf11c1f5b373fashion%20show%20gown_0.png)![2c5bd3c14cb04897bf2b4733b21a9d16](https://storagefiles.clo-set.com/public/community/202509/05a0af317cdf4819a836a658982fc304/images/2c5bd3c14cb04897bf2b4733b21a9d16fashion%20show%20gown_31.png)\n\n### Community Post Comments:\nComment 1: I'm creating bunch more of these Feathers\nReply 1: Thanks a lot 😄😄😄\n\nComment 2: Hey,See if this helps :)https://connect.clo-set.com/community/post/05a0af317cdf4819a836a658982fc304 Gown by the way 😍👍🏻\nReply 1: Thanks a lot for your efforts 😄😄😄",
-        "content_description": "A community forum for fashion designers to share tips and techniques on creating realistic feather details in digital garment design without using fur rendering.",
+        "id": "1c50fc9910ee482a86f98bfe29116dc1",
+        "url": "https://connect.clo-set.com/community/post/1c50fc9910ee482a86f98bfe29116dc1",
+        "title": "Industrial Hi-Vis Safety Jacket – Medium Pattern",
+        "content": "![292f5d2a8c944991b55044c63a791c45](https://storagefiles.clo-set.com/public/community/202601/1c50fc9910ee482a86f98bfe29116dc1/images/292f5d2a8c944991b55044c63a791c45ChatGPT%20Image%2019%20%D9%8A%D9%86%D8%A7%D9%8A%D8%B1%202026%D8%8C%2008_50_47%20%D8%B5.png)file in store>>>",
+        "content_description": "This web page provides a detailed comparison and pricing information for various Samsung Galaxy Z Flip4 mobile phone models.",
         "source": "Connect Community",
-        "created_at": "2025-09-19T13:22:35.5Z",
+        "article_created_at": "2026-01-19T06:36:20.743Z",
+        "article_updated_at": "2026-01-19T06:36:20.743Z",
         "category": 210,
         "tags": [
             "CLO",
             "MarvelousDesigner",
             "CLO-SET",
             "CONNECT",
-            "Avatar",
-            "Colorway",
-            "Texture",
-            "Material",
-            "Pattern",
+            "JINNY",
+            "3dsMax",
+            "Blender",
+            "AI"
+        ]
+    },
+    {
+        "id": "3c8d8179fadc44a6a664fc910abec18e",
+        "url": "https://connect.clo-set.com/community/post/3c8d8179fadc44a6a664fc910abec18e",
+        "title": " leather materials ,  physical",
+        "content": "## ![f70b637dafc64ebbb5a64d47be0cd3c9](https://storagefiles.clo-set.com/public/community/202601/3c8d8179fadc44a6a664fc910abec18e/images/f70b637dafc64ebbb5a64d47be0cd3c9Shell%20Cordovan%20Leather%202.png)I’ve been focusing a lot on **leather materials in Marvelous Designer** , not just visually but also on **physical behavior** , especially **edge stiffness, thickness, and how the back side of leather reacts in folds and tension**.\n\nI’m curious — are there sellers or creators who really care about these details, or is most leather content still treated more like stiff fabric presets?\n\nWould love to hear different approaches.\n\n* * *",
+        "content_description": "This page explores the detailed physical properties of leather materials in Marvelous Designer, inviting discussion on realistic leather behavior versus standard fabric presets among creators and sellers.",
+        "source": "Connect Community",
+        "article_created_at": "2026-01-18T06:25:29.357Z",
+        "article_updated_at": "2026-01-18T06:25:29.357Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "CLO-SET",
+            "AI"
+        ]
+    },
+    {
+        "id": "ac03119281b44211ae6ceae1b65f3c05",
+        "url": "https://connect.clo-set.com/community/post/ac03119281b44211ae6ceae1b65f3c05",
+        "title": "Creating a non-human avatar with odd shape in MD",
+        "content": "I'm using Marvelous Designer, and I have a character that was designed elsewhere, but I need to create new clothing for it. The character is pretty much a ball of fur with legs - think Mike Wazowski from Monsters, Inc but with no arms. I've tried creating a placeholder (unrigged) obj file in Cinema and importing it, but being the shape it is, setting the body points in the Avatar Editor and creating a fitting suit isn't really working (the suit keeps tearing). And for the life of me I can't figure out how to create custom arrangement points. I do not need it to be animated/in motion, but I do need it to be realistic and properly draped. The plan is to bring the created clothing back into Cinema4D for final render with my character. \n\nI've had difficulty finding any information about creating your own avatar, and even less about non-human avatars. I would appreciate if anyone has any tips/tricks they could share, or any tutorials they could point me towards. Thanks in advance!\n\n### Community Post Comments:\nComment 1: Don’t use Fitting Suit at all. Instead, draft simple patterns manually and arrange them using Arrangement Points or Bounding Volumes (spheres work better for round characters).In the Avatar Editor, avoid setting standard body points. For non-humans, MD doesn’t rely on them correctly and this often causes tearing.Increase particle distance first (20–30), simulate, then gradually lower it after the garment settles.If arrangement points are limited, create temporary helper geometry (simple spheres/cylinders) as separate avatars to guide placement, then delete them later.\nReply 1: Thank you. I still have questions based on your reply, but I'm going to try some stuff out based on this before I ask.",
+        "content_description": "A community-driven resource for tips and tutorials on creating custom, non-human avatars and realistic clothing in Marvelous Designer for seamless integration with Cinema4D.",
+        "source": "Connect Community",
+        "article_created_at": "2026-01-17T16:25:08.237Z",
+        "article_updated_at": "2026-01-17T16:25:08.237Z",
+        "category": 220,
+        "tags": [
+            "MarvelousDesigner",
+            "Cinema4D",
+            "AutoFitting",
+            "Avatar"
+        ]
+    },
+    {
+        "id": "2842d740d849496bb4e391f2ffd6e786",
+        "url": "https://connect.clo-set.com/community/post/2842d740d849496bb4e391f2ffd6e786",
+        "title": "Simulation Underwate",
+        "content": "Hi hi,\n\nCould anyone send me their settings for simulating clothes underwater. I haven't played with it yet but my assamption would be to start with to have avatar move in slow-mo, perhaps with some extra damping and on clothes side of things change gravity setting and air damping and perhaps material properties?\n\nLet me know if anyone tried to experiment.\n\nBest,\n\nPiotr",
+        "content_description": "A community forum page for sharing and discussing settings and techniques to simulate underwater clothing effects in avatar animations.",
+        "source": "Connect Community",
+        "article_created_at": "2026-01-16T12:37:42.193Z",
+        "article_updated_at": "2026-01-16T12:37:42.193Z",
+        "category": 220,
+        "tags": [
+            "MarvelousDesigner",
+            "Blender",
+            "Animation",
+            "Simulation",
+            "underwater"
+        ]
+    },
+    {
+        "id": "53f61684e79a40819967df19c134e621",
+        "url": "https://connect.clo-set.com/community/post/53f61684e79a40819967df19c134e621",
+        "title": "free file in store >>>",
+        "content": "![42fe8c0f911c44f68341d6970a0dd39e](https://storagefiles.clo-set.com/public/community/202601/53f61684e79a40819967df19c134e621/images/42fe8c0f911c44f68341d6970a0dd39eChatGPT%20Image%2015%20%D9%8A%D9%86%D8%A7%D9%8A%D8%B1%202026%D8%8C%2010_00_29%20%D8%B5.png)\n\n### Community Post Comments:\nComment 1: Your creativity is truly amazing 😍\nReply 1: thanks ❤️",
+        "content_description": "This web page provides detailed information about the 2026 FIFA World Cup, including tournament dates, host countries, and match venues.",
+        "source": "Connect Community",
+        "article_created_at": "2026-01-15T07:14:45.087Z",
+        "article_updated_at": "2026-01-15T07:14:45.087Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "CLO-SET",
+            "AI"
+        ]
+    },
+    {
+        "id": "f5c1b1bf6fb84cb992ea0a07137c78a9",
+        "url": "https://connect.clo-set.com/community/post/f5c1b1bf6fb84cb992ea0a07137c78a9",
+        "title": "file in store >>",
+        "content": "![42f2eac0e5d34dceaf9cdb7b0f7178df](https://storagefiles.clo-set.com/public/community/202601/f5c1b1bf6fb84cb992ea0a07137c78a9/images/42f2eac0e5d34dceaf9cdb7b0f7178dfChatGPT%20Image%2015%20%D9%8A%D9%86%D8%A7%D9%8A%D8%B1%202026%D8%8C%2010_12_03%20%D8%B5.png)\n\n### Community Post Comments:\nComment 1: https://connect.clo-set.com/community/post/f5c1b1bf6fb84cb992ea0a07137c78a9",
+        "content_description": "This web page provides a comprehensive overview of the key features and benefits of the 2026 Hyundai Tucson.",
+        "source": "Connect Community",
+        "article_created_at": "2026-01-15T07:13:36.157Z",
+        "article_updated_at": "2026-01-15T07:13:36.157Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "CLO-SET",
+            "3dsMax",
+            "Blender",
+            "JINNY",
+            "Houdini",
+            "AI"
+        ]
+    },
+    {
+        "id": "0305721f0a574da88507cefeb181cd2e",
+        "url": "https://connect.clo-set.com/community/post/0305721f0a574da88507cefeb181cd2e",
+        "title": "Share of Early Spring Outerwear",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202601/0305721f0a574da88507cefeb181cd2e/images/5fdeb387595f40bfb31d4a115df15f68%E5%86%85%E9%87%8C%E7%BB%92%E5%A4%B9%E5%85%8B.png)The effect is quite different when wearing a helmet. Wouldn't it be interesting to pair it with an electric scooter?\n\n![1b224340004a40579484b86c352a0566](https://storagefiles.clo-set.com/public/community/202601/0305721f0a574da88507cefeb181cd2e/images/1b224340004a40579484b86c352a0566image.png)For more details, you can check out my homepage.",
+        "content_description": "Showcasing stylish and functional helmets designed to complement your electric scooter rides.",
+        "source": "Connect Community",
+        "article_created_at": "2026-01-13T06:41:35.16Z",
+        "article_updated_at": "2026-01-13T06:41:35.16Z",
+        "category": 215,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "CLO-SET",
             "Rendering"
         ]
     },
     {
-        "id": "cc9b774ad97c4da385cf940cd345381c",
-        "url": "https://connect.clo-set.com/community/post/cc9b774ad97c4da385cf940cd345381c",
-        "title": "作品や技術について話したいです",
-        "content": "![](https://storagefiles.clo-set.com/public/community/202509/cc9b774ad97c4da385cf940cd345381c/images/c197d51c8bcc4e70b2a5ac561a6dba57IMG_3170.png)こんにちは。\n\n私は日本のCLOユーザーです。\n\n個人で作品を作っている方がいたら、ぜひ作品や制作の技術についてお話ししたいと思っています。\n\nよろしくお願いします。",
-        "content_description": "This webpage serves as a platform for Japanese CLO users to connect, share their individual works, and discuss creation techniques.",
+        "id": "075e02f79c6d4b4689c7813c499c61b7",
+        "url": "https://connect.clo-set.com/community/post/075e02f79c6d4b4689c7813c499c61b7",
+        "title": "Simulation causes Alembic Avatar to Reset",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202601/075e02f79c6d4b4689c7813c499c61b7/images/9cea28cde3e24a6d8c30c8a61f948e97Issue.png)\n\nYouTube Video: https://www.youtube.com/watch?v=BmwsMDTddiM?start=0\n\nHey guys, does anybody know how to fix this issue?  \n  \nI used to be able to import an Alembic Avatar, reposition and rotate it, run the simulation, which would drape the clothes over the Alembic Avatar, and then play the Alembic Avatar animation so the cloth would follow and react to the animation.   \nNow when I start the start the simulation, the Alembic Avatar resets to its default position it's in upon first importing it into the scene, causing the cloth to distort.   \nSimulation Settings are Normal (Default), using GPU(same happens with CPU though) and Particle Distance of all cloth is set to 20mm.  \nLatest graphics drivers and Marvelous Designer versions are installed.   \nAny help would be much appreciated!\n\n### Community Post Comments:\nComment 1: Please share your project file with us through our 'Contact Us' page.🙏🏻https://connect.clo-set.com/community/post/075e02f79c6d4b4689c7813c499c61b7 will be the best way to see what is going on there.",
+        "content_description": "A community forum page for troubleshooting Alembic Avatar simulation issues in Marvelous Designer to help users resolve cloth animation and positioning problems.",
         "source": "Connect Community",
-        "created_at": "2025-09-18T04:47:05.017Z",
+        "article_created_at": "2026-01-12T07:59:14.47Z",
+        "article_updated_at": "2026-01-12T07:59:14.47Z",
         "category": 210,
         "tags": [
-            "CLO",
             "MarvelousDesigner",
-            "CONNECT",
+            "CLO",
             "CLO-SET",
-            "Substance",
-            "Blender",
-            "Pattern"
-        ]
-    },
-    {
-        "id": "8aad5c903f154c7faf17753e4f157441",
-        "url": "https://connect.clo-set.com/community/post/8aad5c903f154c7faf17753e4f157441",
-        "title": "OUTFIT ODIUM 7",
-        "content": "[FREE OUTFIT FREE OUTFIT FREE OUTFIT FREE OUTFIT FREE OUTFIT FREE OUTFIT FREE OUTFIT FREE OUTFIT FREE OUTFIT FREE OUTFIT FREE OUTFIT](https://connect.clo-set.com/detail/c09e95af77e1450b89d3265d8b08255a)  \n![422529fa24a84e2192bd4d9efe7e0360](https://storagefiles.clo-set.com/public/community/202509/8aad5c903f154c7faf17753e4f157441/images/422529fa24a84e2192bd4d9efe7e0360render_00000.jpg)\n\n### Community Post Comments:\nComment 1: The level of detail extends to the zipper and even the nails—very well done.👍🏻",
-        "content_description": "Discover and claim your free outfit with this exclusive offer.",
-        "source": "Connect Community",
-        "created_at": "2025-09-17T18:21:08.227Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "MarvelousDesigner",
-            "CONNECT",
-            "Blender",
-            "Cinema4D",
-            "Avatar",
-            "Import_Export",
-            "Material",
-            "Simulation"
-        ]
-    },
-    {
-        "id": "a059b401a668445d9ed3db1dfe981cd8",
-        "url": "https://connect.clo-set.com/community/post/a059b401a668445d9ed3db1dfe981cd8",
-        "title": "The “Floating” Crown!",
-        "content": "YouTube Video: https://www.youtube.com/watch?v=KtGXcUz2M0g?start=0\n\nEver wondered how some crowns seem to _float_ and never fall off while walking? 👑✨\n\nMany of you might already know the secret, but today, we’re revealing the solution from ![2f3cf10fee984b189784babf8aa9b53b](https://storagefiles.clo-set.com/public/community/202509/a059b401a668445d9ed3db1dfe981cd8/images/2f3cf10fee984b189784babf8aa9b53b5.png)**Princess of Shadow**! Stay tuned and level up your crafting skills with this clever trick.![4ebc1940d56b4bffb4b8ecf63d9c1eef](https://storagefiles.clo-set.com/public/community/202509/a059b401a668445d9ed3db1dfe981cd8/images/4ebc1940d56b4bffb4b8ecf63d9c1eef6.png)\n\n![52e5233ad8f44d8babca128fd5a09397](https://storagefiles.clo-set.com/public/community/202509/a059b401a668445d9ed3db1dfe981cd8/images/52e5233ad8f44d8babca128fd5a093977.png)\n\nHave your own tips? Share them in the comments and let’s help the community create magic together!\n\n### Community Post Comments:\nComment 1: Tips and tricks indeed!\n\nComment 2: can you share a tutorial of the background making process?\nReply 1: Hi , I'd be happy to do it. Just give me a little time! Cheers, Mel",
-        "content_description": "Discover the secret technique from the Princess of Shadow to make crowns appear to float securely while walking and enhance your crafting skills.",
-        "source": "Connect Community",
-        "created_at": "2025-09-17T17:12:59.29Z",
-        "category": 240,
-        "tags": [
-            "CLO",
-            "MarvelousDesigner",
-            "CONNECT",
             "Animation",
+            "AutoFitting",
             "Avatar",
             "Simulation",
-            "Trim",
-            "Texture"
-        ]
-    },
-    {
-        "id": "13d52ed0a492483d92162dd48532e780",
-        "url": "https://connect.clo-set.com/community/post/13d52ed0a492483d92162dd48532e780",
-        "title": "trending",
-        "content": "![5a98ef8a0b304fbabd36caf21026ad79](https://storagefiles.clo-set.com/public/community/202509/13d52ed0a492483d92162dd48532e780/images/5a98ef8a0b304fbabd36caf21026ad793333.png)",
-        "content_description": "This web page provides a detailed recipe for making a classic Margherita pizza, including ingredients and step-by-step instructions.",
-        "source": "Connect Community",
-        "created_at": "2025-09-17T16:11:47.487Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "MarvelousDesigner",
-            "CLO-SET",
-            "Pattern",
-            "Rendering",
-            "Material",
-            "Texture",
-            "CONNECT"
-        ]
-    },
-    {
-        "id": "99f7e71573364a829211da7e5aecd534",
-        "url": "https://connect.clo-set.com/community/post/99f7e71573364a829211da7e5aecd534",
-        "title": "evening",
-        "content": "* * *\n\n## ![a7d1d5c20c424abb8ad1970c6e0e52fb](https://storagefiles.clo-set.com/public/community/202509/99f7e71573364a829211da7e5aecd534/images/a7d1d5c20c424abb8ad1970c6e0e52fbf1.png)",
-        "content_description": "Explore and purchase high-quality, stylish backpacks designed for everyday use and outdoor adventures.",
-        "source": "Connect Community",
-        "created_at": "2025-09-17T16:04:13.96Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "MarvelousDesigner",
-            "CLO-SET",
-            "CONNECT",
-            "Pattern",
-            "Material",
-            "Avatar",
-            "Texture",
-            "EveryWear"
-        ]
-    },
-    {
-        "id": "bfbe016049c743f4875a9b6e5d284190",
-        "url": "https://connect.clo-set.com/community/post/bfbe016049c743f4875a9b6e5d284190",
-        "title": "How can I remove attach to measure without removing the measure?",
-        "content": "I have accidentally attached the wrong garment pieces to my measure on avatar. I want to remove the attachment from these parts and attach the correct parts to the waist measure. The only way I see do this is by making a cut on all the incorrect pieces or deleting the measure. Surely there is a way to select the attached part and unattach it?\n\n### Community Post Comments:\nComment 1: Hi There! You can use the same tool to detach. 🙂Use the Attach to Measure (Avatar) Tool on the 3D tool bar &gt; R-Click on the line or edge you want to detach in the 3D Window &gt; Select the Detach option you need from the drop down\n\nComment 2: can you pls upload a image of your problem here?",
-        "content_description": "This page provides guidance on how to unattach incorrect garment pieces from an avatar measure and correctly reattach the proper parts without deleting the measure.",
-        "source": "Connect Community",
-        "created_at": "2025-09-13T04:55:53.41Z",
-        "category": 220,
-        "tags": [
-            "MarvelousDesigner"
-        ]
-    },
-    {
-        "id": "31d203ee8df24fa78bc6775dbcba30cf",
-        "url": "https://connect.clo-set.com/community/post/31d203ee8df24fa78bc6775dbcba30cf",
-        "title": "Corrupt File Issue",
-        "content": "![09e036d3ec8c48fd81d816250cb234d2](https://storagefiles.clo-set.com/public/community/202509/31d203ee8df24fa78bc6775dbcba30cf/images/09e036d3ec8c48fd81d816250cb234d2CORRUPT%20fILE%20.png)when I open My File I face this type of error can some one tell me ? what is solution of that error .i worked 2 day in my project suddenly i face this type of error and my file is not open can some one tell me what is that error ? Pls Reply\n\n### Community Post Comments:\nComment 1: Hi there. This likely means your file has become completely corrupted. It also looks like you do not have a CLO subscription associated with this account. Do you by chance have a CLO subscription linked to another account?",
-        "content_description": "This web page provides support and solutions for users encountering file corruption errors that prevent them from opening their project files.",
-        "source": "Connect Community",
-        "created_at": "2025-09-11T16:26:43.253Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "MarvelousDesigner",
-            "CLO-SET",
-            "CONNECT",
-            "Marmoset",
-            "AI",
-            "Animation"
+            "Import_Export"
         ]
     }
 ]

@@ -1,17 +1,66 @@
 [
     {
-        "id": "722db7f7671345c29e1b7b44a8c8755c",
-        "url": "https://connect.clo-set.com/community/post/722db7f7671345c29e1b7b44a8c8755c",
-        "title": "Animation",
-        "content": "Dear Melody,  \nI have a problem with the animation: I selected a stage from the CLO Library and used the motion “Walking in place.” I paid attention to the following points:\n\n> \\- Simulation mode is set to Animation (Stable).\n> \n> \\- All layers are set to 0.\n> \n> \\- PD ist set to 7-10.\n> \n> \\- Additional Thickness Collision may remain around 2-2.5.\n\n> \\- Delete all pattern pieces that will not be visible during the final animation (e.g. pocket bags.)\n> \n> \\- No pattern pieces on Freeze/Deactivate/Strengthen.\n\nBut the pants still tear apart in the lower area. The sleeves of the shirt also stretch out. What could be causing this?\n\nAttached a video. \n\nMerci beacoup & Best, Tina\n\nYouTube Video: https://www.youtube.com/watch?v=AAscdZ6Vsk4?start=0\n\n### Community Post Comments:\nComment 1: It is correct to open the project file directly, but the problem you can see in the video seems to be that the pants are moving, and the two pants patterns on both legs cannot distinguish between inside and outside, resulting in a mix of positions.The sleeve of the shirt also collides with the body's pattern, and the same phenomenon occurs.First of all, I recommend separating the layers.Pants leg one pattern: 0The rest of the pants pattern: 1Red Body: 2Sky Blue Sleeve: 3Red Sleeve: 4It is safe to lower the collision thickness to 1.0 in an environment where the location of the fabric can overlap due to the large pattern area.If you have time to spare, you can choose Hi-Res Garment to greatly increase the stability of the simulation during the animation render.The particle spacing can be reversed even after Hi-Res Garment activation, so consider it.\nReply 1: @fadyboo - Thank you so much! @Tina - The oversize of the garments in the animation can require the workarounds that fadyboo has described. The animation rendering process will take longer then, but if it is the only way, then it is the way. Please get back to this thread in case the issues aren't solved after following the tips above.\nReply 2: Many thanks 🙏🏻",
-        "content_description": "A troubleshooting guide to resolving garment tearing and stretching issues during animation in CLO software.",
+        "id": "ca2aa0673e1e44bebcc568e49dab624d",
+        "url": "https://connect.clo-set.com/community/post/ca2aa0673e1e44bebcc568e49dab624d",
+        "title": "Two different stories. One competition! ",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202608/ca2aa0673e1e44bebcc568e49dab624d/images/acc2340fd13449d987a2945c91a627cbe10%20copy%201.jpg)![44747355de6f46d497960eda381521f7](https://storagefiles.clo-set.com/public/community/202608/ca2aa0673e1e44bebcc568e49dab624d/images/44747355de6f46d497960eda381521f7La%20Diez%20by%20Tinu%20Jose%20%283%29.png)  \n🔟 **LA DIEZ — The Number 10**  \nInspired by Argentina’s iconic football heritage and the legendary **No. 10** , _La Diez_ explores how football identity can be translated into contemporary fashion. The design combines Argentina’s signature sky-blue palette with a sporty, feminine silhouette and details inspired by the visual language of football jerseys.  \n  \n![db71da2dd7dc4e29b209267c6c66f10c](https://storagefiles.clo-set.com/public/community/202608/ca2aa0673e1e44bebcc568e49dab624d/images/db71da2dd7dc4e29b209267c6c66f10c10%20copy.jpg)  \n🌊 **LA MAREA — The Tide**  \nInspired by Portugal’s deep connection with the Atlantic Ocean, _La Marea_ translates the rhythm and movement of ocean tides into a contemporary football lifestyle jersey. The flowing print, wave-like details, and deep burgundy palette are designed to capture the energy of the sea while keeping the design rooted in football culture.  \n  \n**LA MAREA — The Tide:** <https://connect.clo-set.com/detail/dc3551c95db1457f9064aaa92ccd2ea3>  \n**LA DIEZ — The Number 10:**<https://connect.clo-set.com/detail/3395307d69a54886808af29047c17a07>  \n  \nBoth projects were created in **CLO 3D** , with the aim of blending football culture, fashion, storytelling, and digital garment design.\n\nWould love to hear what you think!  \n**Which one speaks to you more — LA MAREA or LA DIEZ?**\n\n### Community Post Comments:\nComment 1: LA DIEZ👍🏻\nReply 1: Glad it caught your eye!❤️",
+        "content_description": "Showcasing innovative digital fashion designs that blend football culture and storytelling through the inspired collections LA DIEZ and LA MAREA.",
         "source": "Connect Community",
-        "created_at": "2026-04-14T10:26:56.902Z",
-        "category": 240,
+        "article_created_at": "2026-08-11T03:40:25.586Z",
+        "article_updated_at": "2026-08-11T03:40:25.586Z",
+        "category": 210,
         "tags": [
             "CLO",
+            "CLO-SET",
             "CONNECT",
-            "Animation"
+            "Contest",
+            "Championshipthread",
+            "footballfashion",
+            "digitalfashion",
+            "3ddesign"
+        ]
+    },
+    {
+        "id": "fe4036a6eb0f4e0c99177d53d2461142",
+        "url": "https://connect.clo-set.com/community/post/fe4036a6eb0f4e0c99177d53d2461142",
+        "title": "Problem with Glasses Registration",
+        "content": "Hi, I need your help.\n\nI created these glasses, as you can see in the first image.\n\nI registered them, but the lenses appear black in the render even though they use the same material. Does anyone know how I can fix this issue?![30c923ff47c64468ac7ca2a452948ebd](https://storagefiles.clo-set.com/public/community/202608/fe4036a6eb0f4e0c99177d53d2461142/images/30c923ff47c64468ac7ca2a452948ebdScreenshot%202026-08-09%20110609.jpg)![cfdeaf5f900d418a82ad28d97a716abf](https://storagefiles.clo-set.com/public/community/202608/fe4036a6eb0f4e0c99177d53d2461142/images/cfdeaf5f900d418a82ad28d97a716abfScreenshot%202026-08-09%20110428.jpg)\n\n### Community Post Comments:\nComment 1: Thank you for following up and for your guidance. I’ll give it a try and let you know how it goes.\n\nComment 2: Hi, I just tested this on several pattern pieces and glasses, with various results. So it is not clear to me what is causing the issue. At first, I suspected the difference in Absorption for both examples, but I have also produced an opaque pattern piece with the standard settings, so now I am confused. The only thing I can detemrine so far is that it appears to be connected to the color, all my examples work on #FFFFFF, but also NOT all of the ones on #D3B673 turn out opaque. I will investigate further and get back to you! (Unless one of my colleagues here has another idea?)\nReply 1: So far, I've determined that in order to display colored glass properly, Thick Textured Surface has to be toggled on. However, this should not affect your glasses. Are the glasses transparent when the color is set to white/none? (#ffffff)",
+        "content_description": "Seeking help to resolve a rendering issue where registered glasses lenses appear black despite using the correct material.",
+        "source": "Connect Community",
+        "article_created_at": "2026-08-09T08:24:03.486Z",
+        "article_updated_at": "2026-08-09T08:24:03.486Z",
+        "category": 220,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "CLO-SET",
+            "CONNECT",
+            "Material",
+            "Rendering",
+            "Texture"
+        ]
+    },
+    {
+        "id": "fe213d0288b646a9803894c2f9194ccf",
+        "url": "https://connect.clo-set.com/community/post/fe213d0288b646a9803894c2f9194ccf",
+        "title": "Flamed_Elegance",
+        "content": "A delicate lace silhouette adorned with bold red floral appliqués, capturing the harmony of softness and confidence in a striking modern form.![1d3058959e8d4f9fb6cafb5d6738b508](https://storagefiles.clo-set.com/public/community/202608/fe213d0288b646a9803894c2f9194ccf/images/1d3058959e8d4f9fb6cafb5d6738b5081.jpg)![87af2b9ed17d4f0baf6bb773c4ee7778](https://storagefiles.clo-set.com/public/community/202608/fe213d0288b646a9803894c2f9194ccf/images/87af2b9ed17d4f0baf6bb773c4ee77784.jpg)![cbe4235207bd4e9c98f038c3772c7c4e](https://storagefiles.clo-set.com/public/community/202608/fe213d0288b646a9803894c2f9194ccf/images/cbe4235207bd4e9c98f038c3772c7c4e5.jpg)\n\n* * *\n\ncontact me : zahrakarimzadeh.zk@gmail.com",
+        "content_description": "Showcasing a delicate lace silhouette enhanced with bold red floral appliqués that blend softness and confidence in a contemporary design.",
+        "source": "Connect Community",
+        "article_created_at": "2026-08-08T08:39:14.271Z",
+        "article_updated_at": "2026-08-08T08:39:14.271Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "CLO-SET",
+            "MarvelousDesigner",
+            "CONNECT",
+            "Photoshop",
+            "UnrealEngine",
+            "Colorway",
+            "Texture",
+            "lace",
+            "floral"
         ]
     }
 ]

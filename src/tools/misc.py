@@ -276,14 +276,20 @@ def sanitize_directory_file_name(text):
 
 
 def get_section_and_category(env, section_id):
+    auth = (env.ZENDESK_USERNAME, env.ZENDESK_PASSWORD)
+
     section_response = requests.request(
         "GET",
         env.get_zendesk_article_section_api_endpoint(section_id),
         headers={
             "Content-Type": "application/json",
         },
+        auth=auth,
     )
     section_objects = json.loads(section_response.text)
+
+    if "section" not in section_objects:
+        raise RuntimeError(f"Zendesk section {section_id} lookup failed: {section_objects}")
 
     category_response = requests.request(
         "GET",
@@ -291,8 +297,12 @@ def get_section_and_category(env, section_id):
         headers={
             "Content-Type": "application/json",
         },
+        auth=auth,
     )
     category_objects = json.loads(category_response.text)
+
+    if "category" not in category_objects:
+        raise RuntimeError(f"Zendesk category {section_objects['section']['category_id']} lookup failed: {category_objects}")
 
     return (
         section_objects["section"]["id"],

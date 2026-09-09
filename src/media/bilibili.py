@@ -4,7 +4,7 @@ import os
 import re
 import sys
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from posixpath import basename, splitext
 from typing import Any, Dict, List
@@ -312,6 +312,16 @@ class Bilibili:
             if transcript["video_id"].startswith("_"):
                 transcript["video_id"] = "YT" + transcript["video_id"]
 
+            now = datetime.now(timezone.utc).isoformat()
+
+            # created_at is set once (kept from the existing indexed document if present);
+            # updated_at is refreshed on every upload.
+            try:
+                existing = self.azure.search_client.get_document(key=transcript["video_id"])
+                created_at = existing.get("created_at") or now
+            except Exception:
+                created_at = now
+
             self.azure.search_client.upload_documents(
                 {
                     "@search.action": "mergeOrUpload",
@@ -321,7 +331,10 @@ class Bilibili:
                     "content": transcript["summary"] if "summary" in transcript else transcript["transcript"],
                     "content_description": transcript["description"],
                     "source": "Bilibili",
-                    "created_at": transcript["published_at"],
+                    "article_created_at": transcript["published_at"],
+                    "article_updated_at": transcript["published_at"],
+                    "created_at": created_at,
+                    "updated_at": now,
                     "title_vector": self.azure.openai_helper.generate_embeddings(text=transcript["title"]),
                     "content_vector": self.azure.openai_helper.generate_embeddings(text=transcript["summary"]),
                 }
@@ -429,7 +442,17 @@ if __name__ == "__main__":
         downloader.prepare_transcripts((stage, brand, os.path.join(downloader.transcript_dir, file), 0))
 
     elif task == "Find & Delete AI Search Documents":
-        search_fields_options = ["article_id", "url", "title", "content", "content_description"]
+        search_fields_options = [
+            "article_id",
+            "url",
+            "title",
+            "content",
+            "content_description",
+            "article_created_at",
+            "article_updated_at",
+            "created_at",
+            "updated_at",
+        ]
 
         search_field = questionary.select("Search field?", choices=search_fields_options).ask()
         search_text = questionary.text("Search value?").ask()

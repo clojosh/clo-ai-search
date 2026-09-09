@@ -1,326 +1,248 @@
 [
     {
-        "id": "fafe9293891e49c983ccd01a5de7e384",
-        "url": "https://connect.clo-set.com/community/post/fafe9293891e49c983ccd01a5de7e384",
-        "title": "Knit Fabric ",
-        "content": "Is it possible to export a garment designed with Knit Fabric in clo to be exported to blender?\n\n### Community Post Comments:\nComment 1: No. The knit is similar to a render only material which will only work within CLO",
-        "content_description": "This page explains how to export garments designed with Knit Fabric in CLO for use in Blender.",
+        "id": "06cde0db6f094a76b2805d15cbbdb92d",
+        "url": "https://connect.clo-set.com/community/post/06cde0db6f094a76b2805d15cbbdb92d",
+        "title": "I Can Not Change The Avatar Measurement",
+        "content": "I use “Missy Curvy Size 12” Default Avatar Template as base.\n\nI can not change the measure Across Shoulder measurement to 41 cm.\n\nWhy?\n\nHow can I fix It?\n\n### Community Post Comments:\nComment 1: Updated the app. Now It is fixed. Thanks for the answer.\n\nComment 2: Thank you so much for the video. I believe the issue is there was a big in version 2025.0.416 which you are using(had to do with users that use a comma instead of period for measurements). Please update to the latest release 2025.0.420\n\nComment 4: Hi There. I just tested and have no issues adjusting the Across Shoulder measurement. Could you possibly add images so we can see what is happening",
+        "content_description": "This web page provides guidance on resolving the issue of being unable to change the \"Across Shoulder\" measurement to 41 cm in the \"Missy Curvy Size 12\" Default Avatar Template.",
         "source": "Connect Community",
-        "created_at": "2025-04-15T15:51:49.35Z",
+        "article_created_at": "2025-07-31T17:22:15.62Z",
+        "article_updated_at": "2025-07-31T17:22:15.62Z",
         "category": 210,
         "tags": [
             "CLO",
-            "blender",
-            "knit",
-            "export"
+            "Avatar"
         ]
     },
     {
-        "id": "c03ada1c68c543069969a24a94f16045",
-        "url": "https://connect.clo-set.com/community/post/c03ada1c68c543069969a24a94f16045",
-        "title": "ruffles custom angle",
-        "content": "Hi, \n\nI am trying to change the sewing type line from turned to custom angle so that my ruffles look down (180>360) and not up (180>0). The problem is that the custom angle option showing in the drop down menu looks not active and therefore not clickable (see images below). Could you please help me on this one?\n\nMy clo3d version is 7.3 due to computer version, and I cannot upgrade.\n\nIf there is no option to solve this problem, do you know another way of flattening ruffles in a certain direction?\n\nThanks\n\nBest\n\nBren![d4dfd2667a154e38b061a24d07e256ba](https://storagefiles.clo-set.com/public/community/202504/c03ada1c68c543069969a24a94f16045/images/d4dfd2667a154e38b061a24d07e256baScreenshot%202025-04-14%20at%2019.21.18.png)\n\n### Community Post Comments:\nComment 1: Hi Brenda. Could you add images of 2D and 3D windows. The mor information we have the better we can assist without having to ask lots of questions-What is the ruffle sewn to? Is it sewn to an Internal Line or a Pattern Edge?\\When you have Turned Selected the options below will be greyed out as CLO then \"Turns\" your seam allowance to be flat against the fabric.You will need to switch to Custom angle. This will give you control of the Angle of the seam allowance being pressed. Please Note that custom angle will only be an option if you are sewing edge to edge (no internal lines)Hopefully this helps. Otherwise you will need to add more information as noted above",
-        "content_description": "This page provides troubleshooting guidance for enabling and using the custom angle sewing option in CLO3D version 7.3 to adjust ruffle directions.",
+        "id": "cf77b67b38eb43fb8d85d721fd773781",
+        "url": "https://connect.clo-set.com/community/post/cf77b67b38eb43fb8d85d721fd773781",
+        "title": "Stiching/Thread  shadow",
+        "content": "![d91b01b2f2554e55b2f5e9d625a56991](https://storagefiles.clo-set.com/public/community/202507/cf77b67b38eb43fb8d85d721fd773781/images/d91b01b2f2554e55b2f5e9d625a56991image.png)Hello Everyone,\n\nPlease suggest\n\n3d Rendered image showing shadow effect.\n\noriginal image below is desired requirement. Please suggest how can we achieve?\n\n![d7e24801570a48a49ed21d669e3e8e05](https://storagefiles.clo-set.com/public/community/202507/cf77b67b38eb43fb8d85d721fd773781/images/d7e24801570a48a49ed21d669e3e8e05IMG20250731120428.jpg)\n\nRegards,\n\nnk\n\n### Community Post Comments:\nComment 1: Hi,I tried and successful with edited thread texture shadow in PS. IT WORKS.👍🏻Thanks!\n\nComment 2: Hi. It possibly may also help if you remove the Normal Map from the Sewing where the seam is sewn together\n\nComment 3: hI lUCILE,Thanks for connectingIt is already off, this option of 3d , uncheck or not is doing nothing for me (myside).\nReply 1: Hi! On your screenshot, is it 2 patterns sewn together and then a topstitch on the seamline or is it just a topstitch on an internal line?If it's the first option, then you can use the Edit Sewing tool, select the sewing line and delete the normal map in the Property Editor.\n\nComment 4: Hi, please untick the '3D' option in the Property Editor of your top stitch and it should remove the shadow.",
+        "content_description": "A community forum page for users to share and discuss techniques on creating 3D rendered images with shadow effects.",
         "source": "Connect Community",
-        "created_at": "2025-04-15T12:54:29.5Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "Texture",
-            "Simulation",
-            "Rendering",
-            "Pattern",
-            "Material"
-        ]
-    },
-    {
-        "id": "2dc4c761f2ab495da2d08e824709726f",
-        "url": "https://connect.clo-set.com/community/post/2dc4c761f2ab495da2d08e824709726f",
-        "title": "SYMMETRIC GRAPHIC RENDERING EXECUTION ERROR",
-        "content": "i have trouble on rendering symmetric graphics.. on 2D/3D window, graphic is placed symmetrically, but in rendering the copied side keep on flipping back as original image...\n\nit was working correctly until couple days ago, but now it's not.\n\ncan someone please help?\n\n![8b2e545b061f4d669b905cda143b1124](https://storagefiles.clo-set.com/public/community/202504/2dc4c761f2ab495da2d08e824709726f/images/8b2e545b061f4d669b905cda143b1124Screenshot%202025-04-15%20at%207.30.51%E2%80%AFAM.png)![98820e3c7a9a454b9b582a2e4304c40e](https://storagefiles.clo-set.com/public/community/202504/2dc4c761f2ab495da2d08e824709726f/images/98820e3c7a9a454b9b582a2e4304c40eScreenshot%202025-04-15%20at%207.30.44%E2%80%AFAM.png)\n\n### Community Post Comments:\nComment 1: Hi Iris. Thank you for your post. Our team is aware of the issue and working to fix currently :) for an upcoming patch",
-        "content_description": "Seeking troubleshooting advice for resolving unexpected flipping issues in symmetric 2D/3D graphic rendering.",
-        "source": "Connect Community",
-        "created_at": "2025-04-15T11:36:13.097Z",
+        "article_created_at": "2025-07-31T06:49:47.86Z",
+        "article_updated_at": "2025-07-31T06:49:47.86Z",
         "category": 220,
         "tags": [
             "CLO",
-            "Rendering"
-        ]
-    },
-    {
-        "id": "57109ff4d44e4fd4aa46bc8a0b6af6e3",
-        "url": "https://connect.clo-set.com/community/post/57109ff4d44e4fd4aa46bc8a0b6af6e3",
-        "title": "Try making a TikTok AR filter with Everywear! 👗📱",
-        "content": "## **_Try making a TikTok AR filter with Everywear!_**_👗📱_\n\n  \nDon’t just look at your outfit—wear it in AR with Everywear!\n\n![546fbffbad2c49db8cd39b3153c87638](https://storagefiles.clo-set.com/public/community/202504/57109ff4d44e4fd4aa46bc8a0b6af6e3/images/546fbffbad2c49db8cd39b3153c87638community%20thumbnail_1920x1920.png)\n\nWe’re showing you how to turn your custom digital design into a TikTok AR filter that moves, grooves, and totally slays. 👗✨\n\n  \nNever done this before? No stress.  \n  \n\n\nYouTube Video: https://www.youtube.com/watch?v=ukCaNEdCA-o?si=JzGLXlsqEN6CV-Pn\n\n  \nThis tutorial is super fun, beginner-friendly, and totally doable —   \neven if you’ve never touched AR before.\n\n* * *\n\n  \n  \nWhether you're here to flex your fashion or just play around   \nwith some cool tech, you're in the right place.  \nLet’s get creative, get stylish, and get your look dancing on screen. 🎨📲  \n  \n** _Time to bring your style to life—let’s gooo!_**\n\n  \n![](https://storagefiles.clo-set.com/public/community/202504/57109ff4d44e4fd4aa46bc8a0b6af6e3/images/1731a0c213854250815bd1a57f647a5ecommunity%20thumbnail_1920x1920_re.png)![](https://storagefiles.clo-set.com/public/community/202504/57109ff4d44e4fd4aa46bc8a0b6af6e3/images/262dca928eee47a09599319d3e73b7c4community%20thumbnail_1920x1920_re.png)\n\n### Community Post Comments:\nComment 1: Hi. good tutorial. I have a problem, when I bring in both fbx file in effect house, the two are too big and do not land on person. What should i do?\nReply 1: Hi, sorry for the late reply. 🙏🏻Did you set the fbx file to go under the Body avatar Drive? Please check this!<img src=\"https://connect.clo-set.com/community/post/57109ff4d44e4fd4aa46bc8a0b6af6e3\" alt=\"75c1ed4c04ed4836bdc27f33a6f400f9\" class=\"custom-image original-size\" data-id=\"75c1ed4c04ed4836bdc27f33a6f400f9\" data-width=\"502\" data-height=\"458\">",
-        "content_description": "Learn how to create your own custom TikTok AR filter with Everywear to bring your digital fashion designs to life in a fun and beginner-friendly way.",
-        "source": "Connect Community",
-        "created_at": "2025-04-15T05:03:22.357Z",
-        "category": 100,
-        "tags": [
-            "CLO",
-            "MarvelousDesigner",
-            "Tutorial",
-            "AR",
-            "Tiktok",
-            "Effecthouse",
-            "TiktokAR",
-            "EveryWear"
-        ]
-    },
-    {
-        "id": "a6e2780c2c34455ab636284c81637521",
-        "url": "https://connect.clo-set.com/community/post/a6e2780c2c34455ab636284c81637521",
-        "title": "Importing DXF and PDF",
-        "content": "Hello, I am trying to import a DXF from Gerber as aama. At first I thought it opened well and I had in the pattern a reference box that's 10*10 cm it opened the right size. However, when I checked the pattern pieces themselves they had a difference of 1 cm in each piece that's less than the original pattern. \n\nAlso another option I tried was importing a pdf from illustrator, but it always opens with a bounding box that I can't get rid of. \n\nSo would appreciate any tips on importing DXFs of PDFs from either programs.\n\n### Community Post Comments:\nComment 1: Hi There!For exporting from Gerber, did you check to make sure the export size settings were correct. Then also check the size settings when importing to CLO.For Illustrator before you finish in Ai did you make sure each pattern piece is a closed shape? This means the points must be connected, not just overlapping. Also, when importing to you go to File &gt; Import &lt; Adobe?",
-        "content_description": "This page provides tips and solutions for accurately importing DXF and PDF files from Gerber and Illustrator without scaling errors or unwanted bounding boxes.",
-        "source": "Connect Community",
-        "created_at": "2025-04-14T07:57:27.233Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "Import_Export",
-            "Pattern"
-        ]
-    },
-    {
-        "id": "d7f96f66723641f6a84f75a1eb4e38f8",
-        "url": "https://connect.clo-set.com/community/post/d7f96f66723641f6a84f75a1eb4e38f8",
-        "title": "Join us for the CLO 2025.0 New Features Webinar!",
-        "content": "![fc3ee411d06340e2b5b84e249539abd2](https://storagefiles.clo-set.com/public/community/202504/d7f96f66723641f6a84f75a1eb4e38f8/images/fc3ee411d06340e2b5b84e249539abd2webinar25_scoop_en.png)\n\nCLO 2025.0 has officially arrived, and we are excited to invite you to join us for the upcoming new features webinar! Our expert designers will walk you through all of the updates that come with this new version and provide tips on how to best integrate them into your workflow. They will also answer any questions that you may have. \n\n  \n\n\nOur CLO 2025.0 New Features Webinar and YouTube videos will be available in 12 different languages in 13 events: English (US), 한국어, 日本語, 廣東話, Bangla, Français, Türkçe, Português, Español, 中文, Tiếng Việt, Indonesia, English(India). \n\n  \n\n\nThe webinar will be provided in 12 languages, and there will be sessions with Live Chat as written in the below Webinar Schedule. After the webinar, the videos will be uploaded through [_CLO's official YouTube channel_](https://www.youtube.com/c/CLO3D).\n\n*Note: For sessions with Live Chat only, if you would like to ask any questions about new features during the webinar, please log into YouTube beforehand and ask them in the chat window.\n\n  \n\n\nPlease refer to the information about the webinar and YouTube release schedule below and visit on the day according to your own language preference. \n\n* The Webinar link will be updated soon. You can also check the event schedule later on CLO’s official YouTube. \n\n  \n  \n\n\n**CLO 2025.0 New Feature Highlights Schedule:**\n\n  \n\n\n  1. [**_English (US)_**](https://www.youtube.com/watch?v=iflI4v36pi4&feature=youtu.be)\n\n     * Date: Apr 10,2025\n\n     * Release Video on YouTube (No Live Chat)\n\n  2. **中文**\n\n     * Date: Apr 23, 2025\n\n     * Time: 10:00 CST (GMT +8)\n\n     * Release Video on BILIBILI (No Live Chat)\n\n\n\n\n  \n\n\n**CLO 2025.0 New Features Webinar Schedule:**\n\n  \n\n\n  1. [**_English (US)_**](https://www.youtube.com/watch?v=iflI4v36pi4&feature=youtu.be)\n\n     * Date: Apr 23, 2025\n\n     * Release on YouTube via Playlist (No Premiere, No Live Chat)\n\n  2. **한국어**\n\n     * Date: Apr 24, 2025\n\n     * Time: 10:00 KST (GMT +9)\n\n     * Premiere Video Release on YouTube (+ Live Chat)\n\n  3. **Español**\n\n     * Date: Apr 30, 2025\n\n     * Time: 11:00 CEST (GMT +2)\n\n     * Release Video on CLO Spanish YouTube (No Live Chat)\n\n  4. **Français**\n\n     * Date: Apr 30, 2025\n\n     * Time: 15:00 CEST (GMT +2)\n\n     * Release Video on YouTube (No Live Chat)\n\n  5. **日本語**\n\n     * Date: Apr 30, 2025\n\n     * Time: 15:00 JST (GMT +9)\n\n     * Premiere Video Release on YouTube (+ Live Chat)\n\n  6. **Português**\n\n     * Date: May 8, 2025\n\n     * Time: 11:00 BRT (GMT -3)\n\n     * Premiere Video Release on CLO Brasil YouTube (+ Live Chat)\n\n  7. **Indonesia (Bahasa)**\n\n     * Date: May 2, 2025\n\n     * Time: 15:00 WIB (GMT +7)\n\n     * Release Video on YouTube (No Live Chat)\n\n  8. **Tiếng Việt**\n\n     * Date: May 4, 2025\n\n     * Time: 13:00 VNT (GMT+7)\n\n     * Release Video on YouTube (No Live Chat)\n\n  9. **Bangla**\n\n     * Date: May 5, 2025\n\n     * Time: 15:00 BST (GMT +6)\n\n     * Premiere Video Release on YouTube (+ Live Chat)\n\n  10. **Türkçe**\n\n     * Date: May 6, 2025\n\n     * Time: 11:00 CEST (GMT +2)\n\n     * Release Video on YouTube (No Live Chat)\n\n  11. **English(India)**\n\n     * Date: May 6, 2025\n\n     * Time: 15:00 IST (GMT +5:30)\n\n     * Premiere Video Release on YouTube (+ Live Chat)\n\n  12. **中文**\n\n     * Date: May 7, 2025\n\n     * Time: 10:00 CST (GMT +8)\n\n     * Release Video on BILIBILI (No Live Chat)\n\n  13. **廣東話**\n\n     * Date: May 7, 2025\n\n     * Time: 11:00 HKT (GMT +8)\n\n     * Premiere Video Release on YouTube (No Live Chat)",
-        "content_description": "Join our multilingual CLO 2025.0 New Features Webinar to explore the latest updates, learn expert tips, and engage with designers across 13 live and recorded sessions tailored to your language.",
-        "source": "Connect Community",
-        "created_at": "2025-04-14T03:15:31.127Z",
-        "category": 100,
-        "tags": [
-            "CLO",
-            "Webinar",
-            "NewFeatures",
-            "CLO2025"
-        ]
-    },
-    {
-        "id": "6ba374550f414138a8d1585cab3839b4",
-        "url": "https://connect.clo-set.com/community/post/6ba374550f414138a8d1585cab3839b4",
-        "title": "CLO 2025.0 is officially here! ",
-        "content": "![49508ce1f9bf43c9a5823473964c49b3](https://storagefiles.clo-set.com/public/community/202504/6ba374550f414138a8d1585cab3839b4/images/49508ce1f9bf43c9a5823473964c49b3release25_scoop_en.png)\n\nCLO 2025.0 has added 42 new features, making CLO even more powerful than our previous versions.  \n\n\n**CLO 2025.0 Highlight Features:**\n\n  \n\n\n  * **Key Frame Animation:** Elevate animations by applying keyframes to various components, creating dynamic and sophisticated visuals.\n\n  * **Pattern Drafter:** Create and edit accurate parametric patterns with minimal measurements. Additionally, instantly generate them from a schematic sketch image.\n\n  * **AI Pose Generator:** Effortlessly create avatar poses using keywords or an image.\n\n  * **Avatar IK Joint Mapping:** Streamline IK joint mapping for various avatars to achieve natural movement while ensuring seamless compatibility for motions and poses across all avatars.\n\n  * **Avatar Hip Shape:** Create a variety of hip shapes with hip dip and upper volume customization.\n\n  * **Texture-Based Nesting:** Optimize pattern placement with minimal waste, while maintaining texture and prints.\n\n  * **Advanced Pinching:** Express more realistic wrinkles and shapes with precise pinching, just like pulling real fabric.\n\n  * **GPU Rendering on macOS:** Unlock faster, more efficient rendering performance with GPU rendering on macOS.\n\n  * **Fur Generation:** Generate various types of fur in real-time, with compatibility across multiple platforms.\n\n\n\n\nDiscover even more features of 2025.0 right [_HERE_](https://clo3d.com/en/clo/features) and [_DOWNLOAD_](https://clo3d.com/en/clo/download) it today.\n\nStay tuned for our upcoming webinar, where you can learn more about the new features. Check out our [_2025.0 WEBINAR SCHEDULE_](https://connect.clo-set.com/community?postId=d7f96f66723641f6a84f75a1eb4e38f8)!",
-        "content_description": "Discover the powerful new features of CLO 2025.0 that enhance 3D garment design, animation, and rendering for a more efficient and creative workflow.",
-        "source": "Connect Community",
-        "created_at": "2025-04-14T03:11:40.23Z",
-        "category": 100,
-        "tags": [
-            "CLO",
-            "Release",
-            "NewFeatures",
-            "CLO2025"
-        ]
-    },
-    {
-        "id": "e483a5c654714766955317fc894a363c",
-        "url": "https://connect.clo-set.com/community/post/e483a5c654714766955317fc894a363c",
-        "title": "Inspired of my logo 👠",
-        "content": "![aa0387698c2046ebacf8cb36e9ad9533](https://storagefiles.clo-set.com/public/community/202504/e483a5c654714766955317fc894a363c/images/aa0387698c2046ebacf8cb36e9ad95331E9FD0E8-9FFF-4FDE-930B-C8C035FED132.jpeg)\n\n![48a2c03b67694cd19993d9da376824a9](https://storagefiles.clo-set.com/public/community/202504/e483a5c654714766955317fc894a363c/images/48a2c03b67694cd19993d9da376824a948951ED1-E889-42B5-A970-CBF85C07EF76.jpeg)\n\n![7088f7cab8694e0faf053c646cede0d1](https://storagefiles.clo-set.com/public/community/202504/e483a5c654714766955317fc894a363c/images/7088f7cab8694e0faf053c646cede0d1E6CE4F9B-48B7-49FB-AD8C-F508509802E5.jpeg)\n\n### Community Post Comments:\nComment 1: i looooove it keep going giiiiiirlll❤️❤️❤️❤️\nReply 1: THANK U🙏🏻🙂",
-        "content_description": "Showcasing a curated collection of stylish and contemporary women's fashion pieces for modern, confident individuals.",
-        "source": "Connect Community",
-        "created_at": "2025-04-13T11:43:55.32Z",
-        "category": 210,
-        "tags": [
             "CLO-SET",
-            "CONNECT",
-            "CLO",
-            "MarvelousDesigner",
-            "AI"
-        ]
-    },
-    {
-        "id": "dec2d8e228a241c08fb9dfe981cac952",
-        "url": "https://connect.clo-set.com/community/post/dec2d8e228a241c08fb9dfe981cac952",
-        "title": "2025 version causing my mac to crash",
-        "content": "I updated to 2025 version and when I click on User Settings, it crashes on me. Is this happening to anyone? How can I go back to the previous version?\n\n### Community Post Comments:\nComment 1: Hi There. We just released a patch this morning that should help to solve this 🙂\n\nComment 2: Not that exact example but I am finding my projects crashing more than normal. At least once a day. Before it would crash maybe once or twice a month if I was working on a super complex piece. I’m sure they will patch it soon",
-        "content_description": "This page is designed to help users troubleshoot crashes in the 2025 version and provide guidance on reverting to the previous version.",
-        "source": "Connect Community",
-        "created_at": "2025-04-12T18:25:38.507Z",
-        "category": 220,
-        "tags": [
-            "CLO",
-            "UI"
-        ]
-    },
-    {
-        "id": "8ecd844cfc4d4ae59d5bc97b3476899b",
-        "url": "https://connect.clo-set.com/community/post/8ecd844cfc4d4ae59d5bc97b3476899b",
-        "title": "AI Pose Generator not working",
-        "content": "Hi, I just updated my clo3D and am having problem with the AI Pose Generator: I manage to upload a reference image, but when I try to choose the gender, I get this warning message and can't go any forward: Please download mannequin assets. \n\nI don't know what that means or what to do. If I try to add an avatar, it tells me that AI Pose Generator will delete all avatars and garments in 3D windows. Please, advise. Thank You!![](https://storagefiles.clo-set.com/public/community/202504/8ecd844cfc4d4ae59d5bc97b3476899b/images/808b7868e28541e58065e6681714557bN%C3%A4ytt%C3%B6kuva%202025-04-12%20200913.png)\n\n### Community Post Comments:\nComment 1: I am making the ai image, but when I saved don't show in the poses\n\nComment 2: i have same issue, and yes i start with a blank space and it keep on saying i need to download mannequin assets, which i already have basic avatars in library.\n\nComment 3: Hi There. Yes when you use the pose generator it is meant to start with a black work space. Then once you add an image or use prompts CLO will put in an avatar and generate a pose. From there you can choose to Save the Pose\nReply 1: Hi ariel, Thank you for your response! Unfortunately it does not work. I start with a blank work space and go directly to AI pose generator. I then click 'Image' to upload a reference image instead of using a 'Prompt'. So far so good. At this point I still can't generate. Then I proceed to choose the gender and that is when I get the error message and I don't have any way to proceed. Please, advice. Thank you!",
-        "content_description": "This page provides guidance and troubleshooting tips for resolving issues with the AI Pose Generator in Clo3D, including how to download mannequin assets and manage avatars.",
-        "source": "Connect Community",
-        "created_at": "2025-04-12T18:11:09.95Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "AI",
-            "Avatar",
-            "pose",
-            "generator"
-        ]
-    },
-    {
-        "id": "c8b66cf8dfb440eb94b8448f2c21b9a4",
-        "url": "https://connect.clo-set.com/community/post/c8b66cf8dfb440eb94b8448f2c21b9a4",
-        "title": "AI Studio not working properly (Clo 2025 release)",
-        "content": "Hello everyone, I just downloaded the new Clo3D version (2025) and I noticed that the Ai Studio got some improvements, but unfortunately is not working properly with faces anymore. Am I the only one with this issue?\n\nSara\n\n### Community Post Comments:\nComment 1: Can you please share images or examples of the issues are are experiencing",
-        "content_description": "A community forum page for users to discuss and troubleshoot issues with the AI Studio feature in Clo3D 2025, specifically related to facial functionality.",
-        "source": "Connect Community",
-        "created_at": "2025-04-12T11:16:51.797Z",
-        "category": 220,
-        "tags": [
-            "CLO",
-            "AI",
-            "Rendering"
-        ]
-    },
-    {
-        "id": "e1542f9032a148e1bb6e442b3ec186f2",
-        "url": "https://connect.clo-set.com/community/post/e1542f9032a148e1bb6e442b3ec186f2",
-        "title": "face mask for male",
-        "content": "![126f214fab0b493fbd84b19067c50863](https://storagefiles.clo-set.com/public/community/202504/e1542f9032a148e1bb6e442b3ec186f2/images/126f214fab0b493fbd84b19067c50863Untitled-1.png)\n\n### Community Post Comments:\nComment 1: perfect art i really like it\nReply 1: ❤️😍",
-        "content_description": "This web page provides detailed information and resources for managing and troubleshooting network connectivity issues.",
-        "source": "Connect Community",
-        "created_at": "2025-04-12T08:45:54.897Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "MarvelousDesigner",
-            "CLO-SET",
-            "CONNECT",
-            "Animation",
-            "Avatar",
-            "Pattern",
-            "Rendering",
-            "Simulation",
-            "Texture"
-        ]
-    },
-    {
-        "id": "0e548e67b5414cc5a264de61209489e0",
-        "url": "https://connect.clo-set.com/community/post/0e548e67b5414cc5a264de61209489e0",
-        "title": "클로 패턴에서의 dxf 와 유카캐드 프로그램에서의 호환성",
-        "content": "clo로 패턴작업을 하여 dxf로 내보내 yuka 프로그램으로 옮겨 작업을 해야하는데\n\n항상 dxf파일로 내보낼때 유카 프로그램과의 호환성 문제가 있습니다.\n\n테스트를 항상 해보지만 해결이 안되는건 기초선 문제, 주석 및 클로 파일 제목(패턴명 오류)\n\n클로에서 dxf 파일로 저장을 했을때 패턴이 2장으로 겹쳐짐의 문제가 정말 문제가 있다고 생각합니다. (이 부분의 문제는 유카와의 호환성의 문제가 아닌 클로 자체적인 버그 같습니다.)\n\n클로에서 dxf로 내보내고 다시 클로 프로그램에서 저장한 dxf 파일을 열었을때 2장으로 겹쳐진 파일을 확인 할 수 있습니다. 저는 맥북으로 작업을 하고 있습니다.\n\n저는 단지 클로를 3d프로그램만이 아닌 실물로 만들고 생산까지 하는 프로그래머이기 때문에 이런 부문에 있어서는 일을 두번하지 않게 버그를 clo에서 고쳐주셨으면 하는 바람입니다. (시급함.)\n\n### Community Post Comments:\nComment 1: 안녕하세요. 질문해 주셔서 감사합니다. 귀하의 계정에 연결된 CLO 라이선스가 없는 것 같습니다. 활성 CL0 라이선스에 연결된 CL0 ID가 무엇인지 알려주시겠습니까?",
-        "content_description": "이 웹페이지는 CLO에서 DXF 파일 내보내기 시 발생하는 패턴 중복 및 호환성 문제를 공유하고, 해당 버그 수정의 시급함을 알리기 위해 제작되었습니다.",
-        "source": "Connect Community",
-        "created_at": "2025-04-11T07:18:50.853Z",
-        "category": 220,
-        "tags": [
-            "CLO"
-        ]
-    },
-    {
-        "id": "ab037770b24049bd9426486574a4e1fc",
-        "url": "https://connect.clo-set.com/community/post/ab037770b24049bd9426486574a4e1fc",
-        "title": "Bring your Designs to Life in Unreal Engine with LiveSync 2",
-        "content": "## _Hey creators,_\n\nWe are excited to announce that **CLO LiveSync 2.0.0 has just been released** for CLO 2025.0! MD LiveSync 2.0.0 will be available when MD 2025.0 is released. \n\nWhat's new in LiveSync 2.0.0? The UI and workflow have been reworked to shorten the process of bringing Marvelous CLOthes to Unreal Engine, and support for macOS has been finally added! \n\n![d94dc12fab5e440d8ec345b468d113bd](https://storagefiles.clo-set.com/public/community/202504/ab037770b24049bd9426486574a4e1fc/images/d94dc12fab5e440d8ec345b468d113bdlivesync2-promo-image.png)\n\nYou can access the macOS version when CLO/MD LiveSync becomes on [Fab.com](http://Fab.com) in the coming days.For more information about improvements and bug fixes, please take a look at [the release note](https://support-connect.clo-set.com/hc/en-us/articles/8924444885775-CLO-LiveSync).",
-        "content_description": "Announcing the release of CLO LiveSync 2.0.0 for CLO 2025.0, featuring an improved UI, faster workflow, and new macOS support to streamline Marvelous CLOthes integration with Unreal Engine.",
-        "source": "Connect Community",
-        "created_at": "2025-04-11T07:15:52.797Z",
-        "category": 100,
-        "tags": [
-            "CLO",
-            "MarvelousDesigner",
-            "UnrealEngine",
-            "LiveSync",
-            "EveryWear"
-        ]
-    },
-    {
-        "id": "6fc614ccfbb94ad4bd5fc84927c96f27",
-        "url": "https://connect.clo-set.com/community/post/6fc614ccfbb94ad4bd5fc84927c96f27",
-        "title": "Fabrics colliding with each other",
-        "content": "Hi, so this has been a problem of mine quite a while  \nWhen I want to layer garments, it seems that the fabric of the shirts 'clash' with fabric of the jacket. making both garments unstable and moving frantically.\n\nI have tried layering, freezing the garments, but it all the same. can anyone help me?\n\n![d06177d3b28146c1ac843f6499a8e83c](https://storagefiles.clo-set.com/public/community/202504/6fc614ccfbb94ad4bd5fc84927c96f27/images/d06177d3b28146c1ac843f6499a8e83cScreenshot%202025-04-11%20140019.png)\n\n![075f8bd5c4a74c9aa00a67d83aa9b9d9](https://storagefiles.clo-set.com/public/community/202504/6fc614ccfbb94ad4bd5fc84927c96f27/images/075f8bd5c4a74c9aa00a67d83aa9b9d9Screenshot%202025-04-11%20140033.png)\n\n### Community Post Comments:\nComment 1: This is an issue with the fabric not fitting under the arm pit. The T-pose helps while creating the outfit but doesn’t help when you have to move everything to the final pose so what I do is lower the avatar skin offset. It’s set to 3mm as default. Lower this to 1mm. Then for the fabric offset lower this also. This will allow more fabric is a tighter space under the arm. If this doesn’t fix it I sometimes decrease the bicep circumference or nudge the shoulders out a little.\n\nComment 2: Hi, I would advise to work with the avatar's default T-pose first when building and sewing your garments. In your screenshots, the arms are too close with the body, which is why the fabrics are colliding with each other and the avatar.",
-        "content_description": "This page seeks solutions and advice for preventing fabric friction and instability when layering garments.",
-        "source": "Connect Community",
-        "created_at": "2025-04-11T07:05:12.183Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "Material",
-            "Simulation"
-        ]
-    },
-    {
-        "id": "1ed275099cca4ab286b5d5e3f9626c1f",
-        "url": "https://connect.clo-set.com/community/post/1ed275099cca4ab286b5d5e3f9626c1f",
-        "title": "2025 Version for Network Online Auth",
-        "content": "When will CLO release 2025 version for network online authorization licenses? And is there a way we can experiment/interact with it before updating the software?\n\n### Community Post Comments:\nComment 1: Hi There. Currently 2025 is only available to those who have Individual Licenses. Enterprise 2025 should be released in the next week or two",
-        "content_description": "Provide information on the release date of the 2025 CLO network online authorization licenses and offer options for early access or trial before updating the software.",
-        "source": "Connect Community",
-        "created_at": "2025-04-11T04:55:10.837Z",
-        "category": 220,
-        "tags": [
-            "CLO",
-            "AI",
-            "Pattern",
-            "Rendering",
-            "Avatar",
-            "CLO-SET",
-            "MarvelousDesigner",
             "CONNECT"
         ]
     },
     {
-        "id": "acf3acb4251a462f81b544dc93201f2c",
-        "url": "https://connect.clo-set.com/community/post/acf3acb4251a462f81b544dc93201f2c",
-        "title": "Latest updated broke graphics",
-        "content": "tried putting a graphic in the back of a mesh, and now it turns inverted in the render. In the viewport it looks ok, and same for 2D view.  \nBut once you go and render it, it appears inverted.  \n  \nHad to downgrade to the last one to make it work... but is this a bug that has not been reported yet?\n\n### Community Post Comments:\nComment 1: Thank you so much Fashionstyle. We always appreciate our users alerting us.Yes, this bug has already been reported by our Internal team and we hope to have it solved soon 🙂\nReply 1: thank you for the answer!no prob. Can always downgrade and update later. Thnk youvery much for the answer tho :)",
-        "content_description": "This page aims to discuss and seek solutions for a potential rendering bug where graphics placed behind a mesh appear inverted in the final render despite displaying correctly in the viewport and 2D view.",
+        "id": "6bf75d3dafd4404ea1cd52d9db4f1ec8",
+        "url": "https://connect.clo-set.com/community/post/6bf75d3dafd4404ea1cd52d9db4f1ec8",
+        "title": "Clo x Coach contest",
+        "content": "Is it okay for one of the uploaded 'renders' of the three submitted picture is a breakdown of the bag (pockets and all) with some text about the Design Concept and Research?\n\n![d6790db9d3c04c5ba4f82bb64ad4693f](https://storagefiles.clo-set.com/public/community/202507/6bf75d3dafd4404ea1cd52d9db4f1ec8/images/d6790db9d3c04c5ba4f82bb64ad4693fdownload%20%2892%29.jpeg)It would be something like this (this is an image I found online) with the bag compartments 'expanded' and spread out so you could see it in detail. With a blurb of the design concept, research and reasoning?\n\nIf not where can I put this information?\n\n### Community Post Comments:\nComment 1: Yes! That would be great as it helps show your process 🙂\nReply 1: hello love, unfortunately I couldnt participate as my clo file got corrupted and I couldn't recover anything- I'm incredibly heartbroken over it but ill live. I would like to know if we are still allowed to post on social media as I had created an entire collection with research and such?\nReply 2: oh no! We would definitely not stop you from posting your own work though. And please tag us. We love seeing CLO Creations!",
+        "content_description": "This web page showcases detailed renders of the bag’s compartments alongside a concise explanation of the design concept, research, and development process.",
         "source": "Connect Community",
-        "created_at": "2025-04-10T22:19:44.93Z",
+        "article_created_at": "2025-07-31T05:13:42.03Z",
+        "article_updated_at": "2025-07-31T05:13:42.03Z",
+        "category": 220,
+        "tags": [
+            "CLO",
+            "Contest",
+            "CONNECT",
+            "CLO-SET"
+        ]
+    },
+    {
+        "id": "cdd012f77df84ac3bc214965dd12cd24",
+        "url": "https://connect.clo-set.com/community/post/cdd012f77df84ac3bc214965dd12cd24",
+        "title": "Modular library pants have a sewing defect",
+        "content": "YouTube Video: https://www.youtube.com/watch?v=TjsmV0C2h90\n\nThere is a sewing error on the side seam of the basic pants in the modular library.   \n(The error has been uploaded as a video)\n\nAs this library is commonly used by many users, it would be very helpful if the CLO team could correct the issue and provide an updated version.\n\n### Community Post Comments:\nComment 1: Thank you for letting us know. We have let our Modular team know about this",
+        "content_description": "This page highlights a sewing error in the modular library's basic pants side seam and requests the CLO team to correct and update the pattern for users.",
+        "source": "Connect Community",
+        "article_created_at": "2025-07-31T04:30:59.807Z",
+        "article_updated_at": "2025-07-31T04:30:59.807Z",
         "category": 250,
         "tags": [
             "CLO"
         ]
     },
     {
-        "id": "46e26a7e106d49a6a2866c7f5bdee3b3",
-        "url": "https://connect.clo-set.com/community/post/46e26a7e106d49a6a2866c7f5bdee3b3",
-        "title": "Unable to open multiple files on Mac",
-        "content": "Thank you for adding GPU render for Mac. However, it is not possible to open multiple files in CLO at the same time. Can you please fix that? It is impossible to switch form Windows to Mac without having that option for an everyday work.\n\nUntil this bug is fixed I cannot imagine anyone actually using the macOS version. Image not being able to open more than one file in Photoshop.\n\n### Community Post Comments:\nComment 1: Hi There! So glad you are enjoying the new GPU!For CLO you can Add multiple files together in one CLO screen. But opening multiple Windows of CLO at the same time is not a bug, but a difference between systems. Macs currently are unable to open multiple Clo files at once",
-        "content_description": "This page serves to highlight the critical issue preventing simultaneous multi-file opening in the Mac version of CLO, urging a fix to enable effective workflow and cross-platform usability.",
+        "id": "e1863ec57b6f441fa6b4ee0808510d0a",
+        "url": "https://connect.clo-set.com/community/post/e1863ec57b6f441fa6b4ee0808510d0a",
+        "title": "Thumbnails issue",
+        "content": "Does anybody have issues with hands thumbnail? \n\nWhen creating a hand pose it is saved as in the screenshot.\n\nAny help would be great.\n\nThank you!![22dc666d598f402aae4030fc71803abf](https://storagefiles.clo-set.com/public/community/202507/e1863ec57b6f441fa6b4ee0808510d0a/images/22dc666d598f402aae4030fc71803abfScreenshot%202025-07-30%20at%2020.29.54.png)\n\n### Community Post Comments:\nComment 1: Thank you thank you THANk YOU! ❤️\n\nComment 2: Hi Mark, so it turns out it isn't a bug after all as it has never been a feature. The thumbnails of the officially provided hand poses are custom creations. So, I will hand in the request for the hand poses to have an automatic thumbnail like the full body ones do.\nReply 1: Hi Melody, sorry for the late reply, just seeing your msg.I see. Well at least now we know 🙂The only issue is that there isn't an option for custom created thumbnailsotherwise I wouldn't have bothered you.Again THANK YOU for your support and help!\nReply 2: Hi Mark, I totally see the need for a customizable thumbnail, and you are not bothering us. Without user feedback, we would often find bugs way later and the software would evolve slower when it comes to features needed to realize a wide array of projects. So thank you for reporting your observation :)\n\nComment 3: \n\nComment 4: Hi Mark, thank you for reporting this! I can replicate and will pass it on to development.\nReply 1: Thank you Melody, looking forward to hear about it.\nReply 2: Hi Mark, the bug has been found, but I don't know when the fix will be released. I will keep you posted!\nReply 3: Thank you Melody, glad it was not an issue on my side. Looking forward to hear from you! again THANK YOU for your support and most of all for your patience.",
+        "content_description": "A community forum page for users to discuss and troubleshoot issues with hand pose thumbnails.",
         "source": "Connect Community",
-        "created_at": "2025-04-10T21:03:12.72Z",
+        "article_created_at": "2025-07-30T18:31:39.347Z",
+        "article_updated_at": "2025-07-30T18:31:39.347Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "Avatar"
+        ]
+    },
+    {
+        "id": "7c04a36804bf4e1da19e6d932b1c3d61",
+        "url": "https://connect.clo-set.com/community/post/7c04a36804bf4e1da19e6d932b1c3d61",
+        "title": "Is there anyone who can take orders？",
+        "content": "**I need a custom fit for the garment**\n\n**How much does it cost and how much time it takes?**\n\n![4f0528800e7f4e3aad753f64f31f35de](https://storagefiles.clo-set.com/public/community/202507/7c04a36804bf4e1da19e6d932b1c3d61/images/4f0528800e7f4e3aad753f64f31f35de%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2025-07-30_154633_801.png)![826c3d3873b1429784706467f3684969](https://storagefiles.clo-set.com/public/community/202507/7c04a36804bf4e1da19e6d932b1c3d61/images/826c3d3873b1429784706467f3684969%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2025-07-30_154621_331.png)![c6b1857ce3cd4c9cbbcbdd8ad13adb7c](https://storagefiles.clo-set.com/public/community/202507/7c04a36804bf4e1da19e6d932b1c3d61/images/c6b1857ce3cd4c9cbbcbdd8ad13adb7c%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2025-07-30_154628_931.png)",
+        "content_description": "Providing detailed information on custom garment fitting, including cost and turnaround time.",
+        "source": "Connect Community",
+        "article_created_at": "2025-07-30T07:47:25.29Z",
+        "article_updated_at": "2025-07-30T07:47:25.29Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner"
+        ]
+    },
+    {
+        "id": "fd86697d514d4e06a5f8c5b5bd8483af",
+        "url": "https://connect.clo-set.com/community/post/fd86697d514d4e06a5f8c5b5bd8483af",
+        "title": "Can't add decimals in my measurements ",
+        "content": "Is anyone else having the problem? i just updated my CLO 3D and suddenly i can't add commas but apparently the bug was supposed to be fixed with the update yet i never experienced the bug until the update.\n\n### Community Post Comments:\nComment 1: HI Yemi our team will be rolling out a hot fix ASAP. In the meantime it looks lie if you change your computers decimal setting from a comma to a period everything should work correctly in CLOI did a quick google search and found this info on how to do it\n\nComment 2: Hi There. We just tested with the latest update and are able to use both a comma (,) and a period (.) with no issue. I tested in several different precision boxes.Is there a specific function you are trying that it is not working with? Can you upload a screen recording or images\nReply 1: hi how do i post a screen recording? and I'm trying to type in my line measurements, it worked with no problems yesterday but after updating today it's not working\nReply 2: Sorry. I believe on our forums you can only upload images. So if you would like you can add screenshots. But if you can make a screen recording it will need to be sent to our Tech support directly https://connect.clo-set.com/community/post/fd86697d514d4e06a5f8c5b5bd8483af\nReply 3: when i try to change the value it won't allow me to add commas",
+        "content_description": "This web page serves to discuss and seek solutions for a new comma input issue encountered after updating CLO 3D.",
+        "source": "Connect Community",
+        "article_created_at": "2025-07-29T12:56:52.34Z",
+        "article_updated_at": "2025-07-29T12:56:52.34Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "troubleshooting"
+        ]
+    },
+    {
+        "id": "a947cf922b38488aa5ec42cad0cfd48e",
+        "url": "https://connect.clo-set.com/community/post/a947cf922b38488aa5ec42cad0cfd48e",
+        "title": "Avatar body measurements detailed customisation ",
+        "content": "How can I enter very detailed body measurements for avatar customisation to match Updated ASTM size chart and check garment fit accurately?![f800da5757b64bb0857bcaa213d8a2f3](https://storagefiles.clo-set.com/public/community/202507/a947cf922b38488aa5ec42cad0cfd48e/images/f800da5757b64bb0857bcaa213d8a2f3clo%20measurements.png)\n\n### Community Post Comments:\nComment 1: Hi, Thank you for your response. The video is of the old version where advanced human body measurement was an option but I can't find that kind of an option in the 2025 version.",
+        "content_description": "This web page provides guidance on entering detailed body measurements for avatar customization aligned with the updated ASTM size chart to ensure accurate garment fit.",
+        "source": "Connect Community",
+        "article_created_at": "2025-07-29T11:51:59.29Z",
+        "article_updated_at": "2025-07-29T11:51:59.29Z",
+        "category": 220,
+        "tags": [
+            "CLO",
+            "Avatar"
+        ]
+    },
+    {
+        "id": "1ce6e4dacdb841a1903da4d17bf6b047",
+        "url": "https://connect.clo-set.com/community/post/1ce6e4dacdb841a1903da4d17bf6b047",
+        "title": "DXF export of Graded Nest broken after version 2025.0.252",
+        "content": "Using the latest version of Clo, 2025.0.252, the DXF output of graded nest patterns is missing data. You can clearly see this by looking at the file sizes, but also when trying to open the files in any other program.  \n  \nIt appears that only the cutting lines (seam allowance) for a single size are output.![cbdaa89cc30d4c5ca1083e1f025ce5b0](https://storagefiles.clo-set.com/public/community/202507/1ce6e4dacdb841a1903da4d17bf6b047/images/cbdaa89cc30d4c5ca1083e1f025ce5b0Screenshot%202025-07-03%20155224.png)  \n  \nOlder version:  \n  \n![9c845a5d334247068c5dc0ac610eec06](https://storagefiles.clo-set.com/public/community/202507/1ce6e4dacdb841a1903da4d17bf6b047/images/9c845a5d334247068c5dc0ac610eec06ResultingDXF_2025.0.252.png)  \nLatest version:  \n  \n![515c8ef036bf4a0a8e8dc53aa2643735](https://storagefiles.clo-set.com/public/community/202507/1ce6e4dacdb841a1903da4d17bf6b047/images/515c8ef036bf4a0a8e8dc53aa2643735ResultingDXF_2025.0.408.png)\n\nNotice the missing data. I can provide DXF's for comparison. Notice the difference in file size.  \n  \n![3f92c0290ab84d6f9bf719d6ebed4d4c](https://storagefiles.clo-set.com/public/community/202507/1ce6e4dacdb841a1903da4d17bf6b047/images/3f92c0290ab84d6f9bf719d6ebed4d4cScreenshot%202025-07-29%20084805.png)  \nThis affects ALL graded nest exports, and can be viewed in any program.  \nThe only work around I have is using older versions of Clo3d :(\n\n### Community Post Comments:\nComment 1: I'm having the exact same issue, and had to manually export each sizes one by one. I have 13 sizes graded. Now I need to update the pattern, which means I have to export each of the 13 sizes again. :(\n\nComment 2: Hello! I have just tested the latest version of Clo3D, and the same error appears in the Exporter. When exporting a graded pattern, only the cutting line for the selected size is exported! I had very much hoped this would have been fixed by now, as I am left using a very early version of the software, where the DXF export works correctly.\nReply 1: I have already supplied all the examples, explanations and output files necessary to test this. Indeed anyone with Clo3d can try this, exporting a DXF and opening in ANY OTHER SOFTWARE!\nReply 2: Hi Peter. If the issue continues you will need to start a ticket. We did find your old ticket number which is 113676. So you can reference that when you send it in.We do recommend being as clear as possible when sending it in. Sharing your EXACT workflow and what programs you use. (if Blender is NOT part of your workflow we recommend NOT mentioning it). Make sure to share screenshots of your exact Export and Import settings. Or even a screen recording showing the entire process step by step for the team to view and see what may be happening.If the files are too large then a WeTransfer link is a good option. Thank you 🙂\n\nComment 3: Hi Peter. There was an update this morning to 2025.0.416. Have you updated and tested on this version?\nReply 1: Hello, I can answer that question. I tried it and there is still no seam allowance on the other size of the grading. Kind of problematic to work with :/\nReply 2: Hi lucas. We are sorry to hear that. Are you using the latest 2026 release?If you are and are still having issues please send us the file directly through our tech support to look at.Please include the CLO file, and screen shots of your CLO export settings, screenshot of your Import settings and what program you are importing to. https://connect.clo-set.com/community/post/1ce6e4dacdb841a1903da4d17bf6b047",
+        "content_description": "This page highlights a critical issue in Clo 2025.0.252 where graded nest DXF exports are missing data, affecting all graded nest outputs and requiring users to revert to older versions as a workaround.",
+        "source": "Connect Community",
+        "article_created_at": "2025-07-29T07:15:56.873Z",
+        "article_updated_at": "2025-07-29T07:15:56.873Z",
         "category": 250,
+        "tags": [
+            "CLO",
+            "Import_Export"
+        ]
+    },
+    {
+        "id": "8e696642096242b2b68437ecd1e02ce9",
+        "url": "https://connect.clo-set.com/community/post/8e696642096242b2b68437ecd1e02ce9",
+        "title": "How Lane Odom Took a CLO-Designed Bag All the Way to the Met",
+        "content": "## _From digital prototyping to the halls of the Met—_\n\n##  _Designer_[ _Lane Odom_](https://www.instagram.com/lernonvane_/) _’s journey blends cultural storytelling, athletic discipline, and a sharp technical edge. In this spotlight, he shares how a simple favor for a friend became part of the Superfine: Tailoring Black Style exhibition, and how CLO helped bring that vision to life._  \n\n\n* * *\n\n**Can you introduce yourself and share a bit about your background?**\n\nAbsolutely. My name is Lane Odom, and I’m a designer and product developer currently working under the Coach brand, while building my own design studio called Vane Studios. Originally from the suburbs of Philadelphia, I’m a former collegiate athlete turned designer who was drawn to fashion through the opportunity to tell cultural stories and imagine character archetypes. Interestingly, it was a blend of my undergrad studies mixing anthropological problem solving with economics/business and it gave me a new hands on practice after I stopped playing Lacrosse. After completing the AAS program at Parsons, I’ve had the chance to work across a wide range of roles, spanning sportswear, menswear, tailoring, and womenswear.\n\n![769f712f13ac4a5b8b5cc3a79909df4f](https://storagefiles.clo-set.com/public/community/202507/8e696642096242b2b68437ecd1e02ce9/images/769f712f13ac4a5b8b5cc3a79909df4fIMG_2548.JPG)\n\n**This bag was featured in the “Superfine: Tailoring Black Style” exhibition at the Met. Could you tell us how this opportunity came about, and what it meant to be part of it?**\n\nThis opportunity was really unexpected and came about long after I initially worked on the project. I was helping my friend Jacques Agbobly round out their collection for February 2024 NYFW—doing pattern work on some cut-and-sew dresses that were later whole-garment knit, and creating an accessory for their trench coat, which is the bag featured in the Superfine lookbook. Honestly, it started out as a simple favor for a friend. \n\nSo to see it end up in an exhibition like this means the world to me. Superfine speaks directly to the space I design from—the cultural history, pride, and nuance of Black style. What I find most powerful is that, when you look at the broader history of tailoring and fashion, the Black American aesthetic is still relatively young. Being able to contribute in any way to building that tradition is deeply meaningful. As a designer, I couldn’t ask for a better moment.\n\n  \n**How did you translate the artistic vision or cultural theme of the exhibition into your bag design using CLO?**\n\nThe design was really rooted in the Agbobly brand, especially the story of moving from Togo to the U.S., but we also pulled in some details that nod to the eccentricity of dandyism. One example is the pleated side patch pockets, which add a sense of character and flair. We also focused on a clean, classic duffle shape, which we adapted using a custom printed fabric. In doing so, we took something functional,almost mundane,and reimagined it with a new purpose and presence. The result is bold, and maybe even adds a layer of empowerment from the accessory to the wearer.\n\n  \n![f7f84fb8a4644d6eb4a19eafe5c56ab1](https://storagefiles.clo-set.com/public/community/202507/8e696642096242b2b68437ecd1e02ce9/images/f7f84fb8a4644d6eb4a19eafe5c56ab1AgboblyBag3-8.jpg)\n\n**The print and silhouette of the bag are striking. While the print was created by @harlanhue, how did you approach incorporating it into your CLO design in terms of materials, scale, and visual composition?**\n\nFor this bag, proportion was everything, both in the design itself and in how we used the print. The bag has a good amount of seaming, so we wanted to make sure the print had enough room to breathe across each panel, without getting overly chopped up. CLO made that super manageable, we were able to drop the print onto the 3D asset and tweak the scale until it felt just right, even in those early development stages.\n\n**Were there any technical or timeline challenges during this process?**\n\nThat said, we did run into some time constraints. Originally, we had a more complex strap system planned, but we had to pivot to a simpler version to meet the deadline. Hopefully for version two, we’ll get a chance to bring that first idea back to life.\n\n**Can you walk us through your creative workflow for this project in CLO?**\n\nI wish I had a more artistic story here—but honestly, this was a pretty technical process. Jacques shared the overall vision and some reference images for the kind of shape he wanted, so I started by focusing on construction—just building the right silhouette. A lot of it came down to understanding different bag structures and figuring out how to bring that to life in CLO.\n\nOnce I had the base shell completed, I started looking for elements from the broader collection that could tie into the bag. The pleats and bartacks, for example, were featured in some of the heavy canvas pieces, and I think I was able to successfully translate those details into a new fabrication.\n\n  \n![68d1d6e31c904850b196b8d620c993c6](https://storagefiles.clo-set.com/public/community/202507/8e696642096242b2b68437ecd1e02ce9/images/68d1d6e31c904850b196b8d620c993c6Screen%20Shot%202025-07-09%20at%2007.10.16.png)![8a36c8d26c3941dfa6a8e0682c4e0115](https://storagefiles.clo-set.com/public/community/202507/8e696642096242b2b68437ecd1e02ce9/images/8a36c8d26c3941dfa6a8e0682c4e0115Screen%20Shot%202025-07-09%20at%2007.03.48.png)\n\n### **Was this your first time designing an accessory in CLO? If not, how does this project compare to your past works?**\n\nI’ve designed a bag in CLO before and played around with shoe design in Blender, but this was the first accessory I’ve taken all the way from 3D to physical production. More recently, I also drafted a sun hat in CLO. This project definitely pushed me a bit further—mainly because it was the first time I actually built custom hardware in CLO3D. I always knew how, but I hadn’t worked on a project that really needed it until this one.\n\n**Did you experiment with any unconventional techniques in CLO while designing this piece?**\n\nThe construction itself was pretty straightforward, but I definitely leaned on a few helpful tricks in CLO. Turning off gravity was a big one—it made the whole process a lot smoother. I also separated the bottom of the bag from the sides in the software, even though it’s actually one pattern piece in real life. Freezing that bottom piece really helped stabilize everything while I worked on the rest of the design.\n\n### **What do you think is the future potential of CLO as a tool for artistic or exhibition-focused design?**\n\nThe potential of CLO is honestly huge. What makes it so powerful is how it supports both physical and digital asset creation at the same time. This was my first time ever making a duffle bag, and the fact that I could get such a clean result in just one sample round says a lot about how it can streamline the development process.\n\nFrom a creative standpoint, being able to design without the limits of real-world physics is amazing. We had originally planned to add these long, flowing straps to the bag, there just wasn’t time to develop them physically. But in CLO, we could still show them, and even make them interactive if we wanted.\n\nTo me, CLO is just the start of where fashion and tech are headed. I think we’ll keep seeing more crossover, from digital software all the way to smart textiles and beyond.\n\n  \n![45b00d275abc4f0cb4956910b02f8663](https://storagefiles.clo-set.com/public/community/202507/8e696642096242b2b68437ecd1e02ce9/images/45b00d275abc4f0cb4956910b02f8663IMG_1158.jpeg)\n\n### **Many CLO users are exploring accessories and more artistic applications. What advice would you give to someone using CLO to create beyond traditional garments?**\n\nMy biggest piece of advice? Don’t forget the real world. Use physical references as you design. Early on, when I first started using CLO, I often skipped that step and worked entirely digitally. But I found myself having to backtrack when it came time to translate those ideas into something physical.\n\nEven if your goal is to stay purely digital, making sure your work reflects real-world scale and proportion goes a long way. It adds a layer of believability and accuracy that builds trust, especially as digital/phygital fashion continues to gain adoption within the industry.   \n\n\n* * *\n\n _Full look by_[ _@agbobly_](https://www.instagram.com/agbobly/) _| bag print by_[ _@harlanhue_](https://www.instagram.com/harlanhue/)\n\n _Photography_[ _@tylersphotos_](https://www.instagram.com/tylersphotos/)  \n _Styling_[ _@mr_carlos_nazario_](https://www.instagram.com/mr_carlos_nazario/)  \n _Hair_[ _@dre_on_hair_](https://www.instagram.com/dre_on_hair/)  \n _Makeup_[ _@kilprity_](https://www.instagram.com/kilprity/)  \n _Casting_[ _@midlandagency_](https://www.instagram.com/midlandagency/)  \n _Executive Production Alexander Dorr @ Tyler Mitchell Studio_  \n _Production_[ _@apstudioinc_](https://www.instagram.com/apstudioinc/)",
+        "content_description": "Showcasing designer Lane Odom’s creative process and cultural storytelling through digital prototyping in CLO, culminating in his accessory featured in the Superfine: Tailoring Black Style exhibition at the Met.",
+        "source": "Connect Community",
+        "article_created_at": "2025-07-29T00:44:42.243Z",
+        "article_updated_at": "2025-07-29T00:44:42.243Z",
+        "category": 110,
+        "tags": [
+            "CLO",
+            "Material",
+            "Pattern",
+            "Rendering",
+            "Simulation",
+            "Texture",
+            "Trim"
+        ]
+    },
+    {
+        "id": "a7aa6df4245446eaa37ec68bb4702be6",
+        "url": "https://connect.clo-set.com/community/post/a7aa6df4245446eaa37ec68bb4702be6",
+        "title": "Convert to Grade/Non-Grade Point",
+        "content": "Hi!\n\nI can not find **Convert to Grade/Non-Grade Point option in any menu mentioned in**[**https://support.clo3d.com/hc/en-us/articles/115015798567-Set-Grading#:~:text=Now%20you%20have%20a%20regular,points%20are%20just%20regular%20points**](https://support.clo3d.com/hc/en-us/articles/115015798567-Set-Grading#:~:text=Now%20you%20have%20a%20regular,points%20are%20just%20regular%20points)**.**\n\n### Community Post Comments:\nComment 1: Hi There. The feature is not released yet. Please see screenshot below where is says updated for 2025.1. This will be in an upcoming release\nReply 1: Hi! Thanks! Problem that when i search for when it will be released i getting that info that its already released... looks again AI lie\nReply 2: Thank you for letting us know. I will also let our team working on the CLO Chat bot know",
+        "content_description": "This page provides guidance on locating the \"Convert to Grade/Non-Grade Point\" option within CLO 3D when it's not found in the referenced support menu.",
+        "source": "Connect Community",
+        "article_created_at": "2025-07-27T13:43:13.77Z",
+        "article_updated_at": "2025-07-27T13:43:13.77Z",
+        "category": 220,
+        "tags": [
+            "CLO"
+        ]
+    },
+    {
+        "id": "1d3ff240a3064a67958dee8c47781d1b",
+        "url": "https://connect.clo-set.com/community/post/1d3ff240a3064a67958dee8c47781d1b",
+        "title": "How Setup Clo3D To Use It On The Two Different Screens On Macbook",
+        "content": "I want to send the 3D screen to my iPad from my Macbook.\n\nHow to do this?\n\n### Community Post Comments:\nComment 1: Understood. Thank you very much.Actually we separate the window we work on the mostly and send \"the main window to the secondary monitor.\" Becasue separated windows does not have 3 color menus.\n\nComment 2: To be able to send the window to the secondary monitor you need to have this 3 color menu bar. When you click on the gren you see an option \"send to iPad\" (secondary monitor)However as you see neither 3d window or 2d window are this menu bar.I need to separate either of them so that I get this 3 color menu. Can you do a screenshot of showing how to do?\n\nComment 3: If you have one window (like you use Clo3D normally in a single screen) and you send It to iPad or any monitor. You can not see It on Macbook.You need two separate windows to be able to use It on the second monitor.Such as you open a web page on safari window. Then you open another web page but this time on \"new window\".So now you have 2 different windows with 2 different web pages.Also How can I contact with tech support about this subject.???\n\nComment 4: You can use Multiple monitors for CLO, but CLO does not run on ipads.\nReply 1: No I'll use iPad as secondary Monitor. So how to set this up on Macbook?I thought I can open 3d Screen or 2d Screen as separate window like a new app. Then send the window to iPad. So I work on 2D window on Macbook (Main) and see the avatar of the 3d Window on iPad (As secondary monitor)???\nReply 2: Hi. You will need to look up Appleside car which goes over how to use your ipad as a monitor.From there you can pull out the different windows/panels in CLO and move them around (upper right corner of each window)\nReply 3: All circled areas are the buttons which can be clicked to pop out the windows for customization",
+        "content_description": "This webpage provides step-by-step instructions for streaming or mirroring a 3D screen from a MacBook to an iPad.",
+        "source": "Connect Community",
+        "article_created_at": "2025-07-26T19:53:41.3Z",
+        "article_updated_at": "2025-07-26T19:53:41.3Z",
+        "category": 220,
         "tags": [
             "CLO",
             "UI"
         ]
     },
     {
-        "id": "b125020a8cee42ad902c21fd7ce258f3",
-        "url": "https://connect.clo-set.com/community/post/b125020a8cee42ad902c21fd7ce258f3",
-        "title": "Lines or points are too close together",
-        "content": "Hey all  \n  \nI'm running into an issue when grading where I can't switch between sizes because I'm receiving the error message, \"Lines or points are too close together. Please move the points further away from each other.\"  \n  \nThe problem is that there is no instruction as to which points are too close. I've deleted a number of points but deleting more would change the characteristics of curves etc.   \n  \nAny advice how to solve? \n\nThanks\n\n![8109e1ee76a045948a48071def92955a](https://storagefiles.clo-set.com/public/community/202504/b125020a8cee42ad902c21fd7ce258f3/images/8109e1ee76a045948a48071def92955aPoints%20too%20close%20-%20Combats.png)\n\n### Community Post Comments:\nComment 1: Found the issue in the new version of CLO. It was in the waistband, the points weren't close to the eye, but when the grading occured, the second black dot on the bottom edge became too close to other points.\n\nComment 2: It looks like there are two points really close together at the top edge of that white middle pocket. Is that causing the issue?\n\nComment 3: Not sure but I would suggest to look closely at corners, sometimes there are close points that we can't see from a standard distance. Like on my screenshot, there are actually 2 points.\nReply 1: Thanks Lucile, I'll take a look. Would be a great feature for CLO to highlight where the issue is!",
-        "content_description": "A troubleshooting page seeking advice on resolving the \"Lines or points are too close together\" error encountered when grading without clear guidance on which points cause the issue.",
+        "id": "a2a47fb30a0048d09ae5670427c6382a",
+        "url": "https://connect.clo-set.com/community/post/a2a47fb30a0048d09ae5670427c6382a",
+        "title": "Brand",
+        "content": "New Brand Darkred![2531c24762d64b578e32c1f31c5d28e1](https://storagefiles.clo-set.com/public/community/202507/a2a47fb30a0048d09ae5670427c6382a/images/2531c24762d64b578e32c1f31c5d28e1drr.png)",
+        "content_description": "Showcasing the launch and visual identity of the new Darkred! brand.",
         "source": "Connect Community",
-        "created_at": "2025-04-09T07:57:27.773Z",
-        "category": 220,
+        "article_created_at": "2025-07-26T09:44:38.143Z",
+        "article_updated_at": "2025-07-26T09:44:38.143Z",
+        "category": 210,
         "tags": [
-            "CLO",
-            "Pattern"
+            "AI",
+            "CLO"
         ]
     },
     {
-        "id": "fd8623731787430dbdfb3a29cb2584d3",
-        "url": "https://connect.clo-set.com/community/post/fd8623731787430dbdfb3a29cb2584d3",
-        "title": "Animation Export Issue (ABC, FBX)",
-        "content": "I'm trying to apply one of CLO’s default motion files to the default female avatar and export it to work in another program (like Blender or C4D). I exported the avatar as an FBX file, but no matter which motion file I apply in CLO, the animation only imports up to frame 26 in both Blender and C4D.\n\nIf I export as an ABC (Alembic) file, the full animation plays correctly in both programs — but since Alembic files don’t carry UV data, it creates problems with texturing. That’s why I would prefer to export using FBX.\n\nI remember FBX exports working fine in the past, but now it seems like something has changed. Is this a known issue?\n\nI've attached screenshots of my FBX export settings in CLO and the import settings in Blender. The motion file I applied has a total of **577 frames** , but again, only **26 frames** are imported into Blender and C4D. I’ve also confirmed that the **Scene Time Warp** in CLO is properly set to **1** , so that shouldn’t be causing the issue.\n\nIs there currently a bug or known issue preventing full animation export through FBX?  \nOr is it inherently difficult to export full motion via FBX from CLO, and ABC is the only reliable option?\n\nIs there any way to fix this?\n\nI’d really appreciate any solution or workaround.\n\nmy CLO3D version : 2024.2.344\n\n![e07d40c832644017a7ae74fd11263891](https://storagefiles.clo-set.com/public/community/202504/fd8623731787430dbdfb3a29cb2584d3/images/e07d40c832644017a7ae74fd112638912.png)\n\n![c64b4fa807cd41f794ab306c86beeca5](https://storagefiles.clo-set.com/public/community/202504/fd8623731787430dbdfb3a29cb2584d3/images/c64b4fa807cd41f794ab306c86beeca51.png)\n\n![49b52dbb3723494f8e4ec08ad685e5e9](https://storagefiles.clo-set.com/public/community/202504/fd8623731787430dbdfb3a29cb2584d3/images/49b52dbb3723494f8e4ec08ad685e5e93.png)",
-        "content_description": "Seeking solutions for exporting full-length CLO3D default avatar animations via FBX without frame truncation for seamless use in Blender and C4D.",
+        "id": "24f6c87280684481917a3f2307c03235",
+        "url": "https://connect.clo-set.com/community/post/24f6c87280684481917a3f2307c03235",
+        "title": "Not repeat lines (uneven design)",
+        "content": "![fe719ec31ce143cc8115521121aca124](https://storagefiles.clo-set.com/public/community/202507/24f6c87280684481917a3f2307c03235/images/fe719ec31ce143cc8115521121aca124RUNNER-TARGET-H%26H.jpg)Hi ,\n\nI need 2 different lines as shown in image. both the lines are of different design with pattern design in back. Created horizontal lines in transformation but manageable (although i did not fully satisfy with extended design) when i am using line it creates repeat pattern in vertical line.\n\nusing only 2048 x 2048 and 4096 x4096 pattern design\n\nPlease help on this.\n\nRegards,\n\nNK\n\n### Community Post Comments:\nComment 1: Hi Neeraj, sorry for seeing only now! (For refererence, I do not receive a notification if the reply is not directly underneath my own comment.) You can add the image as a graphic and then have it repeat only along the X- or Y-axis. Unified is for UV maps so it will not give the desired effect.\n\nComment 2: Hi,I edited it in PS but CLO creates pattern and i do not want to transform it manually.Please just look at my given image it is 14x72 inches, How can i use pattern. I bounded with pattern 2048x2048, 4096x4096, 8192x8192. 🙏🏻 Thanks,NK\n\nComment 3: Hi,not fully working that. My size is 14 x 72 inches and i bounded with pattern 2048x2048, 4096x4096, 8192x8192. CLO making a pattern only not single stripe. I used unified also.Thanks,Nk\n\nComment 4: yes it is from PS. My concern is that i did not want repeat to display horizontal stripe and vertical stripe. So that my 14 x72 in covers only once in horizontal stripe and vertical stripe. I also used unified option in texture mapping but it also given repeat.\n\nComment 5: Hi, from what I am understanding about this, shouldn't the image rather be edited in e.g. PS?",
+        "content_description": "Purpose: To showcase and seek advice on creating two distinct horizontal line designs with patterned backgrounds for seamless use in 2048x2048 and 4096x4096 textures.",
         "source": "Connect Community",
-        "created_at": "2025-04-08T06:57:06.91Z",
-        "category": 250,
+        "article_created_at": "2025-07-25T10:28:53.13Z",
+        "article_updated_at": "2025-07-25T10:28:53.13Z",
+        "category": 220,
         "tags": [
-            "Animation",
-            "Import_Export",
-            "Avatar",
+            "CONNECT",
+            "CLO-SET",
+            "CLO"
+        ]
+    },
+    {
+        "id": "d96d42cb421d466597a6ce83b88b3be4",
+        "url": "https://connect.clo-set.com/community/post/d96d42cb421d466597a6ce83b88b3be4",
+        "title": "Macbook - Middle Mouse Button Hold Drag For Panning",
+        "content": "Macbook does not support middle mouse button.\n\nSo what do you suggest for panning? (On windows middle mouse button hold drag)\n\nFor both\n\nA) Trackpad\n\nB) Physical Bluetooth Mouse\n\n### Community Post Comments:\nComment 1: Thank you very much\n\nComment 2: Hi, if you have a 3 button mouse, you can change the settings to use it.Go to Settings &gt; User Settings &gt; View Control &gt; Regular Mouse.If you have a magic mouse, you'll need to press Alt or Cmd + left click.",
+        "content_description": "This web page provides alternative methods for panning on a MacBook using either the trackpad or a physical Bluetooth mouse, since the middle mouse button is not supported.",
+        "source": "Connect Community",
+        "article_created_at": "2025-07-25T08:18:41.413Z",
+        "article_updated_at": "2025-07-25T08:18:41.413Z",
+        "category": 210,
+        "tags": [
+            "CLO"
+        ]
+    },
+    {
+        "id": "b0e4e6143b154588a1730d8e8816bf79",
+        "url": "https://connect.clo-set.com/community/post/b0e4e6143b154588a1730d8e8816bf79",
+        "title": "The Icons Are Too Big On The User Interface",
+        "content": "I switched to a 14 inch MacBook Pro M4 from Windows.\n\nMy macbook’s screen resolution setting is 1147 x 745. I am comfortable with this setting while using the Macbook.\n\nHowever when I open Clo3D\n\nIcons are too big on the user interface as you see on the screenshot.\n\nIs there a User Interface Resolution setting of Clo3d.\n\nOr do I have to change the Macbook’s resolution settings?\n\nWhat resolution setting do you recommend for my MacBook Pro 14 inch?\n\n![e03db851f38c473882978bd77417fa72](https://storagefiles.clo-set.com/public/community/202507/b0e4e6143b154588a1730d8e8816bf79/images/e03db851f38c473882978bd77417fa72Screenshot%202025-07-24%20at%2014.18.21.png)\n\n### Community Post Comments:\nComment 1: Hi There. On a Mac you will need to go to your system preferences on your Mac Computer and change the Display Settings there\nReply 1: Thank you very much.",
+        "content_description": "Providing guidance on optimizing Clo3D user interface resolution settings for a 14-inch MacBook Pro M4 to improve display clarity without altering the MacBook’s native resolution.",
+        "source": "Connect Community",
+        "article_created_at": "2025-07-24T11:23:53.8Z",
+        "article_updated_at": "2025-07-24T11:23:53.8Z",
+        "category": 220,
+        "tags": [
             "CLO",
-            "Blender",
-            "Cinema4D"
+            "UI"
         ]
     }
 ]

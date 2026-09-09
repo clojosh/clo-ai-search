@@ -1,277 +1,161 @@
 [
     {
-        "id": "dbc8817c8101420bb404d33e6129b915",
-        "url": "https://connect.clo-set.com/community/post/dbc8817c8101420bb404d33e6129b915",
-        "title": "🎁 Wrapped in Blue",
-        "content": "### \n\nWhy wear a dress when you can wear the bow?\n\nThis look turns the idea of a gift into fashion — a structured corset wrapped in an oversized denim bow, flowing into a flared mermaid skirt. Sculptural, bold and totally unapologetic 💙\n\nThe bow is the centerpiece, built with layered pattern pieces and reinforced volume. The skirt balances the upper drama with smooth lines and a soft flare. All rendered in heavy denim with subtle sheen for depth and edge.\n\n![4ca86e1e75f14f80b7a48971505858b2](https://storagefiles.clo-set.com/public/community/202507/dbc8817c8101420bb404d33e6129b915/images/4ca86e1e75f14f80b7a48971505858b2rotation_3.png)![65518b06168c4cd882ee8a7cf508f5ce](https://storagefiles.clo-set.com/public/community/202507/dbc8817c8101420bb404d33e6129b915/images/65518b06168c4cd882ee8a7cf508f5ce4.png)![5a6269d1c4a84f96938079ab4c7be9ed](https://storagefiles.clo-set.com/public/community/202507/dbc8817c8101420bb404d33e6129b915/images/5a6269d1c4a84f96938079ab4c7be9ed7.png)![58ef98136eb54ed0ad3b8d5b56b1b693](https://storagefiles.clo-set.com/public/community/202507/dbc8817c8101420bb404d33e6129b915/images/58ef98136eb54ed0ad3b8d5b56b1b6932.png)![2c183c844f8f467293d42df44c57a067](https://storagefiles.clo-set.com/public/community/202507/dbc8817c8101420bb404d33e6129b915/images/2c183c844f8f467293d42df44c57a0675.png)![46215ed421d3470cad25147112bde1a3](https://storagefiles.clo-set.com/public/community/202507/dbc8817c8101420bb404d33e6129b915/images/46215ed421d3470cad25147112bde1a33.png)![a94f6c4e006b411cb3c413949ab19089](https://storagefiles.clo-set.com/public/community/202507/dbc8817c8101420bb404d33e6129b915/images/a94f6c4e006b411cb3c413949ab190896.png)\n\n### Community Post Comments:\nComment 1: ❤️\nReply 1: ❤️❤️",
-        "content_description": "Showcasing a bold, sculptural denim corset dress featuring an oversized bow that transforms gift-inspired fashion into a statement look.",
+        "id": "2e642410059d4beebb4daf3c8d082950",
+        "url": "https://connect.clo-set.com/community/post/2e642410059d4beebb4daf3c8d082950",
+        "title": "Problems with Graphics Card",
+        "content": "Dear Dears, I'm having major trouble finding a suitable desktop/laptop for CLO 3D. I already returned one laptop. With the NVIDIA GeForce 5070TI graphics card the program constantly crashes. Working is impossible. Support is looking into it, but I'm not very technically savvy and I'm not getting any concrete information about which graphics card runs stably. Can anyone give me a tip? Who has a laptop they're happy with and where CLO runs without crashing multiple times a day? Thanks a lot & merci beaucoup, Tina\n\n### Community Post Comments:\nComment 1: Hi There. It does look like our tech team has gone over a lot of support about your graphics card and updates. But if you have returned that computer and looking for another one. We do always recommend looking at our specs page - https://connect.clo-set.com/community/post/2e642410059d4beebb4daf3c8d082950 also when looking at a computer we recommend looking at Gaming Specific Laptops\nReply 1: Hi,Yes,I’ve already been in contact with the CLO Support team several times, but unfortunately, I haven’t been able to make any progress. I did the updates and everything but the software crashed nonstop. My laptop meets all the system requirements listed on your website, yet CLO 3D keeps crashing regularly – sometimes up to ten times a day.I understand that these issues might be related to certain graphics card models. However, my device is a common gaming laptop equipped with a high-performance GPU. As an end user and not an IT expert, it’s very difficult for me to troubleshoot these technical problems on my own.I simply want to be able to work reliably with CLO 3D, but this hasn’t been possible for weeks. I hope you understand that it’s impossible to build a business under these conditions. And it dosen't really help to receive the same link to the minimum system requirements over and over again. I’ve described my problem here in the hope of getting some advice from the community. I hope that’s okay with you.\nReply 2: You have also asked about other computers. So we do recommend looking into gaming specific.As for CLO crashes I did not see any files from CLO attached so I am curious if you are following best practices? like a few mentioned below-Keeping Large pattern pieces at 20 Particle Distance while working/editing-Building Garments 1 at a time in their own files (not building several garments or a full look in 1 file). Always good to build on their own and combine once done-Are you applying prints/graphics that are too large and slowing down CLOThese are just a few random ideas above",
+        "content_description": "A community forum page for users to share and recommend reliable laptops or desktops that run CLO 3D smoothly without crashing.",
         "source": "Connect Community",
-        "created_at": "2025-07-21T07:13:17.157Z",
+        "article_created_at": "2025-11-12T11:17:49.81Z",
+        "article_updated_at": "2025-11-12T11:17:49.81Z",
         "category": 210,
         "tags": [
-            "CLO",
-            "CLO-SET",
-            "CONNECT",
-            "Avatar",
-            "Animation",
-            "Texture",
-            "Trim",
-            "Pattern",
-            "Material"
-        ]
-    },
-    {
-        "id": "376eb8c5482c433e95d3c092b8273652",
-        "url": "https://connect.clo-set.com/community/post/376eb8c5482c433e95d3c092b8273652",
-        "title": "Graphic flattens texture and causes render issues",
-        "content": "Hi!  \nI’m trying to render a **sublimation print on a t-shirt** in CLO (v2025.0.400 – Mac), but I can’t get it to work properly.\n\n  * If I apply a full-size graphic in 2D with **Z-Offset = 0** , I get **mesh triangulation/glitches** in the render.\n\n  * If I increase the Z-Offset (e.g. 0.1 mm), the glitches disappear — but the **puckering, fabric texture, and seams between panels** become invisible or flattened.\n\n  * I’ve tried different formats (PDF, JPG, PNG), turned off “Use Same Map as Fabric”, removed all normal/displacement/opacity maps, cleared cache… still stuck.\n\n\n\n\nI’d like the print to:\n\n  * follow the **puckering and folds**\n\n  * **preserve the fabric’s normal and texture details**\n\n  * and render cleanly, without artifacts.\n\n\n\n\nIs there any known fix or recommended workaround?\n\nAlso, I’m often unable to input decimal values correctly in CLO (Mac). For example, when I try to type **0.1** , CLO automatically switches it to **1.0** — not just in Z-Offset, but in other fields too. I can’t tell if this is a locale/keyboard issue or a bug.\n\nThanks so much!  \nNicole\n\n![f87e5b315a234d0d8446076e98431650](https://storagefiles.clo-set.com/public/community/202507/376eb8c5482c433e95d3c092b8273652/images/f87e5b315a234d0d8446076e98431650Screenshot%202025-07-19%20at%2001.04.09.png)![c861f5f1ecb54a17a124361ebe867f3d](https://storagefiles.clo-set.com/public/community/202507/376eb8c5482c433e95d3c092b8273652/images/c861f5f1ecb54a17a124361ebe867f3dScreenshot%202025-07-19%20at%2001.04.48.png)![ff7bbd5e6f804e89ac6aeaed5e25814c](https://storagefiles.clo-set.com/public/community/202507/376eb8c5482c433e95d3c092b8273652/images/ff7bbd5e6f804e89ac6aeaed5e25814cScreenshot%202025-07-19%20at%2001.02.05.png)\n\n### Community Post Comments:\nComment 1: Hi Nicole, the offset being on 0 is an occurrence that cannot be avoided, in the case of your graphic placement I have another suggestion that will keep everything intact as you wish for. Copy your fabric, assign it to the sleeve, apply the graphic as a base color map, then edit the placement of the sleeve on the fabric roll in the Print Layout. About the decimal issue, it is a bug in the patch you are on (400). Update to the latest patch 408 and decimals are working fine again.\nReply 1: Hi Melody, thank you so much for your reply!I understand your suggestion and I’ll definitely try it out.However, I was wondering: what if I wanted to keep using the graphic application method instead of mapping the print into the fabric texture?I find the graphic tool very useful because it allows me to precisely place the artwork where the invisible seam margins are (the folded or stitched parts, not visible unless baselines are active). This helps me see the actual positioning inside the full pattern piece, including all the seam allowances, and easily spot mistakes in the artwork placement — which wouldn’t be as clear when working with a trimmed version of the shape.I’m still a CLO newbie and learning a lot every day, so maybe I’m missing something! :)Thanks again!\nReply 2: Hi Nicole, I am not sure I understand fully, but if using graphics is the preferable workflow for you to reach a good visualization, then nothing speaks against it!\nReply 3: Hi Melody,Thank you again! I’d like to clarify that my concern is not about workflow preference, but a technical limitation I’m facing.When I apply a full graphic using the Graphic Tool and set the Offset to 0 (which is necessary for correct placement in my case), CLO completely flattens the fabric’s texture, removing visible normal maps, puckering, and seam details – this is the core of my issue.I’m trying to achieve a realistic sublimation print simulation, where the artwork is visible on top of the fabric but doesn’t erase the material’s physical properties.I know I could embed the print into the base color map, but this doesn’t give me the same control – I specifically need to see the full pattern shape with seam allowances visible (which the Graphic Tool lets me do). It’s essential for me to verify placement accuracy.So my question is:Is there any way to preserve fabric details (like normals and puckering) while using the Graphic Tool with Offset = 0?I’d really appreciate any technical insight – I’m still new to CLO and trying to understand its limits. Thanks again!\nReply 4: Hi Nicole, the Graphic Offset on 0 will always collide with the pattern piece's mesh and create a flecked effect, unfortunately, there is no way around. \"I specifically need to see the full pattern shape with seam allowances visible (which the Graphic Tool lets me do). It’s essential for me to verify placement accuracy.\" Sorry, I am still confused. All of this is visible in the Print Layout - the pattern piece can be dragged and dropped onto the desired position with seam allowance visible. Let me know what I'm still not getting, maybe with a screenshot? Thank you :)",
-        "content_description": "This page seeks solutions and advice for accurately rendering sublimation prints on t-shirts in CLO 2025 for Mac, addressing mesh glitches, fabric detail preservation, and decimal input issues.",
-        "source": "Connect Community",
-        "created_at": "2025-07-18T23:26:48.577Z",
-        "category": 220,
-        "tags": [
-            "CLO",
-            "Pattern",
-            "Rendering",
-            "Simulation",
-            "Texture",
-            "Material"
-        ]
-    },
-    {
-        "id": "c118958193df4150b3cdf2b41f1445e3",
-        "url": "https://connect.clo-set.com/community/post/c118958193df4150b3cdf2b41f1445e3",
-        "title": "Animation Editor: \"add layer\" function not working",
-        "content": "Hi, I would like to create an animation where the avatar first walks, then turns/twirls around, then walks on. So to do that I want to merge several motions I've already created (walking, turning etc.). However it doesn't work for me to drag in the motion files, nor add an additional avatar-animation once I've added the first one, nor do this via adding another layer. (\"add layer\" function is greyed out).   \nThe only thing that works is double-click on one motion. But when I try to add another .mtn file via double-click it will override the first one.  \nPlease advise how to solve this - in particular why the \"add layer\" function is greyed out for me.   \n  \n(I'm using the latest update of 2025-version)  \n  \nTHANK YOU!  \n  \n![0f7dc0a4844649ad84ff44f3589e565f](https://storagefiles.clo-set.com/public/community/202507/c118958193df4150b3cdf2b41f1445e3/images/0f7dc0a4844649ad84ff44f3589e565fScreenshot%202025-07-18%20123020_clo1.png)![a51b65b70bb543f986ec43180155112a](https://storagefiles.clo-set.com/public/community/202507/c118958193df4150b3cdf2b41f1445e3/images/a51b65b70bb543f986ec43180155112aScreenshot%202025-07-18%20123239_clo.png)\n\n### Community Post Comments:\nComment 1: Hi There! we answered your question on Discord. But to add for anyone curious currently you cannot stitch multiple animations together. And for Add Layer you need to first apply a mtn file and then you can see the layers for all of the joints and add key frames",
-        "content_description": "This page provides guidance on merging multiple avatar motion files and troubleshooting the disabled \"add layer\" function in the 2025 animation software update.",
-        "source": "Connect Community",
-        "created_at": "2025-07-18T10:34:29.173Z",
-        "category": 220,
-        "tags": [
-            "CLO",
-            "Animation"
-        ]
-    },
-    {
-        "id": "8775f799eb9241e8afb0968ed28d8830",
-        "url": "https://connect.clo-set.com/community/post/8775f799eb9241e8afb0968ed28d8830",
-        "title": "Substance Painter to CLO3D",
-        "content": "**Hi!**  \nI’d like to texture a garment using **Substance Painter** and then bring those **textures back into CLO3D** — not the geometry — so I can continue working in CLO (posing, animating, etc.) without editing the patterns anymore.\n\nIs it possible to apply the textures from Substance to the **original CLO garment** , and keep full CLO functionality (like posing, animations, avatar changes)?\n\nHas anyone done this successfully, and if so, what’s the cleanest workflow for it?  \nThanks!\n\n### Community Post Comments:\nComment 1: Unfortunately SBSAR file is a native file of Substance Designer. substance painter cannot generate it.\nReply 1: Hi, thank you for clearing this up. Can you save the texture files from Substance Painter in an image format or are they \"locked\" inside SP?\nReply 2: I am able to export textures, but they are packed with UV. So not a solution to upload them in Material property.\nReply 3: No, you can use them! In the fabric, set Texture Mapping from Repeat to Unified.\nReply 4: Oh cool! Haven`t thought about it.... First time trying to work with UVs and SP. Thanks @melody. I will try it out and if I get stuck, I will be back 🙂\n\nComment 2: adding a link to our article about this as well 🙂https://connect.clo-set.com/community/post/8775f799eb9241e8afb0968ed28d8830\n\nComment 3: Hi, can you export an SBSAR file? They can be added as a fabric in CLO.",
-        "content_description": "This page explores how to apply textures created in Substance Painter to original CLO3D garments while preserving CLO's full functionality such as posing, animations, and avatar adjustments.",
-        "source": "Connect Community",
-        "created_at": "2025-07-17T21:25:43.17Z",
-        "category": 220,
-        "tags": [
-            "CLO",
-            "Substance",
-            "Texture",
-            "Animation"
-        ]
-    },
-    {
-        "id": "61c6376703744f08b19f4f2570018732",
-        "url": "https://connect.clo-set.com/community/post/61c6376703744f08b19f4f2570018732",
-        "title": "🎀 Blue Ribbon Rebel",
-        "content": "Sweet? Maybe. Soft? Never.\n\nThis look is all about contradictions — a massive denim bow meets sleek flared pants and satin ribbon details. It’s girly with a side of don’t-mess-with-me. 💅✨\n\nThe bow was built using layered internal lines and puff volume, giving it that bold sculptural shape without losing softness. The pants? High-waisted and full of movement, finished with contrast ties to break the structure.\n\n🧷 Made entirely in CLO  \n💙 Custom denim texture  \n🧶 Ribbon details mapped manually  \n🔥 Attitude level: maxed out\n\n![662df291fc134edab583f56aa70e315c](https://storagefiles.clo-set.com/public/community/202507/61c6376703744f08b19f4f2570018732/images/662df291fc134edab583f56aa70e315c7.png)![4e58d5183a1d4606afcc4c7ec6177df3](https://storagefiles.clo-set.com/public/community/202507/61c6376703744f08b19f4f2570018732/images/4e58d5183a1d4606afcc4c7ec6177df35.png)![4e1f0626da154c11b1f2f55b757a9cec](https://storagefiles.clo-set.com/public/community/202507/61c6376703744f08b19f4f2570018732/images/4e1f0626da154c11b1f2f55b757a9cec1.png)![fdef28f420844947beb3bdef828c8492](https://storagefiles.clo-set.com/public/community/202507/61c6376703744f08b19f4f2570018732/images/fdef28f420844947beb3bdef828c84923.png)![19652ae76ffa4d5cb3fc7ecdbc480dc9](https://storagefiles.clo-set.com/public/community/202507/61c6376703744f08b19f4f2570018732/images/19652ae76ffa4d5cb3fc7ecdbc480dc96.png)![c4919f004db747eabba62478d50a3557](https://storagefiles.clo-set.com/public/community/202507/61c6376703744f08b19f4f2570018732/images/c4919f004db747eabba62478d50a35574.png)![50c8216b900c4bf48affc025845afe1a](https://storagefiles.clo-set.com/public/community/202507/61c6376703744f08b19f4f2570018732/images/50c8216b900c4bf48affc025845afe1a2.png)",
-        "content_description": "Showcasing a bold, sculptural denim look that blends girly softness with fierce attitude through innovative design and custom fabric details.",
-        "source": "Connect Community",
-        "created_at": "2025-07-17T07:11:45.617Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "CLO-SET",
-            "CONNECT",
-            "Animation",
-            "Avatar",
-            "Pattern",
-            "Rendering",
-            "Material",
-            "Simulation",
-            "Trim"
-        ]
-    },
-    {
-        "id": "eac5b4177d0449e4a0b4ce3e8fec16b8",
-        "url": "https://connect.clo-set.com/community/post/eac5b4177d0449e4a0b4ce3e8fec16b8",
-        "title": "INZOI Contest Upload Issues",
-        "content": "Hello Clo-Set!  \nI can't upload my work for the contest because it gives an error when uploading ZPRJ file. The number of polygons of clothing does not exceed 40,000 (my clothes 29300). I also uploaded an avatar in A pose without animation as indicated in the guide.   \nI think maybe the problem is in the number of polygons in the avatar? Its number is 87K polygons  \nI attached a screenshot of error. How can I fix this problem?  \nUPD: I try to upload without avatar the same problem  \n  \nThank you  \n![42c1dfeb111e4e2eb0c8a01f3cfee887](https://storagefiles.clo-set.com/public/community/202507/eac5b4177d0449e4a0b4ce3e8fec16b8/images/42c1dfeb111e4e2eb0c8a01f3cfee887photo_2025-07-16_23-34-26.jpg)\n\n### Community Post Comments:\nComment 1: Hey, I am having the same issue! My project has 18142 polygons and 36046 triangles and I got the same error as you. How did you solve it?\nReply 1: Hello! I optimized my project to less than 30,000 triangles. It helped.\n\nComment 2: Thank you so much for your help! This was the reason! I corrected the number of triangles and was able to upload the work❤️Many thanks!\nReply 1: ❤️\n\nComment 3: Got it ! Thanks\nReply 1: I noticed that you adjusted the model to have 40,000 polygons.However, the limit should be 40,000 triangles, not polygons.\n\nComment 4: Hi, victoriascostumesThe inZOI contest uses the triangle count in Thickness Mode as the standard.Does your outfit have 40,000 triangles or fewer in Thickness Mode?\nReply 1: Hello, RobinYes, that's right. Its 29300 polygons in Thickness Mode\nReply 2: Hi, victoriascostumesCan you send us the project file through the Help Center below?We will provide technical support as quickly as possible.https://connect.clo-set.com/community/post/eac5b4177d0449e4a0b4ce3e8fec16b8",
-        "content_description": "Provide troubleshooting guidance and support for users experiencing file upload errors related to polygon limits in the Clo-Set contest submission process.",
-        "source": "Connect Community",
-        "created_at": "2025-07-16T20:55:42.977Z",
-        "category": 220,
-        "tags": [
-            "CLO",
-            "MarvelousDesigner",
-            "CLO-SET",
-            "inzoi",
-            "EweryWear"
-        ]
-    },
-    {
-        "id": "49bacec072d84e26ab77440396008ca8",
-        "url": "https://connect.clo-set.com/community/post/49bacec072d84e26ab77440396008ca8",
-        "title": "Editing collections",
-        "content": "Hey! I’ve got a few designs on my profile, and I just rendered some new poses that I want to add to the existing posts for those same designs. But I’m only seeing options to download, delete, or move. Is there a way to add more images to those posts?\n\n### Community Post Comments:\nComment 1: Hi, camila.blancoThere's a button at the bottom right of the item page that opens the edit menu.",
-        "content_description": "This page provides guidance on how to add additional images or poses to existing design posts.",
-        "source": "Connect Community",
-        "created_at": "2025-07-16T10:27:59.363Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "CONNECT",
-            "Contest",
-            "Simulation",
-            "Animation"
-        ]
-    },
-    {
-        "id": "d71df2326b6e4e8da67d26b7cc770833",
-        "url": "https://connect.clo-set.com/community/post/d71df2326b6e4e8da67d26b7cc770833",
-        "title": "Thread ",
-        "content": "Hi All,\n\ni am 3d/graphic designer need some help to make a thread like\n\n![a6252dd853c8496a86045bd077563a83](https://storagefiles.clo-set.com/public/community/202507/d71df2326b6e4e8da67d26b7cc770833/images/a6252dd853c8496a86045bd077563a83image.png)I am making a knot of it. It is very thin thread. Pls suggest.\n\nRegards\n\nNk\n\n### Community Post Comments:\nComment 1: Hi Melody,🙂For \"we\", it is for working together, same work. I am also trying on my side.🙂Given example are going good, can you make it more real like rope as earlier did.Please 🙏🏻. THANK YOU,NK\n\nComment 2: Hi Melody,thank you for this,Please look at this, we need some improvements. I think while doing knot, it doesn't give real effects. Please Help.👏\nReply 1: Hi Neeraj, who do you mean by \"we\"? I have a fabric applied where front, back, and side all have the same properties and arranged the pattern pieces on the print layout to not have any gaps in the texture. If you want to make sure the sides are not wildcards when it comes to transparency, add a background color fitting the rope to the image instead of transparency. The fabric is 1mm thick, the same width as the pattern pieces. Please note a slight rectangular look cannot be avoided with very thin pattern pieces with added thickness.\n\nComment 3: Hi, I looked for a photo of a straight rope and made a seamless repeat in PS.\n\nComment 4: Hi Melody,it is double string knot like shoes laces knot. for example please see image.🙏🏻\n\nComment 5: Hi Neeraj, is it going to be just a knot of a single string? There should be a way to create this look with textures or customized topstitches, but an additional example photo would be helpful. 🙏🏻",
-        "content_description": "A web page to seek advice and tips from designers on creating a realistic thin thread or knot in 3D/graphic design.",
-        "source": "Connect Community",
-        "created_at": "2025-07-16T05:36:31.05Z",
-        "category": 220,
-        "tags": [
-            "CLO",
-            "CONNECT",
-            "CLO-SET"
-        ]
-    },
-    {
-        "id": "e7093aece8e841fb82f030519d4de2e8",
-        "url": "https://connect.clo-set.com/community/post/e7093aece8e841fb82f030519d4de2e8",
-        "title": "z-offset issue",
-        "content": "After the last update, every time I change the z-offset value, or the displacement value, it always ends up in 0. I'm not able to set it to for example 0,5 anymore. It has to be either 0 or 1.![](https://storagefiles.clo-set.com/public/community/202507/e7093aece8e841fb82f030519d4de2e8/images/9b77d4767c6e49a3a580bf7389d3d195Screenshot%202025-07-15%20125431.png)\n\n### Community Post Comments:\nComment 1: FYI, today's patch release fixes the issue.\nReply 1: Thank you so much Melody\n\nComment 2: Hi, please excuse the inconvenience - there is a bug affecting decimal input and it will be corrected in the next patch release. If it is affecting your workflow, please downgrade CLO for now. You can find all previous releases here: https://connect.clo-set.com/community/post/e7093aece8e841fb82f030519d4de2e8",
-        "content_description": "This page provides troubleshooting guidance for issues with z-offset and displacement values resetting to 0 after the latest software update.",
-        "source": "Connect Community",
-        "created_at": "2025-07-15T17:56:55.667Z",
-        "category": 220,
-        "tags": [
+            "Graphicscard",
             "CLO"
         ]
     },
     {
-        "id": "4570e6112b5b46899ee241418466dbad",
-        "url": "https://connect.clo-set.com/community/post/4570e6112b5b46899ee241418466dbad",
-        "title": "Force Closed when render ",
-        "content": "Hai please tell me how to fix every want render with Clo3D version 2025.0.040 with my laptop _HP OMEN 16 c0092AX Ryzen 7 5800H_ Ram 16GB SSD 512GB NVMe AMD Radeon x Nvidia RTX 3070 8GB GDRR6.Thanks![](https://storagefiles.clo-set.com/public/community/202507/4570e6112b5b46899ee241418466dbad/images/dff80f3371f84019ab0952be077ebef9clo3d%20dimas%20versoin.png)",
-        "content_description": "A troubleshooting guide to resolve rendering issues in Clo3D version 2025.0.040 on an HP OMEN 16 laptop with Ryzen 7 5800H and Nvidia RTX 3070.",
+        "id": "673a2e1d9abf4b9b806956bbce096ffc",
+        "url": "https://connect.clo-set.com/community/post/673a2e1d9abf4b9b806956bbce096ffc",
+        "title": "Render Issue",
+        "content": "![27d1298d3577482ea7439b527058e2e5](https://storagefiles.clo-set.com/public/community/202511/673a2e1d9abf4b9b806956bbce096ffc/images/27d1298d3577482ea7439b527058e2e5Screenshot%202025-11-12%20at%2012.21.53.png)Hi everyone,  \nI’m having an issue with rendering in CLO3D. Even though all my settings are the same as usual, the final render image looks blurry and doesn’t get sharp, no matter the resolution or quality level I choose.  \nI’ve checked lighting, camera focus, and render settings, everything seems fine.  \nHas anyone experienced this before or knows what might be causing it?\n\n### Community Post Comments:\nComment 1: I would recommend you post all your render properties. But the one thing I see is your noise is set to 0.001. Which means likely our computer cannot finish with such a low level.I usually recommend setting noise to 0.030. I have found the if I render the same image at 0.030 and lower no one can actually visually see a difference. The only thing is going lower means you you need to increase render time and it just takes more time\nReply 1: Thank you !",
+        "content_description": "A community forum page for users to discuss and troubleshoot rendering issues in CLO3D, specifically addressing blurry final images despite correct settings.",
         "source": "Connect Community",
-        "created_at": "2025-07-15T09:16:02.79Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "CLO-SET",
-            "Texture",
-            "Pattern",
-            "Rendering",
-            "Material"
-        ]
-    },
-    {
-        "id": "26b5dbd94e7f4a4fa5b783b3031b0f79",
-        "url": "https://connect.clo-set.com/community/post/26b5dbd94e7f4a4fa5b783b3031b0f79",
-        "title": "👑 Denim Royalty",
-        "content": "There's something magical about turning a traditionally casual fabric into something majestic. With _Denim Royalty_ , I wanted to explore how far denim could go when treated like couture — structured, voluminous, and with a bit of drama.\n\nThis look features a corseted upper silhouette that hugs the torso, balanced by two exaggerated puff sleeves that bring immediate visual impact. The sleeves are constructed with layered pattern pieces and volume modifiers to create a soft yet sculptural shape, mimicking the petals of a blooming flower — only in denim.\n\nThe lower part flows into a siren skirt with a soft flare and a distressed edge finish. I intentionally kept the seams exposed and slightly frayed to contrast the gown-like structure with a sense of rawness and deconstruction. It’s a clash between elegance and edge — and I love that tension.\n\nLet me know — would you wear couture denim to a gala? Because I definitely would 💙\n\n![e67be90b358b461dad81ed705961a0d3](https://storagefiles.clo-set.com/public/community/202507/26b5dbd94e7f4a4fa5b783b3031b0f79/images/e67be90b358b461dad81ed705961a0d3rotation_330.png)![824bb53b7fbd4fbb9fea032ca26588a3](https://storagefiles.clo-set.com/public/community/202507/26b5dbd94e7f4a4fa5b783b3031b0f79/images/824bb53b7fbd4fbb9fea032ca26588a31.png)![1e876aae17b347b29c980f1e88ddc348](https://storagefiles.clo-set.com/public/community/202507/26b5dbd94e7f4a4fa5b783b3031b0f79/images/1e876aae17b347b29c980f1e88ddc3484.png)![b29e80b28f6f4ac38cb521f92fdf1f1c](https://storagefiles.clo-set.com/public/community/202507/26b5dbd94e7f4a4fa5b783b3031b0f79/images/b29e80b28f6f4ac38cb521f92fdf1f1c3.png)![1843f0ce07024d2ebb7bc5b439a2060d](https://storagefiles.clo-set.com/public/community/202507/26b5dbd94e7f4a4fa5b783b3031b0f79/images/1843f0ce07024d2ebb7bc5b439a2060drotation_175.png)![4f2ce486e3c64b078a1577359b5c46bb](https://storagefiles.clo-set.com/public/community/202507/26b5dbd94e7f4a4fa5b783b3031b0f79/images/4f2ce486e3c64b078a1577359b5c46bbrotation_77.png)![ab04636067e144628e53d51e4b6a19d7](https://storagefiles.clo-set.com/public/community/202507/26b5dbd94e7f4a4fa5b783b3031b0f79/images/ab04636067e144628e53d51e4b6a19d7rotation_258.png)\n\n### Community Post Comments:\nComment 1: amazing😍\nReply 1: Thaaank u 🙂\n\nComment 2: Nice Job! 👍🏻👍🏻👏👏",
-        "content_description": "Discover how couture techniques transform casual denim into dramatic, sculptural fashion statements that blend elegance with edge.",
-        "source": "Connect Community",
-        "created_at": "2025-07-14T07:38:16.473Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "CLO-SET",
-            "CONNECT",
-            "Mixamo",
-            "Texture",
-            "Trim",
-            "Rendering",
-            "Pattern",
-            "Material"
-        ]
-    },
-    {
-        "id": "4cb5251ae9f34fe282bdbd905b5ef31d",
-        "url": "https://connect.clo-set.com/community/post/4cb5251ae9f34fe282bdbd905b5ef31d",
-        "title": "CLO X Coach Contest",
-        "content": "Hello, I am one of the participants in your competition. I noticed that you have provided some ready-made bag files on your website. I would like to ask if it is allowed to use these trim (such as buckles and chains) in our modeling and include them in our final submission?\n\nThank you for your time and support.\n\n  \n![e1dd25e3773c4a9e9fbe99f746797b2d](https://storagefiles.clo-set.com/public/community/202507/4cb5251ae9f34fe282bdbd905b5ef31d/images/e1dd25e3773c4a9e9fbe99f746797b2dScreenshot%20%28929%29.png)\n\n### Community Post Comments:\nComment 1: I'm trying to enter this contest, but I just noticed that the bag data has disappeared from the link.Could you please post a link so I can download the bag data?\n\nComment 2: Hi There. There is a folder labeled 3D scanned materials. those can be used, but otherwise everything in your project should be designed and created by you\nReply 1: hello does this include chains and trims or are we allowed to download those from clo connect? (free assets by clo)\nReply 2: Hi ediomo. You are welcome to use any hardware assets available on the CONNECT store. Either from CLO or uploaded by another userHere are some linke you may find helpful for CONNECT closures, chains, and claspshttps://connect.clo-set.com/community/post/4cb5251ae9f34fe282bdbd905b5ef31d",
-        "content_description": "This web page provides guidance on the permissible use of supplied trim components in competition submissions.",
-        "source": "Connect Community",
-        "created_at": "2025-07-13T19:26:17.62Z",
-        "category": 220,
-        "tags": [
-            "Trim",
-            "CLO",
-            "CLO-SET",
-            "CONNECT",
-            "Contest"
-        ]
-    },
-    {
-        "id": "8c2baa90ba1d4dd497ac5f1300003ce8",
-        "url": "https://connect.clo-set.com/community/post/8c2baa90ba1d4dd497ac5f1300003ce8",
-        "title": "CLO X Coach Contest",
-        "content": "Dear CLO Team,\n\nI’m interested in the CLO X Coach Contest and have a few questions regarding the requirements:\n\n  1. Regarding the line:  \n_\"Judges would like to see your concept, research/process work, and a file rendering of your leather goods capsule inclusive of handbag(s), bag charm(s), and lifestyle objects.\"_  \nDoes this mean that we should document the entire 3D design process — for example, by including concept sketches, screenshots from CLO, or a short presentation showing our workflow?\n\n  2. Is having a personal CLO3D license a requirement for participating in the contest?\n\nThank you in advance for your help!![](https://storagefiles.clo-set.com/public/community/202507/8c2baa90ba1d4dd497ac5f1300003ce8/images/f84a5b04a7e14e4492e6d9cbd01cc13dcov.png)\n\n### Community Post Comments:\nComment 1: Hi Ariel, To create a beautiful and detailed model, high-resolution materials are often necessary. I've had multiple cases where the project file exceeded the 500 MB limit. What are the recommended ways to reduce the file size to meet the requirements?Is it allowed to use materials with the lowest possible resolution during submission, even if they are not the same resolution as those used in the final render? Would that be acceptable?Also, I have another question: is it permitted to use minimal AI assistance in the final renders?Thanks!Mel\n\nComment 2: Hi Ariel,Thanks for your earlier reply! I just want to confirm a few more details about the submission format, as I’ve seen some others had similar questions too:1) Can research content and design process (like a portfolio-style layout) be submitted as a PDF, or only as image files (JPEG/PNG)?2) If PDFs are allowed, is there a file size limit or page count limit?3) Is the 1–3 image limit meant only for final renders, or does that include any research images too?4) Lastly, is there a total number or size limit for all files we can upload?Just want to make sure I’m submitting things properly and not exceeding any limits - face uploading errors. Thanks again for your help!\n\nComment 3: Hi There!1) You can choose what/how much you would like to share. Any of the options mentioned above are great2) A Valid personal CLO License should be used\nReply 1: Thank you!\nReply 2: Hi there, just an addition on this subject, Submission Guidelines mention: 1 Project File (.zprj)&nbsp;No larger than 500 MB1-3 Final Renders (.png or .jpeg)&nbsp;Max Image resolution of 4KMax Image file size of 10MBProject File &amp; Renders must include at least 1 handbagIncluding additional items of your choice, such as bag charms, garments, avatars, etc is Optional.If we would like to upload a research file , where would that be?\nReply 3: Hi AntoniaK. Research files would also be uploaded as part of the submission. Same place renders would be",
-        "content_description": "This page provides detailed information and answers to common questions about the CLO X Coach Contest requirements and participation.",
-        "source": "Connect Community",
-        "created_at": "2025-07-11T09:34:10.423Z",
+        "article_created_at": "2025-11-12T09:29:18.983Z",
+        "article_updated_at": "2025-11-12T09:29:18.983Z",
         "category": 220,
         "tags": [
             "CLO",
-            "CONNECT",
-            "Contest"
+            "CLO-SET",
+            "CONNECT"
         ]
     },
     {
-        "id": "9eae1e2cde2d45c29f690f5a7ff0545e",
-        "url": "https://connect.clo-set.com/community/post/9eae1e2cde2d45c29f690f5a7ff0545e",
-        "title": "CONNECT upload issues, which file formats are supported by thumbnails when the store uploads files？",
-        "content": "CONNECT upload issues, what file formats does the thumbnail support when the store uploads a file?  \nI flipped through the reference manual:  \nSupported image formats: jpeg/.png/.bmp, supported video formats: webp, videos in non-WEBP formats such as MP4, AVI, etc. must be converted to WEBP format and uploaded as thumbnails.  \nWhy can't I upload thumbnails when I convert video format to WEBP format?  \nCan I only upload jpeg/.png/.bmp?  \nCan I upload only attached images in WEBP format?  \nThe last time I uploaded the attached image to the file, I added an image in WEBP format, but the attached image could not be seen after the upload was successful.  \nI now have a question about whether thumbnails can be used above transmission diagrams, and what formats are supported?![984edb8db639462aa74cdc203a3dca82](https://storagefiles.clo-set.com/public/community/202507/9eae1e2cde2d45c29f690f5a7ff0545e/images/984edb8db639462aa74cdc203a3dca82675aef31082482f3e6134c70dadec81e.png)![adf14aacb52e4a1a8391e6eb99985ad0](https://storagefiles.clo-set.com/public/community/202507/9eae1e2cde2d45c29f690f5a7ff0545e/images/adf14aacb52e4a1a8391e6eb99985ad0dde18e76b9db50daf0ba04dd6056d177.png)\n\n### Community Post Comments:\nComment 1: Hi, CLO footageWe limit thumbnail uploads to JPG and PNG only, in order to ensure a seamless browsing experience for users when viewing items. Since loading speed is less critical when opening an item's detail page, WebP animation can be used for additional images.When using WebP animation, it is limited to a total of 50 megapixels (the sum of sizes of all frames). This is a guideline of the image delivery service used on our platform. If this limit is exceeded, the WebP image may not be displayed properly.\nReply 1: Okay, thanks for the answer, the reference manual can explain it properly or mark the thumbnail with JPG and PNG upload only",
-        "content_description": "This web page clarifies supported file formats and troubleshooting tips for uploading thumbnails, specifically addressing image and video format compatibility in the CONNECT system.",
+        "id": "03d554de45574c7c8830cdedca8b0769",
+        "url": "https://connect.clo-set.com/community/post/03d554de45574c7c8830cdedca8b0769",
+        "title": "Graphics not showing base fabric texture",
+        "content": "Hello, I am new to Clo and trying apply a print to a fabric (with a normal map that I created of a unique fabric) but when I do this as you can see below on the front panel, the fabric map / texture doesn't show up. In the graphics properties I tried to add the normal map as per the fabric and made it have the same settings but this didn't work. I can see a lot of old posts about how to get sublimated garment graphics showing properly but I am not sure on the latest versions how to do this (2025.1.236). Any help would be greatly appreciated!\n\n![93b8087c3b254d9da8d6e163659d467e](https://storagefiles.clo-set.com/public/community/202511/03d554de45574c7c8830cdedca8b0769/images/93b8087c3b254d9da8d6e163659d467eCapture.PNG)\n\n### Community Post Comments:\n\n\nComment 2: Hi There. If you want to use the Normal map that is from the applied fabric you do not add a normal map to the graphic, instead you check the box directly below that says \"Use same Map as Fabric\"Also from your screenshot I do see something added to the Normal Map area. But it is just a white box (possibly has a texture I cannot see) but that is not a normal Map either way. Normal Maps have a bluish/purplish color similar to screenshot for a normal map brick attached below\nReply 1: Thanks for your help Ariel I will check those out and give it a go!",
+        "content_description": "A community support page seeking guidance on correctly applying and displaying custom fabric textures and normal maps in Clo 3D version 2025.1.236.",
         "source": "Connect Community",
-        "created_at": "2025-07-11T05:49:22.35Z",
+        "article_created_at": "2025-11-12T00:46:17.133Z",
+        "article_updated_at": "2025-11-12T00:46:17.133Z",
         "category": 220,
         "tags": [
-            "CLO"
+            "CLO",
+            "Texture"
         ]
     },
     {
-        "id": "0de83b1d32ad4f97bb6ab97f45f635ba",
-        "url": "https://connect.clo-set.com/community/post/0de83b1d32ad4f97bb6ab97f45f635ba",
-        "title": "Ocean Tales Collection 🌊🪼☔",
-        "content": "💙 Welcome to my _Ocean Tales_ , a collection where fashion floats between reality and fantasy.\n\nFrom mermaid vibes to jellyfish magic and rainy day drama—each look is a little piece of the sea, transformed into digital couture. Iridescent fabrics, liquid textures, flowing silhouettes and dreamy details take center stage in this underwater adventure.\n\nWhich one is your favorite?  \n💧 The Rainy Diva ☔  \n🪼 The Jellyfish Queen  \n🧜‍♀️ The Ocean’s Fairy\n\n![300828305e964b8e9eb6443cacad67d7](https://storagefiles.clo-set.com/public/community/202507/0de83b1d32ad4f97bb6ab97f45f635ba/images/300828305e964b8e9eb6443cacad67d7frontal0187.png)![3924646e992943f19d2fb1ef0c457863](https://storagefiles.clo-set.com/public/community/202507/0de83b1d32ad4f97bb6ab97f45f635ba/images/3924646e992943f19d2fb1ef0c457863frontal0005.png)![9f4304caf8cf45669228f2b1a44c3415](https://storagefiles.clo-set.com/public/community/202507/0de83b1d32ad4f97bb6ab97f45f635ba/images/9f4304caf8cf45669228f2b1a44c3415rotation0324.png)![e80d133fdf294dffbb9c2201fdfe2cdb](https://storagefiles.clo-set.com/public/community/202507/0de83b1d32ad4f97bb6ab97f45f635ba/images/e80d133fdf294dffbb9c2201fdfe2cdbfrontal0173.png)![44d62cd6080b4191ba90403dc2223874](https://storagefiles.clo-set.com/public/community/202507/0de83b1d32ad4f97bb6ab97f45f635ba/images/44d62cd6080b4191ba90403dc2223874lateral0398.png)![4a39739e1d9d4e1491d3a5c5c61c81fc](https://storagefiles.clo-set.com/public/community/202507/0de83b1d32ad4f97bb6ab97f45f635ba/images/4a39739e1d9d4e1491d3a5c5c61c81fczoom0071.png)![3a345dfcf4f04e4ba543667c5b346968](https://storagefiles.clo-set.com/public/community/202507/0de83b1d32ad4f97bb6ab97f45f635ba/images/3a345dfcf4f04e4ba543667c5b346968zoom0389.png)![811b33bbac464312b80c6eabbc324ba6](https://storagefiles.clo-set.com/public/community/202507/0de83b1d32ad4f97bb6ab97f45f635ba/images/811b33bbac464312b80c6eabbc324ba6lateral0303.png)\n\n### Community Post Comments:\nComment 1: amazing😍\n\nComment 2: Very elegant and wonderful masterpiece👏👏❤️\n\nComment 3: A beautiful work 👍🏻😍👏\nReply 1: Thank u ❤️\n\nComment 4: This collection is wonderful! My personal favorite is The Jellyfish Queen. 🪼 Did you also create the jellyfish and fish in CLO?\nReply 1: Thanks a lot, the clothes and their animation with Clo. the enviroment and the assets with Blender and Unreal",
-        "content_description": "Discover _Ocean Tales_, where sea-inspired digital couture transforms mermaid dreams and ocean magic into wearable fantasy fashion.",
+        "id": "09474b7ab0b9400bbe7bd438397fc81b",
+        "url": "https://connect.clo-set.com/community/post/09474b7ab0b9400bbe7bd438397fc81b",
+        "title": "通勤轻奢风穿搭",
+        "content": "都市酷女孩的轻奢出街配方\n\n![ae608e1922e5453f86f2595c6b6479bb](https://storagefiles.clo-set.com/public/community/202511/09474b7ab0b9400bbe7bd438397fc81b/images/ae608e1922e5453f86f2595c6b6479bb%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-11-11%20150353.png)\n\n详情可以看我主页！",
+        "content_description": "介绍都市酷女孩的轻奢时尚搭配灵感，助你轻松打造出街好look。",
         "source": "Connect Community",
-        "created_at": "2025-07-10T07:10:53.827Z",
+        "article_created_at": "2025-11-11T07:06:54.333Z",
+        "article_updated_at": "2025-11-11T07:06:54.333Z",
         "category": 210,
         "tags": [
             "CLO",
-            "Substance",
-            "UnrealEngine",
-            "CLO-SET",
-            "CONNECT",
-            "Blender",
-            "Animation",
             "Avatar",
-            "LiveSync",
+            "Substance",
+            "Photoshop",
             "Rendering"
         ]
     },
     {
-        "id": "22bf2fd50372473094c568a6af3789ac",
-        "url": "https://connect.clo-set.com/community/post/22bf2fd50372473094c568a6af3789ac",
-        "title": "How to Grade Patterns?",
-        "content": "Hey Community! I was wondering if there was a course in Clo Academy about grading or if anyone has any tutorials on how to grade patterns? I would love to learn how to properly grade my patterns! Any insight or tips would be greatly appreciated :)",
-        "content_description": "A community page for sharing resources and tips on pattern grading techniques and tutorials.",
+        "id": "c54f82abac964292bb3e6ed94aebe5a0",
+        "url": "https://connect.clo-set.com/community/post/c54f82abac964292bb3e6ed94aebe5a0",
+        "title": "Customize Kid's avatar",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202511/c54f82abac964292bb3e6ed94aebe5a0/images/192be51913c5452c8446ade6ceffab2dScreenshot%202025-11-10%20180239.png)How can I customize the kid's avatar measurement?\n\n### Community Post Comments:\nComment 1: Hi there, for now, it is not possible to edit the baby avatar's measurements.\nReply 1: thanks for the reply @lucile",
+        "content_description": "This page provides instructions on how to customize your kid's avatar measurements for a better fit.",
         "source": "Connect Community",
-        "created_at": "2025-07-09T13:57:41.54Z",
+        "article_created_at": "2025-11-10T12:34:13.27Z",
+        "article_updated_at": "2025-11-10T12:34:13.27Z",
+        "category": 220,
+        "tags": [
+            "CLO",
+            "Avatar",
+            "customize",
+            "measurement"
+        ]
+    },
+    {
+        "id": "9f7cce406aab4cbca9310630cf19a037",
+        "url": "https://connect.clo-set.com/community/post/9f7cce406aab4cbca9310630cf19a037",
+        "title": "🏆 Announcing the Winners of the HAZZYS FOOTBALL CLUB ⚽",
+        "content": "## ![](https://storagefiles.clo-set.com/public/community/202511/9f7cce406aab4cbca9310630cf19a037/images/08f14cf36fbb4a5c84b0569ed1999126Hazzys%20WINNER%20COMMUNITY%20THUMBNAIL.png)![](https://storagefiles.clo-set.com/public/community/202511/9f7cce406aab4cbca9310630cf19a037/images/1c2245d2fdd24d39a78291acc07188f31st_NAT-VIRTUAL%20%282%29.jpg)![](https://storagefiles.clo-set.com/public/community/202511/9f7cce406aab4cbca9310630cf19a037/images/a54a6b403ebc4ee6a45e05a2168dee511st_NAT-VIRTUAL%20%281%29.jpg)**_📣 Huge shout out to the winners of our  \nCONNECT X HAZZYS contest winners! ⁠⁠_**  \n⁠\n\n* * *\n\n🏆 \n\n  \n1st @NAT-VIRTUAL⁠  \n  \n2nd @⁠shybaby.club  \n  \n3rd @niloofar.Rsh @Anny Han  \n  \n4th @Kimia Karami @tmtlv @endy0307 @koojihye14 @Javad Hashemi⁠  \n\n\n* * *\n\n⁠\n\nYouTube Video: https://www.youtube.com/watch?v=_Tq6Au7YgTQ?start=0\n\n* * *\n\n  \nCongrats to our winners who perfectly designed the moment where heritage charm, vintage football spirit, and modern boldness come together in a timeless look by using clo3d and marvelousdesigner.   \n  \n⚽️ ⁠⁠A big thank you to all participants for their passion and dedication!⁠  \n  \nMore design contests are comming, so stay tuned! 😎⁠\n\n### Community Post Comments:\nComment 1: ❤️❤️❤️\n\nComment 2: Congrats!👏\n\nComment 3: Congratulations everyone👏👏👏",
+        "content_description": "Celebrating the winners of the CONNECT X HAZZYS design contest who creatively blended heritage, vintage football spirit, and modern style using CLO3D and Marvelous Designer.",
+        "source": "Connect Community",
+        "article_created_at": "2025-11-10T05:26:30.07Z",
+        "article_updated_at": "2025-11-10T05:26:30.07Z",
+        "category": 100,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "CONNECT",
+            "Contest",
+            "HAZZYS",
+            "WINNER",
+            "ANNOUNCEMENT"
+        ]
+    },
+    {
+        "id": "cc07ed8986654c27940181d6a75fbe10",
+        "url": "https://connect.clo-set.com/community/post/cc07ed8986654c27940181d6a75fbe10",
+        "title": "Silk in Motion — J1atelier’s Second Styling & Rotation Render Update",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202511/cc07ed8986654c27940181d6a75fbe10/images/6610d41b85074a0d98d46c52409ccb9ejewel%20rendering%20with%20pose%200361%201920.png)![7b3e153b725b4b88ab1694a36b5c0d58](https://storagefiles.clo-set.com/public/community/202511/cc07ed8986654c27940181d6a75fbe10/images/7b3e153b725b4b88ab1694a36b5c0d58jewel%20rendering%20with%20pose%200362%201920.png)\n\nHi everyone! \n\nLast week, I shared the **second version of my silk scarf styling** from the collection:\n\n<https://connect.clo-set.com/ko/detail/dde0e857926b42229684b1b3b4630f64>\n\nSince then, I’ve been working on the rotation render — it took almost a week to complete the animation, rendering, and edit the final video with sound to create the right atmosphere.\n\nfor the moment you can see this rotation video through my Instagram reels or my Youtube channel!\n\nA full 360° render is now available:\n\n[https://www.instagram.com/reel/DQuELECjzvH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==](https://www.instagram.com/reel/DQuELECjzvH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)\n\n<https://youtube.com/shorts/T-PaOWKIlkM?si=xKiefaxxg3GnRMSU>\n\nAnd I’m also working on bringing **Genevieve** , my virtual muse, to life in this look —  \ndeveloping a close-up motion piece that captures her subtle expressions and gestures.\n\nIf you want to see the latest update, you know where to find it! ✨\n\n### Community Post Comments:\nComment 1: That week of rendering was clearly worth it—the final 360° view is just mesmerizing and so satisfying to watch!\nReply 1: Thanks! I'm so glad to hear that, it really means a lot ❤️\n\nComment 2: How did you create such delicate drapes?😍 It's so perfect and this is so tutorial-worthy! If you made a tutorial, I'd watch it every single day!🙏🏻\nReply 1: I used to play with my mom’s scarves when I was little, and I remembered how I used to wrap them around my body — so I tried to recreate that same feeling by draping it on the avatar in CLO. I’m so glad you think it’s tutorial-worthy! That’s a great idea — I’ll definitely consider making one. Thank you so much for your comment! ❤️\n\nComment 3: The drapery is breathtaking! Everyone needs to see this!😍\nReply 1: Thank you for your comment! The flow and softness of silk were the main focus for this piece.❤️",
+        "content_description": "Showcasing the latest 360° rotation render and styling updates of the silk scarf collection featuring the virtual muse Genevieve.",
+        "source": "Connect Community",
+        "article_created_at": "2025-11-07T19:00:02.363Z",
+        "article_updated_at": "2025-11-07T19:00:02.363Z",
         "category": 210,
         "tags": [
             "CLO",
-            "CLOAcademy",
-            "Grading",
-            "Patterning"
+            "Blender",
+            "J1atelier",
+            "phygital",
+            "virtualmodel",
+            "Genevieve",
+            "virtualfashion",
+            "3ddesign"
+        ]
+    },
+    {
+        "id": "7ee65b653f9b439581322691308d68c8",
+        "url": "https://connect.clo-set.com/community/post/7ee65b653f9b439581322691308d68c8",
+        "title": "Looking for a 3D avatar editor for apparel fitting",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202511/7ee65b653f9b439581322691308d68c8/images/d220f9ea8aac4b13bfe02844e7bfbbf6Frame%2024.png)![](https://storagefiles.clo-set.com/public/community/202511/7ee65b653f9b439581322691308d68c8/images/f79940439c0d45cbabf5d0e4b85e5658Frame%2024.png)Is there an editor that I can use to build a 3D avatar in any size/proportions/body shape/etc. for CLO?\n\nMy only alternative at the moment is the Alvanon Body Platform - which is just a database of 3D avatars for apparel fitting.\n\n### Community Post Comments:\nComment 1: Hi! Have you tried to CLO Avatar editor? We would recommend this as a place to starthttps://connect.clo-set.com/community/post/7ee65b653f9b439581322691308d68c8",
+        "content_description": "This webpage provides information about customizable 3D avatar editors compatible with CLO for creating avatars of any size, proportion, and body shape.",
+        "source": "Connect Community",
+        "article_created_at": "2025-11-07T14:10:10.23Z",
+        "article_updated_at": "2025-11-07T14:10:10.23Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "AutoFitting",
+            "Avatar",
+            "Import_Export",
+            "Animation"
+        ]
+    },
+    {
+        "id": "e6ce86baaf0f44a088b44f18301b2d9d",
+        "url": "https://connect.clo-set.com/community/post/e6ce86baaf0f44a088b44f18301b2d9d",
+        "title": "轻熟优雅风格搭配",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202511/e6ce86baaf0f44a088b44f18301b2d9d/images/605ca4dc9f5c4db99fae4159dfe50851mmexport1762424991339.jpg)![](https://storagefiles.clo-set.com/public/community/202511/e6ce86baaf0f44a088b44f18301b2d9d/images/807d1887e10d4d0da3191b9d856eb07120251105095116Aicy.png)做了一个搭配，里面的鞋子和耳坠有喜欢的话可以去我主页看看哦！\n\n# ![eb1511e8d7ed4849a00e0183d2bce02d](https://storagefiles.clo-set.com/public/community/202511/e6ce86baaf0f44a088b44f18301b2d9d/images/eb1511e8d7ed4849a00e0183d2bce02dmmexport1762424371404.jpg)\n\n### Community Post Comments:\nComment 1: Thank you for the amazing items!👍🏻\nReply 1: ❤️❤️❤️",
+        "content_description": "展示时尚搭配灵感，推荐鞋子和耳坠，欢迎访问主页了解更多。",
+        "source": "Connect Community",
+        "article_created_at": "2025-11-06T10:31:39.78Z",
+        "article_updated_at": "2025-11-06T10:31:39.78Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "CLO-SET",
+            "Avatar",
+            "LiveSync",
+            "Rendering",
+            "Photoshop"
         ]
     }
 ]

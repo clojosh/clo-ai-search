@@ -5,6 +5,7 @@ import shutil
 import sys
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime, timezone
 
 import questionary
 import requests  # type: ignore
@@ -17,7 +18,14 @@ if _src_root not in sys.path:
 
 from search.ai_search import AISearch
 from tools.azure import Azure
-from tools.misc import check_image_exists, get_section_and_category, html_to_markdown_converter, num_tokens_from_string, remove_unwanted_markdown_images, trim_tokens
+from tools.misc import (
+    check_image_exists,
+    get_section_and_category,
+    html_to_markdown_converter,
+    num_tokens_from_string,
+    remove_unwanted_markdown_images,
+    trim_tokens,
+)
 
 
 class Article:
@@ -114,7 +122,9 @@ class Article:
                 elif brand == "clovf":
                     url_matches = re.findall(rf"https:\/\/clovf-hc\.zendesk\.com\/hc\/{azure.get_locale()}\/articles\/\d+", article["html_url"])
                 elif brand == "md":
-                    url_matches = re.findall(rf"https:\/\/support\.marvelousdesigner\.com\/hc\/{azure.get_locale()}\/articles\/\d+", article["html_url"])
+                    url_matches = re.findall(
+                        rf"https:\/\/support\.marvelousdesigner\.com\/hc\/{azure.get_locale()}\/articles\/\d+", article["html_url"]
+                    )
 
                 if len(url_matches) > 0:
                     article["html_url"] = url_matches[0]
@@ -125,7 +135,9 @@ class Article:
                 article["body"] = trim_tokens(markdown)
 
                 article["id"] = str(article["id"])
-                article["section_id"], article["section"], article["category_id"], article["category"] = get_section_and_category(self.azure, article["section_id"])
+                article["section_id"], article["section"], article["category_id"], article["category"] = get_section_and_category(
+                    self.azure, article["section_id"]
+                )
 
                 documents.append(
                     {
@@ -135,7 +147,8 @@ class Article:
                         "content": article["body"],
                         "content_description": self.azure.openai_helper.create_webpage_description(article["body"]),
                         "source": "Zendesk",
-                        "created_at": article["updated_at"],
+                        "article_created_at": article["created_at"],
+                        "article_updated_at": article["updated_at"],
                         "category_id": article["category_id"],
                         "category": article["category"],
                         "section_id": article["section_id"],
@@ -205,15 +218,19 @@ class Article:
         with open(output_path, "w+", encoding="utf-8") as f:
             json.dump(all_bad_images, f, ensure_ascii=False, indent=4)
 
-    def get_zendesk_articles(self, article_path: str, article_id: str, page: str):
+    def get_zendesk_articles(self, article_path: str, article_id: str | None, page: str):
         if article_id:
             print(f"\nRetrieving Page {page}")
 
         # No need to instantiate Azure again; we use the one attached to this instance
-        endpoint = self.azure.get_zendesk_article_api_endpoint(article_id) if article_id is not None else self.azure.get_zendesk_articles_api_endpoint(page)
+        endpoint = (
+            self.azure.get_zendesk_article_api_endpoint(article_id) if article_id is not None else self.azure.get_zendesk_articles_api_endpoint(page)
+        )
 
         try:
-            response = requests.get(endpoint, headers={"Content-Type": "application/json"})
+            response = requests.get(
+                endpoint, headers={"Content-Type": "application/json"}, auth=(self.azure.ZENDESK_USERNAME, self.azure.ZENDESK_PASSWORD)
+            )
             response.raise_for_status()
             json_objects = response.json()
 
@@ -242,6 +259,8 @@ class Article:
         with open(file_path, "r", encoding="utf-8") as f:
             documents = json.load(f)
 
+        now = datetime.now(timezone.utc).isoformat()
+
         for i, document in enumerate(documents):
             if document["content"] == "":
                 document["content"] = document["title"]
@@ -249,6 +268,15 @@ class Article:
             documents[i]["@search.action"] = "mergeOrUpload"
             documents[i]["title_vector"] = self.azure.openai_helper.generate_embeddings(text=document["title"])
             documents[i]["content_vector"] = self.azure.openai_helper.generate_embeddings(text=document["content"])
+
+            # created_at is set once (kept from the existing indexed document if present);
+            # updated_at is refreshed on every upload.
+            try:
+                existing = self.azure.search_client.get_document(key=document["article_id"])
+                documents[i]["created_at"] = existing.get("created_at") or now
+            except Exception:
+                documents[i]["created_at"] = now
+            documents[i]["updated_at"] = now
 
             del documents[i]["tokens"]
             del documents[i]["section_id"]
@@ -258,8 +286,16 @@ class Article:
 
         if self.azure.brand == "clovf":
             # Upload clovf articles to both clo3d and clo-set
-            self._raise_if_index_failed(Azure(self.azure.stage, "clo3d", self.azure.language).search_client.upload_documents(documents))
-            self._raise_if_index_failed(Azure(self.azure.stage, "closet", self.azure.language).search_client.upload_documents(documents))
+            self._raise_if_index_failed(
+                Azure(app=self.azure.app, brand="clo3d", stage=self.azure.stage, language=self.azure.language).search_client.upload_documents(
+                    documents
+                )
+            )
+            self._raise_if_index_failed(
+                Azure(app=self.azure.app, brand="closet", stage=self.azure.stage, language=self.azure.language).search_client.upload_documents(
+                    documents
+                )
+            )
         else:
             self._raise_if_index_failed(self.azure.search_client.upload_documents(documents))
 
@@ -267,7 +303,7 @@ class Article:
 if __name__ == "__main__":
     app = questionary.select("What do you want to do?", choices=["Chat Bot", "CLO API"]).ask()
     stage = questionary.select("Which stage?", choices=["dev", "prod"]).ask()
-    brand = questionary.select("Which brand?", choices=["clo3d", "closet", "connect", "md", "allinone"]).ask()
+    brand = questionary.select("Which brand?", choices=["clo3d", "closet", "connect", "clovf", "md", "allinone"]).ask()
     language = questionary.select("Which language?", choices=["English", "Korean"]).ask()
     task = questionary.select(
         "What task?",
@@ -292,7 +328,7 @@ if __name__ == "__main__":
         article.get_zendesk_articles(article.azure.get_article_path(), article_id, "")
 
     elif task == "Get All Zendesk Articles":
-        first_page_resp = requests.get(azure.get_zendesk_articles_api_endpoint(1), headers={"Content-Type": "application/json"})
+        first_page_resp = requests.get(azure.get_zendesk_articles_api_endpoint("1"), headers={"Content-Type": "application/json"})
         page_count = first_page_resp.json().get("page_count", 1)
         article_path = azure.get_article_path()
 
@@ -345,7 +381,18 @@ if __name__ == "__main__":
         article.delete_excluded_documents(brand=brand)
 
     elif task == "Find & Delete AI Search Documents":
-        search_fields_options = ["article_id", "source", "title", "content", "content_description"]
+        search_fields_options = [
+            "article_id",
+            "url",
+            "title",
+            "content",
+            "source",
+            "content_description",
+            "article_created_at",
+            "article_updated_at",
+            "created_at",
+            "updated_at",
+        ]
 
         search_field = questionary.select("Search field?", choices=search_fields_options).ask()
         search_text = questionary.text("Search value?").ask()
@@ -353,7 +400,7 @@ if __name__ == "__main__":
         documents = ai_search.find_all_ai_search_documents(search_fields=[search_field], search_text=search_text)
 
         for document in documents:
-            print(document["article_id"] + "\n" + document["source"], "\n")
+            print(document["article_id"] + "\n" + document["url"], "\n")
 
         print(f"\nTotal documents found: {len(documents)}\n")
 

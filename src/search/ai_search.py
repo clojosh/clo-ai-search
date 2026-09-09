@@ -155,10 +155,25 @@ class AISearch:
             # 2. Core Searchable Content
             SearchableField(name="title", type=SearchFieldDataType.String, filterable=True, searchable=True, retrievable=True, sortable=True),
             SearchableField(name="content", type=SearchFieldDataType.String, filterable=True, searchable=True, retrievable=True, sortable=True),
-            SearchableField(name="content_description", type=SearchFieldDataType.String, filterable=True, searchable=True, retrievable=True, sortable=True),
+            SearchableField(
+                name="content_description", type=SearchFieldDataType.String, filterable=True, searchable=True, retrievable=True, sortable=True
+            ),
             # 3. Metadata
             SearchableField(name="source", type=SearchFieldDataType.String, filterable=True, searchable=True, retrievable=True, sortable=True),
-            SearchableField(name="created_at", type=SearchFieldDataType.DateTimeOffset, filterable=True, searchable=True, retrievable=True, sortable=True),
+            # Source (Zendesk) timestamps for the article itself
+            SearchableField(
+                name="article_created_at", type=SearchFieldDataType.DateTimeOffset, filterable=True, searchable=True, retrievable=True, sortable=True
+            ),
+            SearchableField(
+                name="article_updated_at", type=SearchFieldDataType.DateTimeOffset, filterable=True, searchable=True, retrievable=True, sortable=True
+            ),
+            # Ingestion/index timestamps for when this doc was created/updated in Azure AI Search
+            SearchableField(
+                name="created_at", type=SearchFieldDataType.DateTimeOffset, filterable=True, searchable=True, retrievable=True, sortable=True
+            ),
+            SearchableField(
+                name="updated_at", type=SearchFieldDataType.DateTimeOffset, filterable=True, searchable=True, retrievable=True, sortable=True
+            ),
             # 4. Collections
             SearchField(
                 name="title_vector",
@@ -327,7 +342,8 @@ class AISearch:
         for result in results:
             document = {}
             for i, field in enumerate(select):
-                document[field] = result[field].strip()
+                value = result[field]
+                document[field] = value.strip() if isinstance(value, str) else value
 
                 if log_results:
                     if i == 0:
@@ -342,7 +358,7 @@ class AISearch:
 
         return documents
 
-    def find_all_ai_search_documents(self, search_fields: List[str] = [], search_text: str = "") -> List[dict]:
+    def find_all_ai_search_documents(self, search_fields: list[str] = [], search_text: str = "") -> list[dict]:
         """
         Finds all AI search documents in the Azure Search index
 
@@ -357,7 +373,16 @@ class AISearch:
 
         documents = []
         for r in results:
-            documents.append({"article_id": r["article_id"], "url": r["url"]})
+            documents.append(
+                {
+                    "article_id": r["article_id"],
+                    "url": r["url"],
+                    "article_created_at": r.get("article_created_at"),
+                    "article_updated_at": r.get("article_updated_at"),
+                    "created_at": r.get("created_at"),
+                    "updated_at": r.get("updated_at"),
+                }
+            )
 
         return documents
 
@@ -392,14 +417,14 @@ class AISearch:
             os.makedirs(index_path, exist_ok=True)
 
         if file_type == "csv":
-            fields = ["article_id", "title", "content", "source"]
+            fields = select if select else ["article_id", "title", "content", "source"]
             with open(os.path.join(index_path, f"{brand}.csv"), "w", encoding="utf-8") as f:
                 write = csv.writer(f)
                 write.writerow(fields)
 
                 pbar = tqdm(results, position=1, leave=False, colour="red")
-                for i, result in enumerate(pbar):
-                    write.writerows([[result["article_id"], result["title"], result["content"], result["source"]]])
+                for result in pbar:
+                    write.writerows([[result.get(field) for field in fields]])
         else:
             with open(os.path.join(index_path, f"{brand}.json"), "w+", encoding="utf-8") as f:
                 json.dump(results, f, ensure_ascii=False, indent=4)
@@ -436,10 +461,21 @@ if __name__ == "__main__":
         search_fields = questionary.checkbox("Search Fields?", choices=["article_id", "title", "source", "content"]).ask()
         search_text = questionary.text("Search Text?").ask()
 
+        select_choices = [
+            "article_id",
+            "title",
+            "source",
+            "content",
+            "article_created_at",
+            "article_updated_at",
+            "created_at",
+            "updated_at",
+        ]
+
         if task == "Delete Documents":
             select = ["article_id", "title", "source"]
         else:
-            select = questionary.checkbox("Select?", choices=["article_id", "title", "source", "content"]).ask()
+            select = questionary.checkbox("Select?", choices=select_choices).ask()
 
         if task == "Delete Documents":
             documents = ai_search.find_documents(search_fields=search_fields, search_text=search_text, select=select)
@@ -464,19 +500,11 @@ if __name__ == "__main__":
             ai_search.find_documents(search_fields=search_fields, search_text=search_text, select=select, log_results=True)
 
     elif task == "Copy Index":
-        source_service = questionary.text(
-            "Source Azure Search service name?", default=os.environ.get("SOURCE_AZURE_SEARCH_SERVICE", "")
-        ).ask()
-        source_key = questionary.password(
-            "Source Azure Search admin/query key?", default=os.environ.get("SOURCE_AZURE_SEARCH_KEY", "")
-        ).ask()
+        source_service = questionary.text("Source Azure Search service name?", default=os.environ.get("SOURCE_AZURE_SEARCH_SERVICE", "")).ask()
+        source_key = questionary.password("Source Azure Search admin/query key?", default=os.environ.get("SOURCE_AZURE_SEARCH_KEY", "")).ask()
         source_index = questionary.text("Source index name?").ask()
-        target_service = questionary.text(
-            "Target Azure Search service name?", default=os.environ.get("TARGET_AZURE_SEARCH_SERVICE", "")
-        ).ask()
-        target_key = questionary.password(
-            "Target Azure Search admin key?", default=os.environ.get("TARGET_AZURE_SEARCH_KEY", "")
-        ).ask()
+        target_service = questionary.text("Target Azure Search service name?", default=os.environ.get("TARGET_AZURE_SEARCH_SERVICE", "")).ask()
+        target_key = questionary.password("Target Azure Search admin key?", default=os.environ.get("TARGET_AZURE_SEARCH_KEY", "")).ask()
         target_index = questionary.text("Target index name?").ask()
 
         ai_search.copy_index(

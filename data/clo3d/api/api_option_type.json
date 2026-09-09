@@ -1,128 +1,682 @@
 [
     {
-        "article_id": "aRhUoi4tCf48Z89irJmoEK",
+        "article_id": "CKbj9NTaqeRhWUNiFWTFkj",
+        "url": "https://developer.clo3d.com/optiontype.html#weld-type",
+        "source": "API",
+        "title": "WELD_TYPE",
+        "content": "## WELD_TYPE\uf0c1\n``` \nFULLY_UNWELDED = 0\nDEFAULT_WELDED = 1\nFULLY_WELDED = 2\nSELECTED_WELDED = 3\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "EPeDGqJq58YzFxxpKpaehM",
+        "url": "https://developer.clo3d.com/optiontype.html#object-browser-category",
+        "source": "API",
+        "title": "OBJECT_BROWSER_CATEGORY",
+        "content": "## OBJECT_BROWSER_CATEGORY\uf0c1\n``` \nOB_FABRIC = 0\nOB_BUTTON = 1\nOB_TOPSTITCH = 2\nOB_TRIM = 3\nOB_ZIPPER = 4\nOB_GRAPHIC = 5\nOB_BUTTONHOLE = 6\nOB_PUCKERING = 7\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "jiUcTqZ2K4E5cBwGu8HcU9",
+        "url": "https://developer.clo3d.com/optiontype.html#objectbrowserresult",
+        "source": "API",
+        "title": "ObjectBrowserResult",
+        "content": "## ObjectBrowserResult\uf0c1\n``` \nsuccess:bool\nobjectUid:int\nmessage:str\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "NtcReD8J5mAbF69arzqZv9",
+        "url": "https://developer.clo3d.com/optiontype.html#windcontrolleroptions",
+        "source": "API",
+        "title": "WindControllerOptions",
+        "content": "## WindControllerOptions\uf0c1\n``` \nbWindActive:bool\nwindType:int\nstrength:float\ndecay:float\nfrequency:float\nturbulence:float\nx:float\ny:float\nz:float\nrotationX:float\nrotationY:float\nrotationZ:float\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "DXR8i8y2bRPwX59uhmvvM2",
+        "url": "https://developer.clo3d.com/optiontype.html#alembicunit",
+        "source": "API",
+        "title": "AlembicUnit",
+        "content": "## AlembicUnit\uf0c1\n``` \nMEASURE_UNIT_MM:float\nMEASURE_UNIT_CM:float\nMEASURE_UNIT_INCH:float\nMEASURE_UNIT_FEET:float\nMEASURE_UNIT_M:float\nMEASURE_UNIT_8_FEET:float\nMEASURE_UNIT_8_6_FEET:float\nMEASURE_UNIT_AUTO:float\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "emsnaKNMKpLTxMndcFNqmr",
         "url": "https://developer.clo3d.com/optiontype.html#importexportoption",
         "source": "API",
         "title": "ImportExportOption",
-        "content": "## ImportExportOption\uf0c1\n``` \nbExportGarment:bool\nbExportAvatar:bool\nbSingleObject:bool\nbThin:bool\nbUnifiedUVCoordinates:bool\nbCreateUnifiedTexture:bool\nunifiedTextureSize:float\nunifiedTextureFillSeamSize:int\nbUseInifinteSeams:bool\nunifiedTextureBakeMargin:float\nunifiedTextureBakeRelateive:bool\nbUnifiedDiffuseMap:bool\nbUnifiedNormalMap:bool\nbUnifiedMetalnessMap:bool\nbUnifiedRoughnessMap:bool\nbUnifiedOpacityMap:bool\nbUnifiedDisplacementMap:bool\nbIncludeHiddenObject:bool\nbIncludeInnerShape:bool\nscale:float\naxisX:int\naxisY:int\naxisZ:int\nbInvertX:bool\nbInvertY:bool\nbInvertZ:bool\nbSaveColorWays:bool\nbSaveInZip:bool\nbDiffuseColorCombined:bool\nbExcludeAmbient:bool\nbOpacityMap:bool\nbMetaData:bool\nbEmbedded:bool\nbExportLight:bool\nbExportFabric:bool\nbExportAnimation:bool\nbSaveColorWaysSingleFile:bool\nm_AuthenticationKeyForAPI:str\nImportObjectType:int\nbAutoTranslate:bool\nbCreateCamera:bool\nbCreateAnimation:bool\nbCreateCacheAnimation:bool\nbMoveGarment:bool\nbAddArrangementPoints:bool\nbAutoCreateFittingSuit:bool\nbAdd:bool\ntranslationValueX:float\ntranslationValueY:float\ntranslationValueZ:float\nbTrace2DPatternsUVMap:bool\nbCreateMetallicRoughnessMap:bool\n\n```\n\nCopy to clipboard",
+        "content": "## ImportExportOption\uf0c1\n``` \nbExportGarment:bool\nbExportAvatar:bool\nbSingleObject:bool\nweldType:WELD_TYPE\nbThin:bool\nbUnifiedUVCoordinates:bool\nbCreateUnifiedTexture:bool\nunifiedTextureSize:float\nunifiedTextureFillSeamSize:int\nbUseInifinteSeams:bool\nunifiedTextureBakeMargin:float\nunifiedTextureBakeRelateive:bool\nbUnifiedDiffuseMap:bool\nbUnifiedNormalMap:bool\nbUnifiedMetalnessMap:bool\nbUnifiedRoughnessMap:bool\nbUnifiedOpacityMap:bool\nbUnifiedDisplacementMap:bool\nbIncludeHiddenObject:bool\nbIncludeInnerShape:bool\nscale:float\naxisX:int\naxisY:int\naxisZ:int\nbInvertX:bool\nbInvertY:bool\nbInvertZ:bool\nbSaveColorWays:bool\nbSaveInZip:bool\nbDiffuseColorCombined:bool\nbExcludeAmbient:bool\nbOpacityMap:bool\nbMetaData:bool\nbSizeAndPoseFromAvatar:bool\nbEmbedded:bool\nbExportLight:bool\nbExportFabric:bool\nbSaveColorWaysSingleFile:bool\nfbxSdkVersion:int\nbIncludeAvatarShape:bool\nm_AuthenticationKeyForAPI:str\nImportObjectType:int\nbAutoTranslate:bool\nbCreateCamera:bool\nbCreateAvatarJointAnimation:bool\nbCreateAvatarCacheAnimation:bool\nbCreateAvatarBlendShapeAnimation:bool\nbCreateClothCacheAnimation:bool\nbMoveGarment:bool\nbAddArrangementPoints:bool\nbAutoCreateFittingSuit:bool\nbAdd:bool\ntranslationValueX:float\ntranslationValueY:float\ntranslationValueZ:float\nbTrace2DPatternsUVMap:bool\nbCreateMetallicRoughnessMap:bool\nbClothUnifiedUVCoordinates:bool\nbAvatarUnifiedUVCoordinates:bool\n\n```\n\nCopy to clipboard",
         "content_description": "List of API Option Types",
-        "created_at": "2026-04-13T16:32:38Z"
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
     },
     {
-        "article_id": "7CjospM8ZmV5xsg3PGVdor",
+        "article_id": "JQrUHDBovxisrm8waNukZM",
+        "url": "https://developer.clo3d.com/optiontype.html#videoexportoption",
+        "source": "API",
+        "title": "VideoExportOption",
+        "content": "## VideoExportOption\uf0c1\n``` \nwidth:int\nheight:int\nfps:int\nstartFrame:int\nendFrame:int\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "Z8qnWn9HfMAxmduF3g3dtv",
+        "url": "https://developer.clo3d.com/optiontype.html#clo-api-unit",
+        "source": "API",
+        "title": "CLO_API_UNIT",
+        "content": "## CLO_API_UNIT\uf0c1\n``` \nCLO_API_MILIMETER = 0\nCLO_API_CENTIMETER = 1\nCLO_API_INCH = 2\nCLO_API_METER = 3\nCLO_API_FEET = 4\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "PtNZN2z4prkKNQYfyy4TaY",
         "url": "https://developer.clo3d.com/optiontype.html#importzprjoption",
         "source": "API",
         "title": "ImportZPRJOption",
-        "content": "## ImportZPRJOption\uf0c1\n``` \nbAppend:bool\nbLoadGarment:bool\nbLoadAvatar:bool\ntranslationValueX:float\ntranslationValueY:float\ntranslationValueZ:float\ntranslationUnit:CLO_API_UNIT\nbLoadSceneAndProps:bool\nbLoadRenderProperties:bool\nbLoadCustomView:bool\n\n```\n\nCopy to clipboard",
+        "content": "## ImportZPRJOption\uf0c1\n``` \nbAppend:bool\nbLoadGarment:bool\nbLoadAvatar:bool\ntranslationValueX:float\ntranslationValueY:float\ntranslationValueZ:float\ntranslationUnit:CLO_API_UNIT\nbLoadSceneAndProps:bool\nbLoadRenderProperties:bool\nbLoadCustomView:bool\nbLoadDisplaySettings:bool\n\n```\n\nCopy to clipboard",
         "content_description": "List of API Option Types",
-        "created_at": "2026-04-13T16:32:38Z"
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
     },
     {
-        "article_id": "fFkgKuJYRv3NeF6HvYszPC",
+        "article_id": "gkFvEbU64ehy9a9Z4Wh77H",
         "url": "https://developer.clo3d.com/optiontype.html#importdxfoption",
         "source": "API",
         "title": "ImportDxfOption",
-        "content": "## ImportDxfOption\uf0c1\n``` \nm_bAppend:bool\nm_bAutoScale:bool\nm_Scale:float\nm_Angle:float\nm_bImportPatternAnnotation:bool\nm_bAutoTraceAsInternalLines:bool\nm_SwapCuttingLineAndSewingLine:bool\nm_bIncludeNotchs:bool\nm_bAutoDistribute:bool\nm_bOptimizeAllCurvePoints:bool\nm_bImportAllDrawCurvePoint:bool\nm_bRemoveNonGradingPoints:bool\nm_bConvertToSeamAllowance:bool\n\n```\n\nCopy to clipboard",
+        "content": "## ImportDxfOption\uf0c1\n``` \nm_bAppend:bool\nm_bAutoScale:bool\nm_Scale:float\nm_Angle:float\nm_bImportPatternAnnotation:bool\nm_bAutoTraceAsInternalLines:bool\nm_SwapCuttingLineAndSewingLine:bool\nm_bIncludeNotchs:bool\nm_bAutoDistribute:bool\nm_bOptimizeAllCurvePoints:bool\nm_bImportAllDrawCurvePoint:bool\nm_bRemoveNonGradingPoints:bool\nm_bConvertToSeamAllowance:bool\nm_bImportNotchTo:bool\nm_eNotchImportPlacement:int\n\n```\n\nCopy to clipboard",
         "content_description": "List of API Option Types",
-        "created_at": "2026-04-13T16:32:38Z"
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
     },
     {
-        "article_id": "Gc5NPobt9cpaBKdxm6yE78",
+        "article_id": "85iCybCaKTjdBQQoaHmimP",
+        "url": "https://developer.clo3d.com/optiontype.html#renderimagevideooptions",
+        "source": "API",
+        "title": "RenderImageVideoOptions",
+        "content": "## RenderImageVideoOptions\uf0c1\n``` \nm_Colorway:int\nm_ImageVideo:int\nm_ViewPoint:int\nm_ImageCount:int\nm_RotationAngle:int\nm_RotationAxis:int\nm_RotationAxisX:float\nm_RotationAxisZ:float\nm_RotationDirection:int\nm_bTurnTableSaveVideo:bool\nm_TotalDuration:float\nm_FrameDuration:float\nm_bSaveGIF:bool\nm_Region:int\nm_bAnimationSaveVideo:bool\nm_AnimationFPS:float\nm_bAnimSaveGIF:bool\nm_ImageSize:int\nm_Orientation:int\nm_Width:float\nm_Height:float\nm_bMaintainRatio:bool\nm_Unit:int\nm_Resolution:int\nm_ColorHex:str\nm_Texture:str\nm_bTransparency:bool\nm_bBackgroundCrop:bool\nm_FileName:str\nm_FilePath:str\nm_ImageFormat:int\nm_VideoFormat:int\nm_bPanaromicCustomView:bool\nm_bPanaromicColorways:bool\nm_bSaveHtml:bool\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "cwfYDnW2wA8QNXNY275qYN",
+        "url": "https://developer.clo3d.com/optiontype.html#renderpropertyoptions",
+        "source": "API",
+        "title": "RenderPropertyOptions",
+        "content": "## RenderPropertyOptions\uf0c1\n``` \nm_RenderEngineType:int\nm_bCPUSupporting:bool\nm_bLowGPUPriority:bool\nm_NoiseThreshold:float\nm_MaxRenderTime:int\nm_SeamPuckeringIntensity:float\nm_LightQuality:int\nm_MaterialQuality:int\nm_bKnitWearFrustumCulling:bool\nm_bKnitWearLOD:bool\nm_ColorMappingType:int\nm_BurnValue:float\nm_bLinearWorkFlow:bool\nm_ImageFilterSize:float\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "ZEJStGcUQLvAUh8QXsnt5F",
         "url": "https://developer.clo3d.com/optiontype.html#exportdxfoption",
         "source": "API",
         "title": "ExportDxfOption",
-        "content": "## ExportDxfOption\uf0c1\n``` \nm_bSwapOutLine:bool\nm_bDuplicateNotch:bool\nm_bCheckedConvertCtoS:bool\nm_bExportWithoutGrading:bool\nm_bOptimizeCurvePoints:bool\nm_bExportWithoutBaselines:bool\nm_bExportSelectedPatterns:bool\nm_ExportDXFFormatType:int\nm_ExportBBType:int\nm_fScale:float\nm_RotateAngle:float\nm_bMetric:bool\n\n```\n\nCopy to clipboard",
+        "content": "## ExportDxfOption\uf0c1\n``` \nm_bDuplicateNotch:bool\nm_bCheckedConvertCtoS:bool\nm_bExportWithoutGrading:bool\nm_bOptimizeCurvePoints:bool\nm_bExportWithoutBaselines:bool\nm_bExportSelectedPatterns:bool\nm_ExportDXFFormatType:int\nm_ExportBBType:int\nm_fScale:float\nm_RotateAngle:float\nm_bMetric:bool\n\n```\n\nCopy to clipboard",
         "content_description": "List of API Option Types",
-        "created_at": "2026-04-13T16:32:38Z"
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
     },
     {
-        "article_id": "8petU7GPVQC92YmLfGY9ht",
-        "url": "https://developer.clo3d.com/optiontype.html#importusdoption",
+        "article_id": "L2yqA22HAmCHiAPCqjyTyQ",
+        "url": "https://developer.clo3d.com/optiontype.html#exportusdoption",
         "source": "API",
-        "title": "ImportUSDOption",
-        "content": "## ImportUSDOption\uf0c1\n``` \nm_upAxis:int\nm_metersPerUnit:double\nm_bAssignShape:bool\nm_shapePrimPath:str\nm_bAssignMaterial:bool\nm_materialPrimPath:str\nm_bExportSimulationData:bool\n\n```\n\nCopy to clipboard",
+        "title": "ExportUSDOption",
+        "content": "## ExportUSDOption\uf0c1\n``` \nm_upAxis:int\nm_metersPerUnit:double\nm_bAssignAvatar:bool\nm_avatarPrimPath:str\nm_bAssignGarment:bool\nm_garmentPrimPath:str\nm_bAssignSceneNProp:bool\nm_sceneNPropPrimPath:str\nm_bExportSimulationData:bool\nm_bExportStrandData:bool\n\n```\n\nCopy to clipboard",
         "content_description": "List of API Option Types",
-        "created_at": "2026-04-13T16:32:38Z"
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
     },
     {
-        "article_id": "ca4dCo3R98N58U7jgJNvAr",
-        "url": "https://developer.clo3d.com/optiontype.html#importalembicoption",
+        "article_id": "VJpf5NxNMhA9SiTKUnSYya",
+        "url": "https://developer.clo3d.com/optiontype.html#exporttechpacktype",
         "source": "API",
-        "title": "ImportAlembicOption",
-        "content": "## ImportAlembicOption\uf0c1\n``` \naLoadType:bool\naUnit:CLO_API_UNIT\naScale:float\nboolAddArrangementPoints:bool\nboolAutoCreateFittingSuit:bool\nmorphingFrameCount:int\nboolMoveGarmentToStartPosition:bool\nboolTrace2DPatternsFromUVMap:bool\nboolAlignBottonToGround:bool\ntranslationValueX:float\ntranslationValueY:float\ntranslationValueZ:float\n\n```\n\nCopy to clipboard",
+        "title": "ExportTechPackType",
+        "content": "## ExportTechPackType\uf0c1\n``` \nCLO_TECH_PACK = 0\nCLO_SET_TECH_PACK = 1\nCLO_SET_SREST = 2\nCLO_API_TECH_PACK = 3\nCLO_DUMMY = 4\n\n```\n\nCopy to clipboard",
         "content_description": "List of API Option Types",
-        "created_at": "2026-04-13T16:32:38Z"
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
     },
     {
-        "article_id": "9JjrDRJFkkLEvghqbbZ7ow",
+        "article_id": "RsFoseBNa8pgDHoMJPoxCt",
         "url": "https://developer.clo3d.com/optiontype.html#exporttechpackoption",
         "source": "API",
         "title": "ExportTechpackOption",
-        "content": "## ExportTechpackOption\uf0c1\n``` \nm_bSaveZpac:bool\nm_bSaveZprj:bool\nm_bCaptureSceneThumbnailWithoutAvatar:bool\nm_bCaptureSceneThumbnailWithMark:bool\nm_bCaptureSceneThumbnailWithAvatar:bool\nm_bCaptureItemThumbnail:bool\nm_bCaptureHighResolutionFrontThumbnail:bool\nm_bCapturePatternLayoutThumbnail:bool\nm_bCapturePatternLayoutThumbnailWithFabricMark:bool\nm_bCapturePatternLayoutThumbnailWithTrimMark:bool\nm_bCaptureTurntableThumbnail:bool\nm_bExportTextures:bool\nm_bUseAverageColor:bool\nm_bShowModalProgressBar:bool\nm_bUseCustomImageAsThumbnail:bool\nm_ShowBaseLineFor3DCapturePerColorway:map[ int, bool]\nm_AuthenticationKeyForAPI:str\nm_ExportType:ExportTechPackType\n\n```\n\nCopy to clipboard",
+        "content": "## ExportTechpackOption\uf0c1\n``` \nm_bSaveZpac:bool\nm_bSaveZprj:bool\nm_bCaptureSceneThumbnailWithoutAvatar:bool\nm_bCaptureSceneThumbnailWithMark:bool\nm_bCaptureSceneThumbnailWithAvatar:bool\nm_bCaptureItemThumbnail:bool\nm_bCaptureHighResolutionFrontThumbnail:bool\nm_bCapturePatternLayoutThumbnail:bool\nm_bCapturePatternLayoutThumbnailWithFabricMark:bool\nm_bCapturePatternLayoutThumbnailWithTrimMark:bool\nm_bCapturePatternLayoutThumbnailForCloset2DPatternWindow:bool\nm_bCaptureTurntableThumbnail:bool\nm_bExportTextures:bool\nm_bUseAverageColor:bool\nm_bShowModalProgressBar:bool\nm_bUseCustomImageAsThumbnail:bool\nm_ShowBaseLineFor3DCapturePerColorway:map[ int, bool]\nm_AuthenticationKeyForAPI:str\nm_ExportType:ExportTechPackType\n\n```\n\nCopy to clipboard",
         "content_description": "List of API Option Types",
-        "created_at": "2026-04-13T16:32:38Z"
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
     },
     {
-        "article_id": "cPS2o5bRT4cHD5jEfgUdtg",
+        "article_id": "HzUJyJuTqwXRMN8UaC4QLP",
         "url": "https://developer.clo3d.com/optiontype.html#cloapirgb",
         "source": "API",
         "title": "CloApiRgb",
         "content": "## CloApiRgb\uf0c1\n``` \nR:int\nG:int\nB:int\n\n```\n\nCopy to clipboard",
         "content_description": "List of API Option Types",
-        "created_at": "2026-04-13T16:32:38Z"
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
     },
     {
-        "article_id": "kkhQoTdMptnemenBuZ6hbM",
+        "article_id": "UcE9zu93NCQpsbhQqfLsSy",
+        "url": "https://developer.clo3d.com/optiontype.html#clogrounddata",
+        "source": "API",
+        "title": "CloGroundData",
+        "content": "## CloGroundData\uf0c1\n``` \nindex:int\navg_pos:float\nr:float\ng:float\nb:float\ny:float\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "NamVwWEDPzREePcGdTwNeC",
         "url": "https://developer.clo3d.com/optiontype.html#cloapirgba",
         "source": "API",
         "title": "CloApiRgba",
         "content": "## CloApiRgba\uf0c1\n``` \nR:int\nG:int\nB:int\nA:int\n\n```\n\nCopy to clipboard",
         "content_description": "List of API Option Types",
-        "created_at": "2026-04-13T16:32:38Z"
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
     },
     {
-        "article_id": "ZkngbaVDknuFMhEzkBwE3M",
+        "article_id": "o28z9LzMHmdsU2hWXPrANv",
+        "url": "https://developer.clo3d.com/optiontype.html#rendercolorwaytype",
+        "source": "API",
+        "title": "RenderColorwayType",
+        "content": "## RenderColorwayType\uf0c1\n``` \nSINGLE = 0\nALL = 1\nUSER_DEFINED = 2\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "FmSkusG2XvySVczYgYA59X",
         "url": "https://developer.clo3d.com/optiontype.html#attachfileinfo",
         "source": "API",
         "title": "AttachFileInfo",
         "content": "## AttachFileInfo\uf0c1\n``` \nfileName:str\nfilePath:str\n\n```\n\nCopy to clipboard",
         "content_description": "List of API Option Types",
-        "created_at": "2026-04-13T16:32:38Z"
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
     },
     {
-        "article_id": "4SrKWoF7p3obgAMwoKAmha",
+        "article_id": "YvpceMjhJbfZnXwbJqPPsR",
         "url": "https://developer.clo3d.com/optiontype.html#mimedata",
         "source": "API",
         "title": "MimeData",
         "content": "## MimeData\uf0c1\n``` \nmimeType:str\nmimeNmae:str\nmimeValue:str\n\n```\n\nCopy to clipboard",
         "content_description": "List of API Option Types",
-        "created_at": "2026-04-13T16:32:38Z"
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
     },
     {
-        "article_id": "Bj3TFC37K45x8KJaKqHqWJ",
+        "article_id": "YBiyHxn9padXc3A2iv36mP",
+        "url": "https://developer.clo3d.com/optiontype.html#httpmethodtype",
+        "source": "API",
+        "title": "HttpMethodType",
+        "content": "## HttpMethodType\uf0c1\n``` \nHTTP_GET = 0\nHTTP_POST = 1\nHTTP_PUT = 2\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "GHnE6YERJXdnKoGrXQc7ti",
         "url": "https://developer.clo3d.com/optiontype.html#cloapirestrequest",
         "source": "API",
         "title": "CloApiRestRequest",
         "content": "## CloApiRestRequest\uf0c1\n``` \nheader:list[std::pair[str, str]]\nmethod:HttpMethodType\npayload:str\nurl:str\nattachements:list[AttachFileInfo]\nformData:list[MimeData]\n\n```\n\nCopy to clipboard",
         "content_description": "List of API Option Types",
-        "created_at": "2026-04-13T16:32:38Z"
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
     },
     {
-        "article_id": "V9qFqZpfeSWLNRMHASPRoq",
+        "article_id": "9NvxrDupGgRK2M5tFzT8Cn",
         "url": "https://developer.clo3d.com/optiontype.html#cloapirestresponse",
         "source": "API",
         "title": "CloApiRestResponse",
         "content": "## CloApiRestResponse\uf0c1\n``` \nheader:str\nbuffer:str\nresponseCode:int\n\n```\n\nCopy to clipboard",
         "content_description": "List of API Option Types",
-        "created_at": "2026-04-13T16:32:38Z"
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
     },
     {
-        "article_id": "e8WQ9r2pzJU9nwvuk4R57f",
+        "article_id": "AWKwZjFUdg6imc4nGd7yiv",
+        "url": "https://developer.clo3d.com/optiontype.html#cloapigraphicposition",
+        "source": "API",
+        "title": "CloApiGraphicPosition",
+        "content": "## CloApiGraphicPosition\uf0c1\n``` \nx:float\ny:float\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "PMEQAf3Ry5iWbRei6i5v5k",
         "url": "https://developer.clo3d.com/optiontype.html#cloapigraphicdimensions",
         "source": "API",
         "title": "CloApiGraphicDimensions",
         "content": "## CloApiGraphicDimensions\uf0c1\n``` \nwidth:float\nheight:float\n\n```\n\nCopy to clipboard",
         "content_description": "List of API Option Types",
-        "created_at": "2026-04-13T16:32:38Z"
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "DkDRTHwD95Wi4pcNAtCCxi",
+        "url": "https://developer.clo3d.com/optiontype.html#cloapigraphicplacementpoints",
+        "source": "API",
+        "title": "CloApiGraphicPlacementPoints",
+        "content": "## CloApiGraphicPlacementPoints\uf0c1\n``` \ncenter:CloApiGraphicPosition\ncorners:list[CloApiGraphicPosition]\nedgeCenters:list[CloApiGraphicPosition]\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "DautHJ3DMPkFwHsXvyTo7s",
+        "url": "https://developer.clo3d.com/optiontype.html#cleanedpathresult",
+        "source": "API",
+        "title": "CleanedPathResult",
+        "content": "## CleanedPathResult\uf0c1\n``` \ndetected_type:str\nuniversal_clean_path:str\nwindows_native_path:str\nwindows_long_path_variant:str\nisolated_filename:str\nhttp_safe_filename:str\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "FsshfVhWvsQMSd5g7r962B",
+        "url": "https://developer.clo3d.com/optiontype.html#cloapianchorpoint",
+        "source": "API",
+        "title": "CloApiAnchorPoint",
+        "content": "## CloApiAnchorPoint\uf0c1\n``` \nCLOAPI_ANCHOR_CENTER = 0\nCLOAPI_ANCHOR_UP = 1\nCLOAPI_ANCHOR_RIGHT_UP = 2\nCLOAPI_ANCHOR_RIGHT = 3\nCLOAPI_ANCHOR_RIGHT_DOWN = 4\nCLOAPI_ANCHOR_DOWN = 5\nCLOAPI_ANCHOR_LEFT_DOWN = 6\nCLOAPI_ANCHOR_LEFT = 7\nCLOAPI_ANCHOR_LEFT_UP = 8\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "PA7DHDeSMyafFVoEyCKpMv",
+        "url": "https://developer.clo3d.com/optiontype.html#cloapipoint",
+        "source": "API",
+        "title": "CloApiPoint",
+        "content": "## CloApiPoint\uf0c1\n``` \nx:float\ny:float\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "9Usm6wbbcVkun8qP4c22U7",
+        "url": "https://developer.clo3d.com/optiontype.html#cloapiline",
+        "source": "API",
+        "title": "CloApiLine",
+        "content": "## CloApiLine\uf0c1\n``` \nlineNumber:int\nstart:CloApiPoint\nend:CloApiPoint\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "Fc5Nz6kTtbJWbLvHyDMTLU",
+        "url": "https://developer.clo3d.com/optiontype.html#cloapiintersectionpoint",
+        "source": "API",
+        "title": "CloApiIntersectionPoint",
+        "content": "## CloApiIntersectionPoint\uf0c1\n``` \ncoordinate:CloApiPoint\nlineANumber:int\nlineBNumber:int\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "XRJnWcVchn9vkYfhC4Avkb",
+        "url": "https://developer.clo3d.com/optiontype.html#cloapiinternalshape",
+        "source": "API",
+        "title": "CloApiInternalShape",
+        "content": "## CloApiInternalShape\uf0c1\n``` \nname:str\nlines:list[CloApiLine]\nintersections:list[CloApiIntersectionPoint]\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "GKAspwpU7ugGbpKNvjqoKP",
+        "url": "https://developer.clo3d.com/optiontype.html#importalembicoption",
+        "source": "API",
+        "title": "ImportAlembicOption",
+        "content": "## ImportAlembicOption\uf0c1\n``` \naLoadType:bool\naUnit:float\naScale:float\nboolAddArrangementPoints:bool\nboolAutoCreateFittingSuit:bool\nmorphingFrameCount:int\nboolMoveGarmentToStartPosition:bool\nboolTrace2DPatternsFromUVMap:bool\nboolAlignBottonToGround:bool\ntranslationValueX:float\ntranslationValueY:float\ntranslationValueZ:float\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "jDSrhDJS2gyTVFKUXou3u5",
+        "url": "https://developer.clo3d.com/optiontype.html#patternsnapshotpaperpreset",
+        "source": "API",
+        "title": "PatternSnapShotPaperPreset",
+        "content": "## PatternSnapShotPaperPreset\uf0c1\n``` \nA4:int\nA3:int\nB5:int\nB4:int\nLetter:int\nLegal:int\nTabloid:int\nWideFormat_24:int\nWideFormat_36:int\nWideFormat_44:int\noneToOne:int\nCustom:int\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "giqSJwPPxjBXUozToU3sDr",
+        "url": "https://developer.clo3d.com/optiontype.html#patternsnapshotpaperunit",
+        "source": "API",
+        "title": "PatternSnapShotPaperUnit",
+        "content": "## PatternSnapShotPaperUnit\uf0c1\n``` \nPixel:int\nInches:int\nMilimeters:int\nCentimeters:int\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "oP4QEPrAwFGNQcoLXrLhkB",
+        "url": "https://developer.clo3d.com/optiontype.html#patternsnapshotsizeoption",
+        "source": "API",
+        "title": "PatternSnapShotSizeOption",
+        "content": "## PatternSnapShotSizeOption\uf0c1\n``` \nm_width:float\nm_height:float\nm_resolution:int\nm_paperPreset:int\nm_orientation:int\nm_unit:int\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "L3ThsL8ymSLsk74u4JSqYs",
+        "url": "https://developer.clo3d.com/optiontype.html#patternsnapshotlinetype",
+        "source": "API",
+        "title": "PatternSnapShotLineType",
+        "content": "## PatternSnapShotLineType\uf0c1\n``` \nDefualtLine:int\nDottedLine:int\nDashedLine:int\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "eLgLjks33ZRrNGwBJK6mKG",
+        "url": "https://developer.clo3d.com/optiontype.html#patternsnapshotlineoption",
+        "source": "API",
+        "title": "PatternSnapShotLineOption",
+        "content": "## PatternSnapShotLineOption\uf0c1\n``` \nShowPatternOutline:bool\nPatternOutlineColor:CloApiRgba\nPatternOutLineType:int\nShowInternalLine:bool\nInternalLineColor:CloApiRgba\nInternalLineType:int\nShowGraphicOutline:bool\nGraphicOutlineColor:CloApiRgba\nGraphicOutlineType:int\nShowBaseline:bool\nBaselineColor:CloApiRgba\nBaselineType:int\nShowNotch:bool\nNotchColor:CloApiRgba\nNotchType:int\nShowSeamAllowance:bool\nSeamAllowanceColor:CloApiRgba\nSeamAllowanceType:int\nShowSymmetricInstanceLine:bool\nSymmetricInstanceLineColor:CloApiRgba\nSymmetricInstanceLineType:int\nShowReferenceLine:bool\nReferenceLineColor:CloApiRgba\nReferenceLineType:int\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "2bizo2FCGkNFdxxntEFXya",
+        "url": "https://developer.clo3d.com/optiontype.html#patternsnapshotimageoption",
+        "source": "API",
+        "title": "PatternSnapShotImageOption",
+        "content": "## PatternSnapShotImageOption\uf0c1\n``` \nShowFabricTexture:bool\nShowPatternTexture:bool\nShowGraphicTexture:bool\nFabricTextureOpacity:float\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "kKhqVSrxKC8tkL4W2gpPMz",
+        "url": "https://developer.clo3d.com/optiontype.html#patternsnapshotprinttype",
+        "source": "API",
+        "title": "PatternSnapShotPrintType",
+        "content": "## PatternSnapShotPrintType\uf0c1\n``` \nShrinkToFit:int\nActualSize:int\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "FMgsowSLFzApwD5tPv5qdm",
+        "url": "https://developer.clo3d.com/optiontype.html#patternsnapshotinformationoption",
+        "source": "API",
+        "title": "PatternSnapShotInformationOption",
+        "content": "## PatternSnapShotInformationOption\uf0c1\n``` \nShowPatternName:bool\nPatternNameType:int\nShowPatternAnnotation:bool\nPatternAnnotationType:int\nShowLineLength:bool\nLineLengthType:int\nShowGrainLine:bool\nGrainLineType:int\nShowButtonHole:bool\nButtonHoleType:int\nShowSeamTaping:bool\nSeamTapingType:int\nShowMeasurement2D:bool\nMeasurement2DType:int\nShowGradingSizeName:bool\nGradingSizeNameType:int\nShowNestInformation:bool\nNestInformationType:int\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "Gex6gz8PRffatzqy95N2rL",
+        "url": "https://developer.clo3d.com/optiontype.html#patternsnapshotcolorwayoption",
+        "source": "API",
+        "title": "PatternSnapShotColorwayOption",
+        "content": "## PatternSnapShotColorwayOption\uf0c1\n``` \nColorwayOption:int\nm_customSelectColorwayIndexes:list[ int]\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "njHoP6ewkA8Pajuz5Bd6iP",
+        "url": "https://developer.clo3d.com/optiontype.html#texturemaptarget",
+        "source": "API",
+        "title": "TextureMapTarget",
+        "content": "## TextureMapTarget\uf0c1\n``` \nTEXTURE_MAP_BASE_COLOR = 0\nTEXTURE_MAP_NORMAL = 1\nTEXTURE_MAP_OPACITY = 2\nTEXTURE_MAP_ROUGHNESS = 3\nTEXTURE_MAP_METALNESS = 4\nTEXTURE_MAP_DISPLACEMENT = 5\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "5KQwAdZKYf6CbSJit6PttT",
+        "url": "https://developer.clo3d.com/optiontype.html#objectbrowsertype",
+        "source": "API",
+        "title": "ObjectBrowserType",
+        "content": "## ObjectBrowserType\uf0c1\n``` \nOB_TYPE_FABRIC = 0\nOB_TYPE_GRAPHIC = 1\nOB_TYPE_TRIM = 2\nOB_TYPE_BUTTON = 3\nOB_TYPE_BUTTON_HOLE = 4\nOB_TYPE_PUCKERING = 5\nOB_TYPE_ZIPPER = 6\nOB_TYPE_POM = 7\nOB_TYPE_GRADING = 8\nOB_TYPE_PATTERN = 9\nOB_TYPE_TOPSTITCH = 10\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "NzZ9UaHh5EdyKjczxFZKbK",
+        "url": "https://developer.clo3d.com/optiontype.html#objectbrowsercontextoptions",
+        "source": "API",
+        "title": "ObjectBrowserContextOptions",
+        "content": "## ObjectBrowserContextOptions\uf0c1\n``` \ntype:ObjectBrowserType\ntargetPrint:bool\nstyleChipIndex:int\nsubItemIndex:int\nfolderName:str\nbIncludeUnusedObjects:bool\nbShowAllColorways:bool\nshowAllColorways:int\ncolorwayIndex:int\nbIncludePrints:bool\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "VuvQTa52DKpeFSnQaudhbf",
+        "url": "https://developer.clo3d.com/optiontype.html#propertyeditorcontextoptions",
+        "source": "API",
+        "title": "PropertyEditorContextOptions",
+        "content": "## PropertyEditorContextOptions\uf0c1\n``` \nmaterialSide:int\nmapType:TextureMapTarget\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "ZehAHS34XW5fo3JpHxKzzx",
+        "url": "https://developer.clo3d.com/optiontype.html#transformoptions",
+        "source": "API",
+        "title": "TransformOptions",
+        "content": "## TransformOptions\uf0c1\n``` \nangle:float\nwidthMm:float\nwidthPercent:float\nheightMm:float\nheightPercent:float\naspectRatioFixed:bool\nposX:float\nposY:float\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "ZT58HWZC2ev4noYd26WDj5",
+        "url": "https://developer.clo3d.com/optiontype.html#zipperobjecttype",
+        "source": "API",
+        "title": "ZipperObjectType",
+        "content": "## ZipperObjectType\uf0c1\n``` \nZIPPER_OBJECT_SLIDER = 0\nZIPPER_OBJECT_PULLER = 1\nZIPPER_OBJECT_SLIDER_PULLER = 2\nZIPPER_OBJECT_TEETH = 3\nZIPPER_OBJECT_TOP_STOPPER = 4\nZIPPER_OBJECT_BOTTOM_OPEN_STOPPER = 5\nZIPPER_OBJECT_BOTTOM_CLOSED_STOPPER = 6\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "jWeaJRV33LdfQN7BL2Ujj5",
+        "url": "https://developer.clo3d.com/optiontype.html#zipperscaleunit",
+        "source": "API",
+        "title": "ZipperScaleUnit",
+        "content": "## ZipperScaleUnit\uf0c1\n``` \nZIPPER_SCALE_MM = 0\nZIPPER_SCALE_CM = 1\nZIPPER_SCALE_INCH = 2\nZIPPER_SCALE_FEET = 3\nZIPPER_SCALE_M = 4\nZIPPER_SCALE_8_FEET = 5\nZIPPER_SCALE_8_6_FEET = 6\nZIPPER_SCALE_AUTO = 7\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "VUTddNEzY6CuxwXuLx2en8",
+        "url": "https://developer.clo3d.com/optiontype.html#graphicremovemode",
+        "source": "API",
+        "title": "GraphicRemoveMode",
+        "content": "## GraphicRemoveMode\uf0c1\n``` \nGRAPHIC_REMOVE_BROWSER_ONLY = 0\nGRAPHIC_REMOVE_PATTERN_ONLY = 1\nGRAPHIC_REMOVE_PATTERN_AND_BROWSER = 2\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "L263dQChNMnoS7uiJtdVtK",
+        "url": "https://developer.clo3d.com/optiontype.html#objregisteroptions",
+        "source": "API",
+        "title": "ObjRegisterOptions",
+        "content": "## ObjRegisterOptions\uf0c1\n``` \nobjectType:ZipperObjectType\nobjFilePath:str\nsecondObjFilePath:str\nsliderMeshNames:list[str]\npullerMeshNames:list[str]\nscaleUnit:ZipperScaleUnit\nscaleValue:double\naxisX:int\naxisY:int\naxisZ:int\ninvertX:bool\ninvertY:bool\ninvertZ:bool\npullerPositionX:float\npullerPositionY:float\npullerPositionZ:float\nteethSpace:double\naddToObjectBrowser:bool\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "nYaHyFEcqGqMdZbAoTe6ue",
+        "url": "https://developer.clo3d.com/optiontype.html#materialmaptransformationoptions",
+        "source": "API",
+        "title": "MaterialMapTransformationOptions",
+        "content": "## MaterialMapTransformationOptions\uf0c1\n``` \nangle:float\nwidth_mm:float\nwidth_percent:float\nheight_mm:float\nheight_percent:float\naspect_ratio_on:bool\nposition_x_mm:float\nposition_y_mm:float\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "Pdz56HCavtU5H7uSKGbLCp",
+        "url": "https://developer.clo3d.com/optiontype.html#materialbasecolormapoptions",
+        "source": "API",
+        "title": "MaterialBaseColorMapOptions",
+        "content": "## MaterialBaseColorMapOptions\uf0c1\n``` \nhas_map:bool\nimage_path:str\nrecolor_enabled:bool\ndesaturate_enabled:bool\nswitch_enabled:bool\nshadow_intensity:int\nshadow_brightness:int\ntransformation:MaterialMapTransformationOptions\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "GvFvbnExxpiHs67YDPAiN5",
+        "url": "https://developer.clo3d.com/optiontype.html#materialbasecoloroptions",
+        "source": "API",
+        "title": "MaterialBaseColorOptions",
+        "content": "## MaterialBaseColorOptions\uf0c1\n``` \ncolor_hex_or_name:str\nmap:MaterialBaseColorMapOptions\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "LDmAo22CfCW92Qo5D9L6Cc",
+        "url": "https://developer.clo3d.com/optiontype.html#materialnormalmapoptions",
+        "source": "API",
+        "title": "MaterialNormalMapOptions",
+        "content": "## MaterialNormalMapOptions\uf0c1\n``` \nhas_normal_map:bool\nimage_path:str\nintensity:int\ntransformation:MaterialMapTransformationOptions\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "WqLEog485HStAEjS6qG6qY",
+        "url": "https://developer.clo3d.com/optiontype.html#materialdisplacementmapoptions",
+        "source": "API",
+        "title": "MaterialDisplacementMapOptions",
+        "content": "## MaterialDisplacementMapOptions\uf0c1\n``` \nhas_displacement_map:bool\nimage_path:str\namount_mm:float\nshift_mm:float\nclipping_mm:float\nparticle_distance_mm:float\nkeep_continuity:bool\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "9psdZ9FeX3JSLjHSi6SEvs",
+        "url": "https://developer.clo3d.com/optiontype.html#materialopacitymapoptions",
+        "source": "API",
+        "title": "MaterialOpacityMapOptions",
+        "content": "## MaterialOpacityMapOptions\uf0c1\n``` \nhas_map:bool\nimage_path:str\nmode:str\ntransformation:MaterialMapTransformationOptions\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "PAYmggupTo4ubmrBdy2cmx",
+        "url": "https://developer.clo3d.com/optiontype.html#materialopacityoptions",
+        "source": "API",
+        "title": "MaterialOpacityOptions",
+        "content": "## MaterialOpacityOptions\uf0c1\n``` \nopacity_value:int\nmap:MaterialOpacityMapOptions\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "Yfr46XFhS86FotWkmbfmw7",
+        "url": "https://developer.clo3d.com/optiontype.html#materialroughnessoptions",
+        "source": "API",
+        "title": "MaterialRoughnessOptions",
+        "content": "## MaterialRoughnessOptions\uf0c1\n``` \ntype:str\nhas_map:bool\nimage_path:str\nmap_intensity:int\ninvert:bool\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "gdJ3RrZ43Ms7VEPbaT2Wcz",
+        "url": "https://developer.clo3d.com/optiontype.html#materialmetalnessmapoptions",
+        "source": "API",
+        "title": "MaterialMetalnessMapOptions",
+        "content": "## MaterialMetalnessMapOptions\uf0c1\n``` \nhas_map:bool\nimage_path:str\ntransformation:MaterialMapTransformationOptions\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "SEUsdz4LEKXsSFuSdBfAMZ",
+        "url": "https://developer.clo3d.com/optiontype.html#materialreflectionoptions",
+        "source": "API",
+        "title": "MaterialReflectionOptions",
+        "content": "## MaterialReflectionOptions\uf0c1\n``` \nroughness:MaterialRoughnessOptions\nreflection_intensity:int\nmetalness:int\nmetalness_map:MaterialMetalnessMapOptions\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "7Tcyzj45oKZrdCxNdtaS87",
+        "url": "https://developer.clo3d.com/optiontype.html#materialfaceoptions",
+        "source": "API",
+        "title": "MaterialFaceOptions",
+        "content": "## MaterialFaceOptions\uf0c1\n``` \ntexture_mapping:str\ntype:str\nbase_color:MaterialBaseColorOptions\nnormal_map:MaterialNormalMapOptions\ndisplacement_map:MaterialDisplacementMapOptions\nopacity:MaterialOpacityOptions\nreflection:MaterialReflectionOptions\nbase_color.map:MaterialBaseColorMapOptions GetBaseColorMap()     { return\nnormal_map:MaterialNormalMapOptions GetNormalMap()        { return\ndisplacement_map:MaterialDisplacementMapOptions GetDisplacementMap()  { return\nopacity.map:MaterialOpacityMapOptions GetOpacityMap()       { return\nreflection.roughness:MaterialRoughnessOptions GetRoughnessMap()     { return\nreflection.metalness_map:MaterialMetalnessMapOptions GetMetalnessMap()     { return\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "Di2WJiMYtHwEZaHj8yMwC4",
+        "url": "https://developer.clo3d.com/optiontype.html#materialtargetcomponent",
+        "source": "API",
+        "title": "MaterialTargetComponent",
+        "content": "## MaterialTargetComponent\uf0c1\n``` \nCOMPONENT_FRONT = 0\nCOMPONENT_BACK = 1\nCOMPONENT_SIDE = 2\nCOMPONENT_BUTTON = 3\nCOMPONENT_THREAD = 4\nCOMPONENT_NONE = -1\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "gs3pbiMbFK8LrdVu8ouP5H",
+        "url": "https://developer.clo3d.com/optiontype.html#materialcontextoptions",
+        "source": "API",
+        "title": "MaterialContextOptions",
+        "content": "## MaterialContextOptions\uf0c1\n``` \ntargetComponent:MaterialTargetComponent\ntextureMappingType:int\nprintType:int\nmaterialType:str\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "CTv5DNgyBbYYEKTz22fXX8",
+        "url": "https://developer.clo3d.com/optiontype.html#materialpropertyoptions",
+        "source": "API",
+        "title": "MaterialPropertyOptions",
+        "content": "## MaterialPropertyOptions\uf0c1\n``` \ncontextOptions:MaterialContextOptions\nmaterial_type:str\nfront:MaterialFaceOptions\nback:MaterialFaceOptions\nside:MaterialFaceOptions\nphysical_type:str\nphysical_preset:str\nphysical_thickness_mm:float\ncontextOptions:MaterialContextOptions GetContext()  { return\nfront:MaterialFaceOptions GetFrontFaceOptions()  { return\nback:MaterialFaceOptions GetBackFaceOptions()   { return\nside:MaterialFaceOptions GetSideFaceOptions()   { return\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
+    },
+    {
+        "article_id": "VdS25qGrr26PYUXRufjtgE",
+        "url": "https://developer.clo3d.com/optiontype.html#cloapiavatarmeasurement",
+        "source": "API",
+        "title": "CloApiAvatarMeasurement",
+        "content": "## CloApiAvatarMeasurement\uf0c1\n``` \nmeasurementName:str\nmeasurementType:str\nvalue:float\nbasicLength:float\nsurfaceLength:float\nunit:str\n\n```\n\nCopy to clipboard",
+        "content_description": "List of API Option Types",
+        "article_created_at": "2026-09-09T23:01:52Z",
+        "article_updated_at": "2026-09-09T23:01:52Z"
     }
 ]

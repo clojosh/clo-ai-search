@@ -30,7 +30,10 @@ class Azure:
         self.language = language
 
         if app == "CLO API":
-            load_dotenv(os.path.join(parent_dir_path, ".env.api.dev"))
+            if stage == "prod":
+                load_dotenv(os.path.join(parent_dir_path, ".env.api.prod"))
+            else:
+                load_dotenv(os.path.join(parent_dir_path, ".env.api.dev"))
         else:
             if stage == "prod":
                 load_dotenv(os.path.join(parent_dir_path, ".env.prod"))
@@ -53,14 +56,15 @@ class Azure:
             credential=self.AZURE_KEY_CREDENTIAL,
         )
 
-        self.search_index_client = SearchIndexClient(endpoint=f"https://{self.AZURE_SEARCH_SERVICE}.search.windows.net", credential=self.AZURE_KEY_CREDENTIAL)
+        self.search_index_client = SearchIndexClient(
+            endpoint=f"https://{self.AZURE_SEARCH_SERVICE}.search.windows.net", credential=self.AZURE_KEY_CREDENTIAL
+        )
 
-        self.AZURE_OPENAI_SERVICE = os.environ.get("AZURE_OPENAI_SERVICE", "")
         self.AZURE_OPENAI_CHATGPT_DEPLOYMENT = os.environ.get("AZURE_OPENAI_CHATGPT_DEPLOYMENT", "")
         self.AZURE_OPENAI_EMB_DEPLOYMENT = os.environ.get("AZURE_OPENAI_EMB_DEPLOYMENT", "")
         self.openai_client = AzureOpenAI(
             api_version="2024-08-01-preview",
-            azure_endpoint=f"https://{self.AZURE_OPENAI_SERVICE}.openai.azure.com",
+            azure_endpoint=os.environ.get("AZURE_OPENAI_ENDPOINT"),
             api_key=os.environ.get("AZURE_OPENAI_KEY") or os.environ.get("AZURE_OPENAI_API_KEY", ""),
         )
         self.openai_helper = OpenAIHelper(

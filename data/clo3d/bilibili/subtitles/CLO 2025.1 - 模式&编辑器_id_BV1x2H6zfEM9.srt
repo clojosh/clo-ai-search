@@ -1,0 +1,400 @@
+1
+00:00:00,000 --> 00:00:05,000
+This video introduces the mode and editor-related updates for you.
+
+2
+00:00:09,000 --> 00:00:11,000
+In the previous CLO version,
+
+3
+00:00:11,000 --> 00:00:17,000
+when adding a project file, you cannot choose the color scheme you want from the open file.
+
+4
+00:00:17,000 --> 00:00:22,000
+To change the color scheme, you can only do it in the color editor after opening the file.
+
+5
+00:00:23,000 --> 00:00:26,000
+From the current version, when adding a project file,
+
+6
+00:00:26,000 --> 00:00:29,000
+you can choose the color scheme you want to open.
+
+7
+00:00:29,000 --> 00:00:31,000
+When you want to design a clothing style,
+
+8
+00:00:31,000 --> 00:00:35,000
+but you also want to add a specific color scheme to the current project,
+
+9
+00:00:35,000 --> 00:00:37,000
+this function is very useful.
+
+10
+00:00:38,000 --> 00:00:39,000
+Find the file,
+
+11
+00:00:39,000 --> 00:00:41,000
+add the project,
+
+12
+00:00:41,000 --> 00:00:44,000
+open the project file you want,
+
+13
+00:00:46,000 --> 00:00:50,000
+and in the window that pops out, the color option is added below the clothing.
+
+14
+00:00:51,000 --> 00:00:54,000
+In the drop-down menu, select the color scheme to be added.
+
+15
+00:00:54,000 --> 00:00:57,000
+You can choose all or customize it.
+
+16
+00:00:57,000 --> 00:01:00,000
+Click the color button on the right to select the color scheme.
+
+17
+00:01:01,000 --> 00:01:04,000
+It is convenient for you to see the color scheme of each color.
+
+18
+00:01:04,000 --> 00:01:09,000
+The color scheme of each color will be displayed as the most fabric used in the clothing.
+
+19
+00:01:10,000 --> 00:01:14,000
+Please note that the file created in the 2025.0 or earlier version
+
+20
+00:01:14,000 --> 00:01:17,000
+will only display the name of the color scheme and not the color scheme.
+
+21
+00:01:19,000 --> 00:01:20,000
+If you choose all,
+
+22
+00:01:20,000 --> 00:01:23,000
+the color scheme of the file you have added and the file you have added
+
+23
+00:01:23,000 --> 00:01:26,000
+will be saved in the order of the project file.
+
+24
+00:01:26,000 --> 00:01:29,000
+Click the same order to combine.
+
+25
+00:01:30,000 --> 00:01:33,000
+Therefore, if you want them to match each other,
+
+26
+00:01:33,000 --> 00:01:36,000
+in both project files,
+
+27
+00:01:36,000 --> 00:01:40,000
+the color scheme is very important in the same order and preservation.
+
+28
+00:01:42,000 --> 00:01:46,000
+Please note that if you want to add less color schemes
+
+29
+00:01:46,000 --> 00:01:48,000
+to the projects that already have more color schemes,
+
+30
+00:01:48,000 --> 00:01:52,000
+you will use the first color scheme to fill in the remaining color schemes.
+
+31
+00:01:52,000 --> 00:01:54,000
+As usual,
+
+32
+00:01:56,000 --> 00:02:00,000
+when you want to customize the color scheme,
+
+33
+00:02:00,000 --> 00:02:02,000
+find the file, increase the project,
+
+34
+00:02:02,000 --> 00:02:04,000
+open the project file you want,
+
+35
+00:02:04,000 --> 00:02:08,000
+click the right button at the bottom of the clothing in the pop-up window,
+
+36
+00:02:08,000 --> 00:02:11,000
+open the color list to select the color scheme you want to add,
+
+37
+00:02:12,000 --> 00:02:16,000
+then the file will be combined according to the color scheme selected.
+
+38
+00:02:17,000 --> 00:02:21,000
+For example, I have now selected the second and third colors of the swimsuit suit.
+
+39
+00:02:23,000 --> 00:02:24,000
+After adding,
+
+40
+00:02:24,000 --> 00:02:28,000
+they will be added to the first two color schemes of the current project.
+
+41
+00:02:29,000 --> 00:02:32,000
+The first color scheme selected by the added project
+
+42
+00:02:32,000 --> 00:02:35,000
+is the color scheme 2 and black in this case,
+
+43
+00:02:35,000 --> 00:02:37,000
+which will always be the combat suit,
+
+44
+00:02:37,000 --> 00:02:42,000
+and will combine with the remaining color schemes in the current project.
+
+45
+00:02:43,000 --> 00:02:45,000
+In the future, more options will be added
+
+46
+00:02:45,000 --> 00:02:48,000
+to be able to mix and match the color scheme of different projects.
+
+47
+00:02:48,000 --> 00:02:52,000
+This update can help users improve the work efficiency of color combination design.
+
+48
+00:02:54,000 --> 00:02:59,000
+In the latest version of CLO,
+
+49
+00:02:59,000 --> 00:03:02,000
+we optimized the key frame animation settings.
+
+50
+00:03:02,000 --> 00:03:03,000
+The main improvements include
+
+51
+00:03:03,000 --> 00:03:06,000
+the color key frame animation that supports the twist material,
+
+52
+00:03:06,000 --> 00:03:09,000
+the key frame animation that lights up in the Vray rendering,
+
+53
+00:03:09,000 --> 00:03:13,000
+and the new time-limited selection layer function.
+
+54
+00:03:15,000 --> 00:03:17,000
+Open the color editor,
+
+55
+00:03:17,000 --> 00:03:20,000
+add the key frame to each color animation column,
+
+56
+00:03:20,000 --> 00:03:23,000
+and add the key frame animation to each color animation column.
+
+57
+00:03:23,000 --> 00:03:26,000
+Then click the play preview effect.
+
+58
+00:03:28,000 --> 00:03:30,000
+You can see that the color key frame is applied,
+
+59
+00:03:30,000 --> 00:03:33,000
+the color of the twist and the color of the twist is changed.
+
+60
+00:03:34,000 --> 00:03:37,000
+This makes the animation transition more natural.
+
+61
+00:03:41,000 --> 00:03:43,000
+Open the rendering window,
+
+62
+00:03:44,000 --> 00:03:46,000
+render lighting settings.
+
+63
+00:03:46,000 --> 00:03:49,000
+You can see that the light bulb icon has now been removed,
+
+64
+00:03:49,000 --> 00:03:52,000
+but you can use the fire option to replace it.
+
+65
+00:03:52,000 --> 00:03:55,000
+After using the fire option, you can also set more content.
+
+66
+00:03:55,000 --> 00:03:58,000
+Users can add key frames to each of the following settings,
+
+67
+00:03:58,000 --> 00:04:02,000
+such as intensity, angle, color, width and height, etc.
+
+68
+00:04:03,000 --> 00:04:06,000
+Here, the light bulb key frame is added to the animation.
+
+69
+00:04:09,000 --> 00:04:12,000
+Then set the key frame to the following options.
+
+70
+00:04:15,000 --> 00:04:18,000
+You can control the strength and angle of different stages of lighting in the animation.
+
+71
+00:04:19,000 --> 00:04:26,000
+This can be used to adjust the light bulb.
+
+72
+00:04:27,000 --> 00:04:30,000
+In addition, we have also improved the control of the circle size setting.
+
+73
+00:04:31,000 --> 00:04:33,000
+After starting this setting,
+
+74
+00:04:33,000 --> 00:04:34,000
+you can also edit the radius,
+
+75
+00:04:34,000 --> 00:04:37,000
+head shadow height and ground mix settings.
+
+76
+00:04:38,000 --> 00:04:41,000
+And each setting can be added to the key frame.
+
+77
+00:04:41,000 --> 00:04:48,000
+Finally, you can adjust the time range of the current animation.
+
+78
+00:04:48,000 --> 00:04:52,000
+Click on the right on the animation layer.
+
+79
+00:04:52,000 --> 00:04:56,000
+Select to limit the time range to the selected layer.
+
+80
+00:04:56,000 --> 00:05:01,000
+You can see that the play area will be adjusted to the selected layer range.
+
+81
+00:05:01,000 --> 00:05:07,000
+Finally, select to finally render the animation.
+
+82
+00:05:07,000 --> 00:05:12,000
+You can get the animation of the twist color and light.
+
+83
+00:05:12,000 --> 00:05:20,000
+I hope these updates can improve your animation experience and simplify your workflow.
+
+84
+00:05:20,000 --> 00:05:31,000
+In the previous version, the project with GLTF format is not supported by the virtual model animation.
+
+85
+00:05:31,000 --> 00:05:36,000
+Therefore, any joint animation applied to virtual models or animation based on storage will not be saved.
+
+86
+00:05:36,000 --> 00:05:37,000
+Thank you for watching.
+
+87
+00:05:37,000 --> 00:05:44,000
+In the new version, you can now choose to include virtual model animation.
+
+88
+00:05:44,000 --> 00:05:48,000
+This optimization provides greater flexibility for animation processing.
+
+89
+00:05:48,000 --> 00:05:56,000
+So you can easily integrate virtual models into various platforms or workflow.
+
+90
+00:05:56,000 --> 00:06:06,000
+Find the file and select to export GLTF 2.0 GLTF.
+
+91
+00:06:06,000 --> 00:06:09,000
+In the window, select all virtual models.
+
+92
+00:06:09,000 --> 00:06:12,000
+In the options below, select virtual model animation.
+
+93
+00:06:12,000 --> 00:06:15,000
+Select the animation type you want.
+
+94
+00:06:15,000 --> 00:06:23,000
+When you want to keep the structure of Google to edit or play in the future, this is an ideal choice.
+
+95
+00:06:23,000 --> 00:06:28,000
+To bind Google's model, the best choice is to implement the high guarantee animation.
+
+96
+00:06:28,000 --> 00:06:33,000
+You can flexibly choose the export settings that are most suitable for your project needs.
+
+97
+00:06:33,000 --> 00:06:35,000
+To get better compatibility files.
+
+98
+00:06:36,000 --> 00:06:40,000
+Whether you are dedicated to interactive experience or high-quality visual display.
+
+99
+00:06:40,000 --> 00:06:51,000
+This function can make you more free to create and perform virtual model animation.
+
+100
+00:06:51,000 --> 00:06:53,000
+Thank you for watching.
+

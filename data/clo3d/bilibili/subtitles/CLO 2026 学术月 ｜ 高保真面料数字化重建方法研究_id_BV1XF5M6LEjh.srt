@@ -1,0 +1,2652 @@
+1
+00:00:00,000 --> 00:00:09,000
+Hello everyone, today I will share with you some of my teaching and practical experience.
+
+2
+00:00:09,000 --> 00:00:16,000
+My theme is the digitalization of high-precision fabrics.
+
+3
+00:00:16,000 --> 00:00:19,000
+In our normal work, it is often like this.
+
+4
+00:00:19,000 --> 00:00:23,000
+For example, your client or your own research has a piece of this kind of fabric.
+
+5
+00:00:23,000 --> 00:00:28,000
+Then you need to turn it into a digitalized one and apply it to your model.
+
+6
+00:00:28,000 --> 00:00:32,000
+So that its light, details, and roughness are relatively restored.
+
+7
+00:00:32,000 --> 00:00:36,000
+And the color must be accurate, including the size.
+
+8
+00:00:36,000 --> 00:00:39,000
+Then this thing requires certain skills and methods.
+
+9
+00:00:39,000 --> 00:00:42,000
+So today I will share with you from several aspects.
+
+10
+00:00:42,000 --> 00:00:44,000
+Mainly I will share from three aspects.
+
+11
+00:00:44,000 --> 00:00:47,000
+The first is such a work process of digitalized fabrics.
+
+12
+00:00:47,000 --> 00:00:51,000
+The second is a basic knowledge of our common three-dimensional PBR map.
+
+13
+00:00:51,000 --> 00:00:55,000
+The third is the scanning processing method of digitalized fabrics.
+
+14
+00:00:55,000 --> 00:00:57,000
+The first is actually this work process.
+
+15
+00:00:57,000 --> 00:00:58,000
+Its workflow.
+
+16
+00:00:58,000 --> 00:01:00,000
+The process is actually divided into such four pieces.
+
+17
+00:01:00,000 --> 00:01:03,000
+The first is the shooting or scanning of the fabric.
+
+18
+00:01:03,000 --> 00:01:05,000
+The second is the production of the fabric.
+
+19
+00:01:05,000 --> 00:01:07,000
+The third is the upload of the fabric.
+
+20
+00:01:07,000 --> 00:01:09,000
+The fourth is the use of the fabric.
+
+21
+00:01:09,000 --> 00:01:11,000
+So the actual work reason is divided into such a few pieces.
+
+22
+00:01:11,000 --> 00:01:16,000
+The first is that you scan and shoot your pattern through your method.
+
+23
+00:01:16,000 --> 00:01:19,000
+The requirement is that the light is as uniform as possible.
+
+24
+00:01:19,000 --> 00:01:21,000
+Then the clarity is relatively strong.
+
+25
+00:01:21,000 --> 00:01:23,000
+The second step is to carry out a reasonable construction.
+
+26
+00:01:23,000 --> 00:01:26,000
+Because you have to find its circular unit.
+
+27
+00:01:26,000 --> 00:01:27,000
+Many of our clothing fabrics.
+
+28
+00:01:27,000 --> 00:01:29,000
+Is a circular pattern.
+
+29
+00:01:29,000 --> 00:01:31,000
+Or you have to find it.
+
+30
+00:01:31,000 --> 00:01:32,000
+The third step.
+
+31
+00:01:32,000 --> 00:01:33,000
+In many cases.
+
+32
+00:01:33,000 --> 00:01:35,000
+You have to restore your color accurately.
+
+33
+00:01:35,000 --> 00:01:37,000
+If the color is not accurate.
+
+34
+00:01:37,000 --> 00:01:38,000
+In fact, this thing.
+
+35
+00:01:38,000 --> 00:01:40,000
+It doesn't make much sense.
+
+36
+00:01:40,000 --> 00:01:41,000
+The fourth step.
+
+37
+00:01:41,000 --> 00:01:43,000
+In addition to the pattern pattern on our surface.
+
+38
+00:01:43,000 --> 00:01:46,000
+You also have another way of mapping.
+
+39
+00:01:46,000 --> 00:01:47,000
+Including gloss.
+
+40
+00:01:47,000 --> 00:01:48,000
+Blur.
+
+41
+00:01:48,000 --> 00:01:49,000
+Transparency.
+
+42
+00:01:49,000 --> 00:01:51,000
+These things have to be processed.
+
+43
+00:01:51,000 --> 00:01:54,000
+The fifth step is to combine your pattern patterns.
+
+44
+00:01:54,000 --> 00:01:56,000
+With your physical properties.
+
+45
+00:01:56,000 --> 00:01:57,000
+Then simulate.
+
+46
+00:01:57,000 --> 00:01:58,000
+Form a material.
+
+47
+00:01:58,000 --> 00:02:00,000
+The last step is to store it locally.
+
+48
+00:02:00,000 --> 00:02:02,000
+Or you put it on the close site platform.
+
+49
+00:02:02,000 --> 00:02:03,000
+To carry out a network disk.
+
+50
+00:02:03,000 --> 00:02:04,000
+This kind of storage and sharing.
+
+51
+00:02:04,000 --> 00:02:05,000
+To briefly talk about these six steps.
+
+52
+00:02:05,000 --> 00:02:06,000
+The second.
+
+53
+00:02:06,000 --> 00:02:07,000
+Is to introduce the basic knowledge of the PBR pattern.
+
+54
+00:02:07,000 --> 00:02:08,000
+Then our three-dimensional.
+
+55
+00:02:08,000 --> 00:02:09,000
+This kind of.
+
+56
+00:02:09,000 --> 00:02:10,000
+Blur.
+
+57
+00:02:10,000 --> 00:02:11,000
+It's in a PBR way.
+
+58
+00:02:11,000 --> 00:02:12,000
+A form of mapping and simulation.
+
+59
+00:02:12,000 --> 00:02:13,000
+This mapping.
+
+60
+00:02:13,000 --> 00:02:14,000
+As long as we.
+
+61
+00:02:14,000 --> 00:02:15,000
+For close.
+
+62
+00:02:15,000 --> 00:02:16,000
+It's a little bit.
+
+63
+00:02:16,000 --> 00:02:17,000
+It's a little bit.
+
+64
+00:02:17,000 --> 00:02:18,000
+It's a little bit.
+
+65
+00:02:18,000 --> 00:02:19,000
+It's a little bit.
+
+66
+00:02:19,000 --> 00:02:20,000
+It's a little bit.
+
+67
+00:02:20,000 --> 00:02:21,000
+It's a little bit.
+
+68
+00:02:21,000 --> 00:02:22,000
+It's a little bit.
+
+69
+00:02:22,000 --> 00:02:23,000
+It's a little bit.
+
+70
+00:02:23,000 --> 00:02:24,000
+It's a little bit.
+
+71
+00:02:24,000 --> 00:02:25,000
+It's a little bit.
+
+72
+00:02:25,000 --> 00:02:26,000
+It's a little bit.
+
+73
+00:02:26,000 --> 00:02:27,000
+We.
+
+74
+00:02:27,000 --> 00:02:28,000
+For close.
+
+75
+00:02:28,000 --> 00:02:29,000
+It includes most of this.
+
+76
+00:02:29,000 --> 00:02:30,000
+This is the reaction.
+
+77
+00:02:30,000 --> 00:02:31,000
+Orhhhhhhh.
+
+78
+00:02:31,000 --> 00:02:32,000
+Call it a lipsie.
+
+79
+00:02:32,000 --> 00:02:33,000
+Page.
+
+80
+00:02:33,000 --> 00:02:34,000
+SDFeels Groupx vem.
+
+81
+00:02:34,000 --> 00:02:35,000
+The second.
+
+82
+00:02:35,000 --> 00:02:36,000
+It is.
+
+83
+00:02:36,000 --> 00:02:36,800
+also
+
+84
+00:02:36,800 --> 00:02:37,719
+Because there is a kind of visual expression.
+
+85
+00:02:37,719 --> 00:02:38,719
+Normal ERP.
+
+86
+00:02:38,719 --> 00:02:39,719
+Three?
+
+87
+00:02:39,719 --> 00:02:40,719
+That is.
+
+88
+00:02:40,719 --> 00:02:41,719
+If you have a kind of metal texture.
+
+89
+00:02:41,719 --> 00:02:42,719
+That is the Meta!
+
+90
+00:02:42,719 --> 00:02:43,719
+MAC2 است egg.
+
+91
+00:02:43,719 --> 00:02:44,719
+The fourth?
+
+92
+00:02:44,719 --> 00:02:45,719
+That is, as a whole.
+
+93
+00:02:45,719 --> 00:02:46,719
+Smoothness.
+
+94
+00:02:46,719 --> 00:02:47,719
+And we're in the corner, everyone.
+
+95
+00:02:47,719 --> 00:02:48,719
+Let him be his Ruff Pro hyung.
+
+96
+00:02:48,719 --> 00:02:49,719
+This is the map.
+
+97
+00:02:49,719 --> 00:02:50,719
+Ah.
+
+98
+00:02:50,719 --> 00:02:51,719
+Bootcamp.
+
+99
+00:02:51,719 --> 00:02:52,719
+The next is, if the lettuce is transparent.
+
+100
+00:02:52,719 --> 00:02:53,719
+It's called Alpha Map.
+
+101
+00:02:53,719 --> 00:02:54,719
+And the last one is.
+
+102
+00:02:54,719 --> 00:02:59,719
+The real texture of the pattern is called the display map.
+
+103
+00:02:59,719 --> 00:03:01,719
+There are six ways of mapping.
+
+104
+00:03:01,719 --> 00:03:03,719
+We can take a look at them separately.
+
+105
+00:03:03,719 --> 00:03:09,719
+The texture of the pattern shows the color and the texture of the surface.
+
+106
+00:03:09,719 --> 00:03:13,719
+If you show this kind of collective pattern, it is actually a linear mapping.
+
+107
+00:03:13,719 --> 00:03:16,719
+But this kind of pattern is actually a visual one.
+
+108
+00:03:16,719 --> 00:03:20,719
+If you want to represent the height of a few centimeters or a few millimeters in the rendering,
+
+109
+00:03:20,719 --> 00:03:23,719
+it is actually a three-dimensional display map.
+
+110
+00:03:23,719 --> 00:03:26,719
+The last one is the smoothness.
+
+111
+00:03:26,719 --> 00:03:29,719
+We call it a reflection map or a rough map.
+
+112
+00:03:29,719 --> 00:03:31,719
+The other one is the surface of the metal.
+
+113
+00:03:31,719 --> 00:03:33,719
+It is a map of the texture of the metal.
+
+114
+00:03:33,719 --> 00:03:35,719
+The last one is a transparent map.
+
+115
+00:03:35,719 --> 00:03:37,719
+Because there are six parts to some transparency.
+
+116
+00:03:37,719 --> 00:03:40,719
+We can take a look at how it is applied.
+
+117
+00:03:40,719 --> 00:03:44,719
+Our clothing fabric is not the same as the picture printing.
+
+118
+00:03:44,719 --> 00:03:47,719
+For example, our pattern has a fabric pattern.
+
+119
+00:03:47,719 --> 00:03:49,719
+For example, because you know it,
+
+120
+00:03:49,719 --> 00:03:52,719
+whether it is true or false, it is known.
+
+121
+00:03:52,719 --> 00:03:53,719
+So this pattern,
+
+122
+00:03:53,719 --> 00:03:54,719
+except for the color,
+
+123
+00:03:54,719 --> 00:03:56,719
+it has the texture of the surface.
+
+124
+00:03:56,719 --> 00:03:59,719
+It has to be clear to show the category of the clothing.
+
+125
+00:03:59,719 --> 00:04:02,719
+This is the texture we use in CLO.
+
+126
+00:04:02,719 --> 00:04:05,719
+The second one is a blue pattern.
+
+127
+00:04:05,719 --> 00:04:06,719
+We call it a hair line pattern.
+
+128
+00:04:06,719 --> 00:04:08,719
+It is called a normal pattern.
+
+129
+00:04:08,719 --> 00:04:12,719
+It is a visual effect formed by a reflection simulation of a computer.
+
+130
+00:04:12,719 --> 00:04:13,719
+But this visual effect,
+
+131
+00:04:13,719 --> 00:04:15,719
+after you add this pattern,
+
+132
+00:04:15,719 --> 00:04:17,720
+for example, this is not the same as the hair line and the hair line.
+
+133
+00:04:17,720 --> 00:04:19,720
+The degree of detachment is different.
+
+134
+00:04:19,720 --> 00:04:22,720
+But it is actually a visual detachment.
+
+135
+00:04:22,720 --> 00:04:25,720
+It is a relatively shallow way of detachment.
+
+136
+00:04:25,720 --> 00:04:26,720
+The third one,
+
+137
+00:04:26,720 --> 00:04:27,720
+we can take a look at it.
+
+138
+00:04:27,720 --> 00:04:28,720
+If it is a real detachment,
+
+139
+00:04:28,720 --> 00:04:29,720
+for CLO,
+
+140
+00:04:29,720 --> 00:04:31,720
+it is mainly a visual image.
+
+141
+00:04:31,720 --> 00:04:32,720
+That is,
+
+142
+00:04:32,720 --> 00:04:34,720
+some of the black and white pictures we often see.
+
+143
+00:04:34,720 --> 00:04:35,720
+The white part,
+
+144
+00:04:35,720 --> 00:04:36,720
+when it is rendered,
+
+145
+00:04:36,720 --> 00:04:37,720
+it will come out.
+
+146
+00:04:37,720 --> 00:04:39,720
+The black part remains unchanged.
+
+147
+00:04:39,720 --> 00:04:40,720
+The whiter it is,
+
+148
+00:04:40,720 --> 00:04:41,720
+the thicker it is.
+
+149
+00:04:41,720 --> 00:04:42,720
+So in many cases,
+
+150
+00:04:42,720 --> 00:04:43,720
+to make a detachment,
+
+151
+00:04:43,720 --> 00:04:44,720
+many people,
+
+152
+00:04:44,720 --> 00:04:45,720
+in order to make this detachment,
+
+153
+00:04:45,720 --> 00:04:46,720
+it is too natural.
+
+154
+00:04:46,720 --> 00:04:48,720
+So I often make it a little bit of this.
+
+155
+00:04:48,720 --> 00:04:49,720
+It's blurry.
+
+156
+00:04:49,720 --> 00:04:50,720
+The surface is blurry.
+
+157
+00:04:50,720 --> 00:04:51,720
+So you can see that
+
+158
+00:04:51,720 --> 00:04:53,720
+the degree of detachment is different
+
+159
+00:04:53,720 --> 00:04:54,720
+between a real detachment
+
+160
+00:04:54,720 --> 00:04:56,720
+and a real detachment.
+
+161
+00:04:56,720 --> 00:04:57,720
+The degree of detachment.
+
+162
+00:04:57,720 --> 00:04:59,720
+The degree of detachment is different.
+
+163
+00:04:59,720 --> 00:05:00,720
+Everyone remembers
+
+164
+00:05:00,720 --> 00:05:01,720
+it's whiter and thicker.
+
+165
+00:05:01,720 --> 00:05:02,720
+That's it.
+
+166
+00:05:02,720 --> 00:05:03,720
+The next one is a metal decal.
+
+167
+00:05:03,720 --> 00:05:05,720
+An metal decal is actually a black and white picture.
+
+168
+00:05:05,720 --> 00:05:06,720
+So the white part
+
+169
+00:05:06,720 --> 00:05:08,720
+means there is a sense of metal.
+
+170
+00:05:08,720 --> 00:05:10,720
+The black part means there is none.
+
+171
+00:05:10,720 --> 00:05:11,720
+Then we can see
+
+172
+00:05:11,720 --> 00:05:13,720
+the added metal decal
+
+173
+00:05:13,720 --> 00:05:16,720
+and the no added metal decal.
+
+174
+00:05:16,720 --> 00:05:17,720
+This effect is different.
+
+175
+00:05:17,720 --> 00:05:19,720
+So you remember it is a black and white picture.
+
+176
+00:05:19,720 --> 00:05:20,720
+The white represents the texture of metal.
+
+177
+00:05:20,720 --> 00:05:21,720
+But it is,
+
+178
+00:05:21,720 --> 00:05:26,640
+but it is often applied with the reflection in the same way.
+
+179
+00:05:26,640 --> 00:05:29,000
+It has both metallic and reflective effects,
+
+180
+00:05:29,000 --> 00:05:32,280
+and it will be much better.
+
+181
+00:05:32,280 --> 00:05:35,080
+We call this reflection in the cloud.
+
+182
+00:05:35,080 --> 00:05:37,040
+In fact, if you translate it in English,
+
+183
+00:05:37,040 --> 00:05:39,480
+it means roughness.
+
+184
+00:05:39,480 --> 00:05:42,840
+The meaning of roughness is that white means that it is completely rough,
+
+185
+00:05:42,840 --> 00:05:44,120
+it is not smooth.
+
+186
+00:05:44,120 --> 00:05:46,360
+The black part is smooth,
+
+187
+00:05:46,360 --> 00:05:47,960
+it is not rough.
+
+188
+00:05:47,960 --> 00:05:50,800
+So if you have a metal picture,
+
+189
+00:05:50,800 --> 00:05:54,360
+you put the roughness picture and the metal picture together,
+
+190
+00:05:54,360 --> 00:05:57,240
+it is the opposite effect.
+
+191
+00:05:57,240 --> 00:05:58,160
+The same picture,
+
+192
+00:05:58,160 --> 00:05:59,920
+one black and one white,
+
+193
+00:05:59,920 --> 00:06:03,280
+so the metal texture will be stronger.
+
+194
+00:06:03,280 --> 00:06:04,759
+The next one is the transparency sticker,
+
+195
+00:06:04,759 --> 00:06:06,879
+it is almost the same,
+
+196
+00:06:06,879 --> 00:06:07,920
+it is also a black and white picture,
+
+197
+00:06:07,920 --> 00:06:09,800
+black means transparent,
+
+198
+00:06:09,800 --> 00:06:11,960
+white means not transparent,
+
+199
+00:06:11,960 --> 00:06:15,120
+and then this is simpler than if we directly
+
+200
+00:06:15,120 --> 00:06:17,480
+do a code processing with Photoshop,
+
+201
+00:06:17,480 --> 00:06:19,920
+because it is too soft on the edges.
+
+202
+00:06:19,920 --> 00:06:20,759
+If you say that a
+
+203
+00:06:20,759 --> 00:06:22,480
+black and white picture is transparent,
+
+204
+00:06:22,480 --> 00:06:24,039
+it means that it is half transparent.
+
+205
+00:06:24,039 --> 00:06:25,439
+So it's also a black and white picture,
+
+206
+00:06:25,439 --> 00:06:26,599
+the darker the picture, the more transparent it is,
+
+207
+00:06:26,599 --> 00:06:29,519
+the whiter the picture, the less transparent it is.
+
+208
+00:06:29,519 --> 00:06:31,120
+So it's six big stickers.
+
+209
+00:06:31,120 --> 00:06:33,120
+So let's first have a understanding of this,
+
+210
+00:06:33,120 --> 00:06:35,519
+and then take a look at how we do it.
+
+211
+00:06:35,519 --> 00:06:38,560
+This is a way of doing it.
+
+212
+00:06:38,560 --> 00:06:41,360
+It actually has several devices.
+
+213
+00:06:41,360 --> 00:06:43,279
+The first one is that,
+
+214
+00:06:43,279 --> 00:06:45,199
+of course, our material
+
+215
+00:06:45,199 --> 00:06:47,279
+may be obtained from the Internet,
+
+216
+00:06:47,279 --> 00:06:48,639
+but the material obtained on the Internet
+
+217
+00:06:48,639 --> 00:06:50,159
+is often different from what you actually see,
+
+218
+00:06:50,160 --> 00:06:52,400
+and the actual needs of the Internet are still different.
+
+219
+00:06:52,400 --> 00:06:55,600
+So if you want to get some fabric from the real world
+
+220
+00:06:55,600 --> 00:06:56,760
+for digital processing,
+
+221
+00:06:56,760 --> 00:06:58,920
+then you may have to use a physical method,
+
+222
+00:06:58,920 --> 00:07:00,480
+and the first common way is
+
+223
+00:07:00,480 --> 00:07:02,760
+to use a tablet scanner.
+
+224
+00:07:02,760 --> 00:07:05,920
+It has its advantages and its weaknesses.
+
+225
+00:07:05,920 --> 00:07:07,920
+The second one is a camera for shooting.
+
+226
+00:07:07,920 --> 00:07:10,760
+This is a situation that is used more
+
+227
+00:07:10,760 --> 00:07:14,600
+in our clothing industry.
+
+228
+00:07:14,600 --> 00:07:15,920
+It is a shooting method
+
+229
+00:07:15,920 --> 00:07:18,640
+taken with a camera and a light box.
+
+230
+00:07:18,640 --> 00:07:20,000
+The third one, we have a camera,
+
+231
+00:07:20,000 --> 00:07:21,480
+and it also has several functions.
+
+232
+00:07:21,480 --> 00:07:23,040
+But in the case of a normal camera,
+
+233
+00:07:23,040 --> 00:07:25,439
+it is most likely to be used by the user.
+
+234
+00:07:25,439 --> 00:07:26,560
+And the fourth one is a scope,
+
+235
+00:07:26,560 --> 00:07:27,199
+or a facemask.
+
+236
+00:07:27,199 --> 00:07:28,240
+The fourth one requires a scope.
+
+237
+00:07:28,240 --> 00:07:29,160
+In this case,
+
+238
+00:07:29,160 --> 00:07:46,680
+we are not using the
+
+239
+00:07:46,680 --> 00:07:47,319
+usb scope,
+
+240
+00:07:47,319 --> 00:07:48,160
+but we can also use a big scope.
+
+241
+00:07:48,160 --> 00:07:48,800
+This is a small scope.
+
+242
+00:07:48,800 --> 00:07:49,319
+What is the different between each of them?
+
+243
+00:07:49,319 --> 00:07:49,839
+It depends.
+
+244
+00:07:49,840 --> 00:07:57,840
+because it will flatten it, for example, if you find a light-weight material, you scan it and feel that the light-weight material has been mixed in,
+
+245
+00:07:57,840 --> 00:08:05,840
+that is, because your scanning contact surface is very tight, so it will flatten, so that kind of, we generally use this kind of shooting method will be better,
+
+246
+00:08:05,840 --> 00:08:15,840
+but for some, for example, very strong hair, for example, some laser, some bright pieces, these can be used to control the parameters in the corollary,
+
+247
+00:08:15,840 --> 00:08:24,840
+because it has some rendering methods, with hair, bright pieces, laser, this kind of special material parameters to adjust, it may be better,
+
+248
+00:08:24,840 --> 00:08:28,840
+that is to say, we are not an all-purpose way through the equipment,
+
+249
+00:08:28,840 --> 00:08:36,840
+then we first talk about some of the features of flat scanning, flat scanning, in general, your fabric is facing down, then flat pressed under this scanning,
+
+250
+00:08:36,840 --> 00:08:42,840
+our general resolution, it is generally recommended that you are about 600, if it is high, you can 800,
+
+251
+00:08:42,840 --> 00:08:45,840
+but if it is general, you can 300, but it is generally recommended that 600,
+
+252
+00:08:45,840 --> 00:08:53,840
+because the storage format of the picture is better to choose PNJ, because in many cases the transparent picture, etc., it needs the PNJ format to remain consistent,
+
+253
+00:08:53,840 --> 00:09:01,840
+then the frame select a location to scan it, then what are the characteristics of this thing, then we scan it with the Ip sound as an example,
+
+254
+00:09:01,840 --> 00:09:05,840
+its interface, if you Ip sound, it will have a professional interface, right,
+
+255
+00:09:05,840 --> 00:09:09,840
+professional interface, then ask you what color, 24 colors, or 48 colors, we generally 24 colors can be,
+
+256
+00:09:09,840 --> 00:09:15,840
+choose the size, right, and then save the picture, choose a name, save,
+
+257
+00:09:15,840 --> 00:09:21,840
+but it actually still has some characteristics that need to be noticed, the first is this parameter setting, I made some frames, right,
+
+258
+00:09:21,840 --> 00:09:25,840
+the second is the resolution of the scan, it is recommended that you are between 600 and 800,
+
+259
+00:09:25,840 --> 00:09:29,840
+the third has a question, that is, what type of scan to choose, there are two types,
+
+260
+00:09:29,840 --> 00:09:34,840
+how to have high-end and low-end, there are hundreds of dollars and thousands of dollars, tens of thousands of dollars of scan, what is the difference,
+
+261
+00:09:34,840 --> 00:09:37,840
+in fact, the most important thing is the difference in sensor components,
+
+262
+00:09:37,840 --> 00:09:42,840
+sensor components, that is, its core is similar to the lens of the camera, because it is also a sensor lens,
+
+263
+00:09:42,840 --> 00:09:44,840
+it goes to shoot in the moving process,
+
+264
+00:09:45,840 --> 00:09:48,840
+then the sensor component has two types of ccd and cis,
+
+265
+00:09:48,840 --> 00:09:51,840
+the cheaper and faster one is cis,
+
+266
+00:09:51,840 --> 00:09:54,840
+but the more professional image scan, such as scanning film,
+
+267
+00:09:54,840 --> 00:09:57,840
+this kind of, it is generally ccd, what is the benefit,
+
+268
+00:09:57,840 --> 00:10:02,840
+the color restoration is better, the second, it has a depth of field ability, what does it mean,
+
+269
+00:10:02,840 --> 00:10:06,840
+that is, if your fabric is made into a frame,
+
+270
+00:10:06,840 --> 00:10:10,840
+leaving this glass surface, there is about a few millimeters of distance,
+
+271
+00:10:10,840 --> 00:10:15,840
+ccd is able to match the glue, and this cis is not possible, it must be pressed very flat,
+
+272
+00:10:15,840 --> 00:10:19,840
+but cis also has an advantage, it scans faster,
+
+273
+00:10:19,840 --> 00:10:22,840
+so it depends on your choice,
+
+274
+00:10:22,840 --> 00:10:27,840
+for example, I use my usual V850 as an example, it is the ccd scanner,
+
+275
+00:10:27,840 --> 00:10:31,840
+ccd scanner, you will find that it has two lenses on and off,
+
+276
+00:10:31,840 --> 00:10:34,840
+the lens surface above, in the traditional case, it is to scan the film,
+
+277
+00:10:34,840 --> 00:10:39,840
+scan the film, it will have a film frame, the film clip is placed below,
+
+278
+00:10:39,840 --> 00:10:43,840
+the film clip, the clip is the film, the film and the glass surface above,
+
+279
+00:10:43,840 --> 00:10:45,840
+have a distance of a few millimeters,
+
+280
+00:10:45,840 --> 00:10:48,840
+it can match the glue, so this can also remind you,
+
+281
+00:10:48,840 --> 00:10:51,840
+if you encounter some, for example, a small amount of ccd and other fabrics,
+
+282
+00:10:51,840 --> 00:10:53,840
+this is not so big,
+
+283
+00:10:53,840 --> 00:10:55,840
+you can even buy one yourself,
+
+284
+00:10:55,840 --> 00:10:57,840
+a magnetic clip,
+
+285
+00:10:57,840 --> 00:10:59,840
+clamped on this scanner,
+
+286
+00:10:59,840 --> 00:11:01,840
+if you adjust the distance of this focus,
+
+287
+00:11:01,840 --> 00:11:03,840
+it can also scan clearly,
+
+288
+00:11:03,840 --> 00:11:05,840
+so as not to let the fabric be pressed flat,
+
+289
+00:11:05,840 --> 00:11:07,840
+this is my experience,
+
+290
+00:11:07,840 --> 00:11:09,840
+but the general scanner, only the bottom plane,
+
+291
+00:11:09,840 --> 00:11:11,840
+in general, it must be attached,
+
+292
+00:11:11,840 --> 00:11:15,840
+it is not suitable for this kind of more three-dimensional fabric,
+
+293
+00:11:15,840 --> 00:11:17,840
+in the scanning process,
+
+294
+00:11:17,840 --> 00:11:19,840
+there will also be two key problems,
+
+295
+00:11:19,840 --> 00:11:21,840
+the color deviation problem,
+
+296
+00:11:21,840 --> 00:11:23,840
+in general, the ccd will be a little more accurate,
+
+297
+00:11:23,840 --> 00:11:25,840
+but the cis will not be very accurate,
+
+298
+00:11:25,840 --> 00:11:27,840
+the scanner will often be discolored,
+
+299
+00:11:27,840 --> 00:11:29,840
+especially for our fabrics,
+
+300
+00:11:29,840 --> 00:11:31,840
+so if you have the conditions,
+
+301
+00:11:31,840 --> 00:11:33,840
+you can also go and buy Esli's color correction card,
+
+302
+00:11:33,840 --> 00:11:35,840
+24 color correction card,
+
+303
+00:11:35,840 --> 00:11:37,840
+it will scan the color correction card first,
+
+304
+00:11:37,840 --> 00:11:39,840
+and finally generate a color correction file,
+
+305
+00:11:39,840 --> 00:11:41,840
+stored in the specific location of the computer C disk,
+
+306
+00:11:41,840 --> 00:11:43,840
+then the scanner,
+
+307
+00:11:43,840 --> 00:11:45,840
+you can use this color correction file,
+
+308
+00:11:45,840 --> 00:11:47,840
+the icc color correction curve,
+
+309
+00:11:47,840 --> 00:11:49,840
+then your scan will be accurate,
+
+310
+00:11:49,840 --> 00:11:51,840
+according to your color correction,
+
+311
+00:11:51,840 --> 00:11:53,840
+but in fact, there is another key point,
+
+312
+00:11:53,840 --> 00:11:55,840
+everyone should also pay attention,
+
+313
+00:11:55,840 --> 00:11:57,840
+in fact, your screen,
+
+314
+00:11:57,840 --> 00:11:59,840
+if you use it for a long time,
+
+315
+00:11:59,840 --> 00:12:01,840
+it will also affect the effect you see at the end,
+
+316
+00:12:01,840 --> 00:12:03,840
+often it may not be that
+
+317
+00:12:03,840 --> 00:12:05,840
+the color of your scan is particularly inaccurate,
+
+318
+00:12:05,840 --> 00:12:07,840
+it is that your screen is discolored,
+
+319
+00:12:07,840 --> 00:12:09,840
+so if you have the conditions,
+
+320
+00:12:09,840 --> 00:12:11,840
+you can also use the red spider,
+
+321
+00:12:11,840 --> 00:12:13,840
+or Esli's color correction chair,
+
+322
+00:12:13,840 --> 00:12:15,840
+for example,
+
+323
+00:12:15,840 --> 00:12:17,840
+if you don't use it much,
+
+324
+00:12:17,840 --> 00:12:19,840
+you can also hire someone to rent it online,
+
+325
+00:12:19,840 --> 00:12:21,840
+call the color for a period of time,
+
+326
+00:12:21,840 --> 00:12:23,840
+then your screen display will be better,
+
+327
+00:12:23,840 --> 00:12:25,840
+otherwise there will be discoloration,
+
+328
+00:12:25,840 --> 00:12:27,840
+this is the feature of the scanning chair,
+
+329
+00:12:27,840 --> 00:12:29,840
+I gave you an introduction,
+
+330
+00:12:29,840 --> 00:12:31,840
+then in my actual use,
+
+331
+00:12:31,840 --> 00:12:33,840
+there are some small skills,
+
+332
+00:12:33,840 --> 00:12:35,840
+for example,
+
+333
+00:12:35,840 --> 00:12:37,840
+the scanning chair at my home,
+
+334
+00:12:37,840 --> 00:12:39,840
+is the scanning chair of CIS,
+
+335
+00:12:39,840 --> 00:12:41,840
+that is, the scanning chair for our office,
+
+336
+00:12:41,840 --> 00:12:43,840
+for example,
+
+337
+00:12:43,840 --> 00:12:45,840
+if I use my phone to take this picture,
+
+338
+00:12:45,840 --> 00:12:47,840
+the difference is still quite large,
+
+339
+00:12:47,840 --> 00:12:49,840
+in fact,
+
+340
+00:12:49,840 --> 00:12:51,840
+the picture I took with my phone is still very accurate,
+
+341
+00:12:51,840 --> 00:12:53,840
+then take a picture,
+
+342
+00:12:53,840 --> 00:12:55,840
+I also recommend that if you can,
+
+343
+00:12:55,840 --> 00:12:57,840
+it is better to take a picture with an iPhone phone,
+
+344
+00:12:57,840 --> 00:12:59,840
+because its color reproduction is better than that of a mobile phone in China,
+
+345
+00:12:59,840 --> 00:13:01,840
+for example,
+
+346
+00:13:01,840 --> 00:13:03,840
+it may not be so bright,
+
+347
+00:13:03,840 --> 00:13:05,840
+but the color reproduction is relatively high,
+
+348
+00:13:05,840 --> 00:13:07,840
+when you are outside in the morning,
+
+349
+00:13:07,840 --> 00:13:09,840
+but do not direct sunlight,
+
+350
+00:13:09,840 --> 00:13:11,840
+then the light is more sufficient,
+
+351
+00:13:11,840 --> 00:13:13,840
+take a picture as a comparison,
+
+352
+00:13:13,840 --> 00:13:15,840
+then we can use the color matching in Photoshop,
+
+353
+00:13:15,840 --> 00:13:17,840
+put the picture taken by your phone
+
+354
+00:13:17,840 --> 00:13:19,840
+and the scan picture
+
+355
+00:13:19,840 --> 00:13:21,840
+in Photoshop,
+
+356
+00:13:21,840 --> 00:13:23,840
+then open the image,
+
+357
+00:13:23,840 --> 00:13:25,840
+adjust the color matching in it,
+
+358
+00:13:25,840 --> 00:13:27,840
+then the source,
+
+359
+00:13:27,840 --> 00:13:29,840
+that is, your reference,
+
+360
+00:13:29,840 --> 00:13:31,840
+choose the picture taken,
+
+361
+00:13:31,840 --> 00:13:33,840
+then open the picture,
+
+362
+00:13:33,840 --> 00:13:35,840
+scan this picture,
+
+363
+00:13:35,840 --> 00:13:37,840
+then it will adjust the color of the picture taken,
+
+364
+00:13:37,840 --> 00:13:39,840
+your scan picture,
+
+365
+00:13:39,840 --> 00:13:41,840
+do some adjustment,
+
+366
+00:13:41,840 --> 00:13:43,840
+then the result will often have a certain effect,
+
+367
+00:13:43,840 --> 00:13:45,840
+for example,
+
+368
+00:13:45,840 --> 00:13:47,840
+the picture on the left and the picture on the right,
+
+369
+00:13:47,840 --> 00:13:49,840
+the left is my scan picture,
+
+370
+00:13:49,840 --> 00:13:51,840
+the right is the color of the scan picture,
+
+371
+00:13:51,840 --> 00:13:53,840
+the color of the scan picture is much more accurate,
+
+372
+00:13:53,840 --> 00:13:55,840
+because the sharpness of your scan picture
+
+373
+00:13:55,840 --> 00:13:57,840
+is stronger than that of a mobile phone,
+
+374
+00:13:57,840 --> 00:13:59,840
+so its usability will definitely be higher,
+
+375
+00:13:59,840 --> 00:14:01,840
+but often the color is not accurate,
+
+376
+00:14:01,840 --> 00:14:03,840
+and there is no scan card,
+
+377
+00:14:03,840 --> 00:14:05,840
+your scan is a little bit biased,
+
+378
+00:14:05,840 --> 00:14:07,840
+then you can try this method,
+
+379
+00:14:07,840 --> 00:14:09,840
+this method is a little manual,
+
+380
+00:14:09,840 --> 00:14:11,840
+but it is also effective,
+
+381
+00:14:11,840 --> 00:14:13,840
+I often use this method,
+
+382
+00:14:13,840 --> 00:14:15,840
+then the second,
+
+383
+00:14:15,840 --> 00:14:17,840
+is the large picture scan,
+
+384
+00:14:17,840 --> 00:14:19,840
+large picture scan,
+
+385
+00:14:19,840 --> 00:14:21,840
+I found a video,
+
+386
+00:14:21,840 --> 00:14:23,840
+you can take a look,
+
+387
+00:14:23,840 --> 00:14:25,840
+this foreign person,
+
+388
+00:14:25,840 --> 00:14:27,840
+the company uses an A0 size large picture scan,
+
+389
+00:14:27,840 --> 00:14:29,840
+it was originally to scan the engineering map,
+
+390
+00:14:29,840 --> 00:14:31,840
+then how to scan the fabric,
+
+391
+00:14:31,840 --> 00:14:33,840
+he did a process,
+
+392
+00:14:33,840 --> 00:14:35,840
+the first because the fabric is too soft,
+
+393
+00:14:35,840 --> 00:14:37,840
+so he found a transparent,
+
+394
+00:14:37,840 --> 00:14:39,840
+then you use tape,
+
+395
+00:14:39,840 --> 00:14:41,840
+stick to the starting position,
+
+396
+00:14:41,840 --> 00:14:43,840
+then he,
+
+397
+00:14:43,840 --> 00:14:45,840
+because this large picture scan,
+
+398
+00:14:45,840 --> 00:14:47,840
+like a clip,
+
+399
+00:14:47,840 --> 00:14:49,840
+then you put your,
+
+400
+00:14:49,840 --> 00:14:51,840
+with transparent clip,
+
+401
+00:14:51,840 --> 00:14:53,840
+this position,
+
+402
+00:14:53,840 --> 00:14:55,840
+pushed into your scan,
+
+403
+00:14:55,840 --> 00:14:57,840
+he can go in,
+
+404
+00:14:57,840 --> 00:14:59,840
+if you just put the fabric,
+
+405
+00:14:59,840 --> 00:15:01,840
+he can't get in,
+
+406
+00:15:01,840 --> 00:15:03,840
+because he has a glue wheel clip,
+
+407
+00:15:03,840 --> 00:15:05,840
+then put it in the right place,
+
+408
+00:15:05,840 --> 00:15:07,840
+then push in,
+
+409
+00:15:07,840 --> 00:15:09,840
+maybe a few times,
+
+410
+00:15:09,840 --> 00:15:11,840
+because it is automatically,
+
+411
+00:15:11,840 --> 00:15:13,840
+to identify this position,
+
+412
+00:15:13,840 --> 00:15:15,840
+automatically go in,
+
+413
+00:15:15,840 --> 00:15:17,840
+so sometimes,
+
+414
+00:15:17,840 --> 00:15:19,840
+to try a few more times,
+
+415
+00:15:19,840 --> 00:15:21,840
+because I also bought a unit,
+
+416
+00:15:21,840 --> 00:15:23,840
+a Japanese large picture scan,
+
+417
+00:15:23,840 --> 00:15:25,840
+also my effect,
+
+418
+00:15:25,840 --> 00:15:27,840
+can also use,
+
+419
+00:15:33,840 --> 00:15:35,840
+I'm a little faster,
+
+420
+00:15:35,840 --> 00:15:37,840
+should,
+
+421
+00:15:37,840 --> 00:15:39,840
+he has identified,
+
+422
+00:15:39,840 --> 00:15:41,840
+then he began to operate,
+
+423
+00:15:43,840 --> 00:15:45,840
+because the starting position,
+
+424
+00:15:45,840 --> 00:15:47,840
+is very difficult to go,
+
+425
+00:15:49,840 --> 00:15:51,840
+he may be a test,
+
+426
+00:15:51,840 --> 00:15:53,840
+then began to go in,
+
+427
+00:15:53,840 --> 00:15:55,840
+there are some large picture scan,
+
+428
+00:15:55,840 --> 00:15:57,840
+with a clip,
+
+429
+00:15:57,840 --> 00:15:59,840
+below a copper plate,
+
+430
+00:15:59,840 --> 00:16:01,840
+above a layer,
+
+431
+00:16:01,840 --> 00:16:03,840
+transparent UV,
+
+432
+00:16:03,840 --> 00:16:05,840
+then change the fabric,
+
+433
+00:16:05,840 --> 00:16:07,840
+inside,
+
+434
+00:16:07,840 --> 00:16:09,840
+then go over,
+
+435
+00:16:09,840 --> 00:16:11,840
+his resolution,
+
+436
+00:16:11,840 --> 00:16:13,840
+can probably reach,
+
+437
+00:16:13,840 --> 00:16:15,840
+more than 1200,
+
+438
+00:16:15,840 --> 00:16:17,840
+in fact,
+
+439
+00:16:17,840 --> 00:16:19,840
+clear enough,
+
+440
+00:16:19,840 --> 00:16:21,840
+if you do this,
+
+441
+00:16:21,840 --> 00:16:23,840
+than,
+
+442
+00:16:23,840 --> 00:16:25,840
+A3,
+
+443
+00:16:25,840 --> 00:16:27,840
+A4,
+
+444
+00:16:27,840 --> 00:16:29,840
+the scanner,
+
+445
+00:16:29,840 --> 00:16:31,840
+much better,
+
+446
+00:16:31,840 --> 00:16:33,840
+because it's too wide,
+
+447
+00:16:33,840 --> 00:16:37,840
+and then,
+
+448
+00:16:37,840 --> 00:16:39,840
+you have to,
+
+449
+00:16:39,840 --> 00:16:41,840
+to do,
+
+450
+00:16:41,840 --> 00:16:43,840
+but I want to tell you,
+
+451
+00:16:43,840 --> 00:16:45,840
+generally,
+
+452
+00:16:45,840 --> 00:16:47,840
+this kind of big and small,
+
+453
+00:16:47,840 --> 00:16:49,840
+are all CIS,
+
+454
+00:16:49,840 --> 00:16:51,840
+this is the light,
+
+455
+00:16:51,840 --> 00:16:53,840
+so the color reproduction,
+
+456
+00:16:53,840 --> 00:16:55,840
+according to,
+
+457
+00:16:55,840 --> 00:16:57,840
+for example,
+
+458
+00:16:57,840 --> 00:16:59,840
+the CCD,
+
+459
+00:16:59,840 --> 00:17:01,840
+still a little weak,
+
+460
+00:17:01,840 --> 00:17:03,840
+the third kind,
+
+461
+00:17:03,840 --> 00:17:05,840
+in fact,
+
+462
+00:17:05,840 --> 00:17:07,840
+is a more professional device,
+
+463
+00:17:07,840 --> 00:17:09,840
+is the camera scanner,
+
+464
+00:17:09,840 --> 00:17:11,840
+we call it,
+
+465
+00:17:11,840 --> 00:17:13,840
+fabric camera scanner,
+
+466
+00:17:13,840 --> 00:17:15,840
+I gave three examples,
+
+467
+00:17:15,840 --> 00:17:17,840
+the first is,
+
+468
+00:17:17,840 --> 00:17:19,840
+the German company,
+
+469
+00:17:19,840 --> 00:17:21,840
+X-Tex,
+
+470
+00:17:21,840 --> 00:17:23,840
+it should be,
+
+471
+00:17:23,840 --> 00:17:25,840
+on the market,
+
+472
+00:17:25,840 --> 00:17:27,840
+made earlier,
+
+473
+00:17:27,840 --> 00:17:29,840
+such a device,
+
+474
+00:17:29,839 --> 00:17:31,839
+a kit,
+
+475
+00:17:31,839 --> 00:17:33,839
+one of them,
+
+476
+00:17:33,839 --> 00:17:35,839
+is also a,
+
+477
+00:17:35,839 --> 00:17:37,839
+this kind of fabric scanner,
+
+478
+00:17:37,839 --> 00:17:39,839
+its benefits,
+
+479
+00:17:39,839 --> 00:17:41,839
+there are many benefits,
+
+480
+00:17:41,839 --> 00:17:43,839
+you can see,
+
+481
+00:17:43,839 --> 00:17:45,839
+the principle is,
+
+482
+00:17:45,839 --> 00:17:47,839
+put the camera,
+
+483
+00:17:47,839 --> 00:17:49,839
+micro unit,
+
+484
+00:17:49,839 --> 00:17:51,839
+unit,
+
+485
+00:17:51,839 --> 00:17:53,839
+even industrial camera lens,
+
+486
+00:17:53,839 --> 00:17:55,839
+combine your light box,
+
+487
+00:17:55,839 --> 00:17:57,839
+and then,
+
+488
+00:17:57,839 --> 00:17:59,839
+depends on your ability,
+
+489
+00:17:59,839 --> 00:18:01,839
+principle,
+
+490
+00:18:01,839 --> 00:18:03,839
+you can see,
+
+491
+00:18:03,839 --> 00:18:05,839
+I take one of them as an example,
+
+492
+00:18:05,839 --> 00:18:07,839
+you see,
+
+493
+00:18:07,839 --> 00:18:09,839
+there is a light box inside,
+
+494
+00:18:09,839 --> 00:18:11,839
+top light,
+
+495
+00:18:11,839 --> 00:18:13,839
+below this also has a light,
+
+496
+00:18:13,839 --> 00:18:15,839
+side light,
+
+497
+00:18:15,839 --> 00:18:17,839
+then the camera,
+
+498
+00:18:17,839 --> 00:18:19,839
+connected,
+
+499
+00:18:19,839 --> 00:18:21,839
+connected,
+
+500
+00:18:21,839 --> 00:18:23,839
+then,
+
+501
+00:18:23,839 --> 00:18:25,839
+because I opened the light box,
+
+502
+00:18:25,839 --> 00:18:27,839
+then the light box,
+
+503
+00:18:27,839 --> 00:18:29,839
+it can record,
+
+504
+00:18:29,839 --> 00:18:31,839
+if not,
+
+505
+00:18:31,839 --> 00:18:33,839
+it can also record,
+
+506
+00:18:33,839 --> 00:18:35,839
+so you can get a very accurate black and white picture,
+
+507
+00:18:35,839 --> 00:18:37,839
+then we can see,
+
+508
+00:18:37,839 --> 00:18:39,839
+what are its advantages,
+
+509
+00:18:39,839 --> 00:18:41,839
+for example,
+
+510
+00:18:41,839 --> 00:18:43,839
+there is a color fabric scanning,
+
+511
+00:18:43,839 --> 00:18:45,839
+then the color fabric,
+
+512
+00:18:45,839 --> 00:18:47,839
+in fact,
+
+513
+00:18:47,839 --> 00:18:49,839
+it is different,
+
+514
+00:18:49,839 --> 00:18:51,839
+then I use some software,
+
+515
+00:18:51,839 --> 00:18:53,839
+to do a calculation,
+
+516
+00:18:53,839 --> 00:18:55,839
+to shoot from a different angle,
+
+517
+00:18:55,839 --> 00:18:57,839
+then record the result,
+
+518
+00:18:57,839 --> 00:18:59,839
+so it is very accurate,
+
+519
+00:18:59,839 --> 00:19:01,839
+and you pass,
+
+520
+00:19:01,839 --> 00:19:03,839
+whether it is our AIGC method,
+
+521
+00:19:03,839 --> 00:19:05,839
+or through some software,
+
+522
+00:19:05,839 --> 00:19:07,839
+it is often difficult to be accurate,
+
+523
+00:19:07,839 --> 00:19:09,839
+because our fabric,
+
+524
+00:19:09,839 --> 00:19:11,839
+although the color is different,
+
+525
+00:19:11,839 --> 00:19:13,839
+but its decoloration,
+
+526
+00:19:13,839 --> 00:19:15,839
+the color is different,
+
+527
+00:19:15,839 --> 00:19:17,839
+the decoloration is the same,
+
+528
+00:19:17,839 --> 00:19:19,839
+then it is very troublesome,
+
+529
+00:19:19,839 --> 00:19:21,839
+especially this multi-colored color,
+
+530
+00:19:21,839 --> 00:19:23,839
+because,
+
+531
+00:19:23,839 --> 00:19:25,839
+it can't be determined,
+
+532
+00:19:25,839 --> 00:19:27,839
+it can't be determined,
+
+533
+00:19:27,839 --> 00:19:29,839
+without the depth of the shooting,
+
+534
+00:19:29,839 --> 00:19:31,839
+so this is the biggest advantage,
+
+535
+00:19:31,839 --> 00:19:33,839
+of this kind of scanning,
+
+536
+00:19:33,839 --> 00:19:35,839
+the resolution is very high,
+
+537
+00:19:35,839 --> 00:19:37,839
+then after the shooting,
+
+538
+00:19:37,839 --> 00:19:39,839
+the second step,
+
+539
+00:19:39,839 --> 00:19:41,839
+is to do a circular find,
+
+540
+00:19:41,839 --> 00:19:43,839
+in fact,
+
+541
+00:19:43,839 --> 00:19:45,839
+there is this function,
+
+542
+00:19:45,839 --> 00:19:47,839
+it is easy to open a relatively new version of the color,
+
+543
+00:19:47,839 --> 00:19:49,839
+there is a fabric called,
+
+544
+00:19:49,839 --> 00:19:51,839
+color fabric,
+
+545
+00:19:51,839 --> 00:19:53,839
+such a small tool,
+
+546
+00:19:53,839 --> 00:19:55,839
+in fact,
+
+547
+00:19:55,839 --> 00:19:57,839
+the X-Tex software of Vizu company,
+
+548
+00:19:57,839 --> 00:19:59,839
+can also be used,
+
+549
+00:19:59,839 --> 00:20:01,839
+and what we often use,
+
+550
+00:20:01,839 --> 00:20:03,839
+such as Pixplant,
+
+551
+00:20:03,839 --> 00:20:05,839
+can also get this result,
+
+552
+00:20:05,839 --> 00:20:07,839
+in fact,
+
+553
+00:20:07,839 --> 00:20:09,839
+it is still a difficult thing to find a circle,
+
+554
+00:20:09,839 --> 00:20:11,839
+because we have a lot of fabric,
+
+555
+00:20:11,839 --> 00:20:13,839
+in addition to this,
+
+556
+00:20:13,839 --> 00:20:15,839
+the texture is very clear,
+
+557
+00:20:15,839 --> 00:20:17,839
+the circle is easy to find,
+
+558
+00:20:17,839 --> 00:20:19,839
+in fact,
+
+559
+00:20:19,839 --> 00:20:21,839
+there are many,
+
+560
+00:20:21,839 --> 00:20:23,839
+on the database,
+
+561
+00:20:23,839 --> 00:20:25,839
+the circle you want to find,
+
+562
+00:20:25,839 --> 00:20:27,839
+the software still has some algorithms,
+
+563
+00:20:27,839 --> 00:20:29,839
+for example,
+
+564
+00:20:29,839 --> 00:20:31,839
+there is an able,
+
+565
+00:20:31,839 --> 00:20:33,839
+then it has a different algorithm,
+
+566
+00:20:33,839 --> 00:20:35,839
+it's actually very similar,
+
+567
+00:20:35,839 --> 00:20:37,839
+but it's not exactly the same,
+
+568
+00:20:37,839 --> 00:20:39,839
+then I found a circle,
+
+569
+00:20:39,839 --> 00:20:41,839
+in fact,
+
+570
+00:20:41,839 --> 00:20:43,839
+you can't find a circle in a single piece,
+
+571
+00:20:43,839 --> 00:20:45,839
+you have to combine it through an algorithm,
+
+572
+00:20:45,839 --> 00:20:47,839
+if you are interested,
+
+573
+00:20:47,839 --> 00:20:49,839
+you can find the official website of Vizu,
+
+574
+00:20:49,839 --> 00:20:55,480
+It's the same with Pixplan, and it's probably a lot of this kind of material that they use a lot when they do it
+
+575
+00:20:56,879 --> 00:20:57,839
+You can borrow it
+
+576
+00:20:58,619 --> 00:21:06,179
+But if you're using a light box, he doesn't have to look for it. As long as he comes in, there's six stickers and then you just have to find a circle and that's it
+
+577
+00:21:06,399 --> 00:21:09,799
+In other words, the stickers don't have to be taken out directly
+
+578
+00:21:10,459 --> 00:21:15,779
+But if you use a scanner and other ways, what do you do with the rest of the stickers? You'll have software to calculate
+
+579
+00:21:15,779 --> 00:21:23,779
+Ah, for example, you have only one texture map to scan and then you have an auto-generate of these graphics
+
+580
+00:21:24,420 --> 00:21:30,819
+For example, it's not transparent and it's auto-generated, but the accuracy is not necessarily what you want
+
+581
+00:21:31,379 --> 00:21:34,460
+So you're going to have to look at it and analyze if it meets your requirements
+
+582
+00:21:35,019 --> 00:21:39,700
+There are not too many parameters and settings for this auto-crawl. It's just a simple one
+
+583
+00:21:40,899 --> 00:21:43,539
+But for example, let's take Photoshop as an example
+
+584
+00:21:43,920 --> 00:21:44,420
+Photoshop
+
+585
+00:21:44,420 --> 00:21:45,779
+The version before 2022
+
+586
+00:21:45,920 --> 00:21:47,220
+Theunity purple
+
+587
+00:21:47,579 --> 00:21:49,980
+In this filter you have a 3D filter like this
+
+588
+00:21:50,559 --> 00:22:04,559
+It has a generated法线图 and a generated print f y
+
+589
+00:22:04,740 --> 00:22:10,259
+d
+
+590
+00:22:10,740 --> 00:22:12,220
+You can also picture it in the Forensic version
+
+591
+00:22:12,839 --> 00:22:15,759
+If it's like me, the colors won't be perfect
+
+592
+00:22:15,779 --> 00:22:20,579
+We usually can't see it, so it's better to have a version around 2022.
+
+593
+00:22:20,579 --> 00:22:21,180
+It's more suitable.
+
+594
+00:22:21,180 --> 00:22:22,980
+It's too old to go any further.
+
+595
+00:22:22,980 --> 00:22:25,500
+You can pay attention to it.
+
+596
+00:22:25,500 --> 00:22:28,379
+But if you don't have a transparent map, then you can put it on the sofa.
+
+597
+00:22:28,379 --> 00:22:32,660
+After entering a picture, use the color range to choose the position you want to be transparent, right?
+
+598
+00:22:32,660 --> 00:22:35,660
+And then give it a white and black, right?
+
+599
+00:22:35,660 --> 00:22:37,180
+The transparent one is black.
+
+600
+00:22:37,180 --> 00:22:38,379
+The non-transparent one is white.
+
+601
+00:22:38,379 --> 00:22:39,660
+Then give birth to such a map.
+
+602
+00:22:39,660 --> 00:22:41,139
+It can also be used.
+
+603
+00:22:41,139 --> 00:22:43,779
+But do some processing of the effect.
+
+604
+00:22:43,779 --> 00:22:46,059
+This kind of paper, the largest paper, the smallest paper.
+
+605
+00:22:46,059 --> 00:22:48,740
+You have to make some settings to get a better one.
+
+606
+00:22:48,740 --> 00:22:50,700
+Otherwise, some places are not clean.
+
+607
+00:22:50,700 --> 00:22:53,779
+If you put the three-dimensional high film at the end and look at it, it's not very clean.
+
+608
+00:22:53,779 --> 00:22:57,460
+But the way you take pictures is very good.
+
+609
+00:22:57,460 --> 00:23:04,579
+So if you use Pixplant, it can also find the loop and do the reflection.
+
+610
+00:23:04,579 --> 00:23:06,899
+Change the way of these stickers.
+
+611
+00:23:06,899 --> 00:23:13,539
+If you have the conditions, you can use Pixplant to do this PBR sticker method.
+
+612
+00:23:13,539 --> 00:23:13,579
+The best way to do this is to use Pixplant.
+
+613
+00:23:13,579 --> 00:23:13,619
+The best way to do this is to use Pixplant.
+
+614
+00:23:13,619 --> 00:23:13,740
+The best way to do this is to use Pixplant.
+
+615
+00:23:13,740 --> 00:23:17,700
+And then if you're done with these stickers, actually, how do you get your physical properties?
+
+616
+00:23:17,700 --> 00:23:22,900
+For example, when Kolo was early, he had a set of this kind of semi-hand-made test equipment.
+
+617
+00:23:22,900 --> 00:23:24,380
+That's how you stretch it.
+
+618
+00:23:24,380 --> 00:23:25,460
+Test his stretch.
+
+619
+00:23:25,460 --> 00:23:28,859
+Through this kind of hardness, you bend it to determine the hardness.
+
+620
+00:23:28,859 --> 00:23:32,059
+And then we use our scale to measure the weight.
+
+621
+00:23:32,059 --> 00:23:34,740
+And then this kind of thousand-point ruler to measure the thickness.
+
+622
+00:23:34,740 --> 00:23:39,140
+Of course, he'll cut it into three lines.
+
+623
+00:23:39,140 --> 00:23:41,019
+And then you put it in and you calculate it.
+
+624
+00:23:41,019 --> 00:23:42,660
+Create a fabric.
+
+625
+00:23:42,660 --> 00:23:43,539
+This kind of physical properties.
+
+626
+00:23:43,539 --> 00:23:48,299
+If you don't have these devices, as long as it's in the cloud, it's in the cloud.
+
+627
+00:23:48,299 --> 00:23:48,779
+FAB.
+
+628
+00:23:48,779 --> 00:23:51,579
+He also has a physical property.
+
+629
+00:23:51,579 --> 00:23:52,299
+How to generate
+
+630
+00:23:52,299 --> 00:23:54,059
+He's based on the type you chose.
+
+631
+00:23:54,059 --> 00:23:54,859
+It's a study.
+
+632
+00:23:54,859 --> 00:23:57,019
+And then the second one is what you're made of.
+
+633
+00:23:57,019 --> 00:23:58,460
+How much is the third class?
+
+634
+00:23:58,460 --> 00:23:59,339
+How much is the back?
+
+635
+00:23:59,339 --> 00:24:00,940
+These two still need to be tested.
+
+636
+00:24:00,940 --> 00:24:05,940
+He automatically matches a physical property to you based on his big data.
+
+637
+00:24:05,940 --> 00:24:08,740
+I don't recommend that you make a mess in the parameters.
+
+638
+00:24:08,740 --> 00:24:11,619
+Because adjustment and actual error are still very large.
+
+639
+00:24:11,619 --> 00:24:13,339
+His strength is a few comprehensive numbers.
+
+640
+00:24:13,339 --> 00:24:15,459
+Any data reference is very difficult.
+
+641
+00:24:15,459 --> 00:24:17,419
+It's very accurate to adjust by hand.
+
+642
+00:24:17,419 --> 00:24:18,139
+So you don't have to measure it.
+
+643
+00:24:18,139 --> 00:24:19,659
+You don't have to generate a big number.
+
+644
+00:24:19,659 --> 00:24:20,740
+That's my suggestion.
+
+645
+00:24:20,740 --> 00:24:21,779
+Put it together.
+
+646
+00:24:21,779 --> 00:24:24,379
+It's going to be a perfect fabric.
+
+647
+00:24:24,379 --> 00:24:28,299
+So I can show you some of the things I've done before.
+
+648
+00:24:28,299 --> 00:24:31,659
+So I put these six maps in a circle.
+
+649
+00:24:31,659 --> 00:24:33,099
+Finally, I found a model.
+
+650
+00:24:33,099 --> 00:24:36,139
+And then I did a light rendering in Blender.
+
+651
+00:24:36,139 --> 00:24:38,980
+And then his texture and authenticity are higher.
+
+652
+00:24:38,980 --> 00:24:39,939
+This is in the mouth.
+
+653
+00:24:39,939 --> 00:24:41,579
+I found a model in there.
+
+654
+00:24:41,579 --> 00:24:42,699
+Stick it in.
+
+655
+00:24:42,700 --> 00:24:46,299
+You're going to say some of these transparent maps.
+
+656
+00:24:46,299 --> 00:24:48,180
+You use what I do with the shooting method.
+
+657
+00:24:48,180 --> 00:24:49,500
+It works very well.
+
+658
+00:24:49,500 --> 00:24:50,940
+There won't be a certain position.
+
+659
+00:24:50,940 --> 00:24:53,500
+There will be this kind of clean problem.
+
+660
+00:24:53,500 --> 00:24:57,220
+So this is the biggest advantage of the shooting method.
+
+661
+00:24:57,220 --> 00:24:58,460
+So that's about it for everyone.
+
+662
+00:24:58,460 --> 00:24:59,180
+Because time is limited.
+
+663
+00:24:59,180 --> 00:25:00,100
+That's all I'm going to share.
+

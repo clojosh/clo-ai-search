@@ -18,30 +18,35 @@ zendesk_article_attachment_api_endpoint = "https://support.{0}.com/api/v2/help_c
 
 
 class Azure:
-    def __init__(self, stage="dev", brand="", language="English"):
-        self.stage = stage
+    def __init__(self, app="", brand="", stage="dev", language="English"):
+        self.app = app
 
         if brand == "marvelousdesigner":
             self.brand = "md"
         else:
             self.brand = brand
 
+        self.stage = stage
         self.language = language
 
-        if stage == "prod":
-            load_dotenv(os.path.join(parent_dir_path, ".env.prod"))
+        if app == "CLO API":
+            if stage == "prod":
+                load_dotenv(os.path.join(parent_dir_path, ".env.api.prod"))
+            else:
+                load_dotenv(os.path.join(parent_dir_path, ".env.api.dev"))
         else:
-            load_dotenv(os.path.join(parent_dir_path, ".env.dev"))
+            if stage == "prod":
+                load_dotenv(os.path.join(parent_dir_path, ".env.prod"))
 
-        self.ZENDESK_USERNAME = os.environ.get("ZENDESK_USERNAME")
-        self.ZENDESK_PASSWORD = os.environ.get("ZENDESK_PASSWORD")
+        self.ZENDESK_USERNAME = os.environ.get("ZENDESK_USERNAME", "")
+        self.ZENDESK_PASSWORD = os.environ.get("ZENDESK_PASSWORD", "")
 
-        self.AZURE_SEARCH_SERVICE = os.environ.get("AZURE_SEARCH_SERVICE")
+        self.AZURE_SEARCH_SERVICE = os.environ.get("AZURE_SEARCH_SERVICE", "")
 
-        self.INDEX_NAME = os.environ.get(f"{self.brand.upper()}_AZURE_SEARCH_INDEX", "CLO3D_AZURE_SEARCH_INDEX")
+        self.INDEX_NAME = os.environ.get(f"{self.brand.upper()}_AZURE_SEARCH_INDEX", "")
 
         self.SEARCH_CLIENT_ENDPOINT = f"https://{self.AZURE_SEARCH_SERVICE}.search.windows.net"
-        self.AZURE_KEY_CREDENTIAL = AzureKeyCredential(os.environ.get("AZURE_SEARCH_KEY"))
+        self.AZURE_KEY_CREDENTIAL = AzureKeyCredential(os.environ.get("AZURE_SEARCH_KEY", ""))
 
         self.search_client = SearchClient(
             endpoint=f"https://{self.AZURE_SEARCH_SERVICE}.search.windows.net",
@@ -53,26 +58,18 @@ class Azure:
             endpoint=f"https://{self.AZURE_SEARCH_SERVICE}.search.windows.net", credential=self.AZURE_KEY_CREDENTIAL
         )
 
-        self.AZURE_OPENAI_SERVICE = os.environ.get("AZURE_OPENAI_SERVICE")
-        self.AZURE_OPENAI_CHATGPT_DEPLOYMENT = os.environ.get("AZURE_OPENAI_CHATGPT_DEPLOYMENT")
-        self.AZURE_OPENAI_EMB_DEPLOYMENT = os.environ.get("AZURE_OPENAI_EMB_DEPLOYMENT")
+        self.AZURE_OPENAI_CHATGPT_DEPLOYMENT = os.environ.get("AZURE_OPENAI_CHATGPT_DEPLOYMENT", "")
+        self.AZURE_OPENAI_EMB_DEPLOYMENT = os.environ.get("AZURE_OPENAI_EMB_DEPLOYMENT", "")
         self.openai_client = AzureOpenAI(
             api_version="2024-08-01-preview",
-            azure_endpoint=f"https://{self.AZURE_OPENAI_SERVICE}.openai.azure.com",
-            api_key=os.environ.get("AZURE_OPENAI_KEY"),
+            azure_endpoint=os.environ.get("AZURE_OPENAI_ENDPOINT"),
+            api_key=os.environ.get("AZURE_OPENAI_KEY") or os.environ.get("AZURE_OPENAI_API_KEY", ""),
         )
         self.openai_helper = OpenAIHelper(
             self.openai_client,
             self.AZURE_OPENAI_CHATGPT_DEPLOYMENT,
             self.AZURE_OPENAI_EMB_DEPLOYMENT,
         )
-
-        self.URI = os.environ.get("MONGO_URI")
-        self.DB_NAME = os.environ.get(f"{self.brand.upper()}_MONGO_DB_NAME", "clo3d-dev")
-        self.COLLECTION_NAME = os.environ.get("MONGO_COLLECTION_CHATHISTORY")
-        self.COLLECTION_USERS = os.environ.get("MONGO_COLLECTION_USERS")
-        self.COLLECTION_ARTICLE = os.environ.get("MONGO_COLLECTION_ARTICLES")
-        self.COLLECTION_FEEDBACK = os.environ.get("MONGO_COLLECTION_FEEDBACK")
 
     def get_locale(self) -> str:
         """

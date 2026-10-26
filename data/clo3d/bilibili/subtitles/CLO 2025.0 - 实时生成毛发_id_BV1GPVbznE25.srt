@@ -1,0 +1,344 @@
+1
+00:00:00,000 --> 00:00:05,000
+In this video, I will introduce the actual hair growth function.
+
+2
+00:00:05,000 --> 00:00:10,000
+In the previous version, users can only check the hair growth effect through Vray rendering.
+
+3
+00:00:10,000 --> 00:00:16,000
+Since the 2025.0 version, the material type in the shell has increased to a new material hair growth rate.
+
+4
+00:00:16,000 --> 00:00:21,000
+Users can directly create and check the hair growth effect in the 3D window without rendering,
+
+5
+00:00:21,000 --> 00:00:23,000
+thereby greatly simplifying the workflow.
+
+6
+00:00:23,000 --> 00:00:28,000
+In addition, the hair that is based on Vray rendering can only be checked in the rendering window,
+
+7
+00:00:28,000 --> 00:00:31,000
+limiting its use in the external application program.
+
+8
+00:00:31,000 --> 00:00:35,000
+In comparison, the hair growth rate material can lead to USD format,
+
+9
+00:00:35,000 --> 00:00:38,000
+greatly increasing the compatibility with external tools.
+
+10
+00:00:38,000 --> 00:00:44,000
+Currently, this function can only be used in Windows systems, and will also support Mac systems in the future.
+
+11
+00:00:44,000 --> 00:00:48,000
+Let's take a look at how to set the hair growth rate.
+
+12
+00:00:48,000 --> 00:00:52,000
+If you want to display or hide hair growth rate material in the 3D window,
+
+13
+00:00:52,000 --> 00:00:56,000
+you can put the mouse on the clothing rendering option in the switch menu,
+
+14
+00:00:56,000 --> 00:00:58,000
+click the icon to display the hair growth rate,
+
+15
+00:00:58,000 --> 00:01:00,000
+and then use the function.
+
+16
+00:01:00,000 --> 00:01:04,000
+At this time, the hair growth rate material will be displayed on the fabric of the hair growth rate.
+
+17
+00:01:04,000 --> 00:01:07,000
+You can check it in the 3D window in time.
+
+18
+00:01:07,000 --> 00:01:10,000
+You can also click on the color of the hair growth rate randomly,
+
+19
+00:01:10,000 --> 00:01:13,000
+and assign random colors to each hair growth rate,
+
+20
+00:01:13,000 --> 00:01:16,000
+so that it is easier to check the various shapes of hair growth rates.
+
+21
+00:01:16,000 --> 00:01:19,000
+When you use a fabric with hair growth rate material,
+
+22
+00:01:19,000 --> 00:01:22,000
+these options will be banned and cannot be selected.
+
+23
+00:01:22,000 --> 00:01:26,000
+You can control the hair growth rate in the 3D window by choosing three different options.
+
+24
+00:01:26,000 --> 00:01:31,000
+Let's go to the main menu, open the settings,
+
+25
+00:01:31,000 --> 00:01:35,000
+then open the user's definition, and click the 3D option.
+
+26
+00:01:35,000 --> 00:01:38,000
+In the hair growth rate form, you can see three options,
+
+27
+00:01:38,000 --> 00:01:40,000
+the original hair, the plane, and the limit.
+
+28
+00:01:40,000 --> 00:01:44,000
+Click each option to display the difference in the 3D window.
+
+29
+00:01:44,000 --> 00:01:49,000
+Selecting the original hair will display the original hair with thickness and width,
+
+30
+00:01:49,000 --> 00:01:52,000
+which helps to check the overall structure of the hair.
+
+31
+00:01:52,000 --> 00:01:54,000
+Selecting the plane will display the hair with thickness but no thickness,
+
+32
+00:01:54,000 --> 00:01:57,000
+and the hair with thickness and width will display the hair with width but no thickness.
+
+33
+00:01:57,000 --> 00:02:00,000
+The selected option is default.
+
+34
+00:02:00,000 --> 00:02:03,000
+The limit shows that the hair is a simple curve,
+
+35
+00:02:03,000 --> 00:02:05,000
+without thickness or width.
+
+36
+00:02:05,000 --> 00:02:07,000
+We can select the original,
+
+37
+00:02:07,000 --> 00:02:10,000
+and get a more realistic appearance of the hair.
+
+38
+00:02:10,000 --> 00:02:14,000
+Now let's see how to directly apply the hair growth rate material to the costume.
+
+39
+00:02:14,000 --> 00:02:17,000
+Click the Fabric 1 in the object window.
+
+40
+00:02:17,000 --> 00:02:19,000
+In the attribute editor,
+
+41
+00:02:19,000 --> 00:02:22,000
+change the type of material to hair growth rate.
+
+42
+00:02:22,000 --> 00:02:24,000
+Use the Fabric 1 fabric for the costume.
+
+43
+00:02:24,000 --> 00:02:27,000
+It will immediately display the hair in the 3D window.
+
+44
+00:02:27,000 --> 00:02:33,000
+You can also select various hair types from the following hair types.
+
+45
+00:02:33,000 --> 00:02:35,000
+At the bottom of the attribute editor,
+
+46
+00:02:35,000 --> 00:02:37,000
+just like the previous hair dye type,
+
+47
+00:02:37,000 --> 00:02:39,000
+you can adjust the details of the attribute,
+
+48
+00:02:39,000 --> 00:02:40,000
+such as parameters,
+
+49
+00:02:40,000 --> 00:02:41,000
+shape settings,
+
+50
+00:02:41,000 --> 00:02:44,000
+and default application to set the hair style.
+
+51
+00:02:44,000 --> 00:02:47,000
+Here we will quickly adjust some of the parameter values,
+
+52
+00:02:47,000 --> 00:02:50,000
+to show the work principle of hair setting.
+
+53
+00:02:50,000 --> 00:02:52,000
+Although the hair rate and hair are only dyed,
+
+54
+00:02:52,000 --> 00:02:53,000
+use the same parameters,
+
+55
+00:02:53,000 --> 00:02:56,000
+and set the attribute.
+
+56
+00:02:56,000 --> 00:02:58,000
+But in the hair dye window,
+
+57
+00:02:58,000 --> 00:03:01,000
+the distribution of these two hair types is different.
+
+58
+00:03:01,000 --> 00:03:02,000
+In the hair dye list,
+
+59
+00:03:02,000 --> 00:03:04,000
+a new random option has been added.
+
+60
+00:03:04,000 --> 00:03:06,000
+By adjusting the seed distribution value,
+
+61
+00:03:06,000 --> 00:03:08,000
+even if you use the same parameters,
+
+62
+00:03:08,000 --> 00:03:11,000
+you can also create a slightly different hair arrangement.
+
+63
+00:03:11,000 --> 00:03:13,000
+After setting the parameters of the hair,
+
+64
+00:03:13,000 --> 00:03:16,000
+now let's open the synchronized dyeing in the hair dye window,
+
+65
+00:03:16,000 --> 00:03:21,000
+to see the final dyeing effect of the hair.
+
+66
+00:03:21,000 --> 00:03:24,000
+You can also export the hair dye data created in the hole
+
+67
+00:03:24,000 --> 00:03:28,000
+as a usd file and use it in other software.
+
+68
+00:03:28,000 --> 00:03:29,000
+Come to the main menu,
+
+69
+00:03:29,000 --> 00:03:30,000
+click on the file export,
+
+70
+00:03:30,000 --> 00:03:32,000
+select the usd format,
+
+71
+00:03:32,000 --> 00:03:33,000
+confirm the storage path,
+
+72
+00:03:33,000 --> 00:03:35,000
+enter the file name,
+
+73
+00:03:35,000 --> 00:03:36,000
+click on the save,
+
+74
+00:03:36,000 --> 00:03:39,000
+and then click on the export usd window.
+
+75
+00:03:39,000 --> 00:03:41,000
+Ensure that the selection contains the hair dye data option,
+
+76
+00:03:41,000 --> 00:03:45,000
+so that the hair dye data is exported to the usd file.
+
+77
+00:03:45,000 --> 00:03:48,000
+Here we show a section of the hair dye,
+
+78
+00:03:48,000 --> 00:03:49,000
+in the virtual engine,
+
+79
+00:03:49,000 --> 00:03:50,000
+used to simulate a short video.
+
+80
+00:03:50,000 --> 00:03:52,000
+In the 2025 version,
+
+81
+00:03:52,000 --> 00:03:56,000
+the new hair dyeing material can be used to create the same hair dye
+
+82
+00:03:56,000 --> 00:03:59,000
+as the 3D window and the dyeing window.
+
+83
+00:03:59,000 --> 00:04:00,000
+In addition,
+
+84
+00:04:00,000 --> 00:04:02,000
+by exporting the hair dye data,
+
+85
+00:04:02,000 --> 00:04:04,000
+you can also import it into other tools,
+
+86
+00:04:04,000 --> 00:04:07,000
+and use it in various creative projects.
+

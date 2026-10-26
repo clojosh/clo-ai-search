@@ -1,0 +1,1048 @@
+1
+00:00:01,000 --> 00:00:05,000
+This video introduces 2D and 3D related functions for everyone.
+
+2
+00:00:09,000 --> 00:00:11,000
+In version 2025.0,
+
+3
+00:00:11,000 --> 00:00:15,000
+you can set the range of curve and point on the board.
+
+4
+00:00:15,000 --> 00:00:22,000
+This means that we can make curve and point edits within the range defined on the board outline line or on the internal line.
+
+5
+00:00:22,000 --> 00:00:25,000
+Now let's see how this function is operated.
+
+6
+00:00:25,000 --> 00:00:31,000
+Change 2D tool to generate round and smooth curve tool.
+
+7
+00:00:31,000 --> 00:00:34,000
+And switch to black and white surface.
+
+8
+00:00:34,000 --> 00:00:39,000
+On the board, click any straight line, curve or line.
+
+9
+00:00:39,000 --> 00:00:41,000
+Start to edit the range.
+
+10
+00:00:41,000 --> 00:00:45,000
+Then click another straight line, curve or line.
+
+11
+00:00:45,000 --> 00:00:47,000
+To end the edit range.
+
+12
+00:00:47,000 --> 00:00:52,000
+In this operation, a gray reference line will be displayed.
+
+13
+00:00:52,000 --> 00:00:55,000
+The reference line can be divided into two parts.
+
+14
+00:00:55,000 --> 00:00:58,000
+The mouse wheel stops on the side to be edited.
+
+15
+00:00:58,000 --> 00:01:02,000
+The outline line on this side will turn blue.
+
+16
+00:01:02,000 --> 00:01:05,000
+Click it, it will turn yellow.
+
+17
+00:01:05,000 --> 00:01:08,000
+Next, we need to decide which line to edit.
+
+18
+00:01:08,000 --> 00:01:10,000
+There are two options.
+
+19
+00:01:10,000 --> 00:01:14,000
+One is to click the yellow line on the board outline line or point.
+
+20
+00:01:14,000 --> 00:01:17,000
+The other is to click the gray reference line.
+
+21
+00:01:19,000 --> 00:01:23,000
+Next, we first click the yellow line on the board outline.
+
+22
+00:01:23,000 --> 00:01:25,000
+Then click the yellow line.
+
+23
+00:01:25,000 --> 00:01:27,000
+Then click the white line.
+
+24
+00:01:27,000 --> 00:01:29,000
+Click and drag the線 point, straight line or line.
+
+25
+00:01:29,000 --> 00:01:32,000
+Click and drag the line, straight line or line.
+
+26
+00:01:32,000 --> 00:01:35,000
+The selection point or line will be edited and moved.
+
+27
+00:01:35,000 --> 00:01:40,000
+The nearby curve and the straight line will move with the ratio.
+
+28
+00:01:40,000 --> 00:01:45,000
+When editing the curve, the number of the curve points remains unchanged.
+
+29
+00:01:45,000 --> 00:01:48,000
+You can also add other points if needed.
+
+30
+00:01:48,000 --> 00:01:51,000
+If you want to edit one point,
+
+31
+00:01:51,000 --> 00:01:54,000
+It is possible to press CTRL key to click and drag the curve or straight line points.
+
+32
+00:01:54,000 --> 00:01:58,000
+One point will be edited and moved.
+
+33
+00:01:58,000 --> 00:02:00,000
+If you want to edit multiple points,
+
+34
+00:02:00,000 --> 00:02:05,000
+first press Shift to select multiple curve points or multiple straight lines.
+
+35
+00:02:05,000 --> 00:02:08,000
+If you want to cancel a certain point,
+
+36
+00:02:08,000 --> 00:02:12,000
+you can press Shift and then click this point.
+
+37
+00:02:12,000 --> 00:02:16,000
+This point can be canceled.
+
+38
+00:02:16,000 --> 00:02:21,000
+Then press Ctrl to click and drag them.
+
+39
+00:02:21,000 --> 00:02:25,000
+The selected points can be edited and moved.
+
+40
+00:02:25,000 --> 00:02:29,000
+Sometimes you may want to move the point according to the designated distance.
+
+41
+00:02:29,000 --> 00:02:34,000
+At this time, you can press and drag the curve point or straight line.
+
+42
+00:02:34,000 --> 00:02:36,000
+In the dragging process, press the right button.
+
+43
+00:02:36,000 --> 00:02:40,000
+In the pop-up window, enter the moving distance value.
+
+44
+00:02:40,000 --> 00:02:48,000
+So we can edit and move the point according to the designated distance.
+
+45
+00:02:48,000 --> 00:02:50,000
+Next, let's explain how to increase the number of points.
+
+46
+00:02:50,000 --> 00:02:51,000
+Let's explain how to increase the number of points.
+
+47
+00:02:51,000 --> 00:02:53,000
+In the dragging process,
+
+48
+00:02:53,000 --> 00:02:56,000
+if you want to increase more points,
+
+49
+00:02:56,000 --> 00:03:00,000
+you can press Ctrl and then click on the line section.
+
+50
+00:03:00,000 --> 00:03:04,000
+You can add a new curve point to the line section.
+
+51
+00:03:04,000 --> 00:03:08,000
+Please note that when adding points to the Beissel curve,
+
+52
+00:03:08,000 --> 00:03:11,000
+the curve type will be converted to a sample curve,
+
+53
+00:03:11,000 --> 00:03:15,000
+and the curve rate may be adjusted due to this conversion.
+
+54
+00:03:15,000 --> 00:03:18,000
+When adding points to the sample curve,
+
+55
+00:03:18,000 --> 00:03:20,000
+the curve type is kept as a sample curve.
+
+56
+00:03:20,000 --> 00:03:24,000
+If you want to delete unnecessary points,
+
+57
+00:03:24,000 --> 00:03:28,000
+you can right-click on the selected curve point or straight line point,
+
+58
+00:03:28,000 --> 00:03:31,000
+and select Delete on the menu.
+
+59
+00:03:31,000 --> 00:03:34,000
+This will delete selected points.
+
+60
+00:03:34,000 --> 00:03:37,000
+If you want to delete multiple points at a time,
+
+61
+00:03:37,000 --> 00:03:41,000
+you can press Shift to select multiple curve points or multiple straight lines.
+
+62
+00:03:41,000 --> 00:03:44,000
+Then right-click on these points,
+
+63
+00:03:44,000 --> 00:03:46,000
+and select Delete on the menu.
+
+64
+00:03:46,000 --> 00:03:49,000
+This will delete selected multiple points.
+
+65
+00:03:49,000 --> 00:03:53,000
+Next, let's explain how to cancel or cancel the editing operation.
+
+66
+00:03:53,000 --> 00:03:56,000
+In the editing process,
+
+67
+00:03:56,000 --> 00:04:00,000
+we can press Backspace to gradually cancel the editing operation.
+
+68
+00:04:00,000 --> 00:04:03,000
+If you want to cancel the entire editing process,
+
+69
+00:04:03,000 --> 00:04:06,000
+you can press Esc.
+
+70
+00:04:06,000 --> 00:04:07,000
+Finally, after adjusting,
+
+71
+00:04:07,000 --> 00:04:10,000
+press the Enter key to complete the editing.
+
+72
+00:04:10,000 --> 00:04:13,000
+Before pressing the Enter key,
+
+73
+00:04:13,000 --> 00:04:17,000
+you can continue to edit the curve until you are satisfied.
+
+74
+00:04:17,000 --> 00:04:19,000
+After pressing the Enter key,
+
+75
+00:04:19,000 --> 00:04:26,000
+the selection of the outside or inside curve line will be updated according to the latest state after editing.
+
+76
+00:04:26,000 --> 00:04:32,000
+If you select the reference line at the beginning,
+
+77
+00:04:32,000 --> 00:04:34,000
+note that the straight line point cannot be edited,
+
+78
+00:04:34,000 --> 00:04:37,000
+the straight line point will be increased when the start or end point,
+
+79
+00:04:37,000 --> 00:04:41,000
+and will be updated according to the latest state after editing.
+
+80
+00:04:41,000 --> 00:04:46,000
+By using this new feature,
+
+81
+00:04:46,000 --> 00:04:48,000
+we can select a single version.
+
+82
+00:04:49,000 --> 00:04:51,439
+and edit the range of definition.
+
+83
+00:04:51,439 --> 00:04:54,939
+The other undefined parts will not be affected.
+
+84
+00:04:54,939 --> 00:04:57,540
+Therefore, you can only edit the range you need
+
+85
+00:04:57,540 --> 00:04:59,740
+to improve the accuracy of the version.
+
+86
+00:05:07,240 --> 00:05:10,100
+Next, I will introduce the optimization of the label.
+
+87
+00:05:10,100 --> 00:05:12,699
+Now you can proceed to edit the label label,
+
+88
+00:05:12,699 --> 00:05:15,899
+adjust the direction and color of the label label,
+
+89
+00:05:15,899 --> 00:05:18,899
+and quickly and clearly visit the label information.
+
+90
+00:05:19,000 --> 00:05:23,000
+In the 2D window, we have created the label.
+
+91
+00:05:23,000 --> 00:05:26,000
+Now we need to name the label.
+
+92
+00:05:26,000 --> 00:05:31,000
+First, select the label label tool in the tool bar in the 2D window.
+
+93
+00:05:31,000 --> 00:05:37,000
+On the label, left-click to enter the name of the label to create the label.
+
+94
+00:05:37,000 --> 00:05:42,000
+After entering the name on the label, select Edit View Tools.
+
+95
+00:05:42,000 --> 00:05:45,000
+Select the label label that has just been added.
+
+96
+00:05:45,000 --> 00:05:47,000
+In the previous Kolo version,
+
+97
+00:05:47,000 --> 00:05:49,000
+when the font is reduced,
+
+98
+00:05:49,000 --> 00:05:51,000
+the view will appear larger.
+
+99
+00:05:51,000 --> 00:05:53,000
+But now you can manually adjust the font size
+
+100
+00:05:53,000 --> 00:05:56,000
+to prevent the font from becoming too large.
+
+101
+00:05:56,000 --> 00:06:01,000
+Come to the property editor and set the font size to 24.
+
+102
+00:06:01,000 --> 00:06:04,000
+Now there are several font sizes to choose from.
+
+103
+00:06:04,000 --> 00:06:08,000
+It can make the whole version look more beautiful.
+
+104
+00:06:09,000 --> 00:06:12,000
+In addition, you can also change the color of the font.
+
+105
+00:06:12,000 --> 00:06:15,000
+Click on the color block next to the color code.
+
+106
+00:06:15,000 --> 00:06:19,000
+You can choose the color you like from the color palette.
+
+107
+00:06:19,000 --> 00:06:21,000
+For example, red.
+
+108
+00:06:21,000 --> 00:06:23,000
+You can also rotate the label.
+
+109
+00:06:23,000 --> 00:06:26,000
+Directly stop the mouse at the top of the view.
+
+110
+00:06:26,000 --> 00:06:28,000
+After changing to double-click, press and hold.
+
+111
+00:06:28,000 --> 00:06:34,000
+And rotate the label to the desired direction.
+
+112
+00:06:34,000 --> 00:06:39,000
+Next, I will introduce how to change the direction of the label according to the angle of the number.
+
+113
+00:06:39,000 --> 00:06:41,000
+Select the label and go to the property editor.
+
+114
+00:06:41,000 --> 00:06:44,000
+Click on the direction to pull down the menu.
+
+115
+00:06:44,000 --> 00:06:47,000
+You will find four direction options.
+
+116
+00:06:47,000 --> 00:06:50,000
+The default angle 0 means that the label will maintain the level.
+
+117
+00:06:50,000 --> 00:06:52,000
+Angle is 0.
+
+118
+00:06:52,000 --> 00:06:58,000
+When you modify the rotation in the 2D window, you will use this option.
+
+119
+00:06:58,000 --> 00:07:04,000
+X-axis means that the label will maintain the level according to the X-axis.
+
+120
+00:07:04,000 --> 00:07:08,000
+Y-axis means that the label will maintain the vertical line according to the Y-axis.
+
+121
+00:07:08,000 --> 00:07:14,000
+Parallel to the kill line direction means that the label will show the direction of the kill line.
+
+122
+00:07:14,000 --> 00:07:16,000
+The update of the label
+
+123
+00:07:16,000 --> 00:07:19,000
+allows us to add a personalized label mark.
+
+124
+00:07:19,000 --> 00:07:22,000
+It is more convenient to connect to the subsequent production process.
+
+125
+00:07:32,000 --> 00:07:35,000
+In the new version, when the label appears in the code,
+
+126
+00:07:35,000 --> 00:07:38,000
+the warning window will display the label name of the problem.
+
+127
+00:07:38,000 --> 00:07:41,000
+At the same time, it will be displayed in red on the label.
+
+128
+00:07:41,000 --> 00:07:43,000
+It is convenient for us to quickly locate the problem.
+
+129
+00:07:43,000 --> 00:07:45,000
+The label will be corrected in position.
+
+130
+00:07:45,000 --> 00:07:47,000
+Open the file containing the label information.
+
+131
+00:07:47,000 --> 00:07:49,000
+Open the label in the object window.
+
+132
+00:07:49,000 --> 00:07:51,000
+Click on each scale in size.
+
+133
+00:07:51,000 --> 00:07:54,000
+Check if each scale can be changed normally.
+
+134
+00:07:54,000 --> 00:07:56,000
+In the process of changing the scale,
+
+135
+00:07:56,000 --> 00:07:58,000
+if you encounter a scale with the wrong label information,
+
+136
+00:07:58,000 --> 00:08:00,000
+a warning window will immediately pop up.
+
+137
+00:08:00,000 --> 00:08:03,000
+The window will display the description of the problem,
+
+138
+00:08:03,000 --> 00:08:06,000
+as well as the name of the label with the problem.
+
+139
+00:08:06,000 --> 00:08:09,000
+It makes it easier for us to find the label with the problem and correct it.
+
+140
+00:08:09,000 --> 00:08:11,000
+When the warning window pops up,
+
+141
+00:08:11,000 --> 00:08:13,000
+the window size will automatically be set to the appropriate size,
+
+142
+00:08:13,000 --> 00:08:15,000
+preventing most of the labels from being blocked,
+
+143
+00:08:15,000 --> 00:08:18,000
+and showing the wrong location with a high amount of red.
+
+144
+00:08:18,000 --> 00:08:21,000
+The following situations will also have a red prominent hint.
+
+145
+00:08:21,000 --> 00:08:24,000
+If the distance between the lines is too close, please separate them a little.
+
+146
+00:08:24,000 --> 00:08:33,000
+If the distance between the lines is too close, please separate them a little.
+
+147
+00:08:33,000 --> 00:08:35,000
+If the distance between the lines is too close, please move or delete the point.
+
+148
+00:08:43,000 --> 00:08:49,000
+The outline of the disc is moving.
+
+149
+00:08:49,000 --> 00:09:00,000
+The new function has a great effect on increasing the efficiency offish Value Training.
+
+150
+00:09:01,000 --> 00:09:07,000
+Now, let's apply theORE popularize culture app and modify the base profile to her actual size.
+
+151
+00:09:07,000 --> 00:09:11,000
+In the 2D window, we can see the decal plates that the cupola has applied the code.
+
+152
+00:09:11,000 --> 00:09:13,000
+Now we want to apply the code to the tag,
+
+153
+00:09:13,000 --> 00:09:16,000
+Select the sticker on the application and the board.
+
+154
+00:09:16,000 --> 00:09:19,000
+After selecting the sticker, come to the property editor.
+
+155
+00:09:19,000 --> 00:09:22,000
+Roll down.
+
+156
+00:09:22,000 --> 00:09:26,000
+Find the fixed ratio option, then open it.
+
+157
+00:09:26,000 --> 00:09:31,000
+Because most stickers need to adjust the size by pressing the fixed width and height.
+
+158
+00:09:31,000 --> 00:09:35,000
+This will make the sticker search by pressing the fixed ratio when putting the code.
+
+159
+00:09:35,000 --> 00:09:40,000
+In order to check the results of using the fixed ratio and pressing the ratio to put the code on the sticker,
+
+160
+00:09:40,000 --> 00:09:43,000
+you need to change its value in the form of a percentage.
+
+161
+00:09:43,000 --> 00:09:46,000
+Come to the size part and change it from unit to percentage.
+
+162
+00:09:46,000 --> 00:09:49,000
+Now enter the percentage you need to search in the cross section.
+
+163
+00:09:49,000 --> 00:09:52,000
+For example, if we have a 100x100mm sticker,
+
+164
+00:09:52,000 --> 00:09:57,000
+and apply 5% to the X-axis, the Y-axis will also change by proportion.
+
+165
+00:09:57,000 --> 00:10:05,000
+Increase the X-axis by 5% and add its 5% to the original size.
+
+166
+00:10:05,000 --> 00:10:09,000
+You can also directly ensure that the sticker is searched by proportion in the properties of the sticker.
+
+167
+00:10:09,000 --> 00:10:10,000
+In the object window,
+
+168
+00:10:10,000 --> 00:10:12,000
+select the sticker to be applied.
+
+169
+00:10:12,000 --> 00:10:15,000
+Under the sticker change information in the property editor,
+
+170
+00:10:15,000 --> 00:10:17,000
+you will find the fixed ratio option,
+
+171
+00:10:17,000 --> 00:10:20,000
+and select it to use the function.
+
+172
+00:10:20,000 --> 00:10:24,000
+When we complete the style design and want to put the code on the sticker,
+
+173
+00:10:24,000 --> 00:10:28,000
+we can put the code according to the percentage to complete the proportion of the sticker.
+
+174
+00:10:28,000 --> 00:10:32,000
+The latest function for putting codes on stickers can make it easier for you
+
+175
+00:10:32,000 --> 00:10:36,000
+to put codes on stickers by pressing the proportion in a faster way.
+
+176
+00:10:40,000 --> 00:10:45,000
+If the outer outline of the board or the straight line overlaps with the bigger size of the sticker,
+
+177
+00:10:45,000 --> 00:10:48,000
+now we can use the editor to put the code.
+
+178
+00:10:48,000 --> 00:10:54,000
+Select the outer outline of the board or the straight line on the line and the curve point to put the code on it.
+
+179
+00:10:54,000 --> 00:10:56,000
+In the 2D window,
+
+180
+00:10:56,000 --> 00:11:00,000
+we can see that the board and the bigger sticker form a overlap.
+
+181
+00:11:00,000 --> 00:11:05,000
+Now we need to select the straight line that overlaps with the sticker.
+
+182
+00:11:05,000 --> 00:11:08,000
+The straight line is on the outer outline of the board.
+
+183
+00:11:08,000 --> 00:11:11,000
+Select the tool to put the code.
+
+184
+00:11:14,000 --> 00:11:16,000
+Click on the straight line.
+
+185
+00:11:16,000 --> 00:11:19,000
+A spring appears next to the mouse to allow us to select.
+
+186
+00:11:19,000 --> 00:11:23,000
+In the spring, it will display the name of the board and the name of the sticker.
+
+187
+00:11:23,000 --> 00:11:25,000
+After selecting the name of the board,
+
+188
+00:11:25,000 --> 00:11:29,000
+we will select the straight line on the board and then operate it to put the code.
+
+189
+00:11:29,000 --> 00:11:33,000
+If you want to select the straight line of the inner line of the board to put the code,
+
+190
+00:11:33,000 --> 00:11:35,000
+it is also the same operation.
+
+191
+00:11:35,000 --> 00:11:40,000
+In the same way, we can also use the editor to put the code.
+
+192
+00:11:40,000 --> 00:11:47,000
+Select the curve point on the board and then operate it to put the code.
+
+193
+00:11:47,000 --> 00:11:56,000
+Next, I will introduce the UI optimization of the editor to put the code.
+
+194
+00:11:56,000 --> 00:12:03,000
+The push and pull distance and the gap can be displayed at an independent window level.
+
+195
+00:12:03,000 --> 00:12:04,000
+This allows us to use the editor to put the code.
+
+196
+00:12:05,000 --> 00:12:09,000
+Let's take a closer look at the push and pull distance and the gap corresponding to the size.
+
+197
+00:12:09,000 --> 00:12:11,000
+In the 2D window,
+
+198
+00:12:11,000 --> 00:12:16,000
+use the editor to put the code tool to select the key point of the editor to put the code.
+
+199
+00:12:16,000 --> 00:12:21,000
+The property editor will display the corresponding push and pull distance and the gap.
+
+200
+00:12:21,000 --> 00:12:24,000
+Click on the small arrow on the right side of the icon.
+
+201
+00:12:24,000 --> 00:12:29,000
+It will show the independent window of the editor to put the code.
+
+202
+00:12:29,000 --> 00:12:34,000
+In this window, the push and pull distance and the gap will be displayed on the same level line.
+
+203
+00:12:35,000 --> 00:12:43,000
+The value is shown on the list of parkedahahaha.
+
+204
+00:12:43,000 --> 00:12:48,000
+In this window, the illustration appears that the position of the table is mistakes.
+
+205
+00:12:48,000 --> 00:12:52,000
+Each sj hoş point in it is assigned to the position of the table in the raise.
+
+206
+00:12:52,000 --> 00:12:56,000
+Here, I will show you how it should be.
+
+207
+00:12:56,000 --> 00:12:59,000
+Is it嘇 useful for you?
+
+208
+00:12:59,000 --> 00:13:03,000
+If you want to appreciate it,
+
+209
+00:13:03,000 --> 00:13:07,000
+This is also a new feature of the code release function this time.
+
+210
+00:13:07,000 --> 00:13:12,000
+After changing the push and hold distance in this way,
+
+211
+00:13:12,000 --> 00:13:20,080
+you can see that the corresponding
+
+212
+00:13:20,080 --> 00:13:24,080
+axis has also changed accordingly, and the window will always exist when switching other tools.
+
+213
+00:13:24,080 --> 00:13:28,080
+After finishing the edit, click the close button in the upper right corner of the window.
+
+214
+00:13:28,080 --> 00:13:34,080
+The window will return to its original state and continue to be displayed in the attribute editor.
+
+215
+00:13:34,080 --> 00:13:38,080
+The optimization of this UI and the quick way to adjust the value
+
+216
+00:13:38,080 --> 00:13:42,080
+make the operation experience of editing the code more smooth.
+
+217
+00:13:46,080 --> 00:13:50,080
+The name display of the horse model has also been optimized in the new version.
+
+218
+00:13:50,080 --> 00:13:54,080
+In the previous version, the unit machine matched the virtual model.
+
+219
+00:13:54,080 --> 00:13:58,080
+You can see that because the virtual model name is too long, it will not display completely.
+
+220
+00:13:58,080 --> 00:14:02,080
+In the new version, the full name of the virtual model will be displayed
+
+221
+00:14:02,080 --> 00:14:04,080
+under each horse.
+
+222
+00:14:04,080 --> 00:14:10,080
+When you want to change the horse, you can pull the roll bar below,
+
+223
+00:14:10,080 --> 00:14:12,080
+or just pull the window wide,
+
+224
+00:14:12,080 --> 00:14:16,080
+and the function keys on the right side will all be displayed to switch the horse.
+
+225
+00:14:20,080 --> 00:14:25,080
+In the Kolo 2025.0 version, we updated the Chinese translation of the depth map,
+
+226
+00:14:25,080 --> 00:14:27,080
+and translated the stress map into a hard map,
+
+227
+00:14:27,080 --> 00:14:29,080
+and the string map into a hard map.
+
+228
+00:14:29,080 --> 00:14:32,080
+And this time, the update is related to the depth map.
+
+229
+00:14:32,080 --> 00:14:35,080
+The depth map is very important in the depth inspection,
+
+230
+00:14:35,080 --> 00:14:39,080
+used to show the pressure of the virtual model from the clothing.
+
+231
+00:14:39,080 --> 00:14:42,080
+The new depth map of the 2025.0 version,
+
+232
+00:14:42,080 --> 00:14:45,080
+through the grid of the virtual model,
+
+233
+00:14:45,080 --> 00:14:47,080
+instead of the version to calculate the pressure value,
+
+234
+00:14:47,080 --> 00:14:49,080
+provides a more accurate visualization effect,
+
+235
+00:14:49,080 --> 00:14:52,080
+and avoids the error of the pressure value and the pressure color,
+
+236
+00:14:52,080 --> 00:14:55,080
+especially in the case of multi-layer clothing.
+
+237
+00:14:55,080 --> 00:14:57,080
+In the Kolo 2025.0 version,
+
+238
+00:14:57,080 --> 00:14:59,080
+we updated the value range of the depth map,
+
+239
+00:14:59,080 --> 00:15:03,080
+from the previous maximum of 10,000% to the current 5,000%.
+
+240
+00:15:03,080 --> 00:15:05,080
+According to the experimental data,
+
+241
+00:15:05,080 --> 00:15:07,080
+when the human body feels the pressure of more than 5,000%,
+
+242
+00:15:07,080 --> 00:15:09,080
+it will feel very tight and unable to wear it,
+
+243
+00:15:09,080 --> 00:15:13,080
+and then use the shift key in the upper left corner of the 3D window to start the depth map.
+
+244
+00:15:13,080 --> 00:15:16,080
+Then simulate the clothing to activate the depth map.
+
+245
+00:15:16,080 --> 00:15:19,080
+Different from the previous version of the depth map,
+
+246
+00:15:19,080 --> 00:15:22,080
+the strength of the depth map is reflected on the surface of the virtual model.
+
+247
+00:15:22,080 --> 00:15:24,080
+Therefore, when you directly click on the surface of the virtual model,
+
+248
+00:15:24,080 --> 00:15:26,080
+the strength of the pressure will be displayed,
+
+249
+00:15:26,080 --> 00:15:29,080
+and the area where the clothes are not affected is displayed as 0.
+
+250
+00:15:29,080 --> 00:15:32,080
+If you want to check the pressure value of the clothing in the area,
+
+251
+00:15:32,080 --> 00:15:36,080
+click on the Control key on Windows PC and click on Clothes.
+
+252
+00:15:36,080 --> 00:15:39,080
+As for the display lock added to the mouse light,
+
+253
+00:15:39,080 --> 00:15:42,080
+you can display the pressure value of the virtual model in the area,
+
+254
+00:15:42,080 --> 00:15:47,080
+and click on CMD key and click on CMD key on the Mac OS.
+
+255
+00:15:47,080 --> 00:15:50,080
+In the new 2025.0 version,
+
+256
+00:15:50,080 --> 00:15:53,080
+if you drag the clothing during the simulation process,
+
+257
+00:15:53,080 --> 00:15:56,080
+the color of the part of the virtual model will change.
+
+258
+00:15:56,080 --> 00:15:59,080
+If you want to know the pressure value of the part,
+
+259
+00:15:59,080 --> 00:16:04,080
+you can stop the simulation and click on the Control key to check.
+
+260
+00:16:04,080 --> 00:16:09,080
+We hope that the new improvement method can accurately express the pressure area
+
+261
+00:16:09,080 --> 00:16:11,080
+and improve the accuracy of the version modification,
+
+262
+00:16:11,080 --> 00:16:15,080
+thereby optimizing your digital clothing design and try-on process.
+

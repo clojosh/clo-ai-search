@@ -1,0 +1,404 @@
+1
+00:00:00,000 --> 00:00:05,000
+Today, let's take a look at how to quickly process the belt date buckle.
+
+2
+00:00:05,000 --> 00:00:09,000
+You can see that the belt has been simulated to have this effect.
+
+3
+00:00:09,000 --> 00:00:13,000
+You need to insert a date buckle.
+
+4
+00:00:13,000 --> 00:00:19,000
+You can insert the date buckle component prepared in advance into the 3D window.
+
+5
+00:00:19,000 --> 00:00:24,000
+Drag it to the 3D window, select the load type, select open.
+
+6
+00:00:24,000 --> 00:00:28,000
+Select the component of the object, click OK.
+
+7
+00:00:28,000 --> 00:00:35,000
+After adding it, turn off the date buckle window.
+
+8
+00:00:35,000 --> 00:00:41,000
+Now, use the glue tool to stick the component to the plate first.
+
+9
+00:00:41,000 --> 00:00:45,000
+Adjust the position of the component.
+
+10
+00:00:45,000 --> 00:00:54,000
+Insert it into this plate.
+
+11
+00:00:54,000 --> 00:00:57,000
+Now click empty simulation.
+
+12
+00:00:58,000 --> 00:01:02,000
+After simulation, you can see that the plate and the component will fall down.
+
+13
+00:01:02,000 --> 00:01:05,000
+Pause the simulation to cancel.
+
+14
+00:01:05,000 --> 00:01:09,000
+Because the component has a weight, select the component in the object window.
+
+15
+00:01:09,000 --> 00:01:12,000
+Find the weight under the property editor.
+
+16
+00:01:12,000 --> 00:01:16,000
+You can adjust it to 0.1.
+
+17
+00:01:16,000 --> 00:01:19,000
+After adjustment, select the two plates of the belt.
+
+18
+00:01:19,000 --> 00:01:22,000
+Right-click to harden.
+
+19
+00:01:22,000 --> 00:01:24,000
+Convenient simulation.
+
+20
+00:01:24,000 --> 00:01:27,000
+After hardening, now you need to adjust the position on the other side.
+
+21
+00:01:28,000 --> 00:01:32,000
+Adjusting the effect of clinging together.
+
+22
+00:01:32,000 --> 00:01:35,000
+Now the duplicate simulation will fall down.
+
+23
+00:01:35,000 --> 00:01:38,000
+You can select this plate.
+
+24
+00:01:38,000 --> 00:01:40,000
+Right-click to freeze.
+
+25
+00:01:40,000 --> 00:01:42,000
+Another plate.
+
+26
+00:01:42,000 --> 00:01:44,000
+You can add a fixed pin.
+
+27
+00:01:44,000 --> 00:01:47,000
+Press the W key to click the plate.
+
+28
+00:01:47,000 --> 00:01:48,000
+After adding.
+
+29
+00:01:48,000 --> 00:01:51,000
+Now click empty simulation.
+
+30
+00:01:51,000 --> 00:01:53,000
+Select the fixed pin.
+
+31
+00:01:53,000 --> 00:01:55,000
+Move the mouse.
+
+32
+00:01:55,000 --> 00:01:57,000
+Move the plate to the place where it needs to be glued together.
+
+33
+00:01:58,000 --> 00:02:00,000
+Eat the surface like this.
+
+34
+00:02:00,000 --> 00:02:05,000
+Move to the overlap position.
+
+35
+00:02:05,000 --> 00:02:09,000
+After moving up, you can see the location of the duplicate.
+
+36
+00:02:09,000 --> 00:02:10,000
+It's down there.
+
+37
+00:02:10,000 --> 00:02:14,000
+And select the case to rotate it.
+
+38
+00:02:14,000 --> 00:02:19,000
+This makes it easier to move the palette to the inside of the case.
+
+39
+00:02:19,000 --> 00:02:20,000
+When we're done,
+
+40
+00:02:20,000 --> 00:02:21,000
+Bye.
+
+41
+00:02:21,000 --> 00:02:23,000
+Normally you can click blank simulation.
+
+42
+00:02:23,000 --> 00:02:26,000
+After simulation, you can see the plate will deform a bit.
+
+43
+00:02:26,000 --> 00:02:28,599
+Because now it has a conflict in the secondary key
+
+44
+00:02:28,900 --> 00:02:30,199
+Select secondary key
+
+45
+00:02:30,199 --> 00:02:33,099
+In the property editor, you can see that it has a conflict
+
+46
+00:02:33,099 --> 00:02:34,400
+Now pause the simulation
+
+47
+00:02:34,800 --> 00:02:37,400
+Conflict is equivalent to the secondary key has a safe distance
+
+48
+00:02:37,400 --> 00:02:38,599
+Can participate in the simulation
+
+49
+00:02:39,000 --> 00:02:40,800
+You can select the secondary key right key
+
+50
+00:02:41,300 --> 00:02:42,500
+After the right key
+
+51
+00:02:42,500 --> 00:02:45,000
+You can see that there are three options in the secondary key simulation
+
+52
+00:02:45,000 --> 00:02:46,900
+Freeze activation and reverse activation
+
+53
+00:02:47,099 --> 00:02:48,699
+You can do reverse activation
+
+54
+00:02:49,199 --> 00:02:52,300
+Reverse activation is equivalent to this secondary key in the 3D window
+
+55
+00:02:52,300 --> 00:02:53,500
+Not involved in the simulation
+
+56
+00:02:53,500 --> 00:02:56,000
+Now click on the control block to simulate
+
+57
+00:02:56,000 --> 00:02:59,099
+The board can pass through this secondary key at will
+
+58
+00:02:59,099 --> 00:03:02,099
+Press the W key to click on the board
+
+59
+00:03:02,099 --> 00:03:03,900
+Add a fixed pin
+
+60
+00:03:03,900 --> 00:03:07,500
+Adjust to the position of the third hole
+
+61
+00:03:07,500 --> 00:03:10,000
+Then click on the control block to simulate on this side
+
+62
+00:03:10,000 --> 00:03:12,500
+Pull it over
+
+63
+00:03:12,500 --> 00:03:14,300
+Tighten it a little
+
+64
+00:03:14,300 --> 00:03:16,599
+Rotate the angle
+
+65
+00:03:16,599 --> 00:03:20,199
+Move down
+
+66
+00:03:23,500 --> 00:03:24,900
+Here come down a little bit
+
+67
+00:03:25,900 --> 00:03:28,300
+After adjustment, select this board
+
+68
+00:03:29,000 --> 00:03:31,099
+Move this belt plate board out
+
+69
+00:03:34,900 --> 00:03:35,900
+Click on the simulation
+
+70
+00:03:36,500 --> 00:03:38,500
+Let it simulate inside the belt plate
+
+71
+00:03:39,300 --> 00:03:41,599
+Press the W key to click on the fixed pin
+
+72
+00:03:41,599 --> 00:03:43,500
+Can delete this fixed pin
+
+73
+00:03:46,199 --> 00:03:47,199
+After adjustment
+
+74
+00:03:47,199 --> 00:03:49,500
+Now come to this place where the secondary key just came
+
+75
+00:03:50,800 --> 00:03:51,900
+Slightly adjust again
+
+76
+00:03:53,500 --> 00:03:54,599
+Adjusted
+
+77
+00:03:55,500 --> 00:03:57,000
+Now adjust this one
+
+78
+00:03:58,500 --> 00:04:00,599
+Add a fixed pin simulation
+
+79
+00:04:01,800 --> 00:04:03,800
+followed by
+
+80
+00:04:03,800 --> 00:04:05,000
+After adjustment
+
+81
+00:04:05,000 --> 00:04:07,500
+Now you can select the secondary key
+
+82
+00:04:07,500 --> 00:04:08,800
+Right-click to activate
+
+83
+00:04:09,900 --> 00:04:11,400
+Then the freezing panel
+
+84
+00:04:12,099 --> 00:04:14,400
+Select it now
+
+85
+00:04:14,400 --> 00:04:15,300
+It can also activate the panel
+
+86
+00:04:15,300 --> 00:04:17,699
+Now the negatives are not needed
+
+87
+00:04:17,699 --> 00:04:18,899
+Press the W key
+
+88
+00:04:18,899 --> 00:04:21,160
+Click on the縁 acceptance
+
+89
+00:04:21,160 --> 00:04:21,899
+Reset
+
+90
+00:04:21,899 --> 00:04:29,899
+You can select the date button of the object window in the property editor to change it to a type
+
+91
+00:04:29,899 --> 00:04:32,899
+Change to metal
+
+92
+00:04:32,899 --> 00:04:36,899
+Now click on the control key to simulate
+
+93
+00:04:36,899 --> 00:04:41,899
+After simulation, you can see that now the component and this version
+
+94
+00:04:41,899 --> 00:04:45,899
+Have the effect of a real window
+
+95
+00:04:45,899 --> 00:04:49,899
+Because now the component simulation is conflicted
+
+96
+00:04:49,900 --> 00:04:52,900
+You can see that when we move the board
+
+97
+00:04:52,900 --> 00:04:55,900
+The component can be simulated in the hole of the window ring
+
+98
+00:04:55,900 --> 00:04:56,900
+Will not wear
+
+99
+00:04:56,900 --> 00:05:00,900
+Now select the board and click on the disarm
+
+100
+00:05:00,900 --> 00:05:03,900
+The above is the method of wearing the date button
+
+101
+00:05:03,900 --> 00:05:05,900
+Thank you for watching
+

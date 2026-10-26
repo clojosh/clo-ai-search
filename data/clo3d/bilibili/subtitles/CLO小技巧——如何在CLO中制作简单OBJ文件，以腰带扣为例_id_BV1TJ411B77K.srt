@@ -1,0 +1,468 @@
+1
+00:00:01,000 --> 00:00:23,640
+So I'm going to demonstrate how you can make an OBJ in Clo from scratch. You can make very simple OBJs or simple shapes. We've worked for anything very complicated. We do recommend an outside 3D modeling software, but simple things like buttons or maybe some buckle shapes, D-rings, you can easily make in Clo.
+
+2
+00:00:23,640 --> 00:00:34,079
+So I'm going to show you this process from beginning to end, starting actually making the pattern piece or making the shapes that I'm going to turn into an OBJ.
+
+3
+00:00:34,079 --> 00:00:46,140
+So first off, I'm going to make a little ring shape. So I'm going to start with just working in half increments.
+
+4
+00:00:46,140 --> 00:00:53,140
+So I'm going to make this 0.75 wide by...
+
+5
+00:00:53,640 --> 00:00:55,780
+0.75 actually is what I'm going to go with.
+
+6
+00:00:56,500 --> 00:01:03,659
+So this is going to be a very small piece. It's going to act as a buckle. I'm going to zoom in on this so you can see what's happening as I'm working.
+
+7
+00:01:05,560 --> 00:01:16,379
+So first, I'm going to round off my corners. I can type in the amount I want to round each corner.
+
+8
+00:01:19,900 --> 00:01:22,659
+Great. So other thing with these very small pieces...
+
+9
+00:01:22,659 --> 00:01:28,459
+And since we're not working with a lot of things in our workspace, you can work on a low particle distance.
+
+10
+00:01:28,459 --> 00:01:31,420
+So I'm going to change this to 5. A couple of pointers while you're doing this.
+
+11
+00:01:31,700 --> 00:01:38,159
+It'll be... when you export your pieces, you don't want to have anything else in your workspace.
+
+12
+00:01:38,159 --> 00:01:43,979
+So in my particular case, I just don't have an avatar, I don't have a garment. I'm just creating the piece...
+
+13
+00:01:44,759 --> 00:01:47,000
+and you're going to see the point of this in a little while.
+
+14
+00:01:47,000 --> 00:01:51,719
+So I actually lowered my particle distance down to 2 so I get a little better definition.
+
+15
+00:01:52,659 --> 00:01:59,299
+um so i made half my shape i'm going to unfold this then i'm going to i can delete actually
+
+16
+00:01:59,299 --> 00:02:03,780
+delete some of these points they're not necessary i'm going to offset this outer
+
+17
+00:02:03,780 --> 00:02:07,620
+edge as an internal line because i'm going to convert this to a hole
+
+18
+00:02:09,620 --> 00:02:15,060
+so i can go with 1 8 but maybe let's go a little thicker
+
+19
+00:02:15,060 --> 00:02:23,460
+okay that looks good so i'm going to hit okay i actually just want to first check the measurement
+
+20
+00:02:23,460 --> 00:02:30,020
+that i'm getting on this inner hole so looks like i'm clearing when i create my hole i'm going to
+
+21
+00:02:30,020 --> 00:02:34,420
+clear uh slightly over an inch which i am happy with so i'm going to keep that
+
+22
+00:02:34,980 --> 00:02:41,460
+now i'm going to convert this to a hole so and then from here i want to kind of double
+
+23
+00:02:42,099 --> 00:02:44,420
+open up this shape so i can unfold this edge
+
+24
+00:02:45,379 --> 00:02:52,340
+so this looks kind of like one of those bra strap rings or a ring that may hold a belt closed so
+
+25
+00:02:52,340 --> 00:02:57,539
+so we can see what's happening as i'm making changes i'm you should change your fabric
+
+26
+00:02:57,539 --> 00:03:03,939
+view to thick textured surface and so i'm going to grab this entire piece when i have the entire
+
+27
+00:03:03,939 --> 00:03:08,420
+piece selected under simulation properties you're going to see something called additional thickness
+
+28
+00:03:08,420 --> 00:03:14,819
+dash render by default it's going to be at zero this is where you can control how thick
+
+29
+00:03:15,460 --> 00:03:23,060
+the piece is so i can make this four millimeters thick thick five uh maybe that's a little too thick
+
+30
+00:03:23,060 --> 00:03:29,219
+i want to see what 3.5 looks like so i'm going to keep 3.5 the other thing that we need to do is
+
+31
+00:03:29,219 --> 00:03:35,539
+make the edges of this shape look smoother more rounded so again all you have to do is
+
+32
+00:03:35,539 --> 00:03:40,580
+using your edit pattern tool actually or your transform pattern tool either or if you select
+
+33
+00:03:40,580 --> 00:03:43,379
+the entire piece in the property editor under selected line you're going to have to go to the
+
+34
+00:03:43,379 --> 00:03:44,020
+where you're going to be using the transform pattern tool and then you're going to have to use the
+
+35
+00:03:44,020 --> 00:03:44,980
+transform pattern tool either or if you select the entire piece in the property editor under selected line
+
+36
+00:03:45,060 --> 00:03:50,180
+at the bottom, you're going to see an option called Curved Side Geometry. I'll open that up
+
+37
+00:03:50,180 --> 00:03:54,759
+so you can see. So here it says Curved Side Geometry. You want to click this on or check this
+
+38
+00:03:54,759 --> 00:04:00,659
+on. So as you see, once I turn that on, all of the hardware angles of that piece now turn to
+
+39
+00:04:00,659 --> 00:04:06,460
+like smooth curve pieces. You can actually control the curvature percentage. So if I go down,
+
+40
+00:04:06,539 --> 00:04:13,219
+you're going to see that these become flat, much flatter, but still have a nice transition from
+
+41
+00:04:13,219 --> 00:04:17,300
+one edge to the other. If I go to zero, it'll look just like it did before I turned it on.
+
+42
+00:04:17,540 --> 00:04:23,160
+If I go up to 100, it's very rounded. So I'm going to go somewhere a little below.
+
+43
+00:04:24,560 --> 00:04:29,920
+Okay, that looks good to me. Great. So now we have our piece. Now if I was to turn simulation on or
+
+44
+00:04:29,920 --> 00:04:35,180
+trying to use this with a garment, this is still fabric. It's not a hard object, so it would
+
+45
+00:04:35,180 --> 00:04:40,720
+crumple up. It would try and drape as if it was fabric. We need to export this as an OBJ,
+
+46
+00:04:40,959 --> 00:04:43,199
+and then we're going to bring it back in
+
+47
+00:04:43,199 --> 00:04:49,039
+as the OBJ that we have exported it as. So to create and export all you, once you have your
+
+48
+00:04:49,039 --> 00:04:55,159
+piece, very important. As I said, we don't want anything else in our workspace. I don't have an
+
+49
+00:04:55,159 --> 00:05:02,800
+avatar. I don't have any clothing or garments. So when this is all good and set, if you go to file,
+
+50
+00:05:03,579 --> 00:05:10,180
+export, choose OBJ. I'm going to save this as
+
+51
+00:05:13,199 --> 00:05:21,599
+new OBJ buckle. Some things you want to have checked for this purpose, you want to have single
+
+52
+00:05:21,599 --> 00:05:27,579
+object check. You want to have thick checked. And just keep in mind the scale in which you are
+
+53
+00:05:27,579 --> 00:05:32,639
+exporting this as. So in my case, I'm exporting this as centimeters. So when I import it back in,
+
+54
+00:05:32,639 --> 00:05:38,259
+I want to import it back in in centimeters. So then you can hit okay. The other thing we're
+
+55
+00:05:38,259 --> 00:05:43,180
+going to have to do once we've done this is we have to extract our, we have,
+
+56
+00:05:43,199 --> 00:05:47,839
+to extract our OBJs from a zip file, because that's what gets created. So I'm going to extract
+
+57
+00:05:47,839 --> 00:05:59,279
+all, just replace my file. Great. So once you've created your OBJ and extracted the folder,
+
+58
+00:05:59,680 --> 00:06:06,599
+and now you have the OBJ file, I'm going to show you how to add this to a garment. So I have my
+
+59
+00:06:06,599 --> 00:06:11,959
+garment here. I'm going to put that buckle into this belt, into the front of the belt. So first
+
+60
+00:06:11,959 --> 00:06:13,159
+thing you want to do is,
+
+61
+00:06:13,199 --> 00:06:21,180
+go to file, import, add. You want to make sure that you choose import, add, because it will add
+
+62
+00:06:21,180 --> 00:06:30,259
+the, add the object to your workspace. So locate the file, click open. Once you see this dialogue
+
+63
+00:06:30,259 --> 00:06:36,159
+box, you want to load this as an avatar. There are two different ways that you can load an OBJ as an
+
+64
+00:06:36,159 --> 00:06:40,919
+avatar or as a trim. For this particular case, you want to load it as an avatar. You'll have
+
+65
+00:06:40,919 --> 00:06:43,180
+better properties to work with. So you want to load it as an avatar. So you want to load it as an
+
+66
+00:06:43,199 --> 00:06:45,719
+avatar. You'll have better property to work with, to attach it to your garment. You also want to
+
+67
+00:06:45,719 --> 00:06:52,259
+make sure that the unit of measurement that you're importing it in as is the same as you exported it
+
+68
+00:06:52,259 --> 00:06:57,120
+when you created it. So you can hit okay. So you're going to see it pop into your workspace.
+
+69
+00:06:57,120 --> 00:07:04,259
+So using the gizmo tool, you can move it to where you want it to be. So this might take
+
+70
+00:07:04,259 --> 00:07:12,779
+a little maneuvering, but, and it's kind of actually just going to float or hover in, in space
+
+71
+00:07:13,199 --> 00:07:39,800
+want it to stay.
+
+72
+00:07:39,800 --> 00:07:45,560
+So now once you have it positioned where it looks good to you, we are going to start
+
+73
+00:07:45,560 --> 00:07:49,000
+pulling our fabric through the opening.
+
+74
+00:07:49,000 --> 00:07:54,680
+So for this belt, when it's a small belt, again, you can work on a lower particle distance.
+
+75
+00:07:54,680 --> 00:08:00,480
+A couple things I'm going to do to make this actually look more like a belt.
+
+76
+00:08:00,480 --> 00:08:05,560
+So one thing you can do to make your belt look thicker, I'm going to add additional
+
+77
+00:08:05,560 --> 00:08:07,100
+thickness.
+
+78
+00:08:07,100 --> 00:08:09,699
+So I'm going to type in 1.5 millimeters.
+
+79
+00:08:09,699 --> 00:08:15,920
+And I've also applied curved side geometry to the edges.
+
+80
+00:08:15,920 --> 00:08:22,740
+And then I'm also going to set this fabric to be a leather.
+
+81
+00:08:22,740 --> 00:08:24,379
+So that looks a little bit better now.
+
+82
+00:08:24,379 --> 00:08:25,379
+All right.
+
+83
+00:08:25,379 --> 00:08:30,019
+So what we want to do is pull this center area over the middle of our buckle.
+
+84
+00:08:30,019 --> 00:08:35,759
+So using the Select Mesh tool, first you can, just to get a reference idea of where exactly
+
+85
+00:08:35,759 --> 00:08:39,679
+that mesh part is, you can marquee over it in your 3D window.
+
+86
+00:08:39,680 --> 00:08:42,460
+And you'll see that area turn green here.
+
+87
+00:08:42,460 --> 00:08:48,920
+But I want to go into my 2D window and actually grab the entirety of that area.
+
+88
+00:08:48,920 --> 00:08:55,280
+Once you have the appropriate area selected, you just go into the 3D window, click on it.
+
+89
+00:08:55,280 --> 00:08:56,840
+The gizmo will pop up.
+
+90
+00:08:56,840 --> 00:09:01,440
+And using the handles, you can just pull that through.
+
+91
+00:09:01,440 --> 00:09:05,360
+Once it's through, you can turn the simulation on.
+
+92
+00:09:05,360 --> 00:09:08,600
+So you'll see it start to settle.
+
+93
+00:09:08,600 --> 00:09:09,600
+So a couple things you want to do.
+
+94
+00:09:09,600 --> 00:09:12,639
+To help improve the way it looks.
+
+95
+00:09:12,639 --> 00:09:18,340
+If you click on the OBJ, the OBJ has a property called Skin Offset.
+
+96
+00:09:18,340 --> 00:09:24,500
+This acts as an invisible buffer to help keep pieces from kind of melting into the avatar
+
+97
+00:09:24,500 --> 00:09:25,500
+or the OBJ.
+
+98
+00:09:25,500 --> 00:09:28,639
+What you want to do is slowly walk this down.
+
+99
+00:09:28,639 --> 00:09:34,040
+So about 0.5 at a time, you can just bring it down.
+
+100
+00:09:34,040 --> 00:09:39,420
+So I'm going to type in 2.5, hit simulate, go down to 2.
+
+101
+00:09:39,600 --> 00:09:45,279
+And go down to 1.5.
+
+102
+00:09:45,279 --> 00:09:49,600
+You don't want to really go any lower than 0.5.
+
+103
+00:09:49,600 --> 00:09:51,779
+Try and keep it between 0.5 and 1.
+
+104
+00:09:51,779 --> 00:09:57,659
+If you bring it down to 0, the pattern pieces may start kind of melting into the avatar.
+
+105
+00:09:57,659 --> 00:09:58,920
+So I'm going to just go down to 1.
+
+106
+00:09:58,920 --> 00:09:59,920
+That looks good enough.
+
+107
+00:09:59,920 --> 00:10:00,920
+Great.
+
+108
+00:10:00,920 --> 00:10:02,759
+And now this looks nice.
+
+109
+00:10:02,759 --> 00:10:06,139
+Other things that you can do, you can add color to your OBJ.
+
+110
+00:10:06,139 --> 00:10:08,399
+So just click on it any other way.
+
+111
+00:10:08,399 --> 00:10:09,440
+Or use the color button.
+
+112
+00:10:09,440 --> 00:10:15,980
+Color picker if you prefer.
+
+113
+00:10:15,980 --> 00:10:17,520
+And that is it.
+
+114
+00:10:17,520 --> 00:10:23,800
+Other things that if your pieces of your pattern are kind of poking into your OBJ, once you
+
+115
+00:10:23,800 --> 00:10:38,600
+lower the particle distance of those pieces in general.
+
+116
+00:10:38,600 --> 00:10:39,200
+And that is it.
+
+117
+00:10:39,440 --> 00:10:40,600
+You're good to go.
+

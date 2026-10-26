@@ -1,0 +1,600 @@
+1
+00:00:00,000 --> 00:00:09,000
+First of all, put the plate buckle as a custom button to be added.
+
+2
+00:00:09,000 --> 00:00:16,000
+Select the button at the window of the object, then find the plus sign next to the shape, click the plus sign to enter the custom button interface.
+
+3
+00:00:16,000 --> 00:00:23,000
+We first modify the name to plate buckle, then open the button OBJ, and select the grid.
+
+4
+00:00:23,000 --> 00:00:31,000
+According to the ratio, the corresponding width and thickness are set, and the axis conversion has been pre-adjusted here, so we do not need to set it specifically.
+
+5
+00:00:31,000 --> 00:00:38,000
+Regarding the custom button, we also made a video to explain, and you can watch this video step by step.
+
+6
+00:00:38,000 --> 00:00:41,000
+Then let's make a pattern of the buckle head side.
+
+7
+00:00:41,000 --> 00:00:51,000
+Make a width of 45 mm and a height of 1 mm, select this plate, and use the other half of the inner column of the column layer.
+
+8
+00:00:51,000 --> 00:00:53,000
+Put the particles of these two plates together.
+
+9
+00:00:53,000 --> 00:00:58,000
+Change the width of the column to 5, change the thickness of the collision to 1, and change the thickness of the curve to 2.
+
+10
+00:00:58,000 --> 00:01:06,000
+Then put the plate buckle over the 3D window, freeze the top plate, and then naturally simulate the bottom plate.
+
+11
+00:01:06,000 --> 00:01:09,000
+After the simulation is complete, the whole is frozen.
+
+12
+00:01:09,000 --> 00:01:11,000
+Copy the plate on the other side.
+
+13
+00:01:11,000 --> 00:01:15,000
+Use the edit tool to select the leftmost side and pull it to the left.
+
+14
+00:01:15,000 --> 00:01:18,000
+When pulling, right-click, you can edit the distance of movement.
+
+15
+00:01:18,000 --> 00:01:20,000
+Enter 10 mm.
+
+16
+00:01:20,000 --> 00:01:22,000
+We can use a fixed needle.
+
+17
+00:01:22,000 --> 00:01:27,000
+Select the front end of the back of the plate, and select the position where the key shape ring is.
+
+18
+00:01:27,000 --> 00:01:30,000
+It is recommended to add two fixed needles on the ring separately.
+
+19
+00:01:30,000 --> 00:01:35,000
+Next, we move the sewing line to the position of about half.
+
+20
+00:01:35,000 --> 00:01:39,000
+Select the plate.
+
+21
+00:01:39,000 --> 00:01:41,000
+First, remove the frozen hole.
+
+22
+00:01:41,000 --> 00:01:47,000
+Then use the positioning ball to pull in the direction of the X-axis to the middle, so that there is a reunion part in the middle.
+
+23
+00:01:47,000 --> 00:01:49,000
+Then move towards us.
+
+24
+00:01:49,000 --> 00:01:53,000
+After completing this operation, simulate.
+
+25
+00:01:53,000 --> 00:01:58,000
+Pull two fixed needles, add a round plate with a diameter of 15 mm.
+
+26
+00:01:58,000 --> 00:02:02,000
+Change the particle diameter of the plate to 5, and change the thickness of the collision to 1.
+
+27
+00:02:02,000 --> 00:02:04,000
+Add a sticky layer to it.
+
+28
+00:02:04,000 --> 00:02:06,000
+The type of choice of the bottom ring cannot be stretched.
+
+29
+00:02:06,000 --> 00:02:08,000
+Adjust to the position close to the ring.
+
+30
+00:02:08,000 --> 00:02:13,000
+Then use the free sewing tool to sew the plate and round plate.
+
+31
+00:02:13,000 --> 00:02:16,000
+At this time, you can switch to the texture surface.
+
+32
+00:02:16,000 --> 00:02:17,000
+You can be more clear.
+
+33
+00:02:17,000 --> 00:02:18,000
+According to the 3D window.
+
+34
+00:02:18,000 --> 00:02:20,000
+Sensitive sewing.
+
+35
+00:02:20,000 --> 00:02:22,000
+After sewing, simulate.
+
+36
+00:02:22,000 --> 00:02:24,000
+Then delete the fixed needle.
+
+37
+00:02:24,000 --> 00:02:26,000
+Make it more natural to simulate.
+
+38
+00:02:26,000 --> 00:02:28,000
+Here you can see.
+
+39
+00:02:28,000 --> 00:02:31,000
+There is a little bit unnatural at the opening.
+
+40
+00:02:31,000 --> 00:02:35,000
+We can set the folding angle here to 270 degrees.
+
+41
+00:02:35,000 --> 00:02:38,000
+Make it perpendicular to the round plate.
+
+42
+00:02:38,000 --> 00:02:39,000
+This place is a little unstable.
+
+43
+00:02:39,000 --> 00:02:43,000
+We can turn off the folding of this place in the attribute editor.
+
+44
+00:02:43,000 --> 00:02:47,000
+If it still doesn't work, you can turn it off.
+
+45
+00:02:47,000 --> 00:02:51,000
+If it's still unstable, we can delete the sewing line.
+
+46
+00:02:51,000 --> 00:02:55,000
+Re-monitor the stability and sew again.
+
+47
+00:02:55,000 --> 00:02:59,000
+At this time, you can see that it is relatively stable.
+
+48
+00:02:59,000 --> 00:03:02,000
+Then turn to the back view.
+
+49
+00:03:02,000 --> 00:03:06,000
+Use a fake sewing needle to fix the round plate and the other side of the plate.
+
+50
+00:03:06,000 --> 00:03:08,000
+Do the sewing.
+
+51
+00:03:08,000 --> 00:03:10,000
+When we fix it.
+
+52
+00:03:10,000 --> 00:03:12,000
+You need to pay attention to the position of the fixing.
+
+53
+00:03:12,000 --> 00:03:15,000
+Because the plate of the plate is facing us.
+
+54
+00:03:15,000 --> 00:03:17,000
+So pay attention.
+
+55
+00:03:17,000 --> 00:03:20,000
+The fixed position should be the edge of the plate.
+
+56
+00:03:20,000 --> 00:03:23,000
+And not close to the position of the center of the plate.
+
+57
+00:03:23,000 --> 00:03:26,000
+Adjust the position of the fake sewing needle.
+
+58
+00:03:26,000 --> 00:03:29,000
+Combine the angle to determine its position.
+
+59
+00:03:29,000 --> 00:03:31,000
+After adjustment.
+
+60
+00:03:31,000 --> 00:03:33,000
+Delete the fixed needle of the ring part.
+
+61
+00:03:33,000 --> 00:03:35,000
+And combine the effect of simulation.
+
+62
+00:03:35,000 --> 00:03:38,000
+Adjust the position of the fixed needle at the end of the hinge.
+
+63
+00:03:38,000 --> 00:03:43,000
+Next, add the buckle of the plate buckle to the round plate.
+
+64
+00:03:43,000 --> 00:03:44,000
+Select the buckle.
+
+65
+00:03:44,000 --> 00:03:48,000
+In the property editor, turn off the conflict.
+
+66
+00:03:48,000 --> 00:03:50,000
+Adjust the size of the round plate.
+
+67
+00:03:50,000 --> 00:03:53,000
+Here we can double-click the center point after selecting the round plate.
+
+68
+00:03:53,000 --> 00:03:56,000
+When the top of the outer frame becomes orange.
+
+69
+00:03:56,000 --> 00:03:58,000
+You can use the center point as the reference point.
+
+70
+00:03:58,000 --> 00:04:01,000
+Quickly adjust the size of the plate.
+
+71
+00:04:01,000 --> 00:04:04,000
+Finally, adjust the suture of the buckle.
+
+72
+00:04:04,000 --> 00:04:07,000
+Make the plate buckle look more natural.
+
+73
+00:04:07,000 --> 00:04:11,000
+Next, apply transparent fabric to this round plate.
+
+74
+00:04:11,000 --> 00:04:12,000
+Select the round plate.
+
+75
+00:04:12,000 --> 00:04:15,000
+Apply a new default fabric.
+
+76
+00:04:15,000 --> 00:04:17,000
+Reduce the opacity to the lowest.
+
+77
+00:04:17,000 --> 00:04:21,000
+At this time, this round plate is transparent.
+
+78
+00:04:21,000 --> 00:04:23,000
+Delete all fixed needles.
+
+79
+00:04:23,000 --> 00:04:26,000
+Remove the cold hole on the other side of the buckle.
+
+80
+00:04:26,000 --> 00:04:29,000
+We store it as a clothing document.
+
+81
+00:04:29,000 --> 00:04:33,000
+Convenient to use next time.
+
+82
+00:04:33,000 --> 00:04:37,000
+Next, we add the plate buckle to our clothing.
+
+83
+00:04:37,000 --> 00:04:39,000
+Click to add clothing.
+
+84
+00:04:39,000 --> 00:04:41,000
+Add the plate buckle document.
+
+85
+00:04:42,000 --> 00:04:44,000
+Click to add clothing.
+
+86
+00:04:44,000 --> 00:04:45,000
+Click to add clothing.
+
+87
+00:04:45,000 --> 00:04:47,000
+Then, in the 2D window,
+
+88
+00:04:47,000 --> 00:04:49,000
+Put the plate buckle to the blank.
+
+89
+00:04:49,000 --> 00:04:51,000
+In the 3D window,
+
+90
+00:04:51,000 --> 00:04:53,000
+Add a place near the place to add.
+
+91
+00:04:53,000 --> 00:04:55,000
+The demonstration here is
+
+92
+00:04:55,000 --> 00:04:57,000
+Face our left side as a buckle.
+
+93
+00:04:57,000 --> 00:04:58,000
+Right side as a buckle.
+
+94
+00:04:58,000 --> 00:05:01,000
+You can see that the face has been pre-set.
+
+95
+00:05:01,000 --> 00:05:02,000
+The position of the sewing.
+
+96
+00:05:02,000 --> 00:05:05,000
+The internal line here will be slightly longer than the buckle.
+
+97
+00:05:05,000 --> 00:05:07,000
+The extra length is convenient for us.
+
+98
+00:05:07,000 --> 00:05:08,000
+Adjust the buckle to both sides.
+
+99
+00:05:08,000 --> 00:05:10,000
+To straighten the buckle.
+
+100
+00:05:10,000 --> 00:05:11,000
+You can add one more.
+
+101
+00:05:11,000 --> 00:05:13,000
+After you tighten one internal line,
+
+102
+00:05:13,000 --> 00:05:15,000
+Set another internal line according to your needs.
+
+103
+00:05:15,000 --> 00:05:17,000
+As a reference,
+
+104
+00:05:17,000 --> 00:05:19,000
+Here are two internal lines.
+
+105
+00:05:19,000 --> 00:05:20,000
+The diameter is 2 mm.
+
+106
+00:05:20,000 --> 00:05:23,000
+Next, put the plate buckle on the sewing.
+
+107
+00:05:23,000 --> 00:05:24,000
+Before sewing,
+
+108
+00:05:24,000 --> 00:05:26,000
+We can take the clothing rendering type.
+
+109
+00:05:26,000 --> 00:05:28,000
+Change to the texture surface.
+
+110
+00:05:28,000 --> 00:05:30,000
+We use a free sewing tool.
+
+111
+00:05:30,000 --> 00:05:31,000
+When sewing,
+
+112
+00:05:31,000 --> 00:05:33,000
+You can follow the high blue dots in 3D window.
+
+113
+00:05:33,000 --> 00:05:35,000
+To identify the position of the sewing.
+
+114
+00:05:35,000 --> 00:05:37,000
+First, set the starting point.
+
+115
+00:05:37,000 --> 00:05:39,000
+Click when you set the end point.
+
+116
+00:05:39,000 --> 00:05:41,759
+You can set the length of the sewing line in the window
+
+117
+00:05:42,759 --> 00:05:46,500
+On the left side, we set the length of the sewing line to 25 mm
+
+118
+00:05:47,160 --> 00:05:49,060
+Set 28 mm on the right side
+
+119
+00:05:49,759 --> 00:05:51,660
+Switch to the edge sewing line tool
+
+120
+00:05:52,259 --> 00:05:54,939
+Then we switch the view to the bottom
+
+121
+00:05:54,939 --> 00:05:56,939
+Convenient for us to adjust the sewing line
+
+122
+00:05:57,199 --> 00:06:00,160
+Keep the seam allowance and the seam allowance of the neckline even
+
+123
+00:06:00,459 --> 00:06:03,199
+This can prevent a pull in the corresponding position
+
+124
+00:06:03,660 --> 00:06:05,540
+After adjustment, simulate
+
+125
+00:06:06,040 --> 00:06:08,540
+Here you can see the seam allowance has some hammering effect
+
+126
+00:06:08,540 --> 00:06:10,540
+You can add a stitch to the seam allowance
+
+127
+00:06:10,740 --> 00:06:13,200
+Here, choose the hardest bottom collar, no seam allowance
+
+128
+00:06:13,700 --> 00:06:17,300
+At this time, you can see that the seam allowance on the side of the buckle is a little unbalanced
+
+129
+00:06:17,700 --> 00:06:18,780
+Make adjustments
+
+130
+00:06:19,200 --> 00:06:20,300
+After adjustment
+
+131
+00:06:20,700 --> 00:06:22,300
+Copy another plate buckle
+
+132
+00:06:24,100 --> 00:06:27,040
+The same operation, sew it to the opening position
+
+133
+00:06:33,300 --> 00:06:35,980
+Next, we apply fabric to the seam allowance board
+
+134
+00:06:36,600 --> 00:06:38,500
+Here, directly select the window of the lining
+
+135
+00:06:38,780 --> 00:06:40,740
+The seam allowance fabric is applied
+
+136
+00:06:41,500 --> 00:06:43,379
+Then modify the material type
+
+137
+00:06:44,000 --> 00:06:45,200
+Make it more shiny
+
+138
+00:06:46,040 --> 00:06:48,040
+And change to a uniform color
+
+139
+00:06:48,780 --> 00:06:51,280
+Use the color stripper to directly absorb the color of the body
+
+140
+00:06:51,879 --> 00:06:52,400
+Apply
+
+141
+00:06:52,400 --> 00:06:55,240
+Here you can add the color from the color stripper
+
+142
+00:06:55,240 --> 00:06:56,340
+Add to the color board
+
+143
+00:06:57,980 --> 00:07:01,379
+Here we can copy the PBR sticker of the seam allowance fabric
+
+144
+00:07:01,379 --> 00:07:02,180
+Locking path
+
+145
+00:07:02,840 --> 00:07:06,040
+Next, apply PBR sticker to the OBJ app for fastening
+
+146
+00:07:06,040 --> 00:07:07,180
+And modify the material
+
+147
+00:07:07,180 --> 00:07:08,340
+Can be pasted on the previous path in the next step
+
+148
+00:07:08,340 --> 00:07:11,340
+and apply the corresponding PBR sticker directly to the same path.
+
+149
+00:07:14,340 --> 00:07:18,340
+You can see that the plate buckle made of real silk fabric has a certain sense of gloss.
+
+150
+00:07:19,340 --> 00:07:21,340
+Then this plate buckle effect is finished.
+

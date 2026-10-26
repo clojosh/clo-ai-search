@@ -1,0 +1,300 @@
+1
+00:00:00,000 --> 00:00:06,000
+In this video, I will explain the layout function based on the text.
+
+2
+00:00:06,000 --> 00:00:11,000
+In the previous version, when we were doing the layout, we did not consider the text or print position applied on the board.
+
+3
+00:00:11,000 --> 00:00:20,000
+From 2025.0, we have added the board positioning function to maintain the text on the board and achieve efficient layout at the same time as the print position.
+
+4
+00:00:20,000 --> 00:00:23,000
+Let's take a few examples to understand this function in detail.
+
+5
+00:00:23,000 --> 00:00:28,000
+The board positioning function can be used in the simulation mode and the print release mode.
+
+6
+00:00:28,000 --> 00:00:31,000
+Next, we will introduce it in these two modes separately.
+
+7
+00:00:31,000 --> 00:00:33,000
+Let's start with the simulation mode.
+
+8
+00:00:33,000 --> 00:00:36,000
+You can see that this jacket has the pattern of the pattern.
+
+9
+00:00:36,000 --> 00:00:42,000
+When selecting the board in the simulation mode, only the board with pattern fabric is selected here.
+
+10
+00:00:42,000 --> 00:00:48,000
+You can see that under the fabric part of the right-hand editor window, you can add the board positioning function.
+
+11
+00:00:48,000 --> 00:00:51,000
+The board positioning function consists of a total of four options.
+
+12
+00:00:51,000 --> 00:00:54,000
+Let's first briefly understand the function of each option.
+
+13
+00:00:54,000 --> 00:00:55,000
+The default setting is 0.
+
+14
+00:00:55,000 --> 00:00:58,000
+As before, this option will not consider the pattern.
+
+15
+00:00:58,000 --> 00:01:13,000
+In the simulation mode, it will automatically identify the position of the pattern on each board and automatically match it with the position of the pattern in the print release mode to achieve efficient layout.
+
+16
+00:01:13,000 --> 00:01:17,000
+The principle of the print release department is the same as that of the pattern.
+
+17
+00:01:17,000 --> 00:01:23,000
+The difference is that it works on the board that uses those options to increase the effect of printing.
+
+18
+00:01:23,000 --> 00:01:25,000
+Finally, it is locked in the current position.
+
+19
+00:01:25,000 --> 00:01:27,000
+This function can be used in the print release mode.
+
+20
+00:01:27,000 --> 00:01:30,000
+In the print release mode, the selected board is locked in the current position.
+
+21
+00:01:30,000 --> 00:01:36,000
+In addition to the board that uses this function, the rest of the boards will still be lined up according to the layout settings.
+
+22
+00:01:36,000 --> 00:01:46,000
+After selecting the board, if you have selected options without exceptions, such as options based on the pattern, the bottom board positioning locking function will automatically activate.
+
+23
+00:01:46,000 --> 00:01:55,000
+The locking function is to place the print cloth or pattern in a specific position after it is placed, preventing the pattern from moving accidentally when modifying other boards.
+
+24
+00:01:55,000 --> 00:02:04,000
+If necessary, you can unlock it by canceling the selection of the selected option.
+
+25
+00:02:04,000 --> 00:02:06,000
+Now I will re-select it.
+
+26
+00:02:06,000 --> 00:02:16,000
+In the print release mode, you can select the desired board and then right-click to use the board positioning function.
+
+27
+00:02:16,000 --> 00:02:20,000
+Before using the function, you need to place the board in the desired position first.
+
+28
+00:02:20,000 --> 00:02:23,000
+You can see that although the two front pieces are in the same position,
+
+29
+00:02:23,000 --> 00:02:24,000
+In the print release editor, you can see that the two front pieces are in the same position.
+
+30
+00:02:24,000 --> 00:02:26,000
+The position of the print release editor is overlapping.
+
+31
+00:02:26,000 --> 00:02:31,000
+But in the 3D window, the pattern is in a continuous state.
+
+32
+00:02:31,000 --> 00:02:35,000
+Then right-click on the board and you can see the board positioning option.
+
+33
+00:02:35,000 --> 00:02:38,000
+It is the same as the option under the simulation mode.
+
+34
+00:02:38,000 --> 00:02:41,000
+Here, select the pattern based on the pattern.
+
+35
+00:02:41,000 --> 00:02:48,000
+After completing the pattern setting, click the current fabric button to start the pattern.
+
+36
+00:02:48,000 --> 00:02:52,000
+Now you can see that the position of the pattern in the 3D window has not changed.
+
+37
+00:02:52,000 --> 00:02:55,000
+But the two front pieces will identify the corresponding pattern.
+
+38
+00:02:55,000 --> 00:02:58,000
+And calculate the best pattern result with the rest of the panels.
+
+39
+00:02:58,000 --> 00:03:03,000
+So you can see the position is automatically adjusted in the print release editor.
+
+40
+00:03:03,000 --> 00:03:12,000
+Next, let's see the difference based on the pattern selection in the print release mode.
+
+41
+00:03:12,000 --> 00:03:15,000
+The operation is similar to the one just displayed.
+
+42
+00:03:15,000 --> 00:03:20,000
+Place the panels in the desired print position.
+
+43
+00:03:20,000 --> 00:03:22,000
+Right-click on the panel.
+
+44
+00:03:22,000 --> 00:03:23,000
+Position the panel.
+
+45
+00:03:23,000 --> 00:03:25,000
+Select the pattern based on the print release.
+
+46
+00:03:25,000 --> 00:03:31,000
+At this time, if you click on the current fabric button.
+
+47
+00:03:31,000 --> 00:03:34,000
+You can see the identification and preservation of the print release.
+
+48
+00:03:34,000 --> 00:03:41,000
+And the panel information on the top shows the remaining panels and the rate of use of the panel.
+
+49
+00:03:41,000 --> 00:03:46,000
+Next, we will display the current position function through the牛仔库 file.
+
+50
+00:03:46,000 --> 00:03:49,000
+When you do not need to automatically identify and match the corresponding panels or pattern direction.
+
+51
+00:03:50,000 --> 00:03:53,000
+But you want to lock the panels in a specific position.
+
+52
+00:03:53,000 --> 00:03:56,000
+Recommend using the lock in the current position function.
+
+53
+00:03:56,000 --> 00:03:58,000
+In the print release mode.
+
+54
+00:03:58,000 --> 00:04:01,000
+Place the front panel in an area with water-washing effect.
+
+55
+00:04:01,000 --> 00:04:03,000
+Then select two panels.
+
+56
+00:04:03,000 --> 00:04:07,000
+Right-click and select lock in the current position.
+
+57
+00:04:07,000 --> 00:04:11,000
+Similarly, if you align these two panels with the other panels.
+
+58
+00:04:11,000 --> 00:04:14,000
+You will find that only two front panels remain in the corresponding position.
+
+59
+00:04:14,000 --> 00:04:19,000
+The other panels will automatically line up on the remaining frame according to the best panel result calculated.
+
+60
+00:04:20,000 --> 00:04:23,000
+When you need to align other scales.
+
+61
+00:04:23,000 --> 00:04:28,000
+The selection based on the print release and the selection based on the pattern will automatically be applied to the panel.
+
+62
+00:04:28,000 --> 00:04:33,000
+It is necessary to note that the lock in the current position will not be applied to the panel.
+
+63
+00:04:33,000 --> 00:04:37,000
+The optimized print release can place the print in the position you want.
+
+64
+00:04:37,000 --> 00:04:39,000
+And more economically use the fabric.
+
+65
+00:04:39,000 --> 00:04:43,000
+In the print release mode, another function has been added.
+
+66
+00:04:43,000 --> 00:04:45,000
+Align the current fabric.
+
+67
+00:04:45,000 --> 00:04:48,000
+I hope you can use these two functions to align more efficiently.
+
+68
+00:04:50,000 --> 00:04:52,000
+I hope you found this video useful.
+
+69
+00:04:52,000 --> 00:04:54,000
+Thank you so much for watching.
+
+70
+00:04:54,000 --> 00:04:56,000
+If you have any questions, please feel free to contact us.
+
+71
+00:04:56,000 --> 00:04:58,000
+Thank you so much for watching.
+
+72
+00:04:58,000 --> 00:05:00,000
+If you have any questions, please feel free to contact us.
+
+73
+00:05:00,000 --> 00:05:02,000
+Thank you very much for watching.
+
+74
+00:05:02,000 --> 00:05:04,000
+I hope you have a wonderful day.
+
+75
+00:05:04,000 --> 00:05:06,000
+Good night.
+

@@ -1,0 +1,178 @@
+[
+  {
+    "id": "8ab45c5bc73748af891195477956bda8",
+    "url": "https://connect.clo-set.com/community/post/8ab45c5bc73748af891195477956bda8",
+    "title": "Exported file looks different in UE5",
+    "content": "So I am using CLo3D to make some preset garments for my tool in UE5. However, the exported file looks very different in UE5, as if the textures/lods? are not correct. Am I missing any settings or how would I be able to fix this?\n\n![45bea34772304fea8fc5f983cac82609](https://storagefiles.clo-set.com/public/community/202505/8ab45c5bc73748af891195477956bda8/images/45bea34772304fea8fc5f983cac82609image.png)\n\n\n### Community Post Comments:\nComment 1: First of all, it is better to compare the comparison with the Render image in CLO.The claw screen on the left used wick etc, which affects the color.And from what I know, the intensity level of the Normal Map is imported in reverse. Try modifying the normal map's level in Unreal Engine's Fabric Material Blue Print.It is stable to use the zipper in Texture, not OBJ.You must select a zipper in the CLO and modify it in the Editor window.Other than that, I think it will be difficult to judge only by the screen above.",
+    "content_description": "This web page aims to provide troubleshooting tips and settings adjustments for ensuring accurate garment exports from CLo3D to Unreal Engine 5.",
+    "source": "Connect Community",
+    "created_at": "2025-05-13T10:37:33.953Z",
+    "category": 220,
+    "tags": ["CLO", "UnrealEngine", "LiveSync"]
+  },
+  {
+    "id": "d8ca665d328e446eae50122ce4d97f5e",
+    "url": "https://connect.clo-set.com/community/post/d8ca665d328e446eae50122ce4d97f5e",
+    "title": "Hotkeys in 2025 not working missing Download button in Library",
+    "content": "Anyone else having issues with hotkeys in all versions of 2025 not working correctly? \n\nI tried a clean install, importing my saved hotkeys and while they show as being assigned they do not work. Some do work however, it seems random.\n\nI also noticed in the original Library the download all button is missing\n\n\n### Community Post Comments:\nComment 1: I hear you, but it can also be situational. In Zbrush for example I have multiple UI's based on the job I'm doing that only have the tools out I need. The default UI is always a suggestion to me and as you learn the software you start to tailor it to your needs.Having multiple options is always nice. It allows the user to decided when how they want to use the tools.\n\nComment 2: Hi Alex thanks for your feedback. A lot of users have actually found that the New Library will give you more screen real estate since it is only meant to be open when in use and then closed when not needed. Then Just using the \"y\" shortcut as needed to open and close quickly.But also no worries, we know change can take some getting used to and hope that you give the New Library a chance as it will be the one that will continue to be updated in 2025 and future releases 🙂\n\nComment 3: Hello, thank you and yes there is a reason I use the old library. I personally like it because it is small and compact and on the side of the ui. I use range of motions poses a lot when I work and having the original Library gives me more screen realestate and is easier. I also don't use textures until the very end so I'm creating fabrics and assigning them from the drop down in the fabric properties so I never use library window for fabrics. The new library is great but options are also great.If I download an asset from the new library I believe it does show up in the old, I'm 99.9% sure but I reverted back to 2024 so I cannot verify.\n\nComment 4: Hi! We have reached out to our team about the shortcut keys. We will let you know when we have more information about that.We do recommend trying the New Library. Or is there a specific reason you do not want to use it? but also if you go to the New Library and download the assets there and go back to the old Library are you then able to see the assets?",
+    "content_description": "This web page aims to address and troubleshoot issues with non-functioning hotkeys in the 2025 software versions and missing features in the original Library.",
+    "source": "Connect Community",
+    "created_at": "2025-05-11T18:07:45.53Z",
+    "category": 220,
+    "tags": ["CLO"]
+  },
+  {
+    "id": "d46dd9a60a7d4708ae58357ab4763f86",
+    "url": "https://connect.clo-set.com/community/post/d46dd9a60a7d4708ae58357ab4763f86",
+    "title": "The font size cannot be controlled in CLO3D, resulting in extremely large fonts in the output PLT files that extend beyond the printable area. Please ",
+    "content": "Lack of font size setting function, it is recommended to add it so that the output can be used\n\n\n### Community Post Comments:\nComment 1: In the newest version of CLO (2025.0), you can control the annotation size here:",
+    "content_description": "This web page advocates for the implementation of a font size setting feature to enhance user accessibility and improve content usability.",
+    "source": "Connect Community",
+    "created_at": "2025-05-10T01:26:01.2Z",
+    "category": 250,
+    "tags": ["CLO", "UI"]
+  },
+  {
+    "id": "ea849e821443425286ed70722300f769",
+    "url": "https://connect.clo-set.com/community/post/ea849e821443425286ed70722300f769",
+    "title": "Animation Issues in CLO 2025",
+    "content": "Hi CLO Support Team,\n\nCLO 2025 is fantastic, but I'm experiencing serious issues with the animation feature. The animation no longer functions as it used to — it's missing frames and behaving unpredictably.\n\nFor example, the \"walking in position\" animation only plays correctly for a few frames, and then nothing happens. I even tested motions from the old library that I've used successfully many times before, but now they can't complete properly.\n\nCould you please look into this issue?\n\nRegards & Love,\n\nVida\n\n\n### Community Post Comments:\nComment 1: Hi Vida. Thank you for reaching outThis sounds like the End Frame issue which Our team is aware and actively correcting this.In the meantime the End Frame is currently set to 100, but if you manually change this to your desired number of frame you should be all setAdded image below for reference :)\nReply 1: Hi Ariel, Thank you for respond. yesssss that is the issue \"the end frame\". Now that i have changed, it works.\nReply 2: Great! so glad to hear that 😍",
+    "content_description": "The purpose of this web page is to provide a platform for users to report and seek support for technical issues related to the CLO 2025 animation feature.",
+    "source": "Connect Community",
+    "created_at": "2025-05-09T19:15:31.81Z",
+    "category": 220,
+    "tags": ["CLO", "Animation"]
+  },
+  {
+    "id": "8a47f1f8c45648b58fd9a89c1adb045d",
+    "url": "https://connect.clo-set.com/community/post/8a47f1f8c45648b58fd9a89c1adb045d",
+    "title": "Stack Point X/Y directions",
+    "content": "When using the stack point grading function, the X direction is vertical and the Y direction is horizontal. This is opposite of what the X/Y directions are when applying grading. Can you please make them align? Thanks\n\n\n### Community Post Comments:\nComment 1: Hi, stacking along the Y-axis in this case means that all corresponding points are matched up to Y=0. This is why the pattern pieces will appear horizontally shifted as a result, and vice versa. So it is not wrong, just a different logic.",
+    "content_description": "This web page aims to clarify the orientation of the X and Y directions in the stack point grading function to ensure consistency with grading applications.",
+    "source": "Connect Community",
+    "created_at": "2025-05-09T19:05:53.193Z",
+    "category": 250,
+    "tags": ["CLO", "Pattern"]
+  },
+  {
+    "id": "406cca652c9a49eda3b0753900294f85",
+    "url": "https://connect.clo-set.com/community/post/406cca652c9a49eda3b0753900294f85",
+    "title": "Meet the Winner: Creator's contest 2025 Vol.1 - Seifuku Decoded (1st place, Yoon)",
+    "content": "## _In this interview, we delve into the creative approach and workflow of_[ _Dasom Yoon_](https://connect.clo-set.com/portfolio/144049/collection/collections) _, the winner of the Creator's contest 2025 Vol.1 - Seifuku Decoded. Explore the world of 3D fashion design through her work style and valuable tips!_\n\n# **Could you briefly introduce yourself and explain how you started working with 3D?**\n\nHello, my name is Dasom Yoon, and I work as a 3D fashion and graphic designer. Before pursuing this career, I majored in clothing and worked in the overseas sales team for fabric import and export at a wholesale and retail clothing company. Due to the nature of the company, which frequently deals with vendors, I first learned about creating virtual garments when I saw vendors using the proposed fabrics to create virtual clothing for buyer presentations. This chance encounter introduced me to 3D garment simulation, and although I didn't know what kind of work I could do or what career I could pursue with it, I decided to learn it anyway.\n\nHaving majored in clothing and spent a considerable amount of time learning leathercraft as a hobby, I found it easy to understand patterns, sewing, and garment structures. Despite having no prior knowledge of 3D concepts, I found CLO and Marvelous Designer easy to learn because the process of creating garments is very similar to the actual clothing production process. At that time, I didn't even realize I was working in 3D because the process was so similar to real garment production.\n\nAs I gradually acquired knowledge related to 3D, such as texturing and animation, to improve the quality of my work, I began creating various fashion artworks primarily using CLO and Marvelous Designer. For a while, I focused on external projects, creating various garment mockups and videos, often working on projects that required realistic 3D models. This led to a desire for more creative and free work, and since last year, I have been frequently participating in competitions.\n\nIn this competition, I applied a new style to my personal work, aiming not just to create garments in 3D but to complete them as a single artwork, thereby establishing my own unique world.\n\n# **We'd like to hear more about the direction of your work in the Creator's contest 2025 Vol.1 - Seifuku Decoded contest. Did you aim for a specific style? If so, what was it?**\n\nThe theme of this competition, uniforms, includes various occupations and allows for multiple styles. When I think of Japanese uniform styles, the first thing that comes to mind is 'school uniforms.' They are the most familiar to me, and I thought they would allow for various ideas. The image that comes to mind when thinking of school uniforms is clear, making it easy to introduce changes centered around that image. Traditional school uniform designs focus on uniformity and unity, resulting in a neat and simple silhouette. However, this often means they lack practicality and comfort, causing inconvenience for students.\n\n![27f2fa56cf54475caa263bffa344eb9e](https://storagefiles.clo-set.com/public/community/202505/406cca652c9a49eda3b0753900294f85/images/27f2fa56cf54475caa263bffa344eb9e%E1%84%85%E1%85%A6%E1%84%91%E1%85%A5%E1%84%85%E1%85%A5%E1%86%AB%E1%84%89%E1%85%B3%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%20%E1%84%89%E1%85%AE%E1%84%8C%E1%85%B5%E1%86%B8.png)\n\nMy initial idea stemmed from the fact that, unlike when I was in school, Korean students now wear comfortable, neat, and practical clothes called 'daily uniforms.' I imagined that in the near future, designs that prioritize practicality while maintaining the symbolic nature of school uniforms would become more common. I aimed to incorporate this imagination into my design. I referenced various futuristic clothing designs, trying to infuse the unique sci-fi aesthetic, colors, and shapes into my design.\n\n![7e687ae18493468aafcef09feaa3e3e7](https://storagefiles.clo-set.com/public/community/202505/406cca652c9a49eda3b0753900294f85/images/7e687ae18493468aafcef09feaa3e3e7%E1%84%80%E1%85%B3%E1%84%85%E1%85%A2%E1%84%91%E1%85%B5%E1%86%A8%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%8B%E1%85%A5%E1%86%B8.png)\n\nIn this project, I included various graphics inspired by neo-futuristic architectural styles, converting organic and abstract curved graphics into halftones and matching them tone-on-tone to emphasize a futuristic feel. From a garment structure perspective, the jacket features a detachable hood liner, allowing it to be combined with a windbreaker for easy switching during outdoor activities, creating a two-way structure. The skirt pants, composed of two layers, were an attempt to make traditional school uniform designs trendy and practical. They can be worn as a skirt alone, as a skirt and pants together, or just as pants for outdoor activities, creating a three-way design.\n\nThe most important aspect I considered during this process was creating a design that anyone would want to wear.\n\n# **Could you briefly explain the various tools you use in your pipeline? I'm curious about the challenges you faced and how you overcame them.**\n\nMy basic workflow is as follows: CLO or Marvelous Designer (clothes modeling) > Substance 3D Painter (texturing) > Blender (avatar & background scene) > Blender (render) > After Effects (2D graphic & video).\n\nWhen creating images or videos that include custom avatars and backgrounds, I often use external 3D tools. However, when working solely on garments, I render them in CLO. While external 3D tools are more convenient for arranging multiple objects and setting up cameras and lighting, I believe no tool can match CLO for realistically rendering garments. For the same reason, when rendering only garments, there is no need to texture them in Substance 3D Painter; the internal texturing system of CLO is sufficient.\n\n![5f280873271543b69d7cba0cb17c82f8](https://storagefiles.clo-set.com/public/community/202505/406cca652c9a49eda3b0753900294f85/images/5f280873271543b69d7cba0cb17c82f8%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%8B%E1%85%A5%E1%86%B8%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%281%29.png)![22874c0e71234115bad2fc35541d9141](https://storagefiles.clo-set.com/public/community/202505/406cca652c9a49eda3b0753900294f85/images/22874c0e71234115bad2fc35541d9141%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%8B%E1%85%A5%E1%86%B8%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%282%29.png)![615371f5043f406582f1a01fc6a4a3ce](https://storagefiles.clo-set.com/public/community/202505/406cca652c9a49eda3b0753900294f85/images/615371f5043f406582f1a01fc6a4a3ce%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%8B%E1%85%A5%E1%86%B8%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%283%29.png)\n\nDue to the nature of sewing and simulating 2D patterns, UV unwrapping is unnecessary, and creating UDIM tiles is easy, making it convenient to import/export to other programs. The process of creating garments in CLO and Marvelous Designer is overwhelmingly convenient and user-friendly compared to other tools, so I haven't faced significant difficulties. Recently, I have felt the benefits of the updated GPU simulation and trim simulation features.\n\nThe GPU simulation in Marvelous Designer and CLO is much faster than the previous simulation, which greatly helped speed up the process of layering multiple garments in this project. The skirt belt and hood string have trims attached, and with trim simulation, they can be accurately placed and remain attached like real trims even after multiple simulations, saving the effort of repositioning trims after each simulation.\n\n# **Do you have any tips and tricks to share with the community regarding Marvelous Designer?**\n\nA question I often receive regarding my work is how I learned Marvelous Designer. I self-taught using tutorials created by their official YouTube channel, and I believe these tutorials are more useful than any other courses. While there are many courses showcasing stylish artworks, I think learning the basics properly is the most important. When learning something new, it can be tedious and frustrating when your skills don't improve quickly, but I believe that repeatedly practicing the basic tutorials until you fully understand them is better than taking shortcuts by learning someone else's style. Eventually, you'll be able to create various styles you want.\n\nFor those who want to create garments with Marvelous Designer but don't know how to start, using the various free and paid assets available on CLO-SET CONNECT can be helpful. Initially, you can start by adding and removing details from these patterns, gradually learning the structure of garments and creating your own designs. Even now, when I see a garment that I can't immediately visualize as a 2D pattern, I download the file to study its structure and texture direction, comparing which parts differ from my style. I believe this kind of study helps a lot in building your own style and improving quality.\n\n![](https://storagefiles.clo-set.com/public/community/202505/406cca652c9a49eda3b0753900294f85/images/7b686426f8cc47538ec225a0b559748c%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202025-05-09%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.10.02.png)![](https://storagefiles.clo-set.com/public/community/202505/406cca652c9a49eda3b0753900294f85/images/ad30e267e9a442c0ae7e710b322f7416%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202025-05-09%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.11.38.png)\n\n\n### Community Post Comments:\nComment 1: Incredible project! 👏👏👏",
+    "content_description": "Discover the innovative creative process of Dasom Yoon, the winner of the Creator's contest 2025 Vol.1 - Seifuku Decoded, as she shares insights into her 3D fashion design workflow and unique artistic vision.",
+    "source": "Connect Community",
+    "created_at": "2025-05-09T05:59:35.03Z",
+    "category": 110,
+    "tags": ["MarvelousDesigner", "CLO", "CONNECT", "Contest", "Retopology", "Rendering", "Texture", "Blender", "Substance", "characterart"]
+  },
+  {
+    "id": "1af52bc80d5d4c89b18f7920b9aa1cc7",
+    "url": "https://connect.clo-set.com/community/post/1af52bc80d5d4c89b18f7920b9aa1cc7",
+    "title": "Pen on Avatar problem",
+    "content": "![6d5dc8accc514198bbf236d9c887c24d](https://storagefiles.clo-set.com/public/community/202505/1af52bc80d5d4c89b18f7920b9aa1cc7/images/6d5dc8accc514198bbf236d9c887c24dScreenshot%202025-05-08%20at%2018.20.10.png)Hi![363c9032e3424e75b62e8624b8cb1157](https://storagefiles.clo-set.com/public/community/202505/1af52bc80d5d4c89b18f7920b9aa1cc7/images/363c9032e3424e75b62e8624b8cb1157Screenshot%202025-05-08%20at%2018.15.03.png)**Hello CLO Lovers & Creators,**\n\nI'm experiencing an issue with the **Pen on Avatar** tool after updating to **CLO 2025**. It seems that lines created using this tool cannot be closed properly because they’re being detected as \"crossing,\" even when they aren’t. The error says:  \n**\"Lines created with the Line (Avatar) tool cannot cross. Please try again.\"**\n\nAfter speaking with other CLO users, I’ve found that this issue is especially affecting those using **iMacs or MacBooks**.\n\nThe **Pen on Avatar** tool is one of the most essential features for precision design, so I truly hope the community or CLO experts can help solve this issue.\n\nPlease see the attached screenshot for reference.  \nThank you in advance for your help and support!\n\nVida\n\n\n### Community Post Comments:\nComment 1: Hi everyone! The issue has been located and is targeted to be fixed for the next patch release. Thank you for the reports and patience!\nReply 1: Great to hear it’s being addressed! Thanks for keeping us in the loop and for all your hard work.\n\nComment 2: I am also experiencing this issue. Using a 2021 Macbook Pro.\n\nComment 3: I have also experienced this issue on Windows using the 3D Avatar Pen Tool.\n\nComment 4: I was able to create this issue on my Windows PC. I am drawing on a custom 3D model/avatar.\nReply 1: I have checked it today also with Windows Laptop, same issue, same problem :(\nReply 2: Are you experiencing the exact same issue with using PEN ON AVATAR?\nReply 3: I am using the pen an avatar that I made in 3D CAD. It's a handbag. Imported file type is OBJ. Now I have found the issue with more than 1 OBJ.See the image I've added to my post. The small shape on the \"end\" panel of the bag causes an error. Only on the lower end panels and the base is there an issue. All of the others have no issue. Happy to share the model and the file for investigation.\nReply 4: Hi Kyle, the new answers here escaped me before a direct reply to my own comment, so sorry for the delay. Could you please share one of the affected OBJs here? https://connect.clo-set.com/community/post/1af52bc80d5d4c89b18f7920b9aa1cc7 Please note you are coming from the forums so tech support will be able to assign it swiftly. You can upload the file on WeTransfer and share the link in the message. Thank you so much!\nReply 5: Hi Melody, I sent a support message and linked/attached the files. Thank you!\n\nComment 5: Hi, first update. A probable cause was found but the issue still has to be tested out. I'll be back when I know more.\nReply 1: Hi Melody,Thanks for the update! Good to hear that a probable cause has been identified. I’ll wait to hear back once the testing is complete. Fingers crossed that it resolves the issue.\nReply 2: Hi Melody, Any update on this? It's a major part of why I use Clo software.\n\nComment 6: Hi Vida, thanks for reaching out. I was able to replicate this issue on my personal MacBook, but not my Windows work laptop. I will report it and keep you updated with any news in this thread. Sorry for the inconvenience!\nReply 1: Could you please share your About This Mac info window?\nReply 2: Hi Melody,Thank you for your response. Yes, it seems that only Mac users are experiencing this issue. For your reference, I’ve tested the Pen Avatar on an iMac 2017 (27-inch), a MacBook Pro M3 (2024), and a MacBook Pro (2023), and the problem occurred on all of them.Let me know if I can provide any additional information!",
+    "content_description": "This web page serves as a community support forum for CLO users seeking assistance with the Pen on Avatar tool issue in CLO 2025, particularly for Mac users.",
+    "source": "Connect Community",
+    "created_at": "2025-05-08T16:36:11.647Z",
+    "category": 220,
+    "tags": ["CLO", "Pattern", "CLO2025", "CLOonMAC"]
+  },
+  {
+    "id": "bab769a853ba486294fb1d1aa0729734",
+    "url": "https://connect.clo-set.com/community/post/bab769a853ba486294fb1d1aa0729734",
+    "title": "Gizmo isn't Working with my Trim",
+    "content": "Hello, I am having issues with trying to resize and relocate my trim (OBJ file) with the gizmo. I added a ribbon from the CLO library to my garment. When I select the trim, the gizmo appears but I am unable to click the axis to move up/down, left/right, and rotate. When I try to use the resizing tool in the gizmo, that will open but again, I cannot use any of the axises. I am able to glue my trim in place but there is no editing the placement. \n\nI've tried it with hardware, ribbon, and buttons. The button worked but there are technically specific tool associated with buttons. \n\nAs anyone else encountered this problem? Are there any tips or workarounds?\n\n\n### Community Post Comments:\nComment 1: Hii. I'm having the save issue here. Have you found a way to fix it? Thank you :).\nReply 1: I haven't exactly found a solution. But if you import your trim as a prop it tends to not crash and the gizmo will work. I think it's because the file format is a project at that point. It's been my workaround.\n\nComment 2: Hi, this sounds like a possible driver, hardware, setting issue, please open a ticket to tech support here https://connect.clo-set.com/community/post/bab769a853ba486294fb1d1aa0729734 and include a dxdiag.txt of your Windows computer or a screenshot of your About This Mac window.",
+    "content_description": "This web page aims to provide solutions and tips for users experiencing difficulties with resizing and relocating trims in CLO software using the gizmo tool.",
+    "source": "Connect Community",
+    "created_at": "2025-05-08T14:42:28.52Z",
+    "category": 220,
+    "tags": ["CLO", "Trim", "Gizmo"]
+  },
+  {
+    "id": "cfb5c1250aef4f93b7b86989e3c3c45c",
+    "url": "https://connect.clo-set.com/community/post/cfb5c1250aef4f93b7b86989e3c3c45c",
+    "title": "🎥 My Digital Closet Season 3 Highlights Are Here! 🌟",
+    "content": "##   \n**MyDigitalCloset Challenge_Season 3 has**  \n**officially wrapped up!**\n\nThroughout this season, so many of you brought your unique style and creative vision to life.  \nFrom the outfits themselves to the mood, motion, and overall storytelling —   \nwe were blown away by the incredible quality and imagination on display.  \n  \n\n\nThis season truly showed the endless possibilities of digital fashion,   \nand how talented and expressive the CONNECT community is.  \n  \nThanks to your amazing work, this season was full of fresh energy and inspiring creations.\n\nTo everyone who participated: thank you so much.  \n  \nAnd to celebrate all of your creativity, we’ve put together a highlight reel🎞️   \nso you can enjoy and appreciate the stunning works created by fellow users.\n\n  \n\n\n  \n  \n  \nTake a look — you’re sure to find some fresh inspiration ✨\n\nWe can’t wait to see what you’ll bring in the next season.\n\n  \n**Thanks for being part of CONNECT 💛**\n\n  \n![](https://storagefiles.clo-set.com/public/community/202505/cfb5c1250aef4f93b7b86989e3c3c45c/images/163e4590b4de406eafd3d1007c1a323cthumbnail.png)\n\n\n### Community Post Comments:\nComment 1: so good!!👍🏻",
+    "content_description": "Celebrate the creativity and talent of the CONNECT community by exploring our highlight reel from Season 3 of the MyDigitalCloset Challenge, showcasing the stunning digital fashion creations that inspired us all!",
+    "source": "Connect Community",
+    "created_at": "2025-05-07T07:49:11.007Z",
+    "category": 100,
+    "tags": ["CLO", "MarvelousDesigner", "CONNECT", "challenge", "mydigitalcloset", "motion", "apt", "highlights"]
+  },
+  {
+    "id": "f6c68bae0f1b45c8991b27ea54ccd71a",
+    "url": "https://connect.clo-set.com/community/post/f6c68bae0f1b45c8991b27ea54ccd71a",
+    "title": "Need help with \"Exploding Garment Animation\" in CLO 3D – Avatar Compatibility Error",
+    "content": "Hi everyone,  \nI'm using the CLO 3D tutorial _\"How to create an exploding garment animation in CLO\"_ – it's worked perfectly for me in the past. However, now I'm getting an error at the final step:\n\n**warning Incompatible with the current Avatar.**\n\nI've tried restarting CLO, reloading the project, and even switching avatars, but the error keeps popping up. I'm not sure what changed or how to fix it. Has anyone else encountered this issue or know how to solve it?\n\nAny help would be greatly appreciated!  \nThanks in advance 🙏\n\n\n### Community Post Comments:\nComment 1: Hi! Yes there was an update after 2024.2. You need to have to have SeamFace checked on in the Pattern Piece Property Editor",
+    "content_description": "This web page serves as a community support forum for users experiencing issues with CLO 3D animations, specifically addressing the \"Incompatible with the current Avatar\" error during the exploding garment animation tutorial.",
+    "source": "Connect Community",
+    "created_at": "2025-05-06T13:31:19.95Z",
+    "category": 220,
+    "tags": ["CLO", "Animation", "Avatar", "Import_Export"]
+  },
+  {
+    "id": "a7c161c24874467fb1fd379cad6f46ed",
+    "url": "https://connect.clo-set.com/community/post/a7c161c24874467fb1fd379cad6f46ed",
+    "title": "Change the size of baby avatar",
+    "content": "Hello everyone, does anyone reach to change the size of the baby avatar ? I would like to adjust it to the european measure. When I tried it in the \"avatar editor\" it is blocked... I can't change anything...\n\n\n### Community Post Comments:\nComment 1: The baby avatars currently cannot be edited. But the Girl/Boy avatars can be. These can also then have the size files applied\nReply 1: Thank you for the answer 🙂",
+    "content_description": "This web page aims to provide assistance and solutions for users experiencing issues with resizing the baby avatar in the avatar editor.",
+    "source": "Connect Community",
+    "created_at": "2025-05-05T15:40:16.433Z",
+    "category": 220,
+    "tags": ["CLO", "Avatar"]
+  },
+  {
+    "id": "abc71fc9c1064ee691d8691b55a4fda1",
+    "url": "https://connect.clo-set.com/community/post/abc71fc9c1064ee691d8691b55a4fda1",
+    "title": "3D Like effect",
+    "content": "Hi,\n\nhow could I get 3d like effect in a rope (thread).\n\nThank you\n\n\n### Community Post Comments:\nComment 1: Thank you i got the obj as per your suggestion. 🙂\n\nComment 2: <img src=\"https://connect.clo-set.com/community/post/abc71fc9c1064ee691d8691b55a4fda1\" alt=\"ce00b5d8518e4082be50afea40698b35\" class=\"custom-image original-size\" data-id=\"ce00b5d8518e4082be50afea40698b35\" data-width=\"294\" data-height=\"342\">Hi,Here is the example, please suggest.\n\nComment 3: CLO threads/topstitching are default set to OBJ. So you should see those as 3D objects already.If you mean something different and could add images for reference that would be super helpful :)\nReply 1: Hi Ariel,thank you for connecting, in new updated clo version i didn't found any 3d obj. I want to make it my own.\nReply 2: The OBJ is part of the topstitch automatically in the Topstitch Property Editor.Just make sure you are aware the Library location has moved to the upper right Corner Blue button",
+    "content_description": "This web page provides guidance on creating a 3D effect for rope or thread in various design applications.",
+    "source": "Connect Community",
+    "created_at": "2025-05-05T12:10:23.943Z",
+    "category": 220,
+    "tags": ["CLO"]
+  },
+  {
+    "id": "a23054f7846849a4ac587a298f4a1fa7",
+    "url": "https://connect.clo-set.com/community/post/a23054f7846849a4ac587a298f4a1fa7",
+    "title": "Download ",
+    "content": "Why does clo 3D download go to notepads?\n\n\n### Community Post Comments:\nComment 1: Hi, I assume you are on Windows. The installer should have an EXE file extension, does it?",
+    "content_description": "This webpage aims to clarify why downloads from CLO 3D are redirected to Notepad and how to resolve this issue for a smoother user experience.",
+    "source": "Connect Community",
+    "created_at": "2025-05-05T11:54:06.8Z",
+    "category": 220,
+    "tags": ["CLO"]
+  },
+  {
+    "id": "9b403b3e15d143cd8e8205ef1c8fc492",
+    "url": "https://connect.clo-set.com/community/post/9b403b3e15d143cd8e8205ef1c8fc492",
+    "title": "Quality of life wishlist",
+    "content": "I love CLO but seconds add up to minutes and minutes add up to hours. The constant sync in CLO leaves a lot of wasted time I try and make up in efficiency with the tools, here are some I would love to see.\n\nPropper gizmo for 2D window. I'm not saying get rid of transform box but a real gizmo is much more efficient, powerful and faster to use.\n\nSlash and spread preview/history for fullness point/spread tool.\n\nSelect internal lines in 3D viewport with gizmo with added functionality to pin in space. Just image the same functionality as the hand tool but with internal lines. Using the gizmo to be able to rotate and fold/pin and freeze in place would be amazing.\n\nAutomatic 3D pen on open face 3D models for sewing to.\n\nSelect edge loop and convert to avatar tape/3D pen.\n\nGlue - Paint a mask on avatar/3D object, paint a mask on garment and glue together.\n\nTuck tool, same as pleat tool just sew up the internal lines instead by x amount.\n\nAbility to draw curves without being on a pattern piece and not having to be connected. If i want to turn them into a pattern I can snap them together and convert to pattern.\n",
+    "content_description": "Explore innovative efficiency-enhancing tools for CLO that streamline workflow and maximize productivity in 3D garment design.",
+    "source": "Connect Community",
+    "created_at": "2025-05-04T19:26:38.833Z",
+    "category": 250,
+    "tags": ["CLO", "UI", "MarvelousDesigner"]
+  },
+  {
+    "id": "9f172d34d44646a58870e740bbc09cf9",
+    "url": "https://connect.clo-set.com/community/post/9f172d34d44646a58870e740bbc09cf9",
+    "title": "WHY does this happend everytime i try an animation?",
+    "content": "![114feb270be344eda0df301334d865f0](https://storagefiles.clo-set.com/public/community/202505/9f172d34d44646a58870e740bbc09cf9/images/114feb270be344eda0df301334d865f0Captura%20de%20pantalla%202025-05-04%20153444.png)I don't undertand why, but in not able to do animations in CLO3D. i tries with CPU and GPU. I have a quite good PC and yes the garments are at 5 and thick texture activated.\n\n\n### Community Post Comments:\nComment 1: Hi, could you please go through this checklist and see if the issue still happens then?- Simulation mode is set to Animation (Stable).- All layers are set to 0.- PD ist set to 7-10.- Additional Thickness Collision may remain around 2-2.5.- Delete all pattern pieces that will not be visible during the final animation (e.g. pocket bags.)- No pattern pieces on Freeze/Deactivate/Strengthen.- No pins used, use Tacks und Attach to Avatar Tape instead:https://connect.clo-set.com/community/post/9f172d34d44646a58870e740bbc09cf9 In case garment slips from avatar, e.g. spaghetti straps, increase Kinetic Friction of the avatar.",
+    "content_description": "This web page aims to provide troubleshooting tips and solutions for users experiencing difficulties with animations in CLO3D.",
+    "source": "Connect Community",
+    "created_at": "2025-05-04T13:43:54.943Z",
+    "category": 220,
+    "tags": ["CLO", "Animation", "Avatar", "Simulation"]
+  },
+  {
+    "id": "44ee405f293b4677bea0e0a094f88c4a",
+    "url": "https://connect.clo-set.com/community/post/44ee405f293b4677bea0e0a094f88c4a",
+    "title": "Image filter",
+    "content": "What doe the image filter affect exactly in the final render? \n\n\n### Community Post Comments:\nComment 1: I am assuming you mean the option in the Render Properties? IF your render has any visual noise in the preview window related to the weave of the fabric or a moiré effect, increase the value slightly to remove it.\n\nComment 2: Hi, I apologize, but what exactly do you mean by \"image filter\"? In reference to rendering, is it the AI Studio?",
+    "content_description": "This web page aims to explain the specific impact of image filters on the final rendering of images.",
+    "source": "Connect Community",
+    "created_at": "2025-05-03T08:47:32.647Z",
+    "category": 210,
+    "tags": ["CLO"]
+  }
+]

@@ -1,0 +1,420 @@
+1
+00:00:00,000 --> 00:00:05,000
+Hello everyone, today I will introduce you to the export of OPT files.
+
+2
+00:00:05,000 --> 00:00:14,000
+First of all, I will introduce the relevant settings for exporting OPT.
+
+3
+00:00:14,000 --> 00:00:19,000
+In the main menu bar, you can export the done file as OPT.
+
+4
+00:00:19,000 --> 00:00:23,000
+If you only want to export some of the content, you can first select the required version, model, etc.
+
+5
+00:00:23,000 --> 00:00:27,000
+Then click the OPT selected below, here select export OPT.
+
+6
+00:00:27,000 --> 00:00:31,000
+Select the appropriate save address, enter the name, click save.
+
+7
+00:00:31,000 --> 00:00:35,000
+When the OPT window appears, let's take a look at the specific settings.
+
+8
+00:00:35,000 --> 00:00:46,000
+The top three rows are the contents of the export selection, including the version, virtual model, postage and copy.
+
+9
+00:00:46,000 --> 00:00:55,000
+The square on the left can be freely selected, and the arrow symbol button on the right can be opened.
+
+10
+00:00:57,000 --> 00:01:07,000
+Select a single target to save the content you just selected as an object.
+
+11
+00:01:07,000 --> 00:01:10,000
+Selecting multiple targets can be divided into multiple objects.
+
+12
+00:01:10,000 --> 00:01:14,000
+The main difference between merge and unmerge is reflected in the seam line.
+
+13
+00:01:14,000 --> 00:01:18,000
+The grid point of the seam line is exported as one point or exported separately.
+
+14
+00:01:18,000 --> 00:01:21,000
+The thick one below can save the rendering thickness of the version.
+
+15
+00:01:21,000 --> 00:01:22,000
+The thick one below can save the rendering thickness of the version.
+
+16
+00:01:27,000 --> 00:01:32,000
+The common UV coordinates are selected and the UV images can be exported as well.
+
+17
+00:01:32,000 --> 00:01:37,000
+No big deal here, and we will release a detailed UV image video in the future.
+
+18
+00:01:37,000 --> 00:01:41,000
+Take a look at the hidden objects, for example, a hidden model.
+
+19
+00:01:41,000 --> 00:01:44,000
+Select this option can also export the model.
+
+20
+00:01:44,000 --> 00:01:47,000
+If it is not selected, the hidden model or version will not be exported.
+
+21
+00:01:47,000 --> 00:01:52,000
+Insert internal images, export files, including internal lines and internal images.
+
+22
+00:01:57,000 --> 00:02:13,240
+Here you can set the size of the object, you can change the unit, adjust the proportion.
+
+23
+00:02:13,240 --> 00:02:16,840
+The axis conversion allows the file to rotate in the direction of three axes.
+
+24
+00:02:16,840 --> 00:02:22,060
+In the picture, it is the direction of the 3D space XYZ axis.
+
+25
+00:02:22,060 --> 00:02:33,460
+After selecting to save the flag color, it will save each flag color as an object file.
+
+26
+00:02:33,460 --> 00:02:43,099
+Save to the path in the original text, in fact, is to save both the text and the object to the path selected at the beginning.
+
+27
+00:02:43,099 --> 00:02:48,099
+Save with the text file, it will generate a compression package in the path selected at the beginning.
+
+28
+00:02:48,099 --> 00:02:51,400
+The compression package contains object files and text images, etc.
+
+29
+00:02:51,400 --> 00:02:57,760
+After connecting the color and text together, the color will merge into the text image.
+
+30
+00:02:57,760 --> 00:03:09,240
+If the object file is to be used in the model software, it will use this option, which can store files other than the environment color and the environment image.
+
+31
+00:03:09,240 --> 00:03:12,360
+Save the transparent image from the slow reflection image.
+
+32
+00:03:12,360 --> 00:03:17,460
+When the material contains the transparent image, click on this option to save the transparent image.
+
+33
+00:03:17,460 --> 00:03:20,060
+Even if you don't click on it, the transparent effect can be retained.
+
+34
+00:03:20,060 --> 00:03:21,360
+There is only one separate transparent image.
+
+35
+00:03:21,360 --> 00:03:32,920
+Save the Meta data and save the clothing pages, grid, physical properties and sewage information as MetaDataXML.
+
+36
+00:03:36,920 --> 00:03:44,920
+The main menu bar file export FBX can export the finished file as FBX. Click Save.
+
+37
+00:03:47,360 --> 00:03:49,360
+The FBX window appears.
+
+38
+00:03:49,360 --> 00:03:51,360
+Let's take a look at the data.
+
+39
+00:03:51,360 --> 00:04:02,360
+When you export, you can choose whether you need a virtual model or not, and the menu can be set to exclude model skeleton.
+
+40
+00:04:02,360 --> 00:04:17,360
+The following settings are the same as the option to export ARP to the front.
+
+41
+00:04:17,360 --> 00:04:22,360
+After selecting the scene and props, you can also save the scene and others.
+
+42
+00:04:22,360 --> 00:04:24,360
+Model Action
+
+43
+00:04:24,360 --> 00:04:27,360
+If the model has an action, you can choose to save it.
+
+44
+00:04:27,360 --> 00:04:38,360
+Connect has recently launched a lot of new actions, which are welcome to download and use.
+
+45
+00:04:38,360 --> 00:04:40,360
+Cache Animation MC
+
+46
+00:04:40,360 --> 00:04:45,360
+You can save the recorded costume animation as storage data.
+
+47
+00:04:45,360 --> 00:04:46,360
+There are two types of files.
+
+48
+00:04:46,360 --> 00:04:47,360
+Cache Animation MC
+
+49
+00:04:47,360 --> 00:04:51,360
+2-key, the file is saved as 2-key and cannot be opened by the user.
+
+50
+00:04:51,360 --> 00:04:55,360
+S-key, the file is saved as a file and can be opened by the user.
+
+51
+00:04:55,360 --> 00:04:57,360
+FBX SDK
+
+52
+00:04:57,360 --> 00:05:04,360
+It is recommended to use the default version, which is also the highest version 2020, and the high version can be integrated downwards.
+
+53
+00:05:04,360 --> 00:05:05,360
+Comparison
+
+54
+00:05:05,360 --> 00:05:16,360
+As the previous settings, the saved text image is a relative file path, only the saved text name is saved, and the saved text image path is not saved.
+
+55
+00:05:17,360 --> 00:05:25,360
+Therefore, if the saved FBX and the file used in the text image are under the same path, the text image will automatically be added to the text image.
+
+56
+00:05:25,360 --> 00:05:26,360
+Cache Animation MC
+
+57
+00:05:26,360 --> 00:05:32,360
+Save the text image absolute file path, save the text image in the file path as the text image path.
+
+58
+00:05:32,360 --> 00:05:40,360
+If you change the path of the text image, the text image will not be able to be imported into the media, and the text image will be wrapped in the FBX file.
+
+59
+00:05:40,360 --> 00:05:46,360
+In this text image mode, even if the FBX text image path is moved, the text can be normally added to it.
+
+60
+00:05:46,360 --> 00:05:47,360
+Color and Principle
+
+61
+00:05:47,360 --> 00:05:54,360
+When the color is applied to the principle, the color and the principle will merge and be saved.
+
+62
+00:05:54,360 --> 00:06:03,360
+FBX files cannot contain all the data, principle pictures and colors, so select the option to export the color information applied to the principle.
+
+63
+00:06:03,360 --> 00:06:05,360
+Save the color as before
+
+64
+00:06:05,360 --> 00:06:11,360
+Select a few versions first, then click on the main menu to export the FBX file.
+
+65
+00:06:11,360 --> 00:06:14,360
+You can see that there is one more option in the window.
+
+66
+00:06:14,360 --> 00:06:15,360
+Workspace
+
+67
+00:06:15,360 --> 00:06:16,360
+Select the workspace.
+
+68
+00:06:16,360 --> 00:06:18,360
+The selected version is combined with the selected version.
+
+69
+00:06:18,360 --> 00:06:20,360
+Before exporting, select the corresponding version.
+
+70
+00:06:20,360 --> 00:06:24,360
+Using this function can merge a few specific versions.
+
+71
+00:06:24,360 --> 00:06:25,360
+Next to introduce
+
+72
+00:06:25,360 --> 00:06:30,360
+Export GLTF2.0 GLB
+
+73
+00:06:30,360 --> 00:06:33,360
+File export GLTF2.0
+
+74
+00:06:33,360 --> 00:06:36,360
+Say GLB format here first.
+
+75
+00:06:46,360 --> 00:07:00,360
+This part of the above setting is the same as the export option, a little over.
+
+76
+00:07:00,360 --> 00:07:01,360
+Light line
+
+77
+00:07:01,360 --> 00:07:06,360
+Except for the rendering light line, it can be exported together with the light.
+
+78
+00:07:06,360 --> 00:07:07,360
+Costume animation
+
+79
+00:07:07,360 --> 00:07:09,360
+Export costume animation data
+
+80
+00:07:09,360 --> 00:07:13,360
+The rest of the settings have been mentioned before, and I will not repeat here.
+
+81
+00:07:16,360 --> 00:07:25,360
+Finally, I will add another function.
+
+82
+00:07:25,360 --> 00:07:32,360
+Select the transparent value on the metal roughness chart, then an extra green chart will be added.
+
+83
+00:07:32,360 --> 00:07:40,360
+Select the transparent value on the metal roughness chart, then an extra green chart will be added.
+
+84
+00:07:46,360 --> 00:07:56,360
+Select the transparent value on the metal roughness chart, then an extra green chart will be added.
+
+85
+00:07:56,360 --> 00:07:57,360
+Next to introduce
+
+86
+00:07:57,360 --> 00:08:01,360
+Export GLTF2.0 GLTF
+
+87
+00:08:01,360 --> 00:08:04,360
+File export GLTF2.0
+
+88
+00:08:04,360 --> 00:08:10,360
+Select GLTF format here.
+
+89
+00:08:10,360 --> 00:08:15,360
+Compare the relevant settings, and the GLB is basically the same, just one more option.
+
+90
+00:08:16,360 --> 00:08:18,360
+Ex bleed
+
+91
+00:08:18,360 --> 00:08:25,360
+GLTF2.0 GLTF2.0
+
+92
+00:08:25,360 --> 00:08:31,360
+In the first entry shadow, eating miss
+
+93
+00:08:31,360 --> 00:08:33,360
+Bi��
+
+94
+00:08:33,360 --> 00:08:34,360
+I only want within my road
+
+95
+00:08:34,360 --> 00:08:36,360
+Table
+
+96
+00:08:36,360 --> 00:08:37,320
+Diagram
+
+97
+00:08:37,320 --> 00:08:38,460
+List
+
+98
+00:08:38,460 --> 00:08:40,360
+occupation
+
+99
+00:08:40,360 --> 00:08:41,360
+Easy
+
+100
+00:08:41,360 --> 00:08:42,360
+zaman
+
+101
+00:08:42,360 --> 00:08:43,360
+Error
+
+102
+00:08:43,360 --> 00:08:44,360
+Hammer
+
+103
+00:08:44,360 --> 00:08:45,360
+Simply
+
+104
+00:08:45,360 --> 00:08:46,279
+Top
+
+105
+00:08:46,279 --> 00:08:46,360
+Devices
+

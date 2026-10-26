@@ -1,150 +1,106 @@
 [
     {
-        "id": "f9a5d8d813a64b7db1bb3d5a3f1a177e",
-        "url": "https://connect.clo-set.com/community/post/f9a5d8d813a64b7db1bb3d5a3f1a177e",
-        "title": "Rendering",
-        "content": "Hi there, \n\nI rendered a style and made various settings beforehand. The rendering went well, but I would like the parting seams to be more clearly visible. Is there a setting for this? Many thanks in advance & best regards Tina![7fbb48009b8a405784adb9bf17fc4bff](https://storagefiles.clo-set.com/public/community/202601/f9a5d8d813a64b7db1bb3d5a3f1a177e/images/7fbb48009b8a405784adb9bf17fc4bffRendering.png)\n\n* * *\n\n* * *\n\n\n### Community Post Comments:\nComment 1: Hi Tina, two possible solutions: (1) Select the seamlines in questions and make their Normal Map \"shadow\" wider and/or more intense. (2) In the render window, select the render properties and edit the Global Map for seam puckering to be more intense. This will affect all seamlines.",
-        "content_description": "This web page provides guidance on adjusting rendering settings to enhance the visibility of parting seams in 3D models.",
-        "created_at": "2026-01-19T16:00:52.87Z",
-        "category": 220,
-        "tags": [
-            "Rendering",
-            "CLO"
-        ]
-    },
-    {
-        "id": "7ebf43bfb75943b297bade9b89fc1dd4",
-        "url": "https://connect.clo-set.com/community/post/7ebf43bfb75943b297bade9b89fc1dd4",
-        "title": "Drawing A Curved Waistband With A Fullness Line Tool",
-        "content": "[_https://www.youtube.com/watch?v=P5fDeJgh-K0 &list=PLEyPZuPxPt-ojcC_vDvgvgld6CWV7i75_&index=15_](https://www.youtube.com/watch?v=P5fDeJgh-K0&list=PLEyPZuPxPt-ojcC_vDvgvgld6CWV7i75_&index=15)\n\n**The Image 1**\n\n![d304589cd0ff4719a69c4100572832f8](https://storagefiles.clo-set.com/public/community/202601/7ebf43bfb75943b297bade9b89fc1dd4/images/d304589cd0ff4719a69c4100572832f8Image%201.png)\n\n**The Image 2**\n\n![5a9ce21915c2443ea5e9000ffc4057fd](https://storagefiles.clo-set.com/public/community/202601/7ebf43bfb75943b297bade9b89fc1dd4/images/5a9ce21915c2443ea5e9000ffc4057fdImage%202.png)\n\nWhen the waistband is drawn and placed on the avatar It can be seen It’s not fitted perfectly on the waistline. There are gaps here and there.\n\nSee the Image 1\n\nOn the video she modifies the waistband making It curvy rather than straight with the Fullness Line Tool\n\nI have some questions about the Fullness Line Tool applied for this purpose.\n\nStep 1) She measured the straight waistband and the waistline of the avatar.\n\nShe got the results on the Image 2. (Ease which is divided by 4. She works on the quarter pattern.)\n\nThe Ease of the waistband is 1/8 inch.\n\nSee the Image 2.\n\nStep 2) She traced the quarter waistband (for the front skirt pattern) with the Fullness Line Tool\n\nA) traced the bottom line starting from the center front.\n\nB) traced the upper line starting from the center front.\n\n(the Fullness Line Tool screen is opened)\n\nShe entered the value of  -0.125 (1/8 inch ease)\n\nthen the straight waistband became curvy.\n\n**Question 1)** I don’t understand the table on the Image 2\n\nBottom Waistband : 28 1/2”\n\nWaist Of Avatar At Top Of Waistband : 28”\n\nDifferenece : 1/2”\n\nDivided By 4 : 1/8”\n\nOn the table she says “Bottom Waistband”\n\nbut “Waist Of Avatar At Top Of WB”\n\nDoesn’t she have to say Waist Of Avatar At “The Bottom” Of WB. for “Bottom Waistband)???\n\nor Waist Of Avatar At Top Of WB for “Upper Waistband” this time???\n\nWhat would you do on this point?\n\n**Question 2)** So here Fullness Line Tool both decreases the measure of the waistband 1/8” on the quarter of the skirt and make It curvy.\n\nRight?\n\n\n### Community Post Comments:\nComment 1: Hi there, please ask specific questions about the technique to the content creator because it's not an official CLO tutorial, so we cannot comment on its contents.",
-        "content_description": "This webpage aims to clarify the application of the Fullness Line Tool in adjusting waistband fit for avatars in fashion design, addressing common questions and misconceptions related to measurements and curvature modifications.",
-        "created_at": "2026-01-19T15:49:10.517Z",
-        "category": 220,
-        "tags": [
-            "CLO",
-            "Pattern"
-        ]
-    },
-    {
-        "id": "15c014faef94469c93dde357b5fc4cb2",
-        "url": "https://connect.clo-set.com/community/post/15c014faef94469c93dde357b5fc4cb2",
-        "title": "Zipper",
-        "content": "The zippers that come with CLO3D always seem a bit underwhelming, and their size often appears too small to me. When used on the clothes, they can undermine the overall quality of the garments. That's why I've specifically crafted #5 - sized zippers. There are two types, and each type has two closure methods. All the attributes and adjustment methods of these zippers are fully compatible with the software. I typically apply them to the making of down jackets and padded jackets, which endows the clothing with an overall sense of luxury. I've set up UV grid layouts for both the zippers and their pulls, enabling the customization of LOGOs, just as shown in my illustrations. The UV grids are directly incorporated into the normal map of each zipper file, and the file format is.PSD. After downloading, you can click to make modifications. I'm still in the process of continuous exploration, hoping to offer more convenient methods to enthusiasts!![2430ead84cb140e68e6af7a5a9630abd](https://storagefiles.clo-set.com/public/community/202601/15c014faef94469c93dde357b5fc4cb2/images/2430ead84cb140e68e6af7a5a9630abd%E7%AC%AC%E4%BA%8C%E7%89%88.png)\n",
-        "content_description": "Discover custom #5-sized zippers designed for CLO3D that enhance garment quality, featuring adjustable attributes, UV grid layouts for logo customization, and full compatibility with your designs.",
-        "created_at": "2026-01-19T07:09:39.533Z",
-        "category": 240,
+        "id": "8f1e97bf67f249e88758e12246c258ca",
+        "url": "https://connect.clo-set.com/community/post/8f1e97bf67f249e88758e12246c258ca",
+        "title": "Inside the Costa Rican Brand Designing Entire Collections in CLO",
+        "content": "YouTube Video: https://www.youtube.com/watch?v=pICeoQ4TCWE?start=0\n\n##  _Six years ago, Dana started making face masks on an old iPhone 5. Today, she and her partner Elías run_[ _Cosmic Factory_](https://cosmicfactoryclothing.com/en) _, a Costa Rican 🇨🇷 brand that designs and launches entire collections in 3D before making a single physical garment.  \n  \nThey do not use 3D just to create digital art. They use it to run a real, sustainable clothing business from home.  \n  \nHere is how a pandemic side project became a production-ready brand, and how they are changing the rules of independent fashion._\n\n* * *\n\n# **Part 1: The Duo**\n\n**Q1. Let’s start with the origin story. We’d love to know how your individual backgrounds in design converged. What was the moment you decided, \"Let's build a brand together,\" and how did 3D become a part of that foundation?**\n\n_Dana:_\n\nI grew up surrounded by art — both my parents are graphic designers, so visual language was always part of my life. Cosmic Factory started during the pandemic in a very raw, intuitive way. I was making face masks and bucket hats, designing everything on an iPhone 5, mixing my own ideas with references from iconic artworks. From there, I started dyeing, painting, and intervening on existing garments, slowly building the confidence to eventually design from scratch. When I reached my first full collection, I was developing patterns by hand, learning through constant trial and error.\n\n_Elías:_\n\nI wasn't involved at the beginning. I had a background in graphic design, photography, and digital media, but Cosmic Factory was Dana's project. I stepped in when her dad suggested I help translate her ideas into digital pattern layouts using Illustrator. That's the moment it became a real collaboration. Then one day I came across a video of someone using Marvelous Designer, and everything shifted. When we later discovered CLO and realized it was connected to actual garment production — not just digital visuals — it immediately clicked. That's when 3D stopped being an experiment and became a foundation.\n\n![596169a916654298af224b3ba56f169d](https://storagefiles.clo-set.com/public/community/202606/8f1e97bf67f249e88758e12246c258ca/images/596169a916654298af224b3ba56f169dIMG_1713.JPG.jpeg)\n\n**Q2. We are curious about your start with CLO. How did you first discover the software, and was there a specific \"aha!\" moment where you realized 3D would change your design process forever?**\n\nWe discovered CLO at a really pivotal moment for us as a brand. At the time, we were working on one of our best-selling pieces, “La Cuerpa,” a dress featuring a very distinctive print inspired by the female body, something that really represents our visual identity.\n\nAround that same period, we came across a video on Instagram of someone using a 3D software to create garments. We had never seen anything like it before. We immediately thought, “Imagine if we could do that.” That was the spark.\n\nAt first, we found Marvelous Designer, which became our entry point into 3D fashion. We started experimenting in a very basic way, creating garments on a static avatar and rendering simple 360° turnarounds. It was still quite rudimentary, but it opened a completely new way of thinking about design.\n\nThen we came across content from Stephy Fung, a British-Chinese 3D fashion designer, where she explained the difference between Marvelous Designer and CLO. What really caught our attention was how CLO was positioned not just as a visual tool, but as something connected to real garment production.\n\nThat insight completely shifted our perspective. We realized this wasn’t just about creating digital content, it could actually transform how we design physically.\n\nWe decided to fully commit to learning CLO. Having access to a student license made a huge difference, allowing us to explore the software without a heavy financial barrier.\n\nOver time, what impressed us most was the level of precision. We reached a point where what we designed in CLO could be taken almost directly into production, especially for sublimation, without extensive physical prototyping.\n\nToday, our workflow has completely evolved. Every project begins with the conceptualization of the collection and the creation of sketches and visual ideas. From there, we move into CLO to develop and refine the garments in 3D before taking them into production. This has allowed us to reduce material waste, speed up our process, and design with a much higher level of confidence.\n\nThat was the real “aha” moment, realizing that 3D wasn’t just a visual tool, but a bridge between imagination and reality.\n\n**Q3. Every great duo has complementary strengths. How would you describe the dynamic between you two? Who brings the \"wild ideas\" and who brings the \"structure\", or is it a mix of both?**\n\n_Dana:_\n\nI lead the creative direction. Each collection starts with a concept — a story rooted in fantasy, space, mythology, or nature. I develop the sketches, the prints, the visual universe. But I'm never just handing things off. Even when Elías is deep in CLO, I'm right there making aesthetic calls and making sure the original vision stays intact.\n\n_Elías:_\n\nMy role is to take what Dana imagines and make it real — technically and digitally. I take her Procreate sketches, adapt or build patterns from scratch, and develop them in CLO into production-ready garments. But I'd say the line between \"creative\" and \"technical\" is blurrier than it sounds. I'm constantly giving feedback on structure and feasibility, and Dana is constantly shaping how digital work evolves. It's less a division of roles and more a continuous exchange.  \n  \n![290fd15463e745bf98abddb24f0ab692](https://storagefiles.clo-set.com/public/community/202606/8f1e97bf67f249e88758e12246c258ca/images/290fd15463e745bf98abddb24f0ab692SS7.PNG)![285d73b15c1d4c3f9f8d5aaa4cfc7a8f](https://storagefiles.clo-set.com/public/community/202606/8f1e97bf67f249e88758e12246c258ca/images/285d73b15c1d4c3f9f8d5aaa4cfc7a8fVideo%20Blusa%20y%20Short%20Cosmic%20Locket.00_47_53_10.Still001.jpg)\n\n![3d6c6c21e3da4685baa0e5674353cc2e](https://storagefiles.clo-set.com/public/community/202606/8f1e97bf67f249e88758e12246c258ca/images/3d6c6c21e3da4685baa0e5674353cc2eVideo%20Blusa%20y%20Short%20Cosmic%20Locket.01_19_45_14.Still005.jpg)\n\n# **Part 2: Collaborative Workflow in CLO**\n\n**Q4. Collaboration in 3D is unique. Walk us through a typical workflow. Is it a relay race where you pass the project file back and forth, or do you tackle specific roles (e.g., Pattern vs. Concept) together?**\n\nThe workflow at Cosmic Factory is structured, but always collaborative from start to finish.\n\nIt begins with Dana, who leads the initial stage through sketching and concept development. She creates the fashion illustrations that define each piece, while also shaping the narrative behind the collection. At this stage, the focus is not only on individual garments, but on the story and visual universe we want to build.\n\nFrom there, the process moves into CLO, where those sketches are transformed into digital garments by Elías. This is where the project becomes highly iterative. Using 3D simulation, we can explore fabric behavior, test different materials, refine silhouettes, and evaluate how each piece moves and fits in a much more realistic way than in 2D.\n\nCLO also allows us to work with precise measurements. Through tools like the Avatar Editor, we can adapt garments directly to specific body types, something that would be much more complex to resolve purely in 2D. This makes the design process not only more flexible, but also more accurate from the beginning.\n\nOnce a design is ready for physical production, the workflow transitions into Illustrator. There, we finalize technical details such as print placement, minor adjustments, and what we call “metros”, the print-ready files prepared for sublimation. Since all our garments are produced through this technique, this step is essential for ensuring everything translates correctly into fabric.\n\nAfter that, the process moves into garment construction, led by Dana, where the physical piece is brought to life.\n\nFor visual content and animations, the workflow expands further. CLO is used to prepare textures, maps, and garment simulations, which are then exported into Blender. In Blender, Elías builds full scenes and develops final animations, bringing our collections into a more immersive visual context. \n\nThroughout this entire process, the workflow is not linear or divided like a relay. Instead, it is continuous and shared. While each of us has our area of focus, Dana leading physical creation and Elías handling digital patterning and technical setup, we are always working side by side, reviewing decisions, and refining together.\n\nThat constant overlap is what allows our digital and physical worlds to stay perfectly aligned.\n\n**Q5. One of the best things about 3D is \"visual communication.\" Have there been moments where you disagreed on a design detail, but simulating it in CLO helped you reach a solution instantly?**\n\n_Dana:_\n\nThere are definitely moments where what I sketch doesn't behave the way I imagined once it's simulated. Proportions shift, fabric moves differently, construction logic changes things. But I don't see that as a disagreement — I see it as the design evolving. CLO gives us a shared visual space to figure it out together instead of arguing over something abstract.\n\n_Elías:_\n\nFrom my side, simulation often opens up possibilities that weren't in the original sketch. When something doesn't work as drawn, we don't just fix it — we explore it. Sometimes those moments lead to the most interesting designs. We also use it to make a conscious decision: is this piece going in a more wearable, commercial direction, or something more experimental? Seeing it in motion makes that conversation much faster and clearer.  \n\n\n![cf90ce05f8814bf2bcdf6f9e2e85f7dc](https://storagefiles.clo-set.com/public/community/202606/8f1e97bf67f249e88758e12246c258ca/images/cf90ce05f8814bf2bcdf6f9e2e85f7dcPINK-BLOKE%20%281%29.png)\n\n**Q6. Compared to working alone, what do you feel is the biggest \"superpower\" you gain by working as a duo in a digital environment?**\n\nOne of the biggest superpowers we have developed by working together in a digital environment is efficiency, both in time and resources, but also in how we think and understand design as a whole.\n\nBy integrating tools like CLO into our workflow, we’ve been able to completely transform our production model. Instead of investing upfront in physical samples,**we design, develop, and even promote entire collections in 3D, creating renders, animations, and campaigns without producing a single physical garment.** Since Cosmic Factory operates on a made-to-order basis, this allows us to only bring pieces into the physical world once a client actually requests, significantly reducing waste, cost, and risk.\n\nAt the same time, we are very aware that 3D is a tool, not a replacement for craftsmanship. While it gives us a high level of confidence before production, we still approach each piece with the understanding that physical construction can bring its own challenges. That balance between digital precision and real-world awareness is key to our process.\n\nBeyond efficiency, another major advantage of working as a duo is the exchange of knowledge. Coming from different backgrounds, our collaboration has allowed both of us to expand our understanding of the entire design pipeline. Dana has developed a deeper connection with the digital side, learning how 3D tools and workflows operate, while Elías has gained a stronger understanding of garment construction, materials, and how pieces come together physically.\n\nWhat started as two very different skill sets has evolved into a shared language, where both the digital and physical worlds are constantly informing each other.\n\nIn many ways, this combination has positioned us at the forefront of 3D fashion within our local context. As early adopters of this technology in Costa Rica, we’ve not only built our own workflow, but have also sparked curiosity in other designers and brands. Looking forward, we see this not just as a competitive advantage, but as something we would eventually like to share, whether through teaching, collaboration, or opening up new conversations around digital fashion.\n\nUltimately, our “superpower” is not just working faster or more efficiently, it’s the ability to merge vision, technique, and continuous learning into a single, evolving process.  \n\n\n![4dc214d2bec44643893cd0728dfe6e71](https://storagefiles.clo-set.com/public/community/202606/8f1e97bf67f249e88758e12246c258ca/images/4dc214d2bec44643893cd0728dfe6e71eddd037ccc434883b6dc4b43831b9d4e%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202026-06-16%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.00.43.png)\n\n# **Part 3: Building a Brand with 3D**\n\n**Q7. For independent designers or students, budget is often a constraint. Your brand visuals look incredible, how does CLO help you achieve that high-end \"campaign look\" without needing expensive physical photoshoots or sets?**\n\nFor us, CLO has been a key tool in making high-end visual production accessible without requiring large budgets.\n\nEven though CLO is a paid software, its different plans, especially those accessible to students, make it a realistic entry point for emerging designers. In our case, the investment in the software has allowed us to replace many of the traditional costs associated with fashion campaigns, such as physical samples, photoshoots, locations, and production teams.\n\nBy working in 3D, we are able to create entire collections visually before producing anything physically. From renders to full animations and digital campaigns, everything can be developed within a controlled environment. This allows us to maintain a strong visual identity while keeping costs low and creative possibilities almost unlimited.\n\nBecause we don’t have to invest as much time or resources into traditional production and campaign logistics, we’re able to place a much stronger focus on the visual storytelling of each collection. This gives us the freedom to deeply explore the concepts behind every drop and refine the final result to a much higher level, something that becomes a core part of our identity.\n\nOur workflow doesn’t stop inside CLO. The garments created there become the foundation for more complex visual outputs. By combining CLO with tools like Blender, we build scenes, work on lighting and composition, and create immersive campaign visuals that would otherwise require a full production setup.\n\nWe’ve also extended this into interactive experiences, including augmented reality, where clients can visualize garments in a more dynamic and engaging way, even directly from our own platforms.\n\nWhat makes CLO especially powerful for us is how intuitive it is for garment creation compared to traditional 3D software. Before incorporating it into our workflow, Elías experimented with building garments in general 3D tools, and the process was significantly more complex and inefficient. CLO, on the other hand, is built specifically for fashion design, allowing pattern-based creation, real-time simulation, and accurate visualization without needing to force fabric behavior.\n\nFor us, CLO is not just a design tool, it’s the bridge that connects fashion, technology, and visual storytelling, making it possible to achieve a high-end campaign look without the traditional limitations of budget or production.  \n\n\n![b14182308bd1477cad1e5f799bf23bd4](https://storagefiles.clo-set.com/public/community/202606/8f1e97bf67f249e88758e12246c258ca/images/b14182308bd1477cad1e5f799bf23bd4IMG_0892.JPG.jpeg)\n\n**Q8. Creating physical garments can be risky (and costly) if the design doesn't work. How does CLO give you the confidence to move forward with a design? Do you feel like you \"know\" the garment before you even cut the fabric?**\n\nFor us, CLO has become a tool that gives a very high level of confidence before moving into physical production.\n\nAt the beginning, that trust wasn’t immediate. When we first started exploring 3D, especially while using Marvelous Designer, we still relied heavily on physical prototyping to validate our designs. But once we transitioned into CLO, we began to understand the level of precision it offers, and that completely shifted our process.\n\nOne of the key elements has been the ability to work with accurate measurements. Tools like the Avatar Editor allow us to adapt garments to very specific body types, which is especially important when working with custom sizing. Not all bodies follow standard proportions, and CLO allows us to realistically simulate how a garment will fit on each individual client. This gives us a much clearer understanding of the final result before anything is produced.\n\nFrom Dana’s perspective as a designer, CLO becomes more than just a technical tool, it’s a space to visualize and design garments before bringing them into reality. It allows us to explore ideas, refine proportions, and truly understand how a piece will look and behave, even before touching fabric or investing time and money in materials.\n\nOver time, this has built a strong level of trust in the process. Today, we can say that we rely on CLO with a very high degree of confidence. While we still apply small practical considerations, like adding seam allowances, the accuracy of the simulation allows us to move forward without needing constant physical sampling.\n\nBecause of this, **we often feel like we already “know” the garment before it exists physically**. We understand how it fits, how it moves, and how it will be constructed.\n\nThis is especially important in our workflow, since we work with sublimation and made-to-order production. We generate precise pattern layouts directly from CLO, and then refine them in Illustrator to optimize fabric usage and minimize waste. Instead of printing large areas of fabric, we prepare exact pattern shapes tailored to each client.\n\nAs a result, not only do we reduce risk in production, but we also significantly minimize textile waste and avoid the use of toxic dyeing processes. CLO doesn’t just give us confidence, it allows us to design more consciously and efficiently.  \n  \n![9f874889a3964229ad97396b86f9d23a](https://storagefiles.clo-set.com/public/community/202606/8f1e97bf67f249e88758e12246c258ca/images/9f874889a3964229ad97396b86f9d23aTOP-TOMATE-CON-FALDA-SIDE.png)\n\n# **Part 4: Vision**\n\n**Q9. Since you have two different perspectives, we’d love to hear from both of you: What is the one CLO feature that saves your life (or sanity) the most during crunch time?**\n\n_Dana:_\n\nFor me, it's the overall confidence CLO gives me before we touch any fabric. I can visualize the garment, understand how it fits and moves, and feel certain about the design before any physical investment is made. That peace of mind during crunch time is huge.\n\n_Elías:_\n\nThe Avatar Editor, without a doubt. When we're working with custom sizing — and not all bodies follow standard proportions — being able to simulate a garment on a customized avatar that closely represents a specific client saves us from so many production surprises. Under a tight deadline, that accuracy is everything.\n\n### Community Post Comments:\nComment 1: Thank you so much for sharing your detailed experience❤️",
+        "content_description": "This web page showcases how Dana and Elías of Cosmic Factory leverage 3D fashion design software CLO to collaboratively create sustainable, made-to-order garments with high precision, reduced waste, and compelling digital campaigns, transforming independent fashion through innovative digital workflows.",
+        "source": "Connect Community",
+        "article_created_at": "2026-06-16T06:42:29.822Z",
+        "article_updated_at": "2026-06-16T06:42:29.822Z",
+        "category": 110,
         "tags": [
             "CLO",
             "Avatar",
-            "MarvelousDesigner",
-            "CLO-SET"
+            "AutoFitting",
+            "Material",
+            "Rendering",
+            "Pattern",
+            "Simulation",
+            "Texture",
+            "Trim"
         ]
     },
     {
-        "id": "1c50fc9910ee482a86f98bfe29116dc1",
-        "url": "https://connect.clo-set.com/community/post/1c50fc9910ee482a86f98bfe29116dc1",
-        "title": "Industrial Hi-Vis Safety Jacket – Medium Pattern",
-        "content": "![292f5d2a8c944991b55044c63a791c45](https://storagefiles.clo-set.com/public/community/202601/1c50fc9910ee482a86f98bfe29116dc1/images/292f5d2a8c944991b55044c63a791c45ChatGPT%20Image%2019%20%D9%8A%D9%86%D8%A7%D9%8A%D8%B1%202026%D8%8C%2008_50_47%20%D8%B5.png)file in store>>>\n",
-        "content_description": "Discover and shop our exclusive collection of high-quality products designed to enhance your lifestyle.",
-        "created_at": "2026-01-19T06:36:20.743Z",
+        "id": "e62b40d1dc9f435ea1582b6317db20e1",
+        "url": "https://connect.clo-set.com/community/post/e62b40d1dc9f435ea1582b6317db20e1",
+        "title": "measurement settings",
+        "content": "Hi folk, how can I change my measurement settings to show in cm in clo-set. my settings in user setting in unit system is set at cm, if I export a garment to clo-set , I get a prompt in clo-set that its set in inches, how do I get clo-set to be set in cm. Hoping that you guys can assist.\n\n### Community Post Comments:\nComment 1: You're very welcome! Hope you have a great day as well. :)\nReply 1: ❤️\n\nComment 2: Hi. On your Company Page, you have the Settings icon. In there, you can set the unit and the currency.\nReply 1: Hi good morning Lucile, many thanks and well noted, I will check it out today, hope you have a lovely day further. 🙂🙂👍🏻",
+        "content_description": "Provide guidance on how to change measurement units to centimeters in Clo-Set to avoid export prompts showing inches.",
+        "source": "Connect Community",
+        "article_created_at": "2026-07-04T16:36:22.146Z",
+        "article_updated_at": "2026-07-04T16:36:22.146Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "CLO-SET",
+            "Pattern",
+            "Trim"
+        ]
+    },
+    {
+        "id": "ce282864f72b4eb9bde3d0718a42d290",
+        "url": "https://connect.clo-set.com/community/post/ce282864f72b4eb9bde3d0718a42d290",
+        "title": "Vanguard of Rome",
+        "content": "![355fb549766846bf8bf451665f0e5472](https://storagefiles.clo-set.com/public/community/202607/ce282864f72b4eb9bde3d0718a42d290/images/355fb549766846bf8bf451665f0e5472photo-output.jpeg)\n\n* * *\n\nProduction-ready Roman-inspired armor outfit featuring optimized topology, high-quality PBR materials, and cinematic presentation renders. Built in CLO 3D, retopologized in Blender, textured in Substance Painter, and rendered in Marmoset Toolbag.\n\nZahrakarimzadeh.zk@gmail.com\n\n* * *",
+        "content_description": "Showcasing a production-ready Roman-inspired armor outfit with optimized 3D modeling, high-quality PBR textures, and cinematic renders created using CLO 3D, Blender, Substance Painter, and Marmoset Toolbag.",
+        "source": "Connect Community",
+        "article_created_at": "2026-07-04T14:08:10.946Z",
+        "article_updated_at": "2026-07-04T14:08:10.946Z",
         "category": 210,
         "tags": [
             "CLO",
             "MarvelousDesigner",
             "CLO-SET",
             "CONNECT",
-            "JINNY",
-            "3dsMax",
             "Blender",
-            "AI"
+            "Marmoset",
+            "Substance",
+            "Rendering",
+            "Retopology",
+            "Material"
         ]
     },
     {
-        "id": "c624b9ec2bbf462ca6b85b1d89a4a450",
-        "url": "https://connect.clo-set.com/community/post/c624b9ec2bbf462ca6b85b1d89a4a450",
-        "title": "four-part snap fastene（Side A Football Pattern De）",
-        "content": "![](https://storagefiles.clo-set.com/public/community/202601/c624b9ec2bbf462ca6b85b1d89a4a450/images/d90efe46d181421294091ea63628f4b3%E5%9B%9B%E5%90%88%E6%89%A3_Custom_View_1.webp)![3D four-part snap fastene（Side A Football Pattern De） Model](https://storagefiles.clo-set.com/public/marketplace/202601/38a7ffae3afc4c6d85c30bd4b95d174d/thumbnail/%E5%9B%9B%E5%90%88%E6%89%A3_Custom_View_2.png?resize=1&f=webp&w=960&fit=scale-down)four-part snap fastene\n\nI made this file because I found it a bit cumbersome to download snap fastener components individually in CLO. During the production process, I thought this integrated version would be much more convenient for everyone to use. That’s why I specially created this snap fastener file with Side A, Side B, Side C, and Side D for your convenience.\n\nHope you can use this material to create works that you’re satisfied with! If you find it useful, feel free to follow me—it will encourage me to share more resources like this in the future.\n",
-        "content_description": "Discover a convenient all-in-one snap fastener file featuring four integrated components for enhanced ease in your CLO design projects.",
-        "created_at": "2026-01-19T02:52:24.577Z",
-        "category": 210,
-        "tags": [
-            "CLO"
-        ]
-    },
-    {
-        "id": "7a5f8218e9ff466b9423503f88d5fb64",
-        "url": "https://connect.clo-set.com/community/post/7a5f8218e9ff466b9423503f88d5fb64",
-        "title": "Garment shape on avatar",
-        "content": "![](https://storagefiles.clo-set.com/public/community/202601/7a5f8218e9ff466b9423503f88d5fb64/images/c503949564dc4323bca2d54a59b303daSwimsuit%20back.png)Hi there, I am not happy with how my swimsuit looks on the backside of my 3D render (it looks to really go up the wearer's backside!). Is there anyway I can make this peak look flatter so it's not giving the effect of going up the gap? Many thanks. ![9edf1f44dda649c0b5571875bab7a83b](https://storagefiles.clo-set.com/public/community/202601/7a5f8218e9ff466b9423503f88d5fb64/images/9edf1f44dda649c0b5571875bab7a83bSwimsuit%20back.png)\n\n\n### Community Post Comments:\nComment 1: If you just want a different visual while keeping the pattern intact, you can use the steaming tool to \"stretch\" out that part and see if you like the 3D result better: https://connect.clo-set.com/community/post/7a5f8218e9ff466b9423503f88d5fb64\nReply 1: Thanks for the suggestion. It didn't really work - just made it bubbly in that area.\nReply 2: :( I see, another approach then. Set the crotch of the avatar to 100% and then spread the legs. My before screenshot already has the crotch at 100% which allows for more room, but doesn't let this amount of fabric come in \"flat\". But the spread legs allow for even more room. Your pattern has more surface than the panties here, but it's worth a try.",
-        "content_description": "This webpage aims to provide design tips and solutions for adjusting swimsuit renders to achieve a more flattering backside appearance.",
-        "created_at": "2026-01-19T02:04:34.35Z",
-        "category": 220,
-        "tags": [
-            "CLO"
-        ]
-    },
-    {
-        "id": "3c8d8179fadc44a6a664fc910abec18e",
-        "url": "https://connect.clo-set.com/community/post/3c8d8179fadc44a6a664fc910abec18e",
-        "title": " leather materials ,  physical",
-        "content": "## ![f70b637dafc64ebbb5a64d47be0cd3c9](https://storagefiles.clo-set.com/public/community/202601/3c8d8179fadc44a6a664fc910abec18e/images/f70b637dafc64ebbb5a64d47be0cd3c9Shell%20Cordovan%20Leather%202.png)I’ve been focusing a lot on **leather materials in Marvelous Designer** , not just visually but also on **physical behavior** , especially **edge stiffness, thickness, and how the back side of leather reacts in folds and tension**.\n\nI’m curious — are there sellers or creators who really care about these details, or is most leather content still treated more like stiff fabric presets?\n\nWould love to hear different approaches.\n\n* * *\n",
-        "content_description": "Explore the intricate details of leather materials in Marvelous Designer, focusing on their physical behavior and inviting discussions on the varying approaches among creators and sellers.",
-        "created_at": "2026-01-18T06:25:29.357Z",
+        "id": "adcfa895c86541a6b40212b31059ead4",
+        "url": "https://connect.clo-set.com/community/post/adcfa895c86541a6b40212b31059ead4",
+        "title": "Maps not working since update.",
+        "content": "Hello, \n\nAll of my maps are ruined, and are not lined up or to scale after the latest update. This is costing me money and potentially costing me a client due to the time I now have to put in figuring this out, since tech support is so bad.\n\n### Community Post Comments:\nComment 1: Hi There. We are sorry you are having an issue with your maps.For the Maps. Have you checked their size in the Fabrics Property Editor? Image below for reference.If that is not the issue please send directly to our tech support. Please include the CLO file as well as the texture images being used. https://connect.clo-set.com/community/post/adcfa895c86541a6b40212b31059ead4 tech Support has always responded to all of your past technical issues. Make sure that you check your emails spam/junk folders so you do not miss any of our teams follow ups or replies to your inquiries\nReply 1: Hi Again. While I cannot answer the above I did note that you did send in a support ticket. But please keep in mind as you did not include any CLO files, images or examples it may take more back and forth the find a solution.As you have noted urgency I recommend adding to your existing ticket with more information and examples noted in my first response.",
+        "content_description": "This page aims to address issues with map alignment and scaling errors caused by the latest update and provide solutions to minimize user downtime and frustration.",
+        "source": "Connect Community",
+        "article_created_at": "2026-07-02T18:25:21.313Z",
+        "article_updated_at": "2026-07-02T18:25:21.313Z",
         "category": 210,
         "tags": [
             "CLO",
-            "MarvelousDesigner",
-            "CLO-SET",
-            "AI"
+            "Texture",
+            "Material"
         ]
     },
     {
-        "id": "a9bd1b15b2ef40f0911dae573f8c76b0",
-        "url": "https://connect.clo-set.com/community/post/a9bd1b15b2ef40f0911dae573f8c76b0",
-        "title": "The Way I Use AI with CLO",
-        "content": "**The Way I Use AI with CLO**\n\n  1. Design a garment by writing down the image you envision as a prompt.\n\n  2. Use AI to convert the prompt into a 2D image.\n\n  3. Apply the result to CLO.\n\n\n\n\n* * *\n\n![7020e41845ba4654afb121d14cfe2e58](https://storagefiles.clo-set.com/public/community/202601/a9bd1b15b2ef40f0911dae573f8c76b0/images/7020e41845ba4654afb121d14cfe2e580006.png)![f161984dc0a241fa818cb4a6827c9750](https://storagefiles.clo-set.com/public/community/202601/a9bd1b15b2ef40f0911dae573f8c76b0/images/f161984dc0a241fa818cb4a6827c9750Generated%20Image%20January%2012%2C%202026%20-%202_07AM.png)\n",
-        "content_description": "Discover how to seamlessly integrate AI into your garment design process using CLO by transforming your creative prompts into stunning 2D images.",
-        "created_at": "2026-01-17T16:25:40.867Z",
-        "category": 240,
-        "tags": [
-            "CLO",
-            "AI"
-        ]
-    },
-    {
-        "id": "713286cc4ce54331b4fbc526389d6af1",
-        "url": "https://connect.clo-set.com/community/post/713286cc4ce54331b4fbc526389d6af1",
-        "title": "Entering Pattern Information Onto All Patterns In All Sizes In The Quickest Way Possible",
-        "content": "Let’s say I have patterns in these sizes\n\nS, M, L, XL, XXL\n\nI want to enter pattern information onto all the patterns (Arms, Body, Collar etc.) in all those sizes.\n\nPattern Information Like\n\n  \nBrand Name\n\nGarment Model Name\n\nPattern Name\n\nSize\n\netc.\n\nIf I do It on Adobe Illustrator I guess I have to open a pattern in a particular size paste the information onto all the patterns (Arm, Collar, Body etc.)\n\nthen do It again and again for all other sizes.\n\nQuestion 1) How can I do It in the quickest and practical way possible?\n\nQuestion 2) Other suggestions etc.?\n\n\n### Community Post Comments:\nComment 1: Hello - how about naming each piece of pattern by selecting it in the Property Editor ( name is on the very top)For the garment and brand maybe Annotation works best\nReply 1: Nice trick. Thank you very much for sharing. I'll try.\n\nComment 2: How about using the Pattern Annotation in CLO?",
-        "content_description": "This web page aims to provide efficient solutions and best practices for entering and managing pattern information across multiple sizes in garment design, streamlining the process for designers using tools like Adobe Illustrator.",
-        "created_at": "2026-01-17T12:56:08.757Z",
+        "id": "dd34d9cb9bcf4bfb8c97438dbf48c114",
+        "url": "https://connect.clo-set.com/community/post/dd34d9cb9bcf4bfb8c97438dbf48c114",
+        "title": "How to display stitches in a PDF",
+        "content": "When exporting to PDF, the stitches are not displayed.\n\nI found a suggestion on Google that says:\n\n_\"In the 'Options' or 'Show Images' section, make sure both 'Stitch' and 'Internal Line' are checked.\"_\n\nHowever, I don't even have a **\"Stitch\"** option available.\n\nDoes anyone know how to resolve this issue? Any help would be greatly appreciated.\n\n### Community Post Comments:\nComment 1: Hi There. There is no option for stitch. When exporting you will have the Cut lines (seam allowance) and sew line. Those are similar to any paper pattern you may have ever used\nReply 1: Thank you for your reply.I do have the Cut Lines (Seam Allowance) option, but I don't see a Sew Line option.Is it possible that the Sew Line option is not available on the Windows version?\nReply 2: you are welcome The Sew line is the regular pattern outline (where the pattern edges are sewn together in 3D), which you have selected in your screenshot",
+        "content_description": "This web page aims to provide solutions and troubleshooting tips for missing stitch details when exporting designs to PDF.",
+        "source": "Connect Community",
+        "article_created_at": "2026-06-30T09:20:35.06Z",
+        "article_updated_at": "2026-06-30T09:20:35.06Z",
         "category": 220,
         "tags": [
             "CLO",
-            "Pattern",
             "Import_Export"
         ]
     },
     {
-        "id": "caa21e06026b4a26ab88fedf375689b3",
-        "url": "https://connect.clo-set.com/community/post/caa21e06026b4a26ab88fedf375689b3",
-        "title": "How To Remove The Dart On The Trousers Waistline",
-        "content": "Tutorial Vidoes show how to draw or shift the dart but they don’t show how to remove the dart.\n\nCan you explain how can I do these pelase?\n\nStep 1) measure the dart base (Let’s say the dart 2 cm)\n\nHow to measure the “dart gap” “dart base”?\n\nStep 2) Remove the dart\n\nStep 3) Add 1 cm to each side of the waist line on the Back Trousers Pattern.\n\nIs “Edit Pattern Tool - Offset Pattern Outline” right for this purpose?\n\n![223c5885cc8c4a87830d3a5385f57fbe](https://storagefiles.clo-set.com/public/community/202601/caa21e06026b4a26ab88fedf375689b3/images/223c5885cc8c4a87830d3a5385f57fbeScreenshot%202026-01-16%20at%2018.46.23.png)\n\n\n### Community Post Comments:\nComment 1: Just try out the different ideas you have, if it doesn't work you can just revert the last step :) In this case, \"Offset Pattern Outline\" will affect the entire segment in a parallel way. If you wish to keep a nice curve instead, on suggestion would be to try moving the outer corners via the Edit Pattern tool by dragging. You can open a precision window for measurements by right-clicking at the same time as you are dragging and holding down the left mouse button. Another way would be to right-click on the segment and choose \"Change Length\", then putting in the desired measurement.\nReply 1: What about Step 2) How do I remove the dart? I could not do this.\nReply 2: Delete the corner point of the dart inside the pattern piece, then smooth out the waistline (two segment points will remain on it, you can covert them to curve points and go from there).",
-        "content_description": "\"Learn how to effectively remove a dart from your trousers pattern with step-by-step instructions and tips on measuring the dart base and adjusting the waistline.\"",
-        "created_at": "2026-01-16T15:47:16.02Z",
-        "category": 220,
-        "tags": [
-            "CLO",
-            "Pattern"
-        ]
-    },
-    {
-        "id": "dd024be01ff848b8bdfe0b21f18a7b2b",
-        "url": "https://connect.clo-set.com/community/post/dd024be01ff848b8bdfe0b21f18a7b2b",
-        "title": "How To Measure Dart Gap With The POM Tool",
-        "content": "In Segment Mode when I click on the dart leg points It measures the whole dart. (Measurement of the 2 Dart legs)\n\nBut I want to measure the distance between those dart legs. (the gap between them on the waist curve)\n\nOn the screenshot It is presented as “here”\n\nHow can I do this?\n\n![800b92aaf752445782f9ee3f69b05e07](https://storagefiles.clo-set.com/public/community/202601/dd024be01ff848b8bdfe0b21f18a7b2b/images/800b92aaf752445782f9ee3f69b05e07Screenshot%202026-01-15%20at%2014.54.38.png)\n\n\n### Community Post Comments:\nComment 1: Hi there, the POM tool skips empty space as you have noted, but there is a way to trick it into measuring a gap. (1) First, create a random POM on the pattern piece. (2) With the Edit POM tool, grab one end and drag and drop it to one side of the gap - the point will be magnetic and snap to it. (3) Do the same with the other end. The gap is now being measured.\nReply 1: https://connect.clo-set.com/community/post/dd024be01ff848b8bdfe0b21f18a7b2b some reason the other end of the POM line does not snap to the other edge of the gap.As you see on the screenshot video;???\nReply 2: You still have the entire line selected, not just the point you wish to move. Click in the empty space once to lose the selection, then drag and drop only the point to be moved and it will work :)\nReply 3: Understood. Thank you very much.",
-        "content_description": "This web page provides guidance on measuring the distance between dart leg points, specifically the gap on the waist curve in Segment Mode.",
-        "created_at": "2026-01-15T11:58:49.533Z",
+        "id": "dea0aaaf99174b37a12568643840d6f4",
+        "url": "https://connect.clo-set.com/community/post/dea0aaaf99174b37a12568643840d6f4",
+        "title": "Fullness Tool For Multiple Slash And Spread Applications At Once",
+        "content": "Fullness Tool For Multiple Slash And Spread Applications At Once\n\nQuestion 1) I can not choose the internal line with the Fullness (Point) Tool in Full Pattern?\n\nBut can do It in the 1/2 Pattern.\n\nHow to do It on the Full Pattern?\n\n(I want to quickly modify the pattern with It and simulate and then modify again and again.)\n\n???\n\n![0624eba353444071a90b1d3cfa63c3ea](https://storagefiles.clo-set.com/public/community/202606/dea0aaaf99174b37a12568643840d6f4/images/0624eba353444071a90b1d3cfa63c3eaScreenshot%202026-06-30%20at%2016.21.49.png)\n\n![Pasted Graphic 22.png](blob:https://connect.clo-set.com/ab9e14a5-3815-4825-9c19-7728b763dc57)\n\nQuestion 2) How to apply multiple Slash And Spreads like below at once.\n\nI can not choose the point B (the internal line) to slash and spread with Fullnes (Point) Tool.\n\nHow to do this?\n\n![205796efe2c14b0082f46621a1abde8f](https://storagefiles.clo-set.com/public/community/202606/dea0aaaf99174b37a12568643840d6f4/images/205796efe2c14b0082f46621a1abde8fScreenshot%202026-06-30%20at%2016.21.38.png)![e5bea0d892954e8084e1dab747049409](https://storagefiles.clo-set.com/public/community/202606/dea0aaaf99174b37a12568643840d6f4/images/e5bea0d892954e8084e1dab747049409Screenshot%202026-06-30%20at%2016.21.44.png)\n\n![Pasted Graphic 25.png](blob:https://connect.clo-set.com/6ac93a63-0be5-459a-a236-7123ebe55145)\n\n### Community Post Comments:\nComment 1: None of your images have uploaded. Please make sure to check your posts and make sure images are added correctly.But you cannot use fullness (point) on a symmetric pattern off of an internal line because the pattern would fold into itself. That is why it only works on Half symmetrical patterns. Basic\nReply 1: Sorry. I copy and pasted directly from the Apple Notes. Now I uploaded images separately.\nReply 2: The Slash and spread tool would NOT be used for this. You would just add internal lines and cut/ Then edit and re tru the pattern",
+        "content_description": "This page provides guidance on using the Fullness (Point) Tool in full patterns to efficiently select internal lines and apply multiple slash-and-spread modifications simultaneously for iterative pattern adjustments.",
+        "source": "Connect Community",
+        "article_created_at": "2026-06-29T18:29:14.792Z",
+        "article_updated_at": "2026-06-29T18:29:14.792Z",
         "category": 210,
         "tags": [
             "CLO",
@@ -152,78 +108,71 @@
         ]
     },
     {
-        "id": "53f61684e79a40819967df19c134e621",
-        "url": "https://connect.clo-set.com/community/post/53f61684e79a40819967df19c134e621",
-        "title": "free file in store >>>",
-        "content": "![42fe8c0f911c44f68341d6970a0dd39e](https://storagefiles.clo-set.com/public/community/202601/53f61684e79a40819967df19c134e621/images/42fe8c0f911c44f68341d6970a0dd39eChatGPT%20Image%2015%20%D9%8A%D9%86%D8%A7%D9%8A%D8%B1%202026%D8%8C%2010_00_29%20%D8%B5.png)\n\n\n### Community Post Comments:\nComment 1: Your creativity is truly amazing 😍\nReply 1: thanks ❤️",
-        "content_description": "Discover the latest trends and insights in fashion through our curated collection of stylish looks and expert recommendations.",
-        "created_at": "2026-01-15T07:14:45.087Z",
-        "category": 210,
+        "id": "7cb5fc3ea69f42b5b36df128f290efcb",
+        "url": "https://connect.clo-set.com/community/post/7cb5fc3ea69f42b5b36df128f290efcb",
+        "title": "Designing Pants in CLO3D Is Easier Than You Think",
+        "content": "![248daf43ea43477cae8bfbf802dd1294](https://storagefiles.clo-set.com/public/community/202606/7cb5fc3ea69f42b5b36df128f290efcb/images/248daf43ea43477cae8bfbf802dd1294preview%2001.png)[Drawstring ](https://connect.clo-set.com/store?keyword=Drawstring)![3ab805144d7f4a1aaf330acc3bf3c74b](https://storagefiles.clo-set.com/public/community/202606/7cb5fc3ea69f42b5b36df128f290efcb/images/3ab805144d7f4a1aaf330acc3bf3c74bpreview%2001.png)\n\nFrom pattern drafting and sewing to simulation, fitting, and final details, the entire workflow is intuitive and efficient. With the right techniques, you can build production-ready garments for games, animation, or digital fashion.\n\nWhat's your favorite part of designing in CLO ?\n\n### Community Post Comments:\nComment 1: 👏👏👏👏\nReply 1: 😍😍\n\nComment 2: From Flat Patterns to a Finished Pair of Pants😍",
+        "content_description": "This web page showcases an intuitive and efficient workflow in CLO for creating production-ready digital garments through pattern drafting, sewing, simulation, and fitting.",
+        "source": "Connect Community",
+        "article_created_at": "2026-06-29T18:17:44.261Z",
+        "article_updated_at": "2026-06-29T18:17:44.261Z",
+        "category": 240,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "MensFashion",
+            "Loungewear",
+            "UrbanFashion",
+            "Streetwear",
+            "Joggers",
+            "MensPants",
+            "TrackPants"
+        ]
+    },
+    {
+        "id": "d8410e69a8404513adfa0d8ba83d9703",
+        "url": "https://connect.clo-set.com/community/post/d8410e69a8404513adfa0d8ba83d9703",
+        "title": "Royal jewellery ",
+        "content": "* * *\n\n* * *\n\n## ![464274abb64a4417bd336da64034965e](https://storagefiles.clo-set.com/public/community/202606/d8410e69a8404513adfa0d8ba83d9703/images/464274abb64a4417bd336da64034965e1.png)",
+        "content_description": "I'm sorry, but I can't generate a purpose for the web page based on the provided content as the image appears to be missing or not visible. Could you please provide more details or describe the content?",
+        "source": "Connect Community",
+        "article_created_at": "2026-06-29T15:11:36.746Z",
+        "article_updated_at": "2026-06-29T15:11:36.746Z",
+        "category": 250,
         "tags": [
             "CLO",
             "MarvelousDesigner",
             "CLO-SET",
-            "AI"
-        ]
-    },
-    {
-        "id": "f5c1b1bf6fb84cb992ea0a07137c78a9",
-        "url": "https://connect.clo-set.com/community/post/f5c1b1bf6fb84cb992ea0a07137c78a9",
-        "title": "file in store >>",
-        "content": "![42f2eac0e5d34dceaf9cdb7b0f7178df](https://storagefiles.clo-set.com/public/community/202601/f5c1b1bf6fb84cb992ea0a07137c78a9/images/42f2eac0e5d34dceaf9cdb7b0f7178dfChatGPT%20Image%2015%20%D9%8A%D9%86%D8%A7%D9%8A%D8%B1%202026%D8%8C%2010_12_03%20%D8%B5.png)\n\n\n### Community Post Comments:\nComment 1: https://connect.clo-set.com/community/post/f5c1b1bf6fb84cb992ea0a07137c78a9",
-        "content_description": "Explore our web page to discover engaging content that inspires creativity and fosters community connection.",
-        "created_at": "2026-01-15T07:13:36.157Z",
-        "category": 210,
-        "tags": [
-            "CLO",
-            "MarvelousDesigner",
-            "CLO-SET",
-            "3dsMax",
-            "Blender",
-            "JINNY",
-            "Houdini",
-            "AI"
-        ]
-    },
-    {
-        "id": "cdd4624ab1c444419692584fcf8b3a87",
-        "url": "https://connect.clo-set.com/community/post/cdd4624ab1c444419692584fcf8b3a87",
-        "title": "POM Tool Gives Wrong Results",
-        "content": "[https://www.dropbox.com/scl/fi/i5467igam8w7yxs1kvnz9/Screen-Recording-2026-01-14-at-15.59.53.mov?rlkey=nm0qqcoi53opnjpwc7ucwupoq&st=h8gn7a14&dl=0](https://www.dropbox.com/scl/fi/ij3ecfgmhklq3t8yzcpor/Screen-Recording-2026-01-14-at-16.05.59.mov?rlkey=lz7ynfp4c96tmjsttstiwg8xm&st=3qabsicu&dl=0)\n\nI’m trying to measure the waistline of a trousers with the POM Tool.\n\nHere is the screenshot video;\n\nWhy does It returns the wrong result?\n\nHow can I make It in the right way?\n\n\n### Community Post Comments:\nComment 1: Good to know. Total 3D length part shows the 3D length. So It means It's stretching. Thank you very much for the answers.\n\nComment 2: You need to Press P as is noted next to your mouse button. Otherwise CLO will only give measurements for where the measurement is actually overlapping an Edge.You will only see measurements where the line is solid (not dashed)https://connect.clo-set.com/community/post/cdd4624ab1c444419692584fcf8b3a87\nReply 1: In segment mode how to create cumulative POM measurement? (Like Total Trousers Waistline) (Total Trousers Waistline = Back Left Pattern Waistline + Back Right Pattern Waistline + ...)Hold SHIFT does not work. On the POM Tab they appear as separate measurements for segments.???\nReply 2: There is no need to hold Shift. Single click to start and double click to end.But you need to press P to change the mode or use the Edit POM tool to edit it after and change its typeCurrently there is no way to combine them, but this is a feature request our team is aware of\nReply 3: \"Currently there is no way to combine them, but this is a feature request our team is aware of\"I don't understand your answer.So we can not measure the total waistline at once for now? Right?Even I click P before measuring It does not return cumulative value.???\nReply 4: I don't understand how do we do measure the waistline at once via POM Tool?\nReply 5: Step 1 - add POM across all points/patternsStep 2 - R-click and select show length for the areas above the waistStep 3 - R-click again and select Segment type. the lines will now follow the curveAll the above must be done together\nReply 6: What I can do isStep 1 - Select the segments with POM Tool.It shows 0.00 on the object browser - point of measure.Step 2 - I right click one of the segments with POM Tool Nothing happens. Menu does not appear. (tried clicking both nodes and segments)I also right click with Edit Pattern tool the menu is NOT the same menu with yours.Can you share a screenshot video please?\nReply 7: If the segment shows 0 measurement (dashed line) you need to R-click and turn on show measurement to activate it (solid line)\nReply 8: Right Clicking with any tool to the yellow dashed POM line does nothing.Can you share a screenshot video which is showing It how to do this please??? We'been trying to figure It out the same thing for 8 days.I couldn't find a tutorial video to measure multiple segments at once like this.\nReply 9: Like all other tools. Use Must use the EDIT POM Tool to use the R-click\nReply 10: Ok. Now;Step 1) I create POM in the PolyLine ModeIt shows 0.00Step 2) Switch To The Edit Point Of Measure ToolStep 3) Click onto the yellow dashed line. - Show LengthQuestion 1) At the Object Browser - Point Of Measure sectionIt shows the measure 90.37howeverat the Property Editor - Selected Line Length 48.27?Question 2) I did not grade the pattern.So what is the Length Difference -42.10 here?\nReply 11: You also activated the large area in between the two pattern piecesYou likely turned on show length while the whole POM was selected, but you should only select the section you want it turned on for. So Select just the large middle length you do NOT need &gt; r-click &gt; Select hide length.We do highly recommend testing and trying things out. the best way to sometimes learn CLO is to try the tools and experiment with them..\nReply 12: Ok now;There is still a measure difference between the Property Editor and the Object Browser.Why?\nReply 13: likely that in 3D the garment might be slightly stretching",
-        "content_description": "This webpage aims to provide guidance on accurately measuring trouser waistlines using the POM Tool and troubleshooting common errors.",
-        "created_at": "2026-01-14T13:09:48.513Z",
-        "category": 210,
-        "tags": [
-            "CLO",
+            "CONNECT",
+            "Avatar",
+            "Colorway",
             "Pattern",
-            "UI"
+            "Rendering",
+            "Texture",
+            "Trim"
         ]
     },
     {
-        "id": "0305721f0a574da88507cefeb181cd2e",
-        "url": "https://connect.clo-set.com/community/post/0305721f0a574da88507cefeb181cd2e",
-        "title": "Share of Early Spring Outerwear",
-        "content": "![](https://storagefiles.clo-set.com/public/community/202601/0305721f0a574da88507cefeb181cd2e/images/5fdeb387595f40bfb31d4a115df15f68%E5%86%85%E9%87%8C%E7%BB%92%E5%A4%B9%E5%85%8B.png)The effect is quite different when wearing a helmet. Wouldn't it be interesting to pair it with an electric scooter?\n\n![1b224340004a40579484b86c352a0566](https://storagefiles.clo-set.com/public/community/202601/0305721f0a574da88507cefeb181cd2e/images/1b224340004a40579484b86c352a0566image.png)For more details, you can check out my homepage.\n",
-        "content_description": "Discover the exciting synergy of style and safety by exploring how helmets enhance the electric scooter experience on our dedicated webpage.",
-        "created_at": "2026-01-13T06:41:35.16Z",
-        "category": 215,
+        "id": "73fe74b8bd2849f88fad64dea36568bf",
+        "url": "https://connect.clo-set.com/community/post/73fe74b8bd2849f88fad64dea36568bf",
+        "title": "3 spots left for our Online Intro to CLO coming up in 2 weeks",
+        "content": "Hi Everyone!\n\nWe have our next Intro to CLO coming up with 3 spots left. If you are new to CLO This is one of the best ways to jump start your CLO journey. If you know the basics this can be a great way to learn all the best tips and tricks to keep your CLO skills growing!!!\n\nPart 1 - July 7-9\n\nPart 2 - August 4-6\n\nAll information can be found at the link below. We would love to have you there\n\n<https://www.eventbrite.com/e/intro-to-clo-online-2-part-workshop-tickets-1990518234623?aff=oddtdtcreator>\n\n![dffb44f939324da88dadee25beeeceef](https://storagefiles.clo-set.com/public/community/202606/73fe74b8bd2849f88fad64dea36568bf/images/dffb44f939324da88dadee25beeeceefimage.webp)",
+        "content_description": "Join our upcoming two-part Intro to CLO workshop to jumpstart or enhance your CLO skills with expert tips and hands-on learning.",
+        "source": "Connect Community",
+        "article_created_at": "2026-06-25T23:48:00.205Z",
+        "article_updated_at": "2026-06-25T23:48:00.205Z",
+        "category": 210,
         "tags": [
             "CLO",
-            "MarvelousDesigner",
-            "CLO-SET",
-            "Rendering"
-        ]
-    },
-    {
-        "id": "5abef791652f4e2fa37d88c630ae7511",
-        "url": "https://connect.clo-set.com/community/post/5abef791652f4e2fa37d88c630ae7511",
-        "title": "Clo Zip Colliding with Guard",
-        "content": "Hi there, I am having issues where my zip slider and puller are colliding with a zip guard piece of fabric at the top of my zip. I have tried a few things but having no luck fixing this. Any tips what to try? Thanks, Maylin![e7d7bae6e8a44145ad79707d30fc3ce4](https://storagefiles.clo-set.com/public/community/202601/5abef791652f4e2fa37d88c630ae7511/images/e7d7bae6e8a44145ad79707d30fc3ce4Clo%20zip%20collision.PNG)\n\n\n### Community Post Comments:\nComment 1: Thanks everyone. All sorted now!\n\nComment 2: What I do is one of these options or a combination of it : hide the slider / puller in the 3D window or reduce the % size of the slider in the property editor. Increase the collision thickness of the zip guard. Hope this will help you\nReply 1: Increasing the Add'l Thickness - Collision of the zip guard is also the way I've seen it done. 👍🏻\nReply 2: Bringing the Particle Distance of the Zipper Guard down to 2 or 3 also usually helps with this",
-        "content_description": "Get expert tips and solutions for resolving issues with zip slider and puller collisions in your clothing.",
-        "created_at": "2026-01-13T05:16:35.5Z",
-        "category": 220,
-        "tags": [
-            "CLO"
+            "CONNECT",
+            "AI",
+            "Avatar",
+            "Colorway",
+            "Trim",
+            "Texture",
+            "Rendering",
+            "Pattern",
+            "Material"
         ]
     }
 ]

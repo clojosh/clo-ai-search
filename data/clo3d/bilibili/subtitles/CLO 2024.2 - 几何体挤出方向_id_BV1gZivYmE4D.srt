@@ -1,0 +1,572 @@
+1
+00:00:00,000 --> 00:00:12,000
+From the 2024.2 version, the settings related to the thickness of the board are all put together, including the new functions.
+
+2
+00:00:12,000 --> 00:00:14,000
+The overall operation will be smoother.
+
+3
+00:00:14,000 --> 00:00:17,000
+In the property editor, a new set of categories has been added.
+
+4
+00:00:17,000 --> 00:00:22,000
+The thickness rendering function has to be moved here to increase the thickness of the board by a relatively large rendering thickness.
+
+5
+00:00:22,000 --> 00:00:27,000
+To ensure that the thickness of the board can be seen only when it is located on the surface of the dense texture.
+
+6
+00:00:27,000 --> 00:00:29,000
+Squeeze out direction option
+
+7
+00:00:29,000 --> 00:00:32,000
+You can set the direction of the thickness of the board.
+
+8
+00:00:32,000 --> 00:00:34,000
+The default squeeze out direction is all.
+
+9
+00:00:34,000 --> 00:00:37,000
+At this time, the thickness will be displayed on the front and back of the board.
+
+10
+00:00:37,000 --> 00:00:39,000
+The squeeze out direction can be changed to before or after.
+
+11
+00:00:39,000 --> 00:00:43,000
+You can make the thickness of the board only exist on the front or back of the board.
+
+12
+00:00:43,000 --> 00:00:45,000
+Here, change back to all.
+
+13
+00:00:45,000 --> 00:00:49,000
+Whether to select the front and back can be displayed or hide the back and front of the board.
+
+14
+00:00:49,000 --> 00:00:51,000
+Open the default.
+
+15
+00:00:51,000 --> 00:00:52,000
+Open the display.
+
+16
+00:00:52,000 --> 00:00:58,000
+This is the grid.
+
+17
+00:00:58,000 --> 00:01:04,000
+Hide the front.
+
+18
+00:01:04,000 --> 00:01:07,000
+Hide the back.
+
+19
+00:01:07,000 --> 00:01:09,000
+The sewing area can be controlled.
+
+20
+00:01:09,000 --> 00:01:12,000
+The grid on the side of the board shows that the default is closed.
+
+21
+00:01:12,000 --> 00:01:14,000
+The sides of the two boards have been sewed.
+
+22
+00:01:14,000 --> 00:01:18,000
+The grid on the sewing area is related to the total thickness of the board.
+
+23
+00:01:18,000 --> 00:01:20,000
+The total thickness of the board is.
+
+24
+00:01:20,000 --> 00:01:21,000
+The thickness of the material itself.
+
+25
+00:01:21,000 --> 00:01:22,000
+The thickness is Vince.
+
+26
+00:01:22,000 --> 00:01:23,000
+The thickness of the material itself.
+
+27
+00:01:23,000 --> 00:01:24,000
+The thickness on the board.
+
+28
+00:01:24,000 --> 00:01:28,000
+You can choose the corresponding fabric on the material window.
+
+29
+00:01:28,000 --> 00:01:30,000
+Then good in the property editor.
+
+30
+00:01:30,000 --> 00:01:33,000
+Found the bottom of the thickness.
+
+31
+00:01:33,000 --> 00:01:39,000
+This material has a thickness of 0.5.
+
+32
+00:01:39,000 --> 00:01:42,000
+Thickness selection board.
+
+33
+00:01:42,000 --> 00:01:47,000
+In the property editor.
+
+34
+00:01:47,000 --> 00:01:48,000
+You can see the corresponding thickness.
+
+35
+00:01:48,000 --> 00:01:49,000
+The thickness of the board.
+
+36
+00:01:49,000 --> 00:01:54,000
+If the total thickness is equal, then the side mesh of the seam allowance will be hidden.
+
+37
+00:01:55,000 --> 00:01:58,000
+The thickness of this panel is also set to 10.
+
+38
+00:02:00,000 --> 00:02:02,000
+Pull the panel a little bit.
+
+39
+00:02:03,000 --> 00:02:07,000
+We can see that the side mesh of the seam allowance is hidden.
+
+40
+00:02:09,000 --> 00:02:10,000
+At this time,
+
+41
+00:02:11,000 --> 00:02:15,000
+Open or close the display of the seam allowance.
+
+42
+00:02:15,000 --> 00:02:18,000
+The mesh of the side seam allowance can be displayed or hidden.
+
+43
+00:02:19,000 --> 00:02:22,000
+The panel on this side is also the same.
+
+44
+00:02:23,000 --> 00:02:25,000
+This is in the case of equal total thickness.
+
+45
+00:02:26,000 --> 00:02:28,000
+So if the total thickness is not equal,
+
+46
+00:02:29,000 --> 00:02:31,000
+Choose a panel.
+
+47
+00:02:32,000 --> 00:02:35,000
+Increase the thickness of its seam allowance to 11.
+
+48
+00:02:39,000 --> 00:02:41,000
+This panel is relatively thick.
+
+49
+00:02:42,000 --> 00:02:45,000
+Its side mesh is not hidden.
+
+50
+00:02:47,000 --> 00:02:49,000
+The side mesh of the relatively thin panel is hidden.
+
+51
+00:02:50,000 --> 00:02:52,000
+Pull the panel a little bit.
+
+52
+00:02:53,000 --> 00:02:55,000
+This is due to the different thickness of the seam allowance.
+
+53
+00:02:56,000 --> 00:02:58,000
+When the panel is changed to the same thickness of the seam allowance,
+
+54
+00:02:59,000 --> 00:03:01,000
+Let this panel apply another fabric.
+
+55
+00:03:02,000 --> 00:03:04,000
+The thickness of this fabric is default 0.5.
+
+56
+00:03:05,000 --> 00:03:06,000
+Change to 0.6.
+
+57
+00:03:08,000 --> 00:03:11,000
+The effect that appears is the same as before.
+
+58
+00:03:12,000 --> 00:03:14,000
+The side mesh of the relatively thick panel has been displayed.
+
+59
+00:03:15,000 --> 00:03:17,000
+At this time, open or close the seam allowance.
+
+60
+00:03:17,000 --> 00:03:18,000
+The mesh has been displayed.
+
+61
+00:03:20,000 --> 00:03:21,000
+And this relatively thin panel
+
+62
+00:03:22,000 --> 00:03:25,000
+Can be displayed freely or hide the side mesh.
+
+63
+00:03:26,000 --> 00:03:27,000
+As before,
+
+64
+00:03:28,000 --> 00:03:31,000
+You can adjust the side mesh of the panel by adjusting the value of the curve.
+
+65
+00:03:32,000 --> 00:03:34,000
+Turn off the display mesh first.
+
+66
+00:03:36,000 --> 00:03:37,000
+Adjust the curve.
+
+67
+00:03:38,000 --> 00:03:40,000
+The curve on the side of the panel changes with time.
+
+68
+00:03:45,000 --> 00:03:47,000
+Open the display mesh again.
+
+69
+00:03:48,000 --> 00:03:50,000
+Restore the curve.
+
+70
+00:03:51,000 --> 00:03:54,000
+Detail level controls the number of divisions of the side mesh.
+
+71
+00:03:55,000 --> 00:03:56,000
+Change to 2.
+
+72
+00:03:56,000 --> 00:03:58,000
+The side has only two layers of mesh.
+
+73
+00:03:59,000 --> 00:04:02,000
+You can freely enter the number between 1 to 10 here.
+
+74
+00:04:09,000 --> 00:04:12,000
+The double-layer performance of the panel is also here.
+
+75
+00:04:17,000 --> 00:04:21,000
+Next, I will show you the use of the four applications.
+
+76
+00:04:22,000 --> 00:04:24,000
+See the right pocket of the coat.
+
+77
+00:04:25,000 --> 00:04:26,000
+This kind of single line pocket.
+
+78
+00:04:27,000 --> 00:04:29,000
+We would like to make this effect.
+
+79
+00:04:30,000 --> 00:04:31,000
+That is, the panel of the lip.
+
+80
+00:04:32,000 --> 00:04:33,000
+A little lower than the panel of the body.
+
+81
+00:04:34,000 --> 00:04:36,000
+Then we can use the output direction function.
+
+82
+00:04:37,000 --> 00:04:38,000
+Achieve this effect.
+
+83
+00:04:39,000 --> 00:04:41,000
+Select the lip panel of the left pocket.
+
+84
+00:04:42,000 --> 00:04:43,000
+To make it face out.
+
+85
+00:04:44,000 --> 00:04:46,000
+Then select the output direction.
+
+86
+00:04:46,000 --> 00:04:47,000
+After that,
+
+87
+00:04:47,000 --> 00:04:49,000
+You can make the lip face in.
+
+88
+00:04:50,000 --> 00:04:51,000
+The panel of the body is set to the output direction.
+
+89
+00:04:52,000 --> 00:04:53,000
+The front.
+
+90
+00:04:53,000 --> 00:04:54,000
+It is equivalent to raising the body.
+
+91
+00:04:55,000 --> 00:04:57,000
+This is the effect from the side.
+
+92
+00:04:58,000 --> 00:05:00,000
+Switch to 3D and 2D display.
+
+93
+00:05:05,000 --> 00:05:07,000
+Select the seam line of the lip and the front piece.
+
+94
+00:05:11,000 --> 00:05:12,000
+Change to reverse.
+
+95
+00:05:14,000 --> 00:05:15,000
+Select the seam line B.
+
+96
+00:05:17,000 --> 00:05:19,000
+At this time, the effect is more obvious.
+
+97
+00:05:20,000 --> 00:05:22,000
+See the inner top of the t-shirt.
+
+98
+00:05:23,000 --> 00:05:25,000
+You can also operate it like this.
+
+99
+00:05:28,000 --> 00:05:31,000
+The output direction of the panel of the lip is set to the back.
+
+100
+00:05:33,000 --> 00:05:35,000
+The front of the t-shirt is set to the front.
+
+101
+00:05:37,000 --> 00:05:39,000
+You can already see the effect from the side.
+
+102
+00:05:42,000 --> 00:05:44,000
+Finally, select the seam line of the lip.
+
+103
+00:05:46,000 --> 00:05:54,000
+You can change it to one,
+
+104
+00:05:54,000 --> 00:05:59,000
+Or,
+
+105
+00:05:59,000 --> 00:06:01,000
+You can move the part of the lip just like this.
+
+106
+00:06:02,000 --> 00:06:03,000
+At this time,
+
+107
+00:06:03,000 --> 00:06:05,000
+The lip of the lipelions in front of the sir.
+
+108
+00:06:05,000 --> 00:06:08,000
+You can try to align the上 along the side of the lip.
+
+109
+00:06:09,000 --> 00:06:11,000
+Move the lip in the opposite direction.
+
+110
+00:06:11,000 --> 00:06:15,000
+The model surface of the model in this file is 0.
+
+111
+00:06:15,000 --> 00:06:19,000
+Select the shoulder strap. The conflict thickness of the shoulder strap plate is 2.
+
+112
+00:06:19,000 --> 00:06:28,000
+Change to 1 and then simulate.
+
+113
+00:06:28,000 --> 00:06:31,000
+The gap becomes smaller.
+
+114
+00:06:31,000 --> 00:06:34,000
+Return to the state of conflict thickness as 2.
+
+115
+00:06:34,000 --> 00:06:37,000
+In some cases, the conflict thickness cannot be changed.
+
+116
+00:06:37,000 --> 00:06:42,000
+At this time, you can use the squeeze direction to optimize the performance of the shoulder strap.
+
+117
+00:06:42,000 --> 00:06:47,000
+That is, the squeeze direction of the shoulder strap plate is changed to one side of the model body.
+
+118
+00:06:47,000 --> 00:06:52,000
+If you are not sure about the front and back of the plate, switch to the black and white surface.
+
+119
+00:06:52,000 --> 00:06:55,000
+White front, gray back.
+
+120
+00:06:55,000 --> 00:06:58,000
+Switch back to the thick texture surface.
+
+121
+00:06:58,000 --> 00:07:01,000
+The opposite side of the shoulder strap plate faces the model.
+
+122
+00:07:01,000 --> 00:07:04,000
+Change the squeeze direction to .
+
+123
+00:07:04,000 --> 00:07:06,000
+The shoulder strap is close to the model.
+
+124
+00:07:07,000 --> 00:07:12,000
+The zipper of the shoulder strap and the single thread pocket in the front are the same operation.
+
+125
+00:07:12,000 --> 00:07:14,000
+Here is no more count.
+
+126
+00:07:14,000 --> 00:07:19,000
+In addition, when making accessories, you can also use the squeeze direction.
+
+127
+00:07:19,000 --> 00:07:21,000
+To achieve some specific effects.
+
+128
+00:07:21,000 --> 00:07:24,000
+Now I want to make a concave effect on the shoulder strap.
+
+129
+00:07:24,000 --> 00:07:28,000
+You should think about the different thickness of the shoulder strap plate.
+
+130
+00:07:28,000 --> 00:07:32,000
+The shoulder strap plate is set to .
+
+131
+00:07:32,000 --> 00:07:36,000
+The shoulder strap plate is set to .
+
+132
+00:07:37,000 --> 00:07:40,000
+From the front, the effect is not bad.
+
+133
+00:07:40,000 --> 00:07:46,000
+But when you turn to the back, you will find that there is also a concave line on the back.
+
+134
+00:07:46,000 --> 00:07:49,000
+If you want to keep the back flat.
+
+135
+00:07:49,000 --> 00:07:51,000
+Only the front has a concave line.
+
+136
+00:07:51,000 --> 00:07:56,000
+All the squeeze directions of the shoulder strap are changed to .
+
+137
+00:07:56,000 --> 00:07:59,000
+At this time, the back is flat.
+
+138
+00:07:59,000 --> 00:08:01,000
+Select the self-made shoulder strap.
+
+139
+00:08:01,000 --> 00:08:03,000
+Also apply white fabric.
+
+140
+00:08:03,000 --> 00:08:05,000
+There is no trace on the back.
+
+141
+00:08:05,000 --> 00:08:06,000
+This is the front.
+
+142
+00:08:06,000 --> 00:08:08,000
+The front is this effect.
+
+143
+00:08:08,000 --> 00:08:11,000
+I look forward to exploring more ways of use.
+

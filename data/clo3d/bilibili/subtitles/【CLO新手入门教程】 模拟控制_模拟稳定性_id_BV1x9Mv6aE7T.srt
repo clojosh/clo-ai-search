@@ -1,0 +1,1092 @@
+1
+00:00:00,000 --> 00:00:08,000
+Hello everyone, this video will introduce you to 3D clothing production, related tools for simulation control.
+
+2
+00:00:08,000 --> 00:00:17,000
+First, in the Connect tab, under the CloudTraining account, unlock the keyword simulation control.
+
+3
+00:00:17,000 --> 00:00:27,000
+First, double-click to download and open the frozen and back-up file.
+
+4
+00:00:27,000 --> 00:00:32,000
+In the 3D window, select the belt of this shirt skirt.
+
+5
+00:00:32,000 --> 00:00:37,000
+Right-click to select Frozen, and Ctrl-K.
+
+6
+00:00:37,000 --> 00:00:41,000
+The frozen version will appear light blue on the surface.
+
+7
+00:00:41,000 --> 00:00:48,000
+After opening the simulation, its position and shape will be completely fixed, and drag will not change or shift.
+
+8
+00:00:48,000 --> 00:00:56,000
+But it should be noted that there is still physical contact and collision between it and the normal soft clothing below.
+
+9
+00:00:57,000 --> 00:01:01,000
+Then we right-click on the plate again.
+
+10
+00:01:01,000 --> 00:01:03,000
+Unlock the belt.
+
+11
+00:01:03,000 --> 00:01:06,000
+Then right-click to switch to the back-up plate.
+
+12
+00:01:06,000 --> 00:01:11,000
+Right-click, Ctrl-J.
+
+13
+00:01:11,000 --> 00:01:15,000
+The back-up plate becomes translucent blue.
+
+14
+00:01:15,000 --> 00:01:24,000
+After opening the simulation, you can see that the back-up plate is not only fixed, but also no longer involved in any collision calculation.
+
+15
+00:01:24,000 --> 00:01:27,000
+The drag material will be directly worn through.
+
+16
+00:01:27,000 --> 00:01:33,000
+This also means that in the simulation, the back-up plate is a relatively frozen plate.
+
+17
+00:01:33,000 --> 00:01:35,000
+The calculation is smaller.
+
+18
+00:01:35,000 --> 00:01:38,000
+After stopping the simulation, return to the state of not wearing a mask.
+
+19
+00:01:38,000 --> 00:01:41,000
+On the plate, you will see the back-up plate again.
+
+20
+00:01:41,000 --> 00:01:48,000
+In addition, at the bottom of the back-up plate, there are options for the back-up plate and the sewing line.
+
+21
+00:01:48,000 --> 00:01:56,000
+If you choose the back-up plate and the sewing line, not only will the plate fail, but the sewing line relationship associated with it will also temporarily break.
+
+22
+00:01:56,000 --> 00:02:00,000
+And the sewing line will turn white.
+
+23
+00:02:00,000 --> 00:02:04,000
+Take this suit as an example.
+
+24
+00:02:04,000 --> 00:02:06,000
+On one side, the back-up plate.
+
+25
+00:02:06,000 --> 00:02:10,000
+On the other side, the back-up plate and the sewing line.
+
+26
+00:02:10,000 --> 00:02:17,000
+You will find that the back-up plate retains the sewing line relationship with the sleeve plate on one side.
+
+27
+00:02:17,000 --> 00:02:21,000
+On the other side, the back-up plate and the sewing line are reversed.
+
+28
+00:02:21,000 --> 00:02:24,000
+The back-up plate is equivalent to temporarily non-existence.
+
+29
+00:02:24,000 --> 00:02:28,000
+In addition, the sewing line relationship is also broken.
+
+30
+00:02:28,000 --> 00:02:30,000
+Stop the simulation.
+
+31
+00:02:30,000 --> 00:02:32,000
+Activate the sewing curve.
+
+32
+00:02:32,000 --> 00:02:37,000
+Simulate to stabilize.
+
+33
+00:02:37,000 --> 00:02:42,000
+In the actual application, when adjusting the clothing shape and simulating complex clothing,
+
+34
+00:02:42,000 --> 00:02:48,000
+you can use the freeze and counter-activation to fix the plate shape and reduce the calculation,
+
+35
+00:02:48,000 --> 00:02:51,000
+thereby increasing the simulation efficiency.
+
+36
+00:02:51,000 --> 00:02:52,000
+For example, now,
+
+37
+00:02:52,000 --> 00:02:58,000
+we need to move the belt from the left side of the shirt skirt to the right side.
+
+38
+00:02:58,000 --> 00:03:00,000
+If you directly turn on the simulation,
+
+39
+00:03:00,000 --> 00:03:02,000
+directly drag the belt plate,
+
+40
+00:03:02,000 --> 00:03:05,000
+you will find that the speed of adjusting the belt is slower,
+
+41
+00:03:05,000 --> 00:03:07,000
+because when the belt moves,
+
+42
+00:03:07,000 --> 00:03:10,000
+the whole clothes are involved in the simulation.
+
+43
+00:03:10,000 --> 00:03:13,000
+In order to speed up the simulation,
+
+44
+00:03:13,000 --> 00:03:14,000
+reduce the calculation,
+
+45
+00:03:14,000 --> 00:03:18,000
+we can freeze the plate that has direct contact with the belt.
+
+46
+00:03:18,000 --> 00:03:21,000
+Because the collision calculation of clothing and belt needs to be maintained,
+
+47
+00:03:21,000 --> 00:03:23,000
+that is, the collision,
+
+48
+00:03:23,000 --> 00:03:29,000
+the other plates that are not in contact with each other are all counter-activated.
+
+49
+00:03:29,000 --> 00:03:34,000
+Then turn on the simulation.
+
+50
+00:03:34,000 --> 00:03:37,000
+Adjust the belt position.
+
+51
+00:03:37,000 --> 00:03:40,000
+You will find that the simulation speed will be much faster.
+
+52
+00:03:40,000 --> 00:03:50,000
+After adjusting the belt position,
+
+53
+00:03:50,000 --> 00:03:52,000
+on the 3D window,
+
+54
+00:03:52,000 --> 00:03:53,000
+on the clothing,
+
+55
+00:03:53,000 --> 00:03:54,000
+any position double click,
+
+56
+00:03:54,000 --> 00:03:56,000
+select the whole clothing,
+
+57
+00:03:56,000 --> 00:04:00,000
+right-click to select activation.
+
+58
+00:04:00,000 --> 00:04:02,000
+Re-model,
+
+59
+00:04:02,000 --> 00:04:10,000
+the belt is naturally worn.
+
+60
+00:04:10,000 --> 00:04:14,000
+Here we see the reset arrangement together.
+
+61
+00:04:14,000 --> 00:04:17,000
+Open the reset arrangement file,
+
+62
+00:04:20,000 --> 00:04:22,000
+when the clothing appears,
+
+63
+00:04:22,000 --> 00:04:24,000
+how to fix it.
+
+64
+00:04:24,000 --> 00:04:26,000
+Take this clothing as an example,
+
+65
+00:04:26,000 --> 00:04:28,000
+you can see the bottom of the skirt,
+
+66
+00:04:28,000 --> 00:04:31,000
+the collar and sleeves have problems.
+
+67
+00:04:31,000 --> 00:04:33,000
+First see the bottom,
+
+68
+00:04:33,000 --> 00:04:35,000
+here the front and back pieces of the side,
+
+69
+00:04:35,000 --> 00:04:38,000
+are made in two different ways.
+
+70
+00:04:38,000 --> 00:04:41,000
+The front piece is added directly by the side tool.
+
+71
+00:04:41,000 --> 00:04:43,000
+For the wear problem in front of the eye,
+
+72
+00:04:43,000 --> 00:04:46,000
+we can directly on the side of the wear,
+
+73
+00:04:46,000 --> 00:04:48,000
+right-click to choose to arrange initialization,
+
+74
+00:04:48,000 --> 00:04:51,000
+you can quickly put the side
+
+75
+00:04:51,000 --> 00:04:53,000
+on the inside of the bottom of the front piece,
+
+76
+00:04:53,000 --> 00:04:56,000
+and then re-model it.
+
+77
+00:04:56,000 --> 00:04:58,000
+The back piece of the side,
+
+78
+00:04:58,000 --> 00:05:02,000
+is sewn on by the created side plate.
+
+79
+00:05:02,000 --> 00:05:05,000
+First, we can also use a similar tool,
+
+80
+00:05:05,000 --> 00:05:08,000
+put the side to the inside of the bottom of the back piece,
+
+81
+00:05:08,000 --> 00:05:10,000
+right-click on the side of the back piece,
+
+82
+00:05:10,000 --> 00:05:12,000
+choose to add to the inside,
+
+83
+00:05:12,000 --> 00:05:16,000
+you can add the side to the inside.
+
+84
+00:05:16,000 --> 00:05:17,000
+This is suitable for two plates,
+
+85
+00:05:17,000 --> 00:05:20,000
+used when there is a seam relationship.
+
+86
+00:05:20,000 --> 00:05:23,000
+If the outer layer of the fabric is twisted,
+
+87
+00:05:23,000 --> 00:05:24,000
+the impact is too big,
+
+88
+00:05:24,000 --> 00:05:26,000
+and the addition to the inside is not possible to solve,
+
+89
+00:05:26,000 --> 00:05:29,000
+you can select the side of the problem first,
+
+90
+00:05:29,000 --> 00:05:33,000
+right-click to set the anti-aggression plate and sewing line,
+
+91
+00:05:33,000 --> 00:05:36,000
+note that because it is necessary to completely eliminate the side of the side,
+
+92
+00:05:36,000 --> 00:05:41,000
+so it must be the option of the anti-aggression plate and sewing line.
+
+93
+00:05:43,000 --> 00:05:44,000
+Open the simulation,
+
+94
+00:05:44,000 --> 00:05:46,000
+so that the sound is natural and smooth,
+
+95
+00:05:46,000 --> 00:05:58,000
+then re-activate the side and add to the inside.
+
+96
+00:05:58,000 --> 00:06:02,000
+The problem of overlapping the wrong position of the top and the sleeve,
+
+97
+00:06:02,000 --> 00:06:06,000
+you can try to solve it by resetting the 3D arrangement position of the plate,
+
+98
+00:06:06,000 --> 00:06:10,000
+we only need to select two plates at the same time.
+
+99
+00:06:10,000 --> 00:06:13,000
+Right-click to reset the 3D arrangement position,
+
+100
+00:06:13,000 --> 00:06:17,000
+because these plates have previously used the arrangement point,
+
+101
+00:06:17,000 --> 00:06:20,000
+there is a memory in the arrangement file,
+
+102
+00:06:20,000 --> 00:06:23,000
+the plate can return to the 3D arrangement state,
+
+103
+00:06:23,000 --> 00:06:26,000
+re-modeling can be restored to normal.
+
+104
+00:06:28,000 --> 00:06:30,000
+If the button is stuck in,
+
+105
+00:06:30,000 --> 00:06:33,000
+right-click to reset the button.
+
+106
+00:06:35,000 --> 00:06:39,000
+The sleeve and the sleeve plate are also the same operation.
+
+107
+00:06:39,000 --> 00:06:42,000
+Select them together,
+
+108
+00:06:42,000 --> 00:06:45,000
+right-click to reset the 3D arrangement position.
+
+109
+00:06:45,000 --> 00:06:51,000
+You can see that the sleeve plate has been reset to the 3D position,
+
+110
+00:06:51,000 --> 00:06:54,000
+and the sleeve plate has no arrangement memory,
+
+111
+00:06:54,000 --> 00:06:56,000
+so it is flat.
+
+112
+00:06:56,000 --> 00:06:58,000
+In this case,
+
+113
+00:06:58,000 --> 00:07:01,000
+we can reopen the virtual model arrangement point,
+
+114
+00:07:01,000 --> 00:07:03,000
+select the plate,
+
+115
+00:07:03,000 --> 00:07:06,000
+re-select the arrangement point to be arranged,
+
+116
+00:07:09,000 --> 00:07:14,000
+or this side-mounted plate,
+
+117
+00:07:14,000 --> 00:07:18,000
+you can also directly right-click to add to the side,
+
+118
+00:07:18,000 --> 00:07:22,000
+to add the side of the sleeve that has a seam relationship.
+
+119
+00:07:22,000 --> 00:07:24,000
+After resetting the position,
+
+120
+00:07:24,000 --> 00:07:26,000
+open the simulation,
+
+121
+00:07:28,000 --> 00:07:31,000
+this dress is adjusted.
+
+122
+00:07:33,000 --> 00:07:36,000
+You can select the basic line of hidden clothing,
+
+123
+00:07:36,000 --> 00:07:37,000
+the internal line,
+
+124
+00:07:37,000 --> 00:07:38,000
+and the hidden sticky line.
+
+125
+00:07:39,000 --> 00:07:43,000
+Switch the clothing rendering type to the dense texture surface
+
+126
+00:07:43,000 --> 00:07:46,000
+to check and display the clothing.
+
+127
+00:07:49,000 --> 00:07:51,000
+Next, open the library,
+
+128
+00:07:51,000 --> 00:07:54,000
+continue to find the selection grid file and open it.
+
+129
+00:07:59,000 --> 00:08:01,000
+In order to make it easier to check,
+
+130
+00:08:01,000 --> 00:08:03,000
+you can choose to hide the internal line,
+
+131
+00:08:03,000 --> 00:08:04,000
+the hidden basic line,
+
+132
+00:08:04,000 --> 00:08:05,000
+and the sticky line.
+
+133
+00:08:05,000 --> 00:08:08,000
+The clothing rendering type can also be changed to the dense texture surface.
+
+134
+00:08:09,000 --> 00:08:12,000
+You can set it according to your needs.
+
+135
+00:08:15,000 --> 00:08:18,000
+When most of the fabric is in the model's body,
+
+136
+00:08:18,000 --> 00:08:21,000
+or when the hitter is in the opposite direction,
+
+137
+00:08:21,000 --> 00:08:24,000
+re-modeling may be very time-consuming.
+
+138
+00:08:24,000 --> 00:08:27,000
+At this time, we can use the selection grid tool.
+
+139
+00:08:28,000 --> 00:08:29,000
+For example,
+
+140
+00:08:29,000 --> 00:08:32,000
+see the sleeves of the back shirt are worn to the arm.
+
+141
+00:08:32,000 --> 00:08:35,000
+We will move the part of the plate blocked by the arm
+
+142
+00:08:35,000 --> 00:08:37,000
+to the correct side.
+
+143
+00:08:37,000 --> 00:08:38,000
+This can solve this problem.
+
+144
+00:08:39,000 --> 00:08:43,000
+Here, we first switch the tool to the selection grid tool.
+
+145
+00:08:43,000 --> 00:08:45,000
+In the 3D tool bar,
+
+146
+00:08:45,000 --> 00:08:47,000
+the third tool in the first row,
+
+147
+00:08:47,000 --> 00:08:49,000
+left-click and long-click.
+
+148
+00:08:49,000 --> 00:08:52,000
+Here, there are three modes of selection grid tool brush,
+
+149
+00:08:52,000 --> 00:08:54,000
+body, and lock.
+
+150
+00:08:54,000 --> 00:08:56,000
+We use the body as an example.
+
+151
+00:08:57,000 --> 00:09:00,000
+When using the selection grid tool,
+
+152
+00:09:00,000 --> 00:09:03,000
+the plate will automatically display the light green grid.
+
+153
+00:09:05,000 --> 00:09:07,000
+Adjust the 3D window angle
+
+154
+00:09:07,000 --> 00:09:10,000
+to the area facing the mask.
+
+155
+00:09:11,000 --> 00:09:13,000
+In the 3D window,
+
+156
+00:09:13,000 --> 00:09:17,000
+left-click the sleeve part of the frame selection and arm mask.
+
+157
+00:09:18,000 --> 00:09:21,000
+Try to select all the mask areas in the frame.
+
+158
+00:09:21,000 --> 00:09:25,000
+The selected grid will now become a high-gloss light.
+
+159
+00:09:25,000 --> 00:09:27,000
+Then see the 2D panel.
+
+160
+00:09:27,000 --> 00:09:30,000
+The corresponding grid will also display the light green,
+
+161
+00:09:30,000 --> 00:09:32,000
+indicating that it has been selected.
+
+162
+00:09:32,000 --> 00:09:33,000
+It can be found that
+
+163
+00:09:33,000 --> 00:09:35,000
+due to some panels being blocked by the arm,
+
+164
+00:09:35,000 --> 00:09:37,000
+it cannot be selected.
+
+165
+00:09:38,000 --> 00:09:40,000
+Therefore, on the 2D panel,
+
+166
+00:09:40,000 --> 00:09:42,000
+in the light green center,
+
+167
+00:09:42,000 --> 00:09:45,000
+there will naturally be a grid that has not been selected.
+
+168
+00:09:45,000 --> 00:09:48,000
+And these grids are also where we need to select,
+
+169
+00:09:48,000 --> 00:09:51,000
+and move to the outside of the arm.
+
+170
+00:09:52,000 --> 00:09:55,000
+Click on the blank area to cancel the selection.
+
+171
+00:09:55,000 --> 00:09:56,000
+According to the memory,
+
+172
+00:09:56,000 --> 00:09:59,000
+re-select the frame selection grid on the 2D panel.
+
+173
+00:09:59,000 --> 00:10:01,000
+If it is missing,
+
+174
+00:10:01,000 --> 00:10:04,000
+you can press Ctrl and Shift to select more.
+
+175
+00:10:05,000 --> 00:10:06,000
+If you have selected too many,
+
+176
+00:10:06,000 --> 00:10:09,000
+press Ctrl to cancel the selection.
+
+177
+00:10:12,000 --> 00:10:14,000
+After the selection is complete,
+
+178
+00:10:14,000 --> 00:10:17,000
+in the high-gloss light in the 3D window,
+
+179
+00:10:17,000 --> 00:10:20,000
+left-click to remove the positioning ball,
+
+180
+00:10:20,000 --> 00:10:23,000
+and turn to the side view.
+
+181
+00:10:23,000 --> 00:10:27,000
+Use the positioning ball to align the selected grid to the outside of the arm,
+
+182
+00:10:27,000 --> 00:10:29,000
+wrap it around the arm,
+
+183
+00:10:29,000 --> 00:10:31,000
+and then turn on the simulation.
+
+184
+00:10:31,000 --> 00:10:34,000
+The sleeve mask problem on this side is fixed.
+
+185
+00:10:35,000 --> 00:10:40,000
+The other side is also the same operation.
+
+186
+00:10:40,000 --> 00:10:42,000
+You can practice again.
+
+187
+00:10:56,000 --> 00:10:59,000
+The fold and cut of the front pants is the same.
+
+188
+00:10:59,000 --> 00:11:01,000
+You can use the same technique to undo the folding in this way.
+
+189
+00:11:01,000 --> 00:11:03,000
+This is the same process as before.
+
+190
+00:11:03,000 --> 00:11:06,000
+Let's first determine which part of the fabric should be on top.
+
+191
+00:11:06,000 --> 00:11:10,000
+Then use the selection grid tool to select this part of the grid.
+
+192
+00:11:10,000 --> 00:11:13,000
+Note here
+
+193
+00:11:13,000 --> 00:11:16,000
+that we need to move the original fold
+
+194
+00:11:16,000 --> 00:11:20,000
+out of the upper grid.
+
+195
+00:11:20,000 --> 00:11:23,000
+Combined with the green high-gloss area,
+
+196
+00:11:23,000 --> 00:11:26,000
+we can determine that it should be the inside of the red line.
+
+197
+00:11:26,000 --> 00:11:28,000
+The area on the left needs to be moved out.
+
+198
+00:11:28,000 --> 00:11:32,000
+and pull it out.
+
+199
+00:11:32,000 --> 00:11:37,000
+Note that you need to move the grid in the stop simulation state,
+
+200
+00:11:37,000 --> 00:11:45,000
+otherwise it will move with the surrounding grid.
+
+201
+00:11:45,000 --> 00:11:48,000
+If there is no adjustment,
+
+202
+00:11:48,000 --> 00:11:56,000
+you can select the grid you need again and move it out.
+
+203
+00:11:56,000 --> 00:12:00,000
+In addition, you can select the grid brush and brush tool,
+
+204
+00:12:00,000 --> 00:12:04,000
+but the way of selection is different.
+
+205
+00:12:04,000 --> 00:12:08,000
+The brush tool can be selected when selecting the irregular grid area,
+
+206
+00:12:08,000 --> 00:12:11,000
+and it is custom-made to create a selection area.
+
+207
+00:12:11,000 --> 00:12:15,000
+You can also press Ctrl and Shift to select more,
+
+208
+00:12:15,000 --> 00:12:20,000
+and press Ctrl to select less.
+
+209
+00:12:20,000 --> 00:12:24,000
+The brush can be applied directly on the grid,
+
+210
+00:12:24,000 --> 00:12:26,000
+and you can select the grid brush
+
+211
+00:12:26,000 --> 00:12:28,000
+that you want to select.
+
+212
+00:12:28,000 --> 00:12:30,000
+Right-click to divide the grid,
+
+213
+00:12:30,000 --> 00:12:37,000
+freeze, print, and so on.
+
+214
+00:12:37,000 --> 00:12:42,000
+Finally, you can see the setting layer.
+
+215
+00:12:42,000 --> 00:12:49,000
+Open this file.
+
+216
+00:12:49,000 --> 00:12:51,000
+Take this layer as an example.
+
+217
+00:12:51,000 --> 00:12:54,000
+Now there are two layers here.
+
+218
+00:12:54,000 --> 00:12:57,000
+The belt and elastic band of this layer.
+
+219
+00:12:57,000 --> 00:13:02,000
+We need to add another belt layer for this layer.
+
+220
+00:13:02,000 --> 00:13:04,000
+On the belt layer,
+
+221
+00:13:04,000 --> 00:13:13,000
+right-click and select the inner layer of the grid layer.
+
+222
+00:13:13,000 --> 00:13:17,000
+Because the new grid layer is only attached to the original layer,
+
+223
+00:13:17,000 --> 00:13:21,000
+it will exist with the elastic band of the original layer.
+
+224
+00:13:21,000 --> 00:13:23,000
+Direct simulation may not be stable.
+
+225
+00:13:24,000 --> 00:13:29,000
+Find the fourth tool in the second row of the 2D tool bar.
+
+226
+00:13:29,000 --> 00:13:31,000
+Set the layer.
+
+227
+00:13:31,000 --> 00:13:34,000
+First, click on the elastic band layer,
+
+228
+00:13:34,000 --> 00:13:38,000
+then click on the inner layer of the grid layer.
+
+229
+00:13:38,000 --> 00:13:42,000
+See the arrow point on the 2D layer.
+
+230
+00:13:42,000 --> 00:13:46,000
+Layer 1 is the starting point of the arrow.
+
+231
+00:13:46,000 --> 00:13:48,000
+The arrow points to layer 2,
+
+232
+00:13:48,000 --> 00:13:51,000
+and there is a plus sign on both lines.
+
+233
+00:13:51,000 --> 00:13:52,000
+This means that
+
+234
+00:13:52,000 --> 00:13:58,000
+we have set the outside of the front of the plate 1 on the plate 2.
+
+235
+00:13:58,000 --> 00:14:01,000
+Similarly, set the outside of the plate 2 on the plate 3.
+
+236
+00:14:01,000 --> 00:14:04,000
+That is, a layer of waist fabric on the plate 1,
+
+237
+00:14:04,000 --> 00:14:06,000
+a layer of elastic band on the plate 2,
+
+238
+00:14:06,000 --> 00:14:10,000
+a layer of inner waist fabric on the plate 3.
+
+239
+00:14:10,000 --> 00:14:13,000
+Such a structure.
+
+240
+00:14:13,000 --> 00:14:15,000
+After establishing the layer relationship,
+
+241
+00:14:15,000 --> 00:14:19,000
+the simulation will be very smooth.
+
+242
+00:14:19,000 --> 00:14:20,000
+Here is another detail.
+
+243
+00:14:20,000 --> 00:14:22,000
+We are on the left side.
+
+244
+00:14:22,000 --> 00:14:25,000
+Change the clothing rendering type to the physical surface
+
+245
+00:14:25,000 --> 00:14:28,000
+to distinguish the front and back of the fabric.
+
+246
+00:14:28,000 --> 00:14:30,000
+You can see that
+
+247
+00:14:30,000 --> 00:14:34,000
+the inner layer of the curtain is facing the outside.
+
+248
+00:14:34,000 --> 00:14:35,000
+In other words,
+
+249
+00:14:35,000 --> 00:14:38,000
+what we see is the opposite of the inner layer of the plate.
+
+250
+00:14:38,000 --> 00:14:43,000
+If we want the inner layer to be the front of the skin,
+
+251
+00:14:43,000 --> 00:14:48,000
+we need to turn the right arrow on the plate to the surface.
+
+252
+00:14:48,000 --> 00:14:49,000
+After turning,
+
+253
+00:14:49,000 --> 00:14:51,000
+the original layer logic changes.
+
+254
+00:14:52,000 --> 00:14:55,000
+Set the plus sign on the layer line.
+
+255
+00:14:55,000 --> 00:14:59,000
+It represents a plate on the outside of the front of another plate.
+
+256
+00:14:59,000 --> 00:15:01,000
+Now the inner layer is turned over.
+
+257
+00:15:01,000 --> 00:15:03,000
+The front and back are switched.
+
+258
+00:15:03,000 --> 00:15:06,000
+The elastic band is equivalent to the back of it now.
+
+259
+00:15:06,000 --> 00:15:10,000
+So we are going to change the plus sign of the connection to the minus sign.
+
+260
+00:15:10,000 --> 00:15:12,000
+On the plus sign,
+
+261
+00:15:12,000 --> 00:15:14,000
+the button can be switched to the minus sign.
+
+262
+00:15:14,000 --> 00:15:19,000
+That is, the plate 2 is on the front of the plate 3.
+
+263
+00:15:19,000 --> 00:15:25,000
+It is now on the side of the plate 3.
+
+264
+00:15:25,000 --> 00:15:26,000
+Finally,
+
+265
+00:15:26,000 --> 00:15:29,000
+about the more detailed explanation of the setting layer.
+
+266
+00:15:29,000 --> 00:15:32,000
+You can click the jump link at the bottom of the video.
+
+267
+00:15:32,000 --> 00:15:37,000
+Jump to know the skill video.
+
+268
+00:15:37,000 --> 00:15:41,000
+The above are a few tools to improve the simulation stability.
+
+269
+00:15:41,000 --> 00:15:43,000
+You can practice more.
+
+270
+00:15:49,000 --> 00:15:51,000
+If you want to learn more,
+
+271
+00:15:51,000 --> 00:15:53,000
+please subscribe to the channel.
+
+272
+00:15:53,000 --> 00:15:55,000
+Thank you for watching.
+
+273
+00:15:55,000 --> 00:15:57,000
+See you in the next video.
+

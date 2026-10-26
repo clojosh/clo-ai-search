@@ -1,0 +1,444 @@
+1
+00:00:00,000 --> 00:00:05,000
+This video will introduce you to the main function of Kolo 2025.1, the seamless division.
+
+2
+00:00:05,000 --> 00:00:11,000
+In the past, if there was a flat color design on the fabric, it was necessary to cut and sew the sheets and then set them separately.
+
+3
+00:00:11,000 --> 00:00:15,000
+Now with the seamless division function, you do not need to cut the sheets again.
+
+4
+00:00:15,000 --> 00:00:20,000
+It is possible to separate each area, and thus apply color or texture like processing a separate fabric.
+
+5
+00:00:20,000 --> 00:00:27,000
+This is especially convenient for the design of a combination of various colors or textures such as needles or applications of different materials.
+
+6
+00:00:27,000 --> 00:00:31,000
+First of all, we will demonstrate how to create a seamless division line through an example file.
+
+7
+00:00:31,000 --> 00:00:35,000
+The seamless division is located under the multi-edged tool in the 2D tool bar.
+
+8
+00:00:35,000 --> 00:00:40,000
+After selecting the tool, you can draw a seamless division line by pressing the outside line of the board.
+
+9
+00:00:40,000 --> 00:00:43,000
+Please note that you cannot start drawing from the inside of the board.
+
+10
+00:00:43,000 --> 00:00:47,000
+The seamless division line can be created in the same way as the inner line.
+
+11
+00:00:47,000 --> 00:00:50,000
+By pressing multiple points to create any shape you want.
+
+12
+00:00:50,000 --> 00:00:54,000
+When drawing a straight line, press the Shift key to create a 45-degree support line.
+
+13
+00:00:54,000 --> 00:00:57,000
+To help you accurately draw a vertical line and a horizontal line,
+
+14
+00:00:57,000 --> 00:00:59,000
+or a 45-degree support line,
+
+15
+00:00:59,000 --> 00:01:01,000
+double-click on the line outside the board to finish.
+
+16
+00:01:01,000 --> 00:01:04,000
+If the board has a symmetrical link,
+
+17
+00:01:04,000 --> 00:01:06,000
+when creating a line on one side,
+
+18
+00:01:06,000 --> 00:01:09,000
+it will automatically create the same line on the other side.
+
+19
+00:01:09,000 --> 00:01:11,000
+It is suitable for boards with one symmetrical axis,
+
+20
+00:01:11,000 --> 00:01:13,000
+and boards with two symmetrical links.
+
+21
+00:01:13,000 --> 00:01:17,000
+The lines created in the 2D window will be highlighted in light blue,
+
+22
+00:01:17,000 --> 00:01:19,000
+making it clearly visible.
+
+23
+00:01:19,000 --> 00:01:22,000
+On 3D clothing, their appearance is the same as the inner line,
+
+24
+00:01:22,000 --> 00:01:24,000
+and the line is dark red.
+
+25
+00:01:24,000 --> 00:01:26,000
+If you want an asymmetrical design,
+
+26
+00:01:26,000 --> 00:01:29,000
+you can create a line with a symmetrical axis of a symmetrical board.
+
+27
+00:01:29,000 --> 00:01:32,000
+In this case, there will be no symmetrical duplication.
+
+28
+00:01:32,000 --> 00:01:35,000
+You can create an asymmetrical design with only a line on one side.
+
+29
+00:01:35,000 --> 00:01:37,000
+If you want to edit the end point,
+
+30
+00:01:37,000 --> 00:01:40,000
+you can use the edit board tool to edit the line section.
+
+31
+00:01:44,000 --> 00:01:46,000
+You can also create a curve line.
+
+32
+00:01:46,000 --> 00:01:49,000
+The creation method is the same as the creation of the inner line.
+
+33
+00:01:50,000 --> 00:01:54,000
+By pressing and dragging, you can create a straight line with a Beissel curve handle.
+
+34
+00:01:54,000 --> 00:01:56,000
+If you make a mistake,
+
+35
+00:01:56,000 --> 00:01:58,000
+you can also use the delete key to delete the point.
+
+36
+00:02:04,000 --> 00:02:08,000
+You can also press and drag the Ctrl key to create a curve point.
+
+37
+00:02:08,000 --> 00:02:11,000
+Thus, you can create a curve freely.
+
+38
+00:02:15,000 --> 00:02:17,000
+After creating all the lines,
+
+39
+00:02:17,000 --> 00:02:19,000
+you need to create a curve line on the outside of the board,
+
+40
+00:02:19,000 --> 00:02:22,000
+or on the other previously created non-divisional curves.
+
+41
+00:02:22,000 --> 00:02:24,000
+To complete the creation of the line section,
+
+42
+00:02:24,000 --> 00:02:28,000
+it should be noted that the non-divisional curve should always start from the closed shape.
+
+43
+00:02:28,000 --> 00:02:32,000
+Now let's modify the newly created non-divisional curve.
+
+44
+00:02:32,000 --> 00:02:34,000
+The modification method is the same as before.
+
+45
+00:02:34,000 --> 00:02:38,000
+You can use the edit board to modify the straight line on the Beissel curve.
+
+46
+00:02:41,000 --> 00:02:45,000
+You can also use other tools in the edit board tool group to edit.
+
+47
+00:02:45,000 --> 00:02:47,000
+For example, edit the curve point.
+
+48
+00:02:52,000 --> 00:02:54,000
+If you need to delete the non-divisional curve,
+
+49
+00:02:54,000 --> 00:02:59,000
+you can use the edit board tool to select the line and press the delete key to delete it.
+
+50
+00:03:03,000 --> 00:03:06,000
+You can also easily convert the internal line on the board
+
+51
+00:03:06,000 --> 00:03:09,000
+or the basic line to the non-divisional curve.
+
+52
+00:03:10,000 --> 00:03:12,000
+Select the loop outline tool,
+
+53
+00:03:12,000 --> 00:03:15,000
+stop the mouse on the internal line or the basic line you want to convert,
+
+54
+00:03:15,000 --> 00:03:17,000
+then right-click,
+
+55
+00:03:17,000 --> 00:03:20,000
+select the non-divisional curve shape in the list that appears,
+
+56
+00:03:20,000 --> 00:03:23,000
+this will immediately change the selected line to the non-divisional curve.
+
+57
+00:03:23,000 --> 00:03:27,000
+Using this function can make it easy for you to process the style you have decided to design
+
+58
+00:03:27,000 --> 00:03:30,000
+and you don't need to re-draw the line.
+
+59
+00:03:36,000 --> 00:03:40,000
+Next, let's use the fixed frame to create multiple non-divisional curves at once.
+
+60
+00:03:40,000 --> 00:03:44,000
+Use the edit board tool to right-click on the non-divisional curve,
+
+61
+00:03:44,000 --> 00:03:46,000
+click on the non-divisional curve frame,
+
+62
+00:03:46,000 --> 00:03:50,000
+this will open the dialogue box with the same options as the internal line frame.
+
+63
+00:03:50,000 --> 00:03:53,000
+You can enter the required number and distance in it,
+
+64
+00:03:53,000 --> 00:03:57,000
+which is particularly useful for pattern design or division and repetition materials.
+
+65
+00:03:57,000 --> 00:04:02,000
+Now let's apply different fabrics to the non-divisional curve we created.
+
+66
+00:04:02,000 --> 00:04:05,000
+Select the required fabric from the object window,
+
+67
+00:04:05,000 --> 00:04:08,000
+then drag it to the 2D or 3D window.
+
+68
+00:04:11,000 --> 00:04:13,000
+You can see that even if it is symmetrical,
+
+69
+00:04:13,000 --> 00:04:16,000
+it will not be applied at the same time when applying the fabric.
+
+70
+00:04:16,000 --> 00:04:18,000
+This is to give you more freedom in design,
+
+71
+00:04:18,000 --> 00:04:21,000
+you need to apply the fabric to two areas separately.
+
+72
+00:04:21,000 --> 00:04:24,000
+Of course, you can also use the adjustment board tool,
+
+73
+00:04:24,000 --> 00:04:27,000
+select the area and apply the required fabric for it.
+
+74
+00:04:30,000 --> 00:04:33,000
+Next, let's apply the fabric on the pants.
+
+75
+00:04:38,000 --> 00:04:41,000
+Use the edit pattern tool to adjust the fabric pattern.
+
+76
+00:04:41,000 --> 00:04:45,000
+Use the edit pattern tool to adjust the fabric pattern.
+
+77
+00:04:45,000 --> 00:04:47,000
+Use the edit pattern tool to adjust the fabric pattern.
+
+78
+00:04:47,000 --> 00:04:49,000
+Now let's simulate the clothing.
+
+79
+00:04:49,000 --> 00:04:52,000
+Because the physical properties of the fabric have also been applied to the fabric,
+
+80
+00:04:52,000 --> 00:04:56,000
+it can be realized to separate the fabric according to the non-divisional curve,
+
+81
+00:04:56,000 --> 00:04:58,000
+and simulate different physical properties.
+
+82
+00:05:00,000 --> 00:05:02,000
+The biggest advantage of the non-divisional curve line is that
+
+83
+00:05:02,000 --> 00:05:04,000
+when you modify the paper pattern,
+
+84
+00:05:04,000 --> 00:05:06,000
+the line section will also be adjusted.
+
+85
+00:05:06,000 --> 00:05:08,000
+For example, if you modify the outside line of the sheet,
+
+86
+00:05:08,000 --> 00:05:13,000
+the non-divisional curve line will automatically adjust the proportion of the outside line of the sheet after the modification.
+
+87
+00:05:13,000 --> 00:05:15,000
+When you are in the stage of frequent modification design,
+
+88
+00:05:15,000 --> 00:05:16,000
+this can make your work more convenient.
+
+89
+00:05:16,000 --> 00:05:17,000
+When you are in the stage of frequent modification design,
+
+90
+00:05:17,000 --> 00:05:18,000
+this can make your work more convenient.
+
+91
+00:05:18,000 --> 00:05:20,000
+In order to save the trouble of modifying the inside line every time you modify a paper pattern,
+
+92
+00:05:20,000 --> 00:05:22,000
+In order to save the trouble of modifying the inside line every time you modify a paper pattern,
+
+93
+00:05:22,000 --> 00:05:29,000
+of course, if you open the extension or subtraction function of the non-divisional curve line,
+
+94
+00:05:29,000 --> 00:05:34,000
+you can maintain the original extension direction.
+
+95
+00:05:40,000 --> 00:05:45,000
+As you can see, only this section is in the original state.
+
+96
+00:05:45,000 --> 00:05:50,000
+You can choose whether to turn on this function according to your needs.
+
+97
+00:05:50,000 --> 00:05:58,000
+Now I want to add a sticker to the position of the front seamless curve. The operation method is the same as before.
+
+98
+00:05:58,000 --> 00:06:02,000
+The seamless curve will not affect the display of the sticker.
+
+99
+00:06:02,000 --> 00:06:06,000
+The sticker looks very natural, as if there is no line.
+
+100
+00:06:15,000 --> 00:06:31,000
+The seamless curve line can be added and set its specific parameters like the internal line.
+
+101
+00:06:31,000 --> 00:06:36,000
+The seam is the same.
+
+102
+00:06:36,000 --> 00:06:42,000
+You can add it according to your needs.
+
+103
+00:06:42,000 --> 00:06:44,000
+The seamless curve is completed.
+
+104
+00:06:44,000 --> 00:06:45,000
+The seamless curve is completed. The seamless curve is completed.
+
+105
+00:06:45,000 --> 00:06:48,000
+So, the area where the Panel is set is not displayed in the hard новых window.
+
+106
+00:06:48,000 --> 00:06:53,000
+So, the area where the Panel is set is not displayed in the hard nuevos window.
+
+107
+00:06:58,000 --> 00:07:02,000
+Don't forget to set the coats妇k to the entire panel when you add a seamless curve line.
+
+108
+00:07:02,000 --> 00:07:11,000
+Also, if you open the file of 2025.1 and go to the second version in the previous version, the seamless curve line will be converted to the basic line.
+
+109
+00:07:11,000 --> 00:07:12,000
+END
+
+110
+00:07:12,000 --> 00:07:14,000
+Now let's learn the disrespect of this function fine by also paying attention to this point.
+
+111
+00:07:14,000 --> 00:07:18,000
+Free expression allows you to release the creativity of design clothing
+

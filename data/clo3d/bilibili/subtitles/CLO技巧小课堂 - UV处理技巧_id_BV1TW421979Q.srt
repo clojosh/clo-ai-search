@@ -1,0 +1,988 @@
+1
+00:00:00,000 --> 00:00:11,000
+In this video, we are going to talk about UV processing techniques.
+
+2
+00:00:11,000 --> 00:00:15,000
+First, let's talk about what is UV2.
+
+3
+00:00:15,000 --> 00:00:24,000
+UV2 can be simply understood as the picture formed by a 3D model of the surface texture to the 2D square area.
+
+4
+00:00:24,000 --> 00:00:28,000
+We can take a look at the model of the earth and the UV picture.
+
+5
+00:00:28,000 --> 00:00:33,000
+After the surface of a sphere is flattened into a square, it looks like this.
+
+6
+00:00:33,000 --> 00:00:35,000
+This is the UV picture of the sphere.
+
+7
+00:00:35,000 --> 00:00:38,000
+If we want the texture of the map to appear on this sphere,
+
+8
+00:00:38,000 --> 00:00:43,000
+then we have to place the map in the corresponding position to the sphere in the UV picture.
+
+9
+00:00:43,000 --> 00:00:47,000
+And after this UV picture is wrapped on our 3D sphere model,
+
+10
+00:00:47,000 --> 00:00:49,000
+the texture of the map will appear.
+
+11
+00:00:49,000 --> 00:00:55,000
+When we finish 3D clothing and want to import it into other 3D software,
+
+12
+00:00:55,000 --> 00:00:58,000
+we need to process its UV to ensure that the surface of the fabric is clean.
+
+13
+00:00:58,000 --> 00:01:01,000
+Then we can import it into other software.
+
+14
+00:01:01,000 --> 00:01:05,000
+Next, let's open the UV editor mode through the upper right corner.
+
+15
+00:01:05,000 --> 00:01:08,000
+Because 3D clothing is made up of 2D flat panels,
+
+16
+00:01:08,000 --> 00:01:13,000
+the UV picture of 3D clothing is the 3D version of the 3D clothing.
+
+17
+00:01:13,000 --> 00:01:16,000
+We can manually drag and drop to adjust the position of the panels.
+
+18
+00:01:16,000 --> 00:01:18,000
+Let's do the arrangement of the panels and the UV picture.
+
+19
+00:01:18,000 --> 00:01:22,000
+In the tool bar on the right side, there are also a series of UV tools.
+
+20
+00:01:22,000 --> 00:01:24,000
+Click on the automatic UV fill.
+
+21
+00:01:24,000 --> 00:01:26,000
+It will open a window.
+
+22
+00:01:26,000 --> 00:01:27,000
+Here.
+
+23
+00:01:27,000 --> 00:01:29,000
+Let's talk about the first concept.
+
+24
+00:01:29,000 --> 00:01:30,000
+UV area.
+
+25
+00:01:30,000 --> 00:01:33,000
+For better compatibility between different software.
+
+26
+00:01:33,000 --> 00:01:36,000
+It is generally recommended that the UV picture is placed in the default area 01,
+
+27
+00:01:36,000 --> 00:01:38,000
+which is our first line,
+
+28
+00:01:38,000 --> 00:01:40,000
+in the first unit grid.
+
+29
+00:01:40,000 --> 00:01:42,000
+Let's click on the application.
+
+30
+00:01:42,000 --> 00:01:46,000
+You can see that the UV of the panel will be displayed in the first unit grid.
+
+31
+00:01:46,000 --> 00:01:50,000
+Next, let's talk about some options in the UV layout.
+
+32
+00:01:50,000 --> 00:01:53,000
+First of all, the first one is fill.
+
+33
+00:01:53,000 --> 00:01:55,000
+It controls the gap between each panel UV.
+
+34
+00:01:55,000 --> 00:02:00,000
+Its data is set from 0.999 to 0.001.
+
+35
+00:02:00,000 --> 00:02:03,000
+The larger the data, the larger the gap between the panels.
+
+36
+00:02:03,000 --> 00:02:06,000
+For example, I changed it to 0.050 here.
+
+37
+00:02:06,000 --> 00:02:09,000
+You can see that there will be obvious gaps between the panels.
+
+38
+00:02:09,000 --> 00:02:11,000
+Here it is still changed to 0.001.
+
+39
+00:02:11,000 --> 00:02:13,000
+Next, look at the accuracy.
+
+40
+00:02:13,000 --> 00:02:15,000
+Here the maximum value is 5 and the minimum value is 1.
+
+41
+00:02:15,000 --> 00:02:18,000
+In the default situation, in order to ensure the accuracy of the UV layout,
+
+42
+00:02:18,000 --> 00:02:21,000
+and more reasonably use the space of the UV line,
+
+43
+00:02:21,000 --> 00:02:23,000
+there is a suitable calculation speed.
+
+44
+00:02:23,000 --> 00:02:24,000
+Set it to 3.
+
+45
+00:02:24,000 --> 00:02:26,000
+But when the number of panels is too large,
+
+46
+00:02:26,000 --> 00:02:28,000
+and the layout speed is slow,
+
+47
+00:02:28,000 --> 00:02:30,000
+you can reduce some accuracy
+
+48
+00:02:30,000 --> 00:02:32,000
+to quickly generate a layout result.
+
+49
+00:02:32,000 --> 00:02:34,000
+Next, let's look at the following options.
+
+50
+00:02:34,000 --> 00:02:36,000
+The first one is the fixed ratio.
+
+51
+00:02:36,000 --> 00:02:39,000
+The relative size of the panel is default to be the same as the 2D panel.
+
+52
+00:02:39,000 --> 00:02:41,000
+And when we cancel the fixed ratio,
+
+53
+00:02:41,000 --> 00:02:44,000
+you can see that some panels will be enlarged or reduced
+
+54
+00:02:44,000 --> 00:02:46,000
+for the space utilization rate of the layout.
+
+55
+00:02:46,000 --> 00:02:49,000
+This will lead to the final 3D model.
+
+56
+00:02:49,000 --> 00:02:53,000
+The clarity of the texture between different panels will be a little different.
+
+57
+00:02:53,000 --> 00:02:55,000
+So we usually choose the fixed ratio.
+
+58
+00:02:55,000 --> 00:02:58,000
+Now we can reset the layout of the UV,
+
+59
+00:02:58,000 --> 00:03:00,000
+and then select our fixed ratio.
+
+60
+00:03:00,000 --> 00:03:02,000
+Next is the rotation.
+
+61
+00:03:02,000 --> 00:03:04,000
+After selecting the rotation, click on the application.
+
+62
+00:03:04,000 --> 00:03:08,000
+You can see that in order to increase the utilization rate of this space,
+
+63
+00:03:08,000 --> 00:03:10,000
+it will rotate the entire panel.
+
+64
+00:03:10,000 --> 00:03:12,000
+Next is the optimization layout.
+
+65
+00:03:12,000 --> 00:03:16,000
+The optimization layout will be calculated in a more advanced way.
+
+66
+00:03:16,000 --> 00:03:18,000
+To layout our UV,
+
+67
+00:03:18,000 --> 00:03:20,000
+it will increase the utilization rate of the space.
+
+68
+00:03:20,000 --> 00:03:21,000
+In other words,
+
+69
+00:03:21,000 --> 00:03:23,000
+it will ensure that the UV is in the designated area,
+
+70
+00:03:23,000 --> 00:03:24,000
+and at the same time,
+
+71
+00:03:24,000 --> 00:03:26,000
+the panel will be enlarged as much as possible.
+
+72
+00:03:26,000 --> 00:03:29,000
+This will make our final fabric texture as clear as possible.
+
+73
+00:03:29,000 --> 00:03:30,000
+But on the contrary,
+
+74
+00:03:30,000 --> 00:03:33,000
+the calculation time it uses will be longer.
+
+75
+00:03:33,000 --> 00:03:37,000
+Then let's take a look at the UV quick photo tool.
+
+76
+00:03:37,000 --> 00:03:41,000
+It can save this current UV picture directly.
+
+77
+00:03:41,000 --> 00:03:43,000
+Next is the renovation pattern.
+
+78
+00:03:43,000 --> 00:03:45,000
+It can follow the current UV that is not good,
+
+79
+00:03:45,000 --> 00:03:47,000
+and its corresponding pattern,
+
+80
+00:03:47,000 --> 00:03:48,000
+hair line picture,
+
+81
+00:03:48,000 --> 00:03:49,000
+simulation picture,
+
+82
+00:03:49,000 --> 00:03:50,000
+transparent picture,
+
+83
+00:03:50,000 --> 00:03:51,000
+and other different material pictures,
+
+84
+00:03:51,000 --> 00:03:52,000
+are prepared and saved together.
+
+85
+00:03:52,000 --> 00:03:54,000
+Next is the UV movement.
+
+86
+00:03:54,000 --> 00:03:56,000
+We can select the important moving panel,
+
+87
+00:03:56,000 --> 00:03:58,000
+then click UV movement,
+
+88
+00:03:58,000 --> 00:04:01,000
+you can adjust the overall position of our panel.
+
+89
+00:04:01,000 --> 00:04:04,000
+You can enter its moving distance at the bottom.
+
+90
+00:04:04,000 --> 00:04:05,000
+Now it is moving a unit.
+
+91
+00:04:05,000 --> 00:04:07,000
+I modify it to 0.5 units.
+
+92
+00:04:07,000 --> 00:04:08,000
+At this time,
+
+93
+00:04:08,000 --> 00:04:10,000
+0.5 units are moved.
+
+94
+00:04:10,000 --> 00:04:14,000
+This tool is generally used to adjust the position of the overall UV picture.
+
+95
+00:04:14,000 --> 00:04:17,000
+After we have processed the UV picture of 3D clothing,
+
+96
+00:04:17,000 --> 00:04:19,000
+we can export it directly through the file,
+
+97
+00:04:19,000 --> 00:04:21,000
+and then export it to other 3D graphics.
+
+98
+00:04:21,000 --> 00:04:23,000
+In this process,
+
+99
+00:04:23,000 --> 00:04:26,000
+it will also export our UV picture.
+
+100
+00:04:26,000 --> 00:04:27,000
+For example,
+
+101
+00:04:27,000 --> 00:04:28,000
+we export OBZ,
+
+102
+00:04:28,000 --> 00:04:29,000
+after choosing,
+
+103
+00:04:29,000 --> 00:04:31,000
+it will open this window.
+
+104
+00:04:31,000 --> 00:04:33,000
+We can choose to export the thick one.
+
+105
+00:04:33,000 --> 00:04:34,000
+If it is thin,
+
+106
+00:04:34,000 --> 00:04:37,000
+the thickness of the fabric will not be exported.
+
+107
+00:04:37,000 --> 00:04:39,000
+So here we come to choose the thick one,
+
+108
+00:04:39,000 --> 00:04:42,000
+and also export the thickness of our fabric.
+
+109
+00:04:42,000 --> 00:04:43,000
+Next,
+
+110
+00:04:43,000 --> 00:04:45,000
+we can select the unified UV coordinates.
+
+111
+00:04:45,000 --> 00:04:48,000
+So it will export the UV information of our 3D clothing
+
+112
+00:04:48,000 --> 00:04:50,000
+and the UV picture together.
+
+113
+00:04:50,000 --> 00:04:53,000
+To make sure its texture can be exported normally,
+
+114
+00:04:53,000 --> 00:04:55,000
+let's take a look at the options.
+
+115
+00:04:55,000 --> 00:04:56,000
+First of all,
+
+116
+00:04:56,000 --> 00:04:58,000
+the first option is the size of the picture.
+
+117
+00:04:58,000 --> 00:05:00,000
+It can control the size of our UV picture.
+
+118
+00:05:00,000 --> 00:05:01,000
+Generally,
+
+119
+00:05:01,000 --> 00:05:03,000
+the larger the size of the image,
+
+120
+00:05:03,000 --> 00:05:05,000
+the clearer the picture will be,
+
+121
+00:05:05,000 --> 00:05:07,000
+but the size of the corresponding model will be larger.
+
+122
+00:05:07,000 --> 00:05:10,000
+Then the following is the fill texture.
+
+123
+00:05:10,000 --> 00:05:11,000
+The default is 5 pixels.
+
+124
+00:05:11,000 --> 00:05:12,000
+What's the use of this?
+
+125
+00:05:12,000 --> 00:05:14,000
+We can take a look at this example below.
+
+126
+00:05:14,000 --> 00:05:16,000
+Let's import an OBZ.
+
+127
+00:05:16,000 --> 00:05:17,000
+This OBZ
+
+128
+00:05:17,000 --> 00:05:19,000
+does not set the fill pixel.
+
+129
+00:05:19,000 --> 00:05:20,000
+In other words,
+
+130
+00:05:20,000 --> 00:05:22,000
+it does not have the advantage of that UV.
+
+131
+00:05:22,000 --> 00:05:23,000
+Then we can see that
+
+132
+00:05:23,000 --> 00:05:25,000
+it will appear in the place where the line is drawn.
+
+133
+00:05:25,000 --> 00:05:27,000
+The texture is not completely covered,
+
+134
+00:05:27,000 --> 00:05:29,000
+including the edge of the panel.
+
+135
+00:05:29,000 --> 00:05:30,000
+There is also this phenomenon.
+
+136
+00:05:30,000 --> 00:05:32,000
+This is its UV picture.
+
+137
+00:05:32,000 --> 00:05:34,000
+Then we can look at the UV picture of its line drawing.
+
+138
+00:05:34,000 --> 00:05:37,000
+The panel we export is a thick panel.
+
+139
+00:05:37,000 --> 00:05:39,000
+But according to the concept of our UV just now,
+
+140
+00:05:39,000 --> 00:05:41,000
+you should be able to understand that
+
+141
+00:05:41,000 --> 00:05:42,000
+this line drawing
+
+142
+00:05:42,000 --> 00:05:44,000
+has a thicker UV picture.
+
+143
+00:05:44,000 --> 00:05:45,000
+This way,
+
+144
+00:05:45,000 --> 00:05:47,000
+we can ensure that the whole line drawing
+
+145
+00:05:47,000 --> 00:05:48,000
+has a texture texture
+
+146
+00:05:48,000 --> 00:05:50,000
+so that it can have a texture package.
+
+147
+00:05:50,000 --> 00:05:51,000
+Therefore,
+
+148
+00:05:51,000 --> 00:05:52,000
+it needs a fill pixel here.
+
+149
+00:05:52,000 --> 00:05:53,000
+That is to say,
+
+150
+00:05:53,000 --> 00:05:54,000
+its UV pixel edge
+
+151
+00:05:54,000 --> 00:05:56,000
+has to have a certain protrusion.
+
+152
+00:05:56,000 --> 00:05:57,000
+In this way,
+
+153
+00:05:57,000 --> 00:05:58,000
+we can ensure that
+
+154
+00:05:58,000 --> 00:05:59,000
+the whole model
+
+155
+00:05:59,000 --> 00:06:00,000
+has a texture package.
+
+156
+00:06:00,000 --> 00:06:01,000
+Then below,
+
+157
+00:06:01,000 --> 00:06:03,000
+let's import an OBZ.
+
+158
+00:06:03,000 --> 00:06:04,000
+This OBZ
+
+159
+00:06:04,000 --> 00:06:06,000
+is the fill texture of 5 pixels.
+
+160
+00:06:06,000 --> 00:06:07,000
+Then you can see that
+
+161
+00:06:07,000 --> 00:06:09,000
+after the fill texture is performed,
+
+162
+00:06:09,000 --> 00:06:11,000
+the line drawing will become normal.
+
+163
+00:06:11,000 --> 00:06:12,000
+But
+
+164
+00:06:12,000 --> 00:06:13,000
+we will find that
+
+165
+00:06:13,000 --> 00:06:14,000
+some black edges
+
+166
+00:06:14,000 --> 00:06:15,000
+will appear in the pocket
+
+167
+00:06:15,000 --> 00:06:16,000
+and the waist part.
+
+168
+00:06:16,000 --> 00:06:17,000
+And this black edge
+
+169
+00:06:17,000 --> 00:06:18,000
+is because
+
+170
+00:06:18,000 --> 00:06:19,000
+our UV picture
+
+171
+00:06:19,000 --> 00:06:20,000
+is too close.
+
+172
+00:06:20,000 --> 00:06:21,000
+This is the UV picture
+
+173
+00:06:21,000 --> 00:06:22,000
+of the second model.
+
+174
+00:06:22,000 --> 00:06:23,000
+You can see that
+
+175
+00:06:23,000 --> 00:06:25,000
+after selecting the fill pixel,
+
+176
+00:06:25,000 --> 00:06:27,000
+its pixel edge will appear.
+
+177
+00:06:27,000 --> 00:06:28,000
+Then our drawstring
+
+178
+00:06:28,000 --> 00:06:31,000
+can be covered by the finished texture.
+
+179
+00:06:31,000 --> 00:06:32,000
+But it also appears
+
+180
+00:06:32,000 --> 00:06:33,000
+in a collision
+
+181
+00:06:33,000 --> 00:06:34,000
+with other panels,
+
+182
+00:06:34,000 --> 00:06:35,000
+so there will be
+
+183
+00:06:35,000 --> 00:06:37,000
+a partial black edge phenomenon.
+
+184
+00:06:37,000 --> 00:06:38,000
+Therefore,
+
+185
+00:06:38,000 --> 00:06:39,000
+for some of these panels,
+
+186
+00:06:39,000 --> 00:06:40,000
+the 3D model
+
+187
+00:06:40,000 --> 00:06:41,000
+will be thicker.
+
+188
+00:06:41,000 --> 00:06:42,000
+So when we are doing
+
+189
+00:06:42,000 --> 00:06:43,000
+UV arrangement,
+
+190
+00:06:43,000 --> 00:06:44,000
+we should pay attention
+
+191
+00:06:44,000 --> 00:06:45,000
+to a gap
+
+192
+00:06:45,000 --> 00:06:46,000
+between the panels.
+
+193
+00:06:46,000 --> 00:06:47,000
+For example,
+
+194
+00:06:47,000 --> 00:06:48,000
+if we want to
+
+195
+00:06:48,000 --> 00:06:49,000
+fill the space
+
+196
+00:06:49,000 --> 00:06:50,000
+between the panels,
+
+197
+00:06:50,000 --> 00:06:51,000
+we can use
+
+198
+00:06:51,000 --> 00:06:52,000
+the UV arrangement tool.
+
+199
+00:06:52,000 --> 00:06:53,000
+Then here,
+
+200
+00:06:53,000 --> 00:06:54,000
+we can input 0.005
+
+201
+00:06:54,000 --> 00:06:55,000
+where we fill the space.
+
+202
+00:06:55,000 --> 00:06:56,000
+In this way,
+
+203
+00:06:56,000 --> 00:06:57,000
+there will be a little more
+
+204
+00:06:57,000 --> 00:06:58,000
+gap between our panels.
+
+205
+00:06:58,000 --> 00:06:59,000
+We can see that
+
+206
+00:06:59,000 --> 00:07:00,000
+now there is a gap
+
+207
+00:07:00,000 --> 00:07:01,000
+between the panels.
+
+208
+00:07:01,000 --> 00:07:02,000
+Obviously,
+
+209
+00:07:02,000 --> 00:07:03,000
+there are more gaps.
+
+210
+00:07:03,000 --> 00:07:04,000
+Then the gap
+
+211
+00:07:04,000 --> 00:07:05,000
+between our drawstring panels
+
+212
+00:07:05,000 --> 00:07:06,000
+has also become larger.
+
+213
+00:07:06,000 --> 00:07:07,000
+At this time,
+
+214
+00:07:07,000 --> 00:07:08,000
+it will count the pixel fill
+
+215
+00:07:08,000 --> 00:07:09,000
+and it will not affect
+
+216
+00:07:09,000 --> 00:07:10,000
+our drawstring panels.
+
+217
+00:07:10,000 --> 00:07:11,000
+Then
+
+218
+00:07:11,000 --> 00:07:12,000
+we will
+
+219
+00:07:12,000 --> 00:07:13,000
+make this OBZ
+
+220
+00:07:13,000 --> 00:07:14,000
+one-touch.
+
+221
+00:07:14,000 --> 00:07:15,000
+The same choice is for the thick one.
+
+222
+00:07:15,000 --> 00:07:16,000
+Then
+
+223
+00:07:16,000 --> 00:07:17,000
+the pixel is filled
+
+224
+00:07:17,000 --> 00:07:18,000
+with five pixels.
+
+225
+00:07:18,000 --> 00:07:19,000
+Click OK.
+
+226
+00:07:19,000 --> 00:07:20,000
+Then
+
+227
+00:07:20,000 --> 00:07:21,000
+let's open
+
+228
+00:07:21,000 --> 00:07:22,000
+the OBZ we just made.
+
+229
+00:07:22,000 --> 00:07:23,000
+Here
+
+230
+00:07:23,000 --> 00:07:24,000
+we can see
+
+231
+00:07:24,000 --> 00:07:25,000
+that its drawstring
+
+232
+00:07:25,000 --> 00:07:26,000
+is normally displayed.
+
+233
+00:07:26,000 --> 00:07:27,000
+Moreover,
+
+234
+00:07:27,000 --> 00:07:28,000
+there is no
+
+235
+00:07:28,000 --> 00:07:29,000
+a situation
+
+236
+00:07:29,000 --> 00:07:30,000
+of covering each other
+
+237
+00:07:30,000 --> 00:07:31,000
+between UVs.
+
+238
+00:07:31,000 --> 00:07:32,000
+This is its UV picture.
+
+239
+00:07:32,000 --> 00:07:33,000
+We can see
+
+240
+00:07:33,000 --> 00:07:34,000
+that
+
+241
+00:07:34,000 --> 00:07:35,000
+there is no
+
+242
+00:07:35,000 --> 00:07:36,000
+covering
+
+243
+00:07:36,000 --> 00:07:37,000
+between each UV.
+
+244
+00:07:37,000 --> 00:07:38,000
+This is the content
+
+245
+00:07:38,000 --> 00:07:39,000
+of our UV processing techniques.
+
+246
+00:07:39,000 --> 00:07:40,000
+Thank you for watching.
+
+247
+00:07:45,000 --> 00:07:48,000
+Subtitles by the Amara.org community
+

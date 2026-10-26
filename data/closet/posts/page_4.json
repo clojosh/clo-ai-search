@@ -1,51 +1,102 @@
 [
     {
-        "id": "69c1d7711cc74a31b7e6d35d309eec19",
-        "url": "https://connect.clo-set.com/community/post/69c1d7711cc74a31b7e6d35d309eec19",
-        "title": "Graded PDF issue",
-        "content": "I am trying to export my graded patterns from CLO 3D to Adobe Illustrator to add final text and markings. However, I am facing two major issues:\n\n  1. When I export a graded PDF, only the **base size** is visible when I open it in Illustrator.\n\n  2. If I use the **'Print Layout'** method to bring all graded sizes into Illustrator, only the **base size** has its notches. The notches for all other sizes are missing or not transferred from CLO.\n\n\n\n\nI have spent a week trying every possible setting and method, but I cannot get all sizes with their respective notches into Illustrator. I urgently need help to resolve this.\n\nThank you in advance\n\n\n### Community Post Comments:\nComment 1: We understand your frustration. This is a highly requested feature and it is currently on our roadmap. While I don't have a specific timeline to share yet, please stay tuned for future updates.\n\nComment 2: Hi there,Currently, we don't support exporting all grading sizes into a single PDF. To ensure you have the full information for each size, please export them individually, one by one.\nReply 1: Hi,Thank you for your response. However, I must express that exporting each size individually is an extremely time-consuming and labor-intensive workaround, especially when working with a high number of grading sizes. This manual process significantly increases the risk of human error and slows down our production workflow.As a professional user, I believe a \"Single PDF Export for all grading sizes\" (either as nested lines or layered PDF) is a fundamental requirement for a modern 3D fashion design software.Could you please provide information on the following:Is there a plan to include a \"Nested PDF Export\" or \"Multi-size PDF\" feature in the upcoming 2026 updates?Is this feature currently on your development roadmap (R&amp;D stage)?This improvement would save us hours of repetitive work. Looking forward to your updates.",
-        "content_description": "This web page aims to provide solutions and troubleshooting tips for users experiencing issues exporting graded patterns from CLO 3D to Adobe Illustrator, specifically regarding visibility of sizes and transfer of notches.",
-        "created_at": "2026-02-01T16:29:12.377Z",
-        "category": 215,
+        "id": "3de990f60a4142f89d89c71343351c6d",
+        "url": "https://connect.clo-set.com/community/post/3de990f60a4142f89d89c71343351c6d",
+        "title": "New in CLO-SET: Meet CLOFAB, Your Built-In Fabric Digitization Tool",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202608/3de990f60a4142f89d89c71343351c6d/images/01b911185c4f4426a43ed8bb9fc5a010whatsnew-1-clofab.png)![](https://storagefiles.clo-set.com/public/community/202607/3de990f60a4142f89d89c71343351c6d/images/3bfec9933aa8477e93c17e00a36fba21CLOFAB%20in%20CLO-SET.png)Accurate digital fabrics are the foundation of every reliable 3D garment — and building them should be simple for everyone in the supply chain, not just 3D specialists.\n\nToday we’re introducing **CLOFAB in CLO-SET** : a web-based fabric digitization tool that lets you create, register, and share digital fabric assets right in your browser. No separate software installation, and no CLO license required. Scan physical samples with the AI-powered **CLO zFab Kit** , or start from fabric images you already have — either way, CLOFAB turns them into simulation-ready digital fabrics in minutes.\n\nWhether you’re a fabric mill building a digital library for your buyers, a vendor responding to digital-first RFQs, or a brand digitizing seasonal materials, CLOFAB works right inside the platform your team already uses.\n\n![a794c90538d7487a9461c9a9d53fb084](https://storagefiles.clo-set.com/public/community/202607/3de990f60a4142f89d89c71343351c6d/images/a794c90538d7487a9461c9a9d53fb084image.png)\n\n## Why We Built CLOFAB into CLO-SET\n\nIf you’ve tried digitizing fabrics before, you know the frustrations: results that vary from operator to operator, equipment that takes training to run, and outputs trapped in specialist tools your partners can’t open. Meanwhile, suppliers and mills face growing pressure to deliver digital fabric data alongside physical samples — and adopting a whole new toolchain just for digitization creates friction for everyone.\n\nCLOFAB was built to remove exactly that friction. It runs on the web inside CLO-SET — no CLO license needed — so anyone with a CLO-SET account can digitize fabrics and share them instantly with design teams, buyers, and partners. Behind it sits the **CLO zFab Kit** : the zFab Cutter, Scanner, and Draper work together to measure how a fabric looks and behaves from one small round swatch, guided by AI models built on fabric data from CLO and swatchbook. For your team, that means shipping fewer physical swatches, approving materials sooner, and making decisions on data everyone can trust.\n\n## What You Can Do with CLOFAB\n\n### Generate Seamless Fabric Maps with AI Auto Tiling\n\nCapture high-resolution PBR maps — including Diffuse, Normal, Roughness, Opacity, and Displacement — from physical samples with the **CLO zFab Scanner** , or open your existing map images.\n\nFrom there, CLOFAB’s **Auto Tiling** uses AI pattern recognition to do the hard part for you: click and drag to select a repeat area on your map, and CLOFAB automatically finds the optimal repeat region and previews the seamless, tileable result. Need more control? Switch to Manual Mode to define the repeat area yourself, and use the Equalize option to smooth out uneven brightness across the tiled result.\n\n![](https://support.clo-set.com/hc/article_attachments/60238599476761)\n\n### Generate Accurate Drape from Fabric Specs\n\nA digital fabric isn’t complete without physical properties. With CLOFAB’s drape generation, simply enter your **fabric type, composition, weight, and thickness** — and CLOFAB computes the physical property data and previews the drape instantly. You can review the map and physical properties side by side, then fine-tune individual values in Advanced Details when needed.\n\n![](https://support.clo-set.com/hc/article_attachments/60238599478681)\n\n### Upload and Share Fabrics Instantly\n\nOnce your maps and physical properties are ready, upload them to CLO-SET as a fabric file in a few clicks. Add the fabric name, supplier, and owner information, choose a Workroom or Company Library, and your digital fabric is immediately available to your entire team — versioned, searchable, and ready to use in 3D garments, with no conversions or cleanup in between.\n\n## Built for Suppliers, Loved by Brands\n\nFor **fabric suppliers and mills** , CLOFAB is the fastest way to build a digital fabric library your customers can actually use — without investing in new software or training. For **brands and design teams** , it means receiving accurate, simulation-ready fabric data from partners directly in CLO-SET, cutting out file conversions and back-and-forth emails.\n\nThe result: a faster, more connected 3D workflow across your entire supply chain.\n\n## How to Get Started\n\nCLOFAB is available now in CLO-SET. To try it, click the **CLOFAB** button in the bottom-left corner of your dashboard, or select **\\+ NEW → Create New Fabric** in any Workroom or Company Library.\n\nFor step-by-step instructions, check out the [CLOFAB in CLO-SET guide](https://support.clo-set.com/hc/en-us/articles/60222735538713-CLOFAB-in-CLO-SET) in our Help Center. The CLO zFab Kit is now available for order worldwide — pricing, configuration, and demo requests at [zfabkit.clo3d.com](http://zfabkit.clo3d.com). You can also read the [full announcement](https://clo3d.com/en/resources/notices/1439) on the CLO Newsroom.\n\n![587edb86825143e1b9b88613c3ed92b7](https://storagefiles.clo-set.com/public/community/202607/3de990f60a4142f89d89c71343351c6d/images/587edb86825143e1b9b88613c3ed92b7image.png)\n\n## FAQ\n\n**What is CLOFAB?** CLOFAB is a web-based fabric digitization tool in CLO-SET that turns fabric data captured with the CLO zFab Kit — or your existing fabric images — into digital fabric assets you can register and share, with no separate software installation.\n\n**Do I need the CLO zFab Kit to use CLOFAB?** The zFab Kit (Cutter, Scanner, Draper) is at the core of the CLOFAB workflow — it captures high-resolution PBR maps and physical property data directly from physical fabric samples. That said, if you already have fabric images, you can generate seamless maps from them using AI Auto Tiling without the hardware.\n\n**Do I need a CLO software license?** No. CLOFAB runs entirely on the web in CLO-SET, and the zFab Kit operates as a standalone solution — no CLO license is required.\n\n**Who is CLOFAB for?** Fabric suppliers, mills, and brand design teams — anyone who needs to create or work with accurate digital fabrics in a 3D fashion workflow.\n\n**Where do my digitized fabrics go?** Fabrics upload directly to the CLO-SET Workroom or Company Library you choose, where they’re instantly shareable with your team.\n\n* * *\n\n_Ready to digitize your first fabric?_[_Log in to CLO-SET_](https://www.clo-set.com) _and open CLOFAB today._",
+        "content_description": "CLOFAB in CLO-SET is a web-based tool that enables fabric suppliers and brands to easily create, digitize, and share accurate, simulation-ready digital fabrics within their existing 3D design workflow—no software installation or CLO license required.",
+        "source": "Connect Community",
+        "article_created_at": "2026-07-21T07:34:18.579Z",
+        "article_updated_at": "2026-07-21T07:34:18.579Z",
+        "category": 100,
         "tags": [
-            "CLO-SET",
-            "CLO",
-            "Pattern",
-            "Import_Export"
+            "CLO-SET"
         ]
     },
     {
-        "id": "fb4de342369a475186390fa950badb12",
-        "url": "https://connect.clo-set.com/community/post/fb4de342369a475186390fa950badb12",
-        "title": "Interesting embroidery",
-        "content": "![50c4ab9374b7416baf4b9490088a240c](https://storagefiles.clo-set.com/public/community/202602/fb4de342369a475186390fa950badb12/images/50c4ab9374b7416baf4b9490088a240cimage.png)![373178a683e941688a2356a1be14431c](https://storagefiles.clo-set.com/public/community/202602/fb4de342369a475186390fa950badb12/images/373178a683e941688a2356a1be14431cimage.png)I added small horse - head embroidery to the diamond - shaped quilting patterns to enhance the texture. If you're interested, you can visit my homepage for more details!\n\n![704bf18bdfdf4d8bb9f10d55d9d2e08a](https://storagefiles.clo-set.com/public/community/202602/fb4de342369a475186390fa950badb12/images/704bf18bdfdf4d8bb9f10d55d9d2e08aimage.png)\n\n\n### Community Post Comments:\nComment 1: Yeah. I love your matching series😍\nReply 1: ❤️❤️❤️\n\nComment 2: I love the cute horse embroidery😍\nReply 1: Haha, yeah, if you're interested, you really should check out my homepage. There are still quite a few details I haven't shown, and I guarantee they'll make your eyes light up~❤️",
-        "content_description": "Explore the unique texture of my handcrafted quilts featuring small horse-head embroidery, and visit my homepage for more details!",
-        "created_at": "2026-02-01T15:37:44.217Z",
-        "category": 240,
+        "id": "85792f8190014c8a8bccf7874721686f",
+        "url": "https://connect.clo-set.com/community/post/85792f8190014c8a8bccf7874721686f",
+        "title": "My fashion design",
+        "content": "![f9c22e8c5d574c069dcba0739c9ba360](https://storagefiles.clo-set.com/public/community/202607/85792f8190014c8a8bccf7874721686f/images/f9c22e8c5d574c069dcba0739c9ba360IMG_20260719_214324_418.jpg)",
+        "content_description": "This webpage showcases a stylish, modern backpack designed for everyday use, highlighting its features and versatility.",
+        "source": "Connect Community",
+        "article_created_at": "2026-07-20T13:57:04.65Z",
+        "article_updated_at": "2026-07-20T13:57:04.65Z",
+        "category": 210,
         "tags": [
             "CLO",
-            "Rendering",
-            "Photoshop",
+            "Avatar",
+            "Texture",
+            "LiveSync",
+            "Maya",
             "CLO-SET",
-            "CONNECT",
-            "AI"
+            "Houdini",
+            "Cinema4D"
         ]
     },
     {
-        "id": "7bc2768e17604b3f85cb8f04be4318ac",
-        "url": "https://connect.clo-set.com/community/post/7bc2768e17604b3f85cb8f04be4318ac",
-        "title": "Vintage Harley classic Leather Biker Jacket",
-        "content": "![c4fce80a631c402c9a32d2d78f6f403f](https://storagefiles.clo-set.com/public/community/202601/7bc2768e17604b3f85cb8f04be4318ac/images/c4fce80a631c402c9a32d2d78f6f403fChatGPT%20Image%2027%20%D9%8A%D9%86%D8%A7%D9%8A%D8%B1%202026%D8%8C%2005_00_55%20%D9%85.png)![ec9c86c95278419f9d34fc1676808653](https://storagefiles.clo-set.com/public/community/202601/7bc2768e17604b3f85cb8f04be4318ac/images/ec9c86c95278419f9d34fc1676808653ChatGPT%20Image%2027%20%D9%8A%D9%86%D8%A7%D9%8A%D8%B1%202026%D8%8C%2004_56_51%20%D9%85.png)FILE IN STORE>>>\n",
-        "content_description": "Explore our curated collection of exclusive items available for purchase, designed to elevate your lifestyle and express your unique style.",
-        "created_at": "2026-01-27T14:26:41.737Z",
+        "id": "44da9dcc782242bdb64522c2402d36c9",
+        "url": "https://connect.clo-set.com/community/post/44da9dcc782242bdb64522c2402d36c9",
+        "title": "new clo3d dress",
+        "content": "![b8cc45313ac445d892f1821411fd4f7d](https://storagefiles.clo-set.com/public/community/202607/44da9dcc782242bdb64522c2402d36c9/images/b8cc45313ac445d892f1821411fd4f7dIMG_0519.jpeg)",
+        "content_description": "Showcasing a delicious, freshly prepared sandwich featuring crispy bacon, fresh lettuce, and ripe tomato on toasted bread.",
+        "source": "Connect Community",
+        "article_created_at": "2026-07-19T20:05:56.155Z",
+        "article_updated_at": "2026-07-19T20:05:56.155Z",
+        "category": 210,
+        "tags": [
+            "CLO-SET"
+        ]
+    },
+    {
+        "id": "788a1b06c925456a861c221f1e3a4e23",
+        "url": "https://connect.clo-set.com/community/post/788a1b06c925456a861c221f1e3a4e23",
+        "title": "Cannot Sign in!",
+        "content": "I cannot sign in Marvelous Designer. Could someone help me. It keeps telling me my passport is wrong or I did some intergrated stuff. It feel like a scam.\n\n### Community Post Comments:\nComment 1: In addition, please double-check if you have downloaded the correct installer type. Since you purchased a Personal License, logging into the Enterprise Installer will trigger an error message.\n\nComment 2: I there. I am on the CLO side, not MD, but I can try and assist.First I guess you mean password and not passport. Did you double check your spelling and that caps lock is not on? Do you have a screenshot of the alert you are receiving that you can please share?Not sure what you mean by \"did some integrated stuff\"Please try and check the above or reset password. If that does not help please share an image of the login issue you are receiving",
+        "content_description": "This page provides troubleshooting assistance for users unable to sign in to Marvelous Designer due to passport errors or integration issues.",
+        "source": "Connect Community",
+        "article_created_at": "2026-07-17T13:18:57.434Z",
+        "article_updated_at": "2026-07-17T13:18:57.434Z",
+        "category": 220,
+        "tags": [
+            "MarvelousDesigner",
+            "CLO-SET"
+        ]
+    },
+    {
+        "id": "520ac6d9133845849ed059fc3ab77d1e",
+        "url": "https://connect.clo-set.com/community/post/520ac6d9133845849ed059fc3ab77d1e",
+        "title": "Structured Velvet Embroidered Dress",
+        "content": "## _![91f331e4170044108cc479f464d35954](https://storagefiles.clo-set.com/public/community/202607/520ac6d9133845849ed059fc3ab77d1e/images/91f331e4170044108cc479f464d35954IMG_1617.jpeg)_A fusion of Neo-Medieval power-silhouette and traditional Slavic-folk embroidery, reimagined through digital high-fashion lens.”\n\nContact: zahrakarimzadeh.zk@gmail.com",
+        "content_description": "Showcasing a unique fusion of Neo-Medieval silhouettes and traditional Slavic folk embroidery reinterpreted through a digital high-fashion perspective.",
+        "source": "Connect Community",
+        "article_created_at": "2026-07-16T08:22:28.719Z",
+        "article_updated_at": "2026-07-16T08:22:28.719Z",
         "category": 210,
         "tags": [
             "CLO",
             "MarvelousDesigner",
             "CLO-SET",
+            "Substance",
             "CONNECT",
-            "JINNY",
-            "AI"
+            "Material",
+            "Texture",
+            "3dfashion",
+            "digitalfashion"
+        ]
+    },
+    {
+        "id": "ff0bd53d01e64f7788db91074a590f84",
+        "url": "https://connect.clo-set.com/community/post/ff0bd53d01e64f7788db91074a590f84",
+        "title": "How to Optimize Fashion Product Development with Practical 3D Workflow Tips - 2026 CLO-SET Webinar",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202608/ff0bd53d01e64f7788db91074a590f84/images/b440a2b815ba463b98a070f831646d64whatsnew-2-webinar.png)![](https://storagefiles.clo-set.com/public/community/202607/ff0bd53d01e64f7788db91074a590f84/images/092af05277b64375ac4f1c44654ace0a2026%20CLO-SET%20webinar%20FR.png)Fashion product development involves much more than creating 3D garments. Teams collaborate across design, development, merchandising, and production, and the workflow connecting them determines how much time goes to manual work instead of decisions.\n\nIn our 10th CLO-SET Skill-up Webinar, we shared practical tips and productivity features for each stage of product development: organizing product information, creating samples, reviewing collections, and measuring development performance.\n\nAfter the global session, we also held localized webinars for several regions so users could learn these workflows in their preferred language. All recordings are now available on the [CLO-SET YouTube channel](https://www.youtube.com/watch?v=_MzGE34D2bE&list=PL8MWMK6wOJCm3wTyfESanrwpjKUyGT2zN&index=4), where you can revisit any session and watch the full demonstrations.\n\nBelow are the workflow improvements covered in the series.\n\n**Key takeaways**\n\n  * Build a structured product foundation before design begins\n\n  * Find and reuse assets more efficiently during sample creation\n\n  * Speed up sample reviews with AI-powered collaboration tools\n\n  * Standardize collection reviews and merchandising workflows\n\n  * Measure product development performance with actionable analytics\n\n\n\n\n**1\\. Build better product foundations (product development)**\n\nFeatures covered\n\n  * Enhanced Compatible Formats\n\n  * Placeholder Creation\n\n  * Overview Tab\n\n  * BOM & POM Tab\n\n\n\n\nEfficient product development starts with organized product information, not the first 3D garment. Before a design is finalized, teams collect inspiration, technical references, materials, and product specifications from multiple sources, and development goes smoother when all of it lives in one workspace.\n\nCLO-SET supports this with broad file format compatibility, placeholder styles, and structured product data in the Overview, BOM, and POM tabs. Teams can set up product data early and keep it connected as the design evolves.\n\n**2\\. Speed up sample creation (sample creation)**\n\nFeatures covered\n\n  * Universal Browser (CLO3D)\n\n  * Workspace Browser\n\n  * Tag & Category\n\n  * Advanced Search\n\n\n\n\nEfficient sample creation depends as much on finding the right assets as on designing quickly. Digital libraries keep growing, and digging through folders stops scaling. Tags, categories, filters, and image-based search let designers locate fabrics, graphics, and reusable styles without breaking their workflow, and direct access to shared libraries from both CLO and CLO-SET cuts extra steps during sample creation.\n\n**3\\. Make sample reviews faster (sample review)**\n\nFeatures covered\n\n  * Quality Check Bot\n\n  * Enhanced Viewer\n\n  * AI Translation\n\n  * Linked Content\n\n\n\n\nReview cycles are often the biggest bottleneck in fashion product development. Instead of reviewing static images or checking every garment by hand, teams can inspect interactive 3D samples, verify construction details, and automate repetitive quality checks. AI translation makes collaboration easier for global teams, and Linked Content keeps related assets and product versions traceable.\n\nWant to see these workflows in action? Watch the complete recordings on the CLO-SET YouTube channel for the full demonstration of each workflow in this article.\n\n**[EN Session]**\n\nYouTube Video: https://www.youtube.com/watch?v=_MzGE34D2bE?start=0\n\n**[CN Session]**\n\nYouTube Video: https://www.youtube.com/watch?v=tYf8slmKAfA?start=0\n\n**[FR Session]**\n\nYouTube Video: https://www.youtube.com/watch?v=Yz6RRcMgzcM?start=0\n\n**[KR Session]**\n\nYouTube Video: https://www.youtube.com/watch?v=aCcXreT7JIw?start=0\n\n**[ES Session]**\n\nYouTube Video: https://www.youtube.com/watch?v=Ws_tL7Or640?start=4",
+        "content_description": "This webpage provides an overview and access to CLO-SET’s Skill-up Webinar series, showcasing practical tips and productivity tools to streamline fashion product development workflows from design to review.",
+        "source": "Connect Community",
+        "article_created_at": "2026-07-14T04:54:03.806Z",
+        "article_updated_at": "2026-07-14T04:54:03.806Z",
+        "category": 100,
+        "tags": [
+            "CLO-SET"
         ]
     }
 ]

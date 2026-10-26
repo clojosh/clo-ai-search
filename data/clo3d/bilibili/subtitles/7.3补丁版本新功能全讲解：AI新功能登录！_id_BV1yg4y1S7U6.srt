@@ -1,0 +1,2472 @@
+1
+00:00:00,000 --> 00:00:21,000
+Now let's talk about the new features and functional optimization of the 7.3 pudding version, mainly explained in four aspects, the main functions, 2D, materials and rendering.
+
+2
+00:00:21,000 --> 00:00:28,000
+Let's first introduce the main functions. The first main function is the AI sticker generator.
+
+3
+00:00:28,000 --> 00:00:34,000
+When creating a sticker, there is no need to edit it. For example, by entering key words to delete the background.
+
+4
+00:00:34,000 --> 00:00:42,000
+You can also try to look at the created sticker pattern on 3D clothing to ensure that the sticker pattern matches the 3D clothing.
+
+5
+00:00:42,000 --> 00:00:49,000
+Currently, the AI sticker generator can easily create stickers with embroidery, design and wave art characteristics.
+
+6
+00:00:49,000 --> 00:00:56,000
+The current AI sticker generator is a public version of the function. Future use policies may change.
+
+7
+00:00:56,000 --> 00:01:00,000
+Next, let's take a look at how to open the AI sticker generator.
+
+8
+00:01:00,000 --> 00:01:04,000
+There are two ways here, corresponding to different application scenarios.
+
+9
+00:01:04,000 --> 00:01:12,000
+First, let's look at the first way. If you want to create a new sticker pattern, you can click on the sticker in the object window.
+
+10
+00:01:12,000 --> 00:01:17,000
+Then click on the magic bar icon above, which is the AI sticker generator.
+
+11
+00:01:17,000 --> 00:01:18,000
+The second way is.
+
+12
+00:01:18,000 --> 00:01:28,000
+If you want to use the AI sticker generator on the sticker that has already been added, you can select the desired sticker.
+
+13
+00:01:28,000 --> 00:01:34,000
+Then click on the attribute editor, the AI sticker generator next to the default parameters.
+
+14
+00:01:34,000 --> 00:01:37,000
+Next, let's take a look at the interface of the AI sticker generator.
+
+15
+00:01:37,000 --> 00:01:41,000
+First, let's look at the first option, the pattern type.
+
+16
+00:01:41,000 --> 00:01:46,000
+In the pattern type, we can create a sticker pattern that is closer to what we want.
+
+17
+00:01:46,000 --> 00:01:53,000
+After the pattern type selects the art style, you can select the style to be reflected in the sticker from the drop-down menu.
+
+18
+00:01:53,000 --> 00:01:57,000
+Currently, there are three styles of embroidery, fashion, wave art.
+
+19
+00:01:57,000 --> 00:02:07,000
+If you want to create one that is not affected by any pattern type, and only creates AI stickers through hints, the pattern type can be selected as 5.
+
+20
+00:02:07,000 --> 00:02:14,000
+If you want to create a sticker with a transparent background, you need to select the option of a transparent background.
+
+21
+00:02:14,000 --> 00:02:16,000
+Next is the key word prompt.
+
+22
+00:02:16,000 --> 00:02:22,000
+In the key word prompt box, enter the key word of the pattern you want to create.
+
+23
+00:02:22,000 --> 00:02:27,000
+The AI sticker will be previewed at the bottom after creation.
+
+24
+00:02:27,000 --> 00:02:33,000
+If you click on the history record option on the right, it will display the history of the creation.
+
+25
+00:02:33,000 --> 00:02:39,000
+In addition, you can also check the options and key words selected when creating the sticker.
+
+26
+00:02:39,000 --> 00:02:43,000
+Note that the history record will only be retained until the cloud software is closed.
+
+27
+00:02:43,000 --> 00:02:44,000
+Therefore, the history record will only be retained until the cloud software is closed.
+
+28
+00:02:44,000 --> 00:02:47,000
+Therefore, the history record will only be retained until the cloud software is closed.
+
+29
+00:02:47,000 --> 00:02:50,000
+Next, let's take a look at the function use process.
+
+30
+00:02:50,000 --> 00:02:53,000
+The pattern type is no exception.
+
+31
+00:02:53,000 --> 00:02:57,000
+Next, we will create an AI sticker by entering the key word.
+
+32
+00:02:57,000 --> 00:03:03,000
+In the key word prompt box, enter the key word that describes the image you want to create.
+
+33
+00:03:03,000 --> 00:03:05,000
+Here is a tip.
+
+34
+00:03:05,000 --> 00:03:08,000
+Here are the tips for entering the key words.
+
+35
+00:03:08,000 --> 00:03:13,000
+First, in terms of language, the AI sticker generator supports languages ​​in more than 50 countries.
+
+36
+00:03:13,000 --> 00:03:16,000
+We can use any language provided by cloud.
+
+37
+00:03:16,000 --> 00:03:22,000
+Here, it is recommended that you enter the key word in English, because the English prompt is relatively accurate.
+
+38
+00:03:22,000 --> 00:03:29,000
+In addition, when entering the key word, it is recommended to enter a word instead of a long descriptive sentence.
+
+39
+00:03:29,000 --> 00:03:32,000
+A long sentence may cause the image to be distorted.
+
+40
+00:03:32,000 --> 00:03:36,000
+When entering the key word, please use the dot or the space bar to separate.
+
+41
+00:03:36,000 --> 00:03:39,000
+Here we enter the key word.
+
+42
+00:03:39,000 --> 00:03:42,000
+If you want to emphasize the characteristics of certain key words, you can use the space bar.
+
+43
+00:03:42,000 --> 00:03:44,000
+If you want to emphasize the characteristics of certain key words, you can use the space bar.
+
+44
+00:03:44,000 --> 00:03:47,000
+After using the space bar, the number of key words will increase.
+
+45
+00:03:47,000 --> 00:03:52,000
+After entering the question, click on the Create button to create a sticker.
+
+46
+00:03:52,000 --> 00:03:58,000
+When creating an AI sticker, you can see the current server link and the progress of the creation.
+
+47
+00:03:58,000 --> 00:04:05,000
+When creating a picture, if there are more users in line, you may need to wait for a longer time to complete it.
+
+48
+00:04:05,000 --> 00:04:11,000
+In this case, you can use the arrow button in the upper right corner of the unit to minimize the window.
+
+49
+00:04:12,000 --> 00:04:18,000
+Once the sticker is created, there will be a text prompt display to make it useful.
+
+50
+00:04:18,000 --> 00:04:23,000
+After completing the creation of the AI sticker image, click on the App button.
+
+51
+00:04:23,000 --> 00:04:27,000
+The created image will be added to the object window.
+
+52
+00:04:27,000 --> 00:04:31,000
+This will make the new image an application for the sticker.
+
+53
+00:04:31,000 --> 00:04:36,000
+If you want to check the effect of the existing sticker on the costume, you need to select it in the object window first.
+
+54
+00:04:36,000 --> 00:04:40,000
+If you want to check the effect of the existing sticker on the costume, you need to select it in the object window first.
+
+55
+00:04:40,000 --> 00:04:43,000
+Then drag it to the desired position of the 3D costume.
+
+56
+00:04:43,000 --> 00:04:48,000
+You can easily check if it is suitable for the costume.
+
+57
+00:04:48,000 --> 00:04:51,000
+Next, we will use embroidery as an example.
+
+58
+00:04:51,000 --> 00:04:55,000
+We select the art style in the pattern type.
+
+59
+00:04:55,000 --> 00:04:57,000
+Select the embroidery in the drop-down window.
+
+60
+00:04:57,000 --> 00:04:59,000
+Select the transparent background.
+
+61
+00:04:59,000 --> 00:05:02,000
+Create an embroidery sticker with a transparent background.
+
+62
+00:05:02,000 --> 00:05:05,000
+Enter the keyword.
+
+63
+00:05:05,000 --> 00:05:08,000
+Then click on the Create button.
+
+64
+00:05:08,000 --> 00:05:14,000
+You can apply the created sticker to the 3D costume immediately by clicking on the application.
+
+65
+00:05:14,000 --> 00:05:17,000
+You can see the effect of the sticker.
+
+66
+00:05:17,000 --> 00:05:21,000
+In order to generate as many new diversified images as possible,
+
+67
+00:05:21,000 --> 00:05:27,000
+even with the same prompt, the AI sticker generator will generate different results every time.
+
+68
+00:05:27,000 --> 00:05:29,000
+If you want to update the prompt at the same time,
+
+69
+00:05:29,000 --> 00:05:33,000
+you can keep the previous generated result characteristics as possible.
+
+70
+00:05:33,000 --> 00:05:36,000
+You can click on the true icon.
+
+71
+00:05:36,000 --> 00:05:38,000
+The mouse will be suspended on the true icon.
+
+72
+00:05:38,000 --> 00:05:41,000
+It will display the prompt of the tool.
+
+73
+00:05:41,000 --> 00:05:44,000
+Keep the prompt result to generate similar results.
+
+74
+00:05:44,000 --> 00:05:47,000
+Just as the description in the tool prompt.
+
+75
+00:05:47,000 --> 00:05:49,000
+Click on the fixed icon.
+
+76
+00:05:49,000 --> 00:05:54,000
+It will generate a new image that is similar to the previous generated image.
+
+77
+00:05:54,000 --> 00:05:58,000
+Remember that the generated image result may be different.
+
+78
+00:05:58,000 --> 00:06:02,000
+It depends on whether the prompt is added or modified.
+
+79
+00:06:02,000 --> 00:06:04,000
+If you need to add a new image,
+
+80
+00:06:04,000 --> 00:06:07,000
+you can click on the random button.
+
+81
+00:06:07,000 --> 00:06:12,000
+The pattern type and keywords are randomly selected and entered.
+
+82
+00:06:12,000 --> 00:06:17,000
+Using the AI sticker generator, you can easily create the stickers you want.
+
+83
+00:06:19,000 --> 00:06:22,000
+Now let's introduce the second main function,
+
+84
+00:06:22,000 --> 00:06:24,000
+the virtual model face generator.
+
+85
+00:06:24,000 --> 00:06:27,000
+This function is developed in cooperation with NOVA.
+
+86
+00:06:27,000 --> 00:06:31,000
+Its main feature is that it can change the existing close-up image.
+
+87
+00:06:31,000 --> 00:06:33,000
+This feature is very useful.
+
+88
+00:06:33,000 --> 00:06:36,000
+It can change the face of the existing close-up virtual model.
+
+89
+00:06:36,000 --> 00:06:39,000
+It not only changes the texture of the virtual model,
+
+90
+00:06:39,000 --> 00:06:42,000
+but also uses AI-generated facial images
+
+91
+00:06:42,000 --> 00:06:45,000
+or uploads specific facial image files
+
+92
+00:06:45,000 --> 00:06:48,000
+to change the virtual model's facial grid structure.
+
+93
+00:06:48,000 --> 00:06:53,000
+The virtual model after conversion is the unique virtual model format of close-up.
+
+94
+00:06:53,000 --> 00:06:55,000
+It can be used immediately.
+
+95
+00:06:55,000 --> 00:06:58,000
+It can also be applied to the virtual model of various virtual models
+
+96
+00:06:58,000 --> 00:07:01,000
+provided by the TuKu window and the Connect platform.
+
+97
+00:07:01,000 --> 00:07:05,000
+For the facial image generation based on AI,
+
+98
+00:07:05,000 --> 00:07:11,000
+users can select the required gender, age range and race as the preset,
+
+99
+00:07:11,000 --> 00:07:15,000
+and input the key words of the relevant characteristics to generate it.
+
+100
+00:07:15,000 --> 00:07:20,000
+Another way is to directly upload the facial image you want to generate.
+
+101
+00:07:20,000 --> 00:07:24,000
+All you need to do is to select the image upload collection that meets the requirements.
+
+102
+00:07:24,000 --> 00:07:28,000
+Now let's take a look at the functional use process.
+
+103
+00:07:28,000 --> 00:07:30,000
+First, let's run the virtual model.
+
+104
+00:07:31,000 --> 00:07:34,000
+We have two ways to run this function.
+
+105
+00:07:34,000 --> 00:07:37,000
+The first is to use the virtual model human generator
+
+106
+00:07:37,000 --> 00:07:40,000
+under the virtual model menu in the top main menu bar.
+
+107
+00:07:40,000 --> 00:07:43,000
+The second is to press the virtual model,
+
+108
+00:07:43,000 --> 00:07:46,000
+and then use the virtual model human generator tool
+
+109
+00:07:46,000 --> 00:07:50,000
+in the body model box in the attribute editor
+
+110
+00:07:50,000 --> 00:07:53,000
+to visit it.
+
+111
+00:07:53,000 --> 00:07:57,000
+First, let's take a look at the window interface of the virtual model human generator.
+
+112
+00:07:57,000 --> 00:07:59,000
+At the top of the window,
+
+113
+00:07:59,000 --> 00:08:05,000
+you can choose between the prompt option and the picture option.
+
+114
+00:08:05,000 --> 00:08:10,000
+The prompt option allows you to create and convert images based on AI,
+
+115
+00:08:10,000 --> 00:08:15,000
+and the picture option allows you to upload specific image files to the face.
+
+116
+00:08:15,000 --> 00:08:18,000
+Let's use the prompt option first.
+
+117
+00:08:18,000 --> 00:08:20,000
+In the top menu bar,
+
+118
+00:08:20,000 --> 00:08:25,000
+you can select the required face gender, age group and race.
+
+119
+00:08:25,000 --> 00:08:27,000
+The gender option will be selected based on the gender of the virtual model you choose,
+
+120
+00:08:27,000 --> 00:08:30,000
+and it will automatically set the gender of the virtual model you choose.
+
+121
+00:08:30,000 --> 00:08:34,000
+Currently, this function is only applicable to female virtual models,
+
+122
+00:08:34,000 --> 00:08:39,000
+but the range of selected gender will gradually increase in the future version.
+
+123
+00:08:39,000 --> 00:08:42,000
+The age option allows you to use the preset setting
+
+124
+00:08:42,000 --> 00:08:44,000
+for the age of the face you want to create.
+
+125
+00:08:44,000 --> 00:08:49,000
+Currently, you can choose the age range from 10 to 80 years old for the preset.
+
+126
+00:08:49,000 --> 00:08:51,000
+Through the race option,
+
+127
+00:08:51,000 --> 00:08:55,000
+you can use the preset setting for the race of the face you want to create.
+
+128
+00:08:55,000 --> 00:08:56,000
+The preset options currently available are
+
+129
+00:08:56,000 --> 00:08:58,000
+Asian,
+
+130
+00:08:58,000 --> 00:08:59,000
+Caucasian,
+
+131
+00:08:59,000 --> 00:09:00,000
+African,
+
+132
+00:09:00,000 --> 00:09:01,000
+Middle Eastern,
+
+133
+00:09:01,000 --> 00:09:02,000
+and Latin American.
+
+134
+00:09:02,000 --> 00:09:04,000
+In the key word prompt window,
+
+135
+00:09:04,000 --> 00:09:07,000
+enter the keyword that describes the required face gender.
+
+136
+00:09:07,000 --> 00:09:10,000
+In the bottom AI face gender section,
+
+137
+00:09:10,000 --> 00:09:13,000
+you can check the face gender images based on AI generation.
+
+138
+00:09:13,000 --> 00:09:16,000
+If you want to re-visit the image of the virtual model,
+
+139
+00:09:16,000 --> 00:09:18,000
+similar to the physical generation period,
+
+140
+00:09:18,000 --> 00:09:21,000
+click on the historical record option on the right.
+
+141
+00:09:21,000 --> 00:09:23,000
+The window will open,
+
+142
+00:09:23,000 --> 00:09:25,000
+allowing you to check the face image of the virtual model,
+
+143
+00:09:25,000 --> 00:09:30,000
+and the options and hints set for creating these images.
+
+144
+00:09:30,000 --> 00:09:32,000
+Please note that the historical record of the record
+
+145
+00:09:32,000 --> 00:09:36,000
+is only reserved until the Clore software is closed.
+
+146
+00:09:36,000 --> 00:09:39,000
+Next, let's take a look at the image options.
+
+147
+00:09:39,000 --> 00:09:41,000
+Through the top image menu,
+
+148
+00:09:41,000 --> 00:09:45,000
+you can select the gender of the virtual model to be converted.
+
+149
+00:09:45,000 --> 00:09:50,000
+The gender option will be set according to the gender of the virtual model.
+
+150
+00:09:50,000 --> 00:09:53,000
+Click on the upload button in the picture window.
+
+151
+00:09:53,000 --> 00:09:55,000
+To upload the image,
+
+152
+00:09:55,000 --> 00:09:57,000
+you need to use the specific image file for the face conversion.
+
+153
+00:09:57,000 --> 00:10:00,000
+If you want to re-visit the image of the upload,
+
+154
+00:10:00,000 --> 00:10:03,000
+please click on the historical record option on the right.
+
+155
+00:10:03,000 --> 00:10:05,000
+The window will open,
+
+156
+00:10:05,000 --> 00:10:07,000
+and you can check the face image of the upload.
+
+157
+00:10:07,000 --> 00:10:09,000
+Similar to the prompt option,
+
+158
+00:10:09,000 --> 00:10:11,000
+the historical record of the record
+
+159
+00:10:11,000 --> 00:10:14,000
+is reserved until the Clore software is closed.
+
+160
+00:10:14,000 --> 00:10:16,000
+Next, let's do the operation.
+
+161
+00:10:16,000 --> 00:10:17,000
+Set the option,
+
+162
+00:10:17,000 --> 00:10:19,000
+enter the key word prompt and generate.
+
+163
+00:10:19,000 --> 00:10:22,000
+Now let's create a human face image based on AI technology.
+
+164
+00:10:22,000 --> 00:10:24,000
+First, in the options,
+
+165
+00:10:24,000 --> 00:10:28,000
+select the age and race of the face you want to create.
+
+166
+00:10:28,000 --> 00:10:31,000
+In the text prompt section,
+
+167
+00:10:31,000 --> 00:10:34,000
+enter the text that describes the features of the face.
+
+168
+00:10:34,000 --> 00:10:37,000
+This function supports about 50 languages.
+
+169
+00:10:37,000 --> 00:10:40,000
+All languages provided by Clore can be used.
+
+170
+00:10:40,000 --> 00:10:43,000
+However, due to the high accuracy of the input English prompt,
+
+171
+00:10:43,000 --> 00:10:46,000
+it is recommended to write the prompt in English.
+
+172
+00:10:46,000 --> 00:10:48,000
+After entering the prompt,
+
+173
+00:10:48,000 --> 00:10:51,000
+you must click on the start button to create the image.
+
+174
+00:10:51,000 --> 00:10:52,000
+Next,
+
+175
+00:10:52,000 --> 00:10:55,000
+in order to improve the quality of the generated virtual model face,
+
+176
+00:10:55,000 --> 00:11:00,000
+please refer to the reference image shown in the AI human face checkbox.
+
+177
+00:11:00,000 --> 00:11:02,000
+It is recommended to check before switching
+
+178
+00:11:02,000 --> 00:11:06,000
+whether the created image has responded well to the following points.
+
+179
+00:11:06,000 --> 00:11:08,000
+The face special image
+
+180
+00:11:08,000 --> 00:11:12,000
+and the image that the face is not covered by hair or shadows
+
+181
+00:11:12,000 --> 00:11:14,000
+After fully understanding these suggestions,
+
+182
+00:11:14,000 --> 00:11:18,000
+click on the start button to create the image.
+
+183
+00:11:18,000 --> 00:11:19,000
+When creating the image,
+
+184
+00:11:19,000 --> 00:11:21,000
+you can check the progress of the server connection
+
+185
+00:11:21,000 --> 00:11:23,000
+and the number of rows.
+
+186
+00:11:23,000 --> 00:11:25,000
+After creating the image of the face,
+
+187
+00:11:25,000 --> 00:11:27,000
+click on the switch button.
+
+188
+00:11:27,000 --> 00:11:30,000
+You will see the face of the Clore virtual model
+
+189
+00:11:30,000 --> 00:11:33,000
+change according to the image of the face created.
+
+190
+00:11:33,000 --> 00:11:35,000
+In this process,
+
+191
+00:11:35,000 --> 00:11:37,000
+the body texture and color of the virtual model
+
+192
+00:11:37,000 --> 00:11:39,000
+will also change,
+
+193
+00:11:39,000 --> 00:11:42,000
+maintaining the natural coordination with the face color of the created image.
+
+194
+00:11:42,000 --> 00:11:45,000
+After setting the gender of the face to be created,
+
+195
+00:11:45,000 --> 00:11:47,000
+age and race selection,
+
+196
+00:11:47,000 --> 00:11:50,000
+if you need ideas or help with facial features,
+
+197
+00:11:50,000 --> 00:11:53,000
+please click on the random icon in the brush shape.
+
+198
+00:11:53,000 --> 00:11:54,000
+At this time,
+
+199
+00:11:54,000 --> 00:11:57,000
+a hint that describes the human face will be entered randomly.
+
+200
+00:11:57,000 --> 00:12:00,000
+Even if you use the same hint keyword,
+
+201
+00:12:00,000 --> 00:12:03,000
+the results generated by the AI human face will not be the same.
+
+202
+00:12:03,000 --> 00:12:06,000
+If you want to create different facial images
+
+203
+00:12:06,000 --> 00:12:09,000
+or update the hint while maintaining the original result,
+
+204
+00:12:09,000 --> 00:12:12,000
+please click on the true icon.
+
+205
+00:12:12,000 --> 00:12:15,000
+When you select the mouse on the true icon,
+
+206
+00:12:15,000 --> 00:12:17,000
+a tool will appear.
+
+207
+00:12:17,000 --> 00:12:19,000
+It points out that the key words to be kept in the input
+
+208
+00:12:19,000 --> 00:12:21,000
+have generated similar results.
+
+209
+00:12:21,000 --> 00:12:23,000
+As explained by the tool hint,
+
+210
+00:12:23,000 --> 00:12:25,000
+by clicking on the true icon,
+
+211
+00:12:25,000 --> 00:12:27,000
+you can create a new image
+
+212
+00:12:27,000 --> 00:12:29,000
+with a similar feeling to the image created before.
+
+213
+00:12:29,000 --> 00:12:31,000
+Let's click on the true button,
+
+214
+00:12:31,000 --> 00:12:33,000
+update the hint, and then generate.
+
+215
+00:12:35,000 --> 00:12:39,000
+Create a new image while maintaining the original result.
+
+216
+00:12:39,000 --> 00:12:40,000
+When modifying the hint,
+
+217
+00:12:40,000 --> 00:12:42,000
+please note that the new result may be
+
+218
+00:12:42,000 --> 00:12:45,000
+due to the addition or modification of the hint.
+
+219
+00:12:46,000 --> 00:12:48,000
+When generating the human face and the image,
+
+220
+00:12:48,000 --> 00:12:51,000
+if there are more users at the same time,
+
+221
+00:12:51,000 --> 00:12:54,000
+the creation time may be longer.
+
+222
+00:12:54,000 --> 00:12:56,000
+In this waiting time,
+
+223
+00:12:56,000 --> 00:12:59,000
+you can perform other tasks while using this function.
+
+224
+00:12:59,000 --> 00:13:01,000
+If the waiting time is longer,
+
+225
+00:13:01,000 --> 00:13:04,000
+please click on the arrow button in the upper right corner
+
+226
+00:13:04,000 --> 00:13:06,000
+to minimize the window.
+
+227
+00:13:06,000 --> 00:13:07,000
+After the creation is completed,
+
+228
+00:13:07,000 --> 00:13:10,000
+it will display the progress hint to be used effectively.
+
+229
+00:13:10,000 --> 00:13:14,000
+Finally, I will share some tips for inputting hint keywords
+
+230
+00:13:14,000 --> 00:13:16,000
+to create the facial image you want.
+
+231
+00:13:16,000 --> 00:13:18,000
+When typing a word,
+
+232
+00:13:18,000 --> 00:13:20,000
+it is recommended to type the word you need
+
+233
+00:13:20,000 --> 00:13:23,000
+rather than the long descriptive sentence.
+
+234
+00:13:23,000 --> 00:13:26,000
+This can produce more effective results.
+
+235
+00:13:26,000 --> 00:13:30,000
+In order to prevent the image from being lost due to the long sentence,
+
+236
+00:13:30,000 --> 00:13:33,000
+it is best to use two numbers to divide the word.
+
+237
+00:13:33,000 --> 00:13:36,000
+If you want to emphasize a specific word,
+
+238
+00:13:36,000 --> 00:13:40,000
+please use the square number around the word you want to emphasize.
+
+239
+00:13:40,000 --> 00:13:43,000
+This gives the word more weight,
+
+240
+00:13:43,000 --> 00:13:45,000
+making it more influential.
+
+241
+00:13:46,000 --> 00:13:49,000
+Next, we will try to convert the face of the virtual model
+
+242
+00:13:49,000 --> 00:13:52,000
+to the face of the virtual model
+
+243
+00:13:52,000 --> 00:13:55,000
+by uploading a specific image to the face of the virtual model.
+
+244
+00:13:55,000 --> 00:13:58,000
+First, check if the gender of the virtual model you need
+
+245
+00:13:58,000 --> 00:14:01,000
+is reflected in the gender option.
+
+246
+00:14:01,000 --> 00:14:03,000
+Click on the upload button
+
+247
+00:14:03,000 --> 00:14:06,000
+to use a specific image file for the face you need.
+
+248
+00:14:06,000 --> 00:14:09,000
+In order to generate a high-quality virtual model face,
+
+249
+00:14:09,000 --> 00:14:14,000
+it is recommended to refer to the image displayed in the image viewfinder as a reference.
+
+250
+00:14:14,000 --> 00:14:15,000
+In addition,
+
+251
+00:14:15,000 --> 00:14:17,000
+it is recommended to use the following image
+
+252
+00:14:17,000 --> 00:14:19,000
+to ensure that the image to be uploaded
+
+253
+00:14:19,000 --> 00:14:21,000
+is well reflected in the image viewfinder.
+
+254
+00:14:21,000 --> 00:14:23,000
+The image of the facial features
+
+255
+00:14:23,000 --> 00:14:26,000
+and the image of the face that has not been covered by hair or shadows.
+
+256
+00:14:26,000 --> 00:14:28,000
+After uploading the image file,
+
+257
+00:14:28,000 --> 00:14:30,000
+click on convert.
+
+258
+00:14:30,000 --> 00:14:32,000
+You will see the face of the virtual model
+
+259
+00:14:32,000 --> 00:14:35,000
+changed according to the uploaded image.
+
+260
+00:14:35,000 --> 00:14:37,000
+In this process,
+
+261
+00:14:37,000 --> 00:14:40,000
+the body texture and color of the virtual model will also change,
+
+262
+00:14:40,000 --> 00:14:43,000
+maintaining a natural coordination with the face tone of the window.
+
+263
+00:14:43,000 --> 00:14:44,000
+Before that,
+
+264
+00:14:44,000 --> 00:14:46,000
+you must have spent a lot of effort
+
+265
+00:14:46,000 --> 00:14:49,000
+to use virtual models that are realistic and diversified.
+
+266
+00:14:49,000 --> 00:14:50,000
+Now,
+
+267
+00:14:50,000 --> 00:14:52,000
+through the virtual face generator,
+
+268
+00:14:52,000 --> 00:14:56,000
+you can easily and quickly create virtual models that look like real life.
+
+269
+00:14:56,000 --> 00:14:59,000
+The AI face generator is currently a public version of the function.
+
+270
+00:14:59,000 --> 00:15:00,000
+In the future,
+
+271
+00:15:00,000 --> 00:15:03,000
+the policy and other aspects of its use may change.
+
+272
+00:15:03,000 --> 00:15:07,000
+The following are the functions of the 2D floating version.
+
+273
+00:15:07,000 --> 00:15:08,000
+First of all,
+
+274
+00:15:08,000 --> 00:15:11,000
+we are going to talk about the 2D CAD optimization of continuous editing.
+
+275
+00:15:11,000 --> 00:15:12,000
+The improvement of continuous editing
+
+276
+00:15:12,000 --> 00:15:14,000
+can improve the efficiency of work.
+
+277
+00:15:14,000 --> 00:15:15,000
+Next,
+
+278
+00:15:15,000 --> 00:15:18,000
+let's take a look at where the function is optimized.
+
+279
+00:15:18,000 --> 00:15:20,000
+In the previous version,
+
+280
+00:15:20,000 --> 00:15:22,000
+it is necessary to check whether the panels are already linked.
+
+281
+00:15:22,000 --> 00:15:24,000
+You need to use the editing panel tool
+
+282
+00:15:24,000 --> 00:15:27,000
+to focus on the single-frame section to be able to check.
+
+283
+00:15:27,000 --> 00:15:28,000
+From the floating version,
+
+284
+00:15:28,000 --> 00:15:31,000
+you can use the display link in the menu bar
+
+285
+00:15:31,000 --> 00:15:33,000
+on the upper left side of the window of the 2D panel
+
+286
+00:15:33,000 --> 00:15:36,000
+to display or hide the linked line diagram
+
+287
+00:15:36,000 --> 00:15:39,000
+to check whether the multiple lines are linked.
+
+288
+00:15:39,000 --> 00:15:40,000
+In addition,
+
+289
+00:15:40,000 --> 00:15:41,000
+before the floating version,
+
+290
+00:15:41,000 --> 00:15:45,000
+we need to right-click to set the linked line,
+
+291
+00:15:45,000 --> 00:15:49,000
+then select the editing link tool to remove the link.
+
+292
+00:15:49,000 --> 00:15:51,000
+For the floating line,
+
+293
+00:15:51,000 --> 00:15:53,000
+you need to select the edit floating line,
+
+294
+00:15:53,000 --> 00:15:57,000
+then right-click on the linked line to remove the link.
+
+295
+00:15:57,000 --> 00:15:59,000
+From this version,
+
+296
+00:15:59,000 --> 00:16:01,000
+in order to work more happily,
+
+297
+00:16:01,000 --> 00:16:03,000
+after selecting the edit panel tool,
+
+298
+00:16:03,000 --> 00:16:05,000
+you can also select the linked line
+
+299
+00:16:05,000 --> 00:16:08,000
+and right-click to remove the link.
+
+300
+00:16:08,000 --> 00:16:09,000
+In addition,
+
+301
+00:16:09,000 --> 00:16:10,000
+there are two more functions.
+
+302
+00:16:10,000 --> 00:16:11,000
+First,
+
+303
+00:16:11,000 --> 00:16:13,000
+we will talk about them together.
+
+304
+00:16:13,000 --> 00:16:14,000
+In the previous version,
+
+305
+00:16:14,000 --> 00:16:16,000
+after setting the linked line,
+
+306
+00:16:16,000 --> 00:16:20,000
+if the length or length of the linked line with the linked line is adjusted,
+
+307
+00:16:20,000 --> 00:16:22,000
+the linked state will remain,
+
+308
+00:16:22,000 --> 00:16:24,000
+but the length of the linked line will not be changed
+
+309
+00:16:24,000 --> 00:16:26,000
+to match the size of the edited line.
+
+310
+00:16:26,000 --> 00:16:27,000
+So from this version,
+
+311
+00:16:27,000 --> 00:16:29,000
+it has been improved.
+
+312
+00:16:29,000 --> 00:16:30,000
+After setting the linked line,
+
+313
+00:16:30,000 --> 00:16:32,000
+adjust the length of the line
+
+314
+00:16:32,000 --> 00:16:33,000
+or the proportion of the entire panel,
+
+315
+00:16:33,000 --> 00:16:36,000
+the linked line will also change in the same way.
+
+316
+00:16:36,000 --> 00:16:37,000
+Next,
+
+317
+00:16:37,000 --> 00:16:38,000
+we will show you
+
+318
+00:16:38,000 --> 00:16:40,000
+how to operate these improvement functions
+
+319
+00:16:40,000 --> 00:16:42,000
+in this version.
+
+320
+00:16:42,000 --> 00:16:43,000
+First,
+
+321
+00:16:43,000 --> 00:16:44,000
+use the edit panel tool
+
+322
+00:16:44,000 --> 00:16:47,000
+to select the linked line panel,
+
+323
+00:16:47,000 --> 00:16:49,000
+then adjust its size.
+
+324
+00:16:49,000 --> 00:16:53,000
+You can see that the linked line will be modified together.
+
+325
+00:16:53,000 --> 00:16:55,000
+When using the edit point or line tool
+
+326
+00:16:55,000 --> 00:16:57,000
+to move or rotate the line,
+
+327
+00:16:57,000 --> 00:17:00,000
+the length of the linked line remains unchanged,
+
+328
+00:17:00,000 --> 00:17:04,000
+and the length of the other lines will change.
+
+329
+00:17:04,000 --> 00:17:05,000
+Similarly,
+
+330
+00:17:05,000 --> 00:17:07,000
+use the edit panel tool
+
+331
+00:17:07,000 --> 00:17:09,000
+to select and drag the linked line
+
+332
+00:17:09,000 --> 00:17:10,000
+or the points on the line.
+
+333
+00:17:10,000 --> 00:17:12,000
+When using the edit panel tool,
+
+334
+00:17:12,000 --> 00:17:13,000
+press the right mouse button
+
+335
+00:17:13,000 --> 00:17:15,000
+and enter the value of the distance
+
+336
+00:17:15,000 --> 00:17:17,000
+in the output window.
+
+337
+00:17:17,000 --> 00:17:20,000
+The linked line will maintain its size value
+
+338
+00:17:20,000 --> 00:17:24,000
+and change.
+
+339
+00:17:24,000 --> 00:17:26,000
+When pressing the points on the line
+
+340
+00:17:26,000 --> 00:17:28,000
+and using the arrow on the keyboard
+
+341
+00:17:28,000 --> 00:17:30,000
+to adjust the line size,
+
+342
+00:17:30,000 --> 00:17:31,000
+use the same.
+
+343
+00:17:31,000 --> 00:17:32,000
+Finally,
+
+344
+00:17:32,000 --> 00:17:34,000
+if you select the two ends of the linked line at a time
+
+345
+00:17:34,000 --> 00:17:36,000
+and press the right mouse button,
+
+346
+00:17:36,000 --> 00:17:37,000
+use the array tool
+
+347
+00:17:37,000 --> 00:17:38,000
+to modify the position of the end point.
+
+348
+00:17:38,000 --> 00:17:41,000
+The array will be used in the same way
+
+349
+00:17:41,000 --> 00:17:44,000
+for the two ends of the linked line.
+
+350
+00:17:44,000 --> 00:17:47,000
+Using the linked edit function after optimization
+
+351
+00:17:47,000 --> 00:17:52,000
+can better improve the efficiency of work.
+
+352
+00:17:52,000 --> 00:17:54,000
+The next function to be introduced is
+
+353
+00:17:54,000 --> 00:17:57,000
+to improve the efficiency of selecting 2D panels.
+
+354
+00:17:57,000 --> 00:17:59,000
+After the function is improved,
+
+355
+00:17:59,000 --> 00:18:01,000
+you can press the shortcut button
+
+356
+00:18:01,000 --> 00:18:04,000
+and select the lines or panels you need.
+
+357
+00:18:04,000 --> 00:18:06,000
+To check this function,
+
+358
+00:18:06,000 --> 00:18:10,000
+open the project file with multiple inner lines.
+
+359
+00:18:10,000 --> 00:18:11,000
+Previously,
+
+360
+00:18:11,000 --> 00:18:14,000
+when the number of inner lines and shapes was too many,
+
+361
+00:18:14,000 --> 00:18:15,000
+as shown here,
+
+362
+00:18:15,000 --> 00:18:18,000
+you need to select some inner lines first,
+
+363
+00:18:18,000 --> 00:18:21,000
+and then cancel the unnecessary parts.
+
+364
+00:18:21,000 --> 00:18:24,000
+Now you can easily select the parts you want.
+
+365
+00:18:24,000 --> 00:18:27,000
+If you just want to select some folds in the skirt,
+
+366
+00:18:27,000 --> 00:18:32,000
+first select the edit panel tool in the 2D tool bar.
+
+367
+00:18:32,000 --> 00:18:34,000
+While pressing the CTRL key,
+
+368
+00:18:34,000 --> 00:18:36,000
+press the left mouse button,
+
+369
+00:18:36,000 --> 00:18:39,000
+you can select the inner lines you want to select.
+
+370
+00:18:39,000 --> 00:18:40,000
+Then you can see
+
+371
+00:18:40,000 --> 00:18:42,000
+all the lines that are selected
+
+372
+00:18:42,000 --> 00:18:44,000
+in the drag area are selected.
+
+373
+00:18:44,000 --> 00:18:47,000
+In addition to the inner lines,
+
+374
+00:18:47,000 --> 00:18:49,000
+you can also select the entire panel
+
+375
+00:18:49,000 --> 00:18:52,000
+by selecting only a part of the panel.
+
+376
+00:18:52,000 --> 00:18:54,000
+After selecting the edit panel tool,
+
+377
+00:18:54,000 --> 00:18:55,000
+press the CTRL key,
+
+378
+00:18:55,000 --> 00:18:57,000
+press the left mouse button to drag,
+
+379
+00:18:57,000 --> 00:19:00,000
+and select only a part of the panel you need.
+
+380
+00:19:00,000 --> 00:19:01,000
+You can see
+
+381
+00:19:01,000 --> 00:19:03,000
+all the panels in the drag area
+
+382
+00:19:03,000 --> 00:19:05,000
+will be selected.
+
+383
+00:19:05,000 --> 00:19:08,000
+You can easily select the inner lines and panels
+
+384
+00:19:08,000 --> 00:19:11,000
+you want to select by pressing the CTRL key.
+
+385
+00:19:13,000 --> 00:19:15,000
+The next feature I would like to introduce is
+
+386
+00:19:15,000 --> 00:19:18,000
+the 2D edit panel measurement angle.
+
+387
+00:19:18,000 --> 00:19:20,000
+We have developed a new feature
+
+388
+00:19:20,000 --> 00:19:22,000
+to check the angle of the panel's outline
+
+389
+00:19:22,000 --> 00:19:25,000
+or the angle of the line overlap.
+
+390
+00:19:25,000 --> 00:19:27,000
+The feature I would like to introduce this time
+
+391
+00:19:27,000 --> 00:19:29,000
+can check the angle of a specific position
+
+392
+00:19:29,000 --> 00:19:31,000
+when creating or modifying panels.
+
+393
+00:19:31,000 --> 00:19:33,000
+Let's look at this project file.
+
+394
+00:19:33,000 --> 00:19:34,000
+For example,
+
+395
+00:19:34,000 --> 00:19:37,000
+we want to check the angle of the end of two panels.
+
+396
+00:19:37,000 --> 00:19:39,000
+First, select the edit panel tool
+
+397
+00:19:39,000 --> 00:19:41,000
+from the 2D window tool bar.
+
+398
+00:19:41,000 --> 00:19:44,000
+Select the panel end point to check the angle.
+
+399
+00:19:44,000 --> 00:19:47,000
+Press the right mouse button and select the left and right mouse buttons.
+
+400
+00:19:47,000 --> 00:19:49,000
+Press the end point button
+
+401
+00:19:49,000 --> 00:19:51,000
+to show the angle of this point.
+
+402
+00:19:51,000 --> 00:19:53,000
+The shape of the panel
+
+403
+00:19:53,000 --> 00:19:56,000
+will change according to the angle of the end of two panels.
+
+404
+00:19:56,000 --> 00:19:58,000
+In this case,
+
+405
+00:19:58,000 --> 00:20:00,000
+you can check the angle
+
+406
+00:20:00,000 --> 00:20:02,000
+and modify the panel
+
+407
+00:20:02,000 --> 00:20:05,000
+to modify it to the shape you want.
+
+408
+00:20:06,000 --> 00:20:09,000
+You can also open the 2D edit panel
+
+409
+00:20:09,000 --> 00:20:12,000
+to display the length of the line or the angle function.
+
+410
+00:20:12,000 --> 00:20:15,000
+You can check all the angles of the panels.
+
+411
+00:20:16,000 --> 00:20:18,000
+The angle of the overlap between the lines
+
+412
+00:20:18,000 --> 00:20:20,000
+in the pocket
+
+413
+00:20:20,000 --> 00:20:22,000
+can also be displayed.
+
+414
+00:20:22,000 --> 00:20:24,000
+And the angle can also be changed
+
+415
+00:20:24,000 --> 00:20:26,000
+according to the movement of the lines.
+
+416
+00:20:26,000 --> 00:20:29,000
+This function can make it easy for us to check
+
+417
+00:20:29,000 --> 00:20:31,000
+the angle of the special position of the panel.
+
+418
+00:20:32,000 --> 00:20:35,000
+Next is the optimization of the seam allowance.
+
+419
+00:20:35,000 --> 00:20:37,000
+First, I will introduce the optimization
+
+420
+00:20:37,000 --> 00:20:39,000
+of the seam allowance.
+
+421
+00:20:39,000 --> 00:20:41,000
+Before this,
+
+422
+00:20:41,000 --> 00:20:43,000
+when there is a seam allowance at the corner of the panel,
+
+423
+00:20:43,000 --> 00:20:45,000
+after adding the seam allowance,
+
+424
+00:20:45,000 --> 00:20:47,000
+the seam allowance at the extension of the panel
+
+425
+00:20:47,000 --> 00:20:49,000
+will create a repeated seam allowance.
+
+426
+00:20:49,000 --> 00:20:52,000
+However, if this is the way to create it,
+
+427
+00:20:52,000 --> 00:20:54,000
+the seam allowance of the seam allowance
+
+428
+00:20:54,000 --> 00:20:56,000
+does not match the seam allowance
+
+429
+00:20:56,000 --> 00:20:58,000
+that actually needs to be cut,
+
+430
+00:20:58,000 --> 00:21:00,000
+so the sewing information may be inaccurate.
+
+431
+00:21:00,000 --> 00:21:02,000
+In order to improve this problem,
+
+432
+00:21:02,000 --> 00:21:04,000
+we will provide two options
+
+433
+00:21:04,000 --> 00:21:07,000
+to determine the position of the seam allowance in the seam allowance.
+
+434
+00:21:07,000 --> 00:21:11,000
+First, use the cut tool to select the cut.
+
+435
+00:21:11,000 --> 00:21:13,000
+In the attribute editor,
+
+436
+00:21:13,000 --> 00:21:15,000
+you can find that the cut menu of the corner cut
+
+437
+00:21:15,000 --> 00:21:17,000
+and the cut menu of the seam allowance
+
+438
+00:21:17,000 --> 00:21:19,000
+are different.
+
+439
+00:21:19,000 --> 00:21:21,000
+When choosing the corner cut,
+
+440
+00:21:21,000 --> 00:21:24,000
+a new cut position menu will appear.
+
+441
+00:21:24,000 --> 00:21:26,000
+You can choose to duplicate the cut
+
+442
+00:21:26,000 --> 00:21:29,000
+to the extension point or the center position.
+
+443
+00:21:29,000 --> 00:21:32,000
+In the case of this seam allowance,
+
+444
+00:21:32,000 --> 00:21:34,000
+when choosing the extension point,
+
+445
+00:21:34,000 --> 00:21:36,000
+the cut position is displayed
+
+446
+00:21:36,000 --> 00:21:38,000
+from the level of the cut of the panel
+
+447
+00:21:38,000 --> 00:21:40,000
+and the position of the vertical extension to the point.
+
+448
+00:21:40,000 --> 00:21:42,000
+When choosing the center position,
+
+449
+00:21:42,000 --> 00:21:44,000
+the cut is displayed
+
+450
+00:21:44,000 --> 00:21:47,000
+in the extension position of the corner as it is now.
+
+451
+00:21:47,000 --> 00:21:50,000
+This improvement can help us provide
+
+452
+00:21:50,000 --> 00:21:53,000
+more accurate panel information.
+
+453
+00:21:53,000 --> 00:21:57,000
+Next is another optimization related to the seam allowance.
+
+454
+00:21:57,000 --> 00:21:59,000
+This is another optimization related to the seam allowance.
+
+455
+00:21:59,000 --> 00:22:01,000
+It supports the addition of seam allowance
+
+456
+00:22:01,000 --> 00:22:03,000
+on the hollow inside the panel.
+
+457
+00:22:05,000 --> 00:22:06,000
+Before this,
+
+458
+00:22:06,000 --> 00:22:08,000
+the seam allowance tool can only be created
+
+459
+00:22:08,000 --> 00:22:09,000
+from the outline of the panel.
+
+460
+00:22:09,000 --> 00:22:11,000
+From the previous version,
+
+461
+00:22:11,000 --> 00:22:13,000
+it can be updated to identify the hollow as the outline,
+
+462
+00:22:13,000 --> 00:22:16,000
+so it can also create a seam allowance for the hollow.
+
+463
+00:22:18,000 --> 00:22:19,000
+In the 2D window,
+
+464
+00:22:19,000 --> 00:22:21,000
+select the seam allowance tool,
+
+465
+00:22:21,000 --> 00:22:23,000
+then select the hollow position
+
+466
+00:22:23,000 --> 00:22:25,000
+to select the position to create the seam allowance.
+
+467
+00:22:25,000 --> 00:22:26,000
+Then you can see that
+
+468
+00:22:26,000 --> 00:22:28,000
+the hollow position has been identified as the outline
+
+469
+00:22:28,000 --> 00:22:31,000
+and the seam allowance has been created.
+
+470
+00:22:31,000 --> 00:22:34,000
+Due to the possibility of creating a seam allowance
+
+471
+00:22:34,000 --> 00:22:35,000
+in the hollow,
+
+472
+00:22:35,000 --> 00:22:38,000
+the seam allowance can be displayed in the hollow.
+
+473
+00:22:38,000 --> 00:22:40,000
+Through the function of the improvement,
+
+474
+00:22:40,000 --> 00:22:42,000
+it can be completed in the CLO
+
+475
+00:22:42,000 --> 00:22:44,000
+in a more diversified version than before.
+
+476
+00:22:44,000 --> 00:22:47,000
+Next is the improvement of the 2D paper pattern.
+
+477
+00:22:47,000 --> 00:22:49,000
+In the previous version,
+
+478
+00:22:49,000 --> 00:22:51,000
+if the paper pattern created in the 2D CAD
+
+479
+00:22:51,000 --> 00:22:54,000
+is located at a position far away from the center,
+
+480
+00:22:54,000 --> 00:22:55,000
+then the position of the paper pattern
+
+481
+00:22:55,000 --> 00:22:59,000
+then the location will remain the original and be entered into the CLO.
+
+482
+00:22:59,000 --> 00:23:03,000
+Therefore, it is necessary to re-create the paper sample in the 00 position
+
+483
+00:23:03,000 --> 00:23:07,000
+in order to find all the paper samples in the CLO conveniently.
+
+484
+00:23:07,000 --> 00:23:11,000
+However, from the latest version, when downloading DXF files,
+
+485
+00:23:11,000 --> 00:23:15,000
+the file will be based in the 00 position and the center of the 2D window,
+
+486
+00:23:15,000 --> 00:23:19,000
+while maintaining all the existing rows of paper samples.
+
+487
+00:23:19,000 --> 00:23:23,000
+The improved DXF input function can help everyone
+
+488
+00:23:23,000 --> 00:23:27,000
+to improve the efficiency of work.
+
+489
+00:23:27,000 --> 00:23:31,000
+Next is the improvement of the code selection.
+
+490
+00:23:31,000 --> 00:23:35,000
+In the updated version, the object window code display has been optimized.
+
+491
+00:23:35,000 --> 00:23:39,000
+When opening and displaying the code in the CLO,
+
+492
+00:23:39,000 --> 00:23:43,000
+the color of the code line will be displayed randomly,
+
+493
+00:23:43,000 --> 00:23:47,000
+and in the option of the object window code,
+
+494
+00:23:47,000 --> 00:23:51,000
+click the button of the eye next to the color block
+
+495
+00:23:51,000 --> 00:23:53,000
+to display or hide the specified size of the code line.
+
+496
+00:23:53,000 --> 00:23:57,000
+You can also click the color block to remove the color board
+
+497
+00:23:57,000 --> 00:24:01,000
+to modify the color of the code line.
+
+498
+00:24:01,000 --> 00:24:05,000
+When creating a new code size, the color will also be generated randomly.
+
+499
+00:24:05,000 --> 00:24:09,000
+You can also choose the color block after the name of the size
+
+500
+00:24:09,000 --> 00:24:13,000
+to remove the color board to select the desired color.
+
+501
+00:24:13,000 --> 00:24:17,000
+In the same way, when opening and displaying the code in the CLO mode,
+
+502
+00:24:17,000 --> 00:24:21,000
+the color of the different size of the board will be displayed randomly.
+
+503
+00:24:21,000 --> 00:24:25,000
+You can also change the color of the board in the color block mode.
+
+504
+00:24:25,000 --> 00:24:29,000
+In this way, we can automatically create a color in the code selection,
+
+505
+00:24:29,000 --> 00:24:33,000
+or the specified color,
+
+506
+00:24:33,000 --> 00:24:37,000
+to identify the paper sample with the code line
+
+507
+00:24:37,000 --> 00:24:41,000
+or the paper sample in the hard disk mode.
+
+508
+00:24:41,000 --> 00:24:45,000
+Next is the introduction of the new hair hair function.
+
+509
+00:24:45,000 --> 00:24:49,000
+First, the hair hair material has been added to the compensation light,
+
+510
+00:24:49,000 --> 00:24:53,000
+which is the Composite Energy option.
+
+511
+00:24:53,000 --> 00:24:57,000
+When the hair density is higher, the light may not be able to come out between the hair lines,
+
+512
+00:24:57,000 --> 00:25:01,000
+causing the rendering to be darker than normal.
+
+513
+00:25:01,000 --> 00:25:05,000
+Opening this option can correct the lost light,
+
+514
+00:25:05,000 --> 00:25:09,000
+making the hair brightness closer to the real effect.
+
+515
+00:25:09,000 --> 00:25:13,000
+In addition, from the current version,
+
+516
+00:25:13,000 --> 00:25:17,000
+the CLO rendering has been added to the V-Ray support.
+
+517
+00:25:17,000 --> 00:25:21,000
+First, apply the hair hair material to the board.
+
+518
+00:25:21,000 --> 00:25:25,000
+The hair hair effect can only be checked in the rendering window,
+
+519
+00:25:25,000 --> 00:25:43,880
+so open the rendering in the
+
+520
+00:25:43,880 --> 00:25:45,880
+V-Ray mode.
+
+521
+00:25:45,880 --> 00:25:47,880
+Now we have the length, thickness, density,
+
+522
+00:25:47,880 --> 00:25:49,880
+curl, gravity, curve strength,
+
+523
+00:25:49,880 --> 00:25:51,880
+curve direction, and initial direction.
+
+524
+00:25:51,880 --> 00:25:53,880
+So now we can apply 8 hair patterns.
+
+525
+00:25:53,880 --> 00:25:55,880
+Now we can apply 8 hair patterns.
+
+526
+00:25:57,880 --> 00:25:59,880
+Next, let's take a look at the application of the new hair
+
+527
+00:25:59,880 --> 00:26:01,880
+on the hair.
+
+528
+00:26:01,880 --> 00:26:03,880
+First is the curl pattern.
+
+529
+00:26:03,880 --> 00:26:05,880
+First, you can add the curl pattern
+
+530
+00:26:05,880 --> 00:26:07,880
+to show the number of curls
+
+531
+00:26:07,880 --> 00:26:09,880
+and the radius of the curl.
+
+532
+00:26:09,880 --> 00:26:11,880
+The curl pattern is a black and white hair pattern.
+
+533
+00:26:11,880 --> 00:26:13,880
+The curl pattern is a black and white hair pattern.
+
+534
+00:26:13,880 --> 00:26:15,880
+In which, the black part of the stray pattern
+
+535
+00:26:15,880 --> 00:26:17,880
+means that there is no curl,
+
+536
+00:26:17,880 --> 00:26:19,880
+while the white part of the sociedad pattern
+
+537
+00:26:19,880 --> 00:26:21,880
+means that it has been set to the curl.
+
+538
+00:26:21,880 --> 00:26:23,880
+The second one is the gravity pattern
+
+539
+00:26:23,880 --> 00:26:25,880
+which we can see that
+
+540
+00:26:25,880 --> 00:26:29,560
+bisschen more on the hair further.
+
+541
+00:26:29,880 --> 00:26:31,880
+The gravity pattern is also black and white futting pattern.
+
+542
+00:26:31,880 --> 00:26:33,880
+First, on the hair,
+
+543
+00:26:33,880 --> 00:26:43,740
+adding a
+
+544
+00:26:43,880 --> 00:26:46,880
+The third is the curve intensity sticker.
+
+545
+00:26:46,880 --> 00:26:51,880
+It can express the curve of the hair by using the curve intensity sticker.
+
+546
+00:26:51,880 --> 00:26:56,880
+The curve intensity sticker is also a black-and-white sticker.
+
+547
+00:26:56,880 --> 00:26:58,880
+The black area of the sticker means that there is no curve.
+
+548
+00:26:58,880 --> 00:27:01,880
+The white area means that there is a curve.
+
+549
+00:27:01,880 --> 00:27:06,880
+The fourth is the curve direction sticker.
+
+550
+00:27:06,880 --> 00:27:10,880
+It can be used to define the curve direction of the hair.
+
+551
+00:27:10,880 --> 00:27:15,880
+The curve direction sticker is an RGB sticker with color.
+
+552
+00:27:15,880 --> 00:27:20,880
+It determines the direction of the texture according to the color of the application.
+
+553
+00:27:20,880 --> 00:27:29,880
+In the actual application, we can use the hair spray picture to show the different curve directions of the hair.
+
+554
+00:27:29,880 --> 00:27:32,880
+The last is the initial direction sticker.
+
+555
+00:27:32,880 --> 00:27:37,880
+It can be used to define the initial direction of the hair by adding the initial direction sticker.
+
+556
+00:27:37,880 --> 00:27:39,880
+That is, the root direction.
+
+557
+00:27:39,880 --> 00:27:40,880
+The fourth is the curve intensity sticker.
+
+558
+00:27:40,880 --> 00:27:44,880
+The curve direction sticker is also an RGB sticker with color.
+
+559
+00:27:44,880 --> 00:27:48,880
+It determines the direction of the texture according to the color of the application.
+
+560
+00:27:48,880 --> 00:27:53,880
+The curve intensity sticker can also be used to show the direction of the hair root.
+
+561
+00:27:53,880 --> 00:27:57,880
+It shows the pattern of the hair.
+
+562
+00:27:57,880 --> 00:28:00,880
+Since the sticker is suitable for hair plants,
+
+563
+00:28:00,880 --> 00:28:09,880
+now we can apply the sticker in Substance to Claw to achieve a more realistic hair production.
+
+564
+00:28:09,880 --> 00:28:12,880
+Next is the update about the rendering part.
+
+565
+00:28:12,880 --> 00:28:17,880
+From the new version, it can render 360-degree landscape images.
+
+566
+00:28:17,880 --> 00:28:24,880
+In addition, it can also use the rendering space created in Claw in Clawset to build its own virtual exhibition hall.
+
+567
+00:28:26,880 --> 00:28:30,880
+First, import the OBJ file into Claw,
+
+568
+00:28:30,880 --> 00:28:34,880
+then move the position to the center of the 360-degree landscape space.
+
+569
+00:28:35,880 --> 00:28:38,880
+When rendering, create a wall-mounted exhibition hall on all four sides.
+
+570
+00:28:38,880 --> 00:28:44,880
+The 360-degree landscape image will be more natural.
+
+571
+00:28:44,880 --> 00:28:48,880
+Then open the rendering window and click on the camera attribute tool.
+
+572
+00:28:48,880 --> 00:28:55,880
+You can see that the lens part of the camera attribute window has been added to the lens type option.
+
+573
+00:28:55,880 --> 00:28:58,880
+Click on the download icon to see two options.
+
+574
+00:28:58,880 --> 00:29:02,880
+The first option is the default option and the existing lens type.
+
+575
+00:29:02,880 --> 00:29:07,880
+The other is the full lens option, which is the new option.
+
+576
+00:29:07,880 --> 00:29:10,880
+Click on the second option, the full-lens lens rendering option.
+
+577
+00:29:10,880 --> 00:29:13,880
+You will see that the view has been changed from default value 15 to 60.
+
+578
+00:29:13,880 --> 00:29:19,880
+And all models, scenes and props in the 3D window are displayed on the grid surface.
+
+579
+00:29:19,880 --> 00:29:24,880
+This is to make it easier to place the camera and correctly render in Vray.
+
+580
+00:29:26,880 --> 00:29:33,880
+Next, set the image size to the recommended size in the Clawset production manual.
+
+581
+00:29:37,880 --> 00:29:45,880
+The finished rendering image can be added to the space button in the edit mode.
+
+582
+00:29:45,880 --> 00:29:48,880
+Use it as a new space for Clawset virtual exhibition.
+
+583
+00:29:48,880 --> 00:29:56,880
+This is the new space for Clawset virtual exhibition.
+
+584
+00:29:56,880 --> 00:30:01,880
+The following is about the optimization of the rendering function.
+
+585
+00:30:01,880 --> 00:30:06,880
+When rendering, the object sometimes has a wave-like Morven shadow problem.
+
+586
+00:30:06,880 --> 00:30:11,880
+In the updated version, the image filter option has been added.
+
+587
+00:30:11,880 --> 00:30:16,880
+Adjust it in Vray rendering to solve the Morven problem.
+
+588
+00:30:16,880 --> 00:30:21,880
+First, open the rendering function.
+
+589
+00:30:21,880 --> 00:30:26,880
+Click on the rendering property icon in the toolbar.
+
+590
+00:30:26,880 --> 00:30:31,880
+You can see that a image filter option has been added to the bottom of the property editor window.
+
+591
+00:30:31,880 --> 00:30:36,880
+The default size of the image filter is 1.5.
+
+592
+00:30:36,880 --> 00:30:41,880
+Open the synchronization rendering.
+
+593
+00:30:41,880 --> 00:30:46,880
+You can see that there is a Morven on the clothing in the rendering window.
+
+594
+00:30:46,880 --> 00:30:51,880
+In this way, you can see that there is a Morven on the clothing.
+
+595
+00:30:51,880 --> 00:30:56,880
+The image filter size value can be adjusted to 10 at most, and the smallest to 1.
+
+596
+00:30:56,880 --> 00:31:01,880
+The larger the value, the less Morven shadow.
+
+597
+00:31:01,880 --> 00:31:06,880
+Here we can adjust the value a little bit.
+
+598
+00:31:06,880 --> 00:31:11,880
+After adjusting the value, we need to turn on synchronization rendering to see the adjustment effect.
+
+599
+00:31:11,880 --> 00:31:16,880
+From the rendering effect,
+
+600
+00:31:16,880 --> 00:31:19,880
+when the previous value is set to 1,
+
+601
+00:31:19,880 --> 00:31:20,880
+the image filter will be set to 1.5.
+
+602
+00:31:20,880 --> 00:31:23,880
+Let's see if there is still a Morven under the previous value.
+
+603
+00:31:23,880 --> 00:31:26,880
+Then we directly enter a relatively large value.
+
+604
+00:31:26,880 --> 00:31:28,880
+After stopping rendering,
+
+605
+00:31:28,880 --> 00:31:36,880
+open synchronization rendering again.
+
+606
+00:31:36,880 --> 00:31:41,880
+You can see that the Morven phenomenon is now almost gone.
+
+607
+00:31:41,880 --> 00:31:47,880
+Therefore, we can use this function to improve the rendering image effect.
+
+608
+00:31:50,880 --> 00:31:53,880
+If you remember the first time,
+
+609
+00:31:53,880 --> 00:31:56,880
+the scene has a Morven at the top left.
+
+610
+00:31:56,880 --> 00:31:57,880
+When this happens,
+
+611
+00:31:57,880 --> 00:31:59,880
+the Morven is now set at the highest value.
+
+612
+00:31:59,880 --> 00:32:01,880
+The Strangling effect is now shown.
+
+613
+00:32:01,880 --> 00:32:03,880
+This window changes to less than 1.5.
+
+614
+00:32:03,880 --> 00:32:05,880
+The path is now black.
+
+615
+00:32:05,880 --> 00:32:08,880
+We can also see that the Morven has shown the same 0.5.
+
+616
+00:32:08,880 --> 00:32:12,880
+Now we can see that the Morven has changed in the layout.
+
+617
+00:32:12,880 --> 00:32:16,880
+We can also see that the Morven has changed in the layout.
+
+618
+00:32:16,880 --> 00:32:18,880
+The случайlos method in the query is possible.
+

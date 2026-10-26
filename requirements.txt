@@ -1,6 +1,6 @@
 openai==1.59.7
 questionary==2.0.1
-tqdm==4.66.1
+tqdm
 youtube-transcript-api
 pytube==15.0.0
 shortuuid==1.0.11
@@ -9,6 +9,7 @@ azure-core==1.29.6
 azure-identity==1.13.0
 azure-search-documents==11.4.0
 python-dotenv==1.0.0
+lingua-language-detector==2.1.0
 tenacity==8.2.2
 PyMuPDF==1.23.22
 tiktoken
@@ -21,6 +22,6 @@ bs4
 html2text==2025.4.15
 parmap
 google-api-python-client
-faster-whisper
-torch==2.5.1+cu121
---extra-index-url https://download.pytorch.org/whl/cu121
+# faster-whisper
+# torch==2.5.1+cu121
+# --extra-index-url https://download.pytorch.org/whl/cu121

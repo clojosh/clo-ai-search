@@ -1,0 +1,1752 @@
+1
+00:00:00,000 --> 00:00:12,800
+Okay, Professor Kaeser, we can start now whenever you are ready.
+
+2
+00:00:12,800 --> 00:00:15,320
+Okay, thank you.
+
+3
+00:00:15,320 --> 00:00:18,400
+So I'm going to share my screen.
+
+4
+00:00:18,400 --> 00:00:21,059
+Perfect.
+
+5
+00:00:21,059 --> 00:00:22,059
+You can see it.
+
+6
+00:00:22,059 --> 00:00:25,560
+Yeah, I can see it.
+
+7
+00:00:25,560 --> 00:00:29,000
+Okay, awesome.
+
+8
+00:00:29,000 --> 00:00:30,679
+So yeah.
+
+9
+00:00:30,679 --> 00:00:31,679
+Thank you very much.
+
+10
+00:00:31,679 --> 00:00:35,179
+I would like to welcome all of you also from my side.
+
+11
+00:00:35,179 --> 00:00:39,039
+Um, I guess I have already been introduced.
+
+12
+00:00:39,039 --> 00:00:42,000
+My name is Christian Kaiser.
+
+13
+00:00:42,000 --> 00:00:48,719
+I am professor at University of Albstadt-Siegma-Wing in the textile department.
+
+14
+00:00:48,719 --> 00:00:53,920
+We are educating textile and garment engineers.
+
+15
+00:00:53,920 --> 00:00:58,980
+My scientific background is that I am a
+
+16
+00:00:58,980 --> 00:01:08,400
+engineering cybernetician, which means actually that I'm a control engineer or systems engineer
+
+17
+00:01:08,400 --> 00:01:18,100
+and I got in touch with the textile topics, during my studies at the University of Stuttgart.
+
+18
+00:01:18,100 --> 00:01:25,659
+What I would like to give you a short overview and some insights is how our university introduced
+
+19
+00:01:25,659 --> 00:01:28,659
+glow3D in our curriculum.
+
+20
+00:01:28,659 --> 00:01:39,659
+Because before I joined Albstadt-Siedmaring University in 2018, 3D was no focus point at our teaching classes.
+
+21
+00:01:39,659 --> 00:01:52,659
+My personal background, I'm already 3D user since 2010, so I would say one of the first users in Europe.
+
+22
+00:01:52,659 --> 00:01:58,659
+And actually, as I'm not from garment and textile industry, it was not hard to convince myself,
+
+23
+00:01:58,659 --> 00:02:06,659
+because if you go to mechanical engineering, aerospace and all the other mechanical engineering disciplines,
+
+24
+00:02:06,659 --> 00:02:11,659
+3D development and 3D simulation is state of the art.
+
+25
+00:02:11,659 --> 00:02:20,659
+So to me, it's pretty obvious that 3D development and 3D visualization of garments is also something
+
+26
+00:02:20,659 --> 00:02:22,659
+which should be implemented in the future.
+
+27
+00:02:22,659 --> 00:02:28,659
+And I hope that we can do that in the textile industry as soon as possible.
+
+28
+00:02:28,659 --> 00:02:41,659
+Starting with what we did to implement 3D classes based on CLO at our bachelor's degree,
+
+29
+00:02:41,659 --> 00:02:50,659
+the starting point was the winter semester in 2019 to 2020.
+
+30
+00:02:50,659 --> 00:02:52,659
+There, we started introducing 3D models.
+
+31
+00:02:52,659 --> 00:02:56,659
+We started using CLO 3D within our bachelor courses.
+
+32
+00:02:56,659 --> 00:03:01,659
+Actually, at this time, it was starting with one course.
+
+33
+00:03:01,659 --> 00:03:06,659
+And pretty soon, a colleague of mine, which is a designer, and me,
+
+34
+00:03:06,659 --> 00:03:13,659
+we entered the academic workshop of CLO in Munich, Germany.
+
+35
+00:03:13,659 --> 00:03:20,659
+This was our start, where we did refine our
+
+36
+00:03:20,659 --> 00:03:22,659
+already pre-existing,
+
+37
+00:03:22,659 --> 00:03:27,659
+understanding of 3D simulation with this type of software.
+
+38
+00:03:27,659 --> 00:03:31,659
+Both of us were skilled in terms of other softwares,
+
+39
+00:03:31,659 --> 00:03:35,659
+because we are using multiple 3D softwares at our university.
+
+40
+00:03:35,659 --> 00:03:38,659
+But this workshop was really some kind of game changer,
+
+41
+00:03:38,659 --> 00:03:44,659
+because after that, we could really speed up our tutorial database,
+
+42
+00:03:44,659 --> 00:03:50,659
+our online courses, as well as enhance the quality of our presence teaching.
+
+43
+00:03:50,659 --> 00:04:01,659
+Pretty soon after this, we also had our first students 3D project in 2020,
+
+44
+00:04:01,659 --> 00:04:04,659
+and our second one just the next semester.
+
+45
+00:04:04,659 --> 00:04:11,659
+And after this curriculum, we started optimizing our tutorial database.
+
+46
+00:04:11,659 --> 00:04:16,659
+Perhaps something I should tell you, because I'm a control engineer,
+
+47
+00:04:16,659 --> 00:04:18,659
+I personally live in a feedback loop,
+
+48
+00:04:18,659 --> 00:04:19,659
+which means,
+
+49
+00:04:19,660 --> 00:04:24,660
+every kind of teaching, every type of action I'm responsible for,
+
+50
+00:04:24,660 --> 00:04:28,660
+means we start with some kind of steering impulse,
+
+51
+00:04:28,660 --> 00:04:31,660
+which means like starting with curriculum and stuff like this.
+
+52
+00:04:31,660 --> 00:04:36,660
+And we optimize each of our lectures on a regular basis,
+
+53
+00:04:36,660 --> 00:04:38,660
+based on the feedback of the students,
+
+54
+00:04:38,660 --> 00:04:41,660
+based on proceedings in the market,
+
+55
+00:04:41,660 --> 00:04:47,660
+be it software-wise or be it more application-wise.
+
+56
+00:04:47,660 --> 00:04:52,660
+And this means that mid of 2021,
+
+57
+00:04:52,660 --> 00:04:55,660
+we had our first big run-through,
+
+58
+00:04:55,660 --> 00:04:58,660
+which we used to optimize our tutorial database
+
+59
+00:04:58,660 --> 00:05:06,660
+and also go for a second academic workshop at CLO in Munich.
+
+60
+00:05:06,660 --> 00:05:12,660
+In fact, for us, the second workshop wasn't that necessary anymore,
+
+61
+00:05:12,660 --> 00:05:15,660
+because we were pretty skilled in what we were doing,
+
+62
+00:05:15,660 --> 00:05:16,660
+but twofold.
+
+63
+00:05:16,660 --> 00:05:18,660
+This was super helpful.
+
+64
+00:05:18,660 --> 00:05:20,660
+The first part is networking.
+
+65
+00:05:20,660 --> 00:05:23,660
+I guess all of you experienced that 3D,
+
+66
+00:05:23,660 --> 00:05:28,660
+unless it's not yet that new anymore,
+
+67
+00:05:28,660 --> 00:05:34,660
+is still some area of teaching where we are lacking routine.
+
+68
+00:05:34,660 --> 00:05:37,660
+The other part is there are super active players,
+
+69
+00:05:37,660 --> 00:05:39,660
+super skilled players.
+
+70
+00:05:39,660 --> 00:05:41,660
+And if you want to push forward,
+
+71
+00:05:41,660 --> 00:05:45,660
+it's super helpful to build up your own network.
+
+72
+00:05:45,660 --> 00:05:47,660
+Being it in industry,
+
+73
+00:05:47,660 --> 00:05:49,660
+being it in the academic world.
+
+74
+00:05:49,660 --> 00:05:57,660
+And this is the reason why we entered the CLO academic workshop in 2021.
+
+75
+00:05:57,660 --> 00:06:02,660
+Once again, because this also helped us to go next level.
+
+76
+00:06:02,660 --> 00:06:07,660
+What were the challenges that we were facing?
+
+77
+00:06:07,660 --> 00:06:14,660
+The main challenge is to embed 3D in current curricula.
+
+78
+00:06:14,660 --> 00:06:17,660
+Because I guess all of you experienced this issue.
+
+79
+00:06:17,660 --> 00:06:21,660
+You are having current lessons.
+
+80
+00:06:21,660 --> 00:06:28,660
+And you have to focus in the areas that are important to you.
+
+81
+00:06:28,660 --> 00:06:31,660
+Be it the sewing parts,
+
+82
+00:06:31,660 --> 00:06:35,660
+being it the textile parts,
+
+83
+00:06:35,660 --> 00:06:37,660
+being it in the CAD,
+
+84
+00:06:37,660 --> 00:06:39,660
+being it as 3D,
+
+85
+00:06:39,660 --> 00:06:42,660
+which is something new entering the curriculum,
+
+86
+00:06:42,660 --> 00:06:43,660
+which means you really,
+
+87
+00:06:43,660 --> 00:06:45,660
+really have to focus.
+
+88
+00:06:45,660 --> 00:06:47,660
+For us,
+
+89
+00:06:47,660 --> 00:06:50,660
+the general focus points were,
+
+90
+00:06:50,660 --> 00:06:52,660
+first of all,
+
+91
+00:06:52,660 --> 00:06:53,660
+the mechanics,
+
+92
+00:06:53,660 --> 00:06:54,660
+the digital sewing,
+
+93
+00:06:54,660 --> 00:06:57,660
+and then going to two application areas,
+
+94
+00:06:57,660 --> 00:07:00,660
+which are the virtual fit and the 3D design part.
+
+95
+00:07:00,660 --> 00:07:09,660
+What you are seeing on the right side is work of my students in 2021,
+
+96
+00:07:09,660 --> 00:07:11,660
+where they,
+
+97
+00:07:11,660 --> 00:07:13,660
+based on the materials,
+
+98
+00:07:13,660 --> 00:07:15,660
+I was teaching them,
+
+99
+00:07:15,660 --> 00:07:19,660
+had to experience their own small projects,
+
+100
+00:07:19,660 --> 00:07:22,660
+like developing a pattern in 2D,
+
+101
+00:07:22,660 --> 00:07:24,660
+transferring the data.
+
+102
+00:07:24,660 --> 00:07:25,660
+In this case,
+
+103
+00:07:25,660 --> 00:07:29,660
+we were using Electra's 2D system to CLO,
+
+104
+00:07:29,660 --> 00:07:31,660
+to arrange patterns,
+
+105
+00:07:31,660 --> 00:07:33,660
+to do the first swings,
+
+106
+00:07:33,660 --> 00:07:35,660
+and then debugging,
+
+107
+00:07:35,660 --> 00:07:39,660
+like optimize the braping of the garment,
+
+108
+00:07:39,660 --> 00:07:42,660
+optimize the pattern sizes to the fit.
+
+109
+00:07:43,660 --> 00:07:45,660
+And also identify,
+
+110
+00:07:45,660 --> 00:07:49,660
+this is something you're seeing on the shirt of Gabriela Schön,
+
+111
+00:07:49,660 --> 00:07:51,660
+summer semester 2020,
+
+112
+00:07:51,660 --> 00:07:53,660
+on the backside,
+
+113
+00:07:53,660 --> 00:07:57,660
+which areas are facing inconsistencies,
+
+114
+00:07:57,660 --> 00:07:59,660
+or that's the other part.
+
+115
+00:07:59,660 --> 00:08:02,660
+We are linking this also to our sewing classes,
+
+116
+00:08:02,660 --> 00:08:07,660
+are equivalent to what you were facing in the real life.
+
+117
+00:08:07,660 --> 00:08:12,660
+I already talked about embedding 3D.
+
+118
+00:08:12,660 --> 00:08:18,660
+And I really do choose this word by purpose,
+
+119
+00:08:18,660 --> 00:08:23,660
+which means embedding is something different to a add-on.
+
+120
+00:08:23,660 --> 00:08:30,660
+What I face in European teaching is that many universities
+
+121
+00:08:30,660 --> 00:08:37,660
+understand 3D skills as add-ons to the traditional textile and garment skills.
+
+122
+00:08:37,660 --> 00:08:39,660
+In my opinion,
+
+123
+00:08:39,660 --> 00:08:42,660
+this point of view is pretty mistaken.
+
+124
+00:08:42,659 --> 00:08:44,659
+It's not an add-on.
+
+125
+00:08:44,659 --> 00:08:46,659
+It's just a basic skill.
+
+126
+00:08:46,659 --> 00:08:50,659
+So like the students are able to sew,
+
+127
+00:08:50,659 --> 00:08:56,659
+like the students are able to develop patterns by hand,
+
+128
+00:08:56,659 --> 00:08:59,659
+and build up other competencies,
+
+129
+00:08:59,659 --> 00:09:02,659
+3D is the standard skill.
+
+130
+00:09:02,659 --> 00:09:07,659
+This means that our students do not have any choice
+
+131
+00:09:07,659 --> 00:09:11,659
+when it comes to the 3D classes for a pretty long time.
+
+132
+00:09:11,659 --> 00:09:12,659
+The skills,
+
+133
+00:09:12,659 --> 00:09:15,659
+we really want to transfer it to our students.
+
+134
+00:09:15,659 --> 00:09:19,659
+This means that in the bachelor degree,
+
+135
+00:09:19,659 --> 00:09:23,659
+we are having the digital construction lessons
+
+136
+00:09:23,659 --> 00:09:26,659
+that split between pattern,
+
+137
+00:09:26,659 --> 00:09:29,659
+pattern means construction by hand,
+
+138
+00:09:29,659 --> 00:09:30,659
+CAD,
+
+139
+00:09:30,659 --> 00:09:35,659
+which means construction by computer-aided design,
+
+140
+00:09:35,659 --> 00:09:41,659
+and the 3D simulation of exactly these CAD patterns.
+
+141
+00:09:41,659 --> 00:09:45,659
+This allows the students to have a close feedback loop.
+
+142
+00:09:45,659 --> 00:09:47,659
+What I develop by hand,
+
+143
+00:09:47,659 --> 00:09:50,659
+I see how to do this on the computer,
+
+144
+00:09:50,659 --> 00:09:57,659
+and I see the result of the drape in 3D on a defined human model.
+
+145
+00:09:57,659 --> 00:10:02,659
+We do this like on a standard level in digital construction 2
+
+146
+00:10:02,659 --> 00:10:09,659
+and go in more advanced 2D and 3D skills in digital construction 3.
+
+147
+00:10:09,659 --> 00:10:13,659
+In digital construction 4,
+
+148
+00:10:13,659 --> 00:10:16,659
+we do a shift of focus.
+
+149
+00:10:16,659 --> 00:10:19,659
+There we go on high-end simulation and rendering
+
+150
+00:10:19,659 --> 00:10:23,659
+because having the digital twins of your garments
+
+151
+00:10:23,659 --> 00:10:26,659
+on the technical part is the one thing,
+
+152
+00:10:26,659 --> 00:10:29,659
+enabling visual communication
+
+153
+00:10:29,659 --> 00:10:34,659
+and high-end visual communication is the other super important part.
+
+154
+00:10:34,659 --> 00:10:38,659
+Having this so far enables
+
+155
+00:10:38,659 --> 00:10:43,659
+the students to use 3D as a standard skill in projects.
+
+156
+00:10:43,659 --> 00:10:47,659
+These projects might be project lectures,
+
+157
+00:10:47,659 --> 00:10:51,659
+but might also be projects they are having in different lectures.
+
+158
+00:10:51,659 --> 00:10:52,659
+For example,
+
+159
+00:10:52,659 --> 00:10:55,659
+we are having lectures
+
+160
+00:10:55,659 --> 00:11:01,659
+facing on more uncommon sewing and tufting solutions
+
+161
+00:11:01,659 --> 00:11:02,659
+like welding,
+
+162
+00:11:02,659 --> 00:11:04,659
+like gluing and stuff like this,
+
+163
+00:11:04,659 --> 00:11:05,659
+where the students are,
+
+164
+00:11:05,659 --> 00:11:06,659
+for example,
+
+165
+00:11:06,659 --> 00:11:07,659
+in rain jackets.
+
+166
+00:11:07,659 --> 00:11:08,659
+And
+
+167
+00:11:08,659 --> 00:11:13,659
+since we started implementing this type of curriculum,
+
+168
+00:11:13,659 --> 00:11:19,659
+the students use 3D for 3D prototyping
+
+169
+00:11:19,659 --> 00:11:26,659
+of the garments that they are developing on this lecture on their own.
+
+170
+00:11:26,659 --> 00:11:31,659
+So this means 3D is a real standard skill.
+
+171
+00:11:31,659 --> 00:11:34,659
+And the professor having this lecture,
+
+172
+00:11:34,659 --> 00:11:36,659
+he is actually no 3D expert.
+
+173
+00:11:36,659 --> 00:11:38,659
+He also did not foster
+
+174
+00:11:38,659 --> 00:11:40,659
+the students to do so,
+
+175
+00:11:40,659 --> 00:11:44,659
+but it was the choice of the students on their own to do that.
+
+176
+00:11:44,659 --> 00:11:47,659
+And this is something which makes me really proud
+
+177
+00:11:47,659 --> 00:11:52,659
+because regularly you try to push industry exactly in this way,
+
+178
+00:11:52,659 --> 00:11:55,659
+like a industry garment manufacturer,
+
+179
+00:11:55,659 --> 00:11:59,659
+please do first of all digital prototyping
+
+180
+00:11:59,659 --> 00:12:03,659
+before you go to the real prototype.
+
+181
+00:12:03,659 --> 00:12:06,659
+And that's something that my students,
+
+182
+00:12:06,659 --> 00:12:09,659
+they really do this on their own purpose.
+
+183
+00:12:09,659 --> 00:12:10,659
+For sure,
+
+184
+00:12:10,659 --> 00:12:15,659
+I have to admit that for the lectures that were in advance,
+
+185
+00:12:15,659 --> 00:12:16,659
+we really,
+
+186
+00:12:16,659 --> 00:12:18,659
+really did push the students
+
+187
+00:12:18,659 --> 00:12:22,659
+and we really did raise awareness when it comes to this.
+
+188
+00:12:22,659 --> 00:12:24,659
+But
+
+189
+00:12:24,659 --> 00:12:25,659
+in the meantime,
+
+190
+00:12:25,659 --> 00:12:31,659
+it's still the students adopting this and using these skills.
+
+191
+00:12:31,659 --> 00:12:32,659
+And
+
+192
+00:12:32,659 --> 00:12:35,659
+I would so far say 3D is a
+
+193
+00:12:35,659 --> 00:12:38,659
+standard skill
+
+194
+00:12:38,659 --> 00:12:39,659
+for our students,
+
+195
+00:12:39,659 --> 00:12:43,659
+standard skill latest in the third semester
+
+196
+00:12:43,659 --> 00:12:47,659
+that they can use in further lectures as design lectures,
+
+197
+00:12:47,659 --> 00:12:49,659
+3D print design,
+
+198
+00:12:49,659 --> 00:12:51,659
+3D knit design,
+
+199
+00:12:51,659 --> 00:12:58,659
+alternative sewing technologies and whatever else.
+
+200
+00:12:58,659 --> 00:13:01,659
+I already said
+
+201
+00:13:01,659 --> 00:13:04,659
+a other success factor
+
+202
+00:13:04,659 --> 00:13:10,659
+was the CLO academic workshop.
+
+203
+00:13:10,659 --> 00:13:12,659
+For me personally,
+
+204
+00:13:12,659 --> 00:13:15,659
+it was less the teaching on the mechanics of the 3D software,
+
+205
+00:13:15,659 --> 00:13:19,659
+but more the really excellent tutorial database.
+
+206
+00:13:19,659 --> 00:13:20,659
+I mean,
+
+207
+00:13:20,659 --> 00:13:25,659
+the CAD database that you are equipped by CLO in these workshops
+
+208
+00:13:25,659 --> 00:13:26,659
+because this really,
+
+209
+00:13:26,659 --> 00:13:33,659
+really helped me to build up tutorials and curricula for my students.
+
+210
+00:13:33,659 --> 00:13:36,659
+In a super lean and handy way
+
+211
+00:13:36,659 --> 00:13:41,659
+and expand these teaching materials on my own purpose.
+
+212
+00:13:41,659 --> 00:13:42,659
+So I really,
+
+213
+00:13:42,659 --> 00:13:49,659
+really would like to advise you to make use of offers like this.
+
+214
+00:13:49,659 --> 00:13:50,659
+These are super,
+
+215
+00:13:50,659 --> 00:13:52,659
+super helpful.
+
+216
+00:13:52,659 --> 00:13:56,659
+Another success factor in our case is the team.
+
+217
+00:13:56,659 --> 00:13:59,659
+I guess you already heard I'm more of the techie.
+
+218
+00:13:59,659 --> 00:14:01,659
+So
+
+219
+00:14:01,659 --> 00:14:08,659
+design and aesthetics are by far not my core competencies.
+
+220
+00:14:08,659 --> 00:14:13,659
+I do not care if a shirt is pink or yellow when it comes to the technical part,
+
+221
+00:14:13,659 --> 00:14:14,659
+because for me,
+
+222
+00:14:14,659 --> 00:14:16,659
+it's just the question,
+
+223
+00:14:16,659 --> 00:14:19,659
+did you do your job on a technical basis,
+
+224
+00:14:19,659 --> 00:14:21,659
+right or wrong?
+
+225
+00:14:21,659 --> 00:14:23,659
+My colleague,
+
+226
+00:14:23,659 --> 00:14:24,659
+Maria Baum,
+
+227
+00:14:24,659 --> 00:14:26,659
+she's the creative part.
+
+228
+00:14:26,659 --> 00:14:29,659
+She is a design professor.
+
+229
+00:14:29,659 --> 00:14:31,659
+She really,
+
+230
+00:14:31,659 --> 00:14:44,659
+really helps the students to use the means and tools that I'm teaching the students in a super creative way to realize super,
+
+231
+00:14:44,659 --> 00:14:46,659
+super
+
+232
+00:14:46,659 --> 00:14:51,659
+difficult designs or innovative designs,
+
+233
+00:14:51,659 --> 00:15:00,659
+which means like we both have each other as enabler and can accompany the students right on the right level.
+
+234
+00:15:00,659 --> 00:15:04,659
+To have the best learning experience,
+
+235
+00:15:04,659 --> 00:15:09,659
+depending on which type of application you're looking at.
+
+236
+00:15:09,659 --> 00:15:13,659
+The other part is
+
+237
+00:15:13,659 --> 00:15:15,659
+I built up a online teaching platform for all the softwares that we are using at our textile classes at our university with video play,
+
+238
+00:15:15,659 --> 00:15:16,659
+video play,
+
+239
+00:15:16,659 --> 00:15:17,659
+video play,
+
+240
+00:15:17,659 --> 00:15:18,659
+video play,
+
+241
+00:15:18,659 --> 00:15:19,659
+video play,
+
+242
+00:15:19,659 --> 00:15:20,659
+video play,
+
+243
+00:15:20,659 --> 00:15:21,659
+video play,
+
+244
+00:15:21,659 --> 00:15:22,659
+video play,
+
+245
+00:15:22,659 --> 00:15:23,659
+video play,
+
+246
+00:15:23,659 --> 00:15:24,659
+video play,
+
+247
+00:15:24,659 --> 00:15:25,659
+video play,
+
+248
+00:15:25,659 --> 00:15:26,659
+video play,
+
+249
+00:15:26,659 --> 00:15:27,659
+video play,
+
+250
+00:15:27,659 --> 00:15:28,659
+video play,
+
+251
+00:15:28,659 --> 00:15:29,659
+video play,
+
+252
+00:15:29,659 --> 00:15:30,659
+video play,
+
+253
+00:15:30,659 --> 00:15:31,659
+video play,
+
+254
+00:15:31,659 --> 00:15:32,659
+video play,
+
+255
+00:15:32,659 --> 00:15:33,659
+video play,
+
+256
+00:15:33,659 --> 00:15:34,659
+video play,
+
+257
+00:15:34,659 --> 00:15:35,659
+video play,
+
+258
+00:15:35,659 --> 00:15:36,659
+video play,
+
+259
+00:15:36,659 --> 00:15:37,659
+video play,
+
+260
+00:15:37,659 --> 00:15:38,659
+video play,
+
+261
+00:15:38,659 --> 00:15:39,659
+video play,
+
+262
+00:15:39,659 --> 00:15:40,659
+video play,
+
+263
+00:15:40,659 --> 00:15:41,659
+video play,
+
+264
+00:15:41,659 --> 00:15:42,659
+video play,
+
+265
+00:15:42,659 --> 00:15:43,659
+video play,
+
+266
+00:15:43,659 --> 00:15:44,659
+video play,
+
+267
+00:15:44,659 --> 00:15:45,659
+video play,
+
+268
+00:15:45,659 --> 00:15:46,659
+video play,
+
+269
+00:15:46,659 --> 00:15:47,659
+video play,
+
+270
+00:15:47,659 --> 00:15:48,659
+video play,
+
+271
+00:15:48,659 --> 00:15:49,659
+video play,
+
+272
+00:15:49,659 --> 00:15:50,659
+video play,
+
+273
+00:15:50,659 --> 00:15:51,659
+video play,
+
+274
+00:15:51,659 --> 00:15:52,659
+video play,
+
+275
+00:15:52,659 --> 00:15:53,659
+video play,
+
+276
+00:15:53,659 --> 00:15:54,659
+video play,
+
+277
+00:15:54,659 --> 00:15:55,659
+video play,
+
+278
+00:15:55,659 --> 00:15:56,659
+video play,
+
+279
+00:15:56,659 --> 00:15:57,659
+video play,
+
+280
+00:15:57,659 --> 00:15:58,659
+video play,
+
+281
+00:15:59,379 --> 00:16:05,779
+i would say pure conviction like marina and me we are super super convinced that it's not the
+
+282
+00:16:05,779 --> 00:16:13,459
+question if you do a 3d it's just the question how good you do because it is in my opinion one
+
+283
+00:16:13,459 --> 00:16:20,819
+of the most important tools for industry for the next five to ten years um the other part
+
+284
+00:16:20,819 --> 00:16:27,860
+nevertheless and this was even more important during corona to enable the students in the
+
+285
+00:16:27,860 --> 00:16:35,139
+best way possible to choose their own teaching experience this is something we are optimizing
+
+286
+00:16:35,139 --> 00:16:43,300
+on a regular basis like each semester we are enhancing and improving our tutorial database
+
+287
+00:16:43,300 --> 00:16:49,539
+as well as our scripts as well as our teaching materials for presence lessons and presence
+
+288
+00:16:49,539 --> 00:16:57,539
+teaching here you see a super super simple
+
+289
+00:16:57,860 --> 00:17:06,740
+example for a 3d design class um i guess all of you are more or less facing um the trust issues
+
+290
+00:17:06,740 --> 00:17:14,900
+in industry like does 3d have any positive impact on my working or not um in this case you just see
+
+291
+00:17:14,900 --> 00:17:22,500
+a regular t-shirt like a we call it white shell which we draped with different textures like mesh
+
+292
+00:17:22,500 --> 00:17:27,620
+knit jersey shiny textures and you see that um the appearance
+
+293
+00:17:27,860 --> 00:17:36,340
+of the t-shirts completely depends on the type of material that you're using which is something
+
+294
+00:17:36,340 --> 00:17:42,340
+i really really focus on making the students understand this type of value because
+
+295
+00:17:42,900 --> 00:17:50,980
+if you are for example a t-shirt shirt trousers manufacturer if you are capable of building up
+
+296
+00:17:51,860 --> 00:17:57,780
+white shell libraries this really speeds up your process lens
+
+297
+00:17:57,860 --> 00:18:05,220
+okay this is like light speeding what you are doing so far because so far um industry is either
+
+298
+00:18:05,220 --> 00:18:12,580
+working on swatches or is making prototypes including the latency you need until these
+
+299
+00:18:12,580 --> 00:18:18,500
+prototypes are manufactured and by this it's just like a drag and drop operation having these
+
+300
+00:18:18,500 --> 00:18:25,380
+designs for a skilled student of mine and i guess also for skilled students of yours it's like
+
+301
+00:18:25,380 --> 00:18:27,780
+minutes once you have your stimulation and even
+
+302
+00:18:27,860 --> 00:18:33,460
+building up the simulation is the question of minutes not like hours what i really also do
+
+303
+00:18:34,020 --> 00:18:41,620
+teach the students is the ingredients of a good simulation we are aware of the fabric we are aware
+
+304
+00:18:41,620 --> 00:18:48,580
+of the pattern we are aware of the human model like the 3d human model and when it comes to the
+
+305
+00:18:48,580 --> 00:18:56,420
+fabric it is teaching the students the different types of maps and their type of use and how to
+
+306
+00:18:56,420 --> 00:18:57,300
+improve them
+
+307
+00:18:58,420 --> 00:19:06,740
+sharp maps that are not blurry that are that type of brilliant to go for later on high-end rendering
+
+308
+00:19:06,740 --> 00:19:14,340
+or option two you're just in the sketching use your smartphone or whatever camera else have a
+
+309
+00:19:14,980 --> 00:19:24,020
+short snippet use it and assess the worth of the design or not here you see also work of my
+
+310
+00:19:24,019 --> 00:19:29,700
+students actually all of the things that you're seeing here is work of my students you see it's
+
+311
+00:19:29,700 --> 00:19:35,460
+from 2021 actually my students are right now way better than they were at this time but we are
+
+312
+00:19:35,460 --> 00:19:43,139
+using also multiple tools surrounding to the traditional 2d cad tools in q3d in this type for
+
+313
+00:19:43,139 --> 00:19:50,740
+example fusion 360 here in fusion 360 we are we were making some kind of buckles and stuff like
+
+314
+00:19:50,740 --> 00:19:53,940
+this we are also working with blender
+
+315
+00:19:54,259 --> 00:20:01,299
+um to bring hardware or hardware components together here for example some kind of carabine
+
+316
+00:20:02,339 --> 00:20:07,059
+and we bring all of that together in clo for example in the bachelor's classes
+
+317
+00:20:07,940 --> 00:20:12,339
+to make the students understand how to make hardware and trims if you do not have them
+
+318
+00:20:13,460 --> 00:20:22,660
+how to import different different formats like objs fbx gltfs from other frameworks within
+
+319
+00:20:23,700 --> 00:20:23,859
+the
+
+320
+00:20:24,019 --> 00:20:29,859
+3d simulation framework because this is also based on my systems engineering background
+
+321
+00:20:30,500 --> 00:20:35,940
+you have to think in frameworks the best software not being framework capable or you
+
+322
+00:20:35,940 --> 00:20:42,420
+do not use it in a framework is just like digitalization of one step but it's about
+
+323
+00:20:42,420 --> 00:20:47,859
+the question how to digitize the entire steps that you are facing and that you are in need of
+
+324
+00:20:49,059 --> 00:20:53,940
+here you see work in progress how the students um improve the
+
+325
+00:20:54,259 --> 00:21:00,740
+from their sketch to the final simulation and this is something that we are really really
+
+326
+00:21:00,740 --> 00:21:05,539
+accompanying with our students closely and teaching them how to do this
+
+327
+00:21:05,539 --> 00:21:12,660
+but most of the time based after like standard teaching on their own projects
+
+328
+00:21:15,859 --> 00:21:21,379
+here you see what we used as a basis like for example the carabine was in avatar
+
+329
+00:21:22,579 --> 00:21:22,740
+the
+
+330
+00:21:24,019 --> 00:21:31,139
+pattern pieces were garments and for example here the button was used as a trim
+
+331
+00:21:33,460 --> 00:21:41,700
+here you see other results of students projects this is a backpack simulated in clo
+
+332
+00:21:43,220 --> 00:21:46,980
+that we later on also rendered on keyshot because
+
+333
+00:21:46,980 --> 00:21:54,019
+i really also want my students to understand you can do high-end visualization within 3d tool but i
+
+334
+00:21:54,019 --> 00:22:03,940
+think also way more expensive with 3d but there are also options to even more enhance your work
+
+335
+00:22:04,500 --> 00:22:11,700
+outside of the traditional 3d garments tools and the question is depending on your application
+
+336
+00:22:11,700 --> 00:22:19,460
+which type of visualization quality you need um being honest and co you are always super fast and
+
+337
+00:22:19,460 --> 00:22:23,379
+your visualizations are really really good if you have to go for the last percent um then other
+
+338
+00:22:23,380 --> 00:22:34,260
+might also be of use here you also see a different type of bags focusing on garments does not mean
+
+339
+00:22:35,140 --> 00:22:42,420
+to leave out the other textile products for example this semester we are starting a lecture
+
+340
+00:22:42,420 --> 00:22:48,740
+where the students develop a backpack in 3d and they also manufacture this backpack in 3d
+
+341
+00:22:48,740 --> 00:22:56,339
+without sewing just with gluing and with welding so to really push forward the idea of digital
+
+342
+00:22:56,339 --> 00:23:04,339
+prototyping and advanced manufacturing techniques here you see an other example of one of my
+
+343
+00:23:04,339 --> 00:23:11,380
+students work also from 2020 this is something i'm super proud of because what you see here
+
+344
+00:23:11,380 --> 00:23:18,259
+is the students have the task to go on digital and technical marketing purposes within their
+
+345
+00:23:19,539 --> 00:23:25,940
+and you see here on the right side of the puffer jacket you really see the funnels
+
+346
+00:23:27,140 --> 00:23:34,579
+of the downs which is super hard to visualize visualize um when you are doing like real
+
+347
+00:23:34,579 --> 00:23:41,220
+manufacturing real prototyping but which is super super easy when you go in the 3d simulation of the
+
+348
+00:23:41,220 --> 00:23:47,940
+garments um and this was one of the best work of my students at this time i'm really really
+
+349
+00:23:47,940 --> 00:23:48,660
+happy about it
+
+350
+00:23:48,740 --> 00:23:55,779
+the creativity the detail level of the simulation as well as the ideas how to present the products
+
+351
+00:23:57,940 --> 00:24:02,660
+we also go for knits because weft and warp knitting is one of the
+
+352
+00:24:03,220 --> 00:24:06,900
+focus teaching areas at our university as well
+
+353
+00:24:09,779 --> 00:24:18,740
+i think i have to tell you that in alpstadt we were in a knitting cluster in the southern part of
+
+354
+00:24:18,740 --> 00:24:24,339
+germany um which means that we have machine manufacturers for weft and
+
+355
+00:24:24,339 --> 00:24:31,380
+warp knitting right beside our doorstep and i guess all of you know that the visualization
+
+356
+00:24:31,380 --> 00:24:39,220
+of knitted garments is like champions league when it comes to 3d visualization you see
+
+357
+00:24:39,220 --> 00:24:48,740
+that there are inconsistencies when it comes to the gradient from the mesh of the weft knitting of
+
+358
+00:24:48,740 --> 00:24:53,220
+on this part to the RIPS on that part.
+
+359
+00:24:53,220 --> 00:24:55,440
+I guess you know this issue.
+
+360
+00:24:55,440 --> 00:24:57,299
+Most of the customers don't.
+
+361
+00:24:57,299 --> 00:24:59,960
+What you also see is that you can really, really
+
+362
+00:24:59,960 --> 00:25:01,880
+go on high-end visualization.
+
+363
+00:25:01,880 --> 00:25:04,980
+And if you do not know that it's a simulation,
+
+364
+00:25:04,980 --> 00:25:07,640
+I guess it comes pretty close to what you can also
+
+365
+00:25:07,640 --> 00:25:10,700
+show to the end customer, especially when you go,
+
+366
+00:25:10,700 --> 00:25:17,980
+for example, to web visualization like 720p.
+
+367
+00:25:17,980 --> 00:25:22,240
+These are other examples of my students' work.
+
+368
+00:25:22,240 --> 00:25:23,799
+Here's some rain jacket.
+
+369
+00:25:23,799 --> 00:25:28,720
+There's some training and competition outfit.
+
+370
+00:25:28,720 --> 00:25:31,299
+Most of the time, especially if the students are
+
+371
+00:25:31,299 --> 00:25:34,299
+skilled in the later semesters, they just
+
+372
+00:25:34,299 --> 00:25:38,259
+do get a task in terms of you have
+
+373
+00:25:38,259 --> 00:25:45,940
+to simulate garments that have a certain level of difficulty
+
+374
+00:25:45,940 --> 00:25:47,860
+and which type of garment you're
+
+375
+00:25:47,860 --> 00:25:49,780
+choosing in this tape.
+
+376
+00:25:49,780 --> 00:25:52,840
+It was sportswear, the main topic.
+
+377
+00:25:52,840 --> 00:25:55,720
+It's like the choice of the students.
+
+378
+00:25:55,720 --> 00:25:58,280
+And if you have to look at the taping, for example,
+
+379
+00:25:58,280 --> 00:25:59,800
+I guess it's super brilliant what
+
+380
+00:25:59,800 --> 00:26:02,540
+this student did in this case.
+
+381
+00:26:02,540 --> 00:26:08,560
+You also can go for super, super fancy 3D presentation.
+
+382
+00:26:08,560 --> 00:26:11,800
+You do not always have to think in the traditional style,
+
+383
+00:26:11,800 --> 00:26:14,800
+but you really can enhance your creativity.
+
+384
+00:26:14,800 --> 00:26:17,380
+This is also something I really encourage myself.
+
+385
+00:26:17,380 --> 00:26:17,860
+Thank you.
+
+386
+00:26:17,860 --> 00:26:20,560
+And now I asked some very classic questions.
+
+387
+00:26:20,560 --> 00:26:24,880
+Let's try to put a few head-on 여기서 to the camera
+
+388
+00:26:24,880 --> 00:26:26,200
+so that the shameless person
+
+389
+00:26:26,200 --> 00:26:27,660
+can see these match my students
+
+390
+00:26:27,660 --> 00:26:30,700
+to push their limits, to push their ideas and also
+
+391
+00:26:30,700 --> 00:26:33,700
+to push the software in order to get a better understanding
+
+392
+00:26:33,700 --> 00:26:36,020
+of what is possible so far.
+
+393
+00:26:36,020 --> 00:26:38,800
+This is something my students did in 2021.
+
+394
+00:26:38,800 --> 00:26:40,820
+So this is something like industry
+
+395
+00:26:40,820 --> 00:26:45,140
+is trying to achieve right now, and I can tell you it's possible.
+
+396
+00:26:45,140 --> 00:26:47,660
+If my students can do this, industry Hardwa,
+
+397
+00:26:47,860 --> 00:27:17,840
+I don't know.
+
+398
+00:27:17,860 --> 00:27:47,840
+I don't know.
+
+399
+00:27:47,860 --> 00:28:17,840
+I don't know.
+
+400
+00:28:17,860 --> 00:28:32,220
+Yeah, actually, this was one of the clips my students did in the industry project 2020 to 2021.
+
+401
+00:28:32,220 --> 00:28:41,340
+I guess you already see this is like two years ago. And this is what these type of students were already capable of.
+
+402
+00:28:41,340 --> 00:28:47,840
+I take these roughly old examples to.
+
+403
+00:28:47,860 --> 00:28:55,980
+To show how capable digital technology and 3D technology was already two to three years ago.
+
+404
+00:28:56,780 --> 00:29:00,860
+Right now, we can achieve even more because computation power is even better.
+
+405
+00:29:01,660 --> 00:29:11,340
+The algorithms are even better, which means that the type of garments, the creativity and
+
+406
+00:29:13,020 --> 00:29:17,100
+like touch and feel that you can realize is so much better.
+
+407
+00:29:17,860 --> 00:29:24,400
+Even now, then these students did experience in 2021.
+
+408
+00:29:24,400 --> 00:29:29,440
+But if you have a close look at this, I would say this is already some kind of brilliant.
+
+409
+00:29:29,440 --> 00:29:36,460
+And I guess everyone can understand the value these technologies have on teaching.
+
+410
+00:29:36,460 --> 00:29:47,660
+And I also think that you can pretty easily understand how proud my students were of her work once they were finished.
+
+411
+00:29:47,660 --> 00:29:49,620
+And I think you can easily learn something new about this project.
+
+412
+00:29:49,620 --> 00:29:51,660
+Which means that once again, others can appreciate it.
+
+413
+00:29:51,660 --> 00:29:53,220
+Because I was so impressed with the project like this.
+
+414
+00:29:53,220 --> 00:30:00,580
+This type of project was we are having industrial projects.
+
+415
+00:30:00,580 --> 00:30:09,860
+Which means in the sixth semester, like pretty at the end of the studies, the students have for 15 week weeks, the target to work on the issue.
+
+416
+00:30:09,860 --> 00:30:12,500
+Provided by industrial partners.
+
+417
+00:30:12,500 --> 00:30:14,200
+They do this like 20 hours per week.
+
+418
+00:30:14,200 --> 00:30:15,460
+And these is a part of the results.
+
+419
+00:30:15,460 --> 00:30:16,940
+My students did in this context.
+
+420
+00:30:16,940 --> 00:30:24,980
+partner in this type of project. The task was to develop digital collections in full
+
+421
+00:30:24,980 --> 00:30:39,600
+creativity and to do as much like visualization particles as possible. One chart outlook is
+
+422
+00:30:39,600 --> 00:30:46,539
+like in the digital world today is just like the tomorrow of yesterday, which means
+
+423
+00:30:46,940 --> 00:30:56,120
+that we really do focus on improving our workflows. This means we really do consistently work
+
+424
+00:30:56,120 --> 00:31:03,480
+on workflows. The one you're seeing here is that we are using Blender, Autodesk, Visu
+
+425
+00:31:03,480 --> 00:31:10,220
+for asset generation like we do all in this workflow of the 2D pattern development as
+
+426
+00:31:10,220 --> 00:31:16,920
+well as in Silo and do also there the 3D simulation. And then you can just decide
+
+427
+00:31:16,920 --> 00:31:23,640
+to publish for which one in Unity. You can build up some AR apps or 3D viewer apps. You can go for
+
+428
+00:31:23,640 --> 00:31:29,480
+KeyShot for rendering. You can go for Blender like an intermediate renderer or intermediate tool,
+
+429
+00:31:29,480 --> 00:31:37,320
+or you can just render and publish out of Silo. For example, right now you have super much or
+
+430
+00:31:37,320 --> 00:31:44,920
+super innovative solutions in Closet. Also since like the last days when it comes to AR, this is
+
+431
+00:31:44,920 --> 00:31:46,900
+one of our workflows. We are working on a lot of different workflows. We are working on a lot of
+
+432
+00:31:46,920 --> 00:31:53,480
+different models. We are working like on multiple ones. And I really do focus on making my students
+
+433
+00:31:53,480 --> 00:32:00,920
+understand the value also of these ones. Yeah, actually, from my part, that's it. I really,
+
+434
+00:32:00,920 --> 00:32:08,600
+really would like to thank you for your audience. And I hope that I could give some insights of our
+
+435
+00:32:08,600 --> 00:32:15,640
+work, that I could inspire your work a little bit. And if you have any questions also like in the
+
+436
+00:32:15,640 --> 00:32:16,759
+next days or weeks, please feel free to ask them in the Q&A box. And if you have any questions,
+
+437
+00:32:16,759 --> 00:32:16,840
+also like in the next days or weeks, please feel free to ask them in the Q&A box. And if you have any questions also like in the next days or weeks,
+
+438
+00:32:16,840 --> 00:32:27,400
+I guess Elaine, she will provide my contact data. Feel always free to just go in touch and ask me.
+

@@ -1,0 +1,160 @@
+1
+00:00:00,000 --> 00:00:10,000
+In the 2022.4.2 version, we improved the conflict processing function of GPU simulation,
+
+2
+00:00:10,000 --> 00:00:14,000
+which allows for stable simulation when simulating the clothing of multi-layered plate.
+
+3
+00:00:14,000 --> 00:00:21,000
+In addition, the conflict processing between the plate and the virtual model can also be run smoothly to increase the efficiency of the work.
+
+4
+00:00:21,000 --> 00:00:25,000
+Let's take a closer look at the improvements through the example.
+
+5
+00:00:25,000 --> 00:00:29,000
+Let's take a look at the UI changes in the software interface.
+
+6
+00:00:29,000 --> 00:00:35,000
+Since GPU simulation has been improved and expanded the scope of use, we have improved the menu of simulation functions.
+
+7
+00:00:35,000 --> 00:00:40,000
+First, add the animation used when recording animation, complete, image.
+
+8
+00:00:40,000 --> 00:00:46,000
+In addition, add the menu for setting CPU and GPU options at the bottom of the simulation type.
+
+9
+00:00:46,000 --> 00:00:52,000
+It is allowed to set CPU and GPU options for ordinary, test and animation simulation respectively.
+
+10
+00:00:52,000 --> 00:00:57,000
+When the GPU option is set, the simulation icons are displayed as empty keys.
+
+11
+00:00:57,000 --> 00:00:59,000
+Next, let's compare the use of GPU and GPU.
+
+12
+00:00:59,000 --> 00:01:09,000
+In order to make a clear comparison, you can click on the main menu to set the display environment display real speed,
+
+13
+00:01:09,000 --> 00:01:19,000
+to display the information and FPS speed of the used version at the bottom left of the 3D window.
+
+14
+00:01:19,000 --> 00:01:27,000
+First, compare the simulation speed of normal speed and default, on the left is GPU and on the right is CPU.
+
+15
+00:01:27,000 --> 00:01:33,000
+You can see that in terms of speed, the speed of GPU simulation is much faster.
+
+16
+00:01:33,000 --> 00:01:37,000
+Next, we will use the test穿 to simulate.
+
+17
+00:01:37,000 --> 00:01:44,000
+Similarly, we can see that GPU simulation is much faster than CPU simulation.
+
+18
+00:01:44,000 --> 00:01:50,000
+Please note that GPU simulation speed may be due to the performance of the graphics card.
+
+19
+00:01:57,000 --> 00:02:07,000
+After choosing GPU simulation, we can pull the board at the 3D window to observe the stability of the simulation.
+
+20
+00:02:07,000 --> 00:02:17,000
+You can see that even if the board is multi-layer, it can also be simulated in a stable way.
+
+21
+00:02:17,000 --> 00:02:23,000
+Next, we will demonstrate the process of using GPU simulation in animation mode to record the process of having multi-layer board clothing.
+
+22
+00:02:23,000 --> 00:02:25,000
+After selecting GPU simulation, we can pull the board at the 3D window to observe the stability of the simulation.
+
+23
+00:02:25,000 --> 00:02:31,000
+You can see that even if the board is multi-layer, it can also be simulated in a stable way.
+
+24
+00:02:46,000 --> 00:02:50,000
+When the strength of Agreed loss of factor is relatively small and the number of boards and layers is можете more.
+
+25
+00:02:50,000 --> 00:02:53,000
+It is much faster and more stable to use GPU simulation than before.
+
+26
+00:02:55,000 --> 00:02:58,300
+However, this may also be due to the performance of the graphics card.
+
+27
+00:02:58,300 --> 00:03:04,900
+It should be noted that GPU simulation is currently only applicable to ordinary clothing simulation, not including wool products.
+
+28
+00:03:04,900 --> 00:03:09,900
+In addition, it is not currently applicable to secondary simulation and software model simulation.
+
+29
+00:03:09,900 --> 00:03:16,599
+In addition to improving the speed of simulation, due to the improvement of conflict processing, the accuracy of GPU simulation has also been improved,
+
+30
+00:03:16,599 --> 00:03:22,599
+and when using GPU simulation, it can also get the same result as the CPU simulation result.
+
+31
+00:03:22,599 --> 00:03:30,599
+In addition, please note that when saving project files, the option of not saving the processor is not selected.
+
+32
+00:03:30,599 --> 00:03:34,599
+For example, when saving this file, the CPU is selected.
+
+33
+00:03:34,599 --> 00:03:37,199
+In the test mode,
+
+34
+00:03:52,599 --> 00:04:00,599
+the GPU simulation mode is changed to the GPU normal mode in the software, and when the file is opened again,
+
+35
+00:04:00,599 --> 00:04:08,599
+it will be changed to the processor option selected at this time.
+
+36
+00:04:08,599 --> 00:04:16,600
+However, the normal test mode and animation simulation options are saved in the file mode and become the test mode.
+
+37
+00:04:16,600 --> 00:04:20,600
+After improvement, the GPU simulation can be stabilized and quickly simulated.
+
+38
+00:04:20,600 --> 00:04:21,600
+Welcome to experience GPU simulation.
+
+39
+00:04:21,600 --> 00:04:22,600
+Thank you for your attention.
+
+40
+00:04:22,600 --> 00:04:25,600
+Please write your feelings and suggestions in the message area.
+

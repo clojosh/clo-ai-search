@@ -1,0 +1,268 @@
+1
+00:00:00,000 --> 00:00:10,000
+Hello everyone, today we will explain the usage of the setting layer tool.
+
+2
+00:00:10,000 --> 00:00:14,000
+The setting layer tool is used to set the layer relationship between the panels.
+
+3
+00:00:14,000 --> 00:00:17,000
+The following is an example of a silver panel and a pure panel.
+
+4
+00:00:17,000 --> 00:00:21,000
+Describe the concept and principle of the setting layer tool.
+
+5
+00:00:21,000 --> 00:00:23,000
+First, switch to the texture surface.
+
+6
+00:00:23,000 --> 00:00:25,000
+You can see the front and back of the panel.
+
+7
+00:00:25,000 --> 00:00:27,000
+This side is the front of the panel.
+
+8
+00:00:27,000 --> 00:00:29,000
+The slightly darker side is the back of the panel.
+
+9
+00:00:29,000 --> 00:00:33,000
+The pure panel in our first project file is facing outwards.
+
+10
+00:00:33,000 --> 00:00:36,000
+And the silver panel is facing outwards.
+
+11
+00:00:36,000 --> 00:00:38,000
+Let's use the setting layer tool first.
+
+12
+00:00:38,000 --> 00:00:41,000
+Click on the silver panel, then click on the pure panel.
+
+13
+00:00:41,000 --> 00:00:42,000
+Open the simulation.
+
+14
+00:00:42,000 --> 00:00:45,000
+The silver panel is simulated outside the pure panel.
+
+15
+00:00:45,000 --> 00:00:48,000
+At this time, the middle arrow is the plus sign.
+
+16
+00:00:48,000 --> 00:00:51,000
+If we click on the change to the minus sign, open the simulation.
+
+17
+00:00:51,000 --> 00:00:55,000
+You can see that the silver panel is simulated inside the pure panel.
+
+18
+00:00:55,000 --> 00:00:58,000
+In summary, if the middle arrow is the plus sign,
+
+19
+00:00:58,000 --> 00:01:02,000
+then the selected panel will be simulated outside the selected panel.
+
+20
+00:01:02,000 --> 00:01:04,000
+If it is the minus sign, it is the opposite.
+
+21
+00:01:04,000 --> 00:01:06,000
+Let's open the second project file.
+
+22
+00:01:06,000 --> 00:01:09,000
+At this time, the silver panel is facing outwards.
+
+23
+00:01:09,000 --> 00:01:11,000
+The pure panel is also facing outwards.
+
+24
+00:01:11,000 --> 00:01:14,000
+We use the setting layer tool to click on the silver panel first.
+
+25
+00:01:14,000 --> 00:01:16,000
+Then click on the pure panel.
+
+26
+00:01:16,000 --> 00:01:17,000
+Open the simulation.
+
+27
+00:01:17,000 --> 00:01:22,000
+You can see that the silver panel is simulated again outside the front of the pure panel.
+
+28
+00:01:22,000 --> 00:01:25,000
+This is because the setting layer tool is simulated on the panel layer,
+
+29
+00:01:25,000 --> 00:01:30,000
+and the second simulation is affected by the opposite side of the selected panel.
+
+30
+00:01:30,000 --> 00:01:33,000
+We can see the selected panel as moving,
+
+31
+00:01:33,000 --> 00:01:36,000
+and the selected panel is fixed.
+
+32
+00:01:36,000 --> 00:01:38,000
+If the middle arrow is the plus sign,
+
+33
+00:01:38,000 --> 00:01:43,000
+then the selected panel will always be simulated outside the front of the selected panel.
+
+34
+00:01:43,000 --> 00:01:46,000
+If it is the minus sign, it is the opposite.
+
+35
+00:01:46,000 --> 00:01:49,000
+Next, let's take this jacket as an example.
+
+36
+00:01:49,000 --> 00:01:51,000
+When we make 3D clothing,
+
+37
+00:01:51,000 --> 00:01:53,000
+the front of the panel is usually facing outwards,
+
+38
+00:01:53,000 --> 00:01:55,000
+and the back of the panel is facing outwards.
+
+39
+00:01:55,000 --> 00:01:57,000
+When the fabric is of the opposite material,
+
+40
+00:01:57,000 --> 00:01:58,000
+the effect is the same,
+
+41
+00:01:58,000 --> 00:02:00,000
+and when the thick texture surface is opened,
+
+42
+00:02:00,000 --> 00:02:03,000
+the display effect of the clothing is not affected.
+
+43
+00:02:03,000 --> 00:02:07,000
+But this clothing uses a fabric with a clear difference in the opposite side.
+
+44
+00:02:07,000 --> 00:02:10,000
+Its side should face outwards.
+
+45
+00:02:10,000 --> 00:02:13,000
+In addition, in order to simulate a stable wearing effect,
+
+46
+00:02:13,000 --> 00:02:19,000
+we will use the setting layer tool to set the layer relationship between the large panel and the side.
+
+47
+00:02:19,000 --> 00:02:22,000
+Then we will point the large panel to the side,
+
+48
+00:02:22,000 --> 00:02:24,000
+and simulate the outside of the side.
+
+49
+00:02:24,000 --> 00:02:26,000
+In this case,
+
+50
+00:02:26,000 --> 00:02:28,000
+if we turn the side over,
+
+51
+00:02:28,000 --> 00:02:32,000
+then the large panel will be the same as what we talked about in the previous demonstration.
+
+52
+00:02:32,000 --> 00:02:35,000
+Simulate the outside of the side panel.
+
+53
+00:02:35,000 --> 00:02:38,000
+So we need to use the setting layer tool,
+
+54
+00:02:38,000 --> 00:02:40,000
+click on the symbol in the arrow,
+
+55
+00:02:40,000 --> 00:02:43,000
+you can see that the plus sign has become the minus sign.
+
+56
+00:02:43,000 --> 00:02:44,000
+Open the simulation again,
+
+57
+00:02:44,000 --> 00:02:48,000
+then the large panel will simulate the outside of the side panel,
+
+58
+00:02:48,000 --> 00:02:51,000
+which is the display effect we want to get in the end.
+
+59
+00:02:52,000 --> 00:02:58,000
+Let's look at the simulationelt
+
+60
+00:03:02,000 --> 00:03:03,000
+The time frame is available to calculate like this.
+
+61
+00:03:03,000 --> 00:03:05,300
+These are the MON mountains
+
+62
+00:03:05,300 --> 00:03:08,000
+The자� unveiled this time.
+
+63
+00:03:08,000 --> 00:03:11,000
+It is easy to understand and it is also simple.
+
+64
+00:03:11,000 --> 00:03:14,000
+For example,
+
+65
+00:03:14,000 --> 00:03:16,000
+When I scroll down,
+
+66
+00:03:16,000 --> 00:03:18,000
+I get the equivalent time frame,
+
+67
+00:03:18,000 --> 00:03:20,000
+at the red cell line,
+

@@ -1,183 +1,161 @@
 [
     {
-        "id": "a85472fbe0984c13af4f31a949b6729b",
-        "url": "https://connect.clo-set.com/community/post/a85472fbe0984c13af4f31a949b6729b",
-        "title": "Missing Avatar toolbar",
-        "content": "Has anyone else had their Avatar side toolbar go missing?\n\nNow I'm having to go through the 'File' toolbar and manually do every addition and change through the Add feature. It's taking forever to do things this way.\n\n\n### Community Post Comments:\nComment 1: you can try clicking the Reset Layout button in the bottom right corner.",
-        "content_description": "\"Find solutions and share experiences related to missing Avatar side toolbars and the challenges of navigating through the 'File' toolbar.\"",
-        "created_at": "2025-06-04T18:50:49.78Z",
+        "id": "2e642410059d4beebb4daf3c8d082950",
+        "url": "https://connect.clo-set.com/community/post/2e642410059d4beebb4daf3c8d082950",
+        "title": "Problems with Graphics Card",
+        "content": "Dear Dears, I'm having major trouble finding a suitable desktop/laptop for CLO 3D. I already returned one laptop. With the NVIDIA GeForce 5070TI graphics card the program constantly crashes. Working is impossible. Support is looking into it, but I'm not very technically savvy and I'm not getting any concrete information about which graphics card runs stably. Can anyone give me a tip? Who has a laptop they're happy with and where CLO runs without crashing multiple times a day? Thanks a lot & merci beaucoup, Tina\n\n### Community Post Comments:\nComment 1: Hi There. It does look like our tech team has gone over a lot of support about your graphics card and updates. But if you have returned that computer and looking for another one. We do always recommend looking at our specs page - https://connect.clo-set.com/community/post/2e642410059d4beebb4daf3c8d082950 also when looking at a computer we recommend looking at Gaming Specific Laptops\nReply 1: Hi,Yes,I’ve already been in contact with the CLO Support team several times, but unfortunately, I haven’t been able to make any progress. I did the updates and everything but the software crashed nonstop. My laptop meets all the system requirements listed on your website, yet CLO 3D keeps crashing regularly – sometimes up to ten times a day.I understand that these issues might be related to certain graphics card models. However, my device is a common gaming laptop equipped with a high-performance GPU. As an end user and not an IT expert, it’s very difficult for me to troubleshoot these technical problems on my own.I simply want to be able to work reliably with CLO 3D, but this hasn’t been possible for weeks. I hope you understand that it’s impossible to build a business under these conditions. And it dosen't really help to receive the same link to the minimum system requirements over and over again. I’ve described my problem here in the hope of getting some advice from the community. I hope that’s okay with you.\nReply 2: You have also asked about other computers. So we do recommend looking into gaming specific.As for CLO crashes I did not see any files from CLO attached so I am curious if you are following best practices? like a few mentioned below-Keeping Large pattern pieces at 20 Particle Distance while working/editing-Building Garments 1 at a time in their own files (not building several garments or a full look in 1 file). Always good to build on their own and combine once done-Are you applying prints/graphics that are too large and slowing down CLOThese are just a few random ideas above",
+        "content_description": "A community forum page for users to share and recommend reliable laptops or desktops that run CLO 3D smoothly without crashing.",
+        "source": "Connect Community",
+        "article_created_at": "2025-11-12T11:17:49.81Z",
+        "article_updated_at": "2025-11-12T11:17:49.81Z",
+        "category": 210,
+        "tags": [
+            "Graphicscard",
+            "CLO"
+        ]
+    },
+    {
+        "id": "673a2e1d9abf4b9b806956bbce096ffc",
+        "url": "https://connect.clo-set.com/community/post/673a2e1d9abf4b9b806956bbce096ffc",
+        "title": "Render Issue",
+        "content": "![27d1298d3577482ea7439b527058e2e5](https://storagefiles.clo-set.com/public/community/202511/673a2e1d9abf4b9b806956bbce096ffc/images/27d1298d3577482ea7439b527058e2e5Screenshot%202025-11-12%20at%2012.21.53.png)Hi everyone,  \nI’m having an issue with rendering in CLO3D. Even though all my settings are the same as usual, the final render image looks blurry and doesn’t get sharp, no matter the resolution or quality level I choose.  \nI’ve checked lighting, camera focus, and render settings, everything seems fine.  \nHas anyone experienced this before or knows what might be causing it?\n\n### Community Post Comments:\nComment 1: I would recommend you post all your render properties. But the one thing I see is your noise is set to 0.001. Which means likely our computer cannot finish with such a low level.I usually recommend setting noise to 0.030. I have found the if I render the same image at 0.030 and lower no one can actually visually see a difference. The only thing is going lower means you you need to increase render time and it just takes more time\nReply 1: Thank you !",
+        "content_description": "A community forum page for users to discuss and troubleshoot rendering issues in CLO3D, specifically addressing blurry final images despite correct settings.",
+        "source": "Connect Community",
+        "article_created_at": "2025-11-12T09:29:18.983Z",
+        "article_updated_at": "2025-11-12T09:29:18.983Z",
         "category": 220,
         "tags": [
             "CLO",
-            "Avatar"
-        ]
-    },
-    {
-        "id": "6369190026d5481f97e5f250e6489ccf",
-        "url": "https://connect.clo-set.com/community/post/6369190026d5481f97e5f250e6489ccf",
-        "title": "Skin without Underwear",
-        "content": "I want to create underwear and need to use an avatar without underwear texture to use it for my presentation. I'm not able to change the skin in the newest CLO version. How can I solve this problem? In addition the question: is it possible that the avatars like Feifei can be added back to the default garment avatars? I was always using FeiFei and like to continue using her.\n\nHope we can find a solution.\n\nSophie\n\nPS.: In my opinion the new way of reaching the library is not an improvement.\n\n\n### Community Post Comments:\nComment 1: Hi There. For the newer Avatars the undergarments can be set to nude, this has been a feature in CLO for several versions now. You can click on the avatar and the go to the Property Editor &gt; Body Styling &gt; Click on the blue head icon to the right on Skin Style &gt; a pop up will open &gt; Change underwear from Covered to NudeAs for older Avatars these will not be added back to to CLO library. But if you wish to continue using FeiFei you can open an old CLO project where you used FeiFei and then go to File &gt; Save As Avatar. You can save FeiFei, just make sure to save to your local computer/sharedirve and not to the CLO program folders as those can be replaced when CLO is updated in the future.Also, keep in mind that FeiFei and older avatars will not have some of the newer features like bust adjustment, soft body, or the above mentioned Skin Style options",
-        "content_description": "This web page aims to provide solutions for creating a custom avatar without underwear texture in CLO software and to discuss the possibility of restoring the Feifei avatar to the default garment options.",
-        "created_at": "2025-06-04T09:23:49.39Z",
-        "category": 250,
-        "tags": [
-            "CLO",
             "CLO-SET",
-            "Avatar",
-            "Texture",
-            "UI",
-            "Simulation"
+            "CONNECT"
         ]
     },
     {
-        "id": "12d312a764e4454991d2b81b70d8f144",
-        "url": "https://connect.clo-set.com/community/post/12d312a764e4454991d2b81b70d8f144",
-        "title": "Two-Tone Knit Fabric",
-        "content": "![7ef7d9495dc84c3fbc4e3dce00c2dc0c](https://storagefiles.clo-set.com/public/community/202506/12d312a764e4454991d2b81b70d8f144/images/7ef7d9495dc84c3fbc4e3dce00c2dc0cIMG_1038.jpeg)Hello everyone,\n\nim trying to work out how to create this two-tone 2x2 knit fabric with the knitwear Feature. I chose the 2x2 Rib Option and played around with the ply colors but could only achieve random patterns of color. \n\nDoes someone have an idea how to achieve this effect?\n\n\n### Community Post Comments:\nComment 1: I have a little trick. Attached is a png file of \"Reverse Knit Texture\". We can insert it from \"Graphics (2D Pattern)\". Just like the attached photo.🙂",
-        "content_description": "This web page aims to connect knitters seeking advice on creating a two-tone 2x2 knit fabric using the knitwear feature, encouraging collaboration and sharing of techniques to achieve the desired effect.",
-        "created_at": "2025-06-02T19:39:16.443Z",
-        "category": 210,
+        "id": "03d554de45574c7c8830cdedca8b0769",
+        "url": "https://connect.clo-set.com/community/post/03d554de45574c7c8830cdedca8b0769",
+        "title": "Graphics not showing base fabric texture",
+        "content": "Hello, I am new to Clo and trying apply a print to a fabric (with a normal map that I created of a unique fabric) but when I do this as you can see below on the front panel, the fabric map / texture doesn't show up. In the graphics properties I tried to add the normal map as per the fabric and made it have the same settings but this didn't work. I can see a lot of old posts about how to get sublimated garment graphics showing properly but I am not sure on the latest versions how to do this (2025.1.236). Any help would be greatly appreciated!\n\n![93b8087c3b254d9da8d6e163659d467e](https://storagefiles.clo-set.com/public/community/202511/03d554de45574c7c8830cdedca8b0769/images/93b8087c3b254d9da8d6e163659d467eCapture.PNG)\n\n### Community Post Comments:\n\n\nComment 2: Hi There. If you want to use the Normal map that is from the applied fabric you do not add a normal map to the graphic, instead you check the box directly below that says \"Use same Map as Fabric\"Also from your screenshot I do see something added to the Normal Map area. But it is just a white box (possibly has a texture I cannot see) but that is not a normal Map either way. Normal Maps have a bluish/purplish color similar to screenshot for a normal map brick attached below\nReply 1: Thanks for your help Ariel I will check those out and give it a go!",
+        "content_description": "A community support page seeking guidance on correctly applying and displaying custom fabric textures and normal maps in Clo 3D version 2025.1.236.",
+        "source": "Connect Community",
+        "article_created_at": "2025-11-12T00:46:17.133Z",
+        "article_updated_at": "2025-11-12T00:46:17.133Z",
+        "category": 220,
         "tags": [
             "CLO",
-            "Material",
             "Texture"
         ]
     },
     {
-        "id": "41f12dea3ab3482195d14b4861a76479",
-        "url": "https://connect.clo-set.com/community/post/41f12dea3ab3482195d14b4861a76479",
-        "title": "Connect Store pending issue",
-        "content": "Hi, I'm new here and trying to upload my design to the Connect Store—how long does \"Pending\" usually take? Mine seems stuck.\n\n\n### Community Post Comments:\nComment 1: I think the long \"pending\" is caused by a problem with the item being uploaded, usually there will be a notification sent from the website for details of the problem.\n\nComment 2: Hi. From Friday to Sunday, the checking and uploading of designs will not be carried out by the site. Evaluations will resume starting from Monday",
-        "content_description": "\"Find answers and support for uploading your designs to the Connect Store, including guidance on pending status and troubleshooting tips.\"",
-        "created_at": "2025-06-01T20:26:04.42Z",
+        "id": "09474b7ab0b9400bbe7bd438397fc81b",
+        "url": "https://connect.clo-set.com/community/post/09474b7ab0b9400bbe7bd438397fc81b",
+        "title": "通勤轻奢风穿搭",
+        "content": "都市酷女孩的轻奢出街配方\n\n![ae608e1922e5453f86f2595c6b6479bb](https://storagefiles.clo-set.com/public/community/202511/09474b7ab0b9400bbe7bd438397fc81b/images/ae608e1922e5453f86f2595c6b6479bb%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-11-11%20150353.png)\n\n详情可以看我主页！",
+        "content_description": "介绍都市酷女孩的轻奢时尚搭配灵感，助你轻松打造出街好look。",
+        "source": "Connect Community",
+        "article_created_at": "2025-11-11T07:06:54.333Z",
+        "article_updated_at": "2025-11-11T07:06:54.333Z",
         "category": 210,
         "tags": [
-            "CONNECT",
-            "CLO-SET",
             "CLO",
-            "Import_Export"
+            "Avatar",
+            "Substance",
+            "Photoshop",
+            "Rendering"
         ]
     },
     {
-        "id": "abbd9a22b5804848b5872bdb8de4f6b2",
-        "url": "https://connect.clo-set.com/community/post/abbd9a22b5804848b5872bdb8de4f6b2",
-        "title": "Realistic human avatar",
-        "content": "Could you please share the workflow for creating realistic animations in CLO3D, where the final result appears as if a real person is wearing the garment we designed?\n",
-        "content_description": "\"Explore our comprehensive workflow for crafting realistic animations in CLO3D, ensuring your garment designs come to life as if worn by a real person.\"",
-        "created_at": "2025-06-01T16:21:48.31Z",
+        "id": "c54f82abac964292bb3e6ed94aebe5a0",
+        "url": "https://connect.clo-set.com/community/post/c54f82abac964292bb3e6ed94aebe5a0",
+        "title": "Customize Kid's avatar",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202511/c54f82abac964292bb3e6ed94aebe5a0/images/192be51913c5452c8446ade6ceffab2dScreenshot%202025-11-10%20180239.png)How can I customize the kid's avatar measurement?\n\n### Community Post Comments:\nComment 1: Hi there, for now, it is not possible to edit the baby avatar's measurements.\nReply 1: thanks for the reply @lucile",
+        "content_description": "This page provides instructions on how to customize your kid's avatar measurements for a better fit.",
+        "source": "Connect Community",
+        "article_created_at": "2025-11-10T12:34:13.27Z",
+        "article_updated_at": "2025-11-10T12:34:13.27Z",
         "category": 220,
         "tags": [
             "CLO",
-            "CONNECT",
-            "UnrealEngine",
-            "AI",
-            "Animation",
-            "Avatar"
+            "Avatar",
+            "customize",
+            "measurement"
         ]
     },
     {
-        "id": "2162a1956bb04d698867c59480a94bc5",
-        "url": "https://connect.clo-set.com/community/post/2162a1956bb04d698867c59480a94bc5",
-        "title": "yalda",
-        "content": "![bbcbaee05caf442184c849c242d68a45](https://storagefiles.clo-set.com/public/community/202505/2162a1956bb04d698867c59480a94bc5/images/bbcbaee05caf442184c849c242d68a4527.1.jpg)\n\n\n### Community Post Comments:\nComment 1: Beautiful work!",
-        "content_description": "The purpose of this web page is to showcase a vibrant community event that celebrates creativity and connection through art and collaboration.",
-        "created_at": "2025-05-30T21:09:58.35Z",
+        "id": "9f7cce406aab4cbca9310630cf19a037",
+        "url": "https://connect.clo-set.com/community/post/9f7cce406aab4cbca9310630cf19a037",
+        "title": "🏆 Announcing the Winners of the HAZZYS FOOTBALL CLUB ⚽",
+        "content": "## ![](https://storagefiles.clo-set.com/public/community/202511/9f7cce406aab4cbca9310630cf19a037/images/08f14cf36fbb4a5c84b0569ed1999126Hazzys%20WINNER%20COMMUNITY%20THUMBNAIL.png)![](https://storagefiles.clo-set.com/public/community/202511/9f7cce406aab4cbca9310630cf19a037/images/1c2245d2fdd24d39a78291acc07188f31st_NAT-VIRTUAL%20%282%29.jpg)![](https://storagefiles.clo-set.com/public/community/202511/9f7cce406aab4cbca9310630cf19a037/images/a54a6b403ebc4ee6a45e05a2168dee511st_NAT-VIRTUAL%20%281%29.jpg)**_📣 Huge shout out to the winners of our  \nCONNECT X HAZZYS contest winners! ⁠⁠_**  \n⁠\n\n* * *\n\n🏆 \n\n  \n1st @NAT-VIRTUAL⁠  \n  \n2nd @⁠shybaby.club  \n  \n3rd @niloofar.Rsh @Anny Han  \n  \n4th @Kimia Karami @tmtlv @endy0307 @koojihye14 @Javad Hashemi⁠  \n\n\n* * *\n\n⁠\n\nYouTube Video: https://www.youtube.com/watch?v=_Tq6Au7YgTQ?start=0\n\n* * *\n\n  \nCongrats to our winners who perfectly designed the moment where heritage charm, vintage football spirit, and modern boldness come together in a timeless look by using clo3d and marvelousdesigner.   \n  \n⚽️ ⁠⁠A big thank you to all participants for their passion and dedication!⁠  \n  \nMore design contests are comming, so stay tuned! 😎⁠\n\n### Community Post Comments:\nComment 1: ❤️❤️❤️\n\nComment 2: Congrats!👏\n\nComment 3: Congratulations everyone👏👏👏",
+        "content_description": "Celebrating the winners of the CONNECT X HAZZYS design contest who creatively blended heritage, vintage football spirit, and modern style using CLO3D and Marvelous Designer.",
+        "source": "Connect Community",
+        "article_created_at": "2025-11-10T05:26:30.07Z",
+        "article_updated_at": "2025-11-10T05:26:30.07Z",
+        "category": 100,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "CONNECT",
+            "Contest",
+            "HAZZYS",
+            "WINNER",
+            "ANNOUNCEMENT"
+        ]
+    },
+    {
+        "id": "cc07ed8986654c27940181d6a75fbe10",
+        "url": "https://connect.clo-set.com/community/post/cc07ed8986654c27940181d6a75fbe10",
+        "title": "Silk in Motion — J1atelier’s Second Styling & Rotation Render Update",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202511/cc07ed8986654c27940181d6a75fbe10/images/6610d41b85074a0d98d46c52409ccb9ejewel%20rendering%20with%20pose%200361%201920.png)![7b3e153b725b4b88ab1694a36b5c0d58](https://storagefiles.clo-set.com/public/community/202511/cc07ed8986654c27940181d6a75fbe10/images/7b3e153b725b4b88ab1694a36b5c0d58jewel%20rendering%20with%20pose%200362%201920.png)\n\nHi everyone! \n\nLast week, I shared the **second version of my silk scarf styling** from the collection:\n\n<https://connect.clo-set.com/ko/detail/dde0e857926b42229684b1b3b4630f64>\n\nSince then, I’ve been working on the rotation render — it took almost a week to complete the animation, rendering, and edit the final video with sound to create the right atmosphere.\n\nfor the moment you can see this rotation video through my Instagram reels or my Youtube channel!\n\nA full 360° render is now available:\n\n[https://www.instagram.com/reel/DQuELECjzvH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==](https://www.instagram.com/reel/DQuELECjzvH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)\n\n<https://youtube.com/shorts/T-PaOWKIlkM?si=xKiefaxxg3GnRMSU>\n\nAnd I’m also working on bringing **Genevieve** , my virtual muse, to life in this look —  \ndeveloping a close-up motion piece that captures her subtle expressions and gestures.\n\nIf you want to see the latest update, you know where to find it! ✨\n\n### Community Post Comments:\nComment 1: That week of rendering was clearly worth it—the final 360° view is just mesmerizing and so satisfying to watch!\nReply 1: Thanks! I'm so glad to hear that, it really means a lot ❤️\n\nComment 2: How did you create such delicate drapes?😍 It's so perfect and this is so tutorial-worthy! If you made a tutorial, I'd watch it every single day!🙏🏻\nReply 1: I used to play with my mom’s scarves when I was little, and I remembered how I used to wrap them around my body — so I tried to recreate that same feeling by draping it on the avatar in CLO. I’m so glad you think it’s tutorial-worthy! That’s a great idea — I’ll definitely consider making one. Thank you so much for your comment! ❤️\n\nComment 3: The drapery is breathtaking! Everyone needs to see this!😍\nReply 1: Thank you for your comment! The flow and softness of silk were the main focus for this piece.❤️",
+        "content_description": "Showcasing the latest 360° rotation render and styling updates of the silk scarf collection featuring the virtual muse Genevieve.",
+        "source": "Connect Community",
+        "article_created_at": "2025-11-07T19:00:02.363Z",
+        "article_updated_at": "2025-11-07T19:00:02.363Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "Blender",
+            "J1atelier",
+            "phygital",
+            "virtualmodel",
+            "Genevieve",
+            "virtualfashion",
+            "3ddesign"
+        ]
+    },
+    {
+        "id": "7ee65b653f9b439581322691308d68c8",
+        "url": "https://connect.clo-set.com/community/post/7ee65b653f9b439581322691308d68c8",
+        "title": "Looking for a 3D avatar editor for apparel fitting",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202511/7ee65b653f9b439581322691308d68c8/images/d220f9ea8aac4b13bfe02844e7bfbbf6Frame%2024.png)![](https://storagefiles.clo-set.com/public/community/202511/7ee65b653f9b439581322691308d68c8/images/f79940439c0d45cbabf5d0e4b85e5658Frame%2024.png)Is there an editor that I can use to build a 3D avatar in any size/proportions/body shape/etc. for CLO?\n\nMy only alternative at the moment is the Alvanon Body Platform - which is just a database of 3D avatars for apparel fitting.\n\n### Community Post Comments:\nComment 1: Hi! Have you tried to CLO Avatar editor? We would recommend this as a place to starthttps://connect.clo-set.com/community/post/7ee65b653f9b439581322691308d68c8",
+        "content_description": "This webpage provides information about customizable 3D avatar editors compatible with CLO for creating avatars of any size, proportion, and body shape.",
+        "source": "Connect Community",
+        "article_created_at": "2025-11-07T14:10:10.23Z",
+        "article_updated_at": "2025-11-07T14:10:10.23Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "AutoFitting",
+            "Avatar",
+            "Import_Export",
+            "Animation"
+        ]
+    },
+    {
+        "id": "e6ce86baaf0f44a088b44f18301b2d9d",
+        "url": "https://connect.clo-set.com/community/post/e6ce86baaf0f44a088b44f18301b2d9d",
+        "title": "轻熟优雅风格搭配",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202511/e6ce86baaf0f44a088b44f18301b2d9d/images/605ca4dc9f5c4db99fae4159dfe50851mmexport1762424991339.jpg)![](https://storagefiles.clo-set.com/public/community/202511/e6ce86baaf0f44a088b44f18301b2d9d/images/807d1887e10d4d0da3191b9d856eb07120251105095116Aicy.png)做了一个搭配，里面的鞋子和耳坠有喜欢的话可以去我主页看看哦！\n\n# ![eb1511e8d7ed4849a00e0183d2bce02d](https://storagefiles.clo-set.com/public/community/202511/e6ce86baaf0f44a088b44f18301b2d9d/images/eb1511e8d7ed4849a00e0183d2bce02dmmexport1762424371404.jpg)\n\n### Community Post Comments:\nComment 1: Thank you for the amazing items!👍🏻\nReply 1: ❤️❤️❤️",
+        "content_description": "展示时尚搭配灵感，推荐鞋子和耳坠，欢迎访问主页了解更多。",
+        "source": "Connect Community",
+        "article_created_at": "2025-11-06T10:31:39.78Z",
+        "article_updated_at": "2025-11-06T10:31:39.78Z",
         "category": 210,
         "tags": [
             "CLO",
             "CLO-SET",
-            "CONNECT",
-            "EveryWear",
             "Avatar",
-            "Texture",
+            "LiveSync",
             "Rendering",
-            "Material"
-        ]
-    },
-    {
-        "id": "824f33f8894640dea1e8d6a3d8137932",
-        "url": "https://connect.clo-set.com/community/post/824f33f8894640dea1e8d6a3d8137932",
-        "title": "Python API examples at https://developer.clo3d.com/scenario.html fail",
-        "content": "I am trying to use the python API and am using scenarios at <https://developer.clo3d.com/scenario.html> to get started. Many of these examples fail with errors and are poorly documented. For example, the \"Pattern\" example fails at ```fabric_api.AssignFabricToPattern(addedFabricIndex, i)```, using incorrect arguments. Is there a plan to update and improve the documentation?\n\n\n### Community Post Comments:\nComment 1: 我也遇到了这个问题，应该怎么解决",
-        "content_description": "This webpage aims to address issues with the Clo3D Python API documentation, specifically highlighting common errors in examples and advocating for improvements to enhance user experience.",
-        "created_at": "2025-05-30T16:02:57.253Z",
-        "category": 250,
-        "tags": [
-            "CLO",
-            "Pattern"
-        ]
-    },
-    {
-        "id": "2014fe3da04741ff949f9c1465d403b7",
-        "url": "https://connect.clo-set.com/community/post/2014fe3da04741ff949f9c1465d403b7",
-        "title": "Unlocking VMOD Magic Outside CLO: Fur Strand Breakthrough!",
-        "content": "* * *\n\nHi everyone!  \nI’m **beyond excited** to share something I just discovered that completely **changed my workflow** – and I _had_ to post it here because I know I can’t be the only one who needed this!\n\n🔍 I’ve always loved working with **VMODs** for fabrics in CLO, but as someone who renders mainly in external software (Unreal, Blender, etc.), I always felt limited – like I was missing the full power of those textures outside of CLO. Until now.\n\n✨ I started experimenting with **Fur Strands inside VMODs** , and the results blew my mind. Turns out, you can totally **bake strand-based effects directly into the 3D model** , and then render them outside of CLO – without rebuilding the entire shader from scratch. No more starting from zero to simulate that delicate fiber look!\n\n* * *\n\n🔄 Before & After – Render Comparison\n\n![1909bd239af846589b549ce418e393bd](https://storagefiles.clo-set.com/public/community/202505/2014fe3da04741ff949f9c1465d403b7/images/1909bd239af846589b549ce418e393bd1.png)**Left:** VMOD 3D with Fur Strand  \n**Right:** Original VMOD 3D  \nWhat’s crazy is this used to be **just a render-time effect**. But now… it’s **actual geometry inside the 3D view**! No tricks, no illusions – those fibers are **real mesh strands** you can see and work with before even hitting render.\n\n* * *\n\n### 🧵 True 3D Vision – No More “Render-Only” Magic\n\n![41a5e9f5e5e7453185cdf320e069adf4](https://storagefiles.clo-set.com/public/community/202505/2014fe3da04741ff949f9c1465d403b7/images/41a5e9f5e5e7453185cdf320e069adf42.png)\n\nOn the left: **VMOD with Fur Strand** – you can clearly see the strand geometry right inside the 3D viewport.  \nOn the right: Original VMOD – the texture is there, but it’s just a visual placeholder until render.  \n  \nAnd here’s the amazing part:\n\n🔁 **Once you copy over the fur settings** (shape, density, roughness map, etc.),  \n🎯 The **final render looks almost identical** to the original!  \nBut now you’re working with actual geometry — not a preset shader effect that only comes alive at render time.\n\nThis opens up a whole new world of flexibility:  \n✅ You can preview and tweak fur in real time.  \n✅ Export it to external engines like Unreal or Blender.  \n✅ And finally bridge the gap between **hyperrealism and workflow control**.  \n\n\n* * *\n\n### 💡 Why This Matters (at least to me!)\n\nThis discovery means:\n\n  * I can **re-use** my entire library of custom VMODs outside CLO.\n\n  * No need to rebuild complex shaders in other tools.\n\n  * Textures look **richer, fuzzier, and closer to real fabric** , especially for knits, fleece, and delicate materials.\n\n\n\n\nHonestly, it felt like unlocking a **secret power-up**. If you’ve ever wanted to push the realism of your renders while keeping a smooth pipeline, **this is for you**.\n\n* * *\n\n### 🔧 Super Tip!\n\nWhen transitioning from _Fur Render_ (render-only) to _Fur Strand_ (real-time), some settings reset or behave differently — but with a few adjustments, you can recreate the original look or even enhance it.\n\nHere’s my personal checklist and advanced tips after testing:\n\n✅ **Base, Normal, Metallic, Displacement texture**  \n→ This is preserved. No changes needed.\n\n⚠️ **Fur parameters**  \n→ These reset, so you’ll need to reapply:\n\n  * Hair shape\n\n  * Shine\n\n  * Gravity\n\n  * Curl\n\n  * Variation\n\n  * **Roughness** → Switch from value to **map** input for more accurate surface behavior.\n\n  * **Density & Seed** → Play with different seed settings to discover subtle or dramatic variations. A single seed change can alter the entire flow without touching the base design.\n\n\n\n\n🌓 **Opacity Map**  \n→ I recommend **increasing contrast** , especially in darker areas, to restore the sense of translucency and depth seen in the original render. Without this, the material can look flat or less realistic.\n\n🧩 **Custom Density Mapping (Advanced)**  \n→ If your fabric has different fur behavior in specific areas (e.g. front vs. sides), unlink them:\n\n  * Separate the textile into **front and side sections** using the properties editor\n\n  * This lets you control **density, length, and hair direction** by faces.\n\n\n\n\n* * *\n\n### 🗣️ I’d love to hear from others:\n\nHave you tried integrating strand-based textures into your external workflow?  \nAny tips, feedback, or renders you want to share?\n\n  \n👀 Can you tell which one this is?  \n  \n![fbd6d41e40ae4f5c973bdb717e841ef8](https://storagefiles.clo-set.com/public/community/202505/2014fe3da04741ff949f9c1465d403b7/images/fbd6d41e40ae4f5c973bdb717e841ef8VMOD%203D%20ORIGINAL.png)\n\nThanks for reading!  \n— Seer  \n![](https://storagefiles.clo-set.com/public/community/202505/2014fe3da04741ff949f9c1465d403b7/images/a356275c837f4137ac1e77ca099f22c63.png)\n\n\n### Community Post Comments:\nComment 1: GOOD ONE !👍🏻\n\nComment 2: Amazing ❤️!!!\n\nComment 3: Hi Sofia, this was a great read - thank you for sharing! Regarding the transition process from Fur Rendr Only to Fur Strand, we plan to enhance it by automatically preserving the parameters across two Fur fabric types. 🙂\nReply 1: If they do that, it would be even more amazing. Each new version is a chance to improve the current workflow. 😍\n\nComment 4: Thank you for taking the time to share such a detailed comparison and review😍 Your feedback has been incredibly valuable to us. We truly appreciate hearing from you—whether it's positive or constructive, your insights help us grow and improve. Please continue to share your thoughts with us!❤️\nReply 1: The truth is it was an update that I had been waiting for a long time ❤️ and it can still be improved. 🙏🏻",
-        "content_description": "Discover how integrating Fur Strands into VMODs can revolutionize your CLO workflow, enabling real-time previews and enhanced realism in external renders without the hassle of rebuilding shaders.",
-        "created_at": "2025-05-30T03:27:14.967Z",
-        "category": 240,
-        "tags": [
-            "CLO",
-            "MarvelousDesigner",
-            "CLO-SET",
-            "Blender",
-            "Cinema4D",
-            "UnrealEngine",
-            "Texture",
-            "Material",
-            "Fur",
-            "Fabric"
-        ]
-    },
-    {
-        "id": "3bbd1710e68f495c9b71321801eb7083",
-        "url": "https://connect.clo-set.com/community/post/3bbd1710e68f495c9b71321801eb7083",
-        "title": "Patricia’s Digital Prairie: Stitching the West in CLO",
-        "content": "## _Patricia Nahorniac (_[__@deadstockbloom__](https://www.instagram.com/deadstockbloom/) _) is redefining digital fashion with a blend of craftsmanship and innovation. From her roots in textile design to pushing creative boundaries with CLO, she brings garments to life beyond physical limits. In this interview, she shares the inspirations, tools, and techniques behind her latest project._\n\n* * *\n\n![25c5345dc8cf4bc2959f2acc22f9971a](https://storagefiles.clo-set.com/public/community/202505/3bbd1710e68f495c9b71321801eb7083/images/25c5345dc8cf4bc2959f2acc22f9971adeadstockbloom-CLO-Banner.png)\n\n### **Can you introduce yourself and share a bit about your background?**\n\nHello, I’m Patricia Nahorniac or @deadstockbloom. I’m a Digital Fashion Specialist and CLO Creator from Romania and I’m currently based in Berlin, Germany.\n\nMy design journey started when I began studying Textile Design at Design Academy Eindhoven (NL). After my studies, I had my own sustainable clothing business. Through this experience I learned a lot about clothes making.\n\nI started working in CLO because I wanted to try something new. The software is quite intuitive to learn if you’re already familiar with sewing. So far, I’ve collaborated with creators, artists and fashion brands to digitize clothing concepts for use in advertising campaigns or product visualizations.\n\n**Could you share the story or inspiration behind this project?**\n\nThis artwork is part of a series that explores the various visual qualities of “Leather”. The inspiration for the suede look came from vintage Western Clothing, Cowboys and all the beautiful details and patchworks applied to these garments. I thought it would be a nice opportunity to explore working with graphics, floral motifs and gradients.  \n\n  \n![5d5b1200b15d4b0ca04fe3c26fff5959](https://storagefiles.clo-set.com/public/community/202505/3bbd1710e68f495c9b71321801eb7083/images/5d5b1200b15d4b0ca04fe3c26fff5959deadstockbloom_Suede-Leather-Look_moodboard.png)\n\n**How do you usually approach planning and preparing for a new project? We'd also love to hear about your typical routine.**\n\nGenerally, I’ll start with choosing a theme and collecting references. I like finding images in old books, looking through online archives and museum websites such as “The Met”. \n\nAfterwards, I either sketch a garment/outfit or start directly with creating patterns in CLO. I’ll usually make modifications as I go, depending on the style/fit I’m looking for. The next step would be posing the Avatar and preparing for texturing. Once this step is completed, all that’s left is creating a scene in Blender (adding a background and nice lighting) and rendering out the final result. \n\n  \n**What was your favorite part of creating these artworks using CLO?**\n\nFor this artwork, my favorite part of the process was to create floral patchworks that could have detailed topstitching. I’m quite happy with how this effect turned out, but it took a bit of time and patience to put everything together. This is also one of the things I love about CLO - it can be a super fast and powerful tool, but you can also spend hours on intricate details and feel almost like a digital artisan.\n\n  \n![5fa71c3713f94501ae5fa4015554cb3a](https://storagefiles.clo-set.com/public/community/202505/3bbd1710e68f495c9b71321801eb7083/images/5fa71c3713f94501ae5fa4015554cb3adeadstockbloom-Suede-Leather-Look_03.png)![6c36cc1c04bb470daf74a10ce740fb61](https://storagefiles.clo-set.com/public/community/202505/3bbd1710e68f495c9b71321801eb7083/images/6c36cc1c04bb470daf74a10ce740fb61deadstockbloom-Suede-Leather-Look_02.jpg)\n\n**Which feature in CLO did you find most useful while working on this project?**\n\nI think I used the Trace Graphic feature the most. It’s really amazing to be able to create intricate patterns in just a few seconds. This feature really saves up hours in pattern tracing and definitely makes the process much smoother. I also really like adding details through thickness, topstitching and trims. It was quite fun to use buttons in a more playful way. \n\n**Are there any artists, designers, or movements that have influenced your creative approach?**\n\nI’m inspired by workwear and utility clothing. I love overalls and garments that have a lot of pockets. Another nice reference for me is Fruits Magazine, I can always find inspiration for outfits by looking at street style looks from Japan.  \n\n\n**What tips would you share with aspiring digital fashion designers who wish to follow a path like yours?**\n\nAs a tip, I would say it’s good to find a balance between creativity and being technical. You should try out different styles until you’re able to create your own. Lastly, always post your work!  I think that social media is a great way to get to know other creators and find opportunities.\n\n  \n  \n![](https://storagefiles.clo-set.com/public/community/202505/3bbd1710e68f495c9b71321801eb7083/images/f99f908a0b2a46cd81a8b4fd8db74d36deadstockbloom-Suede-Leather-Look_01.jpg)\n\n\n### Community Post Comments:\nComment 1: Sooo amazing!\n\nComment 2: Perfect 😍\n\nComment 3: Just one motion : 😍❤️Excellent work!\n\nComment 4: amazing work 👏",
-        "content_description": "Explore the innovative journey of Patricia Nahorniac as she blends craftsmanship and digital technology in fashion design, sharing her inspirations and techniques in a captivating interview.",
-        "created_at": "2025-05-30T02:25:56.477Z",
-        "category": 110,
-        "tags": [
-            "CLO",
-            "Material",
-            "Pattern",
-            "Rendering",
-            "Simulation",
-            "Texture",
-            "Trim",
-            "UI"
-        ]
-    },
-    {
-        "id": "0fee920c44c1442a81117dd1b62ff1df",
-        "url": "https://connect.clo-set.com/community/post/0fee920c44c1442a81117dd1b62ff1df",
-        "title": "The CLO LiveSync can not find in Unreal",
-        "content": "I have instead the plugin, and get everything ready, i am using the latest CLO version, and the Livesync2.0. Follow the steps of adding plugins of CLO one and the substance one. But the Window of CLO liveSync just never show up inside unreal. \n\nI have no idea what's wrong about this. \n\n\n### Community Post Comments:\nComment 1: Hi C Choy,We have reworked the UX &amp; UI elements to make the creation process more seamless by allowing our users directly work in the main window without having to navigate to the previous LiveSync Editor. For more information, please take a look at the following documentations:- Opening CLO/MD LiveSync Mode- Using LiveSync via CLO/MD LiveSync ModeKind regards,Bryan\n\nComment 2: I just find it. it is not under window anymore..",
-        "content_description": "This webpage aims to provide troubleshooting guidance for users experiencing issues with the CLO LiveSync window not appearing in Unreal Engine despite having the latest versions and following the correct plugin installation steps.",
-        "created_at": "2025-05-29T01:41:56.59Z",
-        "category": 250,
-        "tags": [
-            "CLO",
-            "UnrealEngine",
-            "LiveSync"
-        ]
-    },
-    {
-        "id": "160209dfb7584991b16bc3a0da8903ae",
-        "url": "https://connect.clo-set.com/community/post/160209dfb7584991b16bc3a0da8903ae",
-        "title": "Earring Designed in Clo3D",
-        "content": "![50303bdde0754d80b41d9d251ab0ee89](https://storagefiles.clo-set.com/public/community/202505/160209dfb7584991b16bc3a0da8903ae/images/50303bdde0754d80b41d9d251ab0ee89preview1.png) Handmade-Style Earring Designed in Clo3D ✨\n\nHi everyone!\n\nI designed this earring entirely in Clo3D . I'd love to hear your thoughts, feedback, or suggestions!\n\nHave you ever tried creating jewelry in Clo3D? Let's share ideas!\n\nThanks for stopping by! 😊\n\n3D Artist: Zeinab Dahgani\n\nPortfolio: [www.cv.zeinabdahgani.com](http://www.cv.zeinabdahgani.com)\n\nEmail: best3dmodeling@gmail.com\n\ninstagram: <https://www.instagram.com/zeinab_dahgani/>\n\nLinkedIn : <https://www.linkedin.com/in/zeinab-dahgani>\n\n\n### Community Post Comments:\nComment 1: To see the portfolio, visit the link below.❤️https://connect.clo-set.com/community/post/160209dfb7584991b16bc3a0da8903ae\n\nComment 2: 👏👏👏👏👏👏\nReply 1: Thanks🙏🏻😍",
-        "content_description": "Explore and share your thoughts on my handmade-style earring design created in Clo3D, and connect with fellow jewelry enthusiasts!",
-        "created_at": "2025-05-28T15:38:29.137Z",
-        "category": 250,
-        "tags": [
-            "CLO",
-            "CLO-SET",
-            "CONNECT",
-            "Earring",
-            "Animation",
-            "3dartist",
-            "fashion",
-            "fashiondesigner"
+            "Photoshop"
         ]
     }
 ]

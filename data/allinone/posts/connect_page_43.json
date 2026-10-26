@@ -1,0 +1,79 @@
+[
+  {
+    "id": "e3e9311a12bd4daa8b0d3a6c9015a446",
+    "url": "https://connect.clo-set.com/community/post/e3e9311a12bd4daa8b0d3a6c9015a446",
+    "title": "Abstract print",
+    "content": "<https://connect.clo-set.com/detail/0f48ea95b1094edfb28612ae95134ec3>\n\n![](https://storagefiles.clo-set.com/public/community/202502/e3e9311a12bd4daa8b0d3a6c9015a446/images/4efc249334cf4c49b4c34c6b4a6d48daSRFD25-16-POSE.png)\n",
+    "content_description": "The purpose of this web page is to showcase and provide detailed information about the featured fashion design, highlighting its unique style and creative elements.",
+    "source": "Connect Community",
+    "created_at": "2025-02-28T01:14:51.16Z",
+    "category": 210,
+    "tags": ["CLO", "CLO-SET", "CONNECT", "Texture", "Trim"]
+  },
+  {
+    "id": "73400b05faa7449a80bfeb6213944108",
+    "url": "https://connect.clo-set.com/community/post/73400b05faa7449a80bfeb6213944108",
+    "title": "Measurement exports",
+    "content": "I understand that to get my required measurements points from CLO3D out of the system, the only way is by a tech pack? (Is it possible to get get them just as a table?) I understand that they are exported as an excel - if i do this for multiple versions of the same pattern - is it possible that this information can be exported to a google sheet or dropped as a new row on to a single Microsoft Excel Workbook file? \n\nHope that makes sense? \n\n\n### Community Post Comments:\nComment 1: So, is there no way to do batch exports of POMs to CSV?\nReply 1: If several POMs exist in the same project, you can import them all in the same CSV file! Otherwise, you can try our APIs to batch export POMs https://connect.clo-set.com/community/post/73400b05faa7449a80bfeb6213944108\n\nComment 2: A single workbook file is not possible. But you can get the measurements without creating a tech pack. POMs can be saved as CSV files from their tab in the Object Browser. CSV files can be opened in Excel.\nReply 1: awesome - can batches of POMs go on to the same csv?\nReply 2: All POMs that are loaded in the scene will go into the CSV.",
+    "content_description": "This webpage aims to clarify the process of exporting measurement points from CLO3D, exploring options for tech packs and integrating data into Google Sheets or a single Excel workbook.",
+    "source": "Connect Community",
+    "created_at": "2025-02-27T16:30:16.18Z",
+    "category": 220,
+    "tags": ["CLO-SET", "CONNECT", "automation", "api", "excel", "googlesheets", "data"]
+  },
+  {
+    "id": "0e1dc6bbb47d437998d9e364f7a6a4bf",
+    "url": "https://connect.clo-set.com/community/post/0e1dc6bbb47d437998d9e364f7a6a4bf",
+    "title": "Angel-Fans",
+    "content": "<https://connect.clo-set.com/detail/466cee2a3f134ca8a6221146d20959aa>\n\n![](https://storagefiles.clo-set.com/public/community/202502/0e1dc6bbb47d437998d9e364f7a6a4bf/images/bdfa25d0d4214c6c847ba1fa883d8237SRFD25-15-POSE.png)\n",
+    "content_description": "Discover the unique fashion pieces and sustainable designs shared by the Clo-set community, showcasing creativity and individuality in every outfit.",
+    "source": "Connect Community",
+    "created_at": "2025-02-26T03:32:29.91Z",
+    "category": 210,
+    "tags": ["CLO", "CLO-SET", "CONNECT", "Texture", "Trim"]
+  },
+  {
+    "id": "4f74ea916cb04ad390dee5f8b257de19",
+    "url": "https://connect.clo-set.com/community/post/4f74ea916cb04ad390dee5f8b257de19",
+    "title": "Velvet Origami",
+    "content": "![](https://storagefiles.clo-set.com/public/community/202502/4f74ea916cb04ad390dee5f8b257de19/images/879ceaef947b42cfb3cb50da77dbf673SRFD25-14-POSE-1.png)\n",
+    "content_description": "Explore a curated collection of stylish and versatile outfit inspirations that elevate your fashion game for any occasion.",
+    "source": "Connect Community",
+    "created_at": "2025-02-26T01:48:42.77Z",
+    "category": 210,
+    "tags": ["CLO", "CLO-SET", "CONNECT", "Texture"]
+  },
+  {
+    "id": "1653acfd9cb74b23b2754fae6a92f84e",
+    "url": "https://connect.clo-set.com/community/post/1653acfd9cb74b23b2754fae6a92f84e",
+    "title": "Graphic issue with printed Surface..",
+    "content": "Hi,  \nI'm trying to add a graphic on a printed surface.. But the graphic appears underneath the print.. I even try to bring the graphic to front.. But still it is underneath the print.. Can you please clarify why this is happeing and how to resolve this issue..   \nI've attached an image from which you can better understand what I'm actually meaning...  \n  \nThank You!..  \n\n\n![](https://storagefiles.clo-set.com/public/community/202502/1653acfd9cb74b23b2754fae6a92f84e/images/4532e26564d742f2b9f06159bc3c4250Screenshot_1.png)\n\n\n### Community Post Comments:\nComment 1: Hi Mahesh, is this happening in every project or only this project? I cannot replicate the issue. A graphic for me comes out on top of a print.\nReply 1: Thank You for your time... I'm not sure in every project.. I never used that print option before available in Fabric section.. I always try to add the print as a texture or may be as a Graphic.. I just tried this option and stuck with this.. That's why I added the issue over here.. :)\nReply 2: There is no need to uninstall and reinstall CLO as suggested below. First, we should determine if the issue is file-specific or not. If it's only happening for you on this file and you cannot replicate the problem on another, we can have a look at it. If it is all files, we must investigate with tech support.\nReply 3: Hi melody!I just tried this with a different file, But the issue presist.. The graphic \"PINK\" is still under the Leapord print.. But the solution I found is just to increase the z-offset value of the graphic to make it on front.. But I don't think it is a good technique to make it visible on upfront.. Bcz May be in render it will be floating in the air.. But this is the only solution I've in my mind right now..\nReply 4: Hi, could you share one of your files here (upload it to wetransfer and add the link into your message) and note you are coming from the community and it is for Melody? Thank you! https://connect.clo-set.com/community/post/1653acfd9cb74b23b2754fae6a92f84e\n\nComment 2: I understood the pink is letter graphic.I got the problem! \"the print of fabric\" shows at the top of everything!If you add the pink graphic on the fabric, you should add leopard as texture of fabric.I'm sorry about I couldn't understand well, and as Im a Korean, my English explain is not well.Good luck!\nReply 1: I am confused. I just tested it and graphics are not behind prints for me. On an additional note, it's also not affected by changing the Z-Offset.\nReply 2: When I checked the simulation on the wide view, the graphic seen blured.. ㅠㅠ I think the graphic's size make it blur. If you find the solution, plz make me know\nReply 3: Hi Claude, sorry I do not understand what you mean. If you could make a separate thread for the issue so you can add a screenshot, that would be great!\nReply 4: First I'm sorry about making confusion. There are mistake in my studying. The print is just on the top of fabric texture, not the graphic.Second maybe I found the reason why the letter \"pink\" is appeared. You can see another letter \"pink\" on the middle left. I think the letters exist on the leopard picture. Is it right?\nReply 5: Claude Evelyn you are right the leapord print itself has pink letter in it.. But if you see at the wasitband bottom there is a \"PINK\" letter seprately which I tried to add as a Graphic not as a print.. And it appears on the bottom of the print.. This is the actual issue which I want to raise.. :) I actually always add print as a texture I just tried that add print option first time.. I got stuck.. Lol.. :)\nReply 6: Looking at print1 in the fabric properties window, it looks like the black leopard pattern was insert as a print without a background. How about adding some color(brown) to the leopard print background and layering it with fabric texture? .But It's still weird how the pink text appears due to the print insertion. lolOne solution might be to completely delete the program and download it again. GOOD LUCK!\n\nComment 3: I don't know how you add the graphic.Use the \"graphic (2D pattern)\"and move the graphic, using the \"graphic switch(변환)\" which is above the first one.If your question mean is the graphic is appear on the background, click the graphic with \"graphic switch(변환)\" and check property -&gt; arrangement -&gt; surface.\nReply 1: HI,, Thank You for your response.. I actually mean.. the graphic \"PINK\" is under the leopard like print.. if you see the image.. I tried to Select the graphic in 2D window.. and Order 2D&gt; Bring to Front but it still under the print..\nReply 2: The red box on the right show that your \"pink\" graphic is added as \"print of fabric\". As I know, showing as unified can't move.. Graphic should show on the \"pixelate icon\" next to the fabric icon. https://connect.clo-set.com/community/post/1653acfd9cb74b23b2754fae6a92f84e\nReply 3: Actually the Leapord print is added as a \"print of Fabric\".. And \"PINK\" Graphic is added as a Graphic tool.. which one is behind the print of Fabric.. I want that \"Pink\" Graphic to be on front.. As you see leapord print is on front which is wrong...\nReply 4: isn't it the \"pink\" the red box on the right?click the link in my last comment.\nReply 5: Sorry.. May be I'm not able to explain it properly.. But I think you misunderstood the \"PINK\" with the color.. But \"PINK\" is not a color actually it is a Graphic Typo which is named as \"PINK\" if you see in the 3D Window.. \"PINK\" TEXT is under the Leapord pirnt just where the waistband ends.. I want that \"PINK\" Text in front.. May be this explain you better what I'm actually looking for.. Thank YOu!",
+    "content_description": "This web page aims to provide guidance on troubleshooting issues related to layering graphics over printed surfaces in design software.",
+    "source": "Connect Community",
+    "created_at": "2025-02-25T05:22:26.87Z",
+    "category": 220,
+    "tags": ["CLO", "CONNECT", "Material", "Texture", "Rendering"]
+  },
+  {
+    "id": "e2e20d7431824713b78357efcc137f2c",
+    "url": "https://connect.clo-set.com/community/post/e2e20d7431824713b78357efcc137f2c",
+    "title": "[Design Contest] K-Pop Mirror: Recreate Your Favorite Styles!",
+    "content": "# **_Interested in K-pop? Here's your chance! 🥳_**\n\n![](https://storagefiles.clo-set.com/public/community/202502/e2e20d7431824713b78357efcc137f2c/images/a08dcd7c17934d4587b635cf7934510aCONNECT_News%20Letter.png)\n\nJoin our **\"K-pop Mirror: Recreate Your Favorite Styles!\"** contest and recreate the outfit of your favorite K-pop stars exactly as it is!  \nIt’s the perfect opportunity to challenge yourself by perfectly recreating an iconic idol outfit. 💃🕺\n\n## ** _The Stage is Yours, Join Now!_**\n\n# **📌 Contest Details**\n\n  * 👗 Theme: Choose your favorite K-Pop stars and recreate their outfits with precision.\n\n  * 🎨 Who Can Join: Anyone!\n\n  * 📅 Submission Period: February 25 – April 07, 2025\n\n  * 🏆 Winner Announcement: April 22, 2025\n\n  * ❓ Want to know more? Just follow this [**[LINK]**](https://connect.clo-set.com/contest/k-popmirror)**!**\n\n\n\n\n# **🎁 Prizes (You don’t want to miss this!)**\n\n![](https://storagefiles.clo-set.com/public/community/202502/e2e20d7431824713b78357efcc137f2c/images/cf30de30cc114d469173fcf8a7618a0f20250205_172143.png)\n\n🏅 When the total number of submissions goes over 300, all winners' rewards will be doubled! The more contestants, the more rewards you'll get!\n\n# **🧵 How to Enter (Super Easy!)**\n\n  1. Create a **perfect replica** of the idol outfit.\n\n  2. Click the **[SUBMIT]** button on the contest page to upload your file and then submit the image you used as a reference for your creation as an additional image. \n\n  3. Wait excitedly for the results! (This might be the hardest part! 😉)\n\n\n\n\n  \n\n\n# **📌 For more details & to enter, visit **[**[HERE]**](https://connect.clo-set.com/contest/k-popmirror)**!**\n\nIf you have any questions, feel free to ask in the comments, on the Q&A board, or through our [Instagram](https://www.instagram.com/closet_connect_official/).\n\n**With passion** 🔥**,**  \n**The CONNECT Team**\n\n![](https://storagefiles.clo-set.com/public/community/202502/e2e20d7431824713b78357efcc137f2c/images/2446234f9c0847968862b4dfcf97fb78CONNECT_News%20Letter.png)![](https://storagefiles.clo-set.com/public/community/202502/e2e20d7431824713b78357efcc137f2c/images/76e0105c22b44fcca6fa581c01a56b5fsquare.png)![](https://storagefiles.clo-set.com/public/community/202502/e2e20d7431824713b78357efcc137f2c/images/8f9d8c02e0434693a40a58451c732f29square.png)\n\n\n### Community Post Comments:\nComment 1: Hi🙂Can I use 3ds max software for material/texture and rendering?&nbsp;I mean, use clo3d only for create 3d modeling.\nReply 1: Hello, As mentioned in the participation guidelines, you are free to use other tools, but please make sure to use CLO3D or Marvelous Designer for outfit creation.🙏🏻For more details, please check the page below and attached image.Link: https://connect.clo-set.com/community/post/e2e20d7431824713b78357efcc137f2c\n\nComment 2: Hi Team, Does the reference image need to be recreated exactly the same? I mean, not just the outfit but also the pose? Will this be a factor in the evaluation? Or is the focus more on the execution of the outfit? Thanks! 🙏🏻\nReply 1: While it's ideal if the pose matches the reference image, the main evaluation criteria focus on how accurately the outfit is recreated exactly. So, while the pose can enhance the overall presentation, the primary factor in judging will be the execution of the outfit itself.Hope this helps! Let me know if you have any other questions. Looking forward to seeing your work!❤️\n\nComment 3: I live in Mexico. Can I participate in the contest? 😊✨\nReply 1: Of course! This contest is open worldwide!✨\n\nComment 4: Multiple entries allowed, maximum of ten (10) submissions per contestant.is that mean you can submit 10 different looks ?\nReply 1: Thank you for your interest.😊 Yes, you can submit a minimum of 1 and a maximum of 10 different outfits.\n\nComment 5: Hi, do I understand correctly that the selected garment needs to be recreated in 3D as accurately as possible?\nReply 1: Yes, that's correct! Please try to replicate it as closely as possible to the real thing! 😊",
+    "content_description": "Join the \"K-pop Mirror: Recreate Your Favorite Styles!\" contest to showcase your creativity by perfectly replicating the outfits of your favorite K-pop idols for a chance to win exciting prizes!",
+    "source": "Connect Community",
+    "created_at": "2025-02-25T02:30:57.03Z",
+    "category": 100,
+    "tags": ["k-popmirror", "CLO", "MarvelousDesigner", "CONNECT", "Contest", "designcontest", "prize", "k-pop", "i-dol"]
+  },
+  {
+    "id": "b27348f1396045f188d2bfccf01d0c6f",
+    "url": "https://connect.clo-set.com/community/post/b27348f1396045f188d2bfccf01d0c6f",
+    "title": "export pattern pdf",
+    "content": "Help me with something please. So i can not download pdf direct from the connect store right? When i download from clo file . Then i import it to the software and from there i export it to pdf. But it doesn’t tlook. Right tho. Everything comes in one single page. I mean all parts of the pattern comes in one single page instead of separetely. I mean all parts of the pattern comes in one single page instead of separetely. What am I doing wrong please?\n",
+    "content_description": "This webpage aims to provide guidance and troubleshooting tips for users experiencing issues with exporting patterns from Clo to PDF format correctly.",
+    "source": "Connect Community",
+    "created_at": "2025-02-25T01:34:05.43Z",
+    "category": 210,
+    "tags": ["CONNECT"]
+  }
+]

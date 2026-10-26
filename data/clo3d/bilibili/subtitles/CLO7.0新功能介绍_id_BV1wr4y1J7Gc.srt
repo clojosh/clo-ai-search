@@ -1,0 +1,3680 @@
+1
+00:00:00,000 --> 00:00:14,000
+Hello everyone, I am Cloud Eva. Today, my colleague Andy and I will be doing a live stream of 7.0 new features.
+
+2
+00:00:14,000 --> 00:00:19,000
+Now we will start our own live stream.
+
+3
+00:00:19,000 --> 00:00:27,000
+What you see is our live stream introduction. Today, we will introduce the following five aspects.
+
+4
+00:00:27,000 --> 00:00:30,000
+First, let's take a look at the main update.
+
+5
+00:00:30,000 --> 00:00:35,000
+And the second part, we will introduce the optimization update for the interface for everyone.
+
+6
+00:00:35,000 --> 00:00:39,000
+There is also an update for the mode.
+
+7
+00:00:39,000 --> 00:00:43,000
+And we will design the optimization of the secondary tools and the optimization of the functions.
+
+8
+00:00:43,000 --> 00:00:46,000
+Without further ado, let's start today's 3D journey together.
+
+9
+00:00:46,000 --> 00:00:51,000
+Let's take a look at the first main update content.
+
+10
+00:00:51,000 --> 00:00:56,000
+In the main update, we will divide it into two modules to introduce to everyone.
+
+11
+00:00:56,000 --> 00:00:57,000
+The first module is the main update.
+
+12
+00:00:57,000 --> 00:00:59,000
+The second module is the pattern color API.
+
+13
+00:00:59,000 --> 00:01:03,000
+And the second module is the parameterized production version.
+
+14
+00:01:03,000 --> 00:01:08,000
+Let's first take a look at this PPT page.
+
+15
+00:01:08,000 --> 00:01:16,000
+After our version is updated, we can actually connect through the API and the color library.
+
+16
+00:01:16,000 --> 00:01:21,000
+We can use the latest color block updated back then to design.
+
+17
+00:01:21,000 --> 00:01:26,000
+In the lower right corner of the window under the color board,
+
+18
+00:01:26,000 --> 00:01:33,000
+we can click this little arrow down here to switch to a different color board of different materials for selection and viewing.
+
+19
+00:01:33,000 --> 00:01:40,000
+Due to copyright reasons, the color board cannot be saved.
+
+20
+00:01:40,000 --> 00:01:43,000
+It can only be used in the Cloud.
+
+21
+00:01:43,000 --> 00:01:48,000
+Next, let's take a look at the second module's function update.
+
+22
+00:01:48,000 --> 00:01:50,000
+The parameterized production version.
+
+23
+00:01:50,000 --> 00:01:55,000
+In this function, it can help our designers and designers.
+
+24
+00:01:55,000 --> 00:02:01,000
+Set some size and specifications parameters to create a basic version.
+
+25
+00:02:01,000 --> 00:02:08,000
+We can open the parameterized version editor in the editor in the main menu.
+
+26
+00:02:08,000 --> 00:02:14,000
+In the dialog box, we can create a basic version of the top one.
+
+27
+00:02:14,000 --> 00:02:19,000
+You can see that the following are some of our settings for size and specifications.
+
+28
+00:02:19,000 --> 00:02:24,000
+In the upper right corner, we can see that there are two options.
+
+29
+00:02:24,000 --> 00:02:27,000
+One is symmetrical.
+
+30
+00:02:27,000 --> 00:02:32,000
+By selecting this option, we can create two completely symmetrical versions.
+
+31
+00:02:32,000 --> 00:02:34,000
+And the versions are linked.
+
+32
+00:02:34,000 --> 00:02:37,000
+If we select the left-right symmetrical version,
+
+33
+00:02:37,000 --> 00:02:45,000
+this setting will generate a left-right symmetrical whole linked version.
+
+34
+00:02:45,000 --> 00:02:49,000
+Now we can set the front to symmetrical.
+
+35
+00:02:49,000 --> 00:02:52,000
+Then we set the back to left-right symmetrical.
+
+36
+00:02:54,000 --> 00:02:56,000
+If we want to create a symmetrical version,
+
+37
+00:02:56,000 --> 00:02:59,000
+we need to select the button here.
+
+38
+00:02:59,000 --> 00:03:01,000
+Then enter a certain value.
+
+39
+00:03:01,000 --> 00:03:03,000
+Then we can complete the creation.
+
+40
+00:03:03,000 --> 00:03:07,000
+Here, I will review the process of entering values.
+
+41
+00:03:07,000 --> 00:03:11,000
+Let's take a look at these pattern sizes together.
+
+42
+00:03:11,000 --> 00:03:15,000
+Here, I will show you the pattern sizes of the front,
+
+43
+00:03:15,000 --> 00:03:19,000
+the back, and the sleeve.
+
+44
+00:03:19,000 --> 00:03:25,000
+After entering our values,
+
+45
+00:03:25,000 --> 00:03:28,000
+you can check if there are any changes needed.
+
+46
+00:03:28,000 --> 00:03:30,000
+There are also the symmetrical settings of the front and back.
+
+47
+00:03:30,000 --> 00:03:33,000
+After completing these, click Create.
+
+48
+00:03:33,000 --> 00:03:37,000
+In the blank space in the 2D window,
+
+49
+00:03:37,000 --> 00:03:42,000
+left-click to place the created version.
+
+50
+00:03:42,000 --> 00:03:46,000
+We can adjust the position of the arrangement to it.
+
+51
+00:03:46,000 --> 00:03:48,000
+In this way,
+
+52
+00:03:48,000 --> 00:03:52,000
+our parameterized version is created.
+
+53
+00:03:55,000 --> 00:03:57,000
+Next, I will introduce the second part,
+
+54
+00:03:57,000 --> 00:03:59,000
+the functional optimization of the interface.
+
+55
+00:03:59,000 --> 00:04:01,000
+We will divide it into the drawing and drawing of the drawing window,
+
+56
+00:04:01,000 --> 00:04:02,000
+the setting menu,
+
+57
+00:04:02,000 --> 00:04:06,000
+and the introduction of functions such as supporting Chinese display.
+
+58
+00:04:06,000 --> 00:04:08,000
+Let's look at the first one first.
+
+59
+00:04:10,000 --> 00:04:12,000
+In the drawing and drawing of the drawing window,
+
+60
+00:04:12,000 --> 00:04:16,000
+we can see that the file folder in the drawing window on the upper left of the software
+
+61
+00:04:16,000 --> 00:04:18,000
+has been created.
+
+62
+00:04:18,000 --> 00:04:22,000
+Using the material resources in our fabric file,
+
+63
+00:04:22,000 --> 00:04:25,000
+we can see that in the drawing window,
+
+64
+00:04:25,000 --> 00:04:29,000
+these fabric files have also implemented Chinese display.
+
+65
+00:04:29,000 --> 00:04:33,000
+In the parameter editor in the lower right corner of our software,
+
+66
+00:04:33,000 --> 00:04:37,000
+we can see that the display in our physical property color list
+
+67
+00:04:37,000 --> 00:04:40,000
+has also implemented a Chinese drawing.
+
+68
+00:04:40,000 --> 00:04:44,000
+It is very convenient for everyone to search and use.
+
+69
+00:04:44,000 --> 00:04:47,000
+Next, we need to introduce the drawing and drawing function.
+
+70
+00:04:47,000 --> 00:04:50,000
+The drawing and drawing function is used to display the drawing and drawing in the drawing window.
+
+71
+00:04:50,000 --> 00:04:52,000
+In the previous example,
+
+72
+00:04:52,000 --> 00:04:55,000
+we want to open our file folder.
+
+73
+00:04:55,000 --> 00:04:58,000
+We need to find the corresponding file folder in the drawing and drawing window.
+
+74
+00:04:58,000 --> 00:05:00,000
+Double click,
+
+75
+00:05:00,000 --> 00:05:03,000
+and then in the window of the lower view,
+
+76
+00:05:03,000 --> 00:05:07,000
+we can view the content in the file folder.
+
+77
+00:05:07,000 --> 00:05:13,000
+Now we only need to left-click the triangle button on the left side of the file folder,
+
+78
+00:05:13,000 --> 00:05:16,000
+and we can view the file folder in this file folder.
+
+79
+00:05:16,000 --> 00:05:19,000
+It is very convenient.
+
+80
+00:05:19,000 --> 00:05:26,000
+If we want to go back to the previous example,
+
+81
+00:05:26,000 --> 00:05:32,000
+we can only go back to the previous example
+
+82
+00:05:32,000 --> 00:05:34,000
+by double-clicking on the first file folder in the window.
+
+83
+00:05:34,000 --> 00:05:38,000
+Now, we can click on the triangle button on the left side of the file folder
+
+84
+00:05:38,000 --> 00:05:42,000
+in the drawing window,
+
+85
+00:05:42,000 --> 00:05:45,000
+and we can view or switch to its file folder.
+
+86
+00:05:45,000 --> 00:05:49,000
+It is very convenient.
+
+87
+00:05:49,000 --> 00:05:52,000
+The next thing we need to introduce to you is
+
+88
+00:05:52,000 --> 00:05:55,000
+the optimization of the scene page of the object window.
+
+89
+00:05:55,000 --> 00:05:57,000
+Here,
+
+90
+00:05:57,000 --> 00:06:01,000
+we can see the information of the version in the clothing file,
+
+91
+00:06:01,000 --> 00:06:03,000
+and the information of the sewing line.
+
+92
+00:06:03,000 --> 00:06:04,000
+First,
+
+93
+00:06:04,000 --> 00:06:07,000
+we open a project file.
+
+94
+00:06:11,000 --> 00:06:14,000
+We come to the scene page of the object window.
+
+95
+00:06:15,000 --> 00:06:20,000
+We select one of the pages.
+
+96
+00:06:20,000 --> 00:06:27,000
+Here, we can view all the information of the internal line on this page.
+
+97
+00:06:27,000 --> 00:06:32,000
+Selecting one of the internal lines in the 2D window and 3D window
+
+98
+00:06:32,000 --> 00:06:38,000
+will prompt in the form of yellow highlights.
+
+99
+00:06:38,000 --> 00:06:42,000
+Now, we come to the Material folder.
+
+100
+00:06:42,000 --> 00:06:45,000
+We use the chain as an example.
+
+101
+00:06:45,000 --> 00:06:47,000
+Double-click on one of the chains,
+
+102
+00:06:47,000 --> 00:06:55,000
+and we can do a re-naming operation on it.
+
+103
+00:06:55,000 --> 00:06:57,000
+In the property editor,
+
+104
+00:06:57,000 --> 00:07:00,000
+we can view its information,
+
+105
+00:07:00,000 --> 00:07:10,000
+and we can modify its size and size.
+
+106
+00:07:10,000 --> 00:07:14,000
+We can also modify its name line information.
+
+107
+00:07:14,000 --> 00:07:17,000
+In the environment setting,
+
+108
+00:07:17,000 --> 00:07:20,000
+we can change the default parameters of the camera,
+
+109
+00:07:20,000 --> 00:07:23,000
+and adjust its view.
+
+110
+00:07:23,000 --> 00:07:26,000
+We can also find the lighting properties and the lighting properties
+
+111
+00:07:26,000 --> 00:07:29,000
+in the rendering under the light source file,
+
+112
+00:07:29,000 --> 00:07:32,000
+and adjust them.
+
+113
+00:07:32,000 --> 00:07:36,000
+These can be edited and adjusted in our property editor.
+
+114
+00:07:36,000 --> 00:07:39,000
+These changes will be implemented in our scene,
+
+115
+00:07:39,000 --> 00:07:48,000
+and we can modify them.
+
+116
+00:07:48,000 --> 00:07:53,000
+Now, we can close these files.
+
+117
+00:07:53,000 --> 00:07:56,000
+The next feature update that we will introduce to you
+
+118
+00:07:56,000 --> 00:07:59,000
+is that we optimized the option to open the clothing,
+
+119
+00:07:59,000 --> 00:08:01,000
+posture, and size.
+
+120
+00:08:01,000 --> 00:08:06,000
+If there is a virtual model in our 3D page,
+
+121
+00:08:06,000 --> 00:08:08,000
+at this time,
+
+122
+00:08:08,000 --> 00:08:11,000
+we need to open another clothing file.
+
+123
+00:08:11,000 --> 00:08:14,000
+The model size, information, and posture
+
+124
+00:08:14,000 --> 00:08:16,000
+in the clothing file
+
+125
+00:08:16,000 --> 00:08:19,000
+are not compatible with our current model.
+
+126
+00:08:19,000 --> 00:08:21,000
+At this time,
+
+127
+00:08:21,000 --> 00:08:22,000
+when we open it,
+
+128
+00:08:22,000 --> 00:08:25,000
+we will see a dialogue box.
+
+129
+00:08:25,000 --> 00:08:30,000
+It will prompt us to keep the current virtual model size and posture,
+
+130
+00:08:30,000 --> 00:08:35,000
+or open the size and posture in the clothing file.
+
+131
+00:08:35,000 --> 00:08:37,000
+If we choose the first one,
+
+132
+00:08:37,000 --> 00:08:39,000
+we will see that the model will remain the upright posture
+
+133
+00:08:39,000 --> 00:08:41,000
+displayed in the page.
+
+134
+00:08:41,000 --> 00:08:43,000
+If we choose the second one,
+
+135
+00:08:43,000 --> 00:08:46,000
+it will load the model posture information
+
+136
+00:08:46,000 --> 00:08:49,000
+in our clothing file.
+
+137
+00:08:53,000 --> 00:08:55,000
+In this way,
+
+138
+00:08:55,000 --> 00:08:57,000
+we can guarantee that the clothing file
+
+139
+00:08:57,000 --> 00:08:59,000
+and the model's posture information
+
+140
+00:08:59,000 --> 00:09:01,000
+are compatible.
+
+141
+00:09:01,000 --> 00:09:08,000
+The next feature update that we need to introduce to you
+
+142
+00:09:08,000 --> 00:09:12,000
+is that we can open the color and material list
+
+143
+00:09:12,000 --> 00:09:14,000
+from the mode
+
+144
+00:09:14,000 --> 00:09:16,000
+to the window display.
+
+145
+00:09:16,000 --> 00:09:21,000
+We can find it from the editor in the main menu.
+
+146
+00:09:21,000 --> 00:09:25,000
+Open the material list and color editor window.
+
+147
+00:09:31,000 --> 00:09:38,000
+You can see that the material list editor
+
+148
+00:09:38,000 --> 00:09:40,000
+and the color editor window
+
+149
+00:09:40,000 --> 00:09:42,000
+can be displayed in parallel
+
+150
+00:09:42,000 --> 00:09:44,000
+with our 2D version window.
+
+151
+00:09:44,000 --> 00:09:47,000
+If we want to turn off our material list editor,
+
+152
+00:09:47,000 --> 00:09:49,000
+we just need to click the X in the upper right corner
+
+153
+00:09:49,000 --> 00:09:55,000
+to turn it off.
+
+154
+00:09:55,000 --> 00:09:58,000
+We can also open the color editor window
+
+155
+00:09:58,000 --> 00:10:00,000
+on the right-hand side of the window.
+
+156
+00:10:00,000 --> 00:10:03,000
+We can open the window we want to open,
+
+157
+00:10:03,000 --> 00:10:04,000
+such as the rendering window,
+
+158
+00:10:04,000 --> 00:10:13,000
+the material list editor and so on.
+
+159
+00:10:13,000 --> 00:10:17,000
+It is very convenient for us to find it.
+
+160
+00:10:17,000 --> 00:10:19,000
+What we also need to introduce to you
+
+161
+00:10:19,000 --> 00:10:22,000
+is that in our print and export mode,
+
+162
+00:10:22,000 --> 00:10:24,000
+it can also be displayed in this way.
+
+163
+00:10:24,000 --> 00:10:26,000
+We can open our material list editor
+
+164
+00:10:26,000 --> 00:10:28,000
+and our color editor
+
+165
+00:10:28,000 --> 00:10:29,000
+from the editor.
+
+166
+00:10:29,000 --> 00:10:30,000
+In this way,
+
+167
+00:10:30,000 --> 00:10:32,000
+we can see that the material list editor
+
+168
+00:10:32,000 --> 00:10:33,000
+and our material list editor
+
+169
+00:10:33,000 --> 00:10:35,000
+can be displayed in parallel.
+
+170
+00:10:35,000 --> 00:10:38,000
+It is convenient for us to edit the material information
+
+171
+00:10:38,000 --> 00:10:41,000
+and some material information of the material.
+
+172
+00:10:41,000 --> 00:10:45,000
+Let's switch back to the simulation mode.
+
+173
+00:10:45,000 --> 00:10:47,000
+After the update of the version,
+
+174
+00:10:47,000 --> 00:10:50,000
+we added the function
+
+175
+00:10:50,000 --> 00:10:52,000
+to set the color of the form.
+
+176
+00:10:52,000 --> 00:10:54,000
+We can click on the email button
+
+177
+00:10:54,000 --> 00:10:56,000
+on the 3D window
+
+178
+00:10:56,000 --> 00:10:59,000
+to shape it.
+
+179
+00:10:59,000 --> 00:11:01,000
+You can see that the version
+
+180
+00:11:01,000 --> 00:11:02,000
+that has been set to shape the frame
+
+181
+00:11:02,000 --> 00:11:05,000
+will be displayed in gray color.
+
+182
+00:11:05,000 --> 00:11:07,000
+Then we find the display hidden color
+
+183
+00:11:07,000 --> 00:11:10,000
+in the blank right-click button.
+
+184
+00:11:10,000 --> 00:11:16,000
+We can hide this gray color.
+
+185
+00:11:16,000 --> 00:11:17,000
+Similarly,
+
+186
+00:11:17,000 --> 00:11:19,000
+we can also display this color
+
+187
+00:11:19,000 --> 00:11:25,000
+in the blank right-click button.
+
+188
+00:11:25,000 --> 00:11:27,000
+In the setting side,
+
+189
+00:11:27,000 --> 00:11:30,000
+we can set the color of the form.
+
+190
+00:11:30,000 --> 00:11:32,000
+We find the user interface,
+
+191
+00:11:32,000 --> 00:11:35,000
+go to the bottom,
+
+192
+00:11:35,000 --> 00:11:37,000
+and click on the color block on the right-click
+
+193
+00:11:37,000 --> 00:11:39,000
+of the form block.
+
+194
+00:11:39,000 --> 00:11:42,000
+Choose a color that we like.
+
+195
+00:11:42,000 --> 00:11:43,000
+In this way,
+
+196
+00:11:43,000 --> 00:11:46,000
+we can set the color of the form block.
+
+197
+00:11:46,000 --> 00:11:49,000
+It is very free and humanized.
+
+198
+00:11:49,000 --> 00:11:50,000
+Next,
+
+199
+00:11:50,000 --> 00:11:52,000
+we are going to introduce
+
+200
+00:11:52,000 --> 00:11:54,000
+the function update optimization
+
+201
+00:11:54,000 --> 00:11:56,000
+of the third module mode.
+
+202
+00:11:56,000 --> 00:12:00,000
+We will introduce the following four aspects.
+
+203
+00:12:00,000 --> 00:12:03,000
+The first one is the optimization of the color mode.
+
+204
+00:12:03,000 --> 00:12:06,000
+The second one is the optimization of the print and release mode.
+
+205
+00:12:06,000 --> 00:12:09,000
+The third one is the automatic arrangement of the template in the module.
+
+206
+00:12:09,000 --> 00:12:11,000
+The fourth one is the animation mode
+
+207
+00:12:11,000 --> 00:12:13,000
+to increase the female action.
+
+208
+00:12:13,000 --> 00:12:15,000
+In the optimization of the color mode,
+
+209
+00:12:15,000 --> 00:12:19,000
+we will introduce the following six aspects.
+
+210
+00:12:19,000 --> 00:12:22,000
+Let's take a look at the operation demonstration.
+
+211
+00:12:22,000 --> 00:12:23,000
+First of all,
+
+212
+00:12:23,000 --> 00:12:25,000
+we need to open a project file
+
+213
+00:12:25,000 --> 00:12:27,000
+in the main menu.
+
+214
+00:12:27,000 --> 00:12:28,000
+Then,
+
+215
+00:12:28,000 --> 00:12:30,000
+open the color editor window
+
+216
+00:12:30,000 --> 00:12:35,000
+in the main menu.
+
+217
+00:12:35,000 --> 00:12:36,000
+Here,
+
+218
+00:12:36,000 --> 00:12:38,000
+we can see all the color blocks
+
+219
+00:12:38,000 --> 00:12:40,000
+applied in this costume,
+
+220
+00:12:40,000 --> 00:12:42,000
+as well as the shrinkage of objects such as
+
+221
+00:12:42,000 --> 00:12:43,000
+plants,
+
+222
+00:12:43,000 --> 00:12:44,000
+stickers,
+
+223
+00:12:44,000 --> 00:12:45,000
+lines,
+
+224
+00:12:45,000 --> 00:12:46,000
+zipper,
+
+225
+00:12:46,000 --> 00:12:49,000
+and so on.
+
+226
+00:12:49,000 --> 00:12:50,000
+First of all,
+
+227
+00:12:50,000 --> 00:12:52,000
+we need to introduce that
+
+228
+00:12:52,000 --> 00:12:54,000
+we can drag the fabric file directly to the
+
+229
+00:12:54,000 --> 00:12:56,000
+shrinkage chart of the plant
+
+230
+00:12:56,000 --> 00:12:58,000
+to replace the text.
+
+231
+00:12:58,000 --> 00:12:59,000
+Before that,
+
+232
+00:12:59,000 --> 00:13:01,000
+this function is not possible.
+
+233
+00:13:01,000 --> 00:13:03,000
+We can only drag the fabric file
+
+234
+00:13:03,000 --> 00:13:05,000
+to the object window
+
+235
+00:13:05,000 --> 00:13:07,000
+to replace the text.
+
+236
+00:13:09,000 --> 00:13:11,000
+Let's use this Nylon light and thin.
+
+237
+00:13:11,000 --> 00:13:14,000
+We drag the fabric file of Nylon luminous
+
+238
+00:13:14,000 --> 00:13:16,000
+to the shrinkage chart of the plant
+
+239
+00:13:16,000 --> 00:13:18,000
+to replace the text.
+
+240
+00:13:18,000 --> 00:13:20,000
+We can see that the text has changed
+
+241
+00:13:20,000 --> 00:13:22,000
+in the 3D window.
+
+242
+00:13:22,000 --> 00:13:25,000
+We click on the update in the upper left corner
+
+243
+00:13:25,000 --> 00:13:26,000
+to see the color information
+
+244
+00:13:26,000 --> 00:13:28,000
+after the update.
+
+245
+00:13:28,000 --> 00:13:29,000
+In the object window,
+
+246
+00:13:29,000 --> 00:13:31,000
+we click on Nylon light and thin 3
+
+247
+00:13:31,000 --> 00:13:33,000
+and come to the attribute editor on the right.
+
+248
+00:13:33,000 --> 00:13:35,000
+We can see that the preset of the physical attribute
+
+249
+00:13:35,000 --> 00:13:36,000
+here
+
+250
+00:13:36,000 --> 00:13:38,000
+still retains the physical preset
+
+251
+00:13:38,000 --> 00:13:41,000
+of Nylon light and thin,
+
+252
+00:13:41,000 --> 00:13:43,000
+and does not replace the information
+
+253
+00:13:43,000 --> 00:13:49,000
+of our Nylon luminous fabric.
+
+254
+00:13:49,000 --> 00:13:50,000
+Next,
+
+255
+00:13:50,000 --> 00:13:51,000
+we need to introduce that
+
+256
+00:13:51,000 --> 00:13:53,000
+in the color window,
+
+257
+00:13:53,000 --> 00:13:56,000
+we click on the shrinkage chart of the object.
+
+258
+00:13:56,000 --> 00:13:58,000
+In the attribute editor on the right,
+
+259
+00:13:58,000 --> 00:14:00,000
+we can see the text
+
+260
+00:14:00,000 --> 00:14:02,000
+corresponding to the object.
+
+261
+00:14:03,000 --> 00:14:05,000
+In Nylon light and thin 2,
+
+262
+00:14:05,000 --> 00:14:07,000
+in the attribute editor on the right,
+
+263
+00:14:07,000 --> 00:14:10,000
+we can see its type,
+
+264
+00:14:10,000 --> 00:14:11,000
+text,
+
+265
+00:14:11,000 --> 00:14:12,000
+color information,
+
+266
+00:14:12,000 --> 00:14:14,000
+and reflection information.
+
+267
+00:14:14,000 --> 00:14:15,000
+Here,
+
+268
+00:14:15,000 --> 00:14:17,000
+we can make an edit.
+
+269
+00:14:17,000 --> 00:14:19,000
+We don't need to select
+
+270
+00:14:19,000 --> 00:14:21,000
+the text from the object window.
+
+271
+00:14:21,000 --> 00:14:22,000
+After selecting the text,
+
+272
+00:14:22,000 --> 00:14:24,000
+we can make an edit.
+
+273
+00:14:24,000 --> 00:14:25,000
+Next,
+
+274
+00:14:25,000 --> 00:14:27,000
+we need to introduce
+
+275
+00:14:27,000 --> 00:14:29,000
+the function of
+
+276
+00:14:29,000 --> 00:14:31,000
+displaying the object
+
+277
+00:14:31,000 --> 00:14:33,000
+hidden by the object.
+
+278
+00:14:33,000 --> 00:14:34,000
+We can see that
+
+279
+00:14:34,000 --> 00:14:36,000
+the front chest sticker corresponding
+
+280
+00:14:36,000 --> 00:14:38,000
+to the three colors
+
+281
+00:14:38,000 --> 00:14:42,000
+uses a different sticker.
+
+282
+00:14:42,000 --> 00:14:44,000
+In this project file,
+
+283
+00:14:44,000 --> 00:14:49,000
+we added three different stickers.
+
+284
+00:14:49,000 --> 00:14:50,000
+Click on the display hidden sticker
+
+285
+00:14:50,000 --> 00:14:52,000
+button.
+
+286
+00:14:52,000 --> 00:14:53,000
+We can display
+
+287
+00:14:53,000 --> 00:14:55,000
+the hidden sticker.
+
+288
+00:14:55,000 --> 00:14:56,000
+Then,
+
+289
+00:14:56,000 --> 00:14:57,000
+we click again
+
+290
+00:14:57,000 --> 00:14:58,000
+to hide the sticker
+
+291
+00:14:58,000 --> 00:15:01,000
+that we don't need to display.
+
+292
+00:15:04,000 --> 00:15:05,000
+Next,
+
+293
+00:15:05,000 --> 00:15:06,000
+we need to introduce that
+
+294
+00:15:06,000 --> 00:15:08,000
+we can delete
+
+295
+00:15:08,000 --> 00:15:10,000
+the object of the
+
+296
+00:15:10,000 --> 00:15:12,000
+Nylon light and thin 2
+
+297
+00:15:12,000 --> 00:15:15,000
+directly in the color editor.
+
+298
+00:15:15,000 --> 00:15:25,000
+The Nylon light and thin 2
+
+299
+00:15:25,000 --> 00:15:28,000
+are separated.
+
+300
+00:15:28,000 --> 00:15:30,000
+This is the Nylon light.
+
+301
+00:15:30,000 --> 00:15:32,000
+This is the Nylon light.
+
+302
+00:15:32,000 --> 00:15:35,000
+The Nylon light is
+
+303
+00:15:35,000 --> 00:15:37,000
+the parts of the Nylon light.
+
+304
+00:15:37,000 --> 00:15:39,000
+The Nylon light is
+
+305
+00:15:39,000 --> 00:15:41,000
+the parts of the Nylon light.
+
+306
+00:15:41,000 --> 00:15:42,000
+As you can see,
+
+307
+00:15:42,000 --> 00:15:43,000
+the Nylon light is
+
+308
+00:15:43,000 --> 00:15:53,000
+If you click on Confirm, you can delete it in our style.
+
+309
+00:15:53,000 --> 00:16:03,000
+It is worth noting that after we click on Delete, it will delete this object information in all the color of the entire project file.
+
+310
+00:16:03,000 --> 00:16:13,000
+We can see that only one object information has been saved in the drag bar on the right side.
+
+311
+00:16:13,000 --> 00:16:20,000
+Next, we will introduce the update of the interface optimization.
+
+312
+00:16:20,000 --> 00:16:30,000
+In the lower right corner, we have changed the original List and Viewer to a button that now displays details.
+
+313
+00:16:30,000 --> 00:16:33,000
+We will activate it.
+
+314
+00:16:33,000 --> 00:16:40,000
+Now we can hide the information in our style.
+
+315
+00:16:40,000 --> 00:16:56,000
+In this mode, there is a button at the bottom of the style editor window that can be used to switch the style mode automatically.
+
+316
+00:16:56,000 --> 00:17:02,000
+Now, we can see that our style editor window has been changed.
+
+317
+00:17:02,000 --> 00:17:03,000
+Now, we can see that our style editor window has been changed.
+
+318
+00:17:03,000 --> 00:17:07,000
+We can save the style photo.
+
+319
+00:17:07,000 --> 00:17:18,000
+We click on the save image in the upper left corner and select the style editor window.
+
+320
+00:17:18,000 --> 00:17:29,000
+After clicking on Confirm, we can see that in the list of the table, our file name is automatically named after the project file name.
+
+321
+00:17:29,000 --> 00:17:30,000
+It is very convenient for us to manage the style.
+
+322
+00:17:30,000 --> 00:17:31,000
+It is very convenient for us to manage the style.
+
+323
+00:17:31,000 --> 00:17:32,000
+It is very convenient for us to manage the style.
+
+324
+00:17:32,000 --> 00:17:36,000
+We can save this picture and re-name it.
+
+325
+00:17:36,000 --> 00:17:40,000
+Click Save.
+
+326
+00:17:40,000 --> 00:17:44,000
+We can save this picture.
+
+327
+00:17:44,000 --> 00:17:48,000
+Next, we can see the picture after saving.
+
+328
+00:17:48,000 --> 00:17:52,000
+Next, we can see the picture after saving.
+
+329
+00:17:52,000 --> 00:17:56,000
+If we want to save a single flag,
+
+330
+00:17:56,000 --> 00:18:00,000
+we need to click Save Picture,
+
+331
+00:18:00,000 --> 00:18:04,000
+and 3D window.
+
+332
+00:18:04,000 --> 00:18:06,000
+In the dialog box,
+
+333
+00:18:06,000 --> 00:18:08,000
+we can see the name of this picture.
+
+334
+00:18:08,000 --> 00:18:10,000
+We will use the project file name
+
+335
+00:18:10,000 --> 00:18:12,000
+and the flag name
+
+336
+00:18:12,000 --> 00:18:14,000
+to automatically rename it.
+
+337
+00:18:14,000 --> 00:18:16,000
+I won't show you too much here.
+
+338
+00:18:16,000 --> 00:18:18,000
+I won't show you too much here.
+
+339
+00:18:18,000 --> 00:18:20,000
+We don't want to save this picture.
+
+340
+00:18:20,000 --> 00:18:22,000
+Click Save.
+
+341
+00:18:26,000 --> 00:18:28,000
+Next,
+
+342
+00:18:28,000 --> 00:18:30,000
+we will show you
+
+343
+00:18:30,000 --> 00:18:32,000
+the function update and optimization
+
+344
+00:18:32,000 --> 00:18:34,000
+in the flower arrangement mode.
+
+345
+00:18:34,000 --> 00:18:36,000
+I will show you the three points below.
+
+346
+00:18:36,000 --> 00:18:38,000
+I will show you the three points below.
+
+347
+00:18:38,000 --> 00:18:40,000
+The first one is
+
+348
+00:18:40,000 --> 00:18:42,000
+the part of the high-density display.
+
+349
+00:18:42,000 --> 00:18:44,000
+The second one is
+
+350
+00:18:44,000 --> 00:18:46,000
+the part of the high-density display.
+
+351
+00:18:46,000 --> 00:18:48,000
+The third one is
+
+352
+00:18:48,000 --> 00:18:50,000
+the part of the high-density display.
+
+353
+00:18:50,000 --> 00:18:56,000
+The fourth one is
+
+354
+00:18:56,000 --> 00:18:58,000
+the path to the flower arrangement.
+
+355
+00:18:58,000 --> 00:19:00,000
+The fourth one is
+
+356
+00:19:00,000 --> 00:19:02,000
+scroll.
+
+357
+00:19:02,000 --> 00:19:04,000
+The next one is
+
+358
+00:19:04,000 --> 00:19:06,000
+the path to the flower arrangement.
+
+359
+00:19:06,000 --> 00:19:08,000
+The fifth one is
+
+360
+00:19:08,000 --> 00:19:10,000
+the path to flowers
+
+361
+00:19:10,000 --> 00:19:12,000
+and the sixth one is
+
+362
+00:19:12,000 --> 00:19:14,000
+the path to the flower arrangement.
+
+363
+00:19:14,000 --> 00:19:16,000
+You can see this
+
+364
+00:19:16,000 --> 00:19:18,000
+red highlighted line
+
+365
+00:19:18,000 --> 00:19:26,000
+After that, we will move one of the panels out of the layout area, and it will also display in a high-density red color.
+
+366
+00:19:26,000 --> 00:19:29,000
+Let's adjust the viewing angle.
+
+367
+00:19:29,000 --> 00:19:34,000
+In the layout settings, you can set the number of clothes as the number of numbers.
+
+368
+00:19:34,000 --> 00:19:36,000
+Click on the button on the right.
+
+369
+00:19:36,000 --> 00:19:45,000
+We can enter the number of numbers of two S and one L in the dialogue box.
+
+370
+00:19:45,000 --> 00:19:46,000
+Click to confirm.
+
+371
+00:19:46,000 --> 00:19:49,000
+We have set the number of numbers in the dialogue box.
+
+372
+00:19:49,000 --> 00:19:59,000
+Next, we can change the direction of the line to be double.
+
+373
+00:19:59,000 --> 00:20:03,000
+At this time, we need to remind you that we have another function update.
+
+374
+00:20:03,000 --> 00:20:10,000
+You can show the layout effect in the layout.
+
+375
+00:20:10,000 --> 00:20:11,000
+Click to start the layout.
+
+376
+00:20:11,000 --> 00:20:15,000
+The interface will display the current layout.
+
+377
+00:20:15,000 --> 00:20:30,000
+At this time, if we click to stop the layout, it will display the current layout.
+
+378
+00:20:30,000 --> 00:20:33,000
+We click to start the layout again.
+
+379
+00:20:33,000 --> 00:20:39,000
+You can see that as the layout is calculated, the images in the interface are also constantly changing.
+
+380
+00:20:39,000 --> 00:20:44,000
+But in the later stages of the layout, the changes are basically no longer changing.
+
+381
+00:20:44,000 --> 00:20:45,000
+This is the result.
+
+382
+00:20:45,000 --> 00:20:49,000
+At this time, we click to stop the layout.
+
+383
+00:20:49,000 --> 00:20:53,000
+It will greatly reduce our layout time.
+
+384
+00:20:53,000 --> 00:21:04,000
+In the attribute editor, we can also check its number and volume.
+
+385
+00:21:04,000 --> 00:21:08,000
+The update of the layout is introduced to you here.
+
+386
+00:21:08,000 --> 00:21:11,000
+Let's go to the third module.
+
+387
+00:21:11,000 --> 00:21:14,000
+Perform automatic layout in the module.
+
+388
+00:21:14,000 --> 00:21:23,000
+This is the function update introduction of the automatic layout.
+
+389
+00:21:23,000 --> 00:21:26,000
+We open a project file.
+
+390
+00:21:26,000 --> 00:21:30,000
+We can import the required documents we have saved.
+
+391
+00:21:30,000 --> 00:21:33,000
+On the right side, we can click on the module.
+
+392
+00:21:33,000 --> 00:21:36,000
+Enter the module mode.
+
+393
+00:21:36,000 --> 00:21:38,000
+Click on the module.
+
+394
+00:21:38,000 --> 00:21:39,000
+Preview file.
+
+395
+00:21:39,000 --> 00:21:43,000
+Choose a module preset that is closest to our required documents.
+
+396
+00:21:43,000 --> 00:21:44,000
+Press to confirm.
+
+397
+00:21:44,000 --> 00:21:45,000
+Click to confirm.
+
+398
+00:21:45,000 --> 00:21:52,000
+You can see that you can apply this preset in our project file.
+
+399
+00:21:52,000 --> 00:21:57,000
+At this time, we can move the required documents to the gray area.
+
+400
+00:21:57,000 --> 00:22:04,000
+We can see that our panels at the 3D window are automatically arranged.
+
+401
+00:22:04,000 --> 00:22:08,000
+We can adjust the color of this panel to gray first.
+
+402
+00:22:08,000 --> 00:22:09,000
+Convenient to see.
+
+403
+00:22:09,000 --> 00:22:21,000
+In the back view of the model, if we move one of the panels in the back, we can see that the arrangement position of the arrangement will also change accordingly.
+
+404
+00:22:26,000 --> 00:22:30,000
+This kind of function update will make it easier for us to arrange the panels.
+
+405
+00:22:32,000 --> 00:22:38,000
+Finally, we can use the automatic sewing function to add the sewing line to this T-shirt.
+
+406
+00:22:40,000 --> 00:22:48,000
+In the single machine simulation, we can let the virtual model wear this T-shirt. It is very convenient.
+
+407
+00:22:51,000 --> 00:23:01,000
+In the third big model, we will introduce the update of the animation mode to increase the movement of the girl.
+
+408
+00:23:02,000 --> 00:23:07,000
+Due to time constraints, we will show you the animation that is good.
+
+409
+00:23:08,000 --> 00:23:09,000
+You can see that the animation is good.
+
+410
+00:23:10,000 --> 00:23:14,000
+In this animation, there is no extra movement of the girl's hand.
+
+411
+00:23:28,000 --> 00:23:33,000
+The fourth module will introduce the tool optimization of the material.
+
+412
+00:23:34,000 --> 00:23:37,000
+First of all, let's take a look at the zipper part.
+
+413
+00:23:38,000 --> 00:23:57,000
+In the function update of the zipper, we will introduce that when customizing the zipper, you can select the mesh of the zipper head and zipper, increase the YKK metal preset, and adjust the length of the zipper.
+
+414
+00:23:58,000 --> 00:24:04,000
+We open a project file with a zipper.
+
+415
+00:24:05,000 --> 00:24:09,000
+Come to the top of the zipper, select the mesh of the zipper head and zipper.
+
+416
+00:24:10,000 --> 00:24:15,000
+In the right side of the attribute editor, find the type of plus arrow on the right side.
+
+417
+00:24:16,000 --> 00:24:18,000
+We click this button.
+
+418
+00:24:20,000 --> 00:24:26,000
+In the menu that is displayed, we can change the type to the mesh of the zipper head and zipper.
+
+419
+00:24:27,000 --> 00:24:30,000
+Then we import the OBJ file of the mesh of the zipper head and zipper.
+
+420
+00:24:31,000 --> 00:24:33,000
+At this time, in our preview window,
+
+421
+00:24:33,000 --> 00:24:38,000
+the preview image of our zipper head and zipper will appear.
+
+422
+00:24:39,000 --> 00:24:45,000
+In the selection of the mesh, we can set the mesh of the zipper head.
+
+423
+00:24:46,000 --> 00:24:49,000
+The selected mesh will be displayed in the form of yellow highlights.
+
+424
+00:24:50,000 --> 00:24:52,000
+Then we will select the mesh and switch it to the zipper.
+
+425
+00:24:53,000 --> 00:24:55,000
+We can define the mesh of the zipper.
+
+426
+00:24:58,000 --> 00:25:00,000
+After selecting, click OK.
+
+427
+00:25:00,000 --> 00:25:05,000
+We can define our zipper head and zipper.
+
+428
+00:25:06,000 --> 00:25:10,000
+The next thing I want to introduce to you is the YKK metal preset.
+
+429
+00:25:11,000 --> 00:25:16,000
+We can set the material of the zipper head and zipper to a metal.
+
+430
+00:25:18,000 --> 00:25:22,000
+In the metal preset, we can set it to a silver.
+
+431
+00:25:23,000 --> 00:25:28,000
+Then we can also change it to gold, copper, etc.
+
+432
+00:25:30,000 --> 00:25:34,000
+You can design it according to your own style.
+
+433
+00:25:35,000 --> 00:25:40,000
+Here, I will change its metal preset to silver.
+
+434
+00:25:41,000 --> 00:25:46,000
+Select our zipper.
+
+435
+00:25:47,000 --> 00:25:52,000
+In the attribute editor on the right side, we can change the length of the zipper.
+
+436
+00:25:53,000 --> 00:25:57,000
+If we need to make the length of the zipper shorter than this large plate,
+
+437
+00:25:57,000 --> 00:26:01,000
+we can change the length of the zipper to 1 cm.
+
+438
+00:26:04,000 --> 00:26:09,000
+By simulating, we can change the length of the zipper.
+
+439
+00:26:12,000 --> 00:26:19,000
+After the style is set, we can add a separation line design to the front.
+
+440
+00:26:19,000 --> 00:26:36,000
+We can see that the zipper is still preserved after adding the separation line design.
+
+441
+00:26:37,000 --> 00:26:41,000
+This function was not possible before.
+
+442
+00:26:41,000 --> 00:26:49,000
+In 7.0, we also added a separate zipper and fabric design.
+
+443
+00:26:50,000 --> 00:26:53,000
+We select the zipper and come to the attribute editor on the right side.
+
+444
+00:26:54,000 --> 00:26:58,000
+We can set the shape of the zipper to change its size.
+
+445
+00:26:59,000 --> 00:27:04,000
+Here, we can also set the width of the zipper and the width of the whole zipper.
+
+446
+00:27:05,000 --> 00:27:08,000
+If we only change the width of the whole zipper,
+
+447
+00:27:08,000 --> 00:27:10,000
+we will only change the width of the fabric,
+
+448
+00:27:10,000 --> 00:27:13,000
+which will not affect the width of the zipper.
+
+449
+00:27:19,000 --> 00:27:21,000
+After setting the width of the zipper,
+
+450
+00:27:22,000 --> 00:27:24,000
+we come to the material section.
+
+451
+00:27:25,000 --> 00:27:26,000
+After the function update,
+
+452
+00:27:27,000 --> 00:27:30,000
+we have prepared six types of zippers for you in our material library,
+
+453
+00:27:31,000 --> 00:27:34,000
+including plastic, nylon, and metal.
+
+454
+00:27:35,000 --> 00:27:37,000
+We can provide you with a style design.
+
+455
+00:27:37,000 --> 00:27:43,000
+We can apply a metal zipper to this clothing file.
+
+456
+00:27:49,000 --> 00:27:50,000
+After selecting the zipper,
+
+457
+00:27:50,000 --> 00:27:54,000
+we can set a metal material for the zipper,
+
+458
+00:27:54,000 --> 00:27:57,000
+and give it a silver YKK metal.
+
+459
+00:27:58,000 --> 00:27:59,000
+On the fabric,
+
+460
+00:27:59,000 --> 00:28:02,000
+we can apply a pink color similar to Dacheng.
+
+461
+00:28:03,000 --> 00:28:04,000
+In this way,
+
+462
+00:28:04,000 --> 00:28:06,000
+our zipper is designed.
+
+463
+00:28:08,000 --> 00:28:09,000
+We will show you how to use it in this video.
+
+464
+00:28:09,000 --> 00:28:10,000
+It is so convenient and can be used in many ways.
+
+465
+00:28:11,000 --> 00:28:15,000
+Now, let's talk about the functional update that we will introduce with you.
+
+466
+00:28:16,000 --> 00:28:18,000
+We will share two options.
+
+467
+00:28:18,000 --> 00:28:20,000
+Please turn the type of the page into the markup.
+
+468
+00:28:20,000 --> 00:28:23,000
+Turn the type of the page to a markup.
+
+469
+00:28:23,000 --> 00:28:25,000
+If you are engaging in your writing,
+
+470
+00:28:25,000 --> 00:28:28,000
+you may need to change the type of the page.
+
+471
+00:28:29,000 --> 00:28:32,000
+There are four functions in the markup.
+
+472
+00:28:32,000 --> 00:28:35,000
+Open a group of words
+
+473
+00:28:35,000 --> 00:28:40,000
+In this group of words, I used the board to make its shoulder strap
+
+474
+00:28:43,000 --> 00:28:48,000
+In the past, we need to turn the board out to OBJ
+
+475
+00:28:48,000 --> 00:28:51,000
+Then pour it into the slot
+
+476
+00:28:51,000 --> 00:28:57,000
+Now we can directly convert the board into a component
+
+477
+00:28:57,000 --> 00:29:00,000
+The operation method is in the 3D window
+
+478
+00:29:00,000 --> 00:29:04,000
+Right-click on this shoulder strap board
+
+479
+00:29:04,000 --> 00:29:10,000
+Find the option to convert to OBJ
+
+480
+00:29:11,000 --> 00:29:18,000
+After clicking, you can see the OBJ button on the upper right corner
+
+481
+00:29:18,000 --> 00:29:23,000
+This shoulder strap board will disappear in the 2D board window
+
+482
+00:29:24,000 --> 00:29:25,000
+At this time
+
+483
+00:29:25,000 --> 00:29:27,000
+It will prove that we have successfully
+
+484
+00:29:27,000 --> 00:29:29,000
+Turned the board into a component
+
+485
+00:29:29,000 --> 00:29:31,000
+We can use the glue function
+
+486
+00:29:31,000 --> 00:29:35,000
+Stick the shoulder strap on the shoulder strap board
+
+487
+00:29:36,000 --> 00:29:38,000
+Adjust its position
+
+488
+00:29:38,000 --> 00:29:40,000
+Designed
+
+489
+00:29:43,000 --> 00:29:45,000
+For the board we added text
+
+490
+00:29:45,000 --> 00:29:47,000
+It can also be set to a component
+
+491
+00:29:47,000 --> 00:29:50,000
+Let's use this butterfly board as an example
+
+492
+00:29:50,000 --> 00:29:52,000
+To introduce
+
+493
+00:29:52,000 --> 00:29:54,000
+What you need to pay attention to is
+
+494
+00:29:54,000 --> 00:29:56,000
+We need to put the text on this board
+
+495
+00:29:56,000 --> 00:29:58,000
+Set the text as a component
+
+496
+00:29:58,000 --> 00:29:59,000
+Set the text as a component
+
+497
+00:29:59,000 --> 00:30:01,000
+So that we can make sure that after we convert it to a component
+
+498
+00:30:01,000 --> 00:30:04,000
+The text information will not change
+
+499
+00:30:06,000 --> 00:30:08,000
+The method is also in the 3D window
+
+500
+00:30:08,000 --> 00:30:11,000
+Right-click on this board
+
+501
+00:30:11,000 --> 00:30:14,000
+Find the option to convert to a component
+
+502
+00:30:17,000 --> 00:30:18,000
+At this time
+
+503
+00:30:18,000 --> 00:30:20,000
+We need to check
+
+504
+00:30:20,000 --> 00:30:23,000
+The properties of the editor
+
+505
+00:30:23,000 --> 00:30:24,000
+At the bottom right corner
+
+506
+00:30:24,000 --> 00:30:34,000
+We can adjust the weight of the lower part of the specification.
+
+507
+00:30:34,000 --> 00:30:42,000
+Then we use the glue button to stick this component to the body.
+
+508
+00:30:42,000 --> 00:30:49,000
+What I need to introduce to you next is that our component can be closely attached and copied to the symmetrical plate.
+
+509
+00:30:49,000 --> 00:30:56,000
+Because our shoulder strap is symmetrical, we can copy it to the symmetrical plate.
+
+510
+00:30:56,000 --> 00:31:06,000
+On the other shoulder strap, we also add the component of the shoulder strap buckle.
+
+511
+00:31:06,000 --> 00:31:11,000
+For the butterfly plate on the front, we can copy it first.
+
+512
+00:31:11,000 --> 00:31:15,000
+Then find the mirror stick in the right-click menu.
+
+513
+00:31:15,000 --> 00:31:18,000
+Stick it on the master.
+
+514
+00:31:19,000 --> 00:31:24,000
+Let's adjust its position.
+
+515
+00:31:24,000 --> 00:31:28,000
+Then we can paste our component on the shoulder strap.
+
+516
+00:31:28,000 --> 00:31:34,000
+The function update of the upper part of the specification is introduced to you here.
+
+517
+00:31:34,000 --> 00:31:38,000
+We are about to open the content of the lower part of the specification.
+
+518
+00:31:38,000 --> 00:31:41,000
+Please welcome Cloth's own 3D technology expert, Andy.
+
+519
+00:31:41,000 --> 00:31:44,000
+Hello everyone, I am Andy.
+
+520
+00:31:44,000 --> 00:31:48,000
+Then I will start the lower part of the specification.
+
+521
+00:31:48,000 --> 00:32:02,000
+I will share the screen with you.
+
+522
+00:32:02,000 --> 00:32:09,000
+Can you see it?
+
+523
+00:32:09,000 --> 00:32:13,000
+Then I will start.
+
+524
+00:32:13,000 --> 00:32:16,000
+Then I will start the content of the lower part of the specification.
+
+525
+00:32:16,000 --> 00:32:20,000
+I will continue to explain the update and optimization of the new function.
+
+526
+00:32:20,000 --> 00:32:23,000
+Let's look at the part of the sticker first.
+
+527
+00:32:23,000 --> 00:32:26,000
+There are three contents in total here.
+
+528
+00:32:26,000 --> 00:32:30,000
+Add sticker content to the material window and material list.
+
+529
+00:32:30,000 --> 00:32:32,000
+And press distance.
+
+530
+00:32:32,000 --> 00:32:37,000
+Finally, it is to improve the cross-section effect.
+
+531
+00:32:37,000 --> 00:32:39,000
+Let's go to the software interface first.
+
+532
+00:32:39,000 --> 00:32:40,000
+Take this file as an example.
+
+533
+00:32:40,000 --> 00:32:42,000
+First, let's come to the material window.
+
+534
+00:32:42,000 --> 00:32:46,000
+In the material window, a new sticker label bar has been added.
+
+535
+00:32:46,000 --> 00:32:50,000
+Here you can display the application stickers.
+
+536
+00:32:50,000 --> 00:32:53,000
+It is like a branch and a button.
+
+537
+00:32:53,000 --> 00:32:56,000
+It can be displayed directly in the material window.
+
+538
+00:32:56,000 --> 00:33:00,000
+If you want to add new sticker material in this column,
+
+539
+00:33:00,000 --> 00:33:03,000
+you can click on the increase in the upper right corner.
+
+540
+00:33:03,000 --> 00:33:08,000
+Then choose to open the sticker in the window.
+
+541
+00:33:08,000 --> 00:33:11,000
+So the sticker is added to our label bar.
+
+542
+00:33:11,000 --> 00:33:13,000
+After the sticker is added,
+
+543
+00:33:13,000 --> 00:33:18,000
+you can drag the sticker directly to the corresponding position of the label.
+
+544
+00:33:18,000 --> 00:33:24,000
+You can drag it multiple times.
+
+545
+00:33:24,000 --> 00:33:29,000
+You can also make multiple stickers by duplicating and pasting.
+
+546
+00:33:29,000 --> 00:33:37,000
+You can also use the shortcut here.
+
+547
+00:33:37,000 --> 00:33:41,000
+These four stickers come from the same material.
+
+548
+00:33:41,000 --> 00:33:44,000
+So when adjusting the size of one of the stickers,
+
+549
+00:33:44,000 --> 00:33:47,000
+the other sticker sizes will also be adjusted.
+
+550
+00:33:47,000 --> 00:33:56,000
+In other words, the size of the stickers under the same material will remain the same.
+
+551
+00:33:56,000 --> 00:34:01,000
+We can see that it can basically adjust its size and remain the same.
+
+552
+00:34:01,000 --> 00:34:07,000
+In addition, the stickers can also be checked and calculated in the material list.
+
+553
+00:34:11,000 --> 00:34:16,000
+If you want to rank these four stickers,
+
+554
+00:34:16,000 --> 00:34:18,000
+you can select these four stickers at the same time.
+
+555
+00:34:18,000 --> 00:34:21,000
+Then right-click on the sticker.
+
+556
+00:34:21,000 --> 00:34:24,000
+Choose to rank according to a certain interval.
+
+557
+00:34:24,000 --> 00:34:27,000
+You can choose the level or vertical according to the effect you want.
+
+558
+00:34:27,000 --> 00:34:29,000
+Here I choose the level.
+
+559
+00:34:29,000 --> 00:34:33,000
+Then enter the interval in the window that is displayed.
+
+560
+00:34:33,000 --> 00:34:35,000
+Click OK.
+
+561
+00:34:41,000 --> 00:34:48,000
+These stickers will be ranked according to the interval according to the first sticker.
+
+562
+00:34:48,000 --> 00:34:51,000
+In addition, the cross-selecting effect of the sticker has also been optimized.
+
+563
+00:34:51,000 --> 00:34:55,000
+It can hide the parts that do not need to be displayed after the cross-selecting of the sticker.
+
+564
+00:34:55,000 --> 00:34:57,000
+Let's use this file as an example.
+
+565
+00:34:57,000 --> 00:35:01,000
+The T-shirt is separated left and right with its front and back.
+
+566
+00:35:01,000 --> 00:35:04,000
+First, we add a sticker to the front chest.
+
+567
+00:35:11,000 --> 00:35:15,000
+After adding a sticker, we need to display the other half of the sticker.
+
+568
+00:35:15,000 --> 00:35:18,000
+Open the sticker in the opening.
+
+569
+00:35:20,000 --> 00:35:22,000
+Since the size of the sticker is larger,
+
+570
+00:35:22,000 --> 00:35:32,000
+the sticker will be easy to cross-select according to the relationship of the seam.
+
+571
+00:35:32,000 --> 00:35:38,000
+Therefore, a part of the sticker will be displayed on the sleeves and the back.
+
+572
+00:35:38,000 --> 00:35:40,000
+The stickers in these two positions
+
+573
+00:35:40,000 --> 00:35:42,000
+do not need to be displayed.
+
+574
+00:35:42,000 --> 00:35:45,000
+Therefore, we need to hide this part of the sticker.
+
+575
+00:35:45,000 --> 00:35:49,000
+First, select the sticker in the sleeve part and right-click on it.
+
+576
+00:35:49,000 --> 00:35:52,000
+Then find the hidden sticker and click on it.
+
+577
+00:35:52,000 --> 00:35:55,000
+In this way, the sticker in the sleeve will be hidden.
+
+578
+00:35:55,000 --> 00:36:04,000
+The remaining stickers in the other positions can be hidden with this function.
+
+579
+00:36:04,000 --> 00:36:07,000
+Finally, just keep the complete sticker in the front chest.
+
+580
+00:36:10,000 --> 00:36:14,000
+Next, let's take a look at the optimization of the button tool.
+
+581
+00:36:14,000 --> 00:36:19,000
+Add a button to the inner line.
+
+582
+00:36:19,000 --> 00:36:22,000
+This is a joint clothing that lacks a button.
+
+583
+00:36:22,000 --> 00:36:26,000
+First, we need to add a button to the front center line.
+
+584
+00:36:26,000 --> 00:36:27,000
+Select the button tool.
+
+585
+00:36:27,000 --> 00:36:31,000
+Then stop the mouse on the inner line.
+
+586
+00:36:31,000 --> 00:36:36,000
+And at any position of the inner line or the first button mark position,
+
+587
+00:36:36,000 --> 00:36:38,000
+right-click on it to open the window.
+
+588
+00:36:38,000 --> 00:36:41,000
+There are two types of buttons in this column.
+
+589
+00:36:41,000 --> 00:36:44,000
+Based on the starting point and the average distribution.
+
+590
+00:36:44,000 --> 00:36:47,000
+Here I choose the type based on the starting point.
+
+591
+00:36:47,000 --> 00:36:50,000
+Using this option, you can create a button.
+
+592
+00:36:50,000 --> 00:36:51,000
+When creating a button,
+
+593
+00:36:51,000 --> 00:36:56,000
+other buttons can be created based on the first button.
+
+594
+00:36:56,000 --> 00:37:01,000
+The starting position is to locate the first button.
+
+595
+00:37:01,000 --> 00:37:03,000
+Let's look at the distance here.
+
+596
+00:37:03,000 --> 00:37:06,000
+The distance here refers to the first button and an interval in the inner line.
+
+597
+00:37:06,000 --> 00:37:08,000
+Then we increase the number.
+
+598
+00:37:08,000 --> 00:37:11,000
+Then the first button will move to the left.
+
+599
+00:37:11,000 --> 00:37:15,000
+There is a reverse direction below.
+
+600
+00:37:15,000 --> 00:37:16,000
+Let's select it.
+
+601
+00:37:16,000 --> 00:37:22,000
+Similarly, when the number is increased, it will move in the opposite direction.
+
+602
+00:37:22,000 --> 00:37:29,000
+The interval refers to the interval between the first button and the upper and outer line of the panel.
+
+603
+00:37:29,000 --> 00:37:31,000
+We increase the number.
+
+604
+00:37:31,000 --> 00:37:35,000
+You can see that the button is moving downwards.
+
+605
+00:37:35,000 --> 00:37:36,000
+Reduce the number.
+
+606
+00:37:36,000 --> 00:37:37,000
+Reduce the number.
+
+607
+00:37:37,000 --> 00:37:38,000
+Reduce the number.
+
+608
+00:37:38,000 --> 00:37:39,000
+The numbers become small.
+
+609
+00:37:39,000 --> 00:37:40,000
+The button will move in the opposite direction.
+
+610
+00:37:40,000 --> 00:37:41,000
+This is an Korean button.
+
+611
+00:37:41,000 --> 00:37:42,000
+Reduce the number.
+
+612
+00:37:42,000 --> 00:37:43,000
+Reduce the one.
+
+613
+00:37:43,000 --> 00:37:44,000
+Reduce the number.
+
+614
+00:37:44,000 --> 00:37:45,000
+Wait.
+
+615
+00:37:45,000 --> 00:37:46,000
+Reduce the gem.
+
+616
+00:37:46,000 --> 00:37:47,000
+Once again, instead of the previous button,
+
+617
+00:37:47,000 --> 00:37:48,000
+press alta to reduce the number.
+
+618
+00:37:48,000 --> 00:37:49,000
+When it goes to the opposite direction,
+
+619
+00:37:49,000 --> 00:37:50,000
+the next button will go upwards.
+
+620
+00:37:50,000 --> 00:38:05,980
+This time
+
+621
+00:38:05,980 --> 00:38:06,519
+is below.
+
+622
+00:38:06,519 --> 00:38:07,000
+Come on.
+
+623
+00:38:07,000 --> 00:38:09,000
+After no problem, we click to confirm
+
+624
+00:38:11,000 --> 00:38:13,000
+So the button is installed
+
+625
+00:38:13,000 --> 00:38:16,000
+Next, let's create a button
+
+626
+00:38:16,000 --> 00:38:19,000
+Use the move button tool to select the button
+
+627
+00:38:19,000 --> 00:38:21,000
+Press the button again
+
+628
+00:38:21,000 --> 00:38:23,000
+Apply the button to the symmetrical plate
+
+629
+00:38:23,000 --> 00:38:25,000
+So the button is installed
+
+630
+00:38:28,000 --> 00:38:30,000
+Another type of average distribution
+
+631
+00:38:30,000 --> 00:38:32,000
+It can use this type
+
+632
+00:38:32,000 --> 00:38:35,000
+On the inner line of the spiral line at the back
+
+633
+00:38:35,000 --> 00:38:37,000
+Create a decorative hat
+
+634
+00:38:39,000 --> 00:38:42,000
+The tool we use is the adjustment panel tool
+
+635
+00:38:43,000 --> 00:38:45,000
+Select the entire inner line first
+
+636
+00:38:46,000 --> 00:38:48,000
+Then use the button tool
+
+637
+00:38:48,000 --> 00:38:50,000
+On any position of the inner line
+
+638
+00:38:50,000 --> 00:38:52,000
+Right-click
+
+639
+00:38:52,000 --> 00:38:56,000
+Then select the type of average distribution in the window
+
+640
+00:39:00,000 --> 00:39:02,000
+Pay attention to the distance here
+
+641
+00:39:02,000 --> 00:39:05,000
+We want to fill in along the entire inner line
+
+642
+00:39:05,000 --> 00:39:06,000
+If you want to add a button
+
+643
+00:39:06,000 --> 00:39:08,000
+The distance here is set to 0
+
+644
+00:39:08,000 --> 00:39:10,000
+Just keep it 0
+
+645
+00:39:11,000 --> 00:39:13,000
+Then it is the start interval
+
+646
+00:39:13,000 --> 00:39:18,000
+The start interval refers to the distance between the first button and the end point of the inner line
+
+647
+00:39:18,000 --> 00:39:20,000
+Here we will enter 0.1
+
+648
+00:39:21,000 --> 00:39:27,000
+The end point interval refers to the last button and the end point of the inner line
+
+649
+00:39:27,000 --> 00:39:29,000
+The value remains unchanged
+
+650
+00:39:29,000 --> 00:39:32,000
+Repeat this column to enter a certain number of times
+
+651
+00:39:32,000 --> 00:39:34,000
+You can also follow the effect of the preview
+
+652
+00:39:34,000 --> 00:39:36,000
+Then adjust the number
+
+653
+00:39:37,000 --> 00:39:39,000
+Then click to confirm
+
+654
+00:39:40,000 --> 00:39:43,000
+Finally, our decorative hat is completed
+
+655
+00:39:45,000 --> 00:39:48,000
+Next, let's talk about the functional optimization of the edge
+
+656
+00:39:48,000 --> 00:39:50,000
+This part contains two contents
+
+657
+00:39:50,000 --> 00:39:52,000
+Double edge
+
+658
+00:39:52,000 --> 00:39:55,000
+And create an edge at the intersection of the panel
+
+659
+00:39:57,000 --> 00:39:59,000
+Let's take a look at the first function first
+
+660
+00:39:59,000 --> 00:40:02,000
+Open a new project file
+
+661
+00:40:04,000 --> 00:40:10,000
+Use the edge tool to add an edge at the intersection of the row
+
+662
+00:40:14,000 --> 00:40:17,000
+Then change its material to make it a cloth design
+
+663
+00:40:21,000 --> 00:40:24,000
+The type of the edge can be selected outside
+
+664
+00:40:27,000 --> 00:40:31,000
+If you want the edge to be added to the two sides of the sleeve
+
+665
+00:40:31,000 --> 00:40:33,000
+Then the type here is to choose all
+
+666
+00:40:34,000 --> 00:40:36,000
+After selecting, the simulation is stable
+
+667
+00:40:45,000 --> 00:40:48,000
+In this way, the edge of the sleeve is added
+
+668
+00:40:48,000 --> 00:40:50,000
+Next, let's look at the collar part
+
+669
+00:40:51,000 --> 00:40:53,000
+Come to the collar here
+
+670
+00:40:53,000 --> 00:40:58,000
+At this time, we can add an edge at the intersection of the collar and the panel
+
+671
+00:40:58,000 --> 00:41:01,000
+The edge of the edge of the edge, we choose on the right side of the intersection
+
+672
+00:41:01,000 --> 00:41:03,000
+Type, choose outside
+
+673
+00:41:03,000 --> 00:41:05,000
+Then, next, At this point, we select mostly the edge
+
+674
+00:41:05,000 --> 00:41:09,000
+It serves the empty fascia and the outside
+
+675
+00:41:09,000 --> 00:41:11,000
+Do the same for the wrap design
+
+676
+00:41:11,000 --> 00:41:14,519
+Fasten
+
+677
+00:41:14,519 --> 00:41:17,519
+Nice and steady
+
+678
+00:41:19,000 --> 00:41:21,000
+And, now we can rotate the band to these points
+
+679
+00:41:25,000 --> 00:41:28,000
+This function can also be applied to the оказing part of the sleeve
+
+680
+00:41:28,000 --> 00:41:31,000
+In an easy and quick work
+
+681
+00:41:31,000 --> 00:41:39,000
+Next, let's talk about the fifth part, Function optimization.
+
+682
+00:41:39,000 --> 00:41:41,000
+This part mainly contains four contents.
+
+683
+00:41:41,000 --> 00:41:47,000
+Color switch, application draw on the inner line or shape, optimization of 2D tools, and 3D tools.
+
+684
+00:41:47,000 --> 00:41:52,000
+Let's look at the first function, color switch.
+
+685
+00:41:52,000 --> 00:42:00,000
+The function of color switch is to identify any color in the image texture, and you can choose one of the colors to change it.
+
+686
+00:42:00,000 --> 00:42:06,000
+You can also avoid changing the color between CLO and other 2D software.
+
+687
+00:42:06,000 --> 00:42:09,000
+Let's go to the software interface.
+
+688
+00:42:09,000 --> 00:42:11,000
+Let's look at this file first.
+
+689
+00:42:11,000 --> 00:42:13,000
+It has three colors.
+
+690
+00:42:13,000 --> 00:42:19,000
+We can use the color switch function to adjust the color of each color in the image texture.
+
+691
+00:42:19,000 --> 00:42:21,000
+For example, the first color.
+
+692
+00:42:21,000 --> 00:42:23,000
+Let's select its sticker first.
+
+693
+00:42:23,000 --> 00:42:27,000
+Open the image editor.
+
+694
+00:42:27,000 --> 00:42:28,000
+After selecting the sticker,
+
+695
+00:42:28,000 --> 00:42:30,000
+In the editor bar on the right,
+
+696
+00:42:30,000 --> 00:42:32,000
+Select the color switch.
+
+697
+00:42:32,000 --> 00:42:40,000
+Open it.
+
+698
+00:42:40,000 --> 00:42:41,000
+In the number bar,
+
+699
+00:42:41,000 --> 00:42:43,000
+We enter the number of colors on the logo.
+
+700
+00:42:43,000 --> 00:42:48,000
+At this time, the purple color bar will display all the colors.
+
+701
+00:42:48,000 --> 00:42:51,000
+When our mouse stops on a certain color,
+
+702
+00:42:51,000 --> 00:42:54,000
+All the patterns will show a bright yellow.
+
+703
+00:42:54,000 --> 00:42:57,000
+Click the color you want to change.
+
+704
+00:42:57,000 --> 00:42:58,000
+In the color library,
+
+705
+00:42:58,000 --> 00:42:59,000
+You can choose the right color.
+
+706
+00:42:59,000 --> 00:43:00,000
+Click OK.
+
+707
+00:43:00,000 --> 00:43:01,000
+We have to change the color.
+
+708
+00:43:01,000 --> 00:43:02,000
+Click OK.
+
+709
+00:43:02,000 --> 00:43:03,000
+We can change the color.
+
+710
+00:43:03,000 --> 00:43:04,000
+We will change the color.
+
+711
+00:43:04,000 --> 00:43:10,000
+Here, we match the colors of the patterns and the characters.
+
+712
+00:43:10,000 --> 00:43:15,000
+You can match the color according to your own design.
+
+713
+00:43:15,000 --> 00:43:18,000
+Finally, if you are satisfied with the color result,
+
+714
+00:43:18,000 --> 00:43:19,000
+Click on the application and close it.
+
+715
+00:43:19,000 --> 00:43:21,000
+Then go to the color editor,
+
+716
+00:43:21,000 --> 00:43:23,000
+Click update.
+
+717
+00:43:23,000 --> 00:43:26,000
+You can browse through the settings in the editor,
+
+718
+00:43:26,000 --> 00:43:28,000
+And you will see the changes you made.
+
+719
+00:43:28,000 --> 00:43:37,000
+In addition to changing the color of the logo stand, the color of the fabric pattern can also be adjusted with this function.
+
+720
+00:43:37,000 --> 00:43:42,000
+If we want to change the color of the third flag, we also select the pattern image,
+
+721
+00:43:42,000 --> 00:43:49,000
+then open the pattern editor, select the cherry blossom, and open the color switch.
+
+722
+00:43:49,000 --> 00:43:55,000
+We enter 4 for the number of colors here,
+
+723
+00:43:55,000 --> 00:44:03,000
+then select each color and adjust the color of each color and match it.
+
+724
+00:44:03,000 --> 00:44:16,000
+Let's do some operations here.
+
+725
+00:44:16,000 --> 00:44:24,000
+Finally, let's change the background color.
+
+726
+00:44:24,000 --> 00:44:25,000
+OK.
+
+727
+00:44:25,000 --> 00:44:33,000
+If the background color is gray, the effect is not good, and you want to restore the original white,
+
+728
+00:44:33,000 --> 00:44:37,000
+you can change the right-click button again, and a reset button will appear.
+
+729
+00:44:37,000 --> 00:44:41,000
+We can click Reset to restore the original white.
+
+730
+00:44:41,000 --> 00:44:46,000
+If you want to restore all the colors, you can select Reset All below.
+
+731
+00:44:46,000 --> 00:44:48,000
+Here we choose Reset.
+
+732
+00:44:48,000 --> 00:44:51,000
+Finally, our colors are matched.
+
+733
+00:44:51,000 --> 00:44:54,000
+After matching all the colors, open the blurring edge,
+
+734
+00:44:54,000 --> 00:45:06,000
+and then adjust the background paper appropriately to make the color of the cherry blossom more natural.
+
+735
+00:45:06,000 --> 00:45:10,000
+After matching, click Close.
+
+736
+00:45:10,000 --> 00:45:13,000
+The same is to update.
+
+737
+00:45:13,000 --> 00:45:19,000
+You can see the color of the cherry blossom after adjustment in the browser window.
+
+738
+00:45:19,000 --> 00:45:22,000
+Next, let's look at the next function.
+
+739
+00:45:22,000 --> 00:45:33,900
+It will apply
+
+740
+00:45:33,900 --> 00:45:38,000
+the layer balance on the inside line or the shape.
+
+741
+00:45:38,000 --> 00:45:43,000
+It can apply the layer balance on the inside line or the shape.
+
+742
+00:45:43,000 --> 00:45:46,000
+And it will extend the layer balance to the outline of the tablet.
+
+743
+00:45:46,000 --> 00:45:47,000
+Let's import.
+
+744
+00:45:47,000 --> 00:46:13,000
+We can see that we need to add a fold at the front chest of this suit.
+
+745
+00:46:13,000 --> 00:46:19,000
+The tool we need is the edit panel tool.
+
+746
+00:46:19,000 --> 00:46:22,000
+First select the inner line in the middle.
+
+747
+00:46:22,000 --> 00:46:40,039
+In the
+
+748
+00:46:40,039 --> 00:46:47,039
+The width of the grid is 4 cm, so it contains the upper and lower inner lines.
+
+749
+00:46:47,039 --> 00:46:51,039
+Therefore, there is no need to add a fold on each inner line.
+
+750
+00:46:51,039 --> 00:46:55,039
+We just need to add a fold on the middle line.
+
+751
+00:46:55,039 --> 00:46:59,039
+We enlarge the fold.
+
+752
+00:46:59,039 --> 00:47:04,039
+As you can see, the lower fold is not extended to the outer line of the suit.
+
+753
+00:47:04,039 --> 00:47:09,039
+We select the extension in the element editor.
+
+754
+00:47:10,039 --> 00:47:18,039
+In this way, the fold is extended to the inner line.
+
+755
+00:47:18,039 --> 00:47:25,039
+In addition, in the direction below the extension option, there is a direction option below.
+
+756
+00:47:25,039 --> 00:47:30,039
+This direction option can be selected according to the needs.
+
+757
+00:47:30,039 --> 00:47:34,039
+The fold is on the top, bottom, or both sides of the inner line.
+
+758
+00:47:34,039 --> 00:47:38,039
+When we select the A side, the fold will be on the top.
+
+759
+00:47:38,039 --> 00:47:40,039
+When we select the B side, the fold will be on the top.
+
+760
+00:47:40,039 --> 00:47:43,039
+The fold will be on the bottom of the inner line.
+
+761
+00:47:43,039 --> 00:47:48,039
+If you want to fold twice, just select the B side.
+
+762
+00:47:48,039 --> 00:47:52,039
+Hello everyone, let's continue to explain.
+
+763
+00:47:52,039 --> 00:47:56,039
+Next, let's start to explain.
+
+764
+00:47:56,039 --> 00:47:58,039
+In the previous video, we talked about the fold.
+
+765
+00:47:58,039 --> 00:48:04,039
+The fold function can be applied to the overall fold of the suit, or the fold of the fur coat.
+
+766
+00:48:04,039 --> 00:48:08,039
+Next, let's talk about the 2D function.
+
+767
+00:48:08,039 --> 00:48:12,039
+The hopefully, this video has helped you the most.
+
+768
+00:48:12,039 --> 00:48:14,039
+There are 5 suffering functions.
+
+769
+00:48:14,039 --> 00:48:18,039
+The first is the antenna rotation function.
+
+770
+00:48:18,039 --> 00:48:20,039
+The second is to find the askion value in the ILL error data.
+
+771
+00:48:20,039 --> 00:48:25,039
+The other is to check the letter dataiary from the item manager.
+
+772
+00:48:25,039 --> 00:48:32,039
+The final is to enter the CSV file to get the influence of the Plot in contrast to the IPF file.
+
+773
+00:48:32,039 --> 00:48:36,039
+Let's go to the Word file.
+
+774
+00:48:38,039 --> 00:48:42,039
+Open a project file, we will use this project file as an example.
+
+775
+00:48:42,039 --> 00:48:47,039
+Sometimes when we perform some operations on this board,
+
+776
+00:48:47,039 --> 00:48:50,039
+such as comparing the length of the front and back pieces,
+
+777
+00:48:50,039 --> 00:48:53,039
+we will need to move and rotate the board.
+
+778
+00:48:53,039 --> 00:48:55,039
+After the operation is completed,
+
+779
+00:48:55,039 --> 00:49:00,039
+we will want to reset the position of the board.
+
+780
+00:49:00,039 --> 00:49:05,039
+At this time, we only need to select the board and right-click,
+
+781
+00:49:05,039 --> 00:49:09,039
+select Rotate, and then select Reset,
+
+782
+00:49:09,039 --> 00:49:13,039
+and then move the board back to its original position.
+
+783
+00:49:13,039 --> 00:49:19,039
+In this way, the board can be reset to its original position.
+
+784
+00:49:19,039 --> 00:49:23,039
+In addition, the board of this project itself has code information.
+
+785
+00:49:23,039 --> 00:49:27,039
+If we need to export the code information to an IOL file,
+
+786
+00:49:27,039 --> 00:49:32,039
+we can directly click on Export DXF in the file,
+
+787
+00:49:32,039 --> 00:49:34,039
+and give it a name.
+
+788
+00:49:34,039 --> 00:49:35,039
+Save.
+
+789
+00:49:35,039 --> 00:49:36,039
+Wait a minute.
+
+790
+00:49:36,039 --> 00:49:39,039
+In the export DXF window,
+
+791
+00:49:39,039 --> 00:49:41,039
+we find the size format.
+
+792
+00:49:41,039 --> 00:49:43,039
+There are two options here.
+
+793
+00:49:43,039 --> 00:49:46,039
+We choose to include an IOL file.
+
+794
+00:49:46,039 --> 00:49:50,039
+The option here only shows the current size.
+
+795
+00:49:50,039 --> 00:49:52,039
+We don't need to select it.
+
+796
+00:49:52,039 --> 00:49:56,039
+After setting it up, we click OK.
+
+797
+00:49:56,039 --> 00:50:02,039
+Then open our storage folder.
+
+798
+00:50:02,039 --> 00:50:04,039
+You can see that we have exported a DXF file
+
+799
+00:50:04,039 --> 00:50:10,039
+and an IOL file.
+
+800
+00:50:10,039 --> 00:50:12,039
+Next, let's look at the optimization of another tool.
+
+801
+00:50:12,039 --> 00:50:17,039
+Set up and move the password point.
+
+802
+00:50:17,039 --> 00:50:18,039
+The optimization of this function,
+
+803
+00:50:18,039 --> 00:50:21,039
+the tool we use is to edit the password single.
+
+804
+00:50:21,039 --> 00:50:25,039
+When using it to select the point,
+
+805
+00:50:25,039 --> 00:50:28,039
+it will display the distance from the other side of the password point.
+
+806
+00:50:28,039 --> 00:50:30,039
+While moving the point,
+
+807
+00:50:30,039 --> 00:50:33,039
+we right-click, right-click, right-click,
+
+808
+00:50:33,039 --> 00:50:36,039
+and enter the distance from the other side of the password point.
+
+809
+00:50:36,039 --> 00:50:38,039
+Then enter the distance from the other side of the password point,
+
+810
+00:50:38,039 --> 00:50:39,039
+and confirm it.
+
+811
+00:50:39,039 --> 00:50:44,039
+This completes the default movement of each password point.
+
+812
+00:50:44,039 --> 00:50:46,039
+When we move the password point,
+
+813
+00:50:46,039 --> 00:50:48,039
+press the Shift key.
+
+814
+00:50:48,039 --> 00:50:52,039
+You can move the point on the horizontal, vertical, and vertical lines.
+
+815
+00:50:52,039 --> 00:50:54,039
+When pressing the Ctrl key,
+
+816
+00:50:54,039 --> 00:50:58,039
+the point can be moved along the cut line of the line.
+
+817
+00:50:58,039 --> 00:51:00,039
+The optimization of this tool allows us
+
+818
+00:51:00,039 --> 00:51:02,039
+not to rely only on the attribute generator,
+
+819
+00:51:02,039 --> 00:51:04,039
+but also on the attribute generator to enter the password.
+
+820
+00:51:04,039 --> 00:51:08,039
+It allows us to enter the password more flexibly.
+
+821
+00:51:08,039 --> 00:51:12,039
+Next, let's look at the improvement of the POM tool.
+
+822
+00:51:12,039 --> 00:51:17,039
+The POM tool allows us to import the CSV file containing the point.
+
+823
+00:51:17,039 --> 00:51:19,039
+As a POM model,
+
+824
+00:51:19,039 --> 00:51:22,039
+it is not necessary to rename the point every time.
+
+825
+00:51:22,039 --> 00:51:25,039
+First, let's create our own CSV file.
+
+826
+00:51:25,039 --> 00:51:26,039
+In the object window,
+
+827
+00:51:26,039 --> 00:51:28,039
+type POM,
+
+828
+00:51:28,039 --> 00:51:31,039
+and then enter some points that are often used in clothing.
+
+829
+00:51:31,039 --> 00:51:33,039
+You can also enter the reference codes
+
+830
+00:51:33,039 --> 00:51:35,039
+that are often used in the company.
+
+831
+00:51:35,039 --> 00:51:37,039
+After completion,
+
+832
+00:51:37,039 --> 00:51:38,039
+click Save,
+
+833
+00:51:38,039 --> 00:51:40,039
+and name it.
+
+834
+00:51:43,039 --> 00:51:45,039
+Open the path file,
+
+835
+00:51:45,039 --> 00:51:48,039
+and you can see that the CSV file has been created.
+
+836
+00:51:50,039 --> 00:51:52,039
+In order to apply the CSV file we have just created,
+
+837
+00:51:52,039 --> 00:51:54,039
+we use this file as an example.
+
+838
+00:51:54,039 --> 00:51:56,039
+Here we can see that
+
+839
+00:51:56,039 --> 00:51:57,039
+when we open the POM,
+
+840
+00:51:57,039 --> 00:51:58,039
+we can see that
+
+841
+00:51:58,039 --> 00:51:59,039
+we can see that
+
+842
+00:51:59,039 --> 00:52:00,039
+we can see that
+
+843
+00:52:00,039 --> 00:52:04,039
+it has a brand new POM here.
+
+844
+00:52:04,039 --> 00:52:06,039
+I would like to
+
+845
+00:52:06,039 --> 00:52:08,039
+enter the CSV file that I just created
+
+846
+00:52:08,039 --> 00:52:09,039
+in the project file,
+
+847
+00:52:09,039 --> 00:52:12,039
+and I can directly open it into the project.
+
+848
+00:52:12,039 --> 00:52:13,039
+I just select it,
+
+849
+00:52:13,039 --> 00:52:15,039
+and then open it,
+
+850
+00:52:15,039 --> 00:52:17,039
+this will directly display
+
+851
+00:52:17,039 --> 00:52:19,039
+the POM that you have generated.
+
+852
+00:52:21,039 --> 00:52:23,039
+In order to apply the previous existing POM
+
+853
+00:52:23,039 --> 00:52:24,039
+to the new name,
+
+854
+00:52:24,039 --> 00:52:26,039
+select this reference POM.
+
+855
+00:52:26,039 --> 00:52:28,039
+Then the 2D window will display
+
+856
+00:52:28,039 --> 00:52:29,039
+the kara black,
+
+857
+00:52:29,039 --> 00:52:42,039
+This is the front middle field, let's go to the front middle field, click the application button at the back, you can see that the measurement value has been moved to the back of the front middle field, which shows that the measurement value and the name are corresponding.
+
+858
+00:52:42,039 --> 00:52:50,039
+Next, let's choose the back middle field, and use the measurement point tool to create a measurement point for the back middle field.
+
+859
+00:52:50,039 --> 00:52:59,039
+After creating it, the measurement value will appear directly on the corresponding position of the back middle field.
+
+860
+00:52:59,039 --> 00:53:11,039
+If we want to create a measurement point for the curve line, for example, Xushan Lake, we can first choose the name of Xushan Lake, and then use the hook and loop tool to select the Xushan Lake line.
+
+861
+00:53:11,039 --> 00:53:15,039
+Right-click to hook it as a measurement point.
+
+862
+00:53:15,039 --> 00:53:20,039
+At this time, the measurement value of Xushan Lake has been added to the corresponding position.
+
+863
+00:53:20,039 --> 00:53:25,039
+Finally, we delete the excess non-applicable measurement points.
+
+864
+00:53:25,039 --> 00:53:31,039
+This is our done.
+
+865
+00:53:31,039 --> 00:53:35,039
+Next, let's look at the optimization of the 3D tool.
+
+866
+00:53:35,039 --> 00:53:37,039
+This tool includes three parts.
+
+867
+00:53:37,039 --> 00:53:40,039
+After matching the curve, the position of the 3D panel is matched.
+
+868
+00:53:40,039 --> 00:53:45,039
+The style picture, the rendering button, and the virtual model move together with the costume.
+
+869
+00:53:45,039 --> 00:53:48,039
+Let's go to the software here.
+
+870
+00:53:48,039 --> 00:53:50,039
+Let's go to the software here.
+
+871
+00:53:50,039 --> 00:53:53,039
+First of all, let's use this file as an example.
+
+872
+00:53:53,039 --> 00:53:59,039
+On the basis of this file, we will import a left-hand embroidered piece.
+
+873
+00:53:59,039 --> 00:54:05,039
+You must choose to add or confirm the type.
+
+874
+00:54:05,039 --> 00:54:11,039
+After importing it, we will arrange the panel, sew and simulate, and do this series of operations.
+
+875
+00:54:11,039 --> 00:54:18,039
+After importing it, we will arrange the panel, sew and simulate, and do this series of operations.
+
+876
+00:54:18,039 --> 00:54:40,039
+After importing it, we will arrange the panel, sew and simulate, and do this series of operations.
+
+877
+00:54:40,039 --> 00:54:47,039
+After the simulation is stable, we will click on the right button on the sleeve panel and select the spherical panel, panel and example line.
+
+878
+00:54:47,039 --> 00:55:00,039
+We can see that in the 3D window, the position of the right sleeve has also been copied, and we can simulate it directly.
+
+879
+00:55:00,039 --> 00:55:05,039
+In this way, we can quickly simulate the 3D sleeve form with left and right symmetry.
+
+880
+00:55:05,039 --> 00:55:09,039
+In addition, the mirror extension can also duplicate the position.
+
+881
+00:55:09,039 --> 00:55:11,039
+Let's operate it.
+
+882
+00:55:11,039 --> 00:55:17,039
+The mirror extension is copied.
+
+883
+00:55:17,039 --> 00:55:20,039
+As you can see, the position is also copied.
+
+884
+00:55:20,039 --> 00:55:27,039
+However, since the left and right sleeve are not linked, the right sleeve is not connected to the seam line.
+
+885
+00:55:27,039 --> 00:55:32,039
+In this case, we only need to set the left and right sleeve as linked symmetry sheets.
+
+886
+00:55:32,039 --> 00:55:34,039
+The sheet is connected to the seam line.
+
+887
+00:55:34,039 --> 00:55:36,039
+Select it.
+
+888
+00:55:36,039 --> 00:55:38,039
+Click on it.
+
+889
+00:55:38,039 --> 00:55:40,039
+The seam line will appear.
+
+890
+00:55:40,039 --> 00:55:42,039
+Then simulate.
+
+891
+00:55:51,039 --> 00:55:55,039
+Next is the optimization of the model image rendering function.
+
+892
+00:55:55,039 --> 00:55:58,039
+The model image rendering can now render to the button machine.
+
+893
+00:55:58,039 --> 00:56:01,039
+This is a link group with buttons.
+
+894
+00:56:01,039 --> 00:56:04,039
+Let's open the model image rendering.
+
+895
+00:56:06,039 --> 00:56:08,039
+Enlarge it.
+
+896
+00:56:08,039 --> 00:56:11,039
+You can see that it is rendered to the button and button eyes.
+
+897
+00:56:11,039 --> 00:56:19,039
+The line thickness can be adjusted by adjusting the size of the seam line.
+
+898
+00:56:19,039 --> 00:56:34,039
+This is the optimization of the model image rendering function.
+
+899
+00:56:34,039 --> 00:56:38,039
+This is the optimization of the model image rendering function.
+
+900
+00:56:38,039 --> 00:56:40,039
+Finally, let's see.
+
+901
+00:56:40,039 --> 00:56:45,039
+The last optimization of the function is to move the costume and virtual model together.
+
+902
+00:56:45,039 --> 00:56:50,039
+We want to add a costume model based on the background of this array.
+
+903
+00:56:50,039 --> 00:56:54,039
+And move the model and costume to the right position.
+
+904
+00:56:54,039 --> 00:56:58,039
+First, we will import the costume and model we made.
+
+905
+00:56:58,039 --> 00:57:01,039
+The type is selected to be increased.
+
+906
+00:57:01,039 --> 00:57:03,039
+Then click on the model.
+
+907
+00:57:03,039 --> 00:57:05,039
+Click on the button on the right.
+
+908
+00:57:05,039 --> 00:57:09,039
+Select the virtual model and costume.
+
+909
+00:57:09,039 --> 00:57:12,039
+At this time, the virtual model and costume will be all selected.
+
+910
+00:57:12,039 --> 00:57:14,039
+And the positioning ball appears.
+
+911
+00:57:14,039 --> 00:57:16,039
+We can move the positioning ball.
+
+912
+00:57:16,039 --> 00:57:19,039
+To achieve the free movement of the virtual model and costume.
+
+913
+00:57:19,039 --> 00:57:23,039
+After placing it, we will import another costume model.
+
+914
+00:57:30,039 --> 00:57:32,039
+The same is the right button.
+
+915
+00:57:33,039 --> 00:57:40,039
+Then use the positioning ball to move the virtual model.
+
+916
+00:57:40,039 --> 00:57:49,039
+In the process of moving, we can also adjust the angle to make it easier for us to move.
+
+917
+00:57:49,039 --> 00:58:00,039
+After the position is moved, we will rotate the model through the positioning ball.
+
+918
+00:58:00,039 --> 00:58:04,039
+After completion, the final effect is like this.
+
+919
+00:58:04,039 --> 00:58:06,039
+Now all the new functions are introduced.
+
+920
+00:58:06,039 --> 00:58:08,039
+Thank you for watching.
+

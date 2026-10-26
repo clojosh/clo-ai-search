@@ -1,0 +1,348 @@
+1
+00:00:00,000 --> 00:00:08,000
+Hello everyone, we are very happy to be able to launch a new integrated function in CLO 2026.0 update.
+
+2
+00:00:08,000 --> 00:00:13,000
+Previously, you had to use sewing lines or fake sewing to fix pockets and decals.
+
+3
+00:00:13,000 --> 00:00:21,000
+Now, using the integrated tool, you can apply glue to the entire board or a specific area to make the two boards perfectly integrated.
+
+4
+00:00:21,000 --> 00:00:24,000
+The integrated function is designed to support a seamless structure.
+
+5
+00:00:24,000 --> 00:00:30,000
+Next, let's take a look at how these functions work in the actual workflow.
+
+6
+00:00:30,000 --> 00:00:33,000
+The first function I will demonstrate is the fill-in-integration tool.
+
+7
+00:00:33,000 --> 00:00:36,000
+Select the fill-in-integration tool from the 2D tool bar.
+
+8
+00:00:36,000 --> 00:00:42,000
+The tool can automatically identify the border or internal shape of the board and quickly define the integrated area.
+
+9
+00:00:42,000 --> 00:00:48,000
+First, you need to ensure that the internal shape on the basic board is the same as that of the integrated purple board.
+
+10
+00:00:48,000 --> 00:00:52,000
+Then, place the purple board accurately on the upper part of the basic board.
+
+11
+00:00:52,000 --> 00:00:54,000
+Click on the purple board.
+
+12
+00:00:54,000 --> 00:00:58,000
+After clicking on the purple board, the board will be displayed in orange color.
+
+13
+00:00:58,000 --> 00:01:00,000
+This shows that the integrated connection has been established.
+
+14
+00:01:00,000 --> 00:01:03,000
+After the integration, you can move the board at will.
+
+15
+00:01:03,000 --> 00:01:10,000
+The integrated state will remain unchanged.
+
+16
+00:01:10,000 --> 00:01:14,000
+This tool works the same way in the 3D window.
+
+17
+00:01:14,000 --> 00:01:18,000
+Place the purple board close to the front or back of the basic board.
+
+18
+00:01:18,000 --> 00:01:22,000
+At this time, the purple board in the 2D window does not need to overlap with the basic board.
+
+19
+00:01:22,000 --> 00:01:27,000
+Use the fill-in-integration tool to click on the purple board to set the integration.
+
+20
+00:01:27,000 --> 00:01:34,000
+When the tool is activated, you will see the fill-in-integration option window in the upper right corner of the 3D window.
+
+21
+00:01:34,000 --> 00:01:41,000
+If you change the mode to subtract and click on the integrated board, the integration will be removed.
+
+22
+00:01:41,000 --> 00:01:45,000
+For this kind of gray bar, we can also use the quick integration tool.
+
+23
+00:01:45,000 --> 00:01:49,000
+It allows you to paste a board into the exact position you want.
+
+24
+00:01:49,000 --> 00:01:51,000
+Select the quick integration tool in the 2D tool bar.
+
+25
+00:01:51,000 --> 00:01:53,000
+Click on the board you want to integrate.
+
+26
+00:01:53,000 --> 00:01:58,000
+A gray bar with the outline of a board will move along your mouse cursor.
+
+27
+00:01:58,000 --> 00:02:03,000
+Use this guide to determine the integration position on the basic board and then click again.
+
+28
+00:02:03,000 --> 00:02:10,000
+The biggest advantage of the quick integration tool is that you don't have to manually overlap the board in the 2D window in advance.
+
+29
+00:02:10,000 --> 00:02:14,000
+The gray bar can help you specify the entire integration area immediately.
+
+30
+00:02:14,000 --> 00:02:18,000
+Next, I will explain how to cancel the quick integration.
+
+31
+00:02:18,000 --> 00:02:20,000
+You need to switch to the fill-in-integration tool first.
+
+32
+00:02:20,000 --> 00:02:27,000
+In the mode of fill-in-integration window, select subtract.
+
+33
+00:02:27,000 --> 00:02:32,000
+Click on the integrated board to cancel.
+
+34
+00:02:32,000 --> 00:02:41,000
+After opening the simulation, you can see that the board has been removed from the large board.
+
+35
+00:02:41,000 --> 00:02:45,000
+Use the quick integration tool to re-integrate this board.
+
+36
+00:02:50,000 --> 00:02:57,000
+Finally, let's take a look at the pen and brush integration tool.
+
+37
+00:02:57,000 --> 00:03:02,000
+Replace the purple board to the basic board.
+
+38
+00:03:02,000 --> 00:03:06,000
+In the 2D tool bar, click and hold the integration tool for 2 seconds.
+
+39
+00:03:06,000 --> 00:03:09,000
+Then select the pen and brush integration from the purple menu.
+
+40
+00:03:09,000 --> 00:03:13,000
+Unlike the pen and brush integration for the entire board or the internal shape integration,
+
+41
+00:03:13,000 --> 00:03:17,000
+using the pen and brush integration can freely specify the integration area on the board.
+
+42
+00:03:17,000 --> 00:03:19,000
+When the two boards are re-integrated,
+
+43
+00:03:19,000 --> 00:03:22,000
+you only need to drag the area you want to re-integrate to apply.
+
+44
+00:03:22,000 --> 00:03:25,000
+The orange color will appear on the screen.
+
+45
+00:03:25,000 --> 00:03:28,000
+When you run the simulation, you will see the purple board.
+
+46
+00:03:28,000 --> 00:03:30,000
+Perfectly along the area of the orange color,
+
+47
+00:03:30,000 --> 00:03:32,000
+re-integrate on the basic board.
+
+48
+00:03:32,000 --> 00:03:35,000
+Let's take a look at the setting of the pen and brush integration in the upper right corner.
+
+49
+00:03:35,000 --> 00:03:36,000
+There are two types of types.
+
+50
+00:03:36,000 --> 00:03:38,000
+The outer is the type just displayed.
+
+51
+00:03:38,000 --> 00:03:41,000
+It is the reverse of the glue applied to the purple board,
+
+52
+00:03:41,000 --> 00:03:43,000
+making it re-integrated to the outer of the basic board.
+
+53
+00:03:43,000 --> 00:03:45,000
+This type is used in most cases.
+
+54
+00:03:45,000 --> 00:03:47,000
+On the integration of the board to the board,
+
+55
+00:03:47,000 --> 00:03:50,000
+the inner side is the surface of the glue applied to the basic board,
+
+56
+00:03:50,000 --> 00:03:52,000
+making it re-integrated to the inner side of the purple board.
+
+57
+00:03:52,000 --> 00:03:55,000
+In short, although the position of the glue is different,
+
+58
+00:03:55,000 --> 00:03:57,000
+the result is the same.
+
+59
+00:03:57,000 --> 00:03:59,000
+The two boards are firmly re-integrated into one whole.
+
+60
+00:03:59,000 --> 00:04:02,000
+Change between increase or decrease mode
+
+61
+00:04:02,000 --> 00:04:05,000
+to create a new re-integration area or remove some existing areas.
+
+62
+00:04:05,000 --> 00:04:08,000
+Adjust the pen and brush size to adapt to your board.
+
+63
+00:04:08,000 --> 00:04:10,000
+You can drag and slide or enter a specific value
+
+64
+00:04:10,000 --> 00:04:13,000
+to apply fine details or enlarge the area.
+
+65
+00:04:13,000 --> 00:04:15,000
+According to your work process,
+
+66
+00:04:15,000 --> 00:04:18,000
+the 2D window or 3D window
+
+67
+00:04:18,000 --> 00:04:20,000
+may be different in different cases.
+
+68
+00:04:20,000 --> 00:04:22,000
+The 2D window is most suitable for
+
+69
+00:04:22,000 --> 00:04:24,000
+completely matching the shape of the two boards,
+
+70
+00:04:24,000 --> 00:04:26,000
+or when the structure of the layer is simple,
+
+71
+00:04:26,000 --> 00:04:28,000
+it will be faster and more convenient to use.
+
+72
+00:04:28,000 --> 00:04:30,000
+The 3D window is most suitable for
+
+73
+00:04:30,000 --> 00:04:31,000
+different shapes of boards,
+
+74
+00:04:31,000 --> 00:04:34,000
+or you need to place the board accurately
+
+75
+00:04:34,000 --> 00:04:36,000
+and use it in the complex curved structure of the simulation.
+
+76
+00:04:36,000 --> 00:04:39,000
+Please consider the shape and structure of your board
+
+77
+00:04:39,000 --> 00:04:42,000
+to choose the window that is most suitable for the situation.
+
+78
+00:04:42,000 --> 00:04:44,000
+This function is widely used not only for clothing,
+
+79
+00:04:44,000 --> 00:04:45,000
+but also for painting.
+
+80
+00:04:45,000 --> 00:04:47,000
+It is also used for other types of products,
+
+81
+00:04:47,000 --> 00:04:48,000
+such as shoes, hats, etc.
+
+82
+00:04:48,000 --> 00:04:50,000
+Try to use the integrated function
+
+83
+00:04:50,000 --> 00:04:52,000
+to paste the sticker label or the wireless pocket.
+
+84
+00:04:52,000 --> 00:04:55,000
+You will be able to create the layer effect of the pen
+
+85
+00:04:55,000 --> 00:04:56,000
+more quickly and more easily.
+
+86
+00:04:56,000 --> 00:04:59,000
+We hope you can explore in various design projects
+
+87
+00:04:59,000 --> 00:05:02,000
+and enjoy the fun of using these new tools.
+

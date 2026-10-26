@@ -1,92 +1,155 @@
 [
     {
-        "id": "75f04da5e6754299817b86e1f9610a98",
-        "url": "https://connect.clo-set.com/community/post/75f04da5e6754299817b86e1f9610a98",
-        "title": "LiveSync 2.0.1 - stuck at 50% - on PC (mac works fine)",
-        "content": "I would like to ask for help in finding solution to my problem.  \nWhen I try to sync from MD to UE 5.6, progress get stuck at 50% no matter how long I wait. Similarly I am unable to send from UE to MD either.  \n  \nI am familiar with the tool, I have used this before and in face I was able to sync successfully on a mac. I don't think it's a 'human error' in this case.\n\nLivesync is enabled on MD, I tried with and without the avatar, also with a very simple piece of cloth. I am out of options. Again process works on a mac for me.  \n  \nPlease help\n\n![8d4f86a60c2a48d09f0c653839c36fbf](https://storagefiles.clo-set.com/public/community/202512/75f04da5e6754299817b86e1f9610a98/images/8d4f86a60c2a48d09f0c653839c36fbfScreenshot%202025-12-11%20113446.png)\n\n\n### Community Post Comments:\nComment 1: Hi whupert,Apologies for the delayed response; I was out of the office from mid-December. Could you try updating your LiveSync version to the latest release (2.2.1)? We have resolved several issues, including the one you are experiencing.Additionally, could you let me know which version of Marvelous Designer you are using? It is possible this is a compatibility issue between the software and the LiveSync plugin. Then I'll be able to further investigate the issue.Best regards,Bryan\n\nComment 2: Please help...🙏🏻",
-        "content_description": "\"Seeking assistance to resolve a syncing issue between MD and UE 5.6, where the process consistently stalls at 50% despite previous successful attempts on a Mac.\"",
-        "created_at": "2025-12-11T10:38:06.493Z",
-        "category": 220,
-        "tags": [
-            "LiveSync",
-            "MarvelousDesigner",
-            "UnrealEngine"
-        ]
-    },
-    {
-        "id": "d0563c1f2b304de4ba0320f942b3e04d",
-        "url": "https://connect.clo-set.com/community/post/d0563c1f2b304de4ba0320f942b3e04d",
-        "title": "Bug importing animations via LiveSync",
-        "content": "Hi! I am exporting metahuman animation from UE5.6 to Marvelous designer 2025 and having a problem. Face meshes arrives distorted at MarvelousDesigner.   \nIt happens both sending it as skeletal mesh or geometry cash.  \n\n\nSo i have a body animation and adding face mesh to it in Unreal. Then sending to MD.\n\n![990028abddc94930895d54704a13fd2b](https://storagefiles.clo-set.com/public/community/202512/d0563c1f2b304de4ba0320f942b3e04d/images/990028abddc94930895d54704a13fd2b1.png)\n\nAnd result is:\n\n![0942a763ed6c4ddea6aaed93bf3edc7e](https://storagefiles.clo-set.com/public/community/202512/d0563c1f2b304de4ba0320f942b3e04d/images/0942a763ed6c4ddea6aaed93bf3edc7e2.png)Body and animation are correct, but face mesh is distorted. It happens with all metahumans, some distorted more some less.\n\nCould you please help?\n\n\n### Community Post Comments:\nComment 1: Hello, could you share us the Unreal Engine project file with the problematic Metahuman so that we can investigate the issue further? You can simply reply to the Contact us ticket you sent us!\nReply 1: Hi! I've made support ticket and sent my UE project link by email.",
-        "content_description": "This webpage aims to seek assistance for resolving the distortion issues encountered when exporting metahuman animations from Unreal Engine 5.6 to Marvelous Designer 2025.",
-        "created_at": "2025-12-11T04:10:19.563Z",
+        "id": "3b2c398ac84740549c2dd0e4991ca125",
+        "url": "https://connect.clo-set.com/community/post/3b2c398ac84740549c2dd0e4991ca125",
+        "title": "How do I do flying pleats like this image",
+        "content": "I want to know how I do this flying pleats, I`m trying, but I can`t manage to make my pleats fly like this, I tried to play with weight, pressure, stiffness and all, but can`t manage to make it look like this at all, I would be very greatfull for any help with this, thank you.\n\n![f561b01911f342d18aa0a7a8a2f5b3cd](https://storagefiles.clo-set.com/public/community/202605/3b2c398ac84740549c2dd0e4991ca125/images/f561b01911f342d18aa0a7a8a2f5b3cddressgot.png)\n\n### Community Post Comments:\nComment 1: It looks like your pattern is way too small for your avatar. Try to make it wider.\n\nComment 2: To create ruffles, you simply need to make a pattern piece that is wider than the hemline of your dress. You can find plenty of great YouTube tutorials that walk you through exactly how to do this step-by-step: https://connect.clo-set.com/community/post/3b2c398ac84740549c2dd0e4991ca125\nReply 1: Yeah, this part I found, but my pleats don`t lift like this stiff, it stays curved and streangthing it don`t help too, I wanted them kind straight point outside, i saw those videos on youtube, but none of them tackled this, thank you for the answer.",
+        "content_description": "This page provides guidance and tips for achieving the desired flying pleats effect in fabric design and sewing.",
+        "source": "Connect Community",
+        "article_created_at": "2026-05-27T07:26:19.363Z",
+        "article_updated_at": "2026-05-27T07:26:19.363Z",
         "category": 220,
         "tags": [
             "MarvelousDesigner",
-            "Animation",
-            "LiveSync",
-            "Import_Export"
+            "Simulation",
+            "Pattern"
         ]
     },
     {
-        "id": "0d4183751c754233be85a7a1c03a5203",
-        "url": "https://connect.clo-set.com/community/post/0d4183751c754233be85a7a1c03a5203",
-        "title": "Is it possible to \"glue\" sections of pattern pieces together in Marvelous Designer?",
-        "content": "I need to create a fabric object in which areas of pieces of fabric are glued together, not sewn. Only part not all of the pairs of pieces are glued so I can't just cheat it with a single piece. If I just sew the boundary of the glued area then the inner areas aren't flush. I can't find anything online about this. Thanks\n\n\n### Community Post Comments:\nComment 1: The Tack tool lets you \"glue\" two areas or points of different patterns together. Is that what you're looking for?\nReply 1: I've used the Tack tool before. I know there's regular point tacks, and line tacks... what I really need is like an \"area tack\" where you would paint select an area of polygons on each mesh which would then get stuck together, flush. Maybe a feature to request!",
-        "content_description": "The purpose of this web page is to explore innovative techniques for creating fabric objects using selective gluing methods to achieve a flush finish without traditional sewing.",
-        "created_at": "2025-12-10T07:04:17.197Z",
-        "category": 220,
-        "tags": [
-            "MarvelousDesigner"
-        ]
-    },
-    {
-        "id": "6db6acc9f1144f13a8bd11a6a0645519",
-        "url": "https://connect.clo-set.com/community/post/6db6acc9f1144f13a8bd11a6a0645519",
-        "title": "Meet Anny Han: 2nd Place Winner of MDCC Vol.2!",
-        "content": "## _Meet Anny Han, a 3D fashion and graphic designer with a deep background in pattern making and garment construction.  \nBy bridging traditional techniques with digital tools, she created a realistic, emotionally resonant digital fashion, resulting to her award of 2nd Place in the _[_Marvelous Designer Creator's Contest Vol.2 \" TOKYO CONTINUUM - 東京進化系 -\"!_](https://connect.clo-set.com/contest/mdcc2025vol2)\n\n* * *\n\n![44e8b1862dea4ef4aeaac508b9fdf6ef](https://storagefiles.clo-set.com/public/community/202512/6db6acc9f1144f13a8bd11a6a0645519/images/44e8b1862dea4ef4aeaac508b9fdf6ef4.webp)[花と爆 (Hana to Baku)](https://connect.clo-set.com/detail/57c70236280a403997e3eef3deae4f99)\n\n* * *\n\n### **1\\. Artist Introduction: please tell us about yourself.**\n\n**Anny Han:** Hello, my name is Anny Han, and I am a 3D fashion and graphic designer.\n\nI currently work in fashion product development, using CLO and Marvelous Designer to create realistic digital garments based on my background in pattern making and construction. I first started learning 3D to improve communication and speed within the development process, and it soon became an essential tool for expressing my own creative world.\n\nI joined this contest to explore new styles and push myself beyond my usual workflow as a creator. Through this experience, I gained clearer direction in building my own aesthetic and artistic identity in 3D.\n\n![5d97640ccfb84ee29598e03aeb2b69b9](https://storagefiles.clo-set.com/public/community/202512/6db6acc9f1144f13a8bd11a6a0645519/images/5d97640ccfb84ee29598e03aeb2b69b9image.png)\n\n* * *\n\n### **2\\. We’d like to hear more about the art direction in your Creator’s contest 2025 Vol.3. What was the visual style you were aiming for?**\n\n**Anny Han:** For this project, I aimed to express the **dual identity** experienced by many young people living in modern cities.\n\nThe “Bomb (ボム)” on the back and the “Flower (花)” in the hand symbolize the contrast between destruction and beauty, resistance and acceptance—visualizing the conflicting emotions that coexist within today’s youth.\n\nThe overall art direction focused on the **intersection of tradition and modernity**. Inspired by traditional Japanese silhouettes and textiles, I reinterpreted these heritage elements through a contemporary and functional lens. I incorporated delicate stitchwork inspired by **Sashiko** , a traditional Japanese embroidery technique, to bring a rhythmic and meditative craftsmanship to the garment.\n\nTo balance this with a modern sensibility, I added technical pockets and a bold graphic bag to enhance practicality, creating a bridge between the past and the future.\n\nThe flower motif, blooming like an explosion, serves as the centerpiece of the look—turning the garment into a powerful form of visual storytelling.\n\n![3D 花と爆 \\(Hana to Baku\\) Model](https://storagefiles.clo-set.com/public/marketplace/202505/57c70236280a403997e3eef3deae4f99/thumbnail/2.png?resize=1&f=webp&w=1680&fit=scale-down)\n\n* * *\n\n### **3\\. Would you be able to give us a quick overview of the different tools you use in your pipeline with a focus on Marvelous Designer? Have you encountered any challenges and how have you overcome them?**\n\n![a937a8de69ef46f0b15868e10901916c](https://storagefiles.clo-set.com/public/community/202512/6db6acc9f1144f13a8bd11a6a0645519/images/a937a8de69ef46f0b15868e10901916cimage.png)\n\n**Anny Han:** I began by creating the garment 2D pattern in a CLO program. Thanks to my background in pattern making, building the base structure was not difficult, but I focused on ensuring the garment made structural sense in real life.\n\nIn Marvelous Designer, I refined the silhouette by adjusting ease, natural wrinkles, and three-dimensional shape. After assembling the garment, I conducted quick color tests directly inside MD to explore different palettes. Separating parts into UV areas allowed me to manage materials and colors more efficiently throughout the process.\n\n* * *\n\n### **4\\. Are there any tips and tricks with Marvelous Designer that you can share with the community?**\n\n**Anny Han:** One thing I’ve learned is that continuously studying other creators’ work is essential. Seeing different approaches and styles always pushes me to grow, and I still feel that I have a lot to learn.\n\nRather than relying only on my own habits, I try to broaden my perspective by observing how others use Marvelous Designer and how they express details.\n\nThese days, I believe combining Marvelous Designer with AI tools can elevate the quality of a project even further—whether for ideation, reference gathering, or enhancing the final presentation.\n\nStaying open to new tools and new ways of working is, for me, the most important tip.\n\n* * *\n\n\n### Community Post Comments:\nComment 1: Beautiful design. I am new and seeing others work is so inspiring.🙂👍🏻",
-        "content_description": "Discover the innovative artistry of Anny Han, a 3D fashion designer who masterfully blends traditional techniques with digital tools to create emotionally resonant garments, as showcased in her award-winning work.",
-        "created_at": "2025-12-09T07:41:59.997Z",
+        "id": "e8e77ce7950549dab9333d124d10fd1a",
+        "url": "https://connect.clo-set.com/community/post/e8e77ce7950549dab9333d124d10fd1a",
+        "title": "Modular Military Tents for Fallout 4 (Bethesda Verified Creator Program)",
+        "content": "![](https://storagefiles.clo-set.com/public/community/202605/e8e77ce7950549dab9333d124d10fd1a/images/27f4d1caaf6f46bbbee06f540333abbbcover_art_02.jpg)Transform your game worlds with Marvelous Designer! 🎮  \n  \n3D Artist [Shaafi Ahmad](https://www.artstation.com/shaafi) created a stunning \"Modular Military Tents\" workshop kit for Fallout 4, allowing players to build fully custom networks of barracks, outposts, and forward operating bases with snappable tarp tents. Check out how he seamlessly turned rigid 3D models into realistic cloth simulations using our \"**Object to Garment** \" feature.\n\n* * *\n\n![4152bd70fc7849cc84d91cc690ee1c42](https://storagefiles.clo-set.com/public/community/202605/e8e77ce7950549dab9333d124d10fd1a/images/4152bd70fc7849cc84d91cc690ee1c42screenshot_10.jpg)![41ec485ac5c74534ae38bbb0309e5b24](https://storagefiles.clo-set.com/public/community/202605/e8e77ce7950549dab9333d124d10fd1a/images/41ec485ac5c74534ae38bbb0309e5b24infomatic_01.jpg)\n\n[Item link for Fallout 4](https://creations.bethesda.net/en/fallout4/details/a70232a7-fde4-4f5d-99c7-4f864072ff2b/Modular_Military_Tents)\n\n# **Software Used**\n\nBlender – Modeling   \nMarvelous Designer – Cloth Simulation   \nMarmoset Toolbag – Texture Baking   \nSubstance Painter – Texturing   \nCreation Kit and other modding tools – In-game\n\n# **Artist Introduction**\n\nI’m a 3D artist and I mainly work on hard-surface assets and character outfits. 3D for me started as a hobby, playing around in Blender. I’m self-taught in everything I do.   \n\n\n# **You recently developed a project for Fallout 4 through**[**Bethesda’s Verified Creators Program**](https://creations.bethesda.net/en/fallout4/featured)**. Could you tell us more about this program and what inspired you to create the 'Modular Military Tents' kit?**\n\nWith the **Verified Creators program,** artists and modders can make additional content called mods for the games marketplace. Currently, we can make mods for **Fallout 4, Skyrim, and Starfield.** I’m currently making them for Fallout 4.\n\n![5424d2f3617b49ef961e824bafe5ccce](https://storagefiles.clo-set.com/public/community/202605/e8e77ce7950549dab9333d124d10fd1a/images/5424d2f3617b49ef961e824bafe5cccemarketplace_page.png)\n\nSince Fallout 4’s release back in 2015, no one had made tents for the game. It was missing from its settlement workshop, and I wanted to be the first to make this. Now players can use different snappable tent modules to make outposts and barracks in their settlements.\n\nYouTube Video: https://www.youtube.com/watch?v=4F_5hlS27PM\n\n# **Tell us how Marvelous Designer creates value in this project.**\n\nSince these tents are made out of tarp/cloth, Marvelous Designer was a critical step in the workflow. Their entire appeal is having a realistic and nice drapery look to them.\n\nAfter I initially imported the simple mesh with Object to Garment, the patterns were cut up and sewn for more details.\n\nWorkflow-wise, for various reasons, including Fallout 4’s own limitations, I decided to make each module’s UVs unique and bake them to their own texture set. Usually, big environment assets share tiling textures, but I did not do that here.\n\n![221f89c0bab94c5b804b8f9ed4a6f557](https://storagefiles.clo-set.com/public/community/202605/e8e77ce7950549dab9333d124d10fd1a/images/221f89c0bab94c5b804b8f9ed4a6f557asset_progression_01.jpg)\n\n# **Can you share some practical methods for creating game-ready assets?**\n\nTwo major features I used when making the tents were **Object to Garment** and **Freeze**.   \nFor measurement and placement reasons, I modeled a simple mesh in Blender before bringing it into MD with the Object to Garment feature for simulation.\n\nThis mesh was unwrapped quickly and automatically, so when the mesh is a pattern after import, it has UVs. Any parts that I initially wanted as separate patterns, I unwrapped as separate UV shells.\n\nYouTube Video: https://www.youtube.com/watch?v=UjTHrvL0Q2o\n\nSince this was a modular kit where each module had to connect to another without gaps or different shapes, the borders were frozen with **Freeze** and only the patterns sandwiched in between were simulated. \n\n![62b2bcb320ef41dfa70806ae7e6deaa5](https://storagefiles.clo-set.com/public/community/202605/e8e77ce7950549dab9333d124d10fd1a/images/62b2bcb320ef41dfa70806ae7e6deaa5freeze_example_01.jpg)\n\n# **The rolled tarp windows in your tents are a fantastic detail. Do you have any specific workflow tips on how to achieve that look? And what is your favorite feature or tool to use in Marvelous Designer?**\n\nFor the rolled tarps I used the same method of modeling a simple mesh in Blender and then simulating after **importing it with Object to Garment**. This is the fastest way to do it. \n\n![7cd0e51cc43c45fabfbbb6b101de59e9](https://storagefiles.clo-set.com/public/community/202605/e8e77ce7950549dab9333d124d10fd1a/images/7cd0e51cc43c45fabfbbb6b101de59e9rolled_tarp_01.jpg)\n\nI really like the **Schematics Render feature** and the **Show/Hide Color** menu. A lot of times I want to take screenshots, but without the colors of Freeze, Solidify, or Strengthen, and this is perfect for that.",
+        "content_description": "Showcasing how 3D artist Shaafi Ahmad uses Marvelous Designer’s cloth simulation tools to create realistic, modular military tent assets for Fallout 4’s Verified Creators program, enabling players to build custom in-game settlements.",
+        "source": "Connect Community",
+        "article_created_at": "2026-05-22T23:27:09.881Z",
+        "article_updated_at": "2026-05-22T23:27:09.881Z",
         "category": 110,
         "tags": [
             "MarvelousDesigner",
-            "Avatar",
-            "Texture",
-            "Contest",
-            "CLO"
-        ]
-    },
-    {
-        "id": "a3bdb820e70c43d3bd833cd0020547b3",
-        "url": "https://connect.clo-set.com/community/post/a3bdb820e70c43d3bd833cd0020547b3",
-        "title": "Is it possible to apply Pressure to selected internal sections only? (Marvelous Designer)",
-        "content": "Hi all,\n\nHopefully I can articulate this - I need to have a middle section of an asset with puffiness (both inward and outward), but then the cloth continues contiguously away on all sides and should not be puffy beyond that middle section.\n\nIn Marvelous there is no Pressure attribute for the internal polygons, and if I apply it to the whole thing the results beyond the middle puffy section are not good for me.  \nTIA for any tips.\n\n\n### Community Post Comments:\nComment 1: Pressure cannot be applied to specific polygons; the Pressure value is applied to the entire pattern, not just parts of it. To achieve what you're describing, you'll need to create internal lines for that area, cut them, and join them with seams to apply the desired Pressure value.\nReply 1: Thanks Sergio",
-        "content_description": "This webpage aims to provide guidance and tips for creating a specific cloth simulation in Marvelous Designer that features localized puffiness while maintaining a smooth, contiguous appearance on all sides.",
-        "created_at": "2025-12-08T08:02:20.093Z",
-        "category": 220,
-        "tags": [
-            "MarvelousDesigner",
+            "Blender",
+            "Tent",
+            "Import_Export",
             "Pattern",
-            "Simulation"
+            "environmentart"
         ]
     },
     {
-        "id": "c9b8a384a8124f01b58e278e5abf5b6a",
-        "url": "https://connect.clo-set.com/community/post/c9b8a384a8124f01b58e278e5abf5b6a",
-        "title": "The Gingerbread Universum is Open!",
-        "content": "![](https://storagefiles.clo-set.com/public/community/202512/c9b8a384a8124f01b58e278e5abf5b6a/images/7bc6a7215c9b46a1bf78b0af491c3769Gingerbreads_avatar_promo3.png)![](https://storagefiles.clo-set.com/public/community/202512/c9b8a384a8124f01b58e278e5abf5b6a/images/474bec2f2a32404ab4285a62a20664d4Gingerbreads_avatar_promo2.png)**Hello CLO Creators! 🍪**\n\nI just uploaded a fun little project — a **Gingerbread Avatar** for styling, animation, and holiday creativity.  \nThe F**REE Starter Suit is now available** in my Store — enjoy!\n\n[https://www.tiktok.com/@metailor3d/video/7580435509898464534?is_from_webapp=1&sender_device=pc&web_id=7553317363683313155](https://www.tiktok.com/@metailor3d/video/7580435509898464534?is_from_webapp=1&sender_device=pc&web_id=7553317363683313155)\n\nThe **Santa Outfit will be coming next week** — thank you for your patience, I’m polishing the details to make it truly festive. 🎅✨\n\nMore poses and small add-ons are also on the way.  \nIf you create anything with the avatar, please share it — I’d love to see your ideas!\n\n**Store link → (**[**https://connect.clo-set.com/detail/cf35137795084f7bb80477b626208011?ref_id=8886**](https://connect.clo-set.com/detail/cf35137795084f7bb80477b626208011?ref_id=8886)**)**![742cf541297946048246adfb65d32548](https://storagefiles.clo-set.com/public/community/202512/c9b8a384a8124f01b58e278e5abf5b6a/images/742cf541297946048246adfb65d32548Wear_the_Gingerbear_v2_s.gif)\n\n\n### Community Post Comments:\nComment 1: 😍\nReply 1: ❤️\n\nComment 2: Aw this is so cool😍 Thank you!\nReply 1: Thank you! Enjoy!❤️",
-        "content_description": "Discover and style your own festive Gingerbread Avatar with our free Starter Suit, and stay tuned for more holiday-themed outfits and accessories!",
-        "created_at": "2025-12-05T17:36:53.49Z",
+        "id": "a6b071a78984478997e725f182cee5e4",
+        "url": "https://connect.clo-set.com/community/post/a6b071a78984478997e725f182cee5e4",
+        "title": "Why its become de_shape???",
+        "content": "Hi all this is chalange for all the cumunity guys I have create a stone beads in the topstitch but this is deshape when I apply on the fabric see the pic, can any one help to fix it.\n\nthis is deshape trims.\n\n* * *\n\n![def284810d1848c18b540ca948f5dace](https://storagefiles.clo-set.com/public/community/202605/a6b071a78984478997e725f182cee5e4/images/def284810d1848c18b540ca948f5daceScreenshot%202026-05-25%20122025.png)![a4a2cc232abd42c2bedea5b1bfb1f938](https://storagefiles.clo-set.com/public/community/202605/a6b071a78984478997e725f182cee5e4/images/a4a2cc232abd42c2bedea5b1bfb1f938675434d7325a8dbd2ac66b914fb50f58.jpg)this is actual image.",
+        "content_description": "A community forum page seeking advice on fixing distorted stone bead trims in topstitching on fabric.",
+        "source": "Connect Community",
+        "article_created_at": "2026-05-25T07:25:24.003Z",
+        "article_updated_at": "2026-05-25T07:25:24.003Z",
         "category": 215,
         "tags": [
-            "gingerbread",
-            "avatar",
-            "xmas",
-            "funny",
-            "CONNECT",
             "CLO",
             "MarvelousDesigner",
-            "Mixamo"
+            "CLO-SET",
+            "CONNECT",
+            "topstitch"
+        ]
+    },
+    {
+        "id": "7c81c13f39b74efbb8fa597672d8afd9",
+        "url": "https://connect.clo-set.com/community/post/7c81c13f39b74efbb8fa597672d8afd9",
+        "title": "https://connect.clo-set.com/portfolio/1043751/collection/collections/2605DD50d13ac2115047c3a41c2ac25f1db7fa?ref_id=1043751",
+        "content": "![60114ce958b9446b8f2a17a51681c83b](https://storagefiles.clo-set.com/public/community/202605/7c81c13f39b74efbb8fa597672d8afd9/images/60114ce958b9446b8f2a17a51681c83bChatGPT%20Image%2023%20%D9%85%D8%A7%D9%8A%D9%88%202026%D8%8C%2005_31_17%20%D9%85.png)rofessional medical scrub cap featuring a modern DNA-inspired pattern, designed for laboratory, nursing, and healthcare environments.\n\nThis scrub cap is part of a larger medical collection available in the store, including additional medical-themed designs and professional healthcare accessories.\n\nIncluded files:  \n• High-quality AI Vector file  \n• Transparent PNG design file  \n• Ready-to-use print graphics\n\nPerfect for:  \nMedical staff, nurses, laboratory technicians, surgeons, healthcare branding, custom uniform printing, and POD projects.\n\nExplore the store for more matching medical caps, healthcare graphics, and professional uniform assets.",
+        "content_description": "Showcase and purchase professional medical scrub caps with modern DNA-inspired designs, perfect for healthcare staff and custom uniform projects.",
+        "source": "Connect Community",
+        "article_created_at": "2026-05-23T14:33:17.566Z",
+        "article_updated_at": "2026-05-23T14:33:17.566Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "CLO-SET",
+            "AI"
+        ]
+    },
+    {
+        "id": "c93d0d5056ac4b87be5dfb853daa110f",
+        "url": "https://connect.clo-set.com/community/post/c93d0d5056ac4b87be5dfb853daa110f",
+        "title": "Capturing Dynamic Movement: LE SSERAFIM’s 'Spaghetti' Choreography and Simulation",
+        "content": "## ![](https://storagefiles.clo-set.com/public/community/202606/c93d0d5056ac4b87be5dfb853daa110f/images/4d2e6baa477f4978bc2c3a7e2b02b444LSF_Spaghetti_Still_00001.jpg)_How artist Soohwan fine-tuned friction and skin offset values to perfectly capture the intense choreography and weightless flutter of virtual stage outfits._\n\n**Discover the work and expert Marvelous Designer tips of**\n\n**Soohwan Oh in this exclusive series!**\n\n**[**[**Go to Previous Post]**](https://connect.clo-set.com/community/post/4caba29455c442e1b0087639cd5190ac)\n\nYouTube Video: https://www.youtube.com/watch?v=X-CXfM2F6ZU?start=0\n\n# **Capturing the way garments flutter or cling to the body in response to dynamic choreography is crucial. How did you configure the fabric’s Physical Properties in Marvelous Designer (MD) for such an intense dance simulation?**\n\nWhen simulating intense movements in Marvelous Designer, I believe configuring the character body’s Friction values is just as important as the fabric’s physical properties. Especially when applying animation to a dressed character, these two elements heavily dictate how natural the final result looks.\n\nThe choreography I worked on featured the fast, intense movements unique to K-POP. Using the default settings caused the clothing to flutter excessively or slide off the body unnaturally. To solve this, I increased the character’s Kinetic Friction value to prevent the outfit from slipping and sliding over the skin.\n\nAdditionally, I lowered the character model’s Skin Offset below the default value, ensuring the garment didn't look unnaturally afloat but instead clung snugly to the body as if actually worn. These adjustments allowed me to achieve a much more stable and realistic garment simulation.\n\n![494b72aedc3b4b7295bc5c8ab7a3b082](https://storagefiles.clo-set.com/public/community/202605/c93d0d5056ac4b87be5dfb853daa110f/images/494b72aedc3b4b7295bc5c8ab7a3b082Surface.png)\n\n# **What features or workflows in MD did you utilize to resolve mesh clipping (collision) or twisting issues that can occur during choreography where arms and legs cross rapidly?**\n\nI find that these issues often stem from the character animation itself. When replicating actual choreography, structural collisions or interpenetrations between meshes are bound to happen. Therefore, the priority is to first modify the animation phase to minimize mesh overlapping as much as possible.\n\nIf issues still persist during the simulation despite that, I check whether the garment is draped correctly in the pre-simulation pose. If the initial setup is off, errors tend to carry over into the subsequent simulation.\n\n![4f45277fbc12443bad4b097ee302e9bf](https://storagefiles.clo-set.com/public/community/202605/c93d0d5056ac4b87be5dfb853daa110f/images/4f45277fbc12443bad4b097ee302e9bfCapture.png)\n\nLastly, I double-check the fabric’s physical properties, the character’s friction values, and the skin offset, resolving the errors by fine-tuning the numbers bit by bit based on where the problem occurs.\n\n![b5d1433350e9420294fb35a6a6676581](https://storagefiles.clo-set.com/public/community/202605/c93d0d5056ac4b87be5dfb853daa110f/images/b5d1433350e9420294fb35a6a6676581%E1%84%86%E1%85%AE%E1%86%AF%E1%84%89%E1%85%A5%E1%86%BC.png)\n\n# **How did you adjust the garment’s weight or air resistance to make the character’s dance lines pop even more?**\n\nThe actual stage outfits from LE SSERAFIM’s 'Spaghetti' that I referenced were jumpsuits made of a lightweight, thin material that wrinkles easily. To replicate that specific texture, I focused on making the fabric’s physical properties as light and flexible as possible.\n\nWhile watching the actual music show performances to study how the clothes moved, I couldn't know the exact numeric values for weight or air resistance. Instead, I ran repeated simulation tests, constantly tweaking the values until the movement closely matched the reference.\n\nBy meticulously tuning the physical properties based on real-world references, I focused on aligning the garment’s movement to naturally accentuate the character’s dance lines.![98da2c058b2248ad82e0047a66ba3acc](https://storagefiles.clo-set.com/public/community/202605/c93d0d5056ac4b87be5dfb853daa110f/images/98da2c058b2248ad82e0047a66ba3accCapture%281%29.png)![7f519904abb7402384b3f44ccc1ed60b](https://storagefiles.clo-set.com/public/community/202605/c93d0d5056ac4b87be5dfb853daa110f/images/7f519904abb7402384b3f44ccc1ed60bCapture%283%29.png)![5c6f7c45de9c4931b6eaf441010ef581](https://storagefiles.clo-set.com/public/community/202605/c93d0d5056ac4b87be5dfb853daa110f/images/5c6f7c45de9c4931b6eaf441010ef581LSF_Spaghetti_Still_00001.jpg)[**Behance**](https://www.behance.net/soohwan_art)\n\n[**Instagram**](https://www.instagram.com/ohso0hwan)",
+        "content_description": "Explore how artist Soohwan Oh expertly fine-tuned Marvelous Designer’s fabric and friction settings to create realistic, dynamic simulations of K-POP stage outfits that flawlessly capture intense choreography and natural garment movement.",
+        "source": "Connect Community",
+        "article_created_at": "2026-05-22T06:07:08.676Z",
+        "article_updated_at": "2026-05-22T06:07:08.676Z",
+        "category": 110,
+        "tags": [
+            "MarvelousDesigner",
+            "AI",
+            "Animation",
+            "Avatar",
+            "Material",
+            "Pattern",
+            "Rendering",
+            "Retopology",
+            "Simulation",
+            "CharacterArt"
+        ]
+    },
+    {
+        "id": "2ea7d43a550b49e78eb56e3b1f410297",
+        "url": "https://connect.clo-set.com/community/post/2ea7d43a550b49e78eb56e3b1f410297",
+        "title": "The Convergence of Originality and Technology: Original Characters and Nano-banana",
+        "content": "## ![](https://storagefiles.clo-set.com/public/community/202606/2ea7d43a550b49e78eb56e3b1f410297/images/d16c33ee095946d1b937f04d0cf2c40a47e29f2618524e05ba7d38f6d44d03b3Capture%284%29.png)_3D artist Soohwan pushes the boundaries of virtual garments by layering sophisticated AI textures from 'Nano-banana' onto Marvelous Designer’s realistic geometry. Discover his smart, practical pipeline that flips the traditional UV workflow to maximize both efficiency and high-fidelity quality._\n\n**Discover the work and expert Marvelous Designer tips of Soohwan Oh in this exclusive series! [**[**Go to Previous Post]**](https://connect.clo-set.com/community/post/4caba29455c442e1b0087639cd5190ac)\n\nYouTube Video: https://www.youtube.com/watch?v=wwMShaE93jY?start=0\n\n# **How much creative flexibility does Marvelous Designer (MD) provide when working on original characters without restrictions? We’d love to know how MD influences the conceptualization and fleshing out of ideas during the initial design phase.**\n\nOf course, before diving into production, we always establish the direction during the planning phase—deciding what kind of garments to create and what elements to include—before launching Marvelous Designer. However, since we are crafting digital-based clothing, we often end up adding artistic interpretations and creativity rather than just stopping at a realistic replication. In that process, garments are frequently completed in a way that is more evolved or slightly different in direction from the initial concept.\n\nIn particular, during the garment creation process, adjusting pattern measurements, fabric physical properties, and settings like Particle Distance, weight, and pressure can create entirely different silhouettes and styles from the exact same pattern. Thanks to these characteristics, my ideas naturally expanded during the workflow, and I experienced the project concepts becoming increasingly concrete and fleshed out.\n\n![0b2b155dd5d84a488f7d94dd0d51b114](https://storagefiles.clo-set.com/public/community/202605/2ea7d43a550b49e78eb56e3b1f410297/images/0b2b155dd5d84a488f7d94dd0d51b114Capture.png)\n\n![177f55c4059c4b38bfc481031d639b13](https://storagefiles.clo-set.com/public/community/202605/2ea7d43a550b49e78eb56e3b1f410297/images/177f55c4059c4b38bfc481031d639b13%E1%84%86%E1%85%AE%E1%86%AF%E1%84%89%E1%85%A5%E1%86%BC.png)\n\n# **There is a growing body of research on workflows utilizing AI tools. You also applied textures created with 'Nano-banana' to MD garments. What kind of synergy did you experience when those sophisticated textures met MD’s realistic geometry and wrinkles?**\n\nI believe that texturing with AI tools offers massive advantages in terms of both fine detail and time efficiency. This is especially true for garments with intricate patchwork or designs where graphics play a key role; in the past, because we had to manually paint these in Photoshop, it was a heavy time burden, or we often had to opt for simpler designs instead. However, by leveraging AI, the burden of this graphic work has been significantly reduced, allowing me to enjoy making a wider variety of creative attempts.\n\n![78c20b441b9645dd83c267f279e7edcf](https://storagefiles.clo-set.com/public/community/202605/2ea7d43a550b49e78eb56e3b1f410297/images/78c20b441b9645dd83c267f279e7edcfPatch_v01_1.png)![2a4f40c5a3854757a751ca0e79d69649](https://storagefiles.clo-set.com/public/community/202605/2ea7d43a550b49e78eb56e3b1f410297/images/2a4f40c5a3854757a751ca0e79d69649Patch_v01_2.png)When these high-quality textures are applied to garments made in Marvelous Designer, they lock in perfectly with the generated wrinkles and geometry, delivering a much more convincing and realistic result. It doesn't just feel like a flat graphic anymore; because the texture responds naturally on top of a three-dimensional form, I felt the overall quality and polish of the asset was elevated to the next level.\n\nAdditionally, I utilize a workflow where I take the UV layout exported from Marvelous Designer, input the desired style into an AI tool like Nano-banana, and generate the textures. This workflow has vastly improved the efficiency of the texturing process, and as a result, I believe it has enabled a much faster, higher-quality pipeline.\n\n# **What is your personal pipeline tip for maintaining high quality while optimizing high-resolution textures and Marvelous Designer (MD) data?**\n\n![47e29f2618524e05ba7d38f6d44d03b3](https://storagefiles.clo-set.com/public/community/202605/2ea7d43a550b49e78eb56e3b1f410297/images/47e29f2618524e05ba7d38f6d44d03b3Capture%284%29.png)\n\nTo be honest, rather than relying on a unique or special pipeline, I tend to take a more practical approach to my workflow. First, after fully finalizing the garment design and pattern work, I don’t jump straight into organizing the UVs. Instead, I use MD’s 2D Pattern Graphic feature to preview the textures or graphics created via Nano-banana first, allowing me to check the overall look and feel.\n\nThe reason I hold off on organizing the UVs is that if the patterns get modified during the process, I would have to redo the UVs all over again. Therefore, I use AI during the design phase to quickly test out textures, and only when I feel the direction of the garment is fully locked in do I clean up the UV layout.\n\nRather than the pipeline itself drastically changing since adopting AI, I feel that the overall workflow speed and efficiency have significantly improved because I can now visualize and iterate on the desired results much faster.\n\n[**Behance**](https://www.behance.net/soohwan_art)\n\n[**Instagram**](https://www.instagram.com/ohso0hwan)\n\n# ** _Stay tuned for our special series featuring Su-hwan Oh’s diverse portfolio and his expert Marvelous Designer know-how!_**",
+        "content_description": "Explore how 3D artist Soohwan Oh integrates AI-generated textures with Marvelous Designer to create highly realistic, efficient, and creatively flexible virtual garments through his innovative workflow.",
+        "source": "Connect Community",
+        "article_created_at": "2026-05-22T05:50:27.022Z",
+        "article_updated_at": "2026-05-22T05:50:27.022Z",
+        "category": 110,
+        "tags": [
+            "MarvelousDesigner",
+            "AI",
+            "Animation",
+            "Avatar",
+            "Material",
+            "Retopology",
+            "Simulation",
+            "Texture",
+            "CharacterArt"
+        ]
+    },
+    {
+        "id": "5e45eb1ad57e409d89706f5de61e0416",
+        "url": "https://connect.clo-set.com/community/post/5e45eb1ad57e409d89706f5de61e0416",
+        "title": "korean_girl ",
+        "content": "![737477e7b53e46f8b42b89a82f24bd56](https://storagefiles.clo-set.com/public/community/202605/5e45eb1ad57e409d89706f5de61e0416/images/737477e7b53e46f8b42b89a82f24bd56image.png)“This is a Korean-inspired folk costume, modeled in clo3d, topologized to game-ready standards, and textured in Substance Painter. The asset is fully optimized for real-time game engines.”\n\nmy Email: zahrakarimzadeh.zk@gmail.com\n\n* * *",
+        "content_description": "Showcasing a Korean-inspired, game-ready 3D folk costume asset meticulously modeled in CLO3D and textured in Substance Painter for real-time game engine optimization.",
+        "source": "Connect Community",
+        "article_created_at": "2026-05-20T17:59:47.323Z",
+        "article_updated_at": "2026-05-20T17:59:47.323Z",
+        "category": 210,
+        "tags": [
+            "CLO",
+            "MarvelousDesigner",
+            "CLO-SET",
+            "CONNECT",
+            "Cinema4D",
+            "Marmoset",
+            "Substance",
+            "Rendering",
+            "Texture",
+            "Colorway"
+        ]
+    },
+    {
+        "id": "d6e51aec24b64ba287122d2d6aedc7db",
+        "url": "https://connect.clo-set.com/community/post/d6e51aec24b64ba287122d2d6aedc7db",
+        "title": "Question about the Simulation algorithm used in MD",
+        "content": "Hi, I'm writing a thesis atm and was wondering what algorithm MD uses for cloth sim? MSM, FEM or PBD, I can just find that it's non linear but nothing more. As it works real time I'd guess it's more MSM but maybe has FEM advances for the fitted clothing mode sim?",
+        "content_description": "This page aims to explore and clarify the specific algorithm—MSM, FEM, or PBD—used by MD for real-time cloth simulation in order to support thesis research.",
+        "source": "Connect Community",
+        "article_created_at": "2026-05-20T17:22:55.805Z",
+        "article_updated_at": "2026-05-20T17:22:55.805Z",
+        "category": 210,
+        "tags": [
+            "MarvelousDesigner",
+            "Simulation"
         ]
     }
 ]
